@@ -287,21 +287,21 @@ public final class ObjType extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!hb", name = "a", descriptor = "(ILclient!hb;Lclient!hb;)V")
-	public void toCertificate(@OriginalArg(1) ObjType origObj, @OriginalArg(2) ObjType certObj) {
-		this.zan2d = certObj.zan2d;
-		this.recol_d = certObj.recol_d;
-		this.desc = Static107.certificateDesc;
-		this.name = origObj.name;
-		this.recol_s = certObj.recol_s;
-		this.model = certObj.model;
-		this.yan2d = certObj.yan2d;
-		this.members = origObj.members;
-		this.yoff2d = certObj.yoff2d;
-		this.xan2d = certObj.xan2d;
-		this.cost = origObj.cost;
+	public void method721(@OriginalArg(1) ObjType arg0, @OriginalArg(2) ObjType arg1) {
+		this.zan2d = arg1.zan2d;
+		this.recol_d = arg1.recol_d;
+		this.desc = Static107.aClass40_719;
+		this.name = arg0.name;
+		this.recol_s = arg1.recol_s;
+		this.model = arg1.model;
+		this.yan2d = arg1.yan2d;
+		this.members = arg0.members;
+		this.yoff2d = arg1.yoff2d;
+		this.xan2d = arg1.xan2d;
+		this.cost = arg0.cost;
 		this.stackable = true;
-		this.zoom2d = certObj.zoom2d;
-		this.xoff2d = certObj.xoff2d;
+		this.zoom2d = arg1.zoom2d;
+		this.xoff2d = arg1.xoff2d;
 	}
 
 	@OriginalMember(owner = "client!hb", name = "a", descriptor = "(ILclient!eb;Z)V")

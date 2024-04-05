@@ -34,7 +34,7 @@ public final class Static107 {
 	private static Class40 aClass40_722 = Static13.method257("Swap this note at any bank for the equivalent item");
 
 	@OriginalMember(owner = "client!wd", name = "l", descriptor = "Lclient!o;")
-	public static Class40 certificateDesc = aClass40_722;
+	public static Class40 aClass40_719 = aClass40_722;
 
 	@OriginalMember(owner = "client!wd", name = "m", descriptor = "Lclient!o;")
 	public static Class40 aClass40_720 = Static13.method257("redstone2");
@@ -51,7 +51,7 @@ public final class Static107 {
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(I)V")
 	public static void method1653() {
 		aClass40_720 = null;
-		certificateDesc = null;
+		aClass40_719 = null;
 		aClass40_718 = null;
 		aClass40_722 = null;
 		aClass40_721 = null;

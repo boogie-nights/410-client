@@ -61,7 +61,7 @@ public final class Static105 {
 		}
 		obj.method716();
 		if (obj.certTemplate != -1) {
-			obj.toCertificate(get(obj.certlink), get(obj.certTemplate));
+			obj.method721(get(obj.certlink), get(obj.certTemplate));
 		}
 		if (!Static43.membersWorld && obj.members) {
 			obj.iops = null;
