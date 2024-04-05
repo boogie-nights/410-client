@@ -186,7 +186,7 @@ public final class Static18 {
 		Static43.method1239();
 		if (!Static97.aBoolean175) {
 			Static20.method389();
-			Static5.method115();
+			Static5.drawTooltip();
 		} else if (Static1.anInt16 == 0) {
 			Static23.method480();
 		}
@@ -197,10 +197,10 @@ public final class Static18 {
 		if (Static96.aBoolean173) {
 			@Pc(118) byte local118 = 20;
 			@Pc(120) int local120 = 16776960;
-			if (Static70.anInt1695 < 30 && Static1.aBoolean2) {
+			if (Static70.anInt1695 < 30 && Static1.lowMemory) {
 				local120 = 16711680;
 			}
-			if (Static70.anInt1695 < 20 && !Static1.aBoolean2) {
+			if (Static70.anInt1695 < 20 && !Static1.lowMemory) {
 				local120 = 16711680;
 			}
 			Static103.aClass2_Sub2_Sub2_Sub2_5.method572(Static80.method1334(new Class40[] { Static98.aClass40_676, Static53.method859(Static70.anInt1695) }), 20, local120);
@@ -208,10 +208,10 @@ public final class Static18 {
 			local158 = local118 + 15;
 			@Pc(160) Runtime local160 = Runtime.getRuntime();
 			@Pc(170) int local170 = (int) ((local160.totalMemory() - local160.freeMemory()) / 1024L);
-			if (local170 > 32768 && Static1.aBoolean2) {
+			if (local170 > 32768 && Static1.lowMemory) {
 				local120 = 16711680;
 			}
-			if (local170 > 65536 && !Static1.aBoolean2) {
+			if (local170 > 65536 && !Static1.lowMemory) {
 				local120 = 16711680;
 			}
 			Static103.aClass2_Sub2_Sub2_Sub2_5.method572(Static80.method1334(new Class40[] { Static5.aClass40_44, Static53.method859(local170), Static97.aClass40_668 }), 35, local120);

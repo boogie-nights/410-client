@@ -29,7 +29,7 @@ public final class Static99 {
 	public static Class40 aClass40_24 = Static13.method257("Aug");
 
 	@OriginalMember(owner = "client!ud", name = "q", descriptor = "[I")
-	public static int[] anIntArray13 = new int[] { 16, 32, 64, 128 };
+	public static int[] ROTATION_WALL_CORNER_TYPE = new int[] { 16, 32, 64, 128 };
 
 	@OriginalMember(owner = "client!ud", name = "y", descriptor = "Ljava/lang/Object;")
 	public static Object anObject2 = new Object();
@@ -50,7 +50,7 @@ public final class Static99 {
 	public static Class40 aClass40_28 = Static13.method257("Accept trade @whi@");
 
 	@OriginalMember(owner = "client!ud", name = "eb", descriptor = "I")
-	public static int anInt121 = 0;
+	public static int ignoreCount = 0;
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(ZI)V")
 	public static void method58(@OriginalArg(0) boolean arg0) {
@@ -172,7 +172,7 @@ public final class Static99 {
 		aClass40_25 = null;
 		aClass40_26 = null;
 		anObject2 = null;
-		anIntArray13 = null;
+		ROTATION_WALL_CORNER_TYPE = null;
 		aClass40_24 = null;
 		aClass7_2 = null;
 		anIntArrayArrayArray2 = null;

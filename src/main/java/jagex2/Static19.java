@@ -194,7 +194,7 @@ public final class Static19 {
 				}
 			}
 		}
-		if (Static91.anInt2139 != 0 && Static107.anInt2511 % 20 < 10) {
+		if (Static91.anInt2139 != 0 && Static107.loopCycle % 20 < 10) {
 			if (Static91.anInt2139 == 1 && Static85.anInt1989 >= 0 && Static85.anInt1989 < Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1.length) {
 				@Pc(427) Class2_Sub2_Sub12_Sub1_Sub2 local427 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static85.anInt1989];
 				if (local427 != null) {

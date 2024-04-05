@@ -53,8 +53,8 @@ public final class Static70 {
 			if ((local30 & 0x40) != 0) {
 				local57 = Static56.aClass2_Sub3_Sub1_5.method1730();
 				local61 = Static56.aClass2_Sub3_Sub1_5.method1706();
-				local26.method1540(local57, Static107.anInt2511, local61);
-				local26.anInt2315 = Static107.anInt2511 + 300;
+				local26.method1540(local57, Static107.loopCycle, local61);
+				local26.anInt2315 = Static107.loopCycle + 300;
 				local26.anInt2298 = Static56.aClass2_Sub3_Sub1_5.method1715();
 				local26.anInt2279 = Static56.aClass2_Sub3_Sub1_5.method1730();
 			}
@@ -87,18 +87,18 @@ public final class Static70 {
 			if ((local30 & 0x1) != 0) {
 				local57 = Static56.aClass2_Sub3_Sub1_5.method1730();
 				local61 = Static56.aClass2_Sub3_Sub1_5.method1706();
-				local26.method1540(local57, Static107.anInt2511, local61);
-				local26.anInt2315 = Static107.anInt2511 + 300;
+				local26.method1540(local57, Static107.loopCycle, local61);
+				local26.anInt2315 = Static107.loopCycle + 300;
 				local26.anInt2298 = Static56.aClass2_Sub3_Sub1_5.g1();
 				local26.anInt2279 = Static56.aClass2_Sub3_Sub1_5.method1730();
 			}
 			if ((local30 & 0x80) != 0) {
 				local26.anInt2302 = Static56.aClass2_Sub3_Sub1_5.method1714();
 				local57 = Static56.aClass2_Sub3_Sub1_5.method1710();
-				local26.anInt2320 = Static107.anInt2511 + (local57 & 0xFFFF);
+				local26.anInt2320 = Static107.loopCycle + (local57 & 0xFFFF);
 				local26.anInt2289 = local57 >> 16;
 				local26.anInt2291 = 0;
-				if (local26.anInt2320 > Static107.anInt2511) {
+				if (local26.anInt2320 > Static107.loopCycle) {
 					local26.anInt2291 = -1;
 				}
 				if (local26.anInt2302 == 65535) {
@@ -243,7 +243,7 @@ public final class Static70 {
 				Static22.anInt2594--;
 				Static33.aBoolean59 = true;
 				for (@Pc(40) int local40 = local14; local40 < Static22.anInt2594; local40++) {
-					Static51.aClass40Array23[local40] = Static51.aClass40Array23[local40 + 1];
+					Static51.friendName[local40] = Static51.friendName[local40 + 1];
 					Static62.anIntArray316[local40] = Static62.anIntArray316[local40 + 1];
 					Static21.aLongArray2[local40] = Static21.aLongArray2[local40 + 1];
 				}

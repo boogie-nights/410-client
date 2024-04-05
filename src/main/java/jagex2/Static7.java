@@ -170,7 +170,7 @@ public final class Static7 {
 	@OriginalMember(owner = "client!ba", name = "c", descriptor = "(B)V")
 	public static void method188() {
 		Static89.aBoolean163 = false;
-		Static1.aBoolean2 = false;
+		Static1.lowMemory = false;
 	}
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(ZIII)I")

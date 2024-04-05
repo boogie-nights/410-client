@@ -11,7 +11,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!mc")
-public final class Class2_Sub2_Sub13 extends Hashable {
+public final class ComType extends Hashable {
 
 	@OriginalMember(owner = "client!mc", name = "O", descriptor = "I")
 	public int anInt1568;
@@ -32,13 +32,13 @@ public final class Class2_Sub2_Sub13 extends Hashable {
 	public boolean aBoolean127;
 
 	@OriginalMember(owner = "client!mc", name = "cb", descriptor = "I")
-	public int anInt1577;
+	public int buttonType;
 
 	@OriginalMember(owner = "client!mc", name = "db", descriptor = "I")
 	private int anInt1578;
 
 	@OriginalMember(owner = "client!mc", name = "gb", descriptor = "I")
-	public int anInt1579;
+	public int xan;
 
 	@OriginalMember(owner = "client!mc", name = "ib", descriptor = "Lclient!o;")
 	public Class40 aClass40_464;
@@ -65,7 +65,7 @@ public final class Class2_Sub2_Sub13 extends Hashable {
 	public int[] anIntArray329;
 
 	@OriginalMember(owner = "client!mc", name = "sb", descriptor = "Lclient!o;")
-	public Class40 aClass40_466;
+	public Class40 text;
 
 	@OriginalMember(owner = "client!mc", name = "tb", descriptor = "I")
 	public int anInt1585;
@@ -113,7 +113,7 @@ public final class Class2_Sub2_Sub13 extends Hashable {
 	public int[] anIntArray330;
 
 	@OriginalMember(owner = "client!mc", name = "Qb", descriptor = "I")
-	public int anInt1601;
+	public int scroll;
 
 	@OriginalMember(owner = "client!mc", name = "Rb", descriptor = "I")
 	public int anInt1602;
@@ -143,10 +143,10 @@ public final class Class2_Sub2_Sub13 extends Hashable {
 	public Class40 aClass40_471;
 
 	@OriginalMember(owner = "client!mc", name = "ec", descriptor = "I")
-	public int anInt1609;
+	public int height;
 
 	@OriginalMember(owner = "client!mc", name = "fc", descriptor = "I")
-	public int anInt1610;
+	public int clientCode;
 
 	@OriginalMember(owner = "client!mc", name = "gc", descriptor = "I")
 	public int anInt1611;
@@ -155,7 +155,7 @@ public final class Class2_Sub2_Sub13 extends Hashable {
 	public int anInt1613;
 
 	@OriginalMember(owner = "client!mc", name = "jc", descriptor = "I")
-	public int anInt1614;
+	public int yan;
 
 	@OriginalMember(owner = "client!mc", name = "lc", descriptor = "Z")
 	public boolean aBoolean130;
@@ -190,12 +190,12 @@ public final class Class2_Sub2_Sub13 extends Hashable {
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!eb;I)V")
 	public void method1053(@OriginalArg(0) Packet arg0) {
 		this.anInt1613 = arg0.g1();
-		this.anInt1577 = arg0.g1();
-		this.anInt1610 = arg0.g2();
+		this.buttonType = arg0.g1();
+		this.clientCode = arg0.g2();
 		this.anInt1573 = this.anInt1582 = arg0.g2b();
 		this.anInt1616 = this.anInt1588 = arg0.g2b();
 		this.anInt1605 = arg0.g2();
-		this.anInt1609 = arg0.g2();
+		this.height = arg0.g2();
 		this.anInt1604 = arg0.g1();
 		this.anInt1611 = arg0.g2();
 		if (this.anInt1611 == 65535) {
@@ -232,7 +232,7 @@ public final class Class2_Sub2_Sub13 extends Hashable {
 			}
 		}
 		if (this.anInt1613 == 0) {
-			this.anInt1601 = arg0.g2();
+			this.scroll = arg0.g2();
 			this.aBoolean125 = arg0.g1() == 1;
 		}
 		if (this.anInt1613 == 1) {
@@ -240,8 +240,8 @@ public final class Class2_Sub2_Sub13 extends Hashable {
 			arg0.g1();
 		}
 		if (this.anInt1613 == 2) {
-			this.anIntArray327 = new int[this.anInt1609 * this.anInt1605];
-			this.anIntArray331 = new int[this.anInt1605 * this.anInt1609];
+			this.anIntArray327 = new int[this.height * this.anInt1605];
+			this.anIntArray331 = new int[this.anInt1605 * this.height];
 			this.aBoolean129 = arg0.g1() == 1;
 			this.aBoolean128 = arg0.g1() == 1;
 			this.aBoolean130 = arg0.g1() == 1;
@@ -278,7 +278,7 @@ public final class Class2_Sub2_Sub13 extends Hashable {
 			this.aBoolean127 = arg0.g1() == 1;
 		}
 		if (this.anInt1613 == 4) {
-			this.aClass40_466 = arg0.method1721();
+			this.text = arg0.method1721();
 			this.aClass40_468 = arg0.method1721();
 		}
 		if (this.anInt1613 == 1 || this.anInt1613 == 3 || this.anInt1613 == 4) {
@@ -313,12 +313,12 @@ public final class Class2_Sub2_Sub13 extends Hashable {
 				this.anInt1592 = -1;
 			}
 			this.anInt1586 = arg0.g2();
-			this.anInt1579 = arg0.g2();
-			this.anInt1614 = arg0.g2();
+			this.xan = arg0.g2();
+			this.yan = arg0.g2();
 		}
 		if (this.anInt1613 == 7) {
-			this.anIntArray327 = new int[this.anInt1609 * this.anInt1605];
-			this.anIntArray331 = new int[this.anInt1605 * this.anInt1609];
+			this.anIntArray327 = new int[this.height * this.anInt1605];
+			this.anIntArray331 = new int[this.anInt1605 * this.height];
 			this.aBoolean124 = arg0.g1() == 1;
 			this.anInt1568 = arg0.g1();
 			this.aBoolean127 = arg0.g1() == 1;
@@ -335,30 +335,30 @@ public final class Class2_Sub2_Sub13 extends Hashable {
 			}
 		}
 		if (this.anInt1613 == 8) {
-			this.aClass40_466 = arg0.method1721();
+			this.text = arg0.method1721();
 		}
-		if (this.anInt1577 == 2 || this.anInt1613 == 2) {
+		if (this.buttonType == 2 || this.anInt1613 == 2) {
 			this.aClass40_471 = arg0.method1721();
 			this.aClass40_464 = arg0.method1721();
 			this.anInt1599 = arg0.g2();
 		}
-		if (this.anInt1577 != 1 && this.anInt1577 != 4 && this.anInt1577 != 5 && this.anInt1577 != 6) {
+		if (this.buttonType != 1 && this.buttonType != 4 && this.buttonType != 5 && this.buttonType != 6) {
 			return;
 		}
 		this.aClass40_467 = arg0.method1721();
 		if (this.aClass40_467.method1169() != 0) {
 			return;
 		}
-		if (this.anInt1577 == 1) {
+		if (this.buttonType == 1) {
 			this.aClass40_467 = Static92.aClass40_617;
 		}
-		if (this.anInt1577 == 4) {
+		if (this.buttonType == 4) {
 			this.aClass40_467 = Static88.aClass40_606;
 		}
-		if (this.anInt1577 == 5) {
+		if (this.buttonType == 5) {
 			this.aClass40_467 = Static88.aClass40_606;
 		}
-		if (this.anInt1577 == 6) {
+		if (this.buttonType == 6) {
 			this.aClass40_467 = Static67.aClass40_484;
 			return;
 		}

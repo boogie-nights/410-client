@@ -432,7 +432,7 @@ public final class client extends Applet_Sub1 {
 	@OriginalMember(owner = "client!client", name = "b", descriptor = "(Z)V")
 	@Override
 	protected void method329() {
-		Static107.anInt2511++;
+		Static107.loopCycle++;
 		this.method342();
 		Static81.method1341();
 		Static94.method1500();

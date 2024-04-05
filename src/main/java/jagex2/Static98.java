@@ -64,7 +64,7 @@ public final class Static98 {
 		if (arg1 < 1 || arg2 < 1 || arg1 > 102 || arg2 > 102) {
 			return;
 		}
-		if (Static1.aBoolean2 && Static1.anInt8 != arg4) {
+		if (Static1.lowMemory && Static1.anInt8 != arg4) {
 			return;
 		}
 		@Pc(29) int local29 = 0;
@@ -139,7 +139,7 @@ public final class Static98 {
 					}
 					Static73.anIntArray408[Static88.anInt2067++] = local14;
 					@Pc(51) Class2_Sub2_Sub12_Sub1_Sub1 local51 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local14];
-					local51.anInt2274 = Static107.anInt2511;
+					local51.anInt2274 = Static107.loopCycle;
 					@Pc(59) int local59 = Static56.aClass2_Sub3_Sub1_5.method1743(5);
 					if (local59 > 15) {
 						local59 -= 32;

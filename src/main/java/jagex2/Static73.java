@@ -234,7 +234,7 @@ public final class Static73 {
 		}
 		if (Static1.anInt8 - 1 > local199) {
 		}
-		if (Static1.aBoolean2) {
+		if (Static1.lowMemory) {
 			Static93.aClass55_1.method1421(Static34.anInt807);
 		} else {
 			Static93.aClass55_1.method1421(0);

@@ -38,15 +38,15 @@ public final class Static4 {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "c", descriptor = "(III)I")
-	public static int method84(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(40) int local40 = Static107.method1655(4, arg1 + 45365, arg0 + 91923) + (Static107.method1655(2, arg1 + 10294, arg0 + 37821) - 128 >> 1) + (Static107.method1655(1, arg1, arg0) + -128 >> 2) - 128;
-		local40 = (int) ((double) local40 * 0.3D) + 35;
-		if (local40 < 10) {
-			local40 = 10;
-		} else if (local40 > 60) {
-			local40 = 60;
+	public static int perlin(@OriginalArg(2) int x, @OriginalArg(1) int z) {
+		@Pc(40) int value = Static107.perlin(4, x + 45365, z + 91923) + (Static107.perlin(2, x + 10294, z + 37821) - 128 >> 1) + (Static107.perlin(1, x, z) + -128 >> 2) - 128;
+		value = (int) ((double) value * 0.3D) + 35;
+		if (value < 10) {
+			value = 10;
+		} else if (value > 60) {
+			value = 60;
 		}
-		return local40;
+		return value;
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(Lclient!ud;Lclient!o;BLclient!o;)[Lclient!qb;")
@@ -94,7 +94,7 @@ public final class Static4 {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(Lclient!mc;Lclient!o;I)Lclient!o;")
-	public static Class40 method94(@OriginalArg(0) Class2_Sub2_Sub13 arg0, @OriginalArg(1) Class40 arg1) {
+	public static Class40 method94(@OriginalArg(0) ComType arg0, @OriginalArg(1) Class40 arg1) {
 		if (arg1.method1200(Static59.aClass40_430) == -1) {
 			return arg1;
 		}

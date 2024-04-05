@@ -40,8 +40,8 @@ public final class Static33 {
 	public static int anInt788 = 0;
 
 	@OriginalMember(owner = "client!gb", name = "a", descriptor = "(Lclient!mc;B)Z")
-	public static boolean method607(@OriginalArg(0) Class2_Sub2_Sub13 arg0) {
-		@Pc(13) int local13 = arg0.anInt1610;
+	public static boolean method607(@OriginalArg(0) ComType arg0) {
+		@Pc(13) int local13 = arg0.clientCode;
 		if (local13 >= 1 && local13 <= 200 || !(local13 < 701 || local13 > 900)) {
 			if (local13 >= 801) {
 				local13 -= 701;
@@ -52,11 +52,11 @@ public final class Static33 {
 			} else {
 				local13--;
 			}
-			Static21.method402(Static80.method1334(new Class40[] { aClass40_240, Static51.aClass40Array23[local13] }), 2, 0, 0, 0);
-			Static21.method402(Static80.method1334(new Class40[] { Static68.aClass40_108, Static51.aClass40Array23[local13] }), 20, 0, 0, 0);
+			Static21.method402(Static80.method1334(new Class40[] { aClass40_240, Static51.friendName[local13] }), 2, 0, 0, 0);
+			Static21.method402(Static80.method1334(new Class40[] { Static68.aClass40_108, Static51.friendName[local13] }), 20, 0, 0, 0);
 			return true;
 		} else if (local13 >= 401 && local13 <= 500) {
-			Static21.method402(Static80.method1334(new Class40[] { aClass40_240, arg0.aClass40_466 }), 45, 0, 0, 0);
+			Static21.method402(Static80.method1334(new Class40[] { aClass40_240, arg0.text}), 45, 0, 0, 0);
 			return true;
 		} else {
 			return false;

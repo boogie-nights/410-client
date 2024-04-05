@@ -20,10 +20,10 @@ public final class Static62 {
 	public static Class40 aClass40_454 = Static13.method257(" x");
 
 	@OriginalMember(owner = "client!mb", name = "f", descriptor = "Lclient!mc;")
-	public static Class2_Sub2_Sub13 aClass2_Sub2_Sub13_1 = new Class2_Sub2_Sub13();
+	public static ComType aClass2_Sub2_Sub13_1 = new ComType();
 
 	@OriginalMember(owner = "client!mb", name = "g", descriptor = "Lclient!wc;")
-	public static Class2_Sub3_Sub1 aClass2_Sub3_Sub1_3 = new Class2_Sub3_Sub1(5000);
+	public static Class2_Sub3_Sub1 login = new Class2_Sub3_Sub1(5000);
 
 	@OriginalMember(owner = "client!mb", name = "h", descriptor = "I")
 	public static int anInt1554 = 0;
@@ -51,7 +51,7 @@ public final class Static62 {
 	public static void method1043() {
 		aClass2_Sub2_Sub13_1 = null;
 		anIntArray316 = null;
-		aClass2_Sub3_Sub1_3 = null;
+		login = null;
 		aClass40_454 = null;
 		aClass40_455 = null;
 	}

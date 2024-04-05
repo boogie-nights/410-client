@@ -76,12 +76,12 @@ public final class Static76 {
 			if (local47 != null && local47.method1544()) {
 				@Pc(72) int local72 = local47.anInt2275 >> 7;
 				local47.aBoolean104 = false;
-				if ((Static1.aBoolean2 && Static88.anInt2067 > 50 || Static88.anInt2067 > 200) && !arg0 && local47.anInt2318 == local47.anInt2290) {
+				if ((Static1.lowMemory && Static88.anInt2067 > 50 || Static88.anInt2067 > 200) && !arg0 && local47.anInt2318 == local47.anInt2290) {
 					local47.aBoolean104 = true;
 				}
 				@Pc(102) int local102 = local47.anInt2284 >> 7;
 				if (local72 >= 0 && local72 < 104 && local102 >= 0 && local102 < 104) {
-					if (local47.aModel_1 == null || Static107.anInt2511 < local47.anInt1377 || Static107.anInt2511 >= local47.anInt1381) {
+					if (local47.aModel_1 == null || Static107.loopCycle < local47.anInt1377 || Static107.loopCycle >= local47.anInt1381) {
 						if ((local47.anInt2275 & 0x7F) == 64 && (local47.anInt2284 & 0x7F) == 64) {
 							if (Static22.anInt2587 == Static14.anIntArrayArray7[local72][local102]) {
 								continue;

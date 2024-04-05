@@ -129,19 +129,19 @@ public final class Static46 {
 			@Pc(71) int local71 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
 			if (local71 == 0) {
 				Static73.anIntArray408[Static88.anInt2067++] = local62;
-				local66.anInt2274 = Static107.anInt2511;
+				local66.anInt2274 = Static107.loopCycle;
 			} else {
 				@Pc(91) int local91 = Static56.aClass2_Sub3_Sub1_5.method1743(2);
 				if (local91 == 0) {
 					Static73.anIntArray408[Static88.anInt2067++] = local62;
-					local66.anInt2274 = Static107.anInt2511;
+					local66.anInt2274 = Static107.loopCycle;
 					Static98.anIntArray504[Static53.anInt1190++] = local62;
 				} else {
 					@Pc(138) int local138;
 					@Pc(148) int local148;
 					if (local91 == 1) {
 						Static73.anIntArray408[Static88.anInt2067++] = local62;
-						local66.anInt2274 = Static107.anInt2511;
+						local66.anInt2274 = Static107.loopCycle;
 						local138 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
 						local66.method1547(local138, false);
 						local148 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
@@ -150,7 +150,7 @@ public final class Static46 {
 						}
 					} else if (local91 == 2) {
 						Static73.anIntArray408[Static88.anInt2067++] = local62;
-						local66.anInt2274 = Static107.anInt2511;
+						local66.anInt2274 = Static107.loopCycle;
 						local138 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
 						local66.method1547(local138, true);
 						local148 = Static56.aClass2_Sub3_Sub1_5.method1743(3);

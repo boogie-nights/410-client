@@ -22,7 +22,7 @@ public final class Static82 {
 	public static Class40 aClass40_563 = Static13.method257("runes");
 
 	@OriginalMember(owner = "client!ra", name = "i", descriptor = "I")
-	public static int anInt1942 = (int) (Math.random() * 17.0D) - 8;
+	public static int randomHueOffset = (int) (Math.random() * 17.0D) - 8;
 
 	@OriginalMember(owner = "client!ra", name = "m", descriptor = "Lclient!o;")
 	public static Class40 aClass40_564 = Static13.method257("From ");
@@ -43,7 +43,7 @@ public final class Static82 {
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(IIBIII)V")
 	public static void method1343(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		if (!Static1.aBoolean2) {
+		if (!Static1.lowMemory) {
 			arg1 = 0;
 		}
 		if (arg0 == Static56.anInt2327 && arg4 == Static49.anInt2262 && Static33.anInt786 == arg1) {
@@ -143,11 +143,11 @@ public final class Static82 {
 		if (arg0 == 0L) {
 			return;
 		}
-		for (@Pc(17) int local17 = 0; local17 < Static99.anInt121; local17++) {
+		for (@Pc(17) int local17 = 0; local17 < Static99.ignoreCount; local17++) {
 			if (arg0 == Static84.aLongArray4[local17]) {
-				Static99.anInt121--;
+				Static99.ignoreCount--;
 				Static33.aBoolean59 = true;
-				for (@Pc(37) int local37 = local17; local37 < Static99.anInt121; local37++) {
+				for (@Pc(37) int local37 = local17; local37 < Static99.ignoreCount; local37++) {
 					Static84.aLongArray4[local37] = Static84.aLongArray4[local37 + 1];
 				}
 				Static80.out.p1isaac(168);

@@ -244,45 +244,45 @@ public final class Static43 {
 				}
 			}
 			if (Static27.anInt693 == 5) {
-				@Pc(185) int[] local185 = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (Static98.aLong139 >> 32), (int) Static98.aLong139 };
+				@Pc(185) int[] seed = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (Static98.aLong139 >> 32), (int) Static98.aLong139 };
 				Static80.out.pos = 0;
 				Static80.out.p1(10);
-				Static80.out.p4(local185[0]);
-				Static80.out.p4(local185[1]);
-				Static80.out.p4(local185[2]);
-				Static80.out.p4(local185[3]);
+				Static80.out.p4(seed[0]);
+				Static80.out.p4(seed[1]);
+				Static80.out.p4(seed[2]);
+				Static80.out.p4(seed[3]);
 				Static80.out.p4(Static99.aClass7_2.anInt249);
 				Static80.out.p8(Static86.aClass40_591.method1179());
 				Static80.out.method1683(Static86.aClass40_587);
-				Static80.out.rsaenc(Static51.aBigInteger2, Static10.aBigInteger1);
-				Static62.aClass2_Sub3_Sub1_3.pos = 0;
+				Static80.out.rsaenc(Static51.RSA_EXPONENT, Static10.RSA_MODULUS);
+				Static62.login.pos = 0;
 				if (Static44.anInt1075 == 40) {
-					Static62.aClass2_Sub3_Sub1_3.p1(18);
+					Static62.login.p1(18);
 				} else {
-					Static62.aClass2_Sub3_Sub1_3.p1(16);
+					Static62.login.p1(16);
 				}
-				Static62.aClass2_Sub3_Sub1_3.p1(Static80.out.pos + 53);
-				Static62.aClass2_Sub3_Sub1_3.p4(410);
-				Static62.aClass2_Sub3_Sub1_3.p1(Static1.aBoolean2 ? 1 : 0);
-				Static62.aClass2_Sub3_Sub1_3.p4(aClass5_Sub1_14.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.p4(Static87.aClass5_Sub1_18.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.p4(Static5.aClass5_Sub1_1.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.p4(Static27.aClass5_Sub1_5.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.p4(Static35.aClass5_Sub1_7.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.p4(Static36.aClass5_Sub1_8.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.p4(Static85.aClass5_Sub1_17.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.p4(Static25.aClass5_Sub1_4.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.p4(Static82.aClass5_Sub1_16.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.p4(Static35.aClass5_Sub1_6.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.p4(Static81.aClass5_Sub1_15.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.p4(Static74.aClass5_Sub1_13.anInt95);
-				Static62.aClass2_Sub3_Sub1_3.pdata(Static80.out.data, Static80.out.pos);
-				Static70.aClass25_36.method731(Static62.aClass2_Sub3_Sub1_3.data, Static62.aClass2_Sub3_Sub1_3.pos);
-				Static80.out.method1734(local185);
-				for (@Pc(379) int local379 = 0; local379 < 4; local379++) {
-					local185[local379] += 50;
+				Static62.login.p1(Static80.out.pos + 53);
+				Static62.login.p4(410);
+				Static62.login.p1(Static1.lowMemory ? 1 : 0);
+				Static62.login.p4(aClass5_Sub1_14.anInt95);
+				Static62.login.p4(Static87.aClass5_Sub1_18.anInt95);
+				Static62.login.p4(Static5.aClass5_Sub1_1.anInt95);
+				Static62.login.p4(Static27.aClass5_Sub1_5.anInt95);
+				Static62.login.p4(Static35.aClass5_Sub1_7.anInt95);
+				Static62.login.p4(Static36.aClass5_Sub1_8.anInt95);
+				Static62.login.p4(Static85.aClass5_Sub1_17.anInt95);
+				Static62.login.p4(Static25.aClass5_Sub1_4.anInt95);
+				Static62.login.p4(Static82.aClass5_Sub1_16.anInt95);
+				Static62.login.p4(Static35.aClass5_Sub1_6.anInt95);
+				Static62.login.p4(Static81.aClass5_Sub1_15.anInt95);
+				Static62.login.p4(Static74.aClass5_Sub1_13.anInt95);
+				Static62.login.pdata(Static80.out.data, Static80.out.pos);
+				Static70.aClass25_36.method731(Static62.login.data, Static62.login.pos);
+				Static80.out.method1734(seed);
+				for (@Pc(379) int i = 0; i < 4; i++) {
+					seed[i] += 50;
 				}
-				Static56.aClass2_Sub3_Sub1_5.method1734(local185);
+				Static56.aClass2_Sub3_Sub1_5.method1734(seed);
 				Static27.anInt693 = 6;
 			}
 			if (Static27.anInt693 == 6 && Static70.aClass25_36.method728() > 0) {

@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class2_Sub2_Sub2_Sub1 extends Class2_Sub2_Sub2 {
 
 	@OriginalMember(owner = "client!b", name = "V", descriptor = "[I")
-	public static int[] anIntArray58 = new int[2048];
+	public static int[] cos = new int[2048];
 
 	@OriginalMember(owner = "client!b", name = "cb", descriptor = "[I")
 	public static int[] anIntArray60 = new int[512];
@@ -28,7 +28,7 @@ public final class Class2_Sub2_Sub2_Sub1 extends Class2_Sub2_Sub2 {
 		}
 		for (@Pc(52) int local52 = 0; local52 < 2048; local52++) {
 			anIntArray59[local52] = (int) (Math.sin((double) local52 * 0.0030679615D) * 65536.0D);
-			anIntArray58[local52] = (int) (Math.cos((double) local52 * 0.0030679615D) * 65536.0D);
+			cos[local52] = (int) (Math.cos((double) local52 * 0.0030679615D) * 65536.0D);
 		}
 	}
 }

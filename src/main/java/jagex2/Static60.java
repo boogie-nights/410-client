@@ -123,7 +123,7 @@ public final class Static60 {
 		if (arg0 > 0) {
 			local164 = (int) ((double) local164 * 1.04D);
 		}
-		@Pc(193) int y = Class2_Sub2_Sub2_Sub1.anIntArray58[obj.xan2d] * local164 >> 16;
+		@Pc(193) int y = Class2_Sub2_Sub2_Sub1.cos[obj.xan2d] * local164 >> 16;
 		@Pc(202) int local202 = local164 * Class2_Sub2_Sub2_Sub1.anIntArray59[obj.xan2d] >> 16;
 		local101.method1135();
 		local101.method1151(obj.yan2d, obj.zan2d, obj.xan2d, obj.xoff2d, local202 + local101.maxY / 2 + obj.yoff2d, y + obj.yoff2d);

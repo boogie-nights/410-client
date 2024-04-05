@@ -10,7 +10,7 @@ public final class Static55 {
 	public static int[] anIntArray299;
 
 	@OriginalMember(owner = "client!kd", name = "jb", descriptor = "[I")
-	public static int[] anIntArray298 = new int[] { 0, -1, 0, 1 };
+	public static int[] WALL_DECORATION_ROTATION_FORWARD_Z = new int[] { 0, -1, 0, 1 };
 
 	@OriginalMember(owner = "client!kd", name = "qb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_405 = Static13.method257(" million @whi@(X");
@@ -22,7 +22,7 @@ public final class Static55 {
 	public static Class40 aClass40_407 = Static13.method257("@gr1@");
 
 	@OriginalMember(owner = "client!kd", name = "Db", descriptor = "I")
-	public static int anInt1430 = (int) (Math.random() * 33.0D) - 16;
+	public static int randomLightnessOffset = (int) (Math.random() * 33.0D) - 16;
 
 	@OriginalMember(owner = "client!kd", name = "Hb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_408 = Static13.method257("To start a subscripton:*6n1(Y Logout and return to the frontpage of this website)3*6n2(Y Choose (WStart a new subscription(W");
@@ -41,7 +41,7 @@ public final class Static55 {
 		aClass47_13 = null;
 		aClass40_407 = null;
 		aClass40_408 = null;
-		anIntArray298 = null;
+		WALL_DECORATION_ROTATION_FORWARD_Z = null;
 		anIntArray299 = null;
 		aClass40_410 = null;
 		aClass40_409 = null;

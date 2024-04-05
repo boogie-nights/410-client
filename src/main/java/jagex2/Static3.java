@@ -53,7 +53,7 @@ public final class Static3 {
 		if (arg0.anInt2314 == 1) {
 			arg0.anInt2283 = 1536;
 		}
-		@Pc(24) int local24 = arg0.anInt2277 - Static107.anInt2511;
+		@Pc(24) int local24 = arg0.anInt2277 - Static107.loopCycle;
 		if (arg0.anInt2314 == 2) {
 			arg0.anInt2283 = 0;
 		}
@@ -195,7 +195,7 @@ public final class Static3 {
 								local519 = local511;
 								local511 = local633;
 							}
-							local536.anInt1381 = Static107.anInt2511 + local527;
+							local536.anInt1381 = Static107.loopCycle + local527;
 							if (local515 > local507) {
 								local633 = local515;
 								local515 = local507;
@@ -206,7 +206,7 @@ public final class Static3 {
 								local621 = local548.anInt1040;
 							}
 							local536.anInt1387 = local621 * 64 + local19 * 128;
-							local536.anInt1377 = local35 + Static107.anInt2511;
+							local536.anInt1377 = local35 + Static107.loopCycle;
 							local536.anInt1375 = local31 * 128 + local624 * 64;
 							local536.anInt1384 = Static86.method1383(Static1.anInt8, local536.anInt1387, local536.anInt1375);
 							local536.anInt1386 = local31 + local507;
@@ -243,7 +243,7 @@ public final class Static3 {
 					if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
 						local19 = local19 * 128 + 64;
 						local27 = local27 * 128 + 64;
-						@Pc(893) Class2_Sub2_Sub12_Sub6 local893 = new Class2_Sub2_Sub12_Sub6(local31, Static1.anInt8, local27, local19, Static86.method1383(Static1.anInt8, local27, local19) - local35, local39, Static107.anInt2511);
+						@Pc(893) Class2_Sub2_Sub12_Sub6 local893 = new Class2_Sub2_Sub12_Sub6(local31, Static1.anInt8, local27, local19, Static86.method1383(Static1.anInt8, local27, local19) - local35, local39, Static107.loopCycle);
 						Static96.aClass44_8.method1221(local893);
 					}
 				} else if (Static88.anInt2083 == 221) {
@@ -289,8 +289,8 @@ public final class Static3 {
 							local27 = local27 * 128 + 64;
 							local31 = local31 * 128 + 64;
 							local19 = local19 * 128 + 64;
-							@Pc(1164) Class2_Sub2_Sub12_Sub2 local1164 = new Class2_Sub2_Sub12_Sub2(local43, Static1.anInt8, local27, local19, Static86.method1383(Static1.anInt8, local27, local19) - local425, Static107.anInt2511 + local1060, local1064 + Static107.anInt2511, local1068, local1072, local39, local503);
-							local1164.method939(local31, Static86.method1383(Static1.anInt8, local31, local35) - local503, Static107.anInt2511 + local1060, local35);
+							@Pc(1164) Class2_Sub2_Sub12_Sub2 local1164 = new Class2_Sub2_Sub12_Sub2(local43, Static1.anInt8, local27, local19, Static86.method1383(Static1.anInt8, local27, local19) - local425, Static107.loopCycle + local1060, local1064 + Static107.loopCycle, local1068, local1072, local39, local503);
+							local1164.method939(local31, Static86.method1383(Static1.anInt8, local31, local35) - local503, Static107.loopCycle + local1060, local35);
 							Static24.aClass44_4.method1221(local1164);
 						}
 					} else if (Static88.anInt2083 == 129) {

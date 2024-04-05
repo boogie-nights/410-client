@@ -43,7 +43,7 @@ public final class Static1 {
 	public static Class40 aClass40_3 = Static13.method257("redstone1");
 
 	@OriginalMember(owner = "client!a", name = "w", descriptor = "Z")
-	public static boolean aBoolean2 = false;
+	public static boolean lowMemory = false;
 
 	@OriginalMember(owner = "client!a", name = "z", descriptor = "Lclient!o;")
 	public static Class40 aClass40_4 = Static13.method257(": ");
@@ -79,7 +79,7 @@ public final class Static1 {
 		for (@Pc(10) Class2_Sub2_Sub12_Sub6 local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.method1224(); local10 != null; local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.method1231()) {
 			if (local10.anInt2235 != anInt8 || local10.aBoolean169) {
 				local10.unlink();
-			} else if (Static107.anInt2511 >= local10.anInt2231) {
+			} else if (Static107.loopCycle >= local10.anInt2231) {
 				local10.method1519(Static45.anInt1095);
 				if (local10.aBoolean169) {
 					local10.unlink();
@@ -92,9 +92,9 @@ public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ke;Z)V")
 	public static void method4(@OriginalArg(0) Class2_Sub2_Sub12_Sub1 arg0) {
-		if (arg0.anInt2297 == Static107.anInt2511 || arg0.anInt2307 == -1 || arg0.anInt2313 != 0 || arg0.anInt2267 + 1 > Static62.method1042(arg0.anInt2307).anIntArray128[arg0.anInt2316]) {
+		if (arg0.anInt2297 == Static107.loopCycle || arg0.anInt2307 == -1 || arg0.anInt2313 != 0 || arg0.anInt2267 + 1 > Static62.method1042(arg0.anInt2307).anIntArray128[arg0.anInt2316]) {
 			@Pc(38) int local38 = arg0.anInt2297 - arg0.anInt2277;
-			@Pc(44) int local44 = Static107.anInt2511 - arg0.anInt2277;
+			@Pc(44) int local44 = Static107.loopCycle - arg0.anInt2277;
 			@Pc(54) int local54 = arg0.anInt2278 * 64 + arg0.anInt2321 * 128;
 			@Pc(64) int local64 = arg0.anInt2278 * 64 + arg0.anInt2311 * 128;
 			@Pc(74) int local74 = arg0.anInt2286 * 128 + arg0.anInt2278 * 64;

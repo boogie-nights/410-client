@@ -59,11 +59,11 @@ public final class Static106 {
 	public static void method1740() {
 		while (Static97.method1561()) {
 			if (Static22.anInt2585 != -1 && Static75.anInt1826 == Static22.anInt2585) {
-				if (Static37.anInt935 == 85 && Static61.aClass40_448.method1169() > 0) {
-					Static61.aClass40_448 = Static61.aClass40_448.method1180(Static61.aClass40_448.method1169() - 1, 0);
+				if (Static37.anInt935 == 85 && Static61.reportAbuseInput.method1169() > 0) {
+					Static61.reportAbuseInput = Static61.reportAbuseInput.method1180(Static61.reportAbuseInput.method1169() - 1, 0);
 				}
-				if ((Static1.method2(Static4.anInt135) || Static4.anInt135 == 32) && Static61.aClass40_448.method1169() < 12) {
-					Static61.aClass40_448 = Static61.aClass40_448.method1192(Static4.anInt135);
+				if ((Static1.method2(Static4.anInt135) || Static4.anInt135 == 32) && Static61.reportAbuseInput.method1169() < 12) {
+					Static61.reportAbuseInput = Static61.reportAbuseInput.method1192(Static4.anInt135);
 				}
 			} else {
 				@Pc(162) int local162;
@@ -104,11 +104,11 @@ public final class Static106 {
 								Static80.out.p1(Static103.tradeChatSetting);
 							}
 						}
-						if (Static93.anInt2180 == 4 && Static99.anInt121 < 100) {
+						if (Static93.anInt2180 == 4 && Static99.ignoreCount < 100) {
 							local117 = Static61.aClass40_447.method1179();
 							Static15.method1254(local117);
 						}
-						if (Static93.anInt2180 == 5 && Static99.anInt121 > 0) {
+						if (Static93.anInt2180 == 5 && Static99.ignoreCount > 0) {
 							local117 = Static61.aClass40_447.method1179();
 							Static82.method1345(local117);
 						}

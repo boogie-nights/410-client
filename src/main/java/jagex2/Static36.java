@@ -124,8 +124,8 @@ public final class Static36 {
 	}
 
 	@OriginalMember(owner = "client!h", name = "a", descriptor = "(Lclient!mc;I)Z")
-	public static boolean method639(@OriginalArg(0) Class2_Sub2_Sub13 arg0) {
-		@Pc(6) int local6 = arg0.anInt1610;
+	public static boolean method639(@OriginalArg(0) ComType arg0) {
+		@Pc(6) int local6 = arg0.clientCode;
 		if (Static42.anInt1038 == 2) {
 			if (local6 == 201) {
 				Static61.aClass40_453 = Static12.aClass40_79;
@@ -192,9 +192,9 @@ public final class Static36 {
 		}
 		if (local6 >= 601 && local6 <= 613) {
 			Static60.method998();
-			if (Static61.aClass40_448.method1169() > 0) {
+			if (Static61.reportAbuseInput.method1169() > 0) {
 				Static80.out.p1isaac(72);
-				Static80.out.p8(Static61.aClass40_448.method1179());
+				Static80.out.p8(Static61.reportAbuseInput.method1179());
 				Static80.out.p1(local6 - 601);
 				Static80.out.p1(Static54.aBoolean103 ? 1 : 0);
 			}

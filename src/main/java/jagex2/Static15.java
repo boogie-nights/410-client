@@ -64,12 +64,12 @@ public final class Static15 {
 		if (arg0 == 0L) {
 			return;
 		}
-		if (Static99.anInt121 >= 100) {
+		if (Static99.ignoreCount >= 100) {
 			Static58.method989(0, Static61.aClass40_445, Static60.aClass40_432);
 			return;
 		}
 		@Pc(27) Class40 local27 = Static48.method819(arg0).method1167();
-		for (@Pc(29) int local29 = 0; local29 < Static99.anInt121; local29++) {
+		for (@Pc(29) int local29 = 0; local29 < Static99.ignoreCount; local29++) {
 			if (arg0 == Static84.aLongArray4[local29]) {
 				Static58.method989(0, Static61.aClass40_445, Static80.method1334(new Class40[] { local27, Static72.aClass40_506 }));
 				return;
@@ -82,7 +82,7 @@ public final class Static15 {
 			}
 		}
 		if (!local27.method1184(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395)) {
-			Static84.aLongArray4[Static99.anInt121++] = arg0;
+			Static84.aLongArray4[Static99.ignoreCount++] = arg0;
 			Static33.aBoolean59 = true;
 			Static80.out.p1isaac(186);
 			Static80.out.p8(arg0);
@@ -286,7 +286,7 @@ public final class Static15 {
 		Static91.anInt2143 = 0;
 		Static1.anIntArray1 = new int[32768];
 		Static103.anIntArray547 = new int[32768];
-		if (Static7.anInt239 == 0 || Static1.aBoolean2) {
+		if (Static7.anInt239 == 0 || Static1.lowMemory) {
 			Static94.method1490();
 		} else {
 			Static94.method1496(Static12.aClass40_80, Static86.aClass40_593, Static85.aClass5_Sub1_17, Static7.anInt239);

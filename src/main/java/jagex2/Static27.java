@@ -38,9 +38,9 @@ public final class Static27 {
 			return false;
 		}
 		@Pc(13) boolean local13 = false;
-		@Pc(17) Class2_Sub2_Sub13[] local17 = Static51.aClass2_Sub2_Sub13ArrayArray1[arg0];
+		@Pc(17) ComType[] local17 = Static51.aClass2_Sub2_Sub13ArrayArray1[arg0];
 		for (@Pc(24) int local24 = 0; local24 < local17.length; local24++) {
-			@Pc(30) Class2_Sub2_Sub13 local30 = local17[local24];
+			@Pc(30) ComType local30 = local17[local24];
 			if (local30 != null && local30.anInt1613 == 6) {
 				@Pc(56) int local56;
 				if (local30.anInt1574 != -1 || local30.anInt1592 != -1) {
@@ -73,10 +73,10 @@ public final class Static27 {
 					@Pc(152) int local152 = local30.anInt1617 >> 16;
 					local13 = true;
 					@Pc(158) int local158 = local152 * Static45.anInt1095;
-					local30.anInt1579 = local30.anInt1579 + local158 & 0x7FF;
+					local30.xan = local30.xan + local158 & 0x7FF;
 					local56 = local30.anInt1617 << 16 >> 16;
 					local56 *= Static45.anInt1095;
-					local30.anInt1614 = local30.anInt1614 + local56 & 0x7FF;
+					local30.yan = local30.yan + local56 & 0x7FF;
 				}
 			}
 		}

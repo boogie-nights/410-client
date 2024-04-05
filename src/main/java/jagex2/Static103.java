@@ -226,7 +226,7 @@ public final class Static103 {
 				Static94.anInt2194 = 30;
 			}
 		} else if (Static43.anInt1850 == 45) {
-			Static87.method1400(Static99.aClass7_2, !Static1.aBoolean2);
+			Static87.method1400(Static99.aClass7_2, !Static1.lowMemory);
 			Static88.aClass2_Sub10_Sub2_1 = Static37.method717(Static99.aClass7_2, Static7.method185());
 			Static11.aClass56_1 = new Class56(22050, Static12.anInt291);
 			Static94.anInt2194 = 35;
@@ -280,7 +280,7 @@ public final class Static103 {
 				Static99.method75(Static5.aClass5_Sub1_1);
 				Static5.method117(Static5.aClass5_Sub1_1);
 				Static32.method591(Static25.aClass5_Sub1_4, Static5.aClass5_Sub1_1);
-				Static95.method1518(Static1.aBoolean2, Static25.aClass5_Sub1_4, Static5.aClass5_Sub1_1);
+				Static95.method1518(Static1.lowMemory, Static25.aClass5_Sub1_4, Static5.aClass5_Sub1_1);
 				method1651(Static5.aClass5_Sub1_1, Static25.aClass5_Sub1_4);
 				Static106.method1741(Static25.aClass5_Sub1_4, Static5.aClass5_Sub1_1, Static18.aBoolean37);
 				Static96.method1551(Static87.aClass5_Sub1_18, Static43.aClass5_Sub1_14, Static5.aClass5_Sub1_1);
@@ -397,7 +397,7 @@ public final class Static103 {
 			}
 		} else if (Static43.anInt1850 == 90) {
 			if (Static35.aClass5_Sub1_6.method78()) {
-				@Pc(1269) Class19 local1269 = new Class19(Static35.aClass5_Sub1_6, Static82.aClass5_Sub1_16, 20, 0.8D, Static1.aBoolean2 ? 64 : 128);
+				@Pc(1269) Class19 local1269 = new Class19(Static35.aClass5_Sub1_6, Static82.aClass5_Sub1_16, 20, 0.8D, Static1.lowMemory ? 64 : 128);
 				Static6.method173(local1269);
 				Static6.method168(0.8D);
 				Static94.anInt2194 = 90;
@@ -443,9 +443,9 @@ public final class Static103 {
 		if (!Static107.method1665(arg0)) {
 			return;
 		}
-		@Pc(26) Class2_Sub2_Sub13[] local26 = Static51.aClass2_Sub2_Sub13ArrayArray1[arg0];
+		@Pc(26) ComType[] local26 = Static51.aClass2_Sub2_Sub13ArrayArray1[arg0];
 		for (@Pc(28) int local28 = 0; local28 < local26.length; local28++) {
-			@Pc(34) Class2_Sub2_Sub13 local34 = local26[local28];
+			@Pc(34) ComType local34 = local26[local28];
 			if (local34 != null) {
 				local34.anInt1593 = 0;
 				local34.anInt1569 = 0;

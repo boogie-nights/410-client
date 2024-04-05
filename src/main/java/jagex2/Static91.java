@@ -107,9 +107,9 @@ public final class Static91 {
 			arg0.anInt2284 = arg0.anIntArray496[0] * 128 + arg0.anInt2278 * 64;
 			arg0.method1543();
 		}
-		if (Static107.anInt2511 < arg0.anInt2277) {
+		if (Static107.loopCycle < arg0.anInt2277) {
 			Static3.method25(arg0);
-		} else if (arg0.anInt2297 >= Static107.anInt2511) {
+		} else if (arg0.anInt2297 >= Static107.loopCycle) {
 			Static1.method4(arg0);
 		} else {
 			Static43.method1240(arg0);
@@ -159,7 +159,7 @@ public final class Static91 {
 		Static82.aClass5_26 = arg2;
 		Static54.aClass5_17 = arg1;
 		Static59.aClass5_20 = arg0;
-		Static51.aClass2_Sub2_Sub13ArrayArray1 = new Class2_Sub2_Sub13[Static54.aClass5_17.method71()][];
+		Static51.aClass2_Sub2_Sub13ArrayArray1 = new ComType[Static54.aClass5_17.method71()][];
 		Static92.aBooleanArray31 = new boolean[Static54.aClass5_17.method71()];
 	}
 }

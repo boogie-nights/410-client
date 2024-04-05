@@ -97,7 +97,7 @@ public final class Static48 {
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(IILclient!gb;II)V")
 	public static void method822(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub2_Sub7 arg2, @OriginalArg(4) int arg3) {
-		if (Static34.anInt797 >= 400) {
+		if (Static34.menuSize >= 400) {
 			return;
 		}
 		if (arg2.anIntArray154 != null) {
@@ -110,9 +110,9 @@ public final class Static48 {
 		if (arg2.anInt766 != 0) {
 			local30 = Static80.method1334(new Class40[] { local30, Static15.method1260(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt1378, arg2.anInt766), Static31.aClass40_731, Static53.method859(arg2.anInt766), Static90.aClass40_609 });
 		}
-		if (Static79.anInt1874 == 1) {
+		if (Static79.objSelected == 1) {
 			Static21.method402(Static80.method1334(new Class40[] { Static27.aClass40_193, Static87.aClass40_601, Static76.aClass40_613, local30 }), 7, arg3, arg1, arg0);
-		} else if (Static24.anInt641 != 1) {
+		} else if (Static24.spellSelected != 1) {
 			@Pc(80) Class40[] local80 = arg2.aClass40Array14;
 			if (Static36.aBoolean60) {
 				local80 = Static87.method1404(local80);

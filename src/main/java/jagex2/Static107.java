@@ -46,7 +46,7 @@ public final class Static107 {
 	public static int anInt2505 = 0;
 
 	@OriginalMember(owner = "client!wd", name = "w", descriptor = "I")
-	public static int anInt2511 = 0;
+	public static int loopCycle = 0;
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(I)V")
 	public static void method1653() {
@@ -61,18 +61,18 @@ public final class Static107 {
 	}
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(IIIZ)I")
-	public static int method1655(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(7) int local7 = arg1 / arg0;
-		@Pc(13) int local13 = arg0 - 1 & arg1;
-		@Pc(17) int local17 = arg2 / arg0;
-		@Pc(23) int local23 = arg2 & arg0 - 1;
+	public static int perlin(@OriginalArg(0) int scale, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		@Pc(7) int local7 = arg1 / scale;
+		@Pc(13) int local13 = scale - 1 & arg1;
+		@Pc(17) int local17 = arg2 / scale;
+		@Pc(23) int local23 = arg2 & scale - 1;
 		@Pc(33) int local33 = Static20.method387(local7, local17);
 		@Pc(40) int local40 = Static20.method387(local7 + 1, local17);
 		@Pc(51) int local51 = Static20.method387(local7, local17 + 1);
 		@Pc(60) int local60 = Static20.method387(local7 + 1, local17 + 1);
-		@Pc(67) int local67 = Static80.method1326(local13, local33, arg0, local40);
-		@Pc(74) int local74 = Static80.method1326(local13, local51, arg0, local60);
-		return Static80.method1326(local23, local67, arg0, local74);
+		@Pc(67) int local67 = Static80.interpolate(local13, local33, scale, local40);
+		@Pc(74) int local74 = Static80.interpolate(local13, local51, scale, local60);
+		return Static80.interpolate(local23, local67, scale, local74);
 	}
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(BLclient!pc;)V")
@@ -101,7 +101,7 @@ public final class Static107 {
 	}
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(IILclient!mc;)I")
-	public static int method1660(@OriginalArg(0) int arg0, @OriginalArg(2) Class2_Sub2_Sub13 arg1) {
+	public static int method1660(@OriginalArg(0) int arg0, @OriginalArg(2) ComType arg1) {
 		if (arg1.anIntArrayArray11 == null || arg0 >= arg1.anIntArrayArray11.length) {
 			return -2;
 		}
@@ -136,7 +136,7 @@ public final class Static107 {
 					local33 = Static48.anIntArray234[local22[local17++]];
 				}
 				@Pc(103) int local103;
-				@Pc(116) Class2_Sub2_Sub13 local116;
+				@Pc(116) ComType local116;
 				@Pc(121) int local121;
 				@Pc(133) int local133;
 				if (local31 == 4) {
@@ -327,13 +327,13 @@ public final class Static107 {
 				return true;
 			}
 			if (Static51.aClass2_Sub2_Sub13ArrayArray1[arg0] == null) {
-				Static51.aClass2_Sub2_Sub13ArrayArray1[arg0] = new Class2_Sub2_Sub13[local25];
+				Static51.aClass2_Sub2_Sub13ArrayArray1[arg0] = new ComType[local25];
 			}
 			for (@Pc(47) int local47 = 0; local47 < local25; local47++) {
 				if (Static51.aClass2_Sub2_Sub13ArrayArray1[arg0][local47] == null) {
 					@Pc(61) byte[] local61 = Static54.aClass5_17.method68(local47, arg0);
 					if (local61 != null) {
-						Static51.aClass2_Sub2_Sub13ArrayArray1[arg0][local47] = new Class2_Sub2_Sub13();
+						Static51.aClass2_Sub2_Sub13ArrayArray1[arg0][local47] = new ComType();
 						Static51.aClass2_Sub2_Sub13ArrayArray1[arg0][local47].method1053(new Packet(local61));
 					}
 				}

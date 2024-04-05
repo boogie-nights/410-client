@@ -210,7 +210,7 @@ public final class Static86 {
 		@Pc(45) int local45 = Static67.anInt1669 + Static84.anInt1978 & 0x7FF;
 		@Pc(49) int local49 = Class2_Sub2_Sub2_Sub1.anIntArray59[local45];
 		@Pc(57) int local57 = (Static15.anInt1857 + 256) * local49 >> 8;
-		@Pc(61) int local61 = Class2_Sub2_Sub2_Sub1.anIntArray58[local45];
+		@Pc(61) int local61 = Class2_Sub2_Sub2_Sub1.cos[local45];
 		@Pc(69) int local69 = local61 * (Static15.anInt1857 + 256) >> 8;
 		@Pc(79) int local79 = local23 * local69 + local17 * local57 >> 11;
 		@Pc(90) int local90 = local69 * local17 - local57 * local23 >> 11;

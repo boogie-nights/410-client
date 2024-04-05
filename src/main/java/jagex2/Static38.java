@@ -76,7 +76,7 @@ public final class Static38 {
 			return false;
 		}
 		for (@Pc(18) int local18 = 0; local18 < Static22.anInt2594; local18++) {
-			if (arg0.method1199(Static51.aClass40Array23[local18])) {
+			if (arg0.method1199(Static51.friendName[local18])) {
 				return true;
 			}
 		}

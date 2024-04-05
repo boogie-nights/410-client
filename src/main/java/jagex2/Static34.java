@@ -13,7 +13,7 @@ public final class Static34 {
 	public static Class5 aClass5_11;
 
 	@OriginalMember(owner = "client!gd", name = "r", descriptor = "I")
-	public static int anInt797 = 0;
+	public static int menuSize = 0;
 
 	@OriginalMember(owner = "client!gd", name = "s", descriptor = "I")
 	public static int anInt798 = 1;

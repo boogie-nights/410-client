@@ -181,7 +181,7 @@ public final class Static96 {
 				Static80.out.method1707(local22);
 			}
 		}
-		@Pc(529) Class2_Sub2_Sub13 local529;
+		@Pc(529) ComType local529;
 		if (local12 == 49) {
 			Static80.out.p1isaac(184);
 			Static80.out.p4(local30);
@@ -215,7 +215,7 @@ public final class Static96 {
 					Static74.aBoolean146 = true;
 					Static61.aClass40_447 = Static61.aClass40_445;
 					Static56.aLong136 = Static21.aLongArray2[local598];
-					Static61.aClass40_453 = Static80.method1334(new Class40[] { Static1.aClass40_2, Static51.aClass40Array23[local598] });
+					Static61.aClass40_453 = Static80.method1334(new Class40[] { Static1.aClass40_2, Static51.friendName[local598] });
 				}
 			}
 		}
@@ -242,7 +242,7 @@ public final class Static96 {
 				if (Static22.anInt2585 == -1) {
 					Static60.method998();
 					if (Static34.anInt808 != -1) {
-						Static61.aClass40_448 = local407.method1185(local412 + 5).method1178();
+						Static61.reportAbuseInput = local407.method1185(local412 + 5).method1178();
 						Static75.anInt1826 = Static22.anInt2585 = Static34.anInt808;
 						Static54.aBoolean103 = false;
 					}
@@ -347,7 +347,7 @@ public final class Static96 {
 		if (local12 == 54) {
 			local529 = Static81.method1340(local30);
 			local1208 = true;
-			if (local529.anInt1610 > 0) {
+			if (local529.clientCode > 0) {
 				local1208 = Static36.method639(local529);
 			}
 			if (local1208) {
@@ -379,7 +379,7 @@ public final class Static96 {
 			}
 		}
 		if (local12 == 1) {
-			Static79.anInt1874 = 1;
+			Static79.objSelected = 1;
 			Static30.anInt724 = local26;
 			Static105.anInt2526 = local30;
 			Static99.anInt96 = local22;
@@ -387,7 +387,7 @@ public final class Static96 {
 			if (Static87.aClass40_601 == null) {
 				Static87.aClass40_601 = Static52.aClass40_359;
 			}
-			Static24.anInt641 = 0;
+			Static24.spellSelected = 0;
 			Static33.aBoolean59 = true;
 			return;
 		}
@@ -538,7 +538,7 @@ public final class Static96 {
 		}
 		if (local12 == 1002) {
 			local1556 = Static105.get(local22);
-			@Pc(1908) Class2_Sub2_Sub13 local1908 = Static81.method1340(local30);
+			@Pc(1908) ComType local1908 = Static81.method1340(local30);
 			if (local1908 != null && local1908.anIntArray327[local26] >= 100000) {
 				local70 = Static80.method1334(new Class40[] { Static53.method859(local1908.anIntArray327[local26]), Static70.aClass40_496, local1556.name});
 			} else if (local1556.desc == null) {
@@ -584,13 +584,13 @@ public final class Static96 {
 		}
 		@Pc(2157) Class40 local2157;
 		if (local12 == 21) {
-			@Pc(2125) Class2_Sub2_Sub13 local2125 = Static81.method1340(local30);
-			Static79.anInt1874 = 0;
+			@Pc(2125) ComType local2125 = Static81.method1340(local30);
+			Static79.objSelected = 0;
 			local70 = local2125.aClass40_471;
 			Static33.aBoolean59 = true;
 			Static85.anInt1992 = local30;
 			Static86.anInt2027 = local2125.anInt1599;
-			Static24.anInt641 = 1;
+			Static24.spellSelected = 1;
 			if (local70.method1200(Static107.aClass40_716) != -1) {
 				local70 = local70.method1180(local70.method1200(Static107.aClass40_716), 0);
 			}
@@ -822,13 +822,13 @@ public final class Static96 {
 				Static80.out.ip2(local22);
 			}
 		}
-		if (Static79.anInt1874 != 0) {
+		if (Static79.objSelected != 0) {
 			Static33.aBoolean59 = true;
-			Static79.anInt1874 = 0;
+			Static79.objSelected = 0;
 		}
-		if (Static24.anInt641 != 0) {
+		if (Static24.spellSelected != 0) {
 			Static33.aBoolean59 = true;
-			Static24.anInt641 = 0;
+			Static24.spellSelected = 0;
 		}
 	}
 
@@ -918,7 +918,7 @@ public final class Static96 {
 				arg0.anInt2295 = 0;
 			}
 		}
-		if (arg0.anInt2302 != -1 && arg0.anInt2320 <= Static107.anInt2511) {
+		if (arg0.anInt2302 != -1 && arg0.anInt2320 <= Static107.loopCycle) {
 			if (arg0.anInt2291 < 0) {
 				arg0.anInt2291 = 0;
 			}
@@ -939,7 +939,7 @@ public final class Static96 {
 		}
 		if (arg0.anInt2307 != -1 && arg0.anInt2313 <= 1) {
 			local15 = Static62.method1042(arg0.anInt2307);
-			if (local15.anInt663 == 1 && arg0.anInt2281 > 0 && arg0.anInt2277 <= Static107.anInt2511 && arg0.anInt2297 < Static107.anInt2511) {
+			if (local15.anInt663 == 1 && arg0.anInt2281 > 0 && arg0.anInt2277 <= Static107.loopCycle && arg0.anInt2297 < Static107.loopCycle) {
 				arg0.anInt2313 = 1;
 				return;
 			}

@@ -40,7 +40,7 @@ public final class Static24 {
 	public static Class40 aClass40_183 = Static13.method257("You have @gre@");
 
 	@OriginalMember(owner = "client!ee", name = "ob", descriptor = "I")
-	public static int anInt641 = 0;
+	public static int spellSelected = 0;
 
 	@OriginalMember(owner = "client!ee", name = "a", descriptor = "(ZLclient!qb;)V")
 	public static void method502(@OriginalArg(1) Class2_Sub2_Sub2_Sub3 arg0) {
@@ -102,16 +102,16 @@ public final class Static24 {
 				}
 			}
 		}
-		Static55.anInt1430 += (int) (Math.random() * 5.0D) - 2;
-		if (Static55.anInt1430 < -16) {
-			Static55.anInt1430 = -16;
+		Static55.randomLightnessOffset += (int) (Math.random() * 5.0D) - 2;
+		if (Static55.randomLightnessOffset < -16) {
+			Static55.randomLightnessOffset = -16;
 		}
 		Static82.anInt1942 += (int) (Math.random() * 5.0D) - 2;
 		if (Static82.anInt1942 < -8) {
 			Static82.anInt1942 = -8;
 		}
-		if (Static55.anInt1430 > 16) {
-			Static55.anInt1430 = 16;
+		if (Static55.randomLightnessOffset > 16) {
+			Static55.randomLightnessOffset = 16;
 		}
 		if (Static82.anInt1942 > 8) {
 			Static82.anInt1942 = 8;
@@ -207,7 +207,7 @@ public final class Static24 {
 							local210 -= Static25.anIntArray126[local551];
 							local200 -= Static85.anIntArray434[local551];
 						}
-						if (local283 >= 1 && local283 < 103 && (!Static1.aBoolean2 || (Static61.aByteArrayArrayArray7[0][local166][local283] & 0x2) != 0 || (Static61.aByteArrayArrayArray7[local15][local166][local283] & 0x10) == 0 && Static48.method821(local283, local166, local15) == Static33.anInt786)) {
+						if (local283 >= 1 && local283 < 103 && (!Static1.lowMemory || (Static61.aByteArrayArrayArray7[0][local166][local283] & 0x2) != 0 || (Static61.aByteArrayArrayArray7[local15][local166][local283] & 0x10) == 0 && Static48.method821(local283, local166, local15) == Static33.anInt786)) {
 							if (Static34.anInt807 > local15) {
 								Static34.anInt807 = local15;
 							}
@@ -231,7 +231,7 @@ public final class Static24 {
 									local762 = local210 / local233;
 									@Pc(766) int local766 = local204 / local233;
 									local727 = Static12.method251(local766, local762, local758);
-									local766 += Static55.anInt1430;
+									local766 += Static55.randomLightnessOffset;
 									@Pc(782) int local782 = Static82.anInt1942 + local758 & 0xFF;
 									if (local766 < 0) {
 										local766 = 0;
@@ -277,7 +277,7 @@ public final class Static24 {
 									} else {
 										local911 = Static12.method251(local904.anInt594, local904.anInt585, local904.anInt588);
 										local938 = Static82.anInt1942 + local904.anInt588 & 0xFF;
-										local943 = local904.anInt594 + Static55.anInt1430;
+										local943 = local904.anInt594 + Static55.randomLightnessOffset;
 										if (local943 < 0) {
 											local943 = 0;
 										} else if (local943 > 255) {
@@ -291,7 +291,7 @@ public final class Static24 {
 									}
 									if (local904.anInt593 != -1) {
 										local943 = local904.anInt586 + Static82.anInt1942 & 0xFF;
-										@Pc(1001) int local1001 = local904.anInt578 + Static55.anInt1430;
+										@Pc(1001) int local1001 = local904.anInt578 + Static55.randomLightnessOffset;
 										if (local1001 < 0) {
 											local1001 = 0;
 										} else if (local1001 > 255) {

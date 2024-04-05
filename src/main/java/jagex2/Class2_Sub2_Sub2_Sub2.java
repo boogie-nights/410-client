@@ -10,19 +10,19 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 
 	@OriginalMember(owner = "client!fc", name = "nb", descriptor = "I")
-	public int anInt715 = 0;
+	public int height = 0;
 
 	@OriginalMember(owner = "client!fc", name = "mb", descriptor = "[[B")
-	private byte[][] aByteArrayArray7 = new byte[256][];
+	private byte[][] charOffsetX = new byte[256][];
 
 	@OriginalMember(owner = "client!fc", name = "ib", descriptor = "Ljava/util/Random;")
-	private final Random aRandom1 = new Random();
+	private final Random random = new Random();
 
 	@OriginalMember(owner = "client!fc", name = "tb", descriptor = "Z")
 	private boolean aBoolean53 = false;
 
 	@OriginalMember(owner = "client!fc", name = "Y", descriptor = "[I")
-	private final int[] anIntArray139;
+	private final int[] charOffsetY;
 
 	@OriginalMember(owner = "client!fc", name = "sb", descriptor = "[I")
 	private final int[] anIntArray141;
@@ -32,7 +32,7 @@ public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 
 	@OriginalMember(owner = "client!fc", name = "<init>", descriptor = "([I[I[I[I[[B)V")
 	public Class2_Sub2_Sub2_Sub2(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) byte[][] arg4) {
-		this.anIntArray139 = arg0;
+		this.charOffsetY = arg0;
 		this.anIntArray141 = arg1;
 		this.anIntArray140 = arg2;
 		@Pc(27) byte local27 = 0;
@@ -41,15 +41,15 @@ public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 				local27 = (byte) local29;
 			}
 		}
-		this.aByteArrayArray7 = arg4;
+		this.charOffsetX = arg4;
 		for (@Pc(48) int local48 = 0; local48 < 256; local48++) {
-			@Pc(54) byte[] local54 = this.aByteArrayArray7[local48];
+			@Pc(54) byte[] local54 = this.charOffsetX[local48];
 			@Pc(57) int local57 = local54.length;
 			for (@Pc(59) int local59 = 0; local59 < local57; local59++) {
 				local54[local59] = (byte) (local54[local59] == local27 ? 0 : 1);
 			}
 		}
-		this.anInt715 = this.anIntArray139[32] + this.anIntArray140[32];
+		this.height = this.charOffsetY[32] + this.anIntArray140[32];
 	}
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "(Lclient!o;IIII)V")
@@ -58,11 +58,11 @@ public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 			return;
 		}
 		arg1 -= this.method568(arg0) / 2;
-		@Pc(15) int local15 = arg2 - this.anInt715;
+		@Pc(15) int local15 = arg2 - this.height;
 		for (@Pc(17) int local17 = 0; local17 < arg0.anInt1783; local17++) {
 			@Pc(25) int local25 = arg0.aByteArray14[local17] & 0xFF;
 			if (local25 != 32) {
-				this.method569(this.aByteArrayArray7[local25], arg1, local15 + this.anIntArray139[local25] + (int) (Math.sin((double) local17 / 2.0D + (double) arg4 / 5.0D) * 5.0D), this.anIntArray141[local25], this.anIntArray140[local25], arg3);
+				this.method569(this.charOffsetX[local25], arg1, local15 + this.charOffsetY[local25] + (int) (Math.sin((double) local17 / 2.0D + (double) arg4 / 5.0D) * 5.0D), this.anIntArray141[local25], this.anIntArray140[local25], arg3);
 			}
 			arg1 += this.anIntArray141[local25];
 		}
@@ -185,11 +185,11 @@ public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 			return;
 		}
 		arg1 -= this.method568(arg0) / 2;
-		@Pc(15) int local15 = arg2 - this.anInt715;
+		@Pc(15) int local15 = arg2 - this.height;
 		for (@Pc(17) int local17 = 0; local17 < arg0.method1169(); local17++) {
 			@Pc(25) int local25 = arg0.aByteArray14[local17] & 0xFF;
 			if (local25 != 32) {
-				this.method569(this.aByteArrayArray7[local25], arg1 + (int) (Math.sin((double) local17 / 5.0D + (double) arg4 / 5.0D) * 5.0D), local15 + this.anIntArray139[local25] + (int) (Math.sin((double) local17 / 3.0D + (double) arg4 / 5.0D) * 5.0D), this.anIntArray141[local25], this.anIntArray140[local25], arg3);
+				this.method569(this.charOffsetX[local25], arg1 + (int) (Math.sin((double) local17 / 5.0D + (double) arg4 / 5.0D) * 5.0D), local15 + this.charOffsetY[local25] + (int) (Math.sin((double) local17 / 3.0D + (double) arg4 / 5.0D) * 5.0D), this.anIntArray141[local25], this.anIntArray140[local25], arg3);
 			}
 			arg1 += this.anIntArray141[local25];
 		}
@@ -244,7 +244,7 @@ public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 		if (arg0 == null) {
 			return;
 		}
-		@Pc(12) int local12 = arg2 - this.anInt715;
+		@Pc(12) int local12 = arg2 - this.height;
 		for (@Pc(14) int local14 = 0; local14 < arg0.anInt1783; local14++) {
 			@Pc(47) int local47;
 			if (arg0.aByteArray14[local14] == 64 && local14 + 4 < arg0.anInt1783 && arg0.aByteArray14[local14 + 4] == 64) {
@@ -257,15 +257,15 @@ public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 				local47 = arg0.aByteArray14[local14] & 0xFF;
 				if (local47 != 32) {
 					if (arg4) {
-						this.method569(this.aByteArrayArray7[local47], arg1 + 1, local12 + this.anIntArray139[local47] + 1, this.anIntArray141[local47], this.anIntArray140[local47], 0);
+						this.method569(this.charOffsetX[local47], arg1 + 1, local12 + this.charOffsetY[local47] + 1, this.anIntArray141[local47], this.anIntArray140[local47], 0);
 					}
-					this.method569(this.aByteArrayArray7[local47], arg1, local12 + this.anIntArray139[local47], this.anIntArray141[local47], this.anIntArray140[local47], arg3);
+					this.method569(this.charOffsetX[local47], arg1, local12 + this.charOffsetY[local47], this.anIntArray141[local47], this.anIntArray140[local47], arg3);
 				}
 				arg1 += this.anIntArray141[local47];
 			}
 		}
 		if (this.aBoolean53) {
-			Static26.method1603(local4, local12 + (int) ((double) this.anInt715 * 0.7D), arg1 - local4, 8388608);
+			Static26.method1603(local4, local12 + (int) ((double) this.height * 0.7D), arg1 - local4, 8388608);
 		}
 	}
 
@@ -274,11 +274,11 @@ public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 		if (arg0 == null) {
 			return;
 		}
-		@Pc(7) int local7 = arg2 - this.anInt715;
+		@Pc(7) int local7 = arg2 - this.height;
 		for (@Pc(9) int local9 = 0; local9 < arg0.anInt1783; local9++) {
 			@Pc(17) int local17 = arg0.aByteArray14[local9] & 0xFF;
 			if (local17 != 32) {
-				this.method569(this.aByteArrayArray7[local17], arg1, local7 + this.anIntArray139[local17], this.anIntArray141[local17], this.anIntArray140[local17], arg3);
+				this.method569(this.charOffsetX[local17], arg1, local7 + this.charOffsetY[local17], this.anIntArray141[local17], this.anIntArray140[local17], arg3);
 			}
 			arg1 += this.anIntArray141[local17];
 		}
@@ -310,11 +310,11 @@ public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 			local9 = 0.0D;
 		}
 		arg1 -= this.method568(arg0) / 2;
-		@Pc(28) int local28 = arg2 - this.anInt715;
+		@Pc(28) int local28 = arg2 - this.height;
 		for (@Pc(30) int local30 = 0; local30 < arg0.method1169(); local30++) {
 			@Pc(38) int local38 = arg0.aByteArray14[local30] & 0xFF;
 			if (local38 != 32) {
-				this.method569(this.aByteArrayArray7[local38], arg1, local28 + this.anIntArray139[local38] + (int) (Math.sin((double) local30 / 1.5D + (double) arg4) * local9), this.anIntArray141[local38], this.anIntArray140[local38], arg3);
+				this.method569(this.charOffsetX[local38], arg1, local28 + this.charOffsetY[local38] + (int) (Math.sin((double) local30 / 1.5D + (double) arg4) * local9), this.anIntArray141[local38], this.anIntArray140[local38], arg3);
 			}
 			arg1 += this.anIntArray141[local38];
 		}
@@ -370,30 +370,30 @@ public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "(Lclient!o;IIIZI)V")
-	public void method580(@OriginalArg(0) Class40 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(5) int arg3) {
-		if (arg0 == null) {
+	public void drawStringTooltip(@OriginalArg(0) Class40 str, @OriginalArg(1) int x, @OriginalArg(3) int arg2, @OriginalArg(5) int seed) {
+		if (str == null) {
 			return;
 		}
-		this.aRandom1.setSeed((long) arg3);
-		@Pc(15) int local15 = (this.aRandom1.nextInt() & 0x1F) + 192;
-		@Pc(20) int local20 = 15 - this.anInt715;
-		for (@Pc(22) int local22 = 0; local22 < arg0.anInt1783; local22++) {
+		this.random.setSeed((long) seed);
+		@Pc(15) int rand = (this.random.nextInt() & 0x1F) + 192;
+		@Pc(20) int offY = 15 - this.height;
+		for (@Pc(22) int i = 0; i < str.anInt1783; i++) {
 			@Pc(55) int local55;
-			if (arg0.aByteArray14[local22] == 64 && local22 + 4 < arg0.anInt1783 && arg0.aByteArray14[local22 + 4] == 64) {
-				local55 = this.method579(arg0.method1180(local22 + 4, local22 + 1));
+			if (str.aByteArray14[i] == 64 && i + 4 < str.anInt1783 && str.aByteArray14[i + 4] == 64) {
+				local55 = this.method579(str.method1180(i + 4, i + 1));
 				if (local55 != -1) {
 					arg2 = local55;
 				}
-				local22 += 4;
+				i += 4;
 			} else {
-				local55 = arg0.aByteArray14[local22] & 0xFF;
+				local55 = str.aByteArray14[i] & 0xFF;
 				if (local55 != 32) {
-					this.method573(this.aByteArrayArray7[local55], arg1 + 1, local20 + this.anIntArray139[local55] + 1, this.anIntArray141[local55], this.anIntArray140[local55], 0, 192);
-					this.method573(this.aByteArrayArray7[local55], arg1, local20 + this.anIntArray139[local55], this.anIntArray141[local55], this.anIntArray140[local55], arg2, local15);
+					this.method573(this.charOffsetX[local55], x + 1, offY + this.charOffsetY[local55] + 1, this.anIntArray141[local55], this.anIntArray140[local55], 0, 192);
+					this.method573(this.charOffsetX[local55], x, offY + this.charOffsetY[local55], this.anIntArray141[local55], this.anIntArray140[local55], arg2, rand);
 				}
-				arg1 += this.anIntArray141[local55];
-				if ((this.aRandom1.nextInt() & 0x3) == 0) {
-					arg1++;
+				x += this.anIntArray141[local55];
+				if ((this.random.nextInt() & 0x3) == 0) {
+					x++;
 				}
 			}
 		}

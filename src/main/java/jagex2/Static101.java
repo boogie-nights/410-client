@@ -94,9 +94,9 @@ public final class Static101 {
 					arg2.method578(Static86.aClass40_589, 180, 60, 16776960, true);
 					local130 = local106 + 30;
 				}
-				arg2.method574(Static80.method1334(new Class40[] { Static67.aClass40_482, Static86.aClass40_591, Static107.anInt2511 % 40 < 20 & Static99.anInt91 == 0 ? Static45.aClass40_339 : Static86.aClass40_593 }), 90, 90, 16777215, true);
+				arg2.method574(Static80.method1334(new Class40[] { Static67.aClass40_482, Static86.aClass40_591, Static107.loopCycle % 40 < 20 & Static99.anInt91 == 0 ? Static45.aClass40_339 : Static86.aClass40_593 }), 90, 90, 16777215, true);
 				local130 += 15;
-				arg2.method574(Static80.method1334(new Class40[] { Static17.aClass40_118, Static86.aClass40_587.method1177(), Static99.anInt91 == 1 & Static107.anInt2511 % 40 < 20 ? Static45.aClass40_339 : Static86.aClass40_593 }), 92, 105, 16777215, true);
+				arg2.method574(Static80.method1334(new Class40[] { Static17.aClass40_118, Static86.aClass40_587.method1177(), Static99.anInt91 == 1 & Static107.loopCycle % 40 < 20 ? Static45.aClass40_339 : Static86.aClass40_593 }), 92, 105, 16777215, true);
 				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(27, 130);
 				arg2.method578(Static15.aClass40_536, 100, 155, 16777215, true);
 				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(187, 130);

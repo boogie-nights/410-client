@@ -58,7 +58,7 @@ public final class Static102 {
 
 	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(ILclient!kc;III)V")
 	public static void method1638(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub2_Sub12_Sub1_Sub1 arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
-		if (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1 == arg1 || Static34.anInt797 >= 400) {
+		if (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1 == arg1 || Static34.menuSize >= 400) {
 			return;
 		}
 		@Pc(44) Class40 local44;
@@ -68,9 +68,9 @@ public final class Static102 {
 			local44 = Static80.method1334(new Class40[] { arg1.aClass40_395, Static80.aClass40_556, Static53.method859(arg1.anInt1373), Static90.aClass40_609 });
 		}
 		@Pc(122) int local122;
-		if (Static79.anInt1874 == 1) {
+		if (Static79.objSelected == 1) {
 			Static21.method402(Static80.method1334(new Class40[] { Static27.aClass40_193, Static87.aClass40_601, Static56.aClass40_657, local44 }), 25, arg0, arg2, arg3);
-		} else if (Static24.anInt641 != 1) {
+		} else if (Static24.spellSelected != 1) {
 			for (local122 = 4; local122 >= 0; local122--) {
 				if (Static13.aClass40Array6[local122] != null) {
 					@Pc(134) short local134 = 0;
@@ -110,7 +110,7 @@ public final class Static102 {
 		} else if ((Static86.anInt2027 & 0x8) == 8) {
 			Static21.method402(Static80.method1334(new Class40[] { Static83.aClass40_567, Static4.aClass40_30, local44 }), 36, arg0, arg2, arg3);
 		}
-		for (local122 = 0; local122 < Static34.anInt797; local122++) {
+		for (local122 = 0; local122 < Static34.menuSize; local122++) {
 			if (Static54.anIntArray287[local122] == 24) {
 				Static18.aClass40Array8[local122] = Static80.method1334(new Class40[] { Static74.aClass40_526, local44 });
 				return;

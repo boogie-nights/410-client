@@ -104,7 +104,7 @@ public final class Static105 {
 		Static97.anInt2352 = -1;
 		Static84.anInt1973 = 0;
 		Static67.anInt1672 = 0;
-		Static34.anInt797 = 0;
+		Static34.menuSize = 0;
 		Static33.anInt788 = -1;
 		Static91.anInt2139 = 0;
 		Static37.method722(0);
@@ -120,10 +120,10 @@ public final class Static105 {
 		Static10.anInt262 = (int) (Math.random() * 80.0D) - 40;
 		Static67.anInt1669 = (int) (Math.random() * 20.0D) - 10 & 0x7FF;
 		Static15.anInt1857 = (int) (Math.random() * 30.0D) - 20;
-		Static79.anInt1874 = 0;
+		Static79.objSelected = 0;
 		Static4.anInt131 = 0;
 		Static88.anInt2067 = 0;
-		Static24.anInt641 = 0;
+		Static24.spellSelected = 0;
 		Static98.anInt2371 = (int) (Math.random() * 110.0D) - 55;
 		Static84.anInt1978 = (int) (Math.random() * 120.0D) - 60;
 		for (@Pc(1726) int local1726 = 0; local1726 < 2048; local1726++) {

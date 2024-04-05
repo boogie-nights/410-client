@@ -132,7 +132,7 @@ public final class Static94 {
 			}
 			Static92.aBoolean165 = true;
 			Static22.aBoolean184 = false;
-			Static93.method1487(Static62.anInt1551, Static2.anIntArray2, Static107.anInt2511 % 20 < 10 ? -1 : Static103.anInt2492, Static66.anInt1654 == -1, Static24.aGraphics1);
+			Static93.method1487(Static62.anInt1551, Static2.anIntArray2, Static107.loopCycle % 20 < 10 ? -1 : Static103.anInt2492, Static66.anInt1654 == -1, Static24.aGraphics1);
 		}
 		if (Static52.redrawPrivacySettings) {
 			Static92.aBoolean165 = true;
@@ -185,7 +185,7 @@ public final class Static94 {
 			Static23.method480();
 		} else {
 			Static20.method389();
-			Static5.method115();
+			Static5.drawTooltip();
 		}
 		Static29.aClass45_14.method1474(Static24.aGraphics1, 0, 0);
 	}
@@ -218,7 +218,7 @@ public final class Static94 {
 		@Pc(28) int local28;
 		for (@Pc(22) int local22 = 0; local22 < Static13.anInt304; local22++) {
 			local28 = Static52.anIntArray258[local22];
-			if (Static107.anInt2511 != Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28].anInt2274) {
+			if (Static107.loopCycle != Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28].anInt2274) {
 				Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28].aClass2_Sub2_Sub7_1 = null;
 				Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28] = null;
 			}

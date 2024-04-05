@@ -35,7 +35,7 @@ public final class Static31 {
 
 	@OriginalMember(owner = "client!g", name = "a", descriptor = "(Z)V")
 	public static void method1676() {
-		Static1.aBoolean2 = true;
+		Static1.lowMemory = true;
 		Static89.aBoolean163 = true;
 	}
 

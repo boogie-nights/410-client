@@ -1,7 +1,5 @@
 package jagex2;
 
-import jagex2.Class2_Sub2_Sub10;
-import jagex2.Class2_Sub2_Sub6;
 import jagex2.graphics.Class2_Sub2_Sub12;
 import jagex2.graphics.Model;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -54,7 +52,7 @@ public final class Class2_Sub2_Sub12_Sub5 extends Class2_Sub2_Sub12 {
 		if (arg7 != -1) {
 			this.aClass2_Sub2_Sub6_2 = Static62.method1042(arg7);
 			this.anInt2023 = 0;
-			this.anInt2026 = Static107.anInt2511 - 1;
+			this.anInt2026 = Static107.loopCycle - 1;
 			if (arg8 && this.aClass2_Sub2_Sub6_2.anInt669 != -1) {
 				this.anInt2023 = (int) ((double) this.aClass2_Sub2_Sub6_2.anIntArray124.length * Math.random());
 				this.anInt2026 -= (int) ((double) this.aClass2_Sub2_Sub6_2.anIntArray128[this.anInt2023] * Math.random());
@@ -67,7 +65,7 @@ public final class Class2_Sub2_Sub12_Sub5 extends Class2_Sub2_Sub12 {
 	@Override
 	protected Model method1533() {
 		if (this.aClass2_Sub2_Sub6_2 != null) {
-			@Pc(13) int local13 = Static107.anInt2511 - this.anInt2026;
+			@Pc(13) int local13 = Static107.loopCycle - this.anInt2026;
 			if (local13 > 100 && this.aClass2_Sub2_Sub6_2.anInt669 > 0) {
 				local13 = 100;
 			}
@@ -84,7 +82,7 @@ public final class Class2_Sub2_Sub12_Sub5 extends Class2_Sub2_Sub12 {
 				} while (this.anInt2023 >= 0 && this.aClass2_Sub2_Sub6_2.anIntArray124.length > this.anInt2023);
 				this.aClass2_Sub2_Sub6_2 = null;
 			}
-			this.anInt2026 = Static107.anInt2511 - local13;
+			this.anInt2026 = Static107.loopCycle - local13;
 		}
 		@Pc(104) Class2_Sub2_Sub10 local104 = Static91.method1470(this.anInt2034);
 		if (local104.anIntArray210 != null) {

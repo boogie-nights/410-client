@@ -173,10 +173,10 @@ public final class Class2_Sub2_Sub12_Sub1_Sub1 extends Class2_Sub2_Sub12_Sub1 {
 			}
 		}
 		if (!this.aBoolean104 && this.aModel_1 != null) {
-			if (this.anInt1381 <= Static107.anInt2511) {
+			if (this.anInt1381 <= Static107.loopCycle) {
 				this.aModel_1 = null;
 			}
-			if (Static107.anInt2511 >= this.anInt1377 && Static107.anInt2511 < this.anInt1381) {
+			if (Static107.loopCycle >= this.anInt1377 && Static107.loopCycle < this.anInt1381) {
 				local91 = this.aModel_1;
 				local111 = new Model[] { local60, local91 };
 				local91.translate(this.anInt1387 - super.anInt2275, -this.anInt1379 + this.anInt1384, this.anInt1375 - super.anInt2284);

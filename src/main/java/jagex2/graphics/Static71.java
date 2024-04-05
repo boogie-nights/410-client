@@ -96,7 +96,7 @@ public final class Static71 {
 	public static int[][] tmpDepthFaces = new int[1500][512];
 
 	@OriginalMember(owner = "client!ne", name = "pc", descriptor = "[I")
-	public static int[] cos = Class2_Sub2_Sub2_Sub1.anIntArray58;
+	public static int[] cos = Class2_Sub2_Sub2_Sub1.cos;
 
 	@OriginalMember(owner = "client!ne", name = "qc", descriptor = "[Z")
 	public static boolean[] faceClippedX = new boolean[4096];

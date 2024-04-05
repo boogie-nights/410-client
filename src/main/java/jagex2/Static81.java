@@ -213,7 +213,7 @@ public final class Static81 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "b", descriptor = "(II)Lclient!mc;")
-	public static Class2_Sub2_Sub13 method1340(@OriginalArg(0) int arg0) {
+	public static ComType method1340(@OriginalArg(0) int arg0) {
 		@Pc(3) int local3 = arg0 >> 16;
 		@Pc(11) int local11 = arg0 & 0xFFFF;
 		if (Static51.aClass2_Sub2_Sub13ArrayArray1[local3] == null || Static51.aClass2_Sub2_Sub13ArrayArray1[local3][local11] == null) {

@@ -81,19 +81,19 @@ public final class Static23 {
 			@Pc(77) int local77 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
 			if (local77 == 0) {
 				Static63.anIntArray326[Static73.anInt1800++] = local68;
-				local72.anInt2274 = Static107.anInt2511;
+				local72.anInt2274 = Static107.loopCycle;
 			} else {
 				@Pc(97) int local97 = Static56.aClass2_Sub3_Sub1_5.method1743(2);
 				if (local97 == 0) {
 					Static63.anIntArray326[Static73.anInt1800++] = local68;
-					local72.anInt2274 = Static107.anInt2511;
+					local72.anInt2274 = Static107.loopCycle;
 					Static98.anIntArray504[Static53.anInt1190++] = local68;
 				} else {
 					@Pc(139) int local139;
 					@Pc(149) int local149;
 					if (local97 == 1) {
 						Static63.anIntArray326[Static73.anInt1800++] = local68;
-						local72.anInt2274 = Static107.anInt2511;
+						local72.anInt2274 = Static107.loopCycle;
 						local139 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
 						local72.method1547(local139, false);
 						local149 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
@@ -102,7 +102,7 @@ public final class Static23 {
 						}
 					} else if (local97 == 2) {
 						Static63.anIntArray326[Static73.anInt1800++] = local68;
-						local72.anInt2274 = Static107.anInt2511;
+						local72.anInt2274 = Static107.loopCycle;
 						local139 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
 						local72.method1547(local139, true);
 						local149 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
@@ -143,8 +143,8 @@ public final class Static23 {
 			local66 -= 357;
 			local64 -= 17;
 		}
-		for (@Pc(84) int local84 = 0; local84 < Static34.anInt797; local84++) {
-			@Pc(99) int local99 = (Static34.anInt797 - local84 - 1) * 15 + local9 + 31;
+		for (@Pc(84) int local84 = 0; local84 < Static34.menuSize; local84++) {
+			@Pc(99) int local99 = (Static34.menuSize - local84 - 1) * 15 + local9 + 31;
 			@Pc(101) int local101 = 16777215;
 			if (local64 > local3 && local64 < local3 + local11 && local66 > local99 - 13 && local99 + 3 > local66) {
 				local101 = 16776960;

@@ -31,7 +31,7 @@ public final class Static61 {
 	public static Class40 aClass40_447 = aClass40_445;
 
 	@OriginalMember(owner = "client!ma", name = "f", descriptor = "Lclient!o;")
-	public static Class40 aClass40_448 = aClass40_445;
+	public static Class40 reportAbuseInput = aClass40_445;
 
 	@OriginalMember(owner = "client!ma", name = "g", descriptor = "Lclient!o;")
 	public static Class40 aClass40_449 = Static13.method257("Use @lre@");
@@ -156,7 +156,7 @@ public final class Static61 {
 		aClass40_445 = null;
 		aByteArrayArrayArray7 = null;
 		aClass40_447 = null;
-		aClass40_448 = null;
+		reportAbuseInput = null;
 		aClass47_14 = null;
 		aClass40_450 = null;
 		aClass45_23 = null;

@@ -49,13 +49,13 @@ public final class Static54 {
 	@OriginalMember(owner = "client!kc", name = "c", descriptor = "(Z)V")
 	public static void method917() {
 		for (@Pc(10) Class2_Sub2_Sub12_Sub2 local10 = (Class2_Sub2_Sub12_Sub2) Static24.aClass44_4.method1224(); local10 != null; local10 = (Class2_Sub2_Sub12_Sub2) Static24.aClass44_4.method1231()) {
-			if (local10.anInt1417 != Static1.anInt8 || local10.anInt1427 < Static107.anInt2511) {
+			if (local10.anInt1417 != Static1.anInt8 || local10.anInt1427 < Static107.loopCycle) {
 				local10.unlink();
-			} else if (Static107.anInt2511 >= local10.anInt1419) {
+			} else if (Static107.loopCycle >= local10.anInt1419) {
 				if (local10.anInt1434 > 0) {
 					@Pc(47) Class2_Sub2_Sub12_Sub1_Sub2 local47 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local10.anInt1434 - 1];
 					if (local47 != null && local47.anInt2275 >= 0 && local47.anInt2275 < 13312 && local47.anInt2284 >= 0 && local47.anInt2284 < 13312) {
-						local10.method939(local47.anInt2275, Static86.method1383(local10.anInt1417, local47.anInt2275, local47.anInt2284) - local10.anInt1416, Static107.anInt2511, local47.anInt2284);
+						local10.method939(local47.anInt2275, Static86.method1383(local10.anInt1417, local47.anInt2275, local47.anInt2284) - local10.anInt1416, Static107.loopCycle, local47.anInt2284);
 					}
 				}
 				if (local10.anInt1434 < 0) {
@@ -67,7 +67,7 @@ public final class Static54 {
 						local104 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local97];
 					}
 					if (local104 != null && local104.anInt2275 >= 0 && local104.anInt2275 < 13312 && local104.anInt2284 >= 0 && local104.anInt2284 < 13312) {
-						local10.method939(local104.anInt2275, Static86.method1383(local10.anInt1417, local104.anInt2275, local104.anInt2284) - local10.anInt1416, Static107.anInt2511, local104.anInt2284);
+						local10.method939(local104.anInt2275, Static86.method1383(local10.anInt1417, local104.anInt2275, local104.anInt2284) - local10.anInt1416, Static107.loopCycle, local104.anInt2284);
 					}
 				}
 				local10.method942(Static45.anInt1095);
@@ -87,7 +87,7 @@ public final class Static54 {
 	}
 
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(ILclient!mc;IIIIIII)V")
-	public static void method920(@OriginalArg(1) Class2_Sub2_Sub13 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
+	public static void method920(@OriginalArg(1) ComType arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
 		if (Static46.aBoolean182) {
 			Static5.anInt180 = 32;
 		} else {

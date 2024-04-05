@@ -136,7 +136,7 @@ public final class Static41 {
 		for (local57 = 0; local57 < 255; local57++) {
 			Static33.anIntArray152[local57] = Static33.anIntArray152[local57 + 1];
 		}
-		Static33.anIntArray152[255] = (int) (Math.sin((double) Static107.anInt2511 / 14.0D) * 16.0D + Math.sin((double) Static107.anInt2511 / 15.0D) * 14.0D + Math.sin((double) Static107.anInt2511 / 16.0D) * 12.0D);
+		Static33.anIntArray152[255] = (int) (Math.sin((double) Static107.loopCycle / 14.0D) * 16.0D + Math.sin((double) Static107.loopCycle / 15.0D) * 14.0D + Math.sin((double) Static107.loopCycle / 16.0D) * 12.0D);
 		if (Static87.anInt2061 > 0) {
 			Static87.anInt2061 -= 4;
 		}

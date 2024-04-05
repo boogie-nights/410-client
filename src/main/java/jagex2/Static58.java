@@ -88,7 +88,7 @@ public final class Static58 {
 			local30 = arg4.g1();
 			if (local30 == 0) {
 				if (arg1 == 0) {
-					Static91.anIntArrayArrayArray8[0][arg6][arg0] = -Static4.method84(arg0 + arg3 + 556238, arg5 + 932731 + arg6) * 8;
+					Static91.anIntArrayArrayArray8[0][arg6][arg0] = -Static4.perlin(arg5 + 932731 + arg6, arg0 + arg3 + 556238) * 8;
 					return;
 				} else {
 					Static91.anIntArrayArrayArray8[arg1][arg6][arg0] = Static91.anIntArrayArrayArray8[arg1 - 1][arg6][arg0] - 240;

@@ -42,7 +42,7 @@ public final class Static25 {
 					}
 					@Pc(34) Class2_Sub2_Sub12_Sub1_Sub2 local34 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local17];
 					Static63.anIntArray326[Static73.anInt1800++] = local17;
-					local34.anInt2274 = Static107.anInt2511;
+					local34.anInt2274 = Static107.loopCycle;
 					@Pc(50) int local50 = Static56.aClass2_Sub3_Sub1_5.method1743(5);
 					if (local50 > 15) {
 						local50 -= 32;

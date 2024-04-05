@@ -47,28 +47,28 @@ public final class Static5 {
 	public static Class47 aClass47_3 = new Class47(64);
 
 	@OriginalMember(owner = "client!ae", name = "lb", descriptor = "[I")
-	public static int[] anIntArray37 = new int[] { 1, 2, 4, 8 };
+	public static int[] ROTATION_WALL_TYPE = new int[] { 1, 2, 4, 8 };
 
 	@OriginalMember(owner = "client!ae", name = "mb", descriptor = "I")
 	public static int anInt182 = 0;
 
 	@OriginalMember(owner = "client!ae", name = "f", descriptor = "(I)V")
-	public static void method115() {
-		if (Static34.anInt797 < 2 && Static79.anInt1874 == 0 && Static24.anInt641 == 0) {
+	public static void drawTooltip() {
+		if (Static34.menuSize < 2 && Static79.objSelected == 0 && Static24.spellSelected == 0) {
 			return;
 		}
-		@Pc(47) Class40 local47;
-		if (Static79.anInt1874 == 1 && Static34.anInt797 < 2) {
-			local47 = Static80.method1334(new Class40[] { Static27.aClass40_193, Static87.aClass40_601, Static44.aClass40_333 });
-		} else if (Static24.anInt641 == 1 && Static34.anInt797 < 2) {
-			local47 = Static80.method1334(new Class40[] { Static83.aClass40_567, Static7.aClass40_61 });
+		@Pc(47) Class40 tooltip;
+		if (Static79.objSelected == 1 && Static34.menuSize < 2) {
+			tooltip = Static80.method1334(new Class40[] { Static27.aClass40_193, Static87.aClass40_601, Static44.aClass40_333 });
+		} else if (Static24.spellSelected == 1 && Static34.menuSize < 2) {
+			tooltip = Static80.method1334(new Class40[] { Static83.aClass40_567, Static7.aClass40_61 });
 		} else {
-			local47 = Static18.aClass40Array8[Static34.anInt797 - 1];
+			tooltip = Static18.aClass40Array8[Static34.menuSize - 1];
 		}
-		if (Static34.anInt797 > 2) {
-			local47 = Static80.method1334(new Class40[] { local47, aClass40_45, Static53.method859(Static34.anInt797 - 2), Static62.aClass40_455 });
+		if (Static34.menuSize > 2) {
+			tooltip = Static80.method1334(new Class40[] { tooltip, aClass40_45, Static53.method859(Static34.menuSize - 2), Static62.aClass40_455 });
 		}
-		Static14.aClass2_Sub2_Sub2_Sub2_1.method580(local47, 4, 16777215, Static107.anInt2511 / 1000);
+		Static14.aClass2_Sub2_Sub2_Sub2_1.drawStringTooltip(tooltip, 4, 16777215, Static107.loopCycle / 1000);
 	}
 
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(BI)Lclient!ee;")
@@ -100,7 +100,7 @@ public final class Static5 {
 		aClass44_1 = null;
 		aClass47_3 = null;
 		aClass5_Sub1_1 = null;
-		anIntArray37 = null;
+		ROTATION_WALL_TYPE = null;
 		aClass40_46 = null;
 		aClass40_44 = null;
 		aClass40_45 = null;

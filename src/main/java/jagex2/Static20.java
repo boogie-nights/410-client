@@ -79,7 +79,7 @@ public final class Static20 {
 	@OriginalMember(owner = "client!e", name = "d", descriptor = "(I)V")
 	private static void method388() {
 		@Pc(3) int local3 = -1;
-		if (Static79.anInt1874 == 0 && Static24.anInt641 == 0) {
+		if (Static79.objSelected == 0 && Static24.spellSelected == 0) {
 			Static21.method402(Static33.aClass40_239, 24, Static100.anInt2394, Static32.anInt742, 0);
 		}
 		for (@Pc(32) int local32 = 0; local32 < Static71.pickedCount; local32++) {
@@ -99,9 +99,9 @@ public final class Static20 {
 					if (local83 == null) {
 						continue;
 					}
-					if (Static79.anInt1874 == 1) {
+					if (Static79.objSelected == 1) {
 						Static21.method402(Static80.method1334(new Class40[] { Static27.aClass40_193, Static87.aClass40_601, Static56.aClass40_659, local83.aClass40_315 }), 9, local48, local42, local38);
-					} else if (Static24.anInt641 != 1) {
+					} else if (Static24.spellSelected != 1) {
 						@Pc(109) Class40[] local109 = local83.aClass40Array20;
 						if (Static36.aBoolean60) {
 							local109 = Static87.method1404(local109);
@@ -178,9 +178,9 @@ public final class Static20 {
 					if (local542 != null) {
 						for (@Pc(549) Class2_Sub2_Sub12_Sub3 local549 = (Class2_Sub2_Sub12_Sub3) local542.method1226(); local549 != null; local549 = (Class2_Sub2_Sub12_Sub3) local542.method1225()) {
 							@Pc(558) ObjType local558 = Static105.get(local549.anInt1490);
-							if (Static79.anInt1874 == 1) {
+							if (Static79.objSelected == 1) {
 								Static21.method402(Static80.method1334(new Class40[] { Static27.aClass40_193, Static87.aClass40_601, Static86.aClass40_590, local558.name}), 11, local48, local42, local549.anInt1490);
-							} else if (Static24.anInt641 != 1) {
+							} else if (Static24.spellSelected != 1) {
 								@Pc(607) Class40[] local607 = local558.ops;
 								if (Static36.aBoolean60) {
 									local607 = Static87.method1404(local607);
@@ -226,7 +226,7 @@ public final class Static20 {
 		}
 		Static18.aClass40Array8[0] = Static52.aClass40_358;
 		Static54.anIntArray287[0] = 1003;
-		Static34.anInt797 = 1;
+		Static34.menuSize = 1;
 		if (Static84.anInt1971 != -1) {
 			Static84.anInt1979 = -1;
 			Static38.anInt982 = -1;
@@ -286,7 +286,7 @@ public final class Static20 {
 		}
 		while (!local175) {
 			local175 = true;
-			for (@Pc(282) int local282 = 0; local282 < Static34.anInt797 - 1; local282++) {
+			for (@Pc(282) int local282 = 0; local282 < Static34.menuSize - 1; local282++) {
 				if (Static54.anIntArray287[local282] < 1000 && Static54.anIntArray287[local282 + 1] > 1000) {
 					@Pc(302) Class40 local302 = Static18.aClass40Array8[local282];
 					local175 = false;

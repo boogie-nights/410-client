@@ -2235,7 +2235,7 @@ public final class Static6 {
 		Class2_Sub2_Sub2_Sub1.anIntArray60 = null;
 		Class2_Sub2_Sub2_Sub1.anIntArray61 = null;
 		Class2_Sub2_Sub2_Sub1.anIntArray59 = null;
-		Class2_Sub2_Sub2_Sub1.anIntArray58 = null;
+		Class2_Sub2_Sub2_Sub1.cos = null;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([IIIIII)V")
