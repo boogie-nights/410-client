@@ -31,7 +31,7 @@ public final class Static55 {
 	public static Class40 aClass40_409 = Static13.method257(")2");
 
 	@OriginalMember(owner = "client!kd", name = "Ob", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_13 = new Class47(64);
+	public static LruCache aClass47_13 = new LruCache(64);
 
 	@OriginalMember(owner = "client!kd", name = "Qb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_410 = Static13.method257("Unable to connect)3");

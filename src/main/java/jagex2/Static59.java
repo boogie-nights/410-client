@@ -126,7 +126,7 @@ public final class Static59 {
 
 	@OriginalMember(owner = "client!lc", name = "b", descriptor = "(B)V")
 	public static void method996() {
-		Static103.aClass47_22.method1330();
+		Static103.aClass47_22.clear();
 	}
 
 	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(Lclient!ud;ILjava/awt/Component;)V")

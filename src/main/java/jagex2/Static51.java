@@ -323,7 +323,7 @@ public final class Static51 {
 			@Pc(332) int local332 = Static56.aClass2_Sub3_Sub1_5.pos;
 			if (arg1.aClass40_395 != null && arg1.aClass33_2 != null) {
 				@Pc(340) boolean local340 = false;
-				@Pc(345) long local345 = arg1.aClass40_395.method1179();
+				@Pc(345) long local345 = arg1.aClass40_395.toBase37();
 				if (local124 <= 1) {
 					for (@Pc(350) int local350 = 0; local350 < Static99.ignoreCount; local350++) {
 						if (Static84.aLongArray4[local350] == local345) {

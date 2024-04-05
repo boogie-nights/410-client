@@ -41,7 +41,7 @@ public final class Static34 {
 
 	@OriginalMember(owner = "client!gd", name = "a", descriptor = "(BI)Lclient!ae;")
 	public static Class2_Sub2_Sub1 method621(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub1 local10 = (Class2_Sub2_Sub1) Static20.aClass47_5.method1325((long) arg0);
+		@Pc(10) Class2_Sub2_Sub1 local10 = (Class2_Sub2_Sub1) Static20.aClass47_5.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -50,7 +50,7 @@ public final class Static34 {
 		if (local20 != null) {
 			local10.method121(new Packet(local20));
 		}
-		Static20.aClass47_5.method1332((long) arg0, local10);
+		Static20.aClass47_5.put((long) arg0, local10);
 		return local10;
 	}
 
@@ -100,7 +100,7 @@ public final class Static34 {
 					local63.p1(1);
 					local63.method1688((int) local58.id);
 					Static31.aClass25_48.method731(local63.data, 4);
-					Static76.aClass6_5.method195(local58, local58.id);
+					Static76.aClass6_5.put(local58.id, local58);
 					Static2.anInt34--;
 					Static96.anInt2333++;
 				}
@@ -111,7 +111,7 @@ public final class Static34 {
 					local63.method1688((int) local58.id);
 					Static31.aClass25_48.method731(local63.data, 4);
 					local58.uncache();
-					Static36.aClass6_2.method195(local58, local58.id);
+					Static36.aClass6_2.put(local58.id, local58);
 					Static44.anInt1077--;
 					Static93.anInt2182++;
 				}
@@ -156,10 +156,10 @@ public final class Static34 {
 							@Pc(276) int local276 = Static97.aPacket_5.g1();
 							local280 = Static97.aPacket_5.g4();
 							@Pc(287) long local287 = (long) ((local218 << 16) + local272);
-							@Pc(293) Class2_Sub2_Sub9 local293 = (Class2_Sub2_Sub9) Static76.aClass6_5.method190(local287);
+							@Pc(293) Class2_Sub2_Sub9 local293 = (Class2_Sub2_Sub9) Static76.aClass6_5.get(local287);
 							Static93.aBoolean166 = true;
 							if (local293 == null) {
-								local293 = (Class2_Sub2_Sub9) Static36.aClass6_2.method190(local287);
+								local293 = (Class2_Sub2_Sub9) Static36.aClass6_2.get(local287);
 								Static93.aBoolean166 = false;
 							}
 							if (local293 == null) {

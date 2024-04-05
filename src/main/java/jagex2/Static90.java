@@ -21,10 +21,10 @@ public final class Static90 {
 	public static Class40 aClass40_609 = Static13.method257("(Y");
 
 	@OriginalMember(owner = "client!t", name = "j", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_17 = new Class47(260);
+	public static LruCache aClass47_17 = new LruCache(260);
 
 	@OriginalMember(owner = "client!t", name = "l", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_18 = new Class47(50);
+	public static LruCache aClass47_18 = new LruCache(50);
 
 	@OriginalMember(owner = "client!t", name = "m", descriptor = "I")
 	public static int anInt2132 = 0;
@@ -36,7 +36,7 @@ public final class Static90 {
 	public static int anInt2133 = 0;
 
 	@OriginalMember(owner = "client!t", name = "r", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_19 = new Class47(50);
+	public static LruCache aClass47_19 = new LruCache(50);
 
 	@OriginalMember(owner = "client!t", name = "s", descriptor = "Lclient!o;")
 	public static Class40 aClass40_611 = Static13.method257("Please contact customer support)3");
@@ -45,7 +45,7 @@ public final class Static90 {
 	public static int anInt2136 = 0;
 
 	@OriginalMember(owner = "client!t", name = "v", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_20 = new Class47(50);
+	public static LruCache aClass47_20 = new LruCache(50);
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(BII[Lclient!fb;[BII)V")
 	public static void method1460(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class20[] arg2, @OriginalArg(4) byte[] arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {

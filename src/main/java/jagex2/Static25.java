@@ -23,7 +23,7 @@ public final class Static25 {
 	public static int anInt667 = 2;
 
 	@OriginalMember(owner = "client!f", name = "jb", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_7 = new Class47(100);
+	public static LruCache aClass47_7 = new LruCache(100);
 
 	@OriginalMember(owner = "client!f", name = "lb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_191 = Static13.method257("mapback");

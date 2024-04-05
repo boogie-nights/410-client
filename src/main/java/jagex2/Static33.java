@@ -16,7 +16,7 @@ public final class Static33 {
 	public static int[] anIntArray152 = new int[256];
 
 	@OriginalMember(owner = "client!gb", name = "gb", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_8 = new Class47(200);
+	public static LruCache aClass47_8 = new LruCache(200);
 
 	@OriginalMember(owner = "client!gb", name = "Cb", descriptor = "I")
 	public static int anInt785 = 0;

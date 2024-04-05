@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.datastruct.HashTable;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -21,7 +22,7 @@ public final class Static32 {
 	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_8;
 
 	@OriginalMember(owner = "client!ga", name = "I", descriptor = "Lclient!ba;")
-	public static Class6 aClass6_1;
+	public static HashTable aClass6_1;
 
 	@OriginalMember(owner = "client!ga", name = "t", descriptor = "I")
 	public static int anInt737 = 0;

@@ -193,7 +193,7 @@ public final class ObjType extends Hashable {
 		}
 		@Pc(65) Model model;
 		if (arg1) {
-			model = (Model) Static90.aClass47_18.method1325((long) this.anInt954);
+			model = (Model) Static90.aClass47_18.get((long) this.anInt954);
 			if (model != null) {
 				return model;
 			}
@@ -213,7 +213,7 @@ public final class ObjType extends Hashable {
 		if (arg1) {
 			model.calculateNormals(this.anInt942 + 64, this.anInt940 + 768, -50, -10, -50, true);
 			model.pickable = true;
-			Static90.aClass47_18.method1332((long) this.anInt954, model);
+			Static90.aClass47_18.put((long) this.anInt954, model);
 		}
 		return model;
 	}

@@ -51,7 +51,7 @@ public final class Static52 {
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(B)V")
 	public static void method850() {
-		Static90.aClass47_17.method1330();
+		Static90.aClass47_17.clear();
 	}
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(I)V")

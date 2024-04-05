@@ -19,7 +19,7 @@ public final class Static41 {
 	public static GameShell aClass7_4;
 
 	@OriginalMember(owner = "client!i", name = "O", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_10 = new Class47(10);
+	public static LruCache aClass47_10 = new LruCache(10);
 
 	@OriginalMember(owner = "client!i", name = "R", descriptor = "Lclient!o;")
 	public static Class40 aClass40_305 = Static13.method257("Enter your username (V password)3");
@@ -28,7 +28,7 @@ public final class Static41 {
 	public static int anInt1012 = -1;
 
 	@OriginalMember(owner = "client!i", name = "Y", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_11 = new Class47(64);
+	public static LruCache aClass47_11 = new LruCache(64);
 
 	@OriginalMember(owner = "client!i", name = "ab", descriptor = "Lclient!o;")
 	public static Class40 aClass40_306 = Static13.method257(")3");
@@ -81,13 +81,13 @@ public final class Static41 {
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(II)Lclient!sb;")
 	public static Class2_Sub2_Sub14 method754(@OriginalArg(1) int arg0) {
-		@Pc(14) Class2_Sub2_Sub14 local14 = (Class2_Sub2_Sub14) Static3.aClass47_2.method1325((long) arg0);
+		@Pc(14) Class2_Sub2_Sub14 local14 = (Class2_Sub2_Sub14) Static3.aClass47_2.get((long) arg0);
 		if (local14 != null) {
 			return local14;
 		}
 		local14 = Static106.method1744(Static37.aClass5_12, Static85.aClass5_27, arg0);
 		if (local14 != null) {
-			Static3.aClass47_2.method1332((long) arg0, local14);
+			Static3.aClass47_2.put((long) arg0, local14);
 		}
 		return local14;
 	}

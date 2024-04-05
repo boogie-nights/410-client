@@ -68,7 +68,7 @@ public final class Static60 {
 	public static Class2_Sub2_Sub2_Sub4 method1000(@OriginalArg(0) int arg0, @OriginalArg(1) int count, @OriginalArg(2) int arg2) {
 		@Pc(14) Class2_Sub2_Sub2_Sub4 icon;
 		if (arg0 == 0) {
-			icon = (Class2_Sub2_Sub2_Sub4) Static25.aClass47_7.method1325((long) arg2);
+			icon = (Class2_Sub2_Sub2_Sub4) Static25.aClass47_7.get((long) arg2);
 			if (icon != null && icon.cropH != count && icon.cropH != -1) {
 				icon.unlink();
 				icon = null;
@@ -178,7 +178,7 @@ public final class Static60 {
 			local107.cropW = x;
 		}
 		if (arg0 == 0) {
-			Static25.aClass47_7.method1332((long) arg2, icon);
+			Static25.aClass47_7.put((long) arg2, icon);
 		}
 		Static26.method1604(local129, local127, local131);
 		Static26.method1613(local133, local135, local137, local139);

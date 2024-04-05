@@ -16,7 +16,7 @@ public final class Static45 {
 	public static Class40 aClass40_336 = Static13.method257("Press (Wchange your password(W on front page)3");
 
 	@OriginalMember(owner = "client!j", name = "e", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_12 = new Class47(64);
+	public static LruCache aClass47_12 = new LruCache(64);
 
 	@OriginalMember(owner = "client!j", name = "f", descriptor = "Lclient!o;")
 	public static Class40 aClass40_337 = Static13.method257("Last password change:*6n@gre@");

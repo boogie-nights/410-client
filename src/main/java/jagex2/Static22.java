@@ -15,7 +15,7 @@ public final class Static22 {
 	public static boolean aBoolean185;
 
 	@OriginalMember(owner = "client!eb", name = "P", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_23 = new Class47(64);
+	public static LruCache aClass47_23 = new LruCache(64);
 
 	@OriginalMember(owner = "client!eb", name = "pb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_734 = Static13.method257("backbase1");

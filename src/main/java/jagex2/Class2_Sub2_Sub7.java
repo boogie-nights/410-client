@@ -99,7 +99,7 @@ public final class Class2_Sub2_Sub7 extends Hashable {
 			@Pc(12) Class2_Sub2_Sub7 local12 = this.method611();
 			return local12 == null ? null : local12.method605(arg0, arg1, arg2, arg3);
 		}
-		@Pc(37) Model local37 = (Model) Static90.aClass47_19.method1325((long) this.anInt762);
+		@Pc(37) Model local37 = (Model) Static90.aClass47_19.get((long) this.anInt762);
 		if (local37 == null) {
 			@Pc(41) boolean local41 = false;
 			for (@Pc(43) int local43 = 0; local43 < this.anIntArray155.length; local43++) {
@@ -126,7 +126,7 @@ public final class Class2_Sub2_Sub7 extends Hashable {
 			}
 			local37.method1160();
 			local37.calculateNormals(this.anInt779 + 64, this.anInt759 + 850, -30, -50, -30, true);
-			Static90.aClass47_19.method1332((long) this.anInt762, local37);
+			Static90.aClass47_19.put((long) this.anInt762, local37);
 		}
 		@Pc(179) Model local179;
 		if (arg0 != null && arg1 != null) {

@@ -27,7 +27,7 @@ public final class Static103 {
 	public static int anInt2495;
 
 	@OriginalMember(owner = "client!vd", name = "l", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_22 = new Class47(64);
+	public static LruCache aClass47_22 = new LruCache(64);
 
 	@OriginalMember(owner = "client!vd", name = "t", descriptor = "I")
 	public static int tradeChatSetting = 0;

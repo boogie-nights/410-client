@@ -131,13 +131,13 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 		} else {
 			local17 = (this.anInt1033 << 10) + (arg4 << 3) + arg0;
 		}
-		@Pc(38) Model local38 = (Model) Static41.aClass47_10.method1325(local17);
+		@Pc(38) Model local38 = (Model) Static41.aClass47_10.get(local17);
 		if (local38 == null) {
 			local38 = this.method771(!this.aBoolean80, arg4, false, arg0);
 			if (local38 == null) {
 				return null;
 			}
-			Static41.aClass47_10.method1332(local17, local38);
+			Static41.aClass47_10.put(local17, local38);
 		}
 		if (this.aBoolean84 || this.aBoolean80) {
 			local38 = new Model(local38, this.aBoolean84, this.aBoolean80);
@@ -221,7 +221,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 				if (local124) {
 					local136 += 65536;
 				}
-				local9 = (Model) Static92.aClass47_21.method1325((long) local136);
+				local9 = (Model) Static92.aClass47_21.get((long) local136);
 				if (local9 == null) {
 					local9 = Static71.method1163(Static23.aClass5_8, local136 & 0xFFFF);
 					if (local9 == null) {
@@ -230,7 +230,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 					if (local124) {
 						local9.rotateY180();
 					}
-					Static92.aClass47_21.method1332((long) local136, local9);
+					Static92.aClass47_21.put((long) local136, local9);
 				}
 				if (local20 > 1) {
 					Static98.aModelArray1[local53] = local9;
@@ -255,7 +255,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 			if (local65) {
 				local53 += 65536;
 			}
-			local9 = (Model) Static92.aClass47_21.method1325((long) local53);
+			local9 = (Model) Static92.aClass47_21.get((long) local53);
 			if (local9 == null) {
 				local9 = Static71.method1163(Static23.aClass5_8, local53 & 0xFFFF);
 				if (local9 == null) {
@@ -264,7 +264,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 				if (local65) {
 					local9.rotateY180();
 				}
-				Static92.aClass47_21.method1332((long) local53, local9);
+				Static92.aClass47_21.put((long) local53, local9);
 			}
 		}
 		if (this.anInt1042 == 128 && this.anInt1058 == 128 && this.anInt1051 == 128) {
@@ -506,13 +506,13 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 		} else {
 			local21 = (this.anInt1033 << 10) + (arg4 << 3) + arg0;
 		}
-		@Pc(43) Model local43 = (Model) Static2.aClass47_1.method1325(local21);
+		@Pc(43) Model local43 = (Model) Static2.aClass47_1.get(local21);
 		if (local43 == null) {
 			local43 = this.method771(true, arg4, true, arg0);
 			if (local43 == null) {
 				return null;
 			}
-			Static2.aClass47_1.method1332(local21, local43);
+			Static2.aClass47_1.put(local21, local43);
 		}
 		if (arg3 == null && !this.aBoolean84) {
 			return local43;

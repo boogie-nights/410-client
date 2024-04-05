@@ -29,7 +29,7 @@ public final class Static106 {
 	public static byte[] method1735(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class5 arg2, @OriginalArg(4) int arg3) {
 		@Pc(23) long local23 = (long) (arg3 << 16) + ((long) arg0 << 1442185824) + (long) (arg1 + arg3 * 37 & 0xFFFF);
 		if (Static37.aClass47_9 != null) {
-			@Pc(31) Class2_Sub2_Sub3 local31 = (Class2_Sub2_Sub3) Static37.aClass47_9.method1325(local23);
+			@Pc(31) Class2_Sub2_Sub3 local31 = (Class2_Sub2_Sub3) Static37.aClass47_9.get(local23);
 			if (local31 != null) {
 				return local31.aByteArray3;
 			}
@@ -39,7 +39,7 @@ public final class Static106 {
 			return null;
 		} else {
 			if (Static37.aClass47_9 != null) {
-				Static37.aClass47_9.method1332(local23, new Class2_Sub2_Sub3(local42));
+				Static37.aClass47_9.put(local23, new Class2_Sub2_Sub3(local42));
 			}
 			return local42;
 		}
@@ -81,11 +81,11 @@ public final class Static106 {
 						Static74.aBoolean146 = false;
 						@Pc(117) long local117;
 						if (Static93.anInt2180 == 1) {
-							local117 = Static61.aClass40_447.method1179();
+							local117 = Static61.aClass40_447.toBase37();
 							Static63.method1062(local117);
 						}
 						if (Static93.anInt2180 == 2 && Static22.anInt2594 > 0) {
-							local117 = Static61.aClass40_447.method1179();
+							local117 = Static61.aClass40_447.toBase37();
 							Static70.method1115(local117);
 						}
 						if (Static93.anInt2180 == 3 && Static61.aClass40_447.method1169() > 0) {
@@ -105,11 +105,11 @@ public final class Static106 {
 							}
 						}
 						if (Static93.anInt2180 == 4 && Static99.ignoreCount < 100) {
-							local117 = Static61.aClass40_447.method1179();
+							local117 = Static61.aClass40_447.toBase37();
 							Static15.method1254(local117);
 						}
 						if (Static93.anInt2180 == 5 && Static99.ignoreCount > 0) {
-							local117 = Static61.aClass40_447.method1179();
+							local117 = Static61.aClass40_447.toBase37();
 							Static82.method1345(local117);
 						}
 					}
@@ -146,7 +146,7 @@ public final class Static106 {
 					if (Static37.anInt935 == 84) {
 						if (Static61.aClass40_444.method1169() > 0) {
 							Static80.out.p1isaac(51);
-							Static80.out.p8(Static61.aClass40_444.method1179());
+							Static80.out.p8(Static61.aClass40_444.toBase37());
 						}
 						Static73.redrawChatback = true;
 						Static101.anInt2399 = 0;

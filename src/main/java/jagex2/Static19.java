@@ -22,7 +22,7 @@ public final class Static19 {
 	public static int anInt437 = 0;
 
 	@OriginalMember(owner = "client!de", name = "h", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_4 = new Class47(64);
+	public static LruCache aClass47_4 = new LruCache(64);
 
 	@OriginalMember(owner = "client!de", name = "j", descriptor = "I")
 	public static int anInt440 = 0;
@@ -173,7 +173,7 @@ public final class Static19 {
 			if (local288 != null && local288.method1544()) {
 				local20 = local288.anInt2284 / 32 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;
 				local77 = local288.anInt2275 / 32 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
-				@Pc(321) long local321 = local288.aClass40_395.method1179();
+				@Pc(321) long local321 = local288.aClass40_395.toBase37();
 				@Pc(323) boolean local323 = false;
 				for (@Pc(325) int local325 = 0; local325 < Static22.anInt2594; local325++) {
 					if (local321 == Static21.aLongArray2[local325] && Static62.anIntArray316[local325] != 0) {

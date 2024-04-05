@@ -23,7 +23,7 @@ public final class Static37 {
 	public static int anInt941;
 
 	@OriginalMember(owner = "client!hb", name = "Ib", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_9;
+	public static LruCache aClass47_9;
 
 	@OriginalMember(owner = "client!hb", name = "Ob", descriptor = "[I")
 	public static int[] anIntArray182;

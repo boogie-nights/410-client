@@ -114,18 +114,18 @@ public final class Static49 {
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "(IILclient!ad;IBZI)V")
 	public static void method1535(@OriginalArg(0) int arg0, @OriginalArg(2) Class5_Sub1 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) byte arg3, @OriginalArg(5) boolean arg4, @OriginalArg(6) int arg5) {
 		@Pc(6) long local6 = (long) ((arg5 << 16) + arg0);
-		@Pc(16) Class2_Sub2_Sub9 local16 = (Class2_Sub2_Sub9) Static93.aClass6_6.method190(local6);
+		@Pc(16) Class2_Sub2_Sub9 local16 = (Class2_Sub2_Sub9) Static93.aClass6_6.get(local6);
 		if (local16 != null) {
 			return;
 		}
-		local16 = (Class2_Sub2_Sub9) Static76.aClass6_5.method190(local6);
+		local16 = (Class2_Sub2_Sub9) Static76.aClass6_5.get(local6);
 		if (local16 != null) {
 			return;
 		}
-		local16 = (Class2_Sub2_Sub9) Static105.aClass6_7.method190(local6);
+		local16 = (Class2_Sub2_Sub9) Static105.aClass6_7.get(local6);
 		if (local16 == null) {
 			if (!arg4) {
-				local16 = (Class2_Sub2_Sub9) Static36.aClass6_2.method190(local6);
+				local16 = (Class2_Sub2_Sub9) Static36.aClass6_2.get(local6);
 				if (local16 != null) {
 					return;
 				}
@@ -135,16 +135,16 @@ public final class Static49 {
 			local16.anInt1013 = arg2;
 			local16.aByte2 = arg3;
 			if (arg4) {
-				Static93.aClass6_6.method195(local16, local6);
+				Static93.aClass6_6.put(local6, local16);
 				Static2.anInt34++;
 			} else {
-				Static74.aClass41_1.method1201(local16);
-				Static105.aClass6_7.method195(local16, local6);
+				Static74.aClass41_1.push(local16);
+				Static105.aClass6_7.put(local6, local16);
 				Static44.anInt1077++;
 			}
 		} else if (arg4) {
 			local16.uncache();
-			Static93.aClass6_6.method195(local16, local6);
+			Static93.aClass6_6.put(local6, local16);
 			Static2.anInt34++;
 			Static44.anInt1077--;
 		}

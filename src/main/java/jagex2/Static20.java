@@ -18,7 +18,7 @@ public final class Static20 {
 	public static Class45 aClass45_10;
 
 	@OriginalMember(owner = "client!e", name = "u", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_5 = new Class47(64);
+	public static LruCache aClass47_5 = new LruCache(64);
 
 	@OriginalMember(owner = "client!e", name = "B", descriptor = "Lclient!o;")
 	public static Class40 aClass40_131 = Static13.method257("huffman");
@@ -69,7 +69,7 @@ public final class Static20 {
 	}
 
 	@OriginalMember(owner = "client!e", name = "a", descriptor = "(IIZ)I")
-	public static int method387(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public static int smoothNoise(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(41) int local41 = Static4.method93(arg0 - 1, arg1 - 1) + Static4.method93(arg0 + 1, arg1 + -1) + Static4.method93(arg0 - 1, arg1 - -1) + Static4.method93(arg0 + 1, arg1 - -1);
 		@Pc(74) int local74 = Static4.method93(arg0 - 1, arg1) + Static4.method93(arg0 + 1, arg1) + Static4.method93(arg0, arg1 + -1) + Static4.method93(arg0, arg1 + 1);
 		@Pc(79) int local79 = Static4.method93(arg0, arg1);

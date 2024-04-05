@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.client.ViewBox;
 import jagex2.config.ObjType;
+import jagex2.datastruct.HashTable;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -28,7 +29,7 @@ public final class Static105 {
 	public static Class40 aClass40_726 = Static13.method257("p12_full");
 
 	@OriginalMember(owner = "client!wb", name = "e", descriptor = "Lclient!ba;")
-	public static Class6 aClass6_7 = new Class6(4096);
+	public static HashTable aClass6_7 = new HashTable(4096);
 
 	@OriginalMember(owner = "client!wb", name = "f", descriptor = "I")
 	public static volatile int anInt2520 = 0;
@@ -49,7 +50,7 @@ public final class Static105 {
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(II)Lclient!hb;")
 	public static ObjType get(@OriginalArg(1) int id) {
-		@Pc(18) ObjType obj = (ObjType) Static81.aClass47_16.method1325((long) id);
+		@Pc(18) ObjType obj = (ObjType) Static81.aClass47_16.get((long) id);
 		if (obj != null) {
 			return obj;
 		}
@@ -70,7 +71,7 @@ public final class Static105 {
 			obj.desc = Static24.aClass40_181;
 			obj.anInt951 = 0;
 		}
-		Static81.aClass47_16.method1332((long) id, obj);
+		Static81.aClass47_16.put((long) id, obj);
 		return obj;
 	}
 

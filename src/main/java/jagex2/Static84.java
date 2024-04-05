@@ -83,7 +83,7 @@ public final class Static84 {
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(II)Lclient!vc;")
 	public static Class2_Sub2_Sub16 method1360(@OriginalArg(1) int arg0) {
-		@Pc(6) Class2_Sub2_Sub16 local6 = (Class2_Sub2_Sub16) Static19.aClass47_4.method1325((long) arg0);
+		@Pc(6) Class2_Sub2_Sub16 local6 = (Class2_Sub2_Sub16) Static19.aClass47_4.get((long) arg0);
 		if (local6 != null) {
 			return local6;
 		}
@@ -93,7 +93,7 @@ public final class Static84 {
 			local6.method1640(new Packet(local25), arg0);
 		}
 		local6.method1641();
-		Static19.aClass47_4.method1332((long) arg0, local6);
+		Static19.aClass47_4.put((long) arg0, local6);
 		return local6;
 	}
 

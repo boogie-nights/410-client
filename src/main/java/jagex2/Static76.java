@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.datastruct.HashTable;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -34,7 +35,7 @@ public final class Static76 {
 	public static Class40 aClass40_614 = Static13.method257("You are not a member)3*6n*6nChoose to subscribe and*6nyou(Wll get loads of extra*6nbenefits and features)3");
 
 	@OriginalMember(owner = "client!p", name = "p", descriptor = "Lclient!ba;")
-	public static Class6 aClass6_5 = new Class6(32);
+	public static HashTable aClass6_5 = new HashTable(32);
 
 	@OriginalMember(owner = "client!p", name = "t", descriptor = "Lclient!o;")
 	public static Class40 aClass40_615 = Static13.method257("You are standing in a members)2only area)3");
@@ -107,6 +108,6 @@ public final class Static76 {
 
 	@OriginalMember(owner = "client!p", name = "b", descriptor = "(B)V")
 	public static void method1478() {
-		Static20.aClass47_5.method1330();
+		Static20.aClass47_5.clear();
 	}
 }

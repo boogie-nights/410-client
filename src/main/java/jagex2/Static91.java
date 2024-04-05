@@ -120,7 +120,7 @@ public final class Static91 {
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(ZI)Lclient!v;")
 	public static Class2_Sub2_Sub15 method1469(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub15 local10 = (Class2_Sub2_Sub15) Static103.aClass47_22.method1325((long) arg0);
+		@Pc(10) Class2_Sub2_Sub15 local10 = (Class2_Sub2_Sub15) Static103.aClass47_22.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -129,13 +129,13 @@ public final class Static91 {
 		if (local20 != null) {
 			local10.method1587(new Packet(local20));
 		}
-		Static103.aClass47_22.method1332((long) arg0, local10);
+		Static103.aClass47_22.put((long) arg0, local10);
 		return local10;
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(BI)Lclient!ia;")
 	public static Class2_Sub2_Sub10 method1470(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub10 local10 = (Class2_Sub2_Sub10) Static41.aClass47_11.method1325((long) arg0);
+		@Pc(10) Class2_Sub2_Sub10 local10 = (Class2_Sub2_Sub10) Static41.aClass47_11.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -150,7 +150,7 @@ public final class Static91 {
 			local10.aBoolean77 = false;
 			local10.aBoolean79 = false;
 		}
-		Static41.aClass47_11.method1332((long) arg0, local10);
+		Static41.aClass47_11.put((long) arg0, local10);
 		return local10;
 	}
 

@@ -21,7 +21,7 @@ public final class Static81 {
 	public static Class5_Sub1 aClass5_Sub1_15;
 
 	@OriginalMember(owner = "client!r", name = "f", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_16 = new Class47(64);
+	public static LruCache aClass47_16 = new LruCache(64);
 
 	@OriginalMember(owner = "client!r", name = "h", descriptor = "Ljava/util/zip/CRC32;")
 	public static CRC32 aCRC32_1 = new CRC32();
@@ -95,12 +95,12 @@ public final class Static81 {
 						return;
 					}
 					Static74.aClass41_1.method1204(local40);
-					Static105.aClass6_7.method195(local40, local40.id);
+					Static105.aClass6_7.put(local40.id, local40);
 					Static93.anInt2182--;
 					Static44.anInt1077++;
 				}
 			}
-			Static93.aClass6_6.method195(local40, local40.id);
+			Static93.aClass6_6.put(local40.id, local40);
 			Static2.anInt34++;
 			Static96.anInt2333--;
 		}
@@ -185,7 +185,7 @@ public final class Static81 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(II)Lclient!ec;")
 	public static Class2_Sub2_Sub4 method1338(@OriginalArg(0) int arg0) {
-		@Pc(10) Class2_Sub2_Sub4 local10 = (Class2_Sub2_Sub4) Static22.aClass47_23.method1325((long) arg0);
+		@Pc(10) Class2_Sub2_Sub4 local10 = (Class2_Sub2_Sub4) Static22.aClass47_23.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -195,7 +195,7 @@ public final class Static81 {
 			local10.method478(new Packet(local28), arg0);
 		}
 		local10.method476();
-		Static22.aClass47_23.method1332((long) arg0, local10);
+		Static22.aClass47_23.put((long) arg0, local10);
 		return local10;
 	}
 

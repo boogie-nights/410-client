@@ -4,6 +4,7 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.io.UnsupportedEncodingException;
 
+import jagex2.datastruct.HashTable;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -40,9 +41,9 @@ public final class Class40 implements Interface2 {
 		synchronized (local16) {
 			@Pc(41) Class2_Sub6 local41;
 			if (Static32.aClass6_1 == null) {
-				Static32.aClass6_1 = new Class6(4096);
+				Static32.aClass6_1 = new HashTable(4096);
 			} else {
-				for (local41 = (Class2_Sub6) Static32.aClass6_1.method190(local7); local41 != null; local41 = (Class2_Sub6) Static32.aClass6_1.method182()) {
+				for (local41 = (Class2_Sub6) Static32.aClass6_1.get(local7); local41 != null; local41 = (Class2_Sub6) Static32.aClass6_1.method182()) {
 					if (this.method1184(local41.aClass40_247)) {
 						return local41.aClass40_247;
 					}
@@ -51,7 +52,7 @@ public final class Class40 implements Interface2 {
 			local41 = new Class2_Sub6();
 			this.aBoolean141 = false;
 			local41.aClass40_247 = this;
-			Static32.aClass6_1.method195(local41, local7);
+			Static32.aClass6_1.put(local7, local41);
 			return this;
 		}
 	}
@@ -271,23 +272,23 @@ public final class Class40 implements Interface2 {
 	}
 
 	@OriginalMember(owner = "client!o", name = "c", descriptor = "(B)J")
-	public long method1179() {
-		@Pc(8) long local8 = 0L;
-		for (@Pc(10) int local10 = 0; this.anInt1783 > local10 && local10 < 12; local10++) {
-			@Pc(17) byte local17 = this.aByteArray14[local10];
-			local8 *= 37L;
+	public long toBase37() {
+		@Pc(8) long hash = 0L;
+		for (@Pc(10) int i = 0; this.anInt1783 > i && i < 12; i++) {
+			@Pc(17) byte local17 = this.aByteArray14[i];
+			hash *= 37L;
 			if (local17 >= 65 && local17 <= 90) {
-				local8 += local17 + 1 - 65;
+				hash += local17 + 1 - 65;
 			} else if (local17 >= 97 && local17 <= 122) {
-				local8 += local17 - 96;
+				hash += local17 - 96;
 			} else if (local17 >= 48 && local17 <= 57) {
-				local8 += local17 + 27 - 48;
+				hash += local17 + 27 - 48;
 			}
 		}
-		while (local8 % 37L == 0L && local8 != 0L) {
-			local8 /= 37L;
+		while (hash % 37L == 0L && hash != 0L) {
+			hash /= 37L;
 		}
-		return local8;
+		return hash;
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(III)Lclient!o;")

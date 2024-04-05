@@ -78,7 +78,7 @@ public final class Static87 {
 
 	@OriginalMember(owner = "client!sb", name = "g", descriptor = "(I)V")
 	public static void method1402() {
-		Static19.aClass47_4.method1330();
+		Static19.aClass47_4.clear();
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(B[Lclient!o;)[Lclient!o;")

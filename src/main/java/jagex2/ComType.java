@@ -391,7 +391,7 @@ public final class ComType extends Hashable {
 		} else if (local16 == 1 && local19 == -1) {
 			return null;
 		} else {
-			@Pc(50) Model local50 = (Model) Static90.aClass47_20.method1325((long) ((local16 << 16) + local19));
+			@Pc(50) Model local50 = (Model) Static90.aClass47_20.get((long) ((local16 << 16) + local19));
 			if (local50 == null) {
 				if (local16 == 1) {
 					local50 = Static71.method1163(Static82.aClass5_26, local19);
@@ -433,7 +433,7 @@ public final class ComType extends Hashable {
 					local50.method1160();
 					local50.calculateNormals(local137.anInt942 + 64, 768 - -local137.anInt940, -50, -10, -50, true);
 				}
-				Static90.aClass47_20.method1332((long) ((local16 << 16) + local19), local50);
+				Static90.aClass47_20.put((long) ((local16 << 16) + local19), local50);
 			}
 			if (arg0 != null) {
 				local50 = arg0.method516(arg3, local50);
@@ -454,7 +454,7 @@ public final class ComType extends Hashable {
 		if (local10 == -1) {
 			return null;
 		}
-		@Pc(29) Class2_Sub2_Sub2_Sub4 local29 = (Class2_Sub2_Sub2_Sub4) Static33.aClass47_8.method1325((long) local10);
+		@Pc(29) Class2_Sub2_Sub2_Sub4 local29 = (Class2_Sub2_Sub2_Sub4) Static33.aClass47_8.get((long) local10);
 		if (local29 != null) {
 			return local29;
 		}
@@ -462,7 +462,7 @@ public final class ComType extends Hashable {
 		if (local29 == null) {
 			Static54.aBoolean102 = true;
 		} else {
-			Static33.aClass47_8.method1332((long) local10, local29);
+			Static33.aClass47_8.put((long) local10, local29);
 		}
 		return local29;
 	}
@@ -477,7 +477,7 @@ public final class ComType extends Hashable {
 		if (local26 == -1) {
 			return null;
 		}
-		@Pc(38) Class2_Sub2_Sub2_Sub4 local38 = (Class2_Sub2_Sub2_Sub4) Static33.aClass47_8.method1325((long) local26);
+		@Pc(38) Class2_Sub2_Sub2_Sub4 local38 = (Class2_Sub2_Sub2_Sub4) Static33.aClass47_8.get((long) local26);
 		if (local38 != null) {
 			return local38;
 		}
@@ -485,7 +485,7 @@ public final class ComType extends Hashable {
 		if (local38 == null) {
 			Static54.aBoolean102 = true;
 		} else {
-			Static33.aClass47_8.method1332((long) local26, local38);
+			Static33.aClass47_8.put((long) local26, local38);
 		}
 		return local38;
 	}

@@ -164,7 +164,7 @@ public final class Static98 {
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(BI)Lclient!ic;")
 	public static Class2_Sub2_Sub11 method1568(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub11 local10 = (Class2_Sub2_Sub11) Static45.aClass47_12.method1325((long) arg0);
+		@Pc(10) Class2_Sub2_Sub11 local10 = (Class2_Sub2_Sub11) Static45.aClass47_12.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -173,7 +173,7 @@ public final class Static98 {
 		if (local20 != null) {
 			local10.method788(new Packet(local20));
 		}
-		Static45.aClass47_12.method1332((long) arg0, local10);
+		Static45.aClass47_12.put((long) arg0, local10);
 		return local10;
 	}
 

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class Hashable extends Linkable {
 
 	@OriginalMember(owner = "client!ja", name = "x", descriptor = "Lclient!ja;")
-	public Hashable nextHasable;
+	public Hashable nextHashable;
 
 	@OriginalMember(owner = "client!ja", name = "N", descriptor = "Lclient!ja;")
 	public Hashable prevHashable;
@@ -15,9 +15,9 @@ public class Hashable extends Linkable {
 	@OriginalMember(owner = "client!ja", name = "e", descriptor = "(I)V")
 	public final void uncache() {
 		if (this.prevHashable != null) {
-			this.prevHashable.nextHasable = this.nextHasable;
-			this.nextHasable.prevHashable = this.prevHashable;
-			this.nextHasable = null;
+			this.prevHashable.nextHashable = this.nextHashable;
+			this.nextHashable.prevHashable = this.prevHashable;
+			this.nextHashable = null;
 			this.prevHashable = null;
 		}
 	}

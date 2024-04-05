@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.datastruct.Stack;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
@@ -24,13 +25,13 @@ public final class Static74 {
 	public static Class40 aClass40_522 = Static13.method257("Report abuse");
 
 	@OriginalMember(owner = "client!ob", name = "i", descriptor = "Lclient!oa;")
-	public static Class41 aClass41_1 = new Class41();
+	public static Stack aClass41_1 = new Stack();
 
 	@OriginalMember(owner = "client!ob", name = "k", descriptor = "Z")
 	public static boolean aBoolean146 = false;
 
 	@OriginalMember(owner = "client!ob", name = "o", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_15 = new Class47(30);
+	public static LruCache aClass47_15 = new LruCache(30);
 
 	@OriginalMember(owner = "client!ob", name = "p", descriptor = "Lclient!o;")
 	public static Class40 aClass40_523 = Static13.method257("*6nYou have not yet set any recovery questions)3*6nIt is @lre@strongly@yel@ recommended that you do so)3*6n*6nIf you don(Wt you will be @lre@unable to recover your*6n@lre@password@yel@ if you forget it)1 or it is stolen)3");
@@ -75,8 +76,8 @@ public final class Static74 {
 
 	@OriginalMember(owner = "client!ob", name = "b", descriptor = "(Z)V")
 	public static void method1210() {
-		Static61.aClass47_14.method1330();
-		Static90.aClass47_19.method1330();
+		Static61.aClass47_14.clear();
+		Static90.aClass47_19.clear();
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(I)V")

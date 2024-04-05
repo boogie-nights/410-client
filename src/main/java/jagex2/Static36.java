@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.datastruct.HashTable;
 import jagex2.io.ClientStream;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -21,7 +22,7 @@ public final class Static36 {
 	public static int anInt840;
 
 	@OriginalMember(owner = "client!h", name = "d", descriptor = "Lclient!ba;")
-	public static Class6 aClass6_2 = new Class6(4096);
+	public static HashTable aClass6_2 = new HashTable(4096);
 
 	@OriginalMember(owner = "client!h", name = "e", descriptor = "Lclient!o;")
 	public static Class40 aClass40_256 = Static13.method257("backhmid2");
@@ -194,7 +195,7 @@ public final class Static36 {
 			Static60.method998();
 			if (Static61.reportAbuseInput.method1169() > 0) {
 				Static80.out.p1isaac(72);
-				Static80.out.p8(Static61.reportAbuseInput.method1179());
+				Static80.out.p8(Static61.reportAbuseInput.toBase37());
 				Static80.out.p1(local6 - 601);
 				Static80.out.p1(Static54.aBoolean103 ? 1 : 0);
 			}
@@ -204,7 +205,7 @@ public final class Static36 {
 
 	@OriginalMember(owner = "client!h", name = "a", descriptor = "(II)Lclient!gb;")
 	public static Class2_Sub2_Sub7 method640(@OriginalArg(1) int arg0) {
-		@Pc(18) Class2_Sub2_Sub7 local18 = (Class2_Sub2_Sub7) Static61.aClass47_14.method1325((long) arg0);
+		@Pc(18) Class2_Sub2_Sub7 local18 = (Class2_Sub2_Sub7) Static61.aClass47_14.get((long) arg0);
 		if (local18 != null) {
 			return local18;
 		}
@@ -215,7 +216,7 @@ public final class Static36 {
 			local18.method608(new Packet(local28));
 		}
 		local18.method612();
-		Static61.aClass47_14.method1332((long) arg0, local18);
+		Static61.aClass47_14.put((long) arg0, local18);
 		return local18;
 	}
 

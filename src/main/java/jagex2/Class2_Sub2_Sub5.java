@@ -44,7 +44,7 @@ public final class Class2_Sub2_Sub5 extends Hashable {
 
 	@OriginalMember(owner = "client!ee", name = "a", descriptor = "(BI)Lclient!ne;")
 	public Model method501(@OriginalArg(1) int arg0) {
-		@Pc(13) Model local13 = (Model) Static74.aClass47_15.method1325((long) this.anInt634);
+		@Pc(13) Model local13 = (Model) Static74.aClass47_15.get((long) this.anInt634);
 		if (local13 == null) {
 			local13 = Static71.method1163(Static92.aClass5_28, this.anInt639);
 			if (local13 == null) {
@@ -57,7 +57,7 @@ public final class Class2_Sub2_Sub5 extends Hashable {
 			}
 			local13.method1160();
 			local13.calculateNormals(this.anInt636 + 64, this.anInt630 + 850, -30, -50, -30, true);
-			Static74.aClass47_15.method1332((long) this.anInt634, local13);
+			Static74.aClass47_15.put((long) this.anInt634, local13);
 		}
 		@Pc(92) Model model;
 		if (this.anInt640 == -1 || arg0 == -1) {

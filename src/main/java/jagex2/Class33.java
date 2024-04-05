@@ -154,7 +154,7 @@ public final class Class33 {
 				local27[3] = arg2.anInt664;
 			}
 		}
-		@Pc(125) Model local125 = (Model) Static90.aClass47_17.method1325(local35);
+		@Pc(125) Model local125 = (Model) Static90.aClass47_17.get(local35);
 		if (local125 == null) {
 			@Pc(129) boolean local129 = false;
 			for (@Pc(131) int local131 = 0; local131 < 12; local131++) {
@@ -168,7 +168,7 @@ public final class Class33 {
 			}
 			if (local129) {
 				if (this.aLong100 != -1L) {
-					local125 = (Model) Static90.aClass47_17.method1325(this.aLong100);
+					local125 = (Model) Static90.aClass47_17.get(this.aLong100);
 				}
 				if (local125 == null) {
 					return null;
@@ -205,7 +205,7 @@ public final class Class33 {
 				}
 				local125.method1160();
 				local125.calculateNormals(64, 850, -30, -50, -30, true);
-				Static90.aClass47_17.method1332(local35, local125);
+				Static90.aClass47_17.put(local35, local125);
 				this.aLong100 = local35;
 			}
 		}

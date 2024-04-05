@@ -22,7 +22,7 @@ public final class Static82 {
 	public static Class40 aClass40_563 = Static13.method257("runes");
 
 	@OriginalMember(owner = "client!ra", name = "i", descriptor = "I")
-	public static int randomHueOffset = (int) (Math.random() * 17.0D) - 8;
+	public static int anInt1942 = (int) (Math.random() * 17.0D) - 8;
 
 	@OriginalMember(owner = "client!ra", name = "m", descriptor = "Lclient!o;")
 	public static Class40 aClass40_564 = Static13.method257("From ");
@@ -38,7 +38,7 @@ public final class Static82 {
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(B)V")
 	public static void method1342() {
-		Static25.aClass47_7.method1330();
+		Static25.aClass47_7.clear();
 	}
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(IIBIII)V")
@@ -132,10 +132,10 @@ public final class Static82 {
 
 	@OriginalMember(owner = "client!ra", name = "b", descriptor = "(B)V")
 	public static void method1344() {
-		Static41.aClass47_11.method1330();
-		Static92.aClass47_21.method1330();
-		Static41.aClass47_10.method1330();
-		Static2.aClass47_1.method1330();
+		Static41.aClass47_11.clear();
+		Static92.aClass47_21.clear();
+		Static41.aClass47_10.clear();
+		Static2.aClass47_1.clear();
 	}
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(BJ)V")

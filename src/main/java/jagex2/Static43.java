@@ -164,7 +164,7 @@ public final class Static43 {
 
 	@OriginalMember(owner = "client!ib", name = "c", descriptor = "(B)V")
 	public static void method1242() {
-		Static45.aClass47_12.method1330();
+		Static45.aClass47_12.clear();
 	}
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(Ljava/awt/event/KeyEvent;I)I")
@@ -207,7 +207,7 @@ public final class Static43 {
 				}
 			}
 			if (Static27.anInt693 == 2) {
-				@Pc(71) long local71 = Static102.aLong150 = Static86.aClass40_591.method1179();
+				@Pc(71) long local71 = Static102.aLong150 = Static86.aClass40_591.toBase37();
 				Static80.out.pos = 0;
 				@Pc(81) int local81 = (int) (local71 >> 16 & 0x1FL);
 				Static80.out.p1(14);
@@ -252,7 +252,7 @@ public final class Static43 {
 				Static80.out.p4(seed[2]);
 				Static80.out.p4(seed[3]);
 				Static80.out.p4(Static99.aClass7_2.anInt249);
-				Static80.out.p8(Static86.aClass40_591.method1179());
+				Static80.out.p8(Static86.aClass40_591.toBase37());
 				Static80.out.method1683(Static86.aClass40_587);
 				Static80.out.rsaenc(Static51.RSA_EXPONENT, Static10.RSA_MODULUS);
 				Static62.login.pos = 0;

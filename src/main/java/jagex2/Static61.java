@@ -43,7 +43,7 @@ public final class Static61 {
 	public static Class40 aClass40_450 = Static13.method257("glow2:");
 
 	@OriginalMember(owner = "client!ma", name = "p", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_14 = new Class47(64);
+	public static LruCache aClass47_14 = new LruCache(64);
 
 	@OriginalMember(owner = "client!ma", name = "q", descriptor = "Lclient!o;")
 	public static Class40 chatTyped = aClass40_445;

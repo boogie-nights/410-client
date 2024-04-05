@@ -66,10 +66,10 @@ public final class Static107 {
 		@Pc(13) int local13 = scale - 1 & arg1;
 		@Pc(17) int local17 = arg2 / scale;
 		@Pc(23) int local23 = arg2 & scale - 1;
-		@Pc(33) int local33 = Static20.method387(local7, local17);
-		@Pc(40) int local40 = Static20.method387(local7 + 1, local17);
-		@Pc(51) int local51 = Static20.method387(local7, local17 + 1);
-		@Pc(60) int local60 = Static20.method387(local7 + 1, local17 + 1);
+		@Pc(33) int local33 = Static20.smoothNoise(local7, local17);
+		@Pc(40) int local40 = Static20.smoothNoise(local7 + 1, local17);
+		@Pc(51) int local51 = Static20.smoothNoise(local7, local17 + 1);
+		@Pc(60) int local60 = Static20.smoothNoise(local7 + 1, local17 + 1);
 		@Pc(67) int local67 = Static80.interpolate(local13, local33, scale, local40);
 		@Pc(74) int local74 = Static80.interpolate(local13, local51, scale, local60);
 		return Static80.interpolate(local23, local67, scale, local74);
@@ -235,7 +235,7 @@ public final class Static107 {
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(III)V")
 	public static void method1661(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(11) long local11 = (long) ((arg0 << 1171938384) + arg1);
-		@Pc(17) Class2_Sub2_Sub9 local17 = (Class2_Sub2_Sub9) Static105.aClass6_7.method190(local11);
+		@Pc(17) Class2_Sub2_Sub9 local17 = (Class2_Sub2_Sub9) Static105.aClass6_7.get(local11);
 		if (local17 != null) {
 			Static74.aClass41_1.method1204(local17);
 		}

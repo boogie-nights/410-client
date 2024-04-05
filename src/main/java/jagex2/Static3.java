@@ -14,7 +14,7 @@ public final class Static3 {
 	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_2;
 
 	@OriginalMember(owner = "client!ac", name = "g", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_2 = new Class47(100);
+	public static LruCache aClass47_2 = new LruCache(100);
 
 	@OriginalMember(owner = "client!ac", name = "m", descriptor = "I")
 	public static int anInt50 = 0;

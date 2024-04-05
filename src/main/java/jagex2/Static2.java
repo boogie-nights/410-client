@@ -40,7 +40,7 @@ public final class Static2 {
 	public static Class14[] aClass14Array1 = new Class14[12];
 
 	@OriginalMember(owner = "client!ab", name = "o", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_1 = new Class47(30);
+	public static LruCache aClass47_1 = new LruCache(30);
 
 	@OriginalMember(owner = "client!ab", name = "q", descriptor = "Lclient!o;")
 	public static Class40 aClass40_15 = Static13.method257("Your account has been disabled)3");
@@ -723,7 +723,7 @@ public final class Static2 {
 				if (local1801.method1195(Static105.aClass40_728)) {
 					local1813 = false;
 					local1822 = local1801.method1180(local1801.method1200(Static97.aClass40_673), 0);
-					local655 = local1822.method1179();
+					local655 = local1822.toBase37();
 					for (local359 = 0; local359 < Static99.ignoreCount; local359++) {
 						if (local655 == Static84.aLongArray4[local359]) {
 							local1813 = true;
@@ -736,7 +736,7 @@ public final class Static2 {
 				} else if (local1801.method1195(Static49.aClass40_654)) {
 					local1813 = false;
 					local1822 = local1801.method1180(local1801.method1200(Static97.aClass40_673), 0);
-					local655 = local1822.method1179();
+					local655 = local1822.toBase37();
 					for (local359 = 0; local359 < Static99.ignoreCount; local359++) {
 						if (Static84.aLongArray4[local359] == local655) {
 							local1813 = true;
@@ -748,7 +748,7 @@ public final class Static2 {
 					}
 				} else if (local1801.method1195(Static79.aClass40_542)) {
 					local1822 = local1801.method1180(local1801.method1200(Static97.aClass40_673), 0);
-					local655 = local1822.method1179();
+					local655 = local1822.toBase37();
 					local1813 = false;
 					for (local359 = 0; local359 < Static99.ignoreCount; local359++) {
 						if (local655 == Static84.aLongArray4[local359]) {

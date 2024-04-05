@@ -28,9 +28,9 @@ public final class Static31 {
 
 	@OriginalMember(owner = "client!g", name = "a", descriptor = "(B)V")
 	public static void method1675() {
-		Static81.aClass47_16.method1330();
-		Static90.aClass47_18.method1330();
-		Static25.aClass47_7.method1330();
+		Static81.aClass47_16.clear();
+		Static90.aClass47_18.clear();
+		Static25.aClass47_7.clear();
 	}
 
 	@OriginalMember(owner = "client!g", name = "a", descriptor = "(Z)V")

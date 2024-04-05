@@ -44,7 +44,7 @@ public final class Static5 {
 	public static Class40 aClass40_47 = Static13.method257("Loading fonts )2 ");
 
 	@OriginalMember(owner = "client!ae", name = "kb", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_3 = new Class47(64);
+	public static LruCache aClass47_3 = new LruCache(64);
 
 	@OriginalMember(owner = "client!ae", name = "lb", descriptor = "[I")
 	public static int[] ROTATION_WALL_TYPE = new int[] { 1, 2, 4, 8 };
@@ -73,7 +73,7 @@ public final class Static5 {
 
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(BI)Lclient!ee;")
 	public static Class2_Sub2_Sub5 method116(@OriginalArg(1) int arg0) {
-		@Pc(15) Class2_Sub2_Sub5 local15 = (Class2_Sub2_Sub5) aClass47_3.method1325((long) arg0);
+		@Pc(15) Class2_Sub2_Sub5 local15 = (Class2_Sub2_Sub5) aClass47_3.get((long) arg0);
 		if (local15 != null) {
 			return local15;
 		}
@@ -83,7 +83,7 @@ public final class Static5 {
 		if (local25 != null) {
 			local15.method504(new Packet(local25));
 		}
-		aClass47_3.method1332((long) arg0, local15);
+		aClass47_3.put((long) arg0, local15);
 		return local15;
 	}
 

@@ -153,7 +153,7 @@ public final class Static96 {
 			local407 = Static18.aClass40Array8[arg0];
 			local412 = local407.method1200(Static32.aClass40_229);
 			if (local412 != -1) {
-				local427 = local407.method1185(local412 + 5).method1178().method1179();
+				local427 = local407.method1185(local412 + 5).method1178().toBase37();
 				if (local12 == 51) {
 					Static63.method1062(local427);
 				}
@@ -200,7 +200,7 @@ public final class Static96 {
 			local407 = Static18.aClass40Array8[arg0];
 			local412 = local407.method1200(Static32.aClass40_229);
 			if (local412 != -1) {
-				local427 = local407.method1185(local412 + 5).method1178().method1179();
+				local427 = local407.method1185(local412 + 5).method1178().toBase37();
 				@Pc(598) int local598 = -1;
 				for (local600 = 0; local600 < Static22.anInt2594; local600++) {
 					if (Static21.aLongArray2[local600] == local427) {

@@ -24,7 +24,7 @@ public final class Static92 {
 	public static Class45 aClass45_29;
 
 	@OriginalMember(owner = "client!tb", name = "x", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_21 = new Class47(500);
+	public static LruCache aClass47_21 = new LruCache(500);
 
 	@OriginalMember(owner = "client!tb", name = "z", descriptor = "Lclient!o;")
 	public static Class40 aClass40_617 = Static13.method257("Ok");

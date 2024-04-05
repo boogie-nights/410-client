@@ -33,7 +33,7 @@ public final class Static62 {
 
 	@OriginalMember(owner = "client!mb", name = "a", descriptor = "(II)Lclient!f;")
 	public static Class2_Sub2_Sub6 method1042(@OriginalArg(0) int arg0) {
-		@Pc(10) Class2_Sub2_Sub6 local10 = (Class2_Sub2_Sub6) Static55.aClass47_13.method1325((long) arg0);
+		@Pc(10) Class2_Sub2_Sub6 local10 = (Class2_Sub2_Sub6) Static55.aClass47_13.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -43,7 +43,7 @@ public final class Static62 {
 			local10.method523(new Packet(local20));
 		}
 		local10.method522();
-		Static55.aClass47_13.method1332((long) arg0, local10);
+		Static55.aClass47_13.put((long) arg0, local10);
 		return local10;
 	}
 
