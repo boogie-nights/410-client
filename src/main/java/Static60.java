@@ -121,7 +121,7 @@ public final class Static60 {
 		@Pc(193) int y = Class2_Sub2_Sub2_Sub1.anIntArray58[obj.xan2d] * local164 >> 16;
 		@Pc(202) int local202 = local164 * Class2_Sub2_Sub2_Sub1.anIntArray59[obj.xan2d] >> 16;
 		local101.method1135();
-		local101.method1151(obj.yan2d, obj.zan2d, obj.xan2d, obj.xoff2d, local202 + local101.anInt2265 / 2 + obj.yoff2d, y + obj.yoff2d);
+		local101.method1151(obj.yan2d, obj.zan2d, obj.xan2d, obj.xoff2d, local202 + local101.maxY / 2 + obj.yoff2d, y + obj.yoff2d);
 		for (@Pc(230) int local230 = 31; local230 >= 0; local230--) {
 			for (y = 31; y >= 0; y--) {
 				if (icon.pixels[y * 32 + local230] == 0) {

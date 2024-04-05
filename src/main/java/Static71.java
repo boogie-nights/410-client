@@ -38,13 +38,13 @@ public final class Static71 {
 	public static int[] anIntArray387 = new int[1000];
 
 	@OriginalMember(owner = "client!ne", name = "Wb", descriptor = "[Z")
-	public static boolean[] aBooleanArray25 = new boolean[4096];
+	public static boolean[] faceNearClipped = new boolean[4096];
 
 	@OriginalMember(owner = "client!ne", name = "Xb", descriptor = "[I")
-	public static int[] anIntArray388 = new int[4096];
+	public static int[] vertexScreenX = new int[4096];
 
 	@OriginalMember(owner = "client!ne", name = "Yb", descriptor = "[I")
-	public static int[] anIntArray389 = new int[4096];
+	public static int[] vertexScreenY = new int[4096];
 
 	@OriginalMember(owner = "client!ne", name = "Zb", descriptor = "[I")
 	public static int[] anIntArray390 = new int[4096];
@@ -65,7 +65,7 @@ public final class Static71 {
 	public static int[] anIntArray395 = Class2_Sub2_Sub2_Sub1.anIntArray61;
 
 	@OriginalMember(owner = "client!ne", name = "gc", descriptor = "[I")
-	public static int[] anIntArray396 = new int[4096];
+	public static int[] vertexViewSpaceX = new int[4096];
 
 	@OriginalMember(owner = "client!ne", name = "hc", descriptor = "[I")
 	public static int[] anIntArray397 = new int[4096];
@@ -95,7 +95,7 @@ public final class Static71 {
 	public static int[] cos = Class2_Sub2_Sub2_Sub1.anIntArray58;
 
 	@OriginalMember(owner = "client!ne", name = "qc", descriptor = "[Z")
-	public static boolean[] aBooleanArray26 = new boolean[4096];
+	public static boolean[] faceClippedX = new boolean[4096];
 
 	@OriginalMember(owner = "client!ne", name = "rc", descriptor = "I")
 	public static int anInt1750 = 0;
@@ -131,12 +131,12 @@ public final class Static71 {
 		anIntArray384 = null;
 		aClass2_Sub2_Sub12_Sub4_3 = null;
 		anIntArray399 = null;
-		aBooleanArray26 = null;
-		aBooleanArray25 = null;
-		anIntArray389 = null;
-		anIntArray388 = null;
+		faceClippedX = null;
+		faceNearClipped = null;
+		vertexScreenY = null;
+		vertexScreenX = null;
 		anIntArray401 = null;
-		anIntArray396 = null;
+		vertexViewSpaceX = null;
 		anIntArray397 = null;
 		anIntArray390 = null;
 		anIntArray391 = null;

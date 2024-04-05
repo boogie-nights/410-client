@@ -157,7 +157,7 @@ public final class Class2_Sub2_Sub12_Sub1_Sub1 extends Class2_Sub2_Sub12_Sub1 {
 			return null;
 		}
 		local60.method1135();
-		super.anInt2310 = local60.anInt2265;
+		super.anInt2310 = local60.maxY;
 		@Pc(91) Class2_Sub2_Sub12_Sub4 local91;
 		@Pc(111) Class2_Sub2_Sub12_Sub4[] local111;
 		if (!this.aBoolean104 && super.anInt2302 != -1 && super.anInt2291 != -1) {

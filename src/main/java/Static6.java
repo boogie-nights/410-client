@@ -38,10 +38,10 @@ public final class Static6 {
 	public static boolean jagged = true;
 
 	@OriginalMember(owner = "client!b", name = "gb", descriptor = "Z")
-	public static boolean aBoolean19 = false;
+	public static boolean clipX = false;
 
 	@OriginalMember(owner = "client!b", name = "ib", descriptor = "I")
-	public static int anInt228 = 0;
+	public static int alpha = 0;
 
 	@OriginalMember(owner = "client!b", name = "jb", descriptor = "Z")
 	private static boolean aBoolean20 = false;
@@ -164,7 +164,7 @@ public final class Static6 {
 		}
 		@Pc(13) int local13;
 		@Pc(38) int local38;
-		if (aBoolean19) {
+		if (clipX) {
 			local13 = (arg8 - arg7) / (arg6 - arg5);
 			if (arg6 > anInt222) {
 				arg6 = anInt222;
@@ -575,7 +575,7 @@ public final class Static6 {
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IIIIIIIII)V")
-	public static void method172(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8) {
+	public static void fillGouraudTriangle(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8) {
 		@Pc(1) int local1 = 0;
 		@Pc(3) int local3 = 0;
 		if (arg1 != arg0) {
@@ -1063,7 +1063,7 @@ public final class Static6 {
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IIIIIII)V")
-	public static void method174(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	public static void fillTriangle(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		@Pc(1) int local1 = 0;
 		if (arg1 != arg0) {
 			local1 = (arg4 - arg3 << 16) / (arg1 - arg0);
@@ -1467,12 +1467,12 @@ public final class Static6 {
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IIIIIIIIIIIIIIIIIII)V")
-	public static void method176(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14, @OriginalArg(15) int arg15, @OriginalArg(16) int arg16, @OriginalArg(17) int arg17, @OriginalArg(18) int arg18) {
+	public static void fillTexturedTriangle(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14, @OriginalArg(15) int arg15, @OriginalArg(16) int arg16, @OriginalArg(17) int arg17, @OriginalArg(18) int arg18) {
 		@Pc(4) int[] local4 = anInterface4_1.method397(arg18);
 		@Pc(11) int local11;
 		if (local4 == null) {
 			local11 = anInterface4_1.method396(arg18);
-			method172(arg0, arg1, arg2, arg3, arg4, arg5, method166(local11, arg6), method166(local11, arg7), method166(local11, arg8));
+			fillGouraudTriangle(arg0, arg1, arg2, arg3, arg4, arg5, method166(local11, arg6), method166(local11, arg7), method166(local11, arg8));
 			return;
 		}
 		aBoolean20 = anInterface4_1.method394(arg18);
@@ -2101,7 +2101,7 @@ public final class Static6 {
 		@Pc(48) int local48;
 		@Pc(91) int local91;
 		if (jagged) {
-			if (aBoolean19) {
+			if (clipX) {
 				if (arg3 - arg2 > 3) {
 					local16 = (arg5 - arg4) / (arg3 - arg2);
 				} else {
@@ -2132,7 +2132,7 @@ public final class Static6 {
 				return;
 			}
 			@Pc(98) int local98;
-			if (anInt228 == 0) {
+			if (alpha == 0) {
 				while (true) {
 					local48--;
 					if (local48 < 0) {
@@ -2159,8 +2159,8 @@ public final class Static6 {
 					arg0[local108] = local91;
 				}
 			} else {
-				local143 = anInt228;
-				local147 = 256 - anInt228;
+				local143 = alpha;
+				local147 = 256 - alpha;
 				while (true) {
 					local48--;
 					if (local48 < 0) {
@@ -2188,7 +2188,7 @@ public final class Static6 {
 			}
 		} else if (arg2 < arg3) {
 			local16 = (arg5 - arg4) / (arg3 - arg2);
-			if (aBoolean19) {
+			if (clipX) {
 				if (arg3 > anInt222) {
 					arg3 = anInt222;
 				}
@@ -2202,15 +2202,15 @@ public final class Static6 {
 			}
 			@Pc(401) int local401 = arg1 + arg2;
 			local48 = arg3 - arg2;
-			if (anInt228 == 0) {
+			if (alpha == 0) {
 				do {
 					arg0[local401++] = anIntArray63[arg4 >> 8];
 					arg4 += local16;
 					local48--;
 				} while (local48 > 0);
 			} else {
-				local143 = anInt228;
-				local147 = 256 - anInt228;
+				local143 = alpha;
+				local147 = 256 - alpha;
 				do {
 					local91 = anIntArray63[arg4 >> 8];
 					arg4 += local16;
@@ -2235,7 +2235,7 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([IIIIII)V")
 	private static void method181(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		if (aBoolean19) {
+		if (clipX) {
 			if (arg4 > anInt222) {
 				arg4 = anInt222;
 			}
@@ -2249,7 +2249,7 @@ public final class Static6 {
 		arg1 += arg3;
 		@Pc(24) int local24 = arg4 - arg3 >> 2;
 		@Pc(30) int local30;
-		if (anInt228 == 0) {
+		if (alpha == 0) {
 			while (true) {
 				local24--;
 				if (local24 < 0) {
@@ -2270,8 +2270,8 @@ public final class Static6 {
 				arg0[local30] = arg2;
 			}
 		}
-		@Pc(68) int local68 = anInt228;
-		@Pc(72) int local72 = 256 - anInt228;
+		@Pc(68) int local68 = alpha;
+		@Pc(72) int local72 = 256 - alpha;
 		@Pc(92) int local92 = ((arg2 & 0xFF00FF) * local72 >> 8 & 0xFF00FF) + ((arg2 & 0xFF00) * local72 >> 8 & 0xFF00);
 		while (true) {
 			local24--;

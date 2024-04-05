@@ -21,7 +21,7 @@ public final class Class2_Sub2_Sub12_Sub1_Sub2 extends Class2_Sub2_Sub12_Sub1 {
 			return null;
 		}
 		local61.method1135();
-		super.anInt2310 = local61.anInt2265;
+		super.anInt2310 = local61.maxY;
 		if (super.anInt2302 != -1 && super.anInt2291 != -1) {
 			@Pc(89) Class2_Sub2_Sub12_Sub4 local89 = Static5.method116(super.anInt2302).method501(super.anInt2291);
 			if (local89 != null) {
