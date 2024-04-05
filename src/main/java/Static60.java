@@ -65,7 +65,7 @@ public final class Static60 {
 		if (arg0 == 0) {
 			icon = (Class2_Sub2_Sub2_Sub4) Static25.aClass47_7.method1325((long) arg2);
 			if (icon != null && icon.cropH != count && icon.cropH != -1) {
-				icon.method1677();
+				icon.unlink();
 				icon = null;
 			}
 			if (icon != null) {

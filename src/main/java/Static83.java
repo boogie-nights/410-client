@@ -727,7 +727,7 @@ public final class Static83 {
 	public static void method1355(@OriginalArg(0) byte[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class11 arg2) {
 		@Pc(7) Class2_Sub9 local7 = new Class2_Sub9();
 		local7.aClass11_3 = arg2;
-		local7.aLong152 = arg1;
+		local7.id = arg1;
 		local7.anInt1189 = 0;
 		local7.aByteArray13 = arg0;
 		@Pc(27) Class44 local27 = Static20.aClass44_2;

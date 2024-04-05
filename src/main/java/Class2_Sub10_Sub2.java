@@ -148,19 +148,19 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 					this.method1295(local50);
 				} else {
 					local50.anInt32 = local58;
-					this.method1292(local50.aClass2_94, local50);
+					this.method1292(local50.prev, local50);
 				}
 			}
 		} while (arg0 != 0);
 	}
 
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!g;Lclient!aa;)V")
-	private void method1292(@OriginalArg(0) Class2 arg0, @OriginalArg(1) Class2_Sub1 arg1) {
+	private void method1292(@OriginalArg(0) Linkable arg0, @OriginalArg(1) Class2_Sub1 arg1) {
 		while (arg0 != this.aClass44_5.aClass2_71 && ((Class2_Sub1) arg0).anInt32 <= arg1.anInt32) {
-			arg0 = arg0.aClass2_94;
+			arg0 = arg0.prev;
 		}
 		this.aClass44_5.method1223(arg0, arg1);
-		this.anInt1884 = ((Class2_Sub1) this.aClass44_5.aClass2_71.aClass2_94).anInt32;
+		this.anInt1884 = ((Class2_Sub1) this.aClass44_5.aClass2_71.prev).anInt32;
 	}
 
 	@OriginalMember(owner = "client!qa", name = "d", descriptor = "(I)V")
@@ -203,7 +203,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 					this.method1295(local61);
 				} else {
 					local61.anInt32 = local69;
-					this.method1292(local61.aClass2_94, local61);
+					this.method1292(local61.prev, local61);
 				}
 			}
 		} while (arg2 != 0);
@@ -212,9 +212,9 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!aa;)V")
 	private void method1295(@OriginalArg(0) Class2_Sub1 arg0) {
-		arg0.method1677();
+		arg0.unlink();
 		arg0.method16();
-		@Pc(9) Class2 local9 = this.aClass44_5.aClass2_71.aClass2_94;
+		@Pc(9) Linkable local9 = this.aClass44_5.aClass2_71.prev;
 		if (local9 == this.aClass44_5.aClass2_71) {
 			this.anInt1884 = -1;
 		} else {

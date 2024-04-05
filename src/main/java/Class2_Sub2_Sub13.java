@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!mc")
-public final class Class2_Sub2_Sub13 extends Class2_Sub2 {
+public final class Class2_Sub2_Sub13 extends Hashable {
 
 	@OriginalMember(owner = "client!mc", name = "O", descriptor = "I")
 	public int anInt1568;

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jd")
-public abstract class Class2_Sub2_Sub12 extends Class2_Sub2 {
+public abstract class Class2_Sub2_Sub12 extends Hashable {
 
 	@OriginalMember(owner = "client!jd", name = "eb", descriptor = "I")
 	public int maxY = 1000;

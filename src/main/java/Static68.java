@@ -211,7 +211,7 @@ public final class Static68 {
 			}
 			arg0.method1687(local97);
 			arg0.method1731(arg0.anInt2546 - local97);
-			local16.method1677();
+			local16.unlink();
 		}
 	}
 

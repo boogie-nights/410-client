@@ -50,7 +50,7 @@ public final class Static63 {
 		@Pc(9) Class44 local9 = Static20.aClass44_2;
 		synchronized (Static20.aClass44_2) {
 			for (@Pc(16) Class2_Sub9 local16 = (Class2_Sub9) Static20.aClass44_2.method1224(); local16 != null; local16 = (Class2_Sub9) Static20.aClass44_2.method1231()) {
-				if ((long) arg2 == local16.aLong152 && arg1 == local16.aClass11_3 && local16.anInt1189 == 0) {
+				if ((long) arg2 == local16.id && arg1 == local16.aClass11_3 && local16.anInt1189 == 0) {
 					local7 = local16.aByteArray13;
 					break;
 				}

@@ -388,7 +388,7 @@ public final class Static51 {
 		local7.anInt1189 = 1;
 		local7.aClass5_Sub1_11 = arg1;
 		local7.aClass11_3 = arg2;
-		local7.aLong152 = arg0;
+		local7.id = arg0;
 		@Pc(22) Class44 local22 = Static20.aClass44_2;
 		synchronized (Static20.aClass44_2) {
 			Static20.aClass44_2.method1221(local7);

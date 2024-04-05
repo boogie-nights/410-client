@@ -45,7 +45,7 @@ public final class Static32 {
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(III)I")
 	public static int method592(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(10) long local10 = (long) ((arg0 << 1365004144) + arg1);
-		return Static90.aClass2_Sub2_Sub9_1 != null && Static90.aClass2_Sub2_Sub9_1.aLong152 == local10 ? Static29.aClass2_Sub3_2.anInt2546 * 99 / (Static29.aClass2_Sub3_2.aByteArray24.length - Static90.aClass2_Sub2_Sub9_1.aByte2) + 1 : 0;
+		return Static90.aClass2_Sub2_Sub9_1 != null && Static90.aClass2_Sub2_Sub9_1.id == local10 ? Static29.aClass2_Sub3_2.anInt2546 * 99 / (Static29.aClass2_Sub3_2.aByteArray24.length - Static90.aClass2_Sub2_Sub9_1.aByte2) + 1 : 0;
 	}
 
 	@OriginalMember(owner = "client!ga", name = "c", descriptor = "(B)V")

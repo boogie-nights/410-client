@@ -59,14 +59,14 @@ public final class Static74 {
 					Static98.method1566(local15.anInt823, local15.anInt818, local15.anInt821, local15.anInt819, local15.anInt817, local15.anInt828, local15.anInt829);
 					local15.anInt827 = -1;
 					if (local15.anInt828 == local15.anInt820 && local15.anInt820 == -1) {
-						local15.method1677();
+						local15.unlink();
 					} else if (local15.anInt820 == local15.anInt828 && local15.anInt825 == local15.anInt829 && local15.anInt819 == local15.anInt830) {
-						local15.method1677();
+						local15.unlink();
 					}
 				}
 			} else if (local15.anInt820 < 0 || Static81.method1335(local15.anInt820, local15.anInt830)) {
 				Static98.method1566(local15.anInt823, local15.anInt818, local15.anInt821, local15.anInt830, local15.anInt817, local15.anInt820, local15.anInt825);
-				local15.method1677();
+				local15.unlink();
 			}
 		}
 	}

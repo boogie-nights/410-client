@@ -75,11 +75,11 @@ public final class Static1 {
 	public static void method3() {
 		for (@Pc(10) Class2_Sub2_Sub12_Sub6 local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.method1224(); local10 != null; local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.method1231()) {
 			if (local10.anInt2235 != anInt8 || local10.aBoolean169) {
-				local10.method1677();
+				local10.unlink();
 			} else if (Static107.anInt2511 >= local10.anInt2231) {
 				local10.method1519(Static45.anInt1095);
 				if (local10.aBoolean169) {
-					local10.method1677();
+					local10.unlink();
 				} else {
 					Static93.aClass55_1.method1425(local10.anInt2235, local10.anInt2232, local10.anInt2230, local10.anInt2223, 60, local10, 0, -1, false);
 				}

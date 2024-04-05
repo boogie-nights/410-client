@@ -115,7 +115,7 @@ public final class Static82 {
 			local307.anInt821 -= local54;
 			local307.anInt818 -= local69;
 			if (local307.anInt818 < 0 || local307.anInt821 < 0 || local307.anInt818 >= 104 || local307.anInt821 >= 104) {
-				local307.method1677();
+				local307.unlink();
 			}
 		}
 		Static7.aBoolean22 = false;

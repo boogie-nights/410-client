@@ -47,7 +47,7 @@ public final class Static54 {
 	public static void method917() {
 		for (@Pc(10) Class2_Sub2_Sub12_Sub2 local10 = (Class2_Sub2_Sub12_Sub2) Static24.aClass44_4.method1224(); local10 != null; local10 = (Class2_Sub2_Sub12_Sub2) Static24.aClass44_4.method1231()) {
 			if (local10.anInt1417 != Static1.anInt8 || local10.anInt1427 < Static107.anInt2511) {
-				local10.method1677();
+				local10.unlink();
 			} else if (Static107.anInt2511 >= local10.anInt1419) {
 				if (local10.anInt1434 > 0) {
 					@Pc(47) Class2_Sub2_Sub12_Sub1_Sub2 local47 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local10.anInt1434 - 1];

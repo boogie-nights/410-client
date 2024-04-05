@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ia")
-public final class Class2_Sub2_Sub10 extends Class2_Sub2 {
+public final class Class2_Sub2_Sub10 extends Hashable {
 
 	@OriginalMember(owner = "client!ia", name = "S", descriptor = "[I")
 	private int[] anIntArray209;

@@ -140,7 +140,7 @@ public final class Static49 {
 				Static44.anInt1077++;
 			}
 		} else if (arg4) {
-			local16.method1637();
+			local16.uncache();
 			Static93.aClass6_6.method195(local16, local6);
 			Static2.anInt34++;
 			Static44.anInt1077--;

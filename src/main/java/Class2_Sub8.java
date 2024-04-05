@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!hd")
-public final class Class2_Sub8 extends Class2 {
+public final class Class2_Sub8 extends Linkable {
 
 	@OriginalMember(owner = "client!hd", name = "x", descriptor = "Z")
 	public boolean aBoolean71 = false;

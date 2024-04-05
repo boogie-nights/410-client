@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!kb")
-public final class Class2_Sub9 extends Class2 {
+public final class Class2_Sub9 extends Linkable {
 
 	@OriginalMember(owner = "client!kb", name = "w", descriptor = "[B")
 	public byte[] aByteArray13;

@@ -253,7 +253,7 @@ public final class Static3 {
 						if (local950 != null) {
 							for (local771 = (Class2_Sub2_Sub12_Sub3) local950.method1224(); local771 != null; local771 = (Class2_Sub2_Sub12_Sub3) local950.method1231()) {
 								if (local771.anInt1490 == (local31 & 0x7FFF)) {
-									local771.method1677();
+									local771.unlink();
 									break;
 								}
 							}

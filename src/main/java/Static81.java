@@ -90,12 +90,12 @@ public final class Static81 {
 						return;
 					}
 					Static74.aClass41_1.method1204(local40);
-					Static105.aClass6_7.method195(local40, local40.aLong152);
+					Static105.aClass6_7.method195(local40, local40.id);
 					Static93.anInt2182--;
 					Static44.anInt1077++;
 				}
 			}
-			Static93.aClass6_6.method195(local40, local40.aLong152);
+			Static93.aClass6_6.method195(local40, local40.id);
 			Static2.anInt34++;
 			Static96.anInt2333--;
 		}
@@ -231,7 +231,7 @@ public final class Static81 {
 			if (local20 == null) {
 				return;
 			}
-			local20.aClass5_Sub1_11.method95(local20.aClass11_3, (int) local20.aLong152, local20.aByteArray13, false);
+			local20.aClass5_Sub1_11.method95(local20.aClass11_3, (int) local20.id, local20.aByteArray13, false);
 		}
 	}
 }

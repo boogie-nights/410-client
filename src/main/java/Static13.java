@@ -50,7 +50,7 @@ public final class Static13 {
 				local18.anInt827 = 0;
 				Static4.method86(local18);
 			} else {
-				local18.method1677();
+				local18.unlink();
 			}
 		}
 	}

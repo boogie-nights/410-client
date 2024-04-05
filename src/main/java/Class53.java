@@ -29,13 +29,13 @@ public final class Class53 implements Runnable {
 					}
 				} else {
 					if (local12.anInt1189 == 0) {
-						local12.aClass11_3.method259(local12.aByteArray13.length, (int) local12.aLong152, local12.aByteArray13);
+						local12.aClass11_3.method259(local12.aByteArray13.length, (int) local12.id, local12.aByteArray13);
 						local5 = Static20.aClass44_2;
 						synchronized (Static20.aClass44_2) {
-							local12.method1677();
+							local12.unlink();
 						}
 					} else if (local12.anInt1189 == 1) {
-						local12.aByteArray13 = local12.aClass11_3.method261((int) local12.aLong152);
+						local12.aByteArray13 = local12.aClass11_3.method261((int) local12.id);
 						local5 = Static20.aClass44_2;
 						synchronized (Static20.aClass44_2) {
 							Static5.aClass44_1.method1221(local12);

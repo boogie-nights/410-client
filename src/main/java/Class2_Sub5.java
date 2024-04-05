@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ga")
-public final class Class2_Sub5 extends Class2 {
+public final class Class2_Sub5 extends Linkable {
 
 	@OriginalMember(owner = "client!ga", name = "w", descriptor = "I")
 	public final int anInt738;

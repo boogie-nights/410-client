@@ -94,9 +94,9 @@ public final class Static34 {
 					local58 = (Class2_Sub2_Sub9) Static93.aClass6_6.method184();
 					local63 = new Packet(4);
 					local63.method1703(1);
-					local63.method1688((int) local58.aLong152);
+					local63.method1688((int) local58.id);
 					Static31.aClass25_48.method731(local63.aByteArray24, 4);
-					Static76.aClass6_5.method195(local58, local58.aLong152);
+					Static76.aClass6_5.method195(local58, local58.id);
 					Static2.anInt34--;
 					Static96.anInt2333++;
 				}
@@ -104,10 +104,10 @@ public final class Static34 {
 					local58 = (Class2_Sub2_Sub9) Static74.aClass41_1.method1203();
 					local63 = new Packet(4);
 					local63.method1703(0);
-					local63.method1688((int) local58.aLong152);
+					local63.method1688((int) local58.id);
 					Static31.aClass25_48.method731(local63.aByteArray24, 4);
-					local58.method1637();
-					Static36.aClass6_2.method195(local58, local58.aLong152);
+					local58.uncache();
+					Static36.aClass6_2.method195(local58, local58.id);
 					Static44.anInt1077--;
 					Static93.anInt2182++;
 				}
@@ -194,7 +194,7 @@ public final class Static34 {
 						Static29.aClass2_Sub3_2.anInt2546 += local218;
 						Static11.anInt274 += local218;
 						if (local201 == Static29.aClass2_Sub3_2.anInt2546) {
-							if (Static90.aClass2_Sub2_Sub9_1.aLong152 == 16711935L) {
+							if (Static90.aClass2_Sub2_Sub9_1.id == 16711935L) {
 								Static42.aPacket = Static29.aClass2_Sub3_2;
 								for (local272 = 0; local272 < 256; local272++) {
 									@Pc(482) Class5_Sub1 local482 = Static83.aClass5_Sub1Array1[local272];
@@ -220,9 +220,9 @@ public final class Static34 {
 								}
 								Static72.anInt1792 = 0;
 								Static101.anInt2401 = 0;
-								Static90.aClass2_Sub2_Sub9_1.aClass5_Sub1_9.method91(Static29.aClass2_Sub3_2.aByteArray24, Static93.aBoolean166, (Static90.aClass2_Sub2_Sub9_1.aLong152 & 0xFF0000L) == 16711680L, (int) (Static90.aClass2_Sub2_Sub9_1.aLong152 & 0xFFFFL));
+								Static90.aClass2_Sub2_Sub9_1.aClass5_Sub1_9.method91(Static29.aClass2_Sub3_2.aByteArray24, Static93.aBoolean166, (Static90.aClass2_Sub2_Sub9_1.id & 0xFF0000L) == 16711680L, (int) (Static90.aClass2_Sub2_Sub9_1.id & 0xFFFFL));
 							}
-							Static90.aClass2_Sub2_Sub9_1.method1677();
+							Static90.aClass2_Sub2_Sub9_1.unlink();
 							Static29.aClass2_Sub3_2 = null;
 							Static11.anInt274 = 0;
 							Static90.aClass2_Sub2_Sub9_1 = null;
