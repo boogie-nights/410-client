@@ -14,10 +14,10 @@ public final class Static71 {
 	public static int baseZ;
 
 	@OriginalMember(owner = "client!ne", name = "Mb", descriptor = "Lclient!ne;")
-	public static Class2_Sub2_Sub12_Sub4 aClass2_Sub2_Sub12_Sub4_2 = new Class2_Sub2_Sub12_Sub4();
+	public static Model aClass2_Sub2_Sub12_Sub4_2 = new Model();
 
 	@OriginalMember(owner = "client!ne", name = "Ob", descriptor = "Lclient!ne;")
-	public static Class2_Sub2_Sub12_Sub4 aClass2_Sub2_Sub12_Sub4_3 = new Class2_Sub2_Sub12_Sub4();
+	public static Model aModel_3 = new Model();
 
 	@OriginalMember(owner = "client!ne", name = "Pb", descriptor = "[I")
 	public static int[] anIntArray384 = new int[1];
@@ -114,7 +114,7 @@ public final class Static71 {
 			} else if (arg1 > 127) {
 				arg1 = 127;
 			}
-			return Class2_Sub2_Sub12_Sub4.anIntArray405[arg1];
+			return Model.anIntArray405[arg1];
 		}
 		arg1 = arg1 * (arg0 & 0x7F) >> 7;
 		if (arg1 < 2) {
@@ -129,7 +129,7 @@ public final class Static71 {
 	public static void method1150() {
 		aClass2_Sub2_Sub12_Sub4_2 = null;
 		anIntArray384 = null;
-		aClass2_Sub2_Sub12_Sub4_3 = null;
+		aModel_3 = null;
 		anIntArray399 = null;
 		faceClippedX = null;
 		faceNearClipped = null;
@@ -154,12 +154,12 @@ public final class Static71 {
 		cos = null;
 		anIntArray392 = null;
 		anIntArray395 = null;
-		Class2_Sub2_Sub12_Sub4.anIntArray405 = null;
+		Model.anIntArray405 = null;
 	}
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(Lclient!ud;II)Lclient!ne;")
-	public static Class2_Sub2_Sub12_Sub4 method1163(@OriginalArg(0) Class5 arg0, @OriginalArg(1) int arg1) {
+	public static Model method1163(@OriginalArg(0) Class5 arg0, @OriginalArg(1) int arg1) {
 		@Pc(5) byte[] local5 = arg0.method68(0, arg1);
-		return local5 == null ? null : new Class2_Sub2_Sub12_Sub4(local5);
+		return local5 == null ? null : new Model(local5);
 	}
 }

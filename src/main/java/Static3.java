@@ -180,10 +180,10 @@ public final class Static3 {
 						@Pc(566) int local566 = Static91.anIntArrayArrayArray8[Static1.anInt8][local19][local31];
 						@Pc(578) int local578 = Static91.anIntArrayArrayArray8[Static1.anInt8][local19 + 1][local31 + 1];
 						@Pc(588) int local588 = Static91.anIntArrayArrayArray8[Static1.anInt8][local19][local31 + 1];
-						@Pc(598) Class2_Sub2_Sub12_Sub4 local598 = local548.method765(local425, local558, local588, local566, local43, local578);
+						@Pc(598) Model local598 = local548.method765(local425, local558, local588, local566, local43, local578);
 						if (local598 != null) {
 							Static22.method1727(local35 + 1, Static1.anInt8, local503, 0, 0, -1, local31, local527 + 1, local19);
-							local536.aClass2_Sub2_Sub12_Sub4_1 = local598;
+							local536.aModel_1 = local598;
 							@Pc(621) int local621 = local548.anInt1036;
 							@Pc(624) int local624 = local548.anInt1040;
 							@Pc(633) byte local633;

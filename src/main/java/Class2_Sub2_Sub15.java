@@ -25,19 +25,19 @@ public final class Class2_Sub2_Sub15 extends Class2_Sub2 {
 	private final int[] anIntArray517 = new int[6];
 
 	@OriginalMember(owner = "client!v", name = "c", descriptor = "(B)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method1579() {
+	public Model method1579() {
 		if (this.anIntArray516 == null) {
 			return null;
 		}
-		@Pc(15) Class2_Sub2_Sub12_Sub4[] local15 = new Class2_Sub2_Sub12_Sub4[this.anIntArray516.length];
+		@Pc(15) Model[] local15 = new Model[this.anIntArray516.length];
 		for (@Pc(17) int local17 = 0; local17 < this.anIntArray516.length; local17++) {
 			local15[local17] = Static71.method1163(Static72.aClass5_22, this.anIntArray516[local17]);
 		}
-		@Pc(45) Class2_Sub2_Sub12_Sub4 local45;
+		@Pc(45) Model local45;
 		if (local15.length == 1) {
 			local45 = local15[0];
 		} else {
-			local45 = new Class2_Sub2_Sub12_Sub4(local15, local15.length);
+			local45 = new Model(local15, local15.length);
 		}
 		for (@Pc(61) int local61 = 0; local61 < 6 && this.anIntArray514[local61] != 0; local61++) {
 			local45.method1140(this.anIntArray514[local61], this.anIntArray517[local61]);
@@ -71,15 +71,15 @@ public final class Class2_Sub2_Sub15 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!v", name = "j", descriptor = "(I)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method1586() {
-		@Pc(4) Class2_Sub2_Sub12_Sub4[] local4 = new Class2_Sub2_Sub12_Sub4[5];
+	public Model method1586() {
+		@Pc(4) Model[] local4 = new Model[5];
 		@Pc(6) int local6 = 0;
 		for (@Pc(12) int local12 = 0; local12 < 5; local12++) {
 			if (this.anIntArray515[local12] != -1) {
 				local4[local6++] = Static71.method1163(Static72.aClass5_22, this.anIntArray515[local12]);
 			}
 		}
-		@Pc(46) Class2_Sub2_Sub12_Sub4 local46 = new Class2_Sub2_Sub12_Sub4(local4, local6);
+		@Pc(46) Model local46 = new Model(local4, local6);
 		for (@Pc(48) int local48 = 0; local48 < 6 && this.anIntArray514[local48] != 0; local48++) {
 			local46.method1140(this.anIntArray514[local48], this.anIntArray517[local48]);
 		}

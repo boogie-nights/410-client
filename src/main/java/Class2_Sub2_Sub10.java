@@ -118,14 +118,14 @@ public final class Class2_Sub2_Sub10 extends Class2_Sub2 {
 	private int anInt1061 = 0;
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIIIIII)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method765(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5) {
+	public Model method765(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5) {
 		@Pc(17) long local17;
 		if (this.anIntArray211 == null) {
 			local17 = (this.anInt1033 << 10) + arg0;
 		} else {
 			local17 = (this.anInt1033 << 10) + (arg4 << 3) + arg0;
 		}
-		@Pc(38) Class2_Sub2_Sub12_Sub4 local38 = (Class2_Sub2_Sub12_Sub4) Static41.aClass47_10.method1325(local17);
+		@Pc(38) Model local38 = (Model) Static41.aClass47_10.method1325(local17);
 		if (local38 == null) {
 			local38 = this.method771(!this.aBoolean80, arg4, false, arg0);
 			if (local38 == null) {
@@ -134,7 +134,7 @@ public final class Class2_Sub2_Sub10 extends Class2_Sub2 {
 			Static41.aClass47_10.method1332(local17, local38);
 		}
 		if (this.aBoolean84 || this.aBoolean80) {
-			local38 = new Class2_Sub2_Sub12_Sub4(local38, this.aBoolean84, this.aBoolean80);
+			local38 = new Model(local38, this.aBoolean84, this.aBoolean80);
 		}
 		if (this.aBoolean84) {
 			@Pc(99) int local99 = (arg2 + arg1 + arg3 + arg5) / 4;
@@ -195,8 +195,8 @@ public final class Class2_Sub2_Sub10 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IZIZI)Lclient!ne;")
-	private Class2_Sub2_Sub12_Sub4 method771(@OriginalArg(1) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
-		@Pc(9) Class2_Sub2_Sub12_Sub4 local9 = null;
+	private Model method771(@OriginalArg(1) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
+		@Pc(9) Model local9 = null;
 		@Pc(20) int local20;
 		@Pc(53) int local53;
 		@Pc(124) boolean local124;
@@ -215,7 +215,7 @@ public final class Class2_Sub2_Sub10 extends Class2_Sub2 {
 				if (local124) {
 					local136 += 65536;
 				}
-				local9 = (Class2_Sub2_Sub12_Sub4) Static92.aClass47_21.method1325((long) local136);
+				local9 = (Model) Static92.aClass47_21.method1325((long) local136);
 				if (local9 == null) {
 					local9 = Static71.method1163(Static23.aClass5_8, local136 & 0xFFFF);
 					if (local9 == null) {
@@ -227,11 +227,11 @@ public final class Class2_Sub2_Sub10 extends Class2_Sub2 {
 					Static92.aClass47_21.method1332((long) local136, local9);
 				}
 				if (local20 > 1) {
-					Static98.aClass2_Sub2_Sub12_Sub4Array1[local53] = local9;
+					Static98.aModelArray1[local53] = local9;
 				}
 			}
 			if (local20 > 1) {
-				local9 = new Class2_Sub2_Sub12_Sub4(Static98.aClass2_Sub2_Sub12_Sub4Array1, local20);
+				local9 = new Model(Static98.aModelArray1, local20);
 			}
 		} else {
 			@Pc(18) int local18 = -1;
@@ -249,7 +249,7 @@ public final class Class2_Sub2_Sub10 extends Class2_Sub2 {
 			if (local65) {
 				local53 += 65536;
 			}
-			local9 = (Class2_Sub2_Sub12_Sub4) Static92.aClass47_21.method1325((long) local53);
+			local9 = (Model) Static92.aClass47_21.method1325((long) local53);
 			if (local9 == null) {
 				local9 = Static71.method1163(Static23.aClass5_8, local53 & 0xFFFF);
 				if (local9 == null) {
@@ -272,7 +272,7 @@ public final class Class2_Sub2_Sub10 extends Class2_Sub2 {
 		} else {
 			local232 = true;
 		}
-		@Pc(260) Class2_Sub2_Sub12_Sub4 local260 = new Class2_Sub2_Sub12_Sub4(local9, arg3 == 0 && !local124 && !local232, this.anIntArray212 == null, true);
+		@Pc(260) Model local260 = new Model(local9, arg3 == 0 && !local124 && !local232, this.anIntArray212 == null, true);
 		@Pc(264) int local264 = arg3 & 0x3;
 		if (local264 == 1) {
 			local260.method1148();
@@ -493,14 +493,14 @@ public final class Class2_Sub2_Sub10 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIILclient!f;IIIIB)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method777(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class2_Sub2_Sub6 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
+	public Model method777(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class2_Sub2_Sub6 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
 		@Pc(21) long local21;
 		if (this.anIntArray211 == null) {
 			local21 = arg0 + (this.anInt1033 << 10);
 		} else {
 			local21 = (this.anInt1033 << 10) + (arg4 << 3) + arg0;
 		}
-		@Pc(43) Class2_Sub2_Sub12_Sub4 local43 = (Class2_Sub2_Sub12_Sub4) Static2.aClass47_1.method1325(local21);
+		@Pc(43) Model local43 = (Model) Static2.aClass47_1.method1325(local21);
 		if (local43 == null) {
 			local43 = this.method771(true, arg4, true, arg0);
 			if (local43 == null) {

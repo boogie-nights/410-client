@@ -171,7 +171,7 @@ public final class ObjType extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!hb", name = "a", descriptor = "(IIZ)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method713(@OriginalArg(1) int arg0, @OriginalArg(2) boolean arg1) {
+	public Model method713(@OriginalArg(1) int arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(15) int local15;
 		if (this.countobj != null && arg0 > 1) {
 			@Pc(13) int local13 = -1;
@@ -184,9 +184,9 @@ public final class ObjType extends Class2_Sub2 {
 				return Static105.get(local13).method713(1, arg1);
 			}
 		}
-		@Pc(65) Class2_Sub2_Sub12_Sub4 model;
+		@Pc(65) Model model;
 		if (arg1) {
-			model = (Class2_Sub2_Sub12_Sub4) Static90.aClass47_18.method1325((long) this.anInt954);
+			model = (Model) Static90.aClass47_18.method1325((long) this.anInt954);
 			if (model != null) {
 				return model;
 			}
@@ -212,7 +212,7 @@ public final class ObjType extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!hb", name = "b", descriptor = "(ZI)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method714(@OriginalArg(0) boolean arg0) {
+	public Model method714(@OriginalArg(0) boolean arg0) {
 		@Pc(16) int local16 = this.manhead;
 		@Pc(19) int local19 = this.manhead2;
 		if (arg0) {
@@ -222,11 +222,11 @@ public final class ObjType extends Class2_Sub2 {
 		if (local16 == -1) {
 			return null;
 		}
-		@Pc(37) Class2_Sub2_Sub12_Sub4 local37 = Static71.method1163(Static56.aClass5_29, local16);
+		@Pc(37) Model local37 = Static71.method1163(Static56.aClass5_29, local16);
 		if (local19 != -1) {
-			@Pc(45) Class2_Sub2_Sub12_Sub4 local45 = Static71.method1163(Static56.aClass5_29, local19);
-			@Pc(56) Class2_Sub2_Sub12_Sub4[] local56 = new Class2_Sub2_Sub12_Sub4[] { local37, local45 };
-			local37 = new Class2_Sub2_Sub12_Sub4(local56, 2);
+			@Pc(45) Model local45 = Static71.method1163(Static56.aClass5_29, local19);
+			@Pc(56) Model[] local56 = new Model[] { local37, local45 };
+			local37 = new Model(local56, 2);
 		}
 		if (this.recol_s != null) {
 			for (@Pc(67) int local67 = 0; local67 < this.recol_s.length; local67++) {
@@ -241,7 +241,7 @@ public final class ObjType extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!hb", name = "b", descriptor = "(BZ)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method718(@OriginalArg(1) boolean arg0) {
+	public Model method718(@OriginalArg(1) boolean arg0) {
 		@Pc(8) int local8 = this.manwear;
 		@Pc(11) int local11 = this.manwear2;
 		@Pc(14) int local14 = this.manwear3;
@@ -253,16 +253,16 @@ public final class ObjType extends Class2_Sub2 {
 		if (local8 == -1) {
 			return null;
 		}
-		@Pc(36) Class2_Sub2_Sub12_Sub4 local36 = Static71.method1163(Static56.aClass5_29, local8);
+		@Pc(36) Model local36 = Static71.method1163(Static56.aClass5_29, local8);
 		if (local11 != -1) {
-			@Pc(45) Class2_Sub2_Sub12_Sub4 local45 = Static71.method1163(Static56.aClass5_29, local11);
+			@Pc(45) Model local45 = Static71.method1163(Static56.aClass5_29, local11);
 			if (local14 == -1) {
-				@Pc(59) Class2_Sub2_Sub12_Sub4[] local59 = new Class2_Sub2_Sub12_Sub4[] { local36, local45 };
-				local36 = new Class2_Sub2_Sub12_Sub4(local59, 2);
+				@Pc(59) Model[] local59 = new Model[] { local36, local45 };
+				local36 = new Model(local59, 2);
 			} else {
-				@Pc(72) Class2_Sub2_Sub12_Sub4 local72 = Static71.method1163(Static56.aClass5_29, local14);
-				@Pc(87) Class2_Sub2_Sub12_Sub4[] local87 = new Class2_Sub2_Sub12_Sub4[] { local36, local45, local72 };
-				local36 = new Class2_Sub2_Sub12_Sub4(local87, 3);
+				@Pc(72) Model local72 = Static71.method1163(Static56.aClass5_29, local14);
+				@Pc(87) Model[] local87 = new Model[] { local36, local45, local72 };
+				local36 = new Model(local87, 3);
 			}
 		}
 		if (!arg0 && this.manwearOffsetY != 0) {

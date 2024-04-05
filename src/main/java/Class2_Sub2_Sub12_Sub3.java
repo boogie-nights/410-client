@@ -12,7 +12,7 @@ public final class Class2_Sub2_Sub12_Sub3 extends Class2_Sub2_Sub12 {
 
 	@OriginalMember(owner = "client!la", name = "c", descriptor = "(B)Lclient!ne;")
 	@Override
-	protected Class2_Sub2_Sub12_Sub4 method1533() {
+	protected Model method1533() {
 		return Static105.get(this.anInt1490).method713(this.anInt1495, true);
 	}
 }

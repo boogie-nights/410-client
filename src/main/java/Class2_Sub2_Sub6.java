@@ -46,7 +46,7 @@ public final class Class2_Sub2_Sub6 extends Class2_Sub2 {
 	public int anInt668 = -1;
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(IILclient!ne;)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method516(@OriginalArg(0) int arg0, @OriginalArg(2) Class2_Sub2_Sub12_Sub4 arg1) {
+	public Model method516(@OriginalArg(0) int arg0, @OriginalArg(2) Model arg1) {
 		@Pc(8) int local8 = this.anIntArray124[arg0];
 		@Pc(16) Class2_Sub2_Sub14 local16 = Static41.method754(local8 >> 16);
 		@Pc(20) int local20 = local8 & 0xFFFF;
@@ -60,7 +60,7 @@ public final class Class2_Sub2_Sub6 extends Class2_Sub2 {
 			local28 = Static41.method754(local30 >> 16);
 			local30 &= 0xFFFF;
 		}
-		@Pc(69) Class2_Sub2_Sub12_Sub4 local69;
+		@Pc(69) Model local69;
 		if (local28 == null || local30 == 65535) {
 			local69 = arg1.method1142(!local16.method1403(local20));
 			local69.method1134(local16, local20);
@@ -129,21 +129,21 @@ public final class Class2_Sub2_Sub6 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!ne;IB)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method518(@OriginalArg(0) Class2_Sub2_Sub12_Sub4 arg0, @OriginalArg(1) int arg1) {
+	public Model method518(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1) {
 		@Pc(8) int local8 = this.anIntArray124[arg1];
 		@Pc(16) Class2_Sub2_Sub14 local16 = Static41.method754(local8 >> 16);
 		@Pc(20) int local20 = local8 & 0xFFFF;
 		if (local16 == null) {
 			return arg0.method1147(true);
 		} else {
-			@Pc(39) Class2_Sub2_Sub12_Sub4 local39 = arg0.method1147(!local16.method1403(local20));
+			@Pc(39) Model local39 = arg0.method1147(!local16.method1403(local20));
 			local39.method1134(local16, local20);
 			return local39;
 		}
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!f;ILclient!ne;IZ)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method519(@OriginalArg(0) Class2_Sub2_Sub6 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub2_Sub12_Sub4 arg2, @OriginalArg(3) int arg3) {
+	public Model method519(@OriginalArg(0) Class2_Sub2_Sub6 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Model arg2, @OriginalArg(3) int arg3) {
 		@Pc(4) int local4 = this.anIntArray124[arg3];
 		@Pc(14) Class2_Sub2_Sub14 local14 = Static41.method754(local4 >> 16);
 		@Pc(18) int local18 = local4 & 0xFFFF;
@@ -153,7 +153,7 @@ public final class Class2_Sub2_Sub6 extends Class2_Sub2 {
 		@Pc(31) int local31 = arg0.anIntArray124[arg1];
 		@Pc(37) Class2_Sub2_Sub14 local37 = Static41.method754(local31 >> 16);
 		@Pc(41) int local41 = local31 & 0xFFFF;
-		@Pc(54) Class2_Sub2_Sub12_Sub4 local54;
+		@Pc(54) Model local54;
 		if (local37 == null) {
 			local54 = arg2.method1142(!local14.method1403(local18));
 			local54.method1134(local14, local18);
@@ -166,7 +166,7 @@ public final class Class2_Sub2_Sub6 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!ne;IBI)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method521(@OriginalArg(0) Class2_Sub2_Sub12_Sub4 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public Model method521(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(6) int local6 = this.anIntArray124[arg1];
 		@Pc(12) Class2_Sub2_Sub14 local12 = Static41.method754(local6 >> 16);
 		@Pc(16) int local16 = local6 & 0xFFFF;
@@ -174,7 +174,7 @@ public final class Class2_Sub2_Sub6 extends Class2_Sub2 {
 			return arg0.method1142(true);
 		}
 		@Pc(30) int local30 = arg2 & 0x3;
-		@Pc(43) Class2_Sub2_Sub12_Sub4 local43 = arg0.method1142(!local12.method1403(local16));
+		@Pc(43) Model local43 = arg0.method1142(!local12.method1403(local16));
 		if (local30 == 1) {
 			local43.method1146();
 		} else if (local30 == 2) {
@@ -224,14 +224,14 @@ public final class Class2_Sub2_Sub6 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(BLclient!ne;I)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method526(@OriginalArg(1) Class2_Sub2_Sub12_Sub4 arg0, @OriginalArg(2) int arg1) {
+	public Model method526(@OriginalArg(1) Model arg0, @OriginalArg(2) int arg1) {
 		@Pc(16) int local16 = this.anIntArray124[arg1];
 		@Pc(22) Class2_Sub2_Sub14 local22 = Static41.method754(local16 >> 16);
 		@Pc(26) int local26 = local16 & 0xFFFF;
 		if (local22 == null) {
 			return arg0.method1142(true);
 		} else {
-			@Pc(43) Class2_Sub2_Sub12_Sub4 local43 = arg0.method1142(!local22.method1403(local26));
+			@Pc(43) Model local43 = arg0.method1142(!local22.method1403(local26));
 			local43.method1134(local22, local26);
 			return local43;
 		}

@@ -351,7 +351,7 @@ public final class Static21 {
 							} else {
 								local177 = local35.anInt1574;
 							}
-							@Pc(992) Class2_Sub2_Sub12_Sub4 local992;
+							@Pc(992) Model local992;
 							if (local35.anInt1607 == 5) {
 								local992 = Static38.aClass33_1.method1005(-1, -1, null, null);
 							} else if (local177 == -1) {

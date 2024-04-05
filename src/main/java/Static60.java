@@ -87,7 +87,7 @@ public final class Static60 {
 				obj = Static105.get(local57);
 			}
 		}
-		@Pc(101) Class2_Sub2_Sub12_Sub4 local101 = obj.method713(1, true);
+		@Pc(101) Model local101 = obj.method713(1, true);
 		if (local101 == null) {
 			return null;
 		}

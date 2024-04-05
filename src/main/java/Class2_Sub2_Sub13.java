@@ -368,7 +368,7 @@ public final class Class2_Sub2_Sub13 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(ILclient!f;ZLclient!le;I)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method1057(@OriginalArg(1) Class2_Sub2_Sub6 arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Class33 arg2, @OriginalArg(4) int arg3) {
+	public Model method1057(@OriginalArg(1) Class2_Sub2_Sub6 arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Class33 arg2, @OriginalArg(4) int arg3) {
 		Static54.aBoolean102 = false;
 		@Pc(16) int local16;
 		@Pc(19) int local19;
@@ -384,7 +384,7 @@ public final class Class2_Sub2_Sub13 extends Class2_Sub2 {
 		} else if (local16 == 1 && local19 == -1) {
 			return null;
 		} else {
-			@Pc(50) Class2_Sub2_Sub12_Sub4 local50 = (Class2_Sub2_Sub12_Sub4) Static90.aClass47_20.method1325((long) ((local16 << 16) + local19));
+			@Pc(50) Model local50 = (Model) Static90.aClass47_20.method1325((long) ((local16 << 16) + local19));
 			if (local50 == null) {
 				if (local16 == 1) {
 					local50 = Static71.method1163(Static82.aClass5_26, local19);

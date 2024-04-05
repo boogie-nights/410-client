@@ -88,12 +88,12 @@ public final class Class2_Sub2_Sub7 extends Class2_Sub2 {
 	private int anInt782 = 128;
 
 	@OriginalMember(owner = "client!gb", name = "a", descriptor = "(Lclient!f;Lclient!f;III)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method605(@OriginalArg(0) Class2_Sub2_Sub6 arg0, @OriginalArg(1) Class2_Sub2_Sub6 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
+	public Model method605(@OriginalArg(0) Class2_Sub2_Sub6 arg0, @OriginalArg(1) Class2_Sub2_Sub6 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		if (this.anIntArray154 != null) {
 			@Pc(12) Class2_Sub2_Sub7 local12 = this.method611();
 			return local12 == null ? null : local12.method605(arg0, arg1, arg2, arg3);
 		}
-		@Pc(37) Class2_Sub2_Sub12_Sub4 local37 = (Class2_Sub2_Sub12_Sub4) Static90.aClass47_19.method1325((long) this.anInt762);
+		@Pc(37) Model local37 = (Model) Static90.aClass47_19.method1325((long) this.anInt762);
 		if (local37 == null) {
 			@Pc(41) boolean local41 = false;
 			for (@Pc(43) int local43 = 0; local43 < this.anIntArray155.length; local43++) {
@@ -104,14 +104,14 @@ public final class Class2_Sub2_Sub7 extends Class2_Sub2 {
 			if (local41) {
 				return null;
 			}
-			@Pc(75) Class2_Sub2_Sub12_Sub4[] local75 = new Class2_Sub2_Sub12_Sub4[this.anIntArray155.length];
+			@Pc(75) Model[] local75 = new Model[this.anIntArray155.length];
 			for (@Pc(77) int local77 = 0; local77 < this.anIntArray155.length; local77++) {
 				local75[local77] = Static71.method1163(Static103.aClass5_30, this.anIntArray155[local77]);
 			}
 			if (local75.length == 1) {
 				local37 = local75[0];
 			} else {
-				local37 = new Class2_Sub2_Sub12_Sub4(local75, local75.length);
+				local37 = new Model(local75, local75.length);
 			}
 			if (this.anIntArray156 != null) {
 				for (@Pc(121) int local121 = 0; local121 < this.anIntArray156.length; local121++) {
@@ -122,7 +122,7 @@ public final class Class2_Sub2_Sub7 extends Class2_Sub2 {
 			local37.calculateNormals(this.anInt779 + 64, this.anInt759 + 850, -30, -50, -30, true);
 			Static90.aClass47_19.method1332((long) this.anInt762, local37);
 		}
-		@Pc(179) Class2_Sub2_Sub12_Sub4 local179;
+		@Pc(179) Model local179;
 		if (arg0 != null && arg1 != null) {
 			local179 = arg0.method519(arg1, arg3, local37, arg2);
 		} else if (arg0 != null) {
@@ -263,7 +263,7 @@ public final class Class2_Sub2_Sub7 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!gb", name = "f", descriptor = "(I)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method615() {
+	public Model method615() {
 		if (this.anIntArray154 != null) {
 			@Pc(12) Class2_Sub2_Sub7 local12 = this.method611();
 			return local12 == null ? null : local12.method615();
@@ -279,15 +279,15 @@ public final class Class2_Sub2_Sub7 extends Class2_Sub2 {
 			if (local27) {
 				return null;
 			}
-			@Pc(57) Class2_Sub2_Sub12_Sub4[] local57 = new Class2_Sub2_Sub12_Sub4[this.anIntArray157.length];
+			@Pc(57) Model[] local57 = new Model[this.anIntArray157.length];
 			for (@Pc(59) int local59 = 0; local59 < this.anIntArray157.length; local59++) {
 				local57[local59] = Static71.method1163(Static103.aClass5_30, this.anIntArray157[local59]);
 			}
-			@Pc(94) Class2_Sub2_Sub12_Sub4 local94;
+			@Pc(94) Model local94;
 			if (local57.length == 1) {
 				local94 = local57[0];
 			} else {
-				local94 = new Class2_Sub2_Sub12_Sub4(local57, local57.length);
+				local94 = new Model(local57, local57.length);
 			}
 			if (this.anIntArray156 != null) {
 				for (@Pc(105) int local105 = 0; local105 < this.anIntArray156.length; local105++) {

@@ -79,7 +79,7 @@ public final class Static76 {
 				}
 				@Pc(102) int local102 = local47.anInt2284 >> 7;
 				if (local72 >= 0 && local72 < 104 && local102 >= 0 && local102 < 104) {
-					if (local47.aClass2_Sub2_Sub12_Sub4_1 == null || Static107.anInt2511 < local47.anInt1377 || Static107.anInt2511 >= local47.anInt1381) {
+					if (local47.aModel_1 == null || Static107.anInt2511 < local47.anInt1377 || Static107.anInt2511 >= local47.anInt1381) {
 						if ((local47.anInt2275 & 0x7F) == 64 && (local47.anInt2284 & 0x7F) == 64) {
 							if (Static22.anInt2587 == Static14.anIntArrayArray7[local72][local102]) {
 								continue;

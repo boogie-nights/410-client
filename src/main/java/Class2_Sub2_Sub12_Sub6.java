@@ -55,9 +55,9 @@ public final class Class2_Sub2_Sub12_Sub6 extends Class2_Sub2_Sub12 {
 
 	@OriginalMember(owner = "client!u", name = "c", descriptor = "(B)Lclient!ne;")
 	@Override
-	protected Class2_Sub2_Sub12_Sub4 method1533() {
+	protected Model method1533() {
 		@Pc(4) Class2_Sub2_Sub5 local4 = Static5.method116(this.anInt2233);
-		@Pc(12) Class2_Sub2_Sub12_Sub4 local12;
+		@Pc(12) Model local12;
 		if (this.aBoolean169) {
 			local12 = local4.method501(-1);
 		} else {

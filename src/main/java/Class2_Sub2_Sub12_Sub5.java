@@ -59,7 +59,7 @@ public final class Class2_Sub2_Sub12_Sub5 extends Class2_Sub2_Sub12 {
 
 	@OriginalMember(owner = "client!sa", name = "c", descriptor = "(B)Lclient!ne;")
 	@Override
-	protected Class2_Sub2_Sub12_Sub4 method1533() {
+	protected Model method1533() {
 		if (this.aClass2_Sub2_Sub6_2 != null) {
 			@Pc(13) int local13 = Static107.anInt2511 - this.anInt2026;
 			if (local13 > 100 && this.aClass2_Sub2_Sub6_2.anInt669 > 0) {

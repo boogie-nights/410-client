@@ -148,9 +148,9 @@ public final class Class2_Sub2_Sub12_Sub2 extends Class2_Sub2_Sub12 {
 
 	@OriginalMember(owner = "client!kd", name = "c", descriptor = "(B)Lclient!ne;")
 	@Override
-	protected Class2_Sub2_Sub12_Sub4 method1533() {
+	protected Model method1533() {
 		@Pc(8) Class2_Sub2_Sub5 local8 = Static5.method116(this.anInt1422);
-		@Pc(21) Class2_Sub2_Sub12_Sub4 local21 = local8.method501(this.anInt1426);
+		@Pc(21) Model local21 = local8.method501(this.anInt1426);
 		if (local21 == null) {
 			return null;
 		} else {

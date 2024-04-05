@@ -447,9 +447,9 @@ public final class Static83 {
 						local277 += 256;
 					}
 					if (arg6.method1410(arg0, arg2, arg7, local102, local267, local264, local167, local277, local121, local109) && local91.aBoolean82) {
-						@Pc(303) Class2_Sub2_Sub12_Sub4 local303;
-						if (local167 instanceof Class2_Sub2_Sub12_Sub4) {
-							local303 = (Class2_Sub2_Sub12_Sub4) local167;
+						@Pc(303) Model local303;
+						if (local167 instanceof Model) {
+							local303 = (Model) local167;
 						} else {
 							local303 = local91.method765(arg4, local57, local87, local65, 10, local77);
 						}

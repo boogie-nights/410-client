@@ -60,13 +60,13 @@ public final class Class55 {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(Lclient!ne;III)V")
-	private void method1408(@OriginalArg(0) Class2_Sub2_Sub12_Sub4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	private void method1408(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(14) Class2_Sub11 local14;
-		@Pc(29) Class2_Sub2_Sub12_Sub4 local29;
+		@Pc(29) Model local29;
 		if (arg2 < this.anInt2103) {
 			local14 = this.aClass2_Sub11ArrayArrayArray1[arg1][arg2 + 1][arg3];
-			if (local14 != null && local14.aClass4_1 != null && local14.aClass4_1.aClass2_Sub2_Sub12_2 instanceof Class2_Sub2_Sub12_Sub4) {
-				local29 = (Class2_Sub2_Sub12_Sub4) local14.aClass4_1.aClass2_Sub2_Sub12_2;
+			if (local14 != null && local14.aClass4_1 != null && local14.aClass4_1.aClass2_Sub2_Sub12_2 instanceof Model) {
+				local29 = (Model) local14.aClass4_1.aClass2_Sub2_Sub12_2;
 				if (local29.vertexNormal != null) {
 					this.method1456(arg0, local29, 128, 0, 0, true);
 				}
@@ -74,8 +74,8 @@ public final class Class55 {
 		}
 		if (arg3 < this.anInt2103) {
 			local14 = this.aClass2_Sub11ArrayArrayArray1[arg1][arg2][arg3 + 1];
-			if (local14 != null && local14.aClass4_1 != null && local14.aClass4_1.aClass2_Sub2_Sub12_2 instanceof Class2_Sub2_Sub12_Sub4) {
-				local29 = (Class2_Sub2_Sub12_Sub4) local14.aClass4_1.aClass2_Sub2_Sub12_2;
+			if (local14 != null && local14.aClass4_1 != null && local14.aClass4_1.aClass2_Sub2_Sub12_2 instanceof Model) {
+				local29 = (Model) local14.aClass4_1.aClass2_Sub2_Sub12_2;
 				if (local29.vertexNormal != null) {
 					this.method1456(arg0, local29, 0, 0, 128, true);
 				}
@@ -83,8 +83,8 @@ public final class Class55 {
 		}
 		if (arg2 < this.anInt2103 && arg3 < this.anInt2098) {
 			local14 = this.aClass2_Sub11ArrayArrayArray1[arg1][arg2 + 1][arg3 + 1];
-			if (local14 != null && local14.aClass4_1 != null && local14.aClass4_1.aClass2_Sub2_Sub12_2 instanceof Class2_Sub2_Sub12_Sub4) {
-				local29 = (Class2_Sub2_Sub12_Sub4) local14.aClass4_1.aClass2_Sub2_Sub12_2;
+			if (local14 != null && local14.aClass4_1 != null && local14.aClass4_1.aClass2_Sub2_Sub12_2 instanceof Model) {
+				local29 = (Model) local14.aClass4_1.aClass2_Sub2_Sub12_2;
 				if (local29.vertexNormal != null) {
 					this.method1456(arg0, local29, 128, 0, 128, true);
 				}
@@ -94,8 +94,8 @@ public final class Class55 {
 			return;
 		}
 		local14 = this.aClass2_Sub11ArrayArrayArray1[arg1][arg2 + 1][arg3 - 1];
-		if (local14 != null && local14.aClass4_1 != null && local14.aClass4_1.aClass2_Sub2_Sub12_2 instanceof Class2_Sub2_Sub12_Sub4) {
-			local29 = (Class2_Sub2_Sub12_Sub4) local14.aClass4_1.aClass2_Sub2_Sub12_2;
+		if (local14 != null && local14.aClass4_1 != null && local14.aClass4_1.aClass2_Sub2_Sub12_2 instanceof Model) {
+			local29 = (Model) local14.aClass4_1.aClass2_Sub2_Sub12_2;
 			if (local29.vertexNormal != null) {
 				this.method1456(arg0, local29, 128, 0, -128, true);
 			}
@@ -365,8 +365,8 @@ public final class Class55 {
 		@Pc(43) Class2_Sub11 local43 = this.aClass2_Sub11ArrayArrayArray1[arg0][arg1][arg2];
 		if (local43 != null) {
 			for (@Pc(47) int local47 = 0; local47 < local43.anInt1702; local47++) {
-				if ((local43.aClass37Array1[local47].anInt1655 & 0x100) == 256 && local43.aClass37Array1[local47].aClass2_Sub2_Sub12_3 instanceof Class2_Sub2_Sub12_Sub4) {
-					@Pc(71) Class2_Sub2_Sub12_Sub4 local71 = (Class2_Sub2_Sub12_Sub4) local43.aClass37Array1[local47].aClass2_Sub2_Sub12_3;
+				if ((local43.aClass37Array1[local47].anInt1655 & 0x100) == 256 && local43.aClass37Array1[local47].aClass2_Sub2_Sub12_3 instanceof Model) {
+					@Pc(71) Model local71 = (Model) local43.aClass37Array1[local47].aClass2_Sub2_Sub12_3;
 					local71.method1135();
 					if (local71.maxY > local34) {
 						local34 = local71.maxY;
@@ -638,12 +638,12 @@ public final class Class55 {
 					@Pc(17) Class2_Sub11 local17 = this.aClass2_Sub11ArrayArrayArray1[local1][local4][local7];
 					if (local17 != null) {
 						@Pc(22) Class60 local22 = local17.aClass60_1;
-						if (local22 != null && local22.aClass2_Sub2_Sub12_7 instanceof Class2_Sub2_Sub12_Sub4) {
-							@Pc(32) Class2_Sub2_Sub12_Sub4 local32 = (Class2_Sub2_Sub12_Sub4) local22.aClass2_Sub2_Sub12_7;
+						if (local22 != null && local22.aClass2_Sub2_Sub12_7 instanceof Model) {
+							@Pc(32) Model local32 = (Model) local22.aClass2_Sub2_Sub12_7;
 							if (local32.vertexNormal != null) {
 								this.method1442(local32, local1, local4, local7, 1, 1);
-								if (local22.aClass2_Sub2_Sub12_8 instanceof Class2_Sub2_Sub12_Sub4) {
-									@Pc(51) Class2_Sub2_Sub12_Sub4 local51 = (Class2_Sub2_Sub12_Sub4) local22.aClass2_Sub2_Sub12_8;
+								if (local22.aClass2_Sub2_Sub12_8 instanceof Model) {
+									@Pc(51) Model local51 = (Model) local22.aClass2_Sub2_Sub12_8;
 									if (local51.vertexNormal != null) {
 										this.method1442(local51, local1, local4, local7, 1, 1);
 										this.method1456(local32, local51, 0, 0, 0, false);
@@ -653,11 +653,11 @@ public final class Class55 {
 								local32.method1158();
 							}
 						}
-						@Pc(98) Class2_Sub2_Sub12_Sub4 local98;
+						@Pc(98) Model local98;
 						for (@Pc(82) int local82 = 0; local82 < local17.anInt1702; local82++) {
 							@Pc(88) Class37 local88 = local17.aClass37Array1[local82];
-							if (local88 != null && local88.aClass2_Sub2_Sub12_3 instanceof Class2_Sub2_Sub12_Sub4) {
-								local98 = (Class2_Sub2_Sub12_Sub4) local88.aClass2_Sub2_Sub12_3;
+							if (local88 != null && local88.aClass2_Sub2_Sub12_3 instanceof Model) {
+								local98 = (Model) local88.aClass2_Sub2_Sub12_3;
 								if (local98.vertexNormal != null) {
 									this.method1442(local98, local1, local4, local7, local88.anInt1647 + 1 - local88.anInt1656, local88.anInt1665 - local88.anInt1662 + 1);
 									local98.method1158();
@@ -665,8 +665,8 @@ public final class Class55 {
 							}
 						}
 						@Pc(134) Class4 local134 = local17.aClass4_1;
-						if (local134 != null && local134.aClass2_Sub2_Sub12_2 instanceof Class2_Sub2_Sub12_Sub4) {
-							local98 = (Class2_Sub2_Sub12_Sub4) local134.aClass2_Sub2_Sub12_2;
+						if (local134 != null && local134.aClass2_Sub2_Sub12_2 instanceof Model) {
+							local98 = (Model) local134.aClass2_Sub2_Sub12_2;
 							if (local98.vertexNormal != null) {
 								this.method1408(local98, local1, local4, local7);
 								local98.method1158();
@@ -839,7 +839,7 @@ public final class Class55 {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(Lclient!ne;IIIII)V")
-	private void method1442(@OriginalArg(0) Class2_Sub2_Sub12_Sub4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	private void method1442(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		@Pc(1) boolean local1 = true;
 		@Pc(3) int local3 = arg2;
 		@Pc(7) int local7 = arg2 + arg4;
@@ -856,15 +856,15 @@ public final class Class55 {
 									@Pc(160) int local160 = (this.anIntArrayArrayArray6[local17][local24][local34] + this.anIntArrayArrayArray6[local17][local24 + 1][local34] + this.anIntArrayArrayArray6[local17][local24][local34 + 1] + this.anIntArrayArrayArray6[local17][local24 + 1][local34 + 1]) / 4 - (this.anIntArrayArrayArray6[arg1][arg2][arg3] + this.anIntArrayArrayArray6[arg1][arg2 + 1][arg3] + this.anIntArrayArrayArray6[arg1][arg2][arg3 + 1] + this.anIntArrayArrayArray6[arg1][arg2 + 1][arg3 + 1]) / 4;
 									@Pc(163) Class60 local163 = local66.aClass60_1;
 									if (local163 != null) {
-										@Pc(173) Class2_Sub2_Sub12_Sub4 local173;
-										if (local163.aClass2_Sub2_Sub12_7 instanceof Class2_Sub2_Sub12_Sub4) {
-											local173 = (Class2_Sub2_Sub12_Sub4) local163.aClass2_Sub2_Sub12_7;
+										@Pc(173) Model local173;
+										if (local163.aClass2_Sub2_Sub12_7 instanceof Model) {
+											local173 = (Model) local163.aClass2_Sub2_Sub12_7;
 											if (local173.vertexNormal != null) {
 												this.method1456(arg0, local173, (local24 - arg2) * 128 + (1 - arg4) * 64, local160, (local34 - arg3) * 128 + (1 - arg5) * 64, local1);
 											}
 										}
-										if (local163.aClass2_Sub2_Sub12_8 instanceof Class2_Sub2_Sub12_Sub4) {
-											local173 = (Class2_Sub2_Sub12_Sub4) local163.aClass2_Sub2_Sub12_8;
+										if (local163.aClass2_Sub2_Sub12_8 instanceof Model) {
+											local173 = (Model) local163.aClass2_Sub2_Sub12_8;
 											if (local173.vertexNormal != null) {
 												this.method1456(arg0, local173, (local24 - arg2) * 128 + (1 - arg4) * 64, local160, (local34 - arg3) * 128 + (1 - arg5) * 64, local1);
 											}
@@ -872,8 +872,8 @@ public final class Class55 {
 									}
 									for (@Pc(245) int local245 = 0; local245 < local66.anInt1702; local245++) {
 										@Pc(251) Class37 local251 = local66.aClass37Array1[local245];
-										if (local251 != null && local251.aClass2_Sub2_Sub12_3 instanceof Class2_Sub2_Sub12_Sub4) {
-											@Pc(261) Class2_Sub2_Sub12_Sub4 local261 = (Class2_Sub2_Sub12_Sub4) local251.aClass2_Sub2_Sub12_3;
+										if (local251 != null && local251.aClass2_Sub2_Sub12_3 instanceof Model) {
+											@Pc(261) Model local261 = (Model) local251.aClass2_Sub2_Sub12_3;
 											if (local261.vertexNormal != null) {
 												@Pc(272) int local272 = local251.anInt1647 + 1 - local251.anInt1656;
 												@Pc(280) int local280 = local251.anInt1665 + 1 - local251.anInt1662;
@@ -1953,7 +1953,7 @@ public final class Class55 {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(Lclient!ne;Lclient!ne;IIIZ)V")
-	private void method1456(@OriginalArg(0) Class2_Sub2_Sub12_Sub4 arg0, @OriginalArg(1) Class2_Sub2_Sub12_Sub4 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
+	private void method1456(@OriginalArg(0) Model arg0, @OriginalArg(1) Model arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
 		arg1.method1154();
 		this.anInt2118++;
 		@Pc(9) int local9 = 0;

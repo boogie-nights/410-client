@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ne")
-public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
+public final class Model extends Class2_Sub2_Sub12 {
 
 	@OriginalMember(owner = "client!ne", name = "vc", descriptor = "[I")
 	public static int[] anIntArray405 = new int[128];
@@ -135,7 +135,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "<init>", descriptor = "([B)V")
-	public Class2_Sub2_Sub12_Sub4(@OriginalArg(0) byte[] arg0) {
+	public Model(@OriginalArg(0) byte[] arg0) {
 		@Pc(21) Packet local21 = new Packet(arg0);
 		@Pc(26) Packet local26 = new Packet(arg0);
 		@Pc(31) Packet local31 = new Packet(arg0);
@@ -338,11 +338,11 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "<init>", descriptor = "()V")
-	public Class2_Sub2_Sub12_Sub4() {
+	public Model() {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "<init>", descriptor = "([Lclient!ne;I)V")
-	public Class2_Sub2_Sub12_Sub4(@OriginalArg(0) Class2_Sub2_Sub12_Sub4[] arg0, @OriginalArg(1) int arg1) {
+	public Model(@OriginalArg(0) Model[] arg0, @OriginalArg(1) int arg1) {
 		@Pc(18) boolean local18 = false;
 		@Pc(20) boolean local20 = false;
 		@Pc(22) boolean local22 = false;
@@ -352,7 +352,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 		this.anInt1741 = 0;
 		this.anInt1737 = -1;
 		for (@Pc(38) int local38 = 0; local38 < arg1; local38++) {
-			@Pc(43) Class2_Sub2_Sub12_Sub4 local43 = arg0[local38];
+			@Pc(43) Model local43 = arg0[local38];
 			if (local43 != null) {
 				this.vertexCount += local43.vertexCount;
 				this.faceCount += local43.faceCount;
@@ -400,7 +400,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 		this.anInt1741 = 0;
 		@Pc(212) int local212 = 0;
 		for (@Pc(214) int local214 = 0; local214 < arg1; local214++) {
-			@Pc(219) Class2_Sub2_Sub12_Sub4 local219 = arg0[local214];
+			@Pc(219) Model local219 = arg0[local214];
 			if (local219 != null) {
 				@Pc(241) int local241;
 				for (@Pc(223) int local223 = 0; local223 < local219.faceCount; local223++) {
@@ -450,7 +450,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "<init>", descriptor = "([Lclient!ne;IZ)V")
-	public Class2_Sub2_Sub12_Sub4(@OriginalArg(0) Class2_Sub2_Sub12_Sub4[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
+	public Model(@OriginalArg(0) Model[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
 		@Pc(18) boolean local18 = false;
 		@Pc(20) boolean local20 = false;
 		@Pc(22) boolean local22 = false;
@@ -460,7 +460,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 		this.anInt1741 = 0;
 		this.anInt1737 = -1;
 		for (@Pc(38) int local38 = 0; local38 < arg1; local38++) {
-			@Pc(43) Class2_Sub2_Sub12_Sub4 local43 = arg0[local38];
+			@Pc(43) Model local43 = arg0[local38];
 			if (local43 != null) {
 				this.vertexCount += local43.vertexCount;
 				this.faceCount += local43.faceCount;
@@ -509,7 +509,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 		this.anInt1741 = 0;
 		@Pc(217) int local217 = 0;
 		for (@Pc(219) int local219 = 0; local219 < arg1; local219++) {
-			@Pc(224) Class2_Sub2_Sub12_Sub4 local224 = arg0[local219];
+			@Pc(224) Model local224 = arg0[local219];
 			if (local224 != null) {
 				@Pc(229) int local229 = this.vertexCount;
 				for (@Pc(231) int local231 = 0; local231 < local224.vertexCount; local231++) {
@@ -568,7 +568,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "<init>", descriptor = "(Lclient!ne;ZZZ)V")
-	public Class2_Sub2_Sub12_Sub4(@OriginalArg(0) Class2_Sub2_Sub12_Sub4 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) boolean arg3) {
+	public Model(@OriginalArg(0) Model arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) boolean arg3) {
 		this.vertexCount = arg0.vertexCount;
 		this.faceCount = arg0.faceCount;
 		this.anInt1741 = arg0.anInt1741;
@@ -610,7 +610,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "<init>", descriptor = "(Lclient!ne;ZZ)V")
-	public Class2_Sub2_Sub12_Sub4(@OriginalArg(0) Class2_Sub2_Sub12_Sub4 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2) {
+	public Model(@OriginalArg(0) Model arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2) {
 		this.vertexCount = arg0.vertexCount;
 		this.faceCount = arg0.faceCount;
 		this.anInt1741 = arg0.anInt1741;
@@ -1123,7 +1123,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "b", descriptor = "(Z)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method1142(@OriginalArg(0) boolean arg0) {
+	public Model method1142(@OriginalArg(0) boolean arg0) {
 		if (!arg0 && Static71.anIntArray384.length < this.faceCount) {
 			Static71.anIntArray384 = new int[this.faceCount + 100];
 		}
@@ -1284,7 +1284,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(Lclient!ne;I)I")
-	private int method1145(@OriginalArg(0) Class2_Sub2_Sub12_Sub4 arg0, @OriginalArg(1) int arg1) {
+	private int method1145(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1) {
 		@Pc(1) int local1 = -1;
 		@Pc(6) int local6 = arg0.vertexX[arg1];
 		@Pc(11) int local11 = arg0.vertexY[arg1];
@@ -1319,11 +1319,11 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "c", descriptor = "(Z)Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 method1147(@OriginalArg(0) boolean arg0) {
+	public Model method1147(@OriginalArg(0) boolean arg0) {
 		if (!arg0 && Static71.anIntArray399.length < this.faceCount) {
 			Static71.anIntArray399 = new int[this.faceCount + 100];
 		}
-		return this.method1162(arg0, Static71.aClass2_Sub2_Sub12_Sub4_3, Static71.anIntArray399);
+		return this.method1162(arg0, Static71.aModel_3, Static71.anIntArray399);
 	}
 
 	@OriginalMember(owner = "client!ne", name = "f", descriptor = "()V")
@@ -1878,7 +1878,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(ZLclient!ne;[I)Lclient!ne;")
-	private Class2_Sub2_Sub12_Sub4 method1162(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub2_Sub12_Sub4 arg1, @OriginalArg(2) int[] arg2) {
+	private Model method1162(@OriginalArg(0) boolean arg0, @OriginalArg(1) Model arg1, @OriginalArg(2) int[] arg2) {
 		arg1.vertexCount = this.vertexCount;
 		arg1.faceCount = this.faceCount;
 		arg1.anInt1741 = this.anInt1741;

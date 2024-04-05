@@ -13,7 +13,7 @@ public final class Class2_Sub2_Sub12_Sub1_Sub1 extends Class2_Sub2_Sub12_Sub1 {
 	public int anInt1369;
 
 	@OriginalMember(owner = "client!kc", name = "Mc", descriptor = "Lclient!ne;")
-	public Class2_Sub2_Sub12_Sub4 aClass2_Sub2_Sub12_Sub4_1;
+	public Model aModel_1;
 
 	@OriginalMember(owner = "client!kc", name = "Oc", descriptor = "I")
 	public int anInt1375;
@@ -146,35 +146,35 @@ public final class Class2_Sub2_Sub12_Sub1_Sub1 extends Class2_Sub2_Sub12_Sub1 {
 
 	@OriginalMember(owner = "client!kc", name = "c", descriptor = "(B)Lclient!ne;")
 	@Override
-	protected Class2_Sub2_Sub12_Sub4 method1533() {
+	protected Model method1533() {
 		if (this.aClass33_2 == null) {
 			return null;
 		}
 		@Pc(28) Class2_Sub2_Sub6 local28 = super.anInt2307 != -1 && super.anInt2313 == 0 ? Static62.method1042(super.anInt2307) : null;
 		@Pc(49) Class2_Sub2_Sub6 local49 = super.anInt2318 == -1 || this.aBoolean104 || super.anInt2290 == super.anInt2318 && local28 != null ? null : Static62.method1042(super.anInt2318);
-		@Pc(60) Class2_Sub2_Sub12_Sub4 local60 = this.aClass33_2.method1005(super.anInt2316, super.anInt2295, local28, local49);
+		@Pc(60) Model local60 = this.aClass33_2.method1005(super.anInt2316, super.anInt2295, local28, local49);
 		if (local60 == null) {
 			return null;
 		}
 		local60.method1135();
 		super.anInt2310 = local60.maxY;
-		@Pc(91) Class2_Sub2_Sub12_Sub4 local91;
-		@Pc(111) Class2_Sub2_Sub12_Sub4[] local111;
+		@Pc(91) Model local91;
+		@Pc(111) Model[] local111;
 		if (!this.aBoolean104 && super.anInt2302 != -1 && super.anInt2291 != -1) {
 			local91 = Static5.method116(super.anInt2302).method501(super.anInt2291);
 			if (local91 != null) {
 				local91.method1137(0, -super.anInt2289, 0);
-				local111 = new Class2_Sub2_Sub12_Sub4[] { local60, local91 };
-				local60 = new Class2_Sub2_Sub12_Sub4(local111, 2, true);
+				local111 = new Model[] { local60, local91 };
+				local60 = new Model(local111, 2, true);
 			}
 		}
-		if (!this.aBoolean104 && this.aClass2_Sub2_Sub12_Sub4_1 != null) {
+		if (!this.aBoolean104 && this.aModel_1 != null) {
 			if (this.anInt1381 <= Static107.anInt2511) {
-				this.aClass2_Sub2_Sub12_Sub4_1 = null;
+				this.aModel_1 = null;
 			}
 			if (Static107.anInt2511 >= this.anInt1377 && Static107.anInt2511 < this.anInt1381) {
-				local91 = this.aClass2_Sub2_Sub12_Sub4_1;
-				local111 = new Class2_Sub2_Sub12_Sub4[] { local60, local91 };
+				local91 = this.aModel_1;
+				local111 = new Model[] { local60, local91 };
 				local91.method1137(this.anInt1387 - super.anInt2275, -this.anInt1379 + this.anInt1384, this.anInt1375 - super.anInt2284);
 				if (super.anInt2283 == 512) {
 					local91.method1148();
@@ -186,7 +186,7 @@ public final class Class2_Sub2_Sub12_Sub1_Sub1 extends Class2_Sub2_Sub12_Sub1 {
 				} else if (super.anInt2283 == 1536) {
 					local91.method1148();
 				}
-				local60 = new Class2_Sub2_Sub12_Sub4(local111, 2, true);
+				local60 = new Model(local111, 2, true);
 				if (super.anInt2283 == 512) {
 					local91.method1148();
 				} else if (super.anInt2283 == 1024) {

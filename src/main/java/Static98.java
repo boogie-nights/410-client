@@ -29,7 +29,7 @@ public final class Static98 {
 	public static int[] anIntArray504 = new int[2048];
 
 	@OriginalMember(owner = "client!uc", name = "l", descriptor = "[Lclient!ne;")
-	public static Class2_Sub2_Sub12_Sub4[] aClass2_Sub2_Sub12_Sub4Array1 = new Class2_Sub2_Sub12_Sub4[4];
+	public static Model[] aModelArray1 = new Model[4];
 
 	@OriginalMember(owner = "client!uc", name = "m", descriptor = "Lclient!o;")
 	public static Class40 aClass40_677 = Static13.method257(" is already on your friend list");
@@ -180,7 +180,7 @@ public final class Static98 {
 		aClass40_679 = null;
 		aClass40_674 = null;
 		aClass40_675 = null;
-		aClass2_Sub2_Sub12_Sub4Array1 = null;
+		aModelArray1 = null;
 		aClass40_680 = null;
 		aClass40_681 = null;
 		aBooleanArray35 = null;
