@@ -131,7 +131,7 @@ public final class Static68 {
 			if (local21) {
 				return;
 			}
-			arg0.method1736(149);
+			arg0.p1isaac(149);
 			arg0.p1(0);
 			@Pc(97) int local97 = arg0.pos;
 			arg0.p4(local16.anInt2355);

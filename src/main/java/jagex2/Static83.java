@@ -351,15 +351,15 @@ public final class Static83 {
 			@Pc(1072) int local1072 = Static36.anIntArray163[local70];
 			local805 = Static23.anIntArray103[local70];
 			if (arg5 == 0) {
-				Static80.aClass2_Sub3_Sub1_4.method1736(130);
+				Static80.aClass2_Sub3_Sub1_4.p1isaac(130);
 				Static80.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3);
 			}
 			if (arg5 == 1) {
-				Static80.aClass2_Sub3_Sub1_4.method1736(136);
+				Static80.aClass2_Sub3_Sub1_4.p1isaac(136);
 				Static80.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3 + 14);
 			}
 			if (arg5 == 2) {
-				Static80.aClass2_Sub3_Sub1_4.method1736(89);
+				Static80.aClass2_Sub3_Sub1_4.p1isaac(89);
 				Static80.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3);
 			}
 			Static80.aClass2_Sub3_Sub1_4.method1712(Static100.aBooleanArray37[82] ? 1 : 0);

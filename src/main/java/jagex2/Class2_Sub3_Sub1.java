@@ -14,7 +14,7 @@ public final class Class2_Sub3_Sub1 extends Packet {
 	private int anInt2599;
 
 	@OriginalMember(owner = "client!wc", name = "Wb", descriptor = "Lclient!be;")
-	private Isaac aClass10_1;
+	private Isaac random;
 
 	@OriginalMember(owner = "client!wc", name = "<init>", descriptor = "(I)V")
 	public Class2_Sub3_Sub1(@OriginalArg(0) int arg0) {
@@ -23,17 +23,17 @@ public final class Class2_Sub3_Sub1 extends Packet {
 
 	@OriginalMember(owner = "client!wc", name = "h", descriptor = "(B)I")
 	public int method1733() {
-		return super.data[super.pos++] - this.aClass10_1.nextInt() & 0xFF;
+		return super.data[super.pos++] - this.random.nextInt() & 0xFF;
 	}
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "([II)V")
-	public void method1734(@OriginalArg(0) int[] arg0) {
-		this.aClass10_1 = new Isaac(arg0);
+	public void method1734(@OriginalArg(0) int[] seed) {
+		this.random = new Isaac(seed);
 	}
 
 	@OriginalMember(owner = "client!wc", name = "m", descriptor = "(II)V")
-	public void method1736(@OriginalArg(1) int arg0) {
-		super.data[super.pos++] = (byte) (this.aClass10_1.nextInt() + arg0);
+	public void p1isaac(@OriginalArg(1) int opcode) {
+		super.data[super.pos++] = (byte) (this.random.nextInt() + opcode);
 	}
 
 	@OriginalMember(owner = "client!wc", name = "g", descriptor = "(Z)V")

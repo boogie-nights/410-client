@@ -35,7 +35,7 @@ public final class Static60 {
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(I)V")
 	public static void method998() {
-		Static80.aClass2_Sub3_Sub1_4.method1736(255);
+		Static80.aClass2_Sub3_Sub1_4.p1isaac(255);
 		if (Static66.anInt1654 != -1) {
 			Static83.method1350(Static66.anInt1654);
 			Static33.aBoolean59 = true;

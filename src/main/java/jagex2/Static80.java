@@ -73,7 +73,7 @@ public final class Static80 {
 			Static52.aBoolean95 = true;
 			Static23.anInt583 = (Static23.anInt583 + 1) % 4;
 			Static73.aBoolean144 = true;
-			aClass2_Sub3_Sub1_4.method1736(132);
+			aClass2_Sub3_Sub1_4.p1isaac(132);
 			aClass2_Sub3_Sub1_4.p1(Static23.anInt583);
 			aClass2_Sub3_Sub1_4.p1(Static104.anInt2515);
 			aClass2_Sub3_Sub1_4.p1(Static103.anInt2491);
@@ -82,7 +82,7 @@ public final class Static80 {
 			Static73.aBoolean144 = true;
 			Static52.aBoolean95 = true;
 			Static104.anInt2515 = (Static104.anInt2515 + 1) % 3;
-			aClass2_Sub3_Sub1_4.method1736(132);
+			aClass2_Sub3_Sub1_4.p1isaac(132);
 			aClass2_Sub3_Sub1_4.p1(Static23.anInt583);
 			aClass2_Sub3_Sub1_4.p1(Static104.anInt2515);
 			aClass2_Sub3_Sub1_4.p1(Static103.anInt2491);
@@ -91,7 +91,7 @@ public final class Static80 {
 			Static103.anInt2491 = (Static103.anInt2491 + 1) % 3;
 			Static52.aBoolean95 = true;
 			Static73.aBoolean144 = true;
-			aClass2_Sub3_Sub1_4.method1736(132);
+			aClass2_Sub3_Sub1_4.p1isaac(132);
 			aClass2_Sub3_Sub1_4.p1(Static23.anInt583);
 			aClass2_Sub3_Sub1_4.p1(Static104.anInt2515);
 			aClass2_Sub3_Sub1_4.p1(Static103.anInt2491);

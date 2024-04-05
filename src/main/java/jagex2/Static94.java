@@ -127,7 +127,7 @@ public final class Static94 {
 		if (Static22.aBoolean184) {
 			if (Static103.anInt2492 != -1 && Static62.anInt1551 == Static103.anInt2492) {
 				Static103.anInt2492 = -1;
-				Static80.aClass2_Sub3_Sub1_4.method1736(145);
+				Static80.aClass2_Sub3_Sub1_4.p1isaac(145);
 				Static80.aClass2_Sub3_Sub1_4.p1(Static62.anInt1551);
 			}
 			Static92.aBoolean165 = true;

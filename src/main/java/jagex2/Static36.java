@@ -183,7 +183,7 @@ public final class Static36 {
 			Static38.aClass33_1.method1002(true);
 		}
 		if (local6 == 326) {
-			Static80.aClass2_Sub3_Sub1_4.method1736(12);
+			Static80.aClass2_Sub3_Sub1_4.p1isaac(12);
 			Static38.aClass33_1.method1007(Static80.aClass2_Sub3_Sub1_4);
 			return true;
 		}
@@ -193,7 +193,7 @@ public final class Static36 {
 		if (local6 >= 601 && local6 <= 613) {
 			Static60.method998();
 			if (Static61.aClass40_448.method1169() > 0) {
-				Static80.aClass2_Sub3_Sub1_4.method1736(72);
+				Static80.aClass2_Sub3_Sub1_4.p1isaac(72);
 				Static80.aClass2_Sub3_Sub1_4.p8(Static61.aClass40_448.method1179());
 				Static80.aClass2_Sub3_Sub1_4.p1(local6 - 601);
 				Static80.aClass2_Sub3_Sub1_4.p1(Static54.aBoolean103 ? 1 : 0);

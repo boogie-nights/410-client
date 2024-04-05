@@ -314,8 +314,7 @@ public class Packet extends Linkable {
 	@OriginalMember(owner = "client!eb", name = "f", descriptor = "(B)Lclient!o;")
 	public final Class40 method1721() {
 		@Pc(13) int local13 = this.pos;
-		while (this.data[this.pos++] != 0) {
-		}
+		while (this.data[this.pos++] != 0) { }
 		return Static70.method1114(this.pos - local13 - 1, this.data, local13);
 	}
 

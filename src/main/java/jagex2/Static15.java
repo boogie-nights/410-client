@@ -84,7 +84,7 @@ public final class Static15 {
 		if (!local27.method1184(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395)) {
 			Static84.aLongArray4[Static99.anInt121++] = arg0;
 			Static33.aBoolean59 = true;
-			Static80.aClass2_Sub3_Sub1_4.method1736(186);
+			Static80.aClass2_Sub3_Sub1_4.p1isaac(186);
 			Static80.aClass2_Sub3_Sub1_4.p8(arg0);
 		}
 	}

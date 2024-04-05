@@ -247,7 +247,7 @@ public final class Static73 {
 		Static13.method255();
 		Static92.aClass47_21.method1330();
 		if (Static105.aCanvas_Sub1_1 != null) {
-			Static80.aClass2_Sub3_Sub1_4.method1736(153);
+			Static80.aClass2_Sub3_Sub1_4.p1isaac(153);
 			Static80.aClass2_Sub3_Sub1_4.p4(1057001181);
 		}
 		if (!Static45.aBoolean87) {
@@ -270,7 +270,7 @@ public final class Static73 {
 			Static7.method187(35);
 		}
 		Static31.method1678();
-		Static80.aClass2_Sub3_Sub1_4.method1736(91);
+		Static80.aClass2_Sub3_Sub1_4.p1isaac(91);
 		Static107.method1659();
 	}
 

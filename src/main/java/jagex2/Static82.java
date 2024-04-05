@@ -150,7 +150,7 @@ public final class Static82 {
 				for (@Pc(37) int local37 = local17; local37 < Static99.anInt121; local37++) {
 					Static84.aLongArray4[local37] = Static84.aLongArray4[local37 + 1];
 				}
-				Static80.aClass2_Sub3_Sub1_4.method1736(168);
+				Static80.aClass2_Sub3_Sub1_4.p1isaac(168);
 				Static80.aClass2_Sub3_Sub1_4.p8(arg0);
 				return;
 			}
