@@ -415,10 +415,10 @@ public final class Class55 {
 			arg2 = this.anInt2098 * 128 - 1;
 		}
 		Static89.anInt2094++;
-		Static89.anInt2114 = Static71.anIntArray386[arg3];
-		Static89.anInt2104 = Static71.anIntArray402[arg3];
-		Static89.anInt2099 = Static71.anIntArray386[arg4];
-		Static89.anInt2101 = Static71.anIntArray402[arg4];
+		Static89.anInt2114 = Static71.sin[arg3];
+		Static89.anInt2104 = Static71.cos[arg3];
+		Static89.anInt2099 = Static71.sin[arg4];
+		Static89.anInt2101 = Static71.cos[arg4];
 		Static89.aBooleanArrayArray1 = Static89.aBooleanArrayArrayArrayArray1[(arg3 - 128) / 32][arg4 / 64];
 		Static89.anInt2091 = arg0;
 		Static89.anInt2113 = arg1;

@@ -176,10 +176,10 @@ public final class Static89 {
 		@Pc(67) int local67;
 		for (@Pc(23) int local23 = 128; local23 <= 384; local23 += 32) {
 			for (local26 = 0; local26 < 2048; local26 += 64) {
-				anInt2114 = Static71.anIntArray386[local23];
-				anInt2104 = Static71.anIntArray402[local23];
-				anInt2099 = Static71.anIntArray386[local26];
-				anInt2101 = Static71.anIntArray402[local26];
+				anInt2114 = Static71.sin[local23];
+				anInt2104 = Static71.cos[local23];
+				anInt2099 = Static71.sin[local26];
+				anInt2101 = Static71.cos[local26];
 				local49 = (local23 - 128) / 32;
 				local53 = local26 / 64;
 				for (local55 = -26; local55 <= 26; local55++) {

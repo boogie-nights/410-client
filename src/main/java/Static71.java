@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static71 {
 
 	@OriginalMember(owner = "client!ne", name = "Rb", descriptor = "I")
-	public static int anInt1746;
+	public static int baseX;
 
 	@OriginalMember(owner = "client!ne", name = "ec", descriptor = "I")
-	public static int anInt1749;
+	public static int baseY;
 
 	@OriginalMember(owner = "client!ne", name = "tc", descriptor = "I")
-	public static int anInt1751;
+	public static int baseZ;
 
 	@OriginalMember(owner = "client!ne", name = "Mb", descriptor = "Lclient!ne;")
 	public static Class2_Sub2_Sub12_Sub4 aClass2_Sub2_Sub12_Sub4_2 = new Class2_Sub2_Sub12_Sub4();
@@ -29,7 +29,7 @@ public final class Static71 {
 	public static int anInt1747 = 0;
 
 	@OriginalMember(owner = "client!ne", name = "Tb", descriptor = "[I")
-	public static int[] anIntArray386 = Class2_Sub2_Sub2_Sub1.anIntArray59;
+	public static int[] sin = Class2_Sub2_Sub2_Sub1.anIntArray59;
 
 	@OriginalMember(owner = "client!ne", name = "Ub", descriptor = "I")
 	public static int anInt1748 = 0;
@@ -92,7 +92,7 @@ public final class Static71 {
 	public static int[][] anIntArrayArray19 = new int[1500][512];
 
 	@OriginalMember(owner = "client!ne", name = "pc", descriptor = "[I")
-	public static int[] anIntArray402 = Class2_Sub2_Sub2_Sub1.anIntArray58;
+	public static int[] cos = Class2_Sub2_Sub2_Sub1.anIntArray58;
 
 	@OriginalMember(owner = "client!ne", name = "qc", descriptor = "[Z")
 	public static boolean[] aBooleanArray26 = new boolean[4096];
@@ -150,8 +150,8 @@ public final class Static71 {
 		anIntArray400 = null;
 		anIntArray404 = null;
 		anIntArray387 = null;
-		anIntArray386 = null;
-		anIntArray402 = null;
+		sin = null;
+		cos = null;
 		anIntArray392 = null;
 		anIntArray395 = null;
 		Class2_Sub2_Sub12_Sub4.anIntArray405 = null;

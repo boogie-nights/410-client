@@ -51,11 +51,11 @@ public final class Static104 {
 		@Pc(34) int local34 = Static86.method1383(Static1.anInt8, arg1, arg2) - arg0;
 		@Pc(38) int local38 = arg1 - Static48.anInt1114;
 		@Pc(42) int local42 = arg2 - Static15.anInt1863;
-		@Pc(46) int local46 = Static71.anIntArray386[Static35.anInt824];
-		@Pc(50) int local50 = Static71.anIntArray402[Static35.anInt824];
+		@Pc(46) int local46 = Static71.sin[Static35.anInt824];
+		@Pc(50) int local50 = Static71.cos[Static35.anInt824];
 		@Pc(54) int local54 = local34 - Static81.anInt1935;
-		@Pc(58) int local58 = Static71.anIntArray386[Static27.anInt686];
-		@Pc(62) int local62 = Static71.anIntArray402[Static27.anInt686];
+		@Pc(58) int local58 = Static71.sin[Static27.anInt686];
+		@Pc(62) int local62 = Static71.cos[Static27.anInt686];
 		@Pc(73) int local73 = local58 * local42 + local38 * local62 >> 16;
 		@Pc(84) int local84 = local62 * local42 - local58 * local38 >> 16;
 		@Pc(86) int local86 = local73;

@@ -28,7 +28,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	private int anInt1739;
 
 	@OriginalMember(owner = "client!ne", name = "rb", descriptor = "[[I")
-	private int[][] anIntArrayArray16;
+	private int[][] labelVerticies;
 
 	@OriginalMember(owner = "client!ne", name = "tb", descriptor = "[Lclient!bd;")
 	public VertexNormal[] vertexNormal;
@@ -40,7 +40,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	private int anInt1740;
 
 	@OriginalMember(owner = "client!ne", name = "Cb", descriptor = "[[I")
-	private int[][] anIntArrayArray17;
+	private int[][] labelFaces;
 
 	@OriginalMember(owner = "client!ne", name = "Gb", descriptor = "I")
 	public int anInt1743;
@@ -103,7 +103,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	private int[] anIntArray377;
 
 	@OriginalMember(owner = "client!ne", name = "lb", descriptor = "[I")
-	private int[] anIntArray371;
+	private int[] faceAlpha;
 
 	@OriginalMember(owner = "client!ne", name = "Ib", descriptor = "[I")
 	private int[] anIntArray382;
@@ -222,7 +222,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 			this.anInt1737 = -local111 - 1;
 		}
 		if (local162 >= 0) {
-			this.anIntArray371 = new int[local55];
+			this.faceAlpha = new int[local55];
 		}
 		if (local126 >= 0) {
 			this.anIntArray382 = new int[local55];
@@ -277,8 +277,8 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 			if (this.anIntArray377 != null) {
 				this.anIntArray377[local326] = local31.method1708();
 			}
-			if (this.anIntArray371 != null) {
-				this.anIntArray371[local326] = local36.method1708();
+			if (this.faceAlpha != null) {
+				this.faceAlpha[local326] = local36.method1708();
 			}
 			if (this.anIntArray382 != null) {
 				this.anIntArray382[local326] = local41.method1708();
@@ -368,7 +368,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 				} else {
 					local20 = true;
 				}
-				local22 |= local43.anIntArray371 != null;
+				local22 |= local43.faceAlpha != null;
 				local24 |= local43.anIntArray382 != null;
 			}
 		}
@@ -389,7 +389,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 			this.anIntArray377 = new int[this.faceCount];
 		}
 		if (local22) {
-			this.anIntArray371 = new int[this.faceCount];
+			this.faceAlpha = new int[this.faceCount];
 		}
 		if (local24) {
 			this.anIntArray382 = new int[this.faceCount];
@@ -423,10 +423,10 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 						}
 					}
 					if (local22) {
-						if (local219.anIntArray371 == null) {
-							this.anIntArray371[this.faceCount] = 0;
+						if (local219.faceAlpha == null) {
+							this.faceAlpha[this.faceCount] = 0;
 						} else {
-							this.anIntArray371[this.faceCount] = local219.anIntArray371[local223];
+							this.faceAlpha[this.faceCount] = local219.faceAlpha[local223];
 						}
 					}
 					if (local24 && local219.anIntArray382 != null) {
@@ -476,7 +476,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 				} else {
 					local20 = true;
 				}
-				local22 |= local43.anIntArray371 != null;
+				local22 |= local43.faceAlpha != null;
 				local24 |= local43.faceColor != null;
 			}
 		}
@@ -499,7 +499,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 			this.anIntArray377 = new int[this.faceCount];
 		}
 		if (local22) {
-			this.anIntArray371 = new int[this.faceCount];
+			this.faceAlpha = new int[this.faceCount];
 		}
 		if (local24) {
 			this.faceColor = new int[this.faceCount];
@@ -545,10 +545,10 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 						}
 					}
 					if (local22) {
-						if (local224.anIntArray371 == null) {
-							this.anIntArray371[this.faceCount] = 0;
+						if (local224.faceAlpha == null) {
+							this.faceAlpha[this.faceCount] = 0;
 						} else {
-							this.anIntArray371[this.faceCount] = local224.anIntArray371[local272];
+							this.faceAlpha[this.faceCount] = local224.faceAlpha[local272];
 						}
 					}
 					if (local24 && local224.faceColor != null) {
@@ -595,7 +595,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 				this.faceColor[local60] = arg0.faceColor[local60];
 			}
 		}
-		this.anIntArray371 = arg0.anIntArray371;
+		this.faceAlpha = arg0.faceAlpha;
 		this.anIntArray372 = arg0.anIntArray372;
 		this.anIntArray382 = arg0.anIntArray382;
 		this.faceInfo = arg0.faceInfo;
@@ -662,7 +662,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 		this.vertexX = arg0.vertexX;
 		this.vertexZ = arg0.vertexZ;
 		this.faceColor = arg0.faceColor;
-		this.anIntArray371 = arg0.anIntArray371;
+		this.faceAlpha = arg0.faceAlpha;
 		this.anIntArray377 = arg0.anIntArray377;
 		this.anInt1737 = arg0.anInt1737;
 		this.faceVertexA = arg0.faceVertexA;
@@ -685,10 +685,10 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 		@Pc(24) int local24 = Static71.anIntArray390[local10];
 		@Pc(28) int local28 = Static71.anIntArray390[local15];
 		@Pc(32) int local32 = Static71.anIntArray390[local20];
-		if (this.anIntArray371 == null) {
+		if (this.faceAlpha == null) {
 			Static6.anInt228 = 0;
 		} else {
-			Static6.anInt228 = this.anIntArray371[arg0];
+			Static6.anInt228 = this.faceAlpha[arg0];
 		}
 		@Pc(71) int local71;
 		@Pc(75) int local75;
@@ -842,19 +842,19 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(Lclient!sb;I)V")
 	public void method1134(@OriginalArg(0) Class2_Sub2_Sub14 arg0, @OriginalArg(1) int arg1) {
-		if (this.anIntArrayArray16 == null || arg1 == -1) {
+		if (this.labelVerticies == null || arg1 == -1) {
 			return;
 		}
 		this.vertexNormal = null;
 		this.anInt1740 = 0;
 		@Pc(18) Class28 local18 = arg0.aClass28Array1[arg1];
 		@Pc(21) Class2_Sub5 local21 = local18.aClass2_Sub5_1;
-		Static71.anInt1746 = 0;
-		Static71.anInt1749 = 0;
-		Static71.anInt1751 = 0;
+		Static71.baseX = 0;
+		Static71.baseY = 0;
+		Static71.baseZ = 0;
 		for (@Pc(29) int local29 = 0; local29 < local18.anInt1098; local29++) {
 			@Pc(35) int local35 = local18.anIntArray226[local29];
-			this.method1152(local21.anIntArray142[local35], local21.anIntArrayArray10[local35], local18.anIntArray231[local29], local18.anIntArray230[local29], local18.anIntArray229[local29]);
+			this.applyTransform(local21.anIntArray142[local35], local21.anIntArrayArray10[local35], local18.anIntArray231[local29], local18.anIntArray230[local29], local18.anIntArray229[local29]);
 		}
 	}
 
@@ -1229,8 +1229,8 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 		local219 = 0;
 		@Pc(253) int local253 = 0;
 		if (arg0 != 0) {
-			local219 = Static71.anIntArray386[arg0];
-			local253 = Static71.anIntArray402[arg0];
+			local219 = Static71.sin[arg0];
+			local253 = Static71.cos[arg0];
 		}
 		for (@Pc(265) int local265 = 0; local265 < this.vertexCount; local265++) {
 			@Pc(271) int local271 = this.vertexX[local265];
@@ -1274,8 +1274,8 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	public void method1144(@OriginalArg(0) int arg0) {
 		this.vertexNormal = null;
 		this.anInt1740 = 0;
-		@Pc(9) int local9 = Static71.anIntArray386[arg0];
-		@Pc(13) int local13 = Static71.anIntArray402[arg0];
+		@Pc(9) int local9 = Static71.sin[arg0];
+		@Pc(13) int local13 = Static71.cos[arg0];
 		for (@Pc(15) int local15 = 0; local15 < this.vertexCount; local15++) {
 			@Pc(32) int local32 = this.vertexY[local15] * local13 - this.vertexZ[local15] * local9 >> 16;
 			this.vertexZ[local15] = this.vertexY[local15] * local9 + this.vertexZ[local15] * local13 >> 16;
@@ -1354,14 +1354,14 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 		}
 		@Pc(11) int local11 = Static6.anInt225;
 		@Pc(13) int local13 = Static6.anInt224;
-		@Pc(17) int local17 = Static71.anIntArray386[0];
-		@Pc(21) int local21 = Static71.anIntArray402[0];
-		@Pc(25) int local25 = Static71.anIntArray386[arg0];
-		@Pc(29) int local29 = Static71.anIntArray402[arg0];
-		@Pc(33) int local33 = Static71.anIntArray386[arg1];
-		@Pc(37) int local37 = Static71.anIntArray402[arg1];
-		@Pc(41) int local41 = Static71.anIntArray386[arg2];
-		@Pc(45) int local45 = Static71.anIntArray402[arg2];
+		@Pc(17) int local17 = Static71.sin[0];
+		@Pc(21) int local21 = Static71.cos[0];
+		@Pc(25) int local25 = Static71.sin[arg0];
+		@Pc(29) int local29 = Static71.cos[arg0];
+		@Pc(33) int local33 = Static71.sin[arg1];
+		@Pc(37) int local37 = Static71.cos[arg1];
+		@Pc(41) int local41 = Static71.sin[arg2];
+		@Pc(45) int local45 = Static71.cos[arg2];
 		@Pc(55) int local55 = arg4 * local41 + arg5 * local45 >> 16;
 		for (@Pc(57) int local57 = 0; local57 < this.vertexCount; local57++) {
 			@Pc(63) int local63 = this.vertexX[local57];
@@ -1399,131 +1399,128 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(I[IIII)V")
-	private void method1152(@OriginalArg(0) int type, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		@Pc(2) int local2 = arg1.length;
-		@Pc(6) int local6;
-		@Pc(14) int local14;
-		@Pc(31) int local31;
-		@Pc(36) int local36;
+	private void applyTransform(@OriginalArg(0) int type, @OriginalArg(1) int[] labels, @OriginalArg(2) int x, @OriginalArg(3) int y, @OriginalArg(4) int z) {
+		@Pc(2) int labelCount = labels.length;
+
 		if (type == 0) {
-			local6 = 0;
-			Static71.anInt1746 = 0;
-			Static71.anInt1749 = 0;
-			Static71.anInt1751 = 0;
-			for (local14 = 0; local14 < local2; local14++) {
-				@Pc(19) int local19 = arg1[local14];
-				if (local19 < this.anIntArrayArray16.length) {
-					@Pc(29) int[] local29 = this.anIntArrayArray16[local19];
-					for (local31 = 0; local31 < local29.length; local31++) {
-						local36 = local29[local31];
-						Static71.anInt1746 += this.vertexX[local36];
-						Static71.anInt1749 += this.vertexY[local36];
-						Static71.anInt1751 += this.vertexZ[local36];
-						local6++;
+			int count = 0;
+			Static71.baseX = 0;
+			Static71.baseY = 0;
+			Static71.baseZ = 0;
+			for (int g = 0; g < labelCount; g++) {
+				@Pc(19) int label = labels[g];
+				if (label < this.labelVerticies.length) {
+					@Pc(29) int[] verticies = this.labelVerticies[label];
+					for (int i = 0; i < verticies.length; i++) {
+						int v = verticies[i];
+						Static71.baseX += this.vertexX[v];
+						Static71.baseY += this.vertexY[v];
+						Static71.baseZ += this.vertexZ[v];
+						count++;
 					}
 				}
 			}
-			if (local6 > 0) {
-				Static71.anInt1746 = Static71.anInt1746 / local6 + arg2;
-				Static71.anInt1749 = Static71.anInt1749 / local6 + arg3;
-				Static71.anInt1751 = Static71.anInt1751 / local6 + arg4;
+			if (count > 0) {
+				Static71.baseX = Static71.baseX / count + x;
+				Static71.baseY = Static71.baseY / count + y;
+				Static71.baseZ = Static71.baseZ / count + z;
 			} else {
-				Static71.anInt1746 = arg2;
-				Static71.anInt1749 = arg3;
-				Static71.anInt1751 = arg4;
+				Static71.baseX = x;
+				Static71.baseY = y;
+				Static71.baseZ = z;
 			}
 			return;
 		}
-		@Pc(115) int[] local115;
-		@Pc(117) int local117;
+		@Pc(115) int[] verticies;
 		if (type == 1) {
-			for (local6 = 0; local6 < local2; local6++) {
-				local14 = arg1[local6];
-				if (local14 < this.anIntArrayArray16.length) {
-					local115 = this.anIntArrayArray16[local14];
-					for (local117 = 0; local117 < local115.length; local117++) {
-						local31 = local115[local117];
-						this.vertexX[local31] += arg2;
-						this.vertexY[local31] += arg3;
-						this.vertexZ[local31] += arg4;
+			for (int count = 0; count < labelCount; count++) {
+				int group = labels[count];
+				if (group < this.labelVerticies.length) {
+					verticies = this.labelVerticies[group];
+					for (int i = 0; i < verticies.length; i++) {
+						i = verticies[i];
+						this.vertexX[i] += x;
+						this.vertexY[i] += y;
+						this.vertexZ[i] += z;
 					}
 				}
 			}
 		} else if (type == 2) {
-			for (local6 = 0; local6 < local2; local6++) {
-				local14 = arg1[local6];
-				if (local14 < this.anIntArrayArray16.length) {
-					local115 = this.anIntArrayArray16[local14];
-					for (local117 = 0; local117 < local115.length; local117++) {
-						local31 = local115[local117];
-						this.vertexX[local31] -= Static71.anInt1746;
-						this.vertexY[local31] -= Static71.anInt1749;
-						this.vertexZ[local31] -= Static71.anInt1751;
-						local36 = (arg2 & 0xFF) * 8;
-						@Pc(219) int local219 = (arg3 & 0xFF) * 8;
-						@Pc(225) int local225 = (arg4 & 0xFF) * 8;
-						@Pc(231) int local231;
-						@Pc(235) int local235;
-						@Pc(251) int local251;
-						if (local225 != 0) {
-							local231 = Static71.anIntArray386[local225];
-							local235 = Static71.anIntArray402[local225];
-							local251 = this.vertexY[local31] * local231 + this.vertexX[local31] * local235 >> 16;
-							this.vertexY[local31] = this.vertexY[local31] * local235 - this.vertexX[local31] * local231 >> 16;
-							this.vertexX[local31] = local251;
+			for (int group = 0; group < labelCount; group++) {
+				int label = labels[group];
+				if (label < this.labelVerticies.length) {
+					verticies = this.labelVerticies[label];
+					for (int i = 0; i < verticies.length; i++) {
+						int v = verticies[i];
+						this.vertexX[v] -= Static71.baseX;
+						this.vertexY[v] -= Static71.baseY;
+						this.vertexZ[v] -= Static71.baseZ;
+
+						int pitch = (x & 0xFF) * 8;
+						@Pc(219) int yaw = (y & 0xFF) * 8;
+						@Pc(225) int roll = (z & 0xFF) * 8;
+
+						@Pc(231) int sin;
+						@Pc(235) int cos;
+						if (roll != 0) {
+							sin = Static71.sin[roll];
+							cos = Static71.cos[roll];
+							int x_ = this.vertexY[v] * sin + this.vertexX[v] * cos >> 16;
+							this.vertexY[v] = this.vertexY[v] * cos - this.vertexX[v] * sin >> 16;
+							this.vertexX[v] = x_;
 						}
-						if (local36 != 0) {
-							local231 = Static71.anIntArray386[local36];
-							local235 = Static71.anIntArray402[local36];
-							local251 = this.vertexY[local31] * local235 - this.vertexZ[local31] * local231 >> 16;
-							this.vertexZ[local31] = this.vertexY[local31] * local231 + this.vertexZ[local31] * local235 >> 16;
-							this.vertexY[local31] = local251;
+						if (pitch != 0) {
+							sin = Static71.sin[pitch];
+							cos = Static71.cos[pitch];
+							int y_ = this.vertexY[v] * cos - this.vertexZ[v] * sin >> 16;
+							this.vertexZ[v] = this.vertexY[v] * sin + this.vertexZ[v] * cos >> 16;
+							this.vertexY[v] = y_;
 						}
-						if (local219 != 0) {
-							local231 = Static71.anIntArray386[local219];
-							local235 = Static71.anIntArray402[local219];
-							local251 = this.vertexZ[local31] * local231 + this.vertexX[local31] * local235 >> 16;
-							this.vertexZ[local31] = this.vertexZ[local31] * local235 - this.vertexX[local31] * local231 >> 16;
-							this.vertexX[local31] = local251;
+						if (yaw != 0) {
+							sin = Static71.sin[yaw];
+							cos = Static71.cos[yaw];
+							int x_ = this.vertexZ[v] * sin + this.vertexX[v] * cos >> 16;
+							this.vertexZ[v] = this.vertexZ[v] * cos - this.vertexX[v] * sin >> 16;
+							this.vertexX[v] = x_;
 						}
-						this.vertexX[local31] += Static71.anInt1746;
-						this.vertexY[local31] += Static71.anInt1749;
-						this.vertexZ[local31] += Static71.anInt1751;
+						this.vertexX[v] += Static71.baseX;
+						this.vertexY[v] += Static71.baseY;
+						this.vertexZ[v] += Static71.baseZ;
 					}
 				}
 			}
 		} else if (type == 3) {
-			for (local6 = 0; local6 < local2; local6++) {
-				local14 = arg1[local6];
-				if (local14 < this.anIntArrayArray16.length) {
-					local115 = this.anIntArrayArray16[local14];
-					for (local117 = 0; local117 < local115.length; local117++) {
-						local31 = local115[local117];
-						this.vertexX[local31] -= Static71.anInt1746;
-						this.vertexY[local31] -= Static71.anInt1749;
-						this.vertexZ[local31] -= Static71.anInt1751;
-						this.vertexX[local31] = this.vertexX[local31] * arg2 / 128;
-						this.vertexY[local31] = this.vertexY[local31] * arg3 / 128;
-						this.vertexZ[local31] = this.vertexZ[local31] * arg4 / 128;
-						this.vertexX[local31] += Static71.anInt1746;
-						this.vertexY[local31] += Static71.anInt1749;
-						this.vertexZ[local31] += Static71.anInt1751;
+			for (int g = 0; g < labelCount; g++) {
+				int label = labels[g];
+				if (label < this.labelVerticies.length) {
+					verticies = this.labelVerticies[label];
+					for (int i = 0; i < verticies.length; i++) {
+						int v = verticies[i];
+						this.vertexX[v] -= Static71.baseX;
+						this.vertexY[v] -= Static71.baseY;
+						this.vertexZ[v] -= Static71.baseZ;
+						this.vertexX[v] = this.vertexX[v] * x / 128;
+						this.vertexY[v] = this.vertexY[v] * y / 128;
+						this.vertexZ[v] = this.vertexZ[v] * z / 128;
+						this.vertexX[v] += Static71.baseX;
+						this.vertexY[v] += Static71.baseY;
+						this.vertexZ[v] += Static71.baseZ;
 					}
 				}
 			}
-		} else if (type == 5 && (this.anIntArrayArray17 != null && this.anIntArray371 != null)) {
-			for (local6 = 0; local6 < local2; local6++) {
-				local14 = arg1[local6];
-				if (local14 < this.anIntArrayArray17.length) {
-					local115 = this.anIntArrayArray17[local14];
-					for (local117 = 0; local117 < local115.length; local117++) {
-						local31 = local115[local117];
-						this.anIntArray371[local31] += arg2 * 8;
-						if (this.anIntArray371[local31] < 0) {
-							this.anIntArray371[local31] = 0;
+		} else if (type == 5 && (this.labelFaces != null && this.faceAlpha != null)) {
+			for (int g = 0; g < labelCount; g++) {
+				int label = labels[g];
+				if (label < this.labelFaces.length) {
+					verticies = this.labelFaces[label];
+					for (int i = 0; i < verticies.length; i++) {
+						int v = verticies[i];
+						this.faceAlpha[v] += x * 8;
+						if (this.faceAlpha[v] < 0) {
+							this.faceAlpha[v] = 0;
 						}
-						if (this.anIntArray371[local31] > 255) {
-							this.anIntArray371[local31] = 255;
+						if (this.faceAlpha[v] > 255) {
+							this.faceAlpha[v] = 255;
 						}
 					}
 				}
@@ -1657,10 +1654,10 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 		@Pc(17) int local17 = this.faceVertexB[arg0];
 		@Pc(22) int local22 = this.faceVertexC[arg0];
 		Static6.aBoolean19 = Static71.aBooleanArray26[arg0];
-		if (this.anIntArray371 == null) {
+		if (this.faceAlpha == null) {
 			Static6.anInt228 = 0;
 		} else {
-			Static6.anInt228 = this.anIntArray371[arg0];
+			Static6.anInt228 = this.faceAlpha[arg0];
 		}
 		@Pc(42) int local42;
 		if (this.faceInfo == null) {
@@ -1738,9 +1735,9 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 		@Pc(24) Class28 local24 = arg0.aClass28Array1[arg1];
 		@Pc(29) Class28 local29 = arg2.aClass28Array1[arg3];
 		@Pc(32) Class2_Sub5 local32 = local24.aClass2_Sub5_1;
-		Static71.anInt1746 = 0;
-		Static71.anInt1749 = 0;
-		Static71.anInt1751 = 0;
+		Static71.baseX = 0;
+		Static71.baseY = 0;
+		Static71.baseZ = 0;
 		@Pc(40) byte local40 = 0;
 		@Pc(43) int local43 = local40 + 1;
 		@Pc(45) int local45 = arg4[0];
@@ -1751,12 +1748,12 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 				local45 = arg4[local43++];
 			}
 			if (local53 != local45 || local32.anIntArray142[local53] == 0) {
-				this.method1152(local32.anIntArray142[local53], local32.anIntArrayArray10[local53], local24.anIntArray231[local47], local24.anIntArray230[local47], local24.anIntArray229[local47]);
+				this.applyTransform(local32.anIntArray142[local53], local32.anIntArrayArray10[local53], local24.anIntArray231[local47], local24.anIntArray230[local47], local24.anIntArray229[local47]);
 			}
 		}
-		Static71.anInt1746 = 0;
-		Static71.anInt1749 = 0;
-		Static71.anInt1751 = 0;
+		Static71.baseX = 0;
+		Static71.baseY = 0;
+		Static71.baseZ = 0;
 		local40 = 0;
 		local43 = local40 + 1;
 		local45 = arg4[0];
@@ -1766,7 +1763,7 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 				local45 = arg4[local43++];
 			}
 			if (local118 == local45 || local32.anIntArray142[local118] == 0) {
-				this.method1152(local32.anIntArray142[local118], local32.anIntArrayArray10[local118], local29.anIntArray231[local53], local29.anIntArray230[local53], local29.anIntArray229[local53]);
+				this.applyTransform(local32.anIntArray142[local118], local32.anIntArrayArray10[local118], local29.anIntArray231[local53], local29.anIntArray230[local53], local29.anIntArray229[local53]);
 			}
 		}
 	}
@@ -1790,15 +1787,15 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 					local7 = local15;
 				}
 			}
-			this.anIntArrayArray16 = new int[local7 + 1][];
+			this.labelVerticies = new int[local7 + 1][];
 			for (local15 = 0; local15 <= local7; local15++) {
-				this.anIntArrayArray16[local15] = new int[local5[local15]];
+				this.labelVerticies[local15] = new int[local5[local15]];
 				local5[local15] = 0;
 			}
 			local59 = 0;
 			while (local59 < this.vertexCount) {
 				local65 = this.anIntArray372[local59];
-				this.anIntArrayArray16[local65][local5[local65]++] = local59++;
+				this.labelVerticies[local65][local5[local65]++] = local59++;
 			}
 			this.anIntArray372 = null;
 		}
@@ -1814,15 +1811,15 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 				local7 = local15;
 			}
 		}
-		this.anIntArrayArray17 = new int[local7 + 1][];
+		this.labelFaces = new int[local7 + 1][];
 		for (local15 = 0; local15 <= local7; local15++) {
-			this.anIntArrayArray17[local15] = new int[local5[local15]];
+			this.labelFaces[local15] = new int[local5[local15]];
 			local5[local15] = 0;
 		}
 		local59 = 0;
 		while (local59 < this.faceCount) {
 			local65 = this.anIntArray382[local59];
-			this.anIntArrayArray17[local65][local5[local65]++] = local59++;
+			this.labelFaces[local65][local5[local65]++] = local59++;
 		}
 		this.anIntArray382 = null;
 	}
@@ -1892,17 +1889,17 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 			arg1.vertexZ[local43] = this.vertexZ[local43];
 		}
 		if (arg0) {
-			arg1.anIntArray371 = this.anIntArray371;
+			arg1.faceAlpha = this.faceAlpha;
 		} else {
-			arg1.anIntArray371 = arg2;
+			arg1.faceAlpha = arg2;
 			@Pc(88) int local88;
-			if (this.anIntArray371 == null) {
+			if (this.faceAlpha == null) {
 				for (local88 = 0; local88 < this.faceCount; local88++) {
-					arg1.anIntArray371[local88] = 0;
+					arg1.faceAlpha[local88] = 0;
 				}
 			} else {
 				for (local88 = 0; local88 < this.faceCount; local88++) {
-					arg1.anIntArray371[local88] = this.anIntArray371[local88];
+					arg1.faceAlpha[local88] = this.faceAlpha[local88];
 				}
 			}
 		}
@@ -1910,8 +1907,8 @@ public final class Class2_Sub2_Sub12_Sub4 extends Class2_Sub2_Sub12 {
 		arg1.faceColor = this.faceColor;
 		arg1.anIntArray377 = this.anIntArray377;
 		arg1.anInt1737 = this.anInt1737;
-		arg1.anIntArrayArray17 = this.anIntArrayArray17;
-		arg1.anIntArrayArray16 = this.anIntArrayArray16;
+		arg1.labelFaces = this.labelFaces;
+		arg1.labelVerticies = this.labelVerticies;
 		arg1.faceVertexA = this.faceVertexA;
 		arg1.faceVertexB = this.faceVertexB;
 		arg1.faceVertexC = this.faceVertexC;

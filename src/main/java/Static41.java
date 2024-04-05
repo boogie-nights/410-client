@@ -42,15 +42,15 @@ public final class Static41 {
 		@Pc(38) int local38;
 		@Pc(49) int local49;
 		if (local19 != 0) {
-			local34 = Static71.anIntArray386[local19];
-			local38 = Static71.anIntArray402[local19];
+			local34 = Static71.sin[local19];
+			local38 = Static71.cos[local19];
 			local49 = local38 * 0 - arg5 * local34 >> 16;
 			local28 = local38 * arg5 + local34 * 0 >> 16;
 			local21 = local49;
 		}
 		if (local10 != 0) {
-			local34 = Static71.anIntArray386[local10];
-			local38 = Static71.anIntArray402[local10];
+			local34 = Static71.sin[local10];
+			local38 = Static71.cos[local10];
 			local49 = local38 * 0 + local28 * local34 >> 16;
 			local28 = local28 * local38 - local34 * 0 >> 16;
 			local12 = local49;

@@ -67,9 +67,9 @@ public final class Static103 {
 			return;
 		}
 		@Pc(32) int local32 = Static84.anInt1978 + Static67.anInt1669 & 0x7FF;
-		@Pc(36) int local36 = Static71.anIntArray386[local32];
+		@Pc(36) int local36 = Static71.sin[local32];
 		@Pc(44) int local44 = local36 * 256 / (Static15.anInt1857 + 256);
-		@Pc(48) int local48 = Static71.anIntArray402[local32];
+		@Pc(48) int local48 = Static71.cos[local32];
 		@Pc(56) int local56 = local48 * 256 / (Static15.anInt1857 + 256);
 		@Pc(67) int local67 = local44 * arg1 + arg2 * local56 >> 16;
 		@Pc(78) int local78 = local56 * arg1 - arg2 * local44 >> 16;

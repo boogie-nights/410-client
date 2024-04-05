@@ -75,9 +75,9 @@ public final class Static90 {
 		if (local20 > 6400) {
 			return;
 		}
-		@Pc(35) int local35 = Static71.anIntArray402[local12];
+		@Pc(35) int local35 = Static71.cos[local12];
 		@Pc(43) int local43 = local35 * 256 / (Static15.anInt1857 + 256);
-		@Pc(47) int local47 = Static71.anIntArray386[local12];
+		@Pc(47) int local47 = Static71.sin[local12];
 		@Pc(55) int local55 = local47 * 256 / (Static15.anInt1857 + 256);
 		@Pc(66) int local66 = arg2 * local43 - arg0 * local55 >> 16;
 		@Pc(76) int local76 = arg2 * local55 + arg0 * local43 >> 16;
