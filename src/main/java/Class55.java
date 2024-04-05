@@ -1153,8 +1153,8 @@ public final class Class55 {
 				Static69.anIntArray351[local5] = local59;
 				Static69.anIntArray348[local5] = local69;
 			}
-			Static69.anIntArray340[local5] = Static6.anInt225 + (local37 << 9) / local69;
-			Static69.anIntArray345[local5] = Static6.anInt224 + (local59 << 9) / local69;
+			Static69.anIntArray340[local5] = Static6.centerX + (local37 << 9) / local69;
+			Static69.anIntArray345[local5] = Static6.centerY + (local59 << 9) / local69;
 		}
 		Static6.alpha = 0;
 		local3 = arg0.anIntArray343.length;
@@ -1737,14 +1737,14 @@ public final class Class55 {
 		if (local265 < 50) {
 			return;
 		}
-		@Pc(279) int local279 = Static6.anInt225 + (local101 << 9) / local121;
-		@Pc(287) int local287 = Static6.anInt224 + (local123 << 9) / local121;
-		@Pc(295) int local295 = Static6.anInt225 + (local21 << 9) / local169;
-		@Pc(303) int local303 = Static6.anInt224 + (local51 << 9) / local169;
-		@Pc(311) int local311 = Static6.anInt225 + (local197 << 9) / local27;
-		@Pc(319) int local319 = Static6.anInt224 + (local66 << 9) / local27;
-		@Pc(327) int local327 = Static6.anInt225 + (local245 << 9) / local265;
-		@Pc(335) int local335 = Static6.anInt224 + (local89 << 9) / local265;
+		@Pc(279) int local279 = Static6.centerX + (local101 << 9) / local121;
+		@Pc(287) int local287 = Static6.centerY + (local123 << 9) / local121;
+		@Pc(295) int local295 = Static6.centerX + (local21 << 9) / local169;
+		@Pc(303) int local303 = Static6.centerY + (local51 << 9) / local169;
+		@Pc(311) int local311 = Static6.centerX + (local197 << 9) / local27;
+		@Pc(319) int local319 = Static6.centerY + (local66 << 9) / local27;
+		@Pc(327) int local327 = Static6.centerX + (local245 << 9) / local265;
+		@Pc(335) int local335 = Static6.centerY + (local89 << 9) / local265;
 		Static6.alpha = 0;
 		@Pc(472) int local472;
 		if ((local311 - local327) * (local303 - local335) - (local319 - local335) * (local295 - local327) > 0) {

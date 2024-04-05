@@ -26,16 +26,16 @@ public final class Static71 {
 	public static int[] anIntArray385 = new int[12];
 
 	@OriginalMember(owner = "client!ne", name = "Sb", descriptor = "I")
-	public static int anInt1747 = 0;
+	public static int pickedCount = 0;
 
 	@OriginalMember(owner = "client!ne", name = "Tb", descriptor = "[I")
 	public static int[] sin = Class2_Sub2_Sub2_Sub1.anIntArray59;
 
 	@OriginalMember(owner = "client!ne", name = "Ub", descriptor = "I")
-	public static int anInt1748 = 0;
+	public static int mouseZ = 0;
 
 	@OriginalMember(owner = "client!ne", name = "Vb", descriptor = "[I")
-	public static int[] anIntArray387 = new int[1000];
+	public static int[] pickedBitsets = new int[1000];
 
 	@OriginalMember(owner = "client!ne", name = "Wb", descriptor = "[Z")
 	public static boolean[] faceNearClipped = new boolean[4096];
@@ -47,7 +47,7 @@ public final class Static71 {
 	public static int[] vertexScreenY = new int[4096];
 
 	@OriginalMember(owner = "client!ne", name = "Zb", descriptor = "[I")
-	public static int[] anIntArray390 = new int[4096];
+	public static int[] vertexViewSpaceZ = new int[4096];
 
 	@OriginalMember(owner = "client!ne", name = "ac", descriptor = "[I")
 	public static int[] anIntArray391 = new int[1500];
@@ -68,7 +68,7 @@ public final class Static71 {
 	public static int[] vertexViewSpaceX = new int[4096];
 
 	@OriginalMember(owner = "client!ne", name = "hc", descriptor = "[I")
-	public static int[] anIntArray397 = new int[4096];
+	public static int[] vertexViewSpaceY = new int[4096];
 
 	@OriginalMember(owner = "client!ne", name = "ic", descriptor = "[I")
 	public static int[] anIntArray398 = new int[12];
@@ -98,7 +98,7 @@ public final class Static71 {
 	public static boolean[] faceClippedX = new boolean[4096];
 
 	@OriginalMember(owner = "client!ne", name = "rc", descriptor = "I")
-	public static int anInt1750 = 0;
+	public static int mouseX = 0;
 
 	@OriginalMember(owner = "client!ne", name = "sc", descriptor = "[I")
 	public static int[] anIntArray403 = new int[2000];
@@ -137,8 +137,8 @@ public final class Static71 {
 		vertexScreenX = null;
 		anIntArray401 = null;
 		vertexViewSpaceX = null;
-		anIntArray397 = null;
-		anIntArray390 = null;
+		vertexViewSpaceY = null;
+		vertexViewSpaceZ = null;
 		anIntArray391 = null;
 		anIntArrayArray19 = null;
 		anIntArray385 = null;
@@ -149,7 +149,7 @@ public final class Static71 {
 		anIntArray393 = null;
 		anIntArray400 = null;
 		anIntArray404 = null;
-		anIntArray387 = null;
+		pickedBitsets = null;
 		sin = null;
 		cos = null;
 		anIntArray392 = null;

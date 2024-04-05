@@ -200,7 +200,7 @@ public final class Class2_Sub2_Sub12_Sub1_Sub1 extends Class2_Sub2_Sub12_Sub1 {
 				local91.method1137(super.anInt2275 - this.anInt1387, this.anInt1379 + -this.anInt1384, super.anInt2284 - this.anInt1375);
 			}
 		}
-		local60.aBoolean139 = true;
+		local60.pickable = true;
 		return local60;
 	}
 }

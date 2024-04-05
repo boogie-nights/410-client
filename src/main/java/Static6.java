@@ -11,22 +11,22 @@ public final class Static6 {
 	public static int anInt222;
 
 	@OriginalMember(owner = "client!b", name = "ab", descriptor = "I")
-	public static int anInt223;
+	public static int centerX2d;
 
 	@OriginalMember(owner = "client!b", name = "bb", descriptor = "Lclient!ld;")
 	public static Interface4 anInterface4_1;
 
 	@OriginalMember(owner = "client!b", name = "db", descriptor = "I")
-	public static int anInt224;
+	public static int centerY;
 
 	@OriginalMember(owner = "client!b", name = "eb", descriptor = "I")
-	public static int anInt225;
+	public static int centerX;
 
 	@OriginalMember(owner = "client!b", name = "fb", descriptor = "I")
 	public static int anInt226;
 
 	@OriginalMember(owner = "client!b", name = "hb", descriptor = "I")
-	public static int anInt227;
+	public static int centerY2D;
 
 	@OriginalMember(owner = "client!b", name = "kb", descriptor = "I")
 	private static int anInt229;
@@ -204,7 +204,7 @@ public final class Static6 {
 		if (aBoolean20) {
 			local85 = 0;
 			local87 = 0;
-			local91 = arg5 - anInt225;
+			local91 = arg5 - centerX;
 			local99 = arg9 + (arg12 >> 3) * local91;
 			local107 = arg10 + (arg13 >> 3) * local91;
 			local115 = arg11 + (arg14 >> 3) * local91;
@@ -380,7 +380,7 @@ public final class Static6 {
 		}
 		local85 = 0;
 		local87 = 0;
-		local91 = arg5 - anInt225;
+		local91 = arg5 - centerX;
 		local99 = arg9 + (arg12 >> 3) * local91;
 		local107 = arg10 + (arg13 >> 3) * local91;
 		local115 = arg11 + (arg14 >> 3) * local91;
@@ -1536,7 +1536,7 @@ public final class Static6 {
 						arg7 -= local183 * arg1;
 						arg1 = 0;
 					}
-					local324 = arg0 - anInt224;
+					local324 = arg0 - centerY;
 					local11 += local92 * local324;
 					local102 += local122 * local324;
 					local132 += local152 * local324;
@@ -1624,7 +1624,7 @@ public final class Static6 {
 						arg8 -= local183 * arg2;
 						arg2 = 0;
 					}
-					local324 = arg0 - anInt224;
+					local324 = arg0 - centerY;
 					local11 += local92 * local324;
 					local102 += local122 * local324;
 					local132 += local152 * local324;
@@ -1722,7 +1722,7 @@ public final class Static6 {
 						arg8 -= local210 * arg2;
 						arg2 = 0;
 					}
-					local324 = arg1 - anInt224;
+					local324 = arg1 - centerY;
 					local11 += local92 * local324;
 					local102 += local122 * local324;
 					local132 += local152 * local324;
@@ -1810,7 +1810,7 @@ public final class Static6 {
 						arg6 -= local210 * arg0;
 						arg0 = 0;
 					}
-					local324 = arg1 - anInt224;
+					local324 = arg1 - centerY;
 					local11 += local92 * local324;
 					local102 += local122 * local324;
 					local132 += local152 * local324;
@@ -1907,7 +1907,7 @@ public final class Static6 {
 					arg6 -= local156 * arg0;
 					arg0 = 0;
 				}
-				local324 = arg2 - anInt224;
+				local324 = arg2 - centerY;
 				local11 += local92 * local324;
 				local102 += local122 * local324;
 				local132 += local152 * local324;
@@ -1995,7 +1995,7 @@ public final class Static6 {
 					arg7 -= local156 * arg1;
 					arg1 = 0;
 				}
-				local324 = arg2 - anInt224;
+				local324 = arg2 - centerY;
 				local11 += local92 * local324;
 				local102 += local122 * local324;
 				local132 += local152 * local324;
@@ -2075,22 +2075,22 @@ public final class Static6 {
 		@Pc(3) int local3 = anIntArray62[0];
 		@Pc(7) int local7 = local3 / Static26.anInt2440;
 		@Pc(13) int local13 = local3 - local7 * Static26.anInt2440;
-		anInt225 = arg0 - local13;
-		anInt224 = arg1 - local7;
-		anInt221 = -anInt225;
-		anInt223 = anInt222 - anInt225;
-		anInt227 = -anInt224;
-		anInt226 = anInt229 - anInt224;
+		centerX = arg0 - local13;
+		centerY = arg1 - local7;
+		anInt221 = -centerX;
+		centerX2d = anInt222 - centerX;
+		centerY2D = -centerY;
+		anInt226 = anInt229 - centerY;
 	}
 
 	@OriginalMember(owner = "client!b", name = "e", descriptor = "()V")
 	public static void method178() {
-		anInt225 = anInt222 / 2;
-		anInt224 = anInt229 / 2;
-		anInt221 = -anInt225;
-		anInt223 = anInt222 - anInt225;
-		anInt227 = -anInt224;
-		anInt226 = anInt229 - anInt224;
+		centerX = anInt222 / 2;
+		centerY = anInt229 / 2;
+		anInt221 = -centerX;
+		centerX2d = anInt222 - centerX;
+		centerY2D = -centerY;
+		anInt226 = anInt229 - centerY;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([IIIIIIII)V")

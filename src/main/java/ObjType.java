@@ -205,7 +205,7 @@ public final class ObjType extends Hashable {
 		}
 		if (arg1) {
 			model.calculateNormals(this.anInt942 + 64, this.anInt940 + 768, -50, -10, -50, true);
-			model.aBoolean139 = true;
+			model.pickable = true;
 			Static90.aClass47_18.method1332((long) this.anInt954, model);
 		}
 		return model;

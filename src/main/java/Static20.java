@@ -78,8 +78,8 @@ public final class Static20 {
 		if (Static79.anInt1874 == 0 && Static24.anInt641 == 0) {
 			Static21.method402(Static33.aClass40_239, 24, Static100.anInt2394, Static32.anInt742, 0);
 		}
-		for (@Pc(32) int local32 = 0; local32 < Static71.anInt1747; local32++) {
-			@Pc(38) int local38 = Static71.anIntArray387[local32];
+		for (@Pc(32) int local32 = 0; local32 < Static71.pickedCount; local32++) {
+			@Pc(38) int local38 = Static71.pickedBitsets[local32];
 			@Pc(42) int local42 = local38 & 0x7F;
 			@Pc(48) int local48 = local38 >> 7 & 0x7F;
 			@Pc(54) int local54 = local38 >> 14 & 0x7FFF;

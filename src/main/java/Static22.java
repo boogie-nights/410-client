@@ -202,9 +202,9 @@ public final class Static22 {
 		}
 		Static75.method1230();
 		Static71.aBoolean140 = true;
-		Static71.anInt1748 = Static100.anInt2394 - 4;
-		Static71.anInt1747 = 0;
-		Static71.anInt1750 = Static32.anInt742 - 4;
+		Static71.mouseZ = Static100.anInt2394 - 4;
+		Static71.pickedCount = 0;
+		Static71.mouseX = Static32.anInt742 - 4;
 		Static26.method1610();
 		Static93.aClass55_1.method1430(Static48.anInt1114, Static81.anInt1935, Static15.anInt1863, Static35.anInt824, Static27.anInt686, local36);
 		Static93.aClass55_1.method1454();

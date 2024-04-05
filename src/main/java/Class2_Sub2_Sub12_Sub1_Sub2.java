@@ -31,7 +31,7 @@ public final class Class2_Sub2_Sub12_Sub1_Sub2 extends Class2_Sub2_Sub12_Sub1 {
 			}
 		}
 		if (this.aClass2_Sub2_Sub7_1.anInt758 == 1) {
-			local61.aBoolean139 = true;
+			local61.pickable = true;
 		}
 		return local61;
 	}
