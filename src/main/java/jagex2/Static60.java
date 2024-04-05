@@ -35,7 +35,7 @@ public final class Static60 {
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(I)V")
 	public static void method998() {
-		Static80.aClass2_Sub3_Sub1_4.p1isaac(255);
+		Static80.out.p1isaac(255);
 		if (Static66.anInt1654 != -1) {
 			Static83.method1350(Static66.anInt1654);
 			Static33.aBoolean59 = true;
@@ -47,7 +47,7 @@ public final class Static60 {
 			Static83.method1350(Static85.anInt1994);
 			Static20.aBoolean40 = false;
 			Static85.anInt1994 = -1;
-			Static73.aBoolean144 = true;
+			Static73.redrawChatback = true;
 		}
 		if (Static84.anInt1971 != -1) {
 			Static83.method1350(Static84.anInt1971);

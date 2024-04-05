@@ -97,7 +97,7 @@ public final class Static105 {
 		Static100.method1584();
 		Static7.anInt231 = 0;
 		Static85.anInt1986 = -1;
-		Static80.aClass2_Sub3_Sub1_4.pos = 0;
+		Static80.out.pos = 0;
 		Static88.anInt2083 = -1;
 		Static56.aClass2_Sub3_Sub1_5.pos = 0;
 		Static97.aBoolean175 = false;

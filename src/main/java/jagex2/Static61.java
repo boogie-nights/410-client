@@ -46,7 +46,7 @@ public final class Static61 {
 	public static Class47 aClass47_14 = new Class47(64);
 
 	@OriginalMember(owner = "client!ma", name = "q", descriptor = "Lclient!o;")
-	public static Class40 aClass40_451 = aClass40_445;
+	public static Class40 chatTyped = aClass40_445;
 
 	@OriginalMember(owner = "client!ma", name = "r", descriptor = "Lclient!o;")
 	public static Class40 aClass40_452 = aClass40_445;
@@ -152,7 +152,7 @@ public final class Static61 {
 		aClass40_444 = null;
 		aClass40_446 = null;
 		aClass40_452 = null;
-		aClass40_451 = null;
+		chatTyped = null;
 		aClass40_445 = null;
 		aByteArrayArrayArray7 = null;
 		aClass40_447 = null;

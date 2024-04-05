@@ -191,7 +191,7 @@ public final class Static63 {
 				}
 				Static97.aBoolean175 = false;
 				if (Static1.anInt16 == 2) {
-					Static73.aBoolean144 = true;
+					Static73.redrawChatback = true;
 				}
 			}
 		}
@@ -226,7 +226,7 @@ public final class Static63 {
 			Static96.method1549(local309);
 		}
 		if (Static1.anInt16 == 2) {
-			Static73.aBoolean144 = true;
+			Static73.redrawChatback = true;
 		}
 		Static97.aBoolean175 = false;
 		if (Static1.anInt16 == 1) {
@@ -264,8 +264,8 @@ public final class Static63 {
 				Static62.anIntArray316[Static22.anInt2594] = 0;
 				Static33.aBoolean59 = true;
 				Static22.anInt2594++;
-				Static80.aClass2_Sub3_Sub1_4.p1isaac(98);
-				Static80.aClass2_Sub3_Sub1_4.p8(arg0);
+				Static80.out.p1isaac(98);
+				Static80.out.p8(arg0);
 			}
 		}
 	}

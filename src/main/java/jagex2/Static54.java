@@ -100,11 +100,11 @@ public final class Static54 {
 				Static33.aBoolean59 = true;
 			}
 			if (arg4 == 2 || arg4 == 3) {
-				Static73.aBoolean144 = true;
+				Static73.redrawChatback = true;
 			}
 		} else if (arg1 <= arg6 && arg1 + 16 > arg6 && arg3 + arg7 - 16 <= arg5 && arg3 + arg7 > arg5) {
 			if (arg4 == 2 || arg4 == 3) {
-				Static73.aBoolean144 = true;
+				Static73.redrawChatback = true;
 			}
 			if (arg4 == 1) {
 				Static33.aBoolean59 = true;
@@ -115,7 +115,7 @@ public final class Static54 {
 				Static33.aBoolean59 = true;
 			}
 			if (arg4 == 2 || arg4 == 3) {
-				Static73.aBoolean144 = true;
+				Static73.redrawChatback = true;
 			}
 			Static46.aBoolean182 = true;
 			@Pc(147) int local147 = arg3 * (arg3 - 32) / arg2;

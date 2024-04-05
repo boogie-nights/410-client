@@ -27,7 +27,7 @@ public final class Static73 {
 	public static Class40 aClass40_513 = Static13.method257("Loaded textures");
 
 	@OriginalMember(owner = "client!oa", name = "e", descriptor = "Z")
-	public static boolean aBoolean144 = false;
+	public static boolean redrawChatback = false;
 
 	@OriginalMember(owner = "client!oa", name = "g", descriptor = "Lclient!ka;")
 	public static Class30 aClass30_1 = new Class30();
@@ -247,8 +247,8 @@ public final class Static73 {
 		Static13.method255();
 		Static92.aClass47_21.method1330();
 		if (Static105.aCanvas_Sub1_1 != null) {
-			Static80.aClass2_Sub3_Sub1_4.p1isaac(153);
-			Static80.aClass2_Sub3_Sub1_4.p4(1057001181);
+			Static80.out.p1isaac(153);
+			Static80.out.p4(1057001181);
 		}
 		if (!Static45.aBoolean87) {
 			local261 = (Static56.anInt2327 - 6) / 8;
@@ -270,7 +270,7 @@ public final class Static73 {
 			Static7.method187(35);
 		}
 		Static31.method1678();
-		Static80.aClass2_Sub3_Sub1_4.p1isaac(91);
+		Static80.out.p1isaac(91);
 		Static107.method1659();
 	}
 

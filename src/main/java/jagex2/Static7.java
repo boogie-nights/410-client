@@ -77,7 +77,7 @@ public final class Static7 {
 					local40 = local40.method1185(5);
 				}
 				@Pc(108) int local108;
-				if ((local36 == 3 || local36 == 7) && (local36 == 7 || Static104.anInt2515 == 0 || Static104.anInt2515 == 1 && Static38.method729(local40))) {
+				if ((local36 == 3 || local36 == 7) && (local36 == 7 || Static104.privateChatSetting == 0 || Static104.privateChatSetting == 1 && Static38.method729(local40))) {
 					local108 = 329 - local15 * 13;
 					local15++;
 					local13.method575(Static45.aClass40_340, 4, local108, 0);
@@ -97,7 +97,7 @@ public final class Static7 {
 						return;
 					}
 				}
-				if (local36 == 5 && Static104.anInt2515 < 2) {
+				if (local36 == 5 && Static104.privateChatSetting < 2) {
 					local108 = 329 - local15 * 13;
 					local15++;
 					local13.method575(Static63.aClass40Array30[local26], 4, local108, 0);
@@ -106,7 +106,7 @@ public final class Static7 {
 						return;
 					}
 				}
-				if (local36 == 6 && Static104.anInt2515 < 2) {
+				if (local36 == 6 && Static104.privateChatSetting < 2) {
 					local108 = 329 - local15 * 13;
 					local13.method575(Static80.method1334(new Class40[] { Static100.aClass40_690, local40, Static1.aClass40_4, Static63.aClass40Array30[local26] }), 4, local108, 0);
 					local13.method575(Static80.method1334(new Class40[] { Static100.aClass40_690, local40, Static1.aClass40_4, Static63.aClass40Array30[local26] }), 4, local108 - 1, 65535);

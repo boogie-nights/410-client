@@ -131,7 +131,7 @@ public final class Static36 {
 				Static61.aClass40_453 = Static12.aClass40_79;
 				Static101.anInt2399 = 0;
 				Static93.anInt2180 = 1;
-				Static73.aBoolean144 = true;
+				Static73.redrawChatback = true;
 				Static61.aClass40_447 = Static61.aClass40_445;
 				Static74.aBoolean146 = true;
 			}
@@ -141,7 +141,7 @@ public final class Static36 {
 				Static61.aClass40_447 = Static61.aClass40_445;
 				Static61.aClass40_453 = Static19.aClass40_122;
 				Static101.anInt2399 = 0;
-				Static73.aBoolean144 = true;
+				Static73.redrawChatback = true;
 			}
 		}
 		if (local6 == 205) {
@@ -154,11 +154,11 @@ public final class Static36 {
 			Static61.aClass40_453 = Static17.aClass40_113;
 			Static74.aBoolean146 = true;
 			Static61.aClass40_447 = Static61.aClass40_445;
-			Static73.aBoolean144 = true;
+			Static73.redrawChatback = true;
 		}
 		if (local6 == 502) {
 			Static101.anInt2399 = 0;
-			Static73.aBoolean144 = true;
+			Static73.redrawChatback = true;
 			Static61.aClass40_447 = Static61.aClass40_445;
 			Static74.aBoolean146 = true;
 			Static61.aClass40_453 = Static13.aClass40_82;
@@ -183,8 +183,8 @@ public final class Static36 {
 			Static38.aClass33_1.method1002(true);
 		}
 		if (local6 == 326) {
-			Static80.aClass2_Sub3_Sub1_4.p1isaac(12);
-			Static38.aClass33_1.method1007(Static80.aClass2_Sub3_Sub1_4);
+			Static80.out.p1isaac(12);
+			Static38.aClass33_1.method1007(Static80.out);
 			return true;
 		}
 		if (local6 == 620) {
@@ -193,10 +193,10 @@ public final class Static36 {
 		if (local6 >= 601 && local6 <= 613) {
 			Static60.method998();
 			if (Static61.aClass40_448.method1169() > 0) {
-				Static80.aClass2_Sub3_Sub1_4.p1isaac(72);
-				Static80.aClass2_Sub3_Sub1_4.p8(Static61.aClass40_448.method1179());
-				Static80.aClass2_Sub3_Sub1_4.p1(local6 - 601);
-				Static80.aClass2_Sub3_Sub1_4.p1(Static54.aBoolean103 ? 1 : 0);
+				Static80.out.p1isaac(72);
+				Static80.out.p8(Static61.aClass40_448.method1179());
+				Static80.out.p1(local6 - 601);
+				Static80.out.p1(Static54.aBoolean103 ? 1 : 0);
 			}
 		}
 		return false;

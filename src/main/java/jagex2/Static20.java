@@ -277,12 +277,12 @@ public final class Static20 {
 			}
 		}
 		if ((Static85.anInt1994 != -1 || Static38.anInt980 != -1) && Static38.anInt982 != Static102.anInt2466) {
-			Static73.aBoolean144 = true;
+			Static73.redrawChatback = true;
 			Static102.anInt2466 = Static38.anInt982;
 		}
 		if ((Static85.anInt1994 != -1 || Static38.anInt980 != -1) && Static59.anInt1501 != Static84.anInt1979) {
 			Static59.anInt1501 = Static84.anInt1979;
-			Static73.aBoolean144 = true;
+			Static73.redrawChatback = true;
 		}
 		while (!local175) {
 			local175 = true;

@@ -27,7 +27,7 @@ public final class Static80 {
 	public static int anInt1911 = 0;
 
 	@OriginalMember(owner = "client!qc", name = "g", descriptor = "Lclient!wc;")
-	public static Class2_Sub3_Sub1 aClass2_Sub3_Sub1_4 = new Class2_Sub3_Sub1(5000);
+	public static Class2_Sub3_Sub1 out = new Class2_Sub3_Sub1(5000);
 
 	@OriginalMember(owner = "client!qc", name = "j", descriptor = "I")
 	public static int anInt1917 = 0;
@@ -49,7 +49,7 @@ public final class Static80 {
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(I)V")
 	public static void method1328() {
-		aClass2_Sub3_Sub1_4 = null;
+		out = null;
 		aClass48_7 = null;
 		aClass40_557 = null;
 		aClass40_556 = null;
@@ -70,31 +70,31 @@ public final class Static80 {
 			return;
 		}
 		if (Static107.anInt2500 >= 6 && Static107.anInt2500 <= 106 && Static90.anInt2133 >= 467 && Static90.anInt2133 <= 499) {
-			Static52.aBoolean95 = true;
-			Static23.anInt583 = (Static23.anInt583 + 1) % 4;
-			Static73.aBoolean144 = true;
-			aClass2_Sub3_Sub1_4.p1isaac(132);
-			aClass2_Sub3_Sub1_4.p1(Static23.anInt583);
-			aClass2_Sub3_Sub1_4.p1(Static104.anInt2515);
-			aClass2_Sub3_Sub1_4.p1(Static103.anInt2491);
+			Static52.redrawPrivacySettings = true;
+			Static23.publicChatSetting = (Static23.publicChatSetting + 1) % 4;
+			Static73.redrawChatback = true;
+			out.p1isaac(132);
+			out.p1(Static23.publicChatSetting);
+			out.p1(Static104.privateChatSetting);
+			out.p1(Static103.tradeChatSetting);
 		}
 		if (Static107.anInt2500 >= 135 && Static107.anInt2500 <= 235 && Static90.anInt2133 >= 467 && Static90.anInt2133 <= 499) {
-			Static73.aBoolean144 = true;
-			Static52.aBoolean95 = true;
-			Static104.anInt2515 = (Static104.anInt2515 + 1) % 3;
-			aClass2_Sub3_Sub1_4.p1isaac(132);
-			aClass2_Sub3_Sub1_4.p1(Static23.anInt583);
-			aClass2_Sub3_Sub1_4.p1(Static104.anInt2515);
-			aClass2_Sub3_Sub1_4.p1(Static103.anInt2491);
+			Static73.redrawChatback = true;
+			Static52.redrawPrivacySettings = true;
+			Static104.privateChatSetting = (Static104.privateChatSetting + 1) % 3;
+			out.p1isaac(132);
+			out.p1(Static23.publicChatSetting);
+			out.p1(Static104.privateChatSetting);
+			out.p1(Static103.tradeChatSetting);
 		}
 		if (Static107.anInt2500 >= 273 && Static107.anInt2500 <= 373 && Static90.anInt2133 >= 467 && Static90.anInt2133 <= 499) {
-			Static103.anInt2491 = (Static103.anInt2491 + 1) % 3;
-			Static52.aBoolean95 = true;
-			Static73.aBoolean144 = true;
-			aClass2_Sub3_Sub1_4.p1isaac(132);
-			aClass2_Sub3_Sub1_4.p1(Static23.anInt583);
-			aClass2_Sub3_Sub1_4.p1(Static104.anInt2515);
-			aClass2_Sub3_Sub1_4.p1(Static103.anInt2491);
+			Static103.tradeChatSetting = (Static103.tradeChatSetting + 1) % 3;
+			Static52.redrawPrivacySettings = true;
+			Static73.redrawChatback = true;
+			out.p1isaac(132);
+			out.p1(Static23.publicChatSetting);
+			out.p1(Static104.privateChatSetting);
+			out.p1(Static103.tradeChatSetting);
 		}
 		if (Static107.anInt2500 < 412 || Static107.anInt2500 > 512 || Static90.anInt2133 < 467 || Static90.anInt2133 > 499) {
 			return;

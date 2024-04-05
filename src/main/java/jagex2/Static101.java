@@ -153,7 +153,7 @@ public final class Static101 {
 				if (local48 != null && local48.method1168(Static92.aClass40_622)) {
 					local48 = local48.method1185(5);
 				}
-				if ((local27 == 1 || local27 == 2) && (local27 == 1 || Static23.anInt583 == 0 || Static23.anInt583 == 1 && Static38.method729(local48))) {
+				if ((local27 == 1 || local27 == 2) && (local27 == 1 || Static23.publicChatSetting == 0 || Static23.publicChatSetting == 1 && Static38.method729(local48))) {
 					if (local38 - 14 < arg0 && arg0 <= local38 && !local48.method1184(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395)) {
 						if (Static61.anInt1550 >= 1) {
 							Static21.method402(Static80.method1334(new Class40[] { Static16.aClass40_111, local48 }), 42, 0, 0, 0);
@@ -163,7 +163,7 @@ public final class Static101 {
 					}
 					local3++;
 				}
-				if ((local27 == 3 || local27 == 7) && Static102.anInt2473 == 0 && (local27 == 7 || Static104.anInt2515 == 0 || Static104.anInt2515 == 1 && Static38.method729(local48))) {
+				if ((local27 == 3 || local27 == 7) && Static102.anInt2473 == 0 && (local27 == 7 || Static104.privateChatSetting == 0 || Static104.privateChatSetting == 1 && Static38.method729(local48))) {
 					local3++;
 					if (local38 - 14 < arg0 && local38 >= arg0) {
 						if (Static61.anInt1550 >= 1) {
@@ -173,16 +173,16 @@ public final class Static101 {
 						Static21.method402(Static80.method1334(new Class40[] { Static15.aClass40_535, local48 }), 51, 0, 0, 0);
 					}
 				}
-				if (local27 == 4 && (Static103.anInt2491 == 0 || Static103.anInt2491 == 1 && Static38.method729(local48))) {
+				if (local27 == 4 && (Static103.tradeChatSetting == 0 || Static103.tradeChatSetting == 1 && Static38.method729(local48))) {
 					local3++;
 					if (local38 - 14 < arg0 && arg0 <= local38) {
 						Static21.method402(Static80.method1334(new Class40[] { Static99.aClass40_28, local48 }), 29, 0, 0, 0);
 					}
 				}
-				if ((local27 == 5 || local27 == 6) && Static102.anInt2473 == 0 && Static104.anInt2515 < 2) {
+				if ((local27 == 5 || local27 == 6) && Static102.anInt2473 == 0 && Static104.privateChatSetting < 2) {
 					local3++;
 				}
-				if (local27 == 8 && (Static103.anInt2491 == 0 || Static103.anInt2491 == 1 && Static38.method729(local48))) {
+				if (local27 == 8 && (Static103.tradeChatSetting == 0 || Static103.tradeChatSetting == 1 && Static38.method729(local48))) {
 					if (arg0 > local38 - 14 && arg0 <= local38) {
 						Static21.method402(Static80.method1334(new Class40[] { Static72.aClass40_510, local48 }), 37, 0, 0, 0);
 					}

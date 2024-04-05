@@ -24,7 +24,7 @@ public final class Static52 {
 	public static Class40 aClass40_360 = Static13.method257("::hiddenbuttontest");
 
 	@OriginalMember(owner = "client!ka", name = "k", descriptor = "Z")
-	public static boolean aBoolean95 = false;
+	public static boolean redrawPrivacySettings = false;
 
 	@OriginalMember(owner = "client!ka", name = "m", descriptor = "[I")
 	public static int[] anIntArray258 = new int[1000];

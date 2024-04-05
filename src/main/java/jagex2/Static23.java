@@ -24,7 +24,7 @@ public final class Static23 {
 	public static Class40 aClass40_159 = Static13.method257("Enter object name");
 
 	@OriginalMember(owner = "client!ec", name = "Z", descriptor = "I")
-	public static int anInt583 = 0;
+	public static int publicChatSetting = 0;
 
 	@OriginalMember(owner = "client!ec", name = "ab", descriptor = "Lclient!o;")
 	public static Class40 aClass40_160 = Static13.method257("M");

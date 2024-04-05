@@ -247,8 +247,8 @@ public final class Static70 {
 					Static62.anIntArray316[local40] = Static62.anIntArray316[local40 + 1];
 					Static21.aLongArray2[local40] = Static21.aLongArray2[local40 + 1];
 				}
-				Static80.aClass2_Sub3_Sub1_4.p1isaac(30);
-				Static80.aClass2_Sub3_Sub1_4.p8(arg0);
+				Static80.out.p1isaac(30);
+				Static80.out.p8(arg0);
 				return;
 			}
 		}

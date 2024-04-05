@@ -149,7 +149,7 @@ public final class Static12 {
 						}
 					}
 				}
-				if (local31.aClass40_660 != null && (Static88.anInt2067 <= local9 || Static23.anInt583 == 0 || Static23.anInt583 == 3 || Static23.anInt583 == 1 && Static38.method729(((Class2_Sub2_Sub12_Sub1_Sub1) local31).aClass40_395))) {
+				if (local31.aClass40_660 != null && (Static88.anInt2067 <= local9 || Static23.publicChatSetting == 0 || Static23.publicChatSetting == 3 || Static23.publicChatSetting == 1 && Static38.method729(((Class2_Sub2_Sub12_Sub1_Sub1) local31).aClass40_395))) {
 					Static103.method1649(local31.anInt2310, local31);
 					if (Static17.anInt426 > -1 && Static84.anInt1974 < Static46.anInt2457) {
 						Static46.anIntArray537[Static84.anInt1974] = Static14.aClass2_Sub2_Sub2_Sub2_1.method568(local31.aClass40_660) / 2;

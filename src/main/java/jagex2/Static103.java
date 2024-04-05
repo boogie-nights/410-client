@@ -30,7 +30,7 @@ public final class Static103 {
 	public static Class47 aClass47_22 = new Class47(64);
 
 	@OriginalMember(owner = "client!vd", name = "t", descriptor = "I")
-	public static int anInt2491 = 0;
+	public static int tradeChatSetting = 0;
 
 	@OriginalMember(owner = "client!vd", name = "u", descriptor = "Lclient!o;")
 	public static Class40 aClass40_714 = Static13.method257("Connection lost");

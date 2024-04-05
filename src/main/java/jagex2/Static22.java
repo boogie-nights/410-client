@@ -122,7 +122,7 @@ public final class Static22 {
 		}
 		if (local15 == 8) {
 			Static102.anInt2473 = local25;
-			Static73.aBoolean144 = true;
+			Static73.redrawChatback = true;
 		}
 		if (local15 == 4) {
 			if (local25 == 0) {

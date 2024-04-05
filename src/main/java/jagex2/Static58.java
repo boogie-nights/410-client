@@ -53,7 +53,7 @@ public final class Static58 {
 			Static86.anInt2030 = 0;
 		}
 		if (Static85.anInt1994 == -1) {
-			Static73.aBoolean144 = true;
+			Static73.redrawChatback = true;
 		}
 		for (@Pc(34) int local34 = 99; local34 > 0; local34--) {
 			Static76.anIntArray469[local34] = Static76.anIntArray469[local34 - 1];

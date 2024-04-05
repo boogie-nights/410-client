@@ -351,26 +351,26 @@ public final class Static83 {
 			@Pc(1072) int local1072 = Static36.anIntArray163[local70];
 			local805 = Static23.anIntArray103[local70];
 			if (arg5 == 0) {
-				Static80.aClass2_Sub3_Sub1_4.p1isaac(130);
-				Static80.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3);
+				Static80.out.p1isaac(130);
+				Static80.out.p1(local75 + local75 + 3);
 			}
 			if (arg5 == 1) {
-				Static80.aClass2_Sub3_Sub1_4.p1isaac(136);
-				Static80.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3 + 14);
+				Static80.out.p1isaac(136);
+				Static80.out.p1(local75 + local75 + 3 + 14);
 			}
 			if (arg5 == 2) {
-				Static80.aClass2_Sub3_Sub1_4.p1isaac(89);
-				Static80.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3);
+				Static80.out.p1isaac(89);
+				Static80.out.p1(local75 + local75 + 3);
 			}
-			Static80.aClass2_Sub3_Sub1_4.method1712(Static100.aBooleanArray37[82] ? 1 : 0);
-			Static80.aClass2_Sub3_Sub1_4.method1711(local1072 + Static87.anInt2058);
-			Static80.aClass2_Sub3_Sub1_4.ip2(local805 + Static30.anInt725);
+			Static80.out.method1712(Static100.aBooleanArray37[82] ? 1 : 0);
+			Static80.out.method1711(local1072 + Static87.anInt2058);
+			Static80.out.ip2(local805 + Static30.anInt725);
 			Static38.anInt986 = Static36.anIntArray163[0];
 			Static80.anInt1919 = Static23.anIntArray103[0];
 			for (local812 = 1; local812 < local75; local812++) {
 				local70--;
-				Static80.aClass2_Sub3_Sub1_4.method1712(Static36.anIntArray163[local70] - local1072);
-				Static80.aClass2_Sub3_Sub1_4.method1702(Static23.anIntArray103[local70] - local805);
+				Static80.out.method1712(Static36.anIntArray163[local70] - local1072);
+				Static80.out.method1702(Static23.anIntArray103[local70] - local805);
 			}
 			return true;
 		} else if (arg5 == 1) {

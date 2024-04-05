@@ -165,7 +165,7 @@ public final class Static86 {
 				if (local35 != null && local35.method1168(Static92.aClass40_622)) {
 					local35 = local35.method1185(5);
 				}
-				if ((local31 == 3 || local31 == 7) && (local31 == 7 || Static104.anInt2515 == 0 || Static104.anInt2515 == 1 && Static38.method729(local35))) {
+				if ((local31 == 3 || local31 == 7) && (local31 == 7 || Static104.privateChatSetting == 0 || Static104.privateChatSetting == 1 && Static38.method729(local35))) {
 					@Pc(85) int local85 = 329 - local15 * 13;
 					if (Static32.anInt742 > 4 && local85 - 10 < Static100.anInt2394 + -4 && local85 + 3 >= Static100.anInt2394 + -4) {
 						@Pc(129) int local129 = Static103.aClass2_Sub2_Sub2_Sub2_5.method568(Static80.method1334(new Class40[] { Static3.aClass40_18, local35, Static63.aClass40Array30[local21] })) + 25;
@@ -185,7 +185,7 @@ public final class Static86 {
 						return;
 					}
 				}
-				if ((local31 == 5 || local31 == 6) && Static104.anInt2515 < 2) {
+				if ((local31 == 5 || local31 == 6) && Static104.privateChatSetting < 2) {
 					local15++;
 					if (local15 >= 5) {
 						return;
@@ -220,17 +220,17 @@ public final class Static86 {
 		if (!local126) {
 			return;
 		}
-		Static80.aClass2_Sub3_Sub1_4.p1(local23);
-		Static80.aClass2_Sub3_Sub1_4.p1(local17);
-		Static80.aClass2_Sub3_Sub1_4.method1694(Static67.anInt1669);
-		Static80.aClass2_Sub3_Sub1_4.p1(57);
-		Static80.aClass2_Sub3_Sub1_4.p1(Static84.anInt1978);
-		Static80.aClass2_Sub3_Sub1_4.p1(Static15.anInt1857);
-		Static80.aClass2_Sub3_Sub1_4.p1(89);
-		Static80.aClass2_Sub3_Sub1_4.method1694(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275);
-		Static80.aClass2_Sub3_Sub1_4.method1694(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284);
-		Static80.aClass2_Sub3_Sub1_4.p1(Static101.anInt2400);
-		Static80.aClass2_Sub3_Sub1_4.p1(63);
+		Static80.out.p1(local23);
+		Static80.out.p1(local17);
+		Static80.out.method1694(Static67.anInt1669);
+		Static80.out.p1(57);
+		Static80.out.p1(Static84.anInt1978);
+		Static80.out.p1(Static15.anInt1857);
+		Static80.out.p1(89);
+		Static80.out.method1694(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275);
+		Static80.out.method1694(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284);
+		Static80.out.p1(Static101.anInt2400);
+		Static80.out.p1(63);
 		return;
 	}
 }

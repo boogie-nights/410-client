@@ -20,7 +20,7 @@ public final class Static104 {
 	public static Class40 aClass40_723 = Static13.method257("m");
 
 	@OriginalMember(owner = "client!wa", name = "f", descriptor = "I")
-	public static int anInt2515 = 0;
+	public static int privateChatSetting = 0;
 
 	@OriginalMember(owner = "client!wa", name = "i", descriptor = "Lclient!o;")
 	public static Class40 aClass40_724 = Static13.method257("RuneScape is loading )2 please wait)3)3)3");

@@ -68,7 +68,7 @@ public final class Static88 {
 		Static38.anInt986 = 0;
 		Static33.anInt788 = -1;
 		Static97.anInt2352 = -1;
-		Static80.aClass2_Sub3_Sub1_4.pos = 0;
+		Static80.out.pos = 0;
 		Static7.anInt231 = 0;
 		anInt2083 = -1;
 		Static84.anInt1973 = 0;
