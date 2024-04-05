@@ -208,7 +208,7 @@ public final class Static51 {
 					} else {
 						local500 = new Class2_Sub2_Sub12_Sub5(arg4, 4, 0, local13, local23, local35, local45, local59.anInt1048, true);
 					}
-					arg5.method1446(arg7, arg8, arg1, local55, local500, Static5.ROTATION_WALL_TYPE[arg6], arg6 * 512, Static83.WALL_DECORATION_ROTATION_FORWARD_X[arg6] * local468, local468 * Static55.anIntArray298[arg6], local77, local65);
+					arg5.method1446(arg7, arg8, arg1, local55, local500, Static5.ROTATION_WALL_TYPE[arg6], arg6 * 512, Static83.WALL_DECORATION_ROTATION_FORWARD_X[arg6] * local468, local468 * Static55.WALL_DECORATION_ROTATION_FORWARD_Z[arg6], local77, local65);
 				} else if (arg2 == 6) {
 					if (local59.anInt1048 == -1 && local59.anIntArray210 == null) {
 						local118 = local59.method765(0, local23, local45, local13, 4, local35);

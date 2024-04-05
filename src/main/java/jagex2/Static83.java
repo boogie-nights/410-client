@@ -664,7 +664,7 @@ public final class Static83 {
 						} else {
 							local942 = new Class2_Sub2_Sub12_Sub5(arg1, 4, 0, local65, local57, local77, local87, local91.anInt1048, true);
 						}
-						arg6.method1446(arg0, arg2, arg7, local102, local942, Static5.ROTATION_WALL_TYPE[arg4], arg4 * 512, WALL_DECORATION_ROTATION_FORWARD_X[arg4] * local912, Static55.anIntArray298[arg4] * local912, local121, local109);
+						arg6.method1446(arg0, arg2, arg7, local102, local942, Static5.ROTATION_WALL_TYPE[arg4], arg4 * 512, WALL_DECORATION_ROTATION_FORWARD_X[arg4] * local912, Static55.WALL_DECORATION_ROTATION_FORWARD_Z[arg4] * local912, local121, local109);
 					} else if (arg5 == 6) {
 						if (local91.anInt1048 == -1 && local91.anIntArray210 == null) {
 							local167 = local91.method765(0, local57, local87, local65, 4, local77);
