@@ -44,15 +44,15 @@ public final class Static42 {
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(ILjava/awt/Graphics;)V")
 	public static void method768(@OriginalArg(1) Graphics arg0) {
-		Static41.aClass45_20.method1474(arg0, 0, 4);
-		Static30.aClass45_15.method1474(arg0, 0, 357);
-		Static80.aClass45_28.method1474(arg0, 722, 4);
-		Static29.aClass45_13.method1474(arg0, 743, 205);
-		Static92.aClass45_29.method1474(arg0, 0, 0);
-		Static20.aClass45_10.method1474(arg0, 516, 4);
-		Static1.aClass45_1.method1474(arg0, 516, 205);
-		Static44.aClass45_21.method1474(arg0, 496, 357);
-		Static19.aClass45_9.method1474(arg0, 0, 338);
+		Static41.aClass45_20.draw(arg0, 0, 4);
+		Static30.aClass45_15.draw(arg0, 0, 357);
+		Static80.aClass45_28.draw(arg0, 722, 4);
+		Static29.aClass45_13.draw(arg0, 743, 205);
+		Static92.aClass45_29.draw(arg0, 0, 0);
+		Static20.aClass45_10.draw(arg0, 516, 4);
+		Static1.aClass45_1.draw(arg0, 516, 205);
+		Static44.aClass45_21.draw(arg0, 496, 357);
+		Static19.aClass45_9.draw(arg0, 0, 338);
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIII)Z")

@@ -174,9 +174,9 @@ public final class Static94 {
 			Static27.method533(Static93.anInt2175);
 		}
 		Static45.anInt1095 = 0;
-		Static29.aClass45_14.method1476();
+		Static29.aClass45_14.bind();
 		Static36.anIntArray162 = Static6.method175(Static36.anIntArray162);
-		Static26.method1610();
+		Static26.clear();
 		Static21.method403(0, -1, Static84.anInt1971, 0, 0, 503, 0, 765);
 		if (Static93.anInt2175 != -1) {
 			Static21.method403(0, -1, Static93.anInt2175, 0, 0, 503, 0, 765);
@@ -187,7 +187,7 @@ public final class Static94 {
 			Static20.method389();
 			Static5.drawTooltip();
 		}
-		Static29.aClass45_14.method1474(Static24.aGraphics1, 0, 0);
+		Static29.aClass45_14.draw(Static24.aGraphics1, 0, 0);
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(B)V")

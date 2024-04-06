@@ -85,33 +85,33 @@ public final class Static103 {
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(B)V")
 	public static void method1647() {
-		@Pc(17) int local17;
+		@Pc(17) int level;
 		if (Static43.anInt1850 == 0) {
 			Static93.aClass55_1 = new Class55(4, 104, 104, Static91.anIntArrayArrayArray8);
-			for (local17 = 0; local17 < 4; local17++) {
-				Static79.aClass20Array3[local17] = new Class20(104, 104);
+			for (level = 0; level < 4; level++) {
+				Static79.aClass20Array3[level] = new Class20(104, 104);
 			}
 			Static93.aClass2_Sub2_Sub2_Sub4_8 = new Class2_Sub2_Sub2_Sub4(512, 512);
-			Static98.aClass40_680 = Static61.aClass40_446;
+			Static98.progressMeterText = Static61.textStartingGameEngine;
 			Static43.anInt1850 = 20;
 			Static94.anInt2194 = 5;
 			return;
 		}
-		@Pc(54) int local54;
-		@Pc(62) int local62;
-		@Pc(72) int local72;
-		@Pc(66) int local66;
+		@Pc(54) int x;
+		@Pc(62) int angle;
+		@Pc(72) int offset;
+		@Pc(66) int sin;
 		if (Static43.anInt1850 == 20) {
-			@Pc(52) int[] local52 = new int[9];
-			for (local54 = 0; local54 < 9; local54++) {
-				local62 = local54 * 32 + 143;
-				local66 = Class2_Sub2_Sub2_Sub1.anIntArray59[local62];
-				local72 = local62 * 3 + 600;
-				local52[local54] = local72 * local66 >> 16;
+			@Pc(52) int[] distance = new int[9];
+			for (x = 0; x < 9; x++) {
+				angle = x * 32 + 143;
+				sin = Class2_Sub2_Sub2_Sub1.sin[angle];
+				offset = angle * 3 + 600;
+				distance[x] = offset * sin >> 16;
 			}
-			Static89.method1422(local52);
+			Static89.method1422(distance);
 			Static43.anInt1850 = 25;
-			Static98.aClass40_680 = Static107.aClass40_721;
+			Static98.progressMeterText = Static107.textPreparedVisibilityMap;
 			Static94.anInt2194 = 10;
 			return;
 		}
@@ -119,29 +119,29 @@ public final class Static103 {
 			if (Static43.anInt1850 == 25) {
 				if (Static10.aClass14_1 != null && Static66.aClass14_4 != null && Static66.aClass14_4.method351() < 60000L) {
 					Static32.aClass11Array2 = new Class11[5];
-					for (local17 = 0; local17 < 5; local17++) {
-						Static32.aClass11Array2[local17] = new Class11(local17 + 1, Static10.aClass14_1, Static34.aClass14Array2[local17], 500000);
+					for (level = 0; level < 5; level++) {
+						Static32.aClass11Array2[level] = new Class11(level + 1, Static10.aClass14_1, Static34.aClass14Array2[level], 500000);
 					}
 					Static18.aClass11Array1 = new Class11[12];
-					for (local54 = 0; local54 < 12; local54++) {
-						Static18.aClass11Array1[local54] = new Class11(local54, Static66.aClass14_4, Static2.aClass14Array1[local54], 500000);
+					for (x = 0; x < 12; x++) {
+						Static18.aClass11Array1[x] = new Class11(x, Static66.aClass14_4, Static2.aClass14Array1[x], 500000);
 					}
 					Static100.anInt2396 = 0;
-					Static98.aClass40_680 = Static22.aClass40_736;
+					Static98.progressMeterText = Static22.textImportReady;
 					Static94.anInt2194 = 15;
 					Static43.anInt1850 = 26;
 					return;
 				}
 				Static94.anInt2194 = 15;
 				Static43.anInt1850 = 30;
-				Static98.aClass40_680 = Static21.aClass40_140;
+				Static98.progressMeterText = Static21.textImportComplete;
 				return;
 			}
 			if (Static43.anInt1850 == 26) {
 				while (Static100.anInt2396 < 65535) {
 					Static27.method540(Static32.aClass11Array2[1], Static18.aClass11Array1[7], Static100.anInt2396++);
 					if ((Static100.anInt2396 & 0xFF) == 0) {
-						Static98.aClass40_680 = Static80.method1334(new Class40[] { Static106.aClass40_740, Static53.method859(Static100.anInt2396 * 100 / 65536), Static59.aClass40_430 });
+						Static98.progressMeterText = Static80.method1334(new Class40[] { Static106.aClass40_740, Static53.method859(Static100.anInt2396 * 100 / 65536), Static59.aClass40_430 });
 						Static94.anInt2194 = 15;
 						return;
 					}
@@ -149,19 +149,19 @@ public final class Static103 {
 				Static94.anInt2194 = 15;
 				Static43.anInt1850 = 27;
 				Static100.anInt2396 = 0;
-				Static98.aClass40_680 = Static21.aClass40_139;
+				Static98.progressMeterText = Static21.textImportedModels;
 				return;
 			}
 			if (Static43.anInt1850 == 27) {
 				while (Static100.anInt2396 < 65535) {
 					Static27.method540(Static32.aClass11Array2[3], Static18.aClass11Array1[6], Static100.anInt2396++);
 					if ((Static100.anInt2396 & 0xFF) == 0) {
-						Static98.aClass40_680 = Static80.method1334(new Class40[] { Static88.aClass40_605, Static53.method859(Static100.anInt2396 * 100 / 65536), Static59.aClass40_430 });
+						Static98.progressMeterText = Static80.method1334(new Class40[] { Static88.aClass40_605, Static53.method859(Static100.anInt2396 * 100 / 65536), Static59.aClass40_430 });
 						Static94.anInt2194 = 15;
 						return;
 					}
 				}
-				Static98.aClass40_680 = Static72.aClass40_507;
+				Static98.progressMeterText = Static72.textImportedMusic;
 				Static94.anInt2194 = 15;
 				Static43.anInt1850 = 28;
 				Static100.anInt2396 = 0;
@@ -171,13 +171,13 @@ public final class Static103 {
 				while (Static100.anInt2396 < 65535) {
 					Static27.method540(Static32.aClass11Array2[4], Static18.aClass11Array1[5], Static100.anInt2396++);
 					if ((Static100.anInt2396 & 0xFF) == 0) {
-						Static98.aClass40_680 = Static80.method1334(new Class40[] { Static85.aClass40_571, Static53.method859(Static100.anInt2396 * 100 / 65536), Static59.aClass40_430 });
+						Static98.progressMeterText = Static80.method1334(new Class40[] { Static85.aClass40_571, Static53.method859(Static100.anInt2396 * 100 / 65536), Static59.aClass40_430 });
 						Static94.anInt2194 = 15;
 						return;
 					}
 				}
 				Static43.anInt1850 = 30;
-				Static98.aClass40_680 = Static68.aClass40_105;
+				Static98.progressMeterText = Static68.textImportedMaps;
 				Static94.anInt2194 = 15;
 				return;
 			}
@@ -199,29 +199,29 @@ public final class Static103 {
 			Static35.aClass5_Sub1_6 = Static72.method1188(false, 9, true, true);
 			Static81.aClass5_Sub1_15 = Static72.method1188(false, 10, true, true);
 			Static74.aClass5_Sub1_13 = Static72.method1188(false, 11, true, true);
-			Static98.aClass40_680 = Static100.aClass40_691;
+			Static98.progressMeterText = Static100.textConnectingToUpdateServer;
 			Static94.anInt2194 = 20;
 			Static43.anInt1850 = 40;
 		} else if (Static43.anInt1850 == 40) {
-			local17 = Static43.aClass5_Sub1_14.method89() * 5 / 100;
-			local17 += Static87.aClass5_Sub1_18.method89() * 5 / 100;
-			local17 += Static5.aClass5_Sub1_1.method89() * 5 / 100;
-			local17 += Static27.aClass5_Sub1_5.method89() * 5 / 100;
-			local17 += Static35.aClass5_Sub1_7.method89() * 5 / 100;
-			local17 += Static36.aClass5_Sub1_8.method89() * 5 / 100;
-			local17 += Static85.aClass5_Sub1_17.method89() * 5 / 100;
-			local17 += Static25.aClass5_Sub1_4.method89() * 45 / 100;
-			local17 += Static82.aClass5_Sub1_16.method89() * 5 / 100;
-			local17 += Static35.aClass5_Sub1_6.method89() * 5 / 100;
-			local17 += Static81.aClass5_Sub1_15.method89() * 5 / 100;
-			local17 += Static74.aClass5_Sub1_13.method89() * 5 / 100;
-			if (local17 == 100) {
+			level = Static43.aClass5_Sub1_14.method89() * 5 / 100;
+			level += Static87.aClass5_Sub1_18.method89() * 5 / 100;
+			level += Static5.aClass5_Sub1_1.method89() * 5 / 100;
+			level += Static27.aClass5_Sub1_5.method89() * 5 / 100;
+			level += Static35.aClass5_Sub1_7.method89() * 5 / 100;
+			level += Static36.aClass5_Sub1_8.method89() * 5 / 100;
+			level += Static85.aClass5_Sub1_17.method89() * 5 / 100;
+			level += Static25.aClass5_Sub1_4.method89() * 45 / 100;
+			level += Static82.aClass5_Sub1_16.method89() * 5 / 100;
+			level += Static35.aClass5_Sub1_6.method89() * 5 / 100;
+			level += Static81.aClass5_Sub1_15.method89() * 5 / 100;
+			level += Static74.aClass5_Sub1_13.method89() * 5 / 100;
+			if (level == 100) {
 				Static94.anInt2194 = 30;
 				Static43.anInt1850 = 45;
-				Static98.aClass40_680 = Static86.aClass40_584;
+				Static98.progressMeterText = Static86.textLoadedUpdateList;
 			} else {
-				if (local17 != 0) {
-					Static98.aClass40_680 = Static80.method1334(new Class40[] { Static81.aClass40_558, Static53.method859(local17), Static59.aClass40_430 });
+				if (level != 0) {
+					Static98.progressMeterText = Static80.method1334(new Class40[] { Static81.aClass40_558, Static53.method859(level), Static59.aClass40_430 });
 				}
 				Static94.anInt2194 = 30;
 			}
@@ -231,46 +231,46 @@ public final class Static103 {
 			Static11.aClass56_1 = new Class56(22050, Static12.anInt291);
 			Static94.anInt2194 = 35;
 			Static43.anInt1850 = 50;
-			Static98.aClass40_680 = Static93.aClass40_625;
+			Static98.progressMeterText = Static93.textPreparedSoundEngine;
 		} else if (Static43.anInt1850 == 50) {
-			local17 = 0;
+			level = 0;
 			if (Static76.aClass2_Sub2_Sub2_Sub2_4 == null) {
 				Static76.aClass2_Sub2_Sub2_Sub2_4 = Static55.method941(Static82.aClass5_Sub1_16, Static61.aClass40_445, Static92.aClass40_620);
 			} else {
-				local17++;
+				level++;
 			}
 			if (aClass2_Sub2_Sub2_Sub2_5 == null) {
 				aClass2_Sub2_Sub2_Sub2_5 = Static55.method941(Static82.aClass5_Sub1_16, Static61.aClass40_445, Static105.aClass40_726);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static14.aClass2_Sub2_Sub2_Sub2_1 == null) {
 				Static14.aClass2_Sub2_Sub2_Sub2_1 = Static55.method941(Static82.aClass5_Sub1_16, Static61.aClass40_445, Static11.aClass40_69);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static42.aClass2_Sub2_Sub2_Sub2_2 == null) {
 				Static42.aClass2_Sub2_Sub2_Sub2_2 = Static55.method941(Static82.aClass5_Sub1_16, Static61.aClass40_445, Static79.aClass40_543);
 			} else {
-				local17++;
+				level++;
 			}
-			if (local17 < 4) {
-				Static98.aClass40_680 = Static80.method1334(new Class40[] { Static5.aClass40_47, Static53.method859(local17 * 100 / 4), Static59.aClass40_430 });
+			if (level < 4) {
+				Static98.progressMeterText = Static80.method1334(new Class40[] { Static5.aClass40_47, Static53.method859(level * 100 / 4), Static59.aClass40_430 });
 				Static94.anInt2194 = 40;
 			} else {
 				Static43.anInt1850 = 60;
 				Static94.anInt2194 = 40;
 				Static49.aClass2_Sub2_Sub2_Sub2Array9 = new Class2_Sub2_Sub2_Sub2[] { Static76.aClass2_Sub2_Sub2_Sub2_4, aClass2_Sub2_Sub2_Sub2_5, Static14.aClass2_Sub2_Sub2_Sub2_1, Static42.aClass2_Sub2_Sub2_Sub2_2 };
-				Static98.aClass40_680 = Static102.aClass40_711;
+				Static98.progressMeterText = Static102.textLoadedFonts;
 			}
 		} else if (Static43.anInt1850 == 60) {
-			local17 = Static101.method1592(Static82.aClass5_Sub1_16, Static81.aClass5_Sub1_15);
-			local54 = Static5.method120();
-			if (local17 < local54) {
-				Static98.aClass40_680 = Static80.method1334(new Class40[] { Static60.aClass40_434, Static53.method859(local17 * 100 / local54), Static59.aClass40_430 });
+			level = Static101.method1592(Static82.aClass5_Sub1_16, Static81.aClass5_Sub1_15);
+			x = Static5.method120();
+			if (level < x) {
+				Static98.progressMeterText = Static80.method1334(new Class40[] { Static60.aClass40_434, Static53.method859(level * 100 / x), Static59.aClass40_430 });
 				Static94.anInt2194 = 50;
 			} else {
-				Static98.aClass40_680 = Static73.aClass40_516;
+				Static98.progressMeterText = Static73.textLoadedTitleScreen;
 				Static94.anInt2194 = 50;
 				Static7.method187(5);
 				Static43.anInt1850 = 70;
@@ -288,112 +288,112 @@ public final class Static103 {
 				Static16.method340(Static5.aClass5_Sub1_1);
 				Static92.method1483(Static5.aClass5_Sub1_1);
 				Static91.method1471(Static82.aClass5_Sub1_16, Static27.aClass5_Sub1_5, Static25.aClass5_Sub1_4);
-				Static98.aClass40_680 = Static63.aClass40_469;
+				Static98.progressMeterText = Static63.textLoadedConfig;
 				Static43.anInt1850 = 80;
 				Static94.anInt2194 = 60;
 			} else {
-				Static98.aClass40_680 = Static80.method1334(new Class40[] { Static76.aClass40_616, Static53.method859(Static5.aClass5_Sub1_1.method87()), Static59.aClass40_430 });
+				Static98.progressMeterText = Static80.method1334(new Class40[] { Static76.aClass40_616, Static53.method859(Static5.aClass5_Sub1_1.method87()), Static59.aClass40_430 });
 				Static94.anInt2194 = 60;
 			}
 		} else if (Static43.anInt1850 == 80) {
-			local17 = 0;
+			level = 0;
 			if (Static13.aClass2_Sub2_Sub2_Sub4_2 == null) {
 				Static13.aClass2_Sub2_Sub2_Sub4_2 = method1644(Static41.aClass40_307, Static61.aClass40_445, Static82.aClass5_Sub1_16);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static104.aClass2_Sub2_Sub2_Sub4_10 == null) {
 				Static104.aClass2_Sub2_Sub2_Sub4_10 = method1644(Static95.aClass40_647, Static61.aClass40_445, Static82.aClass5_Sub1_16);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static56.aClass2_Sub2_Sub2_Sub3Array15 == null) {
 				Static56.aClass2_Sub2_Sub2_Sub3Array15 = Static4.method85(Static82.aClass5_Sub1_16, Static73.aClass40_520, Static61.aClass40_445);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static99.aClass2_Sub2_Sub2_Sub4Array2 == null) {
 				Static99.aClass2_Sub2_Sub2_Sub4Array2 = Static36.method638(Static82.aClass5_Sub1_16, Static96.aClass40_663, Static61.aClass40_445);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static29.aClass2_Sub2_Sub2_Sub4Array4 == null) {
 				Static29.aClass2_Sub2_Sub2_Sub4Array4 = Static36.method638(Static82.aClass5_Sub1_16, Static99.aClass40_26, Static61.aClass40_445);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static44.aClass2_Sub2_Sub2_Sub4Array6 == null) {
 				Static44.aClass2_Sub2_Sub2_Sub4Array6 = Static36.method638(Static82.aClass5_Sub1_16, Static88.aClass40_607, Static61.aClass40_445);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static58.aClass2_Sub2_Sub2_Sub4Array8 == null) {
 				Static58.aClass2_Sub2_Sub2_Sub4Array8 = Static36.method638(Static82.aClass5_Sub1_16, Static60.aClass40_433, Static61.aClass40_445);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static101.aClass2_Sub2_Sub2_Sub4Array10 == null) {
 				Static101.aClass2_Sub2_Sub2_Sub4Array10 = Static36.method638(Static82.aClass5_Sub1_16, Static97.aClass40_671, Static61.aClass40_445);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static43.aClass2_Sub2_Sub2_Sub4_7 == null) {
 				Static43.aClass2_Sub2_Sub2_Sub4_7 = method1644(Static99.aClass40_25, Static61.aClass40_445, Static82.aClass5_Sub1_16);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static13.aClass2_Sub2_Sub2_Sub4Array3 == null) {
 				Static13.aClass2_Sub2_Sub2_Sub4Array3 = Static36.method638(Static82.aClass5_Sub1_16, Static68.aClass40_101, Static61.aClass40_445);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static54.aClass2_Sub2_Sub2_Sub4Array7 == null) {
 				Static54.aClass2_Sub2_Sub2_Sub4Array7 = Static36.method638(Static82.aClass5_Sub1_16, Static44.aClass40_332, Static61.aClass40_445);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static30.aClass2_Sub2_Sub2_Sub4Array5 == null) {
 				Static30.aClass2_Sub2_Sub2_Sub4Array5 = Static36.method638(Static82.aClass5_Sub1_16, Static105.aClass40_727, Static61.aClass40_445);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static93.aClass2_Sub2_Sub2_Sub3Array12 == null) {
 				Static93.aClass2_Sub2_Sub2_Sub3Array12 = Static4.method85(Static82.aClass5_Sub1_16, Static95.aClass40_643, Static61.aClass40_445);
 			} else {
-				local17++;
+				level++;
 			}
 			if (Static70.aClass2_Sub2_Sub2_Sub3Array8 == null) {
 				Static70.aClass2_Sub2_Sub2_Sub3Array8 = Static4.method85(Static82.aClass5_Sub1_16, Static30.aClass40_222, Static61.aClass40_445);
 			} else {
-				local17++;
+				level++;
 			}
-			if (local17 < 14) {
-				Static98.aClass40_680 = Static80.method1334(new Class40[] { Static15.aClass40_541, Static53.method859(local17 * 100 / 14), Static59.aClass40_430 });
+			if (level < 14) {
+				Static98.progressMeterText = Static80.method1334(new Class40[] { Static15.aClass40_541, Static53.method859(level * 100 / 14), Static59.aClass40_430 });
 				Static94.anInt2194 = 70;
 			} else {
 				Static104.aClass2_Sub2_Sub2_Sub4_10.method1620();
-				local54 = (int) (Math.random() * 21.0D) - 10;
-				local62 = (int) (Math.random() * 21.0D) - 10;
-				local66 = (int) (Math.random() * 41.0D) - 20;
-				local72 = (int) (Math.random() * 21.0D) - 10;
+				x = (int) (Math.random() * 21.0D) - 10;
+				angle = (int) (Math.random() * 21.0D) - 10;
+				sin = (int) (Math.random() * 41.0D) - 20;
+				offset = (int) (Math.random() * 21.0D) - 10;
 				for (@Pc(1134) int local1134 = 0; local1134 < Static99.aClass2_Sub2_Sub2_Sub4Array2.length; local1134++) {
-					Static99.aClass2_Sub2_Sub2_Sub4Array2[local1134].method1621(local54 + local66, local62 + local66, local66 + local72);
+					Static99.aClass2_Sub2_Sub2_Sub4Array2[local1134].method1621(x + sin, angle + sin, sin + offset);
 				}
-				Static56.aClass2_Sub2_Sub2_Sub3Array15[0].method1321(local66 + local54, local62 + local66, local72 + local66);
-				Static98.aClass40_680 = Static63.aClass40_465;
+				Static56.aClass2_Sub2_Sub2_Sub3Array15[0].method1321(sin + x, angle + sin, offset + sin);
+				Static98.progressMeterText = Static63.textLoadedSprites;
 				Static43.anInt1850 = 85;
 				Static94.anInt2194 = 70;
 			}
 		} else if (Static43.anInt1850 == 85) {
-			local17 = Static18.method358(Static82.aClass5_Sub1_16);
-			local54 = Static10.method228();
-			if (local54 > local17) {
-				Static98.aClass40_680 = Static80.method1334(new Class40[] { Static11.aClass40_68, Static53.method859(local17 * 100 / local54), Static59.aClass40_430 });
+			level = Static18.method358(Static82.aClass5_Sub1_16);
+			x = Static10.method228();
+			if (x > level) {
+				Static98.progressMeterText = Static80.method1334(new Class40[] { Static11.aClass40_68, Static53.method859(level * 100 / x), Static59.aClass40_430 });
 				Static94.anInt2194 = 80;
 			} else {
 				Static94.anInt2194 = 80;
 				Static43.anInt1850 = 90;
-				Static98.aClass40_680 = Static17.aClass40_114;
+				Static98.progressMeterText = Static17.textLoadedGamescreen;
 			}
 		} else if (Static43.anInt1850 == 90) {
 			if (Static35.aClass5_Sub1_6.method78()) {
@@ -402,9 +402,9 @@ public final class Static103 {
 				Static6.method168(0.8D);
 				Static94.anInt2194 = 90;
 				Static43.anInt1850 = 110;
-				Static98.aClass40_680 = Static73.aClass40_513;
+				Static98.progressMeterText = Static73.textLoadedTextures;
 			} else {
-				Static98.aClass40_680 = Static80.method1334(new Class40[] { Static75.aClass40_527, Static53.method859(Static35.aClass5_Sub1_6.method87()), Static59.aClass40_430 });
+				Static98.progressMeterText = Static80.method1334(new Class40[] { Static75.aClass40_527, Static53.method859(Static35.aClass5_Sub1_6.method87()), Static59.aClass40_430 });
 				Static94.anInt2194 = 90;
 			}
 		} else if (Static43.anInt1850 == 110) {
@@ -412,25 +412,25 @@ public final class Static103 {
 			Static99.aClass7_2.method207(10, Static44.aClass52_1);
 			Static94.anInt2194 = 94;
 			Static43.anInt1850 = 120;
-			Static98.aClass40_680 = Static22.aClass40_737;
+			Static98.progressMeterText = Static22.textLoadedInputHandler;
 		} else if (Static43.anInt1850 == 120) {
 			if (Static81.aClass5_Sub1_15.method73(Static61.aClass40_445, Static20.aClass40_131)) {
 				@Pc(1325) Class42 local1325 = new Class42(Static81.aClass5_Sub1_15.method69(Static20.aClass40_131, Static61.aClass40_445));
 				Static87.method1397(local1325);
 				Static43.anInt1850 = 130;
-				Static98.aClass40_680 = Static63.aClass40_470;
+				Static98.progressMeterText = Static63.textLoadedWordpack;
 				Static94.anInt2194 = 96;
 			} else {
 				Static94.anInt2194 = 96;
-				Static98.aClass40_680 = Static24.aClass40_180;
+				Static98.progressMeterText = Static24.textLoadingWordpack;
 			}
 		} else if (Static43.anInt1850 == 130) {
 			if (Static27.aClass5_Sub1_5.method78()) {
 				Static94.anInt2194 = 100;
 				Static43.anInt1850 = 140;
-				Static98.aClass40_680 = Static73.aClass40_517;
+				Static98.progressMeterText = Static73.textLoadedInterfaces;
 			} else {
-				Static98.aClass40_680 = Static80.method1334(new Class40[] { Static92.aClass40_619, Static53.method859(Static27.aClass5_Sub1_5.method87()), Static59.aClass40_430 });
+				Static98.progressMeterText = Static80.method1334(new Class40[] { Static92.aClass40_619, Static53.method859(Static27.aClass5_Sub1_5.method87()), Static59.aClass40_430 });
 				Static94.anInt2194 = 100;
 			}
 		} else if (Static43.anInt1850 == 140) {

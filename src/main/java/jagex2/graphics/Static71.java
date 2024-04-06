@@ -33,7 +33,7 @@ public final class Static71 {
 	public static int pickedCount = 0;
 
 	@OriginalMember(owner = "client!ne", name = "Tb", descriptor = "[I")
-	public static int[] sin = Class2_Sub2_Sub2_Sub1.anIntArray59;
+	public static int[] sin = Class2_Sub2_Sub2_Sub1.sin;
 
 	@OriginalMember(owner = "client!ne", name = "Ub", descriptor = "I")
 	public static int mouseZ = 0;

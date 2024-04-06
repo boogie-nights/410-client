@@ -3,6 +3,7 @@ package jagex2;
 import java.awt.Font;
 
 import jagex2.config.ObjType;
+import jagex2.graphics.Class45;
 import jagex2.graphics.Model;
 import jagex2.graphics.Static6;
 import jagex2.io.Packet;
@@ -37,10 +38,10 @@ public final class Static21 {
 	public static Class40 aClass40_138 = Static13.method257("@gr2@");
 
 	@OriginalMember(owner = "client!ea", name = "r", descriptor = "Lclient!o;")
-	public static Class40 aClass40_139 = Static13.method257("Imported models");
+	public static Class40 textImportedModels = Static13.method257("Imported models");
 
 	@OriginalMember(owner = "client!ea", name = "u", descriptor = "Lclient!o;")
-	public static Class40 aClass40_140 = Static13.method257("Import complete");
+	public static Class40 textImportComplete = Static13.method257("Import complete");
 
 	@OriginalMember(owner = "client!ea", name = "y", descriptor = "Lclient!o;")
 	public static Class40 aClass40_141 = Static13.method257("This world is full)3");
@@ -51,9 +52,9 @@ public final class Static21 {
 		aClass40_138 = null;
 		aClass40_136 = null;
 		aClass2_Sub10_1 = null;
-		aClass40_139 = null;
+		textImportedModels = null;
 		aClass45_11 = null;
-		aClass40_140 = null;
+		textImportComplete = null;
 		aLongArray2 = null;
 		aClass40_141 = null;
 		aClass40_137 = null;
@@ -350,7 +351,7 @@ public final class Static21 {
 							}
 						} else if (local35.anInt1613 == 6) {
 							Static6.method177(local35.anInt1605 / 2 + local65, local60 + local35.height / 2);
-							local160 = local35.anInt1586 * Class2_Sub2_Sub2_Sub1.anIntArray59[local35.xan] >> 16;
+							local160 = local35.anInt1586 * Class2_Sub2_Sub2_Sub1.sin[local35.xan] >> 16;
 							local162 = Class2_Sub2_Sub2_Sub1.cos[local35.xan] * local35.anInt1586 >> 16;
 							@Pc(970) boolean local970 = Static83.method1354(local35);
 							if (local970) {

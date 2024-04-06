@@ -17,7 +17,7 @@ public final class Static86 {
 	public static int anInt2035;
 
 	@OriginalMember(owner = "client!sa", name = "fb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_584 = Static13.method257("Loaded update list");
+	public static Class40 textLoadedUpdateList = Static13.method257("Loaded update list");
 
 	@OriginalMember(owner = "client!sa", name = "ib", descriptor = "Lclient!o;")
 	public static Class40 aClass40_585 = Static13.method257("Unexpected server response: ");
@@ -63,7 +63,7 @@ public final class Static86 {
 		anIntArrayArray20 = null;
 		aClass40_587 = null;
 		aClass40_592 = null;
-		aClass40_584 = null;
+		textLoadedUpdateList = null;
 		aClass40_588 = null;
 		aClass40_590 = null;
 		aClass40_589 = null;
@@ -208,7 +208,7 @@ public final class Static86 {
 		local23 -= 73;
 		local17 -= 75;
 		@Pc(45) int local45 = Static67.anInt1669 + Static84.anInt1978 & 0x7FF;
-		@Pc(49) int local49 = Class2_Sub2_Sub2_Sub1.anIntArray59[local45];
+		@Pc(49) int local49 = Class2_Sub2_Sub2_Sub1.sin[local45];
 		@Pc(57) int local57 = (Static15.anInt1857 + 256) * local49 >> 8;
 		@Pc(61) int local61 = Class2_Sub2_Sub2_Sub1.cos[local45];
 		@Pc(69) int local69 = local61 * (Static15.anInt1857 + 256) >> 8;

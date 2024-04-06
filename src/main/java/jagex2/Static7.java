@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Component;
 
+import jagex2.graphics.Class45;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -137,7 +138,7 @@ public final class Static7 {
 		}
 		if (Static44.anInt1075 == 25 || Static44.anInt1075 == 40) {
 			Static75.method1230();
-			Static26.method1610();
+			Static26.clear();
 		}
 		if (Static44.anInt1075 == 25) {
 			Static34.anInt805 = 1;

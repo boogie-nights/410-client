@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.config.ObjType;
+import jagex2.graphics.Class45;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;

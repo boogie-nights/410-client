@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static45 {
 
 	@OriginalMember(owner = "client!j", name = "j", descriptor = "[I")
-	public static int[] anIntArray225;
+	public static int[] compassMaskLineLengths;
 
 	@OriginalMember(owner = "client!j", name = "c", descriptor = "I")
 	public static int anInt1094 = 0;
@@ -64,7 +64,7 @@ public final class Static45 {
 		aClass47_12 = null;
 		aClass40_341 = null;
 		aClass40_340 = null;
-		anIntArray225 = null;
+		compassMaskLineLengths = null;
 		aClass40_337 = null;
 	}
 

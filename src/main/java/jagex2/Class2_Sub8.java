@@ -162,7 +162,7 @@ public final class Class2_Sub8 extends Linkable {
 		for (@Pc(30) int local30 = 0; local30 < this.anIntArray189.length; local30++) {
 			@Pc(39) Class2_Sub2_Sub2_Sub3 local39 = Static3.method28(this.anIntArray189[local30], arg2);
 			local39.method1324();
-			@Pc(44) byte[] local44 = local39.aByteArray16;
+			@Pc(44) byte[] local44 = local39.pixels;
 			@Pc(47) int[] local47 = local39.anIntArray427;
 			@Pc(52) int local52 = this.anIntArray187[local30];
 			@Pc(61) int local61;
@@ -189,20 +189,20 @@ public final class Class2_Sub8 extends Linkable {
 				local67 = this.anIntArray190[local30 - 1];
 			}
 			if (local67 == 0) {
-				if (local39.anInt1905 == arg1) {
+				if (local39.width == arg1) {
 					for (local69 = 0; local69 < local22; local69++) {
 						this.anIntArray185[local69] = local47[local44[local69] & 0xFF];
 					}
 				} else {
 					@Pc(173) int local173;
-					if (local39.anInt1905 == 64 && arg1 == 128) {
+					if (local39.width == 64 && arg1 == 128) {
 						local69 = 0;
 						for (local74 = 0; local74 < arg1; local74++) {
 							for (local173 = 0; local173 < arg1; local173++) {
 								this.anIntArray185[local69++] = local47[local44[(local173 >> 1) + (local74 >> 1 << 6)] & 0xFF];
 							}
 						}
-					} else if (local39.anInt1905 == 128 && arg1 == 64) {
+					} else if (local39.width == 128 && arg1 == 64) {
 						local69 = 0;
 						for (local74 = 0; local74 < arg1; local74++) {
 							for (local173 = 0; local173 < arg1; local173++) {

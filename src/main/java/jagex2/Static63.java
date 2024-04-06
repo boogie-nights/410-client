@@ -25,16 +25,16 @@ public final class Static63 {
 	public static Class40 aClass40_463 = Static13.method257("title)3jpg");
 
 	@OriginalMember(owner = "client!mc", name = "nb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_465 = Static13.method257("Loaded sprites");
+	public static Class40 textLoadedSprites = Static13.method257("Loaded sprites");
 
 	@OriginalMember(owner = "client!mc", name = "Eb", descriptor = "[Lclient!o;")
 	public static Class40[] aClass40Array30 = new Class40[100];
 
 	@OriginalMember(owner = "client!mc", name = "Pb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_469 = Static13.method257("Loaded config");
+	public static Class40 textLoadedConfig = Static13.method257("Loaded config");
 
 	@OriginalMember(owner = "client!mc", name = "ac", descriptor = "Lclient!o;")
-	public static Class40 aClass40_470 = Static13.method257("Loaded wordpack");
+	public static Class40 textLoadedWordpack = Static13.method257("Loaded wordpack");
 
 	@OriginalMember(owner = "client!mc", name = "hc", descriptor = "I")
 	public static int anInt1612 = 0;
@@ -72,11 +72,11 @@ public final class Static63 {
 		aClass40_463 = null;
 		aClass40Array30 = null;
 		anIntArray326 = null;
-		aClass40_469 = null;
+		textLoadedConfig = null;
 		aClass40_462 = null;
-		aClass40_470 = null;
+		textLoadedWordpack = null;
 		aClass40_472 = null;
-		aClass40_465 = null;
+		textLoadedSprites = null;
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(Ljava/lang/Throwable;B)Ljava/lang/String;")

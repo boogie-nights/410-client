@@ -4,6 +4,8 @@ import java.awt.Component;
 
 import jagex2.config.ObjType;
 import jagex2.graphics.Class2_Sub2_Sub12;
+import jagex2.graphics.Class45;
+import jagex2.graphics.Class45_Sub1;
 import jagex2.graphics.Model;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -388,7 +390,7 @@ public final class Static83 {
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(ILjava/awt/Component;II)Lclient!p;")
 	public static Class45 method1351(@OriginalArg(0) int arg0, @OriginalArg(1) Component arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) Class45_Sub1 local7 = new Class45_Sub1();
-		local7.method1473(arg0, arg1, arg2);
+		local7.method1473(arg1, arg0, arg2);
 		return local7;
 	}
 

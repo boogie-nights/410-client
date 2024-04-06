@@ -3,6 +3,7 @@ package jagex2;
 import java.io.IOException;
 
 import jagex2.config.ObjType;
+import jagex2.graphics.Class45;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -55,7 +56,7 @@ public final class Static2 {
 		Static102.aClass2_Sub2_Sub2_Sub3_23 = null;
 		Static79.aBoolean152 = false;
 		Static97.aClass2_Sub2_Sub2_Sub3_22 = null;
-		Static102.anIntArray544 = null;
+		Static102.compassMaskLineOffsets = null;
 		Static92.aClass45_29 = null;
 		Static53.aClass2_Sub2_Sub2_Sub3_12 = null;
 		Static41.aClass45_20 = null;
@@ -74,7 +75,7 @@ public final class Static2 {
 		Static51.aClass2_Sub2_Sub2_Sub3_10 = null;
 		Static81.aClass2_Sub2_Sub2_Sub3Array10 = null;
 		Static15.aClass2_Sub2_Sub2_Sub3_18 = null;
-		Static17.aClass2_Sub2_Sub2_Sub3_6 = null;
+		Static17.imageMapBack = null;
 		Static68.aClass45_8 = null;
 		Static32.aClass2_Sub2_Sub2_Sub3_7 = null;
 		Static61.aClass45_23 = null;
@@ -88,7 +89,7 @@ public final class Static2 {
 		Static3.anIntArray4 = null;
 		Static19.aClass45_9 = null;
 		Static20.aClass45_10 = null;
-		Static45.anIntArray225 = null;
+		Static45.compassMaskLineLengths = null;
 		aClass45_2 = null;
 		Static29.aClass45_13 = null;
 	}

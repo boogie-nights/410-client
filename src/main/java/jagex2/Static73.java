@@ -24,7 +24,7 @@ public final class Static73 {
 	public static boolean[] aBooleanArray27 = new boolean[] { true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, false, false, false };
 
 	@OriginalMember(owner = "client!oa", name = "d", descriptor = "Lclient!o;")
-	public static Class40 aClass40_513 = Static13.method257("Loaded textures");
+	public static Class40 textLoadedTextures = Static13.method257("Loaded textures");
 
 	@OriginalMember(owner = "client!oa", name = "e", descriptor = "Z")
 	public static boolean redrawChatback = false;
@@ -45,10 +45,10 @@ public final class Static73 {
 	public static int anInt1801 = 0;
 
 	@OriginalMember(owner = "client!oa", name = "p", descriptor = "Lclient!o;")
-	public static Class40 aClass40_516 = Static13.method257("Loaded title screen");
+	public static Class40 textLoadedTitleScreen = Static13.method257("Loaded title screen");
 
 	@OriginalMember(owner = "client!oa", name = "u", descriptor = "Lclient!o;")
-	public static Class40 aClass40_517 = Static13.method257("Loaded interfaces");
+	public static Class40 textLoadedInterfaces = Static13.method257("Loaded interfaces");
 
 	@OriginalMember(owner = "client!oa", name = "v", descriptor = "Lclient!o;")
 	public static Class40 aClass40_518 = Static13.method257("Please wait 1 minute and try again)3");
@@ -277,11 +277,11 @@ public final class Static73 {
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(B)V")
 	public static void method1206() {
 		aClass40_519 = null;
-		aClass40_516 = null;
-		aClass40_513 = null;
+		textLoadedTitleScreen = null;
+		textLoadedTextures = null;
 		aClass40_515 = null;
 		aClass40_512 = null;
-		aClass40_517 = null;
+		textLoadedInterfaces = null;
 		aBooleanArray27 = null;
 		anIntArray408 = null;
 		aClass40_521 = null;
@@ -296,7 +296,7 @@ public final class Static73 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(ILjava/awt/Graphics;)V")
 	public static void method1207(@OriginalArg(1) Graphics arg0) {
-		Static7.aClass45_5.method1474(arg0, 553, 205);
+		Static7.aClass45_5.draw(arg0, 553, 205);
 	}
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(ZII[B)V")

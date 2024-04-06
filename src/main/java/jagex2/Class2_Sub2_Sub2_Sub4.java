@@ -264,7 +264,7 @@ public final class Class2_Sub2_Sub2_Sub4 extends Class2_Sub2_Sub2 {
 			local27 += local36;
 		}
 		if (local23 > 0 && local20 > 0) {
-			Static115.method1625(Static26.anIntArray533, this.pixels, local17, local15, local23, local20, local27, local29, arg0.aByteArray16);
+			Static115.method1625(Static26.anIntArray533, this.pixels, local17, local15, local23, local20, local27, local29, arg0.pixels);
 		}
 	}
 
@@ -343,6 +343,6 @@ public final class Class2_Sub2_Sub2_Sub4 extends Class2_Sub2_Sub2 {
 
 	@OriginalMember(owner = "client!vb", name = "e", descriptor = "()V")
 	public void method1628() {
-		Static26.method1604(this.pixels, this.anInt2446, this.anInt2442);
+		Static26.bind(this.pixels, this.anInt2446, this.anInt2442);
 	}
 }

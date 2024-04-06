@@ -88,7 +88,7 @@ public final class Static90 {
 		if (local20 <= 2500) {
 			arg1.method1624(local76 + 94 + 4 - arg1.cropW / 2, -local66 + -4 + (83 - arg1.cropH / 2));
 		} else {
-			arg1.method1622(Static17.aClass2_Sub2_Sub2_Sub3_6, local76 + 4 + 94 - arg1.cropW / 2, -(arg1.cropH / 2) + -4 + 83 + -local66);
+			arg1.method1622(Static17.imageMapBack, local76 + 4 + 94 - arg1.cropW / 2, -(arg1.cropH / 2) + -4 + 83 + -local66);
 		}
 	}
 

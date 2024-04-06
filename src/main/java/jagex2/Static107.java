@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.graphics.Class45;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -40,7 +41,7 @@ public final class Static107 {
 	public static Class40 aClass40_720 = Static13.method257("redstone2");
 
 	@OriginalMember(owner = "client!wd", name = "n", descriptor = "Lclient!o;")
-	public static Class40 aClass40_721 = Static13.method257("Prepared visibility map");
+	public static Class40 textPreparedVisibilityMap = Static13.method257("Prepared visibility map");
 
 	@OriginalMember(owner = "client!wd", name = "p", descriptor = "I")
 	public static int anInt2505 = 0;
@@ -54,7 +55,7 @@ public final class Static107 {
 		aClass40_719 = null;
 		aClass40_718 = null;
 		aClass40_722 = null;
-		aClass40_721 = null;
+		textPreparedVisibilityMap = null;
 		aClass40_717 = null;
 		aClass45_31 = null;
 		aClass40_716 = null;
@@ -277,7 +278,7 @@ public final class Static107 {
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(ILjava/awt/Graphics;Lclient!fc;III)V")
 	public static void method1664(@OriginalArg(0) int arg0, @OriginalArg(1) Graphics arg1, @OriginalArg(2) Class2_Sub2_Sub2_Sub2 arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
-		Static4.aClass45_4.method1476();
+		Static4.aClass45_4.bind();
 		Static51.aClass2_Sub2_Sub2_Sub3_11.method1320(0, 0);
 		arg2.method578(Static29.aClass40_219, 55, 28, 16777215, true);
 		if (arg4 == 0) {
@@ -313,7 +314,7 @@ public final class Static107 {
 			arg2.method578(Static94.aClass40_629, 324, 41, 16711680, true);
 		}
 		arg2.method578(Static74.aClass40_522, 458, 33, 16777215, true);
-		Static4.aClass45_4.method1474(arg1, 0, 453);
+		Static4.aClass45_4.draw(arg1, 0, 453);
 	}
 
 	@OriginalMember(owner = "client!wd", name = "b", descriptor = "(II)Z")

@@ -369,7 +369,7 @@ public final class Static43 {
 
 	@OriginalMember(owner = "client!ib", name = "b", descriptor = "(I)V")
 	public static void method1247() {
-		Static12.aClass45_6.method1476();
+		Static12.aClass45_6.bind();
 	}
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(IB)I")

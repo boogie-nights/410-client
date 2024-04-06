@@ -49,7 +49,7 @@ public final class Static93 {
 	public static int anInt2182 = 0;
 
 	@OriginalMember(owner = "client!tc", name = "s", descriptor = "Lclient!o;")
-	public static Class40 aClass40_625 = Static13.method257("Prepared sound engine");
+	public static Class40 textPreparedSoundEngine = Static13.method257("Prepared sound engine");
 
 	@OriginalMember(owner = "client!tc", name = "t", descriptor = "Lclient!o;")
 	public static Class40 aClass40_626 = Static13.method257("Loading friend list");
@@ -69,14 +69,14 @@ public final class Static93 {
 
 	@OriginalMember(owner = "client!tc", name = "b", descriptor = "(I)V")
 	public static void method1486() {
-		Static61.aClass45_23.method1476();
+		Static61.aClass45_23.bind();
 		Static53.aClass2_Sub2_Sub2_Sub3_13.method1320(0, 0);
 		Static84.anIntArray431 = Static6.method175(Static84.anIntArray431);
 	}
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(I[IIZILjava/awt/Graphics;)V")
 	public static void method1487(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(5) Graphics arg4) {
-		Static25.aClass45_12.method1476();
+		Static25.aClass45_12.bind();
 		Static102.aClass2_Sub2_Sub2_Sub3_23.method1320(0, 0);
 		if (arg3) {
 			if (arg1[arg0] != -1) {
@@ -124,8 +124,8 @@ public final class Static93 {
 				Static81.aClass2_Sub2_Sub2_Sub3Array10[6].method1320(208, 13);
 			}
 		}
-		Static25.aClass45_12.method1474(arg4, 516, 160);
-		Static68.aClass45_8.method1476();
+		Static25.aClass45_12.draw(arg4, 516, 160);
+		Static68.aClass45_8.bind();
 		Static15.aClass2_Sub2_Sub2_Sub3_18.method1320(0, 0);
 		if (arg3) {
 			if (arg1[arg0] != -1) {
@@ -170,13 +170,13 @@ public final class Static93 {
 				Static81.aClass2_Sub2_Sub2_Sub3Array10[12].method1320(226, 2);
 			}
 		}
-		Static68.aClass45_8.method1474(arg4, 496, 466);
+		Static68.aClass45_8.draw(arg4, 496, 466);
 	}
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(Z)V")
 	public static void method1488() {
 		aClass40_627 = null;
-		aClass40_625 = null;
+		textPreparedSoundEngine = null;
 		aClass40_626 = null;
 		aClass40_623 = null;
 		aClass2_Sub2_Sub2_Sub3Array12 = null;

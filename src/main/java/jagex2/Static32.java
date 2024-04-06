@@ -66,7 +66,7 @@ public final class Static32 {
 
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(ILjava/awt/Graphics;)V")
 	public static void method594(@OriginalArg(1) Graphics arg0) {
-		Static12.aClass45_6.method1474(arg0, 550, 4);
+		Static12.aClass45_6.draw(arg0, 550, 4);
 	}
 
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(II)V")

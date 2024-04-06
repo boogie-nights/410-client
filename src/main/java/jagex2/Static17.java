@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static17 {
 
 	@OriginalMember(owner = "client!d", name = "G", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_6;
+	public static Class2_Sub2_Sub2_Sub3 imageMapBack;
 
 	@OriginalMember(owner = "client!d", name = "a", descriptor = "Lclient!o;")
 	public static Class40 aClass40_112 = null;
@@ -15,7 +15,7 @@ public final class Static17 {
 	public static Class40 aClass40_113 = Static13.method257("Enter name of player to add to list");
 
 	@OriginalMember(owner = "client!d", name = "i", descriptor = "Lclient!o;")
-	public static Class40 aClass40_114 = Static13.method257("Loaded gamescreen");
+	public static Class40 textLoadedGamescreen = Static13.method257("Loaded gamescreen");
 
 	@OriginalMember(owner = "client!d", name = "k", descriptor = "Lclient!o;")
 	public static Class40 aClass40_115 = Static13.method257("Unknown");
@@ -51,12 +51,12 @@ public final class Static17 {
 		aClass40_112 = null;
 		aClass40_115 = null;
 		aClass40_116 = null;
-		aClass40_114 = null;
+		textLoadedGamescreen = null;
 		aClass40Array7 = null;
 		aClass40_120 = null;
 		aClass40_119 = null;
 		aClass40_118 = null;
-		aClass2_Sub2_Sub2_Sub3_6 = null;
+		imageMapBack = null;
 		aClass40_117 = null;
 	}
 

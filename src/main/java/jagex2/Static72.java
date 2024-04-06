@@ -19,7 +19,7 @@ public final class Static72 {
 	public static Class40 aClass40_506 = Static13.method257(" is already on your ignore list");
 
 	@OriginalMember(owner = "client!o", name = "p", descriptor = "Lclient!o;")
-	public static Class40 aClass40_507 = Static13.method257("Imported music");
+	public static Class40 textImportedMusic = Static13.method257("Imported music");
 
 	@OriginalMember(owner = "client!o", name = "q", descriptor = "Z")
 	public static boolean aBoolean142 = false;
@@ -47,7 +47,7 @@ public final class Static72 {
 		anIntArray406 = null;
 		aClass40_509 = null;
 		aClass40_508 = null;
-		aClass40_507 = null;
+		textImportedMusic = null;
 		aClass40_510 = null;
 		aClass40_506 = null;
 		aClass40_505 = null;

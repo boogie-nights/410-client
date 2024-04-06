@@ -987,10 +987,10 @@ public final class Static96 {
 			local20.anInt1909 = Static44.anInt1079;
 			local20.anInt1907 = Static83.anIntArray430[local10];
 			local20.anInt1906 = Static97.anIntArray503[local10];
-			local20.anInt1905 = Static66.anIntArray338[local10];
+			local20.width = Static66.anIntArray338[local10];
 			local20.anInt1910 = Static19.anIntArray86[local10];
 			local20.anIntArray427 = Static20.anIntArray92;
-			local20.aByteArray16 = Static91.aByteArrayArray10[local10];
+			local20.pixels = Static91.aByteArrayArray10[local10];
 		}
 		Static93.method1485();
 		return local4;

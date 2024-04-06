@@ -12,7 +12,7 @@ public final class Static102 {
 	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_23;
 
 	@OriginalMember(owner = "client!vc", name = "gb", descriptor = "[I")
-	public static int[] anIntArray544;
+	public static int[] compassMaskLineOffsets;
 
 	@OriginalMember(owner = "client!vc", name = "nb", descriptor = "J")
 	public static long aLong150;
@@ -36,7 +36,7 @@ public final class Static102 {
 	public static Class40 aClass40_710 = Static13.method257("*6n");
 
 	@OriginalMember(owner = "client!vc", name = "hb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_711 = Static13.method257("Loaded fonts");
+	public static Class40 textLoadedFonts = Static13.method257("Loaded fonts");
 
 	@OriginalMember(owner = "client!vc", name = "ib", descriptor = "I")
 	public static int anInt2473 = 0;
@@ -124,9 +124,9 @@ public final class Static102 {
 		aClass40_713 = null;
 		aClass40_708 = null;
 		aClass40_712 = null;
-		anIntArray544 = null;
+		compassMaskLineOffsets = null;
 		aClass40_709 = null;
-		aClass40_711 = null;
+		textLoadedFonts = null;
 		aClass2_Sub2_Sub2_Sub3_23 = null;
 		aClass40_710 = null;
 		aCRC32_2 = null;

@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.graphics.Class45;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -25,7 +26,7 @@ public final class Static61 {
 	public static Class40 aClass40_444 = aClass40_445;
 
 	@OriginalMember(owner = "client!ma", name = "c", descriptor = "Lclient!o;")
-	public static Class40 aClass40_446 = Static13.method257("Starting game engine)3)3)3");
+	public static Class40 textStartingGameEngine = Static13.method257("Starting game engine)3)3)3");
 
 	@OriginalMember(owner = "client!ma", name = "d", descriptor = "Lclient!o;")
 	public static Class40 aClass40_447 = aClass40_445;
@@ -150,7 +151,7 @@ public final class Static61 {
 		aClass45_22 = null;
 		aClass40_449 = null;
 		aClass40_444 = null;
-		aClass40_446 = null;
+		textStartingGameEngine = null;
 		aClass40_452 = null;
 		chatTyped = null;
 		aClass40_445 = null;

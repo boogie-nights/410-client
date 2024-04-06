@@ -46,7 +46,7 @@ public final class Static26 {
 	}
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "([III)V")
-	public static void method1604(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static void bind(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		anIntArray533 = arg0;
 		anInt2440 = arg1;
 		anInt2435 = arg2;
@@ -130,7 +130,7 @@ public final class Static26 {
 	}
 
 	@OriginalMember(owner = "client!fa", name = "b", descriptor = "()V")
-	public static void method1610() {
+	public static void clear() {
 		@Pc(1) int local1 = 0;
 		@Pc(7) int local7 = anInt2440 * anInt2435 - 7;
 		while (local1 < local7) {

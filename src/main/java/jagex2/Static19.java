@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.graphics.Class45;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -121,14 +122,14 @@ public final class Static19 {
 		@Pc(22) int local22;
 		if (Static96.anInt2328 == 2) {
 			@Pc(14) int[] local14 = Static26.anIntArray533;
-			@Pc(17) byte[] local17 = Static17.aClass2_Sub2_Sub2_Sub3_6.aByteArray16;
+			@Pc(17) byte[] local17 = Static17.imageMapBack.pixels;
 			local20 = local17.length;
 			for (local22 = 0; local22 < local20; local22++) {
 				if (local17[local22] == 0) {
 					local14[local22] = 0;
 				}
 			}
-			Static13.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, Static67.anInt1669, 256, Static102.anIntArray544, Static45.anIntArray225);
+			Static13.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, Static67.anInt1669, 256, Static102.compassMaskLineOffsets, Static45.compassMaskLineLengths);
 			Static32.method594(Static24.aGraphics1);
 			return;
 		}
@@ -136,7 +137,7 @@ public final class Static19 {
 		local20 = 464 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;
 		@Pc(77) int local77 = Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32 + 48;
 		Static93.aClass2_Sub2_Sub2_Sub4_8.method1616(25, 5, 146, 151, local77, local20, local62, Static15.anInt1857 + 256, Static73.anIntArray407, Static2.anIntArray3);
-		Static13.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, Static67.anInt1669, 256, Static102.anIntArray544, Static45.anIntArray225);
+		Static13.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, Static67.anInt1669, 256, Static102.compassMaskLineOffsets, Static45.compassMaskLineLengths);
 		for (local22 = 0; local22 < Static90.anInt2136; local22++) {
 			local77 = Static97.anIntArray500[local22] * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
 			local20 = Static102.anIntArray546[local22] * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;

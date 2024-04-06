@@ -27,10 +27,10 @@ public final class Static22 {
 	public static Class40 aClass40_735 = Static13.method257("Side panel redrawn");
 
 	@OriginalMember(owner = "client!eb", name = "ub", descriptor = "Lclient!o;")
-	public static Class40 aClass40_736 = Static13.method257("Import ready");
+	public static Class40 textImportReady = Static13.method257("Import ready");
 
 	@OriginalMember(owner = "client!eb", name = "vb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_737 = Static13.method257("Loaded input handler");
+	public static Class40 textLoadedInputHandler = Static13.method257("Loaded input handler");
 
 	@OriginalMember(owner = "client!eb", name = "wb", descriptor = "I")
 	public static int anInt2585 = -1;
@@ -52,8 +52,8 @@ public final class Static22 {
 		aClass47_23 = null;
 		aClass40_734 = null;
 		aClass40_735 = null;
-		aClass40_736 = null;
-		aClass40_737 = null;
+		textImportReady = null;
+		textLoadedInputHandler = null;
 		aClass40_738 = null;
 	}
 
@@ -209,7 +209,7 @@ public final class Static22 {
 		Static71.mouseZ = Static100.anInt2394 - 4;
 		Static71.pickedCount = 0;
 		Static71.mouseX = Static32.anInt742 - 4;
-		Static26.method1610();
+		Static26.clear();
 		Static93.aClass55_1.method1430(Static48.anInt1114, Static81.anInt1935, Static15.anInt1863, Static35.anInt824, Static27.anInt686, local36);
 		Static93.aClass55_1.method1454();
 		Static12.method253();
@@ -221,7 +221,7 @@ public final class Static22 {
 		}
 		if (Static75.aBoolean147) {
 			Static75.method1230();
-			Static26.method1610();
+			Static26.clear();
 			Static66.method1095(false, null, Static98.aClass40_674);
 		}
 		Static80.method1333(Static24.aGraphics1);

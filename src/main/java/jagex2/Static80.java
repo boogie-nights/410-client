@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.graphics.Class45;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -114,7 +115,7 @@ public final class Static80 {
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(BLjava/awt/Graphics;)V")
 	public static void method1333(@OriginalArg(1) Graphics arg0) {
-		Static2.aClass45_2.method1474(arg0, 4, 4);
+		Static2.aClass45_2.draw(arg0, 4, 4);
 	}
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(I[Lclient!o;)Lclient!o;")

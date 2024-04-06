@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.graphics.Class45;
 import jagex2.graphics.Model;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -54,7 +55,7 @@ public final class Static98 {
 	public static long aLong139 = 0L;
 
 	@OriginalMember(owner = "client!uc", name = "B", descriptor = "Lclient!o;")
-	public static Class40 aClass40_680 = aClass40_675;
+	public static Class40 progressMeterText = aClass40_675;
 
 	@OriginalMember(owner = "client!uc", name = "C", descriptor = "Lclient!o;")
 	public static Class40 aClass40_681 = Static13.method257("(U4");
@@ -185,7 +186,7 @@ public final class Static98 {
 		aClass40_674 = null;
 		aClass40_675 = null;
 		aModelArray1 = null;
-		aClass40_680 = null;
+		progressMeterText = null;
 		aClass40_681 = null;
 		aBooleanArray35 = null;
 		aClass40_677 = null;

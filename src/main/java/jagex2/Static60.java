@@ -112,7 +112,7 @@ public final class Static60 {
 		@Pc(137) int local137 = Static26.anInt2436;
 		@Pc(139) int local139 = Static26.anInt2438;
 		icon = new Class2_Sub2_Sub2_Sub4(32, 32);
-		Static26.method1604(icon.pixels, 32, 32);
+		Static26.bind(icon.pixels, 32, 32);
 		Static46.anIntArray536 = Static6.method175(Static46.anIntArray536);
 		Static26.method1612(0, 0, 32, 32, 0);
 		Static6.jagged = false;
@@ -124,7 +124,7 @@ public final class Static60 {
 			local164 = (int) ((double) local164 * 1.04D);
 		}
 		@Pc(193) int y = Class2_Sub2_Sub2_Sub1.cos[obj.xan2d] * local164 >> 16;
-		@Pc(202) int local202 = local164 * Class2_Sub2_Sub2_Sub1.anIntArray59[obj.xan2d] >> 16;
+		@Pc(202) int local202 = local164 * Class2_Sub2_Sub2_Sub1.sin[obj.xan2d] >> 16;
 		local101.method1135();
 		local101.method1151(obj.yan2d, obj.zan2d, obj.xan2d, obj.xoff2d, local202 + local101.maxY / 2 + obj.yoff2d, y + obj.yoff2d);
 		for (@Pc(230) int local230 = 31; local230 >= 0; local230--) {
@@ -180,7 +180,7 @@ public final class Static60 {
 		if (arg0 == 0) {
 			Static25.aClass47_7.put((long) arg2, icon);
 		}
-		Static26.method1604(local129, local127, local131);
+		Static26.bind(local129, local127, local131);
 		Static26.method1613(local133, local135, local137, local139);
 		Static6.method175(local125);
 		Static6.jagged = true;

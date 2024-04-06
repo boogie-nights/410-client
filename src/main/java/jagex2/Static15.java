@@ -158,42 +158,42 @@ public final class Static15 {
 			return;
 		}
 		Static61.aClass45_24 = Static83.method1351(128, arg1, 265);
-		Static26.method1610();
+		Static26.clear();
 		Static98.aClass45_30 = Static83.method1351(128, arg1, 265);
-		Static26.method1610();
+		Static26.clear();
 		Static61.aClass45_22 = Static83.method1351(509, arg1, 171);
-		Static26.method1610();
+		Static26.clear();
 		Static35.aClass45_16 = Static83.method1351(360, arg1, 132);
-		Static26.method1610();
+		Static26.clear();
 		Static107.aClass45_31 = Static83.method1351(360, arg1, 200);
-		Static26.method1610();
+		Static26.clear();
 		Static21.aClass45_11 = Static83.method1351(202, arg1, 238);
-		Static26.method1610();
+		Static26.clear();
 		Static80.aClass45_27 = Static83.method1351(203, arg1, 238);
-		Static26.method1610();
+		Static26.clear();
 		Static67.aClass45_26 = Static83.method1351(74, arg1, 94);
-		Static26.method1610();
+		Static26.clear();
 		Static2.aClass45_3 = Static83.method1351(75, arg1, 94);
-		Static26.method1610();
+		Static26.clear();
 		@Pc(77) byte[] local77 = arg2.method69(Static63.aClass40_463, Static86.aClass40_593);
 		@Pc(83) Class2_Sub2_Sub2_Sub4 local83 = new Class2_Sub2_Sub2_Sub4(local77, arg1);
-		Static61.aClass45_24.method1476();
+		Static61.aClass45_24.bind();
 		local83.method1619(0, 0);
-		Static98.aClass45_30.method1476();
+		Static98.aClass45_30.bind();
 		local83.method1619(-637, 0);
-		Static61.aClass45_22.method1476();
+		Static61.aClass45_22.bind();
 		local83.method1619(-128, 0);
-		Static35.aClass45_16.method1476();
+		Static35.aClass45_16.bind();
 		local83.method1619(-202, -371);
-		Static107.aClass45_31.method1476();
+		Static107.aClass45_31.bind();
 		local83.method1619(-202, -171);
-		Static21.aClass45_11.method1476();
+		Static21.aClass45_11.bind();
 		local83.method1619(0, -265);
-		Static80.aClass45_27.method1476();
+		Static80.aClass45_27.bind();
 		local83.method1619(-562, -265);
-		Static67.aClass45_26.method1476();
+		Static67.aClass45_26.bind();
 		local83.method1619(-128, -171);
-		Static2.aClass45_3.method1476();
+		Static2.aClass45_3.bind();
 		local83.method1619(-562, -171);
 		@Pc(150) int[] local150 = new int[local83.anInt2446];
 		@Pc(156) int local156;
@@ -206,26 +206,26 @@ public final class Static15 {
 				local83.pixels[local152 * local83.anInt2446 + local187] = local150[local187];
 			}
 		}
-		Static61.aClass45_24.method1476();
+		Static61.aClass45_24.bind();
 		local83.method1619(382, 0);
-		Static98.aClass45_30.method1476();
+		Static98.aClass45_30.bind();
 		local83.method1619(-255, 0);
-		Static61.aClass45_22.method1476();
+		Static61.aClass45_22.bind();
 		local83.method1619(254, 0);
-		Static35.aClass45_16.method1476();
+		Static35.aClass45_16.bind();
 		local83.method1619(180, -371);
-		Static107.aClass45_31.method1476();
+		Static107.aClass45_31.bind();
 		local83.method1619(180, -171);
-		Static21.aClass45_11.method1476();
+		Static21.aClass45_11.bind();
 		local83.method1619(382, -265);
-		Static80.aClass45_27.method1476();
+		Static80.aClass45_27.bind();
 		local83.method1619(-180, -265);
-		Static67.aClass45_26.method1476();
+		Static67.aClass45_26.bind();
 		local83.method1619(254, -171);
-		Static2.aClass45_3.method1476();
+		Static2.aClass45_3.bind();
 		local83.method1619(-180, -171);
 		local83 = Static103.method1644(Static73.aClass40_521, Static86.aClass40_593, arg0);
-		Static61.aClass45_22.method1476();
+		Static61.aClass45_22.bind();
 		local83.method1624(382 - local83.anInt2446 / 2 - 128, 18);
 		Static97.aClass2_Sub2_Sub2_Sub3_21 = Static99.method77(arg0, Static86.aClass40_593, Static3.aClass40_16);
 		Static32.aClass2_Sub2_Sub2_Sub3_8 = Static99.method77(arg0, Static86.aClass40_593, Static96.aClass40_661);
@@ -233,10 +233,10 @@ public final class Static15 {
 		Static11.aClass2_Sub2_Sub2_Sub4_1 = new Class2_Sub2_Sub2_Sub4(128, 265);
 		Static96.aClass2_Sub2_Sub2_Sub4_9 = new Class2_Sub2_Sub2_Sub4(128, 265);
 		for (local156 = 0; local156 < 33920; local156++) {
-			Static11.aClass2_Sub2_Sub2_Sub4_1.pixels[local156] = Static61.aClass45_24.anIntArray471[local156];
+			Static11.aClass2_Sub2_Sub2_Sub4_1.pixels[local156] = Static61.aClass45_24.pixels[local156];
 		}
 		for (local187 = 0; local187 < 33920; local187++) {
-			Static96.aClass2_Sub2_Sub2_Sub4_9.pixels[local187] = Static98.aClass45_30.anIntArray471[local187];
+			Static96.aClass2_Sub2_Sub2_Sub4_9.pixels[local187] = Static98.aClass45_30.pixels[local187];
 		}
 		Static37.anIntArray182 = new int[256];
 		for (@Pc(366) int local366 = 0; local366 < 64; local366++) {

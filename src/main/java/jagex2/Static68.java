@@ -10,6 +10,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+import jagex2.graphics.Class45;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -44,7 +45,7 @@ public final class Static68 {
 	public static Class40 aClass40_104 = Static13.method257("This computers address has been blocked");
 
 	@OriginalMember(owner = "client!nb", name = "u", descriptor = "Lclient!o;")
-	public static Class40 aClass40_105 = Static13.method257("Imported maps");
+	public static Class40 textImportedMaps = Static13.method257("Imported maps");
 
 	@OriginalMember(owner = "client!nb", name = "v", descriptor = "Lclient!o;")
 	public static Class40 aClass40_106 = Static13.method257("Friends");
@@ -65,7 +66,7 @@ public final class Static68 {
 		aClass40_101 = null;
 		aClass5_5 = null;
 		aClass40_107 = null;
-		aClass40_105 = null;
+		textImportedMaps = null;
 		aClass40_104 = null;
 		aClass40_106 = null;
 		aClass40_102 = null;
@@ -225,10 +226,10 @@ public final class Static68 {
 		local3.anInt1908 = Static104.anInt2513;
 		local3.anInt1907 = Static83.anIntArray430[0];
 		local3.anInt1906 = Static97.anIntArray503[0];
-		local3.anInt1905 = Static66.anIntArray338[0];
+		local3.width = Static66.anIntArray338[0];
 		local3.anInt1910 = Static19.anIntArray86[0];
 		local3.anIntArray427 = Static20.anIntArray92;
-		local3.aByteArray16 = Static91.aByteArrayArray10[0];
+		local3.pixels = Static91.aByteArrayArray10[0];
 		Static93.method1485();
 		return local3;
 	}

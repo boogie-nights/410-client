@@ -22,7 +22,7 @@ public final class Static24 {
 	public static Class40 aClass40_179 = Static13.method257("*6n*6nRecovery Questions Last Set:*6n@gre@");
 
 	@OriginalMember(owner = "client!ee", name = "Y", descriptor = "Lclient!o;")
-	public static Class40 aClass40_180 = Static13.method257("Loading wordpack )2 0(U");
+	public static Class40 textLoadingWordpack = Static13.method257("Loading wordpack )2 0(U");
 
 	@OriginalMember(owner = "client!ee", name = "ib", descriptor = "Lclient!od;")
 	public static Class44 aClass44_4 = new Class44();
@@ -71,8 +71,8 @@ public final class Static24 {
 		}
 		local56 = 0;
 		for (local60 = 0; local60 < arg0.anInt1910; local60++) {
-			for (local68 = 0; local68 < arg0.anInt1905; local68++) {
-				if (arg0.aByteArray16[local56++] != 0) {
+			for (local68 = 0; local68 < arg0.width; local68++) {
+				if (arg0.pixels[local56++] != 0) {
 					@Pc(142) int local142 = local60 + arg0.anInt1906 + 16;
 					@Pc(149) int local149 = arg0.anInt1907 + local68 + 16;
 					@Pc(155) int local155 = (local142 << 7) + local149;
@@ -455,7 +455,7 @@ public final class Static24 {
 
 	@OriginalMember(owner = "client!ee", name = "c", descriptor = "(B)V")
 	public static void method506() {
-		aClass40_180 = null;
+		textLoadingWordpack = null;
 		aGraphics1 = null;
 		aClass40_179 = null;
 		aClass40_183 = null;

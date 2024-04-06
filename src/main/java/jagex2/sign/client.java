@@ -67,7 +67,7 @@ public final class client extends Applet_Sub1 {
 	@Override
 	protected void method330() {
 		if (Static44.anInt1075 == 0) {
-			Static91.method1467(null, Static98.aClass40_680, Static94.anInt2194);
+			Static91.method1467(null, Static98.progressMeterText, Static94.anInt2194);
 		} else if (Static44.anInt1075 == 5) {
 			Static101.method1589(Static76.aClass2_Sub2_Sub2_Sub2_4, Static24.aGraphics1, Static14.aClass2_Sub2_Sub2_Sub2_1);
 		} else if (Static44.anInt1075 == 10) {
@@ -450,7 +450,7 @@ public final class client extends Applet_Sub1 {
 		} else if (Static44.anInt1075 == 20) {
 			Static56.method1548();
 			Static43.method1246();
-		} else if (Static44.anInt1075 == 25) {
+			} else if (Static44.anInt1075 == 25) {
 			Static73.method1205();
 		}
 		if (Static44.anInt1075 == 30) {

@@ -136,19 +136,19 @@ public final class Static59 {
 		}
 		Static15.aClass2_Sub2_Sub2_Sub3_19 = Static99.method77(arg0, Static16.aClass40_110, Static30.aClass40_223);
 		Static53.aClass2_Sub2_Sub2_Sub3_13 = Static99.method77(arg0, Static16.aClass40_110, Static79.aClass40_544);
-		Static17.aClass2_Sub2_Sub2_Sub3_6 = Static99.method77(arg0, Static16.aClass40_110, Static25.aClass40_191);
+		Static17.imageMapBack = Static99.method77(arg0, Static16.aClass40_110, Static25.aClass40_191);
 		Static51.aClass2_Sub2_Sub2_Sub3_11 = Static99.method77(arg0, Static16.aClass40_110, Static22.aClass40_734);
 		Static15.aClass2_Sub2_Sub2_Sub3_18 = Static99.method77(arg0, Static16.aClass40_110, Static10.aClass40_64);
 		Static102.aClass2_Sub2_Sub2_Sub3_23 = Static99.method77(arg0, Static16.aClass40_110, Static30.aClass40_220);
 		Static61.aClass45_23 = Static83.method1351(479, arg1, 96);
 		Static53.aClass2_Sub2_Sub2_Sub3_13.method1320(0, 0);
 		Static12.aClass45_6 = Static83.method1351(172, arg1, 156);
-		Static26.method1610();
-		Static17.aClass2_Sub2_Sub2_Sub3_6.method1320(0, 0);
+		Static26.clear();
+		Static17.imageMapBack.method1320(0, 0);
 		Static7.aClass45_5 = Static83.method1351(190, arg1, 261);
 		Static15.aClass2_Sub2_Sub2_Sub3_19.method1320(0, 0);
 		Static2.aClass45_2 = Static83.method1351(512, arg1, 334);
-		Static26.method1610();
+		Static26.clear();
 		Static4.aClass45_4 = Static83.method1351(496, arg1, 50);
 		Static68.aClass45_8 = Static83.method1351(269, arg1, 37);
 		Static25.aClass45_12 = Static83.method1351(249, arg1, 45);
@@ -201,42 +201,39 @@ public final class Static59 {
 		Static81.aClass2_Sub2_Sub2_Sub3Array10 = Static4.method85(arg0, Static12.aClass40_78, Static16.aClass40_110);
 		Static2.anIntArray3 = new int[151];
 		Static73.anIntArray407 = new int[151];
-		Static102.anIntArray544 = new int[33];
-		Static45.anIntArray225 = new int[33];
-		@Pc(353) int local353;
-		@Pc(351) int local351;
-		@Pc(355) int local355;
-		for (@Pc(347) int local347 = 0; local347 < 33; local347++) {
-			local351 = 0;
-			local353 = 999;
-			for (local355 = 0; local355 < 34; local355++) {
-				if (Static17.aClass2_Sub2_Sub2_Sub3_6.aByteArray16[local347 * Static17.aClass2_Sub2_Sub2_Sub3_6.anInt1905 + local355] == 0) {
-					if (local353 == 999) {
-						local353 = local355;
+		Static102.compassMaskLineOffsets = new int[33];
+		Static45.compassMaskLineLengths = new int[33];
+		for (@Pc(347) int y = 0; y < 33; y++) {
+			@Pc(351) int right = 0;
+			@Pc(353) int left = 999;
+			for (int x = 0; x < 34; x++) {
+				if (Static17.imageMapBack.pixels[y * Static17.imageMapBack.width + x] == 0) {
+					if (left == 999) {
+						left = x;
 					}
-				} else if (local353 != 999) {
-					local351 = local355;
+				} else if (left != 999) {
+					right = x;
 					break;
 				}
 			}
-			Static102.anIntArray544[local347] = local353;
-			Static45.anIntArray225[local347] = local351 - local353;
+			Static102.compassMaskLineOffsets[y] = left;
+			Static45.compassMaskLineLengths[y] = right - left;
 		}
-		for (local353 = 5; local353 < 156; local353++) {
-			local351 = 999;
-			local355 = 0;
-			for (@Pc(419) int local419 = 25; local419 < 172; local419++) {
-				if (Static17.aClass2_Sub2_Sub2_Sub3_6.aByteArray16[local353 * Static17.aClass2_Sub2_Sub2_Sub3_6.anInt1905 + local419] == 0 && (local419 > 34 || local353 > 34)) {
-					if (local351 == 999) {
-						local351 = local419;
+		for (int y = 5; y < 156; y++) {
+			int left = 999;
+			int right = 0;
+			for (@Pc(419) int x = 25; x < 172; x++) {
+				if (Static17.imageMapBack.pixels[y * Static17.imageMapBack.width + x] == 0 && (x > 34 || y > 34)) {
+					if (left == 999) {
+						left = x;
 					}
-				} else if (local351 != 999) {
-					local355 = local419;
+				} else if (left != 999) {
+					right = x;
 					break;
 				}
 			}
-			Static73.anIntArray407[local353 - 5] = local351 - 25;
-			Static2.anIntArray3[local353 - 5] = local355 - local351;
+			Static73.anIntArray407[y - 5] = left - 25;
+			Static2.anIntArray3[y - 5] = right - left;
 		}
 		Static79.aBoolean152 = true;
 	}

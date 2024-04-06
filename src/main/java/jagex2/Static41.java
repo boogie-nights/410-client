@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.client.GameShell;
 import jagex2.graphics.Class2_Sub2_Sub14;
+import jagex2.graphics.Class45;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;

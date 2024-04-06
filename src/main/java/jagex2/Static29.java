@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.graphics.Class45;
 import jagex2.io.ClientStream;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalMember;
