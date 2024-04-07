@@ -113,7 +113,7 @@ public final class Static82 {
 				}
 			}
 		}
-		for (@Pc(307) Class2_Sub7 local307 = (Class2_Sub7) Static92.aClass44_7.method1224(); local307 != null; local307 = (Class2_Sub7) Static92.aClass44_7.method1231()) {
+		for (@Pc(307) Class2_Sub7 local307 = (Class2_Sub7) Static92.aClass44_7.peekFront(); local307 != null; local307 = (Class2_Sub7) Static92.aClass44_7.prev()) {
 			local307.anInt821 -= local54;
 			local307.anInt818 -= local69;
 			if (local307.anInt818 < 0 || local307.anInt821 < 0 || local307.anInt818 >= 104 || local307.anInt821 >= 104) {
@@ -126,8 +126,8 @@ public final class Static82 {
 			Static80.anInt1919 -= local54;
 		}
 		Static22.anInt2590 = -1;
-		Static96.aClass44_8.method1222();
-		Static24.aClass44_4.method1222();
+		Static96.aClass44_8.clear();
+		Static24.aClass44_4.clear();
 	}
 
 	@OriginalMember(owner = "client!ra", name = "b", descriptor = "(B)V")

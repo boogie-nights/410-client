@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -17,16 +18,16 @@ public final class Static89 {
 	public static int anInt2094;
 
 	@OriginalMember(owner = "client!sd", name = "p", descriptor = "I")
-	public static int anInt2099;
+	public static int sinEyeYaw;
 
 	@OriginalMember(owner = "client!sd", name = "r", descriptor = "I")
-	public static int anInt2101;
+	public static int cosEyeYaw;
 
 	@OriginalMember(owner = "client!sd", name = "u", descriptor = "I")
 	public static int anInt2102;
 
 	@OriginalMember(owner = "client!sd", name = "w", descriptor = "I")
-	public static int anInt2104;
+	public static int cosEyePitch;
 
 	@OriginalMember(owner = "client!sd", name = "D", descriptor = "I")
 	public static int anInt2108;
@@ -41,7 +42,7 @@ public final class Static89 {
 	public static int anInt2113;
 
 	@OriginalMember(owner = "client!sd", name = "K", descriptor = "I")
-	public static int anInt2114;
+	public static int sinEyePitch;
 
 	@OriginalMember(owner = "client!sd", name = "M", descriptor = "I")
 	public static int anInt2115;
@@ -50,34 +51,34 @@ public final class Static89 {
 	public static int anInt2117;
 
 	@OriginalMember(owner = "client!sd", name = "W", descriptor = "I")
-	private static int anInt2119;
+	private static int viewportBottom;
 
 	@OriginalMember(owner = "client!sd", name = "Y", descriptor = "I")
-	private static int anInt2120;
+	private static int viewportCenterX;
 
 	@OriginalMember(owner = "client!sd", name = "ab", descriptor = "I")
-	private static int anInt2121;
+	private static int viewportTop;
 
 	@OriginalMember(owner = "client!sd", name = "bb", descriptor = "[[Z")
 	public static boolean[][] aBooleanArrayArray1;
 
 	@OriginalMember(owner = "client!sd", name = "cb", descriptor = "I")
-	private static int anInt2122;
+	private static int viewportCenterY;
 
 	@OriginalMember(owner = "client!sd", name = "eb", descriptor = "I")
-	private static int anInt2123;
+	private static int viewportRight;
 
 	@OriginalMember(owner = "client!sd", name = "hb", descriptor = "I")
-	private static int anInt2124;
+	private static int viewportLeft;
 
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "I")
 	public static int anInt2092 = 0;
 
 	@OriginalMember(owner = "client!sd", name = "c", descriptor = "[I")
-	public static int[] anIntArray455 = new int[] { 53, -53, -53, 53 };
+	public static int[] WALL_DECORATION_INSET_X = new int[] { 53, -53, -53, 53 };
 
 	@OriginalMember(owner = "client!sd", name = "f", descriptor = "[I")
-	public static int[] anIntArray456 = new int[] { -45, 45, 45, -45 };
+	public static int[] WALL_DECORATION_OUTSET_X = new int[] { -45, 45, 45, -45 };
 
 	@OriginalMember(owner = "client!sd", name = "g", descriptor = "I")
 	public static int anInt2095 = 0;
@@ -98,58 +99,58 @@ public final class Static89 {
 	public static boolean aBoolean163 = true;
 
 	@OriginalMember(owner = "client!sd", name = "n", descriptor = "Lclient!od;")
-	public static Class44 aClass44_6 = new Class44();
+	public static LinkedList aClass44_6 = new LinkedList();
 
 	@OriginalMember(owner = "client!sd", name = "q", descriptor = "I")
 	public static int anInt2100 = -1;
 
 	@OriginalMember(owner = "client!sd", name = "x", descriptor = "[I")
-	public static int[] anIntArray457 = new int[] { -53, -53, 53, 53 };
+	public static int[] WALL_DECORATION_INSET_Z = new int[] { -53, -53, 53, 53 };
 
 	@OriginalMember(owner = "client!sd", name = "y", descriptor = "[Lclient!n;")
 	public static Class37[] aClass37Array3 = new Class37[100];
 
 	@OriginalMember(owner = "client!sd", name = "I", descriptor = "I")
-	public static final int anInt2112 = 4;
+	public static final int LEVEL_COUNT = 4;
 
 	@OriginalMember(owner = "client!sd", name = "C", descriptor = "[I")
-	public static int[] levelOccluderCount = new int[anInt2112];
+	public static int[] levelOccluderCount = new int[LEVEL_COUNT];
 
 	@OriginalMember(owner = "client!sd", name = "G", descriptor = "I")
 	public static int anInt2111 = 0;
 
 	@OriginalMember(owner = "client!sd", name = "H", descriptor = "[I")
-	public static int[] anIntArray459 = new int[] { 45, 45, -45, -45 };
+	public static int[] WALL_DECORATION_OUTSET_Z = new int[] { 45, 45, -45, -45 };
 
 	@OriginalMember(owner = "client!sd", name = "N", descriptor = "[[Lclient!sc;")
-	public static Occluder[][] levelOccluders = new Occluder[anInt2112][500];
+	public static Occluder[][] levelOccluders = new Occluder[LEVEL_COUNT][500];
 
 	@OriginalMember(owner = "client!sd", name = "O", descriptor = "I")
 	public static int anInt2116 = 0;
 
 	@OriginalMember(owner = "client!sd", name = "V", descriptor = "[I")
-	public static int[] anIntArray462 = new int[] { 2, 0, 0, 2, 0, 0, 0, 4, 4 };
+	public static int[] WALL_CORNER_TYPE_32_BLOCK_LOC_SPANS = new int[] { 2, 0, 0, 2, 0, 0, 0, 4, 4 };
 
 	@OriginalMember(owner = "client!sd", name = "X", descriptor = "[I")
-	public static int[] anIntArray463 = new int[] { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
+	public static int[] DIRECTION_ALLOW_WALL_CORNER_TYPE = new int[] { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
 
 	@OriginalMember(owner = "client!sd", name = "Z", descriptor = "[I")
-	public static int[] anIntArray464 = new int[] { 76, 8, 137, 4, 0, 1, 38, 2, 19 };
+	public static int[] BACK_WALL_TYPES = new int[] { 76, 8, 137, 4, 0, 1, 38, 2, 19 };
 
 	@OriginalMember(owner = "client!sd", name = "db", descriptor = "[I")
-	public static int[] anIntArray465 = new int[] { 1, 1, 0, 0, 0, 8, 0, 0, 8 };
+	public static int[] WALL_CORNER_TYPE_128_BLOCK_LOC_SPANS = new int[] { 1, 1, 0, 0, 0, 8, 0, 0, 8 };
 
 	@OriginalMember(owner = "client!sd", name = "fb", descriptor = "[I")
-	public static int[] anIntArray466 = new int[] { 0, 0, 2, 0, 0, 2, 1, 1, 0 };
+	public static int[] WALL_CORNER_TYPE_16_BLOCK_LOC_SPANS = new int[] { 0, 0, 2, 0, 0, 2, 1, 1, 0 };
 
 	@OriginalMember(owner = "client!sd", name = "gb", descriptor = "[I")
-	public static int[] anIntArray467 = new int[] { 0, 4, 4, 8, 0, 0, 8, 0, 0 };
+	public static int[] WALL_CORNER_TYPE_64_BLOCK_LOC_SPANS = new int[] { 0, 4, 4, 8, 0, 0, 8, 0, 0 };
 
 	@OriginalMember(owner = "client!sd", name = "ib", descriptor = "[I")
-	public static int[] anIntArray468 = new int[] { 19, 55, 38, 155, 255, 110, 137, 205, 76 };
+	public static int[] FRONT_WALL_TYPES = new int[] { 19, 55, 38, 155, 255, 110, 137, 205, 76 };
 
 	@OriginalMember(owner = "client!sd", name = "jb", descriptor = "[[[[Z")
-	public static boolean[][][][] aBooleanArrayArrayArrayArray1 = new boolean[8][32][51][51];
+	public static boolean[][][][] visibilityMap = new boolean[8][32][51][51];
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(II)I")
 	public static int method1420(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
@@ -163,70 +164,66 @@ public final class Static89 {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "([IIIII)V")
-	public static void method1422(@OriginalArg(0) int[] arg0) {
-		anInt2124 = 0;
-		anInt2121 = 0;
-		anInt2123 = 512;
-		anInt2119 = 334;
-		anInt2120 = 256;
-		anInt2122 = 167;
-		@Pc(21) boolean[][][][] local21 = new boolean[9][32][53][53];
-		@Pc(26) int local26;
-		@Pc(49) int local49;
-		@Pc(53) int local53;
-		@Pc(55) int local55;
-		@Pc(63) int local63;
-		@Pc(67) int local67;
-		for (@Pc(23) int local23 = 128; local23 <= 384; local23 += 32) {
-			for (local26 = 0; local26 < 2048; local26 += 64) {
-				anInt2114 = Static71.sin[local23];
-				anInt2104 = Static71.cos[local23];
-				anInt2099 = Static71.sin[local26];
-				anInt2101 = Static71.cos[local26];
-				local49 = (local23 - 128) / 32;
-				local53 = local26 / 64;
-				for (local55 = -26; local55 <= 26; local55++) {
-					for (@Pc(58) int local58 = -26; local58 <= 26; local58++) {
-						local63 = local55 * 128;
-						local67 = local58 * 128;
-						@Pc(69) boolean local69 = false;
-						for (@Pc(72) int local72 = -500; local72 <= 800; local72 += 128) {
-							if (method1424(local63, arg0[local49] + local72, local67)) {
-								local69 = true;
+	public static void init(@OriginalArg(0) int[] pitchDistance) {
+		viewportLeft = 0;
+		viewportTop = 0;
+		viewportRight = 512;
+		viewportBottom = 334;
+		viewportCenterX = 256;
+		viewportCenterY = 167;
+		@Pc(21) boolean[][][][] matrix = new boolean[9][32][53][53];
+		for (@Pc(23) int pitch = 128; pitch <= 384; pitch += 32) {
+			for (int yaw = 0; yaw < 2048; yaw += 64) {
+				sinEyePitch = Static71.sin[pitch];
+				cosEyePitch = Static71.cos[pitch];
+				sinEyeYaw = Static71.sin[yaw];
+				cosEyeYaw = Static71.cos[yaw];
+
+				int pitchLevel = (pitch - 128) / 32;
+				int yawLevel = yaw / 64;
+				for (int dx = -26; dx <= 26; dx++) {
+					for (@Pc(58) int dz = -26; dz <= 26; dz++) {
+						int x = dx * 128;
+						int z = dz * 128;
+						@Pc(69) boolean visible = false;
+						for (@Pc(72) int y = -500; y <= 800; y += 128) {
+							if (testPoint(x, pitchDistance[pitchLevel] + y, z)) {
+								visible = true;
 								break;
 							}
 						}
-						local21[local49][local53][local55 + 25 + 1][local58 + 25 + 1] = local69;
+						matrix[pitchLevel][yawLevel][dx + 25 + 1][dz + 25 + 1] = visible;
 					}
 				}
 			}
 		}
-		for (local26 = 0; local26 < 8; local26++) {
-			for (local49 = 0; local49 < 32; local49++) {
-				for (local53 = -25; local53 < 25; local53++) {
-					for (local55 = -25; local55 < 25; local55++) {
-						@Pc(137) boolean local137 = false;
-						label76: for (local63 = -1; local63 <= 1; local63++) {
-							for (local67 = -1; local67 <= 1; local67++) {
-								if (local21[local26][local49][local53 + local63 + 25 + 1][local55 + local67 + 25 + 1]) {
-									local137 = true;
-									break label76;
+		for (int pitchlevel = 0; pitchlevel < 8; pitchlevel++) {
+			for (int yawLevel = 0; yawLevel < 32; yawLevel++) {
+				for (int x = -25; x < 25; x++) {
+					for (int z = -25; z < 25; z++) {
+						@Pc(137) boolean visible = false;
+						check_areas:
+						for (int dx = -1; dx <= 1; dx++) {
+							for (int dz = -1; dz <= 1; dz++) {
+								if (matrix[pitchlevel][yawLevel][x + dx + 25 + 1][z + dz + 25 + 1]) {
+									visible = true;
+									break check_areas;
 								}
-								if (local21[local26][(local49 + 1) % 31][local53 + local63 + 25 + 1][local55 + local67 + 25 + 1]) {
-									local137 = true;
-									break label76;
+								if (matrix[pitchlevel][(yawLevel + 1) % 31][x + dx + 25 + 1][z + dz + 25 + 1]) {
+									visible = true;
+									break check_areas;
 								}
-								if (local21[local26 + 1][local49][local53 + local63 + 25 + 1][local55 + local67 + 25 + 1]) {
-									local137 = true;
-									break label76;
+								if (matrix[pitchlevel + 1][yawLevel][x + dx + 25 + 1][z + dz + 25 + 1]) {
+									visible = true;
+									break check_areas;
 								}
-								if (local21[local26 + 1][(local49 + 1) % 31][local53 + local63 + 25 + 1][local55 + local67 + 25 + 1]) {
-									local137 = true;
-									break label76;
+								if (matrix[pitchlevel + 1][(yawLevel + 1) % 31][x + dx + 25 + 1][z + dz + 25 + 1]) {
+									visible = true;
+									break check_areas;
 								}
 							}
 						}
-						aBooleanArrayArrayArrayArray1[local26][local49][local53 + 25][local55 + 25] = local137;
+						visibilityMap[pitchlevel][yawLevel][x + 25][z + 25] = visible;
 					}
 				}
 			}
@@ -234,15 +231,15 @@ public final class Static89 {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "f", descriptor = "(III)Z")
-	private static boolean method1424(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(9) int local9 = arg2 * anInt2099 + arg0 * anInt2101 >> 16;
-		@Pc(19) int local19 = arg2 * anInt2101 - arg0 * anInt2099 >> 16;
-		@Pc(29) int local29 = arg1 * anInt2114 + local19 * anInt2104 >> 16;
-		@Pc(39) int local39 = arg1 * anInt2104 - local19 * anInt2114 >> 16;
-		if (local29 >= 50 && local29 <= 3500) {
-			@Pc(55) int local55 = anInt2120 + (local9 << 9) / local29;
-			@Pc(63) int local63 = anInt2122 + (local39 << 9) / local29;
-			return local55 >= anInt2124 && local55 <= anInt2123 && local63 >= anInt2121 && local63 <= anInt2119;
+	private static boolean testPoint(@OriginalArg(0) int x, @OriginalArg(1) int y, @OriginalArg(2) int z) {
+		@Pc(9) int px = z * sinEyeYaw + x * cosEyeYaw >> 16;
+		@Pc(19) int tmp = z * cosEyeYaw - x * sinEyeYaw >> 16;
+		@Pc(29) int pz = y * sinEyePitch + tmp * cosEyePitch >> 16;
+		@Pc(39) int py = y * cosEyePitch - tmp * sinEyePitch >> 16;
+		if (pz >= 50 && pz <= 3500) {
+			@Pc(55) int viewportX = viewportCenterX + (px << 9) / pz;
+			@Pc(63) int viewportY = viewportCenterY + (py << 9) / pz;
+			return viewportX >= viewportLeft && viewportX <= viewportRight && viewportY >= viewportTop && viewportY <= viewportBottom;
 		} else {
 			return false;
 		}
@@ -251,22 +248,22 @@ public final class Static89 {
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "()V")
 	public static void method1431() {
 		aClass37Array3 = null;
-		anIntArray455 = null;
-		anIntArray457 = null;
-		anIntArray456 = null;
-		anIntArray459 = null;
+		WALL_DECORATION_INSET_X = null;
+		WALL_DECORATION_INSET_Z = null;
+		WALL_DECORATION_OUTSET_X = null;
+		WALL_DECORATION_OUTSET_Z = null;
 		levelOccluderCount = null;
 		levelOccluders = null;
 		aClass54Array1 = null;
 		aClass44_6 = null;
-		anIntArray468 = null;
-		anIntArray463 = null;
-		anIntArray464 = null;
-		anIntArray466 = null;
-		anIntArray462 = null;
-		anIntArray467 = null;
-		anIntArray465 = null;
-		aBooleanArrayArrayArrayArray1 = null;
+		FRONT_WALL_TYPES = null;
+		DIRECTION_ALLOW_WALL_CORNER_TYPE = null;
+		BACK_WALL_TYPES = null;
+		WALL_CORNER_TYPE_16_BLOCK_LOC_SPANS = null;
+		WALL_CORNER_TYPE_32_BLOCK_LOC_SPANS = null;
+		WALL_CORNER_TYPE_64_BLOCK_LOC_SPANS = null;
+		WALL_CORNER_TYPE_128_BLOCK_LOC_SPANS = null;
+		visibilityMap = null;
 		aBooleanArrayArray1 = null;
 	}
 

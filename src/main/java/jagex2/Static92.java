@@ -2,6 +2,7 @@ package jagex2;
 
 import java.io.IOException;
 
+import jagex2.datastruct.LinkedList;
 import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -34,7 +35,7 @@ public final class Static92 {
 	public static Class40 aClass40_618 = Static13.method257("System update in: ");
 
 	@OriginalMember(owner = "client!tb", name = "K", descriptor = "Lclient!od;")
-	public static Class44 aClass44_7 = new Class44();
+	public static LinkedList aClass44_7 = new LinkedList();
 
 	@OriginalMember(owner = "client!tb", name = "N", descriptor = "Lclient!o;")
 	public static Class40 aClass40_619 = Static13.method257("Loading interfaces )2 ");

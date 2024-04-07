@@ -240,7 +240,7 @@ public final class Static22 {
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(IIIIIIIIII)V")
 	public static void method1727(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
 		@Pc(7) Class2_Sub7 local7 = null;
-		for (@Pc(12) Class2_Sub7 local12 = (Class2_Sub7) Static92.aClass44_7.method1224(); local12 != null; local12 = (Class2_Sub7) Static92.aClass44_7.method1231()) {
+		for (@Pc(12) Class2_Sub7 local12 = (Class2_Sub7) Static92.aClass44_7.peekFront(); local12 != null; local12 = (Class2_Sub7) Static92.aClass44_7.prev()) {
 			if (local12.anInt817 == arg1 && local12.anInt818 == arg8 && local12.anInt821 == arg6 && local12.anInt823 == arg2) {
 				local7 = local12;
 				break;
@@ -253,7 +253,7 @@ public final class Static22 {
 			local7.anInt818 = arg8;
 			local7.anInt821 = arg6;
 			Static4.method86(local7);
-			Static92.aClass44_7.method1221(local7);
+			Static92.aClass44_7.pushBack(local7);
 		}
 		local7.anInt829 = arg3;
 		local7.anInt828 = arg5;

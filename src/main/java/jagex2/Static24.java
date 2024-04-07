@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Static6;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -25,7 +26,7 @@ public final class Static24 {
 	public static Class40 textLoadingWordpack = Static13.method257("Loading wordpack )2 0(U");
 
 	@OriginalMember(owner = "client!ee", name = "ib", descriptor = "Lclient!od;")
-	public static Class44 aClass44_4 = new Class44();
+	public static LinkedList aClass44_4 = new LinkedList();
 
 	@OriginalMember(owner = "client!ee", name = "mb", descriptor = "Lclient!o;")
 	private static Class40 aClass40_184 = Static13.method257("Login to a members(W server to use this object)3");

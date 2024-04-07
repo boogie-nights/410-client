@@ -199,7 +199,7 @@ public final class Static70 {
 				local12.anIntArray498[local58] = -5;
 			}
 		}
-		Static104.aClass44_9.method1221(local12);
+		Static104.aClass44_9.pushBack(local12);
 	}
 
 	@OriginalMember(owner = "client!nd", name = "c", descriptor = "(B)V")

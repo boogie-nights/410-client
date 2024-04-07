@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.datastruct.LinkedList;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -14,7 +15,7 @@ public final class Static5 {
 	public static Class5_Sub1 aClass5_Sub1_1;
 
 	@OriginalMember(owner = "client!ae", name = "P", descriptor = "Lclient!od;")
-	public static Class44 aClass44_1 = new Class44();
+	public static LinkedList aClass44_1 = new LinkedList();
 
 	@OriginalMember(owner = "client!ae", name = "Q", descriptor = "J")
 	public static long aLong12 = 0L;

@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -26,7 +27,7 @@ public final class Static104 {
 	public static Class40 aClass40_724 = Static13.method257("RuneScape is loading )2 please wait)3)3)3");
 
 	@OriginalMember(owner = "client!wa", name = "j", descriptor = "Lclient!od;")
-	public static Class44 aClass44_9 = new Class44();
+	public static LinkedList aClass44_9 = new LinkedList();
 
 	@OriginalMember(owner = "client!wa", name = "l", descriptor = "I")
 	public static int anInt2518 = 0;

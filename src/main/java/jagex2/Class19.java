@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.datastruct.LinkedList;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -10,7 +11,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class19 implements Interface4 {
 
 	@OriginalMember(owner = "client!ea", name = "q", descriptor = "Lclient!od;")
-	private Class44 aClass44_3 = new Class44();
+	private LinkedList aClass44_3 = new LinkedList();
 
 	@OriginalMember(owner = "client!ea", name = "v", descriptor = "I")
 	private int anInt489 = 0;
@@ -58,19 +59,19 @@ public final class Class19 implements Interface4 {
 		@Pc(13) Class2_Sub8 local13 = this.aClass2_Sub8Array1[arg0];
 		if (local13 != null) {
 			if (local13.anIntArray185 != null) {
-				this.aClass44_3.method1229(local13);
+				this.aClass44_3.pushFront(local13);
 				local13.aBoolean71 = true;
 				return local13.anIntArray185;
 			}
 			@Pc(38) boolean local38 = local13.method742(this.aDouble1, this.anInt488, this.aClass5_7);
 			if (local38) {
 				if (this.anInt489 == 0) {
-					@Pc(57) Class2_Sub8 local57 = (Class2_Sub8) this.aClass44_3.method1218();
+					@Pc(57) Class2_Sub8 local57 = (Class2_Sub8) this.aClass44_3.pollLast();
 					local57.method741();
 				} else {
 					this.anInt489--;
 				}
-				this.aClass44_3.method1229(local13);
+				this.aClass44_3.pushFront(local13);
 				local13.aBoolean71 = true;
 				return local13.anIntArray185;
 			}
@@ -85,7 +86,7 @@ public final class Class19 implements Interface4 {
 				this.aClass2_Sub8Array1[local3].method741();
 			}
 		}
-		this.aClass44_3 = new Class44();
+		this.aClass44_3 = new LinkedList();
 		this.anInt489 = this.anInt490;
 	}
 

@@ -50,7 +50,7 @@ public final class Static74 {
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Z)V")
 	public static void method1209() {
-		for (@Pc(15) Class2_Sub7 local15 = (Class2_Sub7) Static92.aClass44_7.method1224(); local15 != null; local15 = (Class2_Sub7) Static92.aClass44_7.method1231()) {
+		for (@Pc(15) Class2_Sub7 local15 = (Class2_Sub7) Static92.aClass44_7.peekFront(); local15 != null; local15 = (Class2_Sub7) Static92.aClass44_7.prev()) {
 			if (local15.anInt826 > 0) {
 				local15.anInt826--;
 			}

@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.config.ObjType;
+import jagex2.datastruct.LinkedList;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -17,7 +18,7 @@ public final class Static96 {
 	public static int anInt2328 = 0;
 
 	@OriginalMember(owner = "client!ua", name = "Hc", descriptor = "Lclient!od;")
-	public static Class44 aClass44_8 = new Class44();
+	public static LinkedList aClass44_8 = new LinkedList();
 
 	@OriginalMember(owner = "client!ua", name = "Lc", descriptor = "I")
 	public static int anInt2333 = 0;

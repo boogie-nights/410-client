@@ -3,6 +3,7 @@ package jagex2;
 import java.io.IOException;
 import java.util.zip.CRC32;
 
+import jagex2.datastruct.LinkedList;
 import jagex2.io.ClientStream;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -228,10 +229,10 @@ public final class Static81 {
 	@OriginalMember(owner = "client!r", name = "b", descriptor = "(I)V")
 	public static void method1341() {
 		while (true) {
-			@Pc(13) Class44 local13 = Static20.aClass44_2;
+			@Pc(13) LinkedList local13 = Static20.aClass44_2;
 			@Pc(20) Class2_Sub9 local20;
 			synchronized (Static20.aClass44_2) {
-				local20 = (Class2_Sub9) Static5.aClass44_1.method1220();
+				local20 = (Class2_Sub9) Static5.aClass44_1.pollFront();
 			}
 			if (local20 == null) {
 				return;

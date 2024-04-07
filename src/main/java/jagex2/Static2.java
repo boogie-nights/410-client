@@ -884,7 +884,7 @@ public final class Static2 {
 						}
 					}
 				}
-				for (@Pc(2420) Class2_Sub7 local2420 = (Class2_Sub7) Static92.aClass44_7.method1224(); local2420 != null; local2420 = (Class2_Sub7) Static92.aClass44_7.method1231()) {
+				for (@Pc(2420) Class2_Sub7 local2420 = (Class2_Sub7) Static92.aClass44_7.peekFront(); local2420 != null; local2420 = (Class2_Sub7) Static92.aClass44_7.prev()) {
 					if (Static95.anInt2237 <= local2420.anInt818 && local2420.anInt818 < Static95.anInt2237 + 8 && local2420.anInt821 >= Static91.anInt2138 && Static91.anInt2138 + 8 > local2420.anInt821 && local2420.anInt817 == Static1.currentLevel) {
 						local2420.anInt826 = 0;
 					}

@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import java.io.StringReader;
 import java.io.StringWriter;
 
+import jagex2.datastruct.LinkedList;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -50,9 +51,9 @@ public final class Static63 {
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!ad;Lclient!cb;ZI)V")
 	public static void method1056(@OriginalArg(0) Class5_Sub1 arg0, @OriginalArg(1) Class11 arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) byte[] local7 = null;
-		@Pc(9) Class44 local9 = Static20.aClass44_2;
+		@Pc(9) LinkedList local9 = Static20.aClass44_2;
 		synchronized (Static20.aClass44_2) {
-			for (@Pc(16) Class2_Sub9 local16 = (Class2_Sub9) Static20.aClass44_2.method1224(); local16 != null; local16 = (Class2_Sub9) Static20.aClass44_2.method1231()) {
+			for (@Pc(16) Class2_Sub9 local16 = (Class2_Sub9) Static20.aClass44_2.peekFront(); local16 != null; local16 = (Class2_Sub9) Static20.aClass44_2.prev()) {
 				if ((long) arg2 == local16.id && arg1 == local16.aClass11_3 && local16.anInt1189 == 0) {
 					local7 = local16.aByteArray13;
 					break;

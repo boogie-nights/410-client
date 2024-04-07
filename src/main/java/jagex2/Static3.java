@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Model;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -98,9 +99,9 @@ public final class Static3 {
 				local131.count = local12;
 				local131.anInt1490 = local19;
 				if (Static91.levelObjStacks[Static1.currentLevel][local35][local39] == null) {
-					Static91.levelObjStacks[Static1.currentLevel][local35][local39] = new Class44();
+					Static91.levelObjStacks[Static1.currentLevel][local35][local39] = new LinkedList();
 				}
-				Static91.levelObjStacks[Static1.currentLevel][local35][local39].method1221(local131);
+				Static91.levelObjStacks[Static1.currentLevel][local35][local39].pushBack(local131);
 				Static83.method1356(local39, local35);
 			}
 		} else if (Static88.anInt2083 == 63) {
@@ -111,9 +112,9 @@ public final class Static3 {
 			local35 = Static56.aClass2_Sub3_Sub1_5.g2();
 			local39 = Static56.aClass2_Sub3_Sub1_5.g2();
 			if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
-				@Pc(230) Class44 local230 = Static91.levelObjStacks[Static1.currentLevel][local27][local19];
+				@Pc(230) LinkedList local230 = Static91.levelObjStacks[Static1.currentLevel][local27][local19];
 				if (local230 != null) {
-					for (@Pc(237) Class2_Sub2_Sub12_Sub3 local237 = (Class2_Sub2_Sub12_Sub3) local230.method1224(); local237 != null; local237 = (Class2_Sub2_Sub12_Sub3) local230.method1231()) {
+					for (@Pc(237) Class2_Sub2_Sub12_Sub3 local237 = (Class2_Sub2_Sub12_Sub3) local230.peekFront(); local237 != null; local237 = (Class2_Sub2_Sub12_Sub3) local230.prev()) {
 						if ((local31 & 0x7FFF) == local237.anInt1490 && local237.count == local35) {
 							local237.count = local39;
 							break;
@@ -228,9 +229,9 @@ public final class Static3 {
 						local771.count = local35;
 						local771.anInt1490 = local12;
 						if (Static91.levelObjStacks[Static1.currentLevel][local19][local31] == null) {
-							Static91.levelObjStacks[Static1.currentLevel][local19][local31] = new Class44();
+							Static91.levelObjStacks[Static1.currentLevel][local19][local31] = new LinkedList();
 						}
-						Static91.levelObjStacks[Static1.currentLevel][local19][local31].method1221(local771);
+						Static91.levelObjStacks[Static1.currentLevel][local19][local31].pushBack(local771);
 						Static83.method1356(local31, local19);
 					}
 				} else if (Static88.anInt2083 == 135) {
@@ -244,7 +245,7 @@ public final class Static3 {
 						local19 = local19 * 128 + 64;
 						local27 = local27 * 128 + 64;
 						@Pc(893) Class2_Sub2_Sub12_Sub6 local893 = new Class2_Sub2_Sub12_Sub6(local31, Static1.currentLevel, local27, local19, Static86.method1383(Static1.currentLevel, local27, local19) - local35, local39, Static107.loopCycle);
-						Static96.aClass44_8.method1221(local893);
+						Static96.aClass44_8.pushBack(local893);
 					}
 				} else if (Static88.anInt2083 == 221) {
 					local12 = Static56.aClass2_Sub3_Sub1_5.method1706();
@@ -252,15 +253,15 @@ public final class Static3 {
 					local19 = (local12 & 0x7) + Static91.anInt2138;
 					local31 = Static56.aClass2_Sub3_Sub1_5.g2();
 					if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
-						@Pc(950) Class44 local950 = Static91.levelObjStacks[Static1.currentLevel][local27][local19];
+						@Pc(950) LinkedList local950 = Static91.levelObjStacks[Static1.currentLevel][local27][local19];
 						if (local950 != null) {
-							for (local771 = (Class2_Sub2_Sub12_Sub3) local950.method1224(); local771 != null; local771 = (Class2_Sub2_Sub12_Sub3) local950.method1231()) {
+							for (local771 = (Class2_Sub2_Sub12_Sub3) local950.peekFront(); local771 != null; local771 = (Class2_Sub2_Sub12_Sub3) local950.prev()) {
 								if (local771.anInt1490 == (local31 & 0x7FFF)) {
 									local771.unlink();
 									break;
 								}
 							}
-							if (local950.method1224() == null) {
+							if (local950.peekFront() == null) {
 								Static91.levelObjStacks[Static1.currentLevel][local27][local19] = null;
 							}
 							Static83.method1356(local19, local27);
@@ -291,7 +292,7 @@ public final class Static3 {
 							local19 = local19 * 128 + 64;
 							@Pc(1164) Class2_Sub2_Sub12_Sub2 local1164 = new Class2_Sub2_Sub12_Sub2(local43, Static1.currentLevel, local27, local19, Static86.method1383(Static1.currentLevel, local27, local19) - local425, Static107.loopCycle + local1060, local1064 + Static107.loopCycle, local1068, local1072, local39, local503);
 							local1164.method939(local31, Static86.method1383(Static1.currentLevel, local31, local35) - local503, Static107.loopCycle + local1060, local35);
-							Static24.aClass44_4.method1221(local1164);
+							Static24.aClass44_4.pushBack(local1164);
 						}
 					} else if (Static88.anInt2083 == 129) {
 						local12 = Static56.aClass2_Sub3_Sub1_5.method1714();

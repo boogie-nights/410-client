@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.config.ObjType;
+import jagex2.datastruct.LinkedList;
 import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -25,7 +26,7 @@ public final class Static20 {
 	public static Class40 aClass40_131 = Static13.method257("huffman");
 
 	@OriginalMember(owner = "client!e", name = "F", descriptor = "Lclient!od;")
-	public static Class44 aClass44_2 = new Class44();
+	public static LinkedList aClass44_2 = new LinkedList();
 
 	@OriginalMember(owner = "client!e", name = "G", descriptor = "I")
 	public static int anInt470 = 0;
@@ -175,9 +176,9 @@ public final class Static20 {
 					Static102.method1638(local48, local414, local42, local54);
 				}
 				if (local60 == 3) {
-					@Pc(542) Class44 local542 = Static91.levelObjStacks[Static1.currentLevel][local42][local48];
+					@Pc(542) LinkedList local542 = Static91.levelObjStacks[Static1.currentLevel][local42][local48];
 					if (local542 != null) {
-						for (@Pc(549) Class2_Sub2_Sub12_Sub3 local549 = (Class2_Sub2_Sub12_Sub3) local542.method1226(); local549 != null; local549 = (Class2_Sub2_Sub12_Sub3) local542.method1225()) {
+						for (@Pc(549) Class2_Sub2_Sub12_Sub3 local549 = (Class2_Sub2_Sub12_Sub3) local542.peekBack(); local549 != null; local549 = (Class2_Sub2_Sub12_Sub3) local542.next()) {
 							@Pc(558) ObjType local558 = Static105.get(local549.anInt1490);
 							if (Static79.objSelected == 1) {
 								Static21.method402(Static80.method1334(new Class40[] { Static27.aClass40_193, Static87.aClass40_601, Static86.aClass40_590, local558.name}), 11, local48, local42, local549.anInt1490);

@@ -2,6 +2,7 @@ package jagex2;
 
 import java.math.BigInteger;
 
+import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Class2_Sub2_Sub12;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -394,9 +395,9 @@ public final class Static51 {
 		local7.aClass5_Sub1_11 = arg1;
 		local7.aClass11_3 = arg2;
 		local7.id = arg0;
-		@Pc(22) Class44 local22 = Static20.aClass44_2;
+		@Pc(22) LinkedList local22 = Static20.aClass44_2;
 		synchronized (Static20.aClass44_2) {
-			Static20.aClass44_2.method1221(local7);
+			Static20.aClass44_2.pushBack(local7);
 		}
 		Static58.method992();
 	}

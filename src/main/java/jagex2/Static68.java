@@ -106,7 +106,7 @@ public final class Static68 {
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Lclient!wc;BI)V")
 	public static void method337(@OriginalArg(0) Class2_Sub3_Sub1 arg0) {
 		while (true) {
-			@Pc(16) Class2_Sub12 local16 = (Class2_Sub12) Static104.aClass44_9.method1224();
+			@Pc(16) Class2_Sub12 local16 = (Class2_Sub12) Static104.aClass44_9.peekFront();
 			if (local16 == null) {
 				return;
 			}

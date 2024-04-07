@@ -49,7 +49,7 @@ public final class Static13 {
 
 	@OriginalMember(owner = "client!cb", name = "b", descriptor = "(I)V")
 	public static void method255() {
-		for (@Pc(18) Class2_Sub7 local18 = (Class2_Sub7) Static92.aClass44_7.method1224(); local18 != null; local18 = (Class2_Sub7) Static92.aClass44_7.method1231()) {
+		for (@Pc(18) Class2_Sub7 local18 = (Class2_Sub7) Static92.aClass44_7.peekFront(); local18 != null; local18 = (Class2_Sub7) Static92.aClass44_7.prev()) {
 			if (local18.anInt826 == -1) {
 				local18.anInt827 = 0;
 				Static4.method86(local18);

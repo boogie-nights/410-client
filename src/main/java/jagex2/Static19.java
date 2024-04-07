@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.datastruct.LinkedList;
 import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -146,7 +147,7 @@ public final class Static19 {
 		@Pc(155) int local155;
 		for (@Pc(151) int local151 = 0; local151 < 104; local151++) {
 			for (local155 = 0; local155 < 104; local155++) {
-				@Pc(165) Class44 local165 = Static91.levelObjStacks[Static1.currentLevel][local151][local155];
+				@Pc(165) LinkedList local165 = Static91.levelObjStacks[Static1.currentLevel][local151][local155];
 				if (local165 != null) {
 					local77 = local151 * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
 					local20 = local155 * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;

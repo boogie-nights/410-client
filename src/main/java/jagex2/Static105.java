@@ -3,6 +3,7 @@ package jagex2;
 import jagex2.client.ViewBox;
 import jagex2.config.ObjType;
 import jagex2.datastruct.HashTable;
+import jagex2.datastruct.LinkedList;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -135,8 +136,8 @@ public final class Static105 {
 			Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local1744] = null;
 		}
 		Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[2047] = new Class2_Sub2_Sub12_Sub1_Sub1();
-		Static24.aClass44_4.method1222();
-		Static96.aClass44_8.method1222();
+		Static24.aClass44_4.clear();
+		Static96.aClass44_8.clear();
 		@Pc(1776) int local1776;
 		for (@Pc(1772) int local1772 = 0; local1772 < 4; local1772++) {
 			for (local1776 = 0; local1776 < 104; local1776++) {
@@ -145,7 +146,7 @@ public final class Static105 {
 				}
 			}
 		}
-		Static92.aClass44_7 = new Class44();
+		Static92.aClass44_7 = new LinkedList();
 		Static22.anInt2594 = 0;
 		Static42.anInt1038 = 0;
 		Static83.method1350(Static38.anInt980);

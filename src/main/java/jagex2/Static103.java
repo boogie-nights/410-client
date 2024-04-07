@@ -109,7 +109,7 @@ public final class Static103 {
 				offset = angle * 3 + 600;
 				distance[x] = offset * sin >> 16;
 			}
-			Static89.method1422(distance);
+			Static89.init(distance);
 			Static43.anInt1850 = 25;
 			Static98.progressMeterText = Static107.textPreparedVisibilityMap;
 			Static94.anInt2194 = 10;

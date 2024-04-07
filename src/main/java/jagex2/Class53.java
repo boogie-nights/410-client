@@ -1,7 +1,6 @@
 package jagex2;
 
-import jagex2.Class2_Sub9;
-import jagex2.Class44;
+import jagex2.datastruct.LinkedList;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -14,10 +13,10 @@ public final class Class53 implements Runnable {
 	public void run() {
 		try {
 			while (true) {
-				@Pc(5) Class44 local5 = Static20.aClass44_2;
+				@Pc(5) LinkedList local5 = Static20.aClass44_2;
 				@Pc(12) Class2_Sub9 local12;
 				synchronized (Static20.aClass44_2) {
-					local12 = (Class2_Sub9) Static20.aClass44_2.method1224();
+					local12 = (Class2_Sub9) Static20.aClass44_2.peekFront();
 				}
 				@Pc(25) Object local25;
 				if (local12 == null) {
@@ -42,7 +41,7 @@ public final class Class53 implements Runnable {
 						local12.aByteArray13 = local12.aClass11_3.method261((int) local12.id);
 						local5 = Static20.aClass44_2;
 						synchronized (Static20.aClass44_2) {
-							Static5.aClass44_1.method1221(local12);
+							Static5.aClass44_1.pushBack(local12);
 						}
 					}
 					local25 = Static99.anObject2;

@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 
+import jagex2.datastruct.LinkedList;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -24,7 +25,7 @@ public final class Static91 {
 	public static int anInt2139 = 0;
 
 	@OriginalMember(owner = "client!ta", name = "e", descriptor = "[[[Lclient!od;")
-	public static Class44[][][] levelObjStacks = new Class44[4][104][104];
+	public static LinkedList[][][] levelObjStacks = new LinkedList[4][104][104];
 
 	@OriginalMember(owner = "client!ta", name = "i", descriptor = "I")
 	public static int anInt2143 = 0;

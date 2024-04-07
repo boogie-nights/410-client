@@ -3,6 +3,7 @@ package jagex2;
 import java.awt.Component;
 
 import jagex2.config.ObjType;
+import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Class2_Sub2_Sub12;
 import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.graphics.GraphicsProducingBuffer_Sub1;
@@ -738,22 +739,22 @@ public final class Static83 {
 		local7.id = arg1;
 		local7.anInt1189 = 0;
 		local7.aByteArray13 = arg0;
-		@Pc(27) Class44 local27 = Static20.aClass44_2;
+		@Pc(27) LinkedList local27 = Static20.aClass44_2;
 		synchronized (Static20.aClass44_2) {
-			Static20.aClass44_2.method1221(local7);
+			Static20.aClass44_2.pushBack(local7);
 		}
 		Static58.method992();
 	}
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(III)V")
 	public static void method1356(@OriginalArg(0) int z, @OriginalArg(1) int x) {
-		@Pc(11) Class44 objStacks = Static91.levelObjStacks[Static1.currentLevel][x][z];
+		@Pc(11) LinkedList objStacks = Static91.levelObjStacks[Static1.currentLevel][x][z];
 		if (objStacks == null) {
 			Static93.scene.method1437(Static1.currentLevel, x, z);
 			return;
 		}
 		@Pc(21) Class2_Sub2_Sub12_Sub3 topObj = null;
-		@Pc(26) Class2_Sub2_Sub12_Sub3 obj = (Class2_Sub2_Sub12_Sub3) objStacks.method1224();
+		@Pc(26) Class2_Sub2_Sub12_Sub3 obj = (Class2_Sub2_Sub12_Sub3) objStacks.peekFront();
 		@Pc(28) int topCost = -99999999;
 		while (obj != null) {
 			@Pc(34) ObjType type = Static105.get(obj.anInt1490);
@@ -765,11 +766,11 @@ public final class Static83 {
 				topCost = cost;
 				topObj = obj;
 			}
-			obj = (Class2_Sub2_Sub12_Sub3) objStacks.method1231();
+			obj = (Class2_Sub2_Sub12_Sub3) objStacks.prev();
 		}
-		objStacks.method1229(topObj);
+		objStacks.pushFront(topObj);
 		@Pc(71) Class2_Sub2_Sub12_Sub3 local71 = null;
-		obj = (Class2_Sub2_Sub12_Sub3) objStacks.method1224();
+		obj = (Class2_Sub2_Sub12_Sub3) objStacks.peekFront();
 		@Pc(78) Class2_Sub2_Sub12_Sub3 local78 = null;
 		while (obj != null) {
 			if (topObj.anInt1490 != obj.anInt1490 && local71 == null) {
@@ -778,7 +779,7 @@ public final class Static83 {
 			if (obj.anInt1490 != topObj.anInt1490 && local71.anInt1490 != obj.anInt1490 && local78 == null) {
 				local78 = obj;
 			}
-			obj = (Class2_Sub2_Sub12_Sub3) objStacks.method1231();
+			obj = (Class2_Sub2_Sub12_Sub3) objStacks.prev();
 		}
 		@Pc(126) int bitset = x + (z << 7) + 1610612736;
 		Static93.scene.method1427(Static1.currentLevel, x, z, Static86.method1383(Static1.currentLevel, x * 128 + 64, z * 128 + 64), topObj, bitset, local71, local78);

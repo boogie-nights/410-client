@@ -77,7 +77,7 @@ public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(I)V")
 	public static void method3() {
-		for (@Pc(10) Class2_Sub2_Sub12_Sub6 local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.method1224(); local10 != null; local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.method1231()) {
+		for (@Pc(10) Class2_Sub2_Sub12_Sub6 local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.peekFront(); local10 != null; local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.prev()) {
 			if (local10.anInt2235 != currentLevel || local10.aBoolean169) {
 				local10.unlink();
 			} else if (Static107.loopCycle >= local10.anInt2231) {
