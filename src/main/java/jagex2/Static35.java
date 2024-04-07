@@ -1,6 +1,6 @@
 package jagex2;
 
-import jagex2.graphics.GraphicsProducingBuffer;
+import jagex2.graphics.FrameBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -17,7 +17,7 @@ public final class Static35 {
 	public static int anInt824;
 
 	@OriginalMember(owner = "client!ge", name = "I", descriptor = "Lclient!p;")
-	public static GraphicsProducingBuffer aClass45_16;
+	public static FrameBuffer aClass45_16;
 
 	@OriginalMember(owner = "client!ge", name = "q", descriptor = "I")
 	public static int anInt816 = 0;

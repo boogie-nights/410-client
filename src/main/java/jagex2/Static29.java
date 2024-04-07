@@ -1,6 +1,6 @@
 package jagex2;
 
-import jagex2.graphics.GraphicsProducingBuffer;
+import jagex2.graphics.FrameBuffer;
 import jagex2.io.ClientStream;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -9,13 +9,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static29 {
 
 	@OriginalMember(owner = "client!fd", name = "a", descriptor = "Lclient!p;")
-	public static GraphicsProducingBuffer aClass45_13;
+	public static FrameBuffer aClass45_13;
 
 	@OriginalMember(owner = "client!fd", name = "c", descriptor = "Lclient!eb;")
 	public static Packet aClass2_Sub3_2;
 
 	@OriginalMember(owner = "client!fd", name = "f", descriptor = "Lclient!p;")
-	public static GraphicsProducingBuffer aClass45_14;
+	public static FrameBuffer aClass45_14;
 
 	@OriginalMember(owner = "client!fd", name = "i", descriptor = "Lclient!hc;")
 	public static ClientStream aClass25_15;

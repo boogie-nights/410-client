@@ -2,7 +2,7 @@ package jagex2;
 
 import java.awt.Component;
 
-import jagex2.graphics.GraphicsProducingBuffer;
+import jagex2.graphics.FrameBuffer;
 import jagex2.graphics.PixFont;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -12,7 +12,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static7 {
 
 	@OriginalMember(owner = "client!ba", name = "d", descriptor = "Lclient!p;")
-	public static GraphicsProducingBuffer aClass45_5;
+	public static FrameBuffer aClass45_5;
 
 	@OriginalMember(owner = "client!ba", name = "b", descriptor = "I")
 	public static int anInt231 = 0;

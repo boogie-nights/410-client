@@ -167,7 +167,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIII)V")
-	public void method1411(@OriginalArg(0) int level, @OriginalArg(1) int tileX, @OriginalArg(2) int tileZ, @OriginalArg(3) int offset) {
+	public void setWallDecorationOffset(@OriginalArg(0) int level, @OriginalArg(1) int tileX, @OriginalArg(2) int tileZ, @OriginalArg(3) int offset) {
 		@Pc(8) Tile tile = this.levelTiles[level][tileX][tileZ];
 		if (tile == null) {
 			return;

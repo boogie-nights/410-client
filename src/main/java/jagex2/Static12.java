@@ -1,6 +1,6 @@
 package jagex2;
 
-import jagex2.graphics.GraphicsProducingBuffer;
+import jagex2.graphics.FrameBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -14,7 +14,7 @@ public final class Static12 {
 	public static long aLong24;
 
 	@OriginalMember(owner = "client!ca", name = "cb", descriptor = "Lclient!p;")
-	public static GraphicsProducingBuffer aClass45_6;
+	public static FrameBuffer aClass45_6;
 
 	@OriginalMember(owner = "client!ca", name = "Q", descriptor = "Lclient!o;")
 	public static Class40 aClass40_78 = Static13.method257("sideicons");

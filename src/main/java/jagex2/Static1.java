@@ -3,7 +3,7 @@ package jagex2;
 import java.util.Calendar;
 import java.util.Date;
 
-import jagex2.graphics.GraphicsProducingBuffer;
+import jagex2.graphics.FrameBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -20,7 +20,7 @@ public final class Static1 {
 	public static int anInt16;
 
 	@OriginalMember(owner = "client!a", name = "A", descriptor = "Lclient!p;")
-	public static GraphicsProducingBuffer aClass45_1;
+	public static FrameBuffer aClass45_1;
 
 	@OriginalMember(owner = "client!a", name = "e", descriptor = "Z")
 	public static volatile boolean clearScreen = true;

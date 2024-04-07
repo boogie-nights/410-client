@@ -3,7 +3,7 @@ package jagex2;
 import java.awt.Graphics;
 
 import jagex2.config.ComType;
-import jagex2.graphics.GraphicsProducingBuffer;
+import jagex2.graphics.FrameBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -11,7 +11,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static4 {
 
 	@OriginalMember(owner = "client!ad", name = "lb", descriptor = "Lclient!p;")
-	public static GraphicsProducingBuffer aClass45_4;
+	public static FrameBuffer aClass45_4;
 
 	@OriginalMember(owner = "client!ad", name = "vb", descriptor = "I")
 	public static int anInt135;

@@ -1,7 +1,7 @@
 package jagex2;
 
 import jagex2.datastruct.LruCache;
-import jagex2.graphics.GraphicsProducingBuffer;
+import jagex2.graphics.FrameBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -9,16 +9,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static61 {
 
 	@OriginalMember(owner = "client!ma", name = "e", descriptor = "Lclient!p;")
-	public static GraphicsProducingBuffer aClass45_22;
+	public static FrameBuffer aClass45_22;
 
 	@OriginalMember(owner = "client!ma", name = "l", descriptor = "Lclient!qd;")
 	public static Class48 aClass48_6;
 
 	@OriginalMember(owner = "client!ma", name = "n", descriptor = "Lclient!p;")
-	public static GraphicsProducingBuffer aClass45_23;
+	public static FrameBuffer aClass45_23;
 
 	@OriginalMember(owner = "client!ma", name = "w", descriptor = "Lclient!p;")
-	public static GraphicsProducingBuffer aClass45_24;
+	public static FrameBuffer aClass45_24;
 
 	@OriginalMember(owner = "client!ma", name = "b", descriptor = "Lclient!o;")
 	public static Class40 aClass40_445 = Static13.method257("");

@@ -14,7 +14,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!tb")
-public final class GraphicsProducingBuffer_Sub1 extends GraphicsProducingBuffer implements ImageProducer, ImageObserver {
+public final class ImageProducerFrameBuffer extends FrameBuffer implements ImageProducer, ImageObserver {
 
 	@OriginalMember(owner = "client!tb", name = "B", descriptor = "Ljava/awt/image/ColorModel;")
 	private ColorModel colorModel;
@@ -24,8 +24,8 @@ public final class GraphicsProducingBuffer_Sub1 extends GraphicsProducingBuffer 
 
 	@OriginalMember(owner = "client!tb", name = "isConsumer", descriptor = "(Ljava/awt/image/ImageConsumer;)Z")
 	@Override
-	public synchronized boolean isConsumer(@OriginalArg(0) ImageConsumer arg0) {
-		return arg0 == this.imageConsumer;
+	public synchronized boolean isConsumer(@OriginalArg(0) ImageConsumer consumer) {
+		return consumer == this.imageConsumer;
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(IILjava/awt/Component;I)V")

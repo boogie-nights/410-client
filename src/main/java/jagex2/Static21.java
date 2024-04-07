@@ -18,7 +18,7 @@ public final class Static21 {
 	public static Class2_Sub10 aClass2_Sub10_1;
 
 	@OriginalMember(owner = "client!ea", name = "l", descriptor = "Lclient!p;")
-	public static GraphicsProducingBuffer aClass45_11;
+	public static FrameBuffer aClass45_11;
 
 	@OriginalMember(owner = "client!ea", name = "x", descriptor = "Ljava/awt/Font;")
 	public static Font bold;

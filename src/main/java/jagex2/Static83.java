@@ -8,8 +8,8 @@ import jagex2.dash3d.CollisionMap;
 import jagex2.dash3d.World3D;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Renderable;
-import jagex2.graphics.GraphicsProducingBuffer;
-import jagex2.graphics.GraphicsProducingBuffer_Sub1;
+import jagex2.graphics.FrameBuffer;
+import jagex2.graphics.ImageProducerFrameBuffer;
 import jagex2.graphics.Model;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -392,8 +392,8 @@ public final class Static83 {
 	}
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(ILjava/awt/Component;II)Lclient!p;")
-	public static GraphicsProducingBuffer method1351(@OriginalArg(0) int arg0, @OriginalArg(1) Component arg1, @OriginalArg(3) int arg2) {
-		@Pc(7) GraphicsProducingBuffer_Sub1 local7 = new GraphicsProducingBuffer_Sub1();
+	public static FrameBuffer method1351(@OriginalArg(0) int arg0, @OriginalArg(1) Component arg1, @OriginalArg(3) int arg2) {
+		@Pc(7) ImageProducerFrameBuffer local7 = new ImageProducerFrameBuffer();
 		local7.method1473(arg1, arg0, arg2);
 		return local7;
 	}
@@ -540,7 +540,7 @@ public final class Static83 {
 					collision.addWall(loc.aBoolean79, rotation, z, x, shape);
 				}
 				if (loc.walloff != 16) {
-					scene.method1411(level, x, z, loc.walloff);
+					scene.setWallDecorationOffset(level, x, z, loc.walloff);
 				}
 			} else if (shape == 1) {
 				if (loc.anInt1048 == -1 && loc.anIntArray210 == null) {
@@ -596,7 +596,7 @@ public final class Static83 {
 						collision.addWall(loc.aBoolean79, rotation, z, x, shape);
 					}
 					if (loc.walloff != 16) {
-						scene.method1411(level, x, z, loc.walloff);
+						scene.setWallDecorationOffset(level, x, z, loc.walloff);
 					}
 				} else if (shape == 3) {
 					if (loc.anInt1048 == -1 && loc.anIntArray210 == null) {
