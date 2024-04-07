@@ -34,7 +34,7 @@ public final class CollisionMap {
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IIIIIII)Z")
-	public boolean method527(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	public boolean reachedWall(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		if (arg3 == arg4 && arg2 == arg1) {
 			return true;
 		}
@@ -158,7 +158,7 @@ public final class CollisionMap {
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(ZZIIII)V")
-	public void method528(@OriginalArg(0) boolean blockrange, @OriginalArg(2) int rotation, @OriginalArg(3) int tileZ, @OriginalArg(4) int tileX, @OriginalArg(5) int shape) {
+	public void addWall(@OriginalArg(0) boolean blockrange, @OriginalArg(2) int rotation, @OriginalArg(3) int tileZ, @OriginalArg(4) int tileX, @OriginalArg(5) int shape) {
 		@Pc(4) int z = tileZ - this.offsetZ;
 		@Pc(13) int x = tileX - this.offsetX;
 		if (shape == 0) {
@@ -280,12 +280,11 @@ public final class CollisionMap {
 			this.add(81920, x, z);
 			this.add(1024, x, z - 1);
 			this.add(4096, x - 1, z);
-			return;
 		}
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IIIZIII)V")
-	public void method529(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5) {
+	public void removeLoc(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5) {
 		@Pc(15) int local15;
 		if (arg2 == 1 || arg2 == 3) {
 			local15 = arg0;
@@ -340,7 +339,7 @@ public final class CollisionMap {
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IBZIII)V")
-	public void method532(@OriginalArg(0) int shape, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int rotation, @OriginalArg(5) int arg4) {
+	public void removeWall(@OriginalArg(0) int shape, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int rotation, @OriginalArg(5) int arg4) {
 		@Pc(4) int local4 = arg2 - this.offsetZ;
 		@Pc(13) int local13 = arg4 - this.offsetX;
 		if (shape == 0) {
@@ -553,19 +552,19 @@ public final class CollisionMap {
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IIIIIIIZ)Z")
-	public boolean method538(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	public boolean reachedLoc(@OriginalArg(0) int forceapproach, @OriginalArg(1) int srcZ, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int srcX, @OriginalArg(6) int arg6) {
 		@Pc(9) int local9 = arg3 + arg6 - 1;
 		@Pc(22) int local22 = arg2 + arg4 - 1;
-		if (arg2 <= arg5 && arg5 <= local22 && arg1 >= arg3 && arg1 <= local9) {
+		if (arg2 <= srcX && srcX <= local22 && srcZ >= arg3 && srcZ <= local9) {
 			return true;
-		} else if (arg5 == arg2 - 1 && arg3 <= arg1 && local9 >= arg1 && (this.flags[arg5 - this.offsetX][arg1 - this.offsetZ] & 0x8) == 0 && (arg0 & 0x8) == 0) {
+		} else if (srcX == arg2 - 1 && arg3 <= srcZ && local9 >= srcZ && (this.flags[srcX - this.offsetX][srcZ - this.offsetZ] & 0x8) == 0 && (forceapproach & 0x8) == 0) {
 			return true;
-		} else if (local22 + 1 == arg5 && arg3 <= arg1 && local9 >= arg1 && (this.flags[arg5 - this.offsetX][arg1 - this.offsetZ] & 0x80) == 0 && (arg0 & 0x2) == 0) {
+		} else if (local22 + 1 == srcX && arg3 <= srcZ && local9 >= srcZ && (this.flags[srcX - this.offsetX][srcZ - this.offsetZ] & 0x80) == 0 && (forceapproach & 0x2) == 0) {
 			return true;
-		} else if (arg1 == arg3 - 1 && arg2 <= arg5 && local22 >= arg5 && (this.flags[arg5 - this.offsetX][arg1 - this.offsetZ] & 0x2) == 0 && (arg0 & 0x4) == 0) {
+		} else if (srcZ == arg3 - 1 && arg2 <= srcX && local22 >= srcX && (this.flags[srcX - this.offsetX][srcZ - this.offsetZ] & 0x2) == 0 && (forceapproach & 0x4) == 0) {
 			return true;
 		} else {
-			return arg1 == local9 + 1 && arg5 >= arg2 && local22 >= arg5 && (this.flags[arg5 - this.offsetX][arg1 - this.offsetZ] & 0x20) == 0 && (arg0 & 0x1) == 0;
+			return srcZ == local9 + 1 && srcX >= arg2 && local22 >= srcX && (this.flags[srcX - this.offsetX][srcZ - this.offsetZ] & 0x20) == 0 && (forceapproach & 0x1) == 0;
 		}
 	}
 

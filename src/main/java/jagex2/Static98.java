@@ -92,7 +92,7 @@ public final class Static98 {
 				Static93.scene.method1439(arg4, arg1, arg2);
 				local116 = Static91.method1470(local85);
 				if (local116.blockwalk) {
-					Static79.aClass20Array3[arg4].method532(local102, local116.aBoolean79, arg2, local98, arg1);
+					Static79.aClass20Array3[arg4].removeWall(local102, local116.aBoolean79, arg2, local98, arg1);
 				}
 			}
 			if (arg0 == 1) {
@@ -105,7 +105,7 @@ public final class Static98 {
 					return;
 				}
 				if (local116.blockwalk) {
-					Static79.aClass20Array3[arg4].method529(local116.anInt1036, local116.anInt1040, local98, local116.aBoolean79, arg1, arg2);
+					Static79.aClass20Array3[arg4].removeLoc(local116.anInt1036, local116.anInt1040, local98, local116.aBoolean79, arg1, arg2);
 				}
 			}
 			if (arg0 == 3) {

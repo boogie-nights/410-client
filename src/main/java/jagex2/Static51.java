@@ -121,7 +121,7 @@ public final class Static51 {
 			}
 			arg5.method1440(arg7, arg8, arg1, local55, local118, null, Static5.ROTATION_WALL_TYPE[arg6], 0, local77, local65);
 			if (local59.blockwalk) {
-				arg3.method528(local59.aBoolean79, arg6, arg1, arg8, arg2);
+				arg3.addWall(local59.aBoolean79, arg6, arg1, arg8, arg2);
 			}
 		} else if (arg2 == 1) {
 			if (local59.anInt1048 == -1 && local59.anIntArray210 == null) {
@@ -131,7 +131,7 @@ public final class Static51 {
 			}
 			arg5.method1440(arg7, arg8, arg1, local55, local118, null, Static99.ROTATION_WALL_CORNER_TYPE[arg6], 0, local77, local65);
 			if (local59.blockwalk) {
-				arg3.method528(local59.aBoolean79, arg6, arg1, arg8, arg2);
+				arg3.addWall(local59.aBoolean79, arg6, arg1, arg8, arg2);
 			}
 		} else {
 			@Pc(468) int local468;
@@ -148,7 +148,7 @@ public final class Static51 {
 				}
 				arg5.method1440(arg7, arg8, arg1, local55, local490, local500, Static5.ROTATION_WALL_TYPE[arg6], Static5.ROTATION_WALL_TYPE[local468], local77, local65);
 				if (local59.blockwalk) {
-					arg3.method528(local59.aBoolean79, arg6, arg1, arg8, arg2);
+					arg3.addWall(local59.aBoolean79, arg6, arg1, arg8, arg2);
 				}
 			} else if (arg2 == 3) {
 				if (local59.anInt1048 == -1 && local59.anIntArray210 == null) {
@@ -158,7 +158,7 @@ public final class Static51 {
 				}
 				arg5.method1440(arg7, arg8, arg1, local55, local118, null, Static99.ROTATION_WALL_CORNER_TYPE[arg6], 0, local77, local65);
 				if (local59.blockwalk) {
-					arg3.method528(local59.aBoolean79, arg6, arg1, arg8, arg2);
+					arg3.addWall(local59.aBoolean79, arg6, arg1, arg8, arg2);
 				}
 			} else if (arg2 == 9) {
 				if (local59.anInt1048 == -1 && local59.anIntArray210 == null) {

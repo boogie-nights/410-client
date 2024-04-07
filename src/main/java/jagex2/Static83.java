@@ -211,7 +211,7 @@ public final class Static83 {
 				break;
 			}
 			if (arg7 != 0) {
-				if ((arg7 < 5 || arg7 == 10) && Static79.aClass20Array3[Static1.currentLevel].method527(arg1, local55, arg0, arg10, local19, arg7 - 1)) {
+				if ((arg7 < 5 || arg7 == 10) && Static79.aClass20Array3[Static1.currentLevel].reachedWall(arg1, local55, arg0, arg10, local19, arg7 - 1)) {
 					local72 = true;
 					break;
 				}
@@ -220,7 +220,7 @@ public final class Static83 {
 					break;
 				}
 			}
-			if (arg9 != 0 && arg3 != 0 && Static79.aClass20Array3[Static1.currentLevel].method538(arg4, local55, arg10, arg0, arg9, local19, arg3)) {
+			if (arg9 != 0 && arg3 != 0 && Static79.aClass20Array3[Static1.currentLevel].reachedLoc(arg4, local55, arg10, arg0, arg9, local19, arg3)) {
 				local72 = true;
 				break;
 			}
@@ -536,7 +536,7 @@ public final class Static83 {
 					}
 				}
 				if (loc.blockwalk && collision != null) {
-					collision.method528(loc.aBoolean79, rotation, z, x, shape);
+					collision.addWall(loc.aBoolean79, rotation, z, x, shape);
 				}
 				if (loc.walloff != 16) {
 					scene.method1411(level, x, z, loc.walloff);
@@ -560,7 +560,7 @@ public final class Static83 {
 					}
 				}
 				if (loc.blockwalk && collision != null) {
-					collision.method528(loc.aBoolean79, rotation, z, x, shape);
+					collision.addWall(loc.aBoolean79, rotation, z, x, shape);
 				}
 			} else {
 				@Pc(912) int local912;
@@ -592,7 +592,7 @@ public final class Static83 {
 						}
 					}
 					if (loc.blockwalk && collision != null) {
-						collision.method528(loc.aBoolean79, rotation, z, x, shape);
+						collision.addWall(loc.aBoolean79, rotation, z, x, shape);
 					}
 					if (loc.walloff != 16) {
 						scene.method1411(level, x, z, loc.walloff);
@@ -616,7 +616,7 @@ public final class Static83 {
 						}
 					}
 					if (loc.blockwalk && collision != null) {
-						collision.method528(loc.aBoolean79, rotation, z, x, shape);
+						collision.addWall(loc.aBoolean79, rotation, z, x, shape);
 					}
 				} else if (shape == 9) {
 					if (loc.anInt1048 == -1 && loc.anIntArray210 == null) {
