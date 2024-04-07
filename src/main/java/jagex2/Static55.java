@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -50,7 +51,7 @@ public final class Static55 {
 	}
 
 	@OriginalMember(owner = "client!kd", name = "a", descriptor = "(Lclient!ud;Lclient!o;Lclient!o;Z)Lclient!fc;")
-	public static Class2_Sub2_Sub2_Sub2 method941(@OriginalArg(0) Class5 arg0, @OriginalArg(1) Class40 arg1, @OriginalArg(2) Class40 arg2) {
+	public static PixFont method941(@OriginalArg(0) Class5 arg0, @OriginalArg(1) Class40 arg1, @OriginalArg(2) Class40 arg2) {
 		@Pc(13) int local13 = arg0.method80(arg2);
 		@Pc(19) int local19 = arg0.method72(arg1, local13);
 		return Static13.method260(local13, arg0, local19);

@@ -1,13 +1,18 @@
-package jagex2;
+package jagex2.graphics;
 
 import java.util.Random;
+
+import jagex2.Class40;
+import jagex2.Static26;
+import jagex2.Static28;
+import jagex2.graphics.Draw2D;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!fc")
-public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
+public final class PixFont extends Draw2D {
 
 	@OriginalMember(owner = "client!fc", name = "nb", descriptor = "I")
 	public int height = 0;
@@ -31,7 +36,7 @@ public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 	private final int[] anIntArray140;
 
 	@OriginalMember(owner = "client!fc", name = "<init>", descriptor = "([I[I[I[I[[B)V")
-	public Class2_Sub2_Sub2_Sub2(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) byte[][] arg4) {
+	public PixFont(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) byte[][] arg4) {
 		this.charOffsetY = arg0;
 		this.anIntArray141 = arg1;
 		this.anIntArray140 = arg2;

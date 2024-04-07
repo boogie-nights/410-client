@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.config.ComType;
 import jagex2.graphics.Draw3D;
+import jagex2.graphics.PixFont;
 import jagex2.graphics.Static6;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -23,7 +24,7 @@ public final class Static103 {
 	public static int[] anIntArray547;
 
 	@OriginalMember(owner = "client!vd", name = "z", descriptor = "Lclient!fc;")
-	public static Class2_Sub2_Sub2_Sub2 aClass2_Sub2_Sub2_Sub2_5;
+	public static PixFont aClass2_Sub2_Sub2_Sub2_5;
 
 	@OriginalMember(owner = "client!vd", name = "B", descriptor = "I")
 	public static int anInt2495;
@@ -262,7 +263,7 @@ public final class Static103 {
 			} else {
 				Static43.anInt1850 = 60;
 				Static94.anInt2194 = 40;
-				Static49.aClass2_Sub2_Sub2_Sub2Array9 = new Class2_Sub2_Sub2_Sub2[] { Static76.aClass2_Sub2_Sub2_Sub2_4, aClass2_Sub2_Sub2_Sub2_5, Static14.aClass2_Sub2_Sub2_Sub2_1, Static42.aClass2_Sub2_Sub2_Sub2_2 };
+				Static49.aClass2_Sub2_Sub2_Sub2Array9 = new PixFont[] { Static76.aClass2_Sub2_Sub2_Sub2_4, aClass2_Sub2_Sub2_Sub2_5, Static14.aClass2_Sub2_Sub2_Sub2_1, Static42.aClass2_Sub2_Sub2_Sub2_2 };
 				Static98.progressMeterText = Static102.textLoadedFonts;
 			}
 		} else if (Static43.anInt1850 == 60) {

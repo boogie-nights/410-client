@@ -1,12 +1,11 @@
 package jagex2.graphics;
 
-import jagex2.Class2_Sub2_Sub2;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!b")
-public final class Draw3D extends Class2_Sub2_Sub2 {
+public final class Draw3D extends Draw2D {
 
 	@OriginalMember(owner = "client!b", name = "Z", descriptor = "[I")
 	public static int[] sin = new int[2048];

@@ -5,13 +5,15 @@ import java.awt.Image;
 import java.awt.MediaTracker;
 import java.awt.Toolkit;
 import java.awt.image.PixelGrabber;
+
+import jagex2.graphics.Draw2D;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!vb")
-public final class Class2_Sub2_Sub2_Sub4 extends Class2_Sub2_Sub2 {
+public final class Class2_Sub2_Sub2_Sub4 extends Draw2D {
 
 	@OriginalMember(owner = "client!vb", name = "V", descriptor = "I")
 	public int anInt2441;

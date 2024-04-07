@@ -18,11 +18,11 @@ public abstract class Class2_Sub2_Sub12 extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "(IIIIIIIII)V")
-	public void draw(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8) {
-		@Pc(7) Model local7 = this.method1533();
-		if (local7 != null) {
-			this.maxY = local7.maxY;
-			local7.draw(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+	public void draw(@OriginalArg(0) int yaw, @OriginalArg(1) int sinEyePitch, @OriginalArg(2) int cosEyePitch, @OriginalArg(3) int sinEyeYaw, @OriginalArg(4) int cosEyeYaw, @OriginalArg(5) int relativeX, @OriginalArg(6) int relativeY, @OriginalArg(7) int relativeZ, @OriginalArg(8) int bitset) {
+		@Pc(7) Model model = this.method1533();
+		if (model != null) {
+			this.maxY = model.maxY;
+			model.draw(yaw, sinEyePitch, cosEyePitch, sinEyeYaw, cosEyeYaw, relativeX, relativeY, relativeZ, bitset);
 		}
 	}
 }

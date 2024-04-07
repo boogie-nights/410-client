@@ -1,12 +1,13 @@
 package jagex2;
 
+import jagex2.graphics.Draw2D;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!qb")
-public final class Class2_Sub2_Sub2_Sub3 extends Class2_Sub2_Sub2 {
+public final class Class2_Sub2_Sub2_Sub3 extends Draw2D {
 
 	@OriginalMember(owner = "client!qb", name = "V", descriptor = "I")
 	public int width;

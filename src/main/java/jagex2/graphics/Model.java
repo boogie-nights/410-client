@@ -1161,11 +1161,11 @@ public final class Model extends Class2_Sub2_Sub12 {
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(IIIIIIIII)V")
 	@Override
-	public void draw(@OriginalArg(0) int yaw, @OriginalArg(1) int sinEyePitch, @OriginalArg(2) int cosEyePitch, @OriginalArg(3) int sinEyeYaw, @OriginalArg(4) int cowEyeYaw, @OriginalArg(5) int relativeX, @OriginalArg(6) int relativeY, @OriginalArg(7) int relativeZ, @OriginalArg(8) int bitset) {
+	public void draw(@OriginalArg(0) int yaw, @OriginalArg(1) int sinEyePitch, @OriginalArg(2) int cosEyePitch, @OriginalArg(3) int sinEyeYaw, @OriginalArg(4) int cosEyeYaw, @OriginalArg(5) int relativeX, @OriginalArg(6) int relativeY, @OriginalArg(7) int relativeZ, @OriginalArg(8) int bitset) {
 		if (this.anInt1740 != 1) {
 			this.method1135();
 		}
-		@Pc(15) int zPrime = relativeZ * cowEyeYaw - relativeX * sinEyeYaw >> 16;
+		@Pc(15) int zPrime = relativeZ * cosEyeYaw - relativeX * sinEyeYaw >> 16;
 		@Pc(25) int midZ = relativeY * sinEyePitch + zPrime * cosEyePitch >> 16;
 		@Pc(32) int radiusCosEyePatch = this.minX * cosEyePitch >> 16;
 
@@ -1173,7 +1173,7 @@ public final class Model extends Class2_Sub2_Sub12 {
 		if (maxZ <= 50 || midZ >= 3500) {
 			return;
 		}
-		@Pc(53) int midX = relativeZ * sinEyeYaw + relativeX * cowEyeYaw >> 16;
+		@Pc(53) int midX = relativeZ * sinEyeYaw + relativeX * cosEyeYaw >> 16;
 		@Pc(60) int leftX = midX - this.minX << 9;
 		if (leftX / maxZ >= Static6.centerX2d) {
 			return;
@@ -1253,8 +1253,8 @@ public final class Model extends Class2_Sub2_Sub12 {
 			x += relativeX;
 			y += relativeY;
 			z += relativeZ;
-			temp = z * sinEyeYaw + x * cowEyeYaw >> 16;
-			z = z * cowEyeYaw - x * sinEyeYaw >> 16;
+			temp = z * sinEyeYaw + x * cosEyeYaw >> 16;
+			z = z * cosEyeYaw - x * sinEyeYaw >> 16;
 			x = temp;
 			temp = y * cosEyePitch - z * sinEyePitch >> 16;
 			z = y * sinEyePitch + z * cosEyePitch >> 16;

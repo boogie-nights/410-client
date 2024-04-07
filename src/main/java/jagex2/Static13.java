@@ -3,6 +3,7 @@ package jagex2;
 import java.awt.Component;
 
 import jagex2.client.GameShell;
+import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -105,7 +106,7 @@ public final class Static13 {
 	}
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(ILclient!ud;IB)Lclient!fc;")
-	public static Class2_Sub2_Sub2_Sub2 method260(@OriginalArg(0) int arg0, @OriginalArg(1) Class5 arg1, @OriginalArg(2) int arg2) {
+	public static PixFont method260(@OriginalArg(0) int arg0, @OriginalArg(1) Class5 arg1, @OriginalArg(2) int arg2) {
 		return Static92.method1484(arg2, arg1, arg0) ? Static21.method406() : null;
 	}
 }

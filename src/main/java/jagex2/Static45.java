@@ -50,9 +50,9 @@ public final class Static45 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(Z)V")
 	public static void method801() {
-		Static25.aFontMetrics1 = null;
+		Static25.boldMetrics = null;
 		Static79.anImage4 = null;
-		Static21.aFont1 = null;
+		Static21.bold = null;
 	}
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(B)V")

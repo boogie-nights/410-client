@@ -5,6 +5,7 @@ import java.io.IOException;
 import jagex2.config.ComType;
 import jagex2.config.ObjType;
 import jagex2.graphics.GraphicsProducingBuffer;
+import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -1220,7 +1221,7 @@ public final class Static2 {
 			Static14.aClass2_Sub2_Sub2_Sub2_1.method566(Static101.aClass40_695, 239, 40, 0);
 			Static14.aClass2_Sub2_Sub2_Sub2_1.method566(Static80.method1334(new Class40[] { Static61.aClass40_444, Static17.aClass40_116 }), 239, 60, 128);
 		} else {
-			@Pc(68) Class2_Sub2_Sub2_Sub2 local68;
+			@Pc(68) PixFont local68;
 			@Pc(75) int local75;
 			@Pc(87) int local87;
 			if (Static101.anInt2399 == 3) {
@@ -1329,8 +1330,8 @@ public final class Static2 {
 							if (local222 == 6 && Static102.splitPrivateChat == 0 && Static104.privateChatSetting < 2) {
 								local75++;
 								if (local218 > 0 && local218 < 110) {
-									local68.drawString(Static80.method1334(new Class40[] { Static100.aClass40_690, local228, Static97.aClass40_673 }), 4, local218, 0);
-									local68.drawString(Static63.messageText[local87], local68.method568(Static80.method1334(new Class40[] { Static100.aClass40_690, local228 })) + 12, local218, 8388608);
+									local68.drawString(Static80.method1334(new Class40[] { Static100.textFriendsChatTo, local228, Static97.aClass40_673 }), 4, local218, 0);
+									local68.drawString(Static63.messageText[local87], local68.method568(Static80.method1334(new Class40[] { Static100.textFriendsChatTo, local228 })) + 12, local218, 8388608);
 								}
 							}
 							if (local222 == 8 && (Static103.tradeChatSetting == 0 || Static103.tradeChatSetting == 1 && Static38.isFriend(local228))) {

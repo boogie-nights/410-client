@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -45,7 +46,7 @@ public final class Static101 {
 	public static Class40 aClass40_695 = Static13.method257("Enter name:");
 
 	@OriginalMember(owner = "client!va", name = "a", descriptor = "(Lclient!fc;Ljava/awt/Graphics;ILclient!fc;)V")
-	public static void method1589(@OriginalArg(0) Class2_Sub2_Sub2_Sub2 arg0, @OriginalArg(1) Graphics arg1, @OriginalArg(3) Class2_Sub2_Sub2_Sub2 arg2) {
+	public static void method1589(@OriginalArg(0) PixFont arg0, @OriginalArg(1) Graphics arg1, @OriginalArg(3) PixFont arg2) {
 		Static107.aClass45_31.bind();
 		if (Static44.anInt1075 == 0 || Static44.anInt1075 == 5) {
 			arg2.method566(Static104.aClass40_724, 180, 54, 16777215);

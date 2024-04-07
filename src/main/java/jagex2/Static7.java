@@ -3,6 +3,7 @@ package jagex2;
 import java.awt.Component;
 
 import jagex2.graphics.GraphicsProducingBuffer;
+import jagex2.graphics.PixFont;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -59,7 +60,7 @@ public final class Static7 {
 		if (Static102.splitPrivateChat == 0) {
 			return;
 		}
-		@Pc(13) Class2_Sub2_Sub2_Sub2 local13 = Static103.aClass2_Sub2_Sub2_Sub2_5;
+		@Pc(13) PixFont font = Static103.aClass2_Sub2_Sub2_Sub2_5;
 		@Pc(15) int lineOffset = 0;
 		if (Static84.systemUpdateTimer != 0) {
 			lineOffset = 1;
@@ -81,9 +82,9 @@ public final class Static7 {
 				if ((type == 3 || type == 7) && (type == 7 || Static104.privateChatSetting == 0 || Static104.privateChatSetting == 1 && Static38.isFriend(username))) {
 					y = 329 - lineOffset * 13;
 					lineOffset++;
-					local13.drawString(Static45.aClass40_340, 4, y, 0);
-					local13.drawString(Static45.aClass40_340, 4, y - 1, 65535);
-					@Pc(131) int local131 = local13.method568(Static82.aClass40_564) + 4;
+					font.drawString(Static45.aClass40_340, 4, y, 0);
+					font.drawString(Static45.aClass40_340, 4, y - 1, 65535);
+					@Pc(131) int local131 = font.method568(Static82.aClass40_564) + 4;
 					if (local42 == 1) {
 						Static70.aClass2_Sub2_Sub2_Sub3Array8[0].method1320(local131, y - 12);
 						local131 += 14;
@@ -92,8 +93,8 @@ public final class Static7 {
 						Static70.aClass2_Sub2_Sub2_Sub3Array8[1].method1320(local131, y - 12);
 						local131 += 14;
 					}
-					local13.drawString(Static80.method1334(new Class40[] { username, Static1.textFriendsChatColon, Static63.messageText[i] }), local131, y, 0);
-					local13.drawString(Static80.method1334(new Class40[] { username, Static1.textFriendsChatColon, Static63.messageText[i] }), local131, y - 1, 65535);
+					font.drawString(Static80.method1334(new Class40[] { username, Static1.textFriendsChatColon, Static63.messageText[i] }), local131, y, 0);
+					font.drawString(Static80.method1334(new Class40[] { username, Static1.textFriendsChatColon, Static63.messageText[i] }), local131, y - 1, 65535);
 					if (lineOffset >= 5) {
 						return;
 					}
@@ -101,16 +102,16 @@ public final class Static7 {
 				if (type == 5 && Static104.privateChatSetting < 2) {
 					y = 329 - lineOffset * 13;
 					lineOffset++;
-					local13.drawString(Static63.messageText[i], 4, y, 0);
-					local13.drawString(Static63.messageText[i], 4, y - 1, 65535);
+					font.drawString(Static63.messageText[i], 4, y, 0);
+					font.drawString(Static63.messageText[i], 4, y - 1, 65535);
 					if (lineOffset >= 5) {
 						return;
 					}
 				}
 				if (type == 6 && Static104.privateChatSetting < 2) {
 					y = 329 - lineOffset * 13;
-					local13.drawString(Static80.method1334(new Class40[] { Static100.aClass40_690, username, Static1.textFriendsChatColon, Static63.messageText[i] }), 4, y, 0);
-					local13.drawString(Static80.method1334(new Class40[] { Static100.aClass40_690, username, Static1.textFriendsChatColon, Static63.messageText[i] }), 4, y - 1, 65535);
+					font.drawString(Static80.method1334(new Class40[] { Static100.textFriendsChatTo, username, Static1.textFriendsChatColon, Static63.messageText[i] }), 4, y, 0);
+					font.drawString(Static80.method1334(new Class40[] { Static100.textFriendsChatTo, username, Static1.textFriendsChatColon, Static63.messageText[i] }), 4, y - 1, 65535);
 					lineOffset++;
 					if (lineOffset >= 5) {
 						return;

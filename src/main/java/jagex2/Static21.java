@@ -4,10 +4,7 @@ import java.awt.Font;
 
 import jagex2.config.ComType;
 import jagex2.config.ObjType;
-import jagex2.graphics.Draw3D;
-import jagex2.graphics.GraphicsProducingBuffer;
-import jagex2.graphics.Model;
-import jagex2.graphics.Static6;
+import jagex2.graphics.*;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -22,7 +19,7 @@ public final class Static21 {
 	public static GraphicsProducingBuffer aClass45_11;
 
 	@OriginalMember(owner = "client!ea", name = "x", descriptor = "Ljava/awt/Font;")
-	public static Font aFont1;
+	public static Font bold;
 
 	@OriginalMember(owner = "client!ea", name = "d", descriptor = "[J")
 	public static long[] aLongArray2 = new long[200];
@@ -50,7 +47,7 @@ public final class Static21 {
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(B)V")
 	public static void method398() {
-		aFont1 = null;
+		bold = null;
 		aClass40_138 = null;
 		aClass40_136 = null;
 		aClass2_Sub10_1 = null;
@@ -295,7 +292,7 @@ public final class Static21 {
 							Static26.method1609(local65, local60, local35.anInt1605, local35.height, local160, 256 - (local35.anInt1604 & 0xFF));
 						}
 					} else {
-						@Pc(739) Class2_Sub2_Sub2_Sub2 local739;
+						@Pc(739) PixFont local739;
 						@Pc(843) Class40 local843;
 						if (local35.anInt1613 == 4) {
 							local739 = Static49.aClass2_Sub2_Sub2_Sub2Array9[local35.anInt1568];
@@ -410,7 +407,7 @@ public final class Static21 {
 							if (local35.anInt1613 == 8 && Static97.method1564(arg3, local29) && Static66.anInt1645 == 100) {
 								local160 = 0;
 								local162 = 0;
-								@Pc(1210) Class2_Sub2_Sub2_Sub2 local1210 = Static103.aClass2_Sub2_Sub2_Sub2_5;
+								@Pc(1210) PixFont local1210 = Static103.aClass2_Sub2_Sub2_Sub2_5;
 								local843 = local35.text;
 								local843 = Static4.method94(local35, local843);
 								@Pc(1231) Class40 local1231;
@@ -469,8 +466,8 @@ public final class Static21 {
 	}
 
 	@OriginalMember(owner = "client!ea", name = "b", descriptor = "(I)Lclient!fc;")
-	public static Class2_Sub2_Sub2_Sub2 method406() {
-		@Pc(20) Class2_Sub2_Sub2_Sub2 local20 = new Class2_Sub2_Sub2_Sub2(Static97.anIntArray503, Static66.anIntArray338, Static19.anIntArray86, Static20.anIntArray92, Static91.aByteArrayArray10);
+	public static PixFont method406() {
+		@Pc(20) PixFont local20 = new PixFont(Static97.anIntArray503, Static66.anIntArray338, Static19.anIntArray86, Static20.anIntArray92, Static91.aByteArrayArray10);
 		Static93.method1485();
 		return local20;
 	}

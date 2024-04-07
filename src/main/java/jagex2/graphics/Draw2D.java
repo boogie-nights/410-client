@@ -1,8 +1,8 @@
-package jagex2;
+package jagex2.graphics;
 
 import jagex2.datastruct.Hashable;
 import org.openrs2.deob.annotation.OriginalClass;
 
 @OriginalClass("client!fa")
-public class Class2_Sub2_Sub2 extends Hashable {
+public class Draw2D extends Hashable {
 }

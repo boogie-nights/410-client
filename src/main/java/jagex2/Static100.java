@@ -25,7 +25,7 @@ public final class Static100 {
 	public static int anInt2396 = 0;
 
 	@OriginalMember(owner = "client!v", name = "ib", descriptor = "Lclient!o;")
-	public static Class40 aClass40_690 = Static13.method257("To ");
+	public static Class40 textFriendsChatTo = Static13.method257("To ");
 
 	@OriginalMember(owner = "client!v", name = "kb", descriptor = "Lclient!o;")
 	public static Class40 textConnectingToUpdateServer = Static13.method257("Connecting to update server");
@@ -33,7 +33,7 @@ public final class Static100 {
 	@OriginalMember(owner = "client!v", name = "f", descriptor = "(I)V")
 	public static void method1580() {
 		aClass40_688 = null;
-		aClass40_690 = null;
+		textFriendsChatTo = null;
 		aClass40_689 = null;
 		aBooleanArray37 = null;
 		textConnectingToUpdateServer = null;

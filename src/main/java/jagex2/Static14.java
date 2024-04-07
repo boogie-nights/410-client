@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.config.ObjType;
+import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -11,7 +12,7 @@ public final class Static14 {
 	public static int anInt310;
 
 	@OriginalMember(owner = "client!cc", name = "h", descriptor = "Lclient!fc;")
-	public static Class2_Sub2_Sub2_Sub2 aClass2_Sub2_Sub2_Sub2_1;
+	public static PixFont aClass2_Sub2_Sub2_Sub2_1;
 
 	@OriginalMember(owner = "client!cc", name = "c", descriptor = "I")
 	public static final int anInt311 = 7759444;

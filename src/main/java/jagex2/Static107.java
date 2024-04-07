@@ -4,6 +4,7 @@ import java.awt.Graphics;
 
 import jagex2.config.ComType;
 import jagex2.graphics.GraphicsProducingBuffer;
+import jagex2.graphics.PixFont;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -278,7 +279,7 @@ public final class Static107 {
 	}
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(ILjava/awt/Graphics;Lclient!fc;III)V")
-	public static void method1664(@OriginalArg(0) int arg0, @OriginalArg(1) Graphics arg1, @OriginalArg(2) Class2_Sub2_Sub2_Sub2 arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
+	public static void method1664(@OriginalArg(0) int arg0, @OriginalArg(1) Graphics arg1, @OriginalArg(2) PixFont arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
 		Static4.aClass45_4.bind();
 		Static51.aClass2_Sub2_Sub2_Sub3_11.method1320(0, 0);
 		arg2.method578(Static29.aClass40_219, 55, 28, 16777215, true);

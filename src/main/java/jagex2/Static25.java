@@ -18,7 +18,7 @@ public final class Static25 {
 	public static int[] anIntArray126;
 
 	@OriginalMember(owner = "client!f", name = "mb", descriptor = "Ljava/awt/FontMetrics;")
-	public static FontMetrics aFontMetrics1;
+	public static FontMetrics boldMetrics;
 
 	@OriginalMember(owner = "client!f", name = "eb", descriptor = "I")
 	public static int anInt667 = 2;
@@ -91,7 +91,7 @@ public final class Static25 {
 		aClass45_12 = null;
 		aClass40_192 = null;
 		aClass47_7 = null;
-		aFontMetrics1 = null;
+		boldMetrics = null;
 		aClass5_Sub1_4 = null;
 		aClass40_191 = null;
 		anIntArray126 = null;

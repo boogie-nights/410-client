@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.datastruct.HashTable;
+import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -17,7 +18,7 @@ public final class Static76 {
 	public static int anInt2154;
 
 	@OriginalMember(owner = "client!p", name = "s", descriptor = "Lclient!fc;")
-	public static Class2_Sub2_Sub2_Sub2 aClass2_Sub2_Sub2_Sub2_4;
+	public static PixFont aClass2_Sub2_Sub2_Sub2_4;
 
 	@OriginalMember(owner = "client!p", name = "c", descriptor = "Lclient!o;")
 	public static Class40 aClass40_613 = Static13.method257(" with @yel@");
