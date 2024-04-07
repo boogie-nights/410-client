@@ -117,7 +117,7 @@ public final class Static73 {
 		Static93.scene.method1414();
 		System.gc();
 		for (@Pc(176) int local176 = 0; local176 < 4; local176++) {
-			Static79.aClass20Array3[local176].method534();
+			Static79.aClass20Array3[local176].reset();
 		}
 		@Pc(199) int local199;
 		for (local127 = 0; local127 < 4; local127++) {

@@ -352,7 +352,7 @@ public final class PixFont extends Draw2D {
 		} else if (arg0.method1184(Static28.aClass40_209)) {
 			return 16711935;
 		} else if (arg0.method1184(Static28.aClass40_217)) {
-			return 16777215;
+			return 0xFFFFFF;
 		} else if (arg0.method1184(Static28.aClass40_214)) {
 			return 0;
 		} else if (arg0.method1184(Static28.aClass40_212)) {

@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.dash3d.CollisionMap;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -135,7 +136,7 @@ public final class Static97 {
 	}
 
 	@OriginalMember(owner = "client!ub", name = "a", descriptor = "(IILclient!sd;[BI[Lclient!fb;)V")
-	public static void method1565(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class55 arg2, @OriginalArg(3) byte[] arg3, @OriginalArg(5) Class20[] arg4) {
+	public static void method1565(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class55 arg2, @OriginalArg(3) byte[] arg3, @OriginalArg(5) CollisionMap[] arg4) {
 		@Pc(10) Packet local10 = new Packet(arg3);
 		@Pc(12) int local12 = -1;
 		while (true) {
@@ -164,7 +165,7 @@ public final class Static97 {
 					if ((Static61.aByteArrayArrayArray7[1][local66][local70] & 0x2) == 2) {
 						local87 = local44 - 1;
 					}
-					@Pc(101) Class20 local101 = null;
+					@Pc(101) CollisionMap local101 = null;
 					if (local87 >= 0) {
 						local101 = arg4[local87];
 					}

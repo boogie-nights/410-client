@@ -3,6 +3,7 @@ package jagex2;
 import java.math.BigInteger;
 
 import jagex2.config.ComType;
+import jagex2.dash3d.CollisionMap;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Class2_Sub2_Sub12;
 import jagex2.io.Packet;
@@ -49,7 +50,7 @@ public final class Static51 {
 	public static volatile int anInt1166 = 0;
 
 	@OriginalMember(owner = "client!k", name = "a", descriptor = "(IIILclient!fb;ILclient!sd;BIII)V")
-	public static void method845(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class20 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Class55 arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
+	public static void method845(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) CollisionMap arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Class55 arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
 		@Pc(13) int local13 = Static91.anIntArrayArrayArray8[arg0][arg8][arg1];
 		@Pc(23) int local23 = Static91.anIntArrayArrayArray8[arg0][arg8 + 1][arg1];
 		@Pc(35) int local35 = Static91.anIntArrayArrayArray8[arg0][arg8 + 1][arg1 + 1];
@@ -73,7 +74,7 @@ public final class Static51 {
 			}
 			arg5.method1416(arg7, arg8, arg1, local55, local118, local77, local65);
 			if (local59.blockwalk && local59.anInt1054 == 1) {
-				arg3.method536(arg1, arg8);
+				arg3.setBlocked(arg8, arg1);
 			}
 			return;
 		}
@@ -100,7 +101,7 @@ public final class Static51 {
 				arg5.method1410(arg7, arg8, arg1, local55, local213, local216, local118, local198, local77, local65);
 			}
 			if (local59.blockwalk) {
-				arg3.method531(local59.anInt1040, local59.aBoolean79, arg8, arg6, arg1, local59.anInt1036);
+				arg3.addLoc(local59.anInt1040, local59.aBoolean79, arg8, arg6, arg1, local59.anInt1036);
 			}
 		} else if (arg2 >= 12) {
 			if (local59.anInt1048 == -1 && local59.anIntArray210 == null) {
@@ -110,7 +111,7 @@ public final class Static51 {
 			}
 			arg5.method1410(arg7, arg8, arg1, local55, 1, 1, local118, 0, local77, local65);
 			if (local59.blockwalk) {
-				arg3.method531(local59.anInt1040, local59.aBoolean79, arg8, arg6, arg1, local59.anInt1036);
+				arg3.addLoc(local59.anInt1040, local59.aBoolean79, arg8, arg6, arg1, local59.anInt1036);
 			}
 		} else if (arg2 == 0) {
 			if (local59.anInt1048 == -1 && local59.anIntArray210 == null) {
@@ -167,7 +168,7 @@ public final class Static51 {
 				}
 				arg5.method1410(arg7, arg8, arg1, local55, 1, 1, local118, 0, local77, local65);
 				if (local59.blockwalk) {
-					arg3.method531(local59.anInt1040, local59.aBoolean79, arg8, arg6, arg1, local59.anInt1036);
+					arg3.addLoc(local59.anInt1040, local59.aBoolean79, arg8, arg6, arg1, local59.anInt1036);
 				}
 			} else {
 				if (local59.aBoolean84) {

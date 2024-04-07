@@ -69,7 +69,7 @@ public final class Static5 {
 		if (Static34.menuSize > 2) {
 			tooltip = Static80.method1334(new Class40[] { tooltip, aClass40_45, Static53.method859(Static34.menuSize - 2), Static62.aClass40_455 });
 		}
-		Static14.aClass2_Sub2_Sub2_Sub2_1.drawStringTooltip(tooltip, 4, 16777215, Static107.loopCycle / 1000);
+		Static14.aClass2_Sub2_Sub2_Sub2_1.drawStringTooltip(tooltip, 4, 0xFFFFFF, Static107.loopCycle / 1000);
 	}
 
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(BI)Lclient!ee;")

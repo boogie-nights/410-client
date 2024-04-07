@@ -145,7 +145,7 @@ public final class Static23 {
 		}
 		for (@Pc(84) int local84 = 0; local84 < Static34.menuSize; local84++) {
 			@Pc(99) int local99 = (Static34.menuSize - local84 - 1) * 15 + local9 + 31;
-			@Pc(101) int local101 = 16777215;
+			@Pc(101) int local101 = 0xFFFFFF;
 			if (local64 > local3 && local64 < local3 + local11 && local66 > local99 - 13 && local99 + 3 > local66) {
 				local101 = 16776960;
 			}

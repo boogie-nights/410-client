@@ -4,6 +4,7 @@ import java.awt.Component;
 
 import jagex2.config.ComType;
 import jagex2.config.ObjType;
+import jagex2.dash3d.CollisionMap;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Class2_Sub2_Sub12;
 import jagex2.graphics.GraphicsProducingBuffer;
@@ -199,7 +200,7 @@ public final class Static83 {
 		@Pc(70) int local70 = 0;
 		@Pc(72) boolean local72 = false;
 		@Pc(75) int local75 = Static36.anIntArray163.length;
-		@Pc(80) int[][] local80 = Static79.aClass20Array3[Static1.currentLevel].anIntArrayArray9;
+		@Pc(80) int[][] local80 = Static79.aClass20Array3[Static1.currentLevel].flags;
 		@Pc(184) int local184;
 		while (local70 != local66) {
 			local55 = Static23.anIntArray103[local70];
@@ -214,7 +215,7 @@ public final class Static83 {
 					local72 = true;
 					break;
 				}
-				if (arg7 < 10 && Static79.aClass20Array3[Static1.currentLevel].method535(local55, arg1, arg7 - 1, arg10, arg0, local19)) {
+				if (arg7 < 10 && Static79.aClass20Array3[Static1.currentLevel].reachedWallDecoration(local55, arg1, arg7 - 1, arg10, arg0, local19)) {
 					local72 = true;
 					break;
 				}
@@ -408,7 +409,7 @@ public final class Static83 {
 	}
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(IIIBLclient!fb;IILclient!sd;I)V")
-	public static void method1353(@OriginalArg(0) int level, @OriginalArg(1) int arg1, @OriginalArg(2) int x, @OriginalArg(4) Class20 collision, @OriginalArg(5) int rotation, @OriginalArg(6) int shape, @OriginalArg(7) Class55 scene, @OriginalArg(8) int z) {
+	public static void method1353(@OriginalArg(0) int level, @OriginalArg(1) int arg1, @OriginalArg(2) int x, @OriginalArg(4) CollisionMap collision, @OriginalArg(5) int rotation, @OriginalArg(6) int shape, @OriginalArg(7) Class55 scene, @OriginalArg(8) int z) {
 		if (Static1.lowMemory && (Static61.aByteArrayArrayArray7[0][x][z] & 0x2) == 0) {
 			if ((Static61.aByteArrayArrayArray7[level][x][z] & 0x10) != 0) {
 				return;
@@ -479,7 +480,7 @@ public final class Static83 {
 					}
 				}
 				if (loc.blockwalk && collision != null) {
-					collision.method531(loc.anInt1040, loc.aBoolean79, x, rotation, z, loc.anInt1036);
+					collision.addLoc(loc.anInt1040, loc.aBoolean79, x, rotation, z, loc.anInt1036);
 				}
 			} else if (shape >= 12) {
 				if (loc.anInt1048 == -1 && loc.anIntArray210 == null) {
@@ -492,7 +493,7 @@ public final class Static83 {
 					Static32.levelOccludemap[level][x][z] |= 0x924;
 				}
 				if (loc.blockwalk && collision != null) {
-					collision.method531(loc.anInt1040, loc.aBoolean79, x, rotation, z, loc.anInt1036);
+					collision.addLoc(loc.anInt1040, loc.aBoolean79, x, rotation, z, loc.anInt1036);
 				}
 			} else if (shape == 0) {
 				if (loc.anInt1048 == -1 && loc.anIntArray210 == null) {
@@ -625,7 +626,7 @@ public final class Static83 {
 					}
 					scene.method1410(level, x, z, local102, 1, 1, local167, 0, local121, local109);
 					if (loc.blockwalk && collision != null) {
-						collision.method531(loc.anInt1040, loc.aBoolean79, x, rotation, z, loc.anInt1036);
+						collision.addLoc(loc.anInt1040, loc.aBoolean79, x, rotation, z, loc.anInt1036);
 					}
 				} else {
 					if (loc.aBoolean84) {
@@ -701,7 +702,7 @@ public final class Static83 {
 			}
 			scene.method1416(level, x, z, local102, local167, local121, local109);
 			if (loc.blockwalk && loc.anInt1054 == 1 && collision != null) {
-				collision.method536(z, x);
+				collision.setBlocked(x, z);
 			}
 		}
 	}

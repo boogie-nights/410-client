@@ -89,7 +89,7 @@ public final class Static19 {
 						@Pc(249) int local249 = local150;
 						@Pc(251) int local251 = local221;
 						if (local242 != 22 && local242 != 29 && local242 != 34 && local242 != 36 && local242 != 46 && local242 != 47 && local242 != 48) {
-							@Pc(287) int[][] local287 = Static79.aClass20Array3[Static1.currentLevel].anIntArrayArray9;
+							@Pc(287) int[][] local287 = Static79.aClass20Array3[Static1.currentLevel].flags;
 							for (@Pc(289) int local289 = 0; local289 < 10; local289++) {
 								@Pc(296) int local296 = (int) (Math.random() * 4.0D);
 								if (local296 == 0 && local249 > 0 && local249 > local150 - 3 && (local287[local249 - 1][local251] & 0x1280108) == 0) {
@@ -224,7 +224,7 @@ public final class Static19 {
 			local77 = Static38.anInt986 * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
 			Static90.method1461(local77, Static13.aClass2_Sub2_Sub2_Sub4Array3[0], local20);
 		}
-		Static26.method1612(97, 78, 3, 3, 16777215);
+		Static26.method1612(97, 78, 3, 3, 0xFFFFFF);
 		Static32.method594(Static24.graphics);
 	}
 

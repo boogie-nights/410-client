@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.dash3d.CollisionMap;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Static6;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -84,7 +85,7 @@ public final class Static24 {
 	}
 
 	@OriginalMember(owner = "client!ee", name = "a", descriptor = "([Lclient!fb;Lclient!sd;I)V")
-	public static void method503(@OriginalArg(0) Class20[] arg0, @OriginalArg(1) Class55 arg1) {
+	public static void method503(@OriginalArg(0) CollisionMap[] arg0, @OriginalArg(1) Class55 arg1) {
 		@Pc(15) int local15;
 		@Pc(19) int local19;
 		@Pc(36) int local36;
@@ -97,7 +98,7 @@ public final class Static24 {
 							local36 = local11 - 1;
 						}
 						if (local36 >= 0) {
-							arg0[local36].method536(local19, local15);
+							arg0[local36].setBlocked(local15, local19);
 						}
 					}
 				}

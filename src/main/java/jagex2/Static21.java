@@ -4,6 +4,7 @@ import java.awt.Font;
 
 import jagex2.config.ComType;
 import jagex2.config.ObjType;
+import jagex2.dash3d.CollisionMap;
 import jagex2.graphics.*;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -85,7 +86,7 @@ public final class Static21 {
 	}
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(IIII[Lclient!fb;BIILclient!sd;I[B)V")
-	public static void method400(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class20[] arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class55 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) byte[] arg9) {
+	public static void method400(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) CollisionMap[] arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class55 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) byte[] arg9) {
 		@Pc(10) Packet local10 = new Packet(arg9);
 		@Pc(17) int local17 = -1;
 		while (true) {
@@ -112,7 +113,7 @@ public final class Static21 {
 					@Pc(111) int local111 = Static103.method1650(local51 & 0x7, local94.anInt1040, local45 & 0x7, arg0, local94.anInt1036, local67) + arg3;
 					@Pc(128) int local128 = Static15.method1261(local51 & 0x7, local94.anInt1036, local67, arg0, local94.anInt1040, local45 & 0x7) + arg5;
 					if (local111 > 0 && local128 > 0 && local111 < 103 && local128 < 103) {
-						@Pc(144) Class20 local144 = null;
+						@Pc(144) CollisionMap local144 = null;
 						@Pc(146) int local146 = arg8;
 						if ((Static61.aByteArrayArrayArray7[1][local111][local128] & 0x2) == 2) {
 							local146 = arg8 - 1;
@@ -199,7 +200,7 @@ public final class Static21 {
 									if (local177 > Static26.right - 32 && local177 < Static26.anInt2436 && Static26.top - 32 < local186 && Static26.bottom > local186 || Static88.anInt2077 != 0 && local160 == Static95.anInt2239) {
 										local257 = 0;
 										if (Static79.objSelected == 1 && local160 == Static30.anInt724 && Static105.anInt2526 == (arg2 << 16) + local29) {
-											local257 = 16777215;
+											local257 = 0xFFFFFF;
 										}
 										@Pc(282) Class2_Sub2_Sub2_Sub4 local282 = Static60.method1000(local257, local35.anIntArray327[local160], local222);
 										if (local282 == null) {
@@ -320,7 +321,7 @@ public final class Static21 {
 									local162 = 255;
 								}
 								if (local162 == 49152) {
-									local162 = 16777215;
+									local162 = 0xFFFFFF;
 								}
 							}
 							local742 = Static4.method94(local35, local742);

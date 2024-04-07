@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.dash3d.Occluder;
 import jagex2.graphics.*;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;

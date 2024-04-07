@@ -112,7 +112,7 @@ public final class Static98 {
 				Static93.scene.method1413(arg4, arg1, arg2);
 				local116 = Static91.method1470(local85);
 				if (local116.blockwalk && local116.anInt1054 == 1) {
-					Static79.aClass20Array3[arg4].method537(arg2, arg1);
+					Static79.aClass20Array3[arg4].removeBlocked(arg1, arg2);
 				}
 			}
 		}

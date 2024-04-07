@@ -28,7 +28,7 @@ public final class Static101 {
 	public static int anInt2401 = 0;
 
 	@OriginalMember(owner = "client!va", name = "j", descriptor = "[I")
-	public static int[] anIntArray519 = new int[] { 16776960, 16711680, 65280, 65535, 16711935, 16777215 };
+	public static int[] anIntArray519 = new int[] { 16776960, 16711680, 65280, 65535, 16711935, 0xFFFFFF };
 
 	@OriginalMember(owner = "client!va", name = "p", descriptor = "Lclient!o;")
 	public static Class40 aClass40_692 = Static13.method257("@gr3@");
@@ -49,12 +49,12 @@ public final class Static101 {
 	public static void method1589(@OriginalArg(0) PixFont arg0, @OriginalArg(1) Graphics arg1, @OriginalArg(3) PixFont arg2) {
 		Static107.aClass45_31.bind();
 		if (Static44.anInt1075 == 0 || Static44.anInt1075 == 5) {
-			arg2.method566(Static104.aClass40_724, 180, 54, 16777215);
+			arg2.method566(Static104.aClass40_724, 180, 54, 0xFFFFFF);
 			Static26.method1607(28, 62, 304, 34, 9179409);
 			Static26.method1607(29, 63, 302, 32, 0);
 			Static26.method1612(30, 64, Static94.anInt2194 * 3, 30, 9179409);
 			Static26.method1612(Static94.anInt2194 * 3 + 30, 64, 300 - Static94.anInt2194 * 3, 30, 0);
-			arg2.method566(Static98.progressMeterText, 180, 85, 16777215);
+			arg2.method566(Static98.progressMeterText, 180, 85, 0xFFFFFF);
 			Static107.aClass45_31.draw(arg1, 202, 171);
 		}
 		@Pc(106) byte local106;
@@ -70,9 +70,9 @@ public final class Static101 {
 				arg2.method578(Static86.aClass40_589, 180, 53, 16776960, true);
 				local130 = local106 + 30;
 			}
-			arg2.method574(Static80.method1334(new Class40[] { Static67.aClass40_482, Static86.aClass40_591 }), 90, 90, 16777215, true);
+			arg2.method574(Static80.method1334(new Class40[] { Static67.aClass40_482, Static86.aClass40_591 }), 90, 90, 0xFFFFFF, true);
 			local130 += 15;
-			arg2.method574(Static80.method1334(new Class40[] { Static17.aClass40_118, Static86.aClass40_587.method1177() }), 92, 105, 16777215, true);
+			arg2.method574(Static80.method1334(new Class40[] { Static17.aClass40_118, Static86.aClass40_587.method1177() }), 92, 105, 0xFFFFFF, true);
 			local130 += 15;
 		}
 		if (Static44.anInt1075 == 10) {
@@ -81,10 +81,10 @@ public final class Static101 {
 				local106 = 80;
 				arg2.method578(Static44.aClass40_331, 180, 80, 16776960, true);
 				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(27, 100);
-				arg2.method578(Static72.aClass40_508, 100, 125, 16777215, true);
+				arg2.method578(Static72.aClass40_508, 100, 125, 0xFFFFFF, true);
 				local130 = local106 + 30;
 				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(187, 100);
-				arg2.method578(Static68.aClass40_103, 260, 125, 16777215, true);
+				arg2.method578(Static68.aClass40_103, 260, 125, 0xFFFFFF, true);
 			} else if (Static91.anInt2143 == 2) {
 				local106 = 60;
 				if (Static86.aClass40_592.method1169() <= 0) {
@@ -95,27 +95,27 @@ public final class Static101 {
 					arg2.method578(Static86.aClass40_589, 180, 60, 16776960, true);
 					local130 = local106 + 30;
 				}
-				arg2.method574(Static80.method1334(new Class40[] { Static67.aClass40_482, Static86.aClass40_591, Static107.loopCycle % 40 < 20 & Static99.anInt91 == 0 ? Static45.aClass40_339 : Static86.aClass40_593 }), 90, 90, 16777215, true);
+				arg2.method574(Static80.method1334(new Class40[] { Static67.aClass40_482, Static86.aClass40_591, Static107.loopCycle % 40 < 20 & Static99.anInt91 == 0 ? Static45.aClass40_339 : Static86.aClass40_593 }), 90, 90, 0xFFFFFF, true);
 				local130 += 15;
-				arg2.method574(Static80.method1334(new Class40[] { Static17.aClass40_118, Static86.aClass40_587.method1177(), Static99.anInt91 == 1 & Static107.loopCycle % 40 < 20 ? Static45.aClass40_339 : Static86.aClass40_593 }), 92, 105, 16777215, true);
+				arg2.method574(Static80.method1334(new Class40[] { Static17.aClass40_118, Static86.aClass40_587.method1177(), Static99.anInt91 == 1 & Static107.loopCycle % 40 < 20 ? Static45.aClass40_339 : Static86.aClass40_593 }), 92, 105, 0xFFFFFF, true);
 				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(27, 130);
-				arg2.method578(Static15.aClass40_536, 100, 155, 16777215, true);
+				arg2.method578(Static15.aClass40_536, 100, 155, 0xFFFFFF, true);
 				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(187, 130);
-				arg2.method578(Static99.aClass40_27, 260, 155, 16777215, true);
+				arg2.method578(Static99.aClass40_27, 260, 155, 0xFFFFFF, true);
 				local130 += 15;
 			} else if (Static91.anInt2143 == 3) {
 				arg2.method578(Static38.aClass40_294, 180, 40, 16776960, true);
 				local106 = 65;
-				arg2.method578(Static11.aClass40_71, 180, 65, 16777215, true);
+				arg2.method578(Static11.aClass40_71, 180, 65, 0xFFFFFF, true);
 				local130 = local106 + 15;
-				arg2.method578(Static36.aClass40_258, 180, 80, 16777215, true);
+				arg2.method578(Static36.aClass40_258, 180, 80, 0xFFFFFF, true);
 				local130 += 15;
-				arg2.method578(Static46.aClass40_706, 180, 95, 16777215, true);
+				arg2.method578(Static46.aClass40_706, 180, 95, 0xFFFFFF, true);
 				local130 += 15;
-				arg2.method578(Static15.aClass40_539, 180, 110, 16777215, true);
+				arg2.method578(Static15.aClass40_539, 180, 110, 0xFFFFFF, true);
 				local130 += 15;
 				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(107, 130);
-				arg2.method578(Static99.aClass40_27, 180, 155, 16777215, true);
+				arg2.method578(Static99.aClass40_27, 180, 155, 0xFFFFFF, true);
 			}
 		}
 		Static107.aClass45_31.draw(arg1, 202, 171);

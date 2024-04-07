@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.dash3d.CollisionMap;
 import jagex2.graphics.Static71;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -48,13 +49,13 @@ public final class Static90 {
 	public static LruCache aClass47_20 = new LruCache(50);
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(BII[Lclient!fb;[BII)V")
-	public static void method1460(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class20[] arg2, @OriginalArg(4) byte[] arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
+	public static void method1460(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) CollisionMap[] arg2, @OriginalArg(4) byte[] arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		@Pc(11) int local11;
 		for (@Pc(3) int local3 = 0; local3 < 4; local3++) {
 			for (@Pc(7) int local7 = 0; local7 < 64; local7++) {
 				for (local11 = 0; local11 < 64; local11++) {
 					if (arg4 + local7 > 0 && local7 + arg4 < 103 && arg0 + local11 > 0 && local11 + arg0 < 103) {
-						arg2[local3].anIntArrayArray9[local7 + arg4][local11 + arg0] &= 0xFEFFFFFF;
+						arg2[local3].flags[local7 + arg4][local11 + arg0] &= 0xFEFFFFFF;
 					}
 				}
 			}

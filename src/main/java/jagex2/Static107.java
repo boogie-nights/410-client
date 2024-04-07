@@ -282,7 +282,7 @@ public final class Static107 {
 	public static void method1664(@OriginalArg(0) int arg0, @OriginalArg(1) Graphics arg1, @OriginalArg(2) PixFont arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
 		Static4.aClass45_4.bind();
 		Static51.aClass2_Sub2_Sub2_Sub3_11.method1320(0, 0);
-		arg2.method578(Static29.aClass40_219, 55, 28, 16777215, true);
+		arg2.method578(Static29.aClass40_219, 55, 28, 0xFFFFFF, true);
 		if (arg4 == 0) {
 			arg2.method578(Static103.aClass40_715, 55, 41, 65280, true);
 		}
@@ -295,7 +295,7 @@ public final class Static107 {
 		if (arg4 == 3) {
 			arg2.method578(Static5.aClass40_46, 55, 41, 65535, true);
 		}
-		arg2.method578(Static53.aClass40_368, 184, 28, 16777215, true);
+		arg2.method578(Static53.aClass40_368, 184, 28, 0xFFFFFF, true);
 		if (arg0 == 0) {
 			arg2.method578(Static103.aClass40_715, 184, 41, 65280, true);
 		}
@@ -305,7 +305,7 @@ public final class Static107 {
 		if (arg0 == 2) {
 			arg2.method578(Static94.aClass40_629, 184, 41, 16711680, true);
 		}
-		arg2.method578(Static75.aClass40_530, 324, 28, 16777215, true);
+		arg2.method578(Static75.aClass40_530, 324, 28, 0xFFFFFF, true);
 		if (arg3 == 0) {
 			arg2.method578(Static103.aClass40_715, 324, 41, 65280, true);
 		}
@@ -315,7 +315,7 @@ public final class Static107 {
 		if (arg3 == 2) {
 			arg2.method578(Static94.aClass40_629, 324, 41, 16711680, true);
 		}
-		arg2.method578(Static74.aClass40_522, 458, 33, 16777215, true);
+		arg2.method578(Static74.aClass40_522, 458, 33, 0xFFFFFF, true);
 		Static4.aClass45_4.draw(arg1, 0, 453);
 	}
 

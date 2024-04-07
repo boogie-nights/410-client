@@ -189,7 +189,7 @@ public final class Static10 {
 					component.text = Static15.aClass40_540;
 				} else {
 					component.text = Static95.aClass40_646;
-					component.anInt1584 = 16777215;
+					component.anInt1584 = 0xFFFFFF;
 				}
 			}
 			@Pc(549) Class40 local549;

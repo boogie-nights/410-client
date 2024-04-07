@@ -4,6 +4,7 @@ import java.awt.Image;
 
 import jagex2.config.ComType;
 import jagex2.config.ObjType;
+import jagex2.dash3d.CollisionMap;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -23,7 +24,7 @@ public final class Static79 {
 	public static int[] anIntArray415 = new int[5];
 
 	@OriginalMember(owner = "client!pd", name = "e", descriptor = "[Lclient!fb;")
-	public static Class20[] aClass20Array3 = new Class20[4];
+	public static CollisionMap[] aClass20Array3 = new CollisionMap[4];
 
 	@OriginalMember(owner = "client!pd", name = "f", descriptor = "I")
 	public static int anInt1868 = 0;

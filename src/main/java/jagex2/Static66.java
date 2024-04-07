@@ -74,7 +74,7 @@ public final class Static66 {
 		}
 		Static75.method1230();
 		Static103.aClass2_Sub2_Sub2_Sub2_5.method566(arg2, 257, 148, 0);
-		Static103.aClass2_Sub2_Sub2_Sub2_5.method566(arg2, 256, 147, 16777215);
+		Static103.aClass2_Sub2_Sub2_Sub2_5.method566(arg2, 256, 147, 0xFFFFFF);
 		if (arg1 != null) {
 			local6 += 15;
 			if (arg0) {
@@ -82,7 +82,7 @@ public final class Static66 {
 				Static26.method1612(257 - local81 / 2, 152, local81, 11, 0);
 			}
 			Static103.aClass2_Sub2_Sub2_Sub2_5.method566(arg1, 257, 163, 0);
-			Static103.aClass2_Sub2_Sub2_Sub2_5.method566(arg1, 256, 162, 16777215);
+			Static103.aClass2_Sub2_Sub2_Sub2_5.method566(arg1, 256, 162, 0xFFFFFF);
 		}
 		Static80.method1333(Static24.graphics);
 	}

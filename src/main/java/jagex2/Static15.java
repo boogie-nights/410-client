@@ -249,7 +249,7 @@ public final class Static15 {
 			Static37.anIntArray182[local403 + 128] = local403 * 4 + 16776960;
 		}
 		for (@Pc(421) int local421 = 0; local421 < 64; local421++) {
-			Static37.anIntArray182[local421 + 192] = 16777215;
+			Static37.anIntArray182[local421 + 192] = 0xFFFFFF;
 		}
 		Static70.anIntArray355 = new int[256];
 		for (@Pc(438) int local438 = 0; local438 < 64; local438++) {
@@ -262,7 +262,7 @@ public final class Static15 {
 			Static70.anIntArray355[local472 + 128] = local472 * 262144 + 65535;
 		}
 		for (@Pc(492) int local492 = 0; local492 < 64; local492++) {
-			Static70.anIntArray355[local492 + 192] = 16777215;
+			Static70.anIntArray355[local492 + 192] = 0xFFFFFF;
 		}
 		Static72.anIntArray406 = new int[256];
 		for (@Pc(513) int local513 = 0; local513 < 64; local513++) {
@@ -275,7 +275,7 @@ public final class Static15 {
 			Static72.anIntArray406[local550 + 128] = local550 * 1024 + 16711935;
 		}
 		for (@Pc(570) int local570 = 0; local570 < 64; local570++) {
-			Static72.anIntArray406[local570 + 192] = 16777215;
+			Static72.anIntArray406[local570 + 192] = 0xFFFFFF;
 		}
 		anIntArray414 = new int[32768];
 		Static92.anIntArray472 = new int[256];

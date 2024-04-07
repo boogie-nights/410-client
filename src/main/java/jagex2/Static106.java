@@ -184,7 +184,7 @@ public final class Static106 {
 								for (local162 = 0; local162 < 4; local162++) {
 									for (@Pc(435) int local435 = 1; local435 < 103; local435++) {
 										for (@Pc(439) int local439 = 1; local439 < 103; local439++) {
-											Static79.aClass20Array3[local162].anIntArrayArray9[local435][local439] = 0;
+											Static79.aClass20Array3[local162].flags[local435][local439] = 0;
 										}
 									}
 								}
