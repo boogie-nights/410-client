@@ -238,11 +238,11 @@ public final class Static70 {
 		if (arg0 == 0L) {
 			return;
 		}
-		for (@Pc(14) int local14 = 0; local14 < Static22.anInt2594; local14++) {
+		for (@Pc(14) int local14 = 0; local14 < Static22.friendCount; local14++) {
 			if (arg0 == Static21.aLongArray2[local14]) {
-				Static22.anInt2594--;
+				Static22.friendCount--;
 				Static33.aBoolean59 = true;
-				for (@Pc(40) int local40 = local14; local40 < Static22.anInt2594; local40++) {
+				for (@Pc(40) int local40 = local14; local40 < Static22.friendCount; local40++) {
 					Static51.friendName[local40] = Static51.friendName[local40 + 1];
 					Static62.anIntArray316[local40] = Static62.anIntArray316[local40 + 1];
 					Static21.aLongArray2[local40] = Static21.aLongArray2[local40 + 1];

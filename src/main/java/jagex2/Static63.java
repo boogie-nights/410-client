@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import java.io.StringReader;
 import java.io.StringWriter;
 
+import jagex2.config.ComType;
 import jagex2.datastruct.LinkedList;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -29,7 +30,7 @@ public final class Static63 {
 	public static Class40 textLoadedSprites = Static13.method257("Loaded sprites");
 
 	@OriginalMember(owner = "client!mc", name = "Eb", descriptor = "[Lclient!o;")
-	public static Class40[] aClass40Array30 = new Class40[100];
+	public static Class40[] messageText = new Class40[100];
 
 	@OriginalMember(owner = "client!mc", name = "Pb", descriptor = "Lclient!o;")
 	public static Class40 textLoadedConfig = Static13.method257("Loaded config");
@@ -71,7 +72,7 @@ public final class Static63 {
 	@OriginalMember(owner = "client!mc", name = "f", descriptor = "(I)V")
 	public static void method1058() {
 		aClass40_463 = null;
-		aClass40Array30 = null;
+		messageText = null;
 		anIntArray326 = null;
 		textLoadedConfig = null;
 		aClass40_462 = null;
@@ -241,13 +242,13 @@ public final class Static63 {
 		if (arg0 == 0L) {
 			return;
 		}
-		if (Static22.anInt2594 >= 100 && Static37.anInt927 != 1) {
+		if (Static22.friendCount >= 100 && Static37.anInt927 != 1) {
 			Static58.method989(0, Static61.aClass40_445, Static106.aClass40_739);
-		} else if (Static22.anInt2594 >= 200) {
+		} else if (Static22.friendCount >= 200) {
 			Static58.method989(0, Static61.aClass40_445, Static106.aClass40_739);
 		} else {
 			@Pc(41) Class40 local41 = Static48.method819(arg0).method1167();
-			for (@Pc(43) int local43 = 0; local43 < Static22.anInt2594; local43++) {
+			for (@Pc(43) int local43 = 0; local43 < Static22.friendCount; local43++) {
 				if (arg0 == Static21.aLongArray2[local43]) {
 					Static58.method989(0, Static61.aClass40_445, Static80.method1334(new Class40[] { local41, Static98.aClass40_677 }));
 					return;
@@ -260,11 +261,11 @@ public final class Static63 {
 				}
 			}
 			if (!local41.method1184(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395)) {
-				Static51.friendName[Static22.anInt2594] = local41;
-				Static21.aLongArray2[Static22.anInt2594] = arg0;
-				Static62.anIntArray316[Static22.anInt2594] = 0;
+				Static51.friendName[Static22.friendCount] = local41;
+				Static21.aLongArray2[Static22.friendCount] = arg0;
+				Static62.anIntArray316[Static22.friendCount] = 0;
 				Static33.aBoolean59 = true;
-				Static22.anInt2594++;
+				Static22.friendCount++;
 				Static80.out.p1isaac(98);
 				Static80.out.p8(arg0);
 			}

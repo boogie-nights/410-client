@@ -2,7 +2,6 @@ package jagex2.graphics;
 
 import jagex2.Interface4;
 import jagex2.Static26;
-import jagex2.Class2_Sub2_Sub2_Sub1;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -153,7 +152,7 @@ public final class Static6 {
 			}
 			anIntArray62 = new int[local11];
 			for (@Pc(19) int local19 = 0; local19 < local11; local19++) {
-				anIntArray62[local19] = (arg1 + local19) * Static26.anInt2440 + arg0;
+				anIntArray62[local19] = (arg1 + local19) * Static26.width2d + arg0;
 			}
 		} else {
 			anIntArray62 = arg4;
@@ -187,7 +186,7 @@ public final class Static6 {
 		} else {
 			if (arg6 - arg5 > 7) {
 				local38 = arg6 - arg5 >> 3;
-				local13 = (arg8 - arg7) * Class2_Sub2_Sub2_Sub1.anIntArray60[local38] >> 6;
+				local13 = (arg8 - arg7) * Draw3D.reciprocal15[local38] >> 6;
 			} else {
 				local38 = 0;
 				local13 = 0;
@@ -641,7 +640,7 @@ public final class Static6 {
 									arg4 += local28;
 									arg8 += local57;
 									arg7 += local30;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 								}
 							}
 							method179(Static26.anIntArray533, arg0, arg5 >> 16, arg3 >> 16, arg8 >> 7, arg6 >> 7);
@@ -649,7 +648,7 @@ public final class Static6 {
 							arg3 += local1;
 							arg8 += local57;
 							arg6 += local3;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 						}
 					} else {
 						arg2 -= arg1;
@@ -668,7 +667,7 @@ public final class Static6 {
 									arg4 += local28;
 									arg8 += local57;
 									arg7 += local30;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 								}
 							}
 							method179(Static26.anIntArray533, arg0, arg3 >> 16, arg5 >> 16, arg6 >> 7, arg8 >> 7);
@@ -676,7 +675,7 @@ public final class Static6 {
 							arg3 += local1;
 							arg8 += local57;
 							arg6 += local3;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 						}
 					}
 				} else {
@@ -713,7 +712,7 @@ public final class Static6 {
 									arg3 += local1;
 									arg8 += local30;
 									arg6 += local3;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 								}
 							}
 							method179(Static26.anIntArray533, arg0, arg4 >> 16, arg3 >> 16, arg7 >> 7, arg6 >> 7);
@@ -721,7 +720,7 @@ public final class Static6 {
 							arg3 += local1;
 							arg7 += local57;
 							arg6 += local3;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 						}
 					} else {
 						arg1 -= arg2;
@@ -740,7 +739,7 @@ public final class Static6 {
 									arg3 += local1;
 									arg8 += local30;
 									arg6 += local3;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 								}
 							}
 							method179(Static26.anIntArray533, arg0, arg3 >> 16, arg4 >> 16, arg6 >> 7, arg7 >> 7);
@@ -748,7 +747,7 @@ public final class Static6 {
 							arg3 += local1;
 							arg7 += local57;
 							arg6 += local3;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 						}
 					}
 				}
@@ -795,7 +794,7 @@ public final class Static6 {
 									arg5 += local55;
 									arg6 += local3;
 									arg8 += local57;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 								}
 							}
 							method179(Static26.anIntArray533, arg1, arg3 >> 16, arg4 >> 16, arg6 >> 7, arg7 >> 7);
@@ -803,7 +802,7 @@ public final class Static6 {
 							arg4 += local28;
 							arg6 += local3;
 							arg7 += local30;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 						}
 					} else {
 						arg0 -= arg2;
@@ -822,7 +821,7 @@ public final class Static6 {
 									arg5 += local55;
 									arg6 += local3;
 									arg8 += local57;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 								}
 							}
 							method179(Static26.anIntArray533, arg1, arg4 >> 16, arg3 >> 16, arg7 >> 7, arg6 >> 7);
@@ -830,7 +829,7 @@ public final class Static6 {
 							arg4 += local28;
 							arg6 += local3;
 							arg7 += local30;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 						}
 					}
 				} else {
@@ -867,7 +866,7 @@ public final class Static6 {
 									arg4 += local28;
 									arg6 += local57;
 									arg7 += local30;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 								}
 							}
 							method179(Static26.anIntArray533, arg1, arg5 >> 16, arg4 >> 16, arg8 >> 7, arg7 >> 7);
@@ -875,7 +874,7 @@ public final class Static6 {
 							arg4 += local28;
 							arg8 += local3;
 							arg7 += local30;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 						}
 					} else {
 						arg2 -= arg0;
@@ -894,7 +893,7 @@ public final class Static6 {
 									arg4 += local28;
 									arg6 += local57;
 									arg7 += local30;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 								}
 							}
 							method179(Static26.anIntArray533, arg1, arg4 >> 16, arg5 >> 16, arg7 >> 7, arg8 >> 7);
@@ -902,7 +901,7 @@ public final class Static6 {
 							arg4 += local28;
 							arg8 += local3;
 							arg7 += local30;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 						}
 					}
 				}
@@ -948,7 +947,7 @@ public final class Static6 {
 								arg3 += local1;
 								arg7 += local30;
 								arg6 += local3;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 							}
 						}
 						method179(Static26.anIntArray533, arg2, arg4 >> 16, arg5 >> 16, arg7 >> 7, arg8 >> 7);
@@ -956,7 +955,7 @@ public final class Static6 {
 						arg5 += local55;
 						arg7 += local30;
 						arg8 += local57;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 					}
 				} else {
 					arg1 -= arg0;
@@ -975,7 +974,7 @@ public final class Static6 {
 								arg3 += local1;
 								arg7 += local30;
 								arg6 += local3;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 							}
 						}
 						method179(Static26.anIntArray533, arg2, arg5 >> 16, arg4 >> 16, arg8 >> 7, arg7 >> 7);
@@ -983,7 +982,7 @@ public final class Static6 {
 						arg5 += local55;
 						arg7 += local30;
 						arg8 += local57;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 					}
 				}
 			} else {
@@ -1020,7 +1019,7 @@ public final class Static6 {
 								arg5 += local55;
 								arg7 += local3;
 								arg8 += local57;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 							}
 						}
 						method179(Static26.anIntArray533, arg2, arg3 >> 16, arg5 >> 16, arg6 >> 7, arg8 >> 7);
@@ -1028,7 +1027,7 @@ public final class Static6 {
 						arg5 += local55;
 						arg6 += local30;
 						arg8 += local57;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 					}
 				} else {
 					arg0 -= arg1;
@@ -1047,7 +1046,7 @@ public final class Static6 {
 								arg5 += local55;
 								arg7 += local3;
 								arg8 += local57;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 							}
 						}
 						method179(Static26.anIntArray533, arg2, arg5 >> 16, arg3 >> 16, arg8 >> 7, arg6 >> 7);
@@ -1055,7 +1054,7 @@ public final class Static6 {
 						arg5 += local55;
 						arg6 += local30;
 						arg8 += local57;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 					}
 				}
 			}
@@ -1116,13 +1115,13 @@ public final class Static6 {
 									method181(Static26.anIntArray533, arg0, arg6, arg5 >> 16, arg4 >> 16);
 									arg5 += local31;
 									arg4 += local16;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 								}
 							}
 							method181(Static26.anIntArray533, arg0, arg6, arg5 >> 16, arg3 >> 16);
 							arg5 += local31;
 							arg3 += local1;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 						}
 					} else {
 						arg2 -= arg1;
@@ -1139,13 +1138,13 @@ public final class Static6 {
 									method181(Static26.anIntArray533, arg0, arg6, arg4 >> 16, arg5 >> 16);
 									arg5 += local31;
 									arg4 += local16;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 								}
 							}
 							method181(Static26.anIntArray533, arg0, arg6, arg3 >> 16, arg5 >> 16);
 							arg5 += local31;
 							arg3 += local1;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 						}
 					}
 				} else {
@@ -1175,13 +1174,13 @@ public final class Static6 {
 									method181(Static26.anIntArray533, arg0, arg6, arg5 >> 16, arg3 >> 16);
 									arg5 += local16;
 									arg3 += local1;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 								}
 							}
 							method181(Static26.anIntArray533, arg0, arg6, arg4 >> 16, arg3 >> 16);
 							arg4 += local31;
 							arg3 += local1;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 						}
 					} else {
 						arg1 -= arg2;
@@ -1198,13 +1197,13 @@ public final class Static6 {
 									method181(Static26.anIntArray533, arg0, arg6, arg3 >> 16, arg5 >> 16);
 									arg5 += local16;
 									arg3 += local1;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 								}
 							}
 							method181(Static26.anIntArray533, arg0, arg6, arg3 >> 16, arg4 >> 16);
 							arg4 += local31;
 							arg3 += local1;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 						}
 					}
 				}
@@ -1244,13 +1243,13 @@ public final class Static6 {
 									method181(Static26.anIntArray533, arg1, arg6, arg3 >> 16, arg5 >> 16);
 									arg3 += local1;
 									arg5 += local31;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 								}
 							}
 							method181(Static26.anIntArray533, arg1, arg6, arg3 >> 16, arg4 >> 16);
 							arg3 += local1;
 							arg4 += local16;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 						}
 					} else {
 						arg0 -= arg2;
@@ -1267,13 +1266,13 @@ public final class Static6 {
 									method181(Static26.anIntArray533, arg1, arg6, arg5 >> 16, arg3 >> 16);
 									arg3 += local1;
 									arg5 += local31;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 								}
 							}
 							method181(Static26.anIntArray533, arg1, arg6, arg4 >> 16, arg3 >> 16);
 							arg3 += local1;
 							arg4 += local16;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 						}
 					}
 				} else {
@@ -1303,13 +1302,13 @@ public final class Static6 {
 									method181(Static26.anIntArray533, arg1, arg6, arg3 >> 16, arg4 >> 16);
 									arg3 += local31;
 									arg4 += local16;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 								}
 							}
 							method181(Static26.anIntArray533, arg1, arg6, arg5 >> 16, arg4 >> 16);
 							arg5 += local1;
 							arg4 += local16;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 						}
 					} else {
 						arg2 -= arg0;
@@ -1326,13 +1325,13 @@ public final class Static6 {
 									method181(Static26.anIntArray533, arg1, arg6, arg4 >> 16, arg3 >> 16);
 									arg3 += local31;
 									arg4 += local16;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 								}
 							}
 							method181(Static26.anIntArray533, arg1, arg6, arg4 >> 16, arg5 >> 16);
 							arg5 += local1;
 							arg4 += local16;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 						}
 					}
 				}
@@ -1371,13 +1370,13 @@ public final class Static6 {
 								method181(Static26.anIntArray533, arg2, arg6, arg4 >> 16, arg3 >> 16);
 								arg4 += local16;
 								arg3 += local1;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 							}
 						}
 						method181(Static26.anIntArray533, arg2, arg6, arg4 >> 16, arg5 >> 16);
 						arg4 += local16;
 						arg5 += local31;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 					}
 				} else {
 					arg1 -= arg0;
@@ -1394,13 +1393,13 @@ public final class Static6 {
 								method181(Static26.anIntArray533, arg2, arg6, arg3 >> 16, arg4 >> 16);
 								arg4 += local16;
 								arg3 += local1;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 							}
 						}
 						method181(Static26.anIntArray533, arg2, arg6, arg5 >> 16, arg4 >> 16);
 						arg4 += local16;
 						arg5 += local31;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 					}
 				}
 			} else {
@@ -1430,13 +1429,13 @@ public final class Static6 {
 								method181(Static26.anIntArray533, arg2, arg6, arg4 >> 16, arg5 >> 16);
 								arg4 += local1;
 								arg5 += local31;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 							}
 						}
 						method181(Static26.anIntArray533, arg2, arg6, arg3 >> 16, arg5 >> 16);
 						arg3 += local16;
 						arg5 += local31;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 					}
 				} else {
 					arg0 -= arg1;
@@ -1453,13 +1452,13 @@ public final class Static6 {
 								method181(Static26.anIntArray533, arg2, arg6, arg5 >> 16, arg4 >> 16);
 								arg4 += local1;
 								arg5 += local31;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 							}
 						}
 						method181(Static26.anIntArray533, arg2, arg6, arg5 >> 16, arg3 >> 16);
 						arg3 += local16;
 						arg5 += local31;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 					}
 				}
 			}
@@ -1468,7 +1467,7 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([I)[I")
 	public static int[] method175(@OriginalArg(0) int[] arg0) {
-		return method169(Static26.anInt2437, Static26.anInt2439, Static26.anInt2436, Static26.anInt2438, arg0);
+		return method169(Static26.right, Static26.top, Static26.anInt2436, Static26.bottom, arg0);
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IIIIIIIIIIIIIIIIIII)V")
@@ -1562,7 +1561,7 @@ public final class Static6 {
 									arg4 += local181;
 									arg8 += local210;
 									arg7 += local183;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
@@ -1573,7 +1572,7 @@ public final class Static6 {
 							arg3 += local154;
 							arg8 += local210;
 							arg6 += local156;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
@@ -1595,7 +1594,7 @@ public final class Static6 {
 									arg4 += local181;
 									arg8 += local210;
 									arg7 += local183;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
@@ -1606,7 +1605,7 @@ public final class Static6 {
 							arg3 += local154;
 							arg8 += local210;
 							arg6 += local156;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
@@ -1650,7 +1649,7 @@ public final class Static6 {
 									arg3 += local154;
 									arg8 += local183;
 									arg6 += local156;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
@@ -1661,7 +1660,7 @@ public final class Static6 {
 							arg3 += local154;
 							arg7 += local210;
 							arg6 += local156;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
@@ -1683,7 +1682,7 @@ public final class Static6 {
 									arg3 += local154;
 									arg8 += local183;
 									arg6 += local156;
-									arg0 += Static26.anInt2440;
+									arg0 += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
@@ -1694,7 +1693,7 @@ public final class Static6 {
 							arg3 += local154;
 							arg7 += local210;
 							arg6 += local156;
-							arg0 += Static26.anInt2440;
+							arg0 += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
@@ -1748,7 +1747,7 @@ public final class Static6 {
 									arg5 += local208;
 									arg6 += local156;
 									arg8 += local210;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
@@ -1759,7 +1758,7 @@ public final class Static6 {
 							arg4 += local181;
 							arg6 += local156;
 							arg7 += local183;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
@@ -1781,7 +1780,7 @@ public final class Static6 {
 									arg5 += local208;
 									arg6 += local156;
 									arg8 += local210;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
@@ -1792,7 +1791,7 @@ public final class Static6 {
 							arg4 += local181;
 							arg6 += local156;
 							arg7 += local183;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
@@ -1836,7 +1835,7 @@ public final class Static6 {
 									arg4 += local181;
 									arg6 += local210;
 									arg7 += local183;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
@@ -1847,7 +1846,7 @@ public final class Static6 {
 							arg4 += local181;
 							arg8 += local156;
 							arg7 += local183;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
@@ -1869,7 +1868,7 @@ public final class Static6 {
 									arg4 += local181;
 									arg6 += local210;
 									arg7 += local183;
-									arg1 += Static26.anInt2440;
+									arg1 += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
@@ -1880,7 +1879,7 @@ public final class Static6 {
 							arg4 += local181;
 							arg8 += local156;
 							arg7 += local183;
-							arg1 += Static26.anInt2440;
+							arg1 += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
@@ -1933,7 +1932,7 @@ public final class Static6 {
 								arg3 += local154;
 								arg7 += local183;
 								arg6 += local156;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 								local11 += local92;
 								local102 += local122;
 								local132 += local152;
@@ -1944,7 +1943,7 @@ public final class Static6 {
 						arg5 += local208;
 						arg7 += local183;
 						arg8 += local210;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 						local11 += local92;
 						local102 += local122;
 						local132 += local152;
@@ -1966,7 +1965,7 @@ public final class Static6 {
 								arg3 += local154;
 								arg7 += local183;
 								arg6 += local156;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 								local11 += local92;
 								local102 += local122;
 								local132 += local152;
@@ -1977,7 +1976,7 @@ public final class Static6 {
 						arg5 += local208;
 						arg7 += local183;
 						arg8 += local210;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 						local11 += local92;
 						local102 += local122;
 						local132 += local152;
@@ -2021,7 +2020,7 @@ public final class Static6 {
 								arg5 += local208;
 								arg7 += local156;
 								arg8 += local210;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 								local11 += local92;
 								local102 += local122;
 								local132 += local152;
@@ -2032,7 +2031,7 @@ public final class Static6 {
 						arg5 += local208;
 						arg6 += local183;
 						arg8 += local210;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 						local11 += local92;
 						local102 += local122;
 						local132 += local152;
@@ -2054,7 +2053,7 @@ public final class Static6 {
 								arg5 += local208;
 								arg7 += local156;
 								arg8 += local210;
-								arg2 += Static26.anInt2440;
+								arg2 += Static26.width2d;
 								local11 += local92;
 								local102 += local122;
 								local132 += local152;
@@ -2065,7 +2064,7 @@ public final class Static6 {
 						arg5 += local208;
 						arg6 += local183;
 						arg8 += local210;
-						arg2 += Static26.anInt2440;
+						arg2 += Static26.width2d;
 						local11 += local92;
 						local102 += local122;
 						local132 += local152;
@@ -2078,8 +2077,8 @@ public final class Static6 {
 	@OriginalMember(owner = "client!b", name = "b", descriptor = "(II)V")
 	public static void method177(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(3) int local3 = anIntArray62[0];
-		@Pc(7) int local7 = local3 / Static26.anInt2440;
-		@Pc(13) int local13 = local3 - local7 * Static26.anInt2440;
+		@Pc(7) int local7 = local3 / Static26.width2d;
+		@Pc(13) int local13 = local3 - local7 * Static26.width2d;
 		centerX = arg0 - local13;
 		centerY = arg1 - local7;
 		anInt221 = -centerX;
@@ -2129,7 +2128,7 @@ public final class Static6 {
 				arg1 += arg2;
 				local48 = arg3 - arg2 >> 2;
 				if (local48 > 0) {
-					local16 = (arg5 - arg4) * Class2_Sub2_Sub2_Sub1.anIntArray60[local48] >> 15;
+					local16 = (arg5 - arg4) * Draw3D.reciprocal15[local48] >> 15;
 				} else {
 					local16 = 0;
 				}
@@ -2232,10 +2231,10 @@ public final class Static6 {
 		anIntArray62 = null;
 		anIntArray63 = null;
 		anInterface4_1 = null;
-		Class2_Sub2_Sub2_Sub1.anIntArray60 = null;
-		Class2_Sub2_Sub2_Sub1.anIntArray61 = null;
-		Class2_Sub2_Sub2_Sub1.sin = null;
-		Class2_Sub2_Sub2_Sub1.cos = null;
+		Draw3D.reciprocal15 = null;
+		Draw3D.reciprocal16 = null;
+		Draw3D.sin = null;
+		Draw3D.cos = null;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([IIIIII)V")

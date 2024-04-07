@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.config.ComType;
 import jagex2.config.ObjType;
 import jagex2.datastruct.LinkedList;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -83,7 +84,7 @@ public final class Static96 {
 			local50 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local22];
 			if (local50 != null) {
 				Static83.method1349(local50.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local50.anIntArray492[0]);
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static102.anInt2465 = Static90.anInt2133;
 				Static62.anInt1554 = Static107.anInt2500;
 				Static101.anInt2410 = 0;
@@ -108,7 +109,7 @@ public final class Static96 {
 				Static83.method1349(local30, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local26);
 			}
 			Static101.anInt2410 = 0;
-			Static45.anInt1096 = 2;
+			Static45.crossMode = 2;
 			Static102.anInt2465 = Static90.anInt2133;
 			Static62.anInt1554 = Static107.anInt2500;
 			Static80.out.p1isaac(211);
@@ -126,7 +127,7 @@ public final class Static96 {
 				Static62.anInt1554 = Static107.anInt2500;
 				Static101.anInt2410 = 0;
 				Static102.anInt2465 = Static90.anInt2133;
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static80.out.p1isaac(212);
 				Static80.out.method1711(local22);
 			}
@@ -176,7 +177,7 @@ public final class Static96 {
 				Static83.method1349(local462.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local462.anIntArray492[0]);
 				Static102.anInt2465 = Static90.anInt2133;
 				Static101.anInt2410 = 0;
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static62.anInt1554 = Static107.anInt2500;
 				Static80.out.p1isaac(7);
 				Static80.out.method1707(local22);
@@ -203,7 +204,7 @@ public final class Static96 {
 			if (local412 != -1) {
 				local427 = local407.method1185(local412 + 5).method1178().toBase37();
 				@Pc(598) int local598 = -1;
-				for (local600 = 0; local600 < Static22.anInt2594; local600++) {
+				for (local600 = 0; local600 < Static22.friendCount; local600++) {
 					if (Static21.aLongArray2[local600] == local427) {
 						local598 = local600;
 						break;
@@ -258,7 +259,7 @@ public final class Static96 {
 				Static83.method1349(local50.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local50.anIntArray492[0]);
 				Static102.anInt2465 = Static90.anInt2133;
 				Static62.anInt1554 = Static107.anInt2500;
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static101.anInt2410 = 0;
 				Static80.out.p1isaac(133);
 				Static80.out.method1711(local22);
@@ -295,7 +296,7 @@ public final class Static96 {
 			local462 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local22];
 			if (local462 != null) {
 				Static83.method1349(local462.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local462.anIntArray492[0]);
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static101.anInt2410 = 0;
 				Static102.anInt2465 = Static90.anInt2133;
 				Static62.anInt1554 = Static107.anInt2500;
@@ -309,7 +310,7 @@ public final class Static96 {
 				Static83.method1349(local50.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local50.anIntArray492[0]);
 				Static102.anInt2465 = Static90.anInt2133;
 				Static62.anInt1554 = Static107.anInt2500;
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static101.anInt2410 = 0;
 				Static80.out.p1isaac(101);
 				Static80.out.p4(Static85.anInt1992);
@@ -322,7 +323,7 @@ public final class Static96 {
 				Static83.method1349(local30, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local26);
 			}
 			Static102.anInt2465 = Static90.anInt2133;
-			Static45.anInt1096 = 2;
+			Static45.crossMode = 2;
 			Static62.anInt1554 = Static107.anInt2500;
 			Static101.anInt2410 = 0;
 			Static80.out.p1isaac(131);
@@ -335,7 +336,7 @@ public final class Static96 {
 			if (!local225) {
 				Static83.method1349(local30, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local26);
 			}
-			Static45.anInt1096 = 2;
+			Static45.crossMode = 2;
 			Static62.anInt1554 = Static107.anInt2500;
 			Static102.anInt2465 = Static90.anInt2133;
 			Static101.anInt2410 = 0;
@@ -373,7 +374,7 @@ public final class Static96 {
 				Static83.method1349(local1295.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local1295.anIntArray492[0]);
 				Static102.anInt2465 = Static90.anInt2133;
 				Static62.anInt1554 = Static107.anInt2500;
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static101.anInt2410 = 0;
 				Static80.out.p1isaac(185);
 				Static80.out.method1707(local22);
@@ -414,7 +415,7 @@ public final class Static96 {
 				Static83.method1349(local1295.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local1295.anIntArray492[0]);
 				Static62.anInt1554 = Static107.anInt2500;
 				Static101.anInt2410 = 0;
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static102.anInt2465 = Static90.anInt2133;
 				Static80.out.p1isaac(164);
 				Static80.out.ip2(local22);
@@ -425,7 +426,7 @@ public final class Static96 {
 			if (!local1208) {
 				Static83.method1349(local30, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local26);
 			}
-			Static45.anInt1096 = 2;
+			Static45.crossMode = 2;
 			Static102.anInt2465 = Static90.anInt2133;
 			Static62.anInt1554 = Static107.anInt2500;
 			Static101.anInt2410 = 0;
@@ -619,7 +620,7 @@ public final class Static96 {
 			if (!local1208) {
 				Static83.method1349(local30, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local26);
 			}
-			Static45.anInt1096 = 2;
+			Static45.crossMode = 2;
 			Static102.anInt2465 = Static90.anInt2133;
 			Static101.anInt2410 = 0;
 			Static62.anInt1554 = Static107.anInt2500;
@@ -668,7 +669,7 @@ public final class Static96 {
 			local2510 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local22];
 			if (local2510 != null) {
 				Static83.method1349(local2510.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local2510.anIntArray492[0]);
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static102.anInt2465 = Static90.anInt2133;
 				Static62.anInt1554 = Static107.anInt2500;
 				Static101.anInt2410 = 0;
@@ -705,7 +706,7 @@ public final class Static96 {
 			local2510 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local22];
 			if (local2510 != null) {
 				Static83.method1349(local2510.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local2510.anIntArray492[0]);
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static101.anInt2410 = 0;
 				Static62.anInt1554 = Static107.anInt2500;
 				Static102.anInt2465 = Static90.anInt2133;
@@ -737,7 +738,7 @@ public final class Static96 {
 			if (local2510 != null) {
 				Static83.method1349(local2510.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local2510.anIntArray492[0]);
 				Static101.anInt2410 = 0;
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static102.anInt2465 = Static90.anInt2133;
 				Static62.anInt1554 = Static107.anInt2500;
 				Static80.out.p1isaac(147);
@@ -751,7 +752,7 @@ public final class Static96 {
 				Static83.method1349(local30, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local26);
 			}
 			Static102.anInt2465 = Static90.anInt2133;
-			Static45.anInt1096 = 2;
+			Static45.crossMode = 2;
 			Static62.anInt1554 = Static107.anInt2500;
 			Static101.anInt2410 = 0;
 			Static80.out.p1isaac(108);
@@ -767,7 +768,7 @@ public final class Static96 {
 			}
 			Static62.anInt1554 = Static107.anInt2500;
 			Static102.anInt2465 = Static90.anInt2133;
-			Static45.anInt1096 = 2;
+			Static45.crossMode = 2;
 			Static101.anInt2410 = 0;
 			Static80.out.p1isaac(202);
 			Static80.out.method1694(local30 + Static30.anInt725);
@@ -779,7 +780,7 @@ public final class Static96 {
 			if (local1295 != null) {
 				Static83.method1349(local1295.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local1295.anIntArray492[0]);
 				Static62.anInt1554 = Static107.anInt2500;
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static101.anInt2410 = 0;
 				Static102.anInt2465 = Static90.anInt2133;
 				Static80.out.p1isaac(4);
@@ -793,7 +794,7 @@ public final class Static96 {
 			local2510 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local22];
 			if (local2510 != null) {
 				Static83.method1349(local2510.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local2510.anIntArray492[0]);
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static102.anInt2465 = Static90.anInt2133;
 				Static62.anInt1554 = Static107.anInt2500;
 				Static101.anInt2410 = 0;
@@ -812,7 +813,7 @@ public final class Static96 {
 			local2510 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local22];
 			if (local2510 != null) {
 				Static83.method1349(local2510.anIntArray496[0], 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local2510.anIntArray492[0]);
-				Static45.anInt1096 = 2;
+				Static45.crossMode = 2;
 				Static101.anInt2410 = 0;
 				Static102.anInt2465 = Static90.anInt2133;
 				Static62.anInt1554 = Static107.anInt2500;

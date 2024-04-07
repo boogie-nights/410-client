@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.graphics.Draw3D;
 import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -44,7 +45,7 @@ public final class Static80 {
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(IIIII)I")
 	public static int interpolate(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(12) int local12 = 65536 - Class2_Sub2_Sub2_Sub1.cos[arg0 * 1024 / arg2] >> 1;
+		@Pc(12) int local12 = 65536 - Draw3D.cos[arg0 * 1024 / arg2] >> 1;
 		return ((65536 - local12) * arg1 >> 16) + (local12 * arg3 >> 16);
 	}
 

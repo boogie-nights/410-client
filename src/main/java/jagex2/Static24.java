@@ -32,7 +32,7 @@ public final class Static24 {
 	private static Class40 aClass40_184 = Static13.method257("Login to a members(W server to use this object)3");
 
 	@OriginalMember(owner = "client!ee", name = "jb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_181 = aClass40_184;
+	public static Class40 textLoginToAMemberServerToUse = aClass40_184;
 
 	@OriginalMember(owner = "client!ee", name = "kb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_182 = Static13.method257("::fpsoff");
@@ -464,7 +464,7 @@ public final class Static24 {
 		aClass40_184 = null;
 		aByteArray9 = null;
 		aClass40_182 = null;
-		aClass40_181 = null;
+		textLoginToAMemberServerToUse = null;
 		aClass44_4 = null;
 	}
 }

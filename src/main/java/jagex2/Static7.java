@@ -47,72 +47,72 @@ public final class Static7 {
 
 	@OriginalMember(owner = "client!ba", name = "b", descriptor = "(I)Ljava/awt/Component;")
 	public static Component method185() {
-		if (Static105.aCanvas_Sub1_1 == null) {
+		if (Static105.viewBox == null) {
 			return Static99.aClass7_2 == null ? null : Static99.aClass7_2.anApplet1;
 		} else {
-			return Static105.aCanvas_Sub1_1;
+			return Static105.viewBox;
 		}
 	}
 
 	@OriginalMember(owner = "client!ba", name = "c", descriptor = "(I)V")
-	public static void method186() {
-		if (Static102.anInt2473 == 0) {
+	public static void drawPrivateMessages() {
+		if (Static102.splitPrivateChat == 0) {
 			return;
 		}
 		@Pc(13) Class2_Sub2_Sub2_Sub2 local13 = Static103.aClass2_Sub2_Sub2_Sub2_5;
-		@Pc(15) int local15 = 0;
-		if (Static84.anInt1973 != 0) {
-			local15 = 1;
+		@Pc(15) int lineOffset = 0;
+		if (Static84.systemUpdateTimer != 0) {
+			lineOffset = 1;
 		}
-		for (@Pc(26) int local26 = 0; local26 < 100; local26++) {
-			if (Static63.aClass40Array30[local26] != null) {
-				@Pc(36) int local36 = Static76.anIntArray469[local26];
-				@Pc(40) Class40 local40 = Static106.aClass40Array40[local26];
+		for (@Pc(26) int i = 0; i < 100; i++) {
+			if (Static63.messageText[i] != null) {
+				@Pc(36) int type = Static76.messageType[i];
+				@Pc(40) Class40 username = Static106.messageSender[i];
 				@Pc(42) byte local42 = 0;
-				if (local40 != null && local40.method1168(Static42.aClass40_323)) {
+				if (username != null && username.method1168(Static42.aClass40_323)) {
 					local42 = 1;
-					local40 = local40.method1185(5);
+					username = username.method1185(5);
 				}
-				if (local40 != null && local40.method1168(Static92.aClass40_622)) {
+				if (username != null && username.method1168(Static92.aClass40_622)) {
 					local42 = 2;
-					local40 = local40.method1185(5);
+					username = username.method1185(5);
 				}
-				@Pc(108) int local108;
-				if ((local36 == 3 || local36 == 7) && (local36 == 7 || Static104.privateChatSetting == 0 || Static104.privateChatSetting == 1 && Static38.method729(local40))) {
-					local108 = 329 - local15 * 13;
-					local15++;
-					local13.method575(Static45.aClass40_340, 4, local108, 0);
-					local13.method575(Static45.aClass40_340, 4, local108 - 1, 65535);
+				@Pc(108) int y;
+				if ((type == 3 || type == 7) && (type == 7 || Static104.privateChatSetting == 0 || Static104.privateChatSetting == 1 && Static38.isFriend(username))) {
+					y = 329 - lineOffset * 13;
+					lineOffset++;
+					local13.drawString(Static45.aClass40_340, 4, y, 0);
+					local13.drawString(Static45.aClass40_340, 4, y - 1, 65535);
 					@Pc(131) int local131 = local13.method568(Static82.aClass40_564) + 4;
 					if (local42 == 1) {
-						Static70.aClass2_Sub2_Sub2_Sub3Array8[0].method1320(local131, local108 - 12);
+						Static70.aClass2_Sub2_Sub2_Sub3Array8[0].method1320(local131, y - 12);
 						local131 += 14;
 					}
 					if (local42 == 2) {
-						Static70.aClass2_Sub2_Sub2_Sub3Array8[1].method1320(local131, local108 - 12);
+						Static70.aClass2_Sub2_Sub2_Sub3Array8[1].method1320(local131, y - 12);
 						local131 += 14;
 					}
-					local13.method575(Static80.method1334(new Class40[] { local40, Static1.aClass40_4, Static63.aClass40Array30[local26] }), local131, local108, 0);
-					local13.method575(Static80.method1334(new Class40[] { local40, Static1.aClass40_4, Static63.aClass40Array30[local26] }), local131, local108 - 1, 65535);
-					if (local15 >= 5) {
+					local13.drawString(Static80.method1334(new Class40[] { username, Static1.textFriendsChatColon, Static63.messageText[i] }), local131, y, 0);
+					local13.drawString(Static80.method1334(new Class40[] { username, Static1.textFriendsChatColon, Static63.messageText[i] }), local131, y - 1, 65535);
+					if (lineOffset >= 5) {
 						return;
 					}
 				}
-				if (local36 == 5 && Static104.privateChatSetting < 2) {
-					local108 = 329 - local15 * 13;
-					local15++;
-					local13.method575(Static63.aClass40Array30[local26], 4, local108, 0);
-					local13.method575(Static63.aClass40Array30[local26], 4, local108 - 1, 65535);
-					if (local15 >= 5) {
+				if (type == 5 && Static104.privateChatSetting < 2) {
+					y = 329 - lineOffset * 13;
+					lineOffset++;
+					local13.drawString(Static63.messageText[i], 4, y, 0);
+					local13.drawString(Static63.messageText[i], 4, y - 1, 65535);
+					if (lineOffset >= 5) {
 						return;
 					}
 				}
-				if (local36 == 6 && Static104.privateChatSetting < 2) {
-					local108 = 329 - local15 * 13;
-					local13.method575(Static80.method1334(new Class40[] { Static100.aClass40_690, local40, Static1.aClass40_4, Static63.aClass40Array30[local26] }), 4, local108, 0);
-					local13.method575(Static80.method1334(new Class40[] { Static100.aClass40_690, local40, Static1.aClass40_4, Static63.aClass40Array30[local26] }), 4, local108 - 1, 65535);
-					local15++;
-					if (local15 >= 5) {
+				if (type == 6 && Static104.privateChatSetting < 2) {
+					y = 329 - lineOffset * 13;
+					local13.drawString(Static80.method1334(new Class40[] { Static100.aClass40_690, username, Static1.textFriendsChatColon, Static63.messageText[i] }), 4, y, 0);
+					local13.drawString(Static80.method1334(new Class40[] { Static100.aClass40_690, username, Static1.textFriendsChatColon, Static63.messageText[i] }), 4, y - 1, 65535);
+					lineOffset++;
+					if (lineOffset >= 5) {
 						return;
 					}
 				}

@@ -39,7 +39,7 @@ public final class Static102 {
 	public static Class40 textLoadedFonts = Static13.method257("Loaded fonts");
 
 	@OriginalMember(owner = "client!vc", name = "ib", descriptor = "I")
-	public static int anInt2473 = 0;
+	public static int splitPrivateChat = 0;
 
 	@OriginalMember(owner = "client!vc", name = "jb", descriptor = "I")
 	public static int anInt2474 = 0;

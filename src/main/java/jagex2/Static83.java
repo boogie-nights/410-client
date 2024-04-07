@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Component;
 
+import jagex2.config.ComType;
 import jagex2.config.ObjType;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Class2_Sub2_Sub12;

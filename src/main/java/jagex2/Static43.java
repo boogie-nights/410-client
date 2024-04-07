@@ -34,17 +34,20 @@ public final class Static43 {
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(B)V")
 	public static void method1239() {
-		Static19.anInt440 = 0;
-		@Pc(17) int local17 = (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7) + Static87.anInt2058;
-		@Pc(24) int local24 = Static30.anInt725 + (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7);
-		if (local17 >= 3053 && local17 <= 3156 && local24 >= 3056 && local24 <= 3136) {
-			Static19.anInt440 = 1;
+		Static19.overrideChat = 0;
+		@Pc(17) int x = (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7) + Static87.anInt2058;
+		@Pc(24) int y = Static30.anInt725 + (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7);
+
+		if (x >= 3053 && x <= 3156 && y >= 3056 && y <= 3136) {
+			Static19.overrideChat = 1;
 		}
-		if (local17 >= 3072 && local17 <= 3118 && local24 >= 9492 && local24 <= 9535) {
-			Static19.anInt440 = 1;
+
+		if (x >= 3072 && x <= 3118 && y >= 9492 && y <= 9535) {
+			Static19.overrideChat = 1;
 		}
-		if (Static19.anInt440 == 1 && local17 >= 3139 && local17 <= 3199 && local24 >= 3008 && local24 <= 3062) {
-			Static19.anInt440 = 0;
+
+		if (Static19.overrideChat == 1 && x >= 3139 && x <= 3199 && y >= 3008 && y <= 3062) {
+			Static19.overrideChat = 0;
 		}
 	}
 

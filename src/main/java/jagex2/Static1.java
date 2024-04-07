@@ -47,7 +47,7 @@ public final class Static1 {
 	public static boolean lowMemory = false;
 
 	@OriginalMember(owner = "client!a", name = "z", descriptor = "Lclient!o;")
-	public static Class40 aClass40_4 = Static13.method257(": ");
+	public static Class40 textFriendsChatColon = Static13.method257(": ");
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(BI)Lclient!o;")
 	public static Class40 method1(@OriginalArg(1) int arg0) {
@@ -125,7 +125,7 @@ public final class Static1 {
 		aClass40_2 = null;
 		aClass45_1 = null;
 		anIntArray1 = null;
-		aClass40_4 = null;
+		textFriendsChatColon = null;
 		aClass40_1 = null;
 	}
 }

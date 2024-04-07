@@ -3,6 +3,7 @@ package jagex2;
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 
+import jagex2.config.ComType;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -40,7 +41,7 @@ public final class Static10 {
 	private static Class40 aClass40_66 = Static13.method257("Members object");
 
 	@OriginalMember(owner = "client!bd", name = "s", descriptor = "Lclient!o;")
-	public static Class40 aClass40_65 = aClass40_66;
+	public static Class40 textMembersObject = aClass40_66;
 
 	@OriginalMember(owner = "client!bd", name = "u", descriptor = "I")
 	public static int anInt263 = 0;
@@ -66,7 +67,7 @@ public final class Static10 {
 				component.buttonType = 0;
 				component.text = Static52.aClass40_361;
 			} else {
-				local68 = Static22.anInt2594;
+				local68 = Static22.friendCount;
 				if (clientCode <= 700) {
 					clientCode--;
 				} else {
@@ -89,7 +90,7 @@ public final class Static10 {
 			} else {
 				clientCode -= 101;
 			}
-			local68 = Static22.anInt2594;
+			local68 = Static22.friendCount;
 			if (Static42.anInt1038 != 2) {
 				local68 = 0;
 			}
@@ -113,7 +114,7 @@ public final class Static10 {
 				component.buttonType = 1;
 			}
 		} else if (clientCode == 203) {
-			local68 = Static22.anInt2594;
+			local68 = Static22.friendCount;
 			if (Static42.anInt1038 != 2) {
 				local68 = 0;
 			}
@@ -305,7 +306,7 @@ public final class Static10 {
 		aClass40_63 = null;
 		aClass14_1 = null;
 		RSA_MODULUS = null;
-		aClass40_65 = null;
+		textMembersObject = null;
 		aClass40_67 = null;
 	}
 }

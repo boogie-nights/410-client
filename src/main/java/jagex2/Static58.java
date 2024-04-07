@@ -56,13 +56,13 @@ public final class Static58 {
 			Static73.redrawChatback = true;
 		}
 		for (@Pc(34) int local34 = 99; local34 > 0; local34--) {
-			Static76.anIntArray469[local34] = Static76.anIntArray469[local34 - 1];
-			Static106.aClass40Array40[local34] = Static106.aClass40Array40[local34 - 1];
-			Static63.aClass40Array30[local34] = Static63.aClass40Array30[local34 - 1];
+			Static76.messageType[local34] = Static76.messageType[local34 - 1];
+			Static106.messageSender[local34] = Static106.messageSender[local34 - 1];
+			Static63.messageText[local34] = Static63.messageText[local34 - 1];
 		}
-		Static76.anIntArray469[0] = arg0;
-		Static106.aClass40Array40[0] = arg1;
-		Static63.aClass40Array30[0] = arg2;
+		Static76.messageType[0] = arg0;
+		Static106.messageSender[0] = arg1;
+		Static63.messageText[0] = arg2;
 	}
 
 	@OriginalMember(owner = "client!la", name = "a", descriptor = "(IIIILclient!eb;IBI)V")

@@ -71,7 +71,7 @@ public final class Static88 {
 		Static80.out.pos = 0;
 		Static7.anInt231 = 0;
 		anInt2083 = -1;
-		Static84.anInt1973 = 0;
+		Static84.systemUpdateTimer = 0;
 		Static34.menuSize = 0;
 		Static33.anInt785 = 0;
 		Static85.anInt1986 = -1;

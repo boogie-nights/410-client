@@ -14,7 +14,7 @@ public final class Static106 {
 	public static Class40 aClass40_739 = Static13.method257("Your friendlist is full)3 Max of 100 for free users)1 and 200 for members");
 
 	@OriginalMember(owner = "client!wc", name = "Pb", descriptor = "[Lclient!o;")
-	public static Class40[] aClass40Array40 = new Class40[100];
+	public static Class40[] messageSender = new Class40[100];
 
 	@OriginalMember(owner = "client!wc", name = "Rb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_740 = Static13.method257("Importing models )2 ");
@@ -51,7 +51,7 @@ public final class Static106 {
 		aClass12_1 = null;
 		aClass40_740 = null;
 		aClass40_739 = null;
-		aClass40Array40 = null;
+		messageSender = null;
 		aClass40_741 = null;
 	}
 
@@ -84,7 +84,7 @@ public final class Static106 {
 							local117 = Static61.aClass40_447.toBase37();
 							Static63.method1062(local117);
 						}
-						if (Static93.anInt2180 == 2 && Static22.anInt2594 > 0) {
+						if (Static93.anInt2180 == 2 && Static22.friendCount > 0) {
 							local117 = Static61.aClass40_447.toBase37();
 							Static70.method1115(local117);
 						}

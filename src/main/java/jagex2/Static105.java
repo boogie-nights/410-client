@@ -21,7 +21,7 @@ public final class Static105 {
 	public static byte[][] aByteArrayArray12;
 
 	@OriginalMember(owner = "client!wb", name = "q", descriptor = "Lclient!k;")
-	public static ViewBox aCanvas_Sub1_1;
+	public static ViewBox viewBox;
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "Lclient!o;")
 	public static Class40 aClass40_725 = Static13.method257("backleft1");
@@ -55,21 +55,23 @@ public final class Static105 {
 		if (obj != null) {
 			return obj;
 		}
-		@Pc(28) byte[] local28 = Static41.aClass5_13.method68(id, 10);
+		@Pc(28) byte[] data = Static41.aClass5_13.method68(id, 10);
 		obj = new ObjType();
 		obj.anInt954 = id;
-		if (local28 != null) {
-			obj.method724(new Packet(local28));
+		if (data != null) {
+			obj.decode(new Packet(data));
 		}
+
 		obj.method716();
 		if (obj.certTemplate != -1) {
 			obj.method721(get(obj.certlink), get(obj.certTemplate));
 		}
+
 		if (!Static43.membersWorld && obj.members) {
 			obj.iops = null;
 			obj.ops = null;
-			obj.name = Static10.aClass40_65;
-			obj.desc = Static24.aClass40_181;
+			obj.name = Static10.textMembersObject;
+			obj.desc = Static24.textLoginToAMemberServerToUse;
 			obj.anInt951 = 0;
 		}
 		Static81.aClass47_16.put((long) id, obj);
@@ -78,7 +80,7 @@ public final class Static105 {
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(I)V")
 	public static void method1670() {
-		aCanvas_Sub1_1 = null;
+		viewBox = null;
 		aClass40_726 = null;
 		aClass6_7 = null;
 		aClass40_728 = null;
@@ -104,14 +106,14 @@ public final class Static105 {
 		Static56.aClass2_Sub3_Sub1_5.pos = 0;
 		Static97.aBoolean175 = false;
 		Static97.anInt2352 = -1;
-		Static84.anInt1973 = 0;
+		Static84.systemUpdateTimer = 0;
 		Static67.anInt1672 = 0;
 		Static34.menuSize = 0;
 		Static33.anInt788 = -1;
 		Static91.anInt2139 = 0;
 		Static37.method722(0);
 		for (@Pc(1645) int local1645 = 0; local1645 < 100; local1645++) {
-			Static63.aClass40Array30[local1645] = null;
+			Static63.messageText[local1645] = null;
 		}
 		Static22.anInt2590 = -1;
 		Static104.anInt2518 = (int) (Math.random() * 100.0D) - 50;
@@ -147,7 +149,7 @@ public final class Static105 {
 			}
 		}
 		Static92.aClass44_7 = new LinkedList();
-		Static22.anInt2594 = 0;
+		Static22.friendCount = 0;
 		Static42.anInt1038 = 0;
 		Static83.method1350(Static38.anInt980);
 		Static38.anInt980 = -1;

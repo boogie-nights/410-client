@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.graphics.Draw3D;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -148,27 +149,27 @@ public final class Static86 {
 
 	@OriginalMember(owner = "client!sa", name = "c", descriptor = "(Z)V")
 	public static void method1385() {
-		if (Static102.anInt2473 == 0) {
+		if (Static102.splitPrivateChat == 0) {
 			return;
 		}
 		@Pc(15) int local15 = 0;
-		if (Static84.anInt1973 != 0) {
+		if (Static84.systemUpdateTimer != 0) {
 			local15 = 1;
 		}
 		for (@Pc(21) int local21 = 0; local21 < 100; local21++) {
-			if (Static63.aClass40Array30[local21] != null) {
-				@Pc(31) int local31 = Static76.anIntArray469[local21];
-				@Pc(35) Class40 local35 = Static106.aClass40Array40[local21];
+			if (Static63.messageText[local21] != null) {
+				@Pc(31) int local31 = Static76.messageType[local21];
+				@Pc(35) Class40 local35 = Static106.messageSender[local21];
 				if (local35 != null && local35.method1168(Static42.aClass40_323)) {
 					local35 = local35.method1185(5);
 				}
 				if (local35 != null && local35.method1168(Static92.aClass40_622)) {
 					local35 = local35.method1185(5);
 				}
-				if ((local31 == 3 || local31 == 7) && (local31 == 7 || Static104.privateChatSetting == 0 || Static104.privateChatSetting == 1 && Static38.method729(local35))) {
+				if ((local31 == 3 || local31 == 7) && (local31 == 7 || Static104.privateChatSetting == 0 || Static104.privateChatSetting == 1 && Static38.isFriend(local35))) {
 					@Pc(85) int local85 = 329 - local15 * 13;
 					if (Static32.anInt742 > 4 && local85 - 10 < Static100.anInt2394 + -4 && local85 + 3 >= Static100.anInt2394 + -4) {
-						@Pc(129) int local129 = Static103.aClass2_Sub2_Sub2_Sub2_5.method568(Static80.method1334(new Class40[] { Static3.aClass40_18, local35, Static63.aClass40Array30[local21] })) + 25;
+						@Pc(129) int local129 = Static103.aClass2_Sub2_Sub2_Sub2_5.method568(Static80.method1334(new Class40[] { Static3.aClass40_18, local35, Static63.messageText[local21] })) + 25;
 						if (local129 > 450) {
 							local129 = 450;
 						}
@@ -208,9 +209,9 @@ public final class Static86 {
 		local23 -= 73;
 		local17 -= 75;
 		@Pc(45) int local45 = Static67.anInt1669 + Static84.anInt1978 & 0x7FF;
-		@Pc(49) int local49 = Class2_Sub2_Sub2_Sub1.sin[local45];
+		@Pc(49) int local49 = Draw3D.sin[local45];
 		@Pc(57) int local57 = (Static15.anInt1857 + 256) * local49 >> 8;
-		@Pc(61) int local61 = Class2_Sub2_Sub2_Sub1.cos[local45];
+		@Pc(61) int local61 = Draw3D.cos[local45];
 		@Pc(69) int local69 = local61 * (Static15.anInt1857 + 256) >> 8;
 		@Pc(79) int local79 = local23 * local69 + local17 * local57 >> 11;
 		@Pc(90) int local90 = local69 * local17 - local57 * local23 >> 11;

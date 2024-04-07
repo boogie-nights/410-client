@@ -1161,7 +1161,7 @@ public final class Model extends Class2_Sub2_Sub12 {
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(IIIIIIIII)V")
 	@Override
-	public void method1536(@OriginalArg(0) int yaw, @OriginalArg(1) int sinEyePitch, @OriginalArg(2) int cosEyePitch, @OriginalArg(3) int sinEyeYaw, @OriginalArg(4) int cowEyeYaw, @OriginalArg(5) int relativeX, @OriginalArg(6) int relativeY, @OriginalArg(7) int relativeZ, @OriginalArg(8) int bitset) {
+	public void draw(@OriginalArg(0) int yaw, @OriginalArg(1) int sinEyePitch, @OriginalArg(2) int cosEyePitch, @OriginalArg(3) int sinEyeYaw, @OriginalArg(4) int cowEyeYaw, @OriginalArg(5) int relativeX, @OriginalArg(6) int relativeY, @OriginalArg(7) int relativeZ, @OriginalArg(8) int bitset) {
 		if (this.anInt1740 != 1) {
 			this.method1135();
 		}
@@ -1189,8 +1189,8 @@ public final class Model extends Class2_Sub2_Sub12 {
 		if (bottomY / maxZ <= Static6.centerY2D) {
 			return;
 		}
-		@Pc(117) int local117 = radiusSinEyePitch + (super.maxY * cosEyePitch >> 16);
-		@Pc(123) int topY = midY - local117 << 9;
+		@Pc(117) int yPrime = radiusSinEyePitch + (super.maxY * cosEyePitch >> 16);
+		@Pc(123) int topY = midY - yPrime << 9;
 		if (topY / maxZ >= Static6.anInt226) {
 			return;
 		}

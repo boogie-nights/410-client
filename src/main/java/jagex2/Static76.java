@@ -23,7 +23,7 @@ public final class Static76 {
 	public static Class40 aClass40_613 = Static13.method257(" with @yel@");
 
 	@OriginalMember(owner = "client!p", name = "d", descriptor = "[I")
-	public static int[] anIntArray469 = new int[100];
+	public static int[] messageType = new int[100];
 
 	@OriginalMember(owner = "client!p", name = "f", descriptor = "Z")
 	public static boolean aBoolean164 = false;
@@ -50,7 +50,7 @@ public final class Static76 {
 		aClass40_615 = null;
 		aClass6_5 = null;
 		aClass40_616 = null;
-		anIntArray469 = null;
+		messageType = null;
 		aClass40_614 = null;
 		anIntArray470 = null;
 	}

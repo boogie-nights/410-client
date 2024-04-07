@@ -168,11 +168,11 @@ public final class Static18 {
 
 	@OriginalMember(owner = "client!db", name = "c", descriptor = "(B)V")
 	public static void method359() {
-		Static7.method186();
-		if (Static45.anInt1096 == 1) {
+		Static7.drawPrivateMessages();
+		if (Static45.crossMode == 1) {
 			Static54.aClass2_Sub2_Sub2_Sub4Array7[Static101.anInt2410 / 100].method1624(Static62.anInt1554 - 8 - 4, Static102.anInt2465 - 8 + -4);
 		}
-		if (Static45.anInt1096 == 2) {
+		if (Static45.crossMode == 2) {
 			Static54.aClass2_Sub2_Sub2_Sub4Array7[Static101.anInt2410 / 100 + 4].method1624(Static62.anInt1554 - 8 - 4, Static102.anInt2465 + -8 + -4);
 		}
 		if (Static3.anInt51 != -1) {
@@ -232,16 +232,16 @@ public final class Static18 {
 				Static92.aBoolean165 = false;
 			}
 		}
-		if (Static84.anInt1973 == 0) {
+		if (Static84.systemUpdateTimer == 0) {
 			return;
 		}
-		@Pc(254) int local254 = Static84.anInt1973 / 50;
+		@Pc(254) int local254 = Static84.systemUpdateTimer / 50;
 		local158 = local254 / 60;
 		@Pc(262) int local262 = local254 % 60;
 		if (local262 >= 10) {
-			Static103.aClass2_Sub2_Sub2_Sub2_5.method575(Static80.method1334(new Class40[] { Static92.aClass40_618, Static53.method859(local158), Static97.aClass40_673, Static53.method859(local262) }), 4, 329, 16776960);
+			Static103.aClass2_Sub2_Sub2_Sub2_5.drawString(Static80.method1334(new Class40[] { Static92.aClass40_618, Static53.method859(local158), Static97.aClass40_673, Static53.method859(local262) }), 4, 329, 16776960);
 		} else {
-			Static103.aClass2_Sub2_Sub2_Sub2_5.method575(Static80.method1334(new Class40[] { Static92.aClass40_618, Static53.method859(local158), Static20.aClass40_135, Static53.method859(local262) }), 4, 329, 16776960);
+			Static103.aClass2_Sub2_Sub2_Sub2_5.drawString(Static80.method1334(new Class40[] { Static92.aClass40_618, Static53.method859(local158), Static20.aClass40_135, Static53.method859(local262) }), 4, 329, 16776960);
 		}
 	}
 

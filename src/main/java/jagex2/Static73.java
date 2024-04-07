@@ -246,7 +246,7 @@ public final class Static73 {
 		}
 		Static13.method255();
 		Static92.aClass47_21.clear();
-		if (Static105.aCanvas_Sub1_1 != null) {
+		if (Static105.viewBox != null) {
 			Static80.out.p1isaac(153);
 			Static80.out.p4(1057001181);
 		}

@@ -1,5 +1,7 @@
 package jagex2;
 
+import jagex2.config.ComType;
+import jagex2.graphics.Draw3D;
 import jagex2.graphics.Static6;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -105,7 +107,7 @@ public final class Static103 {
 			@Pc(52) int[] distance = new int[9];
 			for (x = 0; x < 9; x++) {
 				angle = x * 32 + 143;
-				sin = Class2_Sub2_Sub2_Sub1.sin[angle];
+				sin = Draw3D.sin[angle];
 				offset = angle * 3 + 600;
 				distance[x] = offset * sin >> 16;
 			}

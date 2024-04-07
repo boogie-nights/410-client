@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.config.ComType;
 import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;

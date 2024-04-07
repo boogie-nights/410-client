@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.config.ObjType;
+import jagex2.graphics.Draw3D;
 import jagex2.graphics.Model;
 import jagex2.graphics.Static6;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -104,13 +105,13 @@ public final class Static60 {
 			}
 		}
 		@Pc(125) int[] local125 = Static6.method167();
-		@Pc(127) int local127 = Static26.anInt2440;
+		@Pc(127) int local127 = Static26.width2d;
 		@Pc(129) int[] local129 = Static26.anIntArray533;
 		@Pc(131) int local131 = Static26.anInt2435;
-		@Pc(133) int local133 = Static26.anInt2437;
-		@Pc(135) int local135 = Static26.anInt2439;
+		@Pc(133) int local133 = Static26.right;
+		@Pc(135) int local135 = Static26.top;
 		@Pc(137) int local137 = Static26.anInt2436;
-		@Pc(139) int local139 = Static26.anInt2438;
+		@Pc(139) int local139 = Static26.bottom;
 		icon = new Class2_Sub2_Sub2_Sub4(32, 32);
 		Static26.bind(icon.pixels, 32, 32);
 		Static46.anIntArray536 = Static6.method175(Static46.anIntArray536);
@@ -123,8 +124,8 @@ public final class Static60 {
 		if (arg0 > 0) {
 			local164 = (int) ((double) local164 * 1.04D);
 		}
-		@Pc(193) int y = Class2_Sub2_Sub2_Sub1.cos[obj.xan2d] * local164 >> 16;
-		@Pc(202) int local202 = local164 * Class2_Sub2_Sub2_Sub1.sin[obj.xan2d] >> 16;
+		@Pc(193) int y = Draw3D.cos[obj.xan2d] * local164 >> 16;
+		@Pc(202) int local202 = local164 * Draw3D.sin[obj.xan2d] >> 16;
 		local101.method1135();
 		local101.method1151(obj.yan2d, obj.zan2d, obj.xan2d, obj.xoff2d, local202 + local101.maxY / 2 + obj.yoff2d, y + obj.yoff2d);
 		for (@Pc(230) int local230 = 31; local230 >= 0; local230--) {

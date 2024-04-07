@@ -84,7 +84,7 @@ public final class Static42 {
 			Static83.method1349(arg0, local34, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 0, 0, 2, true, local38 + 1, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 0, arg2);
 		}
 		Static62.anInt1554 = Static107.anInt2500;
-		Static45.anInt1096 = 2;
+		Static45.crossMode = 2;
 		Static102.anInt2465 = Static90.anInt2133;
 		Static101.anInt2410 = 0;
 		return true;

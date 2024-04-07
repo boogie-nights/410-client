@@ -42,7 +42,7 @@ public final class Static22 {
 	public static int anInt2590 = -1;
 
 	@OriginalMember(owner = "client!eb", name = "Fb", descriptor = "I")
-	public static int anInt2594 = 0;
+	public static int friendCount = 0;
 
 	@OriginalMember(owner = "client!eb", name = "Gb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_738 = Static13.method257("Jun");
@@ -121,7 +121,7 @@ public final class Static22 {
 			Static5.anInt182 = local25;
 		}
 		if (local15 == 8) {
-			Static102.anInt2473 = local25;
+			Static102.splitPrivateChat = local25;
 			Static73.redrawChatback = true;
 		}
 		if (local15 == 4) {

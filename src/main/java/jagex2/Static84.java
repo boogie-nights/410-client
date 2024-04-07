@@ -22,7 +22,7 @@ public final class Static84 {
 	public static long[] aLongArray4 = new long[100];
 
 	@OriginalMember(owner = "client!rd", name = "e", descriptor = "I")
-	public static int anInt1973 = 0;
+	public static int systemUpdateTimer = 0;
 
 	@OriginalMember(owner = "client!rd", name = "g", descriptor = "I")
 	public static int anInt1974 = 0;

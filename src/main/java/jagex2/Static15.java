@@ -75,7 +75,7 @@ public final class Static15 {
 				return;
 			}
 		}
-		for (@Pc(60) int local60 = 0; local60 < Static22.anInt2594; local60++) {
+		for (@Pc(60) int local60 = 0; local60 < Static22.friendCount; local60++) {
 			if (arg0 == Static21.aLongArray2[local60]) {
 				Static58.method989(0, Static61.aClass40_445, Static80.method1334(new Class40[] { Static51.aClass40_357, local27, Static58.aClass40_426 }));
 				return;

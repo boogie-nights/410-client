@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Image;
 
+import jagex2.config.ComType;
 import jagex2.config.ObjType;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;

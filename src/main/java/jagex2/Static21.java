@@ -2,7 +2,9 @@ package jagex2;
 
 import java.awt.Font;
 
+import jagex2.config.ComType;
 import jagex2.config.ObjType;
+import jagex2.graphics.Draw3D;
 import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.graphics.Model;
 import jagex2.graphics.Static6;
@@ -197,7 +199,7 @@ public final class Static21 {
 									local213 = 0;
 									local215 = 0;
 									local222 = local35.anIntArray331[local160] - 1;
-									if (local177 > Static26.anInt2437 - 32 && local177 < Static26.anInt2436 && Static26.anInt2439 - 32 < local186 && Static26.anInt2438 > local186 || Static88.anInt2077 != 0 && local160 == Static95.anInt2239) {
+									if (local177 > Static26.right - 32 && local177 < Static26.anInt2436 && Static26.top - 32 < local186 && Static26.bottom > local186 || Static88.anInt2077 != 0 && local160 == Static95.anInt2239) {
 										local257 = 0;
 										if (Static79.objSelected == 1 && local160 == Static30.anInt724 && Static105.anInt2526 == (arg2 << 16) + local29) {
 											local257 = 16777215;
@@ -223,8 +225,8 @@ public final class Static21 {
 												if (arg1 != -1) {
 													@Pc(395) ComType local395 = local27[arg1];
 													@Pc(415) int local415;
-													if (Static26.anInt2439 > local186 + local213 && local395.anInt1587 > 0) {
-														local415 = Static45.anInt1095 * (Static26.anInt2439 - local186 - local213) / 3;
+													if (Static26.top > local186 + local213 && local395.anInt1587 > 0) {
+														local415 = Static45.anInt1095 * (Static26.top - local186 - local213) / 3;
 														if (local415 > Static45.anInt1095 * 10) {
 															local415 = Static45.anInt1095 * 10;
 														}
@@ -234,8 +236,8 @@ public final class Static21 {
 														Static63.anInt1571 += local415;
 														local395.anInt1587 -= local415;
 													}
-													if (local186 + local213 + 32 > Static26.anInt2438 && local395.scroll - local395.height > local395.anInt1587) {
-														local415 = Static45.anInt1095 * (local213 + local186 + 32 - Static26.anInt2438) / 3;
+													if (local186 + local213 + 32 > Static26.bottom && local395.scroll - local395.height > local395.anInt1587) {
+														local415 = Static45.anInt1095 * (local213 + local186 + 32 - Static26.bottom) / 3;
 														if (local415 > Static45.anInt1095 * 10) {
 															local415 = Static45.anInt1095 * 10;
 														}
@@ -253,8 +255,8 @@ public final class Static21 {
 											}
 											if (local282.cropW == 33 || local35.anIntArray327[local160] != 1) {
 												@Pc(543) int local543 = local35.anIntArray327[local160];
-												Static76.aClass2_Sub2_Sub2_Sub2_4.method575(Static72.formatObjCount(local543), local177 + local215 + 1, local213 + local186 + 10, 0);
-												Static76.aClass2_Sub2_Sub2_Sub2_4.method575(Static72.formatObjCount(local543), local177 + local215, local186 + (9 - -local213), 16776960);
+												Static76.aClass2_Sub2_Sub2_Sub2_4.drawString(Static72.formatObjCount(local543), local177 + local215 + 1, local213 + local186 + 10, 0);
+												Static76.aClass2_Sub2_Sub2_Sub2_4.drawString(Static72.formatObjCount(local543), local177 + local215, local186 + (9 - -local213), 16776960);
 											}
 										}
 									}
@@ -316,7 +318,7 @@ public final class Static21 {
 								local742 = Static52.aClass40_361;
 								local162 = local35.anInt1584;
 							}
-							if (Static26.anInt2440 == 479) {
+							if (Static26.width2d == 479) {
 								if (local162 == 16776960) {
 									local162 = 255;
 								}
@@ -351,8 +353,8 @@ public final class Static21 {
 							}
 						} else if (local35.anInt1613 == 6) {
 							Static6.method177(local35.anInt1605 / 2 + local65, local60 + local35.height / 2);
-							local160 = local35.anInt1586 * Class2_Sub2_Sub2_Sub1.sin[local35.xan] >> 16;
-							local162 = Class2_Sub2_Sub2_Sub1.cos[local35.xan] * local35.anInt1586 >> 16;
+							local160 = local35.anInt1586 * Draw3D.sin[local35.xan] >> 16;
+							local162 = Draw3D.cos[local35.xan] * local35.anInt1586 >> 16;
 							@Pc(970) boolean local970 = Static83.method1354(local35);
 							if (local970) {
 								local177 = local35.anInt1592;

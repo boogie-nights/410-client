@@ -80,27 +80,27 @@ public final class Class2_Sub2_Sub2_Sub3 extends Class2_Sub2_Sub2 {
 	public void method1320(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		arg0 += this.anInt1907;
 		arg1 += this.anInt1906;
-		@Pc(15) int local15 = arg0 + arg1 * Static26.anInt2440;
+		@Pc(15) int local15 = arg0 + arg1 * Static26.width2d;
 		@Pc(17) int local17 = 0;
 		@Pc(20) int local20 = this.anInt1910;
 		@Pc(23) int local23 = this.width;
-		@Pc(27) int local27 = Static26.anInt2440 - local23;
+		@Pc(27) int local27 = Static26.width2d - local23;
 		@Pc(29) int local29 = 0;
 		@Pc(36) int local36;
-		if (arg1 < Static26.anInt2439) {
-			local36 = Static26.anInt2439 - arg1;
+		if (arg1 < Static26.top) {
+			local36 = Static26.top - arg1;
 			local20 -= local36;
-			arg1 = Static26.anInt2439;
+			arg1 = Static26.top;
 			local17 = local36 * local23;
-			local15 += local36 * Static26.anInt2440;
+			local15 += local36 * Static26.width2d;
 		}
-		if (arg1 + local20 > Static26.anInt2438) {
-			local20 -= arg1 + local20 - Static26.anInt2438;
+		if (arg1 + local20 > Static26.bottom) {
+			local20 -= arg1 + local20 - Static26.bottom;
 		}
-		if (arg0 < Static26.anInt2437) {
-			local36 = Static26.anInt2437 - arg0;
+		if (arg0 < Static26.right) {
+			local36 = Static26.right - arg0;
 			local23 -= local36;
-			arg0 = Static26.anInt2437;
+			arg0 = Static26.right;
 			local17 += local36;
 			local15 += local36;
 			local29 = local36;

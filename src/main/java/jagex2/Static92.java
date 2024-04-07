@@ -2,6 +2,7 @@ package jagex2;
 
 import java.io.IOException;
 
+import jagex2.config.ComType;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -60,8 +61,8 @@ public final class Static92 {
 		if (Static67.anInt1672 > 0) {
 			Static67.anInt1672--;
 		}
-		if (Static84.anInt1973 > 1) {
-			Static84.anInt1973--;
+		if (Static84.systemUpdateTimer > 1) {
+			Static84.systemUpdateTimer--;
 		}
 		if (Static76.aBoolean164) {
 			Static76.aBoolean164 = false;
@@ -216,10 +217,10 @@ public final class Static92 {
 		Static75.method1227();
 		Static2.method19();
 		Static45.anInt1095++;
-		if (Static45.anInt1096 != 0) {
+		if (Static45.crossMode != 0) {
 			Static101.anInt2410 += 20;
 			if (Static101.anInt2410 >= 400) {
-				Static45.anInt1096 = 0;
+				Static45.crossMode = 0;
 			}
 		}
 		if (Static21.anInt481 != 0) {
@@ -304,7 +305,7 @@ public final class Static92 {
 			Static89.anInt2100 = -1;
 			if (local912) {
 				Static62.anInt1554 = Static107.anInt2500;
-				Static45.anInt1096 = 1;
+				Static45.crossMode = 1;
 				Static101.anInt2410 = 0;
 				Static102.anInt2465 = Static90.anInt2133;
 			}

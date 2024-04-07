@@ -1,5 +1,6 @@
-package jagex2;
+package jagex2.config;
 
+import jagex2.*;
 import jagex2.config.ObjType;
 import jagex2.datastruct.Hashable;
 import jagex2.graphics.Model;

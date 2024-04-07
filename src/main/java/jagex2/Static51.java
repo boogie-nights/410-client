@@ -2,6 +2,7 @@ package jagex2;
 
 import java.math.BigInteger;
 
+import jagex2.config.ComType;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Class2_Sub2_Sub12;
 import jagex2.io.Packet;
@@ -333,7 +334,7 @@ public final class Static51 {
 						}
 					}
 				}
-				if (!local340 && Static19.anInt440 == 0) {
+				if (!local340 && Static19.overrideChat == 0) {
 					Static95.aPacket_4.pos = 0;
 					Static56.aClass2_Sub3_Sub1_5.method1692(Static95.aPacket_4.data, local141);
 					Static95.aPacket_4.pos = 0;

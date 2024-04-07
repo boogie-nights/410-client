@@ -402,13 +402,13 @@ public final class ObjType extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!hb", name = "a", descriptor = "(ILclient!eb;)V")
-	public void method724(@OriginalArg(1) Packet arg0) {
+	public void decode(@OriginalArg(1) Packet data) {
 		while (true) {
-			@Pc(5) int local5 = arg0.g1();
-			if (local5 == 0) {
+			@Pc(5) int code = data.g1();
+			if (code == 0) {
 				return;
 			}
-			this.decode(local5, arg0);
+			this.decode(code, data);
 		}
 	}
 }

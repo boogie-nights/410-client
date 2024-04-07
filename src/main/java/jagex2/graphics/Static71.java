@@ -1,6 +1,5 @@
 package jagex2.graphics;
 
-import jagex2.Class2_Sub2_Sub2_Sub1;
 import jagex2.Class5;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -33,7 +32,7 @@ public final class Static71 {
 	public static int pickedCount = 0;
 
 	@OriginalMember(owner = "client!ne", name = "Tb", descriptor = "[I")
-	public static int[] sin = Class2_Sub2_Sub2_Sub1.sin;
+	public static int[] sin = Draw3D.sin;
 
 	@OriginalMember(owner = "client!ne", name = "Ub", descriptor = "I")
 	public static int mouseZ = 0;
@@ -66,7 +65,7 @@ public final class Static71 {
 	public static int[] anIntArray394 = new int[2000];
 
 	@OriginalMember(owner = "client!ne", name = "fc", descriptor = "[I")
-	public static int[] anIntArray395 = Class2_Sub2_Sub2_Sub1.anIntArray61;
+	public static int[] anIntArray395 = Draw3D.reciprocal16;
 
 	@OriginalMember(owner = "client!ne", name = "gc", descriptor = "[I")
 	public static int[] vertexViewSpaceX = new int[4096];
@@ -96,7 +95,7 @@ public final class Static71 {
 	public static int[][] tmpDepthFaces = new int[1500][512];
 
 	@OriginalMember(owner = "client!ne", name = "pc", descriptor = "[I")
-	public static int[] cos = Class2_Sub2_Sub2_Sub1.cos;
+	public static int[] cos = Draw3D.cos;
 
 	@OriginalMember(owner = "client!ne", name = "qc", descriptor = "[Z")
 	public static boolean[] faceClippedX = new boolean[4096];

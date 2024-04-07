@@ -71,11 +71,11 @@ public final class Static20 {
 	}
 
 	@OriginalMember(owner = "client!e", name = "a", descriptor = "(IIZ)I")
-	public static int smoothNoise(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(41) int local41 = Static4.method93(arg0 - 1, arg1 - 1) + Static4.method93(arg0 + 1, arg1 + -1) + Static4.method93(arg0 - 1, arg1 - -1) + Static4.method93(arg0 + 1, arg1 - -1);
-		@Pc(74) int local74 = Static4.method93(arg0 - 1, arg1) + Static4.method93(arg0 + 1, arg1) + Static4.method93(arg0, arg1 + -1) + Static4.method93(arg0, arg1 + 1);
-		@Pc(79) int local79 = Static4.method93(arg0, arg1);
-		return local41 / 16 + local74 / 8 + local79 / 4;
+	public static int smoothNoise(@OriginalArg(0) int x, @OriginalArg(1) int y) {
+		@Pc(41) int corners = Static4.noise(x - 1, y - 1) + Static4.noise(x + 1, y + -1) + Static4.noise(x - 1, y - -1) + Static4.noise(x + 1, y - -1);
+		@Pc(74) int sides = Static4.noise(x - 1, y) + Static4.noise(x + 1, y) + Static4.noise(x, y + -1) + Static4.noise(x, y + 1);
+		@Pc(79) int center = Static4.noise(x, y);
+		return corners / 16 + sides / 8 + center / 4;
 	}
 
 	@OriginalMember(owner = "client!e", name = "d", descriptor = "(I)V")

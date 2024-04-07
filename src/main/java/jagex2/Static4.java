@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.config.ComType;
 import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -87,11 +88,11 @@ public final class Static4 {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "d", descriptor = "(III)I")
-	public static int method93(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(10) int local10 = arg0 + arg1 * 57;
-		@Pc(16) int local16 = local10 ^ local10 << 13;
-		@Pc(30) int local30 = Integer.MAX_VALUE & (local16 * local16 * 15731 + 789221) * local16 + 1376312589;
-		return local30 >> 19 & 0xFF;
+	public static int noise(@OriginalArg(0) int x, @OriginalArg(1) int y) {
+		@Pc(10) int n = x + y * 57;
+		@Pc(16) int n1 = n ^ n << 13;
+		@Pc(30) int n2 = Integer.MAX_VALUE & (n1 * n1 * 15731 + 789221) * n1 + 1376312589;
+		return n2 >> 19 & 0xFF;
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(Lclient!mc;Lclient!o;I)Lclient!o;")

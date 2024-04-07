@@ -71,16 +71,16 @@ public final class Static38 {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(Lclient!o;I)Z")
-	public static boolean method729(@OriginalArg(0) Class40 arg0) {
-		if (arg0 == null) {
+	public static boolean isFriend(@OriginalArg(0) Class40 username) {
+		if (username == null) {
 			return false;
 		}
-		for (@Pc(18) int local18 = 0; local18 < Static22.anInt2594; local18++) {
-			if (arg0.method1199(Static51.friendName[local18])) {
+		for (@Pc(18) int i = 0; i < Static22.friendCount; i++) {
+			if (username.method1199(Static51.friendName[i])) {
 				return true;
 			}
 		}
-		return arg0.method1199(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395);
+		return username.method1199(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395);
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(BLclient!ud;II)Lclient!vb;")

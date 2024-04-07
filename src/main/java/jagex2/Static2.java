@@ -2,6 +2,7 @@ package jagex2;
 
 import java.io.IOException;
 
+import jagex2.config.ComType;
 import jagex2.config.ObjType;
 import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -388,7 +389,7 @@ public final class Static2 {
 						}
 					}
 				}
-				if (!local673 && Static19.anInt440 == 0) {
+				if (!local673 && Static19.overrideChat == 0) {
 					Static35.aLongArray3[Static97.anInt2359] = local671;
 					Static97.anInt2359 = (Static97.anInt2359 + 1) % 100;
 					@Pc(738) Class40 local738 = Static7.method192(Static56.aClass2_Sub3_Sub1_5).method1166();
@@ -642,7 +643,7 @@ public final class Static2 {
 				local650 = Static56.aClass2_Sub3_Sub1_5.g8();
 				local230 = Static56.aClass2_Sub3_Sub1_5.g2();
 				@Pc(1508) Class40 local1508 = Static48.method819(local650).method1167();
-				for (local364 = 0; local364 < Static22.anInt2594; local364++) {
+				for (local364 = 0; local364 < Static22.friendCount; local364++) {
 					if (local650 == Static21.aLongArray2[local364]) {
 						if (local230 != Static62.anIntArray316[local364]) {
 							Static62.anIntArray316[local364] = local230;
@@ -659,16 +660,16 @@ public final class Static2 {
 					}
 				}
 				@Pc(1581) boolean local1581 = false;
-				if (local1508 != null && Static22.anInt2594 < 200) {
-					Static21.aLongArray2[Static22.anInt2594] = local650;
-					Static51.friendName[Static22.anInt2594] = local1508;
-					Static62.anIntArray316[Static22.anInt2594] = local230;
-					Static22.anInt2594++;
+				if (local1508 != null && Static22.friendCount < 200) {
+					Static21.aLongArray2[Static22.friendCount] = local650;
+					Static51.friendName[Static22.friendCount] = local1508;
+					Static62.anIntArray316[Static22.friendCount] = local230;
+					Static22.friendCount++;
 					Static33.aBoolean59 = true;
 				}
 				while (!local1581) {
 					local1581 = true;
-					for (local376 = 0; local376 < Static22.anInt2594 - 1; local376++) {
+					for (local376 = 0; local376 < Static22.friendCount - 1; local376++) {
 						if (Static4.anInt140 != Static62.anIntArray316[local376] && Static62.anIntArray316[local376 + 1] == Static4.anInt140 || Static62.anIntArray316[local376] == 0 && Static62.anIntArray316[local376 + 1] != 0) {
 							local1581 = false;
 							@Pc(1649) int local1649 = Static62.anIntArray316[local376];
@@ -731,7 +732,7 @@ public final class Static2 {
 							break;
 						}
 					}
-					if (!local1813 && Static19.anInt440 == 0) {
+					if (!local1813 && Static19.overrideChat == 0) {
 						Static58.method989(4, local1822, aClass40_14);
 					}
 				} else if (local1801.method1195(Static49.aClass40_654)) {
@@ -744,7 +745,7 @@ public final class Static2 {
 							break;
 						}
 					}
-					if (!local1813 && Static19.anInt440 == 0) {
+					if (!local1813 && Static19.overrideChat == 0) {
 						Static58.method989(8, local1822, Static102.aClass40_708);
 					}
 				} else if (local1801.method1195(Static79.aClass40_542)) {
@@ -757,7 +758,7 @@ public final class Static2 {
 							break;
 						}
 					}
-					if (!local1813 && Static19.anInt440 == 0) {
+					if (!local1813 && Static19.overrideChat == 0) {
 						@Pc(1923) Class40 local1923 = local1801.method1180(local1801.method1169() - 9, local1801.method1200(Static97.aClass40_673) + 1);
 						Static58.method989(8, local1822, local1923);
 					}
@@ -824,7 +825,7 @@ public final class Static2 {
 				return true;
 			}
 			if (Static88.anInt2083 == 38) {
-				Static84.anInt1973 = Static56.aClass2_Sub3_Sub1_5.method1714() * 30;
+				Static84.systemUpdateTimer = Static56.aClass2_Sub3_Sub1_5.method1714() * 30;
 				Static88.anInt2083 = -1;
 				return true;
 			}
@@ -1258,11 +1259,11 @@ public final class Static2 {
 					local68 = Static103.aClass2_Sub2_Sub2_Sub2_5;
 					Static26.method1613(0, 0, 463, 77);
 					for (local87 = 0; local87 < 100; local87++) {
-						if (Static63.aClass40Array30[local87] != null) {
+						if (Static63.messageText[local87] != null) {
 							@Pc(218) int local218 = Static34.anInt799 + 70 - local75 * 14;
-							@Pc(222) int local222 = Static76.anIntArray469[local87];
+							@Pc(222) int local222 = Static76.messageType[local87];
 							@Pc(224) byte local224 = 0;
-							@Pc(228) Class40 local228 = Static106.aClass40Array40[local87];
+							@Pc(228) Class40 local228 = Static106.messageSender[local87];
 							if (local228 != null && local228.method1168(Static42.aClass40_323)) {
 								local228 = local228.method1185(5);
 								local224 = 1;
@@ -1274,11 +1275,11 @@ public final class Static2 {
 							if (local222 == 0) {
 								local75++;
 								if (local218 > 0 && local218 < 110) {
-									local68.method575(Static63.aClass40Array30[local87], 4, local218, 0);
+									local68.drawString(Static63.messageText[local87], 4, local218, 0);
 								}
 							}
 							@Pc(306) int local306;
-							if ((local222 == 1 || local222 == 2) && (local222 == 1 || Static23.publicChatSetting == 0 || Static23.publicChatSetting == 1 && Static38.method729(local228))) {
+							if ((local222 == 1 || local222 == 2) && (local222 == 1 || Static23.publicChatSetting == 0 || Static23.publicChatSetting == 1 && Static38.isFriend(local228))) {
 								local75++;
 								if (local218 > 0 && local218 < 110) {
 									local306 = 4;
@@ -1290,14 +1291,14 @@ public final class Static2 {
 										Static70.aClass2_Sub2_Sub2_Sub3Array8[1].method1320(local306, local218 - 12);
 										local306 += 14;
 									}
-									local68.method575(Static80.method1334(new Class40[] { local228, Static97.aClass40_673 }), local306, local218, 0);
+									local68.drawString(Static80.method1334(new Class40[] { local228, Static97.aClass40_673 }), local306, local218, 0);
 									local306 += local68.method568(local228) + 8;
-									local68.method575(Static63.aClass40Array30[local87], local306, local218, 255);
+									local68.drawString(Static63.messageText[local87], local306, local218, 255);
 								}
 							}
-							if ((local222 == 3 || local222 == 7) && Static102.anInt2473 == 0 && (local222 == 7 || Static104.privateChatSetting == 0 || Static104.privateChatSetting == 1 && Static38.method729(local228))) {
+							if ((local222 == 3 || local222 == 7) && Static102.splitPrivateChat == 0 && (local222 == 7 || Static104.privateChatSetting == 0 || Static104.privateChatSetting == 1 && Static38.isFriend(local228))) {
 								if (local218 > 0 && local218 < 110) {
-									local68.method575(Static45.aClass40_340, 4, local218, 0);
+									local68.drawString(Static45.aClass40_340, 4, local218, 0);
 									local306 = local68.method568(Static82.aClass40_564) + 4;
 									if (local224 == 1) {
 										Static70.aClass2_Sub2_Sub2_Sub3Array8[0].method1320(local306, local218 - 12);
@@ -1307,34 +1308,34 @@ public final class Static2 {
 										Static70.aClass2_Sub2_Sub2_Sub3Array8[1].method1320(local306, local218 - 12);
 										local306 += 14;
 									}
-									local68.method575(Static80.method1334(new Class40[] { local228, Static97.aClass40_673 }), local306, local218, 0);
+									local68.drawString(Static80.method1334(new Class40[] { local228, Static97.aClass40_673 }), local306, local218, 0);
 									local306 += local68.method568(local228) + 8;
-									local68.method575(Static63.aClass40Array30[local87], local306, local218, 8388608);
+									local68.drawString(Static63.messageText[local87], local306, local218, 8388608);
 								}
 								local75++;
 							}
-							if (local222 == 4 && (Static103.tradeChatSetting == 0 || Static103.tradeChatSetting == 1 && Static38.method729(local228))) {
+							if (local222 == 4 && (Static103.tradeChatSetting == 0 || Static103.tradeChatSetting == 1 && Static38.isFriend(local228))) {
 								local75++;
 								if (local218 > 0 && local218 < 110) {
-									local68.method575(Static80.method1334(new Class40[] { local228, Static107.aClass40_716, Static63.aClass40Array30[local87] }), 4, local218, 8388736);
+									local68.drawString(Static80.method1334(new Class40[] { local228, Static107.aClass40_716, Static63.messageText[local87] }), 4, local218, 8388736);
 								}
 							}
-							if (local222 == 5 && Static102.anInt2473 == 0 && Static104.privateChatSetting < 2) {
+							if (local222 == 5 && Static102.splitPrivateChat == 0 && Static104.privateChatSetting < 2) {
 								if (local218 > 0 && local218 < 110) {
-									local68.method575(Static63.aClass40Array30[local87], 4, local218, 8388608);
+									local68.drawString(Static63.messageText[local87], 4, local218, 8388608);
 								}
 								local75++;
 							}
-							if (local222 == 6 && Static102.anInt2473 == 0 && Static104.privateChatSetting < 2) {
+							if (local222 == 6 && Static102.splitPrivateChat == 0 && Static104.privateChatSetting < 2) {
 								local75++;
 								if (local218 > 0 && local218 < 110) {
-									local68.method575(Static80.method1334(new Class40[] { Static100.aClass40_690, local228, Static97.aClass40_673 }), 4, local218, 0);
-									local68.method575(Static63.aClass40Array30[local87], local68.method568(Static80.method1334(new Class40[] { Static100.aClass40_690, local228 })) + 12, local218, 8388608);
+									local68.drawString(Static80.method1334(new Class40[] { Static100.aClass40_690, local228, Static97.aClass40_673 }), 4, local218, 0);
+									local68.drawString(Static63.messageText[local87], local68.method568(Static80.method1334(new Class40[] { Static100.aClass40_690, local228 })) + 12, local218, 8388608);
 								}
 							}
-							if (local222 == 8 && (Static103.tradeChatSetting == 0 || Static103.tradeChatSetting == 1 && Static38.method729(local228))) {
+							if (local222 == 8 && (Static103.tradeChatSetting == 0 || Static103.tradeChatSetting == 1 && Static38.isFriend(local228))) {
 								if (local218 > 0 && local218 < 110) {
-									local68.method575(Static80.method1334(new Class40[] { local228, Static107.aClass40_716, Static63.aClass40Array30[local87] }), 4, local218, 8270336);
+									local68.drawString(Static80.method1334(new Class40[] { local228, Static107.aClass40_716, Static63.messageText[local87] }), 4, local218, 8270336);
 								}
 								local75++;
 							}
@@ -1352,8 +1353,8 @@ public final class Static2 {
 					} else {
 						local709 = Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395;
 					}
-					local68.method575(Static80.method1334(new Class40[] { local709, Static97.aClass40_673 }), 4, 90, 0);
-					local68.method575(Static80.method1334(new Class40[] { Static61.chatTyped, Static17.aClass40_116 }), local68.method568(Static80.method1334(new Class40[] { local709, Static1.aClass40_4 })) + 6, 90, 255);
+					local68.drawString(Static80.method1334(new Class40[] { local709, Static97.aClass40_673 }), 4, 90, 0);
+					local68.drawString(Static80.method1334(new Class40[] { Static61.chatTyped, Static17.aClass40_116 }), local68.method568(Static80.method1334(new Class40[] { local709, Static1.textFriendsChatColon})) + 6, 90, 255);
 					Static26.method1603(0, 77, 479, 0);
 				} else {
 					local781 = Static21.method403(0, -1, Static38.anInt980, 3, 0, 96, 0, 479);

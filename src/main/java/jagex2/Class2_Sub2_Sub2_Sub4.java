@@ -77,7 +77,7 @@ public final class Class2_Sub2_Sub2_Sub4 extends Class2_Sub2_Sub2 {
 			@Pc(39) int local39 = local27 * arg7 >> 8;
 			@Pc(51) int local51 = (arg4 << 16) + local9 * local33 + local4 * local39;
 			@Pc(63) int local63 = (arg5 << 16) + (local9 * local39 - local4 * local33);
-			@Pc(69) int local69 = arg0 + arg1 * Static26.anInt2440;
+			@Pc(69) int local69 = arg0 + arg1 * Static26.width2d;
 			for (@Pc(71) int local71 = 0; local71 < arg3; local71++) {
 				@Pc(76) int local76 = arg8[local71];
 				@Pc(80) int local80 = local69 + local76;
@@ -90,7 +90,7 @@ public final class Class2_Sub2_Sub2_Sub4 extends Class2_Sub2_Sub2 {
 				}
 				local51 += local33;
 				local63 += local39;
-				local69 += Static26.anInt2440;
+				local69 += Static26.width2d;
 			}
 		} catch (@Pc(144) Exception local144) {
 		}
@@ -100,27 +100,27 @@ public final class Class2_Sub2_Sub2_Sub4 extends Class2_Sub2_Sub2 {
 	public void method1618(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		arg0 += this.anInt2444;
 		arg1 += this.anInt2441;
-		@Pc(15) int local15 = arg0 + arg1 * Static26.anInt2440;
+		@Pc(15) int local15 = arg0 + arg1 * Static26.width2d;
 		@Pc(17) int local17 = 0;
 		@Pc(20) int local20 = this.anInt2442;
 		@Pc(23) int local23 = this.anInt2446;
-		@Pc(27) int local27 = Static26.anInt2440 - local23;
+		@Pc(27) int local27 = Static26.width2d - local23;
 		@Pc(29) int local29 = 0;
 		@Pc(36) int local36;
-		if (arg1 < Static26.anInt2439) {
-			local36 = Static26.anInt2439 - arg1;
+		if (arg1 < Static26.top) {
+			local36 = Static26.top - arg1;
 			local20 -= local36;
-			arg1 = Static26.anInt2439;
+			arg1 = Static26.top;
 			local17 = local36 * local23;
-			local15 += local36 * Static26.anInt2440;
+			local15 += local36 * Static26.width2d;
 		}
-		if (arg1 + local20 > Static26.anInt2438) {
-			local20 -= arg1 + local20 - Static26.anInt2438;
+		if (arg1 + local20 > Static26.bottom) {
+			local20 -= arg1 + local20 - Static26.bottom;
 		}
-		if (arg0 < Static26.anInt2437) {
-			local36 = Static26.anInt2437 - arg0;
+		if (arg0 < Static26.right) {
+			local36 = Static26.right - arg0;
 			local23 -= local36;
-			arg0 = Static26.anInt2437;
+			arg0 = Static26.right;
 			local17 += local36;
 			local15 += local36;
 			local29 = local36;
@@ -141,27 +141,27 @@ public final class Class2_Sub2_Sub2_Sub4 extends Class2_Sub2_Sub2 {
 	public void method1619(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		arg0 += this.anInt2444;
 		arg1 += this.anInt2441;
-		@Pc(15) int local15 = arg0 + arg1 * Static26.anInt2440;
+		@Pc(15) int local15 = arg0 + arg1 * Static26.width2d;
 		@Pc(17) int local17 = 0;
 		@Pc(20) int local20 = this.anInt2442;
 		@Pc(23) int local23 = this.anInt2446;
-		@Pc(27) int local27 = Static26.anInt2440 - local23;
+		@Pc(27) int local27 = Static26.width2d - local23;
 		@Pc(29) int local29 = 0;
 		@Pc(36) int local36;
-		if (arg1 < Static26.anInt2439) {
-			local36 = Static26.anInt2439 - arg1;
+		if (arg1 < Static26.top) {
+			local36 = Static26.top - arg1;
 			local20 -= local36;
-			arg1 = Static26.anInt2439;
+			arg1 = Static26.top;
 			local17 = local36 * local23;
-			local15 += local36 * Static26.anInt2440;
+			local15 += local36 * Static26.width2d;
 		}
-		if (arg1 + local20 > Static26.anInt2438) {
-			local20 -= arg1 + local20 - Static26.anInt2438;
+		if (arg1 + local20 > Static26.bottom) {
+			local20 -= arg1 + local20 - Static26.bottom;
 		}
-		if (arg0 < Static26.anInt2437) {
-			local36 = Static26.anInt2437 - arg0;
+		if (arg0 < Static26.right) {
+			local36 = Static26.right - arg0;
 			local23 -= local36;
-			arg0 = Static26.anInt2437;
+			arg0 = Static26.right;
 			local17 += local36;
 			local15 += local36;
 			local29 = local36;
@@ -231,27 +231,27 @@ public final class Class2_Sub2_Sub2_Sub4 extends Class2_Sub2_Sub2 {
 	public void method1622(@OriginalArg(0) Class2_Sub2_Sub2_Sub3 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		arg1 += this.anInt2444;
 		arg2 += this.anInt2441;
-		@Pc(15) int local15 = arg1 + arg2 * Static26.anInt2440;
+		@Pc(15) int local15 = arg1 + arg2 * Static26.width2d;
 		@Pc(17) int local17 = 0;
 		@Pc(20) int local20 = this.anInt2442;
 		@Pc(23) int local23 = this.anInt2446;
-		@Pc(27) int local27 = Static26.anInt2440 - local23;
+		@Pc(27) int local27 = Static26.width2d - local23;
 		@Pc(29) int local29 = 0;
 		@Pc(36) int local36;
-		if (arg2 < Static26.anInt2439) {
-			local36 = Static26.anInt2439 - arg2;
+		if (arg2 < Static26.top) {
+			local36 = Static26.top - arg2;
 			local20 -= local36;
-			arg2 = Static26.anInt2439;
+			arg2 = Static26.top;
 			local17 = local36 * local23;
-			local15 += local36 * Static26.anInt2440;
+			local15 += local36 * Static26.width2d;
 		}
-		if (arg2 + local20 > Static26.anInt2438) {
-			local20 -= arg2 + local20 - Static26.anInt2438;
+		if (arg2 + local20 > Static26.bottom) {
+			local20 -= arg2 + local20 - Static26.bottom;
 		}
-		if (arg1 < Static26.anInt2437) {
-			local36 = Static26.anInt2437 - arg1;
+		if (arg1 < Static26.right) {
+			local36 = Static26.right - arg1;
 			local23 -= local36;
-			arg1 = Static26.anInt2437;
+			arg1 = Static26.right;
 			local17 += local36;
 			local15 += local36;
 			local29 = local36;
@@ -277,7 +277,7 @@ public final class Class2_Sub2_Sub2_Sub4 extends Class2_Sub2_Sub2 {
 			@Pc(33) int local33 = local21 * 256 >> 8;
 			@Pc(45) int local45 = local27 * -10 + local33 * -10 + 983040;
 			@Pc(57) int local57 = local33 * -10 + 983040 - local27 * -10;
-			@Pc(63) int local63 = arg0 + arg1 * Static26.anInt2440;
+			@Pc(63) int local63 = arg0 + arg1 * Static26.width2d;
 			for (@Pc(65) int local65 = 0; local65 < 20; local65++) {
 				@Pc(68) int local68 = local63;
 				@Pc(70) int local70 = local45;
@@ -294,7 +294,7 @@ public final class Class2_Sub2_Sub2_Sub4 extends Class2_Sub2_Sub2 {
 				}
 				local45 += local27;
 				local57 += local33;
-				local63 += Static26.anInt2440;
+				local63 += Static26.width2d;
 			}
 		} catch (@Pc(128) Exception local128) {
 		}
@@ -304,27 +304,27 @@ public final class Class2_Sub2_Sub2_Sub4 extends Class2_Sub2_Sub2 {
 	public void method1624(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		arg0 += this.anInt2444;
 		arg1 += this.anInt2441;
-		@Pc(15) int local15 = arg0 + arg1 * Static26.anInt2440;
+		@Pc(15) int local15 = arg0 + arg1 * Static26.width2d;
 		@Pc(17) int local17 = 0;
 		@Pc(20) int local20 = this.anInt2442;
 		@Pc(23) int local23 = this.anInt2446;
-		@Pc(27) int local27 = Static26.anInt2440 - local23;
+		@Pc(27) int local27 = Static26.width2d - local23;
 		@Pc(29) int local29 = 0;
 		@Pc(36) int local36;
-		if (arg1 < Static26.anInt2439) {
-			local36 = Static26.anInt2439 - arg1;
+		if (arg1 < Static26.top) {
+			local36 = Static26.top - arg1;
 			local20 -= local36;
-			arg1 = Static26.anInt2439;
+			arg1 = Static26.top;
 			local17 = local36 * local23;
-			local15 += local36 * Static26.anInt2440;
+			local15 += local36 * Static26.width2d;
 		}
-		if (arg1 + local20 > Static26.anInt2438) {
-			local20 -= arg1 + local20 - Static26.anInt2438;
+		if (arg1 + local20 > Static26.bottom) {
+			local20 -= arg1 + local20 - Static26.bottom;
 		}
-		if (arg0 < Static26.anInt2437) {
-			local36 = Static26.anInt2437 - arg0;
+		if (arg0 < Static26.right) {
+			local36 = Static26.right - arg0;
 			local23 -= local36;
-			arg0 = Static26.anInt2437;
+			arg0 = Static26.right;
 			local17 += local36;
 			local15 += local36;
 			local29 = local36;

@@ -37,7 +37,7 @@ public final class Static45 {
 	public static Class40 aClass40_340 = Static13.method257("From");
 
 	@OriginalMember(owner = "client!j", name = "m", descriptor = "I")
-	public static int anInt1096 = 0;
+	public static int crossMode = 0;
 
 	@OriginalMember(owner = "client!j", name = "n", descriptor = "I")
 	public static int anInt1097 = 0;

@@ -128,7 +128,7 @@ public final class Static23 {
 		Static26.method1612(local3, local9, local11, local18, 6116423);
 		Static26.method1612(local3 + 1, local9 + 1, local11 - 2, 16, 0);
 		Static26.method1607(local3 + 1, local9 + 18, local11 - 2, local18 - 19, 0);
-		Static14.aClass2_Sub2_Sub2_Sub2_1.method575(Static74.aClass40_524, local3 + 3, local9 + 14, 6116423);
+		Static14.aClass2_Sub2_Sub2_Sub2_1.drawString(Static74.aClass40_524, local3 + 3, local9 + 14, 6116423);
 		@Pc(64) int local64 = Static32.anInt742;
 		@Pc(66) int local66 = Static100.anInt2394;
 		if (Static1.anInt16 == 0) {

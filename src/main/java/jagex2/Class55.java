@@ -1337,12 +1337,12 @@ public final class Class55 {
 												}
 												@Pc(225) Class60 local225 = local49.aClass60_1;
 												if (local225 != null) {
-													local225.aClass2_Sub2_Sub12_7.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local225.anInt2362 - Static89.anInt2091, local225.anInt2361 - Static89.anInt2113, local225.anInt2363 - Static89.anInt2110, local225.anInt2369);
+													local225.aClass2_Sub2_Sub12_7.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local225.anInt2362 - Static89.anInt2091, local225.anInt2361 - Static89.anInt2113, local225.anInt2363 - Static89.anInt2110, local225.anInt2369);
 												}
 												for (local251 = 0; local251 < local49.anInt1702; local251++) {
 													var12 = local49.aClass37Array1[local251];
 													if (var12 != null) {
-														var12.aClass2_Sub2_Sub12_3.method1536(var12.anInt1666, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, var12.anInt1650 - Static89.anInt2091, var12.anInt1657 - Static89.anInt2113, var12.anInt1658 - Static89.anInt2110, var12.anInt1644);
+														var12.aClass2_Sub2_Sub12_3.draw(var12.anInt1666, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, var12.anInt1650 - Static89.anInt2091, var12.anInt1657 - Static89.anInt2113, var12.anInt1658 - Static89.anInt2110, var12.anInt1644);
 													}
 												}
 											}
@@ -1395,15 +1395,15 @@ public final class Class55 {
 													local8.anInt1701 = 9 - local8.anInt1704;
 												}
 												if ((local340.anInt2360 & local251) != 0 && !this.method1445(local26, local17, local20, local340.anInt2360)) {
-													local340.aClass2_Sub2_Sub12_7.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local340.anInt2362 - Static89.anInt2091, local340.anInt2361 - Static89.anInt2113, local340.anInt2363 - Static89.anInt2110, local340.anInt2369);
+													local340.aClass2_Sub2_Sub12_7.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local340.anInt2362 - Static89.anInt2091, local340.anInt2361 - Static89.anInt2113, local340.anInt2363 - Static89.anInt2110, local340.anInt2369);
 												}
 												if ((local340.anInt2364 & local251) != 0 && !this.method1445(local26, local17, local20, local340.anInt2364)) {
-													local340.aClass2_Sub2_Sub12_8.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local340.anInt2362 - Static89.anInt2091, local340.anInt2361 - Static89.anInt2113, local340.anInt2363 - Static89.anInt2110, local340.anInt2369);
+													local340.aClass2_Sub2_Sub12_8.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local340.anInt2362 - Static89.anInt2091, local340.anInt2361 - Static89.anInt2113, local340.anInt2363 - Static89.anInt2110, local340.anInt2369);
 												}
 											}
 											if (local343 != null && !this.method1447(local26, local17, local20, local343.aClass2_Sub2_Sub12_1.maxY)) {
 												if ((local343.anInt4 & local251) != 0) {
-													local343.aClass2_Sub2_Sub12_1.method1536(local343.anInt1, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local343.anInt6 - Static89.anInt2091, local343.anInt3 - Static89.anInt2113, local343.anInt9 - Static89.anInt2110, local343.anInt17);
+													local343.aClass2_Sub2_Sub12_1.draw(local343.anInt1, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local343.anInt6 - Static89.anInt2091, local343.anInt3 - Static89.anInt2113, local343.anInt9 - Static89.anInt2110, local343.anInt17);
 												} else if ((local343.anInt4 & 0x300) != 0) {
 													local578 = local343.anInt6 - Static89.anInt2091;
 													local583 = local343.anInt3 - Static89.anInt2113;
@@ -1424,30 +1424,30 @@ public final class Class55 {
 													if ((local343.anInt4 & 0x100) != 0 && var19 < local600) {
 														local629 = local578 + Static89.WALL_DECORATION_INSET_X[local591];
 														local635 = local588 + Static89.WALL_DECORATION_INSET_Z[local591];
-														local343.aClass2_Sub2_Sub12_1.method1536(local591 * 512 + 256, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local629, local583, local635, local343.anInt17);
+														local343.aClass2_Sub2_Sub12_1.draw(local591 * 512 + 256, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local629, local583, local635, local343.anInt17);
 													}
 													if ((local343.anInt4 & 0x200) != 0 && var19 > local600) {
 														local629 = local578 + Static89.WALL_DECORATION_OUTSET_X[local591];
 														local635 = local588 + Static89.WALL_DECORATION_OUTSET_Z[local591];
-														local343.aClass2_Sub2_Sub12_1.method1536(local591 * 512 + 1280 & 0x7FF, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local629, local583, local635, local343.anInt17);
+														local343.aClass2_Sub2_Sub12_1.draw(local591 * 512 + 1280 & 0x7FF, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local629, local583, local635, local343.anInt17);
 													}
 												}
 											}
 											if (var24) {
 												@Pc(696) Class4 local696 = local8.aClass4_1;
 												if (local696 != null) {
-													local696.aClass2_Sub2_Sub12_2.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local696.anInt47 - Static89.anInt2091, local696.anInt40 - Static89.anInt2113, local696.anInt44 - Static89.anInt2110, local696.anInt48);
+													local696.aClass2_Sub2_Sub12_2.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local696.anInt47 - Static89.anInt2091, local696.anInt40 - Static89.anInt2113, local696.anInt44 - Static89.anInt2110, local696.anInt48);
 												}
 												@Pc(723) Class51 local723 = local8.aClass51_1;
 												if (local723 != null && local723.anInt1959 == 0) {
 													if (local723.aClass2_Sub2_Sub12_4 != null) {
-														local723.aClass2_Sub2_Sub12_4.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local723.anInt1969 - Static89.anInt2091, local723.anInt1951 - Static89.anInt2113, local723.anInt1954 - Static89.anInt2110, local723.anInt1964);
+														local723.aClass2_Sub2_Sub12_4.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local723.anInt1969 - Static89.anInt2091, local723.anInt1951 - Static89.anInt2113, local723.anInt1954 - Static89.anInt2110, local723.anInt1964);
 													}
 													if (local723.aClass2_Sub2_Sub12_5 != null) {
-														local723.aClass2_Sub2_Sub12_5.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local723.anInt1969 - Static89.anInt2091, local723.anInt1951 - Static89.anInt2113, local723.anInt1954 - Static89.anInt2110, local723.anInt1964);
+														local723.aClass2_Sub2_Sub12_5.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local723.anInt1969 - Static89.anInt2091, local723.anInt1951 - Static89.anInt2113, local723.anInt1954 - Static89.anInt2110, local723.anInt1964);
 													}
 													if (local723.aClass2_Sub2_Sub12_6 != null) {
-														local723.aClass2_Sub2_Sub12_6.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local723.anInt1969 - Static89.anInt2091, local723.anInt1951 - Static89.anInt2113, local723.anInt1954 - Static89.anInt2110, local723.anInt1964);
+														local723.aClass2_Sub2_Sub12_6.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local723.anInt1969 - Static89.anInt2091, local723.anInt1951 - Static89.anInt2113, local723.anInt1954 - Static89.anInt2110, local723.anInt1964);
 													}
 												}
 											}
@@ -1491,7 +1491,7 @@ public final class Class55 {
 											if (var24) {
 												local942 = local8.aClass60_1;
 												if (!this.method1445(local26, local17, local20, local942.anInt2360)) {
-													local942.aClass2_Sub2_Sub12_7.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local942.anInt2362 - Static89.anInt2091, local942.anInt2361 - Static89.anInt2113, local942.anInt2363 - Static89.anInt2110, local942.anInt2369);
+													local942.aClass2_Sub2_Sub12_7.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local942.anInt2362 - Static89.anInt2091, local942.anInt2361 - Static89.anInt2113, local942.anInt2363 - Static89.anInt2110, local942.anInt2369);
 												}
 												local8.anInt1698 = 0;
 											}
@@ -1576,7 +1576,7 @@ public final class Class55 {
 												local1125 = Static89.aClass37Array3[local1001];
 												local1125.anInt1648 = Static89.anInt2094;
 												if (!this.method1417(local26, local1125.anInt1656, local1125.anInt1647, local1125.anInt1662, local1125.anInt1665, local1125.aClass2_Sub2_Sub12_3.maxY)) {
-													local1125.aClass2_Sub2_Sub12_3.method1536(local1125.anInt1666, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1125.anInt1650 - Static89.anInt2091, local1125.anInt1657 - Static89.anInt2113, local1125.anInt1658 - Static89.anInt2110, local1125.anInt1644);
+													local1125.aClass2_Sub2_Sub12_3.draw(local1125.anInt1666, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1125.anInt1650 - Static89.anInt2091, local1125.anInt1657 - Static89.anInt2113, local1125.anInt1658 - Static89.anInt2110, local1125.anInt1644);
 												}
 												for (local588 = local1125.anInt1656; local588 <= local1125.anInt1647; local588++) {
 													for (local591 = local1125.anInt1662; local591 <= local1125.anInt1665; local591++) {
@@ -1624,20 +1624,20 @@ public final class Class55 {
 			@Pc(1392) Class51 local1392 = local8.aClass51_1;
 			if (local1392 != null && local1392.anInt1959 != 0) {
 				if (local1392.aClass2_Sub2_Sub12_4 != null) {
-					local1392.aClass2_Sub2_Sub12_4.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1392.anInt1969 - Static89.anInt2091, local1392.anInt1951 - Static89.anInt2113 - local1392.anInt1959, local1392.anInt1954 - Static89.anInt2110, local1392.anInt1964);
+					local1392.aClass2_Sub2_Sub12_4.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1392.anInt1969 - Static89.anInt2091, local1392.anInt1951 - Static89.anInt2113 - local1392.anInt1959, local1392.anInt1954 - Static89.anInt2110, local1392.anInt1964);
 				}
 				if (local1392.aClass2_Sub2_Sub12_5 != null) {
-					local1392.aClass2_Sub2_Sub12_5.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1392.anInt1969 - Static89.anInt2091, local1392.anInt1951 - Static89.anInt2113 - local1392.anInt1959, local1392.anInt1954 - Static89.anInt2110, local1392.anInt1964);
+					local1392.aClass2_Sub2_Sub12_5.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1392.anInt1969 - Static89.anInt2091, local1392.anInt1951 - Static89.anInt2113 - local1392.anInt1959, local1392.anInt1954 - Static89.anInt2110, local1392.anInt1964);
 				}
 				if (local1392.aClass2_Sub2_Sub12_6 != null) {
-					local1392.aClass2_Sub2_Sub12_6.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1392.anInt1969 - Static89.anInt2091, local1392.anInt1951 - Static89.anInt2113 - local1392.anInt1959, local1392.anInt1954 - Static89.anInt2110, local1392.anInt1964);
+					local1392.aClass2_Sub2_Sub12_6.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1392.anInt1969 - Static89.anInt2091, local1392.anInt1951 - Static89.anInt2113 - local1392.anInt1959, local1392.anInt1954 - Static89.anInt2110, local1392.anInt1964);
 				}
 			}
 			if (local8.anInt1706 != 0) {
 				@Pc(1487) Class1 local1487 = local8.aClass1_1;
 				if (local1487 != null && !this.method1447(local26, local17, local20, local1487.aClass2_Sub2_Sub12_1.maxY)) {
 					if ((local1487.anInt4 & local8.anInt1706) != 0) {
-						local1487.aClass2_Sub2_Sub12_1.method1536(local1487.anInt1, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1487.anInt6 - Static89.anInt2091, local1487.anInt3 - Static89.anInt2113, local1487.anInt9 - Static89.anInt2110, local1487.anInt17);
+						local1487.aClass2_Sub2_Sub12_1.draw(local1487.anInt1, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1487.anInt6 - Static89.anInt2091, local1487.anInt3 - Static89.anInt2113, local1487.anInt9 - Static89.anInt2110, local1487.anInt17);
 					} else if ((local1487.anInt4 & 0x300) != 0) {
 						local251 = local1487.anInt6 - Static89.anInt2091;
 						local1116 = local1487.anInt3 - Static89.anInt2113;
@@ -1656,22 +1656,22 @@ public final class Class55 {
 						if ((local1487.anInt4 & 0x100) != 0 && local588 >= local583) {
 							local591 = local251 + Static89.WALL_DECORATION_INSET_X[local578];
 							local600 = local1001 + Static89.WALL_DECORATION_INSET_Z[local578];
-							local1487.aClass2_Sub2_Sub12_1.method1536(local578 * 512 + 256, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local591, local1116, local600, local1487.anInt17);
+							local1487.aClass2_Sub2_Sub12_1.draw(local578 * 512 + 256, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local591, local1116, local600, local1487.anInt17);
 						}
 						if ((local1487.anInt4 & 0x200) != 0 && local588 <= local583) {
 							local591 = local251 + Static89.WALL_DECORATION_OUTSET_X[local578];
 							local600 = local1001 + Static89.WALL_DECORATION_OUTSET_Z[local578];
-							local1487.aClass2_Sub2_Sub12_1.method1536(local578 * 512 + 1280 & 0x7FF, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local591, local1116, local600, local1487.anInt17);
+							local1487.aClass2_Sub2_Sub12_1.draw(local578 * 512 + 1280 & 0x7FF, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local591, local1116, local600, local1487.anInt17);
 						}
 					}
 				}
 				local942 = local8.aClass60_1;
 				if (local942 != null) {
 					if ((local942.anInt2364 & local8.anInt1706) != 0 && !this.method1445(local26, local17, local20, local942.anInt2364)) {
-						local942.aClass2_Sub2_Sub12_8.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local942.anInt2362 - Static89.anInt2091, local942.anInt2361 - Static89.anInt2113, local942.anInt2363 - Static89.anInt2110, local942.anInt2369);
+						local942.aClass2_Sub2_Sub12_8.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local942.anInt2362 - Static89.anInt2091, local942.anInt2361 - Static89.anInt2113, local942.anInt2363 - Static89.anInt2110, local942.anInt2369);
 					}
 					if ((local942.anInt2360 & local8.anInt1706) != 0 && !this.method1445(local26, local17, local20, local942.anInt2360)) {
-						local942.aClass2_Sub2_Sub12_7.method1536(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local942.anInt2362 - Static89.anInt2091, local942.anInt2361 - Static89.anInt2113, local942.anInt2363 - Static89.anInt2110, local942.anInt2369);
+						local942.aClass2_Sub2_Sub12_7.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local942.anInt2362 - Static89.anInt2091, local942.anInt2361 - Static89.anInt2113, local942.anInt2363 - Static89.anInt2110, local942.anInt2369);
 					}
 				}
 			}

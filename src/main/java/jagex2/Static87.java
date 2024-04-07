@@ -85,7 +85,7 @@ public final class Static87 {
 	public static Class40[] method1404(@OriginalArg(1) Class40[] arg0) {
 		@Pc(4) Class40[] local4 = new Class40[5];
 		for (@Pc(15) int local15 = 0; local15 < 5; local15++) {
-			local4[local15] = Static80.method1334(new Class40[] { Static53.method859(local15), Static1.aClass40_4 });
+			local4[local15] = Static80.method1334(new Class40[] { Static53.method859(local15), Static1.textFriendsChatColon});
 			if (arg0 != null && arg0[local15] != null) {
 				local4[local15] = Static80.method1334(new Class40[] { local4[local15], arg0[local15] });
 			}

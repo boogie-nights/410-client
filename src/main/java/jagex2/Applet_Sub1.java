@@ -21,7 +21,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@OriginalMember(owner = "client!nb", name = "getAppletContext", descriptor = "()Ljava/applet/AppletContext;")
 	@Override
 	public final AppletContext getAppletContext() {
-		if (Static105.aCanvas_Sub1_1 == null) {
+		if (Static105.viewBox == null) {
 			return Static99.aClass7_2 == null || Static99.aClass7_2.anApplet1 == this ? super.getAppletContext() : Static99.aClass7_2.anApplet1.getAppletContext();
 		} else {
 			return null;
@@ -42,7 +42,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			this.method334();
 		} catch (@Pc(24) Exception local24) {
 		}
-		if (Static105.aCanvas_Sub1_1 != null) {
+		if (Static105.viewBox != null) {
 			try {
 				System.exit(0);
 			} catch (@Pc(30) Throwable local30) {
@@ -60,7 +60,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@OriginalMember(owner = "client!nb", name = "getParameter", descriptor = "(Ljava/lang/String;)Ljava/lang/String;")
 	@Override
 	public final String getParameter(@OriginalArg(0) String arg0) {
-		if (Static105.aCanvas_Sub1_1 == null) {
+		if (Static105.viewBox == null) {
 			return Static99.aClass7_2 == null || Static99.aClass7_2.anApplet1 == this ? super.getParameter(arg0) : Static99.aClass7_2.anApplet1.getParameter(arg0);
 		} else {
 			return null;
@@ -185,7 +185,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@OriginalMember(owner = "client!nb", name = "getCodeBase", descriptor = "()Ljava/net/URL;")
 	@Override
 	public final URL getCodeBase() {
-		if (Static105.aCanvas_Sub1_1 == null) {
+		if (Static105.viewBox == null) {
 			return Static99.aClass7_2 == null || Static99.aClass7_2.anApplet1 == this ? super.getCodeBase() : Static99.aClass7_2.anApplet1.getCodeBase();
 		} else {
 			return null;
@@ -288,7 +288,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			Static43.anInt1849 = 410;
 			Static85.anInt1991 = 765;
 			Static98.anApplet_Sub1_1 = this;
-			Static105.aCanvas_Sub1_1 = new ViewBox(this, Static85.anInt1991, Static76.anInt2154);
+			Static105.viewBox = new ViewBox(this, Static85.anInt1991, Static76.anInt2154);
 			Static41.aClass7_4 = Static99.aClass7_2 = new GameShell(true, null, arg2, arg1, arg0, 12);
 			Static99.aClass7_2.method207(1, this);
 		} catch (@Pc(43) Exception local43) {
@@ -299,7 +299,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@OriginalMember(owner = "client!nb", name = "getDocumentBase", descriptor = "()Ljava/net/URL;")
 	@Override
 	public final URL getDocumentBase() {
-		if (Static105.aCanvas_Sub1_1 == null) {
+		if (Static105.viewBox == null) {
 			return Static99.aClass7_2 == null || Static99.aClass7_2.anApplet1 == this ? super.getDocumentBase() : Static99.aClass7_2.anApplet1.getDocumentBase();
 		} else {
 			return null;
