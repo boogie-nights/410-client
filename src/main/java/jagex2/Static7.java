@@ -166,7 +166,7 @@ public final class Static7 {
 			Static59.method997(Static82.aClass5_Sub1_16, method185());
 		}
 		Static44.anInt1075 = arg0;
-		Static1.aBoolean1 = true;
+		Static1.clearScreen = true;
 	}
 
 	@OriginalMember(owner = "client!ba", name = "c", descriptor = "(B)V")

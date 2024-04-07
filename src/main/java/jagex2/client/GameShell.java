@@ -63,7 +63,7 @@ public final class GameShell implements Runnable {
 	private String aString6 = null;
 
 	@OriginalMember(owner = "client!bb", name = "j", descriptor = "Ljava/net/InetAddress;")
-	private final InetAddress anInetAddress1;
+	private final InetAddress address;
 
 	@OriginalMember(owner = "client!bb", name = "d", descriptor = "[Lclient!dc;")
 	public Class16[] aClass16Array1;
@@ -72,17 +72,17 @@ public final class GameShell implements Runnable {
 	public Class16[] aClass16Array2;
 
 	@OriginalMember(owner = "client!bb", name = "p", descriptor = "Ljava/lang/Thread;")
-	private final Thread aThread1;
+	private final Thread thread;
 
 	@OriginalMember(owner = "client!bb", name = "<init>", descriptor = "(ZLjava/applet/Applet;Ljava/net/InetAddress;ILjava/lang/String;I)V")
 	public GameShell(@OriginalArg(0) boolean arg0, @OriginalArg(1) Applet arg1, @OriginalArg(2) InetAddress arg2, @OriginalArg(3) int arg3, @OriginalArg(4) String arg4, @OriginalArg(5) int arg5) throws IOException {
-		this.anInetAddress1 = arg2;
-		Static8.aString4 = "Unknown";
+		this.address = arg2;
+		Static8.javaVendor = "Unknown";
 		this.anApplet1 = arg1;
-		Static8.aString1 = "1.1";
+		Static8.javaVersion = "1.1";
 		try {
-			Static8.aString4 = System.getProperty("java.vendor");
-			Static8.aString1 = System.getProperty("java.version");
+			Static8.javaVendor = System.getProperty("java.vendor");
+			Static8.javaVersion = System.getProperty("java.version");
 		} catch (@Pc(55) Exception local55) {
 		}
 		try {
@@ -115,10 +115,10 @@ public final class GameShell implements Runnable {
 			this.method208();
 		}
 		this.aBoolean24 = false;
-		this.aThread1 = new Thread(this);
-		this.aThread1.setPriority(10);
-		this.aThread1.setDaemon(true);
-		this.aThread1.start();
+		this.thread = new Thread(this);
+		this.thread.setPriority(10);
+		this.thread.setDaemon(true);
+		this.thread.start();
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(I)Lclient!qd;")
@@ -171,7 +171,7 @@ public final class GameShell implements Runnable {
 			this.notifyAll();
 		}
 		try {
-			this.aThread1.join();
+			this.thread.join();
 		} catch (@Pc(19) InterruptedException local19) {
 		}
 		if (this.anInterface3_1 != null) {
@@ -291,7 +291,7 @@ public final class GameShell implements Runnable {
 			try {
 				@Pc(41) int local41 = local15.anInt1927;
 				if (local41 == 1) {
-					local15.anObject4 = new Socket(this.anInetAddress1, local15.anInt1926);
+					local15.anObject4 = new Socket(this.address, local15.anInt1926);
 				} else if (local41 == 2) {
 					@Pc(56) Thread local56 = new Thread((Runnable) local15.anObject3);
 					local56.setDaemon(true);

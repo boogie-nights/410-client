@@ -14,7 +14,7 @@ public final class Static24 {
 	public static byte[][] aByteArrayArray6;
 
 	@OriginalMember(owner = "client!ee", name = "gb", descriptor = "Ljava/awt/Graphics;")
-	public static Graphics aGraphics1;
+	public static Graphics graphics;
 
 	@OriginalMember(owner = "client!ee", name = "nb", descriptor = "[B")
 	public static byte[] aByteArray9;
@@ -457,7 +457,7 @@ public final class Static24 {
 	@OriginalMember(owner = "client!ee", name = "c", descriptor = "(B)V")
 	public static void method506() {
 		textLoadingWordpack = null;
-		aGraphics1 = null;
+		graphics = null;
 		aClass40_179 = null;
 		aClass40_183 = null;
 		aByteArrayArray6 = null;

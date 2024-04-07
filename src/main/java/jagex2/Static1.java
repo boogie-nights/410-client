@@ -23,7 +23,7 @@ public final class Static1 {
 	public static GraphicsProducingBuffer aClass45_1;
 
 	@OriginalMember(owner = "client!a", name = "e", descriptor = "Z")
-	public static volatile boolean aBoolean1 = true;
+	public static volatile boolean clearScreen = true;
 
 	@OriginalMember(owner = "client!a", name = "l", descriptor = "Lclient!o;")
 	public static Class40 aClass40_1 = Static13.method257(" has logged out)3");

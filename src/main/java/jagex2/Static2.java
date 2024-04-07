@@ -1371,6 +1371,6 @@ public final class Static2 {
 		if (Static97.aBoolean175 && Static1.anInt16 == 2) {
 			Static23.method480();
 		}
-		Static4.method83(Static24.aGraphics1);
+		Static4.method83(Static24.graphics);
 	}
 }

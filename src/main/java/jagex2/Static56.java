@@ -47,7 +47,7 @@ public final class Static56 {
 
 	@OriginalMember(owner = "client!ke", name = "h", descriptor = "(I)V")
 	public static void method1538() {
-		if (Static8.aString4.toLowerCase().indexOf("microsoft") != -1) {
+		if (Static8.javaVendor.toLowerCase().indexOf("microsoft") != -1) {
 			Static104.anIntArray549[186] = 57;
 			Static104.anIntArray549[187] = 27;
 			Static104.anIntArray549[188] = 71;

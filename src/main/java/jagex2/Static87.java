@@ -73,7 +73,7 @@ public final class Static87 {
 		if (Static97.aBoolean175 && Static1.anInt16 == 1) {
 			Static23.method480();
 		}
-		Static73.method1207(Static24.aGraphics1);
+		Static73.method1207(Static24.graphics);
 	}
 
 	@OriginalMember(owner = "client!sb", name = "g", descriptor = "(I)V")

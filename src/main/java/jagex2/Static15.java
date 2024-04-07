@@ -293,7 +293,7 @@ public final class Static15 {
 		}
 		Static44.method787(false);
 		Static74.aBoolean145 = true;
-		Static1.aBoolean1 = true;
+		Static1.clearScreen = true;
 	}
 
 	@OriginalMember(owner = "client!cd", name = "h", descriptor = "(I)V")

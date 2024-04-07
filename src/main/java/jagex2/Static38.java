@@ -57,7 +57,7 @@ public final class Static38 {
 			local8 = local8.replace('@', '_');
 			local8 = local8.replace('&', '_');
 			local8 = local8.replace('#', '_');
-			@Pc(98) Class48 local98 = Static41.aClass7_4.method209(new URL(Static41.aClass7_4.anApplet1.getCodeBase(), "clienterror.ws?c=" + Static43.anInt1849 + "&u=" + Static102.aLong150 + "&v1=" + Static8.aString4 + "&v2=" + Static8.aString1 + "&e=" + local8));
+			@Pc(98) Class48 local98 = Static41.aClass7_4.method209(new URL(Static41.aClass7_4.anApplet1.getCodeBase(), "clienterror.ws?c=" + Static43.version + "&u=" + Static102.aLong150 + "&v1=" + Static8.javaVendor + "&v2=" + Static8.javaVersion + "&e=" + local8));
 			while (local98.anInt1928 == 0) {
 				Static94.method1494(1L);
 			}

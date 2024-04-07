@@ -33,9 +33,9 @@ public final class Static94 {
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(I)V")
 	public static void method1489() {
-		if (Static1.aBoolean1) {
-			Static1.aBoolean1 = false;
-			Static42.method768(Static24.aGraphics1);
+		if (Static1.clearScreen) {
+			Static1.clearScreen = false;
+			Static42.method768(Static24.graphics);
 			Static52.redrawPrivacySettings = true;
 			Static22.aBoolean184 = true;
 			Static73.redrawChatback = true;
@@ -132,12 +132,12 @@ public final class Static94 {
 			}
 			Static92.aBoolean165 = true;
 			Static22.aBoolean184 = false;
-			Static93.method1487(Static62.anInt1551, Static2.anIntArray2, Static107.loopCycle % 20 < 10 ? -1 : Static103.anInt2492, Static66.anInt1654 == -1, Static24.aGraphics1);
+			Static93.method1487(Static62.anInt1551, Static2.anIntArray2, Static107.loopCycle % 20 < 10 ? -1 : Static103.anInt2492, Static66.anInt1654 == -1, Static24.graphics);
 		}
 		if (Static52.redrawPrivacySettings) {
 			Static92.aBoolean165 = true;
 			Static52.redrawPrivacySettings = false;
-			Static107.method1664(Static104.privateChatSetting, Static24.aGraphics1, Static103.aClass2_Sub2_Sub2_Sub2_5, Static103.tradeChatSetting, Static23.publicChatSetting);
+			Static107.method1664(Static104.privateChatSetting, Static24.graphics, Static103.aClass2_Sub2_Sub2_Sub2_5, Static103.tradeChatSetting, Static23.publicChatSetting);
 		}
 		Static45.anInt1095 = 0;
 	}
@@ -187,7 +187,7 @@ public final class Static94 {
 			Static20.method389();
 			Static5.drawTooltip();
 		}
-		Static29.aClass45_14.draw(Static24.aGraphics1, 0, 0);
+		Static29.aClass45_14.draw(Static24.graphics, 0, 0);
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(B)V")

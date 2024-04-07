@@ -122,10 +122,10 @@ public final class Static101 {
 		Static105.method1673();
 		Static61.aClass45_24.draw(arg1, 0, 0);
 		Static98.aClass45_30.draw(arg1, 637, 0);
-		if (!Static1.aBoolean1) {
+		if (!Static1.clearScreen) {
 			return;
 		}
-		Static1.aBoolean1 = false;
+		Static1.clearScreen = false;
 		Static61.aClass45_22.draw(arg1, 128, 0);
 		Static35.aClass45_16.draw(arg1, 202, 371);
 		Static21.aClass45_11.draw(arg1, 0, 265);

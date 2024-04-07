@@ -15,7 +15,7 @@ public final class Static76 {
 	public static int anInt2153;
 
 	@OriginalMember(owner = "client!p", name = "o", descriptor = "I")
-	public static int anInt2154;
+	public static int height;
 
 	@OriginalMember(owner = "client!p", name = "s", descriptor = "Lclient!fc;")
 	public static PixFont aClass2_Sub2_Sub2_Sub2_4;

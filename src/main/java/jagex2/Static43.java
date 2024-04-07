@@ -15,7 +15,7 @@ public final class Static43 {
 	public static Class5_Sub1 aClass5_Sub1_14;
 
 	@OriginalMember(owner = "client!ib", name = "g", descriptor = "I")
-	public static int anInt1849;
+	public static int version;
 
 	@OriginalMember(owner = "client!ib", name = "k", descriptor = "Lclient!vb;")
 	public static Class2_Sub2_Sub2_Sub4 aClass2_Sub2_Sub2_Sub4_7;

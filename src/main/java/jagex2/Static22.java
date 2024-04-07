@@ -82,7 +82,7 @@ public final class Static22 {
 				((Class19) Static6.anInterface4_1).method404(0.6D);
 			}
 			Static82.method1342();
-			Static1.aBoolean1 = true;
+			Static1.clearScreen = true;
 		}
 		if (local15 == 3) {
 			@Pc(85) short local85 = 0;
@@ -224,7 +224,7 @@ public final class Static22 {
 			Static26.clear();
 			Static66.method1095(false, null, Static98.aClass40_674);
 		}
-		Static80.method1333(Static24.aGraphics1);
+		Static80.method1333(Static24.graphics);
 		Static81.anInt1935 = local98;
 		Static35.anInt824 = local100;
 		Static15.anInt1863 = local96;

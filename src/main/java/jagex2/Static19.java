@@ -131,7 +131,7 @@ public final class Static19 {
 				}
 			}
 			Static13.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, Static67.anInt1669, 256, Static102.compassMaskLineOffsets, Static45.compassMaskLineLengths);
-			Static32.method594(Static24.aGraphics1);
+			Static32.method594(Static24.graphics);
 			return;
 		}
 		@Pc(62) int local62 = Static84.anInt1978 + Static67.anInt1669 & 0x7FF;
@@ -225,7 +225,7 @@ public final class Static19 {
 			Static90.method1461(local77, Static13.aClass2_Sub2_Sub2_Sub4Array3[0], local20);
 		}
 		Static26.method1612(97, 78, 3, 3, 16777215);
-		Static32.method594(Static24.aGraphics1);
+		Static32.method594(Static24.graphics);
 	}
 
 	@OriginalMember(owner = "client!de", name = "a", descriptor = "(I[BIZ)I")

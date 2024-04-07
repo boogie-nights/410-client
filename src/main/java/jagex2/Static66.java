@@ -60,14 +60,14 @@ public final class Static66 {
 	public static void method1095(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class40 arg1, @OriginalArg(2) Class40 arg2) {
 		@Pc(5) short local5 = 151;
 		@Pc(6) int local6 = local5 - 3;
-		if (Static1.aBoolean1) {
-			Static1.aBoolean1 = false;
-			Static42.method768(Static24.aGraphics1);
-			Static4.method83(Static24.aGraphics1);
-			Static73.method1207(Static24.aGraphics1);
-			Static32.method594(Static24.aGraphics1);
-			Static107.method1664(Static104.privateChatSetting, Static24.aGraphics1, Static103.aClass2_Sub2_Sub2_Sub2_5, Static103.tradeChatSetting, Static23.publicChatSetting);
-			Static93.method1487(Static62.anInt1551, Static2.anIntArray2, -1, anInt1654 == -1, Static24.aGraphics1);
+		if (Static1.clearScreen) {
+			Static1.clearScreen = false;
+			Static42.method768(Static24.graphics);
+			Static4.method83(Static24.graphics);
+			Static73.method1207(Static24.graphics);
+			Static32.method594(Static24.graphics);
+			Static107.method1664(Static104.privateChatSetting, Static24.graphics, Static103.aClass2_Sub2_Sub2_Sub2_5, Static103.tradeChatSetting, Static23.publicChatSetting);
+			Static93.method1487(Static62.anInt1551, Static2.anIntArray2, -1, anInt1654 == -1, Static24.graphics);
 			Static7.aBoolean23 = true;
 			Static92.aBoolean165 = true;
 			Static5.aBoolean13 = true;
@@ -84,6 +84,6 @@ public final class Static66 {
 			Static103.aClass2_Sub2_Sub2_Sub2_5.method566(arg1, 257, 163, 0);
 			Static103.aClass2_Sub2_Sub2_Sub2_5.method566(arg1, 256, 162, 16777215);
 		}
-		Static80.method1333(Static24.aGraphics1);
+		Static80.method1333(Static24.graphics);
 	}
 }

@@ -67,13 +67,13 @@ public final class client extends Applet_Sub1 {
 	@Override
 	protected void method330() {
 		if (Static44.anInt1075 == 0) {
-			Static91.method1467(null, Static98.progressMeterText, Static94.anInt2194);
+			Static91.drawProgress(null, Static98.progressMeterText, Static94.anInt2194);
 		} else if (Static44.anInt1075 == 5) {
-			Static101.method1589(Static76.aClass2_Sub2_Sub2_Sub2_4, Static24.aGraphics1, Static14.aClass2_Sub2_Sub2_Sub2_1);
+			Static101.method1589(Static76.aClass2_Sub2_Sub2_Sub2_4, Static24.graphics, Static14.aClass2_Sub2_Sub2_Sub2_1);
 		} else if (Static44.anInt1075 == 10) {
-			Static101.method1589(Static76.aClass2_Sub2_Sub2_Sub2_4, Static24.aGraphics1, Static14.aClass2_Sub2_Sub2_Sub2_1);
+			Static101.method1589(Static76.aClass2_Sub2_Sub2_Sub2_4, Static24.graphics, Static14.aClass2_Sub2_Sub2_Sub2_1);
 		} else if (Static44.anInt1075 == 20) {
-			Static101.method1589(Static76.aClass2_Sub2_Sub2_Sub2_4, Static24.aGraphics1, Static14.aClass2_Sub2_Sub2_Sub2_1);
+			Static101.method1589(Static76.aClass2_Sub2_Sub2_Sub2_4, Static24.graphics, Static14.aClass2_Sub2_Sub2_Sub2_1);
 		} else if (Static44.anInt1075 == 25) {
 			@Pc(97) int local97;
 			if (Static68.anInt375 == 1) {

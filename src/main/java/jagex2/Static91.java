@@ -46,15 +46,15 @@ public final class Static91 {
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Ljava/awt/Color;Lclient!o;II)V")
-	public static void method1467(@OriginalArg(0) Color color, @OriginalArg(1) Class40 arg1, @OriginalArg(2) int arg2) {
+	public static void drawProgress(@OriginalArg(0) Color color, @OriginalArg(1) Class40 arg1, @OriginalArg(2) int percent) {
 		if (Static21.bold == null) {
 			Static21.bold = new Font("Helvetica", 1, 13);
 			Static25.boldMetrics = Static7.method185().getFontMetrics(Static21.bold);
 		}
-		if (Static1.aBoolean1) {
-			Static1.aBoolean1 = false;
-			Static24.aGraphics1.setColor(Color.black);
-			Static24.aGraphics1.fillRect(0, 0, Static85.anInt1991, Static76.anInt2154);
+		if (Static1.clearScreen) {
+			Static1.clearScreen = false;
+			Static24.graphics.setColor(Color.black);
+			Static24.graphics.fillRect(0, 0, Static85.width, Static76.height);
 		}
 		if (color == null) {
 			color = new Color(140, 17, 17);
@@ -63,29 +63,29 @@ public final class Static91 {
 			if (Static79.anImage4 == null) {
 				Static79.anImage4 = Static7.method185().createImage(304, 34);
 			}
-			@Pc(58) Graphics local58 = Static79.anImage4.getGraphics();
-			local58.setColor(color);
-			local58.drawRect(0, 0, 303, 33);
-			local58.fillRect(2, 2, arg2 * 3, 30);
-			local58.setColor(Color.black);
-			local58.drawRect(1, 1, 301, 31);
-			local58.fillRect(arg2 * 3 + 2, 2, 300 - arg2 * 3, 30);
-			local58.setFont(Static21.bold);
-			local58.setColor(Color.white);
-			arg1.method1194(22, local58, (304 - arg1.method1181(Static25.boldMetrics)) / 2);
-			Static24.aGraphics1.drawImage(Static79.anImage4, Static85.anInt1991 / 2 - 152, Static76.anInt2154 / 2 + -18, null);
-		} catch (@Pc(135) Exception local135) {
-			@Pc(141) int local141 = Static85.anInt1991 / 2 - 152;
-			@Pc(147) int local147 = Static76.anInt2154 / 2 - 18;
-			Static24.aGraphics1.setColor(color);
-			Static24.aGraphics1.drawRect(local141, local147, 303, 33);
-			Static24.aGraphics1.fillRect(local141 + 2, local147 - -2, arg2 * 3, 30);
-			Static24.aGraphics1.setColor(Color.black);
-			Static24.aGraphics1.drawRect(local141 + 1, local147 - -1, 301, 31);
-			Static24.aGraphics1.fillRect(local141 + arg2 * 3 + 2, local147 + 2, 300 - arg2 * 3, 30);
-			Static24.aGraphics1.setFont(Static21.bold);
-			Static24.aGraphics1.setColor(Color.white);
-			arg1.method1194(local147 + 22, Static24.aGraphics1, (304 - arg1.method1181(Static25.boldMetrics)) / 2 + local141);
+			@Pc(58) Graphics progress = Static79.anImage4.getGraphics();
+			progress.setColor(color);
+			progress.drawRect(0, 0, 303, 33);
+			progress.fillRect(2, 2, percent * 3, 30);
+			progress.setColor(Color.black);
+			progress.drawRect(1, 1, 301, 31);
+			progress.fillRect(percent * 3 + 2, 2, 300 - percent * 3, 30);
+			progress.setFont(Static21.bold);
+			progress.setColor(Color.white);
+			arg1.method1194(22, progress, (304 - arg1.method1181(Static25.boldMetrics)) / 2);
+			Static24.graphics.drawImage(Static79.anImage4, Static85.width / 2 - 152, Static76.height / 2 + -18, null);
+		} catch (@Pc(135) Exception ex) {
+			@Pc(141) int centerWidth = Static85.width / 2 - 152;
+			@Pc(147) int centerHeight = Static76.height / 2 - 18;
+			Static24.graphics.setColor(color);
+			Static24.graphics.drawRect(centerWidth, centerHeight, 303, 33);
+			Static24.graphics.fillRect(centerWidth + 2, centerHeight - -2, percent * 3, 30);
+			Static24.graphics.setColor(Color.black);
+			Static24.graphics.drawRect(centerWidth + 1, centerHeight - -1, 301, 31);
+			Static24.graphics.fillRect(centerWidth + percent * 3 + 2, centerHeight + 2, 300 - percent * 3, 30);
+			Static24.graphics.setFont(Static21.bold);
+			Static24.graphics.setColor(Color.white);
+			arg1.method1194(centerHeight + 22, Static24.graphics, (304 - arg1.method1181(Static25.boldMetrics)) / 2 + centerWidth);
 		}
 	}
 

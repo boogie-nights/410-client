@@ -71,16 +71,16 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@Override
 	public final void focusGained(@OriginalArg(0) FocusEvent arg0) {
 		Static46.aBoolean183 = true;
-		Static1.aBoolean1 = true;
+		Static1.clearScreen = true;
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(IIIII)V")
 	protected final void method326(@OriginalArg(0) int arg0) {
 		try {
 			if (Static98.anApplet_Sub1_1 == null) {
-				Static85.anInt1991 = 765;
-				Static43.anInt1849 = 410;
-				Static76.anInt2154 = 503;
+				Static85.width = 765;
+				Static43.version = 410;
+				Static76.height = 503;
 				Static98.anApplet_Sub1_1 = this;
 				if (Static99.aClass7_2 == null) {
 					Static41.aClass7_4 = Static99.aClass7_2 = new GameShell(false, this, InetAddress.getByName(this.getCodeBase().getHost()), arg0, null, 0);
@@ -99,7 +99,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@Override
 	public final void paint(@OriginalArg(0) Graphics arg0) {
 		if (Static98.anApplet_Sub1_1 == this && !Static58.aBoolean116) {
-			Static1.aBoolean1 = true;
+			Static1.clearScreen = true;
 		}
 	}
 
@@ -107,24 +107,24 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@Override
 	public final void run() {
 		try {
-			if (Static8.aString4 != null) {
-				@Pc(10) String local10 = Static8.aString4.toLowerCase();
+			if (Static8.javaVendor != null) {
+				@Pc(10) String local10 = Static8.javaVendor.toLowerCase();
 				if (local10.indexOf("sun") != -1 || local10.indexOf("apple") != -1) {
-					@Pc(22) String local22 = Static8.aString1;
+					@Pc(22) String local22 = Static8.javaVersion;
 					if (local22.equals("1.1") || local22.startsWith("1.1.") || local22.equals("1.2") || local22.startsWith("1.2.")) {
 						this.method333("wrongjava");
 						return;
 					}
 					Static62.anInt1552 = 5;
-				} else if (local10.indexOf("ibm") != -1 && (Static8.aString1 == null || Static8.aString1.equals("1.4.2"))) {
+				} else if (local10.indexOf("ibm") != -1 && (Static8.javaVersion == null || Static8.javaVersion.equals("1.4.2"))) {
 					this.method333("wrongjava");
 					return;
 				}
 			}
 			while (true) {
-				Static24.aGraphics1 = Static7.method185().getGraphics();
-				if (Static24.aGraphics1 != null) {
-					Static29.aClass45_14 = Static83.method1351(Static85.anInt1991, Static7.method185(), Static76.anInt2154);
+				Static24.graphics = Static7.method185().getGraphics();
+				if (Static24.graphics != null) {
+					Static29.aClass45_14 = Static83.method1351(Static85.width, Static7.method185(), Static76.height);
 					Static7.method185().addFocusListener(this);
 					Static7.method185().requestFocus();
 					this.method327();
@@ -284,11 +284,11 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(ILjava/lang/String;ILjava/net/InetAddress;BIII)V")
 	protected final void method339(@OriginalArg(1) String arg0, @OriginalArg(2) int arg1, @OriginalArg(3) InetAddress arg2) {
 		try {
-			Static76.anInt2154 = 503;
-			Static43.anInt1849 = 410;
-			Static85.anInt1991 = 765;
+			Static76.height = 503;
+			Static43.version = 410;
+			Static85.width = 765;
 			Static98.anApplet_Sub1_1 = this;
-			Static105.viewBox = new ViewBox(this, Static85.anInt1991, Static76.anInt2154);
+			Static105.viewBox = new ViewBox(this, Static85.width, Static76.height);
 			Static41.aClass7_4 = Static99.aClass7_2 = new GameShell(true, null, arg2, arg1, arg0, 12);
 			Static99.aClass7_2.method207(1, this);
 		} catch (@Pc(43) Exception local43) {

@@ -70,7 +70,7 @@ public final class Static13 {
 			try {
 				Static80.aClass24_1 = new Class24_Sub1_Sub2(arg1, arg0);
 			} catch (@Pc(29) Throwable local29) {
-				if (Static8.aString4.toLowerCase().indexOf("microsoft") >= 0) {
+				if (Static8.javaVendor.toLowerCase().indexOf("microsoft") >= 0) {
 					try {
 						Static80.aClass24_1 = new Class24_Sub2();
 						return;
