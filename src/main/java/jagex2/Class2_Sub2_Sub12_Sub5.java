@@ -1,6 +1,6 @@
 package jagex2;
 
-import jagex2.graphics.Class2_Sub2_Sub12;
+import jagex2.graphics.Renderable;
 import jagex2.graphics.Model;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!sa")
-public final class Class2_Sub2_Sub12_Sub5 extends Class2_Sub2_Sub12 {
+public final class Class2_Sub2_Sub12_Sub5 extends Renderable {
 
 	@OriginalMember(owner = "client!sa", name = "Cb", descriptor = "I")
 	private final int anInt2032;
@@ -63,7 +63,7 @@ public final class Class2_Sub2_Sub12_Sub5 extends Class2_Sub2_Sub12 {
 
 	@OriginalMember(owner = "client!sa", name = "c", descriptor = "(B)Lclient!ne;")
 	@Override
-	protected Model method1533() {
+	protected Model getRotatedModel() {
 		if (this.aClass2_Sub2_Sub6_2 != null) {
 			@Pc(13) int local13 = Static107.loopCycle - this.anInt2026;
 			if (local13 > 100 && this.aClass2_Sub2_Sub6_2.anInt669 > 0) {

@@ -59,7 +59,7 @@ public final class Static42 {
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIII)Z")
 	public static boolean method770(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(16) int local16 = arg1 >> 14 & 0x7FFF;
-		@Pc(23) int local23 = Static93.scene.method1449(Static1.currentLevel, arg2, arg0, arg1);
+		@Pc(23) int local23 = Static93.scene.getInfo(Static1.currentLevel, arg2, arg0, arg1);
 		if (local23 == -1) {
 			return false;
 		}

@@ -84,7 +84,7 @@ public final class Static98 {
 		@Pc(92) int local92;
 		if (local29 != 0) {
 			@Pc(85) int local85 = local29 >> 14 & 0x7FFF;
-			local92 = Static93.scene.method1449(arg4, arg1, arg2, local29);
+			local92 = Static93.scene.getInfo(arg4, arg1, arg2, local29);
 			@Pc(98) int local98 = local92 >> 6 & 0x3;
 			@Pc(102) int local102 = local92 & 0x1F;
 			@Pc(116) Class2_Sub2_Sub10 local116;
@@ -96,7 +96,7 @@ public final class Static98 {
 				}
 			}
 			if (arg0 == 1) {
-				Static93.scene.method1415(arg4, arg1, arg2);
+				Static93.scene.removeWallDecoration(arg4, arg1, arg2);
 			}
 			if (arg0 == 2) {
 				Static93.scene.method1423(arg4, arg1, arg2);

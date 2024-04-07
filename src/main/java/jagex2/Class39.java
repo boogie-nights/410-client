@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class39 {
 
 	@OriginalMember(owner = "client!nc", name = "i", descriptor = "Z")
-	public boolean aBoolean133 = true;
+	public boolean flat = true;
 
 	@OriginalMember(owner = "client!nc", name = "r", descriptor = "I")
 	public final int anInt1680;
@@ -24,39 +24,39 @@ public final class Class39 {
 	public final int anInt1677;
 
 	@OriginalMember(owner = "client!nc", name = "d", descriptor = "[I")
-	public final int[] anIntArray342;
+	public final int[] vertexX;
 
 	@OriginalMember(owner = "client!nc", name = "t", descriptor = "[I")
-	public final int[] anIntArray352;
+	public final int[] vertexY;
 
 	@OriginalMember(owner = "client!nc", name = "k", descriptor = "[I")
-	public final int[] anIntArray347;
+	public final int[] vertexZ;
 
 	@OriginalMember(owner = "client!nc", name = "e", descriptor = "[I")
-	public final int[] anIntArray343;
+	public final int[] triangleVertexA;
 
 	@OriginalMember(owner = "client!nc", name = "f", descriptor = "[I")
-	public final int[] anIntArray344;
+	public final int[] triangleVertexB;
 
 	@OriginalMember(owner = "client!nc", name = "m", descriptor = "[I")
-	public final int[] anIntArray349;
+	public final int[] triangleVertexC;
 
 	@OriginalMember(owner = "client!nc", name = "b", descriptor = "[I")
-	public final int[] anIntArray341;
+	public final int[] triangleColorA;
 
 	@OriginalMember(owner = "client!nc", name = "u", descriptor = "[I")
-	public final int[] anIntArray353;
+	public final int[] triangleColorB;
 
 	@OriginalMember(owner = "client!nc", name = "p", descriptor = "[I")
-	public final int[] anIntArray350;
+	public final int[] triangleColorC;
 
 	@OriginalMember(owner = "client!nc", name = "j", descriptor = "[I")
-	public int[] anIntArray346;
+	public int[] triangleTextureIds;
 
 	@OriginalMember(owner = "client!nc", name = "<init>", descriptor = "(IIIIIIIIIIIIIIIIIII)V")
 	public Class39(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14, @OriginalArg(15) int arg15, @OriginalArg(16) int arg16, @OriginalArg(17) int arg17, @OriginalArg(18) int arg18) {
 		if (arg5 != arg6 || arg5 != arg7 || arg5 != arg8) {
-			this.aBoolean133 = false;
+			this.flat = false;
 		}
 		this.anInt1680 = arg0;
 		this.anInt1678 = arg1;
@@ -68,9 +68,9 @@ public final class Class39 {
 		@Pc(44) int local44 = local30 * 3 / 4;
 		@Pc(48) int[] local48 = Static69.anIntArrayArray14[arg0];
 		@Pc(51) int local51 = local48.length;
-		this.anIntArray342 = new int[local51];
-		this.anIntArray352 = new int[local51];
-		this.anIntArray347 = new int[local51];
+		this.vertexX = new int[local51];
+		this.vertexY = new int[local51];
+		this.vertexZ = new int[local51];
 		@Pc(66) int[] local66 = new int[local51];
 		@Pc(69) int[] local69 = new int[local51];
 		@Pc(73) int local73 = arg3 * local30;
@@ -188,22 +188,22 @@ public final class Class39 {
 				local146 = arg12;
 				local148 = arg16;
 			}
-			this.anIntArray342[local79] = local140;
-			this.anIntArray352[local79] = local144;
-			this.anIntArray347[local79] = local142;
+			this.vertexX[local79] = local140;
+			this.vertexY[local79] = local144;
+			this.vertexZ[local79] = local142;
 			local66[local79] = local146;
 			local69[local79] = local148;
 		}
 		@Pc(534) int[] local534 = Static69.anIntArrayArray13[arg0];
 		local140 = local534.length / 4;
-		this.anIntArray343 = new int[local140];
-		this.anIntArray344 = new int[local140];
-		this.anIntArray349 = new int[local140];
-		this.anIntArray341 = new int[local140];
-		this.anIntArray353 = new int[local140];
-		this.anIntArray350 = new int[local140];
+		this.triangleVertexA = new int[local140];
+		this.triangleVertexB = new int[local140];
+		this.triangleVertexC = new int[local140];
+		this.triangleColorA = new int[local140];
+		this.triangleColorB = new int[local140];
+		this.triangleColorC = new int[local140];
 		if (arg2 != -1) {
-			this.anIntArray346 = new int[local140];
+			this.triangleTextureIds = new int[local140];
 		}
 		local142 = 0;
 		for (local144 = 0; local144 < local140; local144++) {
@@ -221,22 +221,22 @@ public final class Class39 {
 			if (local597 < 4) {
 				local597 = local597 - arg1 & 0x3;
 			}
-			this.anIntArray343[local144] = local148;
-			this.anIntArray344[local144] = local591;
-			this.anIntArray349[local144] = local597;
+			this.triangleVertexA[local144] = local148;
+			this.triangleVertexB[local144] = local591;
+			this.triangleVertexC[local144] = local597;
 			if (local146 == 0) {
-				this.anIntArray341[local144] = local66[local148];
-				this.anIntArray353[local144] = local66[local591];
-				this.anIntArray350[local144] = local66[local597];
-				if (this.anIntArray346 != null) {
-					this.anIntArray346[local144] = -1;
+				this.triangleColorA[local144] = local66[local148];
+				this.triangleColorB[local144] = local66[local591];
+				this.triangleColorC[local144] = local66[local597];
+				if (this.triangleTextureIds != null) {
+					this.triangleTextureIds[local144] = -1;
 				}
 			} else {
-				this.anIntArray341[local144] = local69[local148];
-				this.anIntArray353[local144] = local69[local591];
-				this.anIntArray350[local144] = local69[local597];
-				if (this.anIntArray346 != null) {
-					this.anIntArray346[local144] = arg2;
+				this.triangleColorA[local144] = local69[local148];
+				this.triangleColorB[local144] = local69[local591];
+				this.triangleColorC[local144] = local69[local597];
+				if (this.triangleTextureIds != null) {
+					this.triangleTextureIds[local144] = arg2;
 				}
 			}
 		}

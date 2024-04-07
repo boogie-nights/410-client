@@ -3,6 +3,7 @@ package jagex2;
 import jagex2.config.ComType;
 import jagex2.dash3d.CollisionMap;
 import jagex2.dash3d.World3D;
+import jagex2.datastruct.LruCache;
 import jagex2.graphics.Draw3D;
 import jagex2.graphics.PixFont;
 import jagex2.graphics.Static6;

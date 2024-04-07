@@ -34,10 +34,10 @@ public final class Tile extends Linkable {
 	public int anInt1701;
 
 	@OriginalMember(owner = "client!nd", name = "R", descriptor = "Lclient!a;")
-	public Class1 aClass1_1;
+	public WallDecoration wallDecoration;
 
 	@OriginalMember(owner = "client!nd", name = "S", descriptor = "I")
-	public int anInt1702;
+	public int locCount;
 
 	@OriginalMember(owner = "client!nd", name = "V", descriptor = "I")
 	public int anInt1704;
@@ -49,22 +49,22 @@ public final class Tile extends Linkable {
 	public int anInt1706;
 
 	@OriginalMember(owner = "client!nd", name = "Z", descriptor = "Lclient!uc;")
-	public Class60 aClass60_1;
+	public Class60 wall;
 
 	@OriginalMember(owner = "client!nd", name = "bb", descriptor = "Lclient!ac;")
-	public Class4 aClass4_1;
+	public Class4 groundDecoration;
 
 	@OriginalMember(owner = "client!nd", name = "db", descriptor = "I")
 	public int anInt1708;
 
 	@OriginalMember(owner = "client!nd", name = "K", descriptor = "I")
-	public int anInt1699 = 0;
+	public int locSpans = 0;
 
 	@OriginalMember(owner = "client!nd", name = "T", descriptor = "[I")
-	public final int[] anIntArray356 = new int[5];
+	public final int[] locSpan = new int[5];
 
 	@OriginalMember(owner = "client!nd", name = "ab", descriptor = "[Lclient!n;")
-	public final Class37[] aClass37Array1 = new Class37[5];
+	public final Loc[] locs = new Loc[5];
 
 	@OriginalMember(owner = "client!nd", name = "W", descriptor = "I")
 	public int level;

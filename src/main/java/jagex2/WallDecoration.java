@@ -1,11 +1,11 @@
 package jagex2;
 
-import jagex2.graphics.Class2_Sub2_Sub12;
+import jagex2.graphics.Renderable;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!a")
-public final class Class1 {
+public final class WallDecoration {
 
 	@OriginalMember(owner = "client!a", name = "b", descriptor = "I")
 	public int anInt1;
@@ -17,17 +17,17 @@ public final class Class1 {
 	public int anInt4;
 
 	@OriginalMember(owner = "client!a", name = "h", descriptor = "I")
-	public int anInt6;
+	public int x;
 
 	@OriginalMember(owner = "client!a", name = "i", descriptor = "Lclient!jd;")
-	public Class2_Sub2_Sub12 aClass2_Sub2_Sub12_1;
+	public Renderable aClass2_Sub2_Sub12_1;
 
 	@OriginalMember(owner = "client!a", name = "m", descriptor = "I")
-	public int anInt9;
+	public int z;
 
 	@OriginalMember(owner = "client!a", name = "c", descriptor = "I")
-	public int anInt2 = 0;
+	public int info = 0;
 
 	@OriginalMember(owner = "client!a", name = "y", descriptor = "I")
-	public int anInt17 = 0;
+	public int bitset = 0;
 }

@@ -610,9 +610,9 @@ public final class Static96 {
 		}
 		if (local12 == 24) {
 			if (Static97.aBoolean175) {
-				Static93.scene.method1450(local26 - 4, local30 + -4);
+				Static93.scene.click(local26 - 4, local30 + -4);
 			} else {
-				Static93.scene.method1450(Static107.anInt2500 - 4, Static90.anInt2133 + -4);
+				Static93.scene.click(Static107.anInt2500 - 4, Static90.anInt2133 + -4);
 			}
 		}
 		if (local12 == 13) {

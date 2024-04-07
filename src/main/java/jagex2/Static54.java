@@ -73,7 +73,7 @@ public final class Static54 {
 					}
 				}
 				local10.method942(Static45.anInt1095);
-				Static93.scene.method1425(Static1.currentLevel, (int) local10.aDouble7, (int) local10.aDouble5, (int) local10.aDouble2, 60, local10, local10.anInt1436, -1, false);
+				Static93.scene.addTemporary(Static1.currentLevel, (int) local10.aDouble7, (int) local10.aDouble5, (int) local10.aDouble2, 60, local10, local10.anInt1436, -1, false);
 			}
 		}
 	}

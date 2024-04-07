@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.dash3d.Occluder;
+import jagex2.dash3d.type.Loc;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -10,13 +11,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static89 {
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "I")
-	public static int anInt2091;
+	public static int eyeX;
 
 	@OriginalMember(owner = "client!sd", name = "d", descriptor = "I")
-	public static int anInt2093;
+	public static int eyeTileZ;
 
 	@OriginalMember(owner = "client!sd", name = "e", descriptor = "I")
-	public static int anInt2094;
+	public static int cycle;
 
 	@OriginalMember(owner = "client!sd", name = "p", descriptor = "I")
 	public static int sinEyeYaw;
@@ -25,7 +26,7 @@ public final class Static89 {
 	public static int cosEyeYaw;
 
 	@OriginalMember(owner = "client!sd", name = "u", descriptor = "I")
-	public static int anInt2102;
+	public static int eyeTileX;
 
 	@OriginalMember(owner = "client!sd", name = "w", descriptor = "I")
 	public static int cosEyePitch;
@@ -37,10 +38,10 @@ public final class Static89 {
 	public static int anInt2109;
 
 	@OriginalMember(owner = "client!sd", name = "F", descriptor = "I")
-	public static int anInt2110;
+	public static int eyeZ;
 
 	@OriginalMember(owner = "client!sd", name = "J", descriptor = "I")
-	public static int anInt2113;
+	public static int eyeY;
 
 	@OriginalMember(owner = "client!sd", name = "K", descriptor = "I")
 	public static int sinEyePitch;
@@ -61,7 +62,7 @@ public final class Static89 {
 	private static int viewportTop;
 
 	@OriginalMember(owner = "client!sd", name = "bb", descriptor = "[[Z")
-	public static boolean[][] aBooleanArrayArray1;
+	public static boolean[][] visibilityMap;
 
 	@OriginalMember(owner = "client!sd", name = "cb", descriptor = "I")
 	private static int viewportCenterY;
@@ -73,7 +74,7 @@ public final class Static89 {
 	private static int viewportLeft;
 
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "I")
-	public static int anInt2092 = 0;
+	public static int mouseX = 0;
 
 	@OriginalMember(owner = "client!sd", name = "c", descriptor = "[I")
 	public static int[] WALL_DECORATION_INSET_X = new int[] { 53, -53, -53, 53 };
@@ -82,13 +83,13 @@ public final class Static89 {
 	public static int[] WALL_DECORATION_OUTSET_X = new int[] { -45, 45, 45, -45 };
 
 	@OriginalMember(owner = "client!sd", name = "g", descriptor = "I")
-	public static int anInt2095 = 0;
+	public static int topLevel = 0;
 
 	@OriginalMember(owner = "client!sd", name = "h", descriptor = "Z")
-	public static boolean aBoolean162 = false;
+	public static boolean takingInput = false;
 
 	@OriginalMember(owner = "client!sd", name = "i", descriptor = "[Lclient!sc;")
-	public static Occluder[] aClass54Array1 = new Occluder[500];
+	public static Occluder[] activeOccluders = new Occluder[500];
 
 	@OriginalMember(owner = "client!sd", name = "j", descriptor = "I")
 	public static int anInt2096 = -1;
@@ -97,7 +98,7 @@ public final class Static89 {
 	public static int anInt2097 = 0;
 
 	@OriginalMember(owner = "client!sd", name = "l", descriptor = "Z")
-	public static boolean aBoolean163 = true;
+	public static boolean lowMemory = true;
 
 	@OriginalMember(owner = "client!sd", name = "n", descriptor = "Lclient!od;")
 	public static LinkedList aClass44_6 = new LinkedList();
@@ -109,7 +110,7 @@ public final class Static89 {
 	public static int[] WALL_DECORATION_INSET_Z = new int[] { -53, -53, 53, 53 };
 
 	@OriginalMember(owner = "client!sd", name = "y", descriptor = "[Lclient!n;")
-	public static Class37[] locBuffer = new Class37[100];
+	public static Loc[] locBuffer = new Loc[100];
 
 	@OriginalMember(owner = "client!sd", name = "I", descriptor = "I")
 	public static final int LEVEL_COUNT = 4;
@@ -118,7 +119,7 @@ public final class Static89 {
 	public static int[] levelOccluderCount = new int[LEVEL_COUNT];
 
 	@OriginalMember(owner = "client!sd", name = "G", descriptor = "I")
-	public static int anInt2111 = 0;
+	public static int mouseY = 0;
 
 	@OriginalMember(owner = "client!sd", name = "H", descriptor = "[I")
 	public static int[] WALL_DECORATION_OUTSET_Z = new int[] { 45, 45, -45, -45 };
@@ -127,7 +128,7 @@ public final class Static89 {
 	public static Occluder[][] levelOccluders = new Occluder[LEVEL_COUNT][500];
 
 	@OriginalMember(owner = "client!sd", name = "O", descriptor = "I")
-	public static int anInt2116 = 0;
+	public static int occluderCounter = 0;
 
 	@OriginalMember(owner = "client!sd", name = "V", descriptor = "[I")
 	public static int[] WALL_CORNER_TYPE_32_BLOCK_LOC_SPANS = new int[] { 2, 0, 0, 2, 0, 0, 0, 4, 4 };
@@ -151,17 +152,17 @@ public final class Static89 {
 	public static int[] FRONT_WALL_TYPES = new int[] { 19, 55, 38, 155, 255, 110, 137, 205, 76 };
 
 	@OriginalMember(owner = "client!sd", name = "jb", descriptor = "[[[[Z")
-	public static boolean[][][][] visibilityMap = new boolean[8][32][51][51];
+	public static boolean[][][][] visibilityMatrix = new boolean[8][32][51][51];
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(II)I")
-	public static int method1420(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		arg1 = (127 - arg1) * (arg0 & 0x7F) >> 7;
-		if (arg1 < 2) {
-			arg1 = 2;
-		} else if (arg1 > 126) {
-			arg1 = 126;
+	public static int mulLightness(@OriginalArg(0) int hsl, @OriginalArg(1) int lightness) {
+		lightness = (127 - lightness) * (hsl & 0x7F) >> 7;
+		if (lightness < 2) {
+			lightness = 2;
+		} else if (lightness > 126) {
+			lightness = 126;
 		}
-		return (arg0 & 0xFF80) + arg1;
+		return (hsl & 0xFF80) + lightness;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "([IIIII)V")
@@ -224,7 +225,7 @@ public final class Static89 {
 								}
 							}
 						}
-						visibilityMap[pitchlevel][yawLevel][x + 25][z + 25] = visible;
+						visibilityMatrix[pitchlevel][yawLevel][x + 25][z + 25] = visible;
 					}
 				}
 			}
@@ -255,7 +256,7 @@ public final class Static89 {
 		WALL_DECORATION_OUTSET_Z = null;
 		levelOccluderCount = null;
 		levelOccluders = null;
-		aClass54Array1 = null;
+		activeOccluders = null;
 		aClass44_6 = null;
 		FRONT_WALL_TYPES = null;
 		DIRECTION_ALLOW_WALL_CORNER_TYPE = null;
@@ -264,24 +265,24 @@ public final class Static89 {
 		WALL_CORNER_TYPE_32_BLOCK_LOC_SPANS = null;
 		WALL_CORNER_TYPE_64_BLOCK_LOC_SPANS = null;
 		WALL_CORNER_TYPE_128_BLOCK_LOC_SPANS = null;
+		visibilityMatrix = null;
 		visibilityMap = null;
-		aBooleanArrayArray1 = null;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIIIIII)V")
 	public static void method1433(@OriginalArg(0) int level, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
 		@Pc(3) Occluder occluder = new Occluder();
-		occluder.anInt2070 = arg2 / 128;
+		occluder.minTileX = arg2 / 128;
 		occluder.anInt2072 = arg3 / 128;
-		occluder.anInt2069 = arg4 / 128;
-		occluder.anInt2071 = arg5 / 128;
-		occluder.anInt2089 = arg1;
-		occluder.anInt2074 = arg2;
-		occluder.anInt2084 = arg3;
-		occluder.anInt2076 = arg4;
-		occluder.anInt2088 = arg5;
-		occluder.anInt2090 = arg6;
-		occluder.anInt2086 = arg7;
+		occluder.minTileZ = arg4 / 128;
+		occluder.maxTileZ = arg5 / 128;
+		occluder.type = arg1;
+		occluder.minX = arg2;
+		occluder.maxX = arg3;
+		occluder.minZ = arg4;
+		occluder.maxZ = arg5;
+		occluder.minY = arg6;
+		occluder.maxY = arg7;
 		levelOccluders[level][levelOccluderCount[level]++] = occluder;
 	}
 }

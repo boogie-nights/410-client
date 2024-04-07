@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ne")
-public final class Model extends Class2_Sub2_Sub12 {
+public final class Model extends Renderable {
 
 	@OriginalMember(owner = "client!ne", name = "vc", descriptor = "[I")
 	public static int[] anIntArray405 = new int[128];
@@ -780,7 +780,7 @@ public final class Model extends Class2_Sub2_Sub12 {
 		@Pc(683) int local683;
 		@Pc(688) int local688;
 		if (local5 == 3) {
-			if (local71 < 0 || local75 < 0 || local80 < 0 || local71 > Static6.anInt222 || local75 > Static6.anInt222 || local80 > Static6.anInt222) {
+			if (local71 < 0 || local75 < 0 || local80 < 0 || local71 > Static6.boundX || local75 > Static6.boundX || local80 > Static6.boundX) {
 				Static6.clipX = true;
 			}
 			if (this.faceInfo == null) {
@@ -809,7 +809,7 @@ public final class Model extends Class2_Sub2_Sub12 {
 		if (local5 != 4) {
 			return;
 		}
-		if (local71 < 0 || local75 < 0 || local80 < 0 || local71 > Static6.anInt222 || local75 > Static6.anInt222 || local80 > Static6.anInt222 || Static71.anIntArray393[3] < 0 || Static71.anIntArray393[3] > Static6.anInt222) {
+		if (local71 < 0 || local75 < 0 || local80 < 0 || local71 > Static6.boundX || local75 > Static6.boundX || local80 > Static6.boundX || Static71.anIntArray393[3] < 0 || Static71.anIntArray393[3] > Static6.boundX) {
 			Static6.clipX = true;
 		}
 		if (this.faceInfo == null) {
@@ -977,7 +977,7 @@ public final class Model extends Class2_Sub2_Sub12 {
 					}
 					if ((local47 - local51) * (Static71.vertexScreenX[local43] - Static71.vertexScreenX[local38]) - (Static71.vertexScreenX[local33] - Static71.vertexScreenX[local38]) * (local55 - local51) > 0) {
 						Static71.faceNearClipped[local18] = false;
-						if (local47 >= 0 && local51 >= 0 && local55 >= 0 && local47 <= Static6.anInt222 && local51 <= Static6.anInt222 && local55 <= Static6.anInt222) {
+						if (local47 >= 0 && local51 >= 0 && local55 >= 0 && local47 <= Static6.boundX && local51 <= Static6.boundX && local55 <= Static6.boundX) {
 							Static71.faceClippedX[local18] = false;
 						} else {
 							Static71.faceClippedX[local18] = true;

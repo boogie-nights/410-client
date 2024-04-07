@@ -67,7 +67,7 @@ public final class Static36 {
 					if (!local20.aClass2_Sub2_Sub7_1.aBoolean58) {
 						local29 += Integer.MIN_VALUE;
 					}
-					Static93.scene.method1425(Static1.currentLevel, local20.anInt2275, local20.anInt2284, Static86.method1383(Static1.currentLevel, local20.anInt2275, local20.anInt2284), local20.anInt2278 * 64 + 60 - 64, local20, local20.anInt2305, local29, local20.aBoolean172);
+					Static93.scene.addTemporary(Static1.currentLevel, local20.anInt2275, local20.anInt2284, Static86.method1383(Static1.currentLevel, local20.anInt2275, local20.anInt2284), local20.anInt2278 * 64 + 60 - 64, local20, local20.anInt2305, local29, local20.aBoolean172);
 				}
 			}
 		}

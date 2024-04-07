@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.datastruct.LruCache;
 import jagex2.graphics.Static6;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;

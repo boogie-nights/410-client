@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.config.ObjType;
 import jagex2.datastruct.LinkedList;
+import jagex2.datastruct.LruCache;
 import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -93,7 +94,7 @@ public final class Static20 {
 			if (local3 != local38) {
 				local3 = local38;
 				@Pc(119) int local119;
-				if (local60 == 2 && Static93.scene.method1449(Static1.currentLevel, local42, local48, local38) >= 0) {
+				if (local60 == 2 && Static93.scene.getInfo(Static1.currentLevel, local42, local48, local38) >= 0) {
 					@Pc(83) Class2_Sub2_Sub10 local83 = Static91.method1470(local54);
 					if (local83.anIntArray210 != null) {
 						local83 = local83.method766();

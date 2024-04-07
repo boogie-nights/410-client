@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.datastruct.LinkedList;
+import jagex2.datastruct.LruCache;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;

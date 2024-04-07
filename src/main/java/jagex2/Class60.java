@@ -1,6 +1,6 @@
 package jagex2;
 
-import jagex2.graphics.Class2_Sub2_Sub12;
+import jagex2.graphics.Renderable;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
@@ -11,7 +11,7 @@ public final class Class60 {
 	public int anInt2360;
 
 	@OriginalMember(owner = "client!uc", name = "e", descriptor = "Lclient!jd;")
-	public Class2_Sub2_Sub12 aClass2_Sub2_Sub12_7;
+	public Renderable aClass2_Sub2_Sub12_7;
 
 	@OriginalMember(owner = "client!uc", name = "g", descriptor = "I")
 	public int anInt2361;
@@ -26,11 +26,11 @@ public final class Class60 {
 	public int anInt2364;
 
 	@OriginalMember(owner = "client!uc", name = "v", descriptor = "Lclient!jd;")
-	public Class2_Sub2_Sub12 aClass2_Sub2_Sub12_8;
+	public Renderable aClass2_Sub2_Sub12_8;
 
 	@OriginalMember(owner = "client!uc", name = "u", descriptor = "I")
-	public int anInt2369 = 0;
+	public int bitset = 0;
 
 	@OriginalMember(owner = "client!uc", name = "p", descriptor = "I")
-	public int anInt2365 = 0;
+	public int info = 0;
 }

@@ -7,7 +7,7 @@ import jagex2.config.ObjType;
 import jagex2.dash3d.CollisionMap;
 import jagex2.dash3d.World3D;
 import jagex2.datastruct.LinkedList;
-import jagex2.graphics.Class2_Sub2_Sub12;
+import jagex2.graphics.Renderable;
 import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.graphics.GraphicsProducingBuffer_Sub1;
 import jagex2.graphics.Model;
@@ -436,7 +436,7 @@ public final class Static83 {
 		if (loc.anInt1030 == 1) {
 			local109 += 256;
 		}
-		@Pc(167) Class2_Sub2_Sub12 local167;
+		@Pc(167) Renderable local167;
 		if (shape != 22) {
 			@Pc(267) int local267;
 			if (shape == 10 || shape == 11) {
@@ -565,10 +565,10 @@ public final class Static83 {
 				}
 			} else {
 				@Pc(912) int local912;
-				@Pc(942) Class2_Sub2_Sub12 local942;
+				@Pc(942) Renderable local942;
 				if (shape == 2) {
 					local912 = rotation + 1 & 0x3;
-					@Pc(932) Class2_Sub2_Sub12 local932;
+					@Pc(932) Renderable local932;
 					if (loc.anInt1048 == -1 && loc.anIntArray210 == null) {
 						local932 = loc.method765(rotation + 4, local57, local87, local65, 2, local77);
 						local942 = loc.method765(local912, local57, local87, local65, 2, local77);
@@ -658,7 +658,7 @@ public final class Static83 {
 						} else {
 							local167 = new Class2_Sub2_Sub12_Sub5(arg1, 4, 0, local65, local57, local77, local87, loc.anInt1048, true);
 						}
-						scene.method1446(level, x, z, local102, local167, Static5.ROTATION_WALL_TYPE[rotation], rotation * 512, 0, 0, local121, local109);
+						scene.setWallDecoration(level, x, z, local102, local167, Static5.ROTATION_WALL_TYPE[rotation], rotation * 512, 0, 0, local121, local109);
 					} else if (shape == 5) {
 						local912 = 16;
 						local267 = scene.method1459(level, x, z);
@@ -670,28 +670,28 @@ public final class Static83 {
 						} else {
 							local942 = new Class2_Sub2_Sub12_Sub5(arg1, 4, 0, local65, local57, local77, local87, loc.anInt1048, true);
 						}
-						scene.method1446(level, x, z, local102, local942, Static5.ROTATION_WALL_TYPE[rotation], rotation * 512, WALL_DECORATION_ROTATION_FORWARD_X[rotation] * local912, Static55.WALL_DECORATION_ROTATION_FORWARD_Z[rotation] * local912, local121, local109);
+						scene.setWallDecoration(level, x, z, local102, local942, Static5.ROTATION_WALL_TYPE[rotation], rotation * 512, WALL_DECORATION_ROTATION_FORWARD_X[rotation] * local912, Static55.WALL_DECORATION_ROTATION_FORWARD_Z[rotation] * local912, local121, local109);
 					} else if (shape == 6) {
 						if (loc.anInt1048 == -1 && loc.anIntArray210 == null) {
 							local167 = loc.method765(0, local57, local87, local65, 4, local77);
 						} else {
 							local167 = new Class2_Sub2_Sub12_Sub5(arg1, 4, 0, local65, local57, local77, local87, loc.anInt1048, true);
 						}
-						scene.method1446(level, x, z, local102, local167, 256, rotation, 0, 0, local121, local109);
+						scene.setWallDecoration(level, x, z, local102, local167, 256, rotation, 0, 0, local121, local109);
 					} else if (shape == 7) {
 						if (loc.anInt1048 == -1 && loc.anIntArray210 == null) {
 							local167 = loc.method765(0, local57, local87, local65, 4, local77);
 						} else {
 							local167 = new Class2_Sub2_Sub12_Sub5(arg1, 4, 0, local65, local57, local77, local87, loc.anInt1048, true);
 						}
-						scene.method1446(level, x, z, local102, local167, 512, rotation, 0, 0, local121, local109);
+						scene.setWallDecoration(level, x, z, local102, local167, 512, rotation, 0, 0, local121, local109);
 					} else if (shape == 8) {
 						if (loc.anInt1048 == -1 && loc.anIntArray210 == null) {
 							local167 = loc.method765(0, local57, local87, local65, 4, local77);
 						} else {
 							local167 = new Class2_Sub2_Sub12_Sub5(arg1, 4, 0, local65, local57, local77, local87, loc.anInt1048, true);
 						}
-						scene.method1446(level, x, z, local102, local167, 768, rotation, 0, 0, local121, local109);
+						scene.setWallDecoration(level, x, z, local102, local167, 768, rotation, 0, 0, local121, local109);
 					}
 				}
 			}

@@ -78,7 +78,7 @@ public final class Static4 {
 		@Pc(70) int local70 = 0;
 		if (local6 != 0) {
 			local40 = local6 >> 14 & 0x7FFF;
-			@Pc(88) int local88 = Static93.scene.method1449(arg0.anInt817, arg0.anInt818, arg0.anInt821, local6);
+			@Pc(88) int local88 = Static93.scene.getInfo(arg0.anInt817, arg0.anInt818, arg0.anInt821, local6);
 			local70 = local88 >> 6 & 0x3;
 			local55 = local88 & 0x1F;
 		}

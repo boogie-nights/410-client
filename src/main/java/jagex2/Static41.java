@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.client.GameShell;
+import jagex2.datastruct.LruCache;
 import jagex2.graphics.Class2_Sub2_Sub14;
 import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.graphics.Static71;

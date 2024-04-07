@@ -1,6 +1,8 @@
 package jagex2;
 
+import jagex2.dash3d.type.Loc;
 import jagex2.datastruct.LinkedList;
+import jagex2.datastruct.LruCache;
 import jagex2.graphics.Model;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -311,7 +313,7 @@ public final class Static3 {
 							if (local35 == 0) {
 								@Pc(1292) Class60 local1292 = Static93.scene.method1412(Static1.currentLevel, local43, local425);
 								if (local1292 != null) {
-									local523 = local1292.anInt2369 >> 14 & 0x7FFF;
+									local523 = local1292.bitset >> 14 & 0x7FFF;
 									if (local19 == 2) {
 										local1292.aClass2_Sub2_Sub12_7 = new Class2_Sub2_Sub12_Sub5(local523, 2, local31 + 4, local503, local1060, local1064, local1068, local12, false);
 										local1292.aClass2_Sub2_Sub12_8 = new Class2_Sub2_Sub12_Sub5(local523, 2, local31 + 1 & 0x3, local503, local1060, local1064, local1068, local12, false);
@@ -321,24 +323,24 @@ public final class Static3 {
 								}
 							}
 							if (local35 == 1) {
-								@Pc(1365) Class1 local1365 = Static93.scene.method1428(Static1.currentLevel, local43, local425);
+								@Pc(1365) WallDecoration local1365 = Static93.scene.method1428(Static1.currentLevel, local43, local425);
 								if (local1365 != null) {
-									local1365.aClass2_Sub2_Sub12_1 = new Class2_Sub2_Sub12_Sub5(local1365.anInt17 >> 14 & 0x7FFF, 4, 0, local503, local1060, local1064, local1068, local12, false);
+									local1365.aClass2_Sub2_Sub12_1 = new Class2_Sub2_Sub12_Sub5(local1365.bitset >> 14 & 0x7FFF, 4, 0, local503, local1060, local1064, local1068, local12, false);
 								}
 							}
 							if (local35 == 2) {
-								@Pc(1397) Class37 local1397 = Static93.scene.method1436(Static1.currentLevel, local43, local425);
+								@Pc(1397) Loc local1397 = Static93.scene.method1436(Static1.currentLevel, local43, local425);
 								if (local19 == 11) {
 									local19 = 10;
 								}
 								if (local1397 != null) {
-									local1397.aClass2_Sub2_Sub12_3 = new Class2_Sub2_Sub12_Sub5(local1397.anInt1644 >> 14 & 0x7FFF, local19, local31, local503, local1060, local1064, local1068, local12, false);
+									local1397.aClass2_Sub2_Sub12_3 = new Class2_Sub2_Sub12_Sub5(local1397.bitset >> 14 & 0x7FFF, local19, local31, local503, local1060, local1064, local1068, local12, false);
 								}
 							}
 							if (local35 == 3) {
 								@Pc(1432) Class4 local1432 = Static93.scene.method1441(Static1.currentLevel, local43, local425);
 								if (local1432 != null) {
-									local1432.aClass2_Sub2_Sub12_2 = new Class2_Sub2_Sub12_Sub5(local1432.anInt48 >> 14 & 0x7FFF, 22, local31, local503, local1060, local1064, local1068, local12, false);
+									local1432.aClass2_Sub2_Sub12_2 = new Class2_Sub2_Sub12_Sub5(local1432.bitset >> 14 & 0x7FFF, 22, local31, local503, local1060, local1064, local1068, local12, false);
 								}
 							}
 						}

@@ -291,7 +291,7 @@ public final class Static105 {
 				local11 = arg2;
 			}
 			local33 = (103 - arg3) * 4 * 512 + arg4 * 4 + 24624;
-			local40 = Static93.scene.method1449(arg0, arg4, arg3, local7);
+			local40 = Static93.scene.getInfo(arg0, arg4, arg3, local7);
 			local46 = local40 >> 6 & 0x3;
 			@Pc(49) int[] local49 = Static93.aClass2_Sub2_Sub2_Sub4_8.pixels;
 			local53 = local40 & 0x1F;
@@ -366,7 +366,7 @@ public final class Static105 {
 		}
 		local7 = Static93.scene.method1429(arg0, arg4, arg3);
 		if (local7 != 0) {
-			local40 = Static93.scene.method1449(arg0, arg4, arg3, local7);
+			local40 = Static93.scene.getInfo(arg0, arg4, arg3, local7);
 			local53 = local40 & 0x1F;
 			local46 = local40 >> 6 & 0x3;
 			local11 = local7 >> 14 & 0x7FFF;

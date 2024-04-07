@@ -1,13 +1,13 @@
 package jagex2;
 
-import jagex2.graphics.Class2_Sub2_Sub12;
+import jagex2.graphics.Renderable;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ke")
-public abstract class Class2_Sub2_Sub12_Sub1 extends Class2_Sub2_Sub12 {
+public abstract class Class2_Sub2_Sub12_Sub1 extends Renderable {
 
 	@OriginalMember(owner = "client!ke", name = "qb", descriptor = "I")
 	public int anInt2275;

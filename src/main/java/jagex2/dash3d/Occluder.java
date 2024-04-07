@@ -7,56 +7,56 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Occluder {
 
 	@OriginalMember(owner = "client!sc", name = "c", descriptor = "I")
-	public int anInt2068;
+	public int minDeltaZ;
 
 	@OriginalMember(owner = "client!sc", name = "d", descriptor = "I")
-	public int anInt2069;
+	public int minTileZ;
 
 	@OriginalMember(owner = "client!sc", name = "e", descriptor = "I")
-	public int anInt2070;
+	public int minTileX;
 
 	@OriginalMember(owner = "client!sc", name = "g", descriptor = "I")
-	public int anInt2071;
+	public int maxTileZ;
 
 	@OriginalMember(owner = "client!sc", name = "h", descriptor = "I")
 	public int anInt2072;
 
 	@OriginalMember(owner = "client!sc", name = "j", descriptor = "I")
-	public int anInt2074;
+	public int minX;
 
 	@OriginalMember(owner = "client!sc", name = "k", descriptor = "I")
-	public int anInt2075;
+	public int mode;
 
 	@OriginalMember(owner = "client!sc", name = "l", descriptor = "I")
-	public int anInt2076;
+	public int minZ;
 
 	@OriginalMember(owner = "client!sc", name = "q", descriptor = "I")
-	public int anInt2079;
+	public int maxDeltaY;
 
 	@OriginalMember(owner = "client!sc", name = "s", descriptor = "I")
-	public int anInt2080;
+	public int minDeltaY;
 
 	@OriginalMember(owner = "client!sc", name = "u", descriptor = "I")
-	public int anInt2081;
+	public int maxDeltaZ;
 
 	@OriginalMember(owner = "client!sc", name = "y", descriptor = "I")
-	public int anInt2084;
+	public int maxX;
 
 	@OriginalMember(owner = "client!sc", name = "z", descriptor = "I")
-	public int anInt2085;
+	public int minDeltaX;
 
 	@OriginalMember(owner = "client!sc", name = "B", descriptor = "I")
-	public int anInt2086;
+	public int maxY;
 
 	@OriginalMember(owner = "client!sc", name = "D", descriptor = "I")
-	public int anInt2087;
+	public int maxDeltaX;
 
 	@OriginalMember(owner = "client!sc", name = "F", descriptor = "I")
-	public int anInt2088;
+	public int maxZ;
 
 	@OriginalMember(owner = "client!sc", name = "H", descriptor = "I")
-	public int anInt2089;
+	public int type;
 
 	@OriginalMember(owner = "client!sc", name = "I", descriptor = "I")
-	public int anInt2090;
+	public int minY;
 }

@@ -1,4 +1,4 @@
-package jagex2;
+package jagex2.datastruct;
 
 import jagex2.datastruct.HashTable;
 import jagex2.datastruct.Hashable;

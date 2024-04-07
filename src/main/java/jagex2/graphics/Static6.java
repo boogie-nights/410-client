@@ -12,7 +12,7 @@ public final class Static6 {
 	public static int anInt221;
 
 	@OriginalMember(owner = "client!b", name = "X", descriptor = "I")
-	public static int anInt222;
+	public static int boundX;
 
 	@OriginalMember(owner = "client!b", name = "ab", descriptor = "I")
 	public static int centerX2d;
@@ -33,10 +33,10 @@ public final class Static6 {
 	public static int centerY2D;
 
 	@OriginalMember(owner = "client!b", name = "kb", descriptor = "I")
-	private static int anInt229;
+	private static int bottom;
 
 	@OriginalMember(owner = "client!b", name = "nb", descriptor = "[I")
-	private static int[] anIntArray62;
+	private static int[] lineOffset;
 
 	@OriginalMember(owner = "client!b", name = "Y", descriptor = "Z")
 	public static boolean jagged = true;
@@ -69,7 +69,7 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "d", descriptor = "()[I")
 	public static int[] method167() {
-		return anIntArray62;
+		return lineOffset;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(D)V")
@@ -143,22 +143,22 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IIII[I)[I")
 	private static int[] method169(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4) {
-		anInt222 = arg2 - arg0;
-		anInt229 = arg3 - arg1;
+		boundX = arg2 - arg0;
+		bottom = arg3 - arg1;
 		if (arg4 == null) {
-			@Pc(11) int local11 = anInt229;
+			@Pc(11) int local11 = bottom;
 			if (local11 == 0) {
 				local11++;
 			}
-			anIntArray62 = new int[local11];
+			lineOffset = new int[local11];
 			for (@Pc(19) int local19 = 0; local19 < local11; local19++) {
-				anIntArray62[local19] = (arg1 + local19) * Static26.width2d + arg0;
+				lineOffset[local19] = (arg1 + local19) * Static26.width2d + arg0;
 			}
 		} else {
-			anIntArray62 = arg4;
+			lineOffset = arg4;
 		}
 		method178();
-		return anIntArray62;
+		return lineOffset;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([I[IIIIIIIIIIIIII)V")
@@ -170,8 +170,8 @@ public final class Static6 {
 		@Pc(38) int local38;
 		if (clipX) {
 			local13 = (arg8 - arg7) / (arg6 - arg5);
-			if (arg6 > anInt222) {
-				arg6 = anInt222;
+			if (arg6 > boundX) {
+				arg6 = boundX;
 			}
 			if (arg5 < 0) {
 				arg7 -= arg5 * local13;
@@ -599,12 +599,12 @@ public final class Static6 {
 			local57 = (arg6 - arg8 << 15) / (arg0 - arg2);
 		}
 		if (arg0 <= arg1 && arg0 <= arg2) {
-			if (arg0 < anInt229) {
-				if (arg1 > anInt229) {
-					arg1 = anInt229;
+			if (arg0 < bottom) {
+				if (arg1 > bottom) {
+					arg1 = bottom;
 				}
-				if (arg2 > anInt229) {
-					arg2 = anInt229;
+				if (arg2 > bottom) {
+					arg2 = bottom;
 				}
 				if (arg1 < arg2) {
 					arg5 = arg3 <<= 0x10;
@@ -626,7 +626,7 @@ public final class Static6 {
 					if (arg0 != arg1 && local55 < local1 || arg0 == arg1 && local55 > local28) {
 						arg2 -= arg1;
 						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = lineOffset[arg0];
 						while (true) {
 							arg1--;
 							if (arg1 < 0) {
@@ -653,7 +653,7 @@ public final class Static6 {
 					} else {
 						arg2 -= arg1;
 						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = lineOffset[arg0];
 						while (true) {
 							arg1--;
 							if (arg1 < 0) {
@@ -698,7 +698,7 @@ public final class Static6 {
 					if (arg0 != arg2 && local55 < local1 || arg0 == arg2 && local28 > local1) {
 						arg1 -= arg2;
 						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = lineOffset[arg0];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -725,7 +725,7 @@ public final class Static6 {
 					} else {
 						arg1 -= arg2;
 						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = lineOffset[arg0];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -753,12 +753,12 @@ public final class Static6 {
 				}
 			}
 		} else if (arg1 <= arg2) {
-			if (arg1 < anInt229) {
-				if (arg2 > anInt229) {
-					arg2 = anInt229;
+			if (arg1 < bottom) {
+				if (arg2 > bottom) {
+					arg2 = bottom;
 				}
-				if (arg0 > anInt229) {
-					arg0 = anInt229;
+				if (arg0 > bottom) {
+					arg0 = bottom;
 				}
 				if (arg2 < arg0) {
 					arg3 = arg4 <<= 0x10;
@@ -780,7 +780,7 @@ public final class Static6 {
 					if (arg1 != arg2 && local1 < local28 || arg1 == arg2 && local1 > local55) {
 						arg0 -= arg2;
 						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = lineOffset[arg1];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -807,7 +807,7 @@ public final class Static6 {
 					} else {
 						arg0 -= arg2;
 						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = lineOffset[arg1];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -852,7 +852,7 @@ public final class Static6 {
 					if (local1 < local28) {
 						arg2 -= arg0;
 						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = lineOffset[arg1];
 						while (true) {
 							arg0--;
 							if (arg0 < 0) {
@@ -879,7 +879,7 @@ public final class Static6 {
 					} else {
 						arg2 -= arg0;
 						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = lineOffset[arg1];
 						while (true) {
 							arg0--;
 							if (arg0 < 0) {
@@ -906,12 +906,12 @@ public final class Static6 {
 					}
 				}
 			}
-		} else if (arg2 < anInt229) {
-			if (arg0 > anInt229) {
-				arg0 = anInt229;
+		} else if (arg2 < bottom) {
+			if (arg0 > bottom) {
+				arg0 = bottom;
 			}
-			if (arg1 > anInt229) {
-				arg1 = anInt229;
+			if (arg1 > bottom) {
+				arg1 = bottom;
 			}
 			if (arg0 < arg1) {
 				arg4 = arg5 <<= 0x10;
@@ -933,7 +933,7 @@ public final class Static6 {
 				if (local28 < local55) {
 					arg1 -= arg0;
 					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = lineOffset[arg2];
 					while (true) {
 						arg0--;
 						if (arg0 < 0) {
@@ -960,7 +960,7 @@ public final class Static6 {
 				} else {
 					arg1 -= arg0;
 					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = lineOffset[arg2];
 					while (true) {
 						arg0--;
 						if (arg0 < 0) {
@@ -1005,7 +1005,7 @@ public final class Static6 {
 				if (local28 < local55) {
 					arg0 -= arg1;
 					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = lineOffset[arg2];
 					while (true) {
 						arg1--;
 						if (arg1 < 0) {
@@ -1032,7 +1032,7 @@ public final class Static6 {
 				} else {
 					arg0 -= arg1;
 					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = lineOffset[arg2];
 					while (true) {
 						arg1--;
 						if (arg1 < 0) {
@@ -1081,12 +1081,12 @@ public final class Static6 {
 			local31 = (arg3 - arg5 << 16) / (arg0 - arg2);
 		}
 		if (arg0 <= arg1 && arg0 <= arg2) {
-			if (arg0 < anInt229) {
-				if (arg1 > anInt229) {
-					arg1 = anInt229;
+			if (arg0 < bottom) {
+				if (arg1 > bottom) {
+					arg1 = bottom;
 				}
-				if (arg2 > anInt229) {
-					arg2 = anInt229;
+				if (arg2 > bottom) {
+					arg2 = bottom;
 				}
 				if (arg1 < arg2) {
 					arg5 = arg3 <<= 0x10;
@@ -1103,7 +1103,7 @@ public final class Static6 {
 					if (arg0 != arg1 && local31 < local1 || arg0 == arg1 && local31 > local16) {
 						arg2 -= arg1;
 						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = lineOffset[arg0];
 						while (true) {
 							arg1--;
 							if (arg1 < 0) {
@@ -1126,7 +1126,7 @@ public final class Static6 {
 					} else {
 						arg2 -= arg1;
 						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = lineOffset[arg0];
 						while (true) {
 							arg1--;
 							if (arg1 < 0) {
@@ -1162,7 +1162,7 @@ public final class Static6 {
 					if (arg0 != arg2 && local31 < local1 || arg0 == arg2 && local16 > local1) {
 						arg1 -= arg2;
 						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = lineOffset[arg0];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1185,7 +1185,7 @@ public final class Static6 {
 					} else {
 						arg1 -= arg2;
 						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = lineOffset[arg0];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1209,12 +1209,12 @@ public final class Static6 {
 				}
 			}
 		} else if (arg1 <= arg2) {
-			if (arg1 < anInt229) {
-				if (arg2 > anInt229) {
-					arg2 = anInt229;
+			if (arg1 < bottom) {
+				if (arg2 > bottom) {
+					arg2 = bottom;
 				}
-				if (arg0 > anInt229) {
-					arg0 = anInt229;
+				if (arg0 > bottom) {
+					arg0 = bottom;
 				}
 				if (arg2 < arg0) {
 					arg3 = arg4 <<= 0x10;
@@ -1231,7 +1231,7 @@ public final class Static6 {
 					if (arg1 != arg2 && local1 < local16 || arg1 == arg2 && local1 > local31) {
 						arg0 -= arg2;
 						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = lineOffset[arg1];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1254,7 +1254,7 @@ public final class Static6 {
 					} else {
 						arg0 -= arg2;
 						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = lineOffset[arg1];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1290,7 +1290,7 @@ public final class Static6 {
 					if (local1 < local16) {
 						arg2 -= arg0;
 						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = lineOffset[arg1];
 						while (true) {
 							arg0--;
 							if (arg0 < 0) {
@@ -1313,7 +1313,7 @@ public final class Static6 {
 					} else {
 						arg2 -= arg0;
 						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = lineOffset[arg1];
 						while (true) {
 							arg0--;
 							if (arg0 < 0) {
@@ -1336,12 +1336,12 @@ public final class Static6 {
 					}
 				}
 			}
-		} else if (arg2 < anInt229) {
-			if (arg0 > anInt229) {
-				arg0 = anInt229;
+		} else if (arg2 < bottom) {
+			if (arg0 > bottom) {
+				arg0 = bottom;
 			}
-			if (arg1 > anInt229) {
-				arg1 = anInt229;
+			if (arg1 > bottom) {
+				arg1 = bottom;
 			}
 			if (arg0 < arg1) {
 				arg4 = arg5 <<= 0x10;
@@ -1358,7 +1358,7 @@ public final class Static6 {
 				if (local16 < local31) {
 					arg1 -= arg0;
 					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = lineOffset[arg2];
 					while (true) {
 						arg0--;
 						if (arg0 < 0) {
@@ -1381,7 +1381,7 @@ public final class Static6 {
 				} else {
 					arg1 -= arg0;
 					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = lineOffset[arg2];
 					while (true) {
 						arg0--;
 						if (arg0 < 0) {
@@ -1417,7 +1417,7 @@ public final class Static6 {
 				if (local16 < local31) {
 					arg0 -= arg1;
 					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = lineOffset[arg2];
 					while (true) {
 						arg1--;
 						if (arg1 < 0) {
@@ -1440,7 +1440,7 @@ public final class Static6 {
 				} else {
 					arg0 -= arg1;
 					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = lineOffset[arg2];
 					while (true) {
 						arg1--;
 						if (arg1 < 0) {
@@ -1471,12 +1471,12 @@ public final class Static6 {
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IIIIIIIIIIIIIIIIIII)V")
-	public static void fillTexturedTriangle(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14, @OriginalArg(15) int arg15, @OriginalArg(16) int arg16, @OriginalArg(17) int arg17, @OriginalArg(18) int arg18) {
+	public static void fillTexturedTriangle(@OriginalArg(0) int yA, @OriginalArg(1) int yB, @OriginalArg(2) int yC, @OriginalArg(3) int xA, @OriginalArg(4) int xB, @OriginalArg(5) int xC, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14, @OriginalArg(15) int arg15, @OriginalArg(16) int arg16, @OriginalArg(17) int arg17, @OriginalArg(18) int arg18) {
 		@Pc(4) int[] local4 = anInterface4_1.method397(arg18);
 		@Pc(11) int local11;
 		if (local4 == null) {
 			local11 = anInterface4_1.method396(arg18);
-			fillGouraudTriangle(arg0, arg1, arg2, arg3, arg4, arg5, method166(local11, arg6), method166(local11, arg7), method166(local11, arg8));
+			fillGouraudTriangle(yA, yB, yC, xA, xB, xC, method166(local11, arg6), method166(local11, arg7), method166(local11, arg8));
 			return;
 		}
 		aBoolean20 = anInterface4_1.method394(arg18);
@@ -1498,202 +1498,202 @@ public final class Static6 {
 		@Pc(152) int local152 = local42 * local62 - local50 * local54 << 5;
 		@Pc(154) int local154 = 0;
 		@Pc(156) int local156 = 0;
-		if (arg1 != arg0) {
-			local154 = (arg4 - arg3 << 16) / (arg1 - arg0);
-			local156 = (arg7 - arg6 << 16) / (arg1 - arg0);
+		if (yB != yA) {
+			local154 = (xB - xA << 16) / (yB - yA);
+			local156 = (arg7 - arg6 << 16) / (yB - yA);
 		}
 		@Pc(181) int local181 = 0;
 		@Pc(183) int local183 = 0;
-		if (arg2 != arg1) {
-			local181 = (arg5 - arg4 << 16) / (arg2 - arg1);
-			local183 = (arg8 - arg7 << 16) / (arg2 - arg1);
+		if (yC != yB) {
+			local181 = (xC - xB << 16) / (yC - yB);
+			local183 = (arg8 - arg7 << 16) / (yC - yB);
 		}
 		@Pc(208) int local208 = 0;
 		@Pc(210) int local210 = 0;
-		if (arg2 != arg0) {
-			local208 = (arg3 - arg5 << 16) / (arg0 - arg2);
-			local210 = (arg6 - arg8 << 16) / (arg0 - arg2);
+		if (yC != yA) {
+			local208 = (xA - xC << 16) / (yA - yC);
+			local210 = (arg6 - arg8 << 16) / (yA - yC);
 		}
 		@Pc(324) int local324;
-		if (arg0 <= arg1 && arg0 <= arg2) {
-			if (arg0 < anInt229) {
-				if (arg1 > anInt229) {
-					arg1 = anInt229;
+		if (yA <= yB && yA <= yC) {
+			if (yA < bottom) {
+				if (yB > bottom) {
+					yB = bottom;
 				}
-				if (arg2 > anInt229) {
-					arg2 = anInt229;
+				if (yC > bottom) {
+					yC = bottom;
 				}
-				if (arg1 < arg2) {
-					arg5 = arg3 <<= 0x10;
+				if (yB < yC) {
+					xC = xA <<= 0x10;
 					arg8 = arg6 <<= 0x10;
-					if (arg0 < 0) {
-						arg5 -= local208 * arg0;
-						arg3 -= local154 * arg0;
-						arg8 -= local210 * arg0;
-						arg6 -= local156 * arg0;
-						arg0 = 0;
+					if (yA < 0) {
+						xC -= local208 * yA;
+						xA -= local154 * yA;
+						arg8 -= local210 * yA;
+						arg6 -= local156 * yA;
+						yA = 0;
 					}
-					arg4 <<= 0x10;
+					xB <<= 0x10;
 					arg7 <<= 0x10;
-					if (arg1 < 0) {
-						arg4 -= local181 * arg1;
-						arg7 -= local183 * arg1;
-						arg1 = 0;
+					if (yB < 0) {
+						xB -= local181 * yB;
+						arg7 -= local183 * yB;
+						yB = 0;
 					}
-					local324 = arg0 - centerY;
+					local324 = yA - centerY;
 					local11 += local92 * local324;
 					local102 += local122 * local324;
 					local132 += local152 * local324;
-					if (arg0 != arg1 && local208 < local154 || arg0 == arg1 && local208 > local181) {
-						arg2 -= arg1;
-						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+					if (yA != yB && local208 < local154 || yA == yB && local208 > local181) {
+						yC -= yB;
+						yB -= yA;
+						yA = lineOffset[yA];
 						while (true) {
-							arg1--;
-							if (arg1 < 0) {
+							yB--;
+							if (yB < 0) {
 								while (true) {
-									arg2--;
-									if (arg2 < 0) {
+									yC--;
+									if (yC < 0) {
 										return;
 									}
-									method170(Static26.anIntArray533, local4, 0, 0, arg0, arg5 >> 16, arg4 >> 16, arg8 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
-									arg5 += local208;
-									arg4 += local181;
+									method170(Static26.anIntArray533, local4, 0, 0, yA, xC >> 16, xB >> 16, arg8 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
+									xC += local208;
+									xB += local181;
 									arg8 += local210;
 									arg7 += local183;
-									arg0 += Static26.width2d;
+									yA += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
 								}
 							}
-							method170(Static26.anIntArray533, local4, 0, 0, arg0, arg5 >> 16, arg3 >> 16, arg8 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
-							arg5 += local208;
-							arg3 += local154;
+							method170(Static26.anIntArray533, local4, 0, 0, yA, xC >> 16, xA >> 16, arg8 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
+							xC += local208;
+							xA += local154;
 							arg8 += local210;
 							arg6 += local156;
-							arg0 += Static26.width2d;
+							yA += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
 						}
 					} else {
-						arg2 -= arg1;
-						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+						yC -= yB;
+						yB -= yA;
+						yA = lineOffset[yA];
 						while (true) {
-							arg1--;
-							if (arg1 < 0) {
+							yB--;
+							if (yB < 0) {
 								while (true) {
-									arg2--;
-									if (arg2 < 0) {
+									yC--;
+									if (yC < 0) {
 										return;
 									}
-									method170(Static26.anIntArray533, local4, 0, 0, arg0, arg4 >> 16, arg5 >> 16, arg7 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
-									arg5 += local208;
-									arg4 += local181;
+									method170(Static26.anIntArray533, local4, 0, 0, yA, xB >> 16, xC >> 16, arg7 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
+									xC += local208;
+									xB += local181;
 									arg8 += local210;
 									arg7 += local183;
-									arg0 += Static26.width2d;
+									yA += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
 								}
 							}
-							method170(Static26.anIntArray533, local4, 0, 0, arg0, arg3 >> 16, arg5 >> 16, arg6 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
-							arg5 += local208;
-							arg3 += local154;
+							method170(Static26.anIntArray533, local4, 0, 0, yA, xA >> 16, xC >> 16, arg6 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
+							xC += local208;
+							xA += local154;
 							arg8 += local210;
 							arg6 += local156;
-							arg0 += Static26.width2d;
+							yA += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
 						}
 					}
 				} else {
-					arg4 = arg3 <<= 0x10;
+					xB = xA <<= 0x10;
 					arg7 = arg6 <<= 0x10;
-					if (arg0 < 0) {
-						arg4 -= local208 * arg0;
-						arg3 -= local154 * arg0;
-						arg7 -= local210 * arg0;
-						arg6 -= local156 * arg0;
-						arg0 = 0;
+					if (yA < 0) {
+						xB -= local208 * yA;
+						xA -= local154 * yA;
+						arg7 -= local210 * yA;
+						arg6 -= local156 * yA;
+						yA = 0;
 					}
-					arg5 <<= 0x10;
+					xC <<= 0x10;
 					arg8 <<= 0x10;
-					if (arg2 < 0) {
-						arg5 -= local181 * arg2;
-						arg8 -= local183 * arg2;
-						arg2 = 0;
+					if (yC < 0) {
+						xC -= local181 * yC;
+						arg8 -= local183 * yC;
+						yC = 0;
 					}
-					local324 = arg0 - centerY;
+					local324 = yA - centerY;
 					local11 += local92 * local324;
 					local102 += local122 * local324;
 					local132 += local152 * local324;
-					if (arg0 != arg2 && local208 < local154 || arg0 == arg2 && local181 > local154) {
-						arg1 -= arg2;
-						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+					if (yA != yC && local208 < local154 || yA == yC && local181 > local154) {
+						yB -= yC;
+						yC -= yA;
+						yA = lineOffset[yA];
 						while (true) {
-							arg2--;
-							if (arg2 < 0) {
+							yC--;
+							if (yC < 0) {
 								while (true) {
-									arg1--;
-									if (arg1 < 0) {
+									yB--;
+									if (yB < 0) {
 										return;
 									}
-									method170(Static26.anIntArray533, local4, 0, 0, arg0, arg5 >> 16, arg3 >> 16, arg8 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
-									arg5 += local181;
-									arg3 += local154;
+									method170(Static26.anIntArray533, local4, 0, 0, yA, xC >> 16, xA >> 16, arg8 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
+									xC += local181;
+									xA += local154;
 									arg8 += local183;
 									arg6 += local156;
-									arg0 += Static26.width2d;
+									yA += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
 								}
 							}
-							method170(Static26.anIntArray533, local4, 0, 0, arg0, arg4 >> 16, arg3 >> 16, arg7 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
-							arg4 += local208;
-							arg3 += local154;
+							method170(Static26.anIntArray533, local4, 0, 0, yA, xB >> 16, xA >> 16, arg7 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
+							xB += local208;
+							xA += local154;
 							arg7 += local210;
 							arg6 += local156;
-							arg0 += Static26.width2d;
+							yA += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
 						}
 					} else {
-						arg1 -= arg2;
-						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+						yB -= yC;
+						yC -= yA;
+						yA = lineOffset[yA];
 						while (true) {
-							arg2--;
-							if (arg2 < 0) {
+							yC--;
+							if (yC < 0) {
 								while (true) {
-									arg1--;
-									if (arg1 < 0) {
+									yB--;
+									if (yB < 0) {
 										return;
 									}
-									method170(Static26.anIntArray533, local4, 0, 0, arg0, arg3 >> 16, arg5 >> 16, arg6 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
-									arg5 += local181;
-									arg3 += local154;
+									method170(Static26.anIntArray533, local4, 0, 0, yA, xA >> 16, xC >> 16, arg6 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
+									xC += local181;
+									xA += local154;
 									arg8 += local183;
 									arg6 += local156;
-									arg0 += Static26.width2d;
+									yA += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
 								}
 							}
-							method170(Static26.anIntArray533, local4, 0, 0, arg0, arg3 >> 16, arg4 >> 16, arg6 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
-							arg4 += local208;
-							arg3 += local154;
+							method170(Static26.anIntArray533, local4, 0, 0, yA, xA >> 16, xB >> 16, arg6 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
+							xB += local208;
+							xA += local154;
 							arg7 += local210;
 							arg6 += local156;
-							arg0 += Static26.width2d;
+							yA += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
@@ -1701,185 +1701,185 @@ public final class Static6 {
 					}
 				}
 			}
-		} else if (arg1 <= arg2) {
-			if (arg1 < anInt229) {
-				if (arg2 > anInt229) {
-					arg2 = anInt229;
+		} else if (yB <= yC) {
+			if (yB < bottom) {
+				if (yC > bottom) {
+					yC = bottom;
 				}
-				if (arg0 > anInt229) {
-					arg0 = anInt229;
+				if (yA > bottom) {
+					yA = bottom;
 				}
-				if (arg2 < arg0) {
-					arg3 = arg4 <<= 0x10;
+				if (yC < yA) {
+					xA = xB <<= 0x10;
 					arg6 = arg7 <<= 0x10;
-					if (arg1 < 0) {
-						arg3 -= local154 * arg1;
-						arg4 -= local181 * arg1;
-						arg6 -= local156 * arg1;
-						arg7 -= local183 * arg1;
-						arg1 = 0;
+					if (yB < 0) {
+						xA -= local154 * yB;
+						xB -= local181 * yB;
+						arg6 -= local156 * yB;
+						arg7 -= local183 * yB;
+						yB = 0;
 					}
-					arg5 <<= 0x10;
+					xC <<= 0x10;
 					arg8 <<= 0x10;
-					if (arg2 < 0) {
-						arg5 -= local208 * arg2;
-						arg8 -= local210 * arg2;
-						arg2 = 0;
+					if (yC < 0) {
+						xC -= local208 * yC;
+						arg8 -= local210 * yC;
+						yC = 0;
 					}
-					local324 = arg1 - centerY;
+					local324 = yB - centerY;
 					local11 += local92 * local324;
 					local102 += local122 * local324;
 					local132 += local152 * local324;
-					if (arg1 != arg2 && local154 < local181 || arg1 == arg2 && local154 > local208) {
-						arg0 -= arg2;
-						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+					if (yB != yC && local154 < local181 || yB == yC && local154 > local208) {
+						yA -= yC;
+						yC -= yB;
+						yB = lineOffset[yB];
 						while (true) {
-							arg2--;
-							if (arg2 < 0) {
+							yC--;
+							if (yC < 0) {
 								while (true) {
-									arg0--;
-									if (arg0 < 0) {
+									yA--;
+									if (yA < 0) {
 										return;
 									}
-									method170(Static26.anIntArray533, local4, 0, 0, arg1, arg3 >> 16, arg5 >> 16, arg6 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
-									arg3 += local154;
-									arg5 += local208;
+									method170(Static26.anIntArray533, local4, 0, 0, yB, xA >> 16, xC >> 16, arg6 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
+									xA += local154;
+									xC += local208;
 									arg6 += local156;
 									arg8 += local210;
-									arg1 += Static26.width2d;
+									yB += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
 								}
 							}
-							method170(Static26.anIntArray533, local4, 0, 0, arg1, arg3 >> 16, arg4 >> 16, arg6 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
-							arg3 += local154;
-							arg4 += local181;
+							method170(Static26.anIntArray533, local4, 0, 0, yB, xA >> 16, xB >> 16, arg6 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
+							xA += local154;
+							xB += local181;
 							arg6 += local156;
 							arg7 += local183;
-							arg1 += Static26.width2d;
+							yB += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
 						}
 					} else {
-						arg0 -= arg2;
-						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+						yA -= yC;
+						yC -= yB;
+						yB = lineOffset[yB];
 						while (true) {
-							arg2--;
-							if (arg2 < 0) {
+							yC--;
+							if (yC < 0) {
 								while (true) {
-									arg0--;
-									if (arg0 < 0) {
+									yA--;
+									if (yA < 0) {
 										return;
 									}
-									method170(Static26.anIntArray533, local4, 0, 0, arg1, arg5 >> 16, arg3 >> 16, arg8 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
-									arg3 += local154;
-									arg5 += local208;
+									method170(Static26.anIntArray533, local4, 0, 0, yB, xC >> 16, xA >> 16, arg8 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
+									xA += local154;
+									xC += local208;
 									arg6 += local156;
 									arg8 += local210;
-									arg1 += Static26.width2d;
+									yB += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
 								}
 							}
-							method170(Static26.anIntArray533, local4, 0, 0, arg1, arg4 >> 16, arg3 >> 16, arg7 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
-							arg3 += local154;
-							arg4 += local181;
+							method170(Static26.anIntArray533, local4, 0, 0, yB, xB >> 16, xA >> 16, arg7 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
+							xA += local154;
+							xB += local181;
 							arg6 += local156;
 							arg7 += local183;
-							arg1 += Static26.width2d;
+							yB += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
 						}
 					}
 				} else {
-					arg5 = arg4 <<= 0x10;
+					xC = xB <<= 0x10;
 					arg8 = arg7 <<= 0x10;
-					if (arg1 < 0) {
-						arg5 -= local154 * arg1;
-						arg4 -= local181 * arg1;
-						arg8 -= local156 * arg1;
-						arg7 -= local183 * arg1;
-						arg1 = 0;
+					if (yB < 0) {
+						xC -= local154 * yB;
+						xB -= local181 * yB;
+						arg8 -= local156 * yB;
+						arg7 -= local183 * yB;
+						yB = 0;
 					}
-					arg3 <<= 0x10;
+					xA <<= 0x10;
 					arg6 <<= 0x10;
-					if (arg0 < 0) {
-						arg3 -= local208 * arg0;
-						arg6 -= local210 * arg0;
-						arg0 = 0;
+					if (yA < 0) {
+						xA -= local208 * yA;
+						arg6 -= local210 * yA;
+						yA = 0;
 					}
-					local324 = arg1 - centerY;
+					local324 = yB - centerY;
 					local11 += local92 * local324;
 					local102 += local122 * local324;
 					local132 += local152 * local324;
 					if (local154 < local181) {
-						arg2 -= arg0;
-						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						yC -= yA;
+						yA -= yB;
+						yB = lineOffset[yB];
 						while (true) {
-							arg0--;
-							if (arg0 < 0) {
+							yA--;
+							if (yA < 0) {
 								while (true) {
-									arg2--;
-									if (arg2 < 0) {
+									yC--;
+									if (yC < 0) {
 										return;
 									}
-									method170(Static26.anIntArray533, local4, 0, 0, arg1, arg3 >> 16, arg4 >> 16, arg6 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
-									arg3 += local208;
-									arg4 += local181;
+									method170(Static26.anIntArray533, local4, 0, 0, yB, xA >> 16, xB >> 16, arg6 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
+									xA += local208;
+									xB += local181;
 									arg6 += local210;
 									arg7 += local183;
-									arg1 += Static26.width2d;
+									yB += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
 								}
 							}
-							method170(Static26.anIntArray533, local4, 0, 0, arg1, arg5 >> 16, arg4 >> 16, arg8 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
-							arg5 += local154;
-							arg4 += local181;
+							method170(Static26.anIntArray533, local4, 0, 0, yB, xC >> 16, xB >> 16, arg8 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
+							xC += local154;
+							xB += local181;
 							arg8 += local156;
 							arg7 += local183;
-							arg1 += Static26.width2d;
+							yB += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
 						}
 					} else {
-						arg2 -= arg0;
-						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						yC -= yA;
+						yA -= yB;
+						yB = lineOffset[yB];
 						while (true) {
-							arg0--;
-							if (arg0 < 0) {
+							yA--;
+							if (yA < 0) {
 								while (true) {
-									arg2--;
-									if (arg2 < 0) {
+									yC--;
+									if (yC < 0) {
 										return;
 									}
-									method170(Static26.anIntArray533, local4, 0, 0, arg1, arg4 >> 16, arg3 >> 16, arg7 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
-									arg3 += local208;
-									arg4 += local181;
+									method170(Static26.anIntArray533, local4, 0, 0, yB, xB >> 16, xA >> 16, arg7 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
+									xA += local208;
+									xB += local181;
 									arg6 += local210;
 									arg7 += local183;
-									arg1 += Static26.width2d;
+									yB += Static26.width2d;
 									local11 += local92;
 									local102 += local122;
 									local132 += local152;
 								}
 							}
-							method170(Static26.anIntArray533, local4, 0, 0, arg1, arg4 >> 16, arg5 >> 16, arg7 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
-							arg5 += local154;
-							arg4 += local181;
+							method170(Static26.anIntArray533, local4, 0, 0, yB, xB >> 16, xC >> 16, arg7 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
+							xC += local154;
+							xB += local181;
 							arg8 += local156;
 							arg7 += local183;
-							arg1 += Static26.width2d;
+							yB += Static26.width2d;
 							local11 += local92;
 							local102 += local122;
 							local132 += local152;
@@ -1887,184 +1887,184 @@ public final class Static6 {
 					}
 				}
 			}
-		} else if (arg2 < anInt229) {
-			if (arg0 > anInt229) {
-				arg0 = anInt229;
+		} else if (yC < bottom) {
+			if (yA > bottom) {
+				yA = bottom;
 			}
-			if (arg1 > anInt229) {
-				arg1 = anInt229;
+			if (yB > bottom) {
+				yB = bottom;
 			}
-			if (arg0 < arg1) {
-				arg4 = arg5 <<= 0x10;
+			if (yA < yB) {
+				xB = xC <<= 0x10;
 				arg7 = arg8 <<= 0x10;
-				if (arg2 < 0) {
-					arg4 -= local181 * arg2;
-					arg5 -= local208 * arg2;
-					arg7 -= local183 * arg2;
-					arg8 -= local210 * arg2;
-					arg2 = 0;
+				if (yC < 0) {
+					xB -= local181 * yC;
+					xC -= local208 * yC;
+					arg7 -= local183 * yC;
+					arg8 -= local210 * yC;
+					yC = 0;
 				}
-				arg3 <<= 0x10;
+				xA <<= 0x10;
 				arg6 <<= 0x10;
-				if (arg0 < 0) {
-					arg3 -= local154 * arg0;
-					arg6 -= local156 * arg0;
-					arg0 = 0;
+				if (yA < 0) {
+					xA -= local154 * yA;
+					arg6 -= local156 * yA;
+					yA = 0;
 				}
-				local324 = arg2 - centerY;
+				local324 = yC - centerY;
 				local11 += local92 * local324;
 				local102 += local122 * local324;
 				local132 += local152 * local324;
 				if (local181 < local208) {
-					arg1 -= arg0;
-					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					yB -= yA;
+					yA -= yC;
+					yC = lineOffset[yC];
 					while (true) {
-						arg0--;
-						if (arg0 < 0) {
+						yA--;
+						if (yA < 0) {
 							while (true) {
-								arg1--;
-								if (arg1 < 0) {
+								yB--;
+								if (yB < 0) {
 									return;
 								}
-								method170(Static26.anIntArray533, local4, 0, 0, arg2, arg4 >> 16, arg3 >> 16, arg7 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
-								arg4 += local181;
-								arg3 += local154;
+								method170(Static26.anIntArray533, local4, 0, 0, yC, xB >> 16, xA >> 16, arg7 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
+								xB += local181;
+								xA += local154;
 								arg7 += local183;
 								arg6 += local156;
-								arg2 += Static26.width2d;
+								yC += Static26.width2d;
 								local11 += local92;
 								local102 += local122;
 								local132 += local152;
 							}
 						}
-						method170(Static26.anIntArray533, local4, 0, 0, arg2, arg4 >> 16, arg5 >> 16, arg7 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
-						arg4 += local181;
-						arg5 += local208;
+						method170(Static26.anIntArray533, local4, 0, 0, yC, xB >> 16, xC >> 16, arg7 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
+						xB += local181;
+						xC += local208;
 						arg7 += local183;
 						arg8 += local210;
-						arg2 += Static26.width2d;
+						yC += Static26.width2d;
 						local11 += local92;
 						local102 += local122;
 						local132 += local152;
 					}
 				} else {
-					arg1 -= arg0;
-					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					yB -= yA;
+					yA -= yC;
+					yC = lineOffset[yC];
 					while (true) {
-						arg0--;
-						if (arg0 < 0) {
+						yA--;
+						if (yA < 0) {
 							while (true) {
-								arg1--;
-								if (arg1 < 0) {
+								yB--;
+								if (yB < 0) {
 									return;
 								}
-								method170(Static26.anIntArray533, local4, 0, 0, arg2, arg3 >> 16, arg4 >> 16, arg6 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
-								arg4 += local181;
-								arg3 += local154;
+								method170(Static26.anIntArray533, local4, 0, 0, yC, xA >> 16, xB >> 16, arg6 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
+								xB += local181;
+								xA += local154;
 								arg7 += local183;
 								arg6 += local156;
-								arg2 += Static26.width2d;
+								yC += Static26.width2d;
 								local11 += local92;
 								local102 += local122;
 								local132 += local152;
 							}
 						}
-						method170(Static26.anIntArray533, local4, 0, 0, arg2, arg5 >> 16, arg4 >> 16, arg8 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
-						arg4 += local181;
-						arg5 += local208;
+						method170(Static26.anIntArray533, local4, 0, 0, yC, xC >> 16, xB >> 16, arg8 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
+						xB += local181;
+						xC += local208;
 						arg7 += local183;
 						arg8 += local210;
-						arg2 += Static26.width2d;
+						yC += Static26.width2d;
 						local11 += local92;
 						local102 += local122;
 						local132 += local152;
 					}
 				}
 			} else {
-				arg3 = arg5 <<= 0x10;
+				xA = xC <<= 0x10;
 				arg6 = arg8 <<= 0x10;
-				if (arg2 < 0) {
-					arg3 -= local181 * arg2;
-					arg5 -= local208 * arg2;
-					arg6 -= local183 * arg2;
-					arg8 -= local210 * arg2;
-					arg2 = 0;
+				if (yC < 0) {
+					xA -= local181 * yC;
+					xC -= local208 * yC;
+					arg6 -= local183 * yC;
+					arg8 -= local210 * yC;
+					yC = 0;
 				}
-				arg4 <<= 0x10;
+				xB <<= 0x10;
 				arg7 <<= 0x10;
-				if (arg1 < 0) {
-					arg4 -= local154 * arg1;
-					arg7 -= local156 * arg1;
-					arg1 = 0;
+				if (yB < 0) {
+					xB -= local154 * yB;
+					arg7 -= local156 * yB;
+					yB = 0;
 				}
-				local324 = arg2 - centerY;
+				local324 = yC - centerY;
 				local11 += local92 * local324;
 				local102 += local122 * local324;
 				local132 += local152 * local324;
 				if (local181 < local208) {
-					arg0 -= arg1;
-					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					yA -= yB;
+					yB -= yC;
+					yC = lineOffset[yC];
 					while (true) {
-						arg1--;
-						if (arg1 < 0) {
+						yB--;
+						if (yB < 0) {
 							while (true) {
-								arg0--;
-								if (arg0 < 0) {
+								yA--;
+								if (yA < 0) {
 									return;
 								}
-								method170(Static26.anIntArray533, local4, 0, 0, arg2, arg4 >> 16, arg5 >> 16, arg7 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
-								arg4 += local154;
-								arg5 += local208;
+								method170(Static26.anIntArray533, local4, 0, 0, yC, xB >> 16, xC >> 16, arg7 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
+								xB += local154;
+								xC += local208;
 								arg7 += local156;
 								arg8 += local210;
-								arg2 += Static26.width2d;
+								yC += Static26.width2d;
 								local11 += local92;
 								local102 += local122;
 								local132 += local152;
 							}
 						}
-						method170(Static26.anIntArray533, local4, 0, 0, arg2, arg3 >> 16, arg5 >> 16, arg6 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
-						arg3 += local181;
-						arg5 += local208;
+						method170(Static26.anIntArray533, local4, 0, 0, yC, xA >> 16, xC >> 16, arg6 >> 8, arg8 >> 8, local11, local102, local132, local82, local112, local142);
+						xA += local181;
+						xC += local208;
 						arg6 += local183;
 						arg8 += local210;
-						arg2 += Static26.width2d;
+						yC += Static26.width2d;
 						local11 += local92;
 						local102 += local122;
 						local132 += local152;
 					}
 				} else {
-					arg0 -= arg1;
-					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					yA -= yB;
+					yB -= yC;
+					yC = lineOffset[yC];
 					while (true) {
-						arg1--;
-						if (arg1 < 0) {
+						yB--;
+						if (yB < 0) {
 							while (true) {
-								arg0--;
-								if (arg0 < 0) {
+								yA--;
+								if (yA < 0) {
 									return;
 								}
-								method170(Static26.anIntArray533, local4, 0, 0, arg2, arg5 >> 16, arg4 >> 16, arg8 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
-								arg4 += local154;
-								arg5 += local208;
+								method170(Static26.anIntArray533, local4, 0, 0, yC, xC >> 16, xB >> 16, arg8 >> 8, arg7 >> 8, local11, local102, local132, local82, local112, local142);
+								xB += local154;
+								xC += local208;
 								arg7 += local156;
 								arg8 += local210;
-								arg2 += Static26.width2d;
+								yC += Static26.width2d;
 								local11 += local92;
 								local102 += local122;
 								local132 += local152;
 							}
 						}
-						method170(Static26.anIntArray533, local4, 0, 0, arg2, arg5 >> 16, arg3 >> 16, arg8 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
-						arg3 += local181;
-						arg5 += local208;
+						method170(Static26.anIntArray533, local4, 0, 0, yC, xC >> 16, xA >> 16, arg8 >> 8, arg6 >> 8, local11, local102, local132, local82, local112, local142);
+						xA += local181;
+						xC += local208;
 						arg6 += local183;
 						arg8 += local210;
-						arg2 += Static26.width2d;
+						yC += Static26.width2d;
 						local11 += local92;
 						local102 += local122;
 						local132 += local152;
@@ -2076,25 +2076,25 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "b", descriptor = "(II)V")
 	public static void method177(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(3) int local3 = anIntArray62[0];
+		@Pc(3) int local3 = lineOffset[0];
 		@Pc(7) int local7 = local3 / Static26.width2d;
 		@Pc(13) int local13 = local3 - local7 * Static26.width2d;
 		centerX = arg0 - local13;
 		centerY = arg1 - local7;
 		anInt221 = -centerX;
-		centerX2d = anInt222 - centerX;
+		centerX2d = boundX - centerX;
 		centerY2D = -centerY;
-		anInt226 = anInt229 - centerY;
+		anInt226 = bottom - centerY;
 	}
 
 	@OriginalMember(owner = "client!b", name = "e", descriptor = "()V")
 	public static void method178() {
-		centerX = anInt222 / 2;
-		centerY = anInt229 / 2;
+		centerX = boundX / 2;
+		centerY = bottom / 2;
 		anInt221 = -centerX;
-		centerX2d = anInt222 - centerX;
+		centerX2d = boundX - centerX;
 		centerY2D = -centerY;
-		anInt226 = anInt229 - centerY;
+		anInt226 = bottom - centerY;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([IIIIIIII)V")
@@ -2111,8 +2111,8 @@ public final class Static6 {
 				} else {
 					local16 = 0;
 				}
-				if (arg3 > anInt222) {
-					arg3 = anInt222;
+				if (arg3 > boundX) {
+					arg3 = boundX;
 				}
 				if (arg2 < 0) {
 					arg4 -= arg2 * local16;
@@ -2193,8 +2193,8 @@ public final class Static6 {
 		} else if (arg2 < arg3) {
 			local16 = (arg5 - arg4) / (arg3 - arg2);
 			if (clipX) {
-				if (arg3 > anInt222) {
-					arg3 = anInt222;
+				if (arg3 > boundX) {
+					arg3 = boundX;
 				}
 				if (arg2 < 0) {
 					arg4 -= arg2 * local16;
@@ -2228,7 +2228,7 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "f", descriptor = "()V")
 	public static void method180() {
-		anIntArray62 = null;
+		lineOffset = null;
 		anIntArray63 = null;
 		anInterface4_1 = null;
 		Draw3D.reciprocal15 = null;
@@ -2240,8 +2240,8 @@ public final class Static6 {
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([IIIIII)V")
 	private static void method181(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (clipX) {
-			if (arg4 > anInt222) {
-				arg4 = anInt222;
+			if (arg4 > boundX) {
+				arg4 = boundX;
 			}
 			if (arg3 < 0) {
 				arg3 = 0;

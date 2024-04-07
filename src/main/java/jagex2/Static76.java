@@ -91,7 +91,7 @@ public final class Static76 {
 							Static14.anIntArrayArray7[local72][local102] = Static22.anInt2587;
 						}
 						local47.anInt1379 = Static86.method1383(Static1.currentLevel, local47.anInt2275, local47.anInt2284);
-						Static93.scene.method1425(Static1.currentLevel, local47.anInt2275, local47.anInt2284, local47.anInt1379, 60, local47, local47.anInt2305, local45, local47.aBoolean172);
+						Static93.scene.addTemporary(Static1.currentLevel, local47.anInt2275, local47.anInt2284, local47.anInt1379, 60, local47, local47.anInt2305, local45, local47.aBoolean172);
 					} else {
 						local47.aBoolean104 = false;
 						local47.anInt1379 = Static86.method1383(Static1.currentLevel, local47.anInt2275, local47.anInt2284);

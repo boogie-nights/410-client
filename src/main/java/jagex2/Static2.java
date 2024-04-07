@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import jagex2.config.ComType;
 import jagex2.config.ObjType;
+import jagex2.datastruct.LruCache;
 import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;

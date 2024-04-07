@@ -171,7 +171,7 @@ public final class Static7 {
 
 	@OriginalMember(owner = "client!ba", name = "c", descriptor = "(B)V")
 	public static void method188() {
-		Static89.aBoolean163 = false;
+		Static89.lowMemory = false;
 		Static1.lowMemory = false;
 	}
 

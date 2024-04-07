@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.datastruct.LruCache;
 import jagex2.datastruct.Stack;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;

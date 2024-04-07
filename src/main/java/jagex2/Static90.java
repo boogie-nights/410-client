@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.dash3d.CollisionMap;
+import jagex2.datastruct.LruCache;
 import jagex2.graphics.Static71;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;

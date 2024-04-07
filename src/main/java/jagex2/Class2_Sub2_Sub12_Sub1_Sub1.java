@@ -150,7 +150,7 @@ public final class Class2_Sub2_Sub12_Sub1_Sub1 extends Class2_Sub2_Sub12_Sub1 {
 
 	@OriginalMember(owner = "client!kc", name = "c", descriptor = "(B)Lclient!ne;")
 	@Override
-	protected Model method1533() {
+	protected Model getRotatedModel() {
 		if (this.aClass33_2 == null) {
 			return null;
 		}

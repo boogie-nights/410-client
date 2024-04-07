@@ -85,7 +85,7 @@ public final class Static1 {
 				if (local10.aBoolean169) {
 					local10.unlink();
 				} else {
-					Static93.scene.method1425(local10.anInt2235, local10.anInt2232, local10.anInt2230, local10.anInt2223, 60, local10, 0, -1, false);
+					Static93.scene.addTemporary(local10.anInt2235, local10.anInt2232, local10.anInt2230, local10.anInt2223, 60, local10, 0, -1, false);
 				}
 			}
 		}
