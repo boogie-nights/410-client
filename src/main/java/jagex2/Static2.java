@@ -3,7 +3,7 @@ package jagex2;
 import java.io.IOException;
 
 import jagex2.config.ObjType;
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -11,13 +11,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static2 {
 
 	@OriginalMember(owner = "client!ab", name = "j", descriptor = "Lclient!p;")
-	public static Class45 aClass45_2;
+	public static GraphicsProducingBuffer aClass45_2;
 
 	@OriginalMember(owner = "client!ab", name = "k", descriptor = "Lclient!qb;")
 	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_1;
 
 	@OriginalMember(owner = "client!ab", name = "n", descriptor = "Lclient!p;")
-	public static Class45 aClass45_3;
+	public static GraphicsProducingBuffer aClass45_3;
 
 	@OriginalMember(owner = "client!ab", name = "r", descriptor = "[I")
 	public static int[] anIntArray3;
@@ -274,7 +274,7 @@ public final class Static2 {
 				if (Static75.anInt1832 >= 100) {
 					local125 = Static79.anInt1867 * 128 + 64;
 					local226 = Static80.anInt1914 * 128 + 64;
-					local230 = Static86.method1383(Static1.anInt8, local125, local226) - Static83.anInt1963;
+					local230 = Static86.method1383(Static1.currentLevel, local125, local226) - Static83.anInt1963;
 					local355 = local125 - Static48.anInt1114;
 					local359 = local226 - Static15.anInt1863;
 					local364 = local230 - Static81.anInt1935;
@@ -437,7 +437,7 @@ public final class Static2 {
 				if (Static56.anInt2325 >= 100) {
 					Static48.anInt1114 = Static76.anInt2149 * 128 + 64;
 					Static15.anInt1863 = Static36.anInt840 * 128 + 64;
-					Static81.anInt1935 = Static86.method1383(Static1.anInt8, Static48.anInt1114, Static15.anInt1863) - Static49.anInt2259;
+					Static81.anInt1935 = Static86.method1383(Static1.currentLevel, Static48.anInt1114, Static15.anInt1863) - Static49.anInt2259;
 				}
 				Static88.anInt2083 = -1;
 				return true;
@@ -878,14 +878,14 @@ public final class Static2 {
 				Static95.anInt2237 = Static56.aClass2_Sub3_Sub1_5.method1715();
 				for (local125 = Static95.anInt2237; local125 < Static95.anInt2237 + 8; local125++) {
 					for (local226 = Static91.anInt2138; local226 < Static91.anInt2138 + 8; local226++) {
-						if (Static91.aClass44ArrayArrayArray1[Static1.anInt8][local125][local226] != null) {
-							Static91.aClass44ArrayArrayArray1[Static1.anInt8][local125][local226] = null;
+						if (Static91.levelObjStacks[Static1.currentLevel][local125][local226] != null) {
+							Static91.levelObjStacks[Static1.currentLevel][local125][local226] = null;
 							Static83.method1356(local226, local125);
 						}
 					}
 				}
 				for (@Pc(2420) Class2_Sub7 local2420 = (Class2_Sub7) Static92.aClass44_7.method1224(); local2420 != null; local2420 = (Class2_Sub7) Static92.aClass44_7.method1231()) {
-					if (Static95.anInt2237 <= local2420.anInt818 && local2420.anInt818 < Static95.anInt2237 + 8 && local2420.anInt821 >= Static91.anInt2138 && Static91.anInt2138 + 8 > local2420.anInt821 && local2420.anInt817 == Static1.anInt8) {
+					if (Static95.anInt2237 <= local2420.anInt818 && local2420.anInt818 < Static95.anInt2237 + 8 && local2420.anInt821 >= Static91.anInt2138 && Static91.anInt2138 + 8 > local2420.anInt821 && local2420.anInt817 == Static1.currentLevel) {
 						local2420.anInt826 = 0;
 					}
 				}

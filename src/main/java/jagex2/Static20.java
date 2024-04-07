@@ -1,7 +1,7 @@
 package jagex2;
 
 import jagex2.config.ObjType;
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -16,7 +16,7 @@ public final class Static20 {
 	public static int[] anIntArray92;
 
 	@OriginalMember(owner = "client!e", name = "U", descriptor = "Lclient!p;")
-	public static Class45 aClass45_10;
+	public static GraphicsProducingBuffer aClass45_10;
 
 	@OriginalMember(owner = "client!e", name = "u", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_5 = new LruCache(64);
@@ -92,7 +92,7 @@ public final class Static20 {
 			if (local3 != local38) {
 				local3 = local38;
 				@Pc(119) int local119;
-				if (local60 == 2 && Static93.aClass55_1.method1449(Static1.anInt8, local42, local48, local38) >= 0) {
+				if (local60 == 2 && Static93.scene.method1449(Static1.currentLevel, local42, local48, local38) >= 0) {
 					@Pc(83) Class2_Sub2_Sub10 local83 = Static91.method1470(local54);
 					if (local83.anIntArray210 != null) {
 						local83 = local83.method766();
@@ -175,7 +175,7 @@ public final class Static20 {
 					Static102.method1638(local48, local414, local42, local54);
 				}
 				if (local60 == 3) {
-					@Pc(542) Class44 local542 = Static91.aClass44ArrayArrayArray1[Static1.anInt8][local42][local48];
+					@Pc(542) Class44 local542 = Static91.levelObjStacks[Static1.currentLevel][local42][local48];
 					if (local542 != null) {
 						for (@Pc(549) Class2_Sub2_Sub12_Sub3 local549 = (Class2_Sub2_Sub12_Sub3) local542.method1226(); local549 != null; local549 = (Class2_Sub2_Sub12_Sub3) local542.method1225()) {
 							@Pc(558) ObjType local558 = Static105.get(local549.anInt1490);

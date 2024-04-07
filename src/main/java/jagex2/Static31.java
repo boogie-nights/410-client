@@ -45,12 +45,12 @@ public final class Static31 {
 		Static10.anIntArrayArray5 = null;
 		Static20.anIntArray91 = null;
 		Static15.aByteArrayArrayArray10 = null;
-		Static32.anIntArrayArrayArray3 = null;
+		Static32.levelOccludemap = null;
 		Static74.aByteArrayArrayArray8 = null;
 		Static25.anIntArray126 = null;
 		Static37.aByteArrayArrayArray4 = null;
 		Static85.anIntArray434 = null;
-		Static60.aByteArrayArrayArray6 = null;
+		Static60.levelShademap = null;
 		Static46.anIntArray543 = null;
 		Static83.anIntArray428 = null;
 	}

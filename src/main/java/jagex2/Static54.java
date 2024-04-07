@@ -49,7 +49,7 @@ public final class Static54 {
 	@OriginalMember(owner = "client!kc", name = "c", descriptor = "(Z)V")
 	public static void method917() {
 		for (@Pc(10) Class2_Sub2_Sub12_Sub2 local10 = (Class2_Sub2_Sub12_Sub2) Static24.aClass44_4.method1224(); local10 != null; local10 = (Class2_Sub2_Sub12_Sub2) Static24.aClass44_4.method1231()) {
-			if (local10.anInt1417 != Static1.anInt8 || local10.anInt1427 < Static107.loopCycle) {
+			if (local10.anInt1417 != Static1.currentLevel || local10.anInt1427 < Static107.loopCycle) {
 				local10.unlink();
 			} else if (Static107.loopCycle >= local10.anInt1419) {
 				if (local10.anInt1434 > 0) {
@@ -71,7 +71,7 @@ public final class Static54 {
 					}
 				}
 				local10.method942(Static45.anInt1095);
-				Static93.aClass55_1.method1425(Static1.anInt8, (int) local10.aDouble7, (int) local10.aDouble5, (int) local10.aDouble2, 60, local10, local10.anInt1436, -1, false);
+				Static93.scene.method1425(Static1.currentLevel, (int) local10.aDouble7, (int) local10.aDouble5, (int) local10.aDouble2, 60, local10, local10.anInt1436, -1, false);
 			}
 		}
 	}

@@ -24,7 +24,7 @@ public final class Static91 {
 	public static int anInt2139 = 0;
 
 	@OriginalMember(owner = "client!ta", name = "e", descriptor = "[[[Lclient!od;")
-	public static Class44[][][] aClass44ArrayArrayArray1 = new Class44[4][104][104];
+	public static Class44[][][] levelObjStacks = new Class44[4][104][104];
 
 	@OriginalMember(owner = "client!ta", name = "i", descriptor = "I")
 	public static int anInt2143 = 0;
@@ -40,7 +40,7 @@ public final class Static91 {
 		aByteArrayArray10 = null;
 		anIntArrayArrayArray8 = null;
 		aClass40_612 = null;
-		aClass44ArrayArrayArray1 = null;
+		levelObjStacks = null;
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Ljava/awt/Color;Lclient!o;II)V")
@@ -147,7 +147,7 @@ public final class Static91 {
 		}
 		local10.method772();
 		if (local10.aBoolean83) {
-			local10.aBoolean77 = false;
+			local10.blockwalk = false;
 			local10.aBoolean79 = false;
 		}
 		Static41.aClass47_11.put((long) arg0, local10);

@@ -10,7 +10,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -24,7 +24,7 @@ public final class Static68 {
 	public static Class5 aClass5_6;
 
 	@OriginalMember(owner = "client!nb", name = "A", descriptor = "Lclient!p;")
-	public static Class45 aClass45_8;
+	public static GraphicsProducingBuffer aClass45_8;
 
 	@OriginalMember(owner = "client!nb", name = "M", descriptor = "Z")
 	private static boolean aBoolean34;

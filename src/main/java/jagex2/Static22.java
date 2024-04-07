@@ -166,7 +166,7 @@ public final class Static22 {
 			if (Static98.aBooleanArray35[4] && Static36.anIntArray164[4] + 128 > local36) {
 				local36 = Static36.anIntArray164[4] + 128;
 			}
-			Static41.method752(Static23.anInt577, local34, Static66.anInt1653, local36, Static86.method1383(Static1.anInt8, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284) - 50, local36 * 3 + 600);
+			Static41.method752(Static23.anInt577, local34, Static66.anInt1653, local36, Static86.method1383(Static1.currentLevel, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284) - 50, local36 * 3 + 600);
 		}
 		if (Static7.aBoolean22) {
 			local36 = Static18.method361();
@@ -210,8 +210,8 @@ public final class Static22 {
 		Static71.pickedCount = 0;
 		Static71.mouseX = Static32.anInt742 - 4;
 		Static26.clear();
-		Static93.aClass55_1.method1430(Static48.anInt1114, Static81.anInt1935, Static15.anInt1863, Static35.anInt824, Static27.anInt686, local36);
-		Static93.aClass55_1.method1454();
+		Static93.scene.method1430(Static48.anInt1114, Static81.anInt1935, Static15.anInt1863, Static35.anInt824, Static27.anInt686, local36);
+		Static93.scene.method1454();
 		Static12.method253();
 		Static67.method1099();
 		((Class19) Static6.anInterface4_1).method405(Static45.anInt1095);

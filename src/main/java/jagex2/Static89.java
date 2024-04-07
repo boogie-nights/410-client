@@ -1,8 +1,5 @@
 package jagex2;
 
-import jagex2.Class37;
-import jagex2.Class44;
-import jagex2.Class54;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -89,7 +86,7 @@ public final class Static89 {
 	public static boolean aBoolean162 = false;
 
 	@OriginalMember(owner = "client!sd", name = "i", descriptor = "[Lclient!sc;")
-	public static Class54[] aClass54Array1 = new Class54[500];
+	public static Occluder[] aClass54Array1 = new Occluder[500];
 
 	@OriginalMember(owner = "client!sd", name = "j", descriptor = "I")
 	public static int anInt2096 = -1;
@@ -116,7 +113,7 @@ public final class Static89 {
 	public static final int anInt2112 = 4;
 
 	@OriginalMember(owner = "client!sd", name = "C", descriptor = "[I")
-	public static int[] anIntArray458 = new int[anInt2112];
+	public static int[] levelOccluderCount = new int[anInt2112];
 
 	@OriginalMember(owner = "client!sd", name = "G", descriptor = "I")
 	public static int anInt2111 = 0;
@@ -125,7 +122,7 @@ public final class Static89 {
 	public static int[] anIntArray459 = new int[] { 45, 45, -45, -45 };
 
 	@OriginalMember(owner = "client!sd", name = "N", descriptor = "[[Lclient!sc;")
-	public static Class54[][] aClass54ArrayArray1 = new Class54[anInt2112][500];
+	public static Occluder[][] levelOccluders = new Occluder[anInt2112][500];
 
 	@OriginalMember(owner = "client!sd", name = "O", descriptor = "I")
 	public static int anInt2116 = 0;
@@ -258,8 +255,8 @@ public final class Static89 {
 		anIntArray457 = null;
 		anIntArray456 = null;
 		anIntArray459 = null;
-		anIntArray458 = null;
-		aClass54ArrayArray1 = null;
+		levelOccluderCount = null;
+		levelOccluders = null;
 		aClass54Array1 = null;
 		aClass44_6 = null;
 		anIntArray468 = null;
@@ -274,19 +271,19 @@ public final class Static89 {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIIIIII)V")
-	public static void method1433(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
-		@Pc(3) Class54 local3 = new Class54();
-		local3.anInt2070 = arg2 / 128;
-		local3.anInt2072 = arg3 / 128;
-		local3.anInt2069 = arg4 / 128;
-		local3.anInt2071 = arg5 / 128;
-		local3.anInt2089 = arg1;
-		local3.anInt2074 = arg2;
-		local3.anInt2084 = arg3;
-		local3.anInt2076 = arg4;
-		local3.anInt2088 = arg5;
-		local3.anInt2090 = arg6;
-		local3.anInt2086 = arg7;
-		aClass54ArrayArray1[arg0][anIntArray458[arg0]++] = local3;
+	public static void method1433(@OriginalArg(0) int level, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
+		@Pc(3) Occluder occluder = new Occluder();
+		occluder.anInt2070 = arg2 / 128;
+		occluder.anInt2072 = arg3 / 128;
+		occluder.anInt2069 = arg4 / 128;
+		occluder.anInt2071 = arg5 / 128;
+		occluder.anInt2089 = arg1;
+		occluder.anInt2074 = arg2;
+		occluder.anInt2084 = arg3;
+		occluder.anInt2076 = arg4;
+		occluder.anInt2088 = arg5;
+		occluder.anInt2090 = arg6;
+		occluder.anInt2086 = arg7;
+		levelOccluders[level][levelOccluderCount[level]++] = occluder;
 	}
 }

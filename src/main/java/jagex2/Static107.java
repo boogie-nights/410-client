@@ -2,7 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -17,7 +17,7 @@ public final class Static107 {
 	public static int anInt2498;
 
 	@OriginalMember(owner = "client!wd", name = "v", descriptor = "Lclient!p;")
-	public static Class45 aClass45_31;
+	public static GraphicsProducingBuffer aClass45_31;
 
 	@OriginalMember(owner = "client!wd", name = "e", descriptor = "Lclient!o;")
 	public static Class40 aClass40_716 = Static13.method257(" ");

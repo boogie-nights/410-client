@@ -141,7 +141,7 @@ public final class Static105 {
 		for (@Pc(1772) int local1772 = 0; local1772 < 4; local1772++) {
 			for (local1776 = 0; local1776 < 104; local1776++) {
 				for (@Pc(1780) int local1780 = 0; local1780 < 104; local1780++) {
-					Static91.aClass44ArrayArrayArray1[local1772][local1776][local1780] = null;
+					Static91.levelObjStacks[local1772][local1776][local1780] = null;
 				}
 			}
 		}
@@ -275,7 +275,7 @@ public final class Static105 {
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(IIBIII)V")
 	public static void method1674(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(7) int local7 = Static93.aClass55_1.method1459(arg0, arg4, arg3);
+		@Pc(7) int local7 = Static93.scene.method1459(arg0, arg4, arg3);
 		@Pc(40) int local40;
 		@Pc(46) int local46;
 		@Pc(53) int local53;
@@ -288,7 +288,7 @@ public final class Static105 {
 				local11 = arg2;
 			}
 			local33 = (103 - arg3) * 4 * 512 + arg4 * 4 + 24624;
-			local40 = Static93.aClass55_1.method1449(arg0, arg4, arg3, local7);
+			local40 = Static93.scene.method1449(arg0, arg4, arg3, local7);
 			local46 = local40 >> 6 & 0x3;
 			@Pc(49) int[] local49 = Static93.aClass2_Sub2_Sub2_Sub4_8.pixels;
 			local53 = local40 & 0x1F;
@@ -361,9 +361,9 @@ public final class Static105 {
 				}
 			}
 		}
-		local7 = Static93.aClass55_1.method1429(arg0, arg4, arg3);
+		local7 = Static93.scene.method1429(arg0, arg4, arg3);
 		if (local7 != 0) {
-			local40 = Static93.aClass55_1.method1449(arg0, arg4, arg3, local7);
+			local40 = Static93.scene.method1449(arg0, arg4, arg3, local7);
 			local53 = local40 & 0x1F;
 			local46 = local40 >> 6 & 0x3;
 			local11 = local7 >> 14 & 0x7FFF;
@@ -396,7 +396,7 @@ public final class Static105 {
 				}
 			}
 		}
-		local7 = Static93.aClass55_1.method1458(arg0, arg4, arg3);
+		local7 = Static93.scene.method1458(arg0, arg4, arg3);
 		if (local7 == 0) {
 			return;
 		}

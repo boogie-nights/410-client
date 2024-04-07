@@ -3,7 +3,7 @@ package jagex2;
 import java.util.Calendar;
 import java.util.Date;
 
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -14,13 +14,13 @@ public final class Static1 {
 	public static int[] anIntArray1;
 
 	@OriginalMember(owner = "client!a", name = "k", descriptor = "I")
-	public static int anInt8;
+	public static int currentLevel;
 
 	@OriginalMember(owner = "client!a", name = "x", descriptor = "I")
 	public static int anInt16;
 
 	@OriginalMember(owner = "client!a", name = "A", descriptor = "Lclient!p;")
-	public static Class45 aClass45_1;
+	public static GraphicsProducingBuffer aClass45_1;
 
 	@OriginalMember(owner = "client!a", name = "e", descriptor = "Z")
 	public static volatile boolean aBoolean1 = true;
@@ -78,14 +78,14 @@ public final class Static1 {
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(I)V")
 	public static void method3() {
 		for (@Pc(10) Class2_Sub2_Sub12_Sub6 local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.method1224(); local10 != null; local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.method1231()) {
-			if (local10.anInt2235 != anInt8 || local10.aBoolean169) {
+			if (local10.anInt2235 != currentLevel || local10.aBoolean169) {
 				local10.unlink();
 			} else if (Static107.loopCycle >= local10.anInt2231) {
 				local10.method1519(Static45.anInt1095);
 				if (local10.aBoolean169) {
 					local10.unlink();
 				} else {
-					Static93.aClass55_1.method1425(local10.anInt2235, local10.anInt2232, local10.anInt2230, local10.anInt2223, 60, local10, 0, -1, false);
+					Static93.scene.method1425(local10.anInt2235, local10.anInt2232, local10.anInt2230, local10.anInt2223, 60, local10, 0, -1, false);
 				}
 			}
 		}

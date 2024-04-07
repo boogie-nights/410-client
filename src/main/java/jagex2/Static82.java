@@ -83,7 +83,7 @@ public final class Static82 {
 			}
 		}
 		@Pc(187) byte local187 = 0;
-		Static1.anInt8 = arg1;
+		Static1.currentLevel = arg1;
 		Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.method1545(false, arg2, arg3);
 		@Pc(197) byte local197 = 104;
 		@Pc(199) byte local199 = 1;
@@ -106,9 +106,9 @@ public final class Static82 {
 				@Pc(240) int local240 = local54 + local230;
 				for (@Pc(242) int local242 = 0; local242 < 4; local242++) {
 					if (local236 >= 0 && local240 >= 0 && local236 < 104 && local240 < 104) {
-						Static91.aClass44ArrayArrayArray1[local242][local226][local230] = Static91.aClass44ArrayArrayArray1[local242][local236][local240];
+						Static91.levelObjStacks[local242][local226][local230] = Static91.levelObjStacks[local242][local236][local240];
 					} else {
-						Static91.aClass44ArrayArrayArray1[local242][local226][local230] = null;
+						Static91.levelObjStacks[local242][local226][local230] = null;
 					}
 				}
 			}

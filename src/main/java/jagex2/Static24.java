@@ -133,7 +133,7 @@ public final class Static24 {
 		@Pc(654) int local654;
 		@Pc(689) int local689;
 		for (local15 = 0; local15 < 4; local15++) {
-			@Pc(128) byte[][] local128 = Static60.aByteArrayArrayArray6[local15];
+			@Pc(128) byte[][] local128 = Static60.levelShademap[local15];
 			local36 = (int) Math.sqrt(5100.0D);
 			local138 = local36 * 768 >> 8;
 			for (local140 = 1; local140 < 103; local140++) {
@@ -249,7 +249,7 @@ public final class Static24 {
 										local806 = false;
 									}
 									if (local806 && local689 == local681 && local689 == local701 && local689 == local725) {
-										Static32.anIntArrayArrayArray3[local15][local166][local283] |= 0x924;
+										Static32.levelOccludemap[local15][local166][local283] |= 0x924;
 									}
 								}
 								local758 = 0;
@@ -316,7 +316,7 @@ public final class Static24 {
 			Static75.aByteArrayArrayArray9[local15] = null;
 			Static15.aByteArrayArrayArray10[local15] = null;
 			Static74.aByteArrayArrayArray8[local15] = null;
-			Static60.aByteArrayArrayArray6[local15] = null;
+			Static60.levelShademap[local15] = null;
 		}
 		arg1.method1434();
 		for (local19 = 0; local19 < 104; local19++) {
@@ -338,18 +338,18 @@ public final class Static24 {
 			for (local166 = 0; local166 <= local144; local166++) {
 				for (local187 = 0; local187 <= 104; local187++) {
 					for (local200 = 0; local200 <= 104; local200++) {
-						if ((Static32.anIntArrayArrayArray3[local166][local200][local187] & local36) != 0) {
-							for (local204 = local187; local204 < 104 && (local36 & Static32.anIntArrayArrayArray3[local166][local200][local204 + 1]) != 0; local204++) {
+						if ((Static32.levelOccludemap[local166][local200][local187] & local36) != 0) {
+							for (local204 = local187; local204 < 104 && (local36 & Static32.levelOccludemap[local166][local200][local204 + 1]) != 0; local204++) {
 							}
 							local210 = local187;
 							local216 = local166;
 							local233 = local166;
-							while (local210 > 0 && (local36 & Static32.anIntArrayArrayArray3[local166][local200][local210 - 1]) != 0) {
+							while (local210 > 0 && (local36 & Static32.levelOccludemap[local166][local200][local210 - 1]) != 0) {
 								local210--;
 							}
 							label347: while (local216 > 0) {
 								for (local283 = local210; local283 <= local204; local283++) {
-									if ((local36 & Static32.anIntArrayArrayArray3[local216 - 1][local200][local283]) == 0) {
+									if ((local36 & Static32.levelOccludemap[local216 - 1][local200][local283]) == 0) {
 										break label347;
 									}
 								}
@@ -357,7 +357,7 @@ public final class Static24 {
 							}
 							label336: while (local233 < local144) {
 								for (local283 = local210; local283 <= local204; local283++) {
-									if ((local36 & Static32.anIntArrayArrayArray3[local233 + 1][local200][local283]) == 0) {
+									if ((local36 & Static32.levelOccludemap[local233 + 1][local200][local283]) == 0) {
 										break label336;
 									}
 								}
@@ -370,23 +370,23 @@ public final class Static24 {
 								Static89.method1433(local144, 1, local200 * 128, local200 * 128, local210 * 128, local204 * 128 + 128, local551, local664);
 								for (local654 = local216; local654 <= local233; local654++) {
 									for (local689 = local210; local689 <= local204; local689++) {
-										Static32.anIntArrayArrayArray3[local654][local200][local689] &= ~local36;
+										Static32.levelOccludemap[local654][local200][local689] &= ~local36;
 									}
 								}
 							}
 						}
-						if ((Static32.anIntArrayArrayArray3[local166][local200][local187] & local138) != 0) {
-							for (local210 = local200; local210 > 0 && (local138 & Static32.anIntArrayArrayArray3[local166][local210 - 1][local187]) != 0; local210--) {
+						if ((Static32.levelOccludemap[local166][local200][local187] & local138) != 0) {
+							for (local210 = local200; local210 > 0 && (local138 & Static32.levelOccludemap[local166][local210 - 1][local187]) != 0; local210--) {
 							}
 							local204 = local200;
 							local216 = local166;
-							while (local204 < 104 && (local138 & Static32.anIntArrayArrayArray3[local166][local204 + 1][local187]) != 0) {
+							while (local204 < 104 && (local138 & Static32.levelOccludemap[local166][local204 + 1][local187]) != 0) {
 								local204++;
 							}
 							local233 = local166;
 							label401: while (local216 > 0) {
 								for (local283 = local210; local283 <= local204; local283++) {
-									if ((Static32.anIntArrayArrayArray3[local216 - 1][local283][local187] & local138) == 0) {
+									if ((Static32.levelOccludemap[local216 - 1][local283][local187] & local138) == 0) {
 										break label401;
 									}
 								}
@@ -394,7 +394,7 @@ public final class Static24 {
 							}
 							label390: while (local144 > local233) {
 								for (local283 = local210; local283 <= local204; local283++) {
-									if ((Static32.anIntArrayArrayArray3[local233 + 1][local283][local187] & local138) == 0) {
+									if ((Static32.levelOccludemap[local233 + 1][local283][local187] & local138) == 0) {
 										break label390;
 									}
 								}
@@ -407,23 +407,23 @@ public final class Static24 {
 								Static89.method1433(local144, 2, local210 * 128, local204 * 128 + 128, local187 * 128, local187 * 128, local551, local664);
 								for (local654 = local216; local654 <= local233; local654++) {
 									for (local689 = local210; local689 <= local204; local689++) {
-										Static32.anIntArrayArrayArray3[local654][local689][local187] &= ~local138;
+										Static32.levelOccludemap[local654][local689][local187] &= ~local138;
 									}
 								}
 							}
 						}
-						if ((local140 & Static32.anIntArrayArrayArray3[local166][local200][local187]) != 0) {
+						if ((local140 & Static32.levelOccludemap[local166][local200][local187]) != 0) {
 							local210 = local200;
 							local204 = local200;
 							local216 = local187;
-							for (local233 = local187; local233 < 104 && (Static32.anIntArrayArrayArray3[local166][local200][local233 + 1] & local140) != 0; local233++) {
+							for (local233 = local187; local233 < 104 && (Static32.levelOccludemap[local166][local200][local233 + 1] & local140) != 0; local233++) {
 							}
-							while (local216 > 0 && (Static32.anIntArrayArrayArray3[local166][local200][local216 - 1] & local140) != 0) {
+							while (local216 > 0 && (Static32.levelOccludemap[local166][local200][local216 - 1] & local140) != 0) {
 								local216--;
 							}
 							label456: while (local210 > 0) {
 								for (local283 = local216; local283 <= local233; local283++) {
-									if ((Static32.anIntArrayArrayArray3[local166][local210 - 1][local283] & local140) == 0) {
+									if ((Static32.levelOccludemap[local166][local210 - 1][local283] & local140) == 0) {
 										break label456;
 									}
 								}
@@ -431,7 +431,7 @@ public final class Static24 {
 							}
 							label445: while (local204 < 104) {
 								for (local283 = local216; local283 <= local233; local283++) {
-									if ((local140 & Static32.anIntArrayArrayArray3[local166][local204 + 1][local283]) == 0) {
+									if ((local140 & Static32.levelOccludemap[local166][local204 + 1][local283]) == 0) {
 										break label445;
 									}
 								}
@@ -442,7 +442,7 @@ public final class Static24 {
 								Static89.method1433(local144, 4, local210 * 128, local204 * 128 + 128, local216 * 128, local233 * 128 + 128, local283, local283);
 								for (local510 = local210; local510 <= local204; local510++) {
 									for (local551 = local216; local551 <= local233; local551++) {
-										Static32.anIntArrayArrayArray3[local166][local510][local551] &= ~local140;
+										Static32.levelOccludemap[local166][local510][local551] &= ~local140;
 									}
 								}
 							}

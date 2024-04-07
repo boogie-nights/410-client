@@ -1,6 +1,6 @@
 package jagex2;
 
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -17,7 +17,7 @@ public final class Static35 {
 	public static int anInt824;
 
 	@OriginalMember(owner = "client!ge", name = "I", descriptor = "Lclient!p;")
-	public static Class45 aClass45_16;
+	public static GraphicsProducingBuffer aClass45_16;
 
 	@OriginalMember(owner = "client!ge", name = "q", descriptor = "I")
 	public static int anInt816 = 0;
@@ -72,9 +72,9 @@ public final class Static35 {
 		Static15.aByteArrayArrayArray10 = new byte[4][104][104];
 		Static37.aByteArrayArrayArray4 = new byte[4][104][104];
 		Static46.anIntArray543 = new int[104];
-		Static60.aByteArrayArrayArray6 = new byte[4][105][105];
+		Static60.levelShademap = new byte[4][105][105];
 		Static25.anIntArray126 = new int[104];
-		Static32.anIntArrayArrayArray3 = new int[4][105][105];
+		Static32.levelOccludemap = new int[4][105][105];
 		Static10.anIntArrayArray5 = new int[105][105];
 		Static34.anInt807 = 99;
 		Static83.anIntArray428 = new int[104];

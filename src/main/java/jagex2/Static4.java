@@ -2,7 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -10,7 +10,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static4 {
 
 	@OriginalMember(owner = "client!ad", name = "lb", descriptor = "Lclient!p;")
-	public static Class45 aClass45_4;
+	public static GraphicsProducingBuffer aClass45_4;
 
 	@OriginalMember(owner = "client!ad", name = "vb", descriptor = "I")
 	public static int anInt135;
@@ -61,23 +61,23 @@ public final class Static4 {
 	public static void method86(@OriginalArg(0) Class2_Sub7 arg0) {
 		@Pc(6) int local6 = 0;
 		if (arg0.anInt823 == 0) {
-			local6 = Static93.aClass55_1.method1459(arg0.anInt817, arg0.anInt818, arg0.anInt821);
+			local6 = Static93.scene.method1459(arg0.anInt817, arg0.anInt818, arg0.anInt821);
 		}
 		if (arg0.anInt823 == 1) {
-			local6 = Static93.aClass55_1.method1419(arg0.anInt817, arg0.anInt818, arg0.anInt821);
+			local6 = Static93.scene.method1419(arg0.anInt817, arg0.anInt818, arg0.anInt821);
 		}
 		@Pc(40) int local40 = -1;
 		if (arg0.anInt823 == 2) {
-			local6 = Static93.aClass55_1.method1429(arg0.anInt817, arg0.anInt818, arg0.anInt821);
+			local6 = Static93.scene.method1429(arg0.anInt817, arg0.anInt818, arg0.anInt821);
 		}
 		@Pc(55) int local55 = 0;
 		if (arg0.anInt823 == 3) {
-			local6 = Static93.aClass55_1.method1458(arg0.anInt817, arg0.anInt818, arg0.anInt821);
+			local6 = Static93.scene.method1458(arg0.anInt817, arg0.anInt818, arg0.anInt821);
 		}
 		@Pc(70) int local70 = 0;
 		if (local6 != 0) {
 			local40 = local6 >> 14 & 0x7FFF;
-			@Pc(88) int local88 = Static93.aClass55_1.method1449(arg0.anInt817, arg0.anInt818, arg0.anInt821, local6);
+			@Pc(88) int local88 = Static93.scene.method1449(arg0.anInt817, arg0.anInt818, arg0.anInt821, local6);
 			local70 = local88 >> 6 & 0x3;
 			local55 = local88 & 0x1F;
 		}

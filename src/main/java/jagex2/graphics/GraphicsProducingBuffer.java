@@ -10,7 +10,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!p")
-public abstract class Class45 {
+public abstract class GraphicsProducingBuffer {
 
 	@OriginalMember(owner = "client!p", name = "b", descriptor = "Ljava/awt/Image;")
 	protected Image image;

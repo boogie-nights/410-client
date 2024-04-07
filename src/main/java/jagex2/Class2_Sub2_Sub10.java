@@ -46,7 +46,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 	public boolean aBoolean79 = true;
 
 	@OriginalMember(owner = "client!ia", name = "W", descriptor = "Z")
-	public boolean aBoolean77 = true;
+	public boolean blockwalk = true;
 
 	@OriginalMember(owner = "client!ia", name = "nb", descriptor = "I")
 	private int anInt1042 = 128;
@@ -67,7 +67,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 	private int anInt1032 = -1;
 
 	@OriginalMember(owner = "client!ia", name = "Bb", descriptor = "Z")
-	public boolean aBoolean82 = true;
+	public boolean shadow = true;
 
 	@OriginalMember(owner = "client!ia", name = "tb", descriptor = "I")
 	private int anInt1044 = -1;
@@ -97,13 +97,13 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 	public int anInt1057 = 0;
 
 	@OriginalMember(owner = "client!ia", name = "Db", descriptor = "I")
-	public int anInt1050 = 16;
+	public int walloff = 16;
 
 	@OriginalMember(owner = "client!ia", name = "Kb", descriptor = "I")
 	private int anInt1056 = 0;
 
 	@OriginalMember(owner = "client!ia", name = "ob", descriptor = "Z")
-	public boolean aBoolean81 = false;
+	public boolean occlude = false;
 
 	@OriginalMember(owner = "client!ia", name = "Nb", descriptor = "I")
 	private int anInt1058 = 128;
@@ -319,7 +319,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 			}
 		}
 		if (this.anInt1030 == -1) {
-			this.anInt1030 = this.aBoolean77 ? 1 : 0;
+			this.anInt1030 = this.blockwalk ? 1 : 0;
 		}
 	}
 
@@ -380,7 +380,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 				this.anInt1040 = arg1.g1();
 				return;
 			} else if (arg0 == 17) {
-				this.aBoolean77 = false;
+				this.blockwalk = false;
 				return;
 			} else if (arg0 == 18) {
 				this.aBoolean79 = false;
@@ -395,7 +395,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 				if (arg0 == 22) {
 					this.aBoolean80 = true;
 				} else if (arg0 == 23) {
-					this.aBoolean81 = true;
+					this.occlude = true;
 					return;
 				} else if (arg0 == 24) {
 					this.anInt1048 = arg1.g2();
@@ -404,7 +404,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 						return;
 					}
 				} else if (arg0 == 28) {
-					this.anInt1050 = arg1.g1();
+					this.walloff = arg1.g1();
 					return;
 				} else if (arg0 == 29) {
 					this.anInt1061 = arg1.g1b();
@@ -435,7 +435,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 						this.aBoolean78 = true;
 						return;
 					} else if (arg0 == 64) {
-						this.aBoolean82 = false;
+						this.shadow = false;
 					} else if (arg0 == 65) {
 						this.anInt1042 = arg1.g2();
 						return;

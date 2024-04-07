@@ -259,7 +259,7 @@ public final class Static101 {
 			}
 		} else if (local19 == 3) {
 			local41 = Static56.aClass2_Sub3_Sub1_5.method1743(7);
-			Static1.anInt8 = Static56.aClass2_Sub3_Sub1_5.method1743(2);
+			Static1.currentLevel = Static56.aClass2_Sub3_Sub1_5.method1743(2);
 			local51 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
 			if (local51 == 1) {
 				Static98.anIntArray504[Static53.anInt1190++] = 2047;

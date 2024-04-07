@@ -16,7 +16,7 @@ public final class Static32 {
 	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_7;
 
 	@OriginalMember(owner = "client!ga", name = "B", descriptor = "[[[I")
-	public static int[][][] anIntArrayArrayArray3;
+	public static int[][][] levelOccludemap;
 
 	@OriginalMember(owner = "client!ga", name = "H", descriptor = "Lclient!qb;")
 	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_8;
@@ -58,7 +58,7 @@ public final class Static32 {
 		aClass2_Sub2_Sub2_Sub3_7 = null;
 		aClass6_1 = null;
 		aClass40_229 = null;
-		anIntArrayArrayArray3 = null;
+		levelOccludemap = null;
 		aClass40_230 = null;
 		aClass2_Sub2_Sub2_Sub3_8 = null;
 		aClass40_228 = null;

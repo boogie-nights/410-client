@@ -3,7 +3,7 @@ package jagex2;
 import java.awt.Font;
 
 import jagex2.config.ObjType;
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.graphics.Model;
 import jagex2.graphics.Static6;
 import jagex2.io.Packet;
@@ -17,7 +17,7 @@ public final class Static21 {
 	public static Class2_Sub10 aClass2_Sub10_1;
 
 	@OriginalMember(owner = "client!ea", name = "l", descriptor = "Lclient!p;")
-	public static Class45 aClass45_11;
+	public static GraphicsProducingBuffer aClass45_11;
 
 	@OriginalMember(owner = "client!ea", name = "x", descriptor = "Ljava/awt/Font;")
 	public static Font aFont1;

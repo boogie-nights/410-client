@@ -14,7 +14,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!tb")
-public final class Class45_Sub1 extends Class45 implements ImageProducer, ImageObserver {
+public final class GraphicsProducingBuffer_Sub1 extends GraphicsProducingBuffer implements ImageProducer, ImageObserver {
 
 	@OriginalMember(owner = "client!tb", name = "B", descriptor = "Ljava/awt/image/ColorModel;")
 	private ColorModel colorModel;
@@ -81,8 +81,8 @@ public final class Class45_Sub1 extends Class45 implements ImageProducer, ImageO
 
 	@OriginalMember(owner = "client!tb", name = "removeConsumer", descriptor = "(Ljava/awt/image/ImageConsumer;)V")
 	@Override
-	public synchronized void removeConsumer(@OriginalArg(0) ImageConsumer arg0) {
-		if (this.imageConsumer == arg0) {
+	public synchronized void removeConsumer(@OriginalArg(0) ImageConsumer consumer) {
+		if (this.imageConsumer == consumer) {
 			this.imageConsumer = null;
 		}
 	}

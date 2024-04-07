@@ -13,7 +13,7 @@ public final class Static93 {
 	public static boolean aBoolean166;
 
 	@OriginalMember(owner = "client!tc", name = "h", descriptor = "Lclient!sd;")
-	public static Class55 aClass55_1;
+	public static Class55 scene;
 
 	@OriginalMember(owner = "client!tc", name = "m", descriptor = "Lclient!vb;")
 	public static Class2_Sub2_Sub2_Sub4 aClass2_Sub2_Sub2_Sub4_8;
@@ -181,7 +181,7 @@ public final class Static93 {
 		aClass40_623 = null;
 		aClass2_Sub2_Sub2_Sub3Array12 = null;
 		aClass2_Sub2_Sub2_Sub4_8 = null;
-		aClass55_1 = null;
+		scene = null;
 		aClass40_624 = null;
 		aClass6_6 = null;
 	}

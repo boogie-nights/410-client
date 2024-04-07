@@ -2,7 +2,7 @@ package jagex2;
 
 import java.awt.Component;
 
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -11,7 +11,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static7 {
 
 	@OriginalMember(owner = "client!ba", name = "d", descriptor = "Lclient!p;")
-	public static Class45 aClass45_5;
+	public static GraphicsProducingBuffer aClass45_5;
 
 	@OriginalMember(owner = "client!ba", name = "b", descriptor = "I")
 	public static int anInt231 = 0;
@@ -211,7 +211,7 @@ public final class Static7 {
 		for (@Pc(11) int local11 = arg2; local11 <= arg2 + arg0; local11++) {
 			for (@Pc(15) int local15 = arg3; local15 <= arg3 + arg1; local15++) {
 				if (local15 >= 0 && local15 < 104 && local11 >= 0 && local11 < 104) {
-					Static60.aByteArrayArrayArray6[0][local15][local11] = 127;
+					Static60.levelShademap[0][local15][local11] = 127;
 					if (arg3 == local15 && local15 > 0) {
 						Static91.anIntArrayArrayArray8[0][local15][local11] = Static91.anIntArrayArrayArray8[0][local15 - 1][local11];
 					}

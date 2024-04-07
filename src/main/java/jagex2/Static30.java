@@ -1,7 +1,7 @@
 package jagex2;
 
 import jagex2.client.GameShell;
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static30 {
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "Lclient!p;")
-	public static Class45 aClass45_15;
+	public static GraphicsProducingBuffer aClass45_15;
 
 	@OriginalMember(owner = "client!fe", name = "b", descriptor = "Lclient!ud;")
 	public static Class5 aClass5_10;

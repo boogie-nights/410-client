@@ -10,7 +10,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static60 {
 
 	@OriginalMember(owner = "client!le", name = "j", descriptor = "[[[B")
-	public static byte[][][] aByteArrayArrayArray6;
+	public static byte[][][] levelShademap;
 
 	@OriginalMember(owner = "client!le", name = "f", descriptor = "I")
 	public static int anInt1510 = 0;
@@ -196,7 +196,7 @@ public final class Static60 {
 	@OriginalMember(owner = "client!le", name = "c", descriptor = "(I)V")
 	public static void method1003() {
 		aClass40_431 = null;
-		aByteArrayArrayArray6 = null;
+		levelShademap = null;
 		aClass40_434 = null;
 		aClass40_435 = null;
 		aClass40_432 = null;

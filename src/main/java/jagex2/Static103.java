@@ -87,7 +87,7 @@ public final class Static103 {
 	public static void method1647() {
 		@Pc(17) int level;
 		if (Static43.anInt1850 == 0) {
-			Static93.aClass55_1 = new Class55(4, 104, 104, Static91.anIntArrayArrayArray8);
+			Static93.scene = new Class55(4, 104, 104, Static91.anIntArrayArrayArray8);
 			for (level = 0; level < 4; level++) {
 				Static79.aClass20Array3[level] = new Class20(104, 104);
 			}

@@ -1,6 +1,6 @@
 package jagex2;
 
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import jagex2.graphics.Model;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -13,7 +13,7 @@ public final class Static98 {
 	public static int anInt2370;
 
 	@OriginalMember(owner = "client!uc", name = "x", descriptor = "Lclient!p;")
-	public static Class45 aClass45_30;
+	public static GraphicsProducingBuffer aClass45_30;
 
 	@OriginalMember(owner = "client!uc", name = "b", descriptor = "Lclient!o;")
 	public static Class40 aClass40_674 = Static13.method257("Loading )2 please wait)3");
@@ -65,53 +65,53 @@ public final class Static98 {
 		if (arg1 < 1 || arg2 < 1 || arg1 > 102 || arg2 > 102) {
 			return;
 		}
-		if (Static1.lowMemory && Static1.anInt8 != arg4) {
+		if (Static1.lowMemory && Static1.currentLevel != arg4) {
 			return;
 		}
 		@Pc(29) int local29 = 0;
 		if (arg0 == 0) {
-			local29 = Static93.aClass55_1.method1459(arg4, arg1, arg2);
+			local29 = Static93.scene.method1459(arg4, arg1, arg2);
 		}
 		if (arg0 == 1) {
-			local29 = Static93.aClass55_1.method1419(arg4, arg1, arg2);
+			local29 = Static93.scene.method1419(arg4, arg1, arg2);
 		}
 		if (arg0 == 2) {
-			local29 = Static93.aClass55_1.method1429(arg4, arg1, arg2);
+			local29 = Static93.scene.method1429(arg4, arg1, arg2);
 		}
 		if (arg0 == 3) {
-			local29 = Static93.aClass55_1.method1458(arg4, arg1, arg2);
+			local29 = Static93.scene.method1458(arg4, arg1, arg2);
 		}
 		@Pc(92) int local92;
 		if (local29 != 0) {
 			@Pc(85) int local85 = local29 >> 14 & 0x7FFF;
-			local92 = Static93.aClass55_1.method1449(arg4, arg1, arg2, local29);
+			local92 = Static93.scene.method1449(arg4, arg1, arg2, local29);
 			@Pc(98) int local98 = local92 >> 6 & 0x3;
 			@Pc(102) int local102 = local92 & 0x1F;
 			@Pc(116) Class2_Sub2_Sub10 local116;
 			if (arg0 == 0) {
-				Static93.aClass55_1.method1439(arg4, arg1, arg2);
+				Static93.scene.method1439(arg4, arg1, arg2);
 				local116 = Static91.method1470(local85);
-				if (local116.aBoolean77) {
+				if (local116.blockwalk) {
 					Static79.aClass20Array3[arg4].method532(local102, local116.aBoolean79, arg2, local98, arg1);
 				}
 			}
 			if (arg0 == 1) {
-				Static93.aClass55_1.method1415(arg4, arg1, arg2);
+				Static93.scene.method1415(arg4, arg1, arg2);
 			}
 			if (arg0 == 2) {
-				Static93.aClass55_1.method1423(arg4, arg1, arg2);
+				Static93.scene.method1423(arg4, arg1, arg2);
 				local116 = Static91.method1470(local85);
 				if (arg1 + local116.anInt1036 > 103 || arg2 + local116.anInt1036 > 103 || arg1 + local116.anInt1040 > 103 || local116.anInt1040 + arg2 > 103) {
 					return;
 				}
-				if (local116.aBoolean77) {
+				if (local116.blockwalk) {
 					Static79.aClass20Array3[arg4].method529(local116.anInt1036, local116.anInt1040, local98, local116.aBoolean79, arg1, arg2);
 				}
 			}
 			if (arg0 == 3) {
-				Static93.aClass55_1.method1413(arg4, arg1, arg2);
+				Static93.scene.method1413(arg4, arg1, arg2);
 				local116 = Static91.method1470(local85);
-				if (local116.aBoolean77 && local116.anInt1054 == 1) {
+				if (local116.blockwalk && local116.anInt1054 == 1) {
 					Static79.aClass20Array3[arg4].method537(arg2, arg1);
 				}
 			}
@@ -123,7 +123,7 @@ public final class Static98 {
 		if (arg4 < 3 && (Static61.aByteArrayArrayArray7[1][arg1][arg2] & 0x2) == 2) {
 			local92 = arg4 + 1;
 		}
-		Static51.method845(local92, arg2, arg3, Static79.aClass20Array3[arg4], arg5, Static93.aClass55_1, arg6, arg4, arg1);
+		Static51.method845(local92, arg2, arg3, Static79.aClass20Array3[arg4], arg5, Static93.scene, arg6, arg4, arg1);
 	}
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(B)V")

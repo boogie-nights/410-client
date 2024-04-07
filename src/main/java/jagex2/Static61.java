@@ -1,6 +1,6 @@
 package jagex2;
 
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -8,16 +8,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static61 {
 
 	@OriginalMember(owner = "client!ma", name = "e", descriptor = "Lclient!p;")
-	public static Class45 aClass45_22;
+	public static GraphicsProducingBuffer aClass45_22;
 
 	@OriginalMember(owner = "client!ma", name = "l", descriptor = "Lclient!qd;")
 	public static Class48 aClass48_6;
 
 	@OriginalMember(owner = "client!ma", name = "n", descriptor = "Lclient!p;")
-	public static Class45 aClass45_23;
+	public static GraphicsProducingBuffer aClass45_23;
 
 	@OriginalMember(owner = "client!ma", name = "w", descriptor = "Lclient!p;")
-	public static Class45 aClass45_24;
+	public static GraphicsProducingBuffer aClass45_24;
 
 	@OriginalMember(owner = "client!ma", name = "b", descriptor = "Lclient!o;")
 	public static Class40 aClass40_445 = Static13.method257("");
@@ -71,7 +71,7 @@ public final class Static61 {
 		}
 		Static70.aClass25_36 = null;
 		Static48.method820();
-		Static93.aClass55_1.method1414();
+		Static93.scene.method1414();
 		for (@Pc(22) int local22 = 0; local22 < 4; local22++) {
 			Static79.aClass20Array3[local22].method534();
 		}

@@ -1,6 +1,6 @@
 package jagex2;
 
-import jagex2.graphics.Class45;
+import jagex2.graphics.GraphicsProducingBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -11,7 +11,7 @@ public final class Static19 {
 	public static int[] anIntArray86;
 
 	@OriginalMember(owner = "client!de", name = "e", descriptor = "Lclient!p;")
-	public static Class45 aClass45_9;
+	public static GraphicsProducingBuffer aClass45_9;
 
 	@OriginalMember(owner = "client!de", name = "i", descriptor = "I")
 	public static int anInt439;
@@ -55,10 +55,10 @@ public final class Static19 {
 			local38 = 4 * 512 * (103 - local25) + 24628;
 			for (local40 = 1; local40 < 103; local40++) {
 				if ((Static61.aByteArrayArrayArray7[arg0][local40][local25] & 0x18) == 0) {
-					Static93.aClass55_1.method1432(local8, local38, arg0, local40, local25);
+					Static93.scene.method1432(local8, local38, arg0, local40, local25);
 				}
 				if (arg0 < 3 && (Static61.aByteArrayArrayArray7[arg0 + 1][local40][local25] & 0x8) != 0) {
-					Static93.aClass55_1.method1432(local8, local38, arg0 + 1, local40, local25);
+					Static93.scene.method1432(local8, local38, arg0 + 1, local40, local25);
 				}
 				local38 += 4;
 			}
@@ -80,7 +80,7 @@ public final class Static19 {
 		Static90.anInt2136 = 0;
 		for (local150 = 0; local150 < 104; local150++) {
 			for (@Pc(221) int local221 = 0; local221 < 104; local221++) {
-				@Pc(229) int local229 = Static93.aClass55_1.method1458(Static1.anInt8, local150, local221);
+				@Pc(229) int local229 = Static93.scene.method1458(Static1.currentLevel, local150, local221);
 				if (local229 != 0) {
 					local229 = local229 >> 14 & 0x7FFF;
 					@Pc(242) int local242 = Static91.method1470(local229).anInt1034;
@@ -88,7 +88,7 @@ public final class Static19 {
 						@Pc(249) int local249 = local150;
 						@Pc(251) int local251 = local221;
 						if (local242 != 22 && local242 != 29 && local242 != 34 && local242 != 36 && local242 != 46 && local242 != 47 && local242 != 48) {
-							@Pc(287) int[][] local287 = Static79.aClass20Array3[Static1.anInt8].anIntArrayArray9;
+							@Pc(287) int[][] local287 = Static79.aClass20Array3[Static1.currentLevel].anIntArrayArray9;
 							for (@Pc(289) int local289 = 0; local289 < 10; local289++) {
 								@Pc(296) int local296 = (int) (Math.random() * 4.0D);
 								if (local296 == 0 && local249 > 0 && local249 > local150 - 3 && (local287[local249 - 1][local251] & 0x1280108) == 0) {
@@ -146,7 +146,7 @@ public final class Static19 {
 		@Pc(155) int local155;
 		for (@Pc(151) int local151 = 0; local151 < 104; local151++) {
 			for (local155 = 0; local155 < 104; local155++) {
-				@Pc(165) Class44 local165 = Static91.aClass44ArrayArrayArray1[Static1.anInt8][local151][local155];
+				@Pc(165) Class44 local165 = Static91.levelObjStacks[Static1.currentLevel][local151][local155];
 				if (local165 != null) {
 					local77 = local151 * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
 					local20 = local155 * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;

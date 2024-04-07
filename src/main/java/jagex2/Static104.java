@@ -51,7 +51,7 @@ public final class Static104 {
 			Static20.anInt477 = -1;
 			return;
 		}
-		@Pc(34) int local34 = Static86.method1383(Static1.anInt8, arg1, arg2) - arg0;
+		@Pc(34) int local34 = Static86.method1383(Static1.currentLevel, arg1, arg2) - arg0;
 		@Pc(38) int local38 = arg1 - Static48.anInt1114;
 		@Pc(42) int local42 = arg2 - Static15.anInt1863;
 		@Pc(46) int local46 = Static71.sin[Static35.anInt824];
