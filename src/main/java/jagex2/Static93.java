@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.dash3d.World3D;
 import jagex2.datastruct.HashTable;
 import jagex2.graphics.Static6;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -13,7 +14,7 @@ public final class Static93 {
 	public static boolean aBoolean166;
 
 	@OriginalMember(owner = "client!tc", name = "h", descriptor = "Lclient!sd;")
-	public static Class55 scene;
+	public static World3D scene;
 
 	@OriginalMember(owner = "client!tc", name = "m", descriptor = "Lclient!vb;")
 	public static Class2_Sub2_Sub2_Sub4 aClass2_Sub2_Sub2_Sub4_8;

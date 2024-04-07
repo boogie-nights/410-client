@@ -5,6 +5,7 @@ import java.awt.Component;
 import jagex2.config.ComType;
 import jagex2.config.ObjType;
 import jagex2.dash3d.CollisionMap;
+import jagex2.dash3d.World3D;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Class2_Sub2_Sub12;
 import jagex2.graphics.GraphicsProducingBuffer;
@@ -200,7 +201,7 @@ public final class Static83 {
 		@Pc(70) int local70 = 0;
 		@Pc(72) boolean local72 = false;
 		@Pc(75) int local75 = Static36.anIntArray163.length;
-		@Pc(80) int[][] local80 = Static79.aClass20Array3[Static1.currentLevel].flags;
+		@Pc(80) int[][] local80 = Static79.levelCollisionMap[Static1.currentLevel].flags;
 		@Pc(184) int local184;
 		while (local70 != local66) {
 			local55 = Static23.anIntArray103[local70];
@@ -211,16 +212,16 @@ public final class Static83 {
 				break;
 			}
 			if (arg7 != 0) {
-				if ((arg7 < 5 || arg7 == 10) && Static79.aClass20Array3[Static1.currentLevel].reachedWall(arg1, local55, arg0, arg10, local19, arg7 - 1)) {
+				if ((arg7 < 5 || arg7 == 10) && Static79.levelCollisionMap[Static1.currentLevel].reachedWall(arg1, local55, arg0, arg10, local19, arg7 - 1)) {
 					local72 = true;
 					break;
 				}
-				if (arg7 < 10 && Static79.aClass20Array3[Static1.currentLevel].reachedWallDecoration(local55, arg1, arg7 - 1, arg10, arg0, local19)) {
+				if (arg7 < 10 && Static79.levelCollisionMap[Static1.currentLevel].reachedWallDecoration(local55, arg1, arg7 - 1, arg10, arg0, local19)) {
 					local72 = true;
 					break;
 				}
 			}
-			if (arg9 != 0 && arg3 != 0 && Static79.aClass20Array3[Static1.currentLevel].reachedLoc(arg4, local55, arg10, arg0, arg9, local19, arg3)) {
+			if (arg9 != 0 && arg3 != 0 && Static79.levelCollisionMap[Static1.currentLevel].reachedLoc(arg4, local55, arg10, arg0, arg9, local19, arg3)) {
 				local72 = true;
 				break;
 			}
@@ -409,7 +410,7 @@ public final class Static83 {
 	}
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(IIIBLclient!fb;IILclient!sd;I)V")
-	public static void method1353(@OriginalArg(0) int level, @OriginalArg(1) int arg1, @OriginalArg(2) int x, @OriginalArg(4) CollisionMap collision, @OriginalArg(5) int rotation, @OriginalArg(6) int shape, @OriginalArg(7) Class55 scene, @OriginalArg(8) int z) {
+	public static void method1353(@OriginalArg(0) int level, @OriginalArg(1) int arg1, @OriginalArg(2) int x, @OriginalArg(4) CollisionMap collision, @OriginalArg(5) int rotation, @OriginalArg(6) int shape, @OriginalArg(7) World3D scene, @OriginalArg(8) int z) {
 		if (Static1.lowMemory && (Static61.aByteArrayArrayArray7[0][x][z] & 0x2) == 0) {
 			if ((Static61.aByteArrayArrayArray7[level][x][z] & 0x10) != 0) {
 				return;
@@ -421,10 +422,10 @@ public final class Static83 {
 		if (Static34.anInt807 > level) {
 			Static34.anInt807 = level;
 		}
-		@Pc(57) int local57 = Static91.anIntArrayArrayArray8[level][x + 1][z];
-		@Pc(65) int local65 = Static91.anIntArrayArrayArray8[level][x][z];
-		@Pc(77) int local77 = Static91.anIntArrayArrayArray8[level][x + 1][z + 1];
-		@Pc(87) int local87 = Static91.anIntArrayArrayArray8[level][x][z + 1];
+		@Pc(57) int local57 = Static91.levelHeightMap[level][x + 1][z];
+		@Pc(65) int local65 = Static91.levelHeightMap[level][x][z];
+		@Pc(77) int local77 = Static91.levelHeightMap[level][x + 1][z + 1];
+		@Pc(87) int local87 = Static91.levelHeightMap[level][x][z + 1];
 		@Pc(91) Class2_Sub2_Sub10 loc = Static91.method1470(arg1);
 		@Pc(102) int local102 = local87 + local57 + local65 + local77 >> 2;
 		@Pc(109) int local109 = (rotation << 6) + shape;

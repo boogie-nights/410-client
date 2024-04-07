@@ -88,10 +88,10 @@ public final class Static58 {
 			local30 = arg4.g1();
 			if (local30 == 0) {
 				if (arg1 == 0) {
-					Static91.anIntArrayArrayArray8[0][arg6][arg0] = -Static4.perlin(arg5 + 932731 + arg6, arg0 + arg3 + 556238) * 8;
+					Static91.levelHeightMap[0][arg6][arg0] = -Static4.perlin(arg5 + 932731 + arg6, arg0 + arg3 + 556238) * 8;
 					return;
 				} else {
-					Static91.anIntArrayArrayArray8[arg1][arg6][arg0] = Static91.anIntArrayArrayArray8[arg1 - 1][arg6][arg0] - 240;
+					Static91.levelHeightMap[arg1][arg6][arg0] = Static91.levelHeightMap[arg1 - 1][arg6][arg0] - 240;
 					return;
 				}
 			}
@@ -101,10 +101,10 @@ public final class Static58 {
 					local129 = 0;
 				}
 				if (arg1 == 0) {
-					Static91.anIntArrayArrayArray8[0][arg6][arg0] = -local129 * 8;
+					Static91.levelHeightMap[0][arg6][arg0] = -local129 * 8;
 					return;
 				}
-				Static91.anIntArrayArrayArray8[arg1][arg6][arg0] = Static91.anIntArrayArrayArray8[arg1 - 1][arg6][arg0] - local129 * 8;
+				Static91.levelHeightMap[arg1][arg6][arg0] = Static91.levelHeightMap[arg1 - 1][arg6][arg0] - local129 * 8;
 				return;
 			}
 			if (local30 <= 49) {

@@ -180,10 +180,10 @@ public final class Static3 {
 					}
 					if (local536 != null) {
 						@Pc(548) Class2_Sub2_Sub10 local548 = Static91.method1470(local523);
-						@Pc(558) int local558 = Static91.anIntArrayArrayArray8[Static1.currentLevel][local19 + 1][local31];
-						@Pc(566) int local566 = Static91.anIntArrayArrayArray8[Static1.currentLevel][local19][local31];
-						@Pc(578) int local578 = Static91.anIntArrayArrayArray8[Static1.currentLevel][local19 + 1][local31 + 1];
-						@Pc(588) int local588 = Static91.anIntArrayArrayArray8[Static1.currentLevel][local19][local31 + 1];
+						@Pc(558) int local558 = Static91.levelHeightMap[Static1.currentLevel][local19 + 1][local31];
+						@Pc(566) int local566 = Static91.levelHeightMap[Static1.currentLevel][local19][local31];
+						@Pc(578) int local578 = Static91.levelHeightMap[Static1.currentLevel][local19 + 1][local31 + 1];
+						@Pc(588) int local588 = Static91.levelHeightMap[Static1.currentLevel][local19][local31 + 1];
 						@Pc(598) Model local598 = local548.method765(local425, local558, local588, local566, local43, local578);
 						if (local598 != null) {
 							Static22.method1727(local35 + 1, Static1.currentLevel, local503, 0, 0, -1, local31, local527 + 1, local19);
@@ -304,10 +304,10 @@ public final class Static3 {
 						local425 = Static91.anInt2138 + (local39 & 0x7);
 						local43 = Static95.anInt2237 + (local39 >> 4 & 0x7);
 						if (local43 >= 0 && local425 >= 0 && local43 < 103 && local425 < 103) {
-							local503 = Static91.anIntArrayArrayArray8[Static1.currentLevel][local43][local425];
-							local1060 = Static91.anIntArrayArrayArray8[Static1.currentLevel][local43 + 1][local425];
-							local1064 = Static91.anIntArrayArrayArray8[Static1.currentLevel][local43 + 1][local425 + 1];
-							local1068 = Static91.anIntArrayArrayArray8[Static1.currentLevel][local43][local425 + 1];
+							local503 = Static91.levelHeightMap[Static1.currentLevel][local43][local425];
+							local1060 = Static91.levelHeightMap[Static1.currentLevel][local43 + 1][local425];
+							local1064 = Static91.levelHeightMap[Static1.currentLevel][local43 + 1][local425 + 1];
+							local1068 = Static91.levelHeightMap[Static1.currentLevel][local43][local425 + 1];
 							if (local35 == 0) {
 								@Pc(1292) Class60 local1292 = Static93.scene.method1412(Static1.currentLevel, local43, local425);
 								if (local1292 != null) {

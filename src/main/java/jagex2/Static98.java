@@ -92,7 +92,7 @@ public final class Static98 {
 				Static93.scene.method1439(arg4, arg1, arg2);
 				local116 = Static91.method1470(local85);
 				if (local116.blockwalk) {
-					Static79.aClass20Array3[arg4].removeWall(local102, local116.aBoolean79, arg2, local98, arg1);
+					Static79.levelCollisionMap[arg4].removeWall(local102, local116.aBoolean79, arg2, local98, arg1);
 				}
 			}
 			if (arg0 == 1) {
@@ -105,14 +105,14 @@ public final class Static98 {
 					return;
 				}
 				if (local116.blockwalk) {
-					Static79.aClass20Array3[arg4].removeLoc(local116.anInt1036, local116.anInt1040, local98, local116.aBoolean79, arg1, arg2);
+					Static79.levelCollisionMap[arg4].removeLoc(local116.anInt1036, local116.anInt1040, local98, local116.aBoolean79, arg1, arg2);
 				}
 			}
 			if (arg0 == 3) {
 				Static93.scene.method1413(arg4, arg1, arg2);
 				local116 = Static91.method1470(local85);
 				if (local116.blockwalk && local116.anInt1054 == 1) {
-					Static79.aClass20Array3[arg4].removeBlocked(arg1, arg2);
+					Static79.levelCollisionMap[arg4].removeBlocked(arg1, arg2);
 				}
 			}
 		}
@@ -123,7 +123,7 @@ public final class Static98 {
 		if (arg4 < 3 && (Static61.aByteArrayArrayArray7[1][arg1][arg2] & 0x2) == 2) {
 			local92 = arg4 + 1;
 		}
-		Static51.method845(local92, arg2, arg3, Static79.aClass20Array3[arg4], arg5, Static93.scene, arg6, arg4, arg1);
+		Static51.method845(local92, arg2, arg3, Static79.levelCollisionMap[arg4], arg5, Static93.scene, arg6, arg4, arg1);
 	}
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(B)V")

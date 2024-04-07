@@ -3,6 +3,7 @@ package jagex2;
 import java.awt.Graphics;
 
 import jagex2.dash3d.CollisionMap;
+import jagex2.dash3d.World3D;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Static6;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -85,7 +86,7 @@ public final class Static24 {
 	}
 
 	@OriginalMember(owner = "client!ee", name = "a", descriptor = "([Lclient!fb;Lclient!sd;I)V")
-	public static void method503(@OriginalArg(0) CollisionMap[] arg0, @OriginalArg(1) Class55 arg1) {
+	public static void method503(@OriginalArg(0) CollisionMap[] arg0, @OriginalArg(1) World3D arg1) {
 		@Pc(15) int local15;
 		@Pc(19) int local19;
 		@Pc(36) int local36;
@@ -140,8 +141,8 @@ public final class Static24 {
 			local138 = local36 * 768 >> 8;
 			for (local140 = 1; local140 < 103; local140++) {
 				for (local144 = 1; local144 < 103; local144++) {
-					local166 = Static91.anIntArrayArrayArray8[local15][local144 + 1][local140] - Static91.anIntArrayArrayArray8[local15][local144 - 1][local140];
-					local187 = Static91.anIntArrayArrayArray8[local15][local144][local140 + 1] - Static91.anIntArrayArrayArray8[local15][local144][local140 - 1];
+					local166 = Static91.levelHeightMap[local15][local144 + 1][local140] - Static91.levelHeightMap[local15][local144 - 1][local140];
+					local187 = Static91.levelHeightMap[local15][local144][local140 + 1] - Static91.levelHeightMap[local15][local144][local140 - 1];
 					local200 = (int) Math.sqrt((double) (local187 * local187 + local166 * local166 + 65536));
 					local204 = 65536 / local200;
 					local210 = (local166 << 8) / local200;
@@ -216,12 +217,12 @@ public final class Static24 {
 							local654 = Static75.aByteArrayArrayArray9[local15][local166][local283] & 0xFF;
 							local664 = Static37.aByteArrayArrayArray4[local15][local166][local283] & 0xFF;
 							if (local664 > 0 || local654 > 0) {
-								@Pc(681) int local681 = Static91.anIntArrayArrayArray8[local15][local166 + 1][local283];
-								local689 = Static91.anIntArrayArrayArray8[local15][local166][local283];
-								@Pc(701) int local701 = Static91.anIntArrayArrayArray8[local15][local166 + 1][local283 + 1];
+								@Pc(681) int local681 = Static91.levelHeightMap[local15][local166 + 1][local283];
+								local689 = Static91.levelHeightMap[local15][local166][local283];
+								@Pc(701) int local701 = Static91.levelHeightMap[local15][local166 + 1][local283 + 1];
 								@Pc(707) int local707 = Static10.anIntArrayArray5[local166][local283];
 								@Pc(715) int local715 = Static10.anIntArrayArray5[local166 + 1][local283];
-								@Pc(725) int local725 = Static91.anIntArrayArrayArray8[local15][local166][local283 + 1];
+								@Pc(725) int local725 = Static91.levelHeightMap[local15][local166][local283 + 1];
 								@Pc(727) int local727 = -1;
 								@Pc(729) int local729 = -1;
 								@Pc(737) int local737 = Static10.anIntArrayArray5[local166][local283 + 1];
@@ -367,8 +368,8 @@ public final class Static24 {
 							}
 							local283 = (local233 + 1 - local216) * (local204 + 1 - local210);
 							if (local283 >= 8) {
-								local551 = Static91.anIntArrayArrayArray8[local233][local200][local210] - 240;
-								local664 = Static91.anIntArrayArrayArray8[local216][local200][local210];
+								local551 = Static91.levelHeightMap[local233][local200][local210] - 240;
+								local664 = Static91.levelHeightMap[local216][local200][local210];
 								Static89.method1433(local144, 1, local200 * 128, local200 * 128, local210 * 128, local204 * 128 + 128, local551, local664);
 								for (local654 = local216; local654 <= local233; local654++) {
 									for (local689 = local210; local689 <= local204; local689++) {
@@ -404,8 +405,8 @@ public final class Static24 {
 							}
 							local283 = (local204 + 1 - local210) * ((local233 + 1) - local216);
 							if (local283 >= 8) {
-								local664 = Static91.anIntArrayArrayArray8[local216][local210][local187];
-								local551 = Static91.anIntArrayArrayArray8[local233][local210][local187] - 240;
+								local664 = Static91.levelHeightMap[local216][local210][local187];
+								local551 = Static91.levelHeightMap[local233][local210][local187] - 240;
 								Static89.method1433(local144, 2, local210 * 128, local204 * 128 + 128, local187 * 128, local187 * 128, local551, local664);
 								for (local654 = local216; local654 <= local233; local654++) {
 									for (local689 = local210; local689 <= local204; local689++) {
@@ -440,7 +441,7 @@ public final class Static24 {
 								local204++;
 							}
 							if ((local233 + 1 - local216) * (-local210 + (local204 - -1)) >= 4) {
-								local283 = Static91.anIntArrayArrayArray8[local166][local210][local216];
+								local283 = Static91.levelHeightMap[local166][local210][local216];
 								Static89.method1433(local144, 4, local210 * 128, local204 * 128 + 128, local216 * 128, local233 * 128 + 128, local283, local283);
 								for (local510 = local210; local510 <= local204; local510++) {
 									for (local551 = local216; local551 <= local233; local551++) {

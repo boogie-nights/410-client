@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.config.ComType;
 import jagex2.dash3d.CollisionMap;
+import jagex2.dash3d.World3D;
 import jagex2.graphics.Draw3D;
 import jagex2.graphics.PixFont;
 import jagex2.graphics.Static6;
@@ -91,9 +92,9 @@ public final class Static103 {
 	public static void method1647() {
 		@Pc(17) int level;
 		if (Static43.anInt1850 == 0) {
-			Static93.scene = new Class55(4, 104, 104, Static91.anIntArrayArrayArray8);
+			Static93.scene = new World3D(4, 104, 104, Static91.levelHeightMap);
 			for (level = 0; level < 4; level++) {
-				Static79.aClass20Array3[level] = new CollisionMap(104, 104);
+				Static79.levelCollisionMap[level] = new CollisionMap(104, 104);
 			}
 			Static93.aClass2_Sub2_Sub2_Sub4_8 = new Class2_Sub2_Sub2_Sub4(512, 512);
 			Static98.progressMeterText = Static61.textStartingGameEngine;

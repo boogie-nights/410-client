@@ -1,6 +1,7 @@
-package jagex2;
+package jagex2.dash3d;
 
-import jagex2.dash3d.Occluder;
+import jagex2.*;
+import jagex2.dash3d.type.Tile;
 import jagex2.graphics.*;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -8,13 +9,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!sd")
-public final class Class55 {
+public final class World3D {
 
 	@OriginalMember(owner = "client!sd", name = "s", descriptor = "[Lclient!n;")
-	private final Class37[] aClass37Array2 = new Class37[5000];
+	private final Class37[] temporaryLocs = new Class37[5000];
 
 	@OriginalMember(owner = "client!sd", name = "B", descriptor = "I")
-	private int anInt2107 = 0;
+	private int temporaryLocCount = 0;
 
 	@OriginalMember(owner = "client!sd", name = "z", descriptor = "I")
 	private int anInt2105 = 0;
@@ -56,13 +57,13 @@ public final class Class55 {
 	private final int maxLevel;
 
 	@OriginalMember(owner = "client!sd", name = "v", descriptor = "I")
-	private final int anInt2103;
+	private final int maxTileX;
 
 	@OriginalMember(owner = "client!sd", name = "m", descriptor = "I")
-	private final int anInt2098;
+	private final int maxTileZ;
 
 	@OriginalMember(owner = "client!sd", name = "o", descriptor = "[[[Lclient!nd;")
-	private final Class2_Sub11[][][] levelTiles;
+	private final Tile[][][] levelTiles;
 
 	@OriginalMember(owner = "client!sd", name = "L", descriptor = "[[[I")
 	private final int[][][] levelTileOcclusionCycles;
@@ -71,21 +72,21 @@ public final class Class55 {
 	private final int[][][] levelHeightMaps;
 
 	@OriginalMember(owner = "client!sd", name = "<init>", descriptor = "(III[[[I)V")
-	public Class55(@OriginalArg(0) int maxLevel, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[][][] arg3) {
+	public World3D(@OriginalArg(0) int maxLevel, @OriginalArg(1) int maxTileX, @OriginalArg(2) int maxTileZ, @OriginalArg(3) int[][][] levelHeightMaps) {
 		this.maxLevel = maxLevel;
-		this.anInt2103 = arg1;
-		this.anInt2098 = arg2;
-		this.levelTiles = new Class2_Sub11[maxLevel][arg1][arg2];
-		this.levelTileOcclusionCycles = new int[maxLevel][arg1 + 1][arg2 + 1];
-		this.levelHeightMaps = arg3;
-		this.method1414();
+		this.maxTileX = maxTileX;
+		this.maxTileZ = maxTileZ;
+		this.levelTiles = new Tile[maxLevel][maxTileX][maxTileZ];
+		this.levelTileOcclusionCycles = new int[maxLevel][maxTileX + 1][maxTileZ + 1];
+		this.levelHeightMaps = levelHeightMaps;
+		this.reset();
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(Lclient!ne;III)V")
 	private void method1408(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(14) Class2_Sub11 local14;
+		@Pc(14) Tile local14;
 		@Pc(29) Model local29;
-		if (arg2 < this.anInt2103) {
+		if (arg2 < this.maxTileX) {
 			local14 = this.levelTiles[arg1][arg2 + 1][arg3];
 			if (local14 != null && local14.aClass4_1 != null && local14.aClass4_1.aClass2_Sub2_Sub12_2 instanceof Model) {
 				local29 = (Model) local14.aClass4_1.aClass2_Sub2_Sub12_2;
@@ -94,7 +95,7 @@ public final class Class55 {
 				}
 			}
 		}
-		if (arg3 < this.anInt2103) {
+		if (arg3 < this.maxTileX) {
 			local14 = this.levelTiles[arg1][arg2][arg3 + 1];
 			if (local14 != null && local14.aClass4_1 != null && local14.aClass4_1.aClass2_Sub2_Sub12_2 instanceof Model) {
 				local29 = (Model) local14.aClass4_1.aClass2_Sub2_Sub12_2;
@@ -103,7 +104,7 @@ public final class Class55 {
 				}
 			}
 		}
-		if (arg2 < this.anInt2103 && arg3 < this.anInt2098) {
+		if (arg2 < this.maxTileX && arg3 < this.maxTileZ) {
 			local14 = this.levelTiles[arg1][arg2 + 1][arg3 + 1];
 			if (local14 != null && local14.aClass4_1 != null && local14.aClass4_1.aClass2_Sub2_Sub12_2 instanceof Model) {
 				local29 = (Model) local14.aClass4_1.aClass2_Sub2_Sub12_2;
@@ -112,7 +113,7 @@ public final class Class55 {
 				}
 			}
 		}
-		if (arg2 >= this.anInt2103 || arg3 <= 0) {
+		if (arg2 >= this.maxTileX || arg3 <= 0) {
 			return;
 		}
 		local14 = this.levelTiles[arg1][arg2 + 1][arg3 - 1];
@@ -128,7 +129,7 @@ public final class Class55 {
 	private void method1409(@OriginalArg(0) Class37 arg0) {
 		for (@Pc(2) int local2 = arg0.anInt1656; local2 <= arg0.anInt1647; local2++) {
 			for (@Pc(6) int local6 = arg0.anInt1662; local6 <= arg0.anInt1665; local6++) {
-				@Pc(17) Class2_Sub11 local17 = this.levelTiles[arg0.anInt1652][local2][local6];
+				@Pc(17) Tile local17 = this.levelTiles[arg0.anInt1652][local2][local6];
 				if (local17 != null) {
 					@Pc(36) int local36;
 					for (@Pc(21) int local21 = 0; local21 < local17.anInt1702; local21++) {
@@ -164,7 +165,7 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIII)V")
 	public void method1411(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		if (local8 == null) {
 			return;
 		}
@@ -179,47 +180,47 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(III)Lclient!uc;")
 	public Class60 method1412(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		return local8 == null ? null : local8.aClass60_1;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "(III)V")
 	public void method1413(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		if (local8 != null) {
 			local8.aClass4_1 = null;
 		}
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "()V")
-	public void method1414() {
-		@Pc(4) int local4;
-		@Pc(7) int local7;
-		for (@Pc(1) int local1 = 0; local1 < this.maxLevel; local1++) {
-			for (local4 = 0; local4 < this.anInt2103; local4++) {
-				for (local7 = 0; local7 < this.anInt2098; local7++) {
-					this.levelTiles[local1][local4][local7] = null;
+	public void reset() {
+		@Pc(4) int x;
+		@Pc(7) int z;
+		for (@Pc(1) int level = 0; level < this.maxLevel; level++) {
+			for (x = 0; x < this.maxTileX; x++) {
+				for (z = 0; z < this.maxTileZ; z++) {
+					this.levelTiles[level][x][z] = null;
 				}
 			}
 		}
-		for (local4 = 0; local4 < Static89.LEVEL_COUNT; local4++) {
-			for (local7 = 0; local7 < Static89.levelOccluderCount[local4]; local7++) {
-				Static89.levelOccluders[local4][local7] = null;
+		for (x = 0; x < Static89.LEVEL_COUNT; x++) {
+			for (z = 0; z < Static89.levelOccluderCount[x]; z++) {
+				Static89.levelOccluders[x][z] = null;
 			}
-			Static89.levelOccluderCount[local4] = 0;
+			Static89.levelOccluderCount[x] = 0;
 		}
-		for (local7 = 0; local7 < this.anInt2107; local7++) {
-			this.aClass37Array2[local7] = null;
+		for (z = 0; z < this.temporaryLocCount; z++) {
+			this.temporaryLocs[z] = null;
 		}
-		this.anInt2107 = 0;
-		for (@Pc(76) int local76 = 0; local76 < Static89.aClass37Array3.length; local76++) {
-			Static89.aClass37Array3[local76] = null;
+		this.temporaryLocCount = 0;
+		for (@Pc(76) int i = 0; i < Static89.locBuffer.length; i++) {
+			Static89.locBuffer[i] = null;
 		}
 	}
 
 	@OriginalMember(owner = "client!sd", name = "c", descriptor = "(III)V")
 	public void method1415(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		if (local8 != null) {
 			local8.aClass1_1 = null;
 		}
@@ -238,7 +239,7 @@ public final class Class55 {
 		local6.anInt48 = arg5;
 		local6.anInt42 = arg6;
 		if (this.levelTiles[arg0][arg1][arg2] == null) {
-			this.levelTiles[arg0][arg1][arg2] = new Class2_Sub11(arg0, arg1, arg2);
+			this.levelTiles[arg0][arg1][arg2] = new Tile(arg0, arg1, arg2);
 		}
 		this.levelTiles[arg0][arg1][arg2].aClass4_1 = local6;
 	}
@@ -284,7 +285,7 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "(IIII)V")
 	public void method1418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		if (local8 != null) {
 			this.levelTiles[arg0][arg1][arg2].anInt1708 = arg3;
 		}
@@ -292,17 +293,17 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "d", descriptor = "(III)I")
 	public int method1419(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		return local8 == null || local8.aClass1_1 == null ? 0 : local8.aClass1_1.anInt17;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(I)V")
 	public void method1421(@OriginalArg(0) int arg0) {
 		this.anInt2105 = arg0;
-		for (@Pc(4) int local4 = 0; local4 < this.anInt2103; local4++) {
-			for (@Pc(7) int local7 = 0; local7 < this.anInt2098; local7++) {
+		for (@Pc(4) int local4 = 0; local4 < this.maxTileX; local4++) {
+			for (@Pc(7) int local7 = 0; local7 < this.maxTileZ; local7++) {
 				if (this.levelTiles[arg0][local4][local7] == null) {
-					this.levelTiles[arg0][local4][local7] = new Class2_Sub11(arg0, local4, local7);
+					this.levelTiles[arg0][local4][local7] = new Tile(arg0, local4, local7);
 				}
 			}
 		}
@@ -310,7 +311,7 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "e", descriptor = "(III)V")
 	public void method1423(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		if (local8 == null) {
 			return;
 		}
@@ -384,7 +385,7 @@ public final class Class55 {
 		local3.aClass2_Sub2_Sub12_4 = arg6;
 		local3.aClass2_Sub2_Sub12_5 = arg7;
 		@Pc(34) int local34 = 0;
-		@Pc(43) Class2_Sub11 local43 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(43) Tile local43 = this.levelTiles[arg0][arg1][arg2];
 		if (local43 != null) {
 			for (@Pc(47) int local47 = 0; local47 < local43.anInt1702; local47++) {
 				if ((local43.aClass37Array1[local47].anInt1655 & 0x100) == 256 && local43.aClass37Array1[local47].aClass2_Sub2_Sub12_3 instanceof Model) {
@@ -398,20 +399,20 @@ public final class Class55 {
 		}
 		local3.anInt1959 = local34;
 		if (this.levelTiles[arg0][arg1][arg2] == null) {
-			this.levelTiles[arg0][arg1][arg2] = new Class2_Sub11(arg0, arg1, arg2);
+			this.levelTiles[arg0][arg1][arg2] = new Tile(arg0, arg1, arg2);
 		}
 		this.levelTiles[arg0][arg1][arg2].aClass51_1 = local3;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "h", descriptor = "(III)Lclient!a;")
 	public Class1 method1428(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		return local8 == null ? null : local8.aClass1_1;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "i", descriptor = "(III)I")
 	public int method1429(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		if (local8 == null) {
 			return 0;
 		}
@@ -428,13 +429,13 @@ public final class Class55 {
 	public void method1430(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		if (arg0 < 0) {
 			arg0 = 0;
-		} else if (arg0 >= this.anInt2103 * 128) {
-			arg0 = this.anInt2103 * 128 - 1;
+		} else if (arg0 >= this.maxTileX * 128) {
+			arg0 = this.maxTileX * 128 - 1;
 		}
 		if (arg2 < 0) {
 			arg2 = 0;
-		} else if (arg2 >= this.anInt2098 * 128) {
-			arg2 = this.anInt2098 * 128 - 1;
+		} else if (arg2 >= this.maxTileZ * 128) {
+			arg2 = this.maxTileZ * 128 - 1;
 		}
 		Static89.anInt2094++;
 		Static89.sinEyePitch = Static71.sin[arg3];
@@ -457,22 +458,22 @@ public final class Class55 {
 			Static89.anInt2109 = 0;
 		}
 		Static89.anInt2108 = Static89.anInt2102 + 25;
-		if (Static89.anInt2108 > this.anInt2103) {
-			Static89.anInt2108 = this.anInt2103;
+		if (Static89.anInt2108 > this.maxTileX) {
+			Static89.anInt2108 = this.maxTileX;
 		}
 		Static89.anInt2117 = Static89.anInt2093 + 25;
-		if (Static89.anInt2117 > this.anInt2098) {
-			Static89.anInt2117 = this.anInt2098;
+		if (Static89.anInt2117 > this.maxTileZ) {
+			Static89.anInt2117 = this.maxTileZ;
 		}
 		this.method1455();
 		Static89.anInt2097 = 0;
 		@Pc(136) int local136;
 		@Pc(139) int local139;
 		for (@Pc(128) int local128 = this.anInt2105; local128 < this.maxLevel; local128++) {
-			@Pc(134) Class2_Sub11[][] local134 = this.levelTiles[local128];
+			@Pc(134) Tile[][] local134 = this.levelTiles[local128];
 			for (local136 = Static89.anInt2115; local136 < Static89.anInt2108; local136++) {
 				for (local139 = Static89.anInt2109; local139 < Static89.anInt2117; local139++) {
-					@Pc(146) Class2_Sub11 local146 = local134[local136][local139];
+					@Pc(146) Tile local146 = local134[local136][local139];
 					if (local146 != null) {
 						if (local146.anInt1708 <= arg5 && (Static89.aBooleanArrayArray1[local136 + 25 - Static89.anInt2102][local139 + 25 - Static89.anInt2093] || this.levelHeightMaps[local128][local136][local139] - arg1 >= 2000)) {
 							local146.aBoolean135 = true;
@@ -498,7 +499,7 @@ public final class Class55 {
 		@Pc(258) int local258;
 		@Pc(237) int local237;
 		for (@Pc(224) int local224 = this.anInt2105; local224 < this.maxLevel; local224++) {
-			@Pc(230) Class2_Sub11[][] local230 = this.levelTiles[local224];
+			@Pc(230) Tile[][] local230 = this.levelTiles[local224];
 			for (local139 = -25; local139 <= 0; local139++) {
 				local237 = Static89.anInt2102 + local139;
 				local241 = Static89.anInt2102 - local139;
@@ -506,7 +507,7 @@ public final class Class55 {
 					for (local249 = -25; local249 <= 0; local249++) {
 						local254 = Static89.anInt2093 + local249;
 						local258 = Static89.anInt2093 - local249;
-						@Pc(270) Class2_Sub11 local270;
+						@Pc(270) Tile local270;
 						if (local237 >= Static89.anInt2115) {
 							if (local254 >= Static89.anInt2109) {
 								local270 = local230[local237][local254];
@@ -544,7 +545,7 @@ public final class Class55 {
 			}
 		}
 		for (local136 = this.anInt2105; local136 < this.maxLevel; local136++) {
-			@Pc(361) Class2_Sub11[][] local361 = this.levelTiles[local136];
+			@Pc(361) Tile[][] local361 = this.levelTiles[local136];
 			for (local237 = -25; local237 <= 0; local237++) {
 				local241 = Static89.anInt2102 + local237;
 				local249 = Static89.anInt2102 - local237;
@@ -552,7 +553,7 @@ public final class Class55 {
 					for (local254 = -25; local254 <= 0; local254++) {
 						local258 = Static89.anInt2093 + local254;
 						@Pc(389) int local389 = Static89.anInt2093 - local254;
-						@Pc(401) Class2_Sub11 local401;
+						@Pc(401) Tile local401;
 						if (local241 >= Static89.anInt2115) {
 							if (local258 >= Static89.anInt2109) {
 								local401 = local361[local241][local258];
@@ -594,7 +595,7 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "([IIIIII)V")
 	public void method1432(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg2][arg3][arg4];
+		@Pc(8) Tile local8 = this.levelTiles[arg2][arg3][arg4];
 		if (local8 == null) {
 			return;
 		}
@@ -655,9 +656,9 @@ public final class Class55 {
 	@OriginalMember(owner = "client!sd", name = "j", descriptor = "(III)V")
 	public void method1434() {
 		for (@Pc(1) int local1 = 0; local1 < this.maxLevel; local1++) {
-			for (@Pc(4) int local4 = 0; local4 < this.anInt2103; local4++) {
-				for (@Pc(7) int local7 = 0; local7 < this.anInt2098; local7++) {
-					@Pc(17) Class2_Sub11 local17 = this.levelTiles[local1][local4][local7];
+			for (@Pc(4) int local4 = 0; local4 < this.maxTileX; local4++) {
+				for (@Pc(7) int local7 = 0; local7 < this.maxTileZ; local7++) {
+					@Pc(17) Tile local17 = this.levelTiles[local1][local4][local7];
 					if (local17 != null) {
 						@Pc(22) Class60 local22 = local17.aClass60_1;
 						if (local22 != null && local22.aClass2_Sub2_Sub12_7 instanceof Model) {
@@ -771,7 +772,7 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "l", descriptor = "(III)Lclient!n;")
 	public Class37 method1436(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		if (local8 == null) {
 			return null;
 		}
@@ -786,7 +787,7 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "m", descriptor = "(III)V")
 	public void method1437(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		if (local8 != null) {
 			local8.aClass51_1 = null;
 		}
@@ -800,7 +801,7 @@ public final class Class55 {
 			local12 = new Class50(arg10, arg11, arg12, arg13, -1, arg18, false);
 			for (local14 = arg0; local14 >= 0; local14--) {
 				if (this.levelTiles[local14][arg1][arg2] == null) {
-					this.levelTiles[local14][arg1][arg2] = new Class2_Sub11(local14, arg1, arg2);
+					this.levelTiles[local14][arg1][arg2] = new Tile(local14, arg1, arg2);
 				}
 			}
 			this.levelTiles[arg0][arg1][arg2].aClass50_1 = local12;
@@ -808,7 +809,7 @@ public final class Class55 {
 			local12 = new Class50(arg14, arg15, arg16, arg17, arg5, arg19, arg6 == arg7 && arg6 == arg8 && arg6 == arg9);
 			for (local14 = arg0; local14 >= 0; local14--) {
 				if (this.levelTiles[local14][arg1][arg2] == null) {
-					this.levelTiles[local14][arg1][arg2] = new Class2_Sub11(local14, arg1, arg2);
+					this.levelTiles[local14][arg1][arg2] = new Tile(local14, arg1, arg2);
 				}
 			}
 			this.levelTiles[arg0][arg1][arg2].aClass50_1 = local12;
@@ -816,7 +817,7 @@ public final class Class55 {
 			@Pc(140) Class39 local140 = new Class39(arg3, arg4, arg5, arg1, arg2, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
 			for (local14 = arg0; local14 >= 0; local14--) {
 				if (this.levelTiles[local14][arg1][arg2] == null) {
-					this.levelTiles[local14][arg1][arg2] = new Class2_Sub11(local14, arg1, arg2);
+					this.levelTiles[local14][arg1][arg2] = new Tile(local14, arg1, arg2);
 				}
 			}
 			this.levelTiles[arg0][arg1][arg2].aClass39_1 = local140;
@@ -825,7 +826,7 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "n", descriptor = "(III)V")
 	public void method1439(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		if (local8 != null) {
 			local8.aClass60_1 = null;
 		}
@@ -848,7 +849,7 @@ public final class Class55 {
 		local8.anInt2364 = arg7;
 		for (@Pc(45) int local45 = arg0; local45 >= 0; local45--) {
 			if (this.levelTiles[local45][arg1][arg2] == null) {
-				this.levelTiles[local45][arg1][arg2] = new Class2_Sub11(local45, arg1, arg2);
+				this.levelTiles[local45][arg1][arg2] = new Tile(local45, arg1, arg2);
 			}
 		}
 		this.levelTiles[arg0][arg1][arg2].aClass60_1 = local8;
@@ -856,7 +857,7 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "o", descriptor = "(III)Lclient!ac;")
 	public Class4 method1441(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		return local8 == null || local8.aClass4_1 == null ? null : local8.aClass4_1;
 	}
 
@@ -870,10 +871,10 @@ public final class Class55 {
 		for (@Pc(17) int local17 = arg1; local17 <= arg1 + 1; local17++) {
 			if (local17 != this.maxLevel) {
 				for (@Pc(24) int local24 = local3; local24 <= local7; local24++) {
-					if (local24 >= 0 && local24 < this.anInt2103) {
+					if (local24 >= 0 && local24 < this.maxTileX) {
 						for (@Pc(34) int local34 = local11; local34 <= local15; local34++) {
-							if (local34 >= 0 && local34 < this.anInt2098 && (!local1 || local24 >= local7 || local34 >= local15 || local34 < arg3 && local24 != arg2)) {
-								@Pc(66) Class2_Sub11 local66 = this.levelTiles[local17][local24][local34];
+							if (local34 >= 0 && local34 < this.maxTileZ && (!local1 || local24 >= local7 || local34 >= local15 || local34 < arg3 && local24 != arg2)) {
+								@Pc(66) Tile local66 = this.levelTiles[local17][local24][local34];
 								if (local66 != null) {
 									@Pc(160) int local160 = (this.levelHeightMaps[local17][local24][local34] + this.levelHeightMaps[local17][local24 + 1][local34] + this.levelHeightMaps[local17][local24][local34 + 1] + this.levelHeightMaps[local17][local24 + 1][local34 + 1]) / 4 - (this.levelHeightMaps[arg1][arg2][arg3] + this.levelHeightMaps[arg1][arg2 + 1][arg3] + this.levelHeightMaps[arg1][arg2][arg3 + 1] + this.levelHeightMaps[arg1][arg2 + 1][arg3 + 1]) / 4;
 									@Pc(163) Class60 local163 = local66.aClass60_1;
@@ -918,10 +919,10 @@ public final class Class55 {
 	private boolean method1443(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Class2_Sub2_Sub12 arg8, @OriginalArg(9) int arg9, @OriginalArg(10) boolean arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12) {
 		for (@Pc(1) int local1 = arg1; local1 < arg1 + arg3; local1++) {
 			for (@Pc(4) int local4 = arg2; local4 < arg2 + arg4; local4++) {
-				if (local1 < 0 || local4 < 0 || local1 >= this.anInt2103 || local4 >= this.anInt2098) {
+				if (local1 < 0 || local4 < 0 || local1 >= this.maxTileX || local4 >= this.maxTileZ) {
 					return false;
 				}
-				@Pc(28) Class2_Sub11 local28 = this.levelTiles[arg0][local1][local4];
+				@Pc(28) Tile local28 = this.levelTiles[arg0][local1][local4];
 				if (local28 != null && local28.anInt1702 >= 5) {
 					return false;
 				}
@@ -957,10 +958,10 @@ public final class Class55 {
 				}
 				for (@Pc(130) int local130 = arg0; local130 >= 0; local130--) {
 					if (this.levelTiles[local130][local98][local101] == null) {
-						this.levelTiles[local130][local98][local101] = new Class2_Sub11(local130, local98, local101);
+						this.levelTiles[local130][local98][local101] = new Tile(local130, local98, local101);
 					}
 				}
-				@Pc(166) Class2_Sub11 local166 = this.levelTiles[arg0][local98][local101];
+				@Pc(166) Tile local166 = this.levelTiles[arg0][local98][local101];
 				local166.aClass37Array1[local166.anInt1702] = local52;
 				local166.anIntArray356[local166.anInt1702] = local104;
 				local166.anInt1699 |= local104;
@@ -968,7 +969,7 @@ public final class Class55 {
 			}
 		}
 		if (arg10) {
-			this.aClass37Array2[this.anInt2107++] = local52;
+			this.temporaryLocs[this.temporaryLocCount++] = local52;
 		}
 		return true;
 	}
@@ -1135,7 +1136,7 @@ public final class Class55 {
 		local6.anInt1 = arg6;
 		for (@Pc(44) int local44 = arg0; local44 >= 0; local44--) {
 			if (this.levelTiles[local44][arg1][arg2] == null) {
-				this.levelTiles[local44][arg1][arg2] = new Class2_Sub11(local44, arg1, arg2);
+				this.levelTiles[local44][arg1][arg2] = new Tile(local44, arg1, arg2);
 			}
 		}
 		this.levelTiles[arg0][arg1][arg2].aClass1_1 = local6;
@@ -1217,7 +1218,7 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "e", descriptor = "(IIII)I")
 	public int method1449(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		if (local8 == null) {
 			return -1;
 		} else if (local8.aClass60_1 != null && local8.aClass60_1.anInt2369 == arg3) {
@@ -1246,16 +1247,16 @@ public final class Class55 {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(Lclient!nd;Z)V")
-	private void method1451(@OriginalArg(0) Class2_Sub11 arg0, @OriginalArg(1) boolean arg1) {
+	private void method1451(@OriginalArg(0) Tile arg0, @OriginalArg(1) boolean arg1) {
 		Static89.aClass44_6.pushBack(arg0);
 		while (true) {
-			@Pc(8) Class2_Sub11 local8;
+			@Pc(8) Tile local8;
 			@Pc(17) int local17;
 			@Pc(20) int local20;
 			@Pc(23) int local23;
 			@Pc(26) int local26;
-			@Pc(31) Class2_Sub11[][] local31;
-			@Pc(49) Class2_Sub11 local49;
+			@Pc(31) Tile[][] local31;
+			@Pc(49) Tile local49;
 			@Pc(251) int local251;
 			@Pc(578) int local578;
 			@Pc(583) int local583;
@@ -1276,18 +1277,18 @@ public final class Class55 {
 										@Pc(612) int var19;
 										@Pc(335) int var23;
 										@Pc(289) boolean var24;
-										@Pc(823) Class2_Sub11 var35;
+										@Pc(823) Tile var35;
 										while (true) {
 											do {
-												local8 = (Class2_Sub11) Static89.aClass44_6.pollFront();
+												local8 = (Tile) Static89.aClass44_6.pollFront();
 												if (local8 == null) {
 													return;
 												}
 											} while (!local8.aBoolean136);
 											local17 = local8.anInt1700;
 											local20 = local8.anInt1707;
-											local23 = local8.anInt1705;
-											local26 = local8.anInt1703;
+											local23 = local8.level;
+											local26 = local8.occludeLevel;
 											local31 = this.levelTiles[local23];
 											if (!local8.aBoolean135) {
 												break;
@@ -1535,7 +1536,7 @@ public final class Class55 {
 															}
 														}
 													}
-													Static89.aClass37Array3[var23++] = var12;
+													Static89.locBuffer[var23++] = var12;
 													local578 = Static89.anInt2102 - var12.anInt1656;
 													local583 = var12.anInt1647 - Static89.anInt2102;
 													if (local583 > local578) {
@@ -1555,7 +1556,7 @@ public final class Class55 {
 												local1001 = -1;
 												@Pc(1125) Class37 local1125;
 												for (local578 = 0; local578 < var23; local578++) {
-													local1125 = Static89.aClass37Array3[local578];
+													local1125 = Static89.locBuffer[local578];
 													if (local1125.anInt1648 != Static89.anInt2094) {
 														if (local1125.anInt1646 > local1116) {
 															local1116 = local1125.anInt1646;
@@ -1563,8 +1564,8 @@ public final class Class55 {
 														} else if (local1125.anInt1646 == local1116) {
 															local588 = local1125.anInt1650 - Static89.anInt2091;
 															local591 = local1125.anInt1658 - Static89.anInt2110;
-															local600 = Static89.aClass37Array3[local1001].anInt1650 - Static89.anInt2091;
-															var19 = Static89.aClass37Array3[local1001].anInt1658 - Static89.anInt2110;
+															local600 = Static89.locBuffer[local1001].anInt1650 - Static89.anInt2091;
+															var19 = Static89.locBuffer[local1001].anInt1658 - Static89.anInt2110;
 															if (local588 * local588 + local591 * local591 > local600 * local600 + var19 * var19) {
 																local1001 = local578;
 															}
@@ -1574,14 +1575,14 @@ public final class Class55 {
 												if (local1001 == -1) {
 													break;
 												}
-												local1125 = Static89.aClass37Array3[local1001];
+												local1125 = Static89.locBuffer[local1001];
 												local1125.anInt1648 = Static89.anInt2094;
 												if (!this.method1417(local26, local1125.anInt1656, local1125.anInt1647, local1125.anInt1662, local1125.anInt1665, local1125.aClass2_Sub2_Sub12_3.maxY)) {
 													local1125.aClass2_Sub2_Sub12_3.draw(local1125.anInt1666, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1125.anInt1650 - Static89.anInt2091, local1125.anInt1657 - Static89.anInt2113, local1125.anInt1658 - Static89.anInt2110, local1125.anInt1644);
 												}
 												for (local588 = local1125.anInt1656; local588 <= local1125.anInt1647; local588++) {
 													for (local591 = local1125.anInt1662; local591 <= local1125.anInt1665; local591++) {
-														@Pc(1250) Class2_Sub11 local1250 = local31[local588][local591];
+														@Pc(1250) Tile local1250 = local31[local588][local591];
 														if (local1250.anInt1698 != 0) {
 															Static89.aClass44_6.pushBack(local1250);
 														} else if ((local588 != local17 || local591 != local20) && local1250.aBoolean136) {
@@ -1676,7 +1677,7 @@ public final class Class55 {
 					}
 				}
 			}
-			@Pc(1745) Class2_Sub11 local1745;
+			@Pc(1745) Tile local1745;
 			if (local23 < this.maxLevel - 1) {
 				local1745 = this.levelTiles[local23 + 1][local17][local20];
 				if (local1745 != null && local1745.aBoolean136) {
@@ -1817,11 +1818,11 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "c", descriptor = "(II)V")
 	public void method1453(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[0][arg0][arg1];
+		@Pc(8) Tile local8 = this.levelTiles[0][arg0][arg1];
 		for (@Pc(10) int local10 = 0; local10 < 3; local10++) {
-			@Pc(31) Class2_Sub11 local31 = this.levelTiles[local10][arg0][arg1] = this.levelTiles[local10 + 1][arg0][arg1];
+			@Pc(31) Tile local31 = this.levelTiles[local10][arg0][arg1] = this.levelTiles[local10 + 1][arg0][arg1];
 			if (local31 != null) {
-				local31.anInt1705--;
+				local31.level--;
 				for (@Pc(41) int local41 = 0; local41 < local31.anInt1702; local41++) {
 					@Pc(47) Class37 local47 = local31.aClass37Array1[local41];
 					if ((local47.anInt1644 >> 29 & 0x3) == 2 && local47.anInt1656 == arg0 && local47.anInt1662 == arg1) {
@@ -1831,7 +1832,7 @@ public final class Class55 {
 			}
 		}
 		if (this.levelTiles[0][arg0][arg1] == null) {
-			this.levelTiles[0][arg0][arg1] = new Class2_Sub11(0, arg0, arg1);
+			this.levelTiles[0][arg0][arg1] = new Tile(0, arg0, arg1);
 		}
 		this.levelTiles[0][arg0][arg1].aClass2_Sub11_1 = local8;
 		this.levelTiles[3][arg0][arg1] = null;
@@ -1839,12 +1840,12 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "c", descriptor = "()V")
 	public void method1454() {
-		for (@Pc(1) int local1 = 0; local1 < this.anInt2107; local1++) {
-			@Pc(7) Class37 local7 = this.aClass37Array2[local1];
+		for (@Pc(1) int local1 = 0; local1 < this.temporaryLocCount; local1++) {
+			@Pc(7) Class37 local7 = this.temporaryLocs[local1];
 			this.method1409(local7);
-			this.aClass37Array2[local1] = null;
+			this.temporaryLocs[local1] = null;
 		}
-		this.anInt2107 = 0;
+		this.temporaryLocCount = 0;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "d", descriptor = "()V")
@@ -2035,13 +2036,13 @@ public final class Class55 {
 
 	@OriginalMember(owner = "client!sd", name = "p", descriptor = "(III)I")
 	public int method1458(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		return local8 == null || local8.aClass4_1 == null ? 0 : local8.aClass4_1.anInt48;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "q", descriptor = "(III)I")
 	public int method1459(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub11 local8 = this.levelTiles[arg0][arg1][arg2];
+		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		return local8 == null || local8.aClass60_1 == null ? 0 : local8.aClass60_1.anInt2369;
 	}
 }

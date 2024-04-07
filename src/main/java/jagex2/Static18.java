@@ -81,7 +81,7 @@ public final class Static18 {
 					if (local223 < 3 && (Static61.aByteArrayArrayArray7[1][local213][local219] & 0x2) == 2) {
 						local223++;
 					}
-					@Pc(249) int local249 = local197 - Static91.anIntArrayArrayArray8[local223][local213][local219];
+					@Pc(249) int local249 = local197 - Static91.levelHeightMap[local223][local213][local219];
 					if (local184 < local249) {
 						local184 = local249;
 					}

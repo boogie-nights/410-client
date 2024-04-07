@@ -71,9 +71,9 @@ public final class Static61 {
 		}
 		Static70.aClass25_36 = null;
 		Static48.method820();
-		Static93.scene.method1414();
+		Static93.scene.reset();
 		for (@Pc(22) int local22 = 0; local22 < 4; local22++) {
-			Static79.aClass20Array3[local22].reset();
+			Static79.levelCollisionMap[local22].reset();
 		}
 		System.gc();
 		Static94.method1490();

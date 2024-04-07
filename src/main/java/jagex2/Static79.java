@@ -24,7 +24,7 @@ public final class Static79 {
 	public static int[] anIntArray415 = new int[5];
 
 	@OriginalMember(owner = "client!pd", name = "e", descriptor = "[Lclient!fb;")
-	public static CollisionMap[] aClass20Array3 = new CollisionMap[4];
+	public static CollisionMap[] levelCollisionMap = new CollisionMap[4];
 
 	@OriginalMember(owner = "client!pd", name = "f", descriptor = "I")
 	public static int anInt1868 = 0;
@@ -231,7 +231,7 @@ public final class Static79 {
 		anImage4 = null;
 		aClass40_544 = null;
 		aByteArrayArray9 = null;
-		aClass20Array3 = null;
+		levelCollisionMap = null;
 		aClass40_545 = null;
 		aClass40_543 = null;
 		anIntArray415 = null;

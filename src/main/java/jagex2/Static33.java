@@ -69,25 +69,25 @@ public final class Static33 {
 		@Pc(7) int local7;
 		for (@Pc(3) int local3 = 0; local3 < 8; local3++) {
 			for (local7 = 0; local7 < 8; local7++) {
-				Static91.anIntArrayArrayArray8[arg1][arg0 + local3][arg2 + local7] = 0;
+				Static91.levelHeightMap[arg1][arg0 + local3][arg2 + local7] = 0;
 			}
 		}
 		if (arg0 > 0) {
 			for (local7 = 1; local7 < 8; local7++) {
-				Static91.anIntArrayArrayArray8[arg1][arg0][local7 + arg2] = Static91.anIntArrayArrayArray8[arg1][arg0 - 1][arg2 + local7];
+				Static91.levelHeightMap[arg1][arg0][local7 + arg2] = Static91.levelHeightMap[arg1][arg0 - 1][arg2 + local7];
 			}
 		}
 		if (arg2 > 0) {
 			for (local7 = 1; local7 < 8; local7++) {
-				Static91.anIntArrayArrayArray8[arg1][local7 + arg0][arg2] = Static91.anIntArrayArrayArray8[arg1][arg0 + local7][arg2 - 1];
+				Static91.levelHeightMap[arg1][local7 + arg0][arg2] = Static91.levelHeightMap[arg1][arg0 + local7][arg2 - 1];
 			}
 		}
-		if (arg0 > 0 && Static91.anIntArrayArrayArray8[arg1][arg0 - 1][arg2] != 0) {
-			Static91.anIntArrayArrayArray8[arg1][arg0][arg2] = Static91.anIntArrayArrayArray8[arg1][arg0 - 1][arg2];
-		} else if (arg2 > 0 && Static91.anIntArrayArrayArray8[arg1][arg0][arg2 - 1] != 0) {
-			Static91.anIntArrayArrayArray8[arg1][arg0][arg2] = Static91.anIntArrayArrayArray8[arg1][arg0][arg2 - 1];
-		} else if (arg0 > 0 && arg2 > 0 && Static91.anIntArrayArrayArray8[arg1][arg0 - 1][arg2 - 1] != 0) {
-			Static91.anIntArrayArrayArray8[arg1][arg0][arg2] = Static91.anIntArrayArrayArray8[arg1][arg0 - 1][arg2 - 1];
+		if (arg0 > 0 && Static91.levelHeightMap[arg1][arg0 - 1][arg2] != 0) {
+			Static91.levelHeightMap[arg1][arg0][arg2] = Static91.levelHeightMap[arg1][arg0 - 1][arg2];
+		} else if (arg2 > 0 && Static91.levelHeightMap[arg1][arg0][arg2 - 1] != 0) {
+			Static91.levelHeightMap[arg1][arg0][arg2] = Static91.levelHeightMap[arg1][arg0][arg2 - 1];
+		} else if (arg0 > 0 && arg2 > 0 && Static91.levelHeightMap[arg1][arg0 - 1][arg2 - 1] != 0) {
+			Static91.levelHeightMap[arg1][arg0][arg2] = Static91.levelHeightMap[arg1][arg0 - 1][arg2 - 1];
 		}
 	}
 

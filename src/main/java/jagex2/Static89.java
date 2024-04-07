@@ -109,7 +109,7 @@ public final class Static89 {
 	public static int[] WALL_DECORATION_INSET_Z = new int[] { -53, -53, 53, 53 };
 
 	@OriginalMember(owner = "client!sd", name = "y", descriptor = "[Lclient!n;")
-	public static Class37[] aClass37Array3 = new Class37[100];
+	public static Class37[] locBuffer = new Class37[100];
 
 	@OriginalMember(owner = "client!sd", name = "I", descriptor = "I")
 	public static final int LEVEL_COUNT = 4;
@@ -248,7 +248,7 @@ public final class Static89 {
 
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "()V")
 	public static void method1431() {
-		aClass37Array3 = null;
+		locBuffer = null;
 		WALL_DECORATION_INSET_X = null;
 		WALL_DECORATION_INSET_Z = null;
 		WALL_DECORATION_OUTSET_X = null;

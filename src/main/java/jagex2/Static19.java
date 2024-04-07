@@ -89,7 +89,7 @@ public final class Static19 {
 						@Pc(249) int local249 = local150;
 						@Pc(251) int local251 = local221;
 						if (local242 != 22 && local242 != 29 && local242 != 34 && local242 != 36 && local242 != 46 && local242 != 47 && local242 != 48) {
-							@Pc(287) int[][] local287 = Static79.aClass20Array3[Static1.currentLevel].flags;
+							@Pc(287) int[][] local287 = Static79.levelCollisionMap[Static1.currentLevel].flags;
 							for (@Pc(289) int local289 = 0; local289 < 10; local289++) {
 								@Pc(296) int local296 = (int) (Math.random() * 4.0D);
 								if (local296 == 0 && local249 > 0 && local249 > local150 - 3 && (local287[local249 - 1][local251] & 0x1280108) == 0) {

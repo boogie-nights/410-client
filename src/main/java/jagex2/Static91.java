@@ -20,7 +20,7 @@ public final class Static91 {
 	public static byte[][] aByteArrayArray10;
 
 	@OriginalMember(owner = "client!ta", name = "c", descriptor = "[[[I")
-	public static int[][][] anIntArrayArrayArray8 = new int[4][105][105];
+	public static int[][][] levelHeightMap = new int[4][105][105];
 
 	@OriginalMember(owner = "client!ta", name = "d", descriptor = "I")
 	public static int anInt2139 = 0;
@@ -40,7 +40,7 @@ public final class Static91 {
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(I)V")
 	public static void method1466() {
 		aByteArrayArray10 = null;
-		anIntArrayArrayArray8 = null;
+		levelHeightMap = null;
 		aClass40_612 = null;
 		levelObjStacks = null;
 	}

@@ -85,8 +85,8 @@ public final class Static86 {
 		}
 		@Pc(50) int local50 = arg1 & 0x7F;
 		@Pc(54) int local54 = arg2 & 0x7F;
-		@Pc(81) int local81 = (128 - local50) * Static91.anIntArrayArrayArray8[local29][local11][local7] + Static91.anIntArrayArrayArray8[local29][local11 + 1][local7] * local50 >> 7;
-		@Pc(113) int local113 = Static91.anIntArrayArrayArray8[local29][local11][local7 + 1] * (128 - local50) + local50 * Static91.anIntArrayArrayArray8[local29][local11 + 1][local7 + 1] >> 7;
+		@Pc(81) int local81 = (128 - local50) * Static91.levelHeightMap[local29][local11][local7] + Static91.levelHeightMap[local29][local11 + 1][local7] * local50 >> 7;
+		@Pc(113) int local113 = Static91.levelHeightMap[local29][local11][local7 + 1] * (128 - local50) + local50 * Static91.levelHeightMap[local29][local11 + 1][local7 + 1] >> 7;
 		return local54 * local113 + local81 * (128 - local54) >> 7;
 	}
 

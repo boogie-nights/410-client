@@ -5,6 +5,7 @@ import java.awt.Font;
 import jagex2.config.ComType;
 import jagex2.config.ObjType;
 import jagex2.dash3d.CollisionMap;
+import jagex2.dash3d.World3D;
 import jagex2.graphics.*;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -86,7 +87,7 @@ public final class Static21 {
 	}
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(IIII[Lclient!fb;BIILclient!sd;I[B)V")
-	public static void method400(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) CollisionMap[] arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class55 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) byte[] arg9) {
+	public static void method400(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) CollisionMap[] arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) World3D arg7, @OriginalArg(9) int arg8, @OriginalArg(10) byte[] arg9) {
 		@Pc(10) Packet local10 = new Packet(arg9);
 		@Pc(17) int local17 = -1;
 		while (true) {
