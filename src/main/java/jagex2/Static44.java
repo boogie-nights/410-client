@@ -2,7 +2,7 @@ package jagex2;
 
 import java.io.IOException;
 
-import jagex2.graphics.FrameBuffer;
+import jagex2.graphics.PixMap;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -11,7 +11,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static44 {
 
 	@OriginalMember(owner = "client!ic", name = "U", descriptor = "Lclient!p;")
-	public static FrameBuffer aClass45_21;
+	public static PixMap aClass45_21;
 
 	@OriginalMember(owner = "client!ic", name = "V", descriptor = "Lclient!rd;")
 	public static Class52 aClass52_1;

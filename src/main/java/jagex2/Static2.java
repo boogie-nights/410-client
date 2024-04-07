@@ -5,7 +5,7 @@ import java.io.IOException;
 import jagex2.config.ComType;
 import jagex2.config.ObjType;
 import jagex2.datastruct.LruCache;
-import jagex2.graphics.FrameBuffer;
+import jagex2.graphics.PixMap;
 import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -14,13 +14,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static2 {
 
 	@OriginalMember(owner = "client!ab", name = "j", descriptor = "Lclient!p;")
-	public static FrameBuffer aClass45_2;
+	public static PixMap aClass45_2;
 
 	@OriginalMember(owner = "client!ab", name = "k", descriptor = "Lclient!qb;")
 	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_1;
 
 	@OriginalMember(owner = "client!ab", name = "n", descriptor = "Lclient!p;")
-	public static FrameBuffer aClass45_3;
+	public static PixMap aClass45_3;
 
 	@OriginalMember(owner = "client!ab", name = "r", descriptor = "[I")
 	public static int[] anIntArray3;

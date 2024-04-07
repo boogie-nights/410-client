@@ -14,7 +14,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!tb")
-public final class ImageProducerFrameBuffer extends FrameBuffer implements ImageProducer, ImageObserver {
+public final class OldPixMap extends PixMap implements ImageProducer, ImageObserver {
 
 	@OriginalMember(owner = "client!tb", name = "B", descriptor = "Ljava/awt/image/ColorModel;")
 	private ColorModel colorModel;

@@ -3,7 +3,7 @@ package jagex2;
 import jagex2.config.ObjType;
 import jagex2.datastruct.LinkedList;
 import jagex2.datastruct.LruCache;
-import jagex2.graphics.FrameBuffer;
+import jagex2.graphics.PixMap;
 import jagex2.graphics.Static71;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -18,7 +18,7 @@ public final class Static20 {
 	public static int[] anIntArray92;
 
 	@OriginalMember(owner = "client!e", name = "U", descriptor = "Lclient!p;")
-	public static FrameBuffer aClass45_10;
+	public static PixMap aClass45_10;
 
 	@OriginalMember(owner = "client!e", name = "u", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_5 = new LruCache(64);

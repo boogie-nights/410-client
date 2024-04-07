@@ -3,7 +3,7 @@ package jagex2;
 import java.awt.FontMetrics;
 
 import jagex2.datastruct.LruCache;
-import jagex2.graphics.FrameBuffer;
+import jagex2.graphics.PixMap;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
@@ -13,7 +13,7 @@ public final class Static25 {
 	public static Class5_Sub1 aClass5_Sub1_4;
 
 	@OriginalMember(owner = "client!f", name = "hb", descriptor = "Lclient!p;")
-	public static FrameBuffer aClass45_12;
+	public static PixMap aClass45_12;
 
 	@OriginalMember(owner = "client!f", name = "kb", descriptor = "[I")
 	public static int[] anIntArray126;

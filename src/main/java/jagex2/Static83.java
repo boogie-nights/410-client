@@ -8,8 +8,8 @@ import jagex2.dash3d.CollisionMap;
 import jagex2.dash3d.World3D;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Renderable;
-import jagex2.graphics.FrameBuffer;
-import jagex2.graphics.ImageProducerFrameBuffer;
+import jagex2.graphics.PixMap;
+import jagex2.graphics.OldPixMap;
 import jagex2.graphics.Model;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -392,8 +392,8 @@ public final class Static83 {
 	}
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(ILjava/awt/Component;II)Lclient!p;")
-	public static FrameBuffer method1351(@OriginalArg(0) int arg0, @OriginalArg(1) Component arg1, @OriginalArg(3) int arg2) {
-		@Pc(7) ImageProducerFrameBuffer local7 = new ImageProducerFrameBuffer();
+	public static PixMap method1351(@OriginalArg(0) int arg0, @OriginalArg(1) Component arg1, @OriginalArg(3) int arg2) {
+		@Pc(7) OldPixMap local7 = new OldPixMap();
 		local7.method1473(arg1, arg0, arg2);
 		return local7;
 	}

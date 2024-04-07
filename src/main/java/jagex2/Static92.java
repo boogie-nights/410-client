@@ -5,7 +5,7 @@ import java.io.IOException;
 import jagex2.config.ComType;
 import jagex2.datastruct.LinkedList;
 import jagex2.datastruct.LruCache;
-import jagex2.graphics.FrameBuffer;
+import jagex2.graphics.PixMap;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -25,7 +25,7 @@ public final class Static92 {
 	public static boolean[] aBooleanArray31;
 
 	@OriginalMember(owner = "client!tb", name = "Z", descriptor = "Lclient!p;")
-	public static FrameBuffer aClass45_29;
+	public static PixMap aClass45_29;
 
 	@OriginalMember(owner = "client!tb", name = "x", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_21 = new LruCache(500);

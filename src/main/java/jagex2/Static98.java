@@ -1,6 +1,6 @@
 package jagex2;
 
-import jagex2.graphics.FrameBuffer;
+import jagex2.graphics.PixMap;
 import jagex2.graphics.Model;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -13,7 +13,7 @@ public final class Static98 {
 	public static int anInt2370;
 
 	@OriginalMember(owner = "client!uc", name = "x", descriptor = "Lclient!p;")
-	public static FrameBuffer aClass45_30;
+	public static PixMap aClass45_30;
 
 	@OriginalMember(owner = "client!uc", name = "b", descriptor = "Lclient!o;")
 	public static Class40 aClass40_674 = Static13.method257("Loading )2 please wait)3");
