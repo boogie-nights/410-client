@@ -36,7 +36,7 @@ public final class Static4 {
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(ILjava/awt/Graphics;)V")
 	public static void method83(@OriginalArg(1) Graphics arg0) {
-		Static61.aClass45_23.draw(arg0, 17, 357);
+		Static61.areaMapBack.draw(arg0, 17, 357);
 	}
 
 	@OriginalMember(owner = "client!ad", name = "c", descriptor = "(III)I")

@@ -296,7 +296,7 @@ public final class Static73 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(ILjava/awt/Graphics;)V")
 	public static void method1207(@OriginalArg(1) Graphics arg0) {
-		Static7.aClass45_5.draw(arg0, 553, 205);
+		Static7.areaSidebar.draw(arg0, 553, 205);
 	}
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(ZII[B)V")

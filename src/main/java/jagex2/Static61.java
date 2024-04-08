@@ -15,7 +15,7 @@ public final class Static61 {
 	public static Class48 aClass48_6;
 
 	@OriginalMember(owner = "client!ma", name = "n", descriptor = "Lclient!p;")
-	public static PixMap aClass45_23;
+	public static PixMap areaMapBack;
 
 	@OriginalMember(owner = "client!ma", name = "w", descriptor = "Lclient!p;")
 	public static PixMap pixMap;
@@ -161,7 +161,7 @@ public final class Static61 {
 		reportAbuseInput = null;
 		aClass47_14 = null;
 		aClass40_450 = null;
-		aClass45_23 = null;
+		areaMapBack = null;
 		aClass48_6 = null;
 		pixMap = null;
 		aClass40_453 = null;

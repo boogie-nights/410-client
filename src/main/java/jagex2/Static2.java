@@ -14,7 +14,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static2 {
 
 	@OriginalMember(owner = "client!ab", name = "j", descriptor = "Lclient!p;")
-	public static PixMap aClass45_2;
+	public static PixMap areaViewport;
 
 	@OriginalMember(owner = "client!ab", name = "k", descriptor = "Lclient!qb;")
 	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_1;
@@ -81,19 +81,19 @@ public final class Static2 {
 		Static17.imageMapBack = null;
 		Static68.aClass45_8 = null;
 		Static32.aClass2_Sub2_Sub2_Sub3_7 = null;
-		Static61.aClass45_23 = null;
+		Static61.areaMapBack = null;
 		Static4.aClass45_4 = null;
 		Static53.aClass2_Sub2_Sub2_Sub3_13 = null;
 		Static104.anIntArray548 = null;
 		Static51.aClass2_Sub2_Sub2_Sub3_11 = null;
 		Static84.anIntArray431 = null;
 		Static83.aClass2_Sub2_Sub2_Sub3_20 = null;
-		Static7.aClass45_5 = null;
+		Static7.areaSidebar = null;
 		Static3.anIntArray4 = null;
 		Static19.aClass45_9 = null;
 		Static20.aClass45_10 = null;
 		Static45.compassMaskLineLengths = null;
-		aClass45_2 = null;
+		areaViewport = null;
 		Static29.aClass45_13 = null;
 	}
 
@@ -133,7 +133,7 @@ public final class Static2 {
 		aClass45_3 = null;
 		aClass47_1 = null;
 		aClass40_14 = null;
-		aClass45_2 = null;
+		areaViewport = null;
 		aClass40_13 = null;
 		aClass2_Sub2_Sub12_Sub1_Sub2Array1 = null;
 		anIntArray2 = null;

@@ -130,7 +130,7 @@ public final class Static59 {
 	}
 
 	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(Lclient!ud;ILjava/awt/Component;)V")
-	public static void method997(@OriginalArg(0) Class5 arg0, @OriginalArg(2) Component arg1) {
+	public static void method997(@OriginalArg(0) Class5 arg0, @OriginalArg(2) Component comp) {
 		if (Static79.aBoolean152) {
 			return;
 		}
@@ -140,44 +140,44 @@ public final class Static59 {
 		Static51.aClass2_Sub2_Sub2_Sub3_11 = Static99.method77(arg0, Static16.aClass40_110, Static22.aClass40_734);
 		Static15.aClass2_Sub2_Sub2_Sub3_18 = Static99.method77(arg0, Static16.aClass40_110, Static10.aClass40_64);
 		Static102.aClass2_Sub2_Sub2_Sub3_23 = Static99.method77(arg0, Static16.aClass40_110, Static30.aClass40_220);
-		Static61.aClass45_23 = Static83.create(arg1, 479, 96);
+		Static61.areaMapBack = Static83.create(comp, 479, 96);
 		Static53.aClass2_Sub2_Sub2_Sub3_13.method1320(0, 0);
-		Static12.aClass45_6 = Static83.create(arg1, 172, 156);
+		Static12.aClass45_6 = Static83.create(comp, 172, 156);
 		Static26.clear();
 		Static17.imageMapBack.method1320(0, 0);
-		Static7.aClass45_5 = Static83.create(arg1, 190, 261);
+		Static7.areaSidebar = Static83.create(comp, 190, 261);
 		Static15.aClass2_Sub2_Sub2_Sub3_19.method1320(0, 0);
-		Static2.aClass45_2 = Static83.create(arg1, 512, 334);
+		Static2.areaViewport = Static83.create(comp, 512, 334);
 		Static26.clear();
-		Static4.aClass45_4 = Static83.create(arg1, 496, 50);
-		Static68.aClass45_8 = Static83.create(arg1, 269, 37);
-		Static25.aClass45_12 = Static83.create(arg1, 249, 45);
+		Static4.aClass45_4 = Static83.create(comp, 496, 50);
+		Static68.aClass45_8 = Static83.create(comp, 269, 37);
+		Static25.aClass45_12 = Static83.create(comp, 249, 45);
 		@Pc(110) Class2_Sub2_Sub2_Sub4 local110 = Static103.method1644(Static105.aClass40_725, Static16.aClass40_110, arg0);
-		Static41.aClass45_20 = Static83.create(arg1, local110.anInt2446, local110.anInt2442);
+		Static41.aClass45_20 = Static83.create(comp, local110.anInt2446, local110.anInt2442);
 		local110.method1619(0, 0);
 		@Pc(128) Class2_Sub2_Sub2_Sub4 local128 = Static103.method1644(Static107.aClass40_718, Static16.aClass40_110, arg0);
-		Static30.aClass45_15 = Static83.create(arg1, local128.anInt2446, local128.anInt2442);
+		Static30.aClass45_15 = Static83.create(comp, local128.anInt2446, local128.anInt2442);
 		local128.method1619(0, 0);
 		@Pc(148) Class2_Sub2_Sub2_Sub4 local148 = Static103.method1644(Static46.aClass40_707, Static16.aClass40_110, arg0);
-		Static80.aClass45_28 = Static83.create(arg1, local148.anInt2446, local148.anInt2442);
+		Static80.aClass45_28 = Static83.create(comp, local148.anInt2446, local148.anInt2442);
 		local148.method1619(0, 0);
 		@Pc(166) Class2_Sub2_Sub2_Sub4 local166 = Static103.method1644(Static4.aClass40_29, Static16.aClass40_110, arg0);
-		Static29.aClass45_13 = Static83.create(arg1, local166.anInt2446, local166.anInt2442);
+		Static29.aClass45_13 = Static83.create(comp, local166.anInt2446, local166.anInt2442);
 		local166.method1619(0, 0);
 		@Pc(184) Class2_Sub2_Sub2_Sub4 local184 = Static103.method1644(Static42.aClass40_319, Static16.aClass40_110, arg0);
-		Static92.aClass45_29 = Static83.create(arg1, local184.anInt2446, local184.anInt2442);
+		Static92.aClass45_29 = Static83.create(comp, local184.anInt2446, local184.anInt2442);
 		local184.method1619(0, 0);
 		@Pc(204) Class2_Sub2_Sub2_Sub4 local204 = Static103.method1644(Static94.aClass40_632, Static16.aClass40_110, arg0);
-		Static20.aClass45_10 = Static83.create(arg1, local204.anInt2446, local204.anInt2442);
+		Static20.aClass45_10 = Static83.create(comp, local204.anInt2446, local204.anInt2442);
 		local204.method1619(0, 0);
 		@Pc(222) Class2_Sub2_Sub2_Sub4 local222 = Static103.method1644(Static67.aClass40_487, Static16.aClass40_110, arg0);
-		Static1.aClass45_1 = Static83.create(arg1, local222.anInt2446, local222.anInt2442);
+		Static1.aClass45_1 = Static83.create(comp, local222.anInt2446, local222.anInt2442);
 		local222.method1619(0, 0);
 		@Pc(240) Class2_Sub2_Sub2_Sub4 local240 = Static103.method1644(Static37.aClass40_288, Static16.aClass40_110, arg0);
-		Static44.aClass45_21 = Static83.create(arg1, local240.anInt2446, local240.anInt2442);
+		Static44.aClass45_21 = Static83.create(comp, local240.anInt2446, local240.anInt2442);
 		local240.method1619(0, 0);
 		@Pc(258) Class2_Sub2_Sub2_Sub4 local258 = Static103.method1644(Static36.aClass40_256, Static16.aClass40_110, arg0);
-		Static19.aClass45_9 = Static83.create(arg1, local258.anInt2446, local258.anInt2442);
+		Static19.aClass45_9 = Static83.create(comp, local258.anInt2446, local258.anInt2442);
 		local258.method1619(0, 0);
 		Static2.aClass2_Sub2_Sub2_Sub3_1 = Static99.method77(arg0, Static16.aClass40_110, Static1.aClass40_3);
 		Static15.aClass2_Sub2_Sub2_Sub3_17 = Static99.method77(arg0, Static16.aClass40_110, Static107.aClass40_720);

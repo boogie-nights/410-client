@@ -70,7 +70,7 @@ public final class Static93 {
 
 	@OriginalMember(owner = "client!tc", name = "b", descriptor = "(I)V")
 	public static void method1486() {
-		Static61.aClass45_23.bind();
+		Static61.areaMapBack.bind();
 		Static53.aClass2_Sub2_Sub2_Sub3_13.method1320(0, 0);
 		Static84.anIntArray431 = Static6.method175(Static84.anIntArray431);
 	}

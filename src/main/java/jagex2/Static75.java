@@ -68,7 +68,7 @@ public final class Static75 {
 
 	@OriginalMember(owner = "client!od", name = "f", descriptor = "(I)V")
 	public static void method1230() {
-		Static2.aClass45_2.bind();
+		Static2.areaViewport.bind();
 		Static104.anIntArray548 = Static6.method175(Static104.anIntArray548);
 	}
 }

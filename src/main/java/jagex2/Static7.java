@@ -12,7 +12,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static7 {
 
 	@OriginalMember(owner = "client!ba", name = "d", descriptor = "Lclient!p;")
-	public static PixMap aClass45_5;
+	public static PixMap areaSidebar;
 
 	@OriginalMember(owner = "client!ba", name = "b", descriptor = "I")
 	public static int anInt231 = 0;
@@ -194,7 +194,7 @@ public final class Static7 {
 		aByteArray1 = null;
 		aClass40_60 = null;
 		aClass40_61 = null;
-		aClass45_5 = null;
+		areaSidebar = null;
 	}
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(ILclient!eb;)Lclient!o;")

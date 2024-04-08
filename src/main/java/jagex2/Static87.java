@@ -31,7 +31,7 @@ public final class Static87 {
 
 	@OriginalMember(owner = "client!sb", name = "c", descriptor = "(B)V")
 	private static void method1396() {
-		Static7.aClass45_5.bind();
+		Static7.areaSidebar.bind();
 		Static15.aClass2_Sub2_Sub2_Sub3_19.method1320(0, 0);
 		Static3.anIntArray4 = Static6.method175(Static3.anIntArray4);
 	}
