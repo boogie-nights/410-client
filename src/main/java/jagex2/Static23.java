@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.dash3d.entity.NpcEntity;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
@@ -64,11 +65,11 @@ public final class Static23 {
 
 	@OriginalMember(owner = "client!ec", name = "e", descriptor = "(B)V")
 	public static void method477() {
-		Static56.aClass2_Sub3_Sub1_5.method1737();
-		@Pc(13) int local13 = Static56.aClass2_Sub3_Sub1_5.method1743(8);
+		Static56.in.accessBits();
+		@Pc(13) int local13 = Static56.in.gBit(8);
 		if (Static73.anInt1800 > local13) {
 			for (@Pc(18) int local18 = local13; local18 < Static73.anInt1800; local18++) {
-				Static52.anIntArray258[Static13.anInt304++] = Static63.anIntArray326[local18];
+				Static52.entityRemovalIds[Static13.entityRemovalCount++] = Static63.anIntArray326[local18];
 			}
 		}
 		if (Static73.anInt1800 < local13) {
@@ -77,42 +78,42 @@ public final class Static23 {
 		Static73.anInt1800 = 0;
 		for (@Pc(62) int local62 = 0; local62 < local13; local62++) {
 			@Pc(68) int local68 = Static63.anIntArray326[local62];
-			@Pc(72) Class2_Sub2_Sub12_Sub1_Sub2 local72 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local68];
-			@Pc(77) int local77 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
+			@Pc(72) NpcEntity local72 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local68];
+			@Pc(77) int local77 = Static56.in.gBit(1);
 			if (local77 == 0) {
 				Static63.anIntArray326[Static73.anInt1800++] = local68;
-				local72.anInt2274 = Static107.loopCycle;
+				local72.cycle = Static107.loopCycle;
 			} else {
-				@Pc(97) int local97 = Static56.aClass2_Sub3_Sub1_5.method1743(2);
+				@Pc(97) int local97 = Static56.in.gBit(2);
 				if (local97 == 0) {
 					Static63.anIntArray326[Static73.anInt1800++] = local68;
-					local72.anInt2274 = Static107.loopCycle;
-					Static98.anIntArray504[Static53.anInt1190++] = local68;
+					local72.cycle = Static107.loopCycle;
+					Static98.entityUpdateIds[Static53.entityUpdateCount++] = local68;
 				} else {
 					@Pc(139) int local139;
 					@Pc(149) int local149;
 					if (local97 == 1) {
 						Static63.anIntArray326[Static73.anInt1800++] = local68;
-						local72.anInt2274 = Static107.loopCycle;
-						local139 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
-						local72.method1547(local139, false);
-						local149 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
+						local72.cycle = Static107.loopCycle;
+						local139 = Static56.in.gBit(3);
+						local72.step(local139, false);
+						local149 = Static56.in.gBit(1);
 						if (local149 == 1) {
-							Static98.anIntArray504[Static53.anInt1190++] = local68;
+							Static98.entityUpdateIds[Static53.entityUpdateCount++] = local68;
 						}
 					} else if (local97 == 2) {
 						Static63.anIntArray326[Static73.anInt1800++] = local68;
-						local72.anInt2274 = Static107.loopCycle;
-						local139 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
-						local72.method1547(local139, true);
-						local149 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
-						local72.method1547(local149, true);
-						@Pc(203) int local203 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
+						local72.cycle = Static107.loopCycle;
+						local139 = Static56.in.gBit(3);
+						local72.step(local139, true);
+						local149 = Static56.in.gBit(3);
+						local72.step(local149, true);
+						@Pc(203) int local203 = Static56.in.gBit(1);
 						if (local203 == 1) {
-							Static98.anIntArray504[Static53.anInt1190++] = local68;
+							Static98.entityUpdateIds[Static53.entityUpdateCount++] = local68;
 						}
 					} else if (local97 == 3) {
-						Static52.anIntArray258[Static13.anInt304++] = local68;
+						Static52.entityRemovalIds[Static13.entityRemovalCount++] = local68;
 					}
 				}
 			}

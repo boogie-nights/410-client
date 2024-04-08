@@ -3,6 +3,7 @@ package jagex2.dash3d;
 import jagex2.*;
 import jagex2.dash3d.type.Loc;
 import jagex2.dash3d.type.Tile;
+import jagex2.dash3d.type.WallDecoration;
 import jagex2.graphics.*;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -156,7 +157,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIIIILclient!jd;III)Z")
-	public boolean method1410(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Renderable arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9) {
+	public boolean method1410(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Entity arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9) {
 		if (arg6 == null) {
 			return true;
 		} else {
@@ -230,7 +231,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIILclient!jd;II)V")
-	public void method1416(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Renderable arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	public void method1416(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Entity arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		if (arg4 == null) {
 			return;
 		}
@@ -328,8 +329,8 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIIILclient!jd;IIZ)Z")
-	public boolean addTemporary(@OriginalArg(0) int arg0, @OriginalArg(1) int x, @OriginalArg(2) int z, @OriginalArg(3) int arg3, @OriginalArg(4) int padding, @OriginalArg(5) Renderable renderable, @OriginalArg(6) int yaw, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8) {
-		if (renderable == null) {
+	public boolean addTemporary(@OriginalArg(0) int arg0, @OriginalArg(1) int x, @OriginalArg(2) int z, @OriginalArg(3) int arg3, @OriginalArg(4) int padding, @OriginalArg(5) Entity entity, @OriginalArg(6) int yaw, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8) {
+		if (entity == null) {
 			return true;
 		}
 		@Pc(7) int x0 = x - padding;
@@ -354,7 +355,7 @@ public final class World3D {
 		z0 /= 128;
 		x1 /= 128;
 		z1 /= 128;
-		return this.addLoc(arg0, x0, z0, x1 + 1 - x0, z1 - z0 + 1, x, z, arg3, renderable, yaw, true, arg7, 0);
+		return this.addLoc(arg0, x0, z0, x1 + 1 - x0, z1 - z0 + 1, x, z, arg3, entity, yaw, true, arg7, 0);
 	}
 
 	@OriginalMember(owner = "client!sd", name = "g", descriptor = "(III)Z")
@@ -378,7 +379,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIILclient!jd;ILclient!jd;Lclient!jd;)V")
-	public void method1427(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Renderable arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Renderable arg6, @OriginalArg(7) Renderable arg7) {
+	public void method1427(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Entity arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Entity arg6, @OriginalArg(7) Entity arg7) {
 		@Pc(3) Class51 local3 = new Class51();
 		local3.aClass2_Sub2_Sub12_6 = arg4;
 		local3.anInt1969 = arg1 * 128 + 64;
@@ -836,7 +837,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIILclient!jd;Lclient!jd;IIII)V")
-	public void method1440(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Renderable arg4, @OriginalArg(5) Renderable arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9) {
+	public void method1440(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Entity arg4, @OriginalArg(5) Entity arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9) {
 		if (arg4 == null && arg5 == null) {
 			return;
 		}
@@ -919,7 +920,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIIIIIILclient!jd;IZII)Z")
-	private boolean addLoc(@OriginalArg(0) int level, @OriginalArg(1) int tileX, @OriginalArg(2) int tileZ, @OriginalArg(3) int tileSizeX, @OriginalArg(4) int tileSizeZ, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Renderable arg8, @OriginalArg(9) int arg9, @OriginalArg(10) boolean temporary, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12) {
+	private boolean addLoc(@OriginalArg(0) int level, @OriginalArg(1) int tileX, @OriginalArg(2) int tileZ, @OriginalArg(3) int tileSizeX, @OriginalArg(4) int tileSizeZ, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Entity arg8, @OriginalArg(9) int arg9, @OriginalArg(10) boolean temporary, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12) {
 		for (@Pc(1) int tx = tileX; tx < tileX + tileSizeX; tx++) {
 			for (@Pc(4) int tz = tileZ; tz < tileZ + tileSizeZ; tz++) {
 				if (tx < 0 || tz < 0 || tx >= this.maxTileX || tz >= this.maxTileZ) {
@@ -1124,7 +1125,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIILclient!jd;IIIIII)V")
-	public void setWallDecoration(@OriginalArg(0) int level, @OriginalArg(1) int tileX, @OriginalArg(2) int tileZ, @OriginalArg(3) int arg3, @OriginalArg(4) Renderable arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int offsetX, @OriginalArg(8) int offsetZ, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
+	public void setWallDecoration(@OriginalArg(0) int level, @OriginalArg(1) int tileX, @OriginalArg(2) int tileZ, @OriginalArg(3) int arg3, @OriginalArg(4) Entity arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int offsetX, @OriginalArg(8) int offsetZ, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
 		if (arg4 == null) {
 			return;
 		}
@@ -2036,7 +2037,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIIILclient!jd;IIIIII)Z")
-	public boolean method1457(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) Renderable arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10) {
+	public boolean method1457(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) Entity arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10) {
 		return arg4 == null ? true : this.addLoc(arg0, arg7, arg8, arg9 + 1 - arg7, arg10 - arg8 + 1, arg1, arg2, arg3, arg4, arg5, true, arg6, 0);
 	}
 

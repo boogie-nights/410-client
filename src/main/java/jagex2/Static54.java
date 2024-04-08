@@ -2,6 +2,8 @@ package jagex2;
 
 import jagex2.config.ComType;
 import jagex2.dash3d.CollisionMap;
+import jagex2.dash3d.entity.NpcEntity;
+import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -55,18 +57,18 @@ public final class Static54 {
 				local10.unlink();
 			} else if (Static107.loopCycle >= local10.anInt1419) {
 				if (local10.anInt1434 > 0) {
-					@Pc(47) Class2_Sub2_Sub12_Sub1_Sub2 local47 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local10.anInt1434 - 1];
+					@Pc(47) NpcEntity local47 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local10.anInt1434 - 1];
 					if (local47 != null && local47.anInt2275 >= 0 && local47.anInt2275 < 13312 && local47.anInt2284 >= 0 && local47.anInt2284 < 13312) {
 						local10.method939(local47.anInt2275, Static86.method1383(local10.anInt1417, local47.anInt2275, local47.anInt2284) - local10.anInt1416, Static107.loopCycle, local47.anInt2284);
 					}
 				}
 				if (local10.anInt1434 < 0) {
 					@Pc(97) int local97 = -local10.anInt1434 - 1;
-					@Pc(104) Class2_Sub2_Sub12_Sub1_Sub1 local104;
+					@Pc(104) PlayerEntity local104;
 					if (local97 == Static83.anInt1955) {
-						local104 = Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1;
+						local104 = Static88.localPlayer;
 					} else {
-						local104 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local97];
+						local104 = Static100.players[local97];
 					}
 					if (local104 != null && local104.anInt2275 >= 0 && local104.anInt2275 < 13312 && local104.anInt2284 >= 0 && local104.anInt2284 < 13312) {
 						local10.method939(local104.anInt2275, Static86.method1383(local10.anInt1417, local104.anInt2275, local104.anInt2284) - local10.anInt1416, Static107.loopCycle, local104.anInt2284);

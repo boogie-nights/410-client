@@ -1,5 +1,7 @@
-package jagex2;
+package jagex2.dash3d.entity;
 
+import jagex2.*;
+import jagex2.dash3d.entity.PathingEntity;
 import jagex2.graphics.Model;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -8,7 +10,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!kc")
-public final class Class2_Sub2_Sub12_Sub1_Sub1 extends Class2_Sub2_Sub12_Sub1 {
+public final class PlayerEntity extends PathingEntity {
 
 	@OriginalMember(owner = "client!kc", name = "Gc", descriptor = "I")
 	public int anInt1368;
@@ -68,25 +70,29 @@ public final class Class2_Sub2_Sub12_Sub1_Sub1 extends Class2_Sub2_Sub12_Sub1 {
 	public boolean aBoolean104 = false;
 
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(Lclient!eb;I)V")
-	public void method918(@OriginalArg(0) Packet arg0) {
-		arg0.pos = 0;
-		@Pc(14) int local14 = arg0.g1();
-		this.anInt1380 = arg0.g1b();
+	public void read(@OriginalArg(0) Packet buf) {
+		buf.pos = 0;
+
+		@Pc(14) int local14 = buf.g1();
+		this.anInt1380 = buf.g1b();
+
 		@Pc(23) int local23 = -1;
-		this.anInt1370 = arg0.g1b();
+		this.anInt1370 = buf.g1b();
+
 		@Pc(33) int[] local33 = new int[12];
 		this.anInt1382 = 0;
+
 		@Pc(59) int local59;
 		@Pc(96) int local96;
 		for (@Pc(38) int local38 = 0; local38 < 12; local38++) {
-			@Pc(44) int local44 = arg0.g1();
+			@Pc(44) int local44 = buf.g1();
 			if (local44 == 0) {
 				local33[local38] = 0;
 			} else {
-				local59 = arg0.g1();
+				local59 = buf.g1();
 				local33[local38] = local59 + (local44 << 8);
 				if (local38 == 0 && local33[0] == 65535) {
-					local23 = arg0.g2();
+					local23 = buf.g2();
 					break;
 				}
 				if (local33[local38] >= 512) {
@@ -99,43 +105,43 @@ public final class Class2_Sub2_Sub12_Sub1_Sub1 extends Class2_Sub2_Sub12_Sub1 {
 		}
 		@Pc(111) int[] local111 = new int[5];
 		for (local59 = 0; local59 < 5; local59++) {
-			local96 = arg0.g1();
-			if (local96 < 0 || local96 >= Static10.anIntArrayArray6[local59].length) {
+			local96 = buf.g1();
+			if (local96 < 0 || local96 >= Static10.DESIGN_BODY_COLOR[local59].length) {
 				local96 = 0;
 			}
 			local111[local59] = local96;
 		}
-		super.anInt2290 = arg0.g2();
+		super.anInt2290 = buf.g2();
 		if (super.anInt2290 == 65535) {
 			super.anInt2290 = -1;
 		}
-		super.anInt2276 = arg0.g2();
+		super.anInt2276 = buf.g2();
 		if (super.anInt2276 == 65535) {
 			super.anInt2276 = -1;
 		}
-		super.anInt2269 = arg0.g2();
+		super.anInt2269 = buf.g2();
 		if (super.anInt2269 == 65535) {
 			super.anInt2269 = -1;
 		}
-		super.anInt2303 = arg0.g2();
+		super.anInt2303 = buf.g2();
 		if (super.anInt2303 == 65535) {
 			super.anInt2303 = -1;
 		}
-		super.anInt2304 = arg0.g2();
+		super.anInt2304 = buf.g2();
 		if (super.anInt2304 == 65535) {
 			super.anInt2304 = -1;
 		}
-		super.anInt2322 = arg0.g2();
+		super.anInt2322 = buf.g2();
 		if (super.anInt2322 == 65535) {
 			super.anInt2322 = -1;
 		}
-		super.anInt2273 = arg0.g2();
+		super.anInt2273 = buf.g2();
 		if (super.anInt2273 == 65535) {
 			super.anInt2273 = -1;
 		}
-		this.aClass40_395 = Static48.method819(arg0.g8()).method1167();
-		this.anInt1378 = arg0.g1();
-		this.anInt1373 = arg0.g2();
+		this.aClass40_395 = Static48.method819(buf.g8()).method1167();
+		this.anInt1378 = buf.g1();
+		this.anInt1373 = buf.g2();
 		if (this.aClass33_2 == null) {
 			this.aClass33_2 = new Class33();
 		}

@@ -302,7 +302,7 @@ public final class Static92 {
 		if (Static89.anInt2100 != -1) {
 			local890 = Static89.anInt2096;
 			local66 = Static89.anInt2100;
-			@Pc(912) boolean local912 = Static83.method1349(local890, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 0, 0, 0, true, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 0, local66);
+			@Pc(912) boolean local912 = Static83.method1349(local890, 0, Static88.localPlayer.anIntArray492[0], 0, 0, 0, true, 0, Static88.localPlayer.anIntArray496[0], 0, local66);
 			Static89.anInt2100 = -1;
 			if (local912) {
 				Static62.anInt1554 = Static107.anInt2500;

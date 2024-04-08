@@ -67,7 +67,7 @@ public final class Class2_Sub2_Sub7 extends Hashable {
 	public boolean aBoolean56 = true;
 
 	@OriginalMember(owner = "client!gb", name = "O", descriptor = "I")
-	public int anInt758 = 1;
+	public int size = 1;
 
 	@OriginalMember(owner = "client!gb", name = "ob", descriptor = "I")
 	public int anInt777 = -1;
@@ -184,7 +184,7 @@ public final class Class2_Sub2_Sub7 extends Hashable {
 		} else if (arg1 == 3) {
 			this.aClass40_237 = arg0.method1721();
 		} else if (arg1 == 12) {
-			this.anInt758 = arg0.g1();
+			this.size = arg0.g1();
 		} else if (arg1 == 13) {
 			this.anInt767 = arg0.g2();
 		} else if (arg1 == 14) {

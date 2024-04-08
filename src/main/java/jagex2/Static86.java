@@ -215,9 +215,9 @@ public final class Static86 {
 		@Pc(69) int local69 = local61 * (Static15.anInt1857 + 256) >> 8;
 		@Pc(79) int local79 = local23 * local69 + local17 * local57 >> 11;
 		@Pc(90) int local90 = local69 * local17 - local57 * local23 >> 11;
-		@Pc(98) int local98 = Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 - local90 >> 7;
-		@Pc(106) int local106 = Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 + local79 >> 7;
-		@Pc(126) boolean local126 = Static83.method1349(local98, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 0, 0, 1, true, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 0, local106);
+		@Pc(98) int local98 = Static88.localPlayer.anInt2284 - local90 >> 7;
+		@Pc(106) int local106 = Static88.localPlayer.anInt2275 + local79 >> 7;
+		@Pc(126) boolean local126 = Static83.method1349(local98, 0, Static88.localPlayer.anIntArray492[0], 0, 0, 1, true, 0, Static88.localPlayer.anIntArray496[0], 0, local106);
 		if (!local126) {
 			return;
 		}
@@ -228,8 +228,8 @@ public final class Static86 {
 		Static80.out.p1(Static84.anInt1978);
 		Static80.out.p1(Static15.anInt1857);
 		Static80.out.p1(89);
-		Static80.out.method1694(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275);
-		Static80.out.method1694(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284);
+		Static80.out.method1694(Static88.localPlayer.anInt2275);
+		Static80.out.method1694(Static88.localPlayer.anInt2284);
 		Static80.out.p1(Static101.anInt2400);
 		Static80.out.p1(63);
 		return;

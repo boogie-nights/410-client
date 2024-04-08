@@ -62,26 +62,26 @@ public final class Static21 {
 	}
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(I)V")
-	public static void method399() {
-		Static13.anInt304 = 0;
-		Static53.anInt1190 = 0;
-		Static101.method1593();
+	public static void readPlayerInfo() {
+		Static13.entityRemovalCount = 0;
+		Static53.entityUpdateCount = 0;
+		Static101.readLocalPlayer();
 		Static46.method1636();
 		Static98.method1567();
 		Static15.method1255();
-		@Pc(29) int local29;
-		for (@Pc(23) int local23 = 0; local23 < Static13.anInt304; local23++) {
-			local29 = Static52.anIntArray258[local23];
-			if (Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local29].anInt2274 != Static107.loopCycle) {
-				Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local29] = null;
+		@Pc(29) int index;
+		for (@Pc(23) int i = 0; i < Static13.entityRemovalCount; i++) {
+			index = Static52.entityRemovalIds[i];
+			if (Static100.players[index].cycle != Static107.loopCycle) {
+				Static100.players[index] = null;
 			}
 		}
-		if (Static33.anInt785 != Static56.aClass2_Sub3_Sub1_5.pos) {
-			throw new RuntimeException("gpp1 pos:" + Static56.aClass2_Sub3_Sub1_5.pos + " psize:" + Static33.anInt785);
+		if (Static33.size != Static56.in.pos) {
+			throw new RuntimeException("gpp1 pos:" + Static56.in.pos + " psize:" + Static33.size);
 		}
-		for (local29 = 0; local29 < Static88.anInt2067; local29++) {
-			if (Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[Static73.anIntArray408[local29]] == null) {
-				throw new RuntimeException("gpp2 pos:" + local29 + " size:" + Static88.anInt2067);
+		for (index = 0; index < Static88.playerCount; index++) {
+			if (Static100.players[Static73.playerIds[index]] == null) {
+				throw new RuntimeException("gpp2 pos:" + index + " size:" + Static88.playerCount);
 			}
 		}
 	}
@@ -364,13 +364,13 @@ public final class Static21 {
 							if (local35.anInt1607 == 5) {
 								local992 = Static38.aClass33_1.method1005(-1, -1, null, null);
 							} else if (local177 == -1) {
-								local992 = local35.method1057(null, local970, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass33_2, -1);
+								local992 = local35.method1057(null, local970, Static88.localPlayer.aClass33_2, -1);
 								if (local992 == null && Static54.aBoolean102) {
 									local18 = false;
 								}
 							} else {
 								@Pc(1002) Class2_Sub2_Sub6 local1002 = Static62.method1042(local177);
-								local992 = local35.method1057(local1002, local970, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass33_2, local35.anInt1569);
+								local992 = local35.method1057(local1002, local970, Static88.localPlayer.aClass33_2, local35.anInt1569);
 								if (local992 == null && Static54.aBoolean102) {
 									local18 = false;
 								}

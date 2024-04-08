@@ -37,7 +37,7 @@ public final class Static56 {
 	public static long aLong136 = 0L;
 
 	@OriginalMember(owner = "client!ke", name = "Pb", descriptor = "Lclient!wc;")
-	public static Class2_Sub3_Sub1 aClass2_Sub3_Sub1_5 = new Class2_Sub3_Sub1(5000);
+	public static Class2_Sub3_Sub1 in = new Class2_Sub3_Sub1(5000);
 
 	@OriginalMember(owner = "client!ke", name = "Xb", descriptor = "I")
 	public static int anInt2299 = 1;
@@ -120,7 +120,7 @@ public final class Static56 {
 		aClass40_656 = null;
 		aClass5_29 = null;
 		aClass40_657 = null;
-		aClass2_Sub3_Sub1_5 = null;
+		in = null;
 		aClass2_Sub2_Sub2_Sub3Array15 = null;
 		aClass40_659 = null;
 	}

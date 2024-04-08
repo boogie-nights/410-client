@@ -29,7 +29,7 @@ public final class Static10 {
 	public static int anInt261 = 0;
 
 	@OriginalMember(owner = "client!bd", name = "o", descriptor = "[[I")
-	public static int[][] anIntArrayArray6 = new int[][] { { 6798, 107, 10283, 16, 4797, 7744, 5799, 4634, 33697, 22433, 2983, 54193 }, { 8741, 12, 64030, 43162, 7735, 8404, 1701, 38430, 24094, 10153, 56621, 4783, 1341, 16578, 35003, 25239 }, { 25238, 8742, 12, 64030, 43162, 7735, 8404, 1701, 38430, 24094, 10153, 56621, 4783, 1341, 16578, 35003 }, { 4626, 11146, 6439, 12, 4758, 10270 }, { 4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574 } };
+	public static int[][] DESIGN_BODY_COLOR = new int[][] { { 6798, 107, 10283, 16, 4797, 7744, 5799, 4634, 33697, 22433, 2983, 54193 }, { 8741, 12, 64030, 43162, 7735, 8404, 1701, 38430, 24094, 10153, 56621, 4783, 1341, 16578, 35003, 25239 }, { 25238, 8742, 12, 64030, 43162, 7735, 8404, 1701, 38430, 24094, 10153, 56621, 4783, 1341, 16578, 35003 }, { 4626, 11146, 6439, 12, 4758, 10270 }, { 4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574 } };
 
 	@OriginalMember(owner = "client!bd", name = "p", descriptor = "I")
 	public static int anInt262 = 0;
@@ -299,7 +299,7 @@ public final class Static10 {
 	@OriginalMember(owner = "client!bd", name = "b", descriptor = "(B)V")
 	public static void method229() {
 		anIntArrayArray5 = null;
-		anIntArrayArray6 = null;
+		DESIGN_BODY_COLOR = null;
 		aClass40_64 = null;
 		aClass40_66 = null;
 		aClass40_62 = null;

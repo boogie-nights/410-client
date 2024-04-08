@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.client.ViewBox;
 import jagex2.config.ObjType;
+import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.HashTable;
 import jagex2.datastruct.LinkedList;
 import jagex2.io.Packet;
@@ -103,7 +104,7 @@ public final class Static105 {
 		Static85.anInt1986 = -1;
 		Static80.out.pos = 0;
 		Static88.anInt2083 = -1;
-		Static56.aClass2_Sub3_Sub1_5.pos = 0;
+		Static56.in.pos = 0;
 		Static97.aBoolean175 = false;
 		Static97.anInt2352 = -1;
 		Static84.systemUpdateTimer = 0;
@@ -126,18 +127,18 @@ public final class Static105 {
 		Static15.anInt1857 = (int) (Math.random() * 30.0D) - 20;
 		Static79.objSelected = 0;
 		Static4.anInt131 = 0;
-		Static88.anInt2067 = 0;
+		Static88.playerCount = 0;
 		Static24.spellSelected = 0;
 		Static98.anInt2371 = (int) (Math.random() * 110.0D) - 55;
 		Static84.anInt1978 = (int) (Math.random() * 120.0D) - 60;
 		for (@Pc(1726) int local1726 = 0; local1726 < 2048; local1726++) {
-			Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local1726] = null;
+			Static100.players[local1726] = null;
 			Static59.aPacketArray1[local1726] = null;
 		}
 		for (@Pc(1744) int local1744 = 0; local1744 < 16384; local1744++) {
 			Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local1744] = null;
 		}
-		Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[2047] = new Class2_Sub2_Sub12_Sub1_Sub1();
+		Static88.localPlayer = Static100.players[2047] = new PlayerEntity();
 		Static24.aClass44_4.clear();
 		Static96.aClass44_8.clear();
 		@Pc(1776) int local1776;

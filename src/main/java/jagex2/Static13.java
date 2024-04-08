@@ -23,7 +23,7 @@ public final class Static13 {
 	public static Class40 aClass40_82 = method257("Enter name of player to delete from list");
 
 	@OriginalMember(owner = "client!cb", name = "o", descriptor = "I")
-	public static int anInt304 = 0;
+	public static int entityRemovalCount = 0;
 
 	@OriginalMember(owner = "client!cb", name = "r", descriptor = "Lclient!o;")
 	public static Class40 aClass40_83 = method257(" @yel@");

@@ -1,6 +1,6 @@
 package jagex2.dash3d.type;
 
-import jagex2.graphics.Renderable;
+import jagex2.graphics.Entity;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
@@ -41,7 +41,7 @@ public final class Loc {
 	public int anInt1666;
 
 	@OriginalMember(owner = "client!n", name = "C", descriptor = "Lclient!jd;")
-	public Renderable aClass2_Sub2_Sub12_3;
+	public Entity aClass2_Sub2_Sub12_3;
 
 	@OriginalMember(owner = "client!n", name = "a", descriptor = "I")
 	public int bitset = 0;

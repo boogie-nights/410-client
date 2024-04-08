@@ -2,6 +2,7 @@ package jagex2;
 
 import java.util.zip.CRC32;
 
+import jagex2.dash3d.entity.PlayerEntity;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -57,13 +58,13 @@ public final class Static102 {
 	public static Class40 aClass40_713 = Static13.method257("Bad session id)3");
 
 	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(ILclient!kc;III)V")
-	public static void method1638(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub2_Sub12_Sub1_Sub1 arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
-		if (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1 == arg1 || Static34.menuSize >= 400) {
+	public static void method1638(@OriginalArg(0) int arg0, @OriginalArg(1) PlayerEntity arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
+		if (Static88.localPlayer == arg1 || Static34.menuSize >= 400) {
 			return;
 		}
 		@Pc(44) Class40 local44;
 		if (arg1.anInt1373 == 0) {
-			local44 = Static80.method1334(new Class40[] { arg1.aClass40_395, Static15.method1260(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt1378, arg1.anInt1378), Static31.aClass40_731, Static53.method859(arg1.anInt1378), Static90.aClass40_609 });
+			local44 = Static80.method1334(new Class40[] { arg1.aClass40_395, Static15.method1260(Static88.localPlayer.anInt1378, arg1.anInt1378), Static31.aClass40_731, Static53.method859(arg1.anInt1378), Static90.aClass40_609 });
 		} else {
 			local44 = Static80.method1334(new Class40[] { arg1.aClass40_395, Static80.aClass40_556, Static53.method859(arg1.anInt1373), Static90.aClass40_609 });
 		}
@@ -76,11 +77,11 @@ public final class Static102 {
 					@Pc(134) short local134 = 0;
 					@Pc(136) int local136 = 0;
 					if (Static13.aClass40Array6[local122].method1199(Static105.aClass40_729)) {
-						if (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt1378 < arg1.anInt1378) {
+						if (Static88.localPlayer.anInt1378 < arg1.anInt1378) {
 							local134 = 2000;
 						}
-						if (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt1382 != 0 && arg1.anInt1382 != 0) {
-							if (arg1.anInt1382 == Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt1382) {
+						if (Static88.localPlayer.anInt1382 != 0 && arg1.anInt1382 != 0) {
+							if (arg1.anInt1382 == Static88.localPlayer.anInt1382) {
 								local134 = 2000;
 							} else {
 								local134 = 0;

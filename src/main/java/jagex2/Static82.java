@@ -1,5 +1,7 @@
 package jagex2;
 
+import jagex2.dash3d.entity.NpcEntity;
+import jagex2.dash3d.entity.PlayerEntity;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -61,7 +63,7 @@ public final class Static82 {
 		Static87.anInt2058 = arg0 * 8 - 48;
 		@Pc(69) int local69 = Static87.anInt2058 - local58;
 		for (@Pc(73) int local73 = 0; local73 < 16384; local73++) {
-			@Pc(79) Class2_Sub2_Sub12_Sub1_Sub2 local79 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local73];
+			@Pc(79) NpcEntity local79 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local73];
 			if (local79 != null) {
 				for (@Pc(83) int local83 = 0; local83 < 10; local83++) {
 					local79.anIntArray492[local83] -= local69;
@@ -72,7 +74,7 @@ public final class Static82 {
 			}
 		}
 		for (@Pc(131) int local131 = 0; local131 < 2048; local131++) {
-			@Pc(137) Class2_Sub2_Sub12_Sub1_Sub1 local137 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local131];
+			@Pc(137) PlayerEntity local137 = Static100.players[local131];
 			if (local137 != null) {
 				for (@Pc(141) int local141 = 0; local141 < 10; local141++) {
 					local137.anIntArray492[local141] -= local69;
@@ -84,7 +86,7 @@ public final class Static82 {
 		}
 		@Pc(187) byte local187 = 0;
 		Static1.currentLevel = arg1;
-		Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.method1545(false, arg2, arg3);
+		Static88.localPlayer.move(false, arg2, arg3);
 		@Pc(197) byte local197 = 104;
 		@Pc(199) byte local199 = 1;
 		@Pc(201) byte local201 = 0;

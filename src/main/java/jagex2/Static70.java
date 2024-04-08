@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.client.GameShell;
+import jagex2.dash3d.entity.NpcEntity;
 import jagex2.io.ClientStream;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -38,12 +39,12 @@ public final class Static70 {
 
 	@OriginalMember(owner = "client!nd", name = "b", descriptor = "(Z)V")
 	public static void method1109() {
-		for (@Pc(16) int local16 = 0; local16 < Static53.anInt1190; local16++) {
-			@Pc(22) int local22 = Static98.anIntArray504[local16];
-			@Pc(26) Class2_Sub2_Sub12_Sub1_Sub2 local26 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local22];
-			@Pc(30) int local30 = Static56.aClass2_Sub3_Sub1_5.g1();
+		for (@Pc(16) int local16 = 0; local16 < Static53.entityUpdateCount; local16++) {
+			@Pc(22) int local22 = Static98.entityUpdateIds[local16];
+			@Pc(26) NpcEntity local26 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local22];
+			@Pc(30) int local30 = Static56.in.g1();
 			if ((local30 & 0x20) != 0) {
-				local26.anInt2324 = Static56.aClass2_Sub3_Sub1_5.g2();
+				local26.anInt2324 = Static56.in.g2();
 				if (local26.anInt2324 == 65535) {
 					local26.anInt2324 = -1;
 				}
@@ -51,16 +52,16 @@ public final class Static70 {
 			@Pc(57) int local57;
 			@Pc(61) int local61;
 			if ((local30 & 0x40) != 0) {
-				local57 = Static56.aClass2_Sub3_Sub1_5.method1730();
-				local61 = Static56.aClass2_Sub3_Sub1_5.method1706();
+				local57 = Static56.in.method1730();
+				local61 = Static56.in.method1706();
 				local26.method1540(local57, Static107.loopCycle, local61);
 				local26.anInt2315 = Static107.loopCycle + 300;
-				local26.anInt2298 = Static56.aClass2_Sub3_Sub1_5.method1715();
-				local26.anInt2279 = Static56.aClass2_Sub3_Sub1_5.method1730();
+				local26.anInt2298 = Static56.in.method1715();
+				local26.anInt2279 = Static56.in.method1730();
 			}
 			if ((local30 & 0x8) != 0) {
-				local57 = Static56.aClass2_Sub3_Sub1_5.method1681();
-				local61 = Static56.aClass2_Sub3_Sub1_5.g1();
+				local57 = Static56.in.method1681();
+				local61 = Static56.in.g1();
 				if (local57 == 65535) {
 					local57 = -1;
 				}
@@ -85,16 +86,16 @@ public final class Static70 {
 				}
 			}
 			if ((local30 & 0x1) != 0) {
-				local57 = Static56.aClass2_Sub3_Sub1_5.method1730();
-				local61 = Static56.aClass2_Sub3_Sub1_5.method1706();
+				local57 = Static56.in.method1730();
+				local61 = Static56.in.method1706();
 				local26.method1540(local57, Static107.loopCycle, local61);
 				local26.anInt2315 = Static107.loopCycle + 300;
-				local26.anInt2298 = Static56.aClass2_Sub3_Sub1_5.g1();
-				local26.anInt2279 = Static56.aClass2_Sub3_Sub1_5.method1730();
+				local26.anInt2298 = Static56.in.g1();
+				local26.anInt2279 = Static56.in.method1730();
 			}
 			if ((local30 & 0x80) != 0) {
-				local26.anInt2302 = Static56.aClass2_Sub3_Sub1_5.method1714();
-				local57 = Static56.aClass2_Sub3_Sub1_5.method1710();
+				local26.anInt2302 = Static56.in.method1714();
+				local57 = Static56.in.method1710();
 				local26.anInt2320 = Static107.loopCycle + (local57 & 0xFFFF);
 				local26.anInt2289 = local57 >> 16;
 				local26.anInt2291 = 0;
@@ -107,22 +108,22 @@ public final class Static70 {
 				local26.anInt2268 = 0;
 			}
 			if ((local30 & 0x2) != 0) {
-				local26.aClass40_660 = Static56.aClass2_Sub3_Sub1_5.method1721();
+				local26.aClass40_660 = Static56.in.method1721();
 				local26.anInt2294 = 100;
 			}
 			if ((local30 & 0x4) != 0) {
-				local26.aClass2_Sub2_Sub7_1 = Static36.method640(Static56.aClass2_Sub3_Sub1_5.g2());
-				local26.anInt2290 = local26.aClass2_Sub2_Sub7_1.anInt767;
-				local26.anInt2269 = local26.aClass2_Sub2_Sub7_1.anInt777;
-				local26.anInt2304 = local26.aClass2_Sub2_Sub7_1.anInt771;
-				local26.anInt2285 = local26.aClass2_Sub2_Sub7_1.anInt769;
-				local26.anInt2278 = local26.aClass2_Sub2_Sub7_1.anInt758;
-				local26.anInt2322 = local26.aClass2_Sub2_Sub7_1.anInt761;
-				local26.anInt2303 = local26.aClass2_Sub2_Sub7_1.anInt764;
+				local26.type = Static36.method640(Static56.in.g2());
+				local26.anInt2290 = local26.type.anInt767;
+				local26.anInt2269 = local26.type.anInt777;
+				local26.anInt2304 = local26.type.anInt771;
+				local26.anInt2285 = local26.type.anInt769;
+				local26.size = local26.type.size;
+				local26.anInt2322 = local26.type.anInt761;
+				local26.anInt2303 = local26.type.anInt764;
 			}
 			if ((local30 & 0x10) != 0) {
-				local26.anInt2280 = Static56.aClass2_Sub3_Sub1_5.g2();
-				local26.anInt2292 = Static56.aClass2_Sub3_Sub1_5.method1705();
+				local26.anInt2280 = Static56.in.g2();
+				local26.anInt2292 = Static56.in.method1705();
 			}
 		}
 	}

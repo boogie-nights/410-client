@@ -11,7 +11,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class2_Sub3_Sub1 extends Packet {
 
 	@OriginalMember(owner = "client!wc", name = "Nb", descriptor = "I")
-	private int anInt2599;
+	private int bitPos;
 
 	@OriginalMember(owner = "client!wc", name = "Wb", descriptor = "Lclient!be;")
 	private Isaac random;
@@ -37,36 +37,36 @@ public final class Class2_Sub3_Sub1 extends Packet {
 	}
 
 	@OriginalMember(owner = "client!wc", name = "g", descriptor = "(Z)V")
-	public void method1737() {
-		this.anInt2599 = super.pos * 8;
+	public void accessBits() {
+		this.bitPos = super.pos * 8;
 	}
 
 	@OriginalMember(owner = "client!wc", name = "i", descriptor = "(B)V")
 	public void method1739() {
-		super.pos = (this.anInt2599 + 7) / 8;
+		super.pos = (this.bitPos + 7) / 8;
 	}
 
 	@OriginalMember(owner = "client!wc", name = "c", descriptor = "(ZI)I")
 	public int method1742(@OriginalArg(1) int arg0) {
-		return arg0 * 8 - this.anInt2599;
+		return arg0 * 8 - this.bitPos;
 	}
 
 	@OriginalMember(owner = "client!wc", name = "n", descriptor = "(II)I")
-	public int method1743(@OriginalArg(1) int arg0) {
-		@Pc(10) int local10 = this.anInt2599 >> 3;
-		@Pc(26) int local26 = 8 - (this.anInt2599 & 0x7);
-		this.anInt2599 += arg0;
-		@Pc(34) int local34 = 0;
-		while (local26 < arg0) {
-			local34 += (super.data[local10++] & Static48.anIntArray235[local26]) << arg0 - local26;
-			arg0 -= local26;
-			local26 = 8;
+	public int gBit(@OriginalArg(1) int n) {
+		@Pc(10) int bytePos = this.bitPos >> 3;
+		@Pc(26) int remainingBits = 8 - (this.bitPos & 0x7);
+		this.bitPos += n;
+		@Pc(34) int value = 0;
+		while (remainingBits < n) {
+			value += (super.data[bytePos++] & Static48.BITMASK[remainingBits]) << n - remainingBits;
+			n -= remainingBits;
+			remainingBits = 8;
 		}
-		if (arg0 == local26) {
-			local34 += Static48.anIntArray235[local26] & super.data[local10];
+		if (n == remainingBits) {
+			value += Static48.BITMASK[remainingBits] & super.data[bytePos];
 		} else {
-			local34 += super.data[local10] >> local26 - arg0 & Static48.anIntArray235[arg0];
+			value += super.data[bytePos] >> remainingBits - n & Static48.BITMASK[n];
 		}
-		return local34;
+		return value;
 	}
 }

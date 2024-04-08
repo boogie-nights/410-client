@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.graphics.PixMap;
 import jagex2.graphics.Model;
 import jagex2.io.Packet;
@@ -31,7 +32,7 @@ public final class Static98 {
 	public static Class40 aClass40_676 = Static13.method257("Fps:");
 
 	@OriginalMember(owner = "client!uc", name = "i", descriptor = "[I")
-	public static int[] anIntArray504 = new int[2048];
+	public static int[] entityUpdateIds = new int[2048];
 
 	@OriginalMember(owner = "client!uc", name = "l", descriptor = "[Lclient!ne;")
 	public static Model[] aModelArray1 = new Model[4];
@@ -129,36 +130,36 @@ public final class Static98 {
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(B)V")
 	public static void method1567() {
 		while (true) {
-			if (Static56.aClass2_Sub3_Sub1_5.method1742(Static33.anInt785) >= 11) {
-				@Pc(14) int local14 = Static56.aClass2_Sub3_Sub1_5.method1743(11);
+			if (Static56.in.method1742(Static33.size) >= 11) {
+				@Pc(14) int local14 = Static56.in.gBit(11);
 				if (local14 != 2047) {
-					if (Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local14] == null) {
-						Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local14] = new Class2_Sub2_Sub12_Sub1_Sub1();
+					if (Static100.players[local14] == null) {
+						Static100.players[local14] = new PlayerEntity();
 						if (Static59.aPacketArray1[local14] != null) {
-							Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local14].method918(Static59.aPacketArray1[local14]);
+							Static100.players[local14].read(Static59.aPacketArray1[local14]);
 						}
 					}
-					Static73.anIntArray408[Static88.anInt2067++] = local14;
-					@Pc(51) Class2_Sub2_Sub12_Sub1_Sub1 local51 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local14];
-					local51.anInt2274 = Static107.loopCycle;
-					@Pc(59) int local59 = Static56.aClass2_Sub3_Sub1_5.method1743(5);
+					Static73.playerIds[Static88.playerCount++] = local14;
+					@Pc(51) PlayerEntity local51 = Static100.players[local14];
+					local51.cycle = Static107.loopCycle;
+					@Pc(59) int local59 = Static56.in.gBit(5);
 					if (local59 > 15) {
 						local59 -= 32;
 					}
-					@Pc(68) int local68 = Static56.aClass2_Sub3_Sub1_5.method1743(5);
+					@Pc(68) int local68 = Static56.in.gBit(5);
 					if (local68 > 15) {
 						local68 -= 32;
 					}
-					@Pc(79) int local79 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
+					@Pc(79) int local79 = Static56.in.gBit(1);
 					if (local79 == 1) {
-						anIntArray504[Static53.anInt1190++] = local14;
+						entityUpdateIds[Static53.entityUpdateCount++] = local14;
 					}
-					@Pc(97) int local97 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
-					local51.method1545(local97 == 1, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0] + local59, local68 + Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0]);
+					@Pc(97) int local97 = Static56.in.gBit(1);
+					local51.move(local97 == 1, Static88.localPlayer.anIntArray496[0] + local59, local68 + Static88.localPlayer.anIntArray492[0]);
 					continue;
 				}
 			}
-			Static56.aClass2_Sub3_Sub1_5.method1739();
+			Static56.in.method1739();
 			return;
 		}
 	}
@@ -180,7 +181,7 @@ public final class Static98 {
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(I)V")
 	public static void method1569() {
-		anIntArray504 = null;
+		entityUpdateIds = null;
 		aClass40_676 = null;
 		aClass40_679 = null;
 		aClass40_674 = null;

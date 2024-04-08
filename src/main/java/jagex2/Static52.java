@@ -27,7 +27,7 @@ public final class Static52 {
 	public static boolean redrawPrivacySettings = false;
 
 	@OriginalMember(owner = "client!ka", name = "m", descriptor = "[I")
-	public static int[] anIntArray258 = new int[1000];
+	public static int[] entityRemovalIds = new int[1000];
 
 	@OriginalMember(owner = "client!ka", name = "n", descriptor = "I")
 	public static int anInt1175 = 0;
@@ -58,7 +58,7 @@ public final class Static52 {
 	public static void method852() {
 		aClass40_358 = null;
 		anIntArray257 = null;
-		anIntArray258 = null;
+		entityRemovalIds = null;
 		aClass40_359 = null;
 		aClass40_361 = null;
 		aClass40_360 = null;

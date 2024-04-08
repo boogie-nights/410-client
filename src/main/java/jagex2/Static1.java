@@ -3,6 +3,7 @@ package jagex2;
 import java.util.Calendar;
 import java.util.Date;
 
+import jagex2.dash3d.entity.PathingEntity;
 import jagex2.graphics.PixMap;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -92,14 +93,14 @@ public final class Static1 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ke;Z)V")
-	public static void method4(@OriginalArg(0) Class2_Sub2_Sub12_Sub1 arg0) {
+	public static void method4(@OriginalArg(0) PathingEntity arg0) {
 		if (arg0.anInt2297 == Static107.loopCycle || arg0.anInt2307 == -1 || arg0.anInt2313 != 0 || arg0.anInt2267 + 1 > Static62.method1042(arg0.anInt2307).anIntArray128[arg0.anInt2316]) {
 			@Pc(38) int local38 = arg0.anInt2297 - arg0.anInt2277;
 			@Pc(44) int local44 = Static107.loopCycle - arg0.anInt2277;
-			@Pc(54) int local54 = arg0.anInt2278 * 64 + arg0.anInt2321 * 128;
-			@Pc(64) int local64 = arg0.anInt2278 * 64 + arg0.anInt2311 * 128;
-			@Pc(74) int local74 = arg0.anInt2286 * 128 + arg0.anInt2278 * 64;
-			@Pc(84) int local84 = arg0.anInt2278 * 64 + arg0.anInt2317 * 128;
+			@Pc(54) int local54 = arg0.size * 64 + arg0.anInt2321 * 128;
+			@Pc(64) int local64 = arg0.size * 64 + arg0.anInt2311 * 128;
+			@Pc(74) int local74 = arg0.anInt2286 * 128 + arg0.size * 64;
+			@Pc(84) int local84 = arg0.size * 64 + arg0.anInt2317 * 128;
 			arg0.anInt2275 = ((local38 - local44) * local84 + local64 * local44) / local38;
 			arg0.anInt2284 = ((local38 - local44) * local54 + local74 * local44) / local38;
 		}

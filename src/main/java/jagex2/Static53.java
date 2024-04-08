@@ -27,7 +27,7 @@ public final class Static53 {
 	public static int anInt1186 = 0;
 
 	@OriginalMember(owner = "client!kb", name = "B", descriptor = "I")
-	public static int anInt1190 = 0;
+	public static int entityUpdateCount = 0;
 
 	@OriginalMember(owner = "client!kb", name = "c", descriptor = "(I)V")
 	public static void method858() {

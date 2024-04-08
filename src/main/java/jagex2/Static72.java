@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.dash3d.entity.PlayerEntity;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -98,14 +99,14 @@ public final class Static72 {
 
 	@OriginalMember(owner = "client!o", name = "e", descriptor = "(B)V")
 	public static void method1197() {
-		for (@Pc(7) int local7 = -1; local7 < Static88.anInt2067; local7++) {
+		for (@Pc(7) int local7 = -1; local7 < Static88.playerCount; local7++) {
 			@Pc(17) int local17;
 			if (local7 == -1) {
 				local17 = 2047;
 			} else {
-				local17 = Static73.anIntArray408[local7];
+				local17 = Static73.playerIds[local7];
 			}
-			@Pc(25) Class2_Sub2_Sub12_Sub1_Sub1 local25 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local17];
+			@Pc(25) PlayerEntity local25 = Static100.players[local17];
 			if (local25 != null) {
 				Static91.method1468(local25, 1);
 			}

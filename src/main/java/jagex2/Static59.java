@@ -47,11 +47,11 @@ public final class Static59 {
 		if (Static35.anInt824 < 310) {
 			@Pc(21) int local21 = Static48.anInt1114 >> 7;
 			@Pc(25) int local25 = Static15.anInt1863 >> 7;
-			@Pc(30) int local30 = Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7;
+			@Pc(30) int local30 = Static88.localPlayer.anInt2275 >> 7;
 			if ((Static61.aByteArrayArrayArray7[Static1.currentLevel][local21][local25] & 0x4) != 0) {
 				local12 = Static1.currentLevel;
 			}
-			@Pc(50) int local50 = Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7;
+			@Pc(50) int local50 = Static88.localPlayer.anInt2284 >> 7;
 			@Pc(62) int local62;
 			if (local30 > local21) {
 				local62 = local30 - local21;
@@ -118,7 +118,7 @@ public final class Static59 {
 				}
 			}
 		}
-		if ((Static61.aByteArrayArrayArray7[Static1.currentLevel][Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7][Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7] & 0x4) != 0) {
+		if ((Static61.aByteArrayArrayArray7[Static1.currentLevel][Static88.localPlayer.anInt2275 >> 7][Static88.localPlayer.anInt2284 >> 7] & 0x4) != 0) {
 			local12 = Static1.currentLevel;
 		}
 		return local12;

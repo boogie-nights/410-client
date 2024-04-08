@@ -67,9 +67,9 @@ public final class Class33 {
 		@Pc(147) Model local147 = new Model(local77, local74);
 		for (@Pc(149) int local149 = 0; local149 < 5; local149++) {
 			if (this.anIntArray313[local149] != 0) {
-				local147.recolor(Static10.anIntArrayArray6[local149][0], Static10.anIntArrayArray6[local149][this.anIntArray313[local149]]);
+				local147.recolor(Static10.DESIGN_BODY_COLOR[local149][0], Static10.DESIGN_BODY_COLOR[local149][this.anIntArray313[local149]]);
 				if (local149 == 1) {
-					local147.recolor(Static97.anIntArray501[0], Static97.anIntArray501[this.anIntArray313[local149]]);
+					local147.recolor(Static97.DESIGN_HAIR_COLOR[0], Static97.DESIGN_HAIR_COLOR[this.anIntArray313[local149]]);
 				}
 			}
 		}
@@ -197,9 +197,9 @@ public final class Class33 {
 				local125 = new Model(local197, local199);
 				for (local207 = 0; local207 < 5; local207++) {
 					if (this.anIntArray313[local207] != 0) {
-						local125.recolor(Static10.anIntArrayArray6[local207][0], Static10.anIntArrayArray6[local207][this.anIntArray313[local207]]);
+						local125.recolor(Static10.DESIGN_BODY_COLOR[local207][0], Static10.DESIGN_BODY_COLOR[local207][this.anIntArray313[local207]]);
 						if (local207 == 1) {
-							local125.recolor(Static97.anIntArray501[0], Static97.anIntArray501[this.anIntArray313[local207]]);
+							local125.recolor(Static97.DESIGN_HAIR_COLOR[0], Static97.DESIGN_HAIR_COLOR[this.anIntArray313[local207]]);
 						}
 					}
 				}
@@ -283,13 +283,13 @@ public final class Class33 {
 		@Pc(11) int local11 = this.anIntArray313[arg0];
 		if (arg1) {
 			local11++;
-			if (local11 >= Static10.anIntArrayArray6[arg0].length) {
+			if (local11 >= Static10.DESIGN_BODY_COLOR[arg0].length) {
 				local11 = 0;
 			}
 		} else {
 			local11--;
 			if (local11 < 0) {
-				local11 = Static10.anIntArrayArray6[arg0].length - 1;
+				local11 = Static10.DESIGN_BODY_COLOR[arg0].length - 1;
 			}
 		}
 		this.anIntArray313[arg0] = local11;

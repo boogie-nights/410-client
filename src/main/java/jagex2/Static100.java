@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.LinkedList;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -16,7 +17,7 @@ public final class Static100 {
 	public static Class40 aClass40_689 = Static13.method257("@gre@");
 
 	@OriginalMember(owner = "client!v", name = "cb", descriptor = "[Lclient!kc;")
-	public static Class2_Sub2_Sub12_Sub1_Sub1[] aClass2_Sub2_Sub12_Sub1_Sub1Array1 = new Class2_Sub2_Sub12_Sub1_Sub1[2048];
+	public static PlayerEntity[] players = new PlayerEntity[2048];
 
 	@OriginalMember(owner = "client!v", name = "db", descriptor = "I")
 	public static int anInt2394 = 0;
@@ -37,7 +38,7 @@ public final class Static100 {
 		aClass40_689 = null;
 		aBooleanArray37 = null;
 		textConnectingToUpdateServer = null;
-		aClass2_Sub2_Sub12_Sub1_Sub1Array1 = null;
+		players = null;
 	}
 
 	@OriginalMember(owner = "client!v", name = "a", descriptor = "(IZ)Lclient!o;")

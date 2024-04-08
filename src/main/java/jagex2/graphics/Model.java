@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ne")
-public final class Model extends Renderable {
+public final class Model extends Entity {
 
 	@OriginalMember(owner = "client!ne", name = "vc", descriptor = "[I")
 	public static int[] anIntArray405 = new int[128];

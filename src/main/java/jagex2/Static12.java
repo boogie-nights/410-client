@@ -1,5 +1,8 @@
 package jagex2;
 
+import jagex2.dash3d.entity.NpcEntity;
+import jagex2.dash3d.entity.PathingEntity;
+import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.graphics.PixMap;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -93,19 +96,19 @@ public final class Static12 {
 	public static void method253() {
 		Static84.anInt1974 = 0;
 		@Pc(79) int local79;
-		for (@Pc(9) int local9 = -1; local9 < Static73.anInt1800 + Static88.anInt2067; local9++) {
-			@Pc(31) Class2_Sub2_Sub12_Sub1 local31;
+		for (@Pc(9) int local9 = -1; local9 < Static73.anInt1800 + Static88.playerCount; local9++) {
+			@Pc(31) PathingEntity local31;
 			if (local9 == -1) {
-				local31 = Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1;
-			} else if (local9 >= Static88.anInt2067) {
-				local31 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local9 - Static88.anInt2067]];
+				local31 = Static88.localPlayer;
+			} else if (local9 >= Static88.playerCount) {
+				local31 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local9 - Static88.playerCount]];
 			} else {
-				local31 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[Static73.anIntArray408[local9]];
+				local31 = Static100.players[Static73.playerIds[local9]];
 			}
 			if (local31 != null && local31.method1544()) {
 				@Pc(60) Class2_Sub2_Sub7 local60;
-				if (local31 instanceof Class2_Sub2_Sub12_Sub1_Sub2) {
-					local60 = ((Class2_Sub2_Sub12_Sub1_Sub2) local31).aClass2_Sub2_Sub7_1;
+				if (local31 instanceof NpcEntity) {
+					local60 = ((NpcEntity) local31).type;
 					if (local60.anIntArray154 != null) {
 						local60 = local60.method611();
 					}
@@ -113,22 +116,22 @@ public final class Static12 {
 						continue;
 					}
 				}
-				if (local9 >= Static88.anInt2067) {
-					local60 = ((Class2_Sub2_Sub12_Sub1_Sub2) local31).aClass2_Sub2_Sub7_1;
+				if (local9 >= Static88.playerCount) {
+					local60 = ((NpcEntity) local31).type;
 					if (local60.anInt773 >= 0 && local60.anInt773 < Static58.aClass2_Sub2_Sub2_Sub4Array8.length) {
 						Static103.method1649(local31.anInt2310 + 15, local31);
 						if (Static17.anInt426 > -1) {
 							Static58.aClass2_Sub2_Sub2_Sub4Array8[local60.anInt773].method1624(Static17.anInt426 - 12, Static20.anInt477 - 30);
 						}
 					}
-					if (Static91.anInt2139 == 1 && Static85.anInt1989 == Static63.anIntArray326[local9 - Static88.anInt2067] && Static107.loopCycle % 20 < 10) {
+					if (Static91.anInt2139 == 1 && Static85.anInt1989 == Static63.anIntArray326[local9 - Static88.playerCount] && Static107.loopCycle % 20 < 10) {
 						Static103.method1649(local31.anInt2310 + 15, local31);
 						if (Static17.anInt426 > -1) {
 							Static101.aClass2_Sub2_Sub2_Sub4Array10[0].method1624(Static17.anInt426 - 12, Static20.anInt477 + -28);
 						}
 					}
 				} else {
-					@Pc(77) Class2_Sub2_Sub12_Sub1_Sub1 local77 = (Class2_Sub2_Sub12_Sub1_Sub1) local31;
+					@Pc(77) PlayerEntity local77 = (PlayerEntity) local31;
 					local79 = 30;
 					if (local77.anInt1380 != -1 || local77.anInt1370 != -1) {
 						Static103.method1649(local31.anInt2310 + 15, local31);
@@ -143,14 +146,14 @@ public final class Static12 {
 							}
 						}
 					}
-					if (local9 >= 0 && Static91.anInt2139 == 10 && Static97.anInt2353 == Static73.anIntArray408[local9]) {
+					if (local9 >= 0 && Static91.anInt2139 == 10 && Static97.anInt2353 == Static73.playerIds[local9]) {
 						Static103.method1649(local31.anInt2310 + 15, local31);
 						if (Static17.anInt426 > -1) {
 							Static101.aClass2_Sub2_Sub2_Sub4Array10[1].method1624(Static17.anInt426 - 12, -local79 + Static20.anInt477);
 						}
 					}
 				}
-				if (local31.aClass40_660 != null && (Static88.anInt2067 <= local9 || Static23.publicChatSetting == 0 || Static23.publicChatSetting == 3 || Static23.publicChatSetting == 1 && Static38.isFriend(((Class2_Sub2_Sub12_Sub1_Sub1) local31).aClass40_395))) {
+				if (local31.aClass40_660 != null && (Static88.playerCount <= local9 || Static23.publicChatSetting == 0 || Static23.publicChatSetting == 3 || Static23.publicChatSetting == 1 && Static38.isFriend(((PlayerEntity) local31).aClass40_395))) {
 					Static103.method1649(local31.anInt2310, local31);
 					if (Static17.anInt426 > -1 && Static84.anInt1974 < Static46.anInt2457) {
 						Static46.anIntArray537[Static84.anInt1974] = Static14.aClass2_Sub2_Sub2_Sub2_1.method568(local31.aClass40_660) / 2;

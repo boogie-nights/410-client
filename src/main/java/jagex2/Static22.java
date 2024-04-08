@@ -167,7 +167,7 @@ public final class Static22 {
 			if (Static98.aBooleanArray35[4] && Static36.anIntArray164[4] + 128 > local36) {
 				local36 = Static36.anIntArray164[4] + 128;
 			}
-			Static41.method752(Static23.anInt577, local34, Static66.anInt1653, local36, Static86.method1383(Static1.currentLevel, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284) - 50, local36 * 3 + 600);
+			Static41.method752(Static23.anInt577, local34, Static66.anInt1653, local36, Static86.method1383(Static1.currentLevel, Static88.localPlayer.anInt2275, Static88.localPlayer.anInt2284) - 50, local36 * 3 + 600);
 		}
 		if (Static7.aBoolean22) {
 			local36 = Static18.method361();

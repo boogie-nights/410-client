@@ -80,7 +80,7 @@ public final class Static38 {
 				return true;
 			}
 		}
-		return username.method1199(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395);
+		return username.method1199(Static88.localPlayer.aClass40_395);
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(BLclient!ud;II)Lclient!vb;")

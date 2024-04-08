@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Component;
 
+import jagex2.dash3d.entity.PlayerEntity;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -81,7 +82,7 @@ public final class Static15 {
 				return;
 			}
 		}
-		if (!local27.method1184(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395)) {
+		if (!local27.method1184(Static88.localPlayer.aClass40_395)) {
 			Static84.aLongArray4[Static99.ignoreCount++] = arg0;
 			Static33.aBoolean59 = true;
 			Static80.out.p1isaac(186);
@@ -91,12 +92,12 @@ public final class Static15 {
 
 	@OriginalMember(owner = "client!cd", name = "f", descriptor = "(I)V")
 	public static void method1255() {
-		for (@Pc(15) int local15 = 0; local15 < Static53.anInt1190; local15++) {
-			@Pc(21) int local21 = Static98.anIntArray504[local15];
-			@Pc(25) Class2_Sub2_Sub12_Sub1_Sub1 local25 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local21];
-			@Pc(31) int local31 = Static56.aClass2_Sub3_Sub1_5.g1();
+		for (@Pc(15) int local15 = 0; local15 < Static53.entityUpdateCount; local15++) {
+			@Pc(21) int local21 = Static98.entityUpdateIds[local15];
+			@Pc(25) PlayerEntity local25 = Static100.players[local21];
+			@Pc(31) int local31 = Static56.in.g1();
 			if ((local31 & 0x4) != 0) {
-				local31 += Static56.aClass2_Sub3_Sub1_5.g1() << 8;
+				local31 += Static56.in.g1() << 8;
 			}
 			Static51.method846(local21, local25, local31);
 		}

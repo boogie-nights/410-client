@@ -1,6 +1,6 @@
-package jagex2;
+package jagex2.dash3d.type;
 
-import jagex2.graphics.Renderable;
+import jagex2.graphics.Entity;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
@@ -20,7 +20,7 @@ public final class WallDecoration {
 	public int x;
 
 	@OriginalMember(owner = "client!a", name = "i", descriptor = "Lclient!jd;")
-	public Renderable aClass2_Sub2_Sub12_1;
+	public Entity aClass2_Sub2_Sub12_1;
 
 	@OriginalMember(owner = "client!a", name = "m", descriptor = "I")
 	public int z;

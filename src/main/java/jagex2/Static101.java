@@ -155,7 +155,7 @@ public final class Static101 {
 					local48 = local48.method1185(5);
 				}
 				if ((local27 == 1 || local27 == 2) && (local27 == 1 || Static23.publicChatSetting == 0 || Static23.publicChatSetting == 1 && Static38.isFriend(local48))) {
-					if (local38 - 14 < arg0 && arg0 <= local38 && !local48.method1184(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395)) {
+					if (local38 - 14 < arg0 && arg0 <= local38 && !local48.method1184(Static88.localPlayer.aClass40_395)) {
 						if (Static61.anInt1550 >= 1) {
 							Static21.method402(Static80.method1334(new Class40[] { Static16.aClass40_111, local48 }), 42, 0, 0, 0);
 						}
@@ -226,48 +226,50 @@ public final class Static101 {
 	}
 
 	@OriginalMember(owner = "client!va", name = "a", descriptor = "(I)V")
-	public static void method1593() {
-		Static56.aClass2_Sub3_Sub1_5.method1737();
-		@Pc(11) int local11 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
-		if (local11 == 0) {
+	public static void readLocalPlayer() {
+		Static56.in.accessBits();
+		@Pc(11) int hasUpdate = Static56.in.gBit(1);
+		if (hasUpdate == 0) {
 			return;
 		}
-		@Pc(19) int local19 = Static56.aClass2_Sub3_Sub1_5.method1743(2);
-		if (local19 == 0) {
-			Static98.anIntArray504[Static53.anInt1190++] = 2047;
+		@Pc(19) int updateType = Static56.in.gBit(2);
+		if (updateType == 0) {
+			Static98.entityUpdateIds[Static53.entityUpdateCount++] = 2047;
 			return;
 		}
-		@Pc(41) int local41;
-		@Pc(51) int local51;
-		if (local19 == 1) {
-			local41 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
-			Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.method1547(local41, false);
-			local51 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
-			if (local51 == 1) {
-				Static98.anIntArray504[Static53.anInt1190++] = 2047;
+
+		if (updateType == 1) {
+			@Pc(41) int walkDir = Static56.in.gBit(3);
+			Static88.localPlayer.step(walkDir, false);
+			@Pc(51) int hasMaskUpdate = Static56.in.gBit(1);
+			if (hasMaskUpdate == 1) {
+				Static98.entityUpdateIds[Static53.entityUpdateCount++] = 2047;
 			}
 			return;
 		}
-		@Pc(93) int local93;
-		if (local19 == 2) {
-			local41 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
-			Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.method1547(local41, true);
-			local51 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
-			Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.method1547(local51, true);
-			local93 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
-			if (local93 == 1) {
-				Static98.anIntArray504[Static53.anInt1190++] = 2047;
+
+		if (updateType == 2) {
+			int walkDir = Static56.in.gBit(3);
+			Static88.localPlayer.step(walkDir, true);
+			int runDir = Static56.in.gBit(3);
+			Static88.localPlayer.step(runDir, true);
+
+			@Pc(93) int hasMaskUpdate = Static56.in.gBit(1);
+			if (hasMaskUpdate == 1) {
+				Static98.entityUpdateIds[Static53.entityUpdateCount++] = 2047;
 			}
-		} else if (local19 == 3) {
-			local41 = Static56.aClass2_Sub3_Sub1_5.method1743(7);
-			Static1.currentLevel = Static56.aClass2_Sub3_Sub1_5.method1743(2);
-			local51 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
-			if (local51 == 1) {
-				Static98.anIntArray504[Static53.anInt1190++] = 2047;
+		} else if (updateType == 3) {
+			int local41 = Static56.in.gBit(7);
+			Static1.currentLevel = Static56.in.gBit(2);
+
+			int hasMaskUpdate = Static56.in.gBit(1);
+			if (hasMaskUpdate == 1) {
+				Static98.entityUpdateIds[Static53.entityUpdateCount++] = 2047;
 			}
-			local93 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
-			@Pc(149) int local149 = Static56.aClass2_Sub3_Sub1_5.method1743(7);
-			Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.method1545(local93 == 1, local41, local149);
+
+			int jump = Static56.in.gBit(1);
+			@Pc(149) int local149 = Static56.in.gBit(7);
+			Static88.localPlayer.move(jump == 1, local41, local149);
 		}
 	}
 }

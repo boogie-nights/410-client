@@ -1,5 +1,7 @@
 package jagex2;
 
+import jagex2.dash3d.entity.NpcEntity;
+import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.LinkedList;
 import jagex2.datastruct.LruCache;
 import jagex2.graphics.PixMap;
@@ -136,13 +138,13 @@ public final class Static19 {
 			return;
 		}
 		@Pc(62) int local62 = Static84.anInt1978 + Static67.anInt1669 & 0x7FF;
-		local20 = 464 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;
-		@Pc(77) int local77 = Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32 + 48;
+		local20 = 464 - Static88.localPlayer.anInt2284 / 32;
+		@Pc(77) int local77 = Static88.localPlayer.anInt2275 / 32 + 48;
 		Static93.aClass2_Sub2_Sub2_Sub4_8.method1616(25, 5, 146, 151, local77, local20, local62, Static15.anInt1857 + 256, Static73.anIntArray407, Static2.anIntArray3);
 		Static13.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, Static67.anInt1669, 256, Static102.compassMaskLineOffsets, Static45.compassMaskLineLengths);
 		for (local22 = 0; local22 < Static90.anInt2136; local22++) {
-			local77 = Static97.anIntArray500[local22] * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
-			local20 = Static102.anIntArray546[local22] * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;
+			local77 = Static97.anIntArray500[local22] * 4 + 2 - Static88.localPlayer.anInt2275 / 32;
+			local20 = Static102.anIntArray546[local22] * 4 + 2 - Static88.localPlayer.anInt2284 / 32;
 			Static90.method1461(local77, Static95.aClass2_Sub2_Sub2_Sub4Array9[local22], local20);
 		}
 		@Pc(155) int local155;
@@ -150,32 +152,32 @@ public final class Static19 {
 			for (local155 = 0; local155 < 104; local155++) {
 				@Pc(165) LinkedList local165 = Static91.levelObjStacks[Static1.currentLevel][local151][local155];
 				if (local165 != null) {
-					local77 = local151 * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
-					local20 = local155 * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;
+					local77 = local151 * 4 + 2 - Static88.localPlayer.anInt2275 / 32;
+					local20 = local155 * 4 + 2 - Static88.localPlayer.anInt2284 / 32;
 					Static90.method1461(local77, Static30.aClass2_Sub2_Sub2_Sub4Array5[0], local20);
 				}
 			}
 		}
 		for (local155 = 0; local155 < Static73.anInt1800; local155++) {
-			@Pc(215) Class2_Sub2_Sub12_Sub1_Sub2 local215 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local155]];
-			if (local215 != null && local215.method1544()) {
-				@Pc(224) Class2_Sub2_Sub7 local224 = local215.aClass2_Sub2_Sub7_1;
+			@Pc(215) NpcEntity local215 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local155]];
+			if (local215 != null && local215.isVisible()) {
+				@Pc(224) Class2_Sub2_Sub7 local224 = local215.type;
 				if (local224.anIntArray154 != null) {
 					local224 = local224.method611();
 				}
 				if (local224 != null && local224.aBoolean56 && local224.aBoolean58) {
-					local20 = local215.anInt2284 / 32 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;
-					local77 = local215.anInt2275 / 32 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
+					local20 = local215.anInt2284 / 32 - Static88.localPlayer.anInt2284 / 32;
+					local77 = local215.anInt2275 / 32 - Static88.localPlayer.anInt2275 / 32;
 					Static90.method1461(local77, Static30.aClass2_Sub2_Sub2_Sub4Array5[1], local20);
 				}
 			}
 		}
-		@Pc(288) Class2_Sub2_Sub12_Sub1_Sub1 local288;
-		for (@Pc(280) int local280 = 0; local280 < Static88.anInt2067; local280++) {
-			local288 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[Static73.anIntArray408[local280]];
+		@Pc(288) PlayerEntity local288;
+		for (@Pc(280) int local280 = 0; local280 < Static88.playerCount; local280++) {
+			local288 = Static100.players[Static73.playerIds[local280]];
 			if (local288 != null && local288.method1544()) {
-				local20 = local288.anInt2284 / 32 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;
-				local77 = local288.anInt2275 / 32 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
+				local20 = local288.anInt2284 / 32 - Static88.localPlayer.anInt2284 / 32;
+				local77 = local288.anInt2275 / 32 - Static88.localPlayer.anInt2275 / 32;
 				@Pc(321) long local321 = local288.aClass40_395.toBase37();
 				@Pc(323) boolean local323 = false;
 				for (@Pc(325) int local325 = 0; local325 < Static22.friendCount; local325++) {
@@ -185,7 +187,7 @@ public final class Static19 {
 					}
 				}
 				@Pc(351) boolean local351 = false;
-				if (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt1382 != 0 && local288.anInt1382 != 0 && local288.anInt1382 == Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt1382) {
+				if (Static88.localPlayer.anInt1382 != 0 && local288.anInt1382 != 0 && local288.anInt1382 == Static88.localPlayer.anInt1382) {
 					local351 = true;
 				}
 				if (local323) {
@@ -199,30 +201,30 @@ public final class Static19 {
 		}
 		if (Static91.anInt2139 != 0 && Static107.loopCycle % 20 < 10) {
 			if (Static91.anInt2139 == 1 && Static85.anInt1989 >= 0 && Static85.anInt1989 < Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1.length) {
-				@Pc(427) Class2_Sub2_Sub12_Sub1_Sub2 local427 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static85.anInt1989];
+				@Pc(427) NpcEntity local427 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static85.anInt1989];
 				if (local427 != null) {
-					local77 = local427.anInt2275 / 32 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
-					local20 = local427.anInt2284 / 32 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;
+					local77 = local427.anInt2275 / 32 - Static88.localPlayer.anInt2275 / 32;
+					local20 = local427.anInt2284 / 32 - Static88.localPlayer.anInt2284 / 32;
 					Static103.method1646(Static13.aClass2_Sub2_Sub2_Sub4Array3[1], local20, local77);
 				}
 			}
 			if (Static91.anInt2139 == 2) {
-				local77 = (-Static87.anInt2058 + Static16.anInt410) * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
-				local20 = (Static83.anInt1952 - Static30.anInt725) * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;
+				local77 = (-Static87.anInt2058 + Static16.anInt410) * 4 + 2 - Static88.localPlayer.anInt2275 / 32;
+				local20 = (Static83.anInt1952 - Static30.anInt725) * 4 + 2 - Static88.localPlayer.anInt2284 / 32;
 				Static103.method1646(Static13.aClass2_Sub2_Sub2_Sub4Array3[1], local20, local77);
 			}
-			if (Static91.anInt2139 == 10 && Static97.anInt2353 >= 0 && Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1.length > Static97.anInt2353) {
-				local288 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[Static97.anInt2353];
+			if (Static91.anInt2139 == 10 && Static97.anInt2353 >= 0 && Static100.players.length > Static97.anInt2353) {
+				local288 = Static100.players[Static97.anInt2353];
 				if (local288 != null) {
-					local20 = local288.anInt2284 / 32 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;
-					local77 = local288.anInt2275 / 32 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
+					local20 = local288.anInt2284 / 32 - Static88.localPlayer.anInt2284 / 32;
+					local77 = local288.anInt2275 / 32 - Static88.localPlayer.anInt2275 / 32;
 					Static103.method1646(Static13.aClass2_Sub2_Sub2_Sub4Array3[1], local20, local77);
 				}
 			}
 		}
 		if (Static38.anInt986 != 0) {
-			local20 = Static80.anInt1919 * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 / 32;
-			local77 = Static38.anInt986 * 4 + 2 - Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 / 32;
+			local20 = Static80.anInt1919 * 4 + 2 - Static88.localPlayer.anInt2284 / 32;
+			local77 = Static38.anInt986 * 4 + 2 - Static88.localPlayer.anInt2275 / 32;
 			Static90.method1461(local77, Static13.aClass2_Sub2_Sub2_Sub4Array3[0], local20);
 		}
 		Static26.method1612(97, 78, 3, 3, 0xFFFFFF);

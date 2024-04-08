@@ -55,7 +55,7 @@ public final class Static97 {
 	public static int[] anIntArray500 = new int[1000];
 
 	@OriginalMember(owner = "client!ub", name = "K", descriptor = "[I")
-	public static int[] anIntArray501 = new int[] { 9104, 10275, 7595, 3610, 7975, 8526, 918, 38802, 24466, 10145, 58654, 5027, 1457, 16565, 34991, 25486 };
+	public static int[] DESIGN_HAIR_COLOR = new int[] { 9104, 10275, 7595, 3610, 7975, 8526, 918, 38802, 24466, 10145, 58654, 5027, 1457, 16565, 34991, 25486 };
 
 	@OriginalMember(owner = "client!ub", name = "L", descriptor = "Lclient!o;")
 	public static Class40 aClass40_671 = Static13.method257("headicons_hint");
@@ -99,7 +99,7 @@ public final class Static97 {
 		aClass2_Sub2_Sub2_Sub3_22 = null;
 		aLongArray6 = null;
 		anIntArray503 = null;
-		anIntArray501 = null;
+		DESIGN_HAIR_COLOR = null;
 	}
 
 	@OriginalMember(owner = "client!ub", name = "a", descriptor = "([Lclient!o;III)Lclient!o;")

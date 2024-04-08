@@ -23,7 +23,7 @@ public final class Static48 {
 	public static Class40 aClass40_344 = Static13.method257("(U2");
 
 	@OriginalMember(owner = "client!jc", name = "E", descriptor = "[I")
-	public static int[] anIntArray235 = new int[] { 0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, 65535, 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 0xFFFFFF, 33554431, 67108863, 134217727, 268435455, 536870911, 1073741823, Integer.MAX_VALUE, -1 };
+	public static int[] BITMASK = new int[] { 0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, 65535, 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 0xFFFFFF, 33554431, 67108863, 134217727, 268435455, 536870911, 1073741823, Integer.MAX_VALUE, -1 };
 
 	@OriginalMember(owner = "client!jc", name = "F", descriptor = "Lclient!o;")
 	public static Class40 aClass40_345 = Static13.method257("Take @lre@");
@@ -108,7 +108,7 @@ public final class Static48 {
 		}
 		@Pc(30) Class40 local30 = arg2.aClass40_238;
 		if (arg2.anInt766 != 0) {
-			local30 = Static80.method1334(new Class40[] { local30, Static15.method1260(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt1378, arg2.anInt766), Static31.aClass40_731, Static53.method859(arg2.anInt766), Static90.aClass40_609 });
+			local30 = Static80.method1334(new Class40[] { local30, Static15.method1260(Static88.localPlayer.anInt1378, arg2.anInt766), Static31.aClass40_731, Static53.method859(arg2.anInt766), Static90.aClass40_609 });
 		}
 		if (Static79.objSelected == 1) {
 			Static21.method402(Static80.method1334(new Class40[] { Static27.aClass40_193, Static87.aClass40_601, Static76.aClass40_613, local30 }), 7, arg3, arg1, arg0);
@@ -145,7 +145,7 @@ public final class Static48 {
 				for (local94 = 4; local94 >= 0; local94--) {
 					if (local80[local94] != null && local80[local94].method1199(Static105.aClass40_729)) {
 						@Pc(192) short local192 = 0;
-						if (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt1378 < arg2.anInt766) {
+						if (Static88.localPlayer.anInt1378 < arg2.anInt766) {
 							local192 = 2000;
 						}
 						@Pc(201) int local201 = 0;
@@ -183,6 +183,6 @@ public final class Static48 {
 		aClass40_345 = null;
 		aClass40_344 = null;
 		anIntArray234 = null;
-		anIntArray235 = null;
+		BITMASK = null;
 	}
 }

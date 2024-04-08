@@ -35,8 +35,8 @@ public final class Static18 {
 
 	@OriginalMember(owner = "client!db", name = "b", descriptor = "(B)V")
 	public static void method357() {
-		@Pc(10) int local10 = Static98.anInt2371 + Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284;
-		@Pc(15) int local15 = Static104.anInt2518 + Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275;
+		@Pc(10) int local10 = Static98.anInt2371 + Static88.localPlayer.anInt2284;
+		@Pc(15) int local15 = Static104.anInt2518 + Static88.localPlayer.anInt2275;
 		if (Static66.anInt1653 - local15 < -500 || Static66.anInt1653 - local15 > 500 || Static23.anInt577 - local10 < -500 || Static23.anInt577 - local10 > 500) {
 			Static66.anInt1653 = local15;
 			Static23.anInt577 = local10;

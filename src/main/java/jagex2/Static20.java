@@ -1,6 +1,8 @@
 package jagex2;
 
 import jagex2.config.ObjType;
+import jagex2.dash3d.entity.NpcEntity;
+import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.LinkedList;
 import jagex2.datastruct.LruCache;
 import jagex2.graphics.PixMap;
@@ -138,39 +140,39 @@ public final class Static20 {
 					}
 				}
 				@Pc(316) int local316;
-				@Pc(324) Class2_Sub2_Sub12_Sub1_Sub2 local324;
-				@Pc(369) Class2_Sub2_Sub12_Sub1_Sub1 local369;
+				@Pc(324) NpcEntity local324;
+				@Pc(369) PlayerEntity local369;
 				if (local60 == 1) {
-					@Pc(293) Class2_Sub2_Sub12_Sub1_Sub2 local293 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local54];
-					if (local293.aClass2_Sub2_Sub7_1.anInt758 == 1 && (local293.anInt2275 & 0x7F) == 64 && (local293.anInt2284 & 0x7F) == 64) {
+					@Pc(293) NpcEntity local293 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local54];
+					if (local293.type.size == 1 && (local293.anInt2275 & 0x7F) == 64 && (local293.anInt2284 & 0x7F) == 64) {
 						for (local316 = 0; local316 < Static73.anInt1800; local316++) {
 							local324 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local316]];
-							if (local324 != null && local324 != local293 && local324.aClass2_Sub2_Sub7_1.anInt758 == 1 && local324.anInt2275 == local293.anInt2275 && local324.anInt2284 == local293.anInt2284) {
-								Static48.method822(Static63.anIntArray326[local316], local42, local324.aClass2_Sub2_Sub7_1, local48);
+							if (local324 != null && local324 != local293 && local324.type.size == 1 && local324.anInt2275 == local293.anInt2275 && local324.anInt2284 == local293.anInt2284) {
+								Static48.method822(Static63.anIntArray326[local316], local42, local324.type, local48);
 							}
 						}
-						for (local119 = 0; local119 < Static88.anInt2067; local119++) {
-							local369 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[Static73.anIntArray408[local119]];
+						for (local119 = 0; local119 < Static88.playerCount; local119++) {
+							local369 = Static100.players[Static73.playerIds[local119]];
 							if (local369 != null && local369.anInt2275 == local293.anInt2275 && local369.anInt2284 == local293.anInt2284) {
-								Static102.method1638(local48, local369, local42, Static73.anIntArray408[local119]);
+								Static102.method1638(local48, local369, local42, Static73.playerIds[local119]);
 							}
 						}
 					}
-					Static48.method822(local54, local42, local293.aClass2_Sub2_Sub7_1, local48);
+					Static48.method822(local54, local42, local293.type, local48);
 				}
 				if (local60 == 0) {
-					@Pc(414) Class2_Sub2_Sub12_Sub1_Sub1 local414 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local54];
+					@Pc(414) PlayerEntity local414 = Static100.players[local54];
 					if ((local414.anInt2275 & 0x7F) == 64 && (local414.anInt2284 & 0x7F) == 64) {
 						for (local316 = 0; local316 < Static73.anInt1800; local316++) {
 							local324 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local316]];
-							if (local324 != null && local324.aClass2_Sub2_Sub7_1.anInt758 == 1 && local324.anInt2275 == local414.anInt2275 && local414.anInt2284 == local324.anInt2284) {
-								Static48.method822(Static63.anIntArray326[local316], local42, local324.aClass2_Sub2_Sub7_1, local48);
+							if (local324 != null && local324.type.size == 1 && local324.anInt2275 == local414.anInt2275 && local414.anInt2284 == local324.anInt2284) {
+								Static48.method822(Static63.anIntArray326[local316], local42, local324.type, local48);
 							}
 						}
-						for (local119 = 0; local119 < Static88.anInt2067; local119++) {
-							local369 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[Static73.anIntArray408[local119]];
+						for (local119 = 0; local119 < Static88.playerCount; local119++) {
+							local369 = Static100.players[Static73.playerIds[local119]];
 							if (local369 != null && local369 != local414 && local414.anInt2275 == local369.anInt2275 && local369.anInt2284 == local414.anInt2284) {
-								Static102.method1638(local48, local369, local42, Static73.anIntArray408[local119]);
+								Static102.method1638(local48, local369, local42, Static73.playerIds[local119]);
 							}
 						}
 					}

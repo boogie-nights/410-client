@@ -5,6 +5,7 @@ import java.awt.Font;
 import java.awt.Graphics;
 
 import jagex2.config.ComType;
+import jagex2.dash3d.entity.PathingEntity;
 import jagex2.datastruct.LinkedList;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -90,23 +91,23 @@ public final class Static91 {
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!ke;II)V")
-	public static void method1468(@OriginalArg(0) Class2_Sub2_Sub12_Sub1 arg0, @OriginalArg(1) int arg1) {
+	public static void method1468(@OriginalArg(0) PathingEntity arg0, @OriginalArg(1) int arg1) {
 		if (arg0.anInt2275 < 128 || arg0.anInt2284 < 128 || arg0.anInt2275 >= 13184 || arg0.anInt2284 >= 13184) {
 			arg0.anInt2297 = 0;
 			arg0.anInt2277 = 0;
 			arg0.anInt2302 = -1;
 			arg0.anInt2307 = -1;
-			arg0.anInt2275 = arg0.anInt2278 * 64 + arg0.anIntArray492[0] * 128;
-			arg0.anInt2284 = arg0.anInt2278 * 64 + arg0.anIntArray496[0] * 128;
+			arg0.anInt2275 = arg0.size * 64 + arg0.anIntArray492[0] * 128;
+			arg0.anInt2284 = arg0.size * 64 + arg0.anIntArray496[0] * 128;
 			arg0.method1543();
 		}
-		if (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1 == arg0 && (arg0.anInt2275 < 1536 || arg0.anInt2284 < 1536 || arg0.anInt2275 >= 11776 || arg0.anInt2284 >= 11776)) {
+		if (Static88.localPlayer == arg0 && (arg0.anInt2275 < 1536 || arg0.anInt2284 < 1536 || arg0.anInt2275 >= 11776 || arg0.anInt2284 >= 11776)) {
 			arg0.anInt2302 = -1;
 			arg0.anInt2277 = 0;
 			arg0.anInt2307 = -1;
 			arg0.anInt2297 = 0;
-			arg0.anInt2275 = arg0.anIntArray492[0] * 128 + arg0.anInt2278 * 64;
-			arg0.anInt2284 = arg0.anIntArray496[0] * 128 + arg0.anInt2278 * 64;
+			arg0.anInt2275 = arg0.anIntArray492[0] * 128 + arg0.size * 64;
+			arg0.anInt2284 = arg0.anIntArray496[0] * 128 + arg0.size * 64;
 			arg0.method1543();
 		}
 		if (Static107.loopCycle < arg0.anInt2277) {

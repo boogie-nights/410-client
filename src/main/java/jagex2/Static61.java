@@ -1,5 +1,8 @@
 package jagex2;
 
+import jagex2.dash3d.entity.NpcEntity;
+import jagex2.dash3d.entity.PathingEntity;
+import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.LruCache;
 import jagex2.graphics.PixMap;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -84,14 +87,14 @@ public final class Static61 {
 	}
 
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(ILclient!ke;)V")
-	public static void method1040(@OriginalArg(1) Class2_Sub2_Sub12_Sub1 arg0) {
+	public static void method1040(@OriginalArg(1) PathingEntity arg0) {
 		if (arg0.anInt2285 == 0) {
 			return;
 		}
 		@Pc(39) int local39;
 		@Pc(32) int local32;
 		if (arg0.anInt2324 != -1 && arg0.anInt2324 < 32768) {
-			@Pc(23) Class2_Sub2_Sub12_Sub1_Sub2 local23 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[arg0.anInt2324];
+			@Pc(23) NpcEntity local23 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[arg0.anInt2324];
 			if (local23 != null) {
 				local32 = arg0.anInt2284 - local23.anInt2284;
 				local39 = arg0.anInt2275 - local23.anInt2275;
@@ -106,7 +109,7 @@ public final class Static61 {
 			if (local67 == Static83.anInt1955) {
 				local67 = 2047;
 			}
-			@Pc(76) Class2_Sub2_Sub12_Sub1_Sub1 local76 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local67];
+			@Pc(76) PlayerEntity local76 = Static100.players[local67];
 			if (local76 != null) {
 				local32 = arg0.anInt2275 - local76.anInt2275;
 				@Pc(91) int local91 = arg0.anInt2284 - local76.anInt2284;

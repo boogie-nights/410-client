@@ -5,8 +5,9 @@ import java.math.BigInteger;
 import jagex2.config.ComType;
 import jagex2.dash3d.CollisionMap;
 import jagex2.dash3d.World3D;
+import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.LinkedList;
-import jagex2.graphics.Renderable;
+import jagex2.graphics.Entity;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -66,7 +67,7 @@ public final class Static51 {
 		if (local59.anInt1030 == 1) {
 			local65 += 256;
 		}
-		@Pc(118) Renderable local118;
+		@Pc(118) Entity local118;
 		if (arg2 == 22) {
 			if (local59.anInt1048 == -1 && local59.anIntArray210 == null) {
 				local118 = local59.method765(arg6, local23, local45, local13, 22, local35);
@@ -136,10 +137,10 @@ public final class Static51 {
 			}
 		} else {
 			@Pc(468) int local468;
-			@Pc(500) Renderable local500;
+			@Pc(500) Entity local500;
 			if (arg2 == 2) {
 				local468 = arg6 + 1 & 0x3;
-				@Pc(490) Renderable local490;
+				@Pc(490) Entity local490;
 				if (local59.anInt1048 == -1 && local59.anIntArray210 == null) {
 					local490 = local59.method765(arg6 + 4, local23, local45, local13, 2, local35);
 					local500 = local59.method765(local468, local23, local45, local13, 2, local35);
@@ -240,28 +241,28 @@ public final class Static51 {
 	}
 
 	@OriginalMember(owner = "client!k", name = "a", descriptor = "(ILclient!kc;II)V")
-	public static void method846(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub2_Sub12_Sub1_Sub1 arg1, @OriginalArg(2) int arg2) {
+	public static void method846(@OriginalArg(0) int arg0, @OriginalArg(1) PlayerEntity arg1, @OriginalArg(2) int arg2) {
 		if ((arg2 & 0x80) != 0) {
-			arg1.anInt2324 = Static56.aClass2_Sub3_Sub1_5.method1705();
+			arg1.anInt2324 = Static56.in.method1705();
 			if (arg1.anInt2324 == 65535) {
 				arg1.anInt2324 = -1;
 			}
 		}
 		@Pc(27) int local27;
 		if ((arg2 & 0x40) != 0) {
-			local27 = Static56.aClass2_Sub3_Sub1_5.method1715();
+			local27 = Static56.in.method1715();
 			@Pc(30) byte[] local30 = new byte[local27];
 			@Pc(35) Packet local35 = new Packet(local30);
-			Static56.aClass2_Sub3_Sub1_5.method1692(local30, local27);
+			Static56.in.method1692(local30, local27);
 			Static59.aPacketArray1[arg0] = local35;
-			arg1.method918(local35);
+			arg1.read(local35);
 		}
 		if ((arg2 & 0x10) != 0) {
-			arg1.aClass40_660 = Static56.aClass2_Sub3_Sub1_5.method1721();
+			arg1.aClass40_660 = Static56.in.method1721();
 			if (arg1.aClass40_660.method1174(0) == 126) {
 				arg1.aClass40_660 = arg1.aClass40_660.method1185(1);
 				Static58.method989(2, arg1.aClass40_395, arg1.aClass40_660);
-			} else if (arg1 == Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1) {
+			} else if (arg1 == Static88.localPlayer) {
 				Static58.method989(2, arg1.aClass40_395, arg1.aClass40_660);
 			}
 			arg1.anInt2301 = 0;
@@ -271,8 +272,8 @@ public final class Static51 {
 		@Pc(124) int local124;
 		@Pc(141) int local141;
 		if ((arg2 & 0x8) != 0) {
-			local27 = Static56.aClass2_Sub3_Sub1_5.method1705();
-			local124 = Static56.aClass2_Sub3_Sub1_5.method1715();
+			local27 = Static56.in.method1705();
+			local124 = Static56.in.method1715();
 			if (local27 == 65535) {
 				local27 = -1;
 			}
@@ -297,18 +298,18 @@ public final class Static51 {
 			}
 		}
 		if ((arg2 & 0x100) != 0) {
-			arg1.anInt2317 = Static56.aClass2_Sub3_Sub1_5.method1715();
-			arg1.anInt2321 = Static56.aClass2_Sub3_Sub1_5.method1706();
-			arg1.anInt2311 = Static56.aClass2_Sub3_Sub1_5.method1715();
-			arg1.anInt2286 = Static56.aClass2_Sub3_Sub1_5.method1715();
-			arg1.anInt2277 = Static56.aClass2_Sub3_Sub1_5.method1705() + Static107.loopCycle;
-			arg1.anInt2297 = Static56.aClass2_Sub3_Sub1_5.method1681() + Static107.loopCycle;
-			arg1.anInt2314 = Static56.aClass2_Sub3_Sub1_5.method1706();
+			arg1.anInt2317 = Static56.in.method1715();
+			arg1.anInt2321 = Static56.in.method1706();
+			arg1.anInt2311 = Static56.in.method1715();
+			arg1.anInt2286 = Static56.in.method1715();
+			arg1.anInt2277 = Static56.in.method1705() + Static107.loopCycle;
+			arg1.anInt2297 = Static56.in.method1681() + Static107.loopCycle;
+			arg1.anInt2314 = Static56.in.method1706();
 			arg1.method1543();
 		}
 		if ((arg2 & 0x400) != 0) {
-			arg1.anInt2302 = Static56.aClass2_Sub3_Sub1_5.method1681();
-			local27 = Static56.aClass2_Sub3_Sub1_5.g4();
+			arg1.anInt2302 = Static56.in.method1681();
+			local27 = Static56.in.g4();
 			arg1.anInt2291 = 0;
 			if (arg1.anInt2302 == 65535) {
 				arg1.anInt2302 = -1;
@@ -321,10 +322,10 @@ public final class Static51 {
 			arg1.anInt2268 = 0;
 		}
 		if ((arg2 & 0x1) != 0) {
-			local27 = Static56.aClass2_Sub3_Sub1_5.method1705();
-			local124 = Static56.aClass2_Sub3_Sub1_5.method1715();
-			local141 = Static56.aClass2_Sub3_Sub1_5.method1715();
-			@Pc(332) int local332 = Static56.aClass2_Sub3_Sub1_5.pos;
+			local27 = Static56.in.method1705();
+			local124 = Static56.in.method1715();
+			local141 = Static56.in.method1715();
+			@Pc(332) int local332 = Static56.in.pos;
 			if (arg1.aClass40_395 != null && arg1.aClass33_2 != null) {
 				@Pc(340) boolean local340 = false;
 				@Pc(345) long local345 = arg1.aClass40_395.toBase37();
@@ -338,7 +339,7 @@ public final class Static51 {
 				}
 				if (!local340 && Static19.overrideChat == 0) {
 					Static95.aPacket_4.pos = 0;
-					Static56.aClass2_Sub3_Sub1_5.method1692(Static95.aPacket_4.data, local141);
+					Static56.in.method1692(Static95.aPacket_4.data, local141);
 					Static95.aPacket_4.pos = 0;
 					@Pc(392) Class40 local392 = Static7.method192(Static95.aPacket_4).method1166();
 					arg1.aClass40_660 = local392.method1178();
@@ -354,27 +355,27 @@ public final class Static51 {
 					}
 				}
 			}
-			Static56.aClass2_Sub3_Sub1_5.pos = local332 + local141;
+			Static56.in.pos = local332 + local141;
 		}
 		if ((arg2 & 0x200) != 0) {
-			local27 = Static56.aClass2_Sub3_Sub1_5.g1();
-			local124 = Static56.aClass2_Sub3_Sub1_5.g1();
+			local27 = Static56.in.g1();
+			local124 = Static56.in.g1();
 			arg1.method1540(local27, Static107.loopCycle, local124);
 			arg1.anInt2315 = Static107.loopCycle + 300;
-			arg1.anInt2298 = Static56.aClass2_Sub3_Sub1_5.method1706();
-			arg1.anInt2279 = Static56.aClass2_Sub3_Sub1_5.method1715();
+			arg1.anInt2298 = Static56.in.method1706();
+			arg1.anInt2279 = Static56.in.method1715();
 		}
 		if ((arg2 & 0x20) != 0) {
-			local27 = Static56.aClass2_Sub3_Sub1_5.method1730();
-			local124 = Static56.aClass2_Sub3_Sub1_5.g1();
+			local27 = Static56.in.method1730();
+			local124 = Static56.in.g1();
 			arg1.method1540(local27, Static107.loopCycle, local124);
 			arg1.anInt2315 = Static107.loopCycle + 300;
-			arg1.anInt2298 = Static56.aClass2_Sub3_Sub1_5.method1706();
-			arg1.anInt2279 = Static56.aClass2_Sub3_Sub1_5.method1706();
+			arg1.anInt2298 = Static56.in.method1706();
+			arg1.anInt2279 = Static56.in.method1706();
 		}
 		if ((arg2 & 0x2) != 0) {
-			arg1.anInt2280 = Static56.aClass2_Sub3_Sub1_5.method1705();
-			arg1.anInt2292 = Static56.aClass2_Sub3_Sub1_5.method1681();
+			arg1.anInt2280 = Static56.in.method1705();
+			arg1.anInt2292 = Static56.in.method1681();
 		}
 	}
 

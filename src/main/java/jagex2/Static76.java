@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.HashTable;
 import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -58,27 +59,27 @@ public final class Static76 {
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(ZB)V")
 	public static void method1475(@OriginalArg(0) boolean arg0) {
-		if (Static38.anInt986 == Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7 && Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7 == Static80.anInt1919) {
+		if (Static38.anInt986 == Static88.localPlayer.anInt2275 >> 7 && Static88.localPlayer.anInt2284 >> 7 == Static80.anInt1919) {
 			Static38.anInt986 = 0;
 		}
-		@Pc(33) int local33 = Static88.anInt2067;
+		@Pc(33) int local33 = Static88.playerCount;
 		if (arg0) {
 			local33 = 1;
 		}
 		for (@Pc(39) int local39 = 0; local39 < local33; local39++) {
-			@Pc(47) Class2_Sub2_Sub12_Sub1_Sub1 local47;
+			@Pc(47) PlayerEntity local47;
 			@Pc(45) int local45;
 			if (arg0) {
 				local45 = 33538048;
-				local47 = Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1;
+				local47 = Static88.localPlayer;
 			} else {
-				local47 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[Static73.anIntArray408[local39]];
-				local45 = Static73.anIntArray408[local39] << 14;
+				local47 = Static100.players[Static73.playerIds[local39]];
+				local45 = Static73.playerIds[local39] << 14;
 			}
 			if (local47 != null && local47.method1544()) {
 				@Pc(72) int local72 = local47.anInt2275 >> 7;
 				local47.aBoolean104 = false;
-				if ((Static1.lowMemory && Static88.anInt2067 > 50 || Static88.anInt2067 > 200) && !arg0 && local47.anInt2318 == local47.anInt2290) {
+				if ((Static1.lowMemory && Static88.playerCount > 50 || Static88.playerCount > 200) && !arg0 && local47.anInt2318 == local47.anInt2290) {
 					local47.aBoolean104 = true;
 				}
 				@Pc(102) int local102 = local47.anInt2284 >> 7;

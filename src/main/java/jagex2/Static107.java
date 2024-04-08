@@ -165,7 +165,7 @@ public final class Static107 {
 					local33 = Static67.anIntArray339[local22[local17++]] * 100 / 46875;
 				}
 				if (local31 == 8) {
-					local33 = Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt1378;
+					local33 = Static88.localPlayer.anInt1378;
 				}
 				if (local31 == 9) {
 					for (local103 = 0; local103 < 25; local103++) {
@@ -204,10 +204,10 @@ public final class Static107 {
 					local33 = method1662(local103);
 				}
 				if (local31 == 18) {
-					local33 = (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7) + Static87.anInt2058;
+					local33 = (Static88.localPlayer.anInt2275 >> 7) + Static87.anInt2058;
 				}
 				if (local31 == 19) {
-					local33 = Static30.anInt725 + (Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7);
+					local33 = Static30.anInt725 + (Static88.localPlayer.anInt2284 >> 7);
 				}
 				if (local31 == 20) {
 					local33 = local22[local17++];

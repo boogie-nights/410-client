@@ -1,6 +1,6 @@
 package jagex2;
 
-import jagex2.graphics.Renderable;
+import jagex2.graphics.Entity;
 import jagex2.graphics.Model;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!u")
-public final class Class2_Sub2_Sub12_Sub6 extends Renderable {
+public final class Class2_Sub2_Sub12_Sub6 extends Entity {
 
 	@OriginalMember(owner = "client!u", name = "gb", descriptor = "I")
 	private int anInt2224 = 0;

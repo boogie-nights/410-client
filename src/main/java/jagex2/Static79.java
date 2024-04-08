@@ -219,7 +219,7 @@ public final class Static79 {
 	@OriginalMember(owner = "client!pd", name = "b", descriptor = "(Z)V")
 	public static void method1277() {
 		if (Static1.lowMemory && Static1.currentLevel != Static33.anInt786) {
-			Static82.method1343(Static56.anInt2327, Static1.currentLevel, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], Static49.anInt2262);
+			Static82.method1343(Static56.anInt2327, Static1.currentLevel, Static88.localPlayer.anIntArray496[0], Static88.localPlayer.anIntArray492[0], Static49.anInt2262);
 		} else if (Static22.anInt2590 != Static1.currentLevel) {
 			Static22.anInt2590 = Static1.currentLevel;
 			Static19.method369(Static1.currentLevel);

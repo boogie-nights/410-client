@@ -21,7 +21,7 @@ public final class Static33 {
 	public static LruCache aClass47_8 = new LruCache(200);
 
 	@OriginalMember(owner = "client!gb", name = "Cb", descriptor = "I")
-	public static int anInt785 = 0;
+	public static int size = 0;
 
 	@OriginalMember(owner = "client!gb", name = "Eb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_239 = Static13.method257("Walk here");

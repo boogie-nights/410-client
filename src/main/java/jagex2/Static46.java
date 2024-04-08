@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.dash3d.entity.PlayerEntity;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -112,55 +113,56 @@ public final class Static46 {
 
 	@OriginalMember(owner = "client!ja", name = "d", descriptor = "(I)V")
 	public static void method1636() {
-		@Pc(10) int local10 = Static56.aClass2_Sub3_Sub1_5.method1743(8);
-		@Pc(20) int local20;
-		if (Static88.anInt2067 > local10) {
-			for (local20 = local10; local20 < Static88.anInt2067; local20++) {
-				Static52.anIntArray258[Static13.anInt304++] = Static73.anIntArray408[local20];
+		@Pc(10) int count = Static56.in.gBit(8);
+		@Pc(20) int i;
+
+		if (Static88.playerCount > count) {
+			for (i = count; i < Static88.playerCount; i++) {
+				Static52.entityRemovalIds[Static13.entityRemovalCount++] = Static73.playerIds[i];
 			}
 		}
-		if (local10 > Static88.anInt2067) {
+		if (count > Static88.playerCount) {
 			throw new RuntimeException("gppov1");
 		}
-		Static88.anInt2067 = 0;
-		for (local20 = 0; local20 < local10; local20++) {
-			@Pc(62) int local62 = Static73.anIntArray408[local20];
-			@Pc(66) Class2_Sub2_Sub12_Sub1_Sub1 local66 = Static100.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local62];
-			@Pc(71) int local71 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
+		Static88.playerCount = 0;
+		for (i = 0; i < count; i++) {
+			@Pc(62) int index = Static73.playerIds[i];
+			@Pc(66) PlayerEntity player = Static100.players[index];
+			@Pc(71) int local71 = Static56.in.gBit(1);
 			if (local71 == 0) {
-				Static73.anIntArray408[Static88.anInt2067++] = local62;
-				local66.anInt2274 = Static107.loopCycle;
+				Static73.playerIds[Static88.playerCount++] = index;
+				player.cycle = Static107.loopCycle;
 			} else {
-				@Pc(91) int local91 = Static56.aClass2_Sub3_Sub1_5.method1743(2);
+				@Pc(91) int local91 = Static56.in.gBit(2);
 				if (local91 == 0) {
-					Static73.anIntArray408[Static88.anInt2067++] = local62;
-					local66.anInt2274 = Static107.loopCycle;
-					Static98.anIntArray504[Static53.anInt1190++] = local62;
+					Static73.playerIds[Static88.playerCount++] = index;
+					player.cycle = Static107.loopCycle;
+					Static98.entityUpdateIds[Static53.entityUpdateCount++] = index;
 				} else {
 					@Pc(138) int local138;
 					@Pc(148) int local148;
 					if (local91 == 1) {
-						Static73.anIntArray408[Static88.anInt2067++] = local62;
-						local66.anInt2274 = Static107.loopCycle;
-						local138 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
-						local66.method1547(local138, false);
-						local148 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
+						Static73.playerIds[Static88.playerCount++] = index;
+						player.cycle = Static107.loopCycle;
+						local138 = Static56.in.gBit(3);
+						player.step(local138, false);
+						local148 = Static56.in.gBit(1);
 						if (local148 == 1) {
-							Static98.anIntArray504[Static53.anInt1190++] = local62;
+							Static98.entityUpdateIds[Static53.entityUpdateCount++] = index;
 						}
 					} else if (local91 == 2) {
-						Static73.anIntArray408[Static88.anInt2067++] = local62;
-						local66.anInt2274 = Static107.loopCycle;
-						local138 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
-						local66.method1547(local138, true);
-						local148 = Static56.aClass2_Sub3_Sub1_5.method1743(3);
-						local66.method1547(local148, true);
-						@Pc(206) int local206 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
+						Static73.playerIds[Static88.playerCount++] = index;
+						player.cycle = Static107.loopCycle;
+						local138 = Static56.in.gBit(3);
+						player.step(local138, true);
+						local148 = Static56.in.gBit(3);
+						player.step(local148, true);
+						@Pc(206) int local206 = Static56.in.gBit(1);
 						if (local206 == 1) {
-							Static98.anIntArray504[Static53.anInt1190++] = local62;
+							Static98.entityUpdateIds[Static53.entityUpdateCount++] = index;
 						}
 					} else if (local91 == 3) {
-						Static52.anIntArray258[Static13.anInt304++] = local62;
+						Static52.entityRemovalIds[Static13.entityRemovalCount++] = index;
 					}
 				}
 			}

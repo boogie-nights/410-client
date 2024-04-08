@@ -210,21 +210,21 @@ public final class Static94 {
 
 	@OriginalMember(owner = "client!td", name = "b", descriptor = "(B)V")
 	public static void method1495() {
-		Static53.anInt1190 = 0;
-		Static13.anInt304 = 0;
+		Static53.entityUpdateCount = 0;
+		Static13.entityRemovalCount = 0;
 		Static23.method477();
 		Static25.method520();
 		Static70.method1109();
 		@Pc(28) int local28;
-		for (@Pc(22) int local22 = 0; local22 < Static13.anInt304; local22++) {
-			local28 = Static52.anIntArray258[local22];
-			if (Static107.loopCycle != Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28].anInt2274) {
-				Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28].aClass2_Sub2_Sub7_1 = null;
+		for (@Pc(22) int local22 = 0; local22 < Static13.entityRemovalCount; local22++) {
+			local28 = Static52.entityRemovalIds[local22];
+			if (Static107.loopCycle != Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28].cycle) {
+				Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28].type = null;
 				Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28] = null;
 			}
 		}
-		if (Static56.aClass2_Sub3_Sub1_5.pos != Static33.anInt785) {
-			throw new RuntimeException("gnp1 pos:" + Static56.aClass2_Sub3_Sub1_5.pos + " psize:" + Static33.anInt785);
+		if (Static56.in.pos != Static33.size) {
+			throw new RuntimeException("gnp1 pos:" + Static56.in.pos + " psize:" + Static33.size);
 		}
 		for (local28 = 0; local28 < Static73.anInt1800; local28++) {
 			if (Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local28]] == null) {

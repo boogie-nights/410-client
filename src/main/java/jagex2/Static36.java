@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.config.ComType;
+import jagex2.dash3d.entity.NpcEntity;
 import jagex2.datastruct.HashTable;
 import jagex2.io.ClientStream;
 import jagex2.io.Packet;
@@ -52,22 +53,22 @@ public final class Static36 {
 	@OriginalMember(owner = "client!h", name = "a", descriptor = "(BZ)V")
 	public static void method636(@OriginalArg(1) boolean arg0) {
 		for (@Pc(12) int local12 = 0; local12 < Static73.anInt1800; local12++) {
-			@Pc(20) Class2_Sub2_Sub12_Sub1_Sub2 local20 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local12]];
+			@Pc(20) NpcEntity local20 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local12]];
 			@Pc(29) int local29 = (Static63.anIntArray326[local12] << 14) + 536870912;
-			if (local20 != null && local20.method1544() && local20.aClass2_Sub2_Sub7_1.aBoolean57 == arg0 && local20.aClass2_Sub2_Sub7_1.method606()) {
+			if (local20 != null && local20.isVisible() && local20.type.aBoolean57 == arg0 && local20.type.method606()) {
 				@Pc(50) int local50 = local20.anInt2275 >> 7;
 				@Pc(55) int local55 = local20.anInt2284 >> 7;
 				if (local50 >= 0 && local50 < 104 && local55 >= 0 && local55 < 104) {
-					if (local20.anInt2278 == 1 && (local20.anInt2275 & 0x7F) == 64 && (local20.anInt2284 & 0x7F) == 64) {
+					if (local20.size == 1 && (local20.anInt2275 & 0x7F) == 64 && (local20.anInt2284 & 0x7F) == 64) {
 						if (Static22.anInt2587 == Static14.anIntArrayArray7[local50][local55]) {
 							continue;
 						}
 						Static14.anIntArrayArray7[local50][local55] = Static22.anInt2587;
 					}
-					if (!local20.aClass2_Sub2_Sub7_1.aBoolean58) {
+					if (!local20.type.aBoolean58) {
 						local29 += Integer.MIN_VALUE;
 					}
-					Static93.scene.addTemporary(Static1.currentLevel, local20.anInt2275, local20.anInt2284, Static86.method1383(Static1.currentLevel, local20.anInt2275, local20.anInt2284), local20.anInt2278 * 64 + 60 - 64, local20, local20.anInt2305, local29, local20.aBoolean172);
+					Static93.scene.addTemporary(Static1.currentLevel, local20.anInt2275, local20.anInt2284, Static86.method1383(Static1.currentLevel, local20.anInt2275, local20.anInt2284), local20.size * 64 + 60 - 64, local20, local20.anInt2305, local29, local20.aBoolean172);
 				}
 			}
 		}

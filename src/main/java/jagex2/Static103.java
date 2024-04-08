@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.config.ComType;
 import jagex2.dash3d.CollisionMap;
+import jagex2.dash3d.entity.PathingEntity;
 import jagex2.dash3d.World3D;
 import jagex2.datastruct.LruCache;
 import jagex2.graphics.Draw3D;
@@ -460,7 +461,7 @@ public final class Static103 {
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(IILclient!ke;)V")
-	public static void method1649(@OriginalArg(0) int arg0, @OriginalArg(2) Class2_Sub2_Sub12_Sub1 arg1) {
+	public static void method1649(@OriginalArg(0) int arg0, @OriginalArg(2) PathingEntity arg1) {
 		Static104.method1667(arg0, arg1.anInt2275, arg1.anInt2284);
 	}
 

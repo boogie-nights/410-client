@@ -1,12 +1,13 @@
 package jagex2;
 
+import jagex2.dash3d.entity.PlayerEntity;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static88 {
 
 	@OriginalMember(owner = "client!sc", name = "p", descriptor = "Lclient!kc;")
-	public static Class2_Sub2_Sub12_Sub1_Sub1 aClass2_Sub2_Sub12_Sub1_Sub1_1;
+	public static PlayerEntity localPlayer;
 
 	@OriginalMember(owner = "client!sc", name = "C", descriptor = "Lclient!qa;")
 	public static Class2_Sub10_Sub2 aClass2_Sub10_Sub2_1;
@@ -15,7 +16,7 @@ public final class Static88 {
 	public static Class40 aClass40_602 = Static13.method257(" @cya@");
 
 	@OriginalMember(owner = "client!sc", name = "b", descriptor = "I")
-	public static int anInt2067 = 0;
+	public static int playerCount = 0;
 
 	@OriginalMember(owner = "client!sc", name = "f", descriptor = "Lclient!o;")
 	public static Class40 aClass40_603 = Static13.method257("Press (Wrecover a locked account(W on front page)3");
@@ -53,7 +54,7 @@ public final class Static88 {
 		aClass40_602 = null;
 		anIntArray453 = null;
 		aClass40_606 = null;
-		aClass2_Sub2_Sub12_Sub1_Sub1_1 = null;
+		localPlayer = null;
 		aClass2_Sub10_Sub2_1 = null;
 		aClass40_603 = null;
 		aClass40_604 = null;
@@ -73,10 +74,10 @@ public final class Static88 {
 		anInt2083 = -1;
 		Static84.systemUpdateTimer = 0;
 		Static34.menuSize = 0;
-		Static33.anInt785 = 0;
+		Static33.size = 0;
 		Static85.anInt1986 = -1;
 		Static97.aBoolean175 = false;
-		Static56.aClass2_Sub3_Sub1_5.pos = 0;
+		Static56.in.pos = 0;
 		Static7.method187(30);
 	}
 

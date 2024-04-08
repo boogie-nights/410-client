@@ -66,18 +66,18 @@ public final class Static99 {
 		@Pc(140) int local140;
 		@Pc(148) int local148;
 		if (!Static45.aBoolean87) {
-			local19 = Static56.aClass2_Sub3_Sub1_5.method1705();
-			local26 = (Static33.anInt785 - Static56.aClass2_Sub3_Sub1_5.pos) / 16;
+			local19 = Static56.in.method1705();
+			local26 = (Static33.size - Static56.in.pos) / 16;
 			Static86.anIntArrayArray20 = new int[local26][4];
 			for (local32 = 0; local32 < local26; local32++) {
 				for (local36 = 0; local36 < 4; local36++) {
-					Static86.anIntArrayArray20[local32][local36] = Static56.aClass2_Sub3_Sub1_5.g4();
+					Static86.anIntArrayArray20[local32][local36] = Static56.in.g4();
 				}
 			}
-			local36 = Static56.aClass2_Sub3_Sub1_5.method1705();
-			local62 = Static56.aClass2_Sub3_Sub1_5.method1705();
-			local66 = Static56.aClass2_Sub3_Sub1_5.method1715();
-			local72 = Static56.aClass2_Sub3_Sub1_5.g2();
+			local36 = Static56.in.method1705();
+			local62 = Static56.in.method1705();
+			local66 = Static56.in.method1715();
+			local72 = Static56.in.g2();
 			Static105.aByteArrayArray12 = new byte[local26][];
 			Static58.anIntArray311 = new int[local26];
 			@Pc(80) boolean local80 = false;
@@ -105,32 +105,32 @@ public final class Static99 {
 			Static82.method1343(local72, local66, local19, local62, local36);
 			return;
 		}
-		local19 = Static56.aClass2_Sub3_Sub1_5.method1681();
-		Static56.aClass2_Sub3_Sub1_5.method1737();
+		local19 = Static56.in.method1681();
+		Static56.in.accessBits();
 		for (local26 = 0; local26 < 4; local26++) {
 			for (local32 = 0; local32 < 13; local32++) {
 				for (local36 = 0; local36 < 13; local36++) {
-					local62 = Static56.aClass2_Sub3_Sub1_5.method1743(1);
+					local62 = Static56.in.gBit(1);
 					if (local62 == 1) {
-						anIntArrayArrayArray2[local26][local32][local36] = Static56.aClass2_Sub3_Sub1_5.method1743(26);
+						anIntArrayArrayArray2[local26][local32][local36] = Static56.in.gBit(26);
 					} else {
 						anIntArrayArrayArray2[local26][local32][local36] = -1;
 					}
 				}
 			}
 		}
-		Static56.aClass2_Sub3_Sub1_5.method1739();
-		local32 = (Static33.anInt785 - Static56.aClass2_Sub3_Sub1_5.pos) / 16;
+		Static56.in.method1739();
+		local32 = (Static33.size - Static56.in.pos) / 16;
 		Static86.anIntArrayArray20 = new int[local32][4];
 		for (local36 = 0; local36 < local32; local36++) {
 			for (local62 = 0; local62 < 4; local62++) {
-				Static86.anIntArrayArray20[local36][local62] = Static56.aClass2_Sub3_Sub1_5.method1732();
+				Static86.anIntArrayArray20[local36][local62] = Static56.in.method1732();
 			}
 		}
-		local62 = Static56.aClass2_Sub3_Sub1_5.method1715();
-		local66 = Static56.aClass2_Sub3_Sub1_5.method1714();
-		local72 = Static56.aClass2_Sub3_Sub1_5.method1681();
-		@Pc(394) int local394 = Static56.aClass2_Sub3_Sub1_5.method1714();
+		local62 = Static56.in.method1715();
+		local66 = Static56.in.method1714();
+		local72 = Static56.in.method1681();
+		@Pc(394) int local394 = Static56.in.method1714();
 		Static55.anIntArray299 = new int[local32];
 		Static51.anIntArray256 = new int[local32];
 		Static105.aByteArrayArray12 = new byte[local32][];

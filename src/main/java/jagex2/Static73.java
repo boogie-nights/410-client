@@ -60,7 +60,7 @@ public final class Static73 {
 	public static Class40 aClass40_520 = Static13.method257("mapscene");
 
 	@OriginalMember(owner = "client!oa", name = "A", descriptor = "[I")
-	public static int[] anIntArray408 = new int[2048];
+	public static int[] playerIds = new int[2048];
 
 	@OriginalMember(owner = "client!oa", name = "B", descriptor = "Lclient!o;")
 	public static Class40 aClass40_521 = Static13.method257("logo");
@@ -283,7 +283,7 @@ public final class Static73 {
 		aClass40_512 = null;
 		textLoadedInterfaces = null;
 		aBooleanArray27 = null;
-		anIntArray408 = null;
+		playerIds = null;
 		aClass40_521 = null;
 		aClass30_1 = null;
 		aClass40_511 = null;

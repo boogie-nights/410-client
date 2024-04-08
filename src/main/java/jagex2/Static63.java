@@ -260,7 +260,7 @@ public final class Static63 {
 					return;
 				}
 			}
-			if (!local41.method1184(Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395)) {
+			if (!local41.method1184(Static88.localPlayer.aClass40_395)) {
 				Static51.friendName[Static22.friendCount] = local41;
 				Static21.aLongArray2[Static22.friendCount] = arg0;
 				Static62.anIntArray316[Static22.friendCount] = 0;

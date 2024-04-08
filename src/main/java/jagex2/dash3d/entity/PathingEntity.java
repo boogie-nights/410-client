@@ -1,13 +1,15 @@
-package jagex2;
+package jagex2.dash3d.entity;
 
-import jagex2.graphics.Renderable;
+import jagex2.Class40;
+import jagex2.Static62;
+import jagex2.graphics.Entity;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ke")
-public abstract class Class2_Sub2_Sub12_Sub1 extends Renderable {
+public abstract class PathingEntity extends Entity {
 
 	@OriginalMember(owner = "client!ke", name = "qb", descriptor = "I")
 	public int anInt2275;
@@ -58,7 +60,7 @@ public abstract class Class2_Sub2_Sub12_Sub1 extends Renderable {
 	public int anInt2271 = 0;
 
 	@OriginalMember(owner = "client!ke", name = "pb", descriptor = "I")
-	public int anInt2274 = 0;
+	public int cycle = 0;
 
 	@OriginalMember(owner = "client!ke", name = "kb", descriptor = "[I")
 	public final int[] anIntArray492 = new int[10];
@@ -88,7 +90,7 @@ public abstract class Class2_Sub2_Sub12_Sub1 extends Renderable {
 	public int anInt2294 = 100;
 
 	@OriginalMember(owner = "client!ke", name = "ub", descriptor = "I")
-	public int anInt2278 = 1;
+	public int size = 1;
 
 	@OriginalMember(owner = "client!ke", name = "Ub", descriptor = "I")
 	public int anInt2296 = 0;
@@ -198,11 +200,11 @@ public abstract class Class2_Sub2_Sub12_Sub1 extends Renderable {
 	}
 
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(ZIBI)V")
-	public final void method1545(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public final void move(@OriginalArg(0) boolean teleport, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		if (this.anInt2307 != -1 && Static62.method1042(this.anInt2307).anInt666 == 1) {
 			this.anInt2307 = -1;
 		}
-		if (!arg0) {
+		if (!teleport) {
 			@Pc(31) int local31 = arg1 - this.anIntArray496[0];
 			@Pc(38) int local38 = arg2 - this.anIntArray492[0];
 			if (local38 >= -8 && local38 <= 8 && local31 >= -8 && local31 <= 8) {
@@ -225,12 +227,12 @@ public abstract class Class2_Sub2_Sub12_Sub1 extends Renderable {
 		this.anInt2282 = 0;
 		this.anIntArray492[0] = arg2;
 		this.anIntArray496[0] = arg1;
-		this.anInt2275 = this.anInt2278 * 64 + this.anIntArray492[0] * 128;
-		this.anInt2284 = this.anInt2278 * 64 + this.anIntArray496[0] * 128;
+		this.anInt2275 = this.size * 64 + this.anIntArray492[0] * 128;
+		this.anInt2284 = this.size * 64 + this.anIntArray496[0] * 128;
 	}
 
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(IBZ)V")
-	public final void method1547(@OriginalArg(0) int arg0, @OriginalArg(2) boolean arg1) {
+	public final void step(@OriginalArg(0) int arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(6) int local6 = this.anIntArray492[0];
 		@Pc(15) int local15 = this.anIntArray496[0];
 		if (this.anInt2307 != -1 && Static62.method1042(this.anInt2307).anInt666 == 1) {

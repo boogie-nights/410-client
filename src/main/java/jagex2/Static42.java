@@ -80,9 +80,9 @@ public final class Static42 {
 			if (local34 != 0) {
 				local77 = (local77 << local34 & 0xF) + (local77 >> 4 - local34);
 			}
-			Static83.method1349(arg0, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], local63, local77, 2, true, 0, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], local66, arg2);
+			Static83.method1349(arg0, 0, Static88.localPlayer.anIntArray492[0], local63, local77, 2, true, 0, Static88.localPlayer.anIntArray496[0], local66, arg2);
 		} else {
-			Static83.method1349(arg0, local34, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 0, 0, 2, true, local38 + 1, Static88.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 0, arg2);
+			Static83.method1349(arg0, local34, Static88.localPlayer.anIntArray492[0], 0, 0, 2, true, local38 + 1, Static88.localPlayer.anIntArray496[0], 0, arg2);
 		}
 		Static62.anInt1554 = Static107.anInt2500;
 		Static45.crossMode = 2;
