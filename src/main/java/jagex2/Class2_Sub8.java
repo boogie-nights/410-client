@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.datastruct.Linkable;
+import jagex2.graphics.Pix8;
 import jagex2.graphics.Static6;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -160,10 +161,10 @@ public final class Class2_Sub8 extends Linkable {
 		@Pc(22) int local22 = arg1 * arg1;
 		this.anIntArray185 = new int[local22 * 4];
 		for (@Pc(30) int local30 = 0; local30 < this.anIntArray189.length; local30++) {
-			@Pc(39) Class2_Sub2_Sub2_Sub3 local39 = Static3.method28(this.anIntArray189[local30], arg2);
-			local39.method1324();
+			@Pc(39) Pix8 local39 = Static3.method28(this.anIntArray189[local30], arg2);
+			local39.crop();
 			@Pc(44) byte[] local44 = local39.pixels;
-			@Pc(47) int[] local47 = local39.anIntArray427;
+			@Pc(47) int[] local47 = local39.palette;
 			@Pc(52) int local52 = this.anIntArray187[local30];
 			@Pc(61) int local61;
 			@Pc(67) int local67;

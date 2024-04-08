@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.client.GameShell;
 import jagex2.dash3d.entity.NpcEntity;
+import jagex2.graphics.Pix8;
 import jagex2.io.ClientStream;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -20,7 +21,7 @@ public final class Static70 {
 	public static int anInt1696;
 
 	@OriginalMember(owner = "client!nd", name = "F", descriptor = "[Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3[] aClass2_Sub2_Sub2_Sub3Array8;
+	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array8;
 
 	@OriginalMember(owner = "client!nd", name = "q", descriptor = "Lclient!o;")
 	public static Class40 aClass40_494 = Static13.method257("::clientdrop");

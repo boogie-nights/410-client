@@ -10,6 +10,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+import jagex2.graphics.Pix8;
 import jagex2.graphics.PixMap;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -220,15 +221,15 @@ public final class Static68 {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "h", descriptor = "(I)Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 method338() {
-		@Pc(3) Class2_Sub2_Sub2_Sub3 local3 = new Class2_Sub2_Sub2_Sub3();
-		local3.anInt1909 = Static44.anInt1079;
-		local3.anInt1908 = Static104.anInt2513;
-		local3.anInt1907 = Static83.anIntArray430[0];
-		local3.anInt1906 = Static97.anIntArray503[0];
+	public static Pix8 method338() {
+		@Pc(3) Pix8 local3 = new Pix8();
+		local3.cropW = Static44.anInt1079;
+		local3.cropH = Static104.anInt2513;
+		local3.cropX = Static83.anIntArray430[0];
+		local3.cropY = Static97.anIntArray503[0];
 		local3.width = Static66.anIntArray338[0];
-		local3.anInt1910 = Static19.anIntArray86[0];
-		local3.anIntArray427 = Static20.anIntArray92;
+		local3.height = Static19.anIntArray86[0];
+		local3.palette = Static20.anIntArray92;
 		local3.pixels = Static91.aByteArrayArray10[0];
 		Static93.method1485();
 		return local3;

@@ -5,6 +5,7 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.util.zip.GZIPInputStream;
 
+import jagex2.graphics.Pix24;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -98,15 +99,15 @@ public final class Static84 {
 	}
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(B)Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4 method1361() {
-		@Pc(9) Class2_Sub2_Sub2_Sub4 local9 = new Class2_Sub2_Sub2_Sub4();
+	public static Pix24 method1361() {
+		@Pc(9) Pix24 local9 = new Pix24();
 		local9.cropW = Static44.anInt1079;
 		local9.cropH = Static104.anInt2513;
-		local9.anInt2444 = Static83.anIntArray430[0];
-		local9.anInt2441 = Static97.anIntArray503[0];
-		local9.anInt2446 = Static66.anIntArray338[0];
-		local9.anInt2442 = Static19.anIntArray86[0];
-		@Pc(50) int local50 = local9.anInt2442 * local9.anInt2446;
+		local9.cropX = Static83.anIntArray430[0];
+		local9.cropY = Static97.anIntArray503[0];
+		local9.width = Static66.anIntArray338[0];
+		local9.height = Static19.anIntArray86[0];
+		@Pc(50) int local50 = local9.height * local9.width;
 		@Pc(54) byte[] local54 = Static91.aByteArrayArray10[0];
 		local9.pixels = new int[local50];
 		for (@Pc(60) int local60 = 0; local60 < local50; local60++) {

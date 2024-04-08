@@ -170,10 +170,10 @@ public final class Static18 {
 	public static void method359() {
 		Static7.drawPrivateMessages();
 		if (Static45.crossMode == 1) {
-			Static54.aClass2_Sub2_Sub2_Sub4Array7[Static101.anInt2410 / 100].method1624(Static62.anInt1554 - 8 - 4, Static102.anInt2465 - 8 + -4);
+			Static54.aClass2_Sub2_Sub2_Sub4Array7[Static101.anInt2410 / 100].draw(Static62.anInt1554 - 8 - 4, Static102.anInt2465 - 8 + -4);
 		}
 		if (Static45.crossMode == 2) {
-			Static54.aClass2_Sub2_Sub2_Sub4Array7[Static101.anInt2410 / 100 + 4].method1624(Static62.anInt1554 - 8 - 4, Static102.anInt2465 + -8 + -4);
+			Static54.aClass2_Sub2_Sub2_Sub4Array7[Static101.anInt2410 / 100 + 4].draw(Static62.anInt1554 - 8 - 4, Static102.anInt2465 + -8 + -4);
 		}
 		if (Static3.anInt51 != -1) {
 			Static27.method533(Static3.anInt51);
@@ -191,7 +191,7 @@ public final class Static18 {
 			Static23.method480();
 		}
 		if (Static107.anInt2505 == 1) {
-			Static43.aClass2_Sub2_Sub2_Sub4_7.method1624(472, 296);
+			Static43.aClass2_Sub2_Sub2_Sub4_7.draw(472, 296);
 		}
 		@Pc(158) int local158;
 		if (Static96.aBoolean173) {

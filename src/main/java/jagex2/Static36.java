@@ -3,6 +3,7 @@ package jagex2;
 import jagex2.config.ComType;
 import jagex2.dash3d.entity.NpcEntity;
 import jagex2.datastruct.HashTable;
+import jagex2.graphics.Pix24;
 import jagex2.io.ClientStream;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -120,7 +121,7 @@ public final class Static36 {
 	}
 
 	@OriginalMember(owner = "client!h", name = "a", descriptor = "(ILclient!ud;Lclient!o;Lclient!o;)[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] method638(@OriginalArg(1) Class5 arg0, @OriginalArg(2) Class40 arg1, @OriginalArg(3) Class40 arg2) {
+	public static Pix24[] method638(@OriginalArg(1) Class5 arg0, @OriginalArg(2) Class40 arg1, @OriginalArg(3) Class40 arg2) {
 		@Pc(12) int local12 = arg0.method80(arg1);
 		@Pc(18) int local18 = arg0.method72(arg2, local12);
 		return Static99.method79(arg0, local18, local12);

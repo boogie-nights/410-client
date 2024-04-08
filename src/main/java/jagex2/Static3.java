@@ -9,6 +9,7 @@ import jagex2.dash3d.type.WallDecoration;
 import jagex2.datastruct.LinkedList;
 import jagex2.datastruct.LruCache;
 import jagex2.graphics.Model;
+import jagex2.graphics.Pix8;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -19,7 +20,7 @@ public final class Static3 {
 	public static int[] anIntArray4;
 
 	@OriginalMember(owner = "client!ac", name = "u", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_2;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_2;
 
 	@OriginalMember(owner = "client!ac", name = "g", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_2 = new LruCache(100);
@@ -367,7 +368,7 @@ public final class Static3 {
 	}
 
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(IILclient!ud;)Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 method28(@OriginalArg(0) int arg0, @OriginalArg(2) Class5 arg1) {
+	public static Pix8 method28(@OriginalArg(0) int arg0, @OriginalArg(2) Class5 arg1) {
 		return Static70.method1113(arg1, arg0) ? Static68.method338() : null;
 	}
 }

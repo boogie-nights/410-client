@@ -6,6 +6,7 @@ import java.util.zip.CRC32;
 import jagex2.config.ComType;
 import jagex2.datastruct.LinkedList;
 import jagex2.datastruct.LruCache;
+import jagex2.graphics.Pix8;
 import jagex2.io.ClientStream;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -18,7 +19,7 @@ public final class Static81 {
 	public static int anInt1935;
 
 	@OriginalMember(owner = "client!r", name = "k", descriptor = "[Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3[] aClass2_Sub2_Sub2_Sub3Array10;
+	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array10;
 
 	@OriginalMember(owner = "client!r", name = "n", descriptor = "Lclient!ad;")
 	public static Class5_Sub1 aClass5_Sub1_15;

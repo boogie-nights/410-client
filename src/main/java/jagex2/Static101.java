@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.graphics.Pix24;
 import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -10,7 +11,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static101 {
 
 	@OriginalMember(owner = "client!va", name = "i", descriptor = "[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] aClass2_Sub2_Sub2_Sub4Array10;
+	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array10;
 
 	@OriginalMember(owner = "client!va", name = "A", descriptor = "Z")
 	public static boolean aBoolean179;
@@ -60,7 +61,7 @@ public final class Static101 {
 		@Pc(106) byte local106;
 		@Pc(130) int local130;
 		if (Static44.anInt1075 == 20) {
-			Static97.aClass2_Sub2_Sub2_Sub3_21.method1320(0, 0);
+			Static97.aClass2_Sub2_Sub2_Sub3_21.draw(0, 0);
 			local106 = 60;
 			if (Static86.aClass40_592.method1169() > 0) {
 				arg2.method578(Static86.aClass40_592, 180, 45, 16776960, true);
@@ -76,14 +77,14 @@ public final class Static101 {
 			local130 += 15;
 		}
 		if (Static44.anInt1075 == 10) {
-			Static97.aClass2_Sub2_Sub2_Sub3_21.method1320(0, 0);
+			Static97.aClass2_Sub2_Sub2_Sub3_21.draw(0, 0);
 			if (Static91.anInt2143 == 0) {
 				local106 = 80;
 				arg2.method578(Static44.aClass40_331, 180, 80, 16776960, true);
-				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(27, 100);
+				Static32.aClass2_Sub2_Sub2_Sub3_8.draw(27, 100);
 				arg2.method578(Static72.aClass40_508, 100, 125, 0xFFFFFF, true);
 				local130 = local106 + 30;
-				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(187, 100);
+				Static32.aClass2_Sub2_Sub2_Sub3_8.draw(187, 100);
 				arg2.method578(Static68.aClass40_103, 260, 125, 0xFFFFFF, true);
 			} else if (Static91.anInt2143 == 2) {
 				local106 = 60;
@@ -98,9 +99,9 @@ public final class Static101 {
 				arg2.method574(Static80.method1334(new Class40[] { Static67.aClass40_482, Static86.aClass40_591, Static107.loopCycle % 40 < 20 & Static99.anInt91 == 0 ? Static45.aClass40_339 : Static86.aClass40_593 }), 90, 90, 0xFFFFFF, true);
 				local130 += 15;
 				arg2.method574(Static80.method1334(new Class40[] { Static17.aClass40_118, Static86.aClass40_587.method1177(), Static99.anInt91 == 1 & Static107.loopCycle % 40 < 20 ? Static45.aClass40_339 : Static86.aClass40_593 }), 92, 105, 0xFFFFFF, true);
-				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(27, 130);
+				Static32.aClass2_Sub2_Sub2_Sub3_8.draw(27, 130);
 				arg2.method578(Static15.aClass40_536, 100, 155, 0xFFFFFF, true);
-				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(187, 130);
+				Static32.aClass2_Sub2_Sub2_Sub3_8.draw(187, 130);
 				arg2.method578(Static99.aClass40_27, 260, 155, 0xFFFFFF, true);
 				local130 += 15;
 			} else if (Static91.anInt2143 == 3) {
@@ -114,7 +115,7 @@ public final class Static101 {
 				local130 += 15;
 				arg2.method578(Static15.aClass40_539, 180, 110, 0xFFFFFF, true);
 				local130 += 15;
-				Static32.aClass2_Sub2_Sub2_Sub3_8.method1320(107, 130);
+				Static32.aClass2_Sub2_Sub2_Sub3_8.draw(107, 130);
 				arg2.method578(Static99.aClass40_27, 180, 155, 0xFFFFFF, true);
 			}
 		}

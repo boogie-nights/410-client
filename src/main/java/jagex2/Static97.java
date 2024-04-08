@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.dash3d.CollisionMap;
 import jagex2.dash3d.World3D;
+import jagex2.graphics.Pix8;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -13,10 +14,10 @@ public final class Static97 {
 	public static boolean aBoolean174;
 
 	@OriginalMember(owner = "client!ub", name = "M", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_21;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_21;
 
 	@OriginalMember(owner = "client!ub", name = "S", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_22;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_22;
 
 	@OriginalMember(owner = "client!ub", name = "U", descriptor = "Lclient!ob;")
 	public static Class42 aClass42_1;

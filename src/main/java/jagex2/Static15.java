@@ -3,6 +3,8 @@ package jagex2;
 import java.awt.Component;
 
 import jagex2.dash3d.entity.PlayerEntity;
+import jagex2.graphics.Pix24;
+import jagex2.graphics.Pix8;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -10,10 +12,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static15 {
 
 	@OriginalMember(owner = "client!cd", name = "q", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_17;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_17;
 
 	@OriginalMember(owner = "client!cd", name = "r", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_18;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_18;
 
 	@OriginalMember(owner = "client!cd", name = "s", descriptor = "[I")
 	public static int[] anIntArray414;
@@ -22,7 +24,7 @@ public final class Static15 {
 	public static int anInt1856;
 
 	@OriginalMember(owner = "client!cd", name = "E", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_19;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_19;
 
 	@OriginalMember(owner = "client!cd", name = "G", descriptor = "I")
 	public static int anInt1863;
@@ -177,62 +179,62 @@ public final class Static15 {
 		Static2.aClass45_3 = Static83.create(arg1, 75, 94);
 		Static26.clear();
 		@Pc(77) byte[] local77 = arg2.method69(Static63.aClass40_463, Static86.aClass40_593);
-		@Pc(83) Class2_Sub2_Sub2_Sub4 local83 = new Class2_Sub2_Sub2_Sub4(local77, arg1);
+		@Pc(83) Pix24 local83 = new Pix24(local77, arg1);
 		Static61.pixMap.bind();
-		local83.method1619(0, 0);
+		local83.blitOpaque(0, 0);
 		Static98.aClass45_30.bind();
-		local83.method1619(-637, 0);
+		local83.blitOpaque(-637, 0);
 		Static61.aClass45_22.bind();
-		local83.method1619(-128, 0);
+		local83.blitOpaque(-128, 0);
 		Static35.aClass45_16.bind();
-		local83.method1619(-202, -371);
+		local83.blitOpaque(-202, -371);
 		Static107.aClass45_31.bind();
-		local83.method1619(-202, -171);
+		local83.blitOpaque(-202, -171);
 		Static21.aClass45_11.bind();
-		local83.method1619(0, -265);
+		local83.blitOpaque(0, -265);
 		Static80.aClass45_27.bind();
-		local83.method1619(-562, -265);
+		local83.blitOpaque(-562, -265);
 		Static67.aClass45_26.bind();
-		local83.method1619(-128, -171);
+		local83.blitOpaque(-128, -171);
 		Static2.aClass45_3.bind();
-		local83.method1619(-562, -171);
-		@Pc(150) int[] local150 = new int[local83.anInt2446];
+		local83.blitOpaque(-562, -171);
+		@Pc(150) int[] local150 = new int[local83.width];
 		@Pc(156) int local156;
 		@Pc(187) int local187;
-		for (@Pc(152) int local152 = 0; local152 < local83.anInt2442; local152++) {
-			for (local156 = 0; local156 < local83.anInt2446; local156++) {
-				local150[local156] = local83.pixels[local152 * local83.anInt2446 + local83.anInt2446 - local156 - 1];
+		for (@Pc(152) int local152 = 0; local152 < local83.height; local152++) {
+			for (local156 = 0; local156 < local83.width; local156++) {
+				local150[local156] = local83.pixels[local152 * local83.width + local83.width - local156 - 1];
 			}
-			for (local187 = 0; local187 < local83.anInt2446; local187++) {
-				local83.pixels[local152 * local83.anInt2446 + local187] = local150[local187];
+			for (local187 = 0; local187 < local83.width; local187++) {
+				local83.pixels[local152 * local83.width + local187] = local150[local187];
 			}
 		}
 		Static61.pixMap.bind();
-		local83.method1619(382, 0);
+		local83.blitOpaque(382, 0);
 		Static98.aClass45_30.bind();
-		local83.method1619(-255, 0);
+		local83.blitOpaque(-255, 0);
 		Static61.aClass45_22.bind();
-		local83.method1619(254, 0);
+		local83.blitOpaque(254, 0);
 		Static35.aClass45_16.bind();
-		local83.method1619(180, -371);
+		local83.blitOpaque(180, -371);
 		Static107.aClass45_31.bind();
-		local83.method1619(180, -171);
+		local83.blitOpaque(180, -171);
 		Static21.aClass45_11.bind();
-		local83.method1619(382, -265);
+		local83.blitOpaque(382, -265);
 		Static80.aClass45_27.bind();
-		local83.method1619(-180, -265);
+		local83.blitOpaque(-180, -265);
 		Static67.aClass45_26.bind();
-		local83.method1619(254, -171);
+		local83.blitOpaque(254, -171);
 		Static2.aClass45_3.bind();
-		local83.method1619(-180, -171);
+		local83.blitOpaque(-180, -171);
 		local83 = Static103.method1644(Static73.aClass40_521, Static86.aClass40_593, arg0);
 		Static61.aClass45_22.bind();
-		local83.method1624(382 - local83.anInt2446 / 2 - 128, 18);
+		local83.draw(382 - local83.width / 2 - 128, 18);
 		Static97.aClass2_Sub2_Sub2_Sub3_21 = Static99.method77(arg0, Static86.aClass40_593, Static3.aClass40_16);
 		Static32.aClass2_Sub2_Sub2_Sub3_8 = Static99.method77(arg0, Static86.aClass40_593, Static96.aClass40_661);
 		Static49.aClass2_Sub2_Sub2_Sub3Array14 = Static4.method85(arg0, Static82.aClass40_563, Static86.aClass40_593);
-		Static11.aClass2_Sub2_Sub2_Sub4_1 = new Class2_Sub2_Sub2_Sub4(128, 265);
-		Static96.aClass2_Sub2_Sub2_Sub4_9 = new Class2_Sub2_Sub2_Sub4(128, 265);
+		Static11.aClass2_Sub2_Sub2_Sub4_1 = new Pix24(128, 265);
+		Static96.aClass2_Sub2_Sub2_Sub4_9 = new Pix24(128, 265);
 		for (local156 = 0; local156 < 33920; local156++) {
 			Static11.aClass2_Sub2_Sub2_Sub4_1.pixels[local156] = Static61.pixMap.pixels[local156];
 		}

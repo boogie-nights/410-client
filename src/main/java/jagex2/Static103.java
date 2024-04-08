@@ -5,10 +5,7 @@ import jagex2.dash3d.CollisionMap;
 import jagex2.dash3d.entity.PathingEntity;
 import jagex2.dash3d.World3D;
 import jagex2.datastruct.LruCache;
-import jagex2.graphics.Draw3D;
-import jagex2.graphics.PixFont;
-import jagex2.graphics.Static6;
-import jagex2.graphics.Static71;
+import jagex2.graphics.*;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -16,7 +13,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static103 {
 
 	@OriginalMember(owner = "client!vd", name = "p", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_24;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_24;
 
 	@OriginalMember(owner = "client!vd", name = "s", descriptor = "Lclient!ud;")
 	public static Class5 aClass5_30;
@@ -52,7 +49,7 @@ public final class Static103 {
 	public static volatile int anInt2494 = 0;
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(Lclient!o;Lclient!o;ILclient!ud;)Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4 method1644(@OriginalArg(0) Class40 arg0, @OriginalArg(1) Class40 arg1, @OriginalArg(3) Class5 arg2) {
+	public static Pix24 method1644(@OriginalArg(0) Class40 arg0, @OriginalArg(1) Class40 arg1, @OriginalArg(3) Class5 arg2) {
 		@Pc(8) int local8 = arg2.method80(arg0);
 		@Pc(14) int local14 = arg2.method72(arg1, local8);
 		return Static38.method732(arg2, local8, local14);
@@ -71,7 +68,7 @@ public final class Static103 {
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(ILclient!vb;II)V")
-	public static void method1646(@OriginalArg(1) Class2_Sub2_Sub2_Sub4 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+	public static void method1646(@OriginalArg(1) Pix24 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(11) int local11 = arg1 * arg1 + arg2 * arg2;
 		if (local11 <= 4225 || local11 >= 90000) {
 			Static90.method1461(arg2, arg0, arg1);
@@ -98,7 +95,7 @@ public final class Static103 {
 			for (level = 0; level < 4; level++) {
 				Static79.levelCollisionMap[level] = new CollisionMap(104, 104);
 			}
-			Static93.aClass2_Sub2_Sub2_Sub4_8 = new Class2_Sub2_Sub2_Sub4(512, 512);
+			Static93.aClass2_Sub2_Sub2_Sub4_8 = new Pix24(512, 512);
 			Static98.progressMeterText = Static61.textStartingGameEngine;
 			Static43.anInt1850 = 20;
 			Static94.anInt2194 = 5;
@@ -384,9 +381,9 @@ public final class Static103 {
 				sin = (int) (Math.random() * 41.0D) - 20;
 				offset = (int) (Math.random() * 21.0D) - 10;
 				for (@Pc(1134) int local1134 = 0; local1134 < Static99.aClass2_Sub2_Sub2_Sub4Array2.length; local1134++) {
-					Static99.aClass2_Sub2_Sub2_Sub4Array2[local1134].method1621(x + sin, angle + sin, sin + offset);
+					Static99.aClass2_Sub2_Sub2_Sub4Array2[local1134].translate(x + sin, angle + sin, sin + offset);
 				}
-				Static56.aClass2_Sub2_Sub2_Sub3Array15[0].method1321(sin + x, angle + sin, offset + sin);
+				Static56.aClass2_Sub2_Sub2_Sub3Array15[0].translate(sin + x, angle + sin, offset + sin);
 				Static98.progressMeterText = Static63.textLoadedSprites;
 				Static43.anInt1850 = 85;
 				Static94.anInt2194 = 70;

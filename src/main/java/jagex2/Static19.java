@@ -67,7 +67,7 @@ public final class Static19 {
 				local38 += 4;
 			}
 		}
-		Static93.aClass2_Sub2_Sub2_Sub4_8.method1628();
+		Static93.aClass2_Sub2_Sub2_Sub4_8.bind();
 		local38 = ((int) (Math.random() * 20.0D) + 228 << 16) + ((int) (Math.random() * 20.0D) + 238 - 10 << 8) + (int) (Math.random() * 20.0D) + 238 - 10;
 		local40 = (int) (Math.random() * 20.0D) + 238 - 10 << 16;
 		@Pc(150) int local150;
@@ -125,7 +125,7 @@ public final class Static19 {
 		@Pc(20) int local20;
 		@Pc(22) int local22;
 		if (Static96.anInt2328 == 2) {
-			@Pc(14) int[] local14 = Static26.anIntArray533;
+			@Pc(14) int[] local14 = Static26.data;
 			@Pc(17) byte[] local17 = Static17.imageMapBack.pixels;
 			local20 = local17.length;
 			for (local22 = 0; local22 < local20; local22++) {

@@ -5,6 +5,7 @@ import jagex2.config.ObjType;
 import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.HashTable;
 import jagex2.datastruct.LinkedList;
+import jagex2.graphics.Pix8;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -357,11 +358,11 @@ public final class Static105 {
 					}
 				}
 			} else {
-				@Pc(73) Class2_Sub2_Sub2_Sub3 local73 = Static56.aClass2_Sub2_Sub2_Sub3Array15[local63.anInt1039];
+				@Pc(73) Pix8 local73 = Static56.aClass2_Sub2_Sub2_Sub3Array15[local63.anInt1039];
 				if (local73 != null) {
 					@Pc(85) int local85 = (local63.anInt1036 * 4 - local73.width) / 2;
-					@Pc(95) int local95 = (local63.anInt1040 * 4 - local73.anInt1910) / 2;
-					local73.method1320(local85 + arg4 * 4 + 48, local95 + (-local63.anInt1040 + -arg3 + 104) * 4 + 48);
+					@Pc(95) int local95 = (local63.anInt1040 * 4 - local73.height) / 2;
+					local73.draw(local85 + arg4 * 4 + 48, local95 + (-local63.anInt1040 + -arg3 + 104) * 4 + 48);
 				}
 			}
 		}
@@ -374,11 +375,11 @@ public final class Static105 {
 			@Pc(457) Class2_Sub2_Sub10 local457 = Static91.method1470(local11);
 			@Pc(492) int local492;
 			if (local457.anInt1039 != -1) {
-				@Pc(565) Class2_Sub2_Sub2_Sub3 local565 = Static56.aClass2_Sub2_Sub2_Sub3Array15[local457.anInt1039];
+				@Pc(565) Pix8 local565 = Static56.aClass2_Sub2_Sub2_Sub3Array15[local457.anInt1039];
 				if (local565 != null) {
 					local59 = (local457.anInt1036 * 4 - local565.width) / 2;
-					local492 = (local457.anInt1040 * 4 - local565.anInt1910) / 2;
-					local565.method1320(arg4 * 4 + local59 + 48, local492 + (104 - arg3 - local457.anInt1040) * 4 + 48);
+					local492 = (local457.anInt1040 * 4 - local565.height) / 2;
+					local565.draw(arg4 * 4 + local59 + 48, local492 + (104 - arg3 - local457.anInt1040) * 4 + 48);
 				}
 			} else if (local53 == 9) {
 				local33 = 15658734;
@@ -409,11 +410,11 @@ public final class Static105 {
 		if (local633.anInt1039 == -1) {
 			return;
 		}
-		@Pc(642) Class2_Sub2_Sub2_Sub3 local642 = Static56.aClass2_Sub2_Sub2_Sub3Array15[local633.anInt1039];
+		@Pc(642) Pix8 local642 = Static56.aClass2_Sub2_Sub2_Sub3Array15[local633.anInt1039];
 		if (local642 != null) {
 			local11 = (local633.anInt1036 * 4 - local642.width) / 2;
-			@Pc(665) int local665 = (local633.anInt1040 * 4 - local642.anInt1910) / 2;
-			local642.method1320(local11 + arg4 * 4 + 48, local665 + (-local633.anInt1040 + 104 - arg3) * 4 + 48);
+			@Pc(665) int local665 = (local633.anInt1040 * 4 - local642.height) / 2;
+			local642.draw(local11 + arg4 * 4 + 48, local665 + (-local633.anInt1040 + 104 - arg3) * 4 + 48);
 			return;
 		}
 	}

@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.config.ComType;
 import jagex2.datastruct.LruCache;
+import jagex2.graphics.Pix8;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -12,7 +13,7 @@ public final class Static33 {
 	public static int[] anIntArray158;
 
 	@OriginalMember(owner = "client!gb", name = "Fb", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_9;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_9;
 
 	@OriginalMember(owner = "client!gb", name = "P", descriptor = "[I")
 	public static int[] anIntArray152 = new int[256];

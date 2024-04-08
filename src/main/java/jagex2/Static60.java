@@ -3,6 +3,7 @@ package jagex2;
 import jagex2.config.ObjType;
 import jagex2.graphics.Draw3D;
 import jagex2.graphics.Model;
+import jagex2.graphics.Pix24;
 import jagex2.graphics.Static6;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -66,10 +67,10 @@ public final class Static60 {
 	}
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(IIII)Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4 method1000(@OriginalArg(0) int arg0, @OriginalArg(1) int count, @OriginalArg(2) int arg2) {
-		@Pc(14) Class2_Sub2_Sub2_Sub4 icon;
+	public static Pix24 method1000(@OriginalArg(0) int arg0, @OriginalArg(1) int count, @OriginalArg(2) int arg2) {
+		@Pc(14) Pix24 icon;
 		if (arg0 == 0) {
-			icon = (Class2_Sub2_Sub2_Sub4) Static25.aClass47_7.get((long) arg2);
+			icon = (Pix24) Static25.aClass47_7.get((long) arg2);
 			if (icon != null && icon.cropH != count && icon.cropH != -1) {
 				icon.unlink();
 				icon = null;
@@ -97,7 +98,7 @@ public final class Static60 {
 		if (local101 == null) {
 			return null;
 		}
-		@Pc(107) Class2_Sub2_Sub2_Sub4 local107 = null;
+		@Pc(107) Pix24 local107 = null;
 		if (obj.certTemplate != -1) {
 			local107 = method1000(-1, 10, obj.certlink);
 			if (local107 == null) {
@@ -106,13 +107,13 @@ public final class Static60 {
 		}
 		@Pc(125) int[] local125 = Static6.method167();
 		@Pc(127) int local127 = Static26.width2d;
-		@Pc(129) int[] local129 = Static26.anIntArray533;
+		@Pc(129) int[] local129 = Static26.data;
 		@Pc(131) int local131 = Static26.anInt2435;
-		@Pc(133) int local133 = Static26.right;
+		@Pc(133) int local133 = Static26.left;
 		@Pc(135) int local135 = Static26.top;
-		@Pc(137) int local137 = Static26.anInt2436;
+		@Pc(137) int local137 = Static26.right;
 		@Pc(139) int local139 = Static26.bottom;
-		icon = new Class2_Sub2_Sub2_Sub4(32, 32);
+		icon = new Pix24(32, 32);
 		Static26.bind(icon.pixels, 32, 32);
 		Static46.anIntArray536 = Static6.method175(Static46.anIntArray536);
 		Static26.method1612(0, 0, 32, 32, 0);
@@ -174,7 +175,7 @@ public final class Static60 {
 			@Pc(586) int local586 = local107.cropH;
 			local107.cropH = 32;
 			local107.cropW = 32;
-			local107.method1624(0, 0);
+			local107.draw(0, 0);
 			local107.cropH = local586;
 			local107.cropW = x;
 		}

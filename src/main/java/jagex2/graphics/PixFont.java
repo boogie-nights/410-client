@@ -5,7 +5,6 @@ import java.util.Random;
 import jagex2.Class40;
 import jagex2.Static26;
 import jagex2.Static28;
-import jagex2.graphics.Draw2D;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -169,25 +168,25 @@ public final class PixFont extends Draw2D {
 			h -= y + h - Static26.bottom;
 		}
 
-		if (x < Static26.right) {
-			cutoff = Static26.right - x;
+		if (x < Static26.left) {
+			cutoff = Static26.left - x;
 			w -= cutoff;
-			x = Static26.right;
+			x = Static26.left;
 			srcOff += cutoff;
 			dstOff += cutoff;
 			srcStep = cutoff;
 			dstStep += cutoff;
 		}
 
-		if (x + w > Static26.anInt2436) {
-			cutoff = x + w - Static26.anInt2436;
+		if (x + w > Static26.right) {
+			cutoff = x + w - Static26.right;
 			w -= cutoff;
 			srcStep += cutoff;
 			dstStep += cutoff;
 		}
 
 		if (w > 0 && h > 0) {
-			this.drawMask(Static26.anIntArray533, data, rgb, srcOff, dstOff, w, h, dstStep, srcStep);
+			this.drawMask(Static26.data, data, rgb, srcOff, dstOff, w, h, dstStep, srcStep);
 		}
 	}
 
@@ -229,23 +228,23 @@ public final class PixFont extends Draw2D {
 		if (arg2 + arg4 > Static26.bottom) {
 			arg4 -= arg2 + arg4 - Static26.bottom;
 		}
-		if (arg1 < Static26.right) {
-			local20 = Static26.right - arg1;
+		if (arg1 < Static26.left) {
+			local20 = Static26.left - arg1;
 			arg3 -= local20;
-			arg1 = Static26.right;
+			arg1 = Static26.left;
 			local13 += local20;
 			local5 += local20;
 			local11 = local20;
 			local9 += local20;
 		}
-		if (arg1 + arg3 > Static26.anInt2436) {
-			local20 = arg1 + arg3 - Static26.anInt2436;
+		if (arg1 + arg3 > Static26.right) {
+			local20 = arg1 + arg3 - Static26.right;
 			arg3 -= local20;
 			local11 += local20;
 			local9 += local20;
 		}
 		if (arg3 > 0 && arg4 > 0) {
-			this.method567(Static26.anIntArray533, arg0, arg5, local13, local5, arg3, arg4, local9, local11, arg6);
+			this.method567(Static26.data, arg0, arg5, local13, local5, arg3, arg4, local9, local11, arg6);
 		}
 	}
 

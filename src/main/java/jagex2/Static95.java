@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.graphics.Pix24;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -28,7 +29,7 @@ public final class Static95 {
 	public static long aLong132 = 0L;
 
 	@OriginalMember(owner = "client!u", name = "zb", descriptor = "[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] aClass2_Sub2_Sub2_Sub4Array9 = new Class2_Sub2_Sub2_Sub4[1000];
+	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array9 = new Pix24[1000];
 
 	@OriginalMember(owner = "client!u", name = "Db", descriptor = "Lclient!o;")
 	public static Class40 aClass40_645 = Static13.method257("Login limit exceeded)3");

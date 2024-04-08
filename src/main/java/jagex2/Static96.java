@@ -6,6 +6,8 @@ import jagex2.dash3d.entity.NpcEntity;
 import jagex2.dash3d.entity.PathingEntity;
 import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.LinkedList;
+import jagex2.graphics.Pix24;
+import jagex2.graphics.Pix8;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -13,7 +15,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static96 {
 
 	@OriginalMember(owner = "client!ua", name = "Mc", descriptor = "Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4 aClass2_Sub2_Sub2_Sub4_9;
+	public static Pix24 aClass2_Sub2_Sub2_Sub4_9;
 
 	@OriginalMember(owner = "client!ua", name = "ad", descriptor = "I")
 	public static int anInt2341;
@@ -984,17 +986,17 @@ public final class Static96 {
 	}
 
 	@OriginalMember(owner = "client!ua", name = "o", descriptor = "(I)[Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3[] method1555() {
-		@Pc(4) Class2_Sub2_Sub2_Sub3[] local4 = new Class2_Sub2_Sub2_Sub3[Static30.anInt727];
+	public static Pix8[] method1555() {
+		@Pc(4) Pix8[] local4 = new Pix8[Static30.anInt727];
 		for (@Pc(10) int local10 = 0; local10 < Static30.anInt727; local10++) {
-			@Pc(20) Class2_Sub2_Sub2_Sub3 local20 = local4[local10] = new Class2_Sub2_Sub2_Sub3();
-			local20.anInt1908 = Static104.anInt2513;
-			local20.anInt1909 = Static44.anInt1079;
-			local20.anInt1907 = Static83.anIntArray430[local10];
-			local20.anInt1906 = Static97.anIntArray503[local10];
+			@Pc(20) Pix8 local20 = local4[local10] = new Pix8();
+			local20.cropH = Static104.anInt2513;
+			local20.cropW = Static44.anInt1079;
+			local20.cropX = Static83.anIntArray430[local10];
+			local20.cropY = Static97.anIntArray503[local10];
 			local20.width = Static66.anIntArray338[local10];
-			local20.anInt1910 = Static19.anIntArray86[local10];
-			local20.anIntArray427 = Static20.anIntArray92;
+			local20.height = Static19.anIntArray86[local10];
+			local20.palette = Static20.anIntArray92;
 			local20.pixels = Static91.aByteArrayArray10[local10];
 		}
 		Static93.method1485();

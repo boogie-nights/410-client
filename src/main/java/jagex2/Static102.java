@@ -3,6 +3,7 @@ package jagex2;
 import java.util.zip.CRC32;
 
 import jagex2.dash3d.entity.PlayerEntity;
+import jagex2.graphics.Pix8;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -10,7 +11,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static102 {
 
 	@OriginalMember(owner = "client!vc", name = "eb", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_23;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_23;
 
 	@OriginalMember(owner = "client!vc", name = "gb", descriptor = "[I")
 	public static int[] compassMaskLineOffsets;

@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.dash3d.entity.PlayerEntity;
+import jagex2.graphics.Pix8;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 
@@ -82,7 +83,7 @@ public final class Static88 {
 	}
 
 	@OriginalMember(owner = "client!sc", name = "a", descriptor = "(IILclient!ud;I)Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 method1407(@OriginalArg(1) int arg0, @OriginalArg(2) Class5 arg1, @OriginalArg(3) int arg2) {
+	public static Pix8 method1407(@OriginalArg(1) int arg0, @OriginalArg(2) Class5 arg1, @OriginalArg(3) int arg2) {
 		return Static92.method1484(arg2, arg1, arg0) ? Static68.method338() : null;
 	}
 }

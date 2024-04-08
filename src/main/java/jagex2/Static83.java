@@ -7,10 +7,7 @@ import jagex2.config.ObjType;
 import jagex2.dash3d.CollisionMap;
 import jagex2.dash3d.World3D;
 import jagex2.datastruct.LinkedList;
-import jagex2.graphics.Entity;
-import jagex2.graphics.PixMap;
-import jagex2.graphics.OldPixMap;
-import jagex2.graphics.Model;
+import jagex2.graphics.*;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -27,7 +24,7 @@ public final class Static83 {
 	public static int anInt1963;
 
 	@OriginalMember(owner = "client!rb", name = "t", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_20;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_20;
 
 	@OriginalMember(owner = "client!rb", name = "w", descriptor = "[I")
 	public static int[] anIntArray430;

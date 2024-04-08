@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.net.Socket;
 
 import jagex2.dash3d.entity.PathingEntity;
+import jagex2.graphics.Pix24;
 import jagex2.io.ClientStream;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -19,7 +20,7 @@ public final class Static43 {
 	public static int version;
 
 	@OriginalMember(owner = "client!ib", name = "k", descriptor = "Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4 aClass2_Sub2_Sub2_Sub4_7;
+	public static Pix24 aClass2_Sub2_Sub2_Sub4_7;
 
 	@OriginalMember(owner = "client!ib", name = "m", descriptor = "Z")
 	public static boolean membersWorld;

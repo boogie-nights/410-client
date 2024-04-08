@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.graphics.Pix24;
 import jagex2.graphics.PixMap;
 import jagex2.io.ClientStream;
 import jagex2.io.Packet;
@@ -21,7 +22,7 @@ public final class Static29 {
 	public static ClientStream aClass25_15;
 
 	@OriginalMember(owner = "client!fd", name = "l", descriptor = "[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] aClass2_Sub2_Sub2_Sub4Array4;
+	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array4;
 
 	@OriginalMember(owner = "client!fd", name = "b", descriptor = "Lclient!o;")
 	public static Class40 aClass40_218 = Static13.method257("cyan:");

@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.dash3d.CollisionMap;
 import jagex2.datastruct.LruCache;
+import jagex2.graphics.Pix24;
 import jagex2.graphics.Static71;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -72,7 +73,7 @@ public final class Static90 {
 	}
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(IILclient!vb;I)V")
-	public static void method1461(@OriginalArg(0) int arg0, @OriginalArg(2) Class2_Sub2_Sub2_Sub4 arg1, @OriginalArg(3) int arg2) {
+	public static void method1461(@OriginalArg(0) int arg0, @OriginalArg(2) Pix24 arg1, @OriginalArg(3) int arg2) {
 		if (arg1 == null) {
 			return;
 		}
@@ -88,9 +89,9 @@ public final class Static90 {
 		@Pc(66) int local66 = arg2 * local43 - arg0 * local55 >> 16;
 		@Pc(76) int local76 = arg2 * local55 + arg0 * local43 >> 16;
 		if (local20 <= 2500) {
-			arg1.method1624(local76 + 94 + 4 - arg1.cropW / 2, -local66 + -4 + (83 - arg1.cropH / 2));
+			arg1.draw(local76 + 94 + 4 - arg1.cropW / 2, -local66 + -4 + (83 - arg1.cropH / 2));
 		} else {
-			arg1.method1622(Static17.imageMapBack, local76 + 4 + 94 - arg1.cropW / 2, -(arg1.cropH / 2) + -4 + 83 + -local66);
+			arg1.drawMasked(Static17.imageMapBack, local76 + 4 + 94 - arg1.cropW / 2, -(arg1.cropH / 2) + -4 + 83 + -local66);
 		}
 	}
 

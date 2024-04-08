@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.graphics.Pix24;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -11,7 +12,7 @@ public final class Static58 {
 	public static int anInt1487;
 
 	@OriginalMember(owner = "client!la", name = "qb", descriptor = "[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] aClass2_Sub2_Sub2_Sub4Array8;
+	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array8;
 
 	@OriginalMember(owner = "client!la", name = "sb", descriptor = "I")
 	public static int anInt1494;

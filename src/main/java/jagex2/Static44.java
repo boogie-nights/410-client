@@ -2,6 +2,7 @@ package jagex2;
 
 import java.io.IOException;
 
+import jagex2.graphics.Pix24;
 import jagex2.graphics.PixMap;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -20,7 +21,7 @@ public final class Static44 {
 	public static int anInt1079;
 
 	@OriginalMember(owner = "client!ic", name = "cb", descriptor = "[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] aClass2_Sub2_Sub2_Sub4Array6;
+	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array6;
 
 	@OriginalMember(owner = "client!ic", name = "O", descriptor = "I")
 	public static int anInt1075 = 0;

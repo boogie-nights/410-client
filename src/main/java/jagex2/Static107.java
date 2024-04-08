@@ -281,7 +281,7 @@ public final class Static107 {
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(ILjava/awt/Graphics;Lclient!fc;III)V")
 	public static void method1664(@OriginalArg(0) int arg0, @OriginalArg(1) Graphics arg1, @OriginalArg(2) PixFont arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
 		Static4.aClass45_4.bind();
-		Static51.aClass2_Sub2_Sub2_Sub3_11.method1320(0, 0);
+		Static51.aClass2_Sub2_Sub2_Sub3_11.draw(0, 0);
 		arg2.method578(Static29.aClass40_219, 55, 28, 0xFFFFFF, true);
 		if (arg4 == 0) {
 			arg2.method578(Static103.aClass40_715, 55, 41, 65280, true);

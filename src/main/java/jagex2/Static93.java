@@ -4,6 +4,8 @@ import java.awt.Graphics;
 
 import jagex2.dash3d.World3D;
 import jagex2.datastruct.HashTable;
+import jagex2.graphics.Pix24;
+import jagex2.graphics.Pix8;
 import jagex2.graphics.Static6;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -17,10 +19,10 @@ public final class Static93 {
 	public static World3D scene;
 
 	@OriginalMember(owner = "client!tc", name = "m", descriptor = "Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4 aClass2_Sub2_Sub2_Sub4_8;
+	public static Pix24 aClass2_Sub2_Sub2_Sub4_8;
 
 	@OriginalMember(owner = "client!tc", name = "r", descriptor = "[Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3[] aClass2_Sub2_Sub2_Sub3Array12;
+	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array12;
 
 	@OriginalMember(owner = "client!tc", name = "c", descriptor = "I")
 	public static int anInt2175 = -1;
@@ -71,104 +73,104 @@ public final class Static93 {
 	@OriginalMember(owner = "client!tc", name = "b", descriptor = "(I)V")
 	public static void method1486() {
 		Static61.areaMapBack.bind();
-		Static53.aClass2_Sub2_Sub2_Sub3_13.method1320(0, 0);
+		Static53.aClass2_Sub2_Sub2_Sub3_13.draw(0, 0);
 		Static84.anIntArray431 = Static6.method175(Static84.anIntArray431);
 	}
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(I[IIZILjava/awt/Graphics;)V")
 	public static void method1487(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(5) Graphics arg4) {
 		Static25.aClass45_12.bind();
-		Static102.aClass2_Sub2_Sub2_Sub3_23.method1320(0, 0);
+		Static102.aClass2_Sub2_Sub2_Sub3_23.draw(0, 0);
 		if (arg3) {
 			if (arg1[arg0] != -1) {
 				if (arg0 == 0) {
-					Static2.aClass2_Sub2_Sub2_Sub3_1.method1320(22, 10);
+					Static2.aClass2_Sub2_Sub2_Sub3_1.draw(22, 10);
 				}
 				if (arg0 == 1) {
-					Static15.aClass2_Sub2_Sub2_Sub3_17.method1320(54, 8);
+					Static15.aClass2_Sub2_Sub2_Sub3_17.draw(54, 8);
 				}
 				if (arg0 == 2) {
-					Static15.aClass2_Sub2_Sub2_Sub3_17.method1320(82, 8);
+					Static15.aClass2_Sub2_Sub2_Sub3_17.draw(82, 8);
 				}
 				if (arg0 == 3) {
-					Static51.aClass2_Sub2_Sub2_Sub3_10.method1320(110, 8);
+					Static51.aClass2_Sub2_Sub2_Sub3_10.draw(110, 8);
 				}
 				if (arg0 == 4) {
-					Static97.aClass2_Sub2_Sub2_Sub3_22.method1320(153, 8);
+					Static97.aClass2_Sub2_Sub2_Sub3_22.draw(153, 8);
 				}
 				if (arg0 == 5) {
-					Static97.aClass2_Sub2_Sub2_Sub3_22.method1320(181, 8);
+					Static97.aClass2_Sub2_Sub2_Sub3_22.draw(181, 8);
 				}
 				if (arg0 == 6) {
-					Static83.aClass2_Sub2_Sub2_Sub3_20.method1320(209, 9);
+					Static83.aClass2_Sub2_Sub2_Sub3_20.draw(209, 9);
 				}
 			}
 			if (arg1[0] != -1 && arg2 != 0) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[0].method1320(29, 13);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[0].draw(29, 13);
 			}
 			if (arg1[1] != -1 && arg2 != 1) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[1].method1320(53, 11);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[1].draw(53, 11);
 			}
 			if (arg1[2] != -1 && arg2 != 2) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[2].method1320(82, 11);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[2].draw(82, 11);
 			}
 			if (arg1[3] != -1 && arg2 != 3) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[3].method1320(115, 12);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[3].draw(115, 12);
 			}
 			if (arg1[4] != -1 && arg2 != 4) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[4].method1320(153, 13);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[4].draw(153, 13);
 			}
 			if (arg1[5] != -1 && arg2 != 5) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[5].method1320(180, 11);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[5].draw(180, 11);
 			}
 			if (arg1[6] != -1 && arg2 != 6) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[6].method1320(208, 13);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[6].draw(208, 13);
 			}
 		}
 		Static25.aClass45_12.draw(arg4, 516, 160);
 		Static68.aClass45_8.bind();
-		Static15.aClass2_Sub2_Sub2_Sub3_18.method1320(0, 0);
+		Static15.aClass2_Sub2_Sub2_Sub3_18.draw(0, 0);
 		if (arg3) {
 			if (arg1[arg0] != -1) {
 				if (arg0 == 7) {
-					Static32.aClass2_Sub2_Sub2_Sub3_7.method1320(42, 0);
+					Static32.aClass2_Sub2_Sub2_Sub3_7.draw(42, 0);
 				}
 				if (arg0 == 8) {
-					Static103.aClass2_Sub2_Sub2_Sub3_24.method1320(74, 0);
+					Static103.aClass2_Sub2_Sub2_Sub3_24.draw(74, 0);
 				}
 				if (arg0 == 9) {
-					Static103.aClass2_Sub2_Sub2_Sub3_24.method1320(102, 0);
+					Static103.aClass2_Sub2_Sub2_Sub3_24.draw(102, 0);
 				}
 				if (arg0 == 10) {
-					Static53.aClass2_Sub2_Sub2_Sub3_12.method1320(130, 1);
+					Static53.aClass2_Sub2_Sub2_Sub3_12.draw(130, 1);
 				}
 				if (arg0 == 11) {
-					Static3.aClass2_Sub2_Sub2_Sub3_2.method1320(173, 0);
+					Static3.aClass2_Sub2_Sub2_Sub3_2.draw(173, 0);
 				}
 				if (arg0 == 12) {
-					Static3.aClass2_Sub2_Sub2_Sub3_2.method1320(201, 0);
+					Static3.aClass2_Sub2_Sub2_Sub3_2.draw(201, 0);
 				}
 				if (arg0 == 13) {
-					Static33.aClass2_Sub2_Sub2_Sub3_9.method1320(229, 0);
+					Static33.aClass2_Sub2_Sub2_Sub3_9.draw(229, 0);
 				}
 			}
 			if (arg1[8] != -1 && arg2 != 8) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[7].method1320(74, 2);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[7].draw(74, 2);
 			}
 			if (arg1[9] != -1 && arg2 != 9) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[8].method1320(102, 3);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[8].draw(102, 3);
 			}
 			if (arg1[10] != -1 && arg2 != 10) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[9].method1320(137, 4);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[9].draw(137, 4);
 			}
 			if (arg1[11] != -1 && arg2 != 11) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[10].method1320(174, 2);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[10].draw(174, 2);
 			}
 			if (arg1[12] != -1 && arg2 != 12) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[11].method1320(201, 2);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[11].draw(201, 2);
 			}
 			if (arg1[13] != -1 && arg2 != 13) {
-				Static81.aClass2_Sub2_Sub2_Sub3Array10[12].method1320(226, 2);
+				Static81.aClass2_Sub2_Sub2_Sub3Array10[12].draw(226, 2);
 			}
 		}
 		Static68.aClass45_8.draw(arg4, 496, 466);

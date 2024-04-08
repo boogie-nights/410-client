@@ -1,12 +1,13 @@
 package jagex2;
 
+import jagex2.graphics.Pix8;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 public final class Static17 {
 
 	@OriginalMember(owner = "client!d", name = "G", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 imageMapBack;
+	public static Pix8 imageMapBack;
 
 	@OriginalMember(owner = "client!d", name = "a", descriptor = "Lclient!o;")
 	public static Class40 aClass40_112 = null;

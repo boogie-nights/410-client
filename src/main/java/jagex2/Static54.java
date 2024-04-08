@@ -4,6 +4,7 @@ import jagex2.config.ComType;
 import jagex2.dash3d.CollisionMap;
 import jagex2.dash3d.entity.NpcEntity;
 import jagex2.dash3d.entity.PlayerEntity;
+import jagex2.graphics.Pix24;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -15,7 +16,7 @@ public final class Static54 {
 	public static Class5 aClass5_17;
 
 	@OriginalMember(owner = "client!kc", name = "cd", descriptor = "[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] aClass2_Sub2_Sub2_Sub4Array7;
+	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array7;
 
 	@OriginalMember(owner = "client!kc", name = "md", descriptor = "Lclient!ud;")
 	public static Class5 aClass5_18;

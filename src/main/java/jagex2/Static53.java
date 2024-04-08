@@ -1,18 +1,19 @@
 package jagex2;
 
+import jagex2.graphics.Pix8;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static53 {
 
 	@OriginalMember(owner = "client!kb", name = "r", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_12;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_12;
 
 	@OriginalMember(owner = "client!kb", name = "v", descriptor = "Lclient!qd;")
 	public static Class48 aClass48_5;
 
 	@OriginalMember(owner = "client!kb", name = "y", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_13;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_13;
 
 	@OriginalMember(owner = "client!kb", name = "q", descriptor = "Lclient!o;")
 	public static Class40 aClass40_366 = Static13.method257("Please try again)3");

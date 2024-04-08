@@ -3,6 +3,7 @@ package jagex2;
 import java.awt.Component;
 
 import jagex2.client.GameShell;
+import jagex2.graphics.Pix24;
 import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -11,10 +12,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static13 {
 
 	@OriginalMember(owner = "client!cb", name = "q", descriptor = "[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] aClass2_Sub2_Sub2_Sub4Array3;
+	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array3;
 
 	@OriginalMember(owner = "client!cb", name = "w", descriptor = "Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4 aClass2_Sub2_Sub2_Sub4_2;
+	public static Pix24 aClass2_Sub2_Sub2_Sub4_2;
 
 	@OriginalMember(owner = "client!cb", name = "b", descriptor = "[I")
 	public static int[] anIntArray79 = new int[50];

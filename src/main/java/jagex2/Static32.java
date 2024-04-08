@@ -3,6 +3,7 @@ package jagex2;
 import java.awt.Graphics;
 
 import jagex2.datastruct.HashTable;
+import jagex2.graphics.Pix8;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -13,13 +14,13 @@ public final class Static32 {
 	public static Class11[] aClass11Array2;
 
 	@OriginalMember(owner = "client!ga", name = "v", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_7;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_7;
 
 	@OriginalMember(owner = "client!ga", name = "B", descriptor = "[[[I")
 	public static int[][][] levelOccludemap;
 
 	@OriginalMember(owner = "client!ga", name = "H", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_8;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_8;
 
 	@OriginalMember(owner = "client!ga", name = "I", descriptor = "Lclient!ba;")
 	public static HashTable aClass6_1;

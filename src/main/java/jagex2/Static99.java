@@ -1,6 +1,8 @@
 package jagex2;
 
 import jagex2.client.GameShell;
+import jagex2.graphics.Pix24;
+import jagex2.graphics.Pix8;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -11,7 +13,7 @@ public final class Static99 {
 	public static int anInt96;
 
 	@OriginalMember(owner = "client!ud", name = "bb", descriptor = "[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] aClass2_Sub2_Sub2_Sub4Array2;
+	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array2;
 
 	@OriginalMember(owner = "client!ud", name = "cb", descriptor = "Lclient!bb;")
 	public static GameShell aClass7_2;
@@ -186,14 +188,14 @@ public final class Static99 {
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(Lclient!ud;ZLclient!o;Lclient!o;)Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 method77(@OriginalArg(0) Class5 arg0, @OriginalArg(2) Class40 arg1, @OriginalArg(3) Class40 arg2) {
+	public static Pix8 method77(@OriginalArg(0) Class5 arg0, @OriginalArg(2) Class40 arg1, @OriginalArg(3) Class40 arg2) {
 		@Pc(13) int local13 = arg0.method80(arg2);
 		@Pc(19) int local19 = arg0.method72(arg1, local13);
 		return Static88.method1407(local13, arg0, local19);
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(Lclient!ud;III)[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] method79(@OriginalArg(0) Class5 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public static Pix24[] method79(@OriginalArg(0) Class5 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		return Static92.method1484(arg1, arg0, arg2) ? Static37.method715() : null;
 	}
 }

@@ -3,6 +3,7 @@ package jagex2;
 import java.awt.Graphics;
 
 import jagex2.config.ComType;
+import jagex2.graphics.Pix8;
 import jagex2.graphics.PixMap;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -52,7 +53,7 @@ public final class Static4 {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(Lclient!ud;Lclient!o;BLclient!o;)[Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3[] method85(@OriginalArg(0) Class5 arg0, @OriginalArg(1) Class40 arg1, @OriginalArg(3) Class40 arg2) {
+	public static Pix8[] method85(@OriginalArg(0) Class5 arg0, @OriginalArg(1) Class40 arg1, @OriginalArg(3) Class40 arg2) {
 		@Pc(9) int local9 = arg0.method80(arg1);
 		@Pc(15) int local15 = arg0.method72(arg2, local9);
 		return Static7.method194(local15, arg0, local9);

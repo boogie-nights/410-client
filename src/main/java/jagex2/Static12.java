@@ -121,13 +121,13 @@ public final class Static12 {
 					if (local60.anInt773 >= 0 && local60.anInt773 < Static58.aClass2_Sub2_Sub2_Sub4Array8.length) {
 						Static103.method1649(local31.anInt2310 + 15, local31);
 						if (Static17.anInt426 > -1) {
-							Static58.aClass2_Sub2_Sub2_Sub4Array8[local60.anInt773].method1624(Static17.anInt426 - 12, Static20.anInt477 - 30);
+							Static58.aClass2_Sub2_Sub2_Sub4Array8[local60.anInt773].draw(Static17.anInt426 - 12, Static20.anInt477 - 30);
 						}
 					}
 					if (Static91.anInt2139 == 1 && Static85.anInt1989 == Static63.anIntArray326[local9 - Static88.playerCount] && Static107.loopCycle % 20 < 10) {
 						Static103.method1649(local31.anInt2310 + 15, local31);
 						if (Static17.anInt426 > -1) {
-							Static101.aClass2_Sub2_Sub2_Sub4Array10[0].method1624(Static17.anInt426 - 12, Static20.anInt477 + -28);
+							Static101.aClass2_Sub2_Sub2_Sub4Array10[0].draw(Static17.anInt426 - 12, Static20.anInt477 + -28);
 						}
 					}
 				} else {
@@ -137,11 +137,11 @@ public final class Static12 {
 						Static103.method1649(local31.anInt2310 + 15, local31);
 						if (Static17.anInt426 > -1) {
 							if (local77.anInt1380 != -1) {
-								Static44.aClass2_Sub2_Sub2_Sub4Array6[local77.anInt1380].method1624(Static17.anInt426 - 12, Static20.anInt477 + -30);
+								Static44.aClass2_Sub2_Sub2_Sub4Array6[local77.anInt1380].draw(Static17.anInt426 - 12, Static20.anInt477 + -30);
 								local79 += 25;
 							}
 							if (local77.anInt1370 != -1) {
-								Static58.aClass2_Sub2_Sub2_Sub4Array8[local77.anInt1370].method1624(Static17.anInt426 - 12, Static20.anInt477 - local79);
+								Static58.aClass2_Sub2_Sub2_Sub4Array8[local77.anInt1370].draw(Static17.anInt426 - 12, Static20.anInt477 - local79);
 								local79 += 25;
 							}
 						}
@@ -149,7 +149,7 @@ public final class Static12 {
 					if (local9 >= 0 && Static91.anInt2139 == 10 && Static97.anInt2353 == Static73.playerIds[local9]) {
 						Static103.method1649(local31.anInt2310 + 15, local31);
 						if (Static17.anInt426 > -1) {
-							Static101.aClass2_Sub2_Sub2_Sub4Array10[1].method1624(Static17.anInt426 - 12, -local79 + Static20.anInt477);
+							Static101.aClass2_Sub2_Sub2_Sub4Array10[1].draw(Static17.anInt426 - 12, -local79 + Static20.anInt477);
 						}
 					}
 				}
@@ -193,7 +193,7 @@ public final class Static12 {
 								Static20.anInt477 -= 10;
 								Static17.anInt426 += 15;
 							}
-							Static29.aClass2_Sub2_Sub2_Sub4Array4[local31.anIntArray495[local79]].method1624(Static17.anInt426 - 12, Static20.anInt477 + -12);
+							Static29.aClass2_Sub2_Sub2_Sub4Array4[local31.anIntArray495[local79]].draw(Static17.anInt426 - 12, Static20.anInt477 + -12);
 							Static76.aClass2_Sub2_Sub2_Sub2_4.method566(Static53.method859(local31.anIntArray493[local79]), Static17.anInt426, Static20.anInt477 + 4, 0);
 							Static76.aClass2_Sub2_Sub2_Sub2_4.method566(Static53.method859(local31.anIntArray493[local79]), Static17.anInt426 - 1, Static20.anInt477 + 3, 0xFFFFFF);
 						}

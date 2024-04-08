@@ -8,6 +8,7 @@ import jagex2.dash3d.World3D;
 import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.LinkedList;
 import jagex2.graphics.Entity;
+import jagex2.graphics.Pix8;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -16,13 +17,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static51 {
 
 	@OriginalMember(owner = "client!k", name = "o", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_10;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_10;
 
 	@OriginalMember(owner = "client!k", name = "p", descriptor = "I")
 	public static int anInt1163;
 
 	@OriginalMember(owner = "client!k", name = "r", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_11;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_11;
 
 	@OriginalMember(owner = "client!k", name = "v", descriptor = "[[Lclient!mc;")
 	public static ComType[][] aClass2_Sub2_Sub13ArrayArray1;

@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 
 import jagex2.client.GameShell;
 import jagex2.datastruct.LruCache;
+import jagex2.graphics.Pix24;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -56,9 +57,9 @@ public final class Static37 {
 		if (local11 < 8) {
 			local11 = 8;
 		}
-		Static93.aClass2_Sub2_Sub2_Sub3Array12[0].method1320(arg1, arg3);
+		Static93.aClass2_Sub2_Sub2_Sub3Array12[0].draw(arg1, arg3);
 		@Pc(41) int local41 = (arg0 - local11 - 32) * arg2 / (arg4 - arg0);
-		Static93.aClass2_Sub2_Sub2_Sub3Array12[1].method1320(arg1, arg0 + arg3 - 16);
+		Static93.aClass2_Sub2_Sub2_Sub3Array12[1].draw(arg1, arg0 + arg3 - 16);
 		Static26.method1612(arg1, arg3 + 16, 16, arg0 - 32, Static49.anInt2253);
 		Static26.method1612(arg1, local41 + arg3 + 16, 16, local11, Static82.anInt1936);
 		Static26.method1611(arg1, arg3 + local41 + 16, local11, Static14.anInt311);
@@ -85,18 +86,18 @@ public final class Static37 {
 	}
 
 	@OriginalMember(owner = "client!hb", name = "c", descriptor = "(B)[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] method715() {
-		@Pc(8) Class2_Sub2_Sub2_Sub4[] local8 = new Class2_Sub2_Sub2_Sub4[Static30.anInt727];
+	public static Pix24[] method715() {
+		@Pc(8) Pix24[] local8 = new Pix24[Static30.anInt727];
 		for (@Pc(15) int local15 = 0; local15 < Static30.anInt727; local15++) {
-			@Pc(25) Class2_Sub2_Sub2_Sub4 local25 = local8[local15] = new Class2_Sub2_Sub2_Sub4();
+			@Pc(25) Pix24 local25 = local8[local15] = new Pix24();
 			local25.cropH = Static104.anInt2513;
 			local25.cropW = Static44.anInt1079;
-			local25.anInt2444 = Static83.anIntArray430[local15];
-			local25.anInt2441 = Static97.anIntArray503[local15];
-			local25.anInt2446 = Static66.anIntArray338[local15];
-			local25.anInt2442 = Static19.anIntArray86[local15];
+			local25.cropX = Static83.anIntArray430[local15];
+			local25.cropY = Static97.anIntArray503[local15];
+			local25.width = Static66.anIntArray338[local15];
+			local25.height = Static19.anIntArray86[local15];
 			@Pc(55) byte[] local55 = Static91.aByteArrayArray10[local15];
-			@Pc(61) int local61 = local25.anInt2446 * local25.anInt2442;
+			@Pc(61) int local61 = local25.width * local25.height;
 			local25.pixels = new int[local61];
 			for (@Pc(67) int local67 = 0; local67 < local61; local67++) {
 				local25.pixels[local67] = Static20.anIntArray92[local55[local67] & 0xFF];

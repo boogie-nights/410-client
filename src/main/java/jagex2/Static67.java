@@ -96,7 +96,7 @@ public final class Static67 {
 		if (Static91.anInt2139 == 2) {
 			Static104.method1667(Static80.anInt1917 * 2, (Static16.anInt410 - Static87.anInt2058 << 7) + Static19.anInt441, Static58.anInt1493 + (-Static30.anInt725 + Static83.anInt1952 << 7));
 			if (Static17.anInt426 > -1 && Static107.loopCycle % 20 < 10) {
-				Static101.aClass2_Sub2_Sub2_Sub4Array10[0].method1624(Static17.anInt426 - 12, Static20.anInt477 + -28);
+				Static101.aClass2_Sub2_Sub2_Sub4Array10[0].draw(Static17.anInt426 - 12, Static20.anInt477 + -28);
 			}
 		}
 	}

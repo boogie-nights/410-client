@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.graphics.Pix24;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 
@@ -9,7 +10,7 @@ public final class Static11 {
 	public static Class56 aClass56_1;
 
 	@OriginalMember(owner = "client!be", name = "q", descriptor = "Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4 aClass2_Sub2_Sub2_Sub4_1;
+	public static Pix24 aClass2_Sub2_Sub2_Sub4_1;
 
 	@OriginalMember(owner = "client!be", name = "b", descriptor = "Lclient!o;")
 	public static Class40 aClass40_68 = Static13.method257("Loading game screen )2 ");

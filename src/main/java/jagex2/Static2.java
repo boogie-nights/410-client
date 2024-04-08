@@ -7,6 +7,7 @@ import jagex2.config.ObjType;
 import jagex2.dash3d.entity.NpcEntity;
 import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.LruCache;
+import jagex2.graphics.Pix8;
 import jagex2.graphics.PixMap;
 import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -19,7 +20,7 @@ public final class Static2 {
 	public static PixMap areaViewport;
 
 	@OriginalMember(owner = "client!ab", name = "k", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_1;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_1;
 
 	@OriginalMember(owner = "client!ab", name = "n", descriptor = "Lclient!p;")
 	public static PixMap aClass45_3;
@@ -1288,11 +1289,11 @@ public final class Static2 {
 								if (local218 > 0 && local218 < 110) {
 									local306 = 4;
 									if (local224 == 1) {
-										Static70.aClass2_Sub2_Sub2_Sub3Array8[0].method1320(4, local218 - 12);
+										Static70.aClass2_Sub2_Sub2_Sub3Array8[0].draw(4, local218 - 12);
 										local306 += 14;
 									}
 									if (local224 == 2) {
-										Static70.aClass2_Sub2_Sub2_Sub3Array8[1].method1320(local306, local218 - 12);
+										Static70.aClass2_Sub2_Sub2_Sub3Array8[1].draw(local306, local218 - 12);
 										local306 += 14;
 									}
 									local68.drawString(Static80.method1334(new Class40[] { local228, Static97.aClass40_673 }), local306, local218, 0);
@@ -1305,11 +1306,11 @@ public final class Static2 {
 									local68.drawString(Static45.aClass40_340, 4, local218, 0);
 									local306 = local68.method568(Static82.aClass40_564) + 4;
 									if (local224 == 1) {
-										Static70.aClass2_Sub2_Sub2_Sub3Array8[0].method1320(local306, local218 - 12);
+										Static70.aClass2_Sub2_Sub2_Sub3Array8[0].draw(local306, local218 - 12);
 										local306 += 14;
 									}
 									if (local224 == 2) {
-										Static70.aClass2_Sub2_Sub2_Sub3Array8[1].method1320(local306, local218 - 12);
+										Static70.aClass2_Sub2_Sub2_Sub3Array8[1].draw(local306, local218 - 12);
 										local306 += 14;
 									}
 									local68.drawString(Static80.method1334(new Class40[] { local228, Static97.aClass40_673 }), local306, local218, 0);

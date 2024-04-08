@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import jagex2.dash3d.CollisionMap;
 import jagex2.dash3d.World3D;
 import jagex2.datastruct.LinkedList;
+import jagex2.graphics.Pix8;
 import jagex2.graphics.Static6;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -46,7 +47,7 @@ public final class Static24 {
 	public static int spellSelected = 0;
 
 	@OriginalMember(owner = "client!ee", name = "a", descriptor = "(ZLclient!qb;)V")
-	public static void method502(@OriginalArg(1) Class2_Sub2_Sub2_Sub3 arg0) {
+	public static void method502(@OriginalArg(1) Pix8 arg0) {
 		for (@Pc(9) int local9 = 0; local9 < Static15.anIntArray414.length; local9++) {
 			Static15.anIntArray414[local9] = 0;
 		}
@@ -73,11 +74,11 @@ public final class Static24 {
 			return;
 		}
 		local56 = 0;
-		for (local60 = 0; local60 < arg0.anInt1910; local60++) {
+		for (local60 = 0; local60 < arg0.height; local60++) {
 			for (local68 = 0; local68 < arg0.width; local68++) {
 				if (arg0.pixels[local56++] != 0) {
-					@Pc(142) int local142 = local60 + arg0.anInt1906 + 16;
-					@Pc(149) int local149 = arg0.anInt1907 + local68 + 16;
+					@Pc(142) int local142 = local60 + arg0.cropY + 16;
+					@Pc(149) int local149 = arg0.cropX + local68 + 16;
 					@Pc(155) int local155 = (local142 << 7) + local149;
 					Static15.anIntArray414[local155] = 0;
 				}

@@ -1,9 +1,9 @@
 package jagex2.config;
 
 import jagex2.*;
-import jagex2.config.ObjType;
 import jagex2.datastruct.Hashable;
 import jagex2.graphics.Model;
+import jagex2.graphics.Pix24;
 import jagex2.graphics.Static71;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -444,7 +444,7 @@ public final class ComType extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(ZI)Lclient!vb;")
-	public Class2_Sub2_Sub2_Sub4 method1061(@OriginalArg(0) boolean arg0) {
+	public Pix24 method1061(@OriginalArg(0) boolean arg0) {
 		@Pc(10) int local10;
 		if (arg0) {
 			local10 = this.anInt1598;
@@ -455,7 +455,7 @@ public final class ComType extends Hashable {
 		if (local10 == -1) {
 			return null;
 		}
-		@Pc(29) Class2_Sub2_Sub2_Sub4 local29 = (Class2_Sub2_Sub2_Sub4) Static33.aClass47_8.get((long) local10);
+		@Pc(29) Pix24 local29 = (Pix24) Static33.aClass47_8.get((long) local10);
 		if (local29 != null) {
 			return local29;
 		}
@@ -469,7 +469,7 @@ public final class ComType extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(IZ)Lclient!vb;")
-	public Class2_Sub2_Sub2_Sub4 method1063(@OriginalArg(0) int arg0) {
+	public Pix24 method1063(@OriginalArg(0) int arg0) {
 		Static54.aBoolean102 = false;
 		if (arg0 < 0 || arg0 >= this.anIntArray329.length) {
 			return null;
@@ -478,7 +478,7 @@ public final class ComType extends Hashable {
 		if (local26 == -1) {
 			return null;
 		}
-		@Pc(38) Class2_Sub2_Sub2_Sub4 local38 = (Class2_Sub2_Sub2_Sub4) Static33.aClass47_8.get((long) local26);
+		@Pc(38) Pix24 local38 = (Pix24) Static33.aClass47_8.get((long) local26);
 		if (local38 != null) {
 			return local38;
 		}

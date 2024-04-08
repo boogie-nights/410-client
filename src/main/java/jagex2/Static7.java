@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Component;
 
+import jagex2.graphics.Pix8;
 import jagex2.graphics.PixMap;
 import jagex2.graphics.PixFont;
 import jagex2.io.Packet;
@@ -86,11 +87,11 @@ public final class Static7 {
 					font.drawString(Static45.aClass40_340, 4, y - 1, 65535);
 					@Pc(131) int local131 = font.method568(Static82.aClass40_564) + 4;
 					if (local42 == 1) {
-						Static70.aClass2_Sub2_Sub2_Sub3Array8[0].method1320(local131, y - 12);
+						Static70.aClass2_Sub2_Sub2_Sub3Array8[0].draw(local131, y - 12);
 						local131 += 14;
 					}
 					if (local42 == 2) {
-						Static70.aClass2_Sub2_Sub2_Sub3Array8[1].method1320(local131, y - 12);
+						Static70.aClass2_Sub2_Sub2_Sub3Array8[1].draw(local131, y - 12);
 						local131 += 14;
 					}
 					font.drawString(Static80.method1334(new Class40[] { username, Static1.textFriendsChatColon, Static63.messageText[i] }), local131, y, 0);
@@ -203,7 +204,7 @@ public final class Static7 {
 	}
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(ILclient!ud;II)[Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3[] method194(@OriginalArg(0) int arg0, @OriginalArg(1) Class5 arg1, @OriginalArg(2) int arg2) {
+	public static Pix8[] method194(@OriginalArg(0) int arg0, @OriginalArg(1) Class5 arg1, @OriginalArg(2) int arg2) {
 		return Static92.method1484(arg0, arg1, arg2) ? Static96.method1555() : null;
 	}
 

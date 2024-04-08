@@ -3,6 +3,7 @@ package jagex2;
 import java.io.DataInputStream;
 import java.net.URL;
 
+import jagex2.graphics.Pix24;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -84,7 +85,7 @@ public final class Static38 {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(BLclient!ud;II)Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4 method732(@OriginalArg(1) Class5 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+	public static Pix24 method732(@OriginalArg(1) Class5 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		return Static92.method1484(arg2, arg0, arg1) ? Static84.method1361() : null;
 	}
 
