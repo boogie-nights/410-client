@@ -152,7 +152,7 @@ public final class Static7 {
 			Static2.method18();
 			Static12.method252();
 			if (Static29.aClass45_14 == null) {
-				Static29.aClass45_14 = Static83.method1351(765, method185(), 503);
+				Static29.aClass45_14 = Static83.create(method185(), 765, 503);
 			}
 		}
 		if (arg0 == 5 || arg0 == 10 || arg0 == 20) {

@@ -124,7 +124,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			while (true) {
 				Static24.graphics = Static7.method185().getGraphics();
 				if (Static24.graphics != null) {
-					Static29.aClass45_14 = Static83.method1351(Static85.width, Static7.method185(), Static76.height);
+					Static29.aClass45_14 = Static83.create(Static7.method185(), Static85.width, Static76.height);
 					Static7.method185().addFocusListener(this);
 					Static7.method185().requestFocus();
 					this.method327();

@@ -120,7 +120,7 @@ public final class Static101 {
 		}
 		Static107.aClass45_31.draw(arg1, 202, 171);
 		Static105.method1673();
-		Static61.aClass45_24.draw(arg1, 0, 0);
+		Static61.pixMap.draw(arg1, 0, 0);
 		Static98.aClass45_30.draw(arg1, 637, 0);
 		if (!Static1.clearScreen) {
 			return;

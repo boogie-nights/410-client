@@ -30,7 +30,7 @@ public final class OldPixMap extends PixMap implements ImageProducer, ImageObser
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(IILjava/awt/Component;I)V")
 	@Override
-	public void method1473(@OriginalArg(2) Component comp, @OriginalArg(0) int width, @OriginalArg(3) int height) {
+	public void init(@OriginalArg(2) Component comp, @OriginalArg(0) int width, @OriginalArg(3) int height) {
 		super.width = width;
 		super.height = height;
 		super.pixels = new int[width * height + 1];

@@ -18,7 +18,7 @@ public final class Static61 {
 	public static PixMap aClass45_23;
 
 	@OriginalMember(owner = "client!ma", name = "w", descriptor = "Lclient!p;")
-	public static PixMap aClass45_24;
+	public static PixMap pixMap;
 
 	@OriginalMember(owner = "client!ma", name = "b", descriptor = "Lclient!o;")
 	public static Class40 aClass40_445 = Static13.method257("");
@@ -163,7 +163,7 @@ public final class Static61 {
 		aClass40_450 = null;
 		aClass45_23 = null;
 		aClass48_6 = null;
-		aClass45_24 = null;
+		pixMap = null;
 		aClass40_453 = null;
 	}
 }

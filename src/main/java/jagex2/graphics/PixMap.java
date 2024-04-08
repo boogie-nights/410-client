@@ -25,7 +25,7 @@ public abstract class PixMap {
 	public int[] pixels;
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(IILjava/awt/Component;I)V")
-	public abstract void method1473(@OriginalArg(2) Component component, @OriginalArg(0) int width, @OriginalArg(3) int height);
+	public abstract void init(@OriginalArg(2) Component component, @OriginalArg(0) int width, @OriginalArg(3) int height);
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(ILjava/awt/Graphics;II)V")
 	public abstract void draw(@OriginalArg(1) Graphics graphics, @OriginalArg(2) int width, @OriginalArg(3) int height);

@@ -392,10 +392,10 @@ public final class Static83 {
 	}
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(ILjava/awt/Component;II)Lclient!p;")
-	public static PixMap method1351(@OriginalArg(0) int arg0, @OriginalArg(1) Component arg1, @OriginalArg(3) int arg2) {
-		@Pc(7) OldPixMap local7 = new OldPixMap();
-		local7.method1473(arg1, arg0, arg2);
-		return local7;
+	public static PixMap create(@OriginalArg(1) Component component, @OriginalArg(0) int width, @OriginalArg(3) int height) {
+		@Pc(7) OldPixMap pixMap = new OldPixMap();
+		pixMap.init(component, width, height);
+		return pixMap;
 	}
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(B)V")

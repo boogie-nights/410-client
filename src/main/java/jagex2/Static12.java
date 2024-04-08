@@ -79,7 +79,7 @@ public final class Static12 {
 		Static15.anIntArray414 = null;
 		Static21.aClass45_11 = null;
 		Static98.aClass45_30 = null;
-		Static61.aClass45_24 = null;
+		Static61.pixMap = null;
 		Static72.anIntArray406 = null;
 		Static103.anIntArray547 = null;
 		Static80.aClass45_27 = null;

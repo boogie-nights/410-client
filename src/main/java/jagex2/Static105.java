@@ -218,7 +218,7 @@ public final class Static105 {
 			}
 		}
 		for (local9 = 0; local9 < 33920; local9++) {
-			Static61.aClass45_24.pixels[local9] = Static11.aClass2_Sub2_Sub2_Sub4_1.pixels[local9];
+			Static61.pixMap.pixels[local9] = Static11.aClass2_Sub2_Sub2_Sub4_1.pixels[local9];
 		}
 		@Pc(164) int local164 = 0;
 		@Pc(166) int local166 = 1152;
@@ -244,8 +244,8 @@ public final class Static105 {
 					local215 = local205;
 					local219 = 256 - local205;
 					local205 = Static92.anIntArray472[local205];
-					local228 = Static61.aClass45_24.pixels[local166];
-					Static61.aClass45_24.pixels[local166++] = (local215 * (local205 & 0xFF00FF) + (local228 & 0xFF00FF) * local219 & 0xFF00FF00) + ((local228 & 0xFF00) * local219 + local215 * (local205 & 0xFF00) & 0xFF0000) >> 8;
+					local228 = Static61.pixMap.pixels[local166];
+					Static61.pixMap.pixels[local166++] = (local215 * (local205 & 0xFF00FF) + (local228 & 0xFF00FF) * local219 & 0xFF00FF00) + ((local228 & 0xFF00) * local219 + local215 * (local205 & 0xFF00) & 0xFF0000) >> 8;
 				}
 			}
 			local166 += local185;
