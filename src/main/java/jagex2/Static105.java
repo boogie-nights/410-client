@@ -279,7 +279,7 @@ public final class Static105 {
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(IIBIII)V")
 	public static void method1674(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(7) int local7 = Static93.scene.method1459(arg0, arg4, arg3);
+		@Pc(7) int local7 = Static93.scene.getWallBitset(arg0, arg4, arg3);
 		@Pc(40) int local40;
 		@Pc(46) int local46;
 		@Pc(53) int local53;
@@ -400,7 +400,7 @@ public final class Static105 {
 				}
 			}
 		}
-		local7 = Static93.scene.method1458(arg0, arg4, arg3);
+		local7 = Static93.scene.getGroundDecorationBitset(arg0, arg4, arg3);
 		if (local7 == 0) {
 			return;
 		}

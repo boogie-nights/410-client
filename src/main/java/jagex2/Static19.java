@@ -84,7 +84,7 @@ public final class Static19 {
 		Static90.anInt2136 = 0;
 		for (local150 = 0; local150 < 104; local150++) {
 			for (@Pc(221) int local221 = 0; local221 < 104; local221++) {
-				@Pc(229) int local229 = Static93.scene.method1458(Static1.currentLevel, local150, local221);
+				@Pc(229) int local229 = Static93.scene.getGroundDecorationBitset(Static1.currentLevel, local150, local221);
 				if (local229 != 0) {
 					local229 = local229 >> 14 & 0x7FFF;
 					@Pc(242) int local242 = Static91.method1470(local229).anInt1034;

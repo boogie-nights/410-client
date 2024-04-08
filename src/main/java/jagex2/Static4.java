@@ -62,7 +62,7 @@ public final class Static4 {
 	public static void method86(@OriginalArg(0) Class2_Sub7 arg0) {
 		@Pc(6) int local6 = 0;
 		if (arg0.anInt823 == 0) {
-			local6 = Static93.scene.method1459(arg0.anInt817, arg0.anInt818, arg0.anInt821);
+			local6 = Static93.scene.getWallBitset(arg0.anInt817, arg0.anInt818, arg0.anInt821);
 		}
 		if (arg0.anInt823 == 1) {
 			local6 = Static93.scene.method1419(arg0.anInt817, arg0.anInt818, arg0.anInt821);
@@ -73,7 +73,7 @@ public final class Static4 {
 		}
 		@Pc(55) int local55 = 0;
 		if (arg0.anInt823 == 3) {
-			local6 = Static93.scene.method1458(arg0.anInt817, arg0.anInt818, arg0.anInt821);
+			local6 = Static93.scene.getGroundDecorationBitset(arg0.anInt817, arg0.anInt818, arg0.anInt821);
 		}
 		@Pc(70) int local70 = 0;
 		if (local6 != 0) {

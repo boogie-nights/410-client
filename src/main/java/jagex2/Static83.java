@@ -661,7 +661,7 @@ public final class Static83 {
 						scene.setWallDecoration(level, x, z, local102, local167, Static5.ROTATION_WALL_TYPE[rotation], rotation * 512, 0, 0, local121, local109);
 					} else if (shape == 5) {
 						local912 = 16;
-						local267 = scene.method1459(level, x, z);
+						local267 = scene.getWallBitset(level, x, z);
 						if (local267 > 0) {
 							local912 = Static91.method1470(local267 >> 14 & 0x7FFF).walloff;
 						}
@@ -701,7 +701,7 @@ public final class Static83 {
 			} else {
 				local167 = new Class2_Sub2_Sub12_Sub5(arg1, 22, rotation, local65, local57, local77, local87, loc.anInt1048, true);
 			}
-			scene.method1416(level, x, z, local102, local167, local121, local109);
+			scene.addGroundDecoration(level, x, z, local102, local167, local121, local109);
 			if (loc.blockwalk && loc.anInt1054 == 1 && collision != null) {
 				collision.setBlocked(x, z);
 			}

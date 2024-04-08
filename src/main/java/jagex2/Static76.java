@@ -96,7 +96,7 @@ public final class Static76 {
 					} else {
 						local47.aBoolean104 = false;
 						local47.anInt1379 = Static86.method1383(Static1.currentLevel, local47.anInt2275, local47.anInt2284);
-						Static93.scene.method1457(Static1.currentLevel, local47.anInt2275, local47.anInt2284, local47.anInt1379, local47, local47.anInt2305, local45, local47.anInt1368, local47.anInt1376, local47.anInt1369, local47.anInt1386);
+						Static93.scene.addTemporary(Static1.currentLevel, local47.anInt2275, local47.anInt2284, local47.anInt1379, local47, local47.anInt2305, local45, local47.anInt1368, local47.anInt1376, local47.anInt1369, local47.anInt1386);
 					}
 				}
 			}

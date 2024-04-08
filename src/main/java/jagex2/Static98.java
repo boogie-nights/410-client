@@ -71,7 +71,7 @@ public final class Static98 {
 		}
 		@Pc(29) int local29 = 0;
 		if (arg0 == 0) {
-			local29 = Static93.scene.method1459(arg4, arg1, arg2);
+			local29 = Static93.scene.getWallBitset(arg4, arg1, arg2);
 		}
 		if (arg0 == 1) {
 			local29 = Static93.scene.method1419(arg4, arg1, arg2);
@@ -80,7 +80,7 @@ public final class Static98 {
 			local29 = Static93.scene.method1429(arg4, arg1, arg2);
 		}
 		if (arg0 == 3) {
-			local29 = Static93.scene.method1458(arg4, arg1, arg2);
+			local29 = Static93.scene.getGroundDecorationBitset(arg4, arg1, arg2);
 		}
 		@Pc(92) int local92;
 		if (local29 != 0) {
@@ -110,7 +110,7 @@ public final class Static98 {
 				}
 			}
 			if (arg0 == 3) {
-				Static93.scene.method1413(arg4, arg1, arg2);
+				Static93.scene.removeGroundDecoration(arg4, arg1, arg2);
 				local116 = Static91.method1470(local85);
 				if (local116.blockwalk && local116.anInt1054 == 1) {
 					Static79.levelCollisionMap[arg4].removeBlocked(arg1, arg2);

@@ -49,10 +49,10 @@ public final class Tile extends Linkable {
 	public int anInt1706;
 
 	@OriginalMember(owner = "client!nd", name = "Z", descriptor = "Lclient!uc;")
-	public Class60 wall;
+	public Wall wall;
 
 	@OriginalMember(owner = "client!nd", name = "bb", descriptor = "Lclient!ac;")
-	public Class4 groundDecoration;
+	public GroundDecoration groundDecoration;
 
 	@OriginalMember(owner = "client!nd", name = "db", descriptor = "I")
 	public int anInt1708;

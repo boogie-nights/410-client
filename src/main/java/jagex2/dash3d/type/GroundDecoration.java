@@ -1,26 +1,26 @@
-package jagex2;
+package jagex2.dash3d.type;
 
 import jagex2.graphics.Entity;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ac")
-public final class Class4 {
+public final class GroundDecoration {
 
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "I")
-	public int anInt40;
+	public int y;
 
 	@OriginalMember(owner = "client!ac", name = "c", descriptor = "I")
 	public int info;
 
 	@OriginalMember(owner = "client!ac", name = "e", descriptor = "I")
-	public int anInt44;
+	public int z;
 
 	@OriginalMember(owner = "client!ac", name = "h", descriptor = "Lclient!jd;")
-	public Entity aClass2_Sub2_Sub12_2;
+	public Entity entity;
 
 	@OriginalMember(owner = "client!ac", name = "j", descriptor = "I")
-	public int anInt47;
+	public int x;
 
 	@OriginalMember(owner = "client!ac", name = "k", descriptor = "I")
 	public int bitset;

@@ -74,7 +74,7 @@ public final class Static51 {
 			} else {
 				local118 = new Class2_Sub2_Sub12_Sub5(arg4, 22, arg6, local13, local23, local35, local45, local59.anInt1048, true);
 			}
-			arg5.method1416(arg7, arg8, arg1, local55, local118, local77, local65);
+			arg5.addGroundDecoration(arg7, arg8, arg1, local55, local118, local77, local65);
 			if (local59.blockwalk && local59.anInt1054 == 1) {
 				arg3.setBlocked(arg8, arg1);
 			}
@@ -203,7 +203,7 @@ public final class Static51 {
 					}
 					arg5.setWallDecoration(arg7, arg8, arg1, local55, local118, Static5.ROTATION_WALL_TYPE[arg6], arg6 * 512, 0, 0, local77, local65);
 				} else if (arg2 == 5) {
-					local213 = arg5.method1459(arg7, arg8, arg1);
+					local213 = arg5.getWallBitset(arg7, arg8, arg1);
 					local468 = 16;
 					if (local213 > 0) {
 						local468 = Static91.method1470(local213 >> 14 & 0x7FFF).walloff;

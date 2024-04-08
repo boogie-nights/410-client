@@ -212,7 +212,7 @@ public final class Static22 {
 		Static71.mouseX = Static32.anInt742 - 4;
 		Static26.clear();
 		Static93.scene.method1430(Static48.anInt1114, Static81.anInt1935, Static15.anInt1863, Static35.anInt824, Static27.anInt686, local36);
-		Static93.scene.method1454();
+		Static93.scene.clearTemporaryLocs();
 		Static12.method253();
 		Static67.method1099();
 		((Class19) Static6.anInterface4_1).method405(Static45.anInt1095);

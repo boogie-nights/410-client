@@ -1,9 +1,7 @@
 package jagex2.dash3d;
 
 import jagex2.*;
-import jagex2.dash3d.type.Loc;
-import jagex2.dash3d.type.Tile;
-import jagex2.dash3d.type.WallDecoration;
+import jagex2.dash3d.type.*;
 import jagex2.graphics.*;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -47,13 +45,13 @@ public final class World3D {
 	};
 
 	@OriginalMember(owner = "client!sd", name = "R", descriptor = "[I")
-	private final int[] anIntArray460 = new int[10000];
+	private final int[] mergeIndexB = new int[10000];
 
 	@OriginalMember(owner = "client!sd", name = "T", descriptor = "I")
-	private int anInt2118 = 0;
+	private int tmpMergeIndex = 0;
 
 	@OriginalMember(owner = "client!sd", name = "U", descriptor = "[I")
-	private final int[] anIntArray461 = new int[10000];
+	private final int[] mergeIndexA = new int[10000];
 
 	@OriginalMember(owner = "client!sd", name = "A", descriptor = "I")
 	private final int maxLevel;
@@ -90,28 +88,28 @@ public final class World3D {
 		@Pc(29) Model local29;
 		if (arg2 < this.maxTileX) {
 			local14 = this.levelTiles[arg1][arg2 + 1][arg3];
-			if (local14 != null && local14.groundDecoration != null && local14.groundDecoration.aClass2_Sub2_Sub12_2 instanceof Model) {
-				local29 = (Model) local14.groundDecoration.aClass2_Sub2_Sub12_2;
+			if (local14 != null && local14.groundDecoration != null && local14.groundDecoration.entity instanceof Model) {
+				local29 = (Model) local14.groundDecoration.entity;
 				if (local29.vertexNormal != null) {
-					this.method1456(arg0, local29, 128, 0, 0, true);
+					this.mergeNormals(arg0, local29, 128, 0, 0, true);
 				}
 			}
 		}
 		if (arg3 < this.maxTileX) {
 			local14 = this.levelTiles[arg1][arg2][arg3 + 1];
-			if (local14 != null && local14.groundDecoration != null && local14.groundDecoration.aClass2_Sub2_Sub12_2 instanceof Model) {
-				local29 = (Model) local14.groundDecoration.aClass2_Sub2_Sub12_2;
+			if (local14 != null && local14.groundDecoration != null && local14.groundDecoration.entity instanceof Model) {
+				local29 = (Model) local14.groundDecoration.entity;
 				if (local29.vertexNormal != null) {
-					this.method1456(arg0, local29, 0, 0, 128, true);
+					this.mergeNormals(arg0, local29, 0, 0, 128, true);
 				}
 			}
 		}
 		if (arg2 < this.maxTileX && arg3 < this.maxTileZ) {
 			local14 = this.levelTiles[arg1][arg2 + 1][arg3 + 1];
-			if (local14 != null && local14.groundDecoration != null && local14.groundDecoration.aClass2_Sub2_Sub12_2 instanceof Model) {
-				local29 = (Model) local14.groundDecoration.aClass2_Sub2_Sub12_2;
+			if (local14 != null && local14.groundDecoration != null && local14.groundDecoration.entity instanceof Model) {
+				local29 = (Model) local14.groundDecoration.entity;
 				if (local29.vertexNormal != null) {
-					this.method1456(arg0, local29, 128, 0, 128, true);
+					this.mergeNormals(arg0, local29, 128, 0, 128, true);
 				}
 			}
 		}
@@ -119,10 +117,10 @@ public final class World3D {
 			return;
 		}
 		local14 = this.levelTiles[arg1][arg2 + 1][arg3 - 1];
-		if (local14 != null && local14.groundDecoration != null && local14.groundDecoration.aClass2_Sub2_Sub12_2 instanceof Model) {
-			local29 = (Model) local14.groundDecoration.aClass2_Sub2_Sub12_2;
+		if (local14 != null && local14.groundDecoration != null && local14.groundDecoration.entity instanceof Model) {
+			local29 = (Model) local14.groundDecoration.entity;
 			if (local29.vertexNormal != null) {
-				this.method1456(arg0, local29, 128, 0, -128, true);
+				this.mergeNormals(arg0, local29, 128, 0, -128, true);
 			}
 		}
 	}
@@ -157,13 +155,13 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIIIILclient!jd;III)Z")
-	public boolean method1410(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Entity arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9) {
-		if (arg6 == null) {
+	public boolean method1410(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Entity entity, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9) {
+		if (entity == null) {
 			return true;
 		} else {
 			@Pc(11) int local11 = arg1 * 128 + arg4 * 64;
 			@Pc(19) int local19 = arg2 * 128 + arg5 * 64;
-			return this.addLoc(arg0, arg1, arg2, arg4, arg5, local11, local19, arg3, arg6, arg7, false, arg8, arg9);
+			return this.addLoc(arg0, arg1, arg2, arg4, arg5, local11, local19, arg3, entity, arg7, false, arg8, arg9);
 		}
 	}
 
@@ -183,13 +181,13 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(III)Lclient!uc;")
-	public Class60 method1412(@OriginalArg(0) int level, @OriginalArg(1) int x, @OriginalArg(2) int z) {
+	public Wall method1412(@OriginalArg(0) int level, @OriginalArg(1) int x, @OriginalArg(2) int z) {
 		@Pc(8) Tile tile = this.levelTiles[level][x][z];
 		return tile == null ? null : tile.wall;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "(III)V")
-	public void method1413(@OriginalArg(0) int level, @OriginalArg(1) int x, @OriginalArg(2) int z) {
+	public void removeGroundDecoration(@OriginalArg(0) int level, @OriginalArg(1) int x, @OriginalArg(2) int z) {
 		@Pc(8) Tile tile = this.levelTiles[level][x][z];
 		if (tile != null) {
 			tile.groundDecoration = null;
@@ -231,57 +229,57 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIILclient!jd;II)V")
-	public void method1416(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Entity arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
-		if (arg4 == null) {
+	public void addGroundDecoration(@OriginalArg(0) int level, @OriginalArg(1) int tileX, @OriginalArg(2) int tileZ, @OriginalArg(3) int arg3, @OriginalArg(4) Entity entity, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+		if (entity == null) {
 			return;
 		}
-		@Pc(6) Class4 local6 = new Class4();
-		local6.aClass2_Sub2_Sub12_2 = arg4;
-		local6.anInt47 = arg1 * 128 + 64;
-		local6.anInt44 = arg2 * 128 + 64;
-		local6.anInt40 = arg3;
-		local6.bitset = arg5;
-		local6.info = arg6;
-		if (this.levelTiles[arg0][arg1][arg2] == null) {
-			this.levelTiles[arg0][arg1][arg2] = new Tile(arg0, arg1, arg2);
+		@Pc(6) GroundDecoration decor = new GroundDecoration();
+		decor.entity = entity;
+		decor.x = tileX * 128 + 64;
+		decor.z = tileZ * 128 + 64;
+		decor.y = arg3;
+		decor.bitset = arg5;
+		decor.info = arg6;
+		if (this.levelTiles[level][tileX][tileZ] == null) {
+			this.levelTiles[level][tileX][tileZ] = new Tile(level, tileX, tileZ);
 		}
-		this.levelTiles[arg0][arg1][arg2].groundDecoration = local6;
+		this.levelTiles[level][tileX][tileZ].groundDecoration = decor;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIIII)Z")
-	private boolean method1417(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
-		@Pc(17) int local17;
-		@Pc(21) int local21;
-		if (arg1 != arg2 || arg3 != arg4) {
-			for (local17 = arg1; local17 <= arg2; local17++) {
-				for (local21 = arg3; local21 <= arg4; local21++) {
-					if (this.levelTileOcclusionCycles[arg0][local17][local21] == -Static89.cycle) {
+	private boolean locVisible(@OriginalArg(0) int level, @OriginalArg(1) int minX, @OriginalArg(2) int maxX, @OriginalArg(3) int minZ, @OriginalArg(4) int maxZ, @OriginalArg(5) int y) {
+		@Pc(17) int x;
+		@Pc(21) int z;
+		if (minX != maxX || minZ != maxZ) {
+			for (x = minX; x <= maxX; x++) {
+				for (z = minZ; z <= maxZ; z++) {
+					if (this.levelTileOcclusionCycles[level][x][z] == -Static89.cycle) {
 						return false;
 					}
 				}
 			}
-			local21 = (arg1 << 7) + 1;
-			@Pc(156) int local156 = (arg3 << 7) + 2;
-			@Pc(167) int local167 = this.levelHeightMaps[arg0][arg1][arg3] - arg5;
-			if (!this.occluded(local21, local167, local156)) {
+			z = (minX << 7) + 1;
+			@Pc(156) int z0 = (minZ << 7) + 2;
+			@Pc(167) int y0 = this.levelHeightMaps[level][minX][minZ] - y;
+			if (!this.occluded(z, y0, z0)) {
 				return false;
 			}
-			@Pc(181) int local181 = (arg2 << 7) - 1;
-			if (!this.occluded(local181, local167, local156)) {
+			@Pc(181) int x1 = (maxX << 7) - 1;
+			if (!this.occluded(x1, y0, z0)) {
 				return false;
 			}
-			@Pc(195) int local195 = (arg4 << 7) - 1;
-			if (!this.occluded(local21, local167, local195)) {
+			@Pc(195) int z1 = (maxZ << 7) - 1;
+			if (!this.occluded(z, y0, z1)) {
 				return false;
-			} else if (this.occluded(local181, local167, local195)) {
+			} else if (this.occluded(x1, y0, z1)) {
 				return true;
 			} else {
 				return false;
 			}
-		} else if (this.tileVisible(arg0, arg1, arg3)) {
-			local17 = arg1 << 7;
-			local21 = arg3 << 7;
-			return this.occluded(local17 + 1, this.levelHeightMaps[arg0][arg1][arg3] - arg5, local21 + 1) && this.occluded(local17 + 128 - 1, this.levelHeightMaps[arg0][arg1 + 1][arg3] - arg5, local21 + 1) && this.occluded(local17 + 128 - 1, this.levelHeightMaps[arg0][arg1 + 1][arg3 + 1] - arg5, local21 + 128 - 1) && this.occluded(local17 + 1, this.levelHeightMaps[arg0][arg1][arg3 + 1] - arg5, local21 + 128 - 1);
+		} else if (this.tileVisible(level, minX, minZ)) {
+			x = minX << 7;
+			z = minZ << 7;
+			return this.occluded(x + 1, this.levelHeightMaps[level][minX][minZ] - y, z + 1) && this.occluded(x + 128 - 1, this.levelHeightMaps[level][minX + 1][minZ] - y, z + 1) && this.occluded(x + 128 - 1, this.levelHeightMaps[level][minX + 1][minZ + 1] - y, z + 128 - 1) && this.occluded(x + 1, this.levelHeightMaps[level][minX][minZ + 1] - y, z + 128 - 1);
 		} else {
 			return false;
 		}
@@ -664,7 +662,7 @@ public final class World3D {
 				for (@Pc(7) int local7 = 0; local7 < this.maxTileZ; local7++) {
 					@Pc(17) Tile local17 = this.levelTiles[local1][local4][local7];
 					if (local17 != null) {
-						@Pc(22) Class60 local22 = local17.wall;
+						@Pc(22) Wall local22 = local17.wall;
 						if (local22 != null && local22.aClass2_Sub2_Sub12_7 instanceof Model) {
 							@Pc(32) Model local32 = (Model) local22.aClass2_Sub2_Sub12_7;
 							if (local32.vertexNormal != null) {
@@ -673,7 +671,7 @@ public final class World3D {
 									@Pc(51) Model local51 = (Model) local22.aClass2_Sub2_Sub12_8;
 									if (local51.vertexNormal != null) {
 										this.method1442(local51, local1, local4, local7, 1, 1);
-										this.method1456(local32, local51, 0, 0, 0, false);
+										this.mergeNormals(local32, local51, 0, 0, 0, false);
 										local51.method1158();
 									}
 								}
@@ -691,9 +689,9 @@ public final class World3D {
 								}
 							}
 						}
-						@Pc(134) Class4 local134 = local17.groundDecoration;
-						if (local134 != null && local134.aClass2_Sub2_Sub12_2 instanceof Model) {
-							local98 = (Model) local134.aClass2_Sub2_Sub12_2;
+						@Pc(134) GroundDecoration local134 = local17.groundDecoration;
+						if (local134 != null && local134.entity instanceof Model) {
+							local98 = (Model) local134.entity;
 							if (local98.vertexNormal != null) {
 								this.method1408(local98, local1, local4, local7);
 								local98.method1158();
@@ -790,10 +788,10 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "m", descriptor = "(III)V")
-	public void method1437(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
-		if (local8 != null) {
-			local8.aClass51_1 = null;
+	public void method1437(@OriginalArg(0) int level, @OriginalArg(1) int x, @OriginalArg(2) int z) {
+		@Pc(8) Tile tile = this.levelTiles[level][x][z];
+		if (tile != null) {
+			tile.aClass51_1 = null;
 		}
 	}
 
@@ -841,7 +839,7 @@ public final class World3D {
 		if (arg4 == null && arg5 == null) {
 			return;
 		}
-		@Pc(8) Class60 local8 = new Class60();
+		@Pc(8) Wall local8 = new Wall();
 		local8.bitset = arg8;
 		local8.info = arg9;
 		local8.anInt2362 = arg1 * 128 + 64;
@@ -860,7 +858,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "o", descriptor = "(III)Lclient!ac;")
-	public Class4 method1441(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public GroundDecoration method1441(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		return local8 == null || local8.groundDecoration == null ? null : local8.groundDecoration;
 	}
@@ -881,19 +879,19 @@ public final class World3D {
 								@Pc(66) Tile local66 = this.levelTiles[local17][local24][local34];
 								if (local66 != null) {
 									@Pc(160) int local160 = (this.levelHeightMaps[local17][local24][local34] + this.levelHeightMaps[local17][local24 + 1][local34] + this.levelHeightMaps[local17][local24][local34 + 1] + this.levelHeightMaps[local17][local24 + 1][local34 + 1]) / 4 - (this.levelHeightMaps[arg1][arg2][arg3] + this.levelHeightMaps[arg1][arg2 + 1][arg3] + this.levelHeightMaps[arg1][arg2][arg3 + 1] + this.levelHeightMaps[arg1][arg2 + 1][arg3 + 1]) / 4;
-									@Pc(163) Class60 local163 = local66.wall;
+									@Pc(163) Wall local163 = local66.wall;
 									if (local163 != null) {
 										@Pc(173) Model local173;
 										if (local163.aClass2_Sub2_Sub12_7 instanceof Model) {
 											local173 = (Model) local163.aClass2_Sub2_Sub12_7;
 											if (local173.vertexNormal != null) {
-												this.method1456(arg0, local173, (local24 - arg2) * 128 + (1 - arg4) * 64, local160, (local34 - arg3) * 128 + (1 - arg5) * 64, local1);
+												this.mergeNormals(arg0, local173, (local24 - arg2) * 128 + (1 - arg4) * 64, local160, (local34 - arg3) * 128 + (1 - arg5) * 64, local1);
 											}
 										}
 										if (local163.aClass2_Sub2_Sub12_8 instanceof Model) {
 											local173 = (Model) local163.aClass2_Sub2_Sub12_8;
 											if (local173.vertexNormal != null) {
-												this.method1456(arg0, local173, (local24 - arg2) * 128 + (1 - arg4) * 64, local160, (local34 - arg3) * 128 + (1 - arg5) * 64, local1);
+												this.mergeNormals(arg0, local173, (local24 - arg2) * 128 + (1 - arg4) * 64, local160, (local34 - arg3) * 128 + (1 - arg5) * 64, local1);
 											}
 										}
 									}
@@ -904,7 +902,7 @@ public final class World3D {
 											if (local261.vertexNormal != null) {
 												@Pc(272) int local272 = local251.maxSceneTileX + 1 - local251.minSceneTileX;
 												@Pc(280) int local280 = local251.maxSceneTileZ + 1 - local251.minSceneTileZ;
-												this.method1456(arg0, local261, (local251.minSceneTileX - arg2) * 128 + (local272 - arg4) * 64, local160, (local251.minSceneTileZ - arg3) * 128 + (local280 - arg5) * 64, local1);
+												this.mergeNormals(arg0, local261, (local251.minSceneTileX - arg2) * 128 + (local272 - arg4) * 64, local160, (local251.minSceneTileZ - arg3) * 128 + (local280 - arg5) * 64, local1);
 											}
 										}
 									}
@@ -1271,7 +1269,7 @@ public final class World3D {
 			@Pc(588) int local588;
 			@Pc(591) int local591;
 			@Pc(600) int local600;
-			@Pc(942) Class60 local942;
+			@Pc(942) Wall local942;
 			@Pc(1116) int local1116;
 			@Pc(1001) int local1001;
 			do {
@@ -1345,7 +1343,7 @@ public final class World3D {
 												} else if (!this.tileVisible(0, local17, local20)) {
 													this.method1452(local49.aClass50_1, 0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local17, local20);
 												}
-												@Pc(225) Class60 local225 = local49.wall;
+												@Pc(225) Wall local225 = local49.wall;
 												if (local225 != null) {
 													local225.aClass2_Sub2_Sub12_7.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local225.anInt2362 - Static89.eyeX, local225.anInt2361 - Static89.eyeY, local225.anInt2363 - Static89.eyeZ, local225.bitset);
 												}
@@ -1368,7 +1366,7 @@ public final class World3D {
 											}
 											var23 = 0;
 											local251 = 0;
-											@Pc(340) Class60 local340 = tile.wall;
+											@Pc(340) Wall local340 = tile.wall;
 											@Pc(343) WallDecoration local343 = tile.wallDecoration;
 											if (local340 != null || local343 != null) {
 												if (Static89.eyeTileX == local17) {
@@ -1444,9 +1442,9 @@ public final class World3D {
 												}
 											}
 											if (var24) {
-												@Pc(696) Class4 local696 = tile.groundDecoration;
+												@Pc(696) GroundDecoration local696 = tile.groundDecoration;
 												if (local696 != null) {
-													local696.aClass2_Sub2_Sub12_2.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local696.anInt47 - Static89.eyeX, local696.anInt40 - Static89.eyeY, local696.anInt44 - Static89.eyeZ, local696.bitset);
+													local696.entity.draw(0, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local696.x - Static89.eyeX, local696.y - Static89.eyeY, local696.z - Static89.eyeZ, local696.bitset);
 												}
 												@Pc(723) Class51 local723 = tile.aClass51_1;
 												if (local723 != null && local723.anInt1959 == 0) {
@@ -1585,7 +1583,7 @@ public final class World3D {
 												}
 												local1125 = Static89.locBuffer[local1001];
 												local1125.anInt1648 = Static89.cycle;
-												if (!this.method1417(local26, local1125.minSceneTileX, local1125.maxSceneTileX, local1125.minSceneTileZ, local1125.maxSceneTileZ, local1125.aClass2_Sub2_Sub12_3.maxY)) {
+												if (!this.locVisible(local26, local1125.minSceneTileX, local1125.maxSceneTileX, local1125.minSceneTileZ, local1125.maxSceneTileZ, local1125.aClass2_Sub2_Sub12_3.maxY)) {
 													local1125.aClass2_Sub2_Sub12_3.draw(local1125.anInt1666, Static89.sinEyePitch, Static89.cosEyePitch, Static89.sinEyeYaw, Static89.cosEyeYaw, local1125.anInt1650 - Static89.eyeX, local1125.anInt1657 - Static89.eyeY, local1125.anInt1658 - Static89.eyeZ, local1125.bitset);
 												}
 												for (local588 = local1125.minSceneTileX; local588 <= local1125.maxSceneTileX; local588++) {
@@ -1846,7 +1844,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "c", descriptor = "()V")
-	public void method1454() {
+	public void clearTemporaryLocs() {
 		for (@Pc(1) int i = 0; i < this.temporaryLocCount; i++) {
 			@Pc(7) Loc loc = this.temporaryLocs[i];
 			this.removeLoc(loc);
@@ -1983,37 +1981,45 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(Lclient!ne;Lclient!ne;IIIZ)V")
-	private void method1456(@OriginalArg(0) Model arg0, @OriginalArg(1) Model arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
-		arg1.method1154();
-		this.anInt2118++;
-		@Pc(9) int local9 = 0;
-		@Pc(12) int[] local12 = arg1.vertexX;
-		@Pc(15) int local15 = arg1.vertexCount;
-		for (@Pc(17) int local17 = 0; local17 < arg0.vertexCount; local17++) {
-			@Pc(23) VertexNormal local23 = arg0.vertexNormal[local17];
-			@Pc(28) VertexNormal local28 = arg0.vertexNormalOriginal[local17];
-			if (local28.w != 0) {
-				@Pc(38) int local38 = arg0.vertexY[local17] - arg3;
-				if (local38 <= arg1.minY) {
-					@Pc(49) int local49 = arg0.vertexX[local17] - arg2;
-					if (local49 >= arg1.minX && local49 <= arg1.maxX) {
-						@Pc(65) int local65 = arg0.vertexZ[local17] - arg4;
-						if (local65 >= arg1.minZ && local65 <= arg1.maxZ) {
-							for (@Pc(76) int local76 = 0; local76 < local15; local76++) {
-								@Pc(82) VertexNormal local82 = arg1.vertexNormal[local76];
-								@Pc(87) VertexNormal local87 = arg1.vertexNormalOriginal[local76];
-								if (local49 == local12[local76] && local65 == arg1.vertexZ[local76] && local38 == arg1.vertexY[local76] && local87.w != 0) {
-									local23.x += local87.x;
-									local23.y += local87.y;
-									local23.z += local87.z;
-									local23.w += local87.w;
-									local82.x += local28.x;
-									local82.y += local28.y;
-									local82.z += local28.z;
-									local82.w += local28.w;
-									local9++;
-									this.anIntArray461[local17] = this.anInt2118;
-									this.anIntArray460[local76] = this.anInt2118;
+	private void mergeNormals(@OriginalArg(0) Model modelA, @OriginalArg(1) Model modelB, @OriginalArg(2) int offsetX, @OriginalArg(3) int offsetY, @OriginalArg(4) int offsetZ, @OriginalArg(5) boolean allowFaceRemoval) {
+		modelB.method1154();
+
+		this.tmpMergeIndex++;
+		@Pc(9) int merged = 0;
+		@Pc(12) int[] vertexX = modelB.vertexX;
+		@Pc(15) int vertexCountB = modelB.vertexCount;
+
+		for (@Pc(17) int vertexA = 0; vertexA < modelA.vertexCount; vertexA++) {
+			@Pc(23) VertexNormal normalA = modelA.vertexNormal[vertexA];
+			@Pc(28) VertexNormal originalNormalA = modelA.vertexNormalOriginal[vertexA];
+
+			if (originalNormalA.w != 0) {
+
+				// TODO: Rearrange inverse ifs and do continues.
+				@Pc(38) int y = modelA.vertexY[vertexA] - offsetY;
+				if (y <= modelB.minY) {
+
+					@Pc(49) int x = modelA.vertexX[vertexA] - offsetX;
+					if (x >= modelB.minX && x <= modelB.maxX) {
+
+						@Pc(65) int z = modelA.vertexZ[vertexA] - offsetZ;
+						if (z >= modelB.minZ && z <= modelB.maxZ) {
+
+							for (@Pc(76) int vertexB = 0; vertexB < vertexCountB; vertexB++) {
+								@Pc(82) VertexNormal normalB = modelB.vertexNormal[vertexB];
+								@Pc(87) VertexNormal originalNormalB = modelB.vertexNormalOriginal[vertexB];
+								if (x == vertexX[vertexB] && z == modelB.vertexZ[vertexB] && y == modelB.vertexY[vertexB] && originalNormalB.w != 0) {
+									normalA.x += originalNormalB.x;
+									normalA.y += originalNormalB.y;
+									normalA.z += originalNormalB.z;
+									normalA.w += originalNormalB.w;
+									normalB.x += originalNormalA.x;
+									normalB.y += originalNormalA.y;
+									normalB.z += originalNormalA.z;
+									normalB.w += originalNormalA.w;
+									merged++;
+									this.mergeIndexA[vertexA] = this.tmpMergeIndex;
+									this.mergeIndexB[vertexB] = this.tmpMergeIndex;
 								}
 							}
 						}
@@ -2021,35 +2027,35 @@ public final class World3D {
 				}
 			}
 		}
-		if (local9 < 3 || !arg5) {
+		if (merged < 3 || !allowFaceRemoval) {
 			return;
 		}
-		for (@Pc(193) int local193 = 0; local193 < arg0.faceCount; local193++) {
-			if (this.anIntArray461[arg0.faceVertexA[local193]] == this.anInt2118 && this.anIntArray461[arg0.faceVertexB[local193]] == this.anInt2118 && this.anIntArray461[arg0.faceVertexC[local193]] == this.anInt2118) {
-				arg0.faceInfo[local193] = -1;
+		for (@Pc(193) int i = 0; i < modelA.faceCount; i++) {
+			if (this.mergeIndexA[modelA.faceVertexA[i]] == this.tmpMergeIndex && this.mergeIndexA[modelA.faceVertexB[i]] == this.tmpMergeIndex && this.mergeIndexA[modelA.faceVertexC[i]] == this.tmpMergeIndex) {
+				modelA.faceInfo[i] = -1;
 			}
 		}
-		for (@Pc(236) int local236 = 0; local236 < arg1.faceCount; local236++) {
-			if (this.anIntArray460[arg1.faceVertexA[local236]] == this.anInt2118 && this.anIntArray460[arg1.faceVertexB[local236]] == this.anInt2118 && this.anIntArray460[arg1.faceVertexC[local236]] == this.anInt2118) {
-				arg1.faceInfo[local236] = -1;
+		for (@Pc(236) int i = 0; i < modelB.faceCount; i++) {
+			if (this.mergeIndexB[modelB.faceVertexA[i]] == this.tmpMergeIndex && this.mergeIndexB[modelB.faceVertexB[i]] == this.tmpMergeIndex && this.mergeIndexB[modelB.faceVertexC[i]] == this.tmpMergeIndex) {
+				modelB.faceInfo[i] = -1;
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIIILclient!jd;IIIIII)Z")
-	public boolean method1457(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) Entity arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10) {
-		return arg4 == null ? true : this.addLoc(arg0, arg7, arg8, arg9 + 1 - arg7, arg10 - arg8 + 1, arg1, arg2, arg3, arg4, arg5, true, arg6, 0);
+	public boolean addTemporary(@OriginalArg(0) int level, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) Entity entity, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10) {
+		return entity == null || this.addLoc(level, arg7, arg8, arg9 + 1 - arg7, arg10 - arg8 + 1, arg1, arg2, arg3, entity, arg5, true, arg6, 0);
 	}
 
 	@OriginalMember(owner = "client!sd", name = "p", descriptor = "(III)I")
-	public int method1458(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
-		return local8 == null || local8.groundDecoration == null ? 0 : local8.groundDecoration.bitset;
+	public int getGroundDecorationBitset(@OriginalArg(0) int level, @OriginalArg(1) int x, @OriginalArg(2) int z) {
+		@Pc(8) Tile tile = this.levelTiles[level][x][z];
+		return tile == null || tile.groundDecoration == null ? 0 : tile.groundDecoration.bitset;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "q", descriptor = "(III)I")
-	public int method1459(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
-		return local8 == null || local8.wall == null ? 0 : local8.wall.bitset;
+	public int getWallBitset(@OriginalArg(0) int level, @OriginalArg(1) int x, @OriginalArg(2) int z) {
+		@Pc(8) Tile tile = this.levelTiles[level][x][z];
+		return tile == null || tile.wall == null ? 0 : tile.wall.bitset;
 	}
 }

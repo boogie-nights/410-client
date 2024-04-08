@@ -2,7 +2,9 @@ package jagex2;
 
 import jagex2.dash3d.entity.PathingEntity;
 import jagex2.dash3d.entity.PlayerEntity;
+import jagex2.dash3d.type.GroundDecoration;
 import jagex2.dash3d.type.Loc;
+import jagex2.dash3d.type.Wall;
 import jagex2.dash3d.type.WallDecoration;
 import jagex2.datastruct.LinkedList;
 import jagex2.datastruct.LruCache;
@@ -314,7 +316,7 @@ public final class Static3 {
 							local1064 = Static91.levelHeightMap[Static1.currentLevel][local43 + 1][local425 + 1];
 							local1068 = Static91.levelHeightMap[Static1.currentLevel][local43][local425 + 1];
 							if (local35 == 0) {
-								@Pc(1292) Class60 local1292 = Static93.scene.method1412(Static1.currentLevel, local43, local425);
+								@Pc(1292) Wall local1292 = Static93.scene.method1412(Static1.currentLevel, local43, local425);
 								if (local1292 != null) {
 									local523 = local1292.bitset >> 14 & 0x7FFF;
 									if (local19 == 2) {
@@ -341,9 +343,9 @@ public final class Static3 {
 								}
 							}
 							if (local35 == 3) {
-								@Pc(1432) Class4 local1432 = Static93.scene.method1441(Static1.currentLevel, local43, local425);
+								@Pc(1432) GroundDecoration local1432 = Static93.scene.method1441(Static1.currentLevel, local43, local425);
 								if (local1432 != null) {
-									local1432.aClass2_Sub2_Sub12_2 = new Class2_Sub2_Sub12_Sub5(local1432.bitset >> 14 & 0x7FFF, 22, local31, local503, local1060, local1064, local1068, local12, false);
+									local1432.entity = new Class2_Sub2_Sub12_Sub5(local1432.bitset >> 14 & 0x7FFF, 22, local31, local503, local1060, local1064, local1068, local12, false);
 								}
 							}
 						}
