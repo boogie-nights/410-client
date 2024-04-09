@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.zip.CRC32;
 
 import jagex2.config.ComType;
+import jagex2.config.LocType;
 import jagex2.datastruct.LinkedList;
 import jagex2.datastruct.LruCache;
 import jagex2.graphics.Pix8;
@@ -53,7 +54,7 @@ public final class Static81 {
 		if (arg1 >= 5 && arg1 <= 8) {
 			arg1 = 4;
 		}
-		@Pc(20) Class2_Sub2_Sub10 local20 = Static91.method1470(arg0);
+		@Pc(20) LocType local20 = Static91.method1470(arg0);
 		return local20.method769(arg1);
 	}
 

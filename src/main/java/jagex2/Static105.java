@@ -1,6 +1,7 @@
 package jagex2;
 
 import jagex2.client.ViewBox;
+import jagex2.config.LocType;
 import jagex2.config.ObjType;
 import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.datastruct.HashTable;
@@ -104,7 +105,7 @@ public final class Static105 {
 		Static7.anInt231 = 0;
 		Static85.anInt1986 = -1;
 		Static80.out.pos = 0;
-		Static88.anInt2083 = -1;
+		Static88.packetType = -1;
 		Static56.in.pos = 0;
 		Static97.aBoolean175 = false;
 		Static97.anInt2352 = -1;
@@ -121,8 +122,8 @@ public final class Static105 {
 		Static104.anInt2518 = (int) (Math.random() * 100.0D) - 50;
 		Static73.anInt1800 = 0;
 		Static96.anInt2328 = 0;
-		Static38.anInt986 = 0;
-		Static80.anInt1919 = 0;
+		Static38.flagSceneTileX = 0;
+		Static80.flagSceneTileZ = 0;
 		Static10.anInt262 = (int) (Math.random() * 80.0D) - 40;
 		Static67.anInt1669 = (int) (Math.random() * 20.0D) - 10 & 0x7FF;
 		Static15.anInt1857 = (int) (Math.random() * 30.0D) - 20;
@@ -137,7 +138,7 @@ public final class Static105 {
 			Static59.aPacketArray1[local1726] = null;
 		}
 		for (@Pc(1744) int local1744 = 0; local1744 < 16384; local1744++) {
-			Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local1744] = null;
+			Static2.npcs[local1744] = null;
 		}
 		Static88.localPlayer = Static100.players[2047] = new PlayerEntity();
 		Static24.aClass44_4.clear();
@@ -150,7 +151,7 @@ public final class Static105 {
 				}
 			}
 		}
-		Static92.aClass44_7 = new LinkedList();
+		Static92.spawnedLocations = new LinkedList();
 		Static22.friendCount = 0;
 		Static42.anInt1038 = 0;
 		Static83.method1350(Static38.anInt980);
@@ -279,143 +280,142 @@ public final class Static105 {
 	}
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(IIBIII)V")
-	public static void method1674(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(7) int local7 = Static93.scene.getWallBitset(arg0, arg4, arg3);
-		@Pc(40) int local40;
-		@Pc(46) int local46;
-		@Pc(53) int local53;
-		@Pc(11) int local11;
-		@Pc(33) int local33;
-		@Pc(59) int local59;
-		if (local7 != 0) {
-			local11 = arg1;
-			if (local7 > 0) {
-				local11 = arg2;
+	public static void drawMinimapLoc(@OriginalArg(0) int level, @OriginalArg(1) int wallRgb, @OriginalArg(3) int doorRgb, @OriginalArg(4) int tileZ, @OriginalArg(5) int tileX) {
+		@Pc(7) int bitset = Static93.scene.getWallBitset(level, tileX, tileZ);
+		@Pc(40) int info;
+		@Pc(46) int angle;
+		@Pc(53) int shape;
+		@Pc(11) int rgb;
+		@Pc(33) int offset;
+		@Pc(59) int offsetX;
+		if (bitset != 0) {
+			rgb = wallRgb;
+			if (bitset > 0) {
+				rgb = doorRgb;
 			}
-			local33 = (103 - arg3) * 4 * 512 + arg4 * 4 + 24624;
-			local40 = Static93.scene.getInfo(arg0, arg4, arg3, local7);
-			local46 = local40 >> 6 & 0x3;
-			@Pc(49) int[] local49 = Static93.aClass2_Sub2_Sub2_Sub4_8.pixels;
-			local53 = local40 & 0x1F;
-			local59 = local7 >> 14 & 0x7FFF;
-			@Pc(63) Class2_Sub2_Sub10 local63 = Static91.method1470(local59);
-			if (local63.anInt1039 == -1) {
-				if (local53 == 0 || local53 == 2) {
-					if (local46 == 0) {
-						local49[local33] = local11;
-						local49[local33 + 512] = local11;
-						local49[local33 + 1024] = local11;
-						local49[local33 + 1536] = local11;
-					} else if (local46 == 1) {
-						local49[local33] = local11;
-						local49[local33 + 1] = local11;
-						local49[local33 + 2] = local11;
-						local49[local33 + 3] = local11;
-					} else if (local46 == 2) {
-						local49[local33 + 3] = local11;
-						local49[local33 + 515] = local11;
-						local49[local33 + 1027] = local11;
-						local49[local33 + 1536 + 3] = local11;
-					} else if (local46 == 3) {
-						local49[local33 + 1536] = local11;
-						local49[local33 + 1 + 1536] = local11;
-						local49[local33 + 2 + 1536] = local11;
-						local49[local33 + 3 + 1536] = local11;
+			offset = (103 - tileZ) * 4 * 512 + tileX * 4 + 24624;
+			info = Static93.scene.getInfo(level, tileX, tileZ, bitset);
+			angle = info >> 6 & 0x3;
+			@Pc(49) int[] dst = Static93.imageMinimap.pixels;
+			shape = info & 0x1F;
+			offsetX = bitset >> 14 & 0x7FFF;
+			@Pc(63) LocType loc = Static91.method1470(offsetX);
+			if (loc.mapscene == -1) {
+				if (shape == 0 || shape == 2) {
+					if (angle == 0) {
+						dst[offset] = rgb;
+						dst[offset + 512] = rgb;
+						dst[offset + 1024] = rgb;
+						dst[offset + 1536] = rgb;
+					} else if (angle == 1) {
+						dst[offset] = rgb;
+						dst[offset + 1] = rgb;
+						dst[offset + 2] = rgb;
+						dst[offset + 3] = rgb;
+					} else if (angle == 2) {
+						dst[offset + 3] = rgb;
+						dst[offset + 515] = rgb;
+						dst[offset + 1027] = rgb;
+						dst[offset + 1536 + 3] = rgb;
+					} else if (angle == 3) {
+						dst[offset + 1536] = rgb;
+						dst[offset + 1 + 1536] = rgb;
+						dst[offset + 2 + 1536] = rgb;
+						dst[offset + 3 + 1536] = rgb;
 					}
 				}
-				if (local53 == 3) {
-					if (local46 == 0) {
-						local49[local33] = local11;
-					} else if (local46 == 1) {
-						local49[local33 + 3] = local11;
-					} else if (local46 == 2) {
-						local49[local33 + 3 + 1536] = local11;
-					} else if (local46 == 3) {
-						local49[local33 + 1536] = local11;
+				if (shape == 3) {
+					if (angle == 0) {
+						dst[offset] = rgb;
+					} else if (angle == 1) {
+						dst[offset + 3] = rgb;
+					} else if (angle == 2) {
+						dst[offset + 3 + 1536] = rgb;
+					} else if (angle == 3) {
+						dst[offset + 1536] = rgb;
 					}
 				}
-				if (local53 == 2) {
-					if (local46 == 3) {
-						local49[local33] = local11;
-						local49[local33 + 512] = local11;
-						local49[local33 + 1024] = local11;
-						local49[local33 + 1536] = local11;
-					} else if (local46 == 0) {
-						local49[local33] = local11;
-						local49[local33 + 1] = local11;
-						local49[local33 + 2] = local11;
-						local49[local33 + 3] = local11;
-					} else if (local46 == 1) {
-						local49[local33 + 3] = local11;
-						local49[local33 + 515] = local11;
-						local49[local33 + 1024 + 3] = local11;
-						local49[local33 + 1536 + 3] = local11;
-					} else if (local46 == 2) {
-						local49[local33 + 1536] = local11;
-						local49[local33 + 1536 + 1] = local11;
-						local49[local33 + 1538] = local11;
-						local49[local33 + 1536 + 3] = local11;
+				if (shape == 2) {
+					if (angle == 3) {
+						dst[offset] = rgb;
+						dst[offset + 512] = rgb;
+						dst[offset + 1024] = rgb;
+						dst[offset + 1536] = rgb;
+					} else if (angle == 0) {
+						dst[offset] = rgb;
+						dst[offset + 1] = rgb;
+						dst[offset + 2] = rgb;
+						dst[offset + 3] = rgb;
+					} else if (angle == 1) {
+						dst[offset + 3] = rgb;
+						dst[offset + 515] = rgb;
+						dst[offset + 1024 + 3] = rgb;
+						dst[offset + 1536 + 3] = rgb;
+					} else if (angle == 2) {
+						dst[offset + 1536] = rgb;
+						dst[offset + 1536 + 1] = rgb;
+						dst[offset + 1538] = rgb;
+						dst[offset + 1536 + 3] = rgb;
 					}
 				}
 			} else {
-				@Pc(73) Pix8 local73 = Static56.aClass2_Sub2_Sub2_Sub3Array15[local63.anInt1039];
+				@Pc(73) Pix8 local73 = Static56.imageMapscene[loc.mapscene];
 				if (local73 != null) {
-					@Pc(85) int local85 = (local63.anInt1036 * 4 - local73.width) / 2;
-					@Pc(95) int local95 = (local63.anInt1040 * 4 - local73.height) / 2;
-					local73.draw(local85 + arg4 * 4 + 48, local95 + (-local63.anInt1040 + -arg3 + 104) * 4 + 48);
+					@Pc(85) int local85 = (loc.width * 4 - local73.width) / 2;
+					@Pc(95) int local95 = (loc.length * 4 - local73.height) / 2;
+					local73.draw(local85 + tileX * 4 + 48, local95 + (-loc.length + -tileZ + 104) * 4 + 48);
 				}
 			}
 		}
-		local7 = Static93.scene.method1429(arg0, arg4, arg3);
-		if (local7 != 0) {
-			local40 = Static93.scene.getInfo(arg0, arg4, arg3, local7);
-			local53 = local40 & 0x1F;
-			local46 = local40 >> 6 & 0x3;
-			local11 = local7 >> 14 & 0x7FFF;
-			@Pc(457) Class2_Sub2_Sub10 local457 = Static91.method1470(local11);
-			@Pc(492) int local492;
-			if (local457.anInt1039 != -1) {
-				@Pc(565) Pix8 local565 = Static56.aClass2_Sub2_Sub2_Sub3Array15[local457.anInt1039];
-				if (local565 != null) {
-					local59 = (local457.anInt1036 * 4 - local565.width) / 2;
-					local492 = (local457.anInt1040 * 4 - local565.height) / 2;
-					local565.draw(arg4 * 4 + local59 + 48, local492 + (104 - arg3 - local457.anInt1040) * 4 + 48);
+		bitset = Static93.scene.getLocBitset(level, tileX, tileZ);
+		if (bitset != 0) {
+			info = Static93.scene.getInfo(level, tileX, tileZ, bitset);
+			shape = info & 0x1F;
+			angle = info >> 6 & 0x3;
+			int locId = bitset >> 14 & 0x7FFF;
+			@Pc(457) LocType loc = Static91.method1470(locId);
+			@Pc(492) int offsetY;
+			if (loc.mapscene != -1) {
+				@Pc(565) Pix8 scene = Static56.imageMapscene[loc.mapscene];
+				if (scene != null) {
+					offsetX = (loc.width * 4 - scene.width) / 2;
+					offsetY = (loc.length * 4 - scene.height) / 2;
+					scene.draw(tileX * 4 + offsetX + 48, offsetY + (104 - tileZ - loc.length) * 4 + 48);
 				}
-			} else if (local53 == 9) {
-				local33 = 15658734;
-				if (local7 > 0) {
-					local33 = 15597568;
+			} else if (shape == 9) {
+				int rgbColor = 15658734;
+				if (bitset > 0) {
+					rgbColor = 15597568;
 				}
-				@Pc(477) int[] local477 = Static93.aClass2_Sub2_Sub2_Sub4_8.pixels;
-				local492 = arg4 * 4 + (-arg3 + 103) * 512 * 4 + 24624;
-				if (local46 == 0 || local46 == 2) {
-					local477[local492 + 1536] = local33;
-					local477[local492 + 1024 + 1] = local33;
-					local477[local492 + 2 + 512] = local33;
-					local477[local492 + 3] = local33;
+				@Pc(477) int[] dst = Static93.imageMinimap.pixels;
+				int off = tileX * 4 + (-tileZ + 103) * 512 * 4 + 24624;
+				if (angle == 0 || angle == 2) {
+					dst[off + 1536] = rgbColor;
+					dst[off + 1024 + 1] = rgbColor;
+					dst[off + 2 + 512] = rgbColor;
+					dst[off + 3] = rgbColor;
 				} else {
-					local477[local492] = local33;
-					local477[local492 + 513] = local33;
-					local477[local492 + 1024 + 2] = local33;
-					local477[local492 + 3 + 1536] = local33;
+					dst[off] = rgbColor;
+					dst[off + 513] = rgbColor;
+					dst[off + 1024 + 2] = rgbColor;
+					dst[off + 3 + 1536] = rgbColor;
 				}
 			}
 		}
-		local7 = Static93.scene.getGroundDecorationBitset(arg0, arg4, arg3);
-		if (local7 == 0) {
+		bitset = Static93.scene.getGroundDecorationBitset(level, tileX, tileZ);
+		if (bitset == 0) {
 			return;
 		}
-		local40 = local7 >> 14 & 0x7FFF;
-		@Pc(633) Class2_Sub2_Sub10 local633 = Static91.method1470(local40);
-		if (local633.anInt1039 == -1) {
+		int locId = bitset >> 14 & 0x7FFF;
+		@Pc(633) LocType loc = Static91.method1470(locId);
+		if (loc.mapscene == -1) {
 			return;
 		}
-		@Pc(642) Pix8 local642 = Static56.aClass2_Sub2_Sub2_Sub3Array15[local633.anInt1039];
-		if (local642 != null) {
-			local11 = (local633.anInt1036 * 4 - local642.width) / 2;
-			@Pc(665) int local665 = (local633.anInt1040 * 4 - local642.height) / 2;
-			local642.draw(local11 + arg4 * 4 + 48, local665 + (-local633.anInt1040 + 104 - arg3) * 4 + 48);
-			return;
+		@Pc(642) Pix8 scene = Static56.imageMapscene[loc.mapscene];
+		if (scene != null) {
+			rgb = (loc.width * 4 - scene.width) / 2;
+			@Pc(665) int offsetY = (loc.length * 4 - scene.height) / 2;
+			scene.draw(rgb + tileX * 4 + 48, offsetY + (-loc.length + 104 - tileZ) * 4 + 48);
 		}
 	}
 }

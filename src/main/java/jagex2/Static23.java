@@ -78,7 +78,7 @@ public final class Static23 {
 		Static73.anInt1800 = 0;
 		for (@Pc(62) int local62 = 0; local62 < local13; local62++) {
 			@Pc(68) int local68 = Static63.anIntArray326[local62];
-			@Pc(72) NpcEntity local72 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local68];
+			@Pc(72) NpcEntity local72 = Static2.npcs[local68];
 			@Pc(77) int local77 = Static56.in.gBit(1);
 			if (local77 == 0) {
 				Static63.anIntArray326[Static73.anInt1800++] = local68;

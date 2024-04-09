@@ -1,7 +1,6 @@
 package jagex2.dash3d.entity;
 
 import jagex2.*;
-import jagex2.dash3d.entity.PathingEntity;
 import jagex2.graphics.Model;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -185,7 +184,7 @@ public final class PlayerEntity extends PathingEntity {
 			if (Static107.loopCycle >= this.anInt1377 && Static107.loopCycle < this.anInt1381) {
 				local91 = this.aModel_1;
 				local111 = new Model[] { local60, local91 };
-				local91.translate(this.anInt1387 - super.anInt2275, -this.anInt1379 + this.anInt1384, this.anInt1375 - super.anInt2284);
+				local91.translate(this.anInt1387 - super.x, -this.anInt1379 + this.anInt1384, this.anInt1375 - super.z);
 				if (super.anInt2283 == 512) {
 					local91.rotateY90();
 					local91.rotateY90();
@@ -207,7 +206,7 @@ public final class PlayerEntity extends PathingEntity {
 					local91.rotateY90();
 					local91.rotateY90();
 				}
-				local91.translate(super.anInt2275 - this.anInt1387, this.anInt1379 + -this.anInt1384, super.anInt2284 - this.anInt1375);
+				local91.translate(super.x - this.anInt1387, this.anInt1379 + -this.anInt1384, super.z - this.anInt1375);
 			}
 		}
 		local60.pickable = true;

@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.config.LocType;
 import jagex2.dash3d.entity.PathingEntity;
 import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.dash3d.type.GroundDecoration;
@@ -70,9 +71,9 @@ public final class Static3 {
 			arg0.anInt2283 = 512;
 		}
 		@Pc(54) int local54 = arg0.anInt2317 * 128 + arg0.size * 64;
-		arg0.anInt2275 += (local54 - arg0.anInt2275) / local24;
+		arg0.x += (local54 - arg0.x) / local24;
 		@Pc(82) int local82 = arg0.anInt2321 * 128 + arg0.size * 64;
-		arg0.anInt2284 += (local82 - arg0.anInt2284) / local24;
+		arg0.z += (local82 - arg0.z) / local24;
 	}
 
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(Z)V")
@@ -84,7 +85,7 @@ public final class Static3 {
 		@Pc(35) int local35;
 		@Pc(39) int local39;
 		@Pc(43) int local43;
-		if (Static88.anInt2083 == 35) {
+		if (Static88.packetType == 35) {
 			local12 = Static56.in.g1();
 			local19 = Static91.anInt2138 + (local12 & 0x7);
 			local27 = Static95.anInt2237 + (local12 >> 4 & 0x7);
@@ -95,7 +96,7 @@ public final class Static3 {
 			if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
 				Static22.method1727(0, Static1.currentLevel, local43, local39, local35, -1, local19, -1, local27);
 			}
-		} else if (Static88.anInt2083 == 46) {
+		} else if (Static88.packetType == 46) {
 			local12 = Static56.in.method1681();
 			local27 = Static56.in.method1705();
 			local19 = Static56.in.method1714();
@@ -112,7 +113,7 @@ public final class Static3 {
 				Static91.levelObjStacks[Static1.currentLevel][local35][local39].pushBack(local131);
 				Static83.method1356(local39, local35);
 			}
-		} else if (Static88.anInt2083 == 63) {
+		} else if (Static88.packetType == 63) {
 			local12 = Static56.in.g1();
 			local27 = (local12 >> 4 & 0x7) + Static95.anInt2237;
 			local19 = Static91.anInt2138 + (local12 & 0x7);
@@ -132,7 +133,7 @@ public final class Static3 {
 				}
 			}
 		} else {
-			if (Static88.anInt2083 == 118) {
+			if (Static88.packetType == 118) {
 				local12 = Static56.in.g1();
 				local27 = (local12 >> 4 & 0x7) + Static95.anInt2237;
 				local19 = Static91.anInt2138 + (local12 & 0x7);
@@ -140,7 +141,7 @@ public final class Static3 {
 				local35 = Static56.in.g1();
 				local39 = local35 >> 4 & 0xF;
 				local43 = local35 & 0x7;
-				if (local27 - local39 <= Static88.localPlayer.anIntArray492[0] && Static88.localPlayer.anIntArray492[0] <= local39 + local27 && Static88.localPlayer.anIntArray496[0] >= local19 - local39 && Static88.localPlayer.anIntArray496[0] <= local19 + local39 && Static98.anInt2372 != 0 && local43 > 0 && Static4.anInt131 < 50) {
+				if (local27 - local39 <= Static88.localPlayer.pathTileX[0] && Static88.localPlayer.pathTileX[0] <= local39 + local27 && Static88.localPlayer.pathTileZ[0] >= local19 - local39 && Static88.localPlayer.pathTileZ[0] <= local19 + local39 && Static98.anInt2372 != 0 && local43 > 0 && Static4.anInt131 < 50) {
 					Static96.anIntArray497[Static4.anInt131] = local31;
 					Static13.anIntArray79[Static4.anInt131] = local43;
 					Static5.anIntArray36[Static4.anInt131] = 0;
@@ -149,7 +150,7 @@ public final class Static3 {
 				}
 			}
 			@Pc(425) int local425;
-			if (Static88.anInt2083 == 244) {
+			if (Static88.packetType == 244) {
 				local12 = Static56.in.method1714();
 				local27 = Static56.in.method1715();
 				local31 = Static91.anInt2138 + (local27 & 0x7);
@@ -164,7 +165,7 @@ public final class Static3 {
 			} else {
 				@Pc(503) int local503;
 				@Pc(523) int local523;
-				if (Static88.anInt2083 == 21) {
+				if (Static88.packetType == 21) {
 					local12 = Static56.in.method1705();
 					local27 = Static56.in.method1706();
 					local19 = (local27 >> 4 & 0x7) + Static95.anInt2237;
@@ -187,7 +188,7 @@ public final class Static3 {
 						local536 = Static100.players[local12];
 					}
 					if (local536 != null) {
-						@Pc(548) Class2_Sub2_Sub10 local548 = Static91.method1470(local523);
+						@Pc(548) LocType local548 = Static91.method1470(local523);
 						@Pc(558) int local558 = Static91.levelHeightMap[Static1.currentLevel][local19 + 1][local31];
 						@Pc(566) int local566 = Static91.levelHeightMap[Static1.currentLevel][local19][local31];
 						@Pc(578) int local578 = Static91.levelHeightMap[Static1.currentLevel][local19 + 1][local31 + 1];
@@ -196,8 +197,8 @@ public final class Static3 {
 						if (local598 != null) {
 							Static22.method1727(local35 + 1, Static1.currentLevel, local503, 0, 0, -1, local31, local527 + 1, local19);
 							local536.aModel_1 = local598;
-							@Pc(621) int local621 = local548.anInt1036;
-							@Pc(624) int local624 = local548.anInt1040;
+							@Pc(621) int local621 = local548.width;
+							@Pc(624) int local624 = local548.length;
 							@Pc(633) byte local633;
 							if (local511 < local519) {
 								local633 = local519;
@@ -211,8 +212,8 @@ public final class Static3 {
 								local507 = local633;
 							}
 							if (local425 == 1 || local425 == 3) {
-								local624 = local548.anInt1036;
-								local621 = local548.anInt1040;
+								local624 = local548.width;
+								local621 = local548.length;
 							}
 							local536.anInt1387 = local621 * 64 + local19 * 128;
 							local536.anInt1377 = local35 + Static107.loopCycle;
@@ -226,7 +227,7 @@ public final class Static3 {
 					}
 				}
 				@Pc(771) Class2_Sub2_Sub12_Sub3 local771;
-				if (Static88.anInt2083 == 56) {
+				if (Static88.packetType == 56) {
 					local12 = Static56.in.method1705();
 					local27 = Static56.in.method1730();
 					local19 = Static95.anInt2237 + (local27 >> 4 & 0x7);
@@ -242,7 +243,7 @@ public final class Static3 {
 						Static91.levelObjStacks[Static1.currentLevel][local19][local31].pushBack(local771);
 						Static83.method1356(local31, local19);
 					}
-				} else if (Static88.anInt2083 == 135) {
+				} else if (Static88.packetType == 135) {
 					local12 = Static56.in.g1();
 					local27 = Static95.anInt2237 + (local12 >> 4 & 0x7);
 					local19 = (local12 & 0x7) + Static91.anInt2138;
@@ -255,7 +256,7 @@ public final class Static3 {
 						@Pc(893) Class2_Sub2_Sub12_Sub6 local893 = new Class2_Sub2_Sub12_Sub6(local31, Static1.currentLevel, local27, local19, Static86.method1383(Static1.currentLevel, local27, local19) - local35, local39, Static107.loopCycle);
 						Static96.aClass44_8.pushBack(local893);
 					}
-				} else if (Static88.anInt2083 == 221) {
+				} else if (Static88.packetType == 221) {
 					local12 = Static56.in.method1706();
 					local27 = (local12 >> 4 & 0x7) + Static95.anInt2237;
 					local19 = (local12 & 0x7) + Static91.anInt2138;
@@ -279,7 +280,7 @@ public final class Static3 {
 					@Pc(1060) int local1060;
 					@Pc(1064) int local1064;
 					@Pc(1068) int local1068;
-					if (Static88.anInt2083 == 69) {
+					if (Static88.packetType == 69) {
 						local12 = Static56.in.g1();
 						local27 = Static95.anInt2237 + (local12 >> 4 & 0x7);
 						local19 = (local12 & 0x7) + Static91.anInt2138;
@@ -302,7 +303,7 @@ public final class Static3 {
 							local1164.method939(local31, Static86.method1383(Static1.currentLevel, local31, local35) - local503, Static107.loopCycle + local1060, local35);
 							Static24.aClass44_4.pushBack(local1164);
 						}
-					} else if (Static88.anInt2083 == 129) {
+					} else if (Static88.packetType == 129) {
 						local12 = Static56.in.method1714();
 						local27 = Static56.in.method1715();
 						local19 = local27 >> 2;

@@ -19,7 +19,7 @@ public final class Static93 {
 	public static World3D scene;
 
 	@OriginalMember(owner = "client!tc", name = "m", descriptor = "Lclient!vb;")
-	public static Pix24 aClass2_Sub2_Sub2_Sub4_8;
+	public static Pix24 imageMinimap;
 
 	@OriginalMember(owner = "client!tc", name = "r", descriptor = "[Lclient!qb;")
 	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array12;
@@ -183,7 +183,7 @@ public final class Static93 {
 		aClass40_626 = null;
 		aClass40_623 = null;
 		aClass2_Sub2_Sub2_Sub3Array12 = null;
-		aClass2_Sub2_Sub2_Sub4_8 = null;
+		imageMinimap = null;
 		scene = null;
 		aClass40_624 = null;
 		aClass6_6 = null;

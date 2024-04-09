@@ -94,9 +94,9 @@ public final class Static24 {
 		for (@Pc(11) int local11 = 0; local11 < 4; local11++) {
 			for (local15 = 0; local15 < 104; local15++) {
 				for (local19 = 0; local19 < 104; local19++) {
-					if ((Static61.aByteArrayArrayArray7[local11][local15][local19] & 0x1) == 1) {
+					if ((Static61.levelTileFlags[local11][local15][local19] & 0x1) == 1) {
 						local36 = local11;
-						if ((Static61.aByteArrayArrayArray7[1][local15][local19] & 0x2) == 2) {
+						if ((Static61.levelTileFlags[1][local15][local19] & 0x2) == 2) {
 							local36 = local11 - 1;
 						}
 						if (local36 >= 0) {
@@ -211,7 +211,7 @@ public final class Static24 {
 							local210 -= Static25.anIntArray126[local551];
 							local200 -= Static85.anIntArray434[local551];
 						}
-						if (local283 >= 1 && local283 < 103 && (!Static1.lowMemory || (Static61.aByteArrayArrayArray7[0][local166][local283] & 0x2) != 0 || (Static61.aByteArrayArrayArray7[local15][local166][local283] & 0x10) == 0 && Static48.method821(local283, local166, local15) == Static33.anInt786)) {
+						if (local283 >= 1 && local283 < 103 && (!Static1.lowMemory || (Static61.levelTileFlags[0][local166][local283] & 0x2) != 0 || (Static61.levelTileFlags[local15][local166][local283] & 0x10) == 0 && Static48.method821(local283, local166, local15) == Static33.anInt786)) {
 							if (Static34.anInt807 > local15) {
 								Static34.anInt807 = local15;
 							}
@@ -325,7 +325,7 @@ public final class Static24 {
 		arg1.method1434();
 		for (local19 = 0; local19 < 104; local19++) {
 			for (local36 = 0; local36 < 104; local36++) {
-				if ((Static61.aByteArrayArrayArray7[1][local19][local36] & 0x2) == 2) {
+				if ((Static61.levelTileFlags[1][local19][local36] & 0x2) == 2) {
 					arg1.method1453(local19, local36);
 				}
 			}

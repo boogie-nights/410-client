@@ -101,7 +101,7 @@ public final class Static12 {
 			if (local9 == -1) {
 				local31 = Static88.localPlayer;
 			} else if (local9 >= Static88.playerCount) {
-				local31 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local9 - Static88.playerCount]];
+				local31 = Static2.npcs[Static63.anIntArray326[local9 - Static88.playerCount]];
 			} else {
 				local31 = Static100.players[Static73.playerIds[local9]];
 			}

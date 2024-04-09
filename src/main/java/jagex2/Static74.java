@@ -51,26 +51,26 @@ public final class Static74 {
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Z)V")
 	public static void method1209() {
-		for (@Pc(15) Class2_Sub7 local15 = (Class2_Sub7) Static92.aClass44_7.peekFront(); local15 != null; local15 = (Class2_Sub7) Static92.aClass44_7.prev()) {
-			if (local15.anInt826 > 0) {
-				local15.anInt826--;
+		for (@Pc(15) LocTemporary loc = (LocTemporary) Static92.spawnedLocations.peekFront(); loc != null; loc = (LocTemporary) Static92.spawnedLocations.prev()) {
+			if (loc.anInt826 > 0) {
+				loc.anInt826--;
 			}
-			if (local15.anInt826 != 0) {
-				if (local15.anInt827 > 0) {
-					local15.anInt827--;
+			if (loc.anInt826 != 0) {
+				if (loc.anInt827 > 0) {
+					loc.anInt827--;
 				}
-				if (local15.anInt827 == 0 && local15.anInt818 >= 1 && local15.anInt821 >= 1 && local15.anInt818 <= 102 && local15.anInt821 <= 102 && (local15.anInt828 < 0 || Static81.method1335(local15.anInt828, local15.anInt819))) {
-					Static98.method1566(local15.anInt823, local15.anInt818, local15.anInt821, local15.anInt819, local15.anInt817, local15.anInt828, local15.anInt829);
-					local15.anInt827 = -1;
-					if (local15.anInt828 == local15.anInt820 && local15.anInt820 == -1) {
-						local15.unlink();
-					} else if (local15.anInt820 == local15.anInt828 && local15.anInt825 == local15.anInt829 && local15.anInt819 == local15.anInt830) {
-						local15.unlink();
+				if (loc.anInt827 == 0 && loc.x >= 1 && loc.z >= 1 && loc.x <= 102 && loc.z <= 102 && (loc.anInt828 < 0 || Static81.method1335(loc.anInt828, loc.anInt819))) {
+					Static98.addLoc(loc.layer, loc.x, loc.z, loc.anInt819, loc.level, loc.anInt828, loc.anInt829);
+					loc.anInt827 = -1;
+					if (loc.anInt828 == loc.anInt820 && loc.anInt820 == -1) {
+						loc.unlink();
+					} else if (loc.anInt820 == loc.anInt828 && loc.anInt825 == loc.anInt829 && loc.anInt819 == loc.anInt830) {
+						loc.unlink();
 					}
 				}
-			} else if (local15.anInt820 < 0 || Static81.method1335(local15.anInt820, local15.anInt830)) {
-				Static98.method1566(local15.anInt823, local15.anInt818, local15.anInt821, local15.anInt830, local15.anInt817, local15.anInt820, local15.anInt825);
-				local15.unlink();
+			} else if (loc.anInt820 < 0 || Static81.method1335(loc.anInt820, loc.anInt830)) {
+				Static98.addLoc(loc.layer, loc.x, loc.z, loc.anInt830, loc.level, loc.anInt820, loc.anInt825);
+				loc.unlink();
 			}
 		}
 	}

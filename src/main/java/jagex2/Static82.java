@@ -44,88 +44,88 @@ public final class Static82 {
 	}
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(IIBIII)V")
-	public static void method1343(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+	public static void method1343(@OriginalArg(0) int arg0, @OriginalArg(1) int level, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (!Static1.lowMemory) {
-			arg1 = 0;
+			level = 0;
 		}
-		if (arg0 == Static56.anInt2327 && arg4 == Static49.anInt2262 && Static33.anInt786 == arg1) {
+		if (arg0 == Static56.anInt2327 && arg4 == Static49.anInt2262 && Static33.anInt786 == level) {
 			return;
 		}
-		Static33.anInt786 = arg1;
+		Static33.anInt786 = level;
 		Static49.anInt2262 = arg4;
 		Static56.anInt2327 = arg0;
 		Static7.method187(25);
 		Static66.method1095(false, null, Static98.aClass40_674);
 		@Pc(43) int local43 = Static30.anInt725;
 		Static30.anInt725 = (arg4 - 6) * 8;
-		@Pc(54) int local54 = Static30.anInt725 - local43;
+		@Pc(54) int dz = Static30.anInt725 - local43;
 		@Pc(58) int local58 = Static87.anInt2058;
 		Static87.anInt2058 = arg0 * 8 - 48;
-		@Pc(69) int local69 = Static87.anInt2058 - local58;
-		for (@Pc(73) int local73 = 0; local73 < 16384; local73++) {
-			@Pc(79) NpcEntity local79 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local73];
-			if (local79 != null) {
-				for (@Pc(83) int local83 = 0; local83 < 10; local83++) {
-					local79.anIntArray492[local83] -= local69;
-					local79.anIntArray496[local83] -= local54;
+		@Pc(69) int dx = Static87.anInt2058 - local58;
+		for (@Pc(73) int i = 0; i < 16384; i++) {
+			@Pc(79) NpcEntity npc = Static2.npcs[i];
+			if (npc != null) {
+				for (@Pc(83) int j = 0; j < 10; j++) {
+					npc.pathTileX[j] -= dx;
+					npc.pathTileZ[j] -= dz;
 				}
-				local79.anInt2275 -= local69 * 128;
-				local79.anInt2284 -= local54 * 128;
+				npc.x -= dx * 128;
+				npc.z -= dz * 128;
 			}
 		}
-		for (@Pc(131) int local131 = 0; local131 < 2048; local131++) {
-			@Pc(137) PlayerEntity local137 = Static100.players[local131];
-			if (local137 != null) {
-				for (@Pc(141) int local141 = 0; local141 < 10; local141++) {
-					local137.anIntArray492[local141] -= local69;
-					local137.anIntArray496[local141] -= local54;
+		for (@Pc(131) int i = 0; i < 2048; i++) {
+			@Pc(137) PlayerEntity player = Static100.players[i];
+			if (player != null) {
+				for (@Pc(141) int j = 0; j < 10; j++) {
+					player.pathTileX[j] -= dx;
+					player.pathTileZ[j] -= dz;
 				}
-				local137.anInt2275 -= local69 * 128;
-				local137.anInt2284 -= local54 * 128;
+				player.x -= dx * 128;
+				player.z -= dz * 128;
 			}
 		}
-		@Pc(187) byte local187 = 0;
-		Static1.currentLevel = arg1;
+		@Pc(187) byte startTileX = 0;
+		Static1.currentLevel = level;
 		Static88.localPlayer.move(false, arg2, arg3);
-		@Pc(197) byte local197 = 104;
-		@Pc(199) byte local199 = 1;
-		@Pc(201) byte local201 = 0;
-		if (local69 < 0) {
-			local199 = -1;
-			local187 = 103;
-			local197 = -1;
+		@Pc(197) byte endTileX = 104;
+		@Pc(199) byte dirX = 1;
+		@Pc(201) byte startTileZ = 0;
+		if (dx < 0) {
+			dirX = -1;
+			startTileX = 103;
+			endTileX = -1;
 		}
-		@Pc(211) byte local211 = 1;
-		@Pc(213) byte local213 = 104;
-		if (local54 < 0) {
-			local211 = -1;
-			local201 = 103;
-			local213 = -1;
+		@Pc(211) byte dirZ = 1;
+		@Pc(213) byte endTileZ = 104;
+		if (dz < 0) {
+			dirZ = -1;
+			startTileZ = 103;
+			endTileZ = -1;
 		}
-		for (@Pc(226) int local226 = local187; local226 != local197; local226 += local199) {
-			for (@Pc(230) int local230 = local201; local230 != local213; local230 += local211) {
-				@Pc(236) int local236 = local69 + local226;
-				@Pc(240) int local240 = local54 + local230;
-				for (@Pc(242) int local242 = 0; local242 < 4; local242++) {
-					if (local236 >= 0 && local240 >= 0 && local236 < 104 && local240 < 104) {
-						Static91.levelObjStacks[local242][local226][local230] = Static91.levelObjStacks[local242][local236][local240];
+		for (@Pc(226) int x = startTileX; x != endTileX; x += dirX) {
+			for (@Pc(230) int z = startTileZ; z != endTileZ; z += dirZ) {
+				@Pc(236) int lastX = dx + x;
+				@Pc(240) int lastZ = dz + z;
+				for (@Pc(242) int l = 0; l < 4; l++) {
+					if (lastX >= 0 && lastZ >= 0 && lastX < 104 && lastZ < 104) {
+						Static91.levelObjStacks[l][x][z] = Static91.levelObjStacks[l][lastX][lastZ];
 					} else {
-						Static91.levelObjStacks[local242][local226][local230] = null;
+						Static91.levelObjStacks[l][x][z] = null;
 					}
 				}
 			}
 		}
-		for (@Pc(307) Class2_Sub7 local307 = (Class2_Sub7) Static92.aClass44_7.peekFront(); local307 != null; local307 = (Class2_Sub7) Static92.aClass44_7.prev()) {
-			local307.anInt821 -= local54;
-			local307.anInt818 -= local69;
-			if (local307.anInt818 < 0 || local307.anInt821 < 0 || local307.anInt818 >= 104 || local307.anInt821 >= 104) {
-				local307.unlink();
+		for (@Pc(307) LocTemporary loc = (LocTemporary) Static92.spawnedLocations.peekFront(); loc != null; loc = (LocTemporary) Static92.spawnedLocations.prev()) {
+			loc.z -= dz;
+			loc.x -= dx;
+			if (loc.x < 0 || loc.z < 0 || loc.x >= 104 || loc.z >= 104) {
+				loc.unlink();
 			}
 		}
 		Static7.aBoolean22 = false;
-		if (Static38.anInt986 != 0) {
-			Static38.anInt986 -= local69;
-			Static80.anInt1919 -= local54;
+		if (Static38.flagSceneTileX != 0) {
+			Static38.flagSceneTileX -= dx;
+			Static80.flagSceneTileZ -= dz;
 		}
 		Static22.anInt2590 = -1;
 		Static96.aClass44_8.clear();

@@ -42,7 +42,7 @@ public final class Static70 {
 	public static void method1109() {
 		for (@Pc(16) int local16 = 0; local16 < Static53.entityUpdateCount; local16++) {
 			@Pc(22) int local22 = Static98.entityUpdateIds[local16];
-			@Pc(26) NpcEntity local26 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local22];
+			@Pc(26) NpcEntity local26 = Static2.npcs[local22];
 			@Pc(30) int local30 = Static56.in.g1();
 			if ((local30 & 0x20) != 0) {
 				local26.anInt2324 = Static56.in.g2();

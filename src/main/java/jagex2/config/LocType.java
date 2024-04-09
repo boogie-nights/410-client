@@ -1,5 +1,6 @@
-package jagex2;
+package jagex2.config;
 
+import jagex2.*;
 import jagex2.datastruct.Hashable;
 import jagex2.graphics.Model;
 import jagex2.graphics.Static71;
@@ -10,7 +11,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ia")
-public final class Class2_Sub2_Sub10 extends Hashable {
+public final class LocType extends Hashable {
 
 	@OriginalMember(owner = "client!ia", name = "S", descriptor = "[I")
 	private int[] anIntArray209;
@@ -55,7 +56,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 	public int anInt1048 = -1;
 
 	@OriginalMember(owner = "client!ia", name = "db", descriptor = "I")
-	public int anInt1036 = 1;
+	public int width = 1;
 
 	@OriginalMember(owner = "client!ia", name = "Fb", descriptor = "I")
 	private int anInt1052 = 0;
@@ -76,7 +77,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 	public int anInt1030 = -1;
 
 	@OriginalMember(owner = "client!ia", name = "jb", descriptor = "I")
-	public int anInt1039 = -1;
+	public int mapscene = -1;
 
 	@OriginalMember(owner = "client!ia", name = "rb", descriptor = "I")
 	private int anInt1043 = 0;
@@ -85,7 +86,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 	public int anInt1054 = -1;
 
 	@OriginalMember(owner = "client!ia", name = "kb", descriptor = "I")
-	public int anInt1040 = 1;
+	public int length = 1;
 
 	@OriginalMember(owner = "client!ia", name = "Eb", descriptor = "I")
 	private int anInt1051 = 128;
@@ -157,7 +158,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!ia", name = "b", descriptor = "(Z)Lclient!ia;")
-	public Class2_Sub2_Sub10 method766() {
+	public LocType method766() {
 		@Pc(10) int local10 = -1;
 		if (this.anInt1032 != -1) {
 			local10 = Static107.method1662(this.anInt1032);
@@ -375,9 +376,9 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 					return;
 				}
 			} else if (arg0 == 14) {
-				this.anInt1036 = arg1.g1();
+				this.width = arg1.g1();
 			} else if (arg0 == 15) {
-				this.anInt1040 = arg1.g1();
+				this.length = arg1.g1();
 				return;
 			} else if (arg0 == 17) {
 				this.blockwalk = false;
@@ -446,7 +447,7 @@ public final class Class2_Sub2_Sub10 extends Hashable {
 						this.anInt1051 = arg1.g2();
 						return;
 					} else if (arg0 == 68) {
-						this.anInt1039 = arg1.g2();
+						this.mapscene = arg1.g2();
 						return;
 					} else if (arg0 == 69) {
 						this.anInt1057 = arg1.g1();

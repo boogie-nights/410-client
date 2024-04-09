@@ -35,7 +35,7 @@ public final class Static88 {
 	public static Class40 aClass40_605 = Static13.method257("Importing music )2 ");
 
 	@OriginalMember(owner = "client!sc", name = "w", descriptor = "I")
-	public static int anInt2083 = 0;
+	public static int packetType = 0;
 
 	@OriginalMember(owner = "client!sc", name = "x", descriptor = "Lclient!o;")
 	public static Class40 aClass40_606 = Static13.method257("Select");
@@ -67,12 +67,12 @@ public final class Static88 {
 	@OriginalMember(owner = "client!sc", name = "a", descriptor = "(B)V")
 	public static void method1406() {
 		Static96.anInt2328 = 0;
-		Static38.anInt986 = 0;
+		Static38.flagSceneTileX = 0;
 		Static33.anInt788 = -1;
 		Static97.anInt2352 = -1;
 		Static80.out.pos = 0;
 		Static7.anInt231 = 0;
-		anInt2083 = -1;
+		packetType = -1;
 		Static84.systemUpdateTimer = 0;
 		Static34.menuSize = 0;
 		Static33.size = 0;

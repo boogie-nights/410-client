@@ -32,7 +32,7 @@ public final class Static38 {
 	public static Class40 aClass40_292 = Static13.method257(" @gre@");
 
 	@OriginalMember(owner = "client!hc", name = "E", descriptor = "I")
-	public static int anInt986 = 0;
+	public static int flagSceneTileX = 0;
 
 	@OriginalMember(owner = "client!hc", name = "F", descriptor = "Lclient!o;")
 	public static Class40 aClass40_293 = Static13.method257("@red@");

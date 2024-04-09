@@ -20,7 +20,7 @@ public final class Static56 {
 	public static int anInt2327;
 
 	@OriginalMember(owner = "client!ke", name = "Ec", descriptor = "[Lclient!qb;")
-	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array15;
+	public static Pix8[] imageMapscene;
 
 	@OriginalMember(owner = "client!ke", name = "sb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_656 = Static13.method257("You need a members account to login to this world)3");
@@ -122,7 +122,7 @@ public final class Static56 {
 		aClass5_29 = null;
 		aClass40_657 = null;
 		in = null;
-		aClass2_Sub2_Sub2_Sub3Array15 = null;
+		imageMapscene = null;
 		aClass40_659 = null;
 	}
 

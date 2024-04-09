@@ -88,8 +88,8 @@ public final class Static48 {
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(IIIB)I")
 	public static int method821(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		if ((Static61.aByteArrayArrayArray7[arg2][arg1][arg0] & 0x8) == 0) {
-			return arg2 <= 0 || (Static61.aByteArrayArrayArray7[1][arg1][arg0] & 0x2) == 0 ? arg2 : arg2 - 1;
+		if ((Static61.levelTileFlags[arg2][arg1][arg0] & 0x8) == 0) {
+			return arg2 <= 0 || (Static61.levelTileFlags[1][arg1][arg0] & 0x2) == 0 ? arg2 : arg2 - 1;
 		} else {
 			return 0;
 		}

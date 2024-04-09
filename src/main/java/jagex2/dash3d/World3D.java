@@ -294,9 +294,9 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "d", descriptor = "(III)I")
-	public int method1419(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
-		return local8 == null || local8.wallDecoration == null ? 0 : local8.wallDecoration.bitset;
+	public int getWallDecorationBitset(@OriginalArg(0) int level, @OriginalArg(1) int x, @OriginalArg(2) int z) {
+		@Pc(8) Tile tile = this.levelTiles[level][x][z];
+		return tile == null || tile.wallDecoration == null ? 0 : tile.wallDecoration.bitset;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(I)V")
@@ -413,15 +413,15 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "i", descriptor = "(III)I")
-	public int method1429(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
-		if (local8 == null) {
+	public int getLocBitset(@OriginalArg(0) int level, @OriginalArg(1) int x, @OriginalArg(2) int z) {
+		@Pc(8) Tile tile = this.levelTiles[level][x][z];
+		if (tile == null) {
 			return 0;
 		}
-		for (@Pc(14) int local14 = 0; local14 < local8.locCount; local14++) {
-			@Pc(20) Loc local20 = local8.locs[local14];
-			if ((local20.bitset >> 29 & 0x3) == 2 && local20.minSceneTileX == arg1 && local20.minSceneTileZ == arg2) {
-				return local20.bitset;
+		for (@Pc(14) int l = 0; l < tile.locCount; l++) {
+			@Pc(20) Loc loc = tile.locs[l];
+			if ((loc.bitset >> 29 & 0x3) == 2 && loc.minSceneTileX == x && loc.minSceneTileZ == z) {
+				return loc.bitset;
 			}
 		}
 		return 0;

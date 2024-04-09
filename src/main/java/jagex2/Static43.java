@@ -37,8 +37,8 @@ public final class Static43 {
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(B)V")
 	public static void method1239() {
 		Static19.overrideChat = 0;
-		@Pc(17) int x = (Static88.localPlayer.anInt2275 >> 7) + Static87.anInt2058;
-		@Pc(24) int y = Static30.anInt725 + (Static88.localPlayer.anInt2284 >> 7);
+		@Pc(17) int x = (Static88.localPlayer.x >> 7) + Static87.anInt2058;
+		@Pc(24) int y = Static30.anInt725 + (Static88.localPlayer.z >> 7);
 
 		if (x >= 3053 && x <= 3156 && y >= 3056 && y <= 3136) {
 			Static19.overrideChat = 1;
@@ -71,13 +71,13 @@ public final class Static43 {
 				return;
 			}
 		}
-		@Pc(68) int local68 = arg0.anInt2284;
-		@Pc(71) int local71 = arg0.anInt2275;
-		@Pc(87) int local87 = arg0.anIntArray492[arg0.anInt2309 - 1] * 128 + arg0.size * 64;
-		@Pc(102) int local102 = arg0.size * 64 + arg0.anIntArray496[arg0.anInt2309 - 1] * 128;
+		@Pc(68) int local68 = arg0.z;
+		@Pc(71) int local71 = arg0.x;
+		@Pc(87) int local87 = arg0.pathTileX[arg0.anInt2309 - 1] * 128 + arg0.size * 64;
+		@Pc(102) int local102 = arg0.size * 64 + arg0.pathTileZ[arg0.anInt2309 - 1] * 128;
 		if (local87 - local71 > 256 || local87 - local71 < -256 || local102 - local68 > 256 || local102 - local68 < -256) {
-			arg0.anInt2275 = local87;
-			arg0.anInt2284 = local102;
+			arg0.x = local87;
+			arg0.z = local102;
 			return;
 		}
 		if (local71 < local87) {
@@ -135,28 +135,28 @@ public final class Static43 {
 			local227 <<= 0x1;
 		}
 		if (local71 < local87) {
-			arg0.anInt2275 += local227;
-			if (local87 < arg0.anInt2275) {
-				arg0.anInt2275 = local87;
+			arg0.x += local227;
+			if (local87 < arg0.x) {
+				arg0.x = local87;
 			}
 		} else if (local71 > local87) {
-			arg0.anInt2275 -= local227;
-			if (local87 > arg0.anInt2275) {
-				arg0.anInt2275 = local87;
+			arg0.x -= local227;
+			if (local87 > arg0.x) {
+				arg0.x = local87;
 			}
 		}
 		if (local102 > local68) {
-			arg0.anInt2284 += local227;
-			if (arg0.anInt2284 > local102) {
-				arg0.anInt2284 = local102;
+			arg0.z += local227;
+			if (arg0.z > local102) {
+				arg0.z = local102;
 			}
 		} else if (local68 > local102) {
-			arg0.anInt2284 -= local227;
-			if (local102 > arg0.anInt2284) {
-				arg0.anInt2284 = local102;
+			arg0.z -= local227;
+			if (local102 > arg0.z) {
+				arg0.z = local102;
 			}
 		}
-		if (arg0.anInt2275 == local87 && arg0.anInt2284 == local102) {
+		if (arg0.x == local87 && arg0.z == local102) {
 			if (arg0.anInt2281 > 0) {
 				arg0.anInt2281--;
 			}
@@ -327,7 +327,7 @@ public final class Static43 {
 					Static37.anInt927 = Static70.aClass25_36.method726();
 					Static70.aClass25_36.method725(0, 1, Static56.in.data);
 					Static56.in.pos = 0;
-					Static88.anInt2083 = Static56.in.method1733();
+					Static88.packetType = Static56.in.method1733();
 					Static70.aClass25_36.method725(0, 2, Static56.in.data);
 					Static56.in.pos = 0;
 					Static33.size = Static56.in.g2();
@@ -354,7 +354,7 @@ public final class Static43 {
 					Static105.method1671();
 					Static56.anInt2327 = -1;
 					Static99.method58(false);
-					Static88.anInt2083 = -1;
+					Static88.packetType = -1;
 				}
 			}
 		} catch (@Pc(661) IOException local661) {

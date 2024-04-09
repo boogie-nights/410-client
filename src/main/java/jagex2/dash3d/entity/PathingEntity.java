@@ -12,7 +12,7 @@ import org.openrs2.deob.annotation.Pc;
 public abstract class PathingEntity extends Entity {
 
 	@OriginalMember(owner = "client!ke", name = "qb", descriptor = "I")
-	public int anInt2275;
+	public int x;
 
 	@OriginalMember(owner = "client!ke", name = "tb", descriptor = "I")
 	public int anInt2277;
@@ -24,7 +24,7 @@ public abstract class PathingEntity extends Entity {
 	public int anInt2283;
 
 	@OriginalMember(owner = "client!ke", name = "Bb", descriptor = "I")
-	public int anInt2284;
+	public int z;
 
 	@OriginalMember(owner = "client!ke", name = "Db", descriptor = "I")
 	public int anInt2286;
@@ -63,7 +63,7 @@ public abstract class PathingEntity extends Entity {
 	public int cycle = 0;
 
 	@OriginalMember(owner = "client!ke", name = "kb", descriptor = "[I")
-	public final int[] anIntArray492 = new int[10];
+	public final int[] pathTileX = new int[10];
 
 	@OriginalMember(owner = "client!ke", name = "xb", descriptor = "I")
 	public int anInt2280 = 0;
@@ -150,7 +150,7 @@ public abstract class PathingEntity extends Entity {
 	public int anInt2301 = 0;
 
 	@OriginalMember(owner = "client!ke", name = "uc", descriptor = "[I")
-	public final int[] anIntArray496 = new int[10];
+	public final int[] pathTileZ = new int[10];
 
 	@OriginalMember(owner = "client!ke", name = "hc", descriptor = "I")
 	public int anInt2307 = -1;
@@ -205,19 +205,19 @@ public abstract class PathingEntity extends Entity {
 			this.anInt2307 = -1;
 		}
 		if (!teleport) {
-			@Pc(31) int local31 = arg1 - this.anIntArray496[0];
-			@Pc(38) int local38 = arg2 - this.anIntArray492[0];
+			@Pc(31) int local31 = arg1 - this.pathTileZ[0];
+			@Pc(38) int local38 = arg2 - this.pathTileX[0];
 			if (local38 >= -8 && local38 <= 8 && local31 >= -8 && local31 <= 8) {
 				if (this.anInt2309 < 9) {
 					this.anInt2309++;
 				}
 				for (@Pc(65) int local65 = this.anInt2309; local65 > 0; local65--) {
-					this.anIntArray492[local65] = this.anIntArray492[local65 - 1];
-					this.anIntArray496[local65] = this.anIntArray496[local65 - 1];
+					this.pathTileX[local65] = this.pathTileX[local65 - 1];
+					this.pathTileZ[local65] = this.pathTileZ[local65 - 1];
 					this.aBooleanArray34[local65] = this.aBooleanArray34[local65 - 1];
 				}
-				this.anIntArray492[0] = arg2;
-				this.anIntArray496[0] = arg1;
+				this.pathTileX[0] = arg2;
+				this.pathTileZ[0] = arg1;
 				this.aBooleanArray34[0] = false;
 				return;
 			}
@@ -225,16 +225,16 @@ public abstract class PathingEntity extends Entity {
 		this.anInt2281 = 0;
 		this.anInt2309 = 0;
 		this.anInt2282 = 0;
-		this.anIntArray492[0] = arg2;
-		this.anIntArray496[0] = arg1;
-		this.anInt2275 = this.size * 64 + this.anIntArray492[0] * 128;
-		this.anInt2284 = this.size * 64 + this.anIntArray496[0] * 128;
+		this.pathTileX[0] = arg2;
+		this.pathTileZ[0] = arg1;
+		this.x = this.size * 64 + this.pathTileX[0] * 128;
+		this.z = this.size * 64 + this.pathTileZ[0] * 128;
 	}
 
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(IBZ)V")
 	public final void step(@OriginalArg(0) int arg0, @OriginalArg(2) boolean arg1) {
-		@Pc(6) int local6 = this.anIntArray492[0];
-		@Pc(15) int local15 = this.anIntArray496[0];
+		@Pc(6) int local6 = this.pathTileX[0];
+		@Pc(15) int local15 = this.pathTileZ[0];
 		if (this.anInt2307 != -1 && Static62.method1042(this.anInt2307).anInt666 == 1) {
 			this.anInt2307 = -1;
 		}
@@ -249,8 +249,8 @@ public abstract class PathingEntity extends Entity {
 			this.anInt2309++;
 		}
 		for (@Pc(64) int local64 = this.anInt2309; local64 > 0; local64--) {
-			this.anIntArray492[local64] = this.anIntArray492[local64 - 1];
-			this.anIntArray496[local64] = this.anIntArray496[local64 - 1];
+			this.pathTileX[local64] = this.pathTileX[local64 - 1];
+			this.pathTileZ[local64] = this.pathTileZ[local64 - 1];
 			this.aBooleanArray34[local64] = this.aBooleanArray34[local64 - 1];
 		}
 		if (arg0 == 2) {
@@ -274,8 +274,8 @@ public abstract class PathingEntity extends Entity {
 			local6++;
 			local15--;
 		}
-		this.anIntArray492[0] = local6;
-		this.anIntArray496[0] = local15;
+		this.pathTileX[0] = local6;
+		this.pathTileZ[0] = local15;
 		this.aBooleanArray34[0] = arg1;
 	}
 }

@@ -48,7 +48,7 @@ public final class Static19 {
 
 	@OriginalMember(owner = "client!de", name = "a", descriptor = "(BI)V")
 	public static void method369(@OriginalArg(1) int arg0) {
-		@Pc(8) int[] local8 = Static93.aClass2_Sub2_Sub2_Sub4_8.pixels;
+		@Pc(8) int[] local8 = Static93.imageMinimap.pixels;
 		@Pc(11) int local11 = local8.length;
 		for (@Pc(13) int local13 = 0; local13 < local11; local13++) {
 			local8[local13] = 0;
@@ -58,26 +58,26 @@ public final class Static19 {
 		for (@Pc(25) int local25 = 1; local25 < 103; local25++) {
 			local38 = 4 * 512 * (103 - local25) + 24628;
 			for (local40 = 1; local40 < 103; local40++) {
-				if ((Static61.aByteArrayArrayArray7[arg0][local40][local25] & 0x18) == 0) {
+				if ((Static61.levelTileFlags[arg0][local40][local25] & 0x18) == 0) {
 					Static93.scene.method1432(local8, local38, arg0, local40, local25);
 				}
-				if (arg0 < 3 && (Static61.aByteArrayArrayArray7[arg0 + 1][local40][local25] & 0x8) != 0) {
+				if (arg0 < 3 && (Static61.levelTileFlags[arg0 + 1][local40][local25] & 0x8) != 0) {
 					Static93.scene.method1432(local8, local38, arg0 + 1, local40, local25);
 				}
 				local38 += 4;
 			}
 		}
-		Static93.aClass2_Sub2_Sub2_Sub4_8.bind();
+		Static93.imageMinimap.bind();
 		local38 = ((int) (Math.random() * 20.0D) + 228 << 16) + ((int) (Math.random() * 20.0D) + 238 - 10 << 8) + (int) (Math.random() * 20.0D) + 238 - 10;
 		local40 = (int) (Math.random() * 20.0D) + 238 - 10 << 16;
 		@Pc(150) int local150;
 		for (@Pc(146) int local146 = 1; local146 < 103; local146++) {
 			for (local150 = 1; local150 < 103; local150++) {
-				if ((Static61.aByteArrayArrayArray7[arg0][local150][local146] & 0x18) == 0) {
-					Static105.method1674(arg0, local38, local40, local146, local150);
+				if ((Static61.levelTileFlags[arg0][local150][local146] & 0x18) == 0) {
+					Static105.drawMinimapLoc(arg0, local38, local40, local146, local150);
 				}
-				if (arg0 < 3 && (Static61.aByteArrayArrayArray7[arg0 + 1][local150][local146] & 0x8) != 0) {
-					Static105.method1674(arg0 + 1, local38, local40, local146, local150);
+				if (arg0 < 3 && (Static61.levelTileFlags[arg0 + 1][local150][local146] & 0x8) != 0) {
+					Static105.drawMinimapLoc(arg0 + 1, local38, local40, local146, local150);
 				}
 			}
 		}
@@ -138,13 +138,13 @@ public final class Static19 {
 			return;
 		}
 		@Pc(62) int local62 = Static84.anInt1978 + Static67.anInt1669 & 0x7FF;
-		local20 = 464 - Static88.localPlayer.anInt2284 / 32;
-		@Pc(77) int local77 = Static88.localPlayer.anInt2275 / 32 + 48;
-		Static93.aClass2_Sub2_Sub2_Sub4_8.method1616(25, 5, 146, 151, local77, local20, local62, Static15.anInt1857 + 256, Static73.anIntArray407, Static2.anIntArray3);
+		local20 = 464 - Static88.localPlayer.z / 32;
+		@Pc(77) int local77 = Static88.localPlayer.x / 32 + 48;
+		Static93.imageMinimap.method1616(25, 5, 146, 151, local77, local20, local62, Static15.anInt1857 + 256, Static73.anIntArray407, Static2.anIntArray3);
 		Static13.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, Static67.anInt1669, 256, Static102.compassMaskLineOffsets, Static45.compassMaskLineLengths);
 		for (local22 = 0; local22 < Static90.anInt2136; local22++) {
-			local77 = Static97.anIntArray500[local22] * 4 + 2 - Static88.localPlayer.anInt2275 / 32;
-			local20 = Static102.anIntArray546[local22] * 4 + 2 - Static88.localPlayer.anInt2284 / 32;
+			local77 = Static97.anIntArray500[local22] * 4 + 2 - Static88.localPlayer.x / 32;
+			local20 = Static102.anIntArray546[local22] * 4 + 2 - Static88.localPlayer.z / 32;
 			Static90.method1461(local77, Static95.aClass2_Sub2_Sub2_Sub4Array9[local22], local20);
 		}
 		@Pc(155) int local155;
@@ -152,22 +152,22 @@ public final class Static19 {
 			for (local155 = 0; local155 < 104; local155++) {
 				@Pc(165) LinkedList local165 = Static91.levelObjStacks[Static1.currentLevel][local151][local155];
 				if (local165 != null) {
-					local77 = local151 * 4 + 2 - Static88.localPlayer.anInt2275 / 32;
-					local20 = local155 * 4 + 2 - Static88.localPlayer.anInt2284 / 32;
+					local77 = local151 * 4 + 2 - Static88.localPlayer.x / 32;
+					local20 = local155 * 4 + 2 - Static88.localPlayer.z / 32;
 					Static90.method1461(local77, Static30.aClass2_Sub2_Sub2_Sub4Array5[0], local20);
 				}
 			}
 		}
 		for (local155 = 0; local155 < Static73.anInt1800; local155++) {
-			@Pc(215) NpcEntity local215 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local155]];
+			@Pc(215) NpcEntity local215 = Static2.npcs[Static63.anIntArray326[local155]];
 			if (local215 != null && local215.isVisible()) {
 				@Pc(224) Class2_Sub2_Sub7 local224 = local215.type;
 				if (local224.anIntArray154 != null) {
 					local224 = local224.method611();
 				}
 				if (local224 != null && local224.aBoolean56 && local224.aBoolean58) {
-					local20 = local215.anInt2284 / 32 - Static88.localPlayer.anInt2284 / 32;
-					local77 = local215.anInt2275 / 32 - Static88.localPlayer.anInt2275 / 32;
+					local20 = local215.z / 32 - Static88.localPlayer.z / 32;
+					local77 = local215.x / 32 - Static88.localPlayer.x / 32;
 					Static90.method1461(local77, Static30.aClass2_Sub2_Sub2_Sub4Array5[1], local20);
 				}
 			}
@@ -176,8 +176,8 @@ public final class Static19 {
 		for (@Pc(280) int local280 = 0; local280 < Static88.playerCount; local280++) {
 			local288 = Static100.players[Static73.playerIds[local280]];
 			if (local288 != null && local288.method1544()) {
-				local20 = local288.anInt2284 / 32 - Static88.localPlayer.anInt2284 / 32;
-				local77 = local288.anInt2275 / 32 - Static88.localPlayer.anInt2275 / 32;
+				local20 = local288.z / 32 - Static88.localPlayer.z / 32;
+				local77 = local288.x / 32 - Static88.localPlayer.x / 32;
 				@Pc(321) long local321 = local288.aClass40_395.toBase37();
 				@Pc(323) boolean local323 = false;
 				for (@Pc(325) int local325 = 0; local325 < Static22.friendCount; local325++) {
@@ -200,31 +200,31 @@ public final class Static19 {
 			}
 		}
 		if (Static91.anInt2139 != 0 && Static107.loopCycle % 20 < 10) {
-			if (Static91.anInt2139 == 1 && Static85.anInt1989 >= 0 && Static85.anInt1989 < Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1.length) {
-				@Pc(427) NpcEntity local427 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static85.anInt1989];
+			if (Static91.anInt2139 == 1 && Static85.anInt1989 >= 0 && Static85.anInt1989 < Static2.npcs.length) {
+				@Pc(427) NpcEntity local427 = Static2.npcs[Static85.anInt1989];
 				if (local427 != null) {
-					local77 = local427.anInt2275 / 32 - Static88.localPlayer.anInt2275 / 32;
-					local20 = local427.anInt2284 / 32 - Static88.localPlayer.anInt2284 / 32;
+					local77 = local427.x / 32 - Static88.localPlayer.x / 32;
+					local20 = local427.z / 32 - Static88.localPlayer.z / 32;
 					Static103.method1646(Static13.aClass2_Sub2_Sub2_Sub4Array3[1], local20, local77);
 				}
 			}
 			if (Static91.anInt2139 == 2) {
-				local77 = (-Static87.anInt2058 + Static16.anInt410) * 4 + 2 - Static88.localPlayer.anInt2275 / 32;
-				local20 = (Static83.anInt1952 - Static30.anInt725) * 4 + 2 - Static88.localPlayer.anInt2284 / 32;
+				local77 = (-Static87.anInt2058 + Static16.anInt410) * 4 + 2 - Static88.localPlayer.x / 32;
+				local20 = (Static83.anInt1952 - Static30.anInt725) * 4 + 2 - Static88.localPlayer.z / 32;
 				Static103.method1646(Static13.aClass2_Sub2_Sub2_Sub4Array3[1], local20, local77);
 			}
 			if (Static91.anInt2139 == 10 && Static97.anInt2353 >= 0 && Static100.players.length > Static97.anInt2353) {
 				local288 = Static100.players[Static97.anInt2353];
 				if (local288 != null) {
-					local20 = local288.anInt2284 / 32 - Static88.localPlayer.anInt2284 / 32;
-					local77 = local288.anInt2275 / 32 - Static88.localPlayer.anInt2275 / 32;
+					local20 = local288.z / 32 - Static88.localPlayer.z / 32;
+					local77 = local288.x / 32 - Static88.localPlayer.x / 32;
 					Static103.method1646(Static13.aClass2_Sub2_Sub2_Sub4Array3[1], local20, local77);
 				}
 			}
 		}
-		if (Static38.anInt986 != 0) {
-			local20 = Static80.anInt1919 * 4 + 2 - Static88.localPlayer.anInt2284 / 32;
-			local77 = Static38.anInt986 * 4 + 2 - Static88.localPlayer.anInt2275 / 32;
+		if (Static38.flagSceneTileX != 0) {
+			local20 = Static80.flagSceneTileZ * 4 + 2 - Static88.localPlayer.z / 32;
+			local77 = Static38.flagSceneTileX * 4 + 2 - Static88.localPlayer.x / 32;
 			Static90.method1461(local77, Static13.aClass2_Sub2_Sub2_Sub4Array3[0], local20);
 		}
 		Static26.method1612(97, 78, 3, 3, 0xFFFFFF);

@@ -35,8 +35,8 @@ public final class Static18 {
 
 	@OriginalMember(owner = "client!db", name = "b", descriptor = "(B)V")
 	public static void method357() {
-		@Pc(10) int local10 = Static98.anInt2371 + Static88.localPlayer.anInt2284;
-		@Pc(15) int local15 = Static104.anInt2518 + Static88.localPlayer.anInt2275;
+		@Pc(10) int local10 = Static98.anInt2371 + Static88.localPlayer.z;
+		@Pc(15) int local15 = Static104.anInt2518 + Static88.localPlayer.x;
 		if (Static66.anInt1653 - local15 < -500 || Static66.anInt1653 - local15 > 500 || Static23.anInt577 - local10 < -500 || Static23.anInt577 - local10 > 500) {
 			Static66.anInt1653 = local15;
 			Static23.anInt577 = local10;
@@ -78,7 +78,7 @@ public final class Static18 {
 			for (local213 = local67 - 4; local213 <= local67 + 4; local213++) {
 				for (@Pc(219) int local219 = local119 - 4; local219 <= local119 + 4; local219++) {
 					@Pc(223) int local223 = Static1.currentLevel;
-					if (local223 < 3 && (Static61.aByteArrayArrayArray7[1][local213][local219] & 0x2) == 2) {
+					if (local223 < 3 && (Static61.levelTileFlags[1][local213][local219] & 0x2) == 2) {
 						local223++;
 					}
 					@Pc(249) int local249 = local197 - Static91.levelHeightMap[local223][local213][local219];
@@ -264,6 +264,6 @@ public final class Static18 {
 	@OriginalMember(owner = "client!db", name = "a", descriptor = "(I)I")
 	public static int method361() {
 		@Pc(5) int local5 = Static86.method1383(Static1.currentLevel, Static48.anInt1114, Static15.anInt1863);
-		return local5 - Static81.anInt1935 >= 800 || (Static61.aByteArrayArrayArray7[Static1.currentLevel][Static48.anInt1114 >> 7][Static15.anInt1863 >> 7] & 0x4) == 0 ? 3 : Static1.currentLevel;
+		return local5 - Static81.anInt1935 >= 800 || (Static61.levelTileFlags[Static1.currentLevel][Static48.anInt1114 >> 7][Static15.anInt1863 >> 7] & 0x4) == 0 ? 3 : Static1.currentLevel;
 	}
 }

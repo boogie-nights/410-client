@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.config.LocType;
 import jagex2.dash3d.entity.PlayerEntity;
 import jagex2.graphics.PixMap;
 import jagex2.graphics.Model;
@@ -62,69 +63,76 @@ public final class Static98 {
 	public static Class40 aClass40_681 = Static13.method257("(U4");
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(IIZIIIII)V")
-	public static void method1566(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
-		if (arg1 < 1 || arg2 < 1 || arg1 > 102 || arg2 > 102) {
+	public static void addLoc(@OriginalArg(0) int layer, @OriginalArg(1) int x, @OriginalArg(3) int z, @OriginalArg(4) int arg3, @OriginalArg(5) int level, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
+		if (x < 1 || z < 1 || x > 102 || z > 102) {
 			return;
 		}
-		if (Static1.lowMemory && Static1.currentLevel != arg4) {
+		if (Static1.lowMemory && Static1.currentLevel != level) {
 			return;
 		}
-		@Pc(29) int local29 = 0;
-		if (arg0 == 0) {
-			local29 = Static93.scene.getWallBitset(arg4, arg1, arg2);
+		@Pc(29) int bitset = 0;
+		if (layer == 0) {
+			bitset = Static93.scene.getWallBitset(level, x, z);
 		}
-		if (arg0 == 1) {
-			local29 = Static93.scene.method1419(arg4, arg1, arg2);
+
+		if (layer == 1) {
+			bitset = Static93.scene.getWallDecorationBitset(level, x, z);
 		}
-		if (arg0 == 2) {
-			local29 = Static93.scene.method1429(arg4, arg1, arg2);
+
+		if (layer == 2) {
+			bitset = Static93.scene.getLocBitset(level, x, z);
 		}
-		if (arg0 == 3) {
-			local29 = Static93.scene.getGroundDecorationBitset(arg4, arg1, arg2);
+
+		if (layer == 3) {
+			bitset = Static93.scene.getGroundDecorationBitset(level, x, z);
 		}
-		@Pc(92) int local92;
-		if (local29 != 0) {
-			@Pc(85) int local85 = local29 >> 14 & 0x7FFF;
-			local92 = Static93.scene.getInfo(arg4, arg1, arg2, local29);
-			@Pc(98) int local98 = local92 >> 6 & 0x3;
-			@Pc(102) int local102 = local92 & 0x1F;
-			@Pc(116) Class2_Sub2_Sub10 local116;
-			if (arg0 == 0) {
-				Static93.scene.method1439(arg4, arg1, arg2);
-				local116 = Static91.method1470(local85);
-				if (local116.blockwalk) {
-					Static79.levelCollisionMap[arg4].removeWall(local102, local116.aBoolean79, arg2, local98, arg1);
+
+		if (bitset != 0) {
+			@Pc(92) int otherInfo = Static93.scene.getInfo(level, x, z, bitset);
+
+			@Pc(85) int otherId = bitset >> 14 & 0x7FFF;
+			@Pc(102) int otherShape = otherInfo & 0x1F;
+			@Pc(98) int otherRotation = otherInfo >> 6 & 0x3;
+			@Pc(116) LocType locType;
+
+			if (layer == 0) {
+				Static93.scene.method1439(level, x, z);
+				locType = Static91.method1470(otherId);
+				if (locType.blockwalk) {
+					Static79.levelCollisionMap[level].removeWall(otherShape, locType.aBoolean79, z, otherRotation, x);
 				}
 			}
-			if (arg0 == 1) {
-				Static93.scene.removeWallDecoration(arg4, arg1, arg2);
+			if (layer == 1) {
+				Static93.scene.removeWallDecoration(level, x, z);
 			}
-			if (arg0 == 2) {
-				Static93.scene.method1423(arg4, arg1, arg2);
-				local116 = Static91.method1470(local85);
-				if (arg1 + local116.anInt1036 > 103 || arg2 + local116.anInt1036 > 103 || arg1 + local116.anInt1040 > 103 || local116.anInt1040 + arg2 > 103) {
+			if (layer == 2) {
+				Static93.scene.method1423(level, x, z);
+				locType = Static91.method1470(otherId);
+
+				if (x + locType.width > 103 || z + locType.width > 103 || x + locType.length > 103 || locType.length + z > 103) {
 					return;
 				}
-				if (local116.blockwalk) {
-					Static79.levelCollisionMap[arg4].removeLoc(local116.anInt1036, local116.anInt1040, local98, local116.aBoolean79, arg1, arg2);
+
+				if (locType.blockwalk) {
+					Static79.levelCollisionMap[level].removeLoc(locType.width, locType.length, otherRotation, locType.aBoolean79, x, z);
 				}
 			}
-			if (arg0 == 3) {
-				Static93.scene.removeGroundDecoration(arg4, arg1, arg2);
-				local116 = Static91.method1470(local85);
-				if (local116.blockwalk && local116.anInt1054 == 1) {
-					Static79.levelCollisionMap[arg4].removeBlocked(arg1, arg2);
+			if (layer == 3) {
+				Static93.scene.removeGroundDecoration(level, x, z);
+				locType = Static91.method1470(otherId);
+				if (locType.blockwalk && locType.anInt1054 == 1) {
+					Static79.levelCollisionMap[level].removeBlocked(x, z);
 				}
 			}
 		}
 		if (arg5 < 0) {
 			return;
 		}
-		local92 = arg4;
-		if (arg4 < 3 && (Static61.aByteArrayArrayArray7[1][arg1][arg2] & 0x2) == 2) {
-			local92 = arg4 + 1;
+		int tileLevel = level;
+		if (level < 3 && (Static61.levelTileFlags[1][x][z] & 0x2) == 2) {
+			tileLevel = level + 1;
 		}
-		Static51.method845(local92, arg2, arg3, Static79.levelCollisionMap[arg4], arg5, Static93.scene, arg6, arg4, arg1);
+		Static51.method845(tileLevel, z, arg3, Static79.levelCollisionMap[level], arg5, Static93.scene, arg6, level, x);
 	}
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(B)V")
@@ -155,7 +163,7 @@ public final class Static98 {
 						entityUpdateIds[Static53.entityUpdateCount++] = local14;
 					}
 					@Pc(97) int local97 = Static56.in.gBit(1);
-					local51.move(local97 == 1, Static88.localPlayer.anIntArray496[0] + local59, local68 + Static88.localPlayer.anIntArray492[0]);
+					local51.move(local97 == 1, Static88.localPlayer.pathTileZ[0] + local59, local68 + Static88.localPlayer.pathTileX[0]);
 					continue;
 				}
 			}

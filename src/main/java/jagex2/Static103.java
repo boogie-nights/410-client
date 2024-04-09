@@ -95,7 +95,7 @@ public final class Static103 {
 			for (level = 0; level < 4; level++) {
 				Static79.levelCollisionMap[level] = new CollisionMap(104, 104);
 			}
-			Static93.aClass2_Sub2_Sub2_Sub4_8 = new Pix24(512, 512);
+			Static93.imageMinimap = new Pix24(512, 512);
 			Static98.progressMeterText = Static61.textStartingGameEngine;
 			Static43.anInt1850 = 20;
 			Static94.anInt2194 = 5;
@@ -311,8 +311,8 @@ public final class Static103 {
 			} else {
 				level++;
 			}
-			if (Static56.aClass2_Sub2_Sub2_Sub3Array15 == null) {
-				Static56.aClass2_Sub2_Sub2_Sub3Array15 = Static4.method85(Static82.aClass5_Sub1_16, Static73.aClass40_520, Static61.aClass40_445);
+			if (Static56.imageMapscene == null) {
+				Static56.imageMapscene = Static4.method85(Static82.aClass5_Sub1_16, Static73.aClass40_520, Static61.aClass40_445);
 			} else {
 				level++;
 			}
@@ -383,7 +383,7 @@ public final class Static103 {
 				for (@Pc(1134) int local1134 = 0; local1134 < Static99.aClass2_Sub2_Sub2_Sub4Array2.length; local1134++) {
 					Static99.aClass2_Sub2_Sub2_Sub4Array2[local1134].translate(x + sin, angle + sin, sin + offset);
 				}
-				Static56.aClass2_Sub2_Sub2_Sub3Array15[0].translate(sin + x, angle + sin, offset + sin);
+				Static56.imageMapscene[0].translate(sin + x, angle + sin, offset + sin);
 				Static98.progressMeterText = Static63.textLoadedSprites;
 				Static43.anInt1850 = 85;
 				Static94.anInt2194 = 70;
@@ -459,7 +459,7 @@ public final class Static103 {
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(IILclient!ke;)V")
 	public static void method1649(@OriginalArg(0) int arg0, @OriginalArg(2) PathingEntity arg1) {
-		Static104.method1667(arg0, arg1.anInt2275, arg1.anInt2284);
+		Static104.method1667(arg0, arg1.x, arg1.z);
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(IIIIIII)I")

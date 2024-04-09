@@ -59,8 +59,8 @@ public final class Static76 {
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(ZB)V")
 	public static void method1475(@OriginalArg(0) boolean arg0) {
-		if (Static38.anInt986 == Static88.localPlayer.anInt2275 >> 7 && Static88.localPlayer.anInt2284 >> 7 == Static80.anInt1919) {
-			Static38.anInt986 = 0;
+		if (Static38.flagSceneTileX == Static88.localPlayer.x >> 7 && Static88.localPlayer.z >> 7 == Static80.flagSceneTileZ) {
+			Static38.flagSceneTileX = 0;
 		}
 		@Pc(33) int local33 = Static88.playerCount;
 		if (arg0) {
@@ -77,26 +77,26 @@ public final class Static76 {
 				local45 = Static73.playerIds[local39] << 14;
 			}
 			if (local47 != null && local47.method1544()) {
-				@Pc(72) int local72 = local47.anInt2275 >> 7;
+				@Pc(72) int local72 = local47.x >> 7;
 				local47.aBoolean104 = false;
 				if ((Static1.lowMemory && Static88.playerCount > 50 || Static88.playerCount > 200) && !arg0 && local47.anInt2318 == local47.anInt2290) {
 					local47.aBoolean104 = true;
 				}
-				@Pc(102) int local102 = local47.anInt2284 >> 7;
+				@Pc(102) int local102 = local47.z >> 7;
 				if (local72 >= 0 && local72 < 104 && local102 >= 0 && local102 < 104) {
 					if (local47.aModel_1 == null || Static107.loopCycle < local47.anInt1377 || Static107.loopCycle >= local47.anInt1381) {
-						if ((local47.anInt2275 & 0x7F) == 64 && (local47.anInt2284 & 0x7F) == 64) {
+						if ((local47.x & 0x7F) == 64 && (local47.z & 0x7F) == 64) {
 							if (Static22.anInt2587 == Static14.anIntArrayArray7[local72][local102]) {
 								continue;
 							}
 							Static14.anIntArrayArray7[local72][local102] = Static22.anInt2587;
 						}
-						local47.anInt1379 = Static86.method1383(Static1.currentLevel, local47.anInt2275, local47.anInt2284);
-						Static93.scene.addTemporary(Static1.currentLevel, local47.anInt2275, local47.anInt2284, local47.anInt1379, 60, local47, local47.anInt2305, local45, local47.aBoolean172);
+						local47.anInt1379 = Static86.method1383(Static1.currentLevel, local47.x, local47.z);
+						Static93.scene.addTemporary(Static1.currentLevel, local47.x, local47.z, local47.anInt1379, 60, local47, local47.anInt2305, local45, local47.aBoolean172);
 					} else {
 						local47.aBoolean104 = false;
-						local47.anInt1379 = Static86.method1383(Static1.currentLevel, local47.anInt2275, local47.anInt2284);
-						Static93.scene.addTemporary(Static1.currentLevel, local47.anInt2275, local47.anInt2284, local47.anInt1379, local47, local47.anInt2305, local45, local47.anInt1368, local47.anInt1376, local47.anInt1369, local47.anInt1386);
+						local47.anInt1379 = Static86.method1383(Static1.currentLevel, local47.x, local47.z);
+						Static93.scene.addTemporary(Static1.currentLevel, local47.x, local47.z, local47.anInt1379, local47, local47.anInt2305, local45, local47.anInt1368, local47.anInt1376, local47.anInt1369, local47.anInt1386);
 					}
 				}
 			}

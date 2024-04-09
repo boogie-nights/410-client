@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.config.LocType;
 import jagex2.graphics.Pix8;
 import jagex2.graphics.PixFont;
 import jagex2.io.Packet;
@@ -66,7 +67,7 @@ public final class Static49 {
 			@Pc(35) boolean local35 = false;
 			while (true) {
 				@Pc(72) int local72;
-				@Pc(96) Class2_Sub2_Sub10 local96;
+				@Pc(96) LocType local96;
 				do {
 					@Pc(66) int local66;
 					@Pc(77) int local77;

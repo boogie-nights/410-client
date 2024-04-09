@@ -49,7 +49,7 @@ public final class Static75 {
 	public static void method1227() {
 		for (@Pc(3) int local3 = 0; local3 < Static73.anInt1800; local3++) {
 			@Pc(9) int local9 = Static63.anIntArray326[local3];
-			@Pc(13) NpcEntity local13 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local9];
+			@Pc(13) NpcEntity local13 = Static2.npcs[local9];
 			if (local13 != null) {
 				Static91.method1468(local13, local13.type.size);
 			}

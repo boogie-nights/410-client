@@ -66,7 +66,7 @@ public final class Static61 {
 	public static boolean aBoolean121 = false;
 
 	@OriginalMember(owner = "client!ma", name = "v", descriptor = "[[[B")
-	public static byte[][][] aByteArrayArrayArray7 = new byte[4][104][104];
+	public static byte[][][] levelTileFlags = new byte[4][104][104];
 
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(I)V")
 	public static void method1039() {
@@ -94,10 +94,10 @@ public final class Static61 {
 		@Pc(39) int local39;
 		@Pc(32) int local32;
 		if (arg0.anInt2324 != -1 && arg0.anInt2324 < 32768) {
-			@Pc(23) NpcEntity local23 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[arg0.anInt2324];
+			@Pc(23) NpcEntity local23 = Static2.npcs[arg0.anInt2324];
 			if (local23 != null) {
-				local32 = arg0.anInt2284 - local23.anInt2284;
-				local39 = arg0.anInt2275 - local23.anInt2275;
+				local32 = arg0.z - local23.z;
+				local39 = arg0.x - local23.x;
 				if (local39 != 0 || local32 != 0) {
 					arg0.anInt2283 = (int) (Math.atan2((double) local39, (double) local32) * 325.949D) & 0x7FF;
 				}
@@ -111,16 +111,16 @@ public final class Static61 {
 			}
 			@Pc(76) PlayerEntity local76 = Static100.players[local67];
 			if (local76 != null) {
-				local32 = arg0.anInt2275 - local76.anInt2275;
-				@Pc(91) int local91 = arg0.anInt2284 - local76.anInt2284;
+				local32 = arg0.x - local76.x;
+				@Pc(91) int local91 = arg0.z - local76.z;
 				if (local32 != 0 || local91 != 0) {
 					arg0.anInt2283 = (int) (Math.atan2((double) local32, (double) local91) * 325.949D) & 0x7FF;
 				}
 			}
 		}
 		if ((arg0.anInt2280 != 0 || arg0.anInt2292 != 0) && (arg0.anInt2309 == 0 || arg0.anInt2282 > 0)) {
-			local39 = arg0.anInt2284 - (arg0.anInt2292 - Static30.anInt725 - Static30.anInt725) * 64;
-			local67 = arg0.anInt2275 - (arg0.anInt2280 - Static87.anInt2058 - Static87.anInt2058) * 64;
+			local39 = arg0.z - (arg0.anInt2292 - Static30.anInt725 - Static30.anInt725) * 64;
+			local67 = arg0.x - (arg0.anInt2280 - Static87.anInt2058 - Static87.anInt2058) * 64;
 			if (local67 != 0 || local39 != 0) {
 				arg0.anInt2283 = (int) (Math.atan2((double) local67, (double) local39) * 325.949D) & 0x7FF;
 			}
@@ -159,7 +159,7 @@ public final class Static61 {
 		aClass40_452 = null;
 		chatTyped = null;
 		aClass40_445 = null;
-		aByteArrayArrayArray7 = null;
+		levelTileFlags = null;
 		aClass40_447 = null;
 		reportAbuseInput = null;
 		aClass47_14 = null;

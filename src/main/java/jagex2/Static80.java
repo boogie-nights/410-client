@@ -38,7 +38,7 @@ public final class Static80 {
 	public static Class40 aClass40_556 = Static13.method257(" (Xskill)2");
 
 	@OriginalMember(owner = "client!qc", name = "n", descriptor = "I")
-	public static int anInt1919 = 0;
+	public static int flagSceneTileZ = 0;
 
 	@OriginalMember(owner = "client!qc", name = "y", descriptor = "Lclient!o;")
 	public static Class40 aClass40_557 = Static13.method257(")3");

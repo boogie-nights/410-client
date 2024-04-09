@@ -101,8 +101,8 @@ public final class Static1 {
 			@Pc(64) int local64 = arg0.size * 64 + arg0.anInt2311 * 128;
 			@Pc(74) int local74 = arg0.anInt2286 * 128 + arg0.size * 64;
 			@Pc(84) int local84 = arg0.size * 64 + arg0.anInt2317 * 128;
-			arg0.anInt2275 = ((local38 - local44) * local84 + local64 * local44) / local38;
-			arg0.anInt2284 = ((local38 - local44) * local54 + local74 * local44) / local38;
+			arg0.x = ((local38 - local44) * local84 + local64 * local44) / local38;
+			arg0.z = ((local38 - local44) * local54 + local74 * local44) / local38;
 		}
 		arg0.anInt2282 = 0;
 		if (arg0.anInt2314 == 0) {

@@ -5,6 +5,7 @@ import java.awt.Font;
 import java.awt.Graphics;
 
 import jagex2.config.ComType;
+import jagex2.config.LocType;
 import jagex2.dash3d.entity.PathingEntity;
 import jagex2.datastruct.LinkedList;
 import jagex2.io.Packet;
@@ -92,22 +93,22 @@ public final class Static91 {
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!ke;II)V")
 	public static void method1468(@OriginalArg(0) PathingEntity arg0, @OriginalArg(1) int arg1) {
-		if (arg0.anInt2275 < 128 || arg0.anInt2284 < 128 || arg0.anInt2275 >= 13184 || arg0.anInt2284 >= 13184) {
+		if (arg0.x < 128 || arg0.z < 128 || arg0.x >= 13184 || arg0.z >= 13184) {
 			arg0.anInt2297 = 0;
 			arg0.anInt2277 = 0;
 			arg0.anInt2302 = -1;
 			arg0.anInt2307 = -1;
-			arg0.anInt2275 = arg0.size * 64 + arg0.anIntArray492[0] * 128;
-			arg0.anInt2284 = arg0.size * 64 + arg0.anIntArray496[0] * 128;
+			arg0.x = arg0.size * 64 + arg0.pathTileX[0] * 128;
+			arg0.z = arg0.size * 64 + arg0.pathTileZ[0] * 128;
 			arg0.method1543();
 		}
-		if (Static88.localPlayer == arg0 && (arg0.anInt2275 < 1536 || arg0.anInt2284 < 1536 || arg0.anInt2275 >= 11776 || arg0.anInt2284 >= 11776)) {
+		if (Static88.localPlayer == arg0 && (arg0.x < 1536 || arg0.z < 1536 || arg0.x >= 11776 || arg0.z >= 11776)) {
 			arg0.anInt2302 = -1;
 			arg0.anInt2277 = 0;
 			arg0.anInt2307 = -1;
 			arg0.anInt2297 = 0;
-			arg0.anInt2275 = arg0.anIntArray492[0] * 128 + arg0.size * 64;
-			arg0.anInt2284 = arg0.anIntArray496[0] * 128 + arg0.size * 64;
+			arg0.x = arg0.pathTileX[0] * 128 + arg0.size * 64;
+			arg0.z = arg0.pathTileZ[0] * 128 + arg0.size * 64;
 			arg0.method1543();
 		}
 		if (Static107.loopCycle < arg0.anInt2277) {
@@ -137,13 +138,13 @@ public final class Static91 {
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(BI)Lclient!ia;")
-	public static Class2_Sub2_Sub10 method1470(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub10 local10 = (Class2_Sub2_Sub10) Static41.aClass47_11.get((long) arg0);
+	public static LocType method1470(@OriginalArg(1) int arg0) {
+		@Pc(10) LocType local10 = (LocType) Static41.aClass47_11.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
 		@Pc(25) byte[] local25 = Static73.aClass5_23.method68(arg0, 6);
-		local10 = new Class2_Sub2_Sub10();
+		local10 = new LocType();
 		local10.anInt1033 = arg0;
 		if (local25 != null) {
 			local10.method767(new Packet(local25));

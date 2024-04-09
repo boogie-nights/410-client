@@ -167,7 +167,7 @@ public final class Static22 {
 			if (Static98.aBooleanArray35[4] && Static36.anIntArray164[4] + 128 > local36) {
 				local36 = Static36.anIntArray164[4] + 128;
 			}
-			Static41.method752(Static23.anInt577, local34, Static66.anInt1653, local36, Static86.method1383(Static1.currentLevel, Static88.localPlayer.anInt2275, Static88.localPlayer.anInt2284) - 50, local36 * 3 + 600);
+			Static41.method752(Static23.anInt577, local34, Static66.anInt1653, local36, Static86.method1383(Static1.currentLevel, Static88.localPlayer.x, Static88.localPlayer.z) - 50, local36 * 3 + 600);
 		}
 		if (Static7.aBoolean22) {
 			local36 = Static18.method361();
@@ -239,27 +239,27 @@ public final class Static22 {
 	}
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(IIIIIIIIII)V")
-	public static void method1727(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
-		@Pc(7) Class2_Sub7 local7 = null;
-		for (@Pc(12) Class2_Sub7 local12 = (Class2_Sub7) Static92.aClass44_7.peekFront(); local12 != null; local12 = (Class2_Sub7) Static92.aClass44_7.prev()) {
-			if (local12.anInt817 == arg1 && local12.anInt818 == arg8 && local12.anInt821 == arg6 && local12.anInt823 == arg2) {
-				local7 = local12;
+	public static void method1727(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int z, @OriginalArg(8) int arg7, @OriginalArg(9) int x) {
+		@Pc(7) LocTemporary loc = null;
+		for (@Pc(12) LocTemporary l = (LocTemporary) Static92.spawnedLocations.peekFront(); l != null; l = (LocTemporary) Static92.spawnedLocations.prev()) {
+			if (l.level == arg1 && l.x == x && l.z == z && l.layer == arg2) {
+				loc = l;
 				break;
 			}
 		}
-		if (local7 == null) {
-			local7 = new Class2_Sub7();
-			local7.anInt817 = arg1;
-			local7.anInt823 = arg2;
-			local7.anInt818 = arg8;
-			local7.anInt821 = arg6;
-			Static4.method86(local7);
-			Static92.aClass44_7.pushBack(local7);
+		if (loc == null) {
+			loc = new LocTemporary();
+			loc.level = arg1;
+			loc.layer = arg2;
+			loc.x = x;
+			loc.z = z;
+			Static4.method86(loc);
+			Static92.spawnedLocations.pushBack(loc);
 		}
-		local7.anInt829 = arg3;
-		local7.anInt828 = arg5;
-		local7.anInt826 = arg7;
-		local7.anInt827 = arg0;
-		local7.anInt819 = arg4;
+		loc.anInt829 = arg3;
+		loc.anInt828 = arg5;
+		loc.anInt826 = arg7;
+		loc.anInt827 = arg0;
+		loc.anInt819 = arg4;
 	}
 }

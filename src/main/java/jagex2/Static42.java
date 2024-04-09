@@ -2,6 +2,7 @@ package jagex2;
 
 import java.awt.Graphics;
 
+import jagex2.config.LocType;
 import jagex2.graphics.PixFont;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -66,23 +67,23 @@ public final class Static42 {
 		@Pc(34) int local34 = local23 >> 6 & 0x3;
 		@Pc(38) int local38 = local23 & 0x1F;
 		if (local38 == 10 || local38 == 11 || local38 == 22) {
-			@Pc(53) Class2_Sub2_Sub10 local53 = Static91.method1470(local16);
+			@Pc(53) LocType local53 = Static91.method1470(local16);
 			@Pc(66) int local66;
 			@Pc(63) int local63;
 			if (local34 == 0 || local34 == 2) {
-				local66 = local53.anInt1036;
-				local63 = local53.anInt1040;
+				local66 = local53.width;
+				local63 = local53.length;
 			} else {
-				local63 = local53.anInt1036;
-				local66 = local53.anInt1040;
+				local63 = local53.width;
+				local66 = local53.length;
 			}
 			@Pc(77) int local77 = local53.anInt1057;
 			if (local34 != 0) {
 				local77 = (local77 << local34 & 0xF) + (local77 >> 4 - local34);
 			}
-			Static83.method1349(arg0, 0, Static88.localPlayer.anIntArray492[0], local63, local77, 2, true, 0, Static88.localPlayer.anIntArray496[0], local66, arg2);
+			Static83.method1349(arg0, 0, Static88.localPlayer.pathTileX[0], local63, local77, 2, true, 0, Static88.localPlayer.pathTileZ[0], local66, arg2);
 		} else {
-			Static83.method1349(arg0, local34, Static88.localPlayer.anIntArray492[0], 0, 0, 2, true, local38 + 1, Static88.localPlayer.anIntArray496[0], 0, arg2);
+			Static83.method1349(arg0, local34, Static88.localPlayer.pathTileX[0], 0, 0, 2, true, local38 + 1, Static88.localPlayer.pathTileZ[0], 0, arg2);
 		}
 		Static62.anInt1554 = Static107.anInt2500;
 		Static45.crossMode = 2;

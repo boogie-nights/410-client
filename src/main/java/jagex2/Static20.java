@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.config.LocType;
 import jagex2.config.ObjType;
 import jagex2.dash3d.entity.NpcEntity;
 import jagex2.dash3d.entity.PlayerEntity;
@@ -97,7 +98,7 @@ public final class Static20 {
 				local3 = local38;
 				@Pc(119) int local119;
 				if (local60 == 2 && Static93.scene.getInfo(Static1.currentLevel, local42, local48, local38) >= 0) {
-					@Pc(83) Class2_Sub2_Sub10 local83 = Static91.method1470(local54);
+					@Pc(83) LocType local83 = Static91.method1470(local54);
 					if (local83.anIntArray210 != null) {
 						local83 = local83.method766();
 					}
@@ -143,17 +144,17 @@ public final class Static20 {
 				@Pc(324) NpcEntity local324;
 				@Pc(369) PlayerEntity local369;
 				if (local60 == 1) {
-					@Pc(293) NpcEntity local293 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local54];
-					if (local293.type.size == 1 && (local293.anInt2275 & 0x7F) == 64 && (local293.anInt2284 & 0x7F) == 64) {
+					@Pc(293) NpcEntity local293 = Static2.npcs[local54];
+					if (local293.type.size == 1 && (local293.x & 0x7F) == 64 && (local293.z & 0x7F) == 64) {
 						for (local316 = 0; local316 < Static73.anInt1800; local316++) {
-							local324 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local316]];
-							if (local324 != null && local324 != local293 && local324.type.size == 1 && local324.anInt2275 == local293.anInt2275 && local324.anInt2284 == local293.anInt2284) {
+							local324 = Static2.npcs[Static63.anIntArray326[local316]];
+							if (local324 != null && local324 != local293 && local324.type.size == 1 && local324.x == local293.x && local324.z == local293.z) {
 								Static48.method822(Static63.anIntArray326[local316], local42, local324.type, local48);
 							}
 						}
 						for (local119 = 0; local119 < Static88.playerCount; local119++) {
 							local369 = Static100.players[Static73.playerIds[local119]];
-							if (local369 != null && local369.anInt2275 == local293.anInt2275 && local369.anInt2284 == local293.anInt2284) {
+							if (local369 != null && local369.x == local293.x && local369.z == local293.z) {
 								Static102.method1638(local48, local369, local42, Static73.playerIds[local119]);
 							}
 						}
@@ -162,16 +163,16 @@ public final class Static20 {
 				}
 				if (local60 == 0) {
 					@Pc(414) PlayerEntity local414 = Static100.players[local54];
-					if ((local414.anInt2275 & 0x7F) == 64 && (local414.anInt2284 & 0x7F) == 64) {
+					if ((local414.x & 0x7F) == 64 && (local414.z & 0x7F) == 64) {
 						for (local316 = 0; local316 < Static73.anInt1800; local316++) {
-							local324 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local316]];
-							if (local324 != null && local324.type.size == 1 && local324.anInt2275 == local414.anInt2275 && local414.anInt2284 == local324.anInt2284) {
+							local324 = Static2.npcs[Static63.anIntArray326[local316]];
+							if (local324 != null && local324.type.size == 1 && local324.x == local414.x && local414.z == local324.z) {
 								Static48.method822(Static63.anIntArray326[local316], local42, local324.type, local48);
 							}
 						}
 						for (local119 = 0; local119 < Static88.playerCount; local119++) {
 							local369 = Static100.players[Static73.playerIds[local119]];
-							if (local369 != null && local369 != local414 && local414.anInt2275 == local369.anInt2275 && local369.anInt2284 == local414.anInt2284) {
+							if (local369 != null && local369 != local414 && local414.x == local369.x && local369.z == local414.z) {
 								Static102.method1638(local48, local369, local42, Static73.playerIds[local119]);
 							}
 						}

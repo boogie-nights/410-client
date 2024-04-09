@@ -84,7 +84,7 @@ public final class Static58 {
 				}
 			}
 		}
-		Static61.aByteArrayArrayArray7[arg1][arg6][arg0] = 0;
+		Static61.levelTileFlags[arg1][arg6][arg0] = 0;
 		while (true) {
 			local30 = arg4.g1();
 			if (local30 == 0) {
@@ -113,7 +113,7 @@ public final class Static58 {
 				Static15.aByteArrayArrayArray10[arg1][arg6][arg0] = (byte) ((local30 - 2) / 4);
 				Static74.aByteArrayArrayArray8[arg1][arg6][arg0] = (byte) (arg2 + local30 - 2 & 0x3);
 			} else if (local30 <= 81) {
-				Static61.aByteArrayArrayArray7[arg1][arg6][arg0] = (byte) (local30 - 49);
+				Static61.levelTileFlags[arg1][arg6][arg0] = (byte) (local30 - 49);
 			} else {
 				Static37.aByteArrayArrayArray4[arg1][arg6][arg0] = (byte) (local30 - 81);
 			}

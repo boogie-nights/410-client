@@ -40,10 +40,10 @@ public final class Static25 {
 			if (Static56.in.method1742(Static33.size) >= 26) {
 				@Pc(17) int local17 = Static56.in.gBit(14);
 				if (local17 != 16383) {
-					if (Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local17] == null) {
-						Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local17] = new NpcEntity();
+					if (Static2.npcs[local17] == null) {
+						Static2.npcs[local17] = new NpcEntity();
 					}
-					@Pc(34) NpcEntity local34 = Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local17];
+					@Pc(34) NpcEntity local34 = Static2.npcs[local17];
 					Static63.anIntArray326[Static73.anInt1800++] = local17;
 					local34.cycle = Static107.loopCycle;
 					@Pc(50) int local50 = Static56.in.gBit(5);
@@ -67,7 +67,7 @@ public final class Static25 {
 						local78 -= 32;
 					}
 					local34.anInt2269 = local34.type.anInt777;
-					local34.move(local61 == 1, Static88.localPlayer.anIntArray496[0] + local78, local50 + Static88.localPlayer.anIntArray492[0]);
+					local34.move(local61 == 1, Static88.localPlayer.pathTileZ[0] + local78, local50 + Static88.localPlayer.pathTileX[0]);
 					continue;
 				}
 			}

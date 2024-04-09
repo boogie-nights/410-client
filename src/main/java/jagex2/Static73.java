@@ -123,7 +123,7 @@ public final class Static73 {
 		for (local127 = 0; local127 < 4; local127++) {
 			for (local117 = 0; local117 < 104; local117++) {
 				for (local199 = 0; local199 < 104; local199++) {
-					Static61.aByteArrayArrayArray7[local127][local117][local199] = 0;
+					Static61.levelTileFlags[local127][local117][local199] = 0;
 				}
 			}
 		}

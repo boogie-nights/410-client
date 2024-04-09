@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.config.LocType;
 import jagex2.graphics.Entity;
 import jagex2.graphics.Model;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -84,7 +85,7 @@ public final class Class2_Sub2_Sub12_Sub5 extends Entity {
 			}
 			this.anInt2026 = Static107.loopCycle - local13;
 		}
-		@Pc(104) Class2_Sub2_Sub10 local104 = Static91.method1470(this.anInt2034);
+		@Pc(104) LocType local104 = Static91.method1470(this.anInt2034);
 		if (local104.anIntArray210 != null) {
 			local104 = local104.method766();
 		}

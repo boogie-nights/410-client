@@ -204,10 +204,10 @@ public final class Static107 {
 					local33 = method1662(local103);
 				}
 				if (local31 == 18) {
-					local33 = (Static88.localPlayer.anInt2275 >> 7) + Static87.anInt2058;
+					local33 = (Static88.localPlayer.x >> 7) + Static87.anInt2058;
 				}
 				if (local31 == 19) {
-					local33 = Static30.anInt725 + (Static88.localPlayer.anInt2284 >> 7);
+					local33 = Static30.anInt725 + (Static88.localPlayer.z >> 7);
 				}
 				if (local31 == 20) {
 					local33 = local22[local17++];

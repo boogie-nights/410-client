@@ -164,7 +164,7 @@ public final class Static97 {
 				@Pc(70) int local70 = arg0 + local40;
 				if (local66 > 0 && local70 > 0 && local66 < 103 && local70 < 103) {
 					@Pc(87) int local87 = local44;
-					if ((Static61.aByteArrayArrayArray7[1][local66][local70] & 0x2) == 2) {
+					if ((Static61.levelTileFlags[1][local66][local70] & 0x2) == 2) {
 						local87 = local44 - 1;
 					}
 					@Pc(101) CollisionMap local101 = null;

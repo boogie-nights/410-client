@@ -218,16 +218,16 @@ public final class Static94 {
 		@Pc(28) int local28;
 		for (@Pc(22) int local22 = 0; local22 < Static13.entityRemovalCount; local22++) {
 			local28 = Static52.entityRemovalIds[local22];
-			if (Static107.loopCycle != Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28].cycle) {
-				Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28].type = null;
-				Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28] = null;
+			if (Static107.loopCycle != Static2.npcs[local28].cycle) {
+				Static2.npcs[local28].type = null;
+				Static2.npcs[local28] = null;
 			}
 		}
 		if (Static56.in.pos != Static33.size) {
 			throw new RuntimeException("gnp1 pos:" + Static56.in.pos + " psize:" + Static33.size);
 		}
 		for (local28 = 0; local28 < Static73.anInt1800; local28++) {
-			if (Static2.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static63.anIntArray326[local28]] == null) {
+			if (Static2.npcs[Static63.anIntArray326[local28]] == null) {
 				throw new RuntimeException("gnp2 pos:" + local28 + " size:" + Static73.anInt1800);
 			}
 		}

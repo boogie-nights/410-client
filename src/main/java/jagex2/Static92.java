@@ -37,7 +37,7 @@ public final class Static92 {
 	public static Class40 aClass40_618 = Static13.method257("System update in: ");
 
 	@OriginalMember(owner = "client!tb", name = "K", descriptor = "Lclient!od;")
-	public static LinkedList aClass44_7 = new LinkedList();
+	public static LinkedList spawnedLocations = new LinkedList();
 
 	@OriginalMember(owner = "client!tb", name = "N", descriptor = "Lclient!o;")
 	public static Class40 aClass40_619 = Static13.method257("Loading interfaces )2 ");
@@ -302,7 +302,7 @@ public final class Static92 {
 		if (Static89.anInt2100 != -1) {
 			local890 = Static89.anInt2096;
 			local66 = Static89.anInt2100;
-			@Pc(912) boolean local912 = Static83.method1349(local890, 0, Static88.localPlayer.anIntArray492[0], 0, 0, 0, true, 0, Static88.localPlayer.anIntArray496[0], 0, local66);
+			@Pc(912) boolean local912 = Static83.method1349(local890, 0, Static88.localPlayer.pathTileX[0], 0, 0, 0, true, 0, Static88.localPlayer.pathTileZ[0], 0, local66);
 			Static89.anInt2100 = -1;
 			if (local912) {
 				Static62.anInt1554 = Static107.anInt2500;
@@ -434,7 +434,7 @@ public final class Static92 {
 	@OriginalMember(owner = "client!tb", name = "c", descriptor = "(B)V")
 	public static void method1482() {
 		aClass40_617 = null;
-		aClass44_7 = null;
+		spawnedLocations = null;
 		aClass40_620 = null;
 		aClass5_28 = null;
 		aClass40_619 = null;
