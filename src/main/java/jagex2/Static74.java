@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.dash3d.type.LocTemporary;
 import jagex2.datastruct.LruCache;
 import jagex2.datastruct.Stack;
 import org.openrs2.deob.annotation.OriginalMember;

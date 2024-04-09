@@ -6,6 +6,7 @@ import jagex2.config.ComType;
 import jagex2.config.ObjType;
 import jagex2.dash3d.entity.NpcEntity;
 import jagex2.dash3d.entity.PlayerEntity;
+import jagex2.dash3d.type.LocTemporary;
 import jagex2.datastruct.LruCache;
 import jagex2.graphics.Pix8;
 import jagex2.graphics.PixMap;

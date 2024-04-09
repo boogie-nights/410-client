@@ -5,6 +5,7 @@ import java.awt.Font;
 import java.awt.Graphics;
 
 import jagex2.config.ComType;
+import jagex2.config.IdkType;
 import jagex2.config.LocType;
 import jagex2.dash3d.entity.PathingEntity;
 import jagex2.datastruct.LinkedList;
@@ -123,13 +124,13 @@ public final class Static91 {
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(ZI)Lclient!v;")
-	public static Class2_Sub2_Sub15 method1469(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub15 local10 = (Class2_Sub2_Sub15) Static103.aClass47_22.get((long) arg0);
+	public static IdkType method1469(@OriginalArg(1) int arg0) {
+		@Pc(10) IdkType local10 = (IdkType) Static103.aClass47_22.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
 		@Pc(20) byte[] local20 = Static68.aClass5_5.method68(arg0, 3);
-		local10 = new Class2_Sub2_Sub15();
+		local10 = new IdkType();
 		if (local20 != null) {
 			local10.method1587(new Packet(local20));
 		}

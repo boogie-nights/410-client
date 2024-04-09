@@ -1,5 +1,6 @@
 package jagex2;
 
+import jagex2.config.IdkType;
 import jagex2.graphics.Model;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -52,7 +53,7 @@ public final class Class33 {
 			@Pc(86) int local86 = this.anIntArray314[local79];
 			@Pc(106) Model local106;
 			if (local86 >= 256 && local86 < 512) {
-				local106 = Static91.method1469(local86 - 256).method1586();
+				local106 = Static91.method1469(local86 - 256).getHeadModel();
 				if (local106 != null) {
 					local77[local74++] = local106;
 				}
@@ -82,8 +83,8 @@ public final class Class33 {
 			arg3 = new int[12];
 			for (@Pc(12) int local12 = 0; local12 < 7; local12++) {
 				for (@Pc(16) int local16 = 0; local16 < Static103.anInt2493; local16++) {
-					@Pc(22) Class2_Sub2_Sub15 local22 = Static91.method1469(local16);
-					if (local22 != null && !local22.aBoolean178 && local22.anInt2386 == local12 + (arg0 ? 7 : 0)) {
+					@Pc(22) IdkType local22 = Static91.method1469(local16);
+					if (local22 != null && !local22.disable && local22.type == local12 + (arg0 ? 7 : 0)) {
 						arg3[Static35.anIntArray160[local12]] = local16 + 256;
 						break;
 					}
@@ -114,7 +115,7 @@ public final class Class33 {
 			return;
 		}
 		local19 -= 256;
-		@Pc(47) Class2_Sub2_Sub15 local47;
+		@Pc(47) IdkType local47;
 		do {
 			if (arg0) {
 				local19++;
@@ -128,7 +129,7 @@ public final class Class33 {
 				}
 			}
 			local47 = Static91.method1469(local19);
-		} while (local47 == null || local47.aBoolean178 || (this.aBoolean117 ? 7 : 0) + arg1 != local47.anInt2386);
+		} while (local47 == null || local47.disable || (this.aBoolean117 ? 7 : 0) + arg1 != local47.type);
 		this.anIntArray314[Static35.anIntArray160[arg1]] = local19 + 256;
 		this.method1008();
 	}
@@ -182,7 +183,7 @@ public final class Class33 {
 					local207 = local27[local201];
 					@Pc(225) Model local225;
 					if (local207 >= 256 && local207 < 512) {
-						local225 = Static91.method1469(local207 - 256).method1579();
+						local225 = Static91.method1469(local207 - 256).getModel();
 						if (local225 != null) {
 							local197[local199++] = local225;
 						}

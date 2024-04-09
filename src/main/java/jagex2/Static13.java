@@ -3,6 +3,7 @@ package jagex2;
 import java.awt.Component;
 
 import jagex2.client.GameShell;
+import jagex2.dash3d.type.LocTemporary;
 import jagex2.graphics.Pix24;
 import jagex2.graphics.PixFont;
 import org.openrs2.deob.annotation.OriginalArg;

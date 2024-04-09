@@ -2,6 +2,7 @@ package jagex2;
 
 import jagex2.dash3d.entity.NpcEntity;
 import jagex2.dash3d.entity.PlayerEntity;
+import jagex2.dash3d.type.LocTemporary;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;

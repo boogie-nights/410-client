@@ -1,6 +1,5 @@
 package jagex2.graphics;
 
-import jagex2.Pix8Static;
 import jagex2.Static26;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
