@@ -15,7 +15,7 @@ public final class Static70 {
 	public static ClientStream aClass25_36;
 
 	@OriginalMember(owner = "client!nd", name = "D", descriptor = "[I")
-	public static int[] anIntArray355;
+	public static int[] flameGradient1;
 
 	@OriginalMember(owner = "client!nd", name = "E", descriptor = "I")
 	public static int anInt1696;
@@ -212,7 +212,7 @@ public final class Static70 {
 		aClass40_496 = null;
 		anIntArrayArray15 = null;
 		aClass40_495 = null;
-		anIntArray355 = null;
+		flameGradient1 = null;
 	}
 
 	@OriginalMember(owner = "client!nd", name = "a", descriptor = "(BLclient!ud;I)Z")

@@ -198,25 +198,25 @@ public final class Static105 {
 		if (Static87.anInt2061 > 0) {
 			for (local9 = 0; local9 < 256; local9++) {
 				if (Static87.anInt2061 > 768) {
-					Static92.anIntArray472[local9] = Static49.method1534(Static37.anIntArray182[local9], 1024 - Static87.anInt2061, Static70.anIntArray355[local9]);
+					Static92.anIntArray472[local9] = Static49.method1534(Static37.flameGradient0[local9], 1024 - Static87.anInt2061, Static70.flameGradient1[local9]);
 				} else if (Static87.anInt2061 <= 256) {
-					Static92.anIntArray472[local9] = Static49.method1534(Static70.anIntArray355[local9], 256 - Static87.anInt2061, Static37.anIntArray182[local9]);
+					Static92.anIntArray472[local9] = Static49.method1534(Static70.flameGradient1[local9], 256 - Static87.anInt2061, Static37.flameGradient0[local9]);
 				} else {
-					Static92.anIntArray472[local9] = Static70.anIntArray355[local9];
+					Static92.anIntArray472[local9] = Static70.flameGradient1[local9];
 				}
 			}
 		} else if (Static49.anInt2254 <= 0) {
 			for (local9 = 0; local9 < 256; local9++) {
-				Static92.anIntArray472[local9] = Static37.anIntArray182[local9];
+				Static92.anIntArray472[local9] = Static37.flameGradient0[local9];
 			}
 		} else {
 			for (local9 = 0; local9 < 256; local9++) {
 				if (Static49.anInt2254 > 768) {
-					Static92.anIntArray472[local9] = Static49.method1534(Static37.anIntArray182[local9], 1024 - Static49.anInt2254, Static72.anIntArray406[local9]);
+					Static92.anIntArray472[local9] = Static49.method1534(Static37.flameGradient0[local9], 1024 - Static49.anInt2254, Static72.flameGradient2[local9]);
 				} else if (Static49.anInt2254 > 256) {
-					Static92.anIntArray472[local9] = Static72.anIntArray406[local9];
+					Static92.anIntArray472[local9] = Static72.flameGradient2[local9];
 				} else {
-					Static92.anIntArray472[local9] = Static49.method1534(Static72.anIntArray406[local9], 256 - Static49.anInt2254, Static37.anIntArray182[local9]);
+					Static92.anIntArray472[local9] = Static49.method1534(Static72.flameGradient2[local9], 256 - Static49.anInt2254, Static37.flameGradient0[local9]);
 				}
 			}
 		}

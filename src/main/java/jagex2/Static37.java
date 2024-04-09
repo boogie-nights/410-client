@@ -28,7 +28,7 @@ public final class Static37 {
 	public static LruCache aClass47_9;
 
 	@OriginalMember(owner = "client!hb", name = "Ob", descriptor = "[I")
-	public static int[] anIntArray182;
+	public static int[] flameGradient0;
 
 	@OriginalMember(owner = "client!hb", name = "W", descriptor = "Z")
 	public static boolean aBoolean65 = false;
@@ -148,7 +148,7 @@ public final class Static37 {
 
 	@OriginalMember(owner = "client!hb", name = "h", descriptor = "(I)V")
 	public static void method720() {
-		anIntArray182 = null;
+		flameGradient0 = null;
 		aClass47_9 = null;
 		aClass40_288 = null;
 		aByteArrayArrayArray4 = null;

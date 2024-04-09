@@ -122,7 +122,7 @@ public final class Static41 {
 		if (Static15.anIntArray414.length < Static3.anInt50) {
 			Static3.anInt50 -= Static15.anIntArray414.length;
 			local43 = (int) (Math.random() * 12.0D);
-			Static24.method502(Static49.aClass2_Sub2_Sub2_Sub3Array14[local43]);
+			Static24.method502(Static49.imageRunes[local43]);
 		}
 		@Pc(166) int local166;
 		for (local43 = 1; local43 < 255; local43++) {

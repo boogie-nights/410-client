@@ -230,9 +230,9 @@ public final class Static15 {
 		local83 = Static103.method1644(Static73.aClass40_521, Static86.aClass40_593, arg0);
 		Static61.aClass45_22.bind();
 		local83.draw(382 - local83.width / 2 - 128, 18);
-		Static97.aClass2_Sub2_Sub2_Sub3_21 = Static99.method77(arg0, Static86.aClass40_593, Static3.aClass40_16);
-		Static32.aClass2_Sub2_Sub2_Sub3_8 = Static99.method77(arg0, Static86.aClass40_593, Static96.aClass40_661);
-		Static49.aClass2_Sub2_Sub2_Sub3Array14 = Static4.method85(arg0, Static82.aClass40_563, Static86.aClass40_593);
+		Static97.imageTitlebox = Static99.method77(arg0, Static86.aClass40_593, Static3.aClass40_16);
+		Static32.imageTitlebutton = Static99.method77(arg0, Static86.aClass40_593, Static96.aClass40_661);
+		Static49.imageRunes = Static4.method85(arg0, Static82.aClass40_563, Static86.aClass40_593);
 		Static11.aClass2_Sub2_Sub2_Sub4_1 = new Pix24(128, 265);
 		Static96.aClass2_Sub2_Sub2_Sub4_9 = new Pix24(128, 265);
 		for (local156 = 0; local156 < 33920; local156++) {
@@ -241,44 +241,44 @@ public final class Static15 {
 		for (local187 = 0; local187 < 33920; local187++) {
 			Static96.aClass2_Sub2_Sub2_Sub4_9.pixels[local187] = Static98.aClass45_30.pixels[local187];
 		}
-		Static37.anIntArray182 = new int[256];
+		Static37.flameGradient0 = new int[256];
 		for (@Pc(366) int local366 = 0; local366 < 64; local366++) {
-			Static37.anIntArray182[local366] = local366 * 262144;
+			Static37.flameGradient0[local366] = local366 * 262144;
 		}
 		for (@Pc(382) int local382 = 0; local382 < 64; local382++) {
-			Static37.anIntArray182[local382 + 64] = local382 * 1024 + 16711680;
+			Static37.flameGradient0[local382 + 64] = local382 * 1024 + 16711680;
 		}
 		for (@Pc(403) int local403 = 0; local403 < 64; local403++) {
-			Static37.anIntArray182[local403 + 128] = local403 * 4 + 16776960;
+			Static37.flameGradient0[local403 + 128] = local403 * 4 + 16776960;
 		}
 		for (@Pc(421) int local421 = 0; local421 < 64; local421++) {
-			Static37.anIntArray182[local421 + 192] = 0xFFFFFF;
+			Static37.flameGradient0[local421 + 192] = 0xFFFFFF;
 		}
-		Static70.anIntArray355 = new int[256];
+		Static70.flameGradient1 = new int[256];
 		for (@Pc(438) int local438 = 0; local438 < 64; local438++) {
-			Static70.anIntArray355[local438] = local438 * 1024;
+			Static70.flameGradient1[local438] = local438 * 1024;
 		}
 		for (@Pc(452) int local452 = 0; local452 < 64; local452++) {
-			Static70.anIntArray355[local452 + 64] = local452 * 4 + 65280;
+			Static70.flameGradient1[local452 + 64] = local452 * 4 + 65280;
 		}
 		for (@Pc(472) int local472 = 0; local472 < 64; local472++) {
-			Static70.anIntArray355[local472 + 128] = local472 * 262144 + 65535;
+			Static70.flameGradient1[local472 + 128] = local472 * 262144 + 65535;
 		}
 		for (@Pc(492) int local492 = 0; local492 < 64; local492++) {
-			Static70.anIntArray355[local492 + 192] = 0xFFFFFF;
+			Static70.flameGradient1[local492 + 192] = 0xFFFFFF;
 		}
-		Static72.anIntArray406 = new int[256];
+		Static72.flameGradient2 = new int[256];
 		for (@Pc(513) int local513 = 0; local513 < 64; local513++) {
-			Static72.anIntArray406[local513] = local513 * 4;
+			Static72.flameGradient2[local513] = local513 * 4;
 		}
 		for (@Pc(529) int local529 = 0; local529 < 64; local529++) {
-			Static72.anIntArray406[local529 + 64] = local529 * 262144 + 255;
+			Static72.flameGradient2[local529 + 64] = local529 * 262144 + 255;
 		}
 		for (@Pc(550) int local550 = 0; local550 < 64; local550++) {
-			Static72.anIntArray406[local550 + 128] = local550 * 1024 + 16711935;
+			Static72.flameGradient2[local550 + 128] = local550 * 1024 + 16711935;
 		}
 		for (@Pc(570) int local570 = 0; local570 < 64; local570++) {
-			Static72.anIntArray406[local570 + 192] = 0xFFFFFF;
+			Static72.flameGradient2[local570 + 192] = 0xFFFFFF;
 		}
 		anIntArray414 = new int[32768];
 		Static92.anIntArray472 = new int[256];

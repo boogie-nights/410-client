@@ -14,7 +14,7 @@ public final class Static97 {
 	public static boolean aBoolean174;
 
 	@OriginalMember(owner = "client!ub", name = "M", descriptor = "Lclient!qb;")
-	public static Pix8 aClass2_Sub2_Sub2_Sub3_21;
+	public static Pix8 imageTitlebox;
 
 	@OriginalMember(owner = "client!ub", name = "S", descriptor = "Lclient!qb;")
 	public static Pix8 aClass2_Sub2_Sub2_Sub3_22;
@@ -87,7 +87,7 @@ public final class Static97 {
 
 	@OriginalMember(owner = "client!ub", name = "c", descriptor = "(B)V")
 	public static void method1562() {
-		aClass2_Sub2_Sub2_Sub3_21 = null;
+		imageTitlebox = null;
 		aClass40_673 = null;
 		aClass40_669 = null;
 		aClass40_672 = null;

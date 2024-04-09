@@ -66,16 +66,16 @@ public final class Static12 {
 			return;
 		}
 		Static4.anIntArray17 = null;
-		Static70.anIntArray355 = null;
+		Static70.flameGradient1 = null;
 		Static92.anIntArray472 = null;
 		Static2.aClass45_3 = null;
-		Static97.aClass2_Sub2_Sub2_Sub3_21 = null;
-		Static37.anIntArray182 = null;
-		Static49.aClass2_Sub2_Sub2_Sub3Array14 = null;
+		Static97.imageTitlebox = null;
+		Static37.flameGradient0 = null;
+		Static49.imageRunes = null;
 		Static107.aClass45_31 = null;
 		Static67.aClass45_26 = null;
 		Static61.aClass45_22 = null;
-		Static32.aClass2_Sub2_Sub2_Sub3_8 = null;
+		Static32.imageTitlebutton = null;
 		Static35.aClass45_16 = null;
 		Static1.anIntArray1 = null;
 		Static96.aClass2_Sub2_Sub2_Sub4_9 = null;
@@ -83,7 +83,7 @@ public final class Static12 {
 		Static21.aClass45_11 = null;
 		Static98.aClass45_30 = null;
 		Static61.pixMap = null;
-		Static72.anIntArray406 = null;
+		Static72.flameGradient2 = null;
 		Static103.anIntArray547 = null;
 		Static80.aClass45_27 = null;
 		Static11.aClass2_Sub2_Sub2_Sub4_1 = null;

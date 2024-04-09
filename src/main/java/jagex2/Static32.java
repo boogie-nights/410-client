@@ -20,7 +20,7 @@ public final class Static32 {
 	public static int[][][] levelOccludemap;
 
 	@OriginalMember(owner = "client!ga", name = "H", descriptor = "Lclient!qb;")
-	public static Pix8 aClass2_Sub2_Sub2_Sub3_8;
+	public static Pix8 imageTitlebutton;
 
 	@OriginalMember(owner = "client!ga", name = "I", descriptor = "Lclient!ba;")
 	public static HashTable aClass6_1;
@@ -61,7 +61,7 @@ public final class Static32 {
 		aClass40_229 = null;
 		levelOccludemap = null;
 		aClass40_230 = null;
-		aClass2_Sub2_Sub2_Sub3_8 = null;
+		imageTitlebutton = null;
 		aClass40_228 = null;
 	}
 

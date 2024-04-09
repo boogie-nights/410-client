@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static72 {
 
 	@OriginalMember(owner = "client!o", name = "F", descriptor = "[I")
-	public static int[] anIntArray406;
+	public static int[] flameGradient2;
 
 	@OriginalMember(owner = "client!o", name = "I", descriptor = "Lclient!ud;")
 	public static Class5 aClass5_22;
@@ -45,7 +45,7 @@ public final class Static72 {
 
 	@OriginalMember(owner = "client!o", name = "d", descriptor = "(I)V")
 	public static void method1170() {
-		anIntArray406 = null;
+		flameGradient2 = null;
 		aClass40_509 = null;
 		aClass40_508 = null;
 		textImportedMusic = null;

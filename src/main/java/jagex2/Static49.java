@@ -14,7 +14,7 @@ public final class Static49 {
 	public static PixFont[] aClass2_Sub2_Sub2_Sub2Array9;
 
 	@OriginalMember(owner = "client!jd", name = "W", descriptor = "[Lclient!qb;")
-	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array14;
+	public static Pix8[] imageRunes;
 
 	@OriginalMember(owner = "client!jd", name = "X", descriptor = "I")
 	public static int anInt2259;
@@ -49,7 +49,7 @@ public final class Static49 {
 		aClass2_Sub2_Sub2_Sub2Array9 = null;
 		aClass40_655 = null;
 		aClass40_654 = null;
-		aClass2_Sub2_Sub2_Sub3Array14 = null;
+		imageRunes = null;
 	}
 
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "([BIII)Z")
