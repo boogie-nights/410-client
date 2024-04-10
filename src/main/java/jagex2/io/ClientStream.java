@@ -28,7 +28,7 @@ public final class ClientStream implements Runnable {
 	private int anInt973 = 0;
 
 	@OriginalMember(owner = "client!hc", name = "i", descriptor = "Z")
-	private boolean aBoolean68 = false;
+	private boolean closed = false;
 
 	@OriginalMember(owner = "client!hc", name = "j", descriptor = "Z")
 	private boolean aBoolean69 = false;
@@ -59,23 +59,23 @@ public final class ClientStream implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(IIB[B)V")
-	public void method725(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) byte[] arg2) throws IOException {
-		if (this.aBoolean68) {
+	public void read(@OriginalArg(0) int off, @OriginalArg(1) int len, @OriginalArg(3) byte[] dst) throws IOException {
+		if (this.closed) {
 			return;
 		}
-		while (arg1 > 0) {
-			@Pc(19) int local19 = this.in.read(arg2, arg0, arg1);
-			if (local19 <= 0) {
+		while (len > 0) {
+			@Pc(19) int read = this.in.read(dst, off, len);
+			if (read <= 0) {
 				throw new EOFException();
 			}
-			arg1 -= local19;
-			arg0 += local19;
+			len -= read;
+			off += read;
 		}
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(I)I")
 	public int method726() throws IOException {
-		return this.aBoolean68 ? 0 : this.in.read();
+		return this.closed ? 0 : this.in.read();
 	}
 
 	@OriginalMember(owner = "client!hc", name = "finalize", descriptor = "()V")
@@ -85,17 +85,17 @@ public final class ClientStream implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "b", descriptor = "(I)I")
-	public int method728() throws IOException {
-		return this.aBoolean68 ? 0 : this.in.available();
+	public int available() throws IOException {
+		return this.closed ? 0 : this.in.available();
 	}
 
 	@OriginalMember(owner = "client!hc", name = "c", descriptor = "(I)V")
 	public void method730() {
-		if (this.aBoolean68) {
+		if (this.closed) {
 			return;
 		}
 		synchronized (this) {
-			this.aBoolean68 = true;
+			this.closed = true;
 			this.notifyAll();
 		}
 		if (this.aClass48_3 != null) {
@@ -122,7 +122,7 @@ public final class ClientStream implements Runnable {
 					@Pc(48) int local48;
 					synchronized (this) {
 						if (this.anInt975 == this.anInt973) {
-							if (this.aBoolean68) {
+							if (this.closed) {
 								break label80;
 							}
 							try {
@@ -177,7 +177,7 @@ public final class ClientStream implements Runnable {
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "([BIIZ)V")
 	public void method731(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1) throws IOException {
-		if (this.aBoolean68) {
+		if (this.closed) {
 			return;
 		}
 		if (this.aBoolean69) {

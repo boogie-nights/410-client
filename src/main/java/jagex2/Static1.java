@@ -27,7 +27,7 @@ public final class Static1 {
 	public static volatile boolean clearScreen = true;
 
 	@OriginalMember(owner = "client!a", name = "l", descriptor = "Lclient!o;")
-	public static Class40 aClass40_1 = Static13.method257(" has logged out)3");
+	public static Class40 textHasLoggedOut = Static13.method257(" has logged out)3");
 
 	@OriginalMember(owner = "client!a", name = "n", descriptor = "I")
 	public static int anInt10 = 0;
@@ -94,7 +94,7 @@ public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ke;Z)V")
 	public static void method4(@OriginalArg(0) PathingEntity arg0) {
-		if (arg0.anInt2297 == Static107.loopCycle || arg0.anInt2307 == -1 || arg0.anInt2313 != 0 || arg0.anInt2267 + 1 > Static62.method1042(arg0.anInt2307).anIntArray128[arg0.anInt2316]) {
+		if (arg0.anInt2297 == Static107.loopCycle || arg0.primarySeqId == -1 || arg0.anInt2313 != 0 || arg0.anInt2267 + 1 > Static62.method1042(arg0.primarySeqId).anIntArray128[arg0.anInt2316]) {
 			@Pc(38) int local38 = arg0.anInt2297 - arg0.anInt2277;
 			@Pc(44) int local44 = Static107.loopCycle - arg0.anInt2277;
 			@Pc(54) int local54 = arg0.size * 64 + arg0.anInt2321 * 128;
@@ -127,6 +127,6 @@ public final class Static1 {
 		aClass45_1 = null;
 		anIntArray1 = null;
 		textFriendsChatColon = null;
-		aClass40_1 = null;
+		textHasLoggedOut = null;
 	}
 }

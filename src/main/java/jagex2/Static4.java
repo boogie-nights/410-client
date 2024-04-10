@@ -22,7 +22,7 @@ public final class Static4 {
 	public static int[] anIntArray17;
 
 	@OriginalMember(owner = "client!ad", name = "rb", descriptor = "I")
-	public static int anInt131 = 0;
+	public static int waveCount = 0;
 
 	@OriginalMember(owner = "client!ad", name = "xb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_29 = Static13.method257("backright2");
@@ -31,7 +31,7 @@ public final class Static4 {
 	public static int anInt139 = -1;
 
 	@OriginalMember(owner = "client!ad", name = "Bb", descriptor = "I")
-	public static int anInt140 = 1;
+	public static int nodeId = 1;
 
 	@OriginalMember(owner = "client!ad", name = "Fb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_30 = Static13.method257(" @whi@");

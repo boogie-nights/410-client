@@ -34,7 +34,7 @@ public final class Static92 {
 	public static Class40 aClass40_617 = Static13.method257("Ok");
 
 	@OriginalMember(owner = "client!tb", name = "E", descriptor = "Lclient!o;")
-	public static Class40 aClass40_618 = Static13.method257("System update in: ");
+	public static Class40 textSystemUpdateIn = Static13.method257("System update in: ");
 
 	@OriginalMember(owner = "client!tb", name = "K", descriptor = "Lclient!od;")
 	public static LinkedList spawnedLocations = new LinkedList();
@@ -70,7 +70,7 @@ public final class Static92 {
 			Static34.method626();
 			return;
 		}
-		for (@Pc(27) int local27 = 0; local27 < 100 && Static2.method22(); local27++) {
+		for (@Pc(27) int local27 = 0; local27 < 100 && Static2.read(); local27++) {
 		}
 		if (Static44.anInt1075 != 30 && Static44.anInt1075 != 35) {
 			return;
@@ -231,7 +231,7 @@ public final class Static92 {
 					Static73.redrawChatback = true;
 				}
 				if (Static21.anInt481 == 2) {
-					Static33.aBoolean59 = true;
+					Static33.redrawSidebar = true;
 				}
 				Static21.anInt481 = 0;
 			}
@@ -243,7 +243,7 @@ public final class Static92 {
 			}
 			if (anInt2170 == 0) {
 				if (Static88.anInt2077 == 2) {
-					Static33.aBoolean59 = true;
+					Static33.redrawSidebar = true;
 				}
 				if (Static88.anInt2077 == 3) {
 					Static73.redrawChatback = true;
@@ -258,16 +258,16 @@ public final class Static92 {
 						if (Static5.anInt182 == 1 && local757.clientCode == 206) {
 							local753 = 1;
 						}
-						if (local757.anIntArray331[Static18.anInt434] <= 0) {
+						if (local757.invSlotObjId[Static18.anInt434] <= 0) {
 							local753 = 0;
 						}
 						if (local757.aBoolean126) {
 							local115 = Static95.anInt2239;
 							local112 = Static18.anInt434;
-							local757.anIntArray331[local112] = local757.anIntArray331[local115];
-							local757.anIntArray327[local112] = local757.anIntArray327[local115];
-							local757.anIntArray331[local115] = -1;
-							local757.anIntArray327[local115] = 0;
+							local757.invSlotObjId[local112] = local757.invSlotObjId[local115];
+							local757.invSlotObjCount[local112] = local757.invSlotObjCount[local115];
+							local757.invSlotObjId[local115] = -1;
+							local757.invSlotObjCount[local115] = 0;
 						} else if (local753 == 1) {
 							local112 = Static18.anInt434;
 							local115 = Static95.anInt2239;
@@ -333,7 +333,7 @@ public final class Static92 {
 			Static66.anInt1645++;
 			if (Static66.anInt1645 == 100) {
 				if (Static96.anInt2340 != -1) {
-					Static33.aBoolean59 = true;
+					Static33.redrawSidebar = true;
 				}
 				if (Static59.anInt1501 != -1) {
 					Static73.redrawChatback = true;
@@ -341,7 +341,7 @@ public final class Static92 {
 			}
 		}
 		Static18.method357();
-		if (Static7.aBoolean22) {
+		if (Static7.cutscene) {
 			Static83.method1348();
 		}
 		for (local66 = 0; local66 < 5; local66++) {
@@ -415,8 +415,8 @@ public final class Static92 {
 			Static80.out.p1isaac(217);
 		}
 		try {
-			if (Static70.aClass25_36 != null && Static80.out.pos > 0) {
-				Static70.aClass25_36.method731(Static80.out.data, Static80.out.pos);
+			if (Static70.stream != null && Static80.out.pos > 0) {
+				Static70.stream.method731(Static80.out.data, Static80.out.pos);
 				Static80.out.pos = 0;
 				Static91.anInt2146 = 0;
 			}
@@ -442,7 +442,7 @@ public final class Static92 {
 		aClass45_29 = null;
 		anIntArray472 = null;
 		aBooleanArray31 = null;
-		aClass40_618 = null;
+		textSystemUpdateIn = null;
 		aClass40_621 = null;
 		aClass47_21 = null;
 	}

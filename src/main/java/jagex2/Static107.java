@@ -121,7 +121,7 @@ public final class Static107 {
 					return local24;
 				}
 				if (local31 == 1) {
-					local33 = Static94.anIntArray473[local22[local17++]];
+					local33 = Static94.skillLevel[local22[local17++]];
 				}
 				if (local31 == 15) {
 					local35 = 1;
@@ -133,10 +133,10 @@ public final class Static107 {
 					local35 = 3;
 				}
 				if (local31 == 2) {
-					local33 = Static59.anIntArray312[local22[local17++]];
+					local33 = Static59.skillBaseLevel[local22[local17++]];
 				}
 				if (local31 == 3) {
-					local33 = Static48.anIntArray234[local22[local17++]];
+					local33 = Static48.skillExperience[local22[local17++]];
 				}
 				@Pc(103) int local103;
 				@Pc(116) ComType local116;
@@ -148,21 +148,21 @@ public final class Static107 {
 					local116 = Static81.method1340(local110);
 					local121 = local22[local17++];
 					if (local121 != -1 && (!Static105.get(local121).members || Static18.aBoolean37)) {
-						for (local133 = 0; local133 < local116.anIntArray331.length; local133++) {
-							if (local121 + 1 == local116.anIntArray331[local133]) {
-								local33 += local116.anIntArray327[local133];
+						for (local133 = 0; local133 < local116.invSlotObjId.length; local133++) {
+							if (local121 + 1 == local116.invSlotObjId[local133]) {
+								local33 += local116.invSlotObjCount[local133];
 							}
 						}
 					}
 				}
 				if (local31 == 5) {
-					local33 = Static67.anIntArray339[local22[local17++]];
+					local33 = Static67.varps[local22[local17++]];
 				}
 				if (local31 == 6) {
-					local33 = Class11.anIntArray80[Static59.anIntArray312[local22[local17++]] - 1];
+					local33 = Class11.levelExperience[Static59.skillBaseLevel[local22[local17++]] - 1];
 				}
 				if (local31 == 7) {
-					local33 = Static67.anIntArray339[local22[local17++]] * 100 / 46875;
+					local33 = Static67.varps[local22[local17++]] * 100 / 46875;
 				}
 				if (local31 == 8) {
 					local33 = Static88.localPlayer.anInt1378;
@@ -170,7 +170,7 @@ public final class Static107 {
 				if (local31 == 9) {
 					for (local103 = 0; local103 < 25; local103++) {
 						if (Static73.aBooleanArray27[local103]) {
-							local33 += Static59.anIntArray312[local103];
+							local33 += Static59.skillBaseLevel[local103];
 						}
 					}
 				}
@@ -180,8 +180,8 @@ public final class Static107 {
 					local116 = Static81.method1340(local103);
 					local121 = local22[local17++];
 					if (local121 != -1 && (!Static105.get(local121).members || Static18.aBoolean37)) {
-						for (local133 = 0; local133 < local116.anIntArray331.length; local133++) {
-							if (local121 + 1 == local116.anIntArray331[local133]) {
+						for (local133 = 0; local133 < local116.invSlotObjId.length; local133++) {
+							if (local121 + 1 == local116.invSlotObjId[local133]) {
 								local33 = 999999999;
 								break;
 							}
@@ -189,13 +189,13 @@ public final class Static107 {
 					}
 				}
 				if (local31 == 11) {
-					local33 = Static93.anInt2181;
+					local33 = Static93.energy;
 				}
 				if (local31 == 12) {
-					local33 = Static74.anInt1813;
+					local33 = Static74.weightCarried;
 				}
 				if (local31 == 13) {
-					local103 = Static67.anIntArray339[local22[local17++]];
+					local103 = Static67.varps[local22[local17++]];
 					@Pc(315) int local315 = local22[local17++];
 					local33 = (0x1 << local315 & local103) == 0 ? 0 : 1;
 				}
@@ -251,7 +251,7 @@ public final class Static107 {
 		@Pc(13) int local13 = local7.anInt174;
 		@Pc(16) int local16 = local7.anInt170;
 		@Pc(23) int local23 = Class61.anIntArray518[local16 - local10];
-		return local23 & Static67.anIntArray339[local13] >> local10;
+		return local23 & Static67.varps[local13] >> local10;
 	}
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "([II)V")

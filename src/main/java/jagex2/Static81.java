@@ -117,73 +117,73 @@ public final class Static81 {
 			return;
 		}
 		if (Static107.anInt2500 >= 539 && Static107.anInt2500 <= 573 && Static90.anInt2133 >= 169 && Static90.anInt2133 < 205 && Static2.anIntArray2[0] != -1) {
-			Static62.anInt1551 = 0;
-			Static33.aBoolean59 = true;
+			Static62.selectedTab = 0;
+			Static33.redrawSidebar = true;
 			Static22.aBoolean184 = true;
 		}
 		if (Static107.anInt2500 >= 569 && Static107.anInt2500 <= 599 && Static90.anInt2133 >= 168 && Static90.anInt2133 < 205 && Static2.anIntArray2[1] != -1) {
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 			Static22.aBoolean184 = true;
-			Static62.anInt1551 = 1;
+			Static62.selectedTab = 1;
 		}
 		if (Static107.anInt2500 >= 597 && Static107.anInt2500 <= 627 && Static90.anInt2133 >= 168 && Static90.anInt2133 < 205 && Static2.anIntArray2[2] != -1) {
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 			Static22.aBoolean184 = true;
-			Static62.anInt1551 = 2;
+			Static62.selectedTab = 2;
 		}
 		if (Static107.anInt2500 >= 625 && Static107.anInt2500 <= 669 && Static90.anInt2133 >= 168 && Static90.anInt2133 < 203 && Static2.anIntArray2[3] != -1) {
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 			Static22.aBoolean184 = true;
-			Static62.anInt1551 = 3;
+			Static62.selectedTab = 3;
 		}
 		if (Static107.anInt2500 >= 666 && Static107.anInt2500 <= 696 && Static90.anInt2133 >= 168 && Static90.anInt2133 < 205 && Static2.anIntArray2[4] != -1) {
-			Static33.aBoolean59 = true;
-			Static62.anInt1551 = 4;
+			Static33.redrawSidebar = true;
+			Static62.selectedTab = 4;
 			Static22.aBoolean184 = true;
 		}
 		if (Static107.anInt2500 >= 694 && Static107.anInt2500 <= 724 && Static90.anInt2133 >= 168 && Static90.anInt2133 < 205 && Static2.anIntArray2[5] != -1) {
 			Static22.aBoolean184 = true;
-			Static62.anInt1551 = 5;
-			Static33.aBoolean59 = true;
+			Static62.selectedTab = 5;
+			Static33.redrawSidebar = true;
 		}
 		if (Static107.anInt2500 >= 722 && Static107.anInt2500 <= 756 && Static90.anInt2133 >= 169 && Static90.anInt2133 < 205 && Static2.anIntArray2[6] != -1) {
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 			Static22.aBoolean184 = true;
-			Static62.anInt1551 = 6;
+			Static62.selectedTab = 6;
 		}
 		if (Static107.anInt2500 >= 540 && Static107.anInt2500 <= 574 && Static90.anInt2133 >= 466 && Static90.anInt2133 < 502 && Static2.anIntArray2[7] != -1) {
 			Static22.aBoolean184 = true;
-			Static62.anInt1551 = 7;
-			Static33.aBoolean59 = true;
+			Static62.selectedTab = 7;
+			Static33.redrawSidebar = true;
 		}
 		if (Static107.anInt2500 >= 572 && Static107.anInt2500 <= 602 && Static90.anInt2133 >= 466 && Static90.anInt2133 < 503 && Static2.anIntArray2[8] != -1) {
 			Static22.aBoolean184 = true;
-			Static33.aBoolean59 = true;
-			Static62.anInt1551 = 8;
+			Static33.redrawSidebar = true;
+			Static62.selectedTab = 8;
 		}
 		if (Static107.anInt2500 >= 599 && Static107.anInt2500 <= 629 && Static90.anInt2133 >= 466 && Static90.anInt2133 < 503 && Static2.anIntArray2[9] != -1) {
-			Static62.anInt1551 = 9;
-			Static33.aBoolean59 = true;
+			Static62.selectedTab = 9;
+			Static33.redrawSidebar = true;
 			Static22.aBoolean184 = true;
 		}
 		if (Static107.anInt2500 >= 627 && Static107.anInt2500 <= 671 && Static90.anInt2133 >= 467 && Static90.anInt2133 < 502 && Static2.anIntArray2[10] != -1) {
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 			Static22.aBoolean184 = true;
-			Static62.anInt1551 = 10;
+			Static62.selectedTab = 10;
 		}
 		if (Static107.anInt2500 >= 669 && Static107.anInt2500 <= 699 && Static90.anInt2133 >= 466 && Static90.anInt2133 < 503 && Static2.anIntArray2[11] != -1) {
 			Static22.aBoolean184 = true;
-			Static33.aBoolean59 = true;
-			Static62.anInt1551 = 11;
+			Static33.redrawSidebar = true;
+			Static62.selectedTab = 11;
 		}
 		if (Static107.anInt2500 >= 696 && Static107.anInt2500 <= 726 && Static90.anInt2133 >= 466 && Static90.anInt2133 < 503 && Static2.anIntArray2[12] != -1) {
-			Static33.aBoolean59 = true;
-			Static62.anInt1551 = 12;
+			Static33.redrawSidebar = true;
+			Static62.selectedTab = 12;
 			Static22.aBoolean184 = true;
 		}
 		if (Static107.anInt2500 >= 724 && Static107.anInt2500 <= 758 && Static90.anInt2133 >= 466 && Static90.anInt2133 < 502 && Static2.anIntArray2[13] != -1) {
-			Static62.anInt1551 = 13;
-			Static33.aBoolean59 = true;
+			Static62.selectedTab = 13;
+			Static33.redrawSidebar = true;
 			Static22.aBoolean184 = true;
 		}
 	}

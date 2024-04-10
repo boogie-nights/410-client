@@ -43,7 +43,7 @@ public final class Static103 {
 	public static Class40 aClass40_715 = Static13.method257("On");
 
 	@OriginalMember(owner = "client!vd", name = "w", descriptor = "I")
-	public static int anInt2492 = -1;
+	public static int flashingTab = -1;
 
 	@OriginalMember(owner = "client!vd", name = "A", descriptor = "I")
 	public static volatile int anInt2494 = 0;

@@ -122,8 +122,8 @@ public final class Static79 {
 								if (local578 <= arg6 && local569 <= arg0 && local578 + 32 > arg6 && arg0 < local569 + 32) {
 									Static18.anInt434 = local551;
 									Static68.anInt390 = local42 + (arg2 << 16);
-									if (local48.anIntArray331[local551] > 0) {
-										@Pc(643) ObjType local643 = Static105.get(local48.anIntArray331[local551] - 1);
+									if (local48.invSlotObjId[local551] > 0) {
+										@Pc(643) ObjType local643 = Static105.get(local48.invSlotObjId[local551] - 1);
 										if (objSelected == 1 && local48.aBoolean128) {
 											if (Static105.anInt2526 != (arg2 << 16) + local42 || Static30.anInt724 != local551) {
 												Static21.method402(Static80.method1334(new Class40[] { Static27.aClass40_193, Static87.aClass40_601, Static86.aClass40_590, local643.name}), 19, (arg2 << 16) + local42, local551, local643.anInt954);
@@ -206,7 +206,7 @@ public final class Static79 {
 							}
 						}
 					}
-				} else if (!local48.aBoolean125 || Static33.method614(arg5, local42) || Static72.aBoolean143) {
+				} else if (!local48.hide || Static33.method614(arg5, local42) || Static72.aBoolean143) {
 					method1276(arg0, local66, arg2, local66 + local48.anInt1605, local48.anInt1587, arg5, arg6, local75 + local48.height, local42, local75);
 					if (local48.height < local48.scroll) {
 						Static54.method920(local48, local66 + local48.anInt1605, local48.scroll, local48.height, arg5, arg0, arg6, local75);

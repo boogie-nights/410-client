@@ -140,17 +140,17 @@ public final class Static83 {
 			local247 = 383;
 		}
 		@Pc(270) int local270 = (int) (-325.949D * Math.atan2((double) local214, (double) local224)) & 0x7FF;
-		@Pc(274) int local274 = local270 - Static27.anInt686;
-		if (Static35.anInt824 < local247) {
-			Static35.anInt824 += Static75.anInt1832 * (local247 - Static35.anInt824) / 1000 + Static22.anInt2586;
-			if (Static35.anInt824 > local247) {
-				Static35.anInt824 = local247;
+		@Pc(274) int local274 = local270 - Static27.cameraYaw;
+		if (Static35.cameraPitch < local247) {
+			Static35.cameraPitch += Static75.cutsceneRotateAcceleration * (local247 - Static35.cameraPitch) / 1000 + Static22.anInt2586;
+			if (Static35.cameraPitch > local247) {
+				Static35.cameraPitch = local247;
 			}
 		}
-		if (Static35.anInt824 > local247) {
-			Static35.anInt824 -= (Static35.anInt824 - local247) * Static75.anInt1832 / 1000 + Static22.anInt2586;
-			if (local247 > Static35.anInt824) {
-				Static35.anInt824 = local247;
+		if (Static35.cameraPitch > local247) {
+			Static35.cameraPitch -= (Static35.cameraPitch - local247) * Static75.cutsceneRotateAcceleration / 1000 + Static22.anInt2586;
+			if (local247 > Static35.cameraPitch) {
+				Static35.cameraPitch = local247;
 			}
 		}
 		if (local274 > 1024) {
@@ -160,14 +160,14 @@ public final class Static83 {
 			local274 += 2048;
 		}
 		if (local274 > 0) {
-			Static27.anInt686 += local274 * Static75.anInt1832 / 1000 + Static22.anInt2586;
-			Static27.anInt686 &= 0x7FF;
+			Static27.cameraYaw += local274 * Static75.cutsceneRotateAcceleration / 1000 + Static22.anInt2586;
+			Static27.cameraYaw &= 0x7FF;
 		}
 		if (local274 < 0) {
-			Static27.anInt686 -= Static22.anInt2586 + Static75.anInt1832 * -local274 / 1000;
-			Static27.anInt686 &= 0x7FF;
+			Static27.cameraYaw -= Static22.anInt2586 + Static75.cutsceneRotateAcceleration * -local274 / 1000;
+			Static27.cameraYaw &= 0x7FF;
 		}
-		@Pc(370) int local370 = local270 - Static27.anInt686;
+		@Pc(370) int local370 = local270 - Static27.cameraYaw;
 		if (local370 > 1024) {
 			local370 -= 2048;
 		}
@@ -175,7 +175,7 @@ public final class Static83 {
 			local370 += 2048;
 		}
 		if (local370 < 0 && local274 > 0 || local370 > 0 && local274 < 0) {
-			Static27.anInt686 = local270;
+			Static27.cameraYaw = local270;
 		}
 	}
 

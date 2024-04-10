@@ -32,7 +32,7 @@ public final class Static80 {
 	public static Class2_Sub3_Sub1 out = new Class2_Sub3_Sub1(5000);
 
 	@OriginalMember(owner = "client!qc", name = "j", descriptor = "I")
-	public static int anInt1917 = 0;
+	public static int hintHeight = 0;
 
 	@OriginalMember(owner = "client!qc", name = "k", descriptor = "Lclient!o;")
 	public static Class40 aClass40_556 = Static13.method257(" (Xskill)2");

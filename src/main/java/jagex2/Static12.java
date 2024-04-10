@@ -124,7 +124,7 @@ public final class Static12 {
 							Static58.aClass2_Sub2_Sub2_Sub4Array8[local60.anInt773].draw(Static17.anInt426 - 12, Static20.anInt477 - 30);
 						}
 					}
-					if (Static91.anInt2139 == 1 && Static85.anInt1989 == Static63.anIntArray326[local9 - Static88.playerCount] && Static107.loopCycle % 20 < 10) {
+					if (Static91.hintType == 1 && Static85.hintNpc == Static63.anIntArray326[local9 - Static88.playerCount] && Static107.loopCycle % 20 < 10) {
 						Static103.method1649(local31.anInt2310 + 15, local31);
 						if (Static17.anInt426 > -1) {
 							Static101.aClass2_Sub2_Sub2_Sub4Array10[0].draw(Static17.anInt426 - 12, Static20.anInt477 + -28);
@@ -146,7 +146,7 @@ public final class Static12 {
 							}
 						}
 					}
-					if (local9 >= 0 && Static91.anInt2139 == 10 && Static97.anInt2353 == Static73.playerIds[local9]) {
+					if (local9 >= 0 && Static91.hintType == 10 && Static97.hintPlayer == Static73.playerIds[local9]) {
 						Static103.method1649(local31.anInt2310 + 15, local31);
 						if (Static17.anInt426 > -1) {
 							Static101.aClass2_Sub2_Sub2_Sub4Array10[1].draw(Static17.anInt426 - 12, -local79 + Static20.anInt477);

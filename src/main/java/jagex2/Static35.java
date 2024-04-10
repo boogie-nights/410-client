@@ -14,7 +14,7 @@ public final class Static35 {
 	public static Class5_Sub1 aClass5_Sub1_7;
 
 	@OriginalMember(owner = "client!ge", name = "F", descriptor = "I")
-	public static int anInt824;
+	public static int cameraPitch;
 
 	@OriginalMember(owner = "client!ge", name = "I", descriptor = "Lclient!p;")
 	public static PixMap aClass45_16;

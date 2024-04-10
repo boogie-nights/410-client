@@ -36,7 +36,7 @@ public final class Static58 {
 	public static Class40 aClass40_429 = Static13.method257("@yel@ days of*6nmember credit remaining)3*6n*6n@lre@Credit low(Q Renew now*6n@lre@to avoid losing members)3");
 
 	@OriginalMember(owner = "client!la", name = "rb", descriptor = "I")
-	public static int anInt1493 = 0;
+	public static int hintOffsetZ = 0;
 
 	@OriginalMember(owner = "client!la", name = "tb", descriptor = "Z")
 	public static boolean aBoolean116 = false;

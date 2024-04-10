@@ -14,7 +14,7 @@ public final class Static94 {
 	public static Class40 aClass40_629 = Static13.method257("Off");
 
 	@OriginalMember(owner = "client!td", name = "j", descriptor = "[I")
-	public static int[] anIntArray473 = new int[25];
+	public static int[] skillLevel = new int[25];
 
 	@OriginalMember(owner = "client!td", name = "k", descriptor = "Lclient!o;")
 	public static Class40 aClass40_630 = Static13.method257("Oct");
@@ -39,27 +39,27 @@ public final class Static94 {
 			Static52.redrawPrivacySettings = true;
 			Static22.aBoolean184 = true;
 			Static73.redrawChatback = true;
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 		}
 		Static22.method1713();
 		if (Static97.aBoolean175 && Static1.anInt16 == 1) {
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 		}
 		@Pc(32) boolean local32;
 		if (Static66.anInt1654 != -1) {
 			local32 = Static27.method533(Static66.anInt1654);
 			if (local32) {
-				Static33.aBoolean59 = true;
+				Static33.redrawSidebar = true;
 			}
 		}
 		if (Static21.anInt481 == 2) {
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 		}
 		if (Static88.anInt2077 == 2) {
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 		}
-		if (Static33.aBoolean59) {
-			Static33.aBoolean59 = false;
+		if (Static33.redrawSidebar) {
+			Static33.redrawSidebar = false;
 			Static87.method1401();
 		}
 		@Pc(101) int local101;
@@ -121,18 +121,18 @@ public final class Static94 {
 			Static2.method23();
 		}
 		Static19.method370();
-		if (Static103.anInt2492 != -1) {
+		if (Static103.flashingTab != -1) {
 			Static22.aBoolean184 = true;
 		}
 		if (Static22.aBoolean184) {
-			if (Static103.anInt2492 != -1 && Static62.anInt1551 == Static103.anInt2492) {
-				Static103.anInt2492 = -1;
+			if (Static103.flashingTab != -1 && Static62.selectedTab == Static103.flashingTab) {
+				Static103.flashingTab = -1;
 				Static80.out.p1isaac(145);
-				Static80.out.p1(Static62.anInt1551);
+				Static80.out.p1(Static62.selectedTab);
 			}
 			Static92.aBoolean165 = true;
 			Static22.aBoolean184 = false;
-			Static93.method1487(Static62.anInt1551, Static2.anIntArray2, Static107.loopCycle % 20 < 10 ? -1 : Static103.anInt2492, Static66.anInt1654 == -1, Static24.graphics);
+			Static93.method1487(Static62.selectedTab, Static2.anIntArray2, Static107.loopCycle % 20 < 10 ? -1 : Static103.flashingTab, Static66.anInt1654 == -1, Static24.graphics);
 		}
 		if (Static52.redrawPrivacySettings) {
 			Static92.aBoolean165 = true;
@@ -259,7 +259,7 @@ public final class Static94 {
 		aClass40_632 = null;
 		aClass40_629 = null;
 		aClass40_628 = null;
-		anIntArray473 = null;
+		skillLevel = null;
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(IIIILclient!ud;IZ)V")

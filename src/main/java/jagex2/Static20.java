@@ -258,17 +258,17 @@ public final class Static20 {
 		if (Static32.anInt742 > 553 && Static100.anInt2394 > 205 && Static32.anInt742 < 743 && Static100.anInt2394 < 466) {
 			if (Static66.anInt1654 != -1) {
 				Static79.method1276(Static100.anInt2394, 553, Static66.anInt1654, 743, 0, 1, Static32.anInt742, 466, -1, 205);
-			} else if (Static2.anIntArray2[Static62.anInt1551] != -1) {
-				Static79.method1276(Static100.anInt2394, 553, Static2.anIntArray2[Static62.anInt1551], 743, 0, 1, Static32.anInt742, 466, -1, 205);
+			} else if (Static2.anIntArray2[Static62.selectedTab] != -1) {
+				Static79.method1276(Static100.anInt2394, 553, Static2.anIntArray2[Static62.selectedTab], 743, 0, 1, Static32.anInt742, 466, -1, 205);
 			}
 		}
 		if (Static58.anInt1496 != Static38.anInt982) {
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 			Static58.anInt1496 = Static38.anInt982;
 		}
 		Static38.anInt982 = -1;
 		if (Static96.anInt2340 != Static84.anInt1979) {
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 			Static96.anInt2340 = Static84.anInt1979;
 		}
 		@Pc(175) boolean local175 = false;

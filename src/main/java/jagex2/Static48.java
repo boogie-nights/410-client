@@ -17,7 +17,7 @@ public final class Static48 {
 	private static Class40 aClass40_343 = Static13.method257("Hidden");
 
 	@OriginalMember(owner = "client!jc", name = "B", descriptor = "[I")
-	public static int[] anIntArray234 = new int[25];
+	public static int[] skillExperience = new int[25];
 
 	@OriginalMember(owner = "client!jc", name = "C", descriptor = "Lclient!o;")
 	public static Class40 aClass40_344 = Static13.method257("(U2");
@@ -182,7 +182,7 @@ public final class Static48 {
 		aClass40_346 = null;
 		aClass40_345 = null;
 		aClass40_344 = null;
-		anIntArray234 = null;
+		skillExperience = null;
 		BITMASK = null;
 	}
 }

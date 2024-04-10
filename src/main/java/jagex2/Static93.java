@@ -46,7 +46,7 @@ public final class Static93 {
 	public static Class40 aClass40_624 = Static13.method257(" you requested@lre@ new recovery*6n@lre@questions)3@yel@ The requested change will occur*6non: @lre@");
 
 	@OriginalMember(owner = "client!tc", name = "o", descriptor = "I")
-	public static int anInt2181 = 0;
+	public static int energy = 0;
 
 	@OriginalMember(owner = "client!tc", name = "p", descriptor = "I")
 	public static int anInt2182 = 0;

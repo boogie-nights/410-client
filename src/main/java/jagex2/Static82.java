@@ -123,7 +123,7 @@ public final class Static82 {
 				loc.unlink();
 			}
 		}
-		Static7.aBoolean22 = false;
+		Static7.cutscene = false;
 		if (Static38.flagSceneTileX != 0) {
 			Static38.flagSceneTileX -= dx;
 			Static80.flagSceneTileZ -= dz;
@@ -147,11 +147,11 @@ public final class Static82 {
 			return;
 		}
 		for (@Pc(17) int local17 = 0; local17 < Static99.ignoreCount; local17++) {
-			if (arg0 == Static84.aLongArray4[local17]) {
+			if (arg0 == Static84.ignoreName37[local17]) {
 				Static99.ignoreCount--;
-				Static33.aBoolean59 = true;
+				Static33.redrawSidebar = true;
 				for (@Pc(37) int local37 = local17; local37 < Static99.ignoreCount; local37++) {
-					Static84.aLongArray4[local37] = Static84.aLongArray4[local37 + 1];
+					Static84.ignoreName37[local37] = Static84.ignoreName37[local37 + 1];
 				}
 				Static80.out.p1isaac(168);
 				Static80.out.p8(arg0);

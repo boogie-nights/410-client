@@ -34,7 +34,7 @@ public final class Static54 {
 	public static boolean aBoolean103 = false;
 
 	@OriginalMember(owner = "client!kc", name = "kd", descriptor = "[I")
-	public static int[] anIntArray288 = new int[2000];
+	public static int[] varCache = new int[2000];
 
 	@OriginalMember(owner = "client!kc", name = "n", descriptor = "(I)V")
 	public static void method916() {
@@ -86,7 +86,7 @@ public final class Static54 {
 		aClass40_396 = null;
 		anIntArray287 = null;
 		aClass2_Sub2_Sub2_Sub4Array7 = null;
-		anIntArray288 = null;
+		varCache = null;
 		aClass5_18 = null;
 		aClass5_17 = null;
 	}
@@ -102,7 +102,7 @@ public final class Static54 {
 		if (arg6 >= arg1 && arg6 < arg1 + 16 && arg7 <= arg5 && arg7 + 16 > arg5) {
 			arg0.anInt1587 -= Static56.anInt2326 * 4;
 			if (arg4 == 1) {
-				Static33.aBoolean59 = true;
+				Static33.redrawSidebar = true;
 			}
 			if (arg4 == 2 || arg4 == 3) {
 				Static73.redrawChatback = true;
@@ -112,12 +112,12 @@ public final class Static54 {
 				Static73.redrawChatback = true;
 			}
 			if (arg4 == 1) {
-				Static33.aBoolean59 = true;
+				Static33.redrawSidebar = true;
 			}
 			arg0.anInt1587 += Static56.anInt2326 * 4;
 		} else if (arg1 - Static5.anInt180 <= arg6 && arg6 < arg1 + Static5.anInt180 + 16 && arg7 + 16 <= arg5 && arg5 < arg3 + arg7 - 16 && Static56.anInt2326 > 0) {
 			if (arg4 == 1) {
-				Static33.aBoolean59 = true;
+				Static33.redrawSidebar = true;
 			}
 			if (arg4 == 2 || arg4 == 3) {
 				Static73.redrawChatback = true;

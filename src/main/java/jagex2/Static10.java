@@ -98,18 +98,18 @@ public final class Static10 {
 				component.buttonType = 0;
 				component.text = Static61.aClass40_445;
 			} else {
-				if (Static62.anIntArray316[clientCode] == 0) {
+				if (Static62.friendWorld[clientCode] == 0) {
 					component.text = Static5.aClass40_43;
-				} else if (Static62.anIntArray316[clientCode] >= 5000) {
-					if (Static4.anInt140 == Static62.anIntArray316[clientCode]) {
-						component.text = Static80.method1334(new Class40[] { Static14.aClass40_85, Static53.method859(Static62.anIntArray316[clientCode] - 5000) });
+				} else if (Static62.friendWorld[clientCode] >= 5000) {
+					if (Static4.nodeId == Static62.friendWorld[clientCode]) {
+						component.text = Static80.method1334(new Class40[] { Static14.aClass40_85, Static53.method859(Static62.friendWorld[clientCode] - 5000) });
 					} else {
-						component.text = Static80.method1334(new Class40[] { Static73.aClass40_514, Static53.method859(Static62.anIntArray316[clientCode] - 5000) });
+						component.text = Static80.method1334(new Class40[] { Static73.aClass40_514, Static53.method859(Static62.friendWorld[clientCode] - 5000) });
 					}
-				} else if (Static4.anInt140 == Static62.anIntArray316[clientCode]) {
-					component.text = Static80.method1334(new Class40[] { Static44.aClass40_330, Static53.method859(Static62.anIntArray316[clientCode]) });
+				} else if (Static4.nodeId == Static62.friendWorld[clientCode]) {
+					component.text = Static80.method1334(new Class40[] { Static44.aClass40_330, Static53.method859(Static62.friendWorld[clientCode]) });
 				} else {
-					component.text = Static80.method1334(new Class40[] { Static79.aClass40_545, Static53.method859(Static62.anIntArray316[clientCode]) });
+					component.text = Static80.method1334(new Class40[] { Static79.aClass40_545, Static53.method859(Static62.friendWorld[clientCode]) });
 				}
 				component.buttonType = 1;
 			}
@@ -139,7 +139,7 @@ public final class Static10 {
 					component.buttonType = 0;
 					component.text = Static61.aClass40_445;
 				} else {
-					component.text = Static48.method819(Static84.aLongArray4[clientCode]).method1167();
+					component.text = Static48.method819(Static84.ignoreName37[clientCode]).method1167();
 					component.buttonType = 1;
 				}
 			}
@@ -152,7 +152,7 @@ public final class Static10 {
 			component.xan = 150;
 			component.yan = (int) (Math.sin((double) Static107.loopCycle / 40.0D) * 256.0D) & 0x7FF;
 			component.anInt1607 = 5;
-			component.anInt1602 = 0;
+			component.model = 0;
 		} else if (clientCode == 324) {
 			if (Static97.anInt2356 == -1) {
 				Static4.anInt139 = component.anInt1598;
@@ -185,11 +185,11 @@ public final class Static10 {
 				if (Static61.anInt1550 < 1) {
 					component.text = Static61.aClass40_445;
 				} else if (Static54.aBoolean103) {
-					component.anInt1584 = 16711680;
+					component.colour = 16711680;
 					component.text = Static15.aClass40_540;
 				} else {
 					component.text = Static95.aClass40_646;
-					component.anInt1584 = 0xFFFFFF;
+					component.colour = 0xFFFFFF;
 				}
 			}
 			@Pc(549) Class40 local549;

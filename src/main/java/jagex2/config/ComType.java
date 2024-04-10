@@ -21,7 +21,7 @@ public final class ComType extends Hashable {
 	public boolean aBoolean124;
 
 	@OriginalMember(owner = "client!mc", name = "V", descriptor = "Z")
-	public boolean aBoolean125;
+	public boolean hide;
 
 	@OriginalMember(owner = "client!mc", name = "X", descriptor = "I")
 	public int anInt1573;
@@ -45,7 +45,7 @@ public final class ComType extends Hashable {
 	public Class40 aClass40_464;
 
 	@OriginalMember(owner = "client!mc", name = "jb", descriptor = "[I")
-	public int[] anIntArray327;
+	public int[] invSlotObjCount;
 
 	@OriginalMember(owner = "client!mc", name = "lb", descriptor = "[[I")
 	public int[][] anIntArrayArray11;
@@ -60,7 +60,7 @@ public final class ComType extends Hashable {
 	public int anInt1583;
 
 	@OriginalMember(owner = "client!mc", name = "qb", descriptor = "I")
-	public int anInt1584;
+	public int colour;
 
 	@OriginalMember(owner = "client!mc", name = "rb", descriptor = "[I")
 	public int[] anIntArray329;
@@ -72,7 +72,7 @@ public final class ComType extends Hashable {
 	public int anInt1585;
 
 	@OriginalMember(owner = "client!mc", name = "ub", descriptor = "I")
-	public int anInt1586;
+	public int zoom;
 
 	@OriginalMember(owner = "client!mc", name = "vb", descriptor = "I")
 	public int anInt1587;
@@ -117,7 +117,7 @@ public final class ComType extends Hashable {
 	public int scroll;
 
 	@OriginalMember(owner = "client!mc", name = "Rb", descriptor = "I")
-	public int anInt1602;
+	public int model;
 
 	@OriginalMember(owner = "client!mc", name = "Tb", descriptor = "I")
 	public int anInt1604;
@@ -126,7 +126,7 @@ public final class ComType extends Hashable {
 	public int anInt1605;
 
 	@OriginalMember(owner = "client!mc", name = "Vb", descriptor = "[I")
-	public int[] anIntArray331;
+	public int[] invSlotObjId;
 
 	@OriginalMember(owner = "client!mc", name = "Wb", descriptor = "Z")
 	public boolean aBoolean129;
@@ -234,15 +234,15 @@ public final class ComType extends Hashable {
 		}
 		if (this.anInt1613 == 0) {
 			this.scroll = arg0.g2();
-			this.aBoolean125 = arg0.g1() == 1;
+			this.hide = arg0.g1() == 1;
 		}
 		if (this.anInt1613 == 1) {
 			arg0.g2();
 			arg0.g1();
 		}
 		if (this.anInt1613 == 2) {
-			this.anIntArray327 = new int[this.height * this.anInt1605];
-			this.anIntArray331 = new int[this.anInt1605 * this.height];
+			this.invSlotObjCount = new int[this.height * this.anInt1605];
+			this.invSlotObjId = new int[this.anInt1605 * this.height];
 			this.aBoolean129 = arg0.g1() == 1;
 			this.aBoolean128 = arg0.g1() == 1;
 			this.aBoolean130 = arg0.g1() == 1;
@@ -283,7 +283,7 @@ public final class ComType extends Hashable {
 			this.aClass40_468 = arg0.method1721();
 		}
 		if (this.anInt1613 == 1 || this.anInt1613 == 3 || this.anInt1613 == 4) {
-			this.anInt1584 = arg0.g4();
+			this.colour = arg0.g4();
 		}
 		if (this.anInt1613 == 3 || this.anInt1613 == 4) {
 			this.anInt1589 = arg0.g4();
@@ -296,10 +296,10 @@ public final class ComType extends Hashable {
 		}
 		if (this.anInt1613 == 6) {
 			this.anInt1607 = 1;
-			this.anInt1602 = arg0.g2();
+			this.model = arg0.g2();
 			this.anInt1590 = 1;
-			if (this.anInt1602 == 65535) {
-				this.anInt1602 = -1;
+			if (this.model == 65535) {
+				this.model = -1;
 			}
 			this.anInt1578 = arg0.g2();
 			if (this.anInt1578 == 65535) {
@@ -313,17 +313,17 @@ public final class ComType extends Hashable {
 			if (this.anInt1592 == 65535) {
 				this.anInt1592 = -1;
 			}
-			this.anInt1586 = arg0.g2();
+			this.zoom = arg0.g2();
 			this.xan = arg0.g2();
 			this.yan = arg0.g2();
 		}
 		if (this.anInt1613 == 7) {
-			this.anIntArray327 = new int[this.height * this.anInt1605];
-			this.anIntArray331 = new int[this.anInt1605 * this.height];
+			this.invSlotObjCount = new int[this.height * this.anInt1605];
+			this.invSlotObjId = new int[this.anInt1605 * this.height];
 			this.aBoolean124 = arg0.g1() == 1;
 			this.anInt1568 = arg0.g1();
 			this.aBoolean127 = arg0.g1() == 1;
-			this.anInt1584 = arg0.g4();
+			this.colour = arg0.g4();
 			this.anInt1572 = arg0.g2b();
 			this.anInt1580 = arg0.g2b();
 			this.aBoolean128 = arg0.g1() == 1;
@@ -367,12 +367,12 @@ public final class ComType extends Hashable {
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(IZI)V")
 	public void method1054(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(9) int local9 = this.anIntArray331[arg1];
-		this.anIntArray331[arg1] = this.anIntArray331[arg0];
-		this.anIntArray331[arg0] = local9;
-		@Pc(31) int local31 = this.anIntArray327[arg1];
-		this.anIntArray327[arg1] = this.anIntArray327[arg0];
-		this.anIntArray327[arg0] = local31;
+		@Pc(9) int local9 = this.invSlotObjId[arg1];
+		this.invSlotObjId[arg1] = this.invSlotObjId[arg0];
+		this.invSlotObjId[arg0] = local9;
+		@Pc(31) int local31 = this.invSlotObjCount[arg1];
+		this.invSlotObjCount[arg1] = this.invSlotObjCount[arg0];
+		this.invSlotObjCount[arg0] = local31;
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(ILclient!f;ZLclient!le;I)Lclient!ne;")
@@ -385,7 +385,7 @@ public final class ComType extends Hashable {
 			local19 = this.anInt1578;
 		} else {
 			local16 = this.anInt1607;
-			local19 = this.anInt1602;
+			local19 = this.model;
 		}
 		if (local16 == 0) {
 			return null;

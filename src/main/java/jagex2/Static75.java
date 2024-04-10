@@ -12,7 +12,7 @@ public final class Static75 {
 	public static byte[][][] aByteArrayArrayArray9;
 
 	@OriginalMember(owner = "client!od", name = "z", descriptor = "I")
-	public static int anInt1832;
+	public static int cutsceneRotateAcceleration;
 
 	@OriginalMember(owner = "client!od", name = "g", descriptor = "Lclient!o;")
 	public static Class40 aClass40_527 = Static13.method257("Loading textures )2 ");

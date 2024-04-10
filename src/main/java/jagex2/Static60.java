@@ -40,7 +40,7 @@ public final class Static60 {
 		Static80.out.p1isaac(255);
 		if (Static66.anInt1654 != -1) {
 			Static83.method1350(Static66.anInt1654);
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 			Static20.aBoolean40 = false;
 			Static22.aBoolean184 = true;
 			Static66.anInt1654 = -1;

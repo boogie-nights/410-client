@@ -26,7 +26,7 @@ public final class Static91 {
 	public static int[][][] levelHeightMap = new int[4][105][105];
 
 	@OriginalMember(owner = "client!ta", name = "d", descriptor = "I")
-	public static int anInt2139 = 0;
+	public static int hintType = 0;
 
 	@OriginalMember(owner = "client!ta", name = "e", descriptor = "[[[Lclient!od;")
 	public static LinkedList[][][] levelObjStacks = new LinkedList[4][104][104];
@@ -98,7 +98,7 @@ public final class Static91 {
 			arg0.anInt2297 = 0;
 			arg0.anInt2277 = 0;
 			arg0.anInt2302 = -1;
-			arg0.anInt2307 = -1;
+			arg0.primarySeqId = -1;
 			arg0.x = arg0.size * 64 + arg0.pathTileX[0] * 128;
 			arg0.z = arg0.size * 64 + arg0.pathTileZ[0] * 128;
 			arg0.method1543();
@@ -106,7 +106,7 @@ public final class Static91 {
 		if (Static88.localPlayer == arg0 && (arg0.x < 1536 || arg0.z < 1536 || arg0.x >= 11776 || arg0.z >= 11776)) {
 			arg0.anInt2302 = -1;
 			arg0.anInt2277 = 0;
-			arg0.anInt2307 = -1;
+			arg0.primarySeqId = -1;
 			arg0.anInt2297 = 0;
 			arg0.x = arg0.pathTileX[0] * 128 + arg0.size * 64;
 			arg0.z = arg0.pathTileZ[0] * 128 + arg0.size * 64;

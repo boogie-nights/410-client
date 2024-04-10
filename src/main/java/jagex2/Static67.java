@@ -50,14 +50,14 @@ public final class Static67 {
 	public static int anInt1675 = 0;
 
 	@OriginalMember(owner = "client!na", name = "s", descriptor = "[I")
-	public static int[] anIntArray339 = new int[2000];
+	public static int[] varps = new int[2000];
 
 	@OriginalMember(owner = "client!na", name = "a", descriptor = "(I)V")
 	public static void method1096() {
 		aClass40_486 = null;
 		aClass40_488 = null;
 		aClass40_482 = null;
-		anIntArray339 = null;
+		varps = null;
 		aClass40_487 = null;
 		aClass40_484 = null;
 		aClass45_26 = null;
@@ -79,12 +79,12 @@ public final class Static67 {
 			return;
 		}
 		Static91.anInt2146 = 0;
-		if (Static76.aBoolean164 || Static70.aClass25_36 == null) {
+		if (Static76.aBoolean164 || Static70.stream == null) {
 			return;
 		}
 		Static80.out.p1isaac(217);
 		try {
-			Static70.aClass25_36.method731(Static80.out.data, Static80.out.pos);
+			Static70.stream.method731(Static80.out.data, Static80.out.pos);
 			Static80.out.pos = 0;
 		} catch (@Pc(40) IOException local40) {
 			Static76.aBoolean164 = true;
@@ -93,8 +93,8 @@ public final class Static67 {
 
 	@OriginalMember(owner = "client!na", name = "b", descriptor = "(I)V")
 	public static void method1099() {
-		if (Static91.anInt2139 == 2) {
-			Static104.method1667(Static80.anInt1917 * 2, (Static16.anInt410 - Static87.anInt2058 << 7) + Static19.anInt441, Static58.anInt1493 + (-Static30.anInt725 + Static83.anInt1952 << 7));
+		if (Static91.hintType == 2) {
+			Static104.method1667(Static80.hintHeight * 2, (Static16.anInt410 - Static87.anInt2058 << 7) + Static19.hintOffsetX, Static58.hintOffsetZ + (-Static30.anInt725 + Static83.anInt1952 << 7));
 			if (Static17.anInt426 > -1 && Static107.loopCycle % 20 < 10) {
 				Static101.aClass2_Sub2_Sub2_Sub4Array10[0].draw(Static17.anInt426 - 12, Static20.anInt477 + -28);
 			}

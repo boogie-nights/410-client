@@ -153,7 +153,7 @@ public final class Class2_Sub2_Sub7 extends Hashable {
 		if (this.anInt765 != -1) {
 			local10 = Static107.method1662(this.anInt765);
 		} else if (this.anInt768 != -1) {
-			local10 = Static67.anIntArray339[this.anInt768];
+			local10 = Static67.varps[this.anInt768];
 		}
 		return local10 >= 0 && this.anIntArray154.length > local10 && this.anIntArray154[local10] != -1;
 	}
@@ -259,7 +259,7 @@ public final class Class2_Sub2_Sub7 extends Hashable {
 		if (this.anInt765 != -1) {
 			local13 = Static107.method1662(this.anInt765);
 		} else if (this.anInt768 != -1) {
-			local13 = Static67.anIntArray339[this.anInt768];
+			local13 = Static67.varps[this.anInt768];
 		}
 		return local13 < 0 || this.anIntArray154.length <= local13 || this.anIntArray154[local13] == -1 ? null : Static36.method640(this.anIntArray154[local13]);
 	}

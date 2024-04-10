@@ -33,7 +33,7 @@ public final class Static19 {
 	public static int overrideChat = 0;
 
 	@OriginalMember(owner = "client!de", name = "k", descriptor = "I")
-	public static int anInt441 = 0;
+	public static int hintOffsetX = 0;
 
 	@OriginalMember(owner = "client!de", name = "l", descriptor = "I")
 	public static int anInt442 = 0;
@@ -181,7 +181,7 @@ public final class Static19 {
 				@Pc(321) long local321 = local288.aClass40_395.toBase37();
 				@Pc(323) boolean local323 = false;
 				for (@Pc(325) int local325 = 0; local325 < Static22.friendCount; local325++) {
-					if (local321 == Static21.aLongArray2[local325] && Static62.anIntArray316[local325] != 0) {
+					if (local321 == Static21.friendName37[local325] && Static62.friendWorld[local325] != 0) {
 						local323 = true;
 						break;
 					}
@@ -199,22 +199,22 @@ public final class Static19 {
 				}
 			}
 		}
-		if (Static91.anInt2139 != 0 && Static107.loopCycle % 20 < 10) {
-			if (Static91.anInt2139 == 1 && Static85.anInt1989 >= 0 && Static85.anInt1989 < Static2.npcs.length) {
-				@Pc(427) NpcEntity local427 = Static2.npcs[Static85.anInt1989];
+		if (Static91.hintType != 0 && Static107.loopCycle % 20 < 10) {
+			if (Static91.hintType == 1 && Static85.hintNpc >= 0 && Static85.hintNpc < Static2.npcs.length) {
+				@Pc(427) NpcEntity local427 = Static2.npcs[Static85.hintNpc];
 				if (local427 != null) {
 					local77 = local427.x / 32 - Static88.localPlayer.x / 32;
 					local20 = local427.z / 32 - Static88.localPlayer.z / 32;
 					Static103.method1646(Static13.aClass2_Sub2_Sub2_Sub4Array3[1], local20, local77);
 				}
 			}
-			if (Static91.anInt2139 == 2) {
+			if (Static91.hintType == 2) {
 				local77 = (-Static87.anInt2058 + Static16.anInt410) * 4 + 2 - Static88.localPlayer.x / 32;
 				local20 = (Static83.anInt1952 - Static30.anInt725) * 4 + 2 - Static88.localPlayer.z / 32;
 				Static103.method1646(Static13.aClass2_Sub2_Sub2_Sub4Array3[1], local20, local77);
 			}
-			if (Static91.anInt2139 == 10 && Static97.anInt2353 >= 0 && Static100.players.length > Static97.anInt2353) {
-				local288 = Static100.players[Static97.anInt2353];
+			if (Static91.hintType == 10 && Static97.hintPlayer >= 0 && Static100.players.length > Static97.hintPlayer) {
+				local288 = Static100.players[Static97.hintPlayer];
 				if (local288 != null) {
 					local20 = local288.z / 32 - Static88.localPlayer.z / 32;
 					local77 = local288.x / 32 - Static88.localPlayer.x / 32;

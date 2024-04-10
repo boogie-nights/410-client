@@ -153,7 +153,7 @@ public abstract class PathingEntity extends Entity {
 	public final int[] pathTileZ = new int[10];
 
 	@OriginalMember(owner = "client!ke", name = "hc", descriptor = "I")
-	public int anInt2307 = -1;
+	public int primarySeqId = -1;
 
 	@OriginalMember(owner = "client!ke", name = "qc", descriptor = "I")
 	public int anInt2316 = 0;
@@ -201,8 +201,8 @@ public abstract class PathingEntity extends Entity {
 
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(ZIBI)V")
 	public final void move(@OriginalArg(0) boolean teleport, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		if (this.anInt2307 != -1 && Static62.method1042(this.anInt2307).anInt666 == 1) {
-			this.anInt2307 = -1;
+		if (this.primarySeqId != -1 && Static62.method1042(this.primarySeqId).anInt666 == 1) {
+			this.primarySeqId = -1;
 		}
 		if (!teleport) {
 			@Pc(31) int local31 = arg1 - this.pathTileZ[0];
@@ -235,8 +235,8 @@ public abstract class PathingEntity extends Entity {
 	public final void step(@OriginalArg(0) int arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(6) int local6 = this.pathTileX[0];
 		@Pc(15) int local15 = this.pathTileZ[0];
-		if (this.anInt2307 != -1 && Static62.method1042(this.anInt2307).anInt666 == 1) {
-			this.anInt2307 = -1;
+		if (this.primarySeqId != -1 && Static62.method1042(this.primarySeqId).anInt666 == 1) {
+			this.primarySeqId = -1;
 		}
 		if (arg0 == 0) {
 			local6--;

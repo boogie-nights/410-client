@@ -19,7 +19,7 @@ public final class Static27 {
 	public static int anInt685;
 
 	@OriginalMember(owner = "client!fb", name = "p", descriptor = "I")
-	public static int anInt686;
+	public static int cameraYaw;
 
 	@OriginalMember(owner = "client!fb", name = "x", descriptor = "Lclient!ud;")
 	public static Class5 aClass5_9;

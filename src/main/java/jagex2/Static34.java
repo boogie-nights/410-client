@@ -116,7 +116,7 @@ public final class Static34 {
 					Static93.anInt2182++;
 				}
 				for (@Pc(159) int local159 = 0; local159 < 100; local159++) {
-					@Pc(165) int local165 = Static31.aClass25_48.method728();
+					@Pc(165) int local165 = Static31.aClass25_48.available();
 					if (local165 < 0) {
 						throw new IOException();
 					}
@@ -139,7 +139,7 @@ public final class Static34 {
 						if (local165 < local201) {
 							local201 = local165;
 						}
-						Static31.aClass25_48.method725(Static97.aPacket_5.pos, local201, Static97.aPacket_5.data);
+						Static31.aClass25_48.read(Static97.aPacket_5.pos, local201, Static97.aPacket_5.data);
 						if (Static7.aByte1 != 0) {
 							for (local218 = 0; local218 < local201; local218++) {
 								Static97.aPacket_5.data[local218 + Static97.aPacket_5.pos] ^= Static7.aByte1;
@@ -189,7 +189,7 @@ public final class Static34 {
 						if (local165 < local218) {
 							local218 = local165;
 						}
-						Static31.aClass25_48.method725(Static29.aClass2_Sub3_2.pos, local218, Static29.aClass2_Sub3_2.data);
+						Static31.aClass25_48.read(Static29.aClass2_Sub3_2.pos, local218, Static29.aClass2_Sub3_2.data);
 						if (Static7.aByte1 != 0) {
 							for (local272 = 0; local272 < local218; local272++) {
 								Static29.aClass2_Sub3_2.data[local272 + Static29.aClass2_Sub3_2.pos] ^= Static7.aByte1;
@@ -259,10 +259,10 @@ public final class Static34 {
 	@OriginalMember(owner = "client!gd", name = "d", descriptor = "(I)V")
 	public static void method626() {
 		if (Static67.anInt1672 > 0) {
-			Static61.method1039();
+			Static61.logout();
 		} else {
 			Static7.method187(40);
-			Static36.aClass25_20 = Static70.aClass25_36;
+			Static36.aClass25_20 = Static70.stream;
 		}
 	}
 }

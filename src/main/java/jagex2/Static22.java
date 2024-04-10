@@ -60,12 +60,12 @@ public final class Static22 {
 	}
 
 	@OriginalMember(owner = "client!eb", name = "b", descriptor = "(IB)V")
-	public static void method1700(@OriginalArg(0) int arg0) {
-		@Pc(15) int local15 = Static98.method1568(arg0).anInt1076;
+	public static void updateVarp(@OriginalArg(0) int id) {
+		@Pc(15) int local15 = Static98.method1568(id).anInt1076;
 		if (local15 == 0) {
 			return;
 		}
-		@Pc(25) int local25 = Static67.anIntArray339[arg0];
+		@Pc(25) int local25 = Static67.varps[id];
 		if (local15 == 1) {
 			if (local25 == 1) {
 				Static6.method168(0.9D);
@@ -128,19 +128,19 @@ public final class Static22 {
 		}
 		if (local15 == 4) {
 			if (local25 == 0) {
-				Static98.anInt2372 = 127;
+				Static98.wavevol = 127;
 			}
 			if (local25 == 1) {
-				Static98.anInt2372 = 96;
+				Static98.wavevol = 96;
 			}
 			if (local25 == 2) {
-				Static98.anInt2372 = 64;
+				Static98.wavevol = 64;
 			}
 			if (local25 == 3) {
-				Static98.anInt2372 = 32;
+				Static98.wavevol = 32;
 			}
 			if (local25 == 4) {
-				Static98.anInt2372 = 0;
+				Static98.wavevol = 0;
 			}
 		}
 		if (local15 == 5) {
@@ -159,18 +159,18 @@ public final class Static22 {
 		Static1.method3();
 		@Pc(36) int local36;
 		@Pc(34) int local34;
-		if (!Static7.aBoolean22) {
+		if (!Static7.cutscene) {
 			local34 = Static67.anInt1669 + Static10.anInt262 & 0x7FF;
 			local36 = Static93.anInt2177;
 			if (local36 < Static13.anInt308 / 256) {
 				local36 = Static13.anInt308 / 256;
 			}
-			if (Static98.aBooleanArray35[4] && Static36.anIntArray164[4] + 128 > local36) {
+			if (Static98.cameraModifierEnabled[4] && Static36.anIntArray164[4] + 128 > local36) {
 				local36 = Static36.anIntArray164[4] + 128;
 			}
 			Static41.method752(Static23.anInt577, local34, Static66.anInt1653, local36, Static86.method1383(Static1.currentLevel, Static88.localPlayer.x, Static88.localPlayer.z) - 50, local36 * 3 + 600);
 		}
-		if (Static7.aBoolean22) {
+		if (Static7.cutscene) {
 			local36 = Static18.method361();
 		} else {
 			local36 = Static59.method995();
@@ -178,24 +178,24 @@ public final class Static22 {
 		local34 = Static48.anInt1114;
 		@Pc(96) int local96 = Static15.anInt1863;
 		@Pc(98) int local98 = Static81.anInt1935;
-		@Pc(100) int local100 = Static35.anInt824;
-		@Pc(102) int local102 = Static27.anInt686;
+		@Pc(100) int local100 = Static35.cameraPitch;
+		@Pc(102) int local102 = Static27.cameraYaw;
 		for (@Pc(104) int local104 = 0; local104 < 5; local104++) {
-			if (Static98.aBooleanArray35[local104]) {
+			if (Static98.cameraModifierEnabled[local104]) {
 				@Pc(146) int local146 = (int) ((double) -Static20.anIntArray93[local104] + (double) (Static20.anIntArray93[local104] * 2 + 1) * Math.random() + Math.sin((double) Static79.anIntArray415[local104] * ((double) Static35.anIntArray159[local104] / 100.0D)) * (double) Static36.anIntArray164[local104]);
 				if (local104 == 3) {
-					Static27.anInt686 = Static27.anInt686 + local146 & 0x7FF;
+					Static27.cameraYaw = Static27.cameraYaw + local146 & 0x7FF;
 				}
 				if (local104 == 2) {
 					Static15.anInt1863 += local146;
 				}
 				if (local104 == 4) {
-					Static35.anInt824 += local146;
-					if (Static35.anInt824 < 128) {
-						Static35.anInt824 = 128;
+					Static35.cameraPitch += local146;
+					if (Static35.cameraPitch < 128) {
+						Static35.cameraPitch = 128;
 					}
-					if (Static35.anInt824 > 383) {
-						Static35.anInt824 = 383;
+					if (Static35.cameraPitch > 383) {
+						Static35.cameraPitch = 383;
 					}
 				}
 				if (local104 == 1) {
@@ -212,7 +212,7 @@ public final class Static22 {
 		Static71.pickedCount = 0;
 		Static71.mouseX = Static32.anInt742 - 4;
 		Static26.clear();
-		Static93.scene.method1430(Static48.anInt1114, Static81.anInt1935, Static15.anInt1863, Static35.anInt824, Static27.anInt686, local36);
+		Static93.scene.method1430(Static48.anInt1114, Static81.anInt1935, Static15.anInt1863, Static35.cameraPitch, Static27.cameraYaw, local36);
 		Static93.scene.clearTemporaryLocs();
 		Static12.method253();
 		Static67.method1099();
@@ -228,10 +228,10 @@ public final class Static22 {
 		}
 		Static80.method1333(Static24.graphics);
 		Static81.anInt1935 = local98;
-		Static35.anInt824 = local100;
+		Static35.cameraPitch = local100;
 		Static15.anInt1863 = local96;
 		Static48.anInt1114 = local34;
-		Static27.anInt686 = local102;
+		Static27.cameraYaw = local102;
 	}
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(I[BZ)I")

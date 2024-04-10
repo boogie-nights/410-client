@@ -12,7 +12,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static70 {
 
 	@OriginalMember(owner = "client!nd", name = "z", descriptor = "Lclient!hc;")
-	public static ClientStream aClass25_36;
+	public static ClientStream stream;
 
 	@OriginalMember(owner = "client!nd", name = "D", descriptor = "[I")
 	public static int[] flameGradient1;
@@ -66,7 +66,7 @@ public final class Static70 {
 				if (local57 == 65535) {
 					local57 = -1;
 				}
-				if (local57 == local26.anInt2307 && local57 != -1) {
+				if (local57 == local26.primarySeqId && local57 != -1) {
 					@Pc(115) int local115 = Static62.method1042(local57).anInt662;
 					if (local115 == 1) {
 						local26.anInt2316 = 0;
@@ -77,11 +77,11 @@ public final class Static70 {
 					if (local115 == 2) {
 						local26.anInt2300 = 0;
 					}
-				} else if (local57 == -1 || local26.anInt2307 == -1 || Static62.method1042(local57).anInt658 >= Static62.method1042(local26.anInt2307).anInt658) {
+				} else if (local57 == -1 || local26.primarySeqId == -1 || Static62.method1042(local57).anInt658 >= Static62.method1042(local26.primarySeqId).anInt658) {
 					local26.anInt2316 = 0;
 					local26.anInt2300 = 0;
 					local26.anInt2267 = 0;
-					local26.anInt2307 = local57;
+					local26.primarySeqId = local57;
 					local26.anInt2281 = local26.anInt2309;
 					local26.anInt2313 = local61;
 				}
@@ -207,7 +207,7 @@ public final class Static70 {
 	@OriginalMember(owner = "client!nd", name = "c", descriptor = "(B)V")
 	public static void method1112() {
 		aClass40_494 = null;
-		aClass25_36 = null;
+		stream = null;
 		aClass2_Sub2_Sub2_Sub3Array8 = null;
 		aClass40_496 = null;
 		anIntArrayArray15 = null;
@@ -241,13 +241,13 @@ public final class Static70 {
 			return;
 		}
 		for (@Pc(14) int local14 = 0; local14 < Static22.friendCount; local14++) {
-			if (arg0 == Static21.aLongArray2[local14]) {
+			if (arg0 == Static21.friendName37[local14]) {
 				Static22.friendCount--;
-				Static33.aBoolean59 = true;
+				Static33.redrawSidebar = true;
 				for (@Pc(40) int local40 = local14; local40 < Static22.friendCount; local40++) {
 					Static51.friendName[local40] = Static51.friendName[local40 + 1];
-					Static62.anIntArray316[local40] = Static62.anIntArray316[local40 + 1];
-					Static21.aLongArray2[local40] = Static21.aLongArray2[local40 + 1];
+					Static62.friendWorld[local40] = Static62.friendWorld[local40 + 1];
+					Static21.friendName37[local40] = Static21.friendName37[local40 + 1];
 				}
 				Static80.out.p1isaac(30);
 				Static80.out.p8(arg0);

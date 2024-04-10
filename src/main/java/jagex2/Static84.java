@@ -20,7 +20,7 @@ public final class Static84 {
 	public static int anInt1971 = -1;
 
 	@OriginalMember(owner = "client!rd", name = "b", descriptor = "[J")
-	public static long[] aLongArray4 = new long[100];
+	public static long[] ignoreName37 = new long[100];
 
 	@OriginalMember(owner = "client!rd", name = "e", descriptor = "I")
 	public static int systemUpdateTimer = 0;
@@ -48,7 +48,7 @@ public final class Static84 {
 		aClass40_569 = null;
 		aClass40_570 = null;
 		anIntArray431 = null;
-		aLongArray4 = null;
+		ignoreName37 = null;
 	}
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(B[B)[B")

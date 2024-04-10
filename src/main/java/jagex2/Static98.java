@@ -21,7 +21,7 @@ public final class Static98 {
 	public static Class40 aClass40_674 = Static13.method257("Loading )2 please wait)3");
 
 	@OriginalMember(owner = "client!uc", name = "c", descriptor = "[Z")
-	public static boolean[] aBooleanArray35 = new boolean[5];
+	public static boolean[] cameraModifierEnabled = new boolean[5];
 
 	@OriginalMember(owner = "client!uc", name = "d", descriptor = "Lclient!nb;")
 	public static Applet_Sub1 anApplet_Sub1_1 = null;
@@ -51,7 +51,7 @@ public final class Static98 {
 	public static int anInt2371 = 0;
 
 	@OriginalMember(owner = "client!uc", name = "z", descriptor = "I")
-	public static int anInt2372 = 127;
+	public static int wavevol = 127;
 
 	@OriginalMember(owner = "client!uc", name = "A", descriptor = "J")
 	public static long aLong139 = 0L;
@@ -197,7 +197,7 @@ public final class Static98 {
 		aModelArray1 = null;
 		progressMeterText = null;
 		aClass40_681 = null;
-		aBooleanArray35 = null;
+		cameraModifierEnabled = null;
 		aClass40_677 = null;
 		aClass45_30 = null;
 		aClass40_678 = null;

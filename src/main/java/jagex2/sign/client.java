@@ -23,7 +23,7 @@ public final class client extends Applet_Sub1 {
 			if (arg0.length != 5) {
 				Static92.method1480();
 			}
-			Static4.anInt140 = Integer.parseInt(arg0[0]);
+			Static4.nodeId = Integer.parseInt(arg0[0]);
 			if (arg0[1].equals("live")) {
 				Static90.anInt2132 = 0;
 			} else if (arg0[1].equals("office")) {
@@ -135,9 +135,9 @@ public final class client extends Applet_Sub1 {
 	@OriginalMember(owner = "client!client", name = "b", descriptor = "(I)V")
 	@Override
 	protected void method327() {
-		Static96.anInt2341 = Static90.anInt2132 == 0 ? 43594 : Static4.anInt140 + 40000;
+		Static96.anInt2341 = Static90.anInt2132 == 0 ? 43594 : Static4.nodeId + 40000;
 		Static59.anInt1500 = Static96.anInt2341;
-		Static52.anInt1173 = Static90.anInt2132 == 0 ? 443 : Static4.anInt140 + 50000;
+		Static52.anInt1173 = Static90.anInt2132 == 0 ? 443 : Static4.nodeId + 50000;
 		Static56.method1538();
 		Static37.method712(Static7.method185());
 		Static67.method1097(Static7.method185());
@@ -190,7 +190,7 @@ public final class client extends Applet_Sub1 {
 		if (!this.method331()) {
 			return;
 		}
-		Static4.anInt140 = Integer.parseInt(this.getParameter("worldid"));
+		Static4.nodeId = Integer.parseInt(this.getParameter("worldid"));
 		Static20.anInt475 = Integer.parseInt(this.getParameter("modewhat"));
 		Static90.anInt2132 = Integer.parseInt(this.getParameter("modewhere"));
 		@Pc(29) String local29 = this.getParameter("lowmem");
@@ -251,7 +251,7 @@ public final class client extends Applet_Sub1 {
 				Static12.aLong24 = System.currentTimeMillis();
 			}
 			if (Static67.anInt1675 == 3) {
-				if (Static44.anInt1075 <= 5 || Static29.aClass25_15.method728() > 0) {
+				if (Static44.anInt1075 <= 5 || Static29.aClass25_15.available() > 0) {
 					@Pc(142) int local142 = Static29.aClass25_15.method726();
 					if (local142 != 0) {
 						this.method341(local142);
@@ -391,8 +391,8 @@ public final class client extends Applet_Sub1 {
 			Static44.aClass52_1.aBoolean157 = false;
 		}
 		Static44.aClass52_1 = null;
-		if (Static70.aClass25_36 != null) {
-			Static70.aClass25_36.method730();
+		if (Static70.stream != null) {
+			Static70.stream.method730();
 		}
 		Static49.method1530();
 		Static56.method1541();

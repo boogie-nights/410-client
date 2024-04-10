@@ -16,7 +16,7 @@ public final class Tile extends Linkable {
 	public Tile aClass2_Sub11_1;
 
 	@OriginalMember(owner = "client!nd", name = "J", descriptor = "Lclient!nc;")
-	public Class39 aClass39_1;
+	public TileOverlay aClass39_1;
 
 	@OriginalMember(owner = "client!nd", name = "L", descriptor = "Z")
 	public boolean aBoolean134;

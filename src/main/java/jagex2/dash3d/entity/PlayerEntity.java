@@ -159,7 +159,7 @@ public final class PlayerEntity extends PathingEntity {
 		if (this.aClass33_2 == null) {
 			return null;
 		}
-		@Pc(28) Class2_Sub2_Sub6 local28 = super.anInt2307 != -1 && super.anInt2313 == 0 ? Static62.method1042(super.anInt2307) : null;
+		@Pc(28) Class2_Sub2_Sub6 local28 = super.primarySeqId != -1 && super.anInt2313 == 0 ? Static62.method1042(super.primarySeqId) : null;
 		@Pc(49) Class2_Sub2_Sub6 local49 = super.anInt2318 == -1 || this.aBoolean104 || super.anInt2290 == super.anInt2318 && local28 != null ? null : Static62.method1042(super.anInt2318);
 		@Pc(60) Model local60 = this.aClass33_2.method1005(super.anInt2316, super.anInt2295, local28, local49);
 		if (local60 == null) {

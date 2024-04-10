@@ -77,7 +77,7 @@ public final class Static3 {
 	}
 
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(Z)V")
-	public static void method26() {
+	public static void readZonePacket() {
 		@Pc(12) int local12;
 		@Pc(27) int local27;
 		@Pc(19) int local19;
@@ -141,12 +141,12 @@ public final class Static3 {
 				local35 = Static56.in.g1();
 				local39 = local35 >> 4 & 0xF;
 				local43 = local35 & 0x7;
-				if (local27 - local39 <= Static88.localPlayer.pathTileX[0] && Static88.localPlayer.pathTileX[0] <= local39 + local27 && Static88.localPlayer.pathTileZ[0] >= local19 - local39 && Static88.localPlayer.pathTileZ[0] <= local19 + local39 && Static98.anInt2372 != 0 && local43 > 0 && Static4.anInt131 < 50) {
-					Static96.anIntArray497[Static4.anInt131] = local31;
-					Static13.anIntArray79[Static4.anInt131] = local43;
-					Static5.anIntArray36[Static4.anInt131] = 0;
-					Static75.aClass43Array1[Static4.anInt131] = null;
-					Static4.anInt131++;
+				if (local27 - local39 <= Static88.localPlayer.pathTileX[0] && Static88.localPlayer.pathTileX[0] <= local39 + local27 && Static88.localPlayer.pathTileZ[0] >= local19 - local39 && Static88.localPlayer.pathTileZ[0] <= local19 + local39 && Static98.wavevol != 0 && local43 > 0 && Static4.waveCount < 50) {
+					Static96.anIntArray497[Static4.waveCount] = local31;
+					Static13.waveLoops[Static4.waveCount] = local43;
+					Static5.anIntArray36[Static4.waveCount] = 0;
+					Static75.aClass43Array1[Static4.waveCount] = null;
+					Static4.waveCount++;
 				}
 			}
 			@Pc(425) int local425;

@@ -69,15 +69,15 @@ public final class Static61 {
 	public static byte[][][] levelTileFlags = new byte[4][104][104];
 
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(I)V")
-	public static void method1039() {
-		if (Static70.aClass25_36 != null) {
-			Static70.aClass25_36.method730();
+	public static void logout() {
+		if (Static70.stream != null) {
+			Static70.stream.method730();
 		}
-		Static70.aClass25_36 = null;
+		Static70.stream = null;
 		Static48.method820();
 		Static93.scene.reset();
-		for (@Pc(22) int local22 = 0; local22 < 4; local22++) {
-			Static79.levelCollisionMap[local22].reset();
+		for (@Pc(22) int level = 0; level < 4; level++) {
+			Static79.levelCollisionMap[level].reset();
 		}
 		System.gc();
 		Static94.method1490();

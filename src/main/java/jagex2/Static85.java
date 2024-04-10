@@ -26,7 +26,7 @@ public final class Static85 {
 	public static int anInt1986 = 0;
 
 	@OriginalMember(owner = "client!s", name = "i", descriptor = "I")
-	public static int anInt1989 = 0;
+	public static int hintNpc = 0;
 
 	@OriginalMember(owner = "client!s", name = "l", descriptor = "Lclient!o;")
 	public static Class40 aClass40_572 = Static13.method257(" @lre@");

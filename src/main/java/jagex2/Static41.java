@@ -62,11 +62,11 @@ public final class Static41 {
 			local28 = local28 * local38 - local34 * 0 >> 16;
 			local12 = local49;
 		}
-		Static35.anInt824 = arg3;
+		Static35.cameraPitch = arg3;
 		Static81.anInt1935 = arg4 - local21;
 		Static15.anInt1863 = arg0 - local28;
 		Static48.anInt1114 = arg2 - local12;
-		Static27.anInt686 = arg1;
+		Static27.cameraYaw = arg1;
 	}
 
 	@OriginalMember(owner = "client!i", name = "f", descriptor = "(I)V")

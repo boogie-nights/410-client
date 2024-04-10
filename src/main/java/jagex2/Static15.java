@@ -73,20 +73,20 @@ public final class Static15 {
 		}
 		@Pc(27) Class40 local27 = Static48.method819(arg0).method1167();
 		for (@Pc(29) int local29 = 0; local29 < Static99.ignoreCount; local29++) {
-			if (arg0 == Static84.aLongArray4[local29]) {
+			if (arg0 == Static84.ignoreName37[local29]) {
 				Static58.method989(0, Static61.aClass40_445, Static80.method1334(new Class40[] { local27, Static72.aClass40_506 }));
 				return;
 			}
 		}
 		for (@Pc(60) int local60 = 0; local60 < Static22.friendCount; local60++) {
-			if (arg0 == Static21.aLongArray2[local60]) {
+			if (arg0 == Static21.friendName37[local60]) {
 				Static58.method989(0, Static61.aClass40_445, Static80.method1334(new Class40[] { Static51.aClass40_357, local27, Static58.aClass40_426 }));
 				return;
 			}
 		}
 		if (!local27.method1184(Static88.localPlayer.aClass40_395)) {
-			Static84.aLongArray4[Static99.ignoreCount++] = arg0;
-			Static33.aBoolean59 = true;
+			Static84.ignoreName37[Static99.ignoreCount++] = arg0;
+			Static33.redrawSidebar = true;
 			Static80.out.p1isaac(186);
 			Static80.out.p8(arg0);
 		}

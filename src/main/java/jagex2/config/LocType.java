@@ -163,7 +163,7 @@ public final class LocType extends Hashable {
 		if (this.anInt1032 != -1) {
 			local10 = Static107.method1662(this.anInt1032);
 		} else if (this.anInt1044 != -1) {
-			local10 = Static67.anIntArray339[this.anInt1044];
+			local10 = Static67.varps[this.anInt1044];
 		}
 		return local10 < 0 || local10 >= this.anIntArray210.length || this.anIntArray210[local10] == -1 ? null : Static91.method1470(this.anIntArray210[local10]);
 	}

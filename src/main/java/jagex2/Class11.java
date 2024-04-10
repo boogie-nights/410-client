@@ -11,7 +11,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class11 {
 
 	@OriginalMember(owner = "client!cb", name = "c", descriptor = "[I")
-	public static int[] anIntArray80 = new int[99];
+	public static int[] levelExperience = new int[99];
 
 	@OriginalMember(owner = "client!cb", name = "l", descriptor = "I")
 	private int anInt301 = 65000;
@@ -31,7 +31,7 @@ public final class Class11 {
 			@Pc(24) int local24 = local19 + 1;
 			@Pc(37) int local37 = (int) ((double) local24 + Math.pow(2.0D, (double) local24 / 7.0D) * 300.0D);
 			local17 += local37;
-			anIntArray80[local19] = local17 / 4;
+			levelExperience[local19] = local17 / 4;
 		}
 	}
 

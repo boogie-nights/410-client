@@ -42,7 +42,7 @@ public final class Static105 {
 	public static Class40 aClass40_727 = Static13.method257("mapdots");
 
 	@OriginalMember(owner = "client!wb", name = "n", descriptor = "Lclient!o;")
-	public static Class40 aClass40_728 = Static13.method257(":tradereq:");
+	public static Class40 textTradeReq = Static13.method257(":tradereq:");
 
 	@OriginalMember(owner = "client!wb", name = "o", descriptor = "Lclient!o;")
 	public static Class40 aClass40_729 = Static13.method257("attack");
@@ -86,7 +86,7 @@ public final class Static105 {
 		viewBox = null;
 		aClass40_726 = null;
 		aClass6_7 = null;
-		aClass40_728 = null;
+		textTradeReq = null;
 		aClass40_725 = null;
 		aClass40_727 = null;
 		aClass40_729 = null;
@@ -113,7 +113,7 @@ public final class Static105 {
 		Static67.anInt1672 = 0;
 		Static34.menuSize = 0;
 		Static33.anInt788 = -1;
-		Static91.anInt2139 = 0;
+		Static91.hintType = 0;
 		Static37.method722(0);
 		for (@Pc(1645) int local1645 = 0; local1645 < 100; local1645++) {
 			Static63.messageText[local1645] = null;
@@ -128,7 +128,7 @@ public final class Static105 {
 		Static67.anInt1669 = (int) (Math.random() * 20.0D) - 10 & 0x7FF;
 		Static15.anInt1857 = (int) (Math.random() * 30.0D) - 20;
 		Static79.objSelected = 0;
-		Static4.anInt131 = 0;
+		Static4.waveCount = 0;
 		Static88.playerCount = 0;
 		Static24.spellSelected = 0;
 		Static98.anInt2371 = (int) (Math.random() * 110.0D) - 55;
@@ -167,10 +167,10 @@ public final class Static105 {
 		Static83.method1350(Static66.anInt1654);
 		Static66.anInt1654 = -1;
 		Static83.method1350(Static3.anInt51);
-		Static62.anInt1551 = 3;
+		Static62.selectedTab = 3;
 		Static101.anInt2399 = 0;
 		Static20.aBoolean40 = false;
-		Static103.anInt2492 = -1;
+		Static103.flashingTab = -1;
 		Static107.anInt2505 = 0;
 		Static74.aBoolean146 = false;
 		Static17.aClass40_112 = null;

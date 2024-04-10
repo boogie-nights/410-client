@@ -14,7 +14,7 @@ public final class Static72 {
 	public static Class5 aClass5_22;
 
 	@OriginalMember(owner = "client!o", name = "c", descriptor = "Lclient!o;")
-	public static Class40 aClass40_505 = Static13.method257(" has logged in)3");
+	public static Class40 textHasLoggedIn = Static13.method257(" has logged in)3");
 
 	@OriginalMember(owner = "client!o", name = "i", descriptor = "Lclient!o;")
 	public static Class40 aClass40_506 = Static13.method257(" is already on your ignore list");
@@ -51,7 +51,7 @@ public final class Static72 {
 		textImportedMusic = null;
 		aClass40_510 = null;
 		aClass40_506 = null;
-		aClass40_505 = null;
+		textHasLoggedIn = null;
 		aClass5_22 = null;
 	}
 

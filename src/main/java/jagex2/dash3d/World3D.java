@@ -616,11 +616,11 @@ public final class World3D {
 			}
 			return;
 		}
-		@Pc(59) Class39 local59 = local8.aClass39_1;
+		@Pc(59) TileOverlay local59 = local8.aClass39_1;
 		if (local59 == null) {
 			return;
 		}
-		local24 = local59.anInt1680;
+		local24 = local59.shape;
 		@Pc(68) int local68 = local59.anInt1678;
 		@Pc(71) int local71 = local59.anInt1679;
 		@Pc(74) int local74 = local59.anInt1677;
@@ -816,7 +816,7 @@ public final class World3D {
 			}
 			this.levelTiles[arg0][arg1][arg2].aClass50_1 = local12;
 		} else {
-			@Pc(140) Class39 local140 = new Class39(arg3, arg4, arg5, arg1, arg2, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
+			@Pc(140) TileOverlay local140 = new TileOverlay(arg3, arg4, arg5, arg1, arg2, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
 			for (local14 = arg0; local14 >= 0; local14--) {
 				if (this.levelTiles[local14][arg1][arg2] == null) {
 					this.levelTiles[local14][arg1][arg2] = new Tile(local14, arg1, arg2);
@@ -1156,7 +1156,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(Lclient!nc;IIIIII)V")
-	private void drawTileOverlay(@OriginalArg(0) Class39 overlay, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int sinEyeYaw, @OriginalArg(4) int cosEyeYaw, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	private void drawTileOverlay(@OriginalArg(0) TileOverlay overlay, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int sinEyeYaw, @OriginalArg(4) int cosEyeYaw, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		@Pc(3) int vertexCount = overlay.vertexX.length;
 
 		for (@Pc(5) int i = 0; i < vertexCount; i++) {

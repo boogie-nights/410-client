@@ -189,7 +189,7 @@ public final class Static63 {
 			}
 			if (local54 < Static48.anInt1110 - 10 || local54 > Static48.anInt1110 + Static15.anInt1856 + 10 || Static107.anInt2497 - 10 > local108 || local108 > Static107.anInt2497 + Static99.anInt120 + 10) {
 				if (Static1.anInt16 == 1) {
-					Static33.aBoolean59 = true;
+					Static33.redrawSidebar = true;
 				}
 				Static97.aBoolean175 = false;
 				if (Static1.anInt16 == 2) {
@@ -232,7 +232,7 @@ public final class Static63 {
 		}
 		Static97.aBoolean175 = false;
 		if (Static1.anInt16 == 1) {
-			Static33.aBoolean59 = true;
+			Static33.redrawSidebar = true;
 			return;
 		}
 	}
@@ -249,22 +249,22 @@ public final class Static63 {
 		} else {
 			@Pc(41) Class40 local41 = Static48.method819(arg0).method1167();
 			for (@Pc(43) int local43 = 0; local43 < Static22.friendCount; local43++) {
-				if (arg0 == Static21.aLongArray2[local43]) {
+				if (arg0 == Static21.friendName37[local43]) {
 					Static58.method989(0, Static61.aClass40_445, Static80.method1334(new Class40[] { local41, Static98.aClass40_677 }));
 					return;
 				}
 			}
 			for (@Pc(74) int local74 = 0; local74 < Static99.ignoreCount; local74++) {
-				if (Static84.aLongArray4[local74] == arg0) {
+				if (Static84.ignoreName37[local74] == arg0) {
 					Static58.method989(0, Static61.aClass40_445, Static80.method1334(new Class40[] { Static51.aClass40_357, local41, Static21.aClass40_137 }));
 					return;
 				}
 			}
 			if (!local41.method1184(Static88.localPlayer.aClass40_395)) {
 				Static51.friendName[Static22.friendCount] = local41;
-				Static21.aLongArray2[Static22.friendCount] = arg0;
-				Static62.anIntArray316[Static22.friendCount] = 0;
-				Static33.aBoolean59 = true;
+				Static21.friendName37[Static22.friendCount] = arg0;
+				Static62.friendWorld[Static22.friendCount] = 0;
+				Static33.redrawSidebar = true;
 				Static22.friendCount++;
 				Static80.out.p1isaac(98);
 				Static80.out.p8(arg0);

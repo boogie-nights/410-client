@@ -28,7 +28,7 @@ public final class Static33 {
 	public static Class40 aClass40_239 = Static13.method257("Walk here");
 
 	@OriginalMember(owner = "client!gb", name = "Gb", descriptor = "Z")
-	public static boolean aBoolean59 = false;
+	public static boolean redrawSidebar = false;
 
 	@OriginalMember(owner = "client!gb", name = "Hb", descriptor = "Lclient!o;")
 	private static Class40 aClass40_240 = Static13.method257("Remove @whi@");

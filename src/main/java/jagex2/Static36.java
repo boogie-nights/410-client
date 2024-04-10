@@ -77,7 +77,7 @@ public final class Static36 {
 
 	@OriginalMember(owner = "client!h", name = "a", descriptor = "(B)V")
 	public static void method637() {
-		for (@Pc(7) int local7 = 0; local7 < Static4.anInt131; local7++) {
+		for (@Pc(7) int local7 = 0; local7 < Static4.waveCount; local7++) {
 			@Pc(13) int local13 = Static5.anIntArray36[local7]--;
 			if (Static5.anIntArray36[local7] >= -10) {
 				@Pc(72) Class43 local72 = Static75.aClass43Array1[local7];
@@ -91,17 +91,17 @@ public final class Static36 {
 				}
 				if (Static5.anIntArray36[local7] < 0) {
 					@Pc(109) Class2_Sub4_Sub1 local109 = local72.method1216().method491(Static11.aClass56_1);
-					@Pc(114) Class2_Sub10_Sub1 local114 = Static111.method1032(local109, Static98.anInt2372);
-					local114.method1027(Static13.anIntArray79[local7] - 1);
+					@Pc(114) Class2_Sub10_Sub1 local114 = Static111.method1032(local109, Static98.wavevol);
+					local114.method1027(Static13.waveLoops[local7] - 1);
 					Static88.aClass2_Sub10_Sub2_1.method1289(local114);
 					Static5.anIntArray36[local7] = -100;
 				}
 			} else {
-				Static4.anInt131--;
-				for (@Pc(27) int local27 = local7; local27 < Static4.anInt131; local27++) {
+				Static4.waveCount--;
+				for (@Pc(27) int local27 = local7; local27 < Static4.waveCount; local27++) {
 					Static96.anIntArray497[local27] = Static96.anIntArray497[local27 + 1];
 					Static75.aClass43Array1[local27] = Static75.aClass43Array1[local27 + 1];
-					Static13.anIntArray79[local27] = Static13.anIntArray79[local27 + 1];
+					Static13.waveLoops[local27] = Static13.waveLoops[local27 + 1];
 					Static5.anIntArray36[local27] = Static5.anIntArray36[local27 + 1];
 				}
 				local7--;

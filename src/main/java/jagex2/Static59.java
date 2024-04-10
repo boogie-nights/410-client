@@ -26,7 +26,7 @@ public final class Static59 {
 	public static int anInt1501 = -1;
 
 	@OriginalMember(owner = "client!lc", name = "i", descriptor = "[I")
-	public static int[] anIntArray312 = new int[25];
+	public static int[] skillBaseLevel = new int[25];
 
 	@OriginalMember(owner = "client!lc", name = "l", descriptor = "Lclient!o;")
 	public static Class40 aClass40_430 = Static13.method257("(U");
@@ -38,14 +38,14 @@ public final class Static59 {
 	public static void method994() {
 		aClass5_20 = null;
 		aPacketArray1 = null;
-		anIntArray312 = null;
+		skillBaseLevel = null;
 		aClass40_430 = null;
 	}
 
 	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(Z)I")
 	public static int method995() {
 		@Pc(12) int local12 = 3;
-		if (Static35.anInt824 < 310) {
+		if (Static35.cameraPitch < 310) {
 			@Pc(21) int local21 = Static48.anInt1114 >> 7;
 			@Pc(25) int local25 = Static15.anInt1863 >> 7;
 			@Pc(30) int local30 = Static88.localPlayer.x >> 7;

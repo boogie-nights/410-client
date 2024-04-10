@@ -62,12 +62,12 @@ public final class Static87 {
 		if (Static66.anInt1654 != -1) {
 			local29 = Static21.method403(0, -1, Static66.anInt1654, 1, 0, 261, 0, 190);
 			if (!local29) {
-				Static33.aBoolean59 = true;
+				Static33.redrawSidebar = true;
 			}
-		} else if (Static2.anIntArray2[Static62.anInt1551] != -1) {
-			local29 = Static21.method403(0, -1, Static2.anIntArray2[Static62.anInt1551], 1, 0, 261, 0, 190);
+		} else if (Static2.anIntArray2[Static62.selectedTab] != -1) {
+			local29 = Static21.method403(0, -1, Static2.anIntArray2[Static62.selectedTab], 1, 0, 261, 0, 190);
 			if (!local29) {
-				Static33.aBoolean59 = true;
+				Static33.redrawSidebar = true;
 			}
 		}
 		if (Static97.aBoolean175 && Static1.anInt16 == 1) {

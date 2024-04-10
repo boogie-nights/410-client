@@ -35,7 +35,7 @@ public final class Static97 {
 	public static int anInt2352 = 0;
 
 	@OriginalMember(owner = "client!ub", name = "w", descriptor = "I")
-	public static int anInt2353 = 0;
+	public static int hintPlayer = 0;
 
 	@OriginalMember(owner = "client!ub", name = "y", descriptor = "[J")
 	public static long[] aLongArray6 = new long[32];
@@ -62,7 +62,7 @@ public final class Static97 {
 	public static Class40 aClass40_671 = Static13.method257("headicons_hint");
 
 	@OriginalMember(owner = "client!ub", name = "Q", descriptor = "I")
-	public static int anInt2359 = 0;
+	public static int privateMessageCount = 0;
 
 	@OriginalMember(owner = "client!ub", name = "T", descriptor = "Lclient!o;")
 	public static Class40 aClass40_672 = Static13.method257(")1");

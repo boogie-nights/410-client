@@ -19,7 +19,7 @@ public final class Static13 {
 	public static Pix24 aClass2_Sub2_Sub2_Sub4_2;
 
 	@OriginalMember(owner = "client!cb", name = "b", descriptor = "[I")
-	public static int[] anIntArray79 = new int[50];
+	public static int[] waveLoops = new int[50];
 
 	@OriginalMember(owner = "client!cb", name = "f", descriptor = "Lclient!o;")
 	public static Class40 aClass40_82 = method257("Enter name of player to delete from list");
@@ -42,8 +42,8 @@ public final class Static13 {
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(I)V")
 	public static void method254() {
 		aClass40_82 = null;
-		Class11.anIntArray80 = null;
-		anIntArray79 = null;
+		Class11.levelExperience = null;
+		waveLoops = null;
 		aClass40Array6 = null;
 		aClass2_Sub2_Sub2_Sub4Array3 = null;
 		aClass40_83 = null;

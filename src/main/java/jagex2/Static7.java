@@ -28,7 +28,7 @@ public final class Static7 {
 	public static byte aByte1 = 0;
 
 	@OriginalMember(owner = "client!ba", name = "p", descriptor = "Z")
-	public static boolean aBoolean22 = false;
+	public static boolean cutscene = false;
 
 	@OriginalMember(owner = "client!ba", name = "q", descriptor = "Z")
 	public static boolean aBoolean23 = false;

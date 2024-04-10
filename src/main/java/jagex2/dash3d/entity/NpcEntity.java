@@ -4,7 +4,6 @@ import jagex2.Class2_Sub2_Sub6;
 import jagex2.Class2_Sub2_Sub7;
 import jagex2.Static5;
 import jagex2.Static62;
-import jagex2.dash3d.entity.PathingEntity;
 import jagex2.graphics.Model;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -22,7 +21,7 @@ public final class NpcEntity extends PathingEntity {
 		if (this.type == null) {
 			return null;
 		}
-		@Pc(28) Class2_Sub2_Sub6 local28 = super.anInt2307 != -1 && super.anInt2313 == 0 ? Static62.method1042(super.anInt2307) : null;
+		@Pc(28) Class2_Sub2_Sub6 local28 = super.primarySeqId != -1 && super.anInt2313 == 0 ? Static62.method1042(super.primarySeqId) : null;
 		@Pc(50) Class2_Sub2_Sub6 local50 = super.anInt2318 == -1 || super.anInt2318 == super.anInt2290 && local28 != null ? null : Static62.method1042(super.anInt2318);
 		@Pc(61) Model local61 = this.type.method605(local28, local50, super.anInt2316, super.anInt2295);
 		if (local61 == null) {

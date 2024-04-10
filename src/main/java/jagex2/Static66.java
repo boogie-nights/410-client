@@ -67,7 +67,7 @@ public final class Static66 {
 			Static73.method1207(Static24.graphics);
 			Static32.method594(Static24.graphics);
 			Static107.method1664(Static104.privateChatSetting, Static24.graphics, Static103.aClass2_Sub2_Sub2_Sub2_5, Static103.tradeChatSetting, Static23.publicChatSetting);
-			Static93.method1487(Static62.anInt1551, Static2.anIntArray2, -1, anInt1654 == -1, Static24.graphics);
+			Static93.method1487(Static62.selectedTab, Static2.anIntArray2, -1, anInt1654 == -1, Static24.graphics);
 			Static7.aBoolean23 = true;
 			Static92.aBoolean165 = true;
 			Static5.aBoolean13 = true;

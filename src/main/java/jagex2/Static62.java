@@ -9,10 +9,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static62 {
 
 	@OriginalMember(owner = "client!mb", name = "a", descriptor = "I")
-	public static int anInt1551 = 3;
+	public static int selectedTab = 3;
 
 	@OriginalMember(owner = "client!mb", name = "b", descriptor = "[I")
-	public static int[] anIntArray316 = new int[200];
+	public static int[] friendWorld = new int[200];
 
 	@OriginalMember(owner = "client!mb", name = "c", descriptor = "I")
 	public static int anInt1552 = 1;
@@ -51,7 +51,7 @@ public final class Static62 {
 	@OriginalMember(owner = "client!mb", name = "a", descriptor = "(B)V")
 	public static void method1043() {
 		aClass2_Sub2_Sub13_1 = null;
-		anIntArray316 = null;
+		friendWorld = null;
 		login = null;
 		aClass40_454 = null;
 		aClass40_455 = null;

@@ -279,7 +279,7 @@ public final class Static51 {
 			if (local27 == 65535) {
 				local27 = -1;
 			}
-			if (local27 == arg1.anInt2307 && local27 != -1) {
+			if (local27 == arg1.primarySeqId && local27 != -1) {
 				local141 = Static62.method1042(local27).anInt662;
 				if (local141 == 1) {
 					arg1.anInt2300 = 0;
@@ -290,9 +290,9 @@ public final class Static51 {
 				if (local141 == 2) {
 					arg1.anInt2300 = 0;
 				}
-			} else if (local27 == -1 || arg1.anInt2307 == -1 || Static62.method1042(local27).anInt658 >= Static62.method1042(arg1.anInt2307).anInt658) {
+			} else if (local27 == -1 || arg1.primarySeqId == -1 || Static62.method1042(local27).anInt658 >= Static62.method1042(arg1.primarySeqId).anInt658) {
 				arg1.anInt2267 = 0;
-				arg1.anInt2307 = local27;
+				arg1.primarySeqId = local27;
 				arg1.anInt2316 = 0;
 				arg1.anInt2313 = local124;
 				arg1.anInt2281 = arg1.anInt2309;
@@ -333,7 +333,7 @@ public final class Static51 {
 				@Pc(345) long local345 = arg1.aClass40_395.toBase37();
 				if (local124 <= 1) {
 					for (@Pc(350) int local350 = 0; local350 < Static99.ignoreCount; local350++) {
-						if (Static84.aLongArray4[local350] == local345) {
+						if (Static84.ignoreName37[local350] == local345) {
 							local340 = true;
 							break;
 						}

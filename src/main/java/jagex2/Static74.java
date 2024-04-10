@@ -45,7 +45,7 @@ public final class Static74 {
 	public static Class40 aClass40_525 = Static13.method257("(U1");
 
 	@OriginalMember(owner = "client!ob", name = "u", descriptor = "I")
-	public static int anInt1813 = 0;
+	public static int weightCarried = 0;
 
 	@OriginalMember(owner = "client!ob", name = "v", descriptor = "Lclient!o;")
 	public static Class40 aClass40_526 = Static13.method257("Walk here @whi@");
