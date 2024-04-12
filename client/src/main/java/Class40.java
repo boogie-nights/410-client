@@ -63,8 +63,8 @@ public final class Class40 implements Interface2 {
 	@OriginalMember(owner = "client!o", name = "b", descriptor = "(I)Lclient!o;", line = 31)
 	public Class40 method1165() {
 		@Pc(7) long local7 = this.method1164();
-		@Pc(16) Class local16 = o.class;
-		synchronized (o.class) {
+		@Pc(16) Class local16 = Class40.class;
+		synchronized (local16) {
 			@Pc(41) Class2_Sub6 local41;
 			if (Static30.aClass6_1 == null) {
 				Static30.aClass6_1 = new Class6(4096);

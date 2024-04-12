@@ -52,8 +52,8 @@ public final class Static53 {
 					arg4.method1708();
 				}
 			}
-			return;
 		}
+
 		Class34.aByteArrayArrayArray7[arg1][arg6][arg0] = 0;
 		while (true) {
 			local30 = arg4.method1708();

@@ -34,8 +34,8 @@ public final class Static16 {
 		Static72.aClass24_1.method1654(local12);
 		@Pc(30) int local30 = (int) (local12 - Static93.aLong143);
 		Static93.aLong143 = local12;
-		@Pc(41) Class local41 = wd.class;
-		synchronized (wd.class) {
+		@Pc(41) Class local41 = Class24.class;
+		synchronized (local41) {
 			Static5.anInt173 += local30 * Static11.anInt291;
 			@Pc(58) int local58 = (Static5.anInt173 - Static11.anInt291 * 2000) / 1000;
 			if (local58 > 0) {

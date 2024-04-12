@@ -2251,7 +2251,6 @@ public final class Static6 {
 				arg1 = local30 + 1;
 				arg0[local30] = arg2;
 			}
-			return;
 		}
 		@Pc(68) int local68 = Class2_Sub2_Sub2_Sub1.anInt228;
 		@Pc(72) int local72 = 256 - Class2_Sub2_Sub2_Sub1.anInt228;
