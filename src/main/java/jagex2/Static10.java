@@ -32,7 +32,7 @@ public final class Static10 {
 	public static int[][] DESIGN_BODY_COLOR = new int[][] { { 6798, 107, 10283, 16, 4797, 7744, 5799, 4634, 33697, 22433, 2983, 54193 }, { 8741, 12, 64030, 43162, 7735, 8404, 1701, 38430, 24094, 10153, 56621, 4783, 1341, 16578, 35003, 25239 }, { 25238, 8742, 12, 64030, 43162, 7735, 8404, 1701, 38430, 24094, 10153, 56621, 4783, 1341, 16578, 35003 }, { 4626, 11146, 6439, 12, 4758, 10270 }, { 4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574 } };
 
 	@OriginalMember(owner = "client!bd", name = "p", descriptor = "I")
-	public static int anInt262 = 0;
+	public static int cameraAnticheatAngle = 0;
 
 	@OriginalMember(owner = "client!bd", name = "r", descriptor = "Lclient!o;")
 	public static Class40 aClass40_64 = Static13.method257("backbase2");
@@ -262,7 +262,7 @@ public final class Static10 {
 				}
 			}
 			if (clientCode == 665) {
-				if (Static56.anInt2272 > 2 && !Static18.aBoolean37) {
+				if (Static56.anInt2272 > 2 && !Static18.members) {
 					component.text = Static82.aClass40_562;
 				} else if (Static56.anInt2272 > 2) {
 					component.text = Static80.method1334(new Class40[] { Static101.aClass40_694, Static53.method859(Static56.anInt2272), Static17.aClass40_119 });
@@ -273,7 +273,7 @@ public final class Static10 {
 				}
 			}
 			if (clientCode == 667) {
-				if (Static56.anInt2272 > 2 && !Static18.aBoolean37) {
+				if (Static56.anInt2272 > 2 && !Static18.members) {
 					component.text = Static92.aClass40_621;
 				} else if (Static56.anInt2272 > 0) {
 					component.text = Static67.aClass40_485;

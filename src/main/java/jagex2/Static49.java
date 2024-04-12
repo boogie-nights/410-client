@@ -29,7 +29,7 @@ public final class Static49 {
 	public static Class40 aClass40_654 = Static13.method257(":duelreq:");
 
 	@OriginalMember(owner = "client!jd", name = "Q", descriptor = "I")
-	public static int anInt2254 = 0;
+	public static int flameGradientCycle1 = 0;
 
 	@OriginalMember(owner = "client!jd", name = "Z", descriptor = "Lclient!o;")
 	public static Class40 aClass40_655 = Static13.method257("(X100(U(Y");
@@ -109,9 +109,9 @@ public final class Static49 {
 	}
 
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "(IIII)I")
-	public static int method1534(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(13) int local13 = 256 - arg1;
-		return (arg1 * (arg2 & 0xFF00FF) + (arg0 & 0xFF00FF) * local13 & 0xFF00FF00) + ((arg0 & 0xFF00) * local13 + ((arg2 & 0xFF00) * arg1) & 0xFF0000) >> 8;
+	public static int mix(@OriginalArg(0) int arg0, @OriginalArg(1) int alpha, @OriginalArg(3) int arg2) {
+		@Pc(13) int invAlpha = 256 - alpha;
+		return (alpha * (arg2 & 0xFF00FF) + (arg0 & 0xFF00FF) * invAlpha & 0xFF00FF00) + ((arg0 & 0xFF00) * invAlpha + ((arg2 & 0xFF00) * alpha) & 0xFF0000) >> 8;
 	}
 
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "(IILclient!ad;IBZI)V")

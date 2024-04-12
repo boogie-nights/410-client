@@ -41,7 +41,7 @@ public final class Static94 {
 			Static73.redrawChatback = true;
 			Static33.redrawSidebar = true;
 		}
-		Static22.method1713();
+		Static22.drawScene();
 		if (Static97.aBoolean175 && Static1.anInt16 == 1) {
 			Static33.redrawSidebar = true;
 		}
@@ -139,7 +139,7 @@ public final class Static94 {
 			Static52.redrawPrivacySettings = false;
 			Static107.method1664(Static104.privateChatSetting, Static24.graphics, Static103.aClass2_Sub2_Sub2_Sub2_5, Static103.tradeChatSetting, Static23.publicChatSetting);
 		}
-		Static45.anInt1095 = 0;
+		Static45.sceneDelta = 0;
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(II)V")
@@ -173,7 +173,7 @@ public final class Static94 {
 		if (Static93.anInt2175 != -1) {
 			Static27.method533(Static93.anInt2175);
 		}
-		Static45.anInt1095 = 0;
+		Static45.sceneDelta = 0;
 		Static29.aClass45_14.bind();
 		Static36.anIntArray162 = Static6.method175(Static36.anIntArray162);
 		Static26.clear();

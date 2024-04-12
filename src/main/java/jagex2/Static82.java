@@ -129,7 +129,7 @@ public final class Static82 {
 			Static80.flagSceneTileZ -= dz;
 		}
 		Static22.anInt2590 = -1;
-		Static96.aClass44_8.clear();
+		Static96.spotanims.clear();
 		Static24.aClass44_4.clear();
 	}
 

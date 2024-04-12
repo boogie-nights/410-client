@@ -3,6 +3,8 @@ package jagex2;
 import jagex2.config.LocType;
 import jagex2.dash3d.entity.PathingEntity;
 import jagex2.dash3d.entity.PlayerEntity;
+import jagex2.dash3d.entity.ProjectileEntity;
+import jagex2.dash3d.entity.SpotAnimEntity;
 import jagex2.dash3d.type.GroundDecoration;
 import jagex2.dash3d.type.Loc;
 import jagex2.dash3d.type.Wall;
@@ -103,7 +105,7 @@ public final class Static3 {
 			local31 = Static56.in.method1730();
 			local39 = Static91.anInt2138 + (local31 & 0x7);
 			local35 = (local31 >> 4 & 0x7) + Static95.anInt2237;
-			if (local35 >= 0 && local39 >= 0 && local35 < 104 && local39 < 104 && local27 != Static83.anInt1955) {
+			if (local35 >= 0 && local39 >= 0 && local35 < 104 && local39 < 104 && local27 != Static83.localPid) {
 				@Pc(131) Class2_Sub2_Sub12_Sub3 local131 = new Class2_Sub2_Sub12_Sub3();
 				local131.count = local12;
 				local131.anInt1490 = local19;
@@ -182,7 +184,7 @@ public final class Static3 {
 					local523 = Static56.in.method1705();
 					@Pc(527) int local527 = Static56.in.method1714();
 					@Pc(536) PlayerEntity local536;
-					if (Static83.anInt1955 == local12) {
+					if (Static83.localPid == local12) {
 						local536 = Static88.localPlayer;
 					} else {
 						local536 = Static100.players[local12];
@@ -253,8 +255,8 @@ public final class Static3 {
 					if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
 						local19 = local19 * 128 + 64;
 						local27 = local27 * 128 + 64;
-						@Pc(893) Class2_Sub2_Sub12_Sub6 local893 = new Class2_Sub2_Sub12_Sub6(local31, Static1.currentLevel, local27, local19, Static86.method1383(Static1.currentLevel, local27, local19) - local35, local39, Static107.loopCycle);
-						Static96.aClass44_8.pushBack(local893);
+						@Pc(893) SpotAnimEntity local893 = new SpotAnimEntity(local31, Static1.currentLevel, local27, local19, Static86.method1383(Static1.currentLevel, local27, local19) - local35, local39, Static107.loopCycle);
+						Static96.spotanims.pushBack(local893);
 					}
 				} else if (Static88.packetType == 221) {
 					local12 = Static56.in.method1706();
@@ -299,8 +301,8 @@ public final class Static3 {
 							local27 = local27 * 128 + 64;
 							local31 = local31 * 128 + 64;
 							local19 = local19 * 128 + 64;
-							@Pc(1164) Class2_Sub2_Sub12_Sub2 local1164 = new Class2_Sub2_Sub12_Sub2(local43, Static1.currentLevel, local27, local19, Static86.method1383(Static1.currentLevel, local27, local19) - local425, Static107.loopCycle + local1060, local1064 + Static107.loopCycle, local1068, local1072, local39, local503);
-							local1164.method939(local31, Static86.method1383(Static1.currentLevel, local31, local35) - local503, Static107.loopCycle + local1060, local35);
+							@Pc(1164) ProjectileEntity local1164 = new ProjectileEntity(local43, Static1.currentLevel, local27, local19, Static86.method1383(Static1.currentLevel, local27, local19) - local425, Static107.loopCycle + local1060, local1064 + Static107.loopCycle, local1068, local1072, local39, local503);
+							local1164.updateVelocity(local31, Static86.method1383(Static1.currentLevel, local31, local35) - local503, Static107.loopCycle + local1060, local35);
 							Static24.aClass44_4.pushBack(local1164);
 						}
 					} else if (Static88.packetType == 129) {

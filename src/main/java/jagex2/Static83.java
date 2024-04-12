@@ -40,7 +40,7 @@ public final class Static83 {
 	public static Class40 aClass40_567 = null;
 
 	@OriginalMember(owner = "client!rb", name = "i", descriptor = "I")
-	public static int anInt1955 = -1;
+	public static int localPid = -1;
 
 	@OriginalMember(owner = "client!rb", name = "x", descriptor = "I")
 	public static int anInt1966 = 0;
@@ -89,48 +89,48 @@ public final class Static83 {
 		@Pc(16) int local16 = Static36.anInt840 * 128 + 64;
 		@Pc(22) int local22 = Static76.anInt2149 * 128 + 64;
 		@Pc(30) int local30 = Static86.method1383(Static1.currentLevel, local22, local16) - Static49.anInt2259;
-		if (local16 > Static15.anInt1863) {
-			Static15.anInt1863 += Static19.anInt439 + (local16 - Static15.anInt1863) * Static56.anInt2325 / 1000;
-			if (local16 < Static15.anInt1863) {
-				Static15.anInt1863 = local16;
+		if (local16 > Static15.cameraZ) {
+			Static15.cameraZ += Static19.anInt439 + (local16 - Static15.cameraZ) * Static56.anInt2325 / 1000;
+			if (local16 < Static15.cameraZ) {
+				Static15.cameraZ = local16;
 			}
 		}
-		if (Static15.anInt1863 > local16) {
-			Static15.anInt1863 -= (Static15.anInt1863 - local16) * Static56.anInt2325 / 1000 + Static19.anInt439;
-			if (local16 > Static15.anInt1863) {
-				Static15.anInt1863 = local16;
+		if (Static15.cameraZ > local16) {
+			Static15.cameraZ -= (Static15.cameraZ - local16) * Static56.anInt2325 / 1000 + Static19.anInt439;
+			if (local16 > Static15.cameraZ) {
+				Static15.cameraZ = local16;
 			}
 		}
-		if (Static81.anInt1935 < local30) {
-			Static81.anInt1935 += (local30 - Static81.anInt1935) * Static56.anInt2325 / 1000 + Static19.anInt439;
-			if (local30 < Static81.anInt1935) {
-				Static81.anInt1935 = local30;
+		if (Static81.cameraY < local30) {
+			Static81.cameraY += (local30 - Static81.cameraY) * Static56.anInt2325 / 1000 + Static19.anInt439;
+			if (local30 < Static81.cameraY) {
+				Static81.cameraY = local30;
 			}
 		}
 		local16 = Static80.anInt1914 * 128 + 64;
-		if (Static81.anInt1935 > local30) {
-			Static81.anInt1935 -= Static19.anInt439 + Static56.anInt2325 * (Static81.anInt1935 - local30) / 1000;
-			if (Static81.anInt1935 < local30) {
-				Static81.anInt1935 = local30;
+		if (Static81.cameraY > local30) {
+			Static81.cameraY -= Static19.anInt439 + Static56.anInt2325 * (Static81.cameraY - local30) / 1000;
+			if (Static81.cameraY < local30) {
+				Static81.cameraY = local30;
 			}
 		}
-		if (Static48.anInt1114 < local22) {
-			Static48.anInt1114 += Static19.anInt439 + Static56.anInt2325 * (local22 - Static48.anInt1114) / 1000;
-			if (local22 < Static48.anInt1114) {
-				Static48.anInt1114 = local22;
+		if (Static48.cameraX < local22) {
+			Static48.cameraX += Static19.anInt439 + Static56.anInt2325 * (local22 - Static48.cameraX) / 1000;
+			if (local22 < Static48.cameraX) {
+				Static48.cameraX = local22;
 			}
 		}
-		if (Static48.anInt1114 > local22) {
-			Static48.anInt1114 -= (Static48.anInt1114 - local22) * Static56.anInt2325 / 1000 + Static19.anInt439;
-			if (local22 > Static48.anInt1114) {
-				Static48.anInt1114 = local22;
+		if (Static48.cameraX > local22) {
+			Static48.cameraX -= (Static48.cameraX - local22) * Static56.anInt2325 / 1000 + Static19.anInt439;
+			if (local22 > Static48.cameraX) {
+				Static48.cameraX = local22;
 			}
 		}
 		local22 = Static79.anInt1867 * 128 + 64;
 		local30 = Static86.method1383(Static1.currentLevel, local22, local16) - anInt1963;
-		@Pc(214) int local214 = local22 - Static48.anInt1114;
-		@Pc(219) int local219 = local30 - Static81.anInt1935;
-		@Pc(224) int local224 = local16 - Static15.anInt1863;
+		@Pc(214) int local214 = local22 - Static48.cameraX;
+		@Pc(219) int local219 = local30 - Static81.cameraY;
+		@Pc(224) int local224 = local16 - Static15.cameraZ;
 		@Pc(236) int local236 = (int) Math.sqrt((double) (local214 * local214 + local224 * local224));
 		@Pc(247) int local247 = (int) (Math.atan2((double) local219, (double) local236) * 325.949D) & 0x7FF;
 		if (local247 < 128) {

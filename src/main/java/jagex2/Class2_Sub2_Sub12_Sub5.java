@@ -64,7 +64,7 @@ public final class Class2_Sub2_Sub12_Sub5 extends Entity {
 
 	@OriginalMember(owner = "client!sa", name = "c", descriptor = "(B)Lclient!ne;")
 	@Override
-	protected Model getRotatedModel() {
+	protected Model draw() {
 		if (this.aClass2_Sub2_Sub6_2 != null) {
 			@Pc(13) int local13 = Static107.loopCycle - this.anInt2026;
 			if (local13 > 100 && this.aClass2_Sub2_Sub6_2.anInt669 > 0) {

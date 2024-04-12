@@ -284,9 +284,9 @@ public final class Static2 {
 					local125 = Static79.anInt1867 * 128 + 64;
 					local226 = Static80.anInt1914 * 128 + 64;
 					local230 = Static86.method1383(Static1.currentLevel, local125, local226) - Static83.anInt1963;
-					local355 = local125 - Static48.anInt1114;
-					local359 = local226 - Static15.anInt1863;
-					local364 = local230 - Static81.anInt1935;
+					local355 = local125 - Static48.cameraX;
+					local359 = local226 - Static15.cameraZ;
+					local364 = local230 - Static81.cameraY;
 					local376 = (int) Math.sqrt((double) (local355 * local355 + local359 * local359));
 					Static35.cameraPitch = (int) (Math.atan2((double) local364, (double) local376) * 325.949D) & 0x7FF;
 					Static27.cameraYaw = (int) (-325.949D * Math.atan2((double) local355, (double) local359)) & 0x7FF;
@@ -449,9 +449,9 @@ public final class Static2 {
 				Static19.anInt439 = Static56.in.g1();
 				Static56.anInt2325 = Static56.in.g1();
 				if (Static56.anInt2325 >= 100) {
-					Static48.anInt1114 = Static76.anInt2149 * 128 + 64;
-					Static15.anInt1863 = Static36.anInt840 * 128 + 64;
-					Static81.anInt1935 = Static86.method1383(Static1.currentLevel, Static48.anInt1114, Static15.anInt1863) - Static49.anInt2259;
+					Static48.cameraX = Static76.anInt2149 * 128 + 64;
+					Static15.cameraZ = Static36.anInt840 * 128 + 64;
+					Static81.cameraY = Static86.method1383(Static1.currentLevel, Static48.cameraX, Static15.cameraZ) - Static49.anInt2259;
 				}
 				Static88.packetType = -1;
 				return true;
@@ -1383,7 +1383,7 @@ public final class Static2 {
 					Static37.method711(77, 463, Static59.anInt1506 - Static34.anInt799 - 77, 0, Static59.anInt1506);
 					@Pc(709) Class40 local709;
 					if (Static88.localPlayer == null || Static88.localPlayer.aClass40_395 == null) {
-						local709 = Static86.aClass40_591;
+						local709 = Static86.username;
 					} else {
 						local709 = Static88.localPlayer.aClass40_395;
 					}

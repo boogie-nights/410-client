@@ -18,7 +18,7 @@ public final class Static87 {
 	public static Class18 aClass18_1;
 
 	@OriginalMember(owner = "client!sb", name = "Y", descriptor = "I")
-	public static int anInt2061 = 0;
+	public static int flameGradientCycle0 = 0;
 
 	@OriginalMember(owner = "client!sb", name = "cb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_600 = Static13.method257("Last password change:*6n@gre@Never changed");

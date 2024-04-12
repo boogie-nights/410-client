@@ -32,7 +32,7 @@ public final class Static45 {
 	public static boolean aBoolean87 = false;
 
 	@OriginalMember(owner = "client!j", name = "k", descriptor = "I")
-	public static int anInt1095 = 0;
+	public static int sceneDelta = 0;
 
 	@OriginalMember(owner = "client!j", name = "l", descriptor = "Lclient!o;")
 	public static Class40 aClass40_340 = Static13.method257("From");

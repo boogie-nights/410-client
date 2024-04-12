@@ -58,7 +58,7 @@ public final class Static76 {
 	}
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(ZB)V")
-	public static void method1475(@OriginalArg(0) boolean arg0) {
+	public static void pushPlayers(@OriginalArg(0) boolean arg0) {
 		if (Static38.flagSceneTileX == Static88.localPlayer.x >> 7 && Static88.localPlayer.z >> 7 == Static80.flagSceneTileZ) {
 			Static38.flagSceneTileX = 0;
 		}
@@ -66,37 +66,37 @@ public final class Static76 {
 		if (arg0) {
 			local33 = 1;
 		}
-		for (@Pc(39) int local39 = 0; local39 < local33; local39++) {
-			@Pc(47) PlayerEntity local47;
+		for (@Pc(39) int i = 0; i < local33; i++) {
+			@Pc(47) PlayerEntity player;
 			@Pc(45) int local45;
 			if (arg0) {
 				local45 = 33538048;
-				local47 = Static88.localPlayer;
+				player = Static88.localPlayer;
 			} else {
-				local47 = Static100.players[Static73.playerIds[local39]];
-				local45 = Static73.playerIds[local39] << 14;
+				player = Static100.players[Static73.playerIds[i]];
+				local45 = Static73.playerIds[i] << 14;
 			}
-			if (local47 != null && local47.method1544()) {
-				@Pc(72) int local72 = local47.x >> 7;
-				local47.aBoolean104 = false;
-				if ((Static1.lowMemory && Static88.playerCount > 50 || Static88.playerCount > 200) && !arg0 && local47.anInt2318 == local47.anInt2290) {
-					local47.aBoolean104 = true;
+			if (player != null && player.method1544()) {
+				@Pc(72) int local72 = player.x >> 7;
+				player.aBoolean104 = false;
+				if ((Static1.lowMemory && Static88.playerCount > 50 || Static88.playerCount > 200) && !arg0 && player.anInt2318 == player.anInt2290) {
+					player.aBoolean104 = true;
 				}
-				@Pc(102) int local102 = local47.z >> 7;
+				@Pc(102) int local102 = player.z >> 7;
 				if (local72 >= 0 && local72 < 104 && local102 >= 0 && local102 < 104) {
-					if (local47.aModel_1 == null || Static107.loopCycle < local47.anInt1377 || Static107.loopCycle >= local47.anInt1381) {
-						if ((local47.x & 0x7F) == 64 && (local47.z & 0x7F) == 64) {
-							if (Static22.anInt2587 == Static14.anIntArrayArray7[local72][local102]) {
+					if (player.aModel_1 == null || Static107.loopCycle < player.anInt1377 || Static107.loopCycle >= player.anInt1381) {
+						if ((player.x & 0x7F) == 64 && (player.z & 0x7F) == 64) {
+							if (Static22.sceneCycle == Static14.tileLastOccupiedCycle[local72][local102]) {
 								continue;
 							}
-							Static14.anIntArrayArray7[local72][local102] = Static22.anInt2587;
+							Static14.tileLastOccupiedCycle[local72][local102] = Static22.sceneCycle;
 						}
-						local47.anInt1379 = Static86.method1383(Static1.currentLevel, local47.x, local47.z);
-						Static93.scene.addTemporary(Static1.currentLevel, local47.x, local47.z, local47.anInt1379, 60, local47, local47.anInt2305, local45, local47.aBoolean172);
+						player.anInt1379 = Static86.method1383(Static1.currentLevel, player.x, player.z);
+						Static93.scene.addTemporary(Static1.currentLevel, player.x, player.z, player.anInt1379, 60, player, player.anInt2305, local45, player.aBoolean172);
 					} else {
-						local47.aBoolean104 = false;
-						local47.anInt1379 = Static86.method1383(Static1.currentLevel, local47.x, local47.z);
-						Static93.scene.addTemporary(Static1.currentLevel, local47.x, local47.z, local47.anInt1379, local47, local47.anInt2305, local45, local47.anInt1368, local47.anInt1376, local47.anInt1369, local47.anInt1386);
+						player.aBoolean104 = false;
+						player.anInt1379 = Static86.method1383(Static1.currentLevel, player.x, player.z);
+						Static93.scene.addTemporary(Static1.currentLevel, player.x, player.z, player.anInt1379, player, player.anInt2305, local45, player.anInt1368, player.anInt1376, player.anInt1369, player.anInt1386);
 					}
 				}
 			}

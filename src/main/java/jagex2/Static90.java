@@ -77,15 +77,15 @@ public final class Static90 {
 		if (arg1 == null) {
 			return;
 		}
-		@Pc(12) int local12 = Static84.anInt1978 + Static67.anInt1669 & 0x7FF;
+		@Pc(12) int local12 = Static84.minimapAnticheatAngle + Static67.orbitCameraYaw & 0x7FF;
 		@Pc(20) int local20 = arg2 * arg2 + arg0 * arg0;
 		if (local20 > 6400) {
 			return;
 		}
 		@Pc(35) int local35 = Static71.cos[local12];
-		@Pc(43) int local43 = local35 * 256 / (Static15.anInt1857 + 256);
+		@Pc(43) int local43 = local35 * 256 / (Static15.minimapZoom + 256);
 		@Pc(47) int local47 = Static71.sin[local12];
-		@Pc(55) int local55 = local47 * 256 / (Static15.anInt1857 + 256);
+		@Pc(55) int local55 = local47 * 256 / (Static15.minimapZoom + 256);
 		@Pc(66) int local66 = arg2 * local43 - arg0 * local55 >> 16;
 		@Pc(76) int local76 = arg2 * local55 + arg0 * local43 >> 16;
 		if (local20 <= 2500) {

@@ -4,6 +4,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import jagex2.dash3d.entity.PathingEntity;
+import jagex2.dash3d.entity.SpotAnimEntity;
 import jagex2.graphics.PixMap;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -77,16 +78,16 @@ public final class Static1 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(I)V")
-	public static void method3() {
-		for (@Pc(10) Class2_Sub2_Sub12_Sub6 local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.peekFront(); local10 != null; local10 = (Class2_Sub2_Sub12_Sub6) Static96.aClass44_8.prev()) {
-			if (local10.anInt2235 != currentLevel || local10.aBoolean169) {
-				local10.unlink();
-			} else if (Static107.loopCycle >= local10.anInt2231) {
-				local10.method1519(Static45.anInt1095);
-				if (local10.aBoolean169) {
-					local10.unlink();
+	public static void pushSpotanims() {
+		for (@Pc(10) SpotAnimEntity entity = (SpotAnimEntity) Static96.spotanims.peekFront(); entity != null; entity = (SpotAnimEntity) Static96.spotanims.prev()) {
+			if (entity.level != currentLevel || entity.seqComplete) {
+				entity.unlink();
+			} else if (Static107.loopCycle >= entity.startCycle) {
+				entity.update(Static45.sceneDelta);
+				if (entity.seqComplete) {
+					entity.unlink();
 				} else {
-					Static93.scene.addTemporary(local10.anInt2235, local10.anInt2232, local10.anInt2230, local10.anInt2223, 60, local10, 0, -1, false);
+					Static93.scene.addTemporary(entity.level, entity.x, entity.z, entity.anInt2223, 60, entity, 0, -1, false);
 				}
 			}
 		}

@@ -30,7 +30,7 @@ public final class Static86 {
 	public static Class40 aClass40_593 = Static13.method257("");
 
 	@OriginalMember(owner = "client!sa", name = "kb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_587 = aClass40_593;
+	public static Class40 password = aClass40_593;
 
 	@OriginalMember(owner = "client!sa", name = "lb", descriptor = "Lclient!o;")
 	public static Class40 aClass40_588 = Static13.method257("RuneScape has been updated(Q");
@@ -45,7 +45,7 @@ public final class Static86 {
 	public static Class40 aClass40_590 = Static13.method257(" with @lre@");
 
 	@OriginalMember(owner = "client!sa", name = "yb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_591 = aClass40_593;
+	public static Class40 username = aClass40_593;
 
 	@OriginalMember(owner = "client!sa", name = "zb", descriptor = "I")
 	public static int anInt2030 = 0;
@@ -59,10 +59,10 @@ public final class Static86 {
 	@OriginalMember(owner = "client!sa", name = "b", descriptor = "(Z)V")
 	public static void method1382() {
 		aClass40_586 = null;
-		aClass40_591 = null;
+		username = null;
 		aByteArray17 = null;
 		anIntArrayArray20 = null;
-		aClass40_587 = null;
+		password = null;
 		aClass40_592 = null;
 		textLoadedUpdateList = null;
 		aClass40_588 = null;
@@ -208,11 +208,11 @@ public final class Static86 {
 		}
 		local23 -= 73;
 		local17 -= 75;
-		@Pc(45) int local45 = Static67.anInt1669 + Static84.anInt1978 & 0x7FF;
+		@Pc(45) int local45 = Static67.orbitCameraYaw + Static84.minimapAnticheatAngle & 0x7FF;
 		@Pc(49) int local49 = Draw3D.sin[local45];
-		@Pc(57) int local57 = (Static15.anInt1857 + 256) * local49 >> 8;
+		@Pc(57) int local57 = (Static15.minimapZoom + 256) * local49 >> 8;
 		@Pc(61) int local61 = Draw3D.cos[local45];
-		@Pc(69) int local69 = local61 * (Static15.anInt1857 + 256) >> 8;
+		@Pc(69) int local69 = local61 * (Static15.minimapZoom + 256) >> 8;
 		@Pc(79) int local79 = local23 * local69 + local17 * local57 >> 11;
 		@Pc(90) int local90 = local69 * local17 - local57 * local23 >> 11;
 		@Pc(98) int local98 = Static88.localPlayer.z - local90 >> 7;
@@ -223,10 +223,10 @@ public final class Static86 {
 		}
 		Static80.out.p1(local23);
 		Static80.out.p1(local17);
-		Static80.out.method1694(Static67.anInt1669);
+		Static80.out.method1694(Static67.orbitCameraYaw);
 		Static80.out.p1(57);
-		Static80.out.p1(Static84.anInt1978);
-		Static80.out.p1(Static15.anInt1857);
+		Static80.out.p1(Static84.minimapAnticheatAngle);
+		Static80.out.p1(Static15.minimapZoom);
 		Static80.out.p1(89);
 		Static80.out.method1694(Static88.localPlayer.x);
 		Static80.out.method1694(Static88.localPlayer.z);

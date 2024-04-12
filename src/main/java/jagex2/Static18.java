@@ -20,7 +20,7 @@ public final class Static18 {
 	public static int anInt432 = 0;
 
 	@OriginalMember(owner = "client!db", name = "l", descriptor = "Z")
-	public static boolean aBoolean37 = false;
+	public static boolean members = false;
 
 	@OriginalMember(owner = "client!db", name = "m", descriptor = "I")
 	public static int anInt434 = 0;
@@ -35,8 +35,8 @@ public final class Static18 {
 
 	@OriginalMember(owner = "client!db", name = "b", descriptor = "(B)V")
 	public static void method357() {
-		@Pc(10) int local10 = Static98.anInt2371 + Static88.localPlayer.z;
-		@Pc(15) int local15 = Static104.anInt2518 + Static88.localPlayer.x;
+		@Pc(10) int local10 = Static98.cameraAnticheatOffsetZ + Static88.localPlayer.z;
+		@Pc(15) int local15 = Static104.cameraAnticheatOffsetX + Static88.localPlayer.x;
 		if (Static66.anInt1653 - local15 < -500 || Static66.anInt1653 - local15 > 500 || Static23.anInt577 - local10 < -500 || Static23.anInt577 - local10 > 500) {
 			Static66.anInt1653 = local15;
 			Static23.anInt577 = local10;
@@ -64,7 +64,7 @@ public final class Static18 {
 			Static79.anInt1868 /= 2;
 		}
 		Static93.anInt2177 += Static79.anInt1868 / 2;
-		Static67.anInt1669 = Static35.anInt816 / 2 + Static67.anInt1669 & 0x7FF;
+		Static67.orbitCameraYaw = Static35.anInt816 / 2 + Static67.orbitCameraYaw & 0x7FF;
 		if (Static93.anInt2177 < 128) {
 			Static93.anInt2177 = 128;
 		}
@@ -262,8 +262,8 @@ public final class Static18 {
 	}
 
 	@OriginalMember(owner = "client!db", name = "a", descriptor = "(I)I")
-	public static int method361() {
-		@Pc(5) int local5 = Static86.method1383(Static1.currentLevel, Static48.anInt1114, Static15.anInt1863);
-		return local5 - Static81.anInt1935 >= 800 || (Static61.levelTileFlags[Static1.currentLevel][Static48.anInt1114 >> 7][Static15.anInt1863 >> 7] & 0x4) == 0 ? 3 : Static1.currentLevel;
+	public static int getTopLevelCutscene() {
+		@Pc(5) int y = Static86.method1383(Static1.currentLevel, Static48.cameraX, Static15.cameraZ);
+		return y - Static81.cameraY >= 800 || (Static61.levelTileFlags[Static1.currentLevel][Static48.cameraX >> 7][Static15.cameraZ >> 7] & 0x4) == 0 ? 3 : Static1.currentLevel;
 	}
 }

@@ -21,7 +21,7 @@ public final class Static14 {
 	public static Class40 aClass40_84 = Static13.method257("Could not complete login)3");
 
 	@OriginalMember(owner = "client!cc", name = "g", descriptor = "[[I")
-	public static int[][] anIntArrayArray7 = new int[104][104];
+	public static int[][] tileLastOccupiedCycle = new int[104][104];
 
 	@OriginalMember(owner = "client!cc", name = "j", descriptor = "Lclient!o;")
 	public static Class40 aClass40_85 = Static13.method257("@gre@Classic");
@@ -36,7 +36,7 @@ public final class Static14 {
 	public static void method263() {
 		aClass40_85 = null;
 		aClass40_84 = null;
-		anIntArrayArray7 = null;
+		tileLastOccupiedCycle = null;
 		aClass2_Sub2_Sub2_Sub2_1 = null;
 	}
 

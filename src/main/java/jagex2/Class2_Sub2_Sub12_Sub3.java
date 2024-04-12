@@ -16,7 +16,7 @@ public final class Class2_Sub2_Sub12_Sub3 extends Entity {
 
 	@OriginalMember(owner = "client!la", name = "c", descriptor = "(B)Lclient!ne;")
 	@Override
-	protected Model getRotatedModel() {
+	protected Model draw() {
 		return Static105.get(this.anInt1490).method713(this.count, true);
 	}
 }

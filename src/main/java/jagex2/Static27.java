@@ -53,7 +53,7 @@ public final class Static27 {
 					}
 					if (local56 != -1) {
 						@Pc(71) Class2_Sub2_Sub6 local71 = Static62.method1042(local56);
-						local30.anInt1593 += Static45.anInt1095;
+						local30.anInt1593 += Static45.sceneDelta;
 						label50: while (true) {
 							do {
 								do {
@@ -73,10 +73,10 @@ public final class Static27 {
 				if (local30.anInt1617 != 0) {
 					@Pc(152) int local152 = local30.anInt1617 >> 16;
 					local13 = true;
-					@Pc(158) int local158 = local152 * Static45.anInt1095;
+					@Pc(158) int local158 = local152 * Static45.sceneDelta;
 					local30.xan = local30.xan + local158 & 0x7FF;
 					local56 = local30.anInt1617 << 16 >> 16;
-					local56 *= Static45.anInt1095;
+					local56 *= Static45.sceneDelta;
 					local30.yan = local30.yan + local56 & 0x7FF;
 				}
 			}

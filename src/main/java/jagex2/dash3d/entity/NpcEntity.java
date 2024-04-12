@@ -17,7 +17,7 @@ public final class NpcEntity extends PathingEntity {
 
 	@OriginalMember(owner = "client!ua", name = "c", descriptor = "(B)Lclient!ne;")
 	@Override
-	protected Model getRotatedModel() {
+	protected Model draw() {
 		if (this.type == null) {
 			return null;
 		}

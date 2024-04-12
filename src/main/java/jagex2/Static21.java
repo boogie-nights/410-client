@@ -226,9 +226,9 @@ public final class Static21 {
 													@Pc(395) ComType local395 = local27[arg1];
 													@Pc(415) int local415;
 													if (Static26.top > local186 + local213 && local395.anInt1587 > 0) {
-														local415 = Static45.anInt1095 * (Static26.top - local186 - local213) / 3;
-														if (local415 > Static45.anInt1095 * 10) {
-															local415 = Static45.anInt1095 * 10;
+														local415 = Static45.sceneDelta * (Static26.top - local186 - local213) / 3;
+														if (local415 > Static45.sceneDelta * 10) {
+															local415 = Static45.sceneDelta * 10;
 														}
 														if (local415 > local395.anInt1587) {
 															local415 = local395.anInt1587;
@@ -237,9 +237,9 @@ public final class Static21 {
 														local395.anInt1587 -= local415;
 													}
 													if (local186 + local213 + 32 > Static26.bottom && local395.scroll - local395.height > local395.anInt1587) {
-														local415 = Static45.anInt1095 * (local213 + local186 + 32 - Static26.bottom) / 3;
-														if (local415 > Static45.anInt1095 * 10) {
-															local415 = Static45.anInt1095 * 10;
+														local415 = Static45.sceneDelta * (local213 + local186 + 32 - Static26.bottom) / 3;
+														if (local415 > Static45.sceneDelta * 10) {
+															local415 = Static45.sceneDelta * 10;
 														}
 														if (local415 > local395.scroll - local395.anInt1587 - local395.height) {
 															local415 = local395.scroll - local395.height - local395.anInt1587;

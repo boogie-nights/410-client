@@ -63,9 +63,9 @@ public final class Static41 {
 			local12 = local49;
 		}
 		Static35.cameraPitch = arg3;
-		Static81.anInt1935 = arg4 - local21;
-		Static15.anInt1863 = arg0 - local28;
-		Static48.anInt1114 = arg2 - local12;
+		Static81.cameraY = arg4 - local21;
+		Static15.cameraZ = arg0 - local28;
+		Static48.cameraX = arg2 - local12;
 		Static27.cameraYaw = arg1;
 	}
 
@@ -95,7 +95,7 @@ public final class Static41 {
 	}
 
 	@OriginalMember(owner = "client!i", name = "g", descriptor = "(I)V")
-	public static void method755() {
+	public static void updateFlames() {
 		@Pc(12) int local12;
 		for (@Pc(5) int local5 = 10; local5 < 117; local5++) {
 			local12 = (int) (Math.random() * 100.0D);
@@ -139,21 +139,21 @@ public final class Static41 {
 			Static33.anIntArray152[local57] = Static33.anIntArray152[local57 + 1];
 		}
 		Static33.anIntArray152[255] = (int) (Math.sin((double) Static107.loopCycle / 14.0D) * 16.0D + Math.sin((double) Static107.loopCycle / 15.0D) * 14.0D + Math.sin((double) Static107.loopCycle / 16.0D) * 12.0D);
-		if (Static87.anInt2061 > 0) {
-			Static87.anInt2061 -= 4;
+		if (Static87.flameGradientCycle0 > 0) {
+			Static87.flameGradientCycle0 -= 4;
 		}
-		if (Static49.anInt2254 > 0) {
-			Static49.anInt2254 -= 4;
+		if (Static49.flameGradientCycle1 > 0) {
+			Static49.flameGradientCycle1 -= 4;
 		}
-		if (Static87.anInt2061 != 0 || Static49.anInt2254 != 0) {
+		if (Static87.flameGradientCycle0 != 0 || Static49.flameGradientCycle1 != 0) {
 			return;
 		}
 		local166 = (int) (Math.random() * 2000.0D);
 		if (local166 == 0) {
-			Static87.anInt2061 = 1024;
+			Static87.flameGradientCycle0 = 1024;
 		}
 		if (local166 == 1) {
-			Static49.anInt2254 = 1024;
+			Static49.flameGradientCycle1 = 1024;
 			return;
 		}
 	}

@@ -115,34 +115,34 @@ public final class Static105 {
 		Static33.anInt788 = -1;
 		Static91.hintType = 0;
 		Static37.method722(0);
-		for (@Pc(1645) int local1645 = 0; local1645 < 100; local1645++) {
-			Static63.messageText[local1645] = null;
+		for (@Pc(1645) int i = 0; i < 100; i++) {
+			Static63.messageText[i] = null;
 		}
 		Static22.anInt2590 = -1;
-		Static104.anInt2518 = (int) (Math.random() * 100.0D) - 50;
+		Static104.cameraAnticheatOffsetX = (int) (Math.random() * 100.0D) - 50;
 		Static73.anInt1800 = 0;
 		Static96.anInt2328 = 0;
 		Static38.flagSceneTileX = 0;
 		Static80.flagSceneTileZ = 0;
-		Static10.anInt262 = (int) (Math.random() * 80.0D) - 40;
-		Static67.anInt1669 = (int) (Math.random() * 20.0D) - 10 & 0x7FF;
-		Static15.anInt1857 = (int) (Math.random() * 30.0D) - 20;
+		Static10.cameraAnticheatAngle = (int) (Math.random() * 80.0D) - 40;
+		Static67.orbitCameraYaw = (int) (Math.random() * 20.0D) - 10 & 0x7FF;
+		Static15.minimapZoom = (int) (Math.random() * 30.0D) - 20;
 		Static79.objSelected = 0;
 		Static4.waveCount = 0;
 		Static88.playerCount = 0;
 		Static24.spellSelected = 0;
-		Static98.anInt2371 = (int) (Math.random() * 110.0D) - 55;
-		Static84.anInt1978 = (int) (Math.random() * 120.0D) - 60;
-		for (@Pc(1726) int local1726 = 0; local1726 < 2048; local1726++) {
-			Static100.players[local1726] = null;
-			Static59.aPacketArray1[local1726] = null;
+		Static98.cameraAnticheatOffsetZ = (int) (Math.random() * 110.0D) - 55;
+		Static84.minimapAnticheatAngle = (int) (Math.random() * 120.0D) - 60;
+		for (@Pc(1726) int i = 0; i < 2048; i++) {
+			Static100.players[i] = null;
+			Static59.aPacketArray1[i] = null;
 		}
-		for (@Pc(1744) int local1744 = 0; local1744 < 16384; local1744++) {
-			Static2.npcs[local1744] = null;
+		for (@Pc(1744) int i = 0; i < 16384; i++) {
+			Static2.npcs[i] = null;
 		}
 		Static88.localPlayer = Static100.players[2047] = new PlayerEntity();
 		Static24.aClass44_4.clear();
-		Static96.aClass44_8.clear();
+		Static96.spotanims.clear();
 		@Pc(1776) int local1776;
 		for (@Pc(1772) int local1772 = 0; local1772 < 4; local1772++) {
 			for (local1776 = 0; local1776 < 104; local1776++) {
@@ -193,35 +193,35 @@ public final class Static105 {
 	}
 
 	@OriginalMember(owner = "client!wb", name = "b", descriptor = "(I)V")
-	public static void method1673() {
-		@Pc(9) int local9;
-		if (Static87.anInt2061 > 0) {
-			for (local9 = 0; local9 < 256; local9++) {
-				if (Static87.anInt2061 > 768) {
-					Static92.anIntArray472[local9] = Static49.method1534(Static37.flameGradient0[local9], 1024 - Static87.anInt2061, Static70.flameGradient1[local9]);
-				} else if (Static87.anInt2061 <= 256) {
-					Static92.anIntArray472[local9] = Static49.method1534(Static70.flameGradient1[local9], 256 - Static87.anInt2061, Static37.flameGradient0[local9]);
+	public static void drawFlames() {
+		@Pc(9) int i;
+		if (Static87.flameGradientCycle0 > 0) {
+			for (i = 0; i < 256; i++) {
+				if (Static87.flameGradientCycle0 > 768) {
+					Static92.flameGradient[i] = Static49.mix(Static37.flameGradient0[i], 1024 - Static87.flameGradientCycle0, Static70.flameGradient1[i]);
+				} else if (Static87.flameGradientCycle0 <= 256) {
+					Static92.flameGradient[i] = Static49.mix(Static70.flameGradient1[i], 256 - Static87.flameGradientCycle0, Static37.flameGradient0[i]);
 				} else {
-					Static92.anIntArray472[local9] = Static70.flameGradient1[local9];
+					Static92.flameGradient[i] = Static70.flameGradient1[i];
 				}
 			}
-		} else if (Static49.anInt2254 <= 0) {
-			for (local9 = 0; local9 < 256; local9++) {
-				Static92.anIntArray472[local9] = Static37.flameGradient0[local9];
+		} else if (Static49.flameGradientCycle1 <= 0) {
+			for (i = 0; i < 256; i++) {
+				Static92.flameGradient[i] = Static37.flameGradient0[i];
 			}
 		} else {
-			for (local9 = 0; local9 < 256; local9++) {
-				if (Static49.anInt2254 > 768) {
-					Static92.anIntArray472[local9] = Static49.method1534(Static37.flameGradient0[local9], 1024 - Static49.anInt2254, Static72.flameGradient2[local9]);
-				} else if (Static49.anInt2254 > 256) {
-					Static92.anIntArray472[local9] = Static72.flameGradient2[local9];
+			for (i = 0; i < 256; i++) {
+				if (Static49.flameGradientCycle1 > 768) {
+					Static92.flameGradient[i] = Static49.mix(Static37.flameGradient0[i], 1024 - Static49.flameGradientCycle1, Static72.flameGradient2[i]);
+				} else if (Static49.flameGradientCycle1 > 256) {
+					Static92.flameGradient[i] = Static72.flameGradient2[i];
 				} else {
-					Static92.anIntArray472[local9] = Static49.method1534(Static72.flameGradient2[local9], 256 - Static49.anInt2254, Static37.flameGradient0[local9]);
+					Static92.flameGradient[i] = Static49.mix(Static72.flameGradient2[i], 256 - Static49.flameGradientCycle1, Static37.flameGradient0[i]);
 				}
 			}
 		}
-		for (local9 = 0; local9 < 33920; local9++) {
-			Static61.pixMap.pixels[local9] = Static11.aClass2_Sub2_Sub2_Sub4_1.pixels[local9];
+		for (i = 0; i < 33920; i++) {
+			Static61.pixMap.pixels[i] = Static11.aClass2_Sub2_Sub2_Sub4_1.pixels[i];
 		}
 		@Pc(164) int local164 = 0;
 		@Pc(166) int local166 = 1152;
@@ -246,7 +246,7 @@ public final class Static105 {
 				} else {
 					local215 = local205;
 					local219 = 256 - local205;
-					local205 = Static92.anIntArray472[local205];
+					local205 = Static92.flameGradient[local205];
 					local228 = Static61.pixMap.pixels[local166];
 					Static61.pixMap.pixels[local166++] = (local215 * (local205 & 0xFF00FF) + (local228 & 0xFF00FF) * local219 & 0xFF00FF00) + ((local228 & 0xFF00) * local219 + local215 * (local205 & 0xFF00) & 0xFF0000) >> 8;
 				}
@@ -269,7 +269,7 @@ public final class Static105 {
 				} else {
 					local228 = local219;
 					@Pc(357) int local357 = 256 - local219;
-					local219 = Static92.anIntArray472[local219];
+					local219 = Static92.flameGradient[local219];
 					@Pc(366) int local366 = Static98.aClass45_30.pixels[local166];
 					Static98.aClass45_30.pixels[local166++] = (local228 * (local219 & 0xFF00) + local357 * (local366 & 0xFF00) & 0xFF0000) + (local228 * (local219 & 0xFF00FF) + ((local366 & 0xFF00FF) * local357) & 0xFF00FF00) >> 8;
 				}

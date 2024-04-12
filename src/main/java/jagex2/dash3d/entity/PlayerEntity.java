@@ -155,7 +155,7 @@ public final class PlayerEntity extends PathingEntity {
 
 	@OriginalMember(owner = "client!kc", name = "c", descriptor = "(B)Lclient!ne;")
 	@Override
-	protected Model getRotatedModel() {
+	protected Model draw() {
 		if (this.aClass33_2 == null) {
 			return null;
 		}

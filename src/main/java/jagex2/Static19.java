@@ -133,15 +133,15 @@ public final class Static19 {
 					local14[local22] = 0;
 				}
 			}
-			Static13.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, Static67.anInt1669, 256, Static102.compassMaskLineOffsets, Static45.compassMaskLineLengths);
+			Static13.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, Static67.orbitCameraYaw, 256, Static102.compassMaskLineOffsets, Static45.compassMaskLineLengths);
 			Static32.method594(Static24.graphics);
 			return;
 		}
-		@Pc(62) int local62 = Static84.anInt1978 + Static67.anInt1669 & 0x7FF;
+		@Pc(62) int local62 = Static84.minimapAnticheatAngle + Static67.orbitCameraYaw & 0x7FF;
 		local20 = 464 - Static88.localPlayer.z / 32;
 		@Pc(77) int local77 = Static88.localPlayer.x / 32 + 48;
-		Static93.imageMinimap.method1616(25, 5, 146, 151, local77, local20, local62, Static15.anInt1857 + 256, Static73.anIntArray407, Static2.anIntArray3);
-		Static13.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, Static67.anInt1669, 256, Static102.compassMaskLineOffsets, Static45.compassMaskLineLengths);
+		Static93.imageMinimap.method1616(25, 5, 146, 151, local77, local20, local62, Static15.minimapZoom + 256, Static73.anIntArray407, Static2.anIntArray3);
+		Static13.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, Static67.orbitCameraYaw, 256, Static102.compassMaskLineOffsets, Static45.compassMaskLineLengths);
 		for (local22 = 0; local22 < Static90.anInt2136; local22++) {
 			local77 = Static97.anIntArray500[local22] * 4 + 2 - Static88.localPlayer.x / 32;
 			local20 = Static102.anIntArray546[local22] * 4 + 2 - Static88.localPlayer.z / 32;

@@ -43,11 +43,11 @@ public final class Static59 {
 	}
 
 	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(Z)I")
-	public static int method995() {
+	public static int getTopLevel() {
 		@Pc(12) int local12 = 3;
 		if (Static35.cameraPitch < 310) {
-			@Pc(21) int local21 = Static48.anInt1114 >> 7;
-			@Pc(25) int local25 = Static15.anInt1863 >> 7;
+			@Pc(21) int local21 = Static48.cameraX >> 7;
+			@Pc(25) int local25 = Static15.cameraZ >> 7;
 			@Pc(30) int local30 = Static88.localPlayer.x >> 7;
 			if ((Static61.levelTileFlags[Static1.currentLevel][local21][local25] & 0x4) != 0) {
 				local12 = Static1.currentLevel;

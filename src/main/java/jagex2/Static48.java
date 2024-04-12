@@ -11,7 +11,7 @@ public final class Static48 {
 	public static int anInt1110;
 
 	@OriginalMember(owner = "client!jc", name = "x", descriptor = "I")
-	public static int anInt1114;
+	public static int cameraX;
 
 	@OriginalMember(owner = "client!jc", name = "A", descriptor = "Lclient!o;")
 	private static Class40 aClass40_343 = Static13.method257("Hidden");

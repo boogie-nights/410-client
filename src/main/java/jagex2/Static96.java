@@ -25,7 +25,7 @@ public final class Static96 {
 	public static int anInt2328 = 0;
 
 	@OriginalMember(owner = "client!ua", name = "Hc", descriptor = "Lclient!od;")
-	public static LinkedList aClass44_8 = new LinkedList();
+	public static LinkedList spotanims = new LinkedList();
 
 	@OriginalMember(owner = "client!ua", name = "Lc", descriptor = "I")
 	public static int anInt2333 = 0;
@@ -982,7 +982,7 @@ public final class Static96 {
 		aClass40_663 = null;
 		aClass40_662 = null;
 		anIntArray497 = null;
-		aClass44_8 = null;
+		spotanims = null;
 		aClass2_Sub2_Sub2_Sub4_9 = null;
 	}
 

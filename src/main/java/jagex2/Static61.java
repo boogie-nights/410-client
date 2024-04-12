@@ -106,7 +106,7 @@ public final class Static61 {
 		@Pc(67) int local67;
 		if (arg0.anInt2324 >= 32768) {
 			local67 = arg0.anInt2324 - 32768;
-			if (local67 == Static83.anInt1955) {
+			if (local67 == Static83.localPid) {
 				local67 = 2047;
 			}
 			@Pc(76) PlayerEntity local76 = Static100.players[local67];

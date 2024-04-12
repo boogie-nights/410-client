@@ -71,9 +71,9 @@ public final class Static101 {
 				arg2.method578(Static86.aClass40_589, 180, 53, 16776960, true);
 				local130 = local106 + 30;
 			}
-			arg2.method574(Static80.method1334(new Class40[] { Static67.aClass40_482, Static86.aClass40_591 }), 90, 90, 0xFFFFFF, true);
+			arg2.method574(Static80.method1334(new Class40[] { Static67.aClass40_482, Static86.username}), 90, 90, 0xFFFFFF, true);
 			local130 += 15;
-			arg2.method574(Static80.method1334(new Class40[] { Static17.aClass40_118, Static86.aClass40_587.method1177() }), 92, 105, 0xFFFFFF, true);
+			arg2.method574(Static80.method1334(new Class40[] { Static17.aClass40_118, Static86.password.method1177() }), 92, 105, 0xFFFFFF, true);
 			local130 += 15;
 		}
 		if (Static44.anInt1075 == 10) {
@@ -96,9 +96,9 @@ public final class Static101 {
 					arg2.method578(Static86.aClass40_589, 180, 60, 16776960, true);
 					local130 = local106 + 30;
 				}
-				arg2.method574(Static80.method1334(new Class40[] { Static67.aClass40_482, Static86.aClass40_591, Static107.loopCycle % 40 < 20 & Static99.anInt91 == 0 ? Static45.aClass40_339 : Static86.aClass40_593 }), 90, 90, 0xFFFFFF, true);
+				arg2.method574(Static80.method1334(new Class40[] { Static67.aClass40_482, Static86.username, Static107.loopCycle % 40 < 20 & Static99.anInt91 == 0 ? Static45.aClass40_339 : Static86.aClass40_593 }), 90, 90, 0xFFFFFF, true);
 				local130 += 15;
-				arg2.method574(Static80.method1334(new Class40[] { Static17.aClass40_118, Static86.aClass40_587.method1177(), Static99.anInt91 == 1 & Static107.loopCycle % 40 < 20 ? Static45.aClass40_339 : Static86.aClass40_593 }), 92, 105, 0xFFFFFF, true);
+				arg2.method574(Static80.method1334(new Class40[] { Static17.aClass40_118, Static86.password.method1177(), Static99.anInt91 == 1 & Static107.loopCycle % 40 < 20 ? Static45.aClass40_339 : Static86.aClass40_593 }), 92, 105, 0xFFFFFF, true);
 				Static32.imageTitlebutton.draw(27, 130);
 				arg2.method578(Static15.aClass40_536, 100, 155, 0xFFFFFF, true);
 				Static32.imageTitlebutton.draw(187, 130);
@@ -120,7 +120,7 @@ public final class Static101 {
 			}
 		}
 		Static107.aClass45_31.draw(arg1, 202, 171);
-		Static105.method1673();
+		Static105.drawFlames();
 		Static61.pixMap.draw(arg1, 0, 0);
 		Static98.aClass45_30.draw(arg1, 637, 0);
 		if (!Static1.clearScreen) {

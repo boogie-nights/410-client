@@ -38,7 +38,7 @@ public final class Static22 {
 	public static int anInt2585 = -1;
 
 	@OriginalMember(owner = "client!eb", name = "yb", descriptor = "I")
-	public static int anInt2587 = 0;
+	public static int sceneCycle = 0;
 
 	@OriginalMember(owner = "client!eb", name = "Bb", descriptor = "I")
 	public static int anInt2590 = -1;
@@ -149,18 +149,19 @@ public final class Static22 {
 	}
 
 	@OriginalMember(owner = "client!eb", name = "e", descriptor = "(B)V")
-	public static void method1713() {
-		anInt2587++;
-		Static76.method1475(true);
-		Static36.method636(true);
-		Static76.method1475(false);
-		Static36.method636(false);
-		Static54.method917();
-		Static1.method3();
+	public static void drawScene() {
+		sceneCycle++;
+		Static76.pushPlayers(true);
+		Static36.pushNpcs(true);
+		Static76.pushPlayers(false);
+		Static36.pushNpcs(false);
+		Static54.pushProjectiles();
+		Static1.pushSpotanims();
+
 		@Pc(36) int local36;
 		@Pc(34) int local34;
 		if (!Static7.cutscene) {
-			local34 = Static67.anInt1669 + Static10.anInt262 & 0x7FF;
+			local34 = Static67.orbitCameraYaw + Static10.cameraAnticheatAngle & 0x7FF;
 			local36 = Static93.anInt2177;
 			if (local36 < Static13.anInt308 / 256) {
 				local36 = Static13.anInt308 / 256;
@@ -171,26 +172,26 @@ public final class Static22 {
 			Static41.method752(Static23.anInt577, local34, Static66.anInt1653, local36, Static86.method1383(Static1.currentLevel, Static88.localPlayer.x, Static88.localPlayer.z) - 50, local36 * 3 + 600);
 		}
 		if (Static7.cutscene) {
-			local36 = Static18.method361();
+			local36 = Static18.getTopLevelCutscene();
 		} else {
-			local36 = Static59.method995();
+			local36 = Static59.getTopLevel();
 		}
-		local34 = Static48.anInt1114;
-		@Pc(96) int local96 = Static15.anInt1863;
-		@Pc(98) int local98 = Static81.anInt1935;
+		local34 = Static48.cameraX;
+		@Pc(96) int local96 = Static15.cameraZ;
+		@Pc(98) int local98 = Static81.cameraY;
 		@Pc(100) int local100 = Static35.cameraPitch;
 		@Pc(102) int local102 = Static27.cameraYaw;
 		for (@Pc(104) int local104 = 0; local104 < 5; local104++) {
 			if (Static98.cameraModifierEnabled[local104]) {
-				@Pc(146) int local146 = (int) ((double) -Static20.anIntArray93[local104] + (double) (Static20.anIntArray93[local104] * 2 + 1) * Math.random() + Math.sin((double) Static79.anIntArray415[local104] * ((double) Static35.anIntArray159[local104] / 100.0D)) * (double) Static36.anIntArray164[local104]);
+				@Pc(146) int jitter = (int) ((double) -Static20.anIntArray93[local104] + (double) (Static20.anIntArray93[local104] * 2 + 1) * Math.random() + Math.sin((double) Static79.anIntArray415[local104] * ((double) Static35.anIntArray159[local104] / 100.0D)) * (double) Static36.anIntArray164[local104]);
 				if (local104 == 3) {
-					Static27.cameraYaw = Static27.cameraYaw + local146 & 0x7FF;
+					Static27.cameraYaw = Static27.cameraYaw + jitter & 0x7FF;
 				}
 				if (local104 == 2) {
-					Static15.anInt1863 += local146;
+					Static15.cameraZ += jitter;
 				}
 				if (local104 == 4) {
-					Static35.cameraPitch += local146;
+					Static35.cameraPitch += jitter;
 					if (Static35.cameraPitch < 128) {
 						Static35.cameraPitch = 128;
 					}
@@ -199,10 +200,10 @@ public final class Static22 {
 					}
 				}
 				if (local104 == 1) {
-					Static81.anInt1935 += local146;
+					Static81.cameraY += jitter;
 				}
 				if (local104 == 0) {
-					Static48.anInt1114 += local146;
+					Static48.cameraX += jitter;
 				}
 			}
 		}
@@ -212,11 +213,11 @@ public final class Static22 {
 		Static71.pickedCount = 0;
 		Static71.mouseX = Static32.anInt742 - 4;
 		Static26.clear();
-		Static93.scene.method1430(Static48.anInt1114, Static81.anInt1935, Static15.anInt1863, Static35.cameraPitch, Static27.cameraYaw, local36);
+		Static93.scene.method1430(Static48.cameraX, Static81.cameraY, Static15.cameraZ, Static35.cameraPitch, Static27.cameraYaw, local36);
 		Static93.scene.clearTemporaryLocs();
 		Static12.method253();
 		Static67.method1099();
-		((Class19) Static6.anInterface4_1).method405(Static45.anInt1095);
+		((Class19) Static6.anInterface4_1).method405(Static45.sceneDelta);
 		Static18.method359();
 		if (Static75.aBoolean147 && Static105.method1668() == 0) {
 			Static75.aBoolean147 = false;
@@ -227,10 +228,10 @@ public final class Static22 {
 			Static66.method1095(false, null, Static98.aClass40_674);
 		}
 		Static80.method1333(Static24.graphics);
-		Static81.anInt1935 = local98;
+		Static81.cameraY = local98;
 		Static35.cameraPitch = local100;
-		Static15.anInt1863 = local96;
-		Static48.anInt1114 = local34;
+		Static15.cameraZ = local96;
+		Static48.cameraX = local34;
 		Static27.cameraYaw = local102;
 	}
 

@@ -212,7 +212,7 @@ public final class Static43 {
 				}
 			}
 			if (Static27.anInt693 == 2) {
-				@Pc(71) long local71 = Static102.aLong150 = Static86.aClass40_591.toBase37();
+				@Pc(71) long local71 = Static102.aLong150 = Static86.username.toBase37();
 				Static80.out.pos = 0;
 				@Pc(81) int local81 = (int) (local71 >> 16 & 0x1FL);
 				Static80.out.p1(14);
@@ -257,8 +257,8 @@ public final class Static43 {
 				Static80.out.p4(seed[2]);
 				Static80.out.p4(seed[3]);
 				Static80.out.p4(Static99.aClass7_2.anInt249);
-				Static80.out.p8(Static86.aClass40_591.toBase37());
-				Static80.out.method1683(Static86.aClass40_587);
+				Static80.out.p8(Static86.username.toBase37());
+				Static80.out.method1683(Static86.password);
 				Static80.out.rsaenc(Static51.RSA_EXPONENT, Static10.RSA_MODULUS);
 				Static62.login.pos = 0;
 				if (Static44.anInt1075 == 40) {
@@ -321,9 +321,9 @@ public final class Static43 {
 				if (Static27.anInt693 == 9 && Static70.stream.available() >= 8) {
 					Static61.anInt1550 = Static70.stream.method726();
 					aBoolean149 = Static70.stream.method726() == 1;
-					Static83.anInt1955 = Static70.stream.method726();
-					Static83.anInt1955 <<= 0x8;
-					Static83.anInt1955 += Static70.stream.method726();
+					Static83.localPid = Static70.stream.method726();
+					Static83.localPid <<= 0x8;
+					Static83.localPid += Static70.stream.method726();
 					Static37.anInt927 = Static70.stream.method726();
 					Static70.stream.read(0, 1, Static56.in.data);
 					Static56.in.pos = 0;

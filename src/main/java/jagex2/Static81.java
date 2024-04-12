@@ -17,7 +17,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static81 {
 
 	@OriginalMember(owner = "client!r", name = "i", descriptor = "I")
-	public static int anInt1935;
+	public static int cameraY;
 
 	@OriginalMember(owner = "client!r", name = "k", descriptor = "[Lclient!qb;")
 	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array10;

@@ -18,43 +18,43 @@ import org.openrs2.deob.annotation.Pc;
 public final class client extends Applet_Sub1 {
 
 	@OriginalMember(owner = "client!client", name = "main", descriptor = "([Ljava/lang/String;)V")
-	public static void main(@OriginalArg(0) String[] arg0) {
+	public static void main(@OriginalArg(0) String[] args) {
 		try {
-			if (arg0.length != 5) {
-				Static92.method1480();
+			if (args.length != 5) {
+				Static92.invalidRunParams();
 			}
-			Static4.nodeId = Integer.parseInt(arg0[0]);
-			if (arg0[1].equals("live")) {
+			Static4.nodeId = Integer.parseInt(args[0]);
+			if (args[1].equals("live")) {
 				Static90.anInt2132 = 0;
-			} else if (arg0[1].equals("office")) {
+			} else if (args[1].equals("office")) {
 				Static90.anInt2132 = 1;
-			} else if (arg0[1].equals("local")) {
+			} else if (args[1].equals("local")) {
 				Static90.anInt2132 = 2;
 			} else {
-				Static92.method1480();
+				Static92.invalidRunParams();
 			}
-			if (arg0[2].equals("live")) {
+			if (args[2].equals("live")) {
 				Static20.anInt475 = 0;
-			} else if (arg0[2].equals("rc")) {
+			} else if (args[2].equals("rc")) {
 				Static20.anInt475 = 1;
-			} else if (arg0[2].equals("wip")) {
+			} else if (args[2].equals("wip")) {
 				Static20.anInt475 = 2;
 			} else {
-				Static92.method1480();
+				Static92.invalidRunParams();
 			}
-			if (arg0[3].equals("lowmem")) {
-				Static31.method1676();
-			} else if (arg0[3].equals("highmem")) {
-				Static7.method188();
+			if (args[3].equals("lowmem")) {
+				Static31.setLowMemory();
+			} else if (args[3].equals("highmem")) {
+				Static7.setHighMemory();
 			} else {
-				Static92.method1480();
+				Static92.invalidRunParams();
 			}
-			if (arg0[4].equals("free")) {
-				Static18.aBoolean37 = false;
-			} else if (arg0[4].equals("members")) {
-				Static18.aBoolean37 = true;
+			if (args[4].equals("free")) {
+				Static18.members = false;
+			} else if (args[4].equals("members")) {
+				Static18.members = true;
 			} else {
-				Static92.method1480();
+				Static92.invalidRunParams();
 			}
 			@Pc(124) client local124 = new client();
 			local124.method339("runescape", Static20.anInt475 + 32, InetAddress.getLocalHost());
@@ -195,15 +195,15 @@ public final class client extends Applet_Sub1 {
 		Static90.anInt2132 = Integer.parseInt(this.getParameter("modewhere"));
 		@Pc(29) String local29 = this.getParameter("lowmem");
 		if (local29 != null && local29.equals("1")) {
-			Static31.method1676();
+			Static31.setLowMemory();
 		} else {
-			Static7.method188();
+			Static7.setHighMemory();
 		}
 		@Pc(45) String local45 = this.getParameter("members");
 		if (local45 != null && local45.equals("1")) {
-			Static18.aBoolean37 = true;
+			Static18.members = true;
 		} else {
-			Static18.aBoolean37 = false;
+			Static18.members = false;
 		}
 		this.method326(Static20.anInt475 + 32);
 	}

@@ -26,7 +26,7 @@ public final class Static67 {
 	public static Class40 aClass40_484 = Static13.method257("Continue");
 
 	@OriginalMember(owner = "client!na", name = "g", descriptor = "I")
-	public static int anInt1669 = 0;
+	public static int orbitCameraYaw = 0;
 
 	@OriginalMember(owner = "client!na", name = "h", descriptor = "Lclient!o;")
 	public static Class40 aClass40_485 = Static13.method257("To extend or cancel a subscription:*6n1(Y Logout and return to the frontpage of this website)3*6n2(YChoose the relevant option from the (Wmembership(W section)3*6n*6nNote: If you are a credit card subscriber a top)2up payment will*6nautomatically be taken when 3 days credit remain)3*6n(Xunless you cancel your subscription)1 which can be done at any time)3(Y");

@@ -4,6 +4,7 @@ import jagex2.config.ComType;
 import jagex2.dash3d.CollisionMap;
 import jagex2.dash3d.entity.NpcEntity;
 import jagex2.dash3d.entity.PlayerEntity;
+import jagex2.dash3d.entity.ProjectileEntity;
 import jagex2.graphics.Pix24;
 import jagex2.io.Packet;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -52,31 +53,31 @@ public final class Static54 {
 	}
 
 	@OriginalMember(owner = "client!kc", name = "c", descriptor = "(Z)V")
-	public static void method917() {
-		for (@Pc(10) Class2_Sub2_Sub12_Sub2 local10 = (Class2_Sub2_Sub12_Sub2) Static24.aClass44_4.peekFront(); local10 != null; local10 = (Class2_Sub2_Sub12_Sub2) Static24.aClass44_4.prev()) {
-			if (local10.anInt1417 != Static1.currentLevel || local10.anInt1427 < Static107.loopCycle) {
-				local10.unlink();
-			} else if (Static107.loopCycle >= local10.anInt1419) {
-				if (local10.anInt1434 > 0) {
-					@Pc(47) NpcEntity local47 = Static2.npcs[local10.anInt1434 - 1];
-					if (local47 != null && local47.x >= 0 && local47.x < 13312 && local47.z >= 0 && local47.z < 13312) {
-						local10.method939(local47.x, Static86.method1383(local10.anInt1417, local47.x, local47.z) - local10.anInt1416, Static107.loopCycle, local47.z);
+	public static void pushProjectiles() {
+		for (@Pc(10) ProjectileEntity proj = (ProjectileEntity) Static24.aClass44_4.peekFront(); proj != null; proj = (ProjectileEntity) Static24.aClass44_4.prev()) {
+			if (proj.level != Static1.currentLevel || proj.lastCycle < Static107.loopCycle) {
+				proj.unlink();
+			} else if (Static107.loopCycle >= proj.startCycle) {
+				if (proj.target > 0) {
+					@Pc(47) NpcEntity npc = Static2.npcs[proj.target - 1];
+					if (npc != null && npc.x >= 0 && npc.x < 13312 && npc.z >= 0 && npc.z < 13312) {
+						proj.updateVelocity(npc.x, Static86.method1383(proj.level, npc.x, npc.z) - proj.offsetY, Static107.loopCycle, npc.z);
 					}
 				}
-				if (local10.anInt1434 < 0) {
-					@Pc(97) int local97 = -local10.anInt1434 - 1;
-					@Pc(104) PlayerEntity local104;
-					if (local97 == Static83.anInt1955) {
-						local104 = Static88.localPlayer;
+				if (proj.target < 0) {
+					@Pc(97) int index = -proj.target - 1;
+					@Pc(104) PlayerEntity player;
+					if (index == Static83.localPid) {
+						player = Static88.localPlayer;
 					} else {
-						local104 = Static100.players[local97];
+						player = Static100.players[index];
 					}
-					if (local104 != null && local104.x >= 0 && local104.x < 13312 && local104.z >= 0 && local104.z < 13312) {
-						local10.method939(local104.x, Static86.method1383(local10.anInt1417, local104.x, local104.z) - local10.anInt1416, Static107.loopCycle, local104.z);
+					if (player != null && player.x >= 0 && player.x < 13312 && player.z >= 0 && player.z < 13312) {
+						proj.updateVelocity(player.x, Static86.method1383(proj.level, player.x, player.z) - proj.offsetY, Static107.loopCycle, player.z);
 					}
 				}
-				local10.method942(Static45.anInt1095);
-				Static93.scene.addTemporary(Static1.currentLevel, (int) local10.aDouble7, (int) local10.aDouble5, (int) local10.aDouble2, 60, local10, local10.anInt1436, -1, false);
+				proj.update(Static45.sceneDelta);
+				Static93.scene.addTemporary(Static1.currentLevel, (int) proj.aDouble7, (int) proj.aDouble5, (int) proj.y, 60, proj, proj.anInt1436, -1, false);
 			}
 		}
 	}

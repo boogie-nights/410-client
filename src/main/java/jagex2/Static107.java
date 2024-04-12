@@ -147,7 +147,7 @@ public final class Static107 {
 					@Pc(110) int local110 = local103 + local22[local17++];
 					local116 = Static81.method1340(local110);
 					local121 = local22[local17++];
-					if (local121 != -1 && (!Static105.get(local121).members || Static18.aBoolean37)) {
+					if (local121 != -1 && (!Static105.get(local121).members || Static18.members)) {
 						for (local133 = 0; local133 < local116.invSlotObjId.length; local133++) {
 							if (local121 + 1 == local116.invSlotObjId[local133]) {
 								local33 += local116.invSlotObjCount[local133];
@@ -179,7 +179,7 @@ public final class Static107 {
 					local103 += local22[local17++];
 					local116 = Static81.method1340(local103);
 					local121 = local22[local17++];
-					if (local121 != -1 && (!Static105.get(local121).members || Static18.aBoolean37)) {
+					if (local121 != -1 && (!Static105.get(local121).members || Static18.members)) {
 						for (local133 = 0; local133 < local116.invSlotObjId.length; local133++) {
 							if (local121 + 1 == local116.invSlotObjId[local133]) {
 								local33 = 999999999;

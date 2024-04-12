@@ -128,7 +128,7 @@ public final class Static56 {
 
 	@OriginalMember(owner = "client!ke", name = "m", descriptor = "(I)V")
 	public static void method1548() {
-		Static41.method755();
+		Static41.updateFlames();
 		if (Static44.anInt1075 != 10) {
 			return;
 		}
@@ -158,14 +158,14 @@ public final class Static56 {
 			}
 			local73 += 15;
 			if (local22 == 1 && local26 >= 25 && local26 <= 175 && local20 >= 130 && local20 <= 170) {
-				Static86.aClass40_591 = Static86.aClass40_591.method1175().method1167();
+				Static86.username = Static86.username.method1175().method1167();
 				Static49.method1537(Static86.aClass40_593, Static17.aClass40_120);
 				Static7.method187(20);
 			} else {
 				if (local22 == 1 && local26 >= 185 && local26 <= 335 && local20 >= 130 && local20 <= 170) {
 					Static91.anInt2143 = 0;
-					Static86.aClass40_591 = Static86.aClass40_593;
-					Static86.aClass40_587 = Static86.aClass40_593;
+					Static86.username = Static86.aClass40_593;
+					Static86.password = Static86.aClass40_593;
 				}
 				while (true) {
 					@Pc(211) boolean local211;
@@ -181,26 +181,26 @@ public final class Static56 {
 							if (Static99.anInt91 != 0) {
 								continue label145;
 							}
-							if (Static37.anInt935 == 85 && Static86.aClass40_591.method1169() > 0) {
-								Static86.aClass40_591 = Static86.aClass40_591.method1180(Static86.aClass40_591.method1169() - 1, 0);
+							if (Static37.anInt935 == 85 && Static86.username.method1169() > 0) {
+								Static86.username = Static86.username.method1180(Static86.username.method1169() - 1, 0);
 							}
 							if (Static37.anInt935 == 84 || Static37.anInt935 == 80) {
 								Static99.anInt91 = 1;
 							}
-							if (local211 && Static86.aClass40_591.method1169() < 12) {
-								Static86.aClass40_591 = Static86.aClass40_591.method1192(Static4.anInt135);
+							if (local211 && Static86.username.method1169() < 12) {
+								Static86.username = Static86.username.method1192(Static4.anInt135);
 							}
 						}
 						return;
 					} while (Static99.anInt91 != 1);
-					if (Static37.anInt935 == 85 && Static86.aClass40_587.method1169() > 0) {
-						Static86.aClass40_587 = Static86.aClass40_587.method1180(Static86.aClass40_587.method1169() - 1, 0);
+					if (Static37.anInt935 == 85 && Static86.password.method1169() > 0) {
+						Static86.password = Static86.password.method1180(Static86.password.method1169() - 1, 0);
 					}
 					if (Static37.anInt935 == 84 || Static37.anInt935 == 80) {
 						Static99.anInt91 = 0;
 					}
-					if (local211 && Static86.aClass40_587.method1169() < 20) {
-						Static86.aClass40_587 = Static86.aClass40_587.method1192(Static4.anInt135);
+					if (local211 && Static86.password.method1169() < 20) {
+						Static86.password = Static86.password.method1192(Static4.anInt135);
 					}
 				}
 			}

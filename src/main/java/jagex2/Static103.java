@@ -74,11 +74,11 @@ public final class Static103 {
 			Static90.method1461(arg2, arg0, arg1);
 			return;
 		}
-		@Pc(32) int local32 = Static84.anInt1978 + Static67.anInt1669 & 0x7FF;
+		@Pc(32) int local32 = Static84.minimapAnticheatAngle + Static67.orbitCameraYaw & 0x7FF;
 		@Pc(36) int local36 = Static71.sin[local32];
-		@Pc(44) int local44 = local36 * 256 / (Static15.anInt1857 + 256);
+		@Pc(44) int local44 = local36 * 256 / (Static15.minimapZoom + 256);
 		@Pc(48) int local48 = Static71.cos[local32];
-		@Pc(56) int local56 = local48 * 256 / (Static15.anInt1857 + 256);
+		@Pc(56) int local56 = local48 * 256 / (Static15.minimapZoom + 256);
 		@Pc(67) int local67 = local44 * arg1 + arg2 * local56 >> 16;
 		@Pc(78) int local78 = local56 * arg1 - arg2 * local44 >> 16;
 		@Pc(84) double local84 = Math.atan2((double) local67, (double) local78);
@@ -286,7 +286,7 @@ public final class Static103 {
 				Static32.method591(Static25.aClass5_Sub1_4, Static5.aClass5_Sub1_1);
 				Static95.method1518(Static1.lowMemory, Static25.aClass5_Sub1_4, Static5.aClass5_Sub1_1);
 				method1651(Static5.aClass5_Sub1_1, Static25.aClass5_Sub1_4);
-				Static106.method1741(Static25.aClass5_Sub1_4, Static5.aClass5_Sub1_1, Static18.aBoolean37);
+				Static106.method1741(Static25.aClass5_Sub1_4, Static5.aClass5_Sub1_1, Static18.members);
 				Static96.method1551(Static87.aClass5_Sub1_18, Static43.aClass5_Sub1_14, Static5.aClass5_Sub1_1);
 				Static80.method1329(Static5.aClass5_Sub1_1, Static25.aClass5_Sub1_4);
 				Static16.method340(Static5.aClass5_Sub1_1);

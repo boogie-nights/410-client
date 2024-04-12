@@ -35,7 +35,7 @@ public final class Static84 {
 	public static Class40 aClass40_569 = Static13.method257("No matching objects found)1 please shorten search");
 
 	@OriginalMember(owner = "client!rd", name = "l", descriptor = "I")
-	public static int anInt1978 = 0;
+	public static int minimapAnticheatAngle = 0;
 
 	@OriginalMember(owner = "client!rd", name = "m", descriptor = "I")
 	public static int anInt1979 = -1;

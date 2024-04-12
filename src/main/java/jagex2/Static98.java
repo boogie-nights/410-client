@@ -48,7 +48,7 @@ public final class Static98 {
 	public static Class40 aClass40_679 = Static13.method257("Jan");
 
 	@OriginalMember(owner = "client!uc", name = "y", descriptor = "I")
-	public static int anInt2371 = 0;
+	public static int cameraAnticheatOffsetZ = 0;
 
 	@OriginalMember(owner = "client!uc", name = "z", descriptor = "I")
 	public static int wavevol = 127;

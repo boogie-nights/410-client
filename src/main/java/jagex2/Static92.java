@@ -16,7 +16,7 @@ public final class Static92 {
 	public static Class5 aClass5_28;
 
 	@OriginalMember(owner = "client!tb", name = "W", descriptor = "[I")
-	public static int[] anIntArray472;
+	public static int[] flameGradient;
 
 	@OriginalMember(owner = "client!tb", name = "X", descriptor = "I")
 	public static int anInt2172;
@@ -190,7 +190,7 @@ public final class Static92 {
 			Static1.anInt10 = 20;
 			Static61.aBoolean121 = false;
 			Static80.out.p1isaac(2);
-			Static80.out.method1707(Static67.anInt1669);
+			Static80.out.method1707(Static67.orbitCameraYaw);
 			Static80.out.ip2(Static93.anInt2177);
 		}
 		if (Static97.aBoolean174 && !Static12.aBoolean27) {
@@ -217,7 +217,7 @@ public final class Static92 {
 		Static72.method1197();
 		Static75.method1227();
 		Static2.method19();
-		Static45.anInt1095++;
+		Static45.sceneDelta++;
 		if (Static45.crossMode != 0) {
 			Static101.anInt2410 += 20;
 			if (Static101.anInt2410 >= 400) {
@@ -362,53 +362,53 @@ public final class Static92 {
 			Static29.anInt716 = 0;
 			local112 = (int) (Math.random() * 8.0D);
 			if ((local112 & 0x4) == 4) {
-				Static10.anInt262 += Static56.anInt2299;
+				Static10.cameraAnticheatAngle += Static56.anInt2299;
 			}
 			if ((local112 & 0x1) == 1) {
-				Static104.anInt2518 += Static72.anInt1779;
+				Static104.cameraAnticheatOffsetX += Static72.anInt1779;
 			}
 			if ((local112 & 0x2) == 2) {
-				Static98.anInt2371 += Static25.anInt667;
+				Static98.cameraAnticheatOffsetZ += Static25.anInt667;
 			}
 		}
 		if (Static83.anInt1966 > 500) {
 			Static83.anInt1966 = 0;
 			local112 = (int) (Math.random() * 8.0D);
 			if ((local112 & 0x2) == 2) {
-				Static15.anInt1857 += Static34.anInt798;
+				Static15.minimapZoom += Static34.anInt798;
 			}
 			if ((local112 & 0x1) == 1) {
-				Static84.anInt1978 += Static34.anInt804;
+				Static84.minimapAnticheatAngle += Static34.anInt804;
 			}
 		}
-		if (Static15.anInt1857 < -20) {
+		if (Static15.minimapZoom < -20) {
 			Static34.anInt798 = 1;
 		}
-		if (Static10.anInt262 < -40) {
+		if (Static10.cameraAnticheatAngle < -40) {
 			Static56.anInt2299 = 1;
 		}
-		if (Static84.anInt1978 < -60) {
+		if (Static84.minimapAnticheatAngle < -60) {
 			Static34.anInt804 = 2;
 		}
-		if (Static84.anInt1978 > 60) {
+		if (Static84.minimapAnticheatAngle > 60) {
 			Static34.anInt804 = -2;
 		}
-		if (Static104.anInt2518 < -50) {
+		if (Static104.cameraAnticheatOffsetX < -50) {
 			Static72.anInt1779 = 2;
 		}
-		if (Static98.anInt2371 < -55) {
+		if (Static98.cameraAnticheatOffsetZ < -55) {
 			Static25.anInt667 = 2;
 		}
-		if (Static104.anInt2518 > 50) {
+		if (Static104.cameraAnticheatOffsetX > 50) {
 			Static72.anInt1779 = -2;
 		}
-		if (Static15.anInt1857 > 10) {
+		if (Static15.minimapZoom > 10) {
 			Static34.anInt798 = -1;
 		}
-		if (Static10.anInt262 > 40) {
+		if (Static10.cameraAnticheatAngle > 40) {
 			Static56.anInt2299 = -1;
 		}
-		if (Static98.anInt2371 > 55) {
+		if (Static98.cameraAnticheatOffsetZ > 55) {
 			Static25.anInt667 = -2;
 		}
 		if (Static91.anInt2146 > 50) {
@@ -426,7 +426,7 @@ public final class Static92 {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "c", descriptor = "(I)V")
-	public static void method1480() {
+	public static void invalidRunParams() {
 		System.out.println("Usage: worldid, [live/office/local], [live/rc/wip], [lowmem/highmem], [free/members],");
 		System.exit(1);
 	}
@@ -440,7 +440,7 @@ public final class Static92 {
 		aClass40_619 = null;
 		aClass40_622 = null;
 		aClass45_29 = null;
-		anIntArray472 = null;
+		flameGradient = null;
 		aBooleanArray31 = null;
 		textSystemUpdateIn = null;
 		aClass40_621 = null;

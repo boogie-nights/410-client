@@ -27,7 +27,7 @@ public final class Static15 {
 	public static Pix8 aClass2_Sub2_Sub2_Sub3_19;
 
 	@OriginalMember(owner = "client!cd", name = "G", descriptor = "I")
-	public static int anInt1863;
+	public static int cameraZ;
 
 	@OriginalMember(owner = "client!cd", name = "M", descriptor = "[[[B")
 	public static byte[][][] aByteArrayArrayArray10;
@@ -36,7 +36,7 @@ public final class Static15 {
 	public static Class40 aClass40_535 = Static13.method257("Add friend @whi@");
 
 	@OriginalMember(owner = "client!cd", name = "v", descriptor = "I")
-	public static int anInt1857 = 0;
+	public static int minimapZoom = 0;
 
 	@OriginalMember(owner = "client!cd", name = "y", descriptor = "Lclient!o;")
 	public static Class40 aClass40_536 = Static13.method257("Login");
@@ -281,11 +281,11 @@ public final class Static15 {
 			Static72.flameGradient2[local570 + 192] = 0xFFFFFF;
 		}
 		anIntArray414 = new int[32768];
-		Static92.anIntArray472 = new int[256];
+		Static92.flameGradient = new int[256];
 		Static4.anIntArray17 = new int[32768];
 		Static24.method502(null);
-		Static86.aClass40_591 = Static86.aClass40_593;
-		Static86.aClass40_587 = Static86.aClass40_593;
+		Static86.username = Static86.aClass40_593;
+		Static86.password = Static86.aClass40_593;
 		Static91.anInt2143 = 0;
 		Static1.anIntArray1 = new int[32768];
 		Static103.anIntArray547 = new int[32768];
