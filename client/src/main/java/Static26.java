@@ -17,7 +17,7 @@ public final class Static26 {
 	public static int anInt686;
 
 	@OriginalMember(owner = "client!fb", name = "x", descriptor = "Lclient!ud;")
-	public static Class5 aClass5_9;
+	public static Js5 aClass5_9;
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(II)Z", line = 736)
 	public static boolean method533(@OriginalArg(0) int arg0) {
@@ -25,9 +25,9 @@ public final class Static26 {
 			return false;
 		}
 		@Pc(13) boolean local13 = false;
-		@Pc(17) Class2_Sub2_Sub13[] local17 = Static46.aClass2_Sub2_Sub13ArrayArray1[arg0];
+		@Pc(17) ComType[] local17 = Static46.aClass2_Sub2_Sub13ArrayArray1[arg0];
 		for (@Pc(24) int local24 = 0; local24 < local17.length; local24++) {
-			@Pc(30) Class2_Sub2_Sub13 local30 = local17[local24];
+			@Pc(30) ComType local30 = local17[local24];
 			if (local30 != null && local30.anInt1613 == 6) {
 				@Pc(56) int local56;
 				if (local30.anInt1574 != -1 || local30.anInt1592 != -1) {
@@ -38,8 +38,8 @@ public final class Static26 {
 						local56 = local30.anInt1574;
 					}
 					if (local56 != -1) {
-						@Pc(71) Class2_Sub2_Sub6 local71 = Static57.method1042(local56);
-						local30.anInt1593 += Class27.anInt1095;
+						@Pc(71) SpotAnimType local71 = Static57.method1042(local56);
+						local30.anInt1593 += Static1.anInt1095;
 						label50: while (true) {
 							do {
 								do {
@@ -59,10 +59,10 @@ public final class Static26 {
 				if (local30.anInt1617 != 0) {
 					@Pc(152) int local152 = local30.anInt1617 >> 16;
 					local13 = true;
-					@Pc(158) int local158 = local152 * Class27.anInt1095;
+					@Pc(158) int local158 = local152 * Static1.anInt1095;
 					local30.anInt1579 = local30.anInt1579 + local158 & 0x7FF;
 					local56 = local30.anInt1617 << 16 >> 16;
-					local56 *= Class27.anInt1095;
+					local56 *= Static1.anInt1095;
 					local30.anInt1614 = local30.anInt1614 + local56 & 0x7FF;
 				}
 			}
@@ -71,7 +71,7 @@ public final class Static26 {
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(Lclient!cb;Lclient!cb;BI)V", line = 1038)
-	public static void method540(@OriginalArg(0) Class11 arg0, @OriginalArg(1) Class11 arg1, @OriginalArg(3) int arg2) throws IOException {
+	public static void method540(@OriginalArg(0) DiskStore arg0, @OriginalArg(1) DiskStore arg1, @OriginalArg(3) int arg2) throws IOException {
 		@Pc(10) byte[] local10 = arg0.method261(arg2);
 		if (local10 == null) {
 			return;
@@ -85,7 +85,7 @@ public final class Static26 {
 			if (local46 == -1) {
 				@Pc(61) byte[] local61 = new byte[local10.length + 9];
 				Static107.method993(local10, 0, local61, 9, local10.length);
-				@Pc(75) Class2_Sub3 local75 = new Class2_Sub3(local61);
+				@Pc(75) Packet local75 = new Packet(local61);
 				local75.method1703(2);
 				local75.method1725(local31);
 				local75.method1725(local23);
@@ -103,7 +103,7 @@ public final class Static26 {
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(I)V", line = 1091)
 	public static void method541() {
 		aClass5_Sub1_5 = null;
-		Class20.aClass40_193 = null;
+		JagString.aClass40_193 = null;
 		aClass5_9 = null;
 	}
 }

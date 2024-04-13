@@ -5,12 +5,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!ib")
 public abstract class Class12 {
 
-	@OriginalMember(owner = "client!ib", name = "h", descriptor = "I")
-	public static int anInt1850 = 0;
-
-	@OriginalMember(owner = "client!ib", name = "e", descriptor = "Z")
-	public static boolean aBoolean149 = false;
-
 	@OriginalMember(owner = "client!ib", name = "b", descriptor = "(B)V")
 	public abstract void method1241();
 

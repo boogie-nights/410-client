@@ -6,19 +6,19 @@ public final class Static29 {
 	public static long aLong151;
 
 	@OriginalMember(owner = "client!g", name = "e", descriptor = "Lclient!hc;")
-	public static Class25 aClass25_48;
+	public static ClientStream aClass25_48;
 
 	@OriginalMember(owner = "client!g", name = "a", descriptor = "(B)V", line = 11)
 	public static void method1675() {
-		Class49.aClass47_16.method1330();
-		Class56.aClass47_18.method1330();
-		Class2_Sub2_Sub6.aClass47_7.method1330();
+		Static1.aClass47_16.method1330();
+		Static1.aClass47_18.method1330();
+		Static1.aClass47_7.method1330();
 	}
 
 	@OriginalMember(owner = "client!g", name = "a", descriptor = "(Z)V", line = 39)
 	public static void method1676() {
-		Class1.aBoolean2 = true;
-		Class55.aBoolean163 = true;
+		Static1.aBoolean2 = true;
+		World3D.aBoolean163 = true;
 	}
 
 	@OriginalMember(owner = "client!g", name = "b", descriptor = "(I)V", line = 97)
@@ -39,10 +39,10 @@ public final class Static29 {
 
 	@OriginalMember(owner = "client!g", name = "b", descriptor = "(B)V", line = 130)
 	public static void method1679() {
-		Class2.aClass40_730 = null;
-		Class2.aClass40_732 = null;
+		JagString.aClass40_730 = null;
+		JagString.aClass40_732 = null;
 		aClass25_48 = null;
-		Class2.aClass40_731 = null;
-		Class2.aClass40_733 = null;
+		JagString.aClass40_731 = null;
+		JagString.aClass40_733 = null;
 	}
 }

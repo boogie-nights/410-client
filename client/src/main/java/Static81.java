@@ -95,10 +95,10 @@ public final class Static81 {
 		@Pc(67) int local67;
 		for (@Pc(23) int local23 = 128; local23 <= 384; local23 += 32) {
 			for (local26 = 0; local26 < 2048; local26 += 64) {
-				anInt2114 = Class2_Sub2_Sub12_Sub4.anIntArray386[local23];
-				anInt2104 = Class2_Sub2_Sub12_Sub4.anIntArray402[local23];
-				anInt2099 = Class2_Sub2_Sub12_Sub4.anIntArray386[local26];
-				anInt2101 = Class2_Sub2_Sub12_Sub4.anIntArray402[local26];
+				anInt2114 = Model.anIntArray386[local23];
+				anInt2104 = Model.anIntArray402[local23];
+				anInt2099 = Model.anIntArray386[local26];
+				anInt2101 = Model.anIntArray402[local26];
 				local49 = (local23 - 128) / 32;
 				local53 = local26 / 64;
 				for (local55 = -26; local55 <= 26; local55++) {
@@ -142,7 +142,7 @@ public final class Static81 {
 								}
 							}
 						}
-						Class55.aBooleanArrayArrayArrayArray1[local26][local49][local53 + 25][local55 + 25] = local137;
+						World3D.aBooleanArrayArrayArrayArray1[local26][local49][local53 + 25][local55 + 25] = local137;
 					}
 				}
 			}
@@ -166,29 +166,29 @@ public final class Static81 {
 
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "()V", line = 975)
 	public static void method1431() {
-		Class55.aClass37Array3 = null;
-		Class55.anIntArray455 = null;
-		Class55.anIntArray457 = null;
-		Class55.anIntArray456 = null;
-		Class55.anIntArray459 = null;
-		Class55.anIntArray458 = null;
-		Class55.aClass54ArrayArray1 = null;
-		Class55.aClass54Array1 = null;
-		Class55.aClass44_6 = null;
-		Class55.anIntArray468 = null;
-		Class55.anIntArray463 = null;
-		Class55.anIntArray464 = null;
-		Class55.anIntArray466 = null;
-		Class55.anIntArray462 = null;
-		Class55.anIntArray467 = null;
-		Class55.anIntArray465 = null;
-		Class55.aBooleanArrayArrayArrayArray1 = null;
+		World3D.aClass37Array3 = null;
+		World3D.anIntArray455 = null;
+		World3D.anIntArray457 = null;
+		World3D.anIntArray456 = null;
+		World3D.anIntArray459 = null;
+		World3D.anIntArray458 = null;
+		World3D.aClass54ArrayArray1 = null;
+		World3D.aClass54Array1 = null;
+		World3D.aClass44_6 = null;
+		World3D.anIntArray468 = null;
+		World3D.anIntArray463 = null;
+		World3D.anIntArray464 = null;
+		World3D.anIntArray466 = null;
+		World3D.anIntArray462 = null;
+		World3D.anIntArray467 = null;
+		World3D.anIntArray465 = null;
+		World3D.aBooleanArrayArrayArrayArray1 = null;
 		aBooleanArrayArray1 = null;
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIIIIII)V", line = 1088)
 	public static void method1433(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
-		@Pc(3) Class54 local3 = new Class54();
+		@Pc(3) Occluder local3 = new Occluder();
 		local3.anInt2070 = arg2 / 128;
 		local3.anInt2072 = arg3 / 128;
 		local3.anInt2069 = arg4 / 128;
@@ -200,6 +200,6 @@ public final class Static81 {
 		local3.anInt2088 = arg5;
 		local3.anInt2090 = arg6;
 		local3.anInt2086 = arg7;
-		Class55.aClass54ArrayArray1[arg0][Class55.anIntArray458[arg0]++] = local3;
+		World3D.aClass54ArrayArray1[arg0][World3D.anIntArray458[arg0]++] = local3;
 	}
 }

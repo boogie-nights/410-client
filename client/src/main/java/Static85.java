@@ -8,13 +8,13 @@ public final class Static85 {
 	public static boolean aBoolean166;
 
 	@OriginalMember(owner = "client!tc", name = "h", descriptor = "Lclient!sd;")
-	public static Class55 aClass55_1;
+	public static World3D aClass55_1;
 
 	@OriginalMember(owner = "client!tc", name = "m", descriptor = "Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4 aClass2_Sub2_Sub2_Sub4_8;
+	public static Pix24 aClass2_Sub2_Sub2_Sub4_8;
 
 	@OriginalMember(owner = "client!tc", name = "r", descriptor = "[Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3[] aClass2_Sub2_Sub2_Sub3Array12;
+	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array12;
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(I)V", line = 19)
 	public static void method1485() {
@@ -134,14 +134,14 @@ public final class Static85 {
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(Z)V", line = 202)
 	public static void method1488() {
-		Class58.aClass40_627 = null;
-		Class58.aClass40_625 = null;
-		Class58.aClass40_626 = null;
-		Class58.aClass40_623 = null;
+		JagString.aClass40_627 = null;
+		JagString.aClass40_625 = null;
+		JagString.aClass40_626 = null;
+		JagString.aClass40_623 = null;
 		aClass2_Sub2_Sub2_Sub3Array12 = null;
 		aClass2_Sub2_Sub2_Sub4_8 = null;
 		aClass55_1 = null;
-		Class58.aClass40_624 = null;
-		Class58.aClass6_6 = null;
+		JagString.aClass40_624 = null;
+		Static1.aClass6_6 = null;
 	}
 }

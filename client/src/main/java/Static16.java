@@ -4,22 +4,22 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static16 {
 
 	@OriginalMember(owner = "client!d", name = "G", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_6;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_6;
 
 	@OriginalMember(owner = "client!d", name = "a", descriptor = "(B)V", line = 4)
 	public static void method345() {
-		Class14.anIntArray82 = null;
-		Class14.aClass40_113 = null;
-		Class14.aClass40_112 = null;
-		Class14.aClass40_115 = null;
-		Class14.aClass40_116 = null;
-		Class14.aClass40_114 = null;
-		Class14.aClass40Array7 = null;
-		Class14.aClass40_120 = null;
-		Class14.aClass40_119 = null;
-		Class14.aClass40_118 = null;
+		Static1.anIntArray82 = null;
+		JagString.aClass40_113 = null;
+		JagString.aClass40_112 = null;
+		JagString.aClass40_115 = null;
+		JagString.aClass40_116 = null;
+		JagString.aClass40_114 = null;
+		Static1.aClass40Array7 = null;
+		JagString.aClass40_120 = null;
+		JagString.aClass40_119 = null;
+		JagString.aClass40_118 = null;
 		aClass2_Sub2_Sub2_Sub3_6 = null;
-		Class14.aClass40_117 = null;
+		JagString.aClass40_117 = null;
 	}
 
 	@OriginalMember(owner = "client!d", name = "b", descriptor = "(B)V", line = 53)

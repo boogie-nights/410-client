@@ -5,17 +5,17 @@ public final class Static92 {
 
 	@OriginalMember(owner = "client!v", name = "f", descriptor = "(I)V", line = 56)
 	public static void method1580() {
-		Class2_Sub2_Sub15.aClass40_688 = null;
-		Class2_Sub2_Sub15.aClass40_690 = null;
-		Class2_Sub2_Sub15.aClass40_689 = null;
-		Class2_Sub2_Sub15.aBooleanArray37 = null;
-		Class2_Sub2_Sub15.aClass40_691 = null;
-		Class2_Sub2_Sub15.aClass2_Sub2_Sub12_Sub1_Sub1Array1 = null;
+		JagString.aClass40_688 = null;
+		JagString.aClass40_690 = null;
+		JagString.aClass40_689 = null;
+		Static1.aBooleanArray37 = null;
+		JagString.aClass40_691 = null;
+		Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1 = null;
 	}
 
 	@OriginalMember(owner = "client!v", name = "a", descriptor = "(IZ)Lclient!o;", line = 71)
-	public static Class40 method1581(@OriginalArg(0) int arg0) {
-		return arg0 < 999999999 ? Static48.method859(arg0) : Class14.aClass40_116;
+	public static JagString method1581(@OriginalArg(0) int arg0) {
+		return arg0 < 999999999 ? Static48.method859(arg0) : JagString.aClass40_116;
 	}
 
 	@OriginalMember(owner = "client!v", name = "a", descriptor = "(ILjava/lang/String;)Ljava/lang/Class;", line = 121)
@@ -43,6 +43,6 @@ public final class Static92 {
 
 	@OriginalMember(owner = "client!v", name = "h", descriptor = "(I)V", line = 161)
 	public static void method1584() {
-		Class63.aClass44_9 = new Class44();
+		Static1.aClass44_9 = new LinkList();
 	}
 }

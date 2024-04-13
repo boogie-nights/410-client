@@ -6,42 +6,6 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!e")
 public final class Class18_Sub1 extends Class18 {
 
-	@OriginalMember(owner = "client!e", name = "u", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_5 = new Class47(64);
-
-	@OriginalMember(owner = "client!e", name = "B", descriptor = "Lclient!o;")
-	public static Class40 aClass40_131 = Static12.method257("huffman");
-
-	@OriginalMember(owner = "client!e", name = "I", descriptor = "Lclient!o;")
-	public static Class40 aClass40_132 = Static12.method257("flash1:");
-
-	@OriginalMember(owner = "client!e", name = "M", descriptor = "Lclient!o;")
-	public static Class40 aClass40_133 = Static12.method257("@or3@");
-
-	@OriginalMember(owner = "client!e", name = "P", descriptor = "I")
-	public static int anInt475 = 0;
-
-	@OriginalMember(owner = "client!e", name = "G", descriptor = "I")
-	public static int anInt470 = 0;
-
-	@OriginalMember(owner = "client!e", name = "N", descriptor = "Lclient!o;")
-	public static Class40 aClass40_134 = Static12.method257("@or1@");
-
-	@OriginalMember(owner = "client!e", name = "T", descriptor = "Lclient!o;")
-	public static Class40 aClass40_135 = Static12.method257(":0");
-
-	@OriginalMember(owner = "client!e", name = "R", descriptor = "[I")
-	public static int[] anIntArray93 = new int[5];
-
-	@OriginalMember(owner = "client!e", name = "F", descriptor = "Lclient!od;")
-	public static Class44 aClass44_2 = new Class44();
-
-	@OriginalMember(owner = "client!e", name = "V", descriptor = "I")
-	public static int anInt477 = -1;
-
-	@OriginalMember(owner = "client!e", name = "W", descriptor = "Z")
-	public static boolean aBoolean40 = false;
-
 	@OriginalMember(owner = "client!e", name = "v", descriptor = "I")
 	private int anInt463;
 

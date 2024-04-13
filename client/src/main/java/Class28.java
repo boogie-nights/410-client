@@ -42,8 +42,8 @@ public final class Class28 {
 	@OriginalMember(owner = "client!jb", name = "<init>", descriptor = "([BLclient!ga;)V", line = 42)
 	public Class28(@OriginalArg(0) byte[] arg0, @OriginalArg(1) Class2_Sub5 arg1) {
 		this.aClass2_Sub5_1 = arg1;
-		@Pc(18) Class2_Sub3 local18 = new Class2_Sub3(arg0);
-		@Pc(23) Class2_Sub3 local23 = new Class2_Sub3(arg0);
+		@Pc(18) Packet local18 = new Packet(arg0);
+		@Pc(23) Packet local23 = new Packet(arg0);
 		local18.anInt2546 = 2;
 		@Pc(30) int local30 = local18.method1708();
 		@Pc(32) int local32 = -1;

@@ -18,7 +18,7 @@ public final class Class2_Sub4_Sub1 extends Class2_Sub4 {
 	public int anInt612;
 
 	@OriginalMember(owner = "client!ed", name = "a", descriptor = "(Lclient!t;)Lclient!ed;", line = 4)
-	public Class2_Sub4_Sub1 method491(@OriginalArg(0) Class56 arg0) {
+	public Class2_Sub4_Sub1 method491(@OriginalArg(0) SampleRateConverter arg0) {
 		this.aByteArray8 = arg0.method1465(this.aByteArray8);
 		this.anInt611 = arg0.method1463(this.anInt611);
 		if (this.anInt613 == this.anInt612) {

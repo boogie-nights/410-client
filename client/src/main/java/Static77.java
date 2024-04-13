@@ -15,22 +15,22 @@ public final class Static77 {
 	public static int anInt1992;
 
 	@OriginalMember(owner = "client!s", name = "s", descriptor = "Lclient!ud;")
-	public static Class5 aClass5_27;
+	public static Js5 aClass5_27;
 
 	@OriginalMember(owner = "client!s", name = "a", descriptor = "(B)V", line = 4)
 	public static void method1363() {
-		Class53.aClass40_573 = null;
+		JagString.aClass40_573 = null;
 		aClass5_27 = null;
-		Class53.aClass40_575 = null;
+		JagString.aClass40_575 = null;
 		anIntArray434 = null;
-		Class53.aClass40_572 = null;
-		Class53.aClass40_574 = null;
-		Class53.aClass40_571 = null;
+		JagString.aClass40_572 = null;
+		JagString.aClass40_574 = null;
+		JagString.aClass40_571 = null;
 		aClass5_Sub1_17 = null;
 	}
 
 	@OriginalMember(owner = "client!s", name = "a", descriptor = "(I)V", line = 49)
 	public static void method1364() {
-		Class2_Sub3.aClass47_23.method1330();
+		Static1.aClass47_23.method1330();
 	}
 }

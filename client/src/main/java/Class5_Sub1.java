@@ -4,22 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ad")
-public final class Class5_Sub1 extends Class5 {
-
-	@OriginalMember(owner = "client!ad", name = "Bb", descriptor = "I")
-	public static int anInt140 = 1;
-
-	@OriginalMember(owner = "client!ad", name = "rb", descriptor = "I")
-	public static int anInt131 = 0;
-
-	@OriginalMember(owner = "client!ad", name = "xb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_29 = Static12.method257("backright2");
-
-	@OriginalMember(owner = "client!ad", name = "Fb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_30 = Static12.method257(" @whi@");
-
-	@OriginalMember(owner = "client!ad", name = "Ab", descriptor = "I")
-	public static int anInt139 = -1;
+public final class Class5_Sub1 extends Js5 {
 
 	@OriginalMember(owner = "client!ad", name = "ub", descriptor = "I")
 	private int anInt134;
@@ -40,13 +25,13 @@ public final class Class5_Sub1 extends Class5 {
 	private final int anInt123;
 
 	@OriginalMember(owner = "client!ad", name = "Eb", descriptor = "Lclient!cb;")
-	private final Class11 aClass11_2;
+	private final DiskStore aClass11_2;
 
 	@OriginalMember(owner = "client!ad", name = "kb", descriptor = "Lclient!cb;")
-	private final Class11 aClass11_1;
+	private final DiskStore aClass11_1;
 
 	@OriginalMember(owner = "client!ad", name = "<init>", descriptor = "(Lclient!cb;Lclient!cb;IZZZ)V", line = 16)
-	public Class5_Sub1(@OriginalArg(0) Class11 arg0, @OriginalArg(1) Class11 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) boolean arg5) {
+	public Class5_Sub1(@OriginalArg(0) DiskStore arg0, @OriginalArg(1) DiskStore arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) boolean arg5) {
 		super(arg3, arg4);
 		this.aBoolean7 = arg5;
 		this.anInt123 = arg2;
@@ -169,7 +154,7 @@ public final class Class5_Sub1 extends Class5 {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(Lclient!cb;I[BBZ)V", line = 468)
-	public void method95(@OriginalArg(0) Class11 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(4) boolean arg3) {
+	public void method95(@OriginalArg(0) DiskStore arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(4) boolean arg3) {
 		@Pc(67) int local67;
 		if (arg0 == this.aClass11_1) {
 			if (this.aBoolean8) {
@@ -179,9 +164,9 @@ public final class Class5_Sub1 extends Class5 {
 				Static45.method1535(this.anInt123, this, this.anInt134, (byte) 0, true, 255);
 				return;
 			}
-			Class49.aCRC32_1.reset();
-			Class49.aCRC32_1.update(arg2, 0, arg2.length);
-			local67 = (int) Class49.aCRC32_1.getValue();
+			Static1.aCRC32_1.reset();
+			Static1.aCRC32_1.update(arg2, 0, arg2.length);
+			local67 = (int) Static1.aCRC32_1.getValue();
 			if (this.anInt134 != local67) {
 				Static45.method1535(this.anInt123, this, this.anInt134, (byte) 0, true, 255);
 				return;
@@ -200,9 +185,9 @@ public final class Class5_Sub1 extends Class5 {
 			}
 			return;
 		}
-		Class49.aCRC32_1.reset();
-		Class49.aCRC32_1.update(arg2, 0, arg2.length - 2);
-		local67 = (int) Class49.aCRC32_1.getValue();
+		Static1.aCRC32_1.reset();
+		Static1.aCRC32_1.update(arg2, 0, arg2.length - 2);
+		local67 = (int) Static1.aCRC32_1.getValue();
 		@Pc(87) int local87 = (arg2[arg2.length - 1] & 0xFF) + ((arg2[arg2.length - 2] & 0xFF) << 8);
 		if (local67 != super.anIntArray16[arg1] || super.anIntArray11[arg1] != local87) {
 			this.aBooleanArray1[arg1] = false;

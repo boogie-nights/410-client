@@ -8,30 +8,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!p")
 public abstract class Class45 {
 
-	@OriginalMember(owner = "client!p", name = "d", descriptor = "[I")
-	public static int[] anIntArray469 = new int[100];
-
-	@OriginalMember(owner = "client!p", name = "c", descriptor = "Lclient!o;")
-	public static Class40 aClass40_613 = Static12.method257(" with @yel@");
-
-	@OriginalMember(owner = "client!p", name = "f", descriptor = "Z")
-	public static boolean aBoolean164 = false;
-
-	@OriginalMember(owner = "client!p", name = "m", descriptor = "Lclient!o;")
-	public static Class40 aClass40_614 = Static12.method257("You are not a member)3*6n*6nChoose to subscribe and*6nyou(Wll get loads of extra*6nbenefits and features)3");
-
-	@OriginalMember(owner = "client!p", name = "j", descriptor = "[I")
-	public static int[] anIntArray470 = new int[128];
-
-	@OriginalMember(owner = "client!p", name = "p", descriptor = "Lclient!ba;")
-	public static Class6 aClass6_5 = new Class6(32);
-
-	@OriginalMember(owner = "client!p", name = "u", descriptor = "Lclient!o;")
-	public static Class40 aClass40_616 = Static12.method257("Loading config )2 ");
-
-	@OriginalMember(owner = "client!p", name = "t", descriptor = "Lclient!o;")
-	public static Class40 aClass40_615 = Static12.method257("You are standing in a members)2only area)3");
-
 	@OriginalMember(owner = "client!p", name = "b", descriptor = "Ljava/awt/Image;")
 	protected Image anImage5;
 

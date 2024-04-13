@@ -114,7 +114,7 @@ public final class Static6 {
 				if (local265 == 0) {
 					local265 = 1;
 				}
-				Class2_Sub2_Sub2_Sub1.anIntArray63[local9++] = local265;
+				Draw3D.anIntArray63[local9++] = local265;
 			}
 		}
 	}
@@ -146,7 +146,7 @@ public final class Static6 {
 		}
 		@Pc(13) int local13;
 		@Pc(38) int local38;
-		if (Class2_Sub2_Sub2_Sub1.aBoolean19) {
+		if (Draw3D.aBoolean19) {
 			local13 = (arg8 - arg7) / (arg6 - arg5);
 			if (arg6 > anInt222) {
 				arg6 = anInt222;
@@ -164,7 +164,7 @@ public final class Static6 {
 		} else {
 			if (arg6 - arg5 > 7) {
 				local38 = arg6 - arg5 >> 3;
-				local13 = (arg8 - arg7) * Class2_Sub2_Sub2_Sub1.anIntArray60[local38] >> 6;
+				local13 = (arg8 - arg7) * Draw3D.anIntArray60[local38] >> 6;
 			} else {
 				local38 = 0;
 				local13 = 0;
@@ -183,7 +183,7 @@ public final class Static6 {
 		@Pc(99) int local99;
 		@Pc(107) int local107;
 		@Pc(115) int local115;
-		if (Class2_Sub2_Sub2_Sub1.aBoolean20) {
+		if (Draw3D.aBoolean20) {
 			local85 = 0;
 			local87 = 0;
 			local91 = arg5 - anInt225;
@@ -217,7 +217,7 @@ public final class Static6 {
 			local188 = local87 - arg3 >> 3;
 			arg2 += arg7 >> 3 & 0xC0000;
 			local200 = arg7 >> 23;
-			if (Class2_Sub2_Sub2_Sub1.aBoolean21) {
+			if (Draw3D.aBoolean21) {
 				while (local38-- > 0) {
 					local206 = arg4 + 1;
 					arg0[arg4] = arg1[(arg3 & 0xFC0) + (arg2 >> 6)] >>> local200;
@@ -393,7 +393,7 @@ public final class Static6 {
 		local188 = local87 - arg3 >> 3;
 		arg2 += arg7 & 0x600000;
 		local200 = arg7 >> 23;
-		if (Class2_Sub2_Sub2_Sub1.aBoolean21) {
+		if (Draw3D.aBoolean21) {
 			while (local38-- > 0) {
 				local206 = arg4 + 1;
 				arg0[arg4] = arg1[(arg3 & 0x3F80) + (arg2 >> 7)] >>> local200;
@@ -1445,7 +1445,7 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([I)[I", line = 1664)
 	public static int[] method175(@OriginalArg(0) int[] arg0) {
-		return method169(Class2_Sub2_Sub2.anInt2437, Class2_Sub2_Sub2.anInt2439, Class2_Sub2_Sub2.anInt2436, Class2_Sub2_Sub2.anInt2438, arg0);
+		return method169(Draw2D.anInt2437, Draw2D.anInt2439, Draw2D.anInt2436, Draw2D.anInt2438, arg0);
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IIIIIIIIIIIIIIIIIII)V", line = 1672)
@@ -1457,8 +1457,8 @@ public final class Static6 {
 			method172(arg0, arg1, arg2, arg3, arg4, arg5, method166(local11, arg6), method166(local11, arg7), method166(local11, arg8));
 			return;
 		}
-		Class2_Sub2_Sub2_Sub1.aBoolean20 = anInterface4_1.method394(arg18);
-		Class2_Sub2_Sub2_Sub1.aBoolean21 = anInterface4_1.method395(arg18);
+		Draw3D.aBoolean20 = anInterface4_1.method394(arg18);
+		Draw3D.aBoolean21 = anInterface4_1.method395(arg18);
 		@Pc(42) int local42 = arg9 - arg10;
 		@Pc(46) int local46 = arg12 - arg13;
 		@Pc(50) int local50 = arg15 - arg16;
@@ -2082,8 +2082,8 @@ public final class Static6 {
 		@Pc(147) int local147;
 		@Pc(48) int local48;
 		@Pc(91) int local91;
-		if (Class2_Sub2_Sub2_Sub1.aBoolean18) {
-			if (Class2_Sub2_Sub2_Sub1.aBoolean19) {
+		if (Draw3D.aBoolean18) {
+			if (Draw3D.aBoolean19) {
 				if (arg3 - arg2 > 3) {
 					local16 = (arg5 - arg4) / (arg3 - arg2);
 				} else {
@@ -2106,7 +2106,7 @@ public final class Static6 {
 				arg1 += arg2;
 				local48 = arg3 - arg2 >> 2;
 				if (local48 > 0) {
-					local16 = (arg5 - arg4) * Class2_Sub2_Sub2_Sub1.anIntArray60[local48] >> 15;
+					local16 = (arg5 - arg4) * Draw3D.anIntArray60[local48] >> 15;
 				} else {
 					local16 = 0;
 				}
@@ -2114,13 +2114,13 @@ public final class Static6 {
 				return;
 			}
 			@Pc(98) int local98;
-			if (Class2_Sub2_Sub2_Sub1.anInt228 == 0) {
+			if (Draw3D.anInt228 == 0) {
 				while (true) {
 					local48--;
 					if (local48 < 0) {
 						local48 = arg3 - arg2 & 0x3;
 						if (local48 > 0) {
-							local91 = Class2_Sub2_Sub2_Sub1.anIntArray63[arg4 >> 8];
+							local91 = Draw3D.anIntArray63[arg4 >> 8];
 							do {
 								arg0[arg1++] = local91;
 								local48--;
@@ -2129,7 +2129,7 @@ public final class Static6 {
 						}
 						break;
 					}
-					local91 = Class2_Sub2_Sub2_Sub1.anIntArray63[arg4 >> 8];
+					local91 = Draw3D.anIntArray63[arg4 >> 8];
 					arg4 += local16;
 					local98 = arg1 + 1;
 					arg0[arg1] = local91;
@@ -2141,14 +2141,14 @@ public final class Static6 {
 					arg0[local108] = local91;
 				}
 			} else {
-				local143 = Class2_Sub2_Sub2_Sub1.anInt228;
-				local147 = 256 - Class2_Sub2_Sub2_Sub1.anInt228;
+				local143 = Draw3D.anInt228;
+				local147 = 256 - Draw3D.anInt228;
 				while (true) {
 					local48--;
 					if (local48 < 0) {
 						local48 = arg3 - arg2 & 0x3;
 						if (local48 > 0) {
-							local91 = Class2_Sub2_Sub2_Sub1.anIntArray63[arg4 >> 8];
+							local91 = Draw3D.anIntArray63[arg4 >> 8];
 							local91 = ((local91 & 0xFF00FF) * local147 >> 8 & 0xFF00FF) + ((local91 & 0xFF00) * local147 >> 8 & 0xFF00);
 							do {
 								arg0[arg1++] = local91 + ((arg0[arg1] & 0xFF00FF) * local143 >> 8 & 0xFF00FF) + ((arg0[arg1] & 0xFF00) * local143 >> 8 & 0xFF00);
@@ -2157,7 +2157,7 @@ public final class Static6 {
 						}
 						break;
 					}
-					local91 = Class2_Sub2_Sub2_Sub1.anIntArray63[arg4 >> 8];
+					local91 = Draw3D.anIntArray63[arg4 >> 8];
 					arg4 += local16;
 					local91 = ((local91 & 0xFF00FF) * local147 >> 8 & 0xFF00FF) + ((local91 & 0xFF00) * local147 >> 8 & 0xFF00);
 					local98 = arg1 + 1;
@@ -2170,7 +2170,7 @@ public final class Static6 {
 			}
 		} else if (arg2 < arg3) {
 			local16 = (arg5 - arg4) / (arg3 - arg2);
-			if (Class2_Sub2_Sub2_Sub1.aBoolean19) {
+			if (Draw3D.aBoolean19) {
 				if (arg3 > anInt222) {
 					arg3 = anInt222;
 				}
@@ -2184,17 +2184,17 @@ public final class Static6 {
 			}
 			@Pc(401) int local401 = arg1 + arg2;
 			local48 = arg3 - arg2;
-			if (Class2_Sub2_Sub2_Sub1.anInt228 == 0) {
+			if (Draw3D.anInt228 == 0) {
 				do {
-					arg0[local401++] = Class2_Sub2_Sub2_Sub1.anIntArray63[arg4 >> 8];
+					arg0[local401++] = Draw3D.anIntArray63[arg4 >> 8];
 					arg4 += local16;
 					local48--;
 				} while (local48 > 0);
 			} else {
-				local143 = Class2_Sub2_Sub2_Sub1.anInt228;
-				local147 = 256 - Class2_Sub2_Sub2_Sub1.anInt228;
+				local143 = Draw3D.anInt228;
+				local147 = 256 - Draw3D.anInt228;
 				do {
-					local91 = Class2_Sub2_Sub2_Sub1.anIntArray63[arg4 >> 8];
+					local91 = Draw3D.anIntArray63[arg4 >> 8];
 					arg4 += local16;
 					@Pc(460) int local460 = ((local91 & 0xFF00FF) * local147 >> 8 & 0xFF00FF) + ((local91 & 0xFF00) * local147 >> 8 & 0xFF00);
 					arg0[local401++] = local460 + ((arg0[local401] & 0xFF00FF) * local143 >> 8 & 0xFF00FF) + ((arg0[local401] & 0xFF00) * local143 >> 8 & 0xFF00);
@@ -2207,17 +2207,17 @@ public final class Static6 {
 	@OriginalMember(owner = "client!b", name = "f", descriptor = "()V", line = 2553)
 	public static void method180() {
 		anIntArray62 = null;
-		Class2_Sub2_Sub2_Sub1.anIntArray63 = null;
+		Draw3D.anIntArray63 = null;
 		anInterface4_1 = null;
-		Class2_Sub2_Sub2_Sub1.anIntArray60 = null;
-		Class2_Sub2_Sub2_Sub1.anIntArray61 = null;
-		Class2_Sub2_Sub2_Sub1.anIntArray59 = null;
-		Class2_Sub2_Sub2_Sub1.anIntArray58 = null;
+		Draw3D.anIntArray60 = null;
+		Draw3D.anIntArray61 = null;
+		Draw3D.anIntArray59 = null;
+		Draw3D.anIntArray58 = null;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([IIIIII)V", line = 2567)
 	private static void method181(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		if (Class2_Sub2_Sub2_Sub1.aBoolean19) {
+		if (Draw3D.aBoolean19) {
 			if (arg4 > anInt222) {
 				arg4 = anInt222;
 			}
@@ -2231,7 +2231,7 @@ public final class Static6 {
 		arg1 += arg3;
 		@Pc(24) int local24 = arg4 - arg3 >> 2;
 		@Pc(30) int local30;
-		if (Class2_Sub2_Sub2_Sub1.anInt228 == 0) {
+		if (Draw3D.anInt228 == 0) {
 			while (true) {
 				local24--;
 				if (local24 < 0) {
@@ -2252,8 +2252,8 @@ public final class Static6 {
 				arg0[local30] = arg2;
 			}
 		}
-		@Pc(68) int local68 = Class2_Sub2_Sub2_Sub1.anInt228;
-		@Pc(72) int local72 = 256 - Class2_Sub2_Sub2_Sub1.anInt228;
+		@Pc(68) int local68 = Draw3D.anInt228;
+		@Pc(72) int local72 = 256 - Draw3D.anInt228;
 		@Pc(92) int local92 = ((arg2 & 0xFF00FF) * local72 >> 8 & 0xFF00FF) + ((arg2 & 0xFF00) * local72 >> 8 & 0xFF00);
 		while (true) {
 			local24--;

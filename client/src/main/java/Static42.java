@@ -16,31 +16,31 @@ public final class Static42 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(B)V", line = 32)
 	public static void method802() {
-		Class27.aClass40_336 = null;
-		Class27.aClass40_338 = null;
-		Class27.aClass40_342 = null;
-		Class27.aClass40_339 = null;
-		Class27.aClass47_12 = null;
-		Class27.aClass40_341 = null;
-		Class27.aClass40_340 = null;
+		JagString.aClass40_336 = null;
+		JagString.aClass40_338 = null;
+		JagString.aClass40_342 = null;
+		JagString.aClass40_339 = null;
+		Static1.aClass47_12 = null;
+		JagString.aClass40_341 = null;
+		JagString.aClass40_340 = null;
 		anIntArray225 = null;
-		Class27.aClass40_337 = null;
+		JagString.aClass40_337 = null;
 	}
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(II)[B", line = 79)
 	public static synchronized byte[] method803(@OriginalArg(0) int arg0) {
 		@Pc(19) byte[] local19;
-		if (arg0 == 100 && Class2_Sub5.anInt737 > 0) {
-			local19 = client.aByteArrayArray3[--Class2_Sub5.anInt737];
-			client.aByteArrayArray3[Class2_Sub5.anInt737] = null;
+		if (arg0 == 100 && Static1.anInt737 > 0) {
+			local19 = Static1.aByteArrayArray3[--Static1.anInt737];
+			Static1.aByteArrayArray3[Static1.anInt737] = null;
 			return local19;
-		} else if (arg0 == 5000 && Class2_Sub2_Sub8.anInt965 > 0) {
-			local19 = Class22.aByteArrayArray8[--Class2_Sub2_Sub8.anInt965];
-			Class22.aByteArrayArray8[Class2_Sub2_Sub8.anInt965] = null;
+		} else if (arg0 == 5000 && Static1.anInt965 > 0) {
+			local19 = Static1.aByteArrayArray8[--Static1.anInt965];
+			Static1.aByteArrayArray8[Static1.anInt965] = null;
 			return local19;
-		} else if (arg0 == 30000 && Class9.anInt264 > 0) {
-			local19 = Class18.aByteArrayArray9[--Class9.anInt264];
-			Class18.aByteArrayArray9[Class9.anInt264] = null;
+		} else if (arg0 == 30000 && Static1.anInt264 > 0) {
+			local19 = Static1.aByteArrayArray9[--Static1.anInt264];
+			Static1.aByteArrayArray9[Static1.anInt264] = null;
 			return local19;
 		} else {
 			return new byte[arg0];

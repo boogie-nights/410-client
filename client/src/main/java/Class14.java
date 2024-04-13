@@ -8,42 +8,6 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!d")
 public final class Class14 {
 
-	@OriginalMember(owner = "client!d", name = "k", descriptor = "Lclient!o;")
-	public static Class40 aClass40_115 = Static12.method257("Unknown");
-
-	@OriginalMember(owner = "client!d", name = "f", descriptor = "Lclient!o;")
-	public static Class40 aClass40_113 = Static12.method257("Enter name of player to add to list");
-
-	@OriginalMember(owner = "client!d", name = "m", descriptor = "Lclient!o;")
-	public static Class40 aClass40_116 = Static12.method257("(Z");
-
-	@OriginalMember(owner = "client!d", name = "y", descriptor = "Lclient!o;")
-	public static Class40 aClass40_119 = Static12.method257("@yel@ days of*6nmember credit remaining)3");
-
-	@OriginalMember(owner = "client!d", name = "B", descriptor = "[Lclient!o;")
-	public static Class40[] aClass40Array7 = new Class40[100];
-
-	@OriginalMember(owner = "client!d", name = "n", descriptor = "Lclient!o;")
-	public static Class40 aClass40_117 = Static12.method257("Invalid username or password)3");
-
-	@OriginalMember(owner = "client!d", name = "w", descriptor = "Lclient!o;")
-	public static Class40 aClass40_118 = Static12.method257("Password: ");
-
-	@OriginalMember(owner = "client!d", name = "i", descriptor = "Lclient!o;")
-	public static Class40 aClass40_114 = Static12.method257("Loaded gamescreen");
-
-	@OriginalMember(owner = "client!d", name = "a", descriptor = "Lclient!o;")
-	public static Class40 aClass40_112 = null;
-
-	@OriginalMember(owner = "client!d", name = "v", descriptor = "[I")
-	public static int[] anIntArray82 = new int[] { 0, 0, 0, -1, 0, 0, 0, 8, 0, 0, 0, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 14, 0, 0, 8, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 6, 0, 2, 0, 0, 0, 0, 0, 0, -2, 7, 0, 0, 0, 0, 0, 0, -2, -2, 0, 5, 0, 10, 0, 0, 0, 5, 7, 0, 0, 1, 0, 0, 15, 2, -1, 0, 0, 1, 0, 0, 0, 0, 0, 6, 0, 0, 0, 4, -1, 0, 0, 0, 0, 6, 0, 0, 0, 2, 0, 0, 4, 0, 0, 0, 0, 2, -1, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 6, 0, 4, 0, 2, 0, -2, 0, 0, 0, -2, 0, -2, 4, 0, 0, 6, 6, 0, 6, 4, 0, 0, 0, 0, 0, -2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 23, 0, 10, 0, -2, 0, 0, 0, 0, 6, 4, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 2, 0, 0, 0, 0, 0, 0, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 6, 1, 0, 0, 0, 0, 3, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 6, 0, 0, 4, 0, 0, 0, 0, 2, 5, 0, 3, 0, 0, 4 };
-
-	@OriginalMember(owner = "client!d", name = "H", descriptor = "Lclient!o;")
-	public static Class40 aClass40_120 = Static12.method257("Connecting to server)3)3)3");
-
-	@OriginalMember(owner = "client!d", name = "F", descriptor = "I")
-	public static int anInt426 = -1;
-
 	@OriginalMember(owner = "client!d", name = "o", descriptor = "I")
 	private int anInt417;
 

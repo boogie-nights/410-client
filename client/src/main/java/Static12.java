@@ -6,25 +6,25 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static12 {
 
 	@OriginalMember(owner = "client!cb", name = "q", descriptor = "[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] aClass2_Sub2_Sub2_Sub4Array3;
+	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array3;
 
 	@OriginalMember(owner = "client!cb", name = "w", descriptor = "Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4 aClass2_Sub2_Sub2_Sub4_2;
+	public static Pix24 aClass2_Sub2_Sub2_Sub4_2;
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(I)V", line = 17)
 	public static void method254() {
-		Class11.aClass40_82 = null;
-		Class11.anIntArray80 = null;
-		Class11.anIntArray79 = null;
-		Class11.aClass40Array6 = null;
+		JagString.aClass40_82 = null;
+		Static1.anIntArray80 = null;
+		Static1.anIntArray79 = null;
+		Static1.aClass40Array6 = null;
 		aClass2_Sub2_Sub2_Sub4Array3 = null;
-		Class11.aClass40_83 = null;
+		JagString.aClass40_83 = null;
 		aClass2_Sub2_Sub2_Sub4_2 = null;
 	}
 
 	@OriginalMember(owner = "client!cb", name = "b", descriptor = "(I)V", line = 48)
 	public static void method255() {
-		for (@Pc(18) Class2_Sub7 local18 = (Class2_Sub7) Class45_Sub1.aClass44_7.method1224(); local18 != null; local18 = (Class2_Sub7) Class45_Sub1.aClass44_7.method1231()) {
+		for (@Pc(18) Class2_Sub7 local18 = (Class2_Sub7) Static1.aClass44_7.method1224(); local18 != null; local18 = (Class2_Sub7) Static1.aClass44_7.method1231()) {
 			if (local18.anInt826 == -1) {
 				local18.anInt827 = 0;
 				Static4.method86(local18);
@@ -35,7 +35,7 @@ public final class Static12 {
 	}
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(ILjava/awt/Component;Lclient!bb;)V", line = 72)
-	public static void method256(@OriginalArg(1) Component arg0, @OriginalArg(2) Class7 arg1) {
+	public static void method256(@OriginalArg(1) Component arg0, @OriginalArg(2) SignLink arg1) {
 		try {
 			@Pc(8) Class24_Sub1 local8 = (Class24_Sub1) Class.forName("Class24_Sub1_Sub1").getDeclaredConstructor().newInstance();
 			local8.method1088(arg1, 2048);
@@ -57,10 +57,10 @@ public final class Static12 {
 	}
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(Ljava/lang/String;I)Lclient!o;", line = 118)
-	public static Class40 method257(@OriginalArg(0) String arg0) {
+	public static JagString method257(@OriginalArg(0) String arg0) {
 		@Pc(2) byte[] local2 = arg0.getBytes();
 		@Pc(9) int local9 = local2.length;
-		@Pc(13) Class40 local13 = new Class40();
+		@Pc(13) JagString local13 = new JagString();
 		local13.aByteArray14 = new byte[local9];
 		@Pc(19) int local19 = 0;
 		while (local19 < local9) {
@@ -80,7 +80,7 @@ public final class Static12 {
 	}
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(ILclient!ud;IB)Lclient!fc;", line = 340)
-	public static Class2_Sub2_Sub2_Sub2 method260(@OriginalArg(0) int arg0, @OriginalArg(1) Class5 arg1, @OriginalArg(2) int arg2) {
+	public static PixFont method260(@OriginalArg(0) int arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) int arg2) {
 		return Static84.method1484(arg2, arg1, arg0) ? Static20.method406() : null;
 	}
 }

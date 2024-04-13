@@ -1,7 +1,7 @@
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
-import java.awt.image.ImageObserver;
+
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -17,19 +17,19 @@ public final class Static83 {
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(I)V", line = 4)
 	public static void method1466() {
 		aByteArrayArray10 = null;
-		Class57.anIntArrayArrayArray8 = null;
-		Class57.aClass40_612 = null;
-		Class57.aClass44ArrayArrayArray1 = null;
+		Static1.anIntArrayArrayArray8 = null;
+		JagString.aClass40_612 = null;
+		Static1.aClass44ArrayArrayArray1 = null;
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Ljava/awt/Color;Lclient!o;II)V", line = 32)
-	public static void method1467(@OriginalArg(0) Color arg0, @OriginalArg(1) Class40 arg1, @OriginalArg(2) int arg2) {
+	public static void method1467(@OriginalArg(0) Color arg0, @OriginalArg(1) JagString arg1, @OriginalArg(2) int arg2) {
 		if (Static20.aFont1 == null) {
 			Static20.aFont1 = new Font("Helvetica", 1, 13);
 			Static24.aFontMetrics1 = Static7.method185().getFontMetrics(Static20.aFont1);
 		}
-		if (Class1.aBoolean1) {
-			Class1.aBoolean1 = false;
+		if (Static1.aBoolean1) {
+			Static1.aBoolean1 = false;
 			Static23.aGraphics1.setColor(Color.black);
 			Static23.aGraphics1.fillRect(0, 0, Static77.anInt1991, Static70.anInt2154);
 		}
@@ -67,7 +67,7 @@ public final class Static83 {
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!ke;II)V", line = 97)
-	public static void method1468(@OriginalArg(0) Class2_Sub2_Sub12_Sub1 arg0, @OriginalArg(1) int arg1) {
+	public static void method1468(@OriginalArg(0) PathingEntity arg0, @OriginalArg(1) int arg1) {
 		if (arg0.anInt2275 < 128 || arg0.anInt2284 < 128 || arg0.anInt2275 >= 13184 || arg0.anInt2284 >= 13184) {
 			arg0.anInt2297 = 0;
 			arg0.anInt2277 = 0;
@@ -86,9 +86,9 @@ public final class Static83 {
 			arg0.anInt2284 = arg0.anIntArray496[0] * 128 + arg0.anInt2278 * 64;
 			arg0.method1543();
 		}
-		if (Class24.anInt2511 < arg0.anInt2277) {
+		if (Static1.anInt2511 < arg0.anInt2277) {
 			Static3.method25(arg0);
-		} else if (arg0.anInt2297 >= Class24.anInt2511) {
+		} else if (arg0.anInt2297 >= Static1.anInt2511) {
 			Static1.method4(arg0);
 		} else {
 			Static40.method1240(arg0);
@@ -98,47 +98,47 @@ public final class Static83 {
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(ZI)Lclient!v;", line = 158)
-	public static Class2_Sub2_Sub15 method1469(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub15 local10 = (Class2_Sub2_Sub15) Class62.aClass47_22.method1325((long) arg0);
+	public static IdkType method1469(@OriginalArg(1) int arg0) {
+		@Pc(10) IdkType local10 = (IdkType) Static1.aClass47_22.method1325((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
 		@Pc(20) byte[] local20 = Static63.aClass5_5.method68(arg0, 3);
-		local10 = new Class2_Sub2_Sub15();
+		local10 = new IdkType();
 		if (local20 != null) {
-			local10.method1587(new Class2_Sub3(local20));
+			local10.method1587(new Packet(local20));
 		}
-		Class62.aClass47_22.method1332((long) arg0, local10);
+		Static1.aClass47_22.method1332((long) arg0, local10);
 		return local10;
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(BI)Lclient!ia;", line = 208)
-	public static Class2_Sub2_Sub10 method1470(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub10 local10 = (Class2_Sub2_Sub10) Class2_Sub2_Sub9.aClass47_11.method1325((long) arg0);
+	public static LocType method1470(@OriginalArg(1) int arg0) {
+		@Pc(10) LocType local10 = (LocType) Static1.aClass47_11.method1325((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
 		@Pc(25) byte[] local25 = Static67.aClass5_23.method68(arg0, 6);
-		local10 = new Class2_Sub2_Sub10();
+		local10 = new LocType();
 		local10.anInt1033 = arg0;
 		if (local25 != null) {
-			local10.method767(new Class2_Sub3(local25));
+			local10.method767(new Packet(local25));
 		}
 		local10.method772();
 		if (local10.aBoolean83) {
 			local10.aBoolean77 = false;
 			local10.aBoolean79 = false;
 		}
-		Class2_Sub2_Sub9.aClass47_11.method1332((long) arg0, local10);
+		Static1.aClass47_11.method1332((long) arg0, local10);
 		return local10;
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!ud;Lclient!ud;BLclient!ud;)V", line = 248)
-	public static void method1471(@OriginalArg(0) Class5 arg0, @OriginalArg(1) Class5 arg1, @OriginalArg(3) Class5 arg2) {
+	public static void method1471(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(3) Js5 arg2) {
 		Static74.aClass5_26 = arg2;
 		Static49.aClass5_17 = arg1;
 		Static54.aClass5_20 = arg0;
-		Static46.aClass2_Sub2_Sub13ArrayArray1 = new Class2_Sub2_Sub13[Static49.aClass5_17.method71()][];
+		Static46.aClass2_Sub2_Sub13ArrayArray1 = new ComType[Static49.aClass5_17.method71()][];
 		Static84.aBooleanArray31 = new boolean[Static49.aClass5_17.method71()];
 	}
 }

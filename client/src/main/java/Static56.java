@@ -25,24 +25,24 @@ public final class Static56 {
 		Static44.method820();
 		Static85.aClass55_1.method1414();
 		for (@Pc(22) int local22 = 0; local22 < 4; local22++) {
-			Class18.aClass20Array3[local22].method534();
+			Static1.aClass20Array3[local22].method534();
 		}
 		System.gc();
 		Static86.method1490();
-		Class18_Sub1.anInt470 = 0;
-		Class52.anInt1977 = -1;
+		Static1.anInt470 = 0;
+		Static1.anInt1977 = -1;
 		Static7.method187(10);
 	}
 
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(ILclient!ke;)V", line = 91)
-	public static void method1040(@OriginalArg(1) Class2_Sub2_Sub12_Sub1 arg0) {
+	public static void method1040(@OriginalArg(1) PathingEntity arg0) {
 		if (arg0.anInt2285 == 0) {
 			return;
 		}
 		@Pc(39) int local39;
 		@Pc(32) int local32;
 		if (arg0.anInt2324 != -1 && arg0.anInt2324 < 32768) {
-			@Pc(23) Class2_Sub2_Sub12_Sub1_Sub2 local23 = Class3.aClass2_Sub2_Sub12_Sub1_Sub2Array1[arg0.anInt2324];
+			@Pc(23) NpcEntity local23 = Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[arg0.anInt2324];
 			if (local23 != null) {
 				local32 = arg0.anInt2284 - local23.anInt2284;
 				local39 = arg0.anInt2275 - local23.anInt2275;
@@ -54,10 +54,10 @@ public final class Static56 {
 		@Pc(67) int local67;
 		if (arg0.anInt2324 >= 32768) {
 			local67 = arg0.anInt2324 - 32768;
-			if (local67 == Class51.anInt1955) {
+			if (local67 == Static1.anInt1955) {
 				local67 = 2047;
 			}
-			@Pc(76) Class2_Sub2_Sub12_Sub1_Sub1 local76 = Class2_Sub2_Sub15.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local67];
+			@Pc(76) PlayerEntity local76 = Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local67];
 			if (local76 != null) {
 				local32 = arg0.anInt2275 - local76.anInt2275;
 				@Pc(91) int local91 = arg0.anInt2284 - local76.anInt2284;
@@ -101,20 +101,20 @@ public final class Static56 {
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(Z)V", line = 188)
 	public static void method1041() {
 		aClass45_22 = null;
-		Class34.aClass40_449 = null;
-		Class34.aClass40_444 = null;
-		Class34.aClass40_446 = null;
-		Class34.aClass40_452 = null;
-		Class34.aClass40_451 = null;
-		Class34.aClass40_445 = null;
-		Class34.aByteArrayArrayArray7 = null;
-		Class34.aClass40_447 = null;
-		Class34.aClass40_448 = null;
-		Class34.aClass47_14 = null;
-		Class34.aClass40_450 = null;
+		JagString.aClass40_449 = null;
+		JagString.aClass40_444 = null;
+		JagString.aClass40_446 = null;
+		JagString.aClass40_452 = null;
+		JagString.aClass40_451 = null;
+		JagString.aClass40_445 = null;
+		Static1.aByteArrayArrayArray7 = null;
+		JagString.aClass40_447 = null;
+		JagString.aClass40_448 = null;
+		Static1.aClass47_14 = null;
+		JagString.aClass40_450 = null;
 		aClass45_23 = null;
 		aClass48_6 = null;
 		aClass45_24 = null;
-		Class34.aClass40_453 = null;
+		JagString.aClass40_453 = null;
 	}
 }

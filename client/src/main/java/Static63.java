@@ -14,10 +14,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static63 {
 
 	@OriginalMember(owner = "client!nb", name = "y", descriptor = "Lclient!ud;")
-	public static Class5 aClass5_5;
+	public static Js5 aClass5_5;
 
 	@OriginalMember(owner = "client!nb", name = "z", descriptor = "Lclient!ud;")
-	public static Class5 aClass5_6;
+	public static Js5 aClass5_6;
 
 	@OriginalMember(owner = "client!nb", name = "A", descriptor = "Lclient!p;")
 	public static Class45 aClass45_8;
@@ -28,16 +28,16 @@ public final class Static63 {
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Z)V", line = 83)
 	public static void method325() {
 		aClass45_8 = null;
-		Applet_Sub1.aClass40_103 = null;
-		Applet_Sub1.aClass40_101 = null;
+		JagString.aClass40_103 = null;
+		JagString.aClass40_101 = null;
 		aClass5_5 = null;
-		Applet_Sub1.aClass40_107 = null;
-		Applet_Sub1.aClass40_105 = null;
-		Applet_Sub1.aClass40_104 = null;
-		Applet_Sub1.aClass40_106 = null;
-		Applet_Sub1.aClass40_102 = null;
+		JagString.aClass40_107 = null;
+		JagString.aClass40_105 = null;
+		JagString.aClass40_104 = null;
+		JagString.aClass40_106 = null;
+		JagString.aClass40_102 = null;
 		aClass5_6 = null;
-		Applet_Sub1.aClass40_108 = null;
+		JagString.aClass40_108 = null;
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(ZB[BII)V", line = 445)
@@ -45,22 +45,22 @@ public final class Static63 {
 		if (Static98.aClass12_1 == null) {
 			return;
 		}
-		if (Class34.anInt1548 >= 0) {
-			Class30.anInt1175 = arg3;
-			if (Class34.anInt1548 == 0) {
-				Class15.anInt432 = 1;
+		if (Static1.anInt1548 >= 0) {
+			Static1.anInt1175 = arg3;
+			if (Static1.anInt1548 == 0) {
+				Static1.anInt432 = 1;
 			} else {
-				@Pc(43) int local43 = Static40.method1248(Class34.anInt1548);
-				@Pc(47) int local47 = local43 - Class2_Sub2_Sub16.anInt2474;
-				Class15.anInt432 = (local47 + 3600) / arg3;
-				if (Class15.anInt432 < 1) {
-					Class15.anInt432 = 1;
+				@Pc(43) int local43 = Static40.method1248(Static1.anInt1548);
+				@Pc(47) int local47 = local43 - Static1.anInt2474;
+				Static1.anInt432 = (local47 + 3600) / arg3;
+				if (Static1.anInt432 < 1) {
+					Static1.anInt432 = 1;
 				}
 			}
 			Static23.aByteArray9 = arg1;
 			Static21.aBoolean185 = arg0;
 			Static26.anInt685 = arg2;
-		} else if (Class15.anInt432 == 0) {
+		} else if (Static1.anInt432 == 0) {
 			Static67.method1208(arg0, arg2, arg1);
 		} else {
 			Static23.aByteArray9 = arg1;
@@ -70,9 +70,9 @@ public final class Static63 {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Lclient!wc;BI)V", line = 523)
-	public static void method337(@OriginalArg(0) Class2_Sub3_Sub1 arg0) {
+	public static void method337(@OriginalArg(0) PacketBit arg0) {
 		while (true) {
-			@Pc(16) Class2_Sub12 local16 = (Class2_Sub12) Class63.aClass44_9.method1224();
+			@Pc(16) Class2_Sub12 local16 = (Class2_Sub12) Static1.aClass44_9.method1224();
 			if (local16 == null) {
 				return;
 			}
@@ -138,9 +138,9 @@ public final class Static63 {
 							} else if (local271 instanceof Number) {
 								arg0.method1703(1);
 								arg0.method1680(((Number) local271).longValue());
-							} else if (local271 instanceof Class40) {
+							} else if (local271 instanceof JagString) {
 								arg0.method1703(2);
-								arg0.method1683((Class40) local271);
+								arg0.method1683((JagString) local271);
 							} else {
 								arg0.method1703(4);
 							}
@@ -186,8 +186,8 @@ public final class Static63 {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "h", descriptor = "(I)Lclient!qb;", line = 719)
-	public static Class2_Sub2_Sub2_Sub3 method338() {
-		@Pc(3) Class2_Sub2_Sub2_Sub3 local3 = new Class2_Sub2_Sub2_Sub3();
+	public static Pix8 method338() {
+		@Pc(3) Pix8 local3 = new Pix8();
 		local3.anInt1909 = Static41.anInt1079;
 		local3.anInt1908 = Static96.anInt2513;
 		local3.anInt1907 = Static75.anIntArray430[0];

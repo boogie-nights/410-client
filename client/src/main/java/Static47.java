@@ -22,16 +22,16 @@ public final class Static47 {
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(B)V", line = 87)
 	public static void method850() {
-		Class56.aClass47_17.method1330();
+		Static1.aClass47_17.method1330();
 	}
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(I)V", line = 222)
 	public static void method852() {
-		Class30.aClass40_358 = null;
-		Class30.anIntArray257 = null;
-		Class30.anIntArray258 = null;
-		Class30.aClass40_359 = null;
-		Class30.aClass40_361 = null;
-		Class30.aClass40_360 = null;
+		JagString.aClass40_358 = null;
+		Static1.anIntArray257 = null;
+		Static1.anIntArray258 = null;
+		JagString.aClass40_359 = null;
+		JagString.aClass40_361 = null;
+		JagString.aClass40_360 = null;
 	}
 }

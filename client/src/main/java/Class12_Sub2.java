@@ -6,24 +6,6 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!jc")
 public final class Class12_Sub2 extends Class12 {
 
-	@OriginalMember(owner = "client!jc", name = "E", descriptor = "[I")
-	public static int[] anIntArray235 = new int[] { 0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, 65535, 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 16777215, 33554431, 67108863, 134217727, 268435455, 536870911, 1073741823, Integer.MAX_VALUE, -1 };
-
-	@OriginalMember(owner = "client!jc", name = "F", descriptor = "Lclient!o;")
-	public static Class40 aClass40_345 = Static12.method257("Take @lre@");
-
-	@OriginalMember(owner = "client!jc", name = "A", descriptor = "Lclient!o;")
-	public static Class40 aClass40_343 = Static12.method257("Hidden");
-
-	@OriginalMember(owner = "client!jc", name = "J", descriptor = "Lclient!o;")
-	public static Class40 aClass40_346 = aClass40_343;
-
-	@OriginalMember(owner = "client!jc", name = "B", descriptor = "[I")
-	public static int[] anIntArray234 = new int[25];
-
-	@OriginalMember(owner = "client!jc", name = "C", descriptor = "Lclient!o;")
-	public static Class40 aClass40_344 = Static12.method257("(U2");
-
 	@OriginalMember(owner = "client!jc", name = "q", descriptor = "Z")
 	private boolean aBoolean91;
 
@@ -40,7 +22,7 @@ public final class Class12_Sub2 extends Class12 {
 	private byte[] aByteArray12;
 
 	@OriginalMember(owner = "client!jc", name = "w", descriptor = "Lclient!bb;")
-	private final Class7 aClass7_5;
+	private final SignLink aClass7_5;
 
 	@OriginalMember(owner = "client!jc", name = "d", descriptor = "(I)V", line = 59)
 	@Override
@@ -126,7 +108,7 @@ public final class Class12_Sub2 extends Class12 {
 	}
 
 	@OriginalMember(owner = "client!jc", name = "<init>", descriptor = "(Lclient!bb;)V", line = 431)
-	public Class12_Sub2(@OriginalArg(0) Class7 arg0) {
+	public Class12_Sub2(@OriginalArg(0) SignLink arg0) {
 		this.aClass7_5 = arg0;
 	}
 }

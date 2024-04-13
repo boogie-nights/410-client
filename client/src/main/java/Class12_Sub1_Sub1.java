@@ -6,11 +6,8 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!l")
 public final class Class12_Sub1_Sub1 extends Class12_Sub1 implements Runnable {
 
-	@OriginalMember(owner = "client!l", name = "P", descriptor = "[I")
-	public static final int[] anIntArray301 = new int[256];
-
 	@OriginalMember(owner = "client!l", name = "T", descriptor = "Lclient!bc;")
-	private final Class8 aClass8_1 = new Class8();
+	private final MidiDecoder aClass8_1 = new MidiDecoder();
 
 	@OriginalMember(owner = "client!l", name = "e", descriptor = "(I)V", line = 4)
 	@Override
@@ -153,18 +150,18 @@ public final class Class12_Sub1_Sub1 extends Class12_Sub1 implements Runnable {
 	public synchronized void method1241() {
 		Static52.anInterface3_2.method791();
 		this.method1257((long) Static52.anInt1459);
-		Static52.anInterface3_2.method792(anIntArray301, Static52.anInt1460);
+		Static52.anInterface3_2.method792(Static1.anIntArray301, Static52.anInt1460);
 		Static52.anInt1460 = 0;
 		this.aClass8_1.method220();
 	}
 
 	@OriginalMember(owner = "client!l", name = "<init>", descriptor = "(Lclient!bb;Lclient!id;)V", line = 275)
-	public Class12_Sub1_Sub1(@OriginalArg(0) Class7 arg0, @OriginalArg(1) Interface3 arg1) {
+	public Class12_Sub1_Sub1(@OriginalArg(0) SignLink arg0, @OriginalArg(1) Interface3 arg1) {
 		Static52.anInterface3_2 = arg1;
 		Static52.anInterface3_2.method794();
 		Static52.anInterface3_2.method791();
 		this.method1257((long) Static52.anInt1459);
-		Static52.anInterface3_2.method792(anIntArray301, Static52.anInt1460);
+		Static52.anInterface3_2.method792(Static1.anIntArray301, Static52.anInt1460);
 		Static52.anInt1460 = 0;
 		arg0.method207(10, this);
 	}
@@ -173,7 +170,7 @@ public final class Class12_Sub1_Sub1 extends Class12_Sub1 implements Runnable {
 	@Override
 	public synchronized void method1251() {
 		this.method1259((long) Static52.anInt1459);
-		Static52.anInterface3_2.method792(anIntArray301, Static52.anInt1460);
+		Static52.anInterface3_2.method792(Static1.anIntArray301, Static52.anInt1460);
 		Static52.anInt1460 = 0;
 	}
 }

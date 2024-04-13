@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static64 {
 
 	@OriginalMember(owner = "client!nd", name = "z", descriptor = "Lclient!hc;")
-	public static Class25 aClass25_36;
+	public static ClientStream aClass25_36;
 
 	@OriginalMember(owner = "client!nd", name = "D", descriptor = "[I")
 	public static int[] anIntArray355;
@@ -14,16 +14,16 @@ public final class Static64 {
 	public static int anInt1696;
 
 	@OriginalMember(owner = "client!nd", name = "F", descriptor = "[Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3[] aClass2_Sub2_Sub2_Sub3Array8;
+	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array8;
 
 	@OriginalMember(owner = "client!nd", name = "b", descriptor = "(Z)V", line = 17)
 	public static void method1109() {
-		for (@Pc(16) int local16 = 0; local16 < Class2_Sub9.anInt1190; local16++) {
-			@Pc(22) int local22 = Class60.anIntArray504[local16];
-			@Pc(26) Class2_Sub2_Sub12_Sub1_Sub2 local26 = Class3.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local22];
-			@Pc(30) int local30 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1708();
+		for (@Pc(16) int local16 = 0; local16 < Static1.anInt1190; local16++) {
+			@Pc(22) int local22 = Static1.anIntArray504[local16];
+			@Pc(26) NpcEntity local26 = Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local22];
+			@Pc(30) int local30 = Static1.aClass2_Sub3_Sub1_5.method1708();
 			if ((local30 & 0x20) != 0) {
-				local26.anInt2324 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1704();
+				local26.anInt2324 = Static1.aClass2_Sub3_Sub1_5.method1704();
 				if (local26.anInt2324 == 65535) {
 					local26.anInt2324 = -1;
 				}
@@ -31,16 +31,16 @@ public final class Static64 {
 			@Pc(57) int local57;
 			@Pc(61) int local61;
 			if ((local30 & 0x40) != 0) {
-				local57 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1730();
-				local61 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1706();
-				local26.method1540(local57, Class24.anInt2511, local61);
-				local26.anInt2315 = Class24.anInt2511 + 300;
-				local26.anInt2298 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1715();
-				local26.anInt2279 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1730();
+				local57 = Static1.aClass2_Sub3_Sub1_5.method1730();
+				local61 = Static1.aClass2_Sub3_Sub1_5.method1706();
+				local26.method1540(local57, Static1.anInt2511, local61);
+				local26.anInt2315 = Static1.anInt2511 + 300;
+				local26.anInt2298 = Static1.aClass2_Sub3_Sub1_5.method1715();
+				local26.anInt2279 = Static1.aClass2_Sub3_Sub1_5.method1730();
 			}
 			if ((local30 & 0x8) != 0) {
-				local57 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1681();
-				local61 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1708();
+				local57 = Static1.aClass2_Sub3_Sub1_5.method1681();
+				local61 = Static1.aClass2_Sub3_Sub1_5.method1708();
 				if (local57 == 65535) {
 					local57 = -1;
 				}
@@ -65,20 +65,20 @@ public final class Static64 {
 				}
 			}
 			if ((local30 & 0x1) != 0) {
-				local57 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1730();
-				local61 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1706();
-				local26.method1540(local57, Class24.anInt2511, local61);
-				local26.anInt2315 = Class24.anInt2511 + 300;
-				local26.anInt2298 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1708();
-				local26.anInt2279 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1730();
+				local57 = Static1.aClass2_Sub3_Sub1_5.method1730();
+				local61 = Static1.aClass2_Sub3_Sub1_5.method1706();
+				local26.method1540(local57, Static1.anInt2511, local61);
+				local26.anInt2315 = Static1.anInt2511 + 300;
+				local26.anInt2298 = Static1.aClass2_Sub3_Sub1_5.method1708();
+				local26.anInt2279 = Static1.aClass2_Sub3_Sub1_5.method1730();
 			}
 			if ((local30 & 0x80) != 0) {
-				local26.anInt2302 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1714();
-				local57 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1710();
-				local26.anInt2320 = Class24.anInt2511 + (local57 & 0xFFFF);
+				local26.anInt2302 = Static1.aClass2_Sub3_Sub1_5.method1714();
+				local57 = Static1.aClass2_Sub3_Sub1_5.method1710();
+				local26.anInt2320 = Static1.anInt2511 + (local57 & 0xFFFF);
 				local26.anInt2289 = local57 >> 16;
 				local26.anInt2291 = 0;
-				if (local26.anInt2320 > Class24.anInt2511) {
+				if (local26.anInt2320 > Static1.anInt2511) {
 					local26.anInt2291 = -1;
 				}
 				if (local26.anInt2302 == 65535) {
@@ -87,11 +87,11 @@ public final class Static64 {
 				local26.anInt2268 = 0;
 			}
 			if ((local30 & 0x2) != 0) {
-				local26.aClass40_660 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1721();
+				local26.aClass40_660 = Static1.aClass2_Sub3_Sub1_5.method1721();
 				local26.anInt2294 = 100;
 			}
 			if ((local30 & 0x4) != 0) {
-				local26.aClass2_Sub2_Sub7_1 = Static34.method640(Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1704());
+				local26.aClass2_Sub2_Sub7_1 = Static34.method640(Static1.aClass2_Sub3_Sub1_5.method1704());
 				local26.anInt2290 = local26.aClass2_Sub2_Sub7_1.anInt767;
 				local26.anInt2269 = local26.aClass2_Sub2_Sub7_1.anInt777;
 				local26.anInt2304 = local26.aClass2_Sub2_Sub7_1.anInt771;
@@ -101,8 +101,8 @@ public final class Static64 {
 				local26.anInt2303 = local26.aClass2_Sub2_Sub7_1.anInt764;
 			}
 			if ((local30 & 0x10) != 0) {
-				local26.anInt2280 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1704();
-				local26.anInt2292 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1705();
+				local26.anInt2280 = Static1.aClass2_Sub3_Sub1_5.method1704();
+				local26.anInt2292 = Static1.aClass2_Sub3_Sub1_5.method1705();
 			}
 		}
 	}
@@ -113,8 +113,8 @@ public final class Static64 {
 	}
 
 	@OriginalMember(owner = "client!nd", name = "a", descriptor = "(Lclient!bb;IILclient!eb;)V", line = 196)
-	public static void method1111(@OriginalArg(0) Class7 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class2_Sub3 arg2) {
-		if (Class2_Sub2_Sub12_Sub3.aBoolean115) {
+	public static void method1111(@OriginalArg(0) SignLink arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Packet arg2) {
+		if (Static1.aBoolean115) {
 			return;
 		}
 		@Pc(12) Class2_Sub12 local12 = new Class2_Sub12();
@@ -179,22 +179,22 @@ public final class Static64 {
 				local12.anIntArray498[local58] = -5;
 			}
 		}
-		Class63.aClass44_9.method1221(local12);
+		Static1.aClass44_9.method1221(local12);
 	}
 
 	@OriginalMember(owner = "client!nd", name = "c", descriptor = "(B)V", line = 310)
 	public static void method1112() {
-		Class2_Sub11.aClass40_494 = null;
+		JagString.aClass40_494 = null;
 		aClass25_36 = null;
 		aClass2_Sub2_Sub2_Sub3Array8 = null;
-		Class2_Sub11.aClass40_496 = null;
-		Class2_Sub11.anIntArrayArray15 = null;
-		Class2_Sub11.aClass40_495 = null;
+		JagString.aClass40_496 = null;
+		Static1.anIntArrayArray15 = null;
+		JagString.aClass40_495 = null;
 		anIntArray355 = null;
 	}
 
 	@OriginalMember(owner = "client!nd", name = "a", descriptor = "(BLclient!ud;I)Z", line = 336)
-	public static boolean method1113(@OriginalArg(1) Class5 arg0, @OriginalArg(2) int arg1) {
+	public static boolean method1113(@OriginalArg(1) Js5 arg0, @OriginalArg(2) int arg1) {
 		@Pc(8) byte[] local8 = arg0.method65(arg1);
 		if (local8 == null) {
 			return false;
@@ -205,8 +205,8 @@ public final class Static64 {
 	}
 
 	@OriginalMember(owner = "client!nd", name = "a", descriptor = "(I[BII)Lclient!o;", line = 354)
-	public static Class40 method1114(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(3) int arg2) {
-		@Pc(7) Class40 local7 = new Class40();
+	public static JagString method1114(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(3) int arg2) {
+		@Pc(7) JagString local7 = new JagString();
 		local7.anInt1783 = arg0;
 		local7.aByteArray14 = new byte[arg0];
 		Static107.method993(arg1, arg2, local7.aByteArray14, 0, arg0);
@@ -218,17 +218,17 @@ public final class Static64 {
 		if (arg0 == 0L) {
 			return;
 		}
-		for (@Pc(14) int local14 = 0; local14 < Class2_Sub3.anInt2594; local14++) {
-			if (arg0 == Class19.aLongArray2[local14]) {
-				Class2_Sub3.anInt2594--;
-				Class2_Sub2_Sub7.aBoolean59 = true;
-				for (@Pc(40) int local40 = local14; local40 < Class2_Sub3.anInt2594; local40++) {
-					Canvas_Sub1.aClass40Array23[local40] = Canvas_Sub1.aClass40Array23[local40 + 1];
-					Class35.anIntArray316[local40] = Class35.anIntArray316[local40 + 1];
-					Class19.aLongArray2[local40] = Class19.aLongArray2[local40 + 1];
+		for (@Pc(14) int local14 = 0; local14 < Static1.anInt2594; local14++) {
+			if (arg0 == Static1.aLongArray2[local14]) {
+				Static1.anInt2594--;
+				Static1.aBoolean59 = true;
+				for (@Pc(40) int local40 = local14; local40 < Static1.anInt2594; local40++) {
+					Static1.aClass40Array23[local40] = Static1.aClass40Array23[local40 + 1];
+					Static1.anIntArray316[local40] = Static1.anIntArray316[local40 + 1];
+					Static1.aLongArray2[local40] = Static1.aLongArray2[local40 + 1];
 				}
-				Class47.aClass2_Sub3_Sub1_4.method1736(30);
-				Class47.aClass2_Sub3_Sub1_4.method1680(arg0);
+				Static1.aClass2_Sub3_Sub1_4.method1736(30);
+				Static1.aClass2_Sub3_Sub1_4.method1680(arg0);
 				return;
 			}
 		}

@@ -15,15 +15,15 @@ public final class Static25 {
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(IIII)V", line = 4)
 	public static void method1603(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		if (arg1 < Class2_Sub2_Sub2.anInt2439 || arg1 >= Class2_Sub2_Sub2.anInt2438) {
+		if (arg1 < Draw2D.anInt2439 || arg1 >= Draw2D.anInt2438) {
 			return;
 		}
-		if (arg0 < Class2_Sub2_Sub2.anInt2437) {
-			arg2 -= Class2_Sub2_Sub2.anInt2437 - arg0;
-			arg0 = Class2_Sub2_Sub2.anInt2437;
+		if (arg0 < Draw2D.anInt2437) {
+			arg2 -= Draw2D.anInt2437 - arg0;
+			arg0 = Draw2D.anInt2437;
 		}
-		if (arg0 + arg2 > Class2_Sub2_Sub2.anInt2436) {
-			arg2 = Class2_Sub2_Sub2.anInt2436 - arg0;
+		if (arg0 + arg2 > Draw2D.anInt2436) {
+			arg2 = Draw2D.anInt2436 - arg0;
 		}
 		@Pc(32) int local32 = arg0 + arg1 * anInt2440;
 		for (@Pc(34) int local34 = 0; local34 < arg2; local34++) {
@@ -46,15 +46,15 @@ public final class Static25 {
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(IIIII)V", line = 52)
 	private static void method1606(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		if (arg1 < Class2_Sub2_Sub2.anInt2439 || arg1 >= Class2_Sub2_Sub2.anInt2438) {
+		if (arg1 < Draw2D.anInt2439 || arg1 >= Draw2D.anInt2438) {
 			return;
 		}
-		if (arg0 < Class2_Sub2_Sub2.anInt2437) {
-			arg2 -= Class2_Sub2_Sub2.anInt2437 - arg0;
-			arg0 = Class2_Sub2_Sub2.anInt2437;
+		if (arg0 < Draw2D.anInt2437) {
+			arg2 -= Draw2D.anInt2437 - arg0;
+			arg0 = Draw2D.anInt2437;
 		}
-		if (arg0 + arg2 > Class2_Sub2_Sub2.anInt2436) {
-			arg2 = Class2_Sub2_Sub2.anInt2436 - arg0;
+		if (arg0 + arg2 > Draw2D.anInt2436) {
+			arg2 = Draw2D.anInt2436 - arg0;
 		}
 		@Pc(30) int local30 = 256 - arg4;
 		@Pc(38) int local38 = (arg3 >> 16 & 0xFF) * arg4;
@@ -80,15 +80,15 @@ public final class Static25 {
 
 	@OriginalMember(owner = "client!fa", name = "c", descriptor = "(IIIII)V", line = 106)
 	private static void method1608(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		if (arg0 < Class2_Sub2_Sub2.anInt2437 || arg0 >= Class2_Sub2_Sub2.anInt2436) {
+		if (arg0 < Draw2D.anInt2437 || arg0 >= Draw2D.anInt2436) {
 			return;
 		}
-		if (arg1 < Class2_Sub2_Sub2.anInt2439) {
-			arg2 -= Class2_Sub2_Sub2.anInt2439 - arg1;
-			arg1 = Class2_Sub2_Sub2.anInt2439;
+		if (arg1 < Draw2D.anInt2439) {
+			arg2 -= Draw2D.anInt2439 - arg1;
+			arg1 = Draw2D.anInt2439;
 		}
-		if (arg1 + arg2 > Class2_Sub2_Sub2.anInt2438) {
-			arg2 = Class2_Sub2_Sub2.anInt2438 - arg1;
+		if (arg1 + arg2 > Draw2D.anInt2438) {
+			arg2 = Draw2D.anInt2438 - arg1;
 		}
 		@Pc(30) int local30 = 256 - arg4;
 		@Pc(38) int local38 = (arg3 >> 16 & 0xFF) * arg4;
@@ -137,15 +137,15 @@ public final class Static25 {
 
 	@OriginalMember(owner = "client!fa", name = "b", descriptor = "(IIII)V", line = 190)
 	public static void method1611(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		if (arg0 < Class2_Sub2_Sub2.anInt2437 || arg0 >= Class2_Sub2_Sub2.anInt2436) {
+		if (arg0 < Draw2D.anInt2437 || arg0 >= Draw2D.anInt2436) {
 			return;
 		}
-		if (arg1 < Class2_Sub2_Sub2.anInt2439) {
-			arg2 -= Class2_Sub2_Sub2.anInt2439 - arg1;
-			arg1 = Class2_Sub2_Sub2.anInt2439;
+		if (arg1 < Draw2D.anInt2439) {
+			arg2 -= Draw2D.anInt2439 - arg1;
+			arg1 = Draw2D.anInt2439;
 		}
-		if (arg1 + arg2 > Class2_Sub2_Sub2.anInt2438) {
-			arg2 = Class2_Sub2_Sub2.anInt2438 - arg1;
+		if (arg1 + arg2 > Draw2D.anInt2438) {
+			arg2 = Draw2D.anInt2438 - arg1;
 		}
 		@Pc(32) int local32 = arg0 + arg1 * anInt2440;
 		for (@Pc(34) int local34 = 0; local34 < arg2; local34++) {
@@ -155,19 +155,19 @@ public final class Static25 {
 
 	@OriginalMember(owner = "client!fa", name = "d", descriptor = "(IIIII)V", line = 214)
 	public static void method1612(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		if (arg0 < Class2_Sub2_Sub2.anInt2437) {
-			arg2 -= Class2_Sub2_Sub2.anInt2437 - arg0;
-			arg0 = Class2_Sub2_Sub2.anInt2437;
+		if (arg0 < Draw2D.anInt2437) {
+			arg2 -= Draw2D.anInt2437 - arg0;
+			arg0 = Draw2D.anInt2437;
 		}
-		if (arg1 < Class2_Sub2_Sub2.anInt2439) {
-			arg3 -= Class2_Sub2_Sub2.anInt2439 - arg1;
-			arg1 = Class2_Sub2_Sub2.anInt2439;
+		if (arg1 < Draw2D.anInt2439) {
+			arg3 -= Draw2D.anInt2439 - arg1;
+			arg1 = Draw2D.anInt2439;
 		}
-		if (arg0 + arg2 > Class2_Sub2_Sub2.anInt2436) {
-			arg2 = Class2_Sub2_Sub2.anInt2436 - arg0;
+		if (arg0 + arg2 > Draw2D.anInt2436) {
+			arg2 = Draw2D.anInt2436 - arg0;
 		}
-		if (arg1 + arg3 > Class2_Sub2_Sub2.anInt2438) {
-			arg3 = Class2_Sub2_Sub2.anInt2438 - arg1;
+		if (arg1 + arg3 > Draw2D.anInt2438) {
+			arg3 = Draw2D.anInt2438 - arg1;
 		}
 		@Pc(43) int local43 = anInt2440 - arg2;
 		@Pc(49) int local49 = arg0 + arg1 * anInt2440;
@@ -193,35 +193,35 @@ public final class Static25 {
 		if (arg3 > anInt2435) {
 			arg3 = anInt2435;
 		}
-		Class2_Sub2_Sub2.anInt2437 = arg0;
-		Class2_Sub2_Sub2.anInt2439 = arg1;
-		Class2_Sub2_Sub2.anInt2436 = arg2;
-		Class2_Sub2_Sub2.anInt2438 = arg3;
+		Draw2D.anInt2437 = arg0;
+		Draw2D.anInt2439 = arg1;
+		Draw2D.anInt2436 = arg2;
+		Draw2D.anInt2438 = arg3;
 	}
 
 	@OriginalMember(owner = "client!fa", name = "c", descriptor = "()V", line = 275)
 	public static void method1614() {
-		Class2_Sub2_Sub2.anInt2437 = 0;
-		Class2_Sub2_Sub2.anInt2439 = 0;
-		Class2_Sub2_Sub2.anInt2436 = anInt2440;
-		Class2_Sub2_Sub2.anInt2438 = anInt2435;
+		Draw2D.anInt2437 = 0;
+		Draw2D.anInt2439 = 0;
+		Draw2D.anInt2436 = anInt2440;
+		Draw2D.anInt2438 = anInt2435;
 	}
 
 	@OriginalMember(owner = "client!fa", name = "b", descriptor = "(IIIIII)V", line = 288)
 	public static void method1615(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
-		if (arg0 < Class2_Sub2_Sub2.anInt2437) {
-			arg2 -= Class2_Sub2_Sub2.anInt2437 - arg0;
-			arg0 = Class2_Sub2_Sub2.anInt2437;
+		if (arg0 < Draw2D.anInt2437) {
+			arg2 -= Draw2D.anInt2437 - arg0;
+			arg0 = Draw2D.anInt2437;
 		}
-		if (arg1 < Class2_Sub2_Sub2.anInt2439) {
-			arg3 -= Class2_Sub2_Sub2.anInt2439 - arg1;
-			arg1 = Class2_Sub2_Sub2.anInt2439;
+		if (arg1 < Draw2D.anInt2439) {
+			arg3 -= Draw2D.anInt2439 - arg1;
+			arg1 = Draw2D.anInt2439;
 		}
-		if (arg0 + arg2 > Class2_Sub2_Sub2.anInt2436) {
-			arg2 = Class2_Sub2_Sub2.anInt2436 - arg0;
+		if (arg0 + arg2 > Draw2D.anInt2436) {
+			arg2 = Draw2D.anInt2436 - arg0;
 		}
-		if (arg1 + arg3 > Class2_Sub2_Sub2.anInt2438) {
-			arg3 = Class2_Sub2_Sub2.anInt2438 - arg1;
+		if (arg1 + arg3 > Draw2D.anInt2438) {
+			arg3 = Draw2D.anInt2438 - arg1;
 		}
 		@Pc(43) int local43 = 256 - arg5;
 		@Pc(51) int local51 = (arg4 >> 16 & 0xFF) * arg5;

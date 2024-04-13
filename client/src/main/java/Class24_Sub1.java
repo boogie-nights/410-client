@@ -6,9 +6,6 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!he")
 public abstract class Class24_Sub1 extends Class24 implements Runnable {
 
-	@OriginalMember(owner = "client!he", name = "L", descriptor = "[I")
-	public static int[] anIntArray337 = new int[256];
-
 	@OriginalMember(owner = "client!he", name = "z", descriptor = "I")
 	private int anInt1636;
 
@@ -129,7 +126,7 @@ public abstract class Class24_Sub1 extends Class24 implements Runnable {
 			if (local58 < this.anInt1641) {
 				break;
 			}
-			Static99.method1663(anIntArray337, 256);
+			Static99.method1663(Static1.anIntArray337, 256);
 			try {
 				this.method1083();
 			} catch (@Pc(165) Exception local165) {
@@ -177,7 +174,7 @@ public abstract class Class24_Sub1 extends Class24 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!he", name = "a", descriptor = "(Lclient!bb;I)V", line = 191)
-	public final void method1088(@OriginalArg(0) Class7 arg0, @OriginalArg(1) int arg1) throws Exception {
+	public final void method1088(@OriginalArg(0) SignLink arg0, @OriginalArg(1) int arg1) throws Exception {
 		this.anInt1640 = arg1;
 		this.method1084(System.currentTimeMillis());
 		arg0.method207(10, this);

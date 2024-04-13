@@ -6,10 +6,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static14 {
 
 	@OriginalMember(owner = "client!cd", name = "q", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_17;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_17;
 
 	@OriginalMember(owner = "client!cd", name = "r", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_18;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_18;
 
 	@OriginalMember(owner = "client!cd", name = "s", descriptor = "[I")
 	public static int[] anIntArray414;
@@ -18,7 +18,7 @@ public final class Static14 {
 	public static int anInt1856;
 
 	@OriginalMember(owner = "client!cd", name = "E", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_19;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_19;
 
 	@OriginalMember(owner = "client!cd", name = "G", descriptor = "I")
 	public static int anInt1863;
@@ -31,39 +31,39 @@ public final class Static14 {
 		if (arg0 == 0L) {
 			return;
 		}
-		if (Class5.anInt121 >= 100) {
-			Static53.method989(0, Class34.aClass40_445, Class33.aClass40_432);
+		if (Static1.anInt121 >= 100) {
+			Static53.method989(0, JagString.aClass40_445, JagString.aClass40_432);
 			return;
 		}
-		@Pc(27) Class40 local27 = Static44.method819(arg0).method1167();
-		for (@Pc(29) int local29 = 0; local29 < Class5.anInt121; local29++) {
-			if (arg0 == Class52.aLongArray4[local29]) {
-				Static53.method989(0, Class34.aClass40_445, Static72.method1334(new Class40[] { local27, Class40.aClass40_506 }));
+		@Pc(27) JagString local27 = Static44.method819(arg0).method1167();
+		for (@Pc(29) int local29 = 0; local29 < Static1.anInt121; local29++) {
+			if (arg0 == Static1.aLongArray4[local29]) {
+				Static53.method989(0, JagString.aClass40_445, Static72.method1334(new JagString[] { local27, JagString.aClass40_506 }));
 				return;
 			}
 		}
-		for (@Pc(60) int local60 = 0; local60 < Class2_Sub3.anInt2594; local60++) {
-			if (arg0 == Class19.aLongArray2[local60]) {
-				Static53.method989(0, Class34.aClass40_445, Static72.method1334(new Class40[] { Canvas_Sub1.aClass40_357, local27, Class2_Sub2_Sub12_Sub3.aClass40_426 }));
+		for (@Pc(60) int local60 = 0; local60 < Static1.anInt2594; local60++) {
+			if (arg0 == Static1.aLongArray2[local60]) {
+				Static53.method989(0, JagString.aClass40_445, Static72.method1334(new JagString[] { JagString.aClass40_357, local27, JagString.aClass40_426 }));
 				return;
 			}
 		}
 		if (!local27.method1184(Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395)) {
-			Class52.aLongArray4[Class5.anInt121++] = arg0;
-			Class2_Sub2_Sub7.aBoolean59 = true;
-			Class47.aClass2_Sub3_Sub1_4.method1736(186);
-			Class47.aClass2_Sub3_Sub1_4.method1680(arg0);
+			Static1.aLongArray4[Static1.anInt121++] = arg0;
+			Static1.aBoolean59 = true;
+			Static1.aClass2_Sub3_Sub1_4.method1736(186);
+			Static1.aClass2_Sub3_Sub1_4.method1680(arg0);
 		}
 	}
 
 	@OriginalMember(owner = "client!cd", name = "f", descriptor = "(I)V", line = 107)
 	public static void method1255() {
-		for (@Pc(15) int local15 = 0; local15 < Class2_Sub9.anInt1190; local15++) {
-			@Pc(21) int local21 = Class60.anIntArray504[local15];
-			@Pc(25) Class2_Sub2_Sub12_Sub1_Sub1 local25 = Class2_Sub2_Sub15.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local21];
-			@Pc(31) int local31 = Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1708();
+		for (@Pc(15) int local15 = 0; local15 < Static1.anInt1190; local15++) {
+			@Pc(21) int local21 = Static1.anIntArray504[local15];
+			@Pc(25) PlayerEntity local25 = Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local21];
+			@Pc(31) int local31 = Static1.aClass2_Sub3_Sub1_5.method1708();
 			if ((local31 & 0x4) != 0) {
-				local31 += Class2_Sub2_Sub12_Sub1.aClass2_Sub3_Sub1_5.method1708() << 8;
+				local31 += Static1.aClass2_Sub3_Sub1_5.method1708() << 8;
 			}
 			Static46.method846(local21, local25, local31);
 		}
@@ -71,32 +71,32 @@ public final class Static14 {
 
 	@OriginalMember(owner = "client!cd", name = "g", descriptor = "(I)I", line = 228)
 	public static int method1258(@OriginalArg(0) int arg0) {
-		@Pc(3) int local3 = Class30.anIntArray257[arg0];
-		@Pc(11) int local11 = (local3 * Class58.anInt2179 >> 8) * local3;
+		@Pc(3) int local3 = Static1.anIntArray257[arg0];
+		@Pc(11) int local11 = (local3 * Static1.anInt2179 >> 8) * local3;
 		return (int) (Math.sqrt((double) local11) + 0.5D);
 	}
 
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(IBI)Lclient!o;", line = 266)
-	public static Class40 method1260(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+	public static JagString method1260(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(12) int local12 = arg0 - arg1;
 		if (local12 < -9) {
-			return Class25.aClass40_293;
+			return JagString.aClass40_293;
 		} else if (local12 < -6) {
-			return Class18_Sub1.aClass40_133;
+			return JagString.aClass40_133;
 		} else if (local12 < -3) {
-			return Class44.aClass40_528;
+			return JagString.aClass40_528;
 		} else if (local12 < 0) {
-			return Class18_Sub1.aClass40_134;
+			return JagString.aClass40_134;
 		} else if (local12 > 9) {
-			return Class2_Sub2_Sub15.aClass40_689;
+			return JagString.aClass40_689;
 		} else if (local12 > 6) {
-			return Class61.aClass40_692;
+			return JagString.aClass40_692;
 		} else if (local12 > 3) {
-			return Class19.aClass40_138;
+			return JagString.aClass40_138;
 		} else if (local12 > 0) {
-			return Class2_Sub2_Sub12_Sub2.aClass40_407;
+			return JagString.aClass40_407;
 		} else {
-			return Class2.aClass40_730;
+			return JagString.aClass40_730;
 		}
 	}
 
@@ -120,7 +120,7 @@ public final class Static14 {
 	}
 
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(Lclient!ud;Ljava/awt/Component;Lclient!ud;B)V", line = 373)
-	public static void method1263(@OriginalArg(0) Class5 arg0, @OriginalArg(1) Component arg1, @OriginalArg(2) Class5 arg2) {
+	public static void method1263(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Component arg1, @OriginalArg(2) Js5 arg2) {
 		if (Static68.aBoolean145) {
 			return;
 		}
@@ -142,8 +142,8 @@ public final class Static14 {
 		Static25.method1610();
 		Static2.aClass45_3 = Static75.method1351(75, arg1, 94);
 		Static25.method1610();
-		@Pc(77) byte[] local77 = arg2.method69(Class2_Sub2_Sub13.aClass40_463, Class2_Sub2_Sub12_Sub5.aClass40_593);
-		@Pc(83) Class2_Sub2_Sub2_Sub4 local83 = new Class2_Sub2_Sub2_Sub4(local77, arg1);
+		@Pc(77) byte[] local77 = arg2.method69(JagString.aClass40_463, JagString.aClass40_593);
+		@Pc(83) Pix24 local83 = new Pix24(local77, arg1);
 		Static56.aClass45_24.method1476();
 		local83.method1619(0, 0);
 		Static90.aClass45_30.method1476();
@@ -191,14 +191,14 @@ public final class Static14 {
 		local83.method1619(254, -171);
 		Static2.aClass45_3.method1476();
 		local83.method1619(-180, -171);
-		local83 = Static95.method1644(Class41.aClass40_521, Class2_Sub2_Sub12_Sub5.aClass40_593, arg0);
+		local83 = Static95.method1644(JagString.aClass40_521, JagString.aClass40_593, arg0);
 		Static56.aClass45_22.method1476();
 		local83.method1624(382 - local83.anInt2446 / 2 - 128, 18);
-		Static89.aClass2_Sub2_Sub2_Sub3_21 = Static91.method77(arg0, Class2_Sub2_Sub12_Sub5.aClass40_593, Class4.aClass40_16);
-		Static30.aClass2_Sub2_Sub2_Sub3_8 = Static91.method77(arg0, Class2_Sub2_Sub12_Sub5.aClass40_593, Class2_Sub2_Sub12_Sub1_Sub2.aClass40_661);
-		Static45.aClass2_Sub2_Sub2_Sub3Array14 = Static4.method85(arg0, Class50.aClass40_563, Class2_Sub2_Sub12_Sub5.aClass40_593);
-		Static10.aClass2_Sub2_Sub2_Sub4_1 = new Class2_Sub2_Sub2_Sub4(128, 265);
-		Static88.aClass2_Sub2_Sub2_Sub4_9 = new Class2_Sub2_Sub2_Sub4(128, 265);
+		Static89.aClass2_Sub2_Sub2_Sub3_21 = Static91.method77(arg0, JagString.aClass40_593, JagString.aClass40_16);
+		Static30.aClass2_Sub2_Sub2_Sub3_8 = Static91.method77(arg0, JagString.aClass40_593, JagString.aClass40_661);
+		Static45.aClass2_Sub2_Sub2_Sub3Array14 = Static4.method85(arg0, JagString.aClass40_563, JagString.aClass40_593);
+		Static10.aClass2_Sub2_Sub2_Sub4_1 = new Pix24(128, 265);
+		Static88.aClass2_Sub2_Sub2_Sub4_9 = new Pix24(128, 265);
 		for (local156 = 0; local156 < 33920; local156++) {
 			Static10.aClass2_Sub2_Sub2_Sub4_1.anIntArray534[local156] = Static56.aClass45_24.anIntArray471[local156];
 		}
@@ -248,34 +248,34 @@ public final class Static14 {
 		Static84.anIntArray472 = new int[256];
 		Static4.anIntArray17 = new int[32768];
 		Static23.method502(null);
-		Class2_Sub2_Sub12_Sub5.aClass40_591 = Class2_Sub2_Sub12_Sub5.aClass40_593;
-		Class2_Sub2_Sub12_Sub5.aClass40_587 = Class2_Sub2_Sub12_Sub5.aClass40_593;
-		Class57.anInt2143 = 0;
+		JagString.aClass40_591 = JagString.aClass40_593;
+		JagString.aClass40_587 = JagString.aClass40_593;
+		Static1.anInt2143 = 0;
 		Static1.anIntArray1 = new int[32768];
 		Static95.anIntArray547 = new int[32768];
-		if (Class6.anInt239 == 0 || Class1.aBoolean2) {
+		if (Static1.anInt239 == 0 || Static1.aBoolean2) {
 			Static86.method1490();
 		} else {
-			Static86.method1496(Class2_Sub2_Sub3.aClass40_80, Class2_Sub2_Sub12_Sub5.aClass40_593, Static77.aClass5_Sub1_17, Class6.anInt239);
+			Static86.method1496(JagString.aClass40_80, JagString.aClass40_593, Static77.aClass5_Sub1_17, Static1.anInt239);
 		}
 		Static41.method787(false);
 		Static68.aBoolean145 = true;
-		Class1.aBoolean1 = true;
+		Static1.aBoolean1 = true;
 	}
 
 	@OriginalMember(owner = "client!cd", name = "h", descriptor = "(I)V", line = 604)
 	public static void method1264() {
-		Class12_Sub1.aClass40_536 = null;
+		JagString.aClass40_536 = null;
 		aByteArrayArrayArray10 = null;
 		aClass2_Sub2_Sub2_Sub3_17 = null;
-		Class12_Sub1.aClass40_540 = null;
+		JagString.aClass40_540 = null;
 		aClass2_Sub2_Sub2_Sub3_18 = null;
-		Class12_Sub1.aClass40_541 = null;
-		Class12_Sub1.aClass40_538 = null;
-		Class12_Sub1.aClass40_537 = null;
+		JagString.aClass40_541 = null;
+		JagString.aClass40_538 = null;
+		JagString.aClass40_537 = null;
 		anIntArray414 = null;
-		Class12_Sub1.aClass40_539 = null;
+		JagString.aClass40_539 = null;
 		aClass2_Sub2_Sub2_Sub3_19 = null;
-		Class12_Sub1.aClass40_535 = null;
+		JagString.aClass40_535 = null;
 	}
 }

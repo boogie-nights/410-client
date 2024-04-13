@@ -13,18 +13,18 @@ public final class Static76 {
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(I)V", line = 7)
 	public static void method1358() {
-		Class52.aClass40_569 = null;
-		Class52.aClass40_570 = null;
+		JagString.aClass40_569 = null;
+		JagString.aClass40_570 = null;
 		anIntArray431 = null;
-		Class52.aLongArray4 = null;
+		Static1.aLongArray4 = null;
 	}
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(B[B)[B", line = 23)
 	public static byte[] method1359(@OriginalArg(1) byte[] arg0) {
-		@Pc(8) Class2_Sub3 local8 = new Class2_Sub3(arg0);
+		@Pc(8) Packet local8 = new Packet(arg0);
 		@Pc(12) int local12 = local8.method1708();
 		@Pc(16) int local16 = local8.method1728();
-		if (local16 < 0 || Class2.anInt2528 != 0 && Class2.anInt2528 < local16) {
+		if (local16 < 0 || Static1.anInt2528 != 0 && Static1.anInt2528 < local16) {
 			throw new RuntimeException();
 		} else if (local12 == 0) {
 			@Pc(40) byte[] local40 = new byte[local16];
@@ -32,7 +32,7 @@ public final class Static76 {
 			return local40;
 		} else {
 			@Pc(52) int local52 = local8.method1728();
-			if (local52 < 0 || Class2.anInt2528 != 0 && local52 > Class2.anInt2528) {
+			if (local52 < 0 || Static1.anInt2528 != 0 && local52 > Static1.anInt2528) {
 				throw new RuntimeException();
 			}
 			@Pc(69) byte[] local69 = new byte[local52];
@@ -52,23 +52,23 @@ public final class Static76 {
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(II)Lclient!vc;", line = 107)
 	public static Class2_Sub2_Sub16 method1360(@OriginalArg(1) int arg0) {
-		@Pc(6) Class2_Sub2_Sub16 local6 = (Class2_Sub2_Sub16) Class17.aClass47_4.method1325((long) arg0);
+		@Pc(6) Class2_Sub2_Sub16 local6 = (Class2_Sub2_Sub16) Static1.aClass47_4.method1325((long) arg0);
 		if (local6 != null) {
 			return local6;
 		}
 		@Pc(25) byte[] local25 = Static40.aClass5_25.method68(arg0, 1);
 		local6 = new Class2_Sub2_Sub16();
 		if (local25 != null) {
-			local6.method1640(new Class2_Sub3(local25), arg0);
+			local6.method1640(new Packet(local25), arg0);
 		}
 		local6.method1641();
-		Class17.aClass47_4.method1332((long) arg0, local6);
+		Static1.aClass47_4.method1332((long) arg0, local6);
 		return local6;
 	}
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(B)Lclient!vb;", line = 144)
-	public static Class2_Sub2_Sub2_Sub4 method1361() {
-		@Pc(9) Class2_Sub2_Sub2_Sub4 local9 = new Class2_Sub2_Sub2_Sub4();
+	public static Pix24 method1361() {
+		@Pc(9) Pix24 local9 = new Pix24();
 		local9.anInt2445 = Static41.anInt1079;
 		local9.anInt2443 = Static96.anInt2513;
 		local9.anInt2444 = Static75.anIntArray430[0];

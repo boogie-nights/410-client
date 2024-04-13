@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!hd")
-public final class Class2_Sub8 extends Class2 {
+public final class Class2_Sub8 extends Linkable {
 
 	@OriginalMember(owner = "client!hd", name = "x", descriptor = "Z")
 	public boolean aBoolean71 = false;
@@ -112,7 +112,7 @@ public final class Class2_Sub8 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!hd", name = "<init>", descriptor = "(Lclient!eb;)V", line = 121)
-	public Class2_Sub8(@OriginalArg(0) Class2_Sub3 arg0) {
+	public Class2_Sub8(@OriginalArg(0) Packet arg0) {
 		this.anInt995 = arg0.method1704();
 		this.aBoolean70 = arg0.method1708() == 1;
 		@Pc(23) int local23 = arg0.method1708();
@@ -146,7 +146,7 @@ public final class Class2_Sub8 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(DILclient!ud;)Z", line = 180)
-	public boolean method742(@OriginalArg(0) double arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class5 arg2) {
+	public boolean method742(@OriginalArg(0) double arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		for (@Pc(1) int local1 = 0; local1 < this.anIntArray189.length; local1++) {
 			if (arg2.method61(this.anIntArray189[local1]) == null) {
 				return false;
@@ -155,7 +155,7 @@ public final class Class2_Sub8 extends Class2 {
 		@Pc(22) int local22 = arg1 * arg1;
 		this.anIntArray185 = new int[local22 * 4];
 		for (@Pc(30) int local30 = 0; local30 < this.anIntArray189.length; local30++) {
-			@Pc(39) Class2_Sub2_Sub2_Sub3 local39 = Static3.method28(this.anIntArray189[local30], arg2);
+			@Pc(39) Pix8 local39 = Static3.method28(this.anIntArray189[local30], arg2);
 			local39.method1324();
 			@Pc(44) byte[] local44 = local39.aByteArray16;
 			@Pc(47) int[] local47 = local39.anIntArray427;

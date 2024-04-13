@@ -6,22 +6,22 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static30 {
 
 	@OriginalMember(owner = "client!ga", name = "s", descriptor = "[Lclient!cb;")
-	public static Class11[] aClass11Array2;
+	public static DiskStore[] aClass11Array2;
 
 	@OriginalMember(owner = "client!ga", name = "v", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_7;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_7;
 
 	@OriginalMember(owner = "client!ga", name = "B", descriptor = "[[[I")
 	public static int[][][] anIntArrayArrayArray3;
 
 	@OriginalMember(owner = "client!ga", name = "H", descriptor = "Lclient!qb;")
-	public static Class2_Sub2_Sub2_Sub3 aClass2_Sub2_Sub2_Sub3_8;
+	public static Pix8 aClass2_Sub2_Sub2_Sub3_8;
 
 	@OriginalMember(owner = "client!ga", name = "I", descriptor = "Lclient!ba;")
-	public static Class6 aClass6_1;
+	public static HashTable aClass6_1;
 
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(Lclient!ud;ILclient!ud;)V", line = 4)
-	public static void method591(@OriginalArg(0) Class5 arg0, @OriginalArg(2) Class5 arg1) {
+	public static void method591(@OriginalArg(0) Js5 arg0, @OriginalArg(2) Js5 arg1) {
 		Static66.aClass5_22 = arg0;
 		Static63.aClass5_5 = arg1;
 		Static95.anInt2493 = Static63.aClass5_5.method76(3);
@@ -38,11 +38,11 @@ public final class Static30 {
 		aClass11Array2 = null;
 		aClass2_Sub2_Sub2_Sub3_7 = null;
 		aClass6_1 = null;
-		Class2_Sub5.aClass40_229 = null;
+		JagString.aClass40_229 = null;
 		anIntArrayArrayArray3 = null;
-		Class2_Sub5.aClass40_230 = null;
+		JagString.aClass40_230 = null;
 		aClass2_Sub2_Sub2_Sub3_8 = null;
-		Class2_Sub5.aClass40_228 = null;
+		JagString.aClass40_228 = null;
 	}
 
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(ILjava/awt/Graphics;)V", line = 131)

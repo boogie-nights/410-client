@@ -12,8 +12,8 @@ public final class Static59 {
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "()V", line = 3)
 	public static void method1064() {
-		Class36.aFloatArrayArray1 = null;
-		Class36.anIntArrayArray12 = null;
+		SoundFilter.aFloatArrayArray1 = null;
+		SoundFilter.anIntArrayArray12 = null;
 	}
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(F)F", line = 93)

@@ -15,7 +15,7 @@ public final class Static41 {
 	public static int anInt1079;
 
 	@OriginalMember(owner = "client!ic", name = "cb", descriptor = "[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] aClass2_Sub2_Sub2_Sub4Array6;
+	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array6;
 
 	@OriginalMember(owner = "client!ic", name = "a", descriptor = "(ZI)V", line = 18)
 	public static void method787(@OriginalArg(0) boolean arg0) {
@@ -23,7 +23,7 @@ public final class Static41 {
 			return;
 		}
 		try {
-			@Pc(11) Class2_Sub3 local11 = new Class2_Sub3(4);
+			@Pc(11) Packet local11 = new Packet(4);
 			local11.method1703(arg0 ? 2 : 3);
 			local11.method1688(0);
 			Static29.aClass25_48.method731(local11.aByteArray24, 4);
@@ -33,20 +33,20 @@ public final class Static41 {
 			} catch (@Pc(37) Exception local37) {
 			}
 			Static29.aClass25_48 = null;
-			Class61.anInt2401++;
+			Static1.anInt2401++;
 		}
 	}
 
 	@OriginalMember(owner = "client!ic", name = "f", descriptor = "(I)V", line = 109)
 	public static void method790() {
 		aClass45_21 = null;
-		Class2_Sub2_Sub11.aClass40_333 = null;
-		Class2_Sub2_Sub11.aClass40_334 = null;
+		JagString.aClass40_333 = null;
+		JagString.aClass40_334 = null;
 		aClass2_Sub2_Sub2_Sub4Array6 = null;
-		Class2_Sub2_Sub11.aClass40_335 = null;
+		JagString.aClass40_335 = null;
 		aClass52_1 = null;
-		Class2_Sub2_Sub11.aClass40_331 = null;
-		Class2_Sub2_Sub11.aClass40_330 = null;
-		Class2_Sub2_Sub11.aClass40_332 = null;
+		JagString.aClass40_331 = null;
+		JagString.aClass40_330 = null;
+		JagString.aClass40_332 = null;
 	}
 }

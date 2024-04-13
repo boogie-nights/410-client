@@ -6,32 +6,8 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!ea")
 public final class Class19 implements Interface4 {
 
-	@OriginalMember(owner = "client!ea", name = "f", descriptor = "I")
-	public static int anInt481 = 0;
-
-	@OriginalMember(owner = "client!ea", name = "d", descriptor = "[J")
-	public static long[] aLongArray2 = new long[200];
-
-	@OriginalMember(owner = "client!ea", name = "m", descriptor = "Lclient!o;")
-	public static Class40 aClass40_137 = Static12.method257(" from your ignore list first");
-
-	@OriginalMember(owner = "client!ea", name = "g", descriptor = "Lclient!o;")
-	public static Class40 aClass40_136 = Static12.method257("redstone3");
-
-	@OriginalMember(owner = "client!ea", name = "p", descriptor = "Lclient!o;")
-	public static Class40 aClass40_138 = Static12.method257("@gr2@");
-
-	@OriginalMember(owner = "client!ea", name = "r", descriptor = "Lclient!o;")
-	public static Class40 aClass40_139 = Static12.method257("Imported models");
-
-	@OriginalMember(owner = "client!ea", name = "u", descriptor = "Lclient!o;")
-	public static Class40 aClass40_140 = Static12.method257("Import complete");
-
-	@OriginalMember(owner = "client!ea", name = "y", descriptor = "Lclient!o;")
-	public static Class40 aClass40_141 = Static12.method257("This world is full)3");
-
 	@OriginalMember(owner = "client!ea", name = "q", descriptor = "Lclient!od;")
-	private Class44 aClass44_3 = new Class44();
+	private LinkList aClass44_3 = new LinkList();
 
 	@OriginalMember(owner = "client!ea", name = "v", descriptor = "I")
 	private int anInt489 = 0;
@@ -43,7 +19,7 @@ public final class Class19 implements Interface4 {
 	private double aDouble1 = 1.0D;
 
 	@OriginalMember(owner = "client!ea", name = "z", descriptor = "Lclient!ud;")
-	private final Class5 aClass5_7;
+	private final Js5 aClass5_7;
 
 	@OriginalMember(owner = "client!ea", name = "w", descriptor = "I")
 	private final int anInt490;
@@ -90,7 +66,7 @@ public final class Class19 implements Interface4 {
 				this.aClass2_Sub8Array1[local3].method741();
 			}
 		}
-		this.aClass44_3 = new Class44();
+		this.aClass44_3 = new LinkList();
 		this.anInt489 = this.anInt490;
 	}
 
@@ -124,7 +100,7 @@ public final class Class19 implements Interface4 {
 	}
 
 	@OriginalMember(owner = "client!ea", name = "<init>", descriptor = "(Lclient!ud;Lclient!ud;IDI)V", line = 935)
-	public Class19(@OriginalArg(0) Class5 arg0, @OriginalArg(1) Class5 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) double arg3, @OriginalArg(4) int arg4) {
+	public Class19(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) double arg3, @OriginalArg(4) int arg4) {
 		this.anInt488 = arg4;
 		this.aDouble1 = arg3;
 		this.aClass5_7 = arg1;
@@ -134,7 +110,7 @@ public final class Class19 implements Interface4 {
 		@Pc(41) int local41 = local38.length;
 		this.aClass2_Sub8Array1 = new Class2_Sub8[arg0.method76(0)];
 		for (@Pc(50) int local50 = 0; local50 < local41; local50++) {
-			@Pc(63) Class2_Sub3 local63 = new Class2_Sub3(arg0.method68(local38[local50], 0));
+			@Pc(63) Packet local63 = new Packet(arg0.method68(local38[local50], 0));
 			this.aClass2_Sub8Array1[local38[local50]] = new Class2_Sub8(local63);
 		}
 	}

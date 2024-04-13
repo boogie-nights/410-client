@@ -6,21 +6,21 @@ public final class Static111 {
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "([BI[BII)I", line = 6)
 	public static int method1265(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3) {
-		@Pc(1) Class61 local1 = Class46.aClass61_1;
-		synchronized (Class46.aClass61_1) {
-			Class46.aClass61_1.aByteArray23 = arg2;
-			Class46.aClass61_1.anInt2420 = 9;
-			Class46.aClass61_1.aByteArray21 = arg0;
-			Class46.aClass61_1.anInt2408 = 0;
-			Class46.aClass61_1.anInt2409 = arg1;
-			Class46.aClass61_1.anInt2416 = 0;
-			Class46.aClass61_1.anInt2403 = 0;
-			Class46.aClass61_1.anInt2405 = 0;
-			Class46.aClass61_1.anInt2421 = 0;
-			method1273(Class46.aClass61_1);
-			@Pc(37) int local37 = arg1 - Class46.aClass61_1.anInt2409;
-			Class46.aClass61_1.aByteArray23 = null;
-			Class46.aClass61_1.aByteArray21 = null;
+		@Pc(1) Class61 local1 = Static1.aClass61_1;
+		synchronized (Static1.aClass61_1) {
+			Static1.aClass61_1.aByteArray23 = arg2;
+			Static1.aClass61_1.anInt2420 = 9;
+			Static1.aClass61_1.aByteArray21 = arg0;
+			Static1.aClass61_1.anInt2408 = 0;
+			Static1.aClass61_1.anInt2409 = arg1;
+			Static1.aClass61_1.anInt2416 = 0;
+			Static1.aClass61_1.anInt2403 = 0;
+			Static1.aClass61_1.anInt2405 = 0;
+			Static1.aClass61_1.anInt2421 = 0;
+			method1273(Static1.aClass61_1);
+			@Pc(37) int local37 = arg1 - Static1.aClass61_1.anInt2409;
+			Static1.aClass61_1.aByteArray23 = null;
+			Static1.aClass61_1.aByteArray21 = null;
 			return local37;
 		}
 	}
@@ -210,7 +210,7 @@ public final class Static111 {
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "()V", line = 336)
 	public static void method1272() {
-		Class46.aClass61_1 = null;
+		Static1.aClass61_1 = null;
 	}
 
 	@OriginalMember(owner = "client!pb", name = "e", descriptor = "(Lclient!va;)V", line = 343)

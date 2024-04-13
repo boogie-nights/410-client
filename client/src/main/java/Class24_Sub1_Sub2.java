@@ -25,7 +25,7 @@ public final class Class24_Sub1_Sub2 extends Class24_Sub1 {
 	}
 
 	@OriginalMember(owner = "client!me", name = "<init>", descriptor = "(Lclient!bb;Ljava/awt/Component;)V", line = 15)
-	public Class24_Sub1_Sub2(@OriginalArg(0) Class7 arg0, @OriginalArg(1) Component arg1) throws Exception {
+	public Class24_Sub1_Sub2(@OriginalArg(0) SignLink arg0, @OriginalArg(1) Component arg1) throws Exception {
 		super(22050);
 		Static60.anInterface1_2 = arg0.method198();
 		Static60.anInterface1_2.method238(arg1);
@@ -35,6 +35,6 @@ public final class Class24_Sub1_Sub2 extends Class24_Sub1 {
 	@OriginalMember(owner = "client!me", name = "b", descriptor = "()V", line = 21)
 	@Override
 	protected void method1083() {
-		Static60.anInterface1_2.method237(Class24_Sub1.anIntArray337);
+		Static60.anInterface1_2.method237(Static1.anIntArray337);
 	}
 }

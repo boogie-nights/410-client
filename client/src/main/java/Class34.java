@@ -6,51 +6,6 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!ma")
 public final class Class34 {
 
-	@OriginalMember(owner = "client!ma", name = "c", descriptor = "Lclient!o;")
-	public static Class40 aClass40_446 = Static12.method257("Starting game engine)3)3)3");
-
-	@OriginalMember(owner = "client!ma", name = "b", descriptor = "Lclient!o;")
-	public static Class40 aClass40_445 = Static12.method257("");
-
-	@OriginalMember(owner = "client!ma", name = "m", descriptor = "Lclient!o;")
-	public static Class40 aClass40_450 = Static12.method257("glow2:");
-
-	@OriginalMember(owner = "client!ma", name = "d", descriptor = "Lclient!o;")
-	public static Class40 aClass40_447 = aClass40_445;
-
-	@OriginalMember(owner = "client!ma", name = "a", descriptor = "Lclient!o;")
-	public static Class40 aClass40_444 = aClass40_445;
-
-	@OriginalMember(owner = "client!ma", name = "f", descriptor = "Lclient!o;")
-	public static Class40 aClass40_448 = aClass40_445;
-
-	@OriginalMember(owner = "client!ma", name = "k", descriptor = "I")
-	public static int anInt1548 = -1;
-
-	@OriginalMember(owner = "client!ma", name = "g", descriptor = "Lclient!o;")
-	public static Class40 aClass40_449 = Static12.method257("Use @lre@");
-
-	@OriginalMember(owner = "client!ma", name = "s", descriptor = "Lclient!o;")
-	public static Class40 aClass40_453 = aClass40_445;
-
-	@OriginalMember(owner = "client!ma", name = "q", descriptor = "Lclient!o;")
-	public static Class40 aClass40_451 = aClass40_445;
-
-	@OriginalMember(owner = "client!ma", name = "r", descriptor = "Lclient!o;")
-	public static Class40 aClass40_452 = aClass40_445;
-
-	@OriginalMember(owner = "client!ma", name = "p", descriptor = "Lclient!qc;")
-	public static Class47 aClass47_14 = new Class47(64);
-
-	@OriginalMember(owner = "client!ma", name = "t", descriptor = "I")
-	public static int anInt1550 = 0;
-
-	@OriginalMember(owner = "client!ma", name = "u", descriptor = "Z")
-	public static boolean aBoolean121 = false;
-
-	@OriginalMember(owner = "client!ma", name = "v", descriptor = "[[[B")
-	public static byte[][][] aByteArrayArrayArray7 = new byte[4][104][104];
-
 	@OriginalMember(owner = "client!ma", name = "j", descriptor = "[I")
 	private final int[] anIntArray315;
 

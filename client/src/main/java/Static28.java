@@ -8,10 +8,10 @@ public final class Static28 {
 	public static Class45 aClass45_15;
 
 	@OriginalMember(owner = "client!fe", name = "b", descriptor = "Lclient!ud;")
-	public static Class5 aClass5_10;
+	public static Js5 aClass5_10;
 
 	@OriginalMember(owner = "client!fe", name = "g", descriptor = "[Lclient!vb;")
-	public static Class2_Sub2_Sub2_Sub4[] aClass2_Sub2_Sub2_Sub4Array5;
+	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array5;
 
 	@OriginalMember(owner = "client!fe", name = "i", descriptor = "I")
 	public static int anInt723;
@@ -30,16 +30,16 @@ public final class Static28 {
 		aClass45_15 = null;
 		aClass2_Sub2_Sub2_Sub4Array5 = null;
 		aClass5_10 = null;
-		Class22.aByteArrayArray8 = null;
-		Class22.aClass40_220 = null;
-		Class22.aClass40_223 = null;
-		Class22.aClass40_221 = null;
-		Class22.aClass40_222 = null;
+		Static1.aByteArrayArray8 = null;
+		JagString.aClass40_220 = null;
+		JagString.aClass40_223 = null;
+		JagString.aClass40_221 = null;
+		JagString.aClass40_222 = null;
 	}
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(Lclient!bb;ZB)Z", line = 45)
-	public static boolean method585(@OriginalArg(0) Class7 arg0, @OriginalArg(1) boolean arg1) {
-		Class15.anInt432 = 20;
+	public static boolean method585(@OriginalArg(0) SignLink arg0, @OriginalArg(1) boolean arg1) {
+		Static1.anInt432 = 20;
 		try {
 			Static98.aClass12_1 = (Class12) Class.forName("Class12_Sub1_Sub2").getDeclaredConstructor().newInstance();
 			return true;

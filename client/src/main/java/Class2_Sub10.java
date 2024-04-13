@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!pc")
-public abstract class Class2_Sub10 extends Class2 {
+public abstract class Class2_Sub10 extends Linkable {
 
 	@OriginalMember(owner = "client!pc", name = "q", descriptor = "Lclient!rc;")
 	protected Class2_Sub4 aClass2_Sub4_3;

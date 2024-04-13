@@ -8,13 +8,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class24_Sub2 extends Class24 {
 
 	@OriginalMember(owner = "client!w", name = "y", descriptor = "Lclient!da;")
-	private final InputStream_Sub1 anInputStream_Sub1_1 = new InputStream_Sub1();
+	private final AudioStream anInputStream_Sub1_1 = new AudioStream();
 
 	@OriginalMember(owner = "client!w", name = "a", descriptor = "()V", line = 4)
 	@Override
 	public void method1656() {
 		//AudioPlayer.player.stop(this.anInputStream_Sub1_1);
-		@Pc(6) InputStream_Sub1 local6 = this.anInputStream_Sub1_1;
+		@Pc(6) AudioStream local6 = this.anInputStream_Sub1_1;
 		synchronized (this.anInputStream_Sub1_1) {
 			this.anInputStream_Sub1_1.aBoolean36 = true;
 		}

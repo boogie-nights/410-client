@@ -32,7 +32,7 @@ public final class Static4 {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(Lclient!ud;Lclient!o;BLclient!o;)[Lclient!qb;", line = 72)
-	public static Class2_Sub2_Sub2_Sub3[] method85(@OriginalArg(0) Class5 arg0, @OriginalArg(1) Class40 arg1, @OriginalArg(3) Class40 arg2) {
+	public static Pix8[] method85(@OriginalArg(0) Js5 arg0, @OriginalArg(1) JagString arg1, @OriginalArg(3) JagString arg2) {
 		@Pc(9) int local9 = arg0.method80(arg1);
 		@Pc(15) int local15 = arg0.method72(arg2, local9);
 		return Static7.method194(local15, arg0, local9);
@@ -76,40 +76,40 @@ public final class Static4 {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(Lclient!mc;Lclient!o;I)Lclient!o;", line = 385)
-	public static Class40 method94(@OriginalArg(0) Class2_Sub2_Sub13 arg0, @OriginalArg(1) Class40 arg1) {
-		if (arg1.method1200(Class32.aClass40_430) == -1) {
+	public static JagString method94(@OriginalArg(0) ComType arg0, @OriginalArg(1) JagString arg1) {
+		if (arg1.method1200(JagString.aClass40_430) == -1) {
 			return arg1;
 		}
 		while (true) {
-			@Pc(13) int local13 = arg1.method1200(Class42.aClass40_525);
+			@Pc(13) int local13 = arg1.method1200(JagString.aClass40_525);
 			if (local13 == -1) {
 				while (true) {
-					local13 = arg1.method1200(Class12_Sub2.aClass40_344);
+					local13 = arg1.method1200(JagString.aClass40_344);
 					if (local13 == -1) {
 						while (true) {
-							local13 = arg1.method1200(Applet_Sub1.aClass40_102);
+							local13 = arg1.method1200(JagString.aClass40_102);
 							if (local13 == -1) {
 								while (true) {
-									local13 = arg1.method1200(Class60.aClass40_681);
+									local13 = arg1.method1200(JagString.aClass40_681);
 									if (local13 == -1) {
 										while (true) {
-											local13 = arg1.method1200(Class2_Sub11.aClass40_495);
+											local13 = arg1.method1200(JagString.aClass40_495);
 											if (local13 == -1) {
 												return arg1;
 											}
-											arg1 = Static72.method1334(new Class40[] { arg1.method1180(local13, 0), Static92.method1581(Static99.method1660(4, arg0)), arg1.method1185(local13 + 2) });
+											arg1 = Static72.method1334(new JagString[] { arg1.method1180(local13, 0), Static92.method1581(Static99.method1660(4, arg0)), arg1.method1185(local13 + 2) });
 										}
 									}
-									arg1 = Static72.method1334(new Class40[] { arg1.method1180(local13, 0), Static92.method1581(Static99.method1660(3, arg0)), arg1.method1185(local13 + 2) });
+									arg1 = Static72.method1334(new JagString[] { arg1.method1180(local13, 0), Static92.method1581(Static99.method1660(3, arg0)), arg1.method1185(local13 + 2) });
 								}
 							}
-							arg1 = Static72.method1334(new Class40[] { arg1.method1180(local13, 0), Static92.method1581(Static99.method1660(2, arg0)), arg1.method1185(local13 + 2) });
+							arg1 = Static72.method1334(new JagString[] { arg1.method1180(local13, 0), Static92.method1581(Static99.method1660(2, arg0)), arg1.method1185(local13 + 2) });
 						}
 					}
-					arg1 = Static72.method1334(new Class40[] { arg1.method1180(local13, 0), Static92.method1581(Static99.method1660(1, arg0)), arg1.method1185(local13 + 2) });
+					arg1 = Static72.method1334(new JagString[] { arg1.method1180(local13, 0), Static92.method1581(Static99.method1660(1, arg0)), arg1.method1185(local13 + 2) });
 				}
 			}
-			arg1 = Static72.method1334(new Class40[] { arg1.method1180(local13, 0), Static92.method1581(Static99.method1660(0, arg0)), arg1.method1185(local13 + 2) });
+			arg1 = Static72.method1334(new JagString[] { arg1.method1180(local13, 0), Static92.method1581(Static99.method1660(0, arg0)), arg1.method1185(local13 + 2) });
 		}
 	}
 
@@ -117,7 +117,7 @@ public final class Static4 {
 	public static void method96() {
 		aClass45_4 = null;
 		anIntArray17 = null;
-		Class5_Sub1.aClass40_30 = null;
-		Class5_Sub1.aClass40_29 = null;
+		JagString.aClass40_30 = null;
+		JagString.aClass40_29 = null;
 	}
 }

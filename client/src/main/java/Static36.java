@@ -41,12 +41,12 @@ public final class Static36 {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(Lclient!o;I)Z", line = 130)
-	public static boolean method729(@OriginalArg(0) Class40 arg0) {
+	public static boolean method729(@OriginalArg(0) JagString arg0) {
 		if (arg0 == null) {
 			return false;
 		}
-		for (@Pc(18) int local18 = 0; local18 < Class2_Sub3.anInt2594; local18++) {
-			if (arg0.method1199(Canvas_Sub1.aClass40Array23[local18])) {
+		for (@Pc(18) int local18 = 0; local18 < Static1.anInt2594; local18++) {
+			if (arg0.method1199(Static1.aClass40Array23[local18])) {
 				return true;
 			}
 		}
@@ -54,16 +54,16 @@ public final class Static36 {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(BLclient!ud;II)Lclient!vb;", line = 364)
-	public static Class2_Sub2_Sub2_Sub4 method732(@OriginalArg(1) Class5 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+	public static Pix24 method732(@OriginalArg(1) Js5 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		return Static84.method1484(arg2, arg0, arg1) ? Static76.method1361() : null;
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(Z)V", line = 402)
 	public static void method733() {
-		Class25.aClass40_291 = null;
-		Class25.aClass40_294 = null;
-		Class25.aClass40_293 = null;
-		Class25.aClass40_292 = null;
-		Class25.aClass33_1 = null;
+		JagString.aClass40_291 = null;
+		JagString.aClass40_294 = null;
+		JagString.aClass40_293 = null;
+		JagString.aClass40_292 = null;
+		Static1.aClass33_1 = null;
 	}
 }

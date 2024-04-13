@@ -1,50 +1,10 @@
-import java.util.zip.CRC32;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!vc")
-public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
-
-	@OriginalMember(owner = "client!vc", name = "T", descriptor = "Lclient!o;")
-	public static Class40 aClass40_708 = Static12.method257("wishes to duel with you)3");
-
-	@OriginalMember(owner = "client!vc", name = "V", descriptor = "I")
-	public static int anInt2465 = 0;
-
-	@OriginalMember(owner = "client!vc", name = "W", descriptor = "I")
-	public static int anInt2466 = -1;
-
-	@OriginalMember(owner = "client!vc", name = "Z", descriptor = "Lclient!o;")
-	public static Class40 aClass40_709 = Static12.method257("Connecting to friendserver");
-
-	@OriginalMember(owner = "client!vc", name = "P", descriptor = "Ljava/util/zip/CRC32;")
-	public static CRC32 aCRC32_2 = new CRC32();
-
-	@OriginalMember(owner = "client!vc", name = "hb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_711 = Static12.method257("Loaded fonts");
-
-	@OriginalMember(owner = "client!vc", name = "lb", descriptor = "[I")
-	public static int[] anIntArray546 = new int[1000];
-
-	@OriginalMember(owner = "client!vc", name = "jb", descriptor = "I")
-	public static int anInt2474 = 0;
-
-	@OriginalMember(owner = "client!vc", name = "mb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_712 = Static12.method257("Sep");
-
-	@OriginalMember(owner = "client!vc", name = "fb", descriptor = "Lclient!o;")
-	public static Class40 aClass40_710 = Static12.method257("*6n");
-
-	@OriginalMember(owner = "client!vc", name = "kb", descriptor = "[I")
-	public static int[] anIntArray545 = new int[128];
-
-	@OriginalMember(owner = "client!vc", name = "ob", descriptor = "Lclient!o;")
-	public static Class40 aClass40_713 = Static12.method257("Bad session id)3");
-
-	@OriginalMember(owner = "client!vc", name = "ib", descriptor = "I")
-	public static int anInt2473 = 0;
+public final class Class2_Sub2_Sub16 extends Hashable {
 
 	@OriginalMember(owner = "client!vc", name = "O", descriptor = "I")
 	public int anInt2460;
@@ -62,14 +22,14 @@ public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
 	private int anInt2467 = 0;
 
 	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(IIBLclient!eb;)V", line = 128)
-	private void method1639(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class2_Sub3 arg2) {
+	private void method1639(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Packet arg2) {
 		if (arg1 == 1) {
 			this.anInt2467 = arg2.method1718();
 		}
 	}
 
 	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(Lclient!eb;II)V", line = 145)
-	public void method1640(@OriginalArg(0) Class2_Sub3 arg0, @OriginalArg(2) int arg1) {
+	public void method1640(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		while (true) {
 			@Pc(9) int local9 = arg0.method1708();
 			if (local9 == 0) {

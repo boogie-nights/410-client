@@ -10,10 +10,10 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 	private final int anInt1882 = 16;
 
 	@OriginalMember(owner = "client!qa", name = "s", descriptor = "[Lclient!od;")
-	private final Class44[] aClass44Array1 = new Class44[8];
+	private final LinkList[] aClass44Array1 = new LinkList[8];
 
 	@OriginalMember(owner = "client!qa", name = "u", descriptor = "Lclient!od;")
-	private final Class44 aClass44_5 = new Class44();
+	private final LinkList aClass44_5 = new LinkList();
 
 	@OriginalMember(owner = "client!qa", name = "w", descriptor = "I")
 	private int anInt1884 = -1;
@@ -26,7 +26,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!pc;)V", line = 13)
 	public synchronized void method1289(@OriginalArg(0) Class2_Sub10 arg0) {
-		@Pc(5) Class44 local5 = this.aClass44Array1[Static112.method1293(arg0)];
+		@Pc(5) LinkList local5 = this.aClass44Array1[Static112.method1293(arg0)];
 		local5.method1229(arg0);
 	}
 
@@ -34,7 +34,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 	private int method1290(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		this.anInt1883 -= arg2;
 		@Pc(18) int local18;
-		@Pc(24) Class44 local24;
+		@Pc(24) LinkList local24;
 		@Pc(29) Class2_Sub10 local29;
 		@Pc(33) int local33;
 		if (this.anInt1883 <= 0) {
@@ -74,7 +74,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 			for (@Pc(118) int local118 = local93 >>> local102 & 0x11111111; local118 != 0; local118 >>>= 0x4) {
 				if ((local118 & 0x1) != 0) {
 					local93 &= ~(0x1 << local102);
-					@Pc(137) Class44 local137 = this.aClass44Array1[local102];
+					@Pc(137) LinkList local137 = this.aClass44Array1[local102];
 					for (@Pc(142) Class2_Sub10 local142 = (Class2_Sub10) local137.method1224(); local142 != null; local142 = (Class2_Sub10) local137.method1231()) {
 						if (!local142.aBoolean153) {
 							@Pc(149) Class2_Sub4 local149 = local142.aClass2_Sub4_3;
@@ -148,7 +148,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 	}
 
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!g;Lclient!aa;)V", line = 215)
-	private void method1292(@OriginalArg(0) Class2 arg0, @OriginalArg(1) Class2_Sub1 arg1) {
+	private void method1292(@OriginalArg(0) Linkable arg0, @OriginalArg(1) Class2_Sub1 arg1) {
 		while (arg0 != this.aClass44_5.aClass2_71 && ((Class2_Sub1) arg0).anInt32 <= arg1.anInt32) {
 			arg0 = arg0.aClass2_94;
 		}
@@ -163,7 +163,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 			this.anInt1883 = 0;
 		}
 		for (@Pc(13) int local13 = 0; local13 < 8; local13++) {
-			@Pc(19) Class44 local19 = this.aClass44Array1[local13];
+			@Pc(19) LinkList local19 = this.aClass44Array1[local13];
 			for (@Pc(24) Class2_Sub10 local24 = (Class2_Sub10) local19.method1224(); local24 != null; local24 = (Class2_Sub10) local19.method1231()) {
 				local24.method1287(arg0);
 			}
@@ -207,7 +207,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 	private void method1295(@OriginalArg(0) Class2_Sub1 arg0) {
 		arg0.method1677();
 		arg0.method16();
-		@Pc(9) Class2 local9 = this.aClass44_5.aClass2_71.aClass2_94;
+		@Pc(9) Linkable local9 = this.aClass44_5.aClass2_71.aClass2_94;
 		if (local9 == this.aClass44_5.aClass2_71) {
 			this.anInt1884 = -1;
 		} else {
@@ -218,7 +218,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 	@OriginalMember(owner = "client!qa", name = "<init>", descriptor = "()V", line = 329)
 	public Class2_Sub10_Sub2() {
 		for (@Pc(24) int local24 = 0; local24 < 8; local24++) {
-			this.aClass44Array1[local24] = new Class44();
+			this.aClass44Array1[local24] = new LinkList();
 		}
 	}
 }

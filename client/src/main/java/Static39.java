@@ -6,10 +6,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static39 {
 
 	@OriginalMember(owner = "client!ia", name = "V", descriptor = "Lclient!fc;")
-	public static Class2_Sub2_Sub2_Sub2 aClass2_Sub2_Sub2_Sub2_2;
+	public static PixFont aClass2_Sub2_Sub2_Sub2_2;
 
 	@OriginalMember(owner = "client!ia", name = "Pb", descriptor = "Lclient!eb;")
-	public static Class2_Sub3 aClass2_Sub3_3;
+	public static Packet aClass2_Sub3_3;
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(ILjava/awt/Graphics;)V", line = 135)
 	public static void method768(@OriginalArg(1) Graphics arg0) {
@@ -34,7 +34,7 @@ public final class Static39 {
 		@Pc(34) int local34 = local23 >> 6 & 0x3;
 		@Pc(38) int local38 = local23 & 0x1F;
 		if (local38 == 10 || local38 == 11 || local38 == 22) {
-			@Pc(53) Class2_Sub2_Sub10 local53 = Static83.method1470(local16);
+			@Pc(53) LocType local53 = Static83.method1470(local16);
 			@Pc(66) int local66;
 			@Pc(63) int local63;
 			if (local34 == 0 || local34 == 2) {
@@ -52,10 +52,10 @@ public final class Static39 {
 		} else {
 			Static75.method1349(arg0, local34, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 0, 0, 2, true, local38 + 1, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 0, arg2);
 		}
-		Class35.anInt1554 = Class24.anInt2500;
-		Class27.anInt1096 = 2;
-		Class2_Sub2_Sub16.anInt2465 = Class56.anInt2133;
-		Class61.anInt2410 = 0;
+		Static1.anInt1554 = Static1.anInt2500;
+		Static1.anInt1096 = 2;
+		Static1.anInt2465 = Static1.anInt2133;
+		Static1.anInt2410 = 0;
 		return true;
 	}
 
@@ -86,15 +86,15 @@ public final class Static39 {
 
 	@OriginalMember(owner = "client!ia", name = "g", descriptor = "(I)V", line = 589)
 	public static void method775() {
-		Class2_Sub2_Sub10.aClass40_320 = null;
-		Class2_Sub2_Sub10.aClass40_323 = null;
-		Class2_Sub2_Sub10.aClass40_317 = null;
-		Class2_Sub2_Sub10.aClass40_322 = null;
-		Class2_Sub2_Sub10.aClass40_321 = null;
+		JagString.aClass40_320 = null;
+		JagString.aClass40_323 = null;
+		JagString.aClass40_317 = null;
+		JagString.aClass40_322 = null;
+		JagString.aClass40_321 = null;
 		aClass2_Sub2_Sub2_Sub2_2 = null;
-		Class2_Sub2_Sub10.aClass40_318 = null;
+		JagString.aClass40_318 = null;
 		aClass2_Sub3_3 = null;
-		Class2_Sub2_Sub10.aClass40_319 = null;
-		Class2_Sub2_Sub10.aClass40_314 = null;
+		JagString.aClass40_319 = null;
+		JagString.aClass40_314 = null;
 	}
 }

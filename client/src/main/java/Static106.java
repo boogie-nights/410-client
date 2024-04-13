@@ -4,13 +4,13 @@ public final class Static106 {
 
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "()V", line = 35)
 	public static void method842() {
-		Class29.anIntArray248 = null;
-		Class29.anIntArray247 = null;
-		Class29.anIntArray246 = null;
-		Class29.anIntArray252 = null;
-		Class29.anIntArray253 = null;
-		Class29.anIntArray250 = null;
-		Class29.anIntArray251 = null;
-		Class29.anIntArray254 = null;
+		SoundTone.anIntArray248 = null;
+		SoundTone.anIntArray247 = null;
+		SoundTone.anIntArray246 = null;
+		SoundTone.anIntArray252 = null;
+		SoundTone.anIntArray253 = null;
+		SoundTone.anIntArray250 = null;
+		SoundTone.anIntArray251 = null;
+		SoundTone.anIntArray254 = null;
 	}
 }

@@ -1,39 +1,8 @@
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
-import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!va")
 public final class Class61 {
-
-	@OriginalMember(owner = "client!va", name = "j", descriptor = "[I")
-	public static int[] anIntArray519 = new int[] { 16776960, 16711680, 65280, 65535, 16711935, 16777215 };
-
-	@OriginalMember(owner = "client!va", name = "c", descriptor = "I")
-	public static int anInt2400 = 0;
-
-	@OriginalMember(owner = "client!va", name = "g", descriptor = "[I")
-	public static int[] anIntArray518 = new int[32];
-
-	@OriginalMember(owner = "client!va", name = "v", descriptor = "I")
-	public static int anInt2410 = 0;
-
-	@OriginalMember(owner = "client!va", name = "p", descriptor = "Lclient!o;")
-	public static Class40 aClass40_692 = Static12.method257("@gr3@");
-
-	@OriginalMember(owner = "client!va", name = "K", descriptor = "Lclient!o;")
-	public static Class40 aClass40_693 = Static12.method257("*6n*6nIf you do not remember making this request*6ncancel it immediately)1 and change your password)3");
-
-	@OriginalMember(owner = "client!va", name = "b", descriptor = "I")
-	public static int anInt2399 = 0;
-
-	@OriginalMember(owner = "client!va", name = "f", descriptor = "I")
-	public static int anInt2401 = 0;
-
-	@OriginalMember(owner = "client!va", name = "W", descriptor = "Lclient!o;")
-	public static Class40 aClass40_694;
-
-	@OriginalMember(owner = "client!va", name = "X", descriptor = "Lclient!o;")
-	public static Class40 aClass40_695;
 
 	@OriginalMember(owner = "client!va", name = "a", descriptor = "I")
 	public int anInt2398;
@@ -131,13 +100,4 @@ public final class Class61 {
 	@OriginalMember(owner = "client!va", name = "U", descriptor = "[I")
 	public final int[] anIntArray523 = new int[257];
 
-	static {
-		@Pc(47) int local47 = 2;
-		for (@Pc(49) int local49 = 0; local49 < 32; local49++) {
-			anIntArray518[local49] = local47 - 1;
-			local47 += local47;
-		}
-		aClass40_694 = Static12.method257("*6n*6nYou have @gre@");
-		aClass40_695 = Static12.method257("Enter name:");
-	}
 }

@@ -15,18 +15,18 @@ public final class Static78 {
 
 	@OriginalMember(owner = "client!sa", name = "b", descriptor = "(Z)V", line = 85)
 	public static void method1382() {
-		Class2_Sub2_Sub12_Sub5.aClass40_586 = null;
-		Class2_Sub2_Sub12_Sub5.aClass40_591 = null;
-		Class2_Sub2_Sub12_Sub5.aByteArray17 = null;
+		JagString.aClass40_586 = null;
+		JagString.aClass40_591 = null;
+		Static1.aByteArray17 = null;
 		anIntArrayArray20 = null;
-		Class2_Sub2_Sub12_Sub5.aClass40_587 = null;
-		Class2_Sub2_Sub12_Sub5.aClass40_592 = null;
-		Class2_Sub2_Sub12_Sub5.aClass40_584 = null;
-		Class2_Sub2_Sub12_Sub5.aClass40_588 = null;
-		Class2_Sub2_Sub12_Sub5.aClass40_590 = null;
-		Class2_Sub2_Sub12_Sub5.aClass40_589 = null;
-		Class2_Sub2_Sub12_Sub5.aClass40_593 = null;
-		Class2_Sub2_Sub12_Sub5.aClass40_585 = null;
+		JagString.aClass40_587 = null;
+		JagString.aClass40_592 = null;
+		JagString.aClass40_584 = null;
+		JagString.aClass40_588 = null;
+		JagString.aClass40_590 = null;
+		JagString.aClass40_589 = null;
+		JagString.aClass40_593 = null;
+		JagString.aClass40_585 = null;
 	}
 
 	@OriginalMember(owner = "client!sa", name = "b", descriptor = "(IIII)I", line = 107)
@@ -37,19 +37,19 @@ public final class Static78 {
 			return 0;
 		}
 		@Pc(29) int local29 = arg0;
-		if (arg0 < 3 && (Class34.aByteArrayArrayArray7[1][local11][local7] & 0x2) == 2) {
+		if (arg0 < 3 && (Static1.aByteArrayArrayArray7[1][local11][local7] & 0x2) == 2) {
 			local29 = arg0 + 1;
 		}
 		@Pc(50) int local50 = arg1 & 0x7F;
 		@Pc(54) int local54 = arg2 & 0x7F;
-		@Pc(81) int local81 = (128 - local50) * Class57.anIntArrayArrayArray8[local29][local11][local7] + Class57.anIntArrayArrayArray8[local29][local11 + 1][local7] * local50 >> 7;
-		@Pc(113) int local113 = Class57.anIntArrayArrayArray8[local29][local11][local7 + 1] * (128 - local50) + local50 * Class57.anIntArrayArrayArray8[local29][local11 + 1][local7 + 1] >> 7;
+		@Pc(81) int local81 = (128 - local50) * Static1.anIntArrayArrayArray8[local29][local11][local7] + Static1.anIntArrayArrayArray8[local29][local11 + 1][local7] * local50 >> 7;
+		@Pc(113) int local113 = Static1.anIntArrayArrayArray8[local29][local11][local7 + 1] * (128 - local50) + local50 * Static1.anIntArrayArrayArray8[local29][local11 + 1][local7 + 1] >> 7;
 		return local54 * local113 + local81 * (128 - local54) >> 7;
 	}
 
 	@OriginalMember(owner = "client!sa", name = "a", descriptor = "(I[B)V", line = 144)
 	public static void method1384(@OriginalArg(1) byte[] arg0) {
-		@Pc(10) Class2_Sub3 local10 = new Class2_Sub3(arg0);
+		@Pc(10) Packet local10 = new Packet(arg0);
 		local10.anInt2546 = arg0.length - 2;
 		Static28.anInt727 = local10.method1704();
 		Static83.aByteArrayArray10 = new byte[Static28.anInt727][];
@@ -106,36 +106,36 @@ public final class Static78 {
 
 	@OriginalMember(owner = "client!sa", name = "c", descriptor = "(Z)V", line = 284)
 	public static void method1385() {
-		if (Class2_Sub2_Sub16.anInt2473 == 0) {
+		if (Static1.anInt2473 == 0) {
 			return;
 		}
 		@Pc(15) int local15 = 0;
-		if (Class52.anInt1973 != 0) {
+		if (Static1.anInt1973 != 0) {
 			local15 = 1;
 		}
 		for (@Pc(21) int local21 = 0; local21 < 100; local21++) {
-			if (Class2_Sub2_Sub13.aClass40Array30[local21] != null) {
-				@Pc(31) int local31 = Class45.anIntArray469[local21];
-				@Pc(35) Class40 local35 = Class2_Sub3_Sub1.aClass40Array40[local21];
-				if (local35 != null && local35.method1168(Class2_Sub2_Sub10.aClass40_323)) {
+			if (Static1.aClass40Array30[local21] != null) {
+				@Pc(31) int local31 = Static1.anIntArray469[local21];
+				@Pc(35) JagString local35 = Static1.aClass40Array40[local21];
+				if (local35 != null && local35.method1168(JagString.aClass40_323)) {
 					local35 = local35.method1185(5);
 				}
-				if (local35 != null && local35.method1168(Class45_Sub1.aClass40_622)) {
+				if (local35 != null && local35.method1168(JagString.aClass40_622)) {
 					local35 = local35.method1185(5);
 				}
-				if ((local31 == 3 || local31 == 7) && (local31 == 7 || Class63.anInt2515 == 0 || Class63.anInt2515 == 1 && Static36.method729(local35))) {
+				if ((local31 == 3 || local31 == 7) && (local31 == 7 || Static1.anInt2515 == 0 || Static1.anInt2515 == 1 && Static36.method729(local35))) {
 					@Pc(85) int local85 = 329 - local15 * 13;
-					if (Class2_Sub5.anInt742 > 4 && local85 - 10 < Class2_Sub2_Sub15.anInt2394 + -4 && local85 + 3 >= Class2_Sub2_Sub15.anInt2394 + -4) {
-						@Pc(129) int local129 = Static95.aClass2_Sub2_Sub2_Sub2_5.method568(Static72.method1334(new Class40[] { Class4.aClass40_18, local35, Class2_Sub2_Sub13.aClass40Array30[local21] })) + 25;
+					if (Static1.anInt742 > 4 && local85 - 10 < Static1.anInt2394 + -4 && local85 + 3 >= Static1.anInt2394 + -4) {
+						@Pc(129) int local129 = Static95.aClass2_Sub2_Sub2_Sub2_5.method568(Static72.method1334(new JagString[] { JagString.aClass40_18, local35, Static1.aClass40Array30[local21] })) + 25;
 						if (local129 > 450) {
 							local129 = 450;
 						}
-						if (local129 + 4 > Class2_Sub5.anInt742) {
-							if (Class34.anInt1550 >= 1) {
-								Static20.method402(Static72.method1334(new Class40[] { client.aClass40_111, local35 }), 2042, 0, 0, 0);
+						if (local129 + 4 > Static1.anInt742) {
+							if (Static1.anInt1550 >= 1) {
+								Static20.method402(Static72.method1334(new JagString[] { JagString.aClass40_111, local35 }), 2042, 0, 0, 0);
 							}
-							Static20.method402(Static72.method1334(new Class40[] { Class54.aClass40_604, local35 }), 2012, 0, 0, 0);
-							Static20.method402(Static72.method1334(new Class40[] { Class12_Sub1.aClass40_535, local35 }), 2051, 0, 0, 0);
+							Static20.method402(Static72.method1334(new JagString[] { JagString.aClass40_604, local35 }), 2012, 0, 0, 0);
+							Static20.method402(Static72.method1334(new JagString[] { JagString.aClass40_535, local35 }), 2051, 0, 0, 0);
 						}
 					}
 					local15++;
@@ -143,7 +143,7 @@ public final class Static78 {
 						return;
 					}
 				}
-				if ((local31 == 5 || local31 == 6) && Class63.anInt2515 < 2) {
+				if ((local31 == 5 || local31 == 6) && Static1.anInt2515 < 2) {
 					local15++;
 					if (local15 >= 5) {
 						return;
@@ -155,21 +155,21 @@ public final class Static78 {
 
 	@OriginalMember(owner = "client!sa", name = "d", descriptor = "(B)V", line = 400)
 	public static void method1386() {
-		if (Class2_Sub2_Sub12_Sub1_Sub2.anInt2328 != 0 || Class2_Sub2_Sub12_Sub5.anInt2030 != 1) {
+		if (Static1.anInt2328 != 0 || Static1.anInt2030 != 1) {
 			return;
 		}
-		@Pc(17) int local17 = Class56.anInt2133 - 9;
-		@Pc(23) int local23 = Class24.anInt2500 - 25 - 550;
+		@Pc(17) int local17 = Static1.anInt2133 - 9;
+		@Pc(23) int local23 = Static1.anInt2500 - 25 - 550;
 		if (local23 < 0 || local17 < 0 || local23 >= 146 || local17 >= 151) {
 			return;
 		}
 		local23 -= 73;
 		local17 -= 75;
-		@Pc(45) int local45 = Class38.anInt1669 + Class52.anInt1978 & 0x7FF;
-		@Pc(49) int local49 = Class2_Sub2_Sub2_Sub1.anIntArray59[local45];
-		@Pc(57) int local57 = (Class12_Sub1.anInt1857 + 256) * local49 >> 8;
-		@Pc(61) int local61 = Class2_Sub2_Sub2_Sub1.anIntArray58[local45];
-		@Pc(69) int local69 = local61 * (Class12_Sub1.anInt1857 + 256) >> 8;
+		@Pc(45) int local45 = Static1.anInt1669 + Static1.anInt1978 & 0x7FF;
+		@Pc(49) int local49 = Draw3D.anIntArray59[local45];
+		@Pc(57) int local57 = (Static1.anInt1857 + 256) * local49 >> 8;
+		@Pc(61) int local61 = Draw3D.anIntArray58[local45];
+		@Pc(69) int local69 = local61 * (Static1.anInt1857 + 256) >> 8;
 		@Pc(79) int local79 = local23 * local69 + local17 * local57 >> 11;
 		@Pc(90) int local90 = local69 * local17 - local57 * local23 >> 11;
 		@Pc(98) int local98 = Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 - local90 >> 7;
@@ -178,17 +178,17 @@ public final class Static78 {
 		if (!local126) {
 			return;
 		}
-		Class47.aClass2_Sub3_Sub1_4.method1703(local23);
-		Class47.aClass2_Sub3_Sub1_4.method1703(local17);
-		Class47.aClass2_Sub3_Sub1_4.method1694(Class38.anInt1669);
-		Class47.aClass2_Sub3_Sub1_4.method1703(57);
-		Class47.aClass2_Sub3_Sub1_4.method1703(Class52.anInt1978);
-		Class47.aClass2_Sub3_Sub1_4.method1703(Class12_Sub1.anInt1857);
-		Class47.aClass2_Sub3_Sub1_4.method1703(89);
-		Class47.aClass2_Sub3_Sub1_4.method1694(Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275);
-		Class47.aClass2_Sub3_Sub1_4.method1694(Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284);
-		Class47.aClass2_Sub3_Sub1_4.method1703(Class61.anInt2400);
-		Class47.aClass2_Sub3_Sub1_4.method1703(63);
+		Static1.aClass2_Sub3_Sub1_4.method1703(local23);
+		Static1.aClass2_Sub3_Sub1_4.method1703(local17);
+		Static1.aClass2_Sub3_Sub1_4.method1694(Static1.anInt1669);
+		Static1.aClass2_Sub3_Sub1_4.method1703(57);
+		Static1.aClass2_Sub3_Sub1_4.method1703(Static1.anInt1978);
+		Static1.aClass2_Sub3_Sub1_4.method1703(Static1.anInt1857);
+		Static1.aClass2_Sub3_Sub1_4.method1703(89);
+		Static1.aClass2_Sub3_Sub1_4.method1694(Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275);
+		Static1.aClass2_Sub3_Sub1_4.method1694(Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284);
+		Static1.aClass2_Sub3_Sub1_4.method1703(Static1.anInt2400);
+		Static1.aClass2_Sub3_Sub1_4.method1703(63);
 		return;
 	}
 }
