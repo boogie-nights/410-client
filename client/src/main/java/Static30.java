@@ -30,7 +30,7 @@ public final class Static30 {
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(III)I", line = 22)
 	public static int method592(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(10) long local10 = (long) ((arg0 << 1365004144) + arg1);
-		return Static82.aClass2_Sub2_Sub9_1 != null && Static82.aClass2_Sub2_Sub9_1.aLong152 == local10 ? Static27.aClass2_Sub3_2.pos * 99 / (Static27.aClass2_Sub3_2.data.length - Static82.aClass2_Sub2_Sub9_1.trailerLen) + 1 : 0;
+		return Static82.aClass2_Sub2_Sub9_1 != null && Static82.aClass2_Sub2_Sub9_1.key == local10 ? Static27.aClass2_Sub3_2.pos * 99 / (Static27.aClass2_Sub3_2.data.length - Static82.aClass2_Sub2_Sub9_1.trailerLen) + 1 : 0;
 	}
 
 	@OriginalMember(owner = "client!ga", name = "c", descriptor = "(B)V", line = 107)

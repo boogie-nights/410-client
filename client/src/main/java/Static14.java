@@ -61,9 +61,9 @@ public final class Static14 {
 		for (@Pc(15) int local15 = 0; local15 < Static1.anInt1190; local15++) {
 			@Pc(21) int local21 = Static1.anIntArray504[local15];
 			@Pc(25) PlayerEntity local25 = Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local21];
-			@Pc(31) int local31 = Static1.in.g1();
+			@Pc(31) int local31 = client.in.g1();
 			if ((local31 & 0x4) != 0) {
-				local31 += Static1.in.g1() << 8;
+				local31 += client.in.g1() << 8;
 			}
 			Static46.method846(local21, local25, local31);
 		}

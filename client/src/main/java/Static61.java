@@ -11,7 +11,7 @@ public final class Static61 {
 	public static int anInt1653;
 
 	@OriginalMember(owner = "client!n", name = "v", descriptor = "Lclient!d;")
-	public static BufferedFile aClass14_4;
+	public static BufferedFile cacheDat;
 
 	@OriginalMember(owner = "client!n", name = "x", descriptor = "[I")
 	public static int[] anIntArray338;
@@ -24,7 +24,7 @@ public final class Static61 {
 		aClass5_21 = null;
 		JagString.aClass40_481 = null;
 		JagString.aClass40_480 = null;
-		aClass14_4 = null;
+		cacheDat = null;
 		anIntArray338 = null;
 	}
 

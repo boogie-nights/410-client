@@ -198,7 +198,7 @@ public abstract class AudioChannel extends StubAudioChannel implements Runnable 
 				Static86.sleep(5L);
 			}
 		} catch (@Pc(33) Exception local33) {
-			Static36.method727(null, local33);
+			JagException.report(null, local33);
 		}
 	}
 

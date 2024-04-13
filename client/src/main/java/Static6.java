@@ -13,9 +13,6 @@ public final class Static6 {
 	@OriginalMember(owner = "client!b", name = "ab", descriptor = "I")
 	public static int anInt223;
 
-	@OriginalMember(owner = "client!b", name = "bb", descriptor = "Lclient!ld;")
-	public static TextureProvider anInterface4_1;
-
 	@OriginalMember(owner = "client!b", name = "db", descriptor = "I")
 	public static int anInt224;
 
@@ -31,9 +28,6 @@ public final class Static6 {
 	@OriginalMember(owner = "client!b", name = "kb", descriptor = "I")
 	private static int anInt229;
 
-	@OriginalMember(owner = "client!b", name = "nb", descriptor = "[I")
-	private static int[] anIntArray62;
-
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(II)I", line = 3)
 	private static int method166(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		arg1 = (127 - arg1) * (arg0 & 0x7F) >> 7;
@@ -47,7 +41,7 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "d", descriptor = "()[I", line = 14)
 	public static int[] method167() {
-		return anIntArray62;
+		return Draw3D.anIntArray62;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(D)V", line = 18)
@@ -128,15 +122,15 @@ public final class Static6 {
 			if (local11 == 0) {
 				local11++;
 			}
-			anIntArray62 = new int[local11];
+			Draw3D.anIntArray62 = new int[local11];
 			for (@Pc(19) int local19 = 0; local19 < local11; local19++) {
-				anIntArray62[local19] = (arg1 + local19) * Static25.anInt2440 + arg0;
+				Draw3D.anIntArray62[local19] = (arg1 + local19) * Static25.anInt2440 + arg0;
 			}
 		} else {
-			anIntArray62 = arg4;
+			Draw3D.anIntArray62 = arg4;
 		}
 		method178();
-		return anIntArray62;
+		return Draw3D.anIntArray62;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([I[IIIIIIIIIIIIII)V", line = 157)
@@ -164,7 +158,7 @@ public final class Static6 {
 		} else {
 			if (arg6 - arg5 > 7) {
 				local38 = arg6 - arg5 >> 3;
-				local13 = (arg8 - arg7) * Draw3D.anIntArray60[local38] >> 6;
+				local13 = (arg8 - arg7) * Draw3D.reciprocal15[local38] >> 6;
 			} else {
 				local38 = 0;
 				local13 = 0;
@@ -604,7 +598,7 @@ public final class Static6 {
 					if (arg0 != arg1 && local55 < local1 || arg0 == arg1 && local55 > local28) {
 						arg2 -= arg1;
 						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg1--;
 							if (arg1 < 0) {
@@ -631,7 +625,7 @@ public final class Static6 {
 					} else {
 						arg2 -= arg1;
 						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg1--;
 							if (arg1 < 0) {
@@ -676,7 +670,7 @@ public final class Static6 {
 					if (arg0 != arg2 && local55 < local1 || arg0 == arg2 && local28 > local1) {
 						arg1 -= arg2;
 						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -703,7 +697,7 @@ public final class Static6 {
 					} else {
 						arg1 -= arg2;
 						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -758,7 +752,7 @@ public final class Static6 {
 					if (arg1 != arg2 && local1 < local28 || arg1 == arg2 && local1 > local55) {
 						arg0 -= arg2;
 						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -785,7 +779,7 @@ public final class Static6 {
 					} else {
 						arg0 -= arg2;
 						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -830,7 +824,7 @@ public final class Static6 {
 					if (local1 < local28) {
 						arg2 -= arg0;
 						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg0--;
 							if (arg0 < 0) {
@@ -857,7 +851,7 @@ public final class Static6 {
 					} else {
 						arg2 -= arg0;
 						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg0--;
 							if (arg0 < 0) {
@@ -911,7 +905,7 @@ public final class Static6 {
 				if (local28 < local55) {
 					arg1 -= arg0;
 					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg0--;
 						if (arg0 < 0) {
@@ -938,7 +932,7 @@ public final class Static6 {
 				} else {
 					arg1 -= arg0;
 					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg0--;
 						if (arg0 < 0) {
@@ -983,7 +977,7 @@ public final class Static6 {
 				if (local28 < local55) {
 					arg0 -= arg1;
 					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg1--;
 						if (arg1 < 0) {
@@ -1010,7 +1004,7 @@ public final class Static6 {
 				} else {
 					arg0 -= arg1;
 					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg1--;
 						if (arg1 < 0) {
@@ -1041,7 +1035,7 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(Lclient!ld;)V", line = 1203)
 	public static void method173(@OriginalArg(0) TextureProvider arg0) {
-		anInterface4_1 = arg0;
+		Draw3D.anInterface4_1 = arg0;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IIIIIII)V", line = 1215)
@@ -1081,7 +1075,7 @@ public final class Static6 {
 					if (arg0 != arg1 && local31 < local1 || arg0 == arg1 && local31 > local16) {
 						arg2 -= arg1;
 						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg1--;
 							if (arg1 < 0) {
@@ -1104,7 +1098,7 @@ public final class Static6 {
 					} else {
 						arg2 -= arg1;
 						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg1--;
 							if (arg1 < 0) {
@@ -1140,7 +1134,7 @@ public final class Static6 {
 					if (arg0 != arg2 && local31 < local1 || arg0 == arg2 && local16 > local1) {
 						arg1 -= arg2;
 						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1163,7 +1157,7 @@ public final class Static6 {
 					} else {
 						arg1 -= arg2;
 						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1209,7 +1203,7 @@ public final class Static6 {
 					if (arg1 != arg2 && local1 < local16 || arg1 == arg2 && local1 > local31) {
 						arg0 -= arg2;
 						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1232,7 +1226,7 @@ public final class Static6 {
 					} else {
 						arg0 -= arg2;
 						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1268,7 +1262,7 @@ public final class Static6 {
 					if (local1 < local16) {
 						arg2 -= arg0;
 						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg0--;
 							if (arg0 < 0) {
@@ -1291,7 +1285,7 @@ public final class Static6 {
 					} else {
 						arg2 -= arg0;
 						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg0--;
 							if (arg0 < 0) {
@@ -1336,7 +1330,7 @@ public final class Static6 {
 				if (local16 < local31) {
 					arg1 -= arg0;
 					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg0--;
 						if (arg0 < 0) {
@@ -1359,7 +1353,7 @@ public final class Static6 {
 				} else {
 					arg1 -= arg0;
 					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg0--;
 						if (arg0 < 0) {
@@ -1395,7 +1389,7 @@ public final class Static6 {
 				if (local16 < local31) {
 					arg0 -= arg1;
 					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg1--;
 						if (arg1 < 0) {
@@ -1418,7 +1412,7 @@ public final class Static6 {
 				} else {
 					arg0 -= arg1;
 					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg1--;
 						if (arg1 < 0) {
@@ -1450,15 +1444,15 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IIIIIIIIIIIIIIIIIII)V", line = 1672)
 	public static void method176(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14, @OriginalArg(15) int arg15, @OriginalArg(16) int arg16, @OriginalArg(17) int arg17, @OriginalArg(18) int arg18) {
-		@Pc(4) int[] local4 = anInterface4_1.method397(arg18);
+		@Pc(4) int[] local4 = Draw3D.anInterface4_1.method397(arg18);
 		@Pc(11) int local11;
 		if (local4 == null) {
-			local11 = anInterface4_1.method396(arg18);
+			local11 = Draw3D.anInterface4_1.method396(arg18);
 			method172(arg0, arg1, arg2, arg3, arg4, arg5, method166(local11, arg6), method166(local11, arg7), method166(local11, arg8));
 			return;
 		}
-		Draw3D.aBoolean20 = anInterface4_1.method394(arg18);
-		Draw3D.aBoolean21 = anInterface4_1.method395(arg18);
+		Draw3D.aBoolean20 = Draw3D.anInterface4_1.method394(arg18);
+		Draw3D.aBoolean21 = Draw3D.anInterface4_1.method395(arg18);
 		@Pc(42) int local42 = arg9 - arg10;
 		@Pc(46) int local46 = arg12 - arg13;
 		@Pc(50) int local50 = arg15 - arg16;
@@ -1525,7 +1519,7 @@ public final class Static6 {
 					if (arg0 != arg1 && local208 < local154 || arg0 == arg1 && local208 > local181) {
 						arg2 -= arg1;
 						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg1--;
 							if (arg1 < 0) {
@@ -1558,7 +1552,7 @@ public final class Static6 {
 					} else {
 						arg2 -= arg1;
 						arg1 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg1--;
 							if (arg1 < 0) {
@@ -1613,7 +1607,7 @@ public final class Static6 {
 					if (arg0 != arg2 && local208 < local154 || arg0 == arg2 && local181 > local154) {
 						arg1 -= arg2;
 						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1646,7 +1640,7 @@ public final class Static6 {
 					} else {
 						arg1 -= arg2;
 						arg2 -= arg0;
-						arg0 = anIntArray62[arg0];
+						arg0 = Draw3D.anIntArray62[arg0];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1711,7 +1705,7 @@ public final class Static6 {
 					if (arg1 != arg2 && local154 < local181 || arg1 == arg2 && local154 > local208) {
 						arg0 -= arg2;
 						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1744,7 +1738,7 @@ public final class Static6 {
 					} else {
 						arg0 -= arg2;
 						arg2 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg2--;
 							if (arg2 < 0) {
@@ -1799,7 +1793,7 @@ public final class Static6 {
 					if (local154 < local181) {
 						arg2 -= arg0;
 						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg0--;
 							if (arg0 < 0) {
@@ -1832,7 +1826,7 @@ public final class Static6 {
 					} else {
 						arg2 -= arg0;
 						arg0 -= arg1;
-						arg1 = anIntArray62[arg1];
+						arg1 = Draw3D.anIntArray62[arg1];
 						while (true) {
 							arg0--;
 							if (arg0 < 0) {
@@ -1896,7 +1890,7 @@ public final class Static6 {
 				if (local181 < local208) {
 					arg1 -= arg0;
 					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg0--;
 						if (arg0 < 0) {
@@ -1929,7 +1923,7 @@ public final class Static6 {
 				} else {
 					arg1 -= arg0;
 					arg0 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg0--;
 						if (arg0 < 0) {
@@ -1984,7 +1978,7 @@ public final class Static6 {
 				if (local181 < local208) {
 					arg0 -= arg1;
 					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg1--;
 						if (arg1 < 0) {
@@ -2017,7 +2011,7 @@ public final class Static6 {
 				} else {
 					arg0 -= arg1;
 					arg1 -= arg2;
-					arg2 = anIntArray62[arg2];
+					arg2 = Draw3D.anIntArray62[arg2];
 					while (true) {
 						arg1--;
 						if (arg1 < 0) {
@@ -2054,7 +2048,7 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "b", descriptor = "(II)V", line = 2356)
 	public static void method177(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(3) int local3 = anIntArray62[0];
+		@Pc(3) int local3 = Draw3D.anIntArray62[0];
 		@Pc(7) int local7 = local3 / Static25.anInt2440;
 		@Pc(13) int local13 = local3 - local7 * Static25.anInt2440;
 		anInt225 = arg0 - local13;
@@ -2106,7 +2100,7 @@ public final class Static6 {
 				arg1 += arg2;
 				local48 = arg3 - arg2 >> 2;
 				if (local48 > 0) {
-					local16 = (arg5 - arg4) * Draw3D.anIntArray60[local48] >> 15;
+					local16 = (arg5 - arg4) * Draw3D.reciprocal15[local48] >> 15;
 				} else {
 					local16 = 0;
 				}
@@ -2202,17 +2196,6 @@ public final class Static6 {
 				} while (local48 > 0);
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!b", name = "f", descriptor = "()V", line = 2553)
-	public static void method180() {
-		anIntArray62 = null;
-		Draw3D.anIntArray63 = null;
-		anInterface4_1 = null;
-		Draw3D.anIntArray60 = null;
-		Draw3D.anIntArray61 = null;
-		Draw3D.anIntArray59 = null;
-		Draw3D.anIntArray58 = null;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "([IIIIII)V", line = 2567)

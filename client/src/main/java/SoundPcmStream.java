@@ -62,7 +62,7 @@ public final class SoundPcmStream extends PcmStream {
 				return arg1;
 			}
 			if (this.anInt1545 == Integer.MIN_VALUE) {
-				this.method1677();
+				this.unlink();
 				return arg3;
 			}
 			this.anInt1544 = this.anInt1545;
@@ -88,7 +88,7 @@ public final class SoundPcmStream extends PcmStream {
 				return arg1;
 			}
 			if (this.anInt1545 == Integer.MIN_VALUE) {
-				this.method1677();
+				this.unlink();
 				return arg3;
 			}
 			this.anInt1544 = this.anInt1545;
@@ -102,7 +102,7 @@ public final class SoundPcmStream extends PcmStream {
 		if (this.anInt1542 > 0) {
 			if (arg0 >= this.anInt1542) {
 				if (this.anInt1545 == Integer.MIN_VALUE) {
-					this.method1677();
+					this.unlink();
 					arg0 = this.anInt1542;
 				} else {
 					this.anInt1544 = this.anInt1545;
@@ -183,12 +183,12 @@ public final class SoundPcmStream extends PcmStream {
 			if (this.anInt1537 < 0) {
 				if (this.anInt1538 < 0) {
 					this.anInt1538 = 0;
-					this.method1677();
+					this.unlink();
 					return;
 				}
 			} else if (this.anInt1538 >= local69) {
 				this.anInt1538 = local69 - 1;
-				this.method1677();
+				this.unlink();
 			}
 		} else if (this.aBoolean120) {
 			if (this.anInt1537 < 0) {
@@ -305,13 +305,13 @@ public final class SoundPcmStream extends PcmStream {
 				this.method1031(arg0, local48, 0, local52, 0);
 				if (this.anInt1538 < 0) {
 					this.anInt1538 = 0;
-					this.method1677();
+					this.unlink();
 				}
 			} else {
 				this.method1029(arg0, local48, local37, local52, 0);
 				if (this.anInt1538 >= local37) {
 					this.anInt1538 = local37 - 1;
-					this.method1677();
+					this.unlink();
 				}
 			}
 			return 1;

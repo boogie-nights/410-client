@@ -36,12 +36,12 @@ public final class Static62 {
 			return;
 		}
 		Static1.anInt2146 = 0;
-		if (Static1.aBoolean164 || Static64.aClass25_36 == null) {
+		if (Static1.aBoolean164 || client.stream == null) {
 			return;
 		}
 		Static1.aClass2_Sub3_Sub1_4.pIsaac1(217);
 		try {
-			Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
+			client.stream.write(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
 			Static1.aClass2_Sub3_Sub1_4.pos = 0;
 		} catch (@Pc(40) IOException local40) {
 			Static1.aBoolean164 = true;

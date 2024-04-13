@@ -1252,7 +1252,7 @@ public final class World3D {
 						Static6.method172(local154, local158, local162, local142, local146, local150, arg0.anIntArray341[local13], arg0.anIntArray353[local13], arg0.anIntArray350[local13]);
 					}
 				} else if (aBoolean163) {
-					@Pc(364) int local364 = Static6.anInterface4_1.method396(arg0.anIntArray346[local13]);
+					@Pc(364) int local364 = Draw3D.anInterface4_1.method396(arg0.anIntArray346[local13]);
 					Static6.method172(local154, local158, local162, local142, local146, local150, Static81.method1420(local364, arg0.anIntArray341[local13]), Static81.method1420(local364, arg0.anIntArray353[local13]), Static81.method1420(local364, arg0.anIntArray350[local13]));
 				} else if (arg0.aBoolean133) {
 					Static6.method176(local154, local158, local162, local142, local146, local150, arg0.anIntArray341[local13], arg0.anIntArray353[local13], arg0.anIntArray350[local13], Static1.anIntArray354[0], Static1.anIntArray354[1], Static1.anIntArray354[3], Static1.anIntArray351[0], Static1.anIntArray351[1], Static1.anIntArray351[3], Static1.anIntArray348[0], Static1.anIntArray348[1], Static1.anIntArray348[3], arg0.anIntArray346[local13]);
@@ -1831,7 +1831,7 @@ public final class World3D {
 					Static6.method172(local319, local335, local303, local311, local327, local295, arg0.anInt1937, arg0.anInt1938, arg0.anInt1943);
 				}
 			} else if (aBoolean163) {
-				local472 = Static6.anInterface4_1.method396(arg0.anInt1945);
+				local472 = Draw3D.anInterface4_1.method396(arg0.anInt1945);
 				Static6.method172(local319, local335, local303, local311, local327, local295, Static81.method1420(local472, arg0.anInt1937), Static81.method1420(local472, arg0.anInt1938), Static81.method1420(local472, arg0.anInt1943));
 			} else if (arg0.aBoolean156) {
 				Static6.method176(local319, local335, local303, local311, local327, local295, arg0.anInt1937, arg0.anInt1938, arg0.anInt1943, local101, local21, local245, local123, local51, local89, local121, local169, local265, arg0.anInt1945);
@@ -1855,7 +1855,7 @@ public final class World3D {
 				Static6.method176(local287, local303, local335, local279, local295, local327, arg0.anInt1950, arg0.anInt1943, arg0.anInt1938, local101, local21, local245, local123, local51, local89, local121, local169, local265, arg0.anInt1945);
 				return;
 			}
-			local472 = Static6.anInterface4_1.method396(arg0.anInt1945);
+			local472 = Draw3D.anInterface4_1.method396(arg0.anInt1945);
 			Static6.method172(local287, local303, local335, local279, local295, local327, Static81.method1420(local472, arg0.anInt1950), Static81.method1420(local472, arg0.anInt1943), Static81.method1420(local472, arg0.anInt1938));
 		} else if (arg0.anInt1950 != 12345678) {
 			Static6.method172(local287, local303, local335, local279, local295, local327, arg0.anInt1950, arg0.anInt1943, arg0.anInt1938);

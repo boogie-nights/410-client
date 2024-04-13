@@ -43,8 +43,8 @@ public final class Static20 {
 				Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local29] = null;
 			}
 		}
-		if (Static1.anInt785 != Static1.in.pos) {
-			throw new RuntimeException("gpp1 pos:" + Static1.in.pos + " psize:" + Static1.anInt785);
+		if (client.packetSize != client.in.pos) {
+			throw new RuntimeException("gpp1 pos:" + client.in.pos + " psize:" + client.packetSize);
 		}
 		for (local29 = 0; local29 < Static1.anInt2067; local29++) {
 			if (Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[Static1.anIntArray408[local29]] == null) {
@@ -319,8 +319,8 @@ public final class Static20 {
 							}
 						} else if (local35.anInt1613 == 6) {
 							Static6.method177(local35.anInt1605 / 2 + local65, local60 + local35.anInt1609 / 2);
-							local160 = local35.anInt1586 * Draw3D.anIntArray59[local35.anInt1579] >> 16;
-							local162 = Draw3D.anIntArray58[local35.anInt1579] * local35.anInt1586 >> 16;
+							local160 = local35.anInt1586 * Draw3D.sin[local35.anInt1579] >> 16;
+							local162 = Draw3D.cos[local35.anInt1579] * local35.anInt1586 >> 16;
 							@Pc(970) boolean local970 = Static75.method1354(local35);
 							if (local970) {
 								local177 = local35.anInt1592;

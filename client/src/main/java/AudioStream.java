@@ -65,7 +65,7 @@ public final class AudioStream extends InputStream {
 			}
 		} catch (@Pc(68) Exception local68) {
 			this.aBoolean36 = true;
-			Static36.method727(null, local68);
+			JagException.report(null, local68);
 			return -1;
 		}
 	}

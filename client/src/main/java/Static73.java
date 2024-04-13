@@ -42,10 +42,10 @@ public final class Static73 {
 		Static1.aClass2_Sub3_5.pos = 0;
 		Static27.aClass2_Sub3_2 = null;
 		while (true) {
-			@Pc(40) Js5NetRequest local40 = (Js5NetRequest) Static1.aClass6_5.method184();
+			@Pc(40) Js5NetRequest local40 = (Js5NetRequest) Static1.aClass6_5.head();
 			if (local40 == null) {
 				while (true) {
-					local40 = (Js5NetRequest) Static1.aClass6_2.method184();
+					local40 = (Js5NetRequest) Static1.aClass6_2.head();
 					if (local40 == null) {
 						if (Static1.aByte1 != 0) {
 							try {
@@ -53,7 +53,7 @@ public final class Static73 {
 								local92.p1(4);
 								local92.p1(Static1.aByte1);
 								local92.p2(0);
-								Static29.aClass25_48.method731(local92.data, 4);
+								Static29.aClass25_48.write(local92.data, 4);
 							} catch (@Pc(115) IOException local115) {
 								try {
 									Static29.aClass25_48.method730();
@@ -67,13 +67,13 @@ public final class Static73 {
 						Static29.aLong151 = System.currentTimeMillis();
 						return;
 					}
-					Static1.aClass41_1.method1204(local40);
-					Static1.aClass6_7.method195(local40, local40.aLong152);
+					Static1.aClass41_1.addTail(local40);
+					Static1.aClass6_7.put(local40, local40.key);
 					Static1.anInt2182--;
 					Static1.anInt1077++;
 				}
 			}
-			Static1.aClass6_6.method195(local40, local40.aLong152);
+			Static1.aClass6_6.put(local40, local40.key);
 			Static1.anInt34++;
 			Static1.anInt2333--;
 		}
@@ -209,7 +209,7 @@ public final class Static73 {
 			if (local20 == null) {
 				return;
 			}
-			local20.js5.method95(local20.cache, (int) local20.aLong152, local20.data, false);
+			local20.js5.method95(local20.cache, (int) local20.key, local20.data, false);
 		}
 	}
 }

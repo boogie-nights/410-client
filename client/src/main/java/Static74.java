@@ -91,7 +91,7 @@ public final class Static74 {
 			local307.z -= local54;
 			local307.x -= local69;
 			if (local307.x < 0 || local307.z < 0 || local307.x >= 104 || local307.z >= 104) {
-				local307.method1677();
+				local307.unlink();
 			}
 		}
 		Static1.aBoolean22 = false;

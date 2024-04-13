@@ -166,9 +166,9 @@ public final class Static78 {
 		local23 -= 73;
 		local17 -= 75;
 		@Pc(45) int local45 = Static1.anInt1669 + Static1.anInt1978 & 0x7FF;
-		@Pc(49) int local49 = Draw3D.anIntArray59[local45];
+		@Pc(49) int local49 = Draw3D.sin[local45];
 		@Pc(57) int local57 = (Static1.anInt1857 + 256) * local49 >> 8;
-		@Pc(61) int local61 = Draw3D.anIntArray58[local45];
+		@Pc(61) int local61 = Draw3D.cos[local45];
 		@Pc(69) int local69 = local61 * (Static1.anInt1857 + 256) >> 8;
 		@Pc(79) int local79 = local23 * local69 + local17 * local57 >> 11;
 		@Pc(90) int local90 = local69 * local17 - local57 * local23 >> 11;

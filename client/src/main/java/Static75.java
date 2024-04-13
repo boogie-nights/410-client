@@ -706,7 +706,7 @@ public final class Static75 {
 	public static void method1355(@OriginalArg(0) byte[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Cache arg2) {
 		@Pc(7) Js5CacheRequest local7 = new Js5CacheRequest();
 		local7.cache = arg2;
-		local7.aLong152 = arg1;
+		local7.key = arg1;
 		local7.type = 0;
 		local7.data = arg0;
 		@Pc(27) LinkList local27 = Static1.aClass44_2;

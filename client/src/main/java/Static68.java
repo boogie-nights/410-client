@@ -13,7 +13,7 @@ public final class Static68 {
 	public static byte[][][] aByteArrayArrayArray8;
 
 	@OriginalMember(owner = "client!ob", name = "s", descriptor = "Lclient!cb;")
-	public static Cache aClass11_4;
+	public static Cache masterCache;
 
 	@OriginalMember(owner = "client!ob", name = "t", descriptor = "Lclient!ad;")
 	public static Js5 midiJinglesJs5;
@@ -32,14 +32,14 @@ public final class Static68 {
 					Static90.method1566(local15.anInt823, local15.x, local15.z, local15.anInt819, local15.level, local15.anInt828, local15.anInt829);
 					local15.anInt827 = -1;
 					if (local15.anInt828 == local15.anInt820 && local15.anInt820 == -1) {
-						local15.method1677();
+						local15.unlink();
 					} else if (local15.anInt820 == local15.anInt828 && local15.anInt825 == local15.anInt829 && local15.anInt819 == local15.anInt830) {
-						local15.method1677();
+						local15.unlink();
 					}
 				}
 			} else if (local15.anInt820 < 0 || Static73.method1335(local15.anInt820, local15.anInt830)) {
 				Static90.method1566(local15.anInt823, local15.x, local15.z, local15.anInt830, local15.level, local15.anInt820, local15.anInt825);
-				local15.method1677();
+				local15.unlink();
 			}
 		}
 	}
@@ -56,7 +56,7 @@ public final class Static68 {
 		JagString.aClass40_526 = null;
 		Static1.aClass41_1 = null;
 		JagString.aClass40_523 = null;
-		aClass11_4 = null;
+		masterCache = null;
 		Static1.aClass47_15 = null;
 		JagString.aClass40_524 = null;
 		JagString.aClass40_522 = null;

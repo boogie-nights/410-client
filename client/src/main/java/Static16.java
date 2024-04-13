@@ -8,7 +8,7 @@ public final class Static16 {
 
 	@OriginalMember(owner = "client!d", name = "a", descriptor = "(B)V", line = 4)
 	public static void method345() {
-		Static1.anIntArray82 = null;
+		Static1.SERVER_PROT_LENGTHS = null;
 		JagString.aClass40_113 = null;
 		JagString.aClass40_112 = null;
 		JagString.aClass40_115 = null;

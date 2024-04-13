@@ -105,7 +105,7 @@ public final class Static53 {
 		@Pc(1) Object local1 = Static1.anObject2;
 		synchronized (Static1.anObject2) {
 			if (Static1.anInt1801 == 0) {
-				Static91.aClass7_2.method207(5, new Js5CacheQueue());
+				GameShell.signlink.method207(5, new Js5CacheQueue());
 			}
 			Static1.anInt1801 = 600;
 		}

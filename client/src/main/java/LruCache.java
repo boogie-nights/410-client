@@ -23,19 +23,19 @@ public final class LruCache {
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(JB)Lclient!ja;", line = 19)
 	public Hashable method1325(@OriginalArg(0) long arg0) {
-		@Pc(16) Hashable local16 = (Hashable) this.aClass6_4.method190(arg0);
+		@Pc(16) Hashable local16 = (Hashable) this.aClass6_4.get(arg0);
 		if (local16 != null) {
-			this.aClass41_2.method1201(local16);
+			this.aClass41_2.push(local16);
 		}
 		return local16;
 	}
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(IJ)V", line = 55)
 	public void method1327(@OriginalArg(1) long arg0) {
-		@Pc(16) Hashable local16 = (Hashable) this.aClass6_4.method190(arg0);
+		@Pc(16) Hashable local16 = (Hashable) this.aClass6_4.get(arg0);
 		if (local16 != null) {
-			local16.method1677();
-			local16.method1637();
+			local16.unlink();
+			local16.uncache();
 			this.anInt1925++;
 		}
 	}
@@ -43,32 +43,32 @@ public final class LruCache {
 	@OriginalMember(owner = "client!qc", name = "b", descriptor = "(I)V", line = 119)
 	public void method1330() {
 		while (true) {
-			@Pc(22) Hashable local22 = this.aClass41_2.method1202();
+			@Pc(22) Hashable local22 = this.aClass41_2.pop();
 			if (local22 == null) {
 				this.anInt1925 = this.anInt1924;
 				return;
 			}
-			local22.method1677();
-			local22.method1637();
+			local22.unlink();
+			local22.uncache();
 		}
 	}
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(IJLclient!ja;)V", line = 232)
 	public void method1332(@OriginalArg(1) long arg0, @OriginalArg(2) Hashable arg1) {
 		if (this.anInt1925 == 0) {
-			@Pc(19) Hashable local19 = this.aClass41_2.method1202();
-			local19.method1677();
-			local19.method1637();
+			@Pc(19) Hashable local19 = this.aClass41_2.pop();
+			local19.unlink();
+			local19.uncache();
 			if (local19 == this.aClass2_Sub2_46) {
-				local19 = this.aClass41_2.method1202();
-				local19.method1677();
-				local19.method1637();
+				local19 = this.aClass41_2.pop();
+				local19.unlink();
+				local19.uncache();
 			}
 		} else {
 			this.anInt1925--;
 		}
-		this.aClass6_4.method195(arg1, arg0);
-		this.aClass41_2.method1201(arg1);
+		this.aClass6_4.put(arg1, arg0);
+		this.aClass41_2.push(arg1);
 	}
 
 	@OriginalMember(owner = "client!qc", name = "<init>", descriptor = "(I)V", line = 320)

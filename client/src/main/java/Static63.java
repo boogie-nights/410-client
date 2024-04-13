@@ -181,7 +181,7 @@ public final class Static63 {
 			}
 			buf.addcrc(local97);
 			buf.psize1(buf.pos - local97);
-			local16.method1677();
+			local16.unlink();
 		}
 	}
 

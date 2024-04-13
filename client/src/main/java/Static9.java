@@ -9,7 +9,7 @@ public final class Static9 {
 	public static int[][] anIntArrayArray5;
 
 	@OriginalMember(owner = "client!bd", name = "q", descriptor = "Lclient!d;")
-	public static BufferedFile aClass14_1;
+	public static BufferedFile legacyCacheDat;
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(ZLclient!mc;)V", line = 3)
 	public static void method227(@OriginalArg(1) ComType arg0) {
@@ -60,12 +60,12 @@ public final class Static9 {
 				if (Static1.anIntArray316[local8] == 0) {
 					arg0.aClass40_466 = JagString.aClass40_43;
 				} else if (Static1.anIntArray316[local8] >= 5000) {
-					if (Static1.anInt140 == Static1.anIntArray316[local8]) {
+					if (client.worldId == Static1.anIntArray316[local8]) {
 						arg0.aClass40_466 = Static72.method1334(new JagString[] { JagString.aClass40_85, Static48.method859(Static1.anIntArray316[local8] - 5000) });
 					} else {
 						arg0.aClass40_466 = Static72.method1334(new JagString[] { JagString.aClass40_514, Static48.method859(Static1.anIntArray316[local8] - 5000) });
 					}
-				} else if (Static1.anInt140 == Static1.anIntArray316[local8]) {
+				} else if (client.worldId == Static1.anIntArray316[local8]) {
 					arg0.aClass40_466 = Static72.method1334(new JagString[] { JagString.aClass40_330, Static48.method859(Static1.anIntArray316[local8]) });
 				} else {
 					arg0.aClass40_466 = Static72.method1334(new JagString[] { Static1.aClass40_545, Static48.method859(Static1.anIntArray316[local8]) });
@@ -221,7 +221,7 @@ public final class Static9 {
 				}
 			}
 			if (local8 == 665) {
-				if (Static51.anInt2272 > 2 && !Static1.aBoolean37) {
+				if (Static51.anInt2272 > 2 && !client.membersWorld) {
 					arg0.aClass40_466 = JagString.aClass40_562;
 				} else if (Static51.anInt2272 > 2) {
 					arg0.aClass40_466 = Static72.method1334(new JagString[] { JagString.aClass40_694, Static48.method859(Static51.anInt2272), JagString.aClass40_119 });
@@ -232,7 +232,7 @@ public final class Static9 {
 				}
 			}
 			if (local8 == 667) {
-				if (Static51.anInt2272 > 2 && !Static1.aBoolean37) {
+				if (Static51.anInt2272 > 2 && !client.membersWorld) {
 					arg0.aClass40_466 = JagString.aClass40_621;
 				} else if (Static51.anInt2272 > 0) {
 					arg0.aClass40_466 = JagString.aClass40_485;
@@ -263,7 +263,7 @@ public final class Static9 {
 		JagString.aClass40_66 = null;
 		JagString.aClass40_62 = null;
 		JagString.aClass40_63 = null;
-		aClass14_1 = null;
+		legacyCacheDat = null;
 		Static1.aBigInteger1 = null;
 		JagString.aClass40_65 = null;
 		JagString.aClass40_67 = null;

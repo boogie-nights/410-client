@@ -47,13 +47,13 @@ public final class SignLink implements Runnable {
 	private String aString3 = null;
 
 	@OriginalMember(owner = "client!bb", name = "r", descriptor = "Lclient!dc;")
-	public FileOnDisk aClass16_2 = null;
+	public FileOnDisk legacyCacheData = null;
 
 	@OriginalMember(owner = "client!bb", name = "t", descriptor = "Lclient!dc;")
-	public FileOnDisk aClass16_3 = null;
+	public FileOnDisk cacheMasterIndex = null;
 
 	@OriginalMember(owner = "client!bb", name = "q", descriptor = "Lclient!dc;")
-	public FileOnDisk aClass16_1 = null;
+	public FileOnDisk cacheData = null;
 
 	@OriginalMember(owner = "client!bb", name = "u", descriptor = "Ljava/lang/String;")
 	private String aString6 = null;
@@ -62,10 +62,10 @@ public final class SignLink implements Runnable {
 	private final InetAddress anInetAddress1;
 
 	@OriginalMember(owner = "client!bb", name = "d", descriptor = "[Lclient!dc;")
-	public FileOnDisk[] aClass16Array1;
+	public FileOnDisk[] legacyCacheIndex;
 
 	@OriginalMember(owner = "client!bb", name = "i", descriptor = "[Lclient!dc;")
-	public FileOnDisk[] aClass16Array2;
+	public FileOnDisk[] cacheIndexes;
 
 	@OriginalMember(owner = "client!bb", name = "p", descriptor = "Ljava/lang/Thread;")
 	private final Thread aThread1;
@@ -114,7 +114,7 @@ public final class SignLink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!bb", name = "b", descriptor = "(I)V", line = 123)
-	public void method203() {
+	public void stop() {
 		synchronized (this) {
 			this.aBoolean24 = true;
 			this.notifyAll();
@@ -126,42 +126,42 @@ public final class SignLink implements Runnable {
 		if (this.anInterface3_1 != null) {
 			this.anInterface3_1.method795();
 		}
-		if (this.aClass16_1 != null) {
+		if (this.cacheData != null) {
 			try {
-				this.aClass16_1.close();
+				this.cacheData.close();
 			} catch (@Pc(40) IOException local40) {
 			}
 		}
-		if (this.aClass16_3 != null) {
+		if (this.cacheMasterIndex != null) {
 			try {
-				this.aClass16_3.close();
+				this.cacheMasterIndex.close();
 			} catch (@Pc(50) IOException local50) {
 			}
 		}
 		@Pc(56) int local56;
-		if (this.aClass16Array2 != null) {
-			for (local56 = 0; local56 < this.aClass16Array2.length; local56++) {
-				if (this.aClass16Array2[local56] != null) {
+		if (this.cacheIndexes != null) {
+			for (local56 = 0; local56 < this.cacheIndexes.length; local56++) {
+				if (this.cacheIndexes[local56] != null) {
 					try {
-						this.aClass16Array2[local56].close();
+						this.cacheIndexes[local56].close();
 					} catch (@Pc(70) IOException local70) {
 					}
 				}
 			}
 		}
-		if (this.aClass16_2 != null) {
+		if (this.legacyCacheData != null) {
 			try {
-				this.aClass16_2.close();
+				this.legacyCacheData.close();
 			} catch (@Pc(90) IOException local90) {
 			}
 		}
-		if (this.aClass16Array1 == null) {
+		if (this.legacyCacheIndex == null) {
 			return;
 		}
-		for (local56 = 0; local56 < this.aClass16Array1.length; local56++) {
-			if (this.aClass16Array1[local56] != null) {
+		for (local56 = 0; local56 < this.legacyCacheIndex.length; local56++) {
+			if (this.legacyCacheIndex[local56] != null) {
 				try {
-					this.aClass16Array1[local56].close();
+					this.legacyCacheIndex[local56].close();
 				} catch (@Pc(112) IOException local112) {
 				}
 			}
@@ -320,21 +320,21 @@ public final class SignLink implements Runnable {
 			this.method206(arg3, arg4);
 			@Pc(102) File local102 = new File(this.aString5 + "main_file_cache.dat");
 			if (local102.exists()) {
-				this.aClass16_2 = new FileOnDisk(local102, "rw", 52428800L);
+				this.legacyCacheData = new FileOnDisk(local102, "rw", 52428800L);
 			}
-			this.aClass16Array1 = new FileOnDisk[5];
+			this.legacyCacheIndex = new FileOnDisk[5];
 			for (@Pc(119) int local119 = 0; local119 < 5; local119++) {
 				@Pc(135) File local135 = new File(this.aString5 + "main_file_cache.idx" + local119);
 				if (local135.exists()) {
-					this.aClass16Array1[local119] = new FileOnDisk(local135, "rw", 1048576L);
+					this.legacyCacheIndex[local119] = new FileOnDisk(local135, "rw", 1048576L);
 				}
 			}
-			this.aClass16_1 = new FileOnDisk(new File(this.aString3 + "main_file_cache.dat2"), "rw", 52428800L);
-			this.aClass16Array2 = new FileOnDisk[arg5];
+			this.cacheData = new FileOnDisk(new File(this.aString3 + "main_file_cache.dat2"), "rw", 52428800L);
+			this.cacheIndexes = new FileOnDisk[arg5];
 			for (@Pc(177) int local177 = 0; local177 < arg5; local177++) {
-				this.aClass16Array2[local177] = new FileOnDisk(new File(this.aString3 + "main_file_cache.idx" + local177), "rw", 1048576L);
+				this.cacheIndexes[local177] = new FileOnDisk(new File(this.aString3 + "main_file_cache.idx" + local177), "rw", 1048576L);
 			}
-			this.aClass16_3 = new FileOnDisk(new File(this.aString3 + "main_file_cache.idx255"), "rw", 1048576L);
+			this.cacheMasterIndex = new FileOnDisk(new File(this.aString3 + "main_file_cache.idx255"), "rw", 1048576L);
 			this.method208();
 		}
 		this.aBoolean24 = false;

@@ -834,7 +834,7 @@ public final class JagString implements Interface2 {
 			if (Static30.aClass6_1 == null) {
 				Static30.aClass6_1 = new HashTable(4096);
 			} else {
-				for (local41 = (StringLinkable) Static30.aClass6_1.method190(local7); local41 != null; local41 = (StringLinkable) Static30.aClass6_1.method182()) {
+				for (local41 = (StringLinkable) Static30.aClass6_1.get(local7); local41 != null; local41 = (StringLinkable) Static30.aClass6_1.nextWithKey()) {
 					if (this.method1184(local41.aClass40_247)) {
 						return local41.aClass40_247;
 					}
@@ -843,7 +843,7 @@ public final class JagString implements Interface2 {
 			local41 = new StringLinkable();
 			this.aBoolean141 = false;
 			local41.aClass40_247 = this;
-			Static30.aClass6_1.method195(local41, local7);
+			Static30.aClass6_1.put(local41, local7);
 			return this;
 		}
 	}

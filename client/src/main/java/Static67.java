@@ -192,7 +192,7 @@ public final class Static67 {
 		}
 		Static12.method255();
 		Static1.aClass47_21.method1330();
-		if (Static97.aCanvas_Sub1_1 != null) {
+		if (Static97.frame != null) {
 			Static1.aClass2_Sub3_Sub1_4.pIsaac1(153);
 			Static1.aClass2_Sub3_Sub1_4.p4(1057001181);
 		}

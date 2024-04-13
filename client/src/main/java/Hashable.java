@@ -5,18 +5,18 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class Hashable extends Linkable {
 
 	@OriginalMember(owner = "client!ja", name = "x", descriptor = "Lclient!ja;")
-	public Hashable aClass2_Sub2_59;
+	public Hashable nextHashable;
 
 	@OriginalMember(owner = "client!ja", name = "N", descriptor = "Lclient!ja;")
-	public Hashable aClass2_Sub2_60;
+	public Hashable prevHashable;
 
 	@OriginalMember(owner = "client!ja", name = "e", descriptor = "(I)V", line = 227)
-	public final void method1637() {
-		if (this.aClass2_Sub2_60 != null) {
-			this.aClass2_Sub2_60.aClass2_Sub2_59 = this.aClass2_Sub2_59;
-			this.aClass2_Sub2_59.aClass2_Sub2_60 = this.aClass2_Sub2_60;
-			this.aClass2_Sub2_59 = null;
-			this.aClass2_Sub2_60 = null;
+	public final void uncache() {
+		if (this.prevHashable != null) {
+			this.prevHashable.nextHashable = this.nextHashable;
+			this.nextHashable.prevHashable = this.prevHashable;
+			this.nextHashable = null;
+			this.prevHashable = null;
 		}
 	}
 }

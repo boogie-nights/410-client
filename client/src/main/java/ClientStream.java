@@ -42,7 +42,7 @@ public final class ClientStream implements Runnable {
 	private final OutputStream anOutputStream1;
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(IIB[B)V", line = 3)
-	public void method725(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) byte[] arg2) throws IOException {
+	public void read(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) byte[] arg2) throws IOException {
 		if (this.aBoolean68) {
 			return;
 		}
@@ -68,7 +68,7 @@ public final class ClientStream implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "b", descriptor = "(I)I", line = 105)
-	public int method728() throws IOException {
+	public int available() throws IOException {
 		return this.aBoolean68 ? 0 : this.anInputStream1.available();
 	}
 
@@ -154,12 +154,12 @@ public final class ClientStream implements Runnable {
 				break;
 			}
 		} catch (@Pc(118) Exception local118) {
-			Static36.method727(null, local118);
+			JagException.report(null, local118);
 		}
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "([BIIZ)V", line = 303)
-	public void method731(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1) throws IOException {
+	public void write(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1) throws IOException {
 		if (this.aBoolean68) {
 			return;
 		}

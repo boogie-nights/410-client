@@ -26,7 +26,7 @@ public final class Static41 {
 			@Pc(11) Packet local11 = new Packet(4);
 			local11.p1(arg0 ? 2 : 3);
 			local11.p3(0);
-			Static29.aClass25_48.method731(local11.data, 4);
+			Static29.aClass25_48.write(local11.data, 4);
 		} catch (@Pc(32) IOException local32) {
 			try {
 				Static29.aClass25_48.method730();

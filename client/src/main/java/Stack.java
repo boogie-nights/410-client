@@ -7,50 +7,50 @@ import org.openrs2.deob.annotation.Pc;
 public final class Stack {
 
 	@OriginalMember(owner = "client!oa", name = "j", descriptor = "Lclient!ja;")
-	private final Hashable aClass2_Sub2_43 = new Hashable();
+	private final Hashable sentinel = new Hashable();
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Lclient!ja;B)V", line = 3)
-	public void method1201(@OriginalArg(0) Hashable arg0) {
-		if (arg0.aClass2_Sub2_60 != null) {
-			arg0.method1637();
+	public void push(@OriginalArg(0) Hashable node) {
+		if (node.prevHashable != null) {
+			node.uncache();
 		}
-		arg0.aClass2_Sub2_59 = this.aClass2_Sub2_43;
-		arg0.aClass2_Sub2_60 = this.aClass2_Sub2_43.aClass2_Sub2_60;
-		arg0.aClass2_Sub2_60.aClass2_Sub2_59 = arg0;
-		arg0.aClass2_Sub2_59.aClass2_Sub2_60 = arg0;
+		node.nextHashable = this.sentinel;
+		node.prevHashable = this.sentinel.prevHashable;
+		node.prevHashable.nextHashable = node;
+		node.nextHashable.prevHashable = node;
 	}
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(I)Lclient!ja;", line = 22)
-	public Hashable method1202() {
-		@Pc(7) Hashable local7 = this.aClass2_Sub2_43.aClass2_Sub2_59;
-		if (this.aClass2_Sub2_43 == local7) {
+	public Hashable pop() {
+		@Pc(7) Hashable node = this.sentinel.nextHashable;
+		if (this.sentinel == node) {
 			return null;
 		} else {
-			local7.method1637();
-			return local7;
+			node.uncache();
+			return node;
 		}
 	}
 
 	@OriginalMember(owner = "client!oa", name = "b", descriptor = "(I)Lclient!ja;", line = 59)
-	public Hashable method1203() {
-		@Pc(12) Hashable local12 = this.aClass2_Sub2_43.aClass2_Sub2_59;
-		return local12 == this.aClass2_Sub2_43 ? null : local12;
+	public Hashable next() {
+		@Pc(12) Hashable node = this.sentinel.nextHashable;
+		return node == this.sentinel ? null : node;
 	}
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(BLclient!ja;)V", line = 113)
-	public void method1204(@OriginalArg(1) Hashable arg0) {
-		if (arg0.aClass2_Sub2_60 != null) {
-			arg0.method1637();
+	public void addTail(@OriginalArg(1) Hashable node) {
+		if (node.prevHashable != null) {
+			node.uncache();
 		}
-		arg0.aClass2_Sub2_60 = this.aClass2_Sub2_43;
-		arg0.aClass2_Sub2_59 = this.aClass2_Sub2_43.aClass2_Sub2_59;
-		arg0.aClass2_Sub2_60.aClass2_Sub2_59 = arg0;
-		arg0.aClass2_Sub2_59.aClass2_Sub2_60 = arg0;
+		node.prevHashable = this.sentinel;
+		node.nextHashable = this.sentinel.nextHashable;
+		node.prevHashable.nextHashable = node;
+		node.nextHashable.prevHashable = node;
 	}
 
 	@OriginalMember(owner = "client!oa", name = "<init>", descriptor = "()V", line = 129)
 	public Stack() {
-		this.aClass2_Sub2_43.aClass2_Sub2_59 = this.aClass2_Sub2_43;
-		this.aClass2_Sub2_43.aClass2_Sub2_60 = this.aClass2_Sub2_43;
+		this.sentinel.nextHashable = this.sentinel;
+		this.sentinel.prevHashable = this.sentinel;
 	}
 }

@@ -29,13 +29,13 @@ public final class Js5CacheQueue implements Runnable {
 					}
 				} else {
 					if (local12.type == 0) {
-						local12.cache.write(local12.data.length, (int) local12.aLong152, local12.data);
+						local12.cache.write(local12.data.length, (int) local12.key, local12.data);
 						local5 = Static1.aClass44_2;
 						synchronized (local5) {
-							local12.method1677();
+							local12.unlink();
 						}
 					} else if (local12.type == 1) {
-						local12.data = local12.cache.read((int) local12.aLong152);
+						local12.data = local12.cache.read((int) local12.key);
 						local5 = Static1.aClass44_2;
 						synchronized (local5) {
 							Static1.aClass44_1.addTail(local12);
@@ -53,7 +53,7 @@ public final class Js5CacheQueue implements Runnable {
 				}
 			}
 		} catch (@Pc(128) Exception local128) {
-			Static36.method727(null, local128);
+			JagException.report(null, local128);
 		}
 	}
 }

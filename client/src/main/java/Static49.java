@@ -32,7 +32,7 @@ public final class Static49 {
 	public static void method917() {
 		for (@Pc(10) ProjectileEntity local10 = (ProjectileEntity) Static1.aClass44_4.head(); local10 != null; local10 = (ProjectileEntity) Static1.aClass44_4.next()) {
 			if (local10.anInt1417 != Static1.currentLevel || local10.anInt1427 < Static1.anInt2511) {
-				local10.method1677();
+				local10.unlink();
 			} else if (Static1.anInt2511 >= local10.anInt1419) {
 				if (local10.anInt1434 > 0) {
 					@Pc(47) NpcEntity local47 = Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local10.anInt1434 - 1];

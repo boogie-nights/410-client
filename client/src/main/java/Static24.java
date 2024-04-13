@@ -19,8 +19,8 @@ public final class Static24 {
 	@OriginalMember(owner = "client!f", name = "c", descriptor = "(B)V", line = 225)
 	public static void method520() {
 		while (true) {
-			if (Static1.in.bitsAvailable(Static1.anInt785) >= 26) {
-				@Pc(17) int local17 = Static1.in.gBit(14);
+			if (client.in.bitsAvailable(client.packetSize) >= 26) {
+				@Pc(17) int local17 = client.in.gBit(14);
 				if (local17 != 16383) {
 					if (Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local17] == null) {
 						Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local17] = new NpcEntity();
@@ -28,14 +28,14 @@ public final class Static24 {
 					@Pc(34) NpcEntity local34 = Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local17];
 					Static1.anIntArray326[Static1.anInt1800++] = local17;
 					local34.anInt2274 = Static1.anInt2511;
-					@Pc(50) int local50 = Static1.in.gBit(5);
+					@Pc(50) int local50 = client.in.gBit(5);
 					if (local50 > 15) {
 						local50 -= 32;
 					}
-					@Pc(61) int local61 = Static1.in.gBit(1);
-					local34.aClass2_Sub2_Sub7_1 = Static34.method640(Static1.in.gBit(13));
-					@Pc(78) int local78 = Static1.in.gBit(5);
-					@Pc(85) int local85 = Static1.in.gBit(1);
+					@Pc(61) int local61 = client.in.gBit(1);
+					local34.aClass2_Sub2_Sub7_1 = Static34.method640(client.in.gBit(13));
+					@Pc(78) int local78 = client.in.gBit(5);
+					@Pc(85) int local85 = client.in.gBit(1);
 					if (local85 == 1) {
 						Static1.anIntArray504[Static1.anInt1190++] = local17;
 					}
@@ -53,7 +53,7 @@ public final class Static24 {
 					continue;
 				}
 			}
-			Static1.in.bytes();
+			client.in.bytes();
 			return;
 		}
 	}

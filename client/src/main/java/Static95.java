@@ -83,7 +83,7 @@ public final class Static95 {
 			@Pc(52) int[] local52 = new int[9];
 			for (local54 = 0; local54 < 9; local54++) {
 				local62 = local54 * 32 + 143;
-				local66 = Draw3D.anIntArray59[local62];
+				local66 = Draw3D.sin[local62];
 				local72 = local62 * 3 + 600;
 				local52[local54] = local72 * local66 >> 16;
 			}
@@ -95,14 +95,14 @@ public final class Static95 {
 		}
 		try {
 			if (Static1.anInt1850 == 25) {
-				if (Static9.aClass14_1 != null && Static61.aClass14_4 != null && Static61.aClass14_4.method351() < 60000L) {
+				if (Static9.legacyCacheDat != null && Static61.cacheDat != null && Static61.cacheDat.method351() < 60000L) {
 					Static30.aClass11Array2 = new Cache[5];
 					for (local17 = 0; local17 < 5; local17++) {
-						Static30.aClass11Array2[local17] = new Cache(local17 + 1, Static9.aClass14_1, Static1.aClass14Array2[local17], 500000);
+						Static30.aClass11Array2[local17] = new Cache(local17 + 1, Static9.legacyCacheDat, Static1.legacyCacheIndex[local17], 500000);
 					}
 					Static17.aClass11Array1 = new Cache[12];
 					for (local54 = 0; local54 < 12; local54++) {
-						Static17.aClass11Array1[local54] = new Cache(local54, Static61.aClass14_4, Static1.aClass14Array1[local54], 500000);
+						Static17.aClass11Array1[local54] = new Cache(local54, Static61.cacheDat, Static1.cacheIndex[local54], 500000);
 					}
 					Static1.anInt2396 = 0;
 					JagString.aClass40_680 = JagString.aClass40_736;
@@ -204,8 +204,8 @@ public final class Static95 {
 				Static1.anInt2194 = 30;
 			}
 		} else if (Static1.anInt1850 == 45) {
-			Static79.method1400(Static91.aClass7_2, !Static1.lowDetail);
-			Static80.aClass2_Sub10_Sub2_1 = Static35.method717(Static91.aClass7_2, Static7.method185());
+			Static79.method1400(GameShell.signlink, !Static1.lowDetail);
+			Static80.aClass2_Sub10_Sub2_1 = Static35.method717(GameShell.signlink, Static7.method185());
 			Static10.aClass56_1 = new SampleRateConverter(22050, Static11.anInt291);
 			Static1.anInt2194 = 35;
 			Static1.anInt1850 = 50;
@@ -260,7 +260,7 @@ public final class Static95 {
 				Static30.method591(Static24.modelsJs5, Static5.configJs5);
 				Static87.method1518(Static1.lowDetail, Static24.modelsJs5, Static5.configJs5);
 				method1651(Static5.configJs5, Static24.modelsJs5);
-				Static98.method1741(Static24.modelsJs5, Static5.configJs5, Static1.aBoolean37);
+				Static98.method1741(Static24.modelsJs5, Static5.configJs5, client.membersWorld);
 				Static88.method1551(Static79.basesJs5, Static40.animsJs5, Static5.configJs5);
 				Static72.method1329(Static5.configJs5, Static24.modelsJs5);
 				Static15.method340(Static5.configJs5);
@@ -387,7 +387,7 @@ public final class Static95 {
 			}
 		} else if (Static1.anInt1850 == 110) {
 			Static41.aClass52_1 = new MouseRecorder();
-			Static91.aClass7_2.method207(10, Static41.aClass52_1);
+			GameShell.signlink.method207(10, Static41.aClass52_1);
 			Static1.anInt2194 = 94;
 			Static1.anInt1850 = 120;
 			JagString.aClass40_680 = JagString.aClass40_737;

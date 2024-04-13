@@ -241,7 +241,7 @@ public final class Static23 {
 									@Pc(943) int local943;
 									if (local907 >= 0) {
 										local911 = -1;
-										local916 = Static6.anInterface4_1.method396(local907);
+										local916 = Draw3D.anInterface4_1.method396(local907);
 									} else if (local904.anInt581 == 16711935) {
 										local916 = -2;
 										local907 = -1;

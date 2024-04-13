@@ -181,17 +181,17 @@ public final class Static40 {
 				Static1.anInt2039 = 0;
 				Static48.aClass48_5 = null;
 				Static1.anInt693 = 1;
-				Static64.aClass25_36 = null;
+				client.stream = null;
 			}
 			if (Static1.anInt693 == 1) {
 				if (Static48.aClass48_5 == null) {
-					Static48.aClass48_5 = Static91.aClass7_2.method202(Static54.anInt1500);
+					Static48.aClass48_5 = GameShell.signlink.method202(Static54.anInt1500);
 				}
 				if (Static48.aClass48_5.anInt1928 == 2) {
 					throw new IOException();
 				}
 				if (Static48.aClass48_5.anInt1928 == 1) {
-					Static64.aClass25_36 = new ClientStream((Socket) Static48.aClass48_5.value, Static91.aClass7_2);
+					client.stream = new ClientStream((Socket) Static48.aClass48_5.value, GameShell.signlink);
 					Static48.aClass48_5 = null;
 					Static1.anInt693 = 2;
 				}
@@ -202,34 +202,34 @@ public final class Static40 {
 				@Pc(81) int local81 = (int) (local71 >> 16 & 0x1FL);
 				Static1.aClass2_Sub3_Sub1_4.p1(14);
 				Static1.aClass2_Sub3_Sub1_4.p1(local81);
-				Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_4.data, 2);
+				client.stream.write(Static1.aClass2_Sub3_Sub1_4.data, 2);
 				Static1.anInt693 = 3;
-				Static1.in.pos = 0;
+				client.in.pos = 0;
 			}
 			@Pc(108) int local108;
 			if (Static1.anInt693 == 3) {
-				local108 = Static64.aClass25_36.method726();
+				local108 = client.stream.method726();
 				if (local108 != 0) {
 					Static88.method1552(local108);
 					return;
 				}
 				Static1.anInt693 = 4;
-				Static1.in.pos = 0;
+				client.in.pos = 0;
 			}
 			if (Static1.anInt693 == 4) {
-				if (Static1.in.pos < 8) {
-					local108 = Static64.aClass25_36.method728();
-					if (local108 > 8 - Static1.in.pos) {
-						local108 = 8 - Static1.in.pos;
+				if (client.in.pos < 8) {
+					local108 = client.stream.available();
+					if (local108 > 8 - client.in.pos) {
+						local108 = 8 - client.in.pos;
 					}
 					if (local108 > 0) {
-						Static64.aClass25_36.method725(Static1.in.pos, local108, Static1.in.data);
-						Static1.in.pos += local108;
+						client.stream.read(client.in.pos, local108, client.in.data);
+						client.in.pos += local108;
 					}
 				}
-				if (Static1.in.pos == 8) {
-					Static1.in.pos = 0;
-					Static1.aLong139 = Static1.in.g8();
+				if (client.in.pos == 8) {
+					client.in.pos = 0;
+					Static1.aLong139 = client.in.g8();
 					Static1.anInt693 = 5;
 				}
 			}
@@ -241,12 +241,12 @@ public final class Static40 {
 				Static1.aClass2_Sub3_Sub1_4.p4(local185[1]);
 				Static1.aClass2_Sub3_Sub1_4.p4(local185[2]);
 				Static1.aClass2_Sub3_Sub1_4.p4(local185[3]);
-				Static1.aClass2_Sub3_Sub1_4.p4(Static91.aClass7_2.anInt249);
+				Static1.aClass2_Sub3_Sub1_4.p4(GameShell.signlink.anInt249);
 				Static1.aClass2_Sub3_Sub1_4.p8(JagString.aClass40_591.method1179());
 				Static1.aClass2_Sub3_Sub1_4.pjstr(JagString.aClass40_587);
 				Static1.aClass2_Sub3_Sub1_4.rsaenc(Static1.aBigInteger2, Static1.aBigInteger1);
 				Static1.aClass2_Sub3_Sub1_3.pos = 0;
-				if (Static1.anInt1075 == 40) {
+				if (client.state == 40) {
 					Static1.aClass2_Sub3_Sub1_3.p1(18);
 				} else {
 					Static1.aClass2_Sub3_Sub1_3.p1(16);
@@ -267,21 +267,21 @@ public final class Static40 {
 				Static1.aClass2_Sub3_Sub1_3.p4(Static73.binaryJs5.crc);
 				Static1.aClass2_Sub3_Sub1_3.p4(Static68.midiJinglesJs5.crc);
 				Static1.aClass2_Sub3_Sub1_3.pdata(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
-				Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_3.data, Static1.aClass2_Sub3_Sub1_3.pos);
+				client.stream.write(Static1.aClass2_Sub3_Sub1_3.data, Static1.aClass2_Sub3_Sub1_3.pos);
 				Static1.aClass2_Sub3_Sub1_4.setSeed(local185);
 				for (@Pc(379) int local379 = 0; local379 < 4; local379++) {
 					local185[local379] += 50;
 				}
-				Static1.in.setSeed(local185);
+				client.in.setSeed(local185);
 				Static1.anInt693 = 6;
 			}
-			if (Static1.anInt693 == 6 && Static64.aClass25_36.method728() > 0) {
-				local108 = Static64.aClass25_36.method726();
-				if (local108 == 21 && Static1.anInt1075 == 20) {
+			if (Static1.anInt693 == 6 && client.stream.available() > 0) {
+				local108 = client.stream.method726();
+				if (local108 == 21 && client.state == 20) {
 					Static1.anInt693 = 7;
 				} else if (local108 == 2) {
 					Static1.anInt693 = 9;
-				} else if (local108 == 15 && Static1.anInt1075 == 40) {
+				} else if (local108 == 15 && client.state == 40) {
 					Static80.method1406();
 					return;
 				} else if (local108 == 23 && Static1.anInt1649 < 1) {
@@ -292,8 +292,8 @@ public final class Static40 {
 					return;
 				}
 			}
-			if (Static1.anInt693 == 7 && Static64.aClass25_36.method728() > 0) {
-				Static1.anInt261 = (Static64.aClass25_36.method726() + 3) * 60;
+			if (Static1.anInt693 == 7 && client.stream.available() > 0) {
+				Static1.anInt261 = (client.stream.method726() + 3) * 60;
 				Static1.anInt693 = 8;
 			}
 			if (Static1.anInt693 == 8) {
@@ -303,19 +303,19 @@ public final class Static40 {
 					Static1.anInt693 = 0;
 				}
 			} else {
-				if (Static1.anInt693 == 9 && Static64.aClass25_36.method728() >= 8) {
-					Static1.anInt1550 = Static64.aClass25_36.method726();
-					Static1.aBoolean149 = Static64.aClass25_36.method726() == 1;
-					Static1.anInt1955 = Static64.aClass25_36.method726();
+				if (Static1.anInt693 == 9 && client.stream.available() >= 8) {
+					Static1.anInt1550 = client.stream.method726();
+					Static1.aBoolean149 = client.stream.method726() == 1;
+					Static1.anInt1955 = client.stream.method726();
 					Static1.anInt1955 <<= 0x8;
-					Static1.anInt1955 += Static64.aClass25_36.method726();
-					Static1.anInt927 = Static64.aClass25_36.method726();
-					Static64.aClass25_36.method725(0, 1, Static1.in.data);
-					Static1.in.pos = 0;
-					Static1.packetType = Static1.in.gIsaac1();
-					Static64.aClass25_36.method725(0, 2, Static1.in.data);
-					Static1.in.pos = 0;
-					Static1.anInt785 = Static1.in.g2();
+					Static1.anInt1955 += client.stream.method726();
+					Static1.anInt927 = client.stream.method726();
+					client.stream.read(0, 1, client.in.data);
+					client.in.pos = 0;
+					client.packetType = client.in.gIsaac1();
+					client.stream.read(0, 2, client.in.data);
+					client.in.pos = 0;
+					client.packetSize = client.in.g2();
 					Static1.anInt693 = 10;
 				}
 				if (Static1.anInt693 != 10) {
@@ -333,13 +333,13 @@ public final class Static40 {
 							Static88.method1552(-3);
 						}
 					}
-				} else if (Static64.aClass25_36.method728() >= Static1.anInt785) {
-					Static1.in.pos = 0;
-					Static64.aClass25_36.method725(0, Static1.anInt785, Static1.in.data);
+				} else if (client.stream.available() >= client.packetSize) {
+					client.in.pos = 0;
+					client.stream.read(0, client.packetSize, client.in.data);
 					Static97.method1671();
 					Static51.anInt2327 = -1;
 					Static91.method58(false);
-					Static1.packetType = -1;
+					client.packetType = -1;
 				}
 			}
 		} catch (@Pc(661) IOException local661) {

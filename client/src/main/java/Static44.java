@@ -51,7 +51,7 @@ public final class Static44 {
 		Static40.method1242();
 		Static47.method850();
 		Static27.method582();
-		((Js5TextureProvider) Static6.anInterface4_1).method401();
+		((Js5TextureProvider) Draw3D.anInterface4_1).method401();
 		Static40.animsJs5.method57();
 		Static79.basesJs5.method57();
 		Static26.interfacesJs5.method57();

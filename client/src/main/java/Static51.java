@@ -94,7 +94,7 @@ public final class Static51 {
 		JagString.aClass40_656 = null;
 		aClass5_29 = null;
 		JagString.aClass40_657 = null;
-		Static1.in = null;
+		client.in = null;
 		aClass2_Sub2_Sub2_Sub3Array15 = null;
 		JagString.aClass40_659 = null;
 	}
@@ -102,7 +102,7 @@ public final class Static51 {
 	@OriginalMember(owner = "client!ke", name = "m", descriptor = "(I)V", line = 516)
 	public static void method1548() {
 		Static38.method755();
-		if (Static1.anInt1075 != 10) {
+		if (client.state != 10) {
 			return;
 		}
 		@Pc(20) int local20 = Static1.anInt2133 - 171;

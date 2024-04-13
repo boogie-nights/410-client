@@ -110,7 +110,7 @@ public final class Static99 {
 					@Pc(110) int local110 = local103 + local22[local17++];
 					local116 = Static73.method1340(local110);
 					local121 = local22[local17++];
-					if (local121 != -1 && (!Static97.method1669(local121).aBoolean66 || Static1.aBoolean37)) {
+					if (local121 != -1 && (!Static97.method1669(local121).aBoolean66 || client.membersWorld)) {
 						for (local133 = 0; local133 < local116.anIntArray331.length; local133++) {
 							if (local121 + 1 == local116.anIntArray331[local133]) {
 								local33 += local116.anIntArray327[local133];
@@ -142,7 +142,7 @@ public final class Static99 {
 					local103 += local22[local17++];
 					local116 = Static73.method1340(local103);
 					local121 = local22[local17++];
-					if (local121 != -1 && (!Static97.method1669(local121).aBoolean66 || Static1.aBoolean37)) {
+					if (local121 != -1 && (!Static97.method1669(local121).aBoolean66 || client.membersWorld)) {
 						for (local133 = 0; local133 < local116.anIntArray331.length; local133++) {
 							if (local121 + 1 == local116.anIntArray331[local133]) {
 								local33 = 999999999;
@@ -201,9 +201,9 @@ public final class Static99 {
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(III)V", line = 353)
 	public static void method1661(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(11) long local11 = (long) ((arg0 << 1171938384) + arg1);
-		@Pc(17) Js5NetRequest local17 = (Js5NetRequest) Static1.aClass6_7.method190(local11);
+		@Pc(17) Js5NetRequest local17 = (Js5NetRequest) Static1.aClass6_7.get(local11);
 		if (local17 != null) {
-			Static1.aClass41_1.method1204(local17);
+			Static1.aClass41_1.addTail(local17);
 		}
 	}
 

@@ -95,7 +95,7 @@ public final class NewMidiAudioBuss extends MidiPcmStream implements Runnable {
 				Static86.sleep(100L);
 			}
 		} catch (@Pc(24) Exception local24) {
-			Static36.method727(null, local24);
+			JagException.report(null, local24);
 		}
 	}
 

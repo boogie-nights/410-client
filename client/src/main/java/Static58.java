@@ -20,7 +20,7 @@ public final class Static58 {
 		@Pc(9) LinkList local9 = Static1.aClass44_2;
 		synchronized (Static1.aClass44_2) {
 			for (@Pc(16) Js5CacheRequest local16 = (Js5CacheRequest) Static1.aClass44_2.head(); local16 != null; local16 = (Js5CacheRequest) Static1.aClass44_2.next()) {
-				if ((long) arg2 == local16.aLong152 && arg1 == local16.cache && local16.type == 0) {
+				if ((long) arg2 == local16.key && arg1 == local16.cache && local16.type == 0) {
 					local7 = local16.data;
 					break;
 				}

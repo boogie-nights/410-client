@@ -15,12 +15,6 @@ public final class Static29 {
 		Static1.aClass47_7.method1330();
 	}
 
-	@OriginalMember(owner = "client!g", name = "a", descriptor = "(Z)V", line = 39)
-	public static void method1676() {
-		Static1.lowDetail = true;
-		World3D.aBoolean163 = true;
-	}
-
 	@OriginalMember(owner = "client!g", name = "b", descriptor = "(I)V", line = 97)
 	public static void method1678() {
 		Static69.aByteArrayArrayArray9 = null;

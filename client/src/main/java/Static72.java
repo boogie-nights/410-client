@@ -22,7 +22,7 @@ public final class Static72 {
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(IIIII)I", line = 43)
 	public static int method1326(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(12) int local12 = 65536 - Draw3D.anIntArray58[arg0 * 1024 / arg2] >> 688514529;
+		@Pc(12) int local12 = 65536 - Draw3D.cos[arg0 * 1024 / arg2] >> 688514529;
 		return ((65536 - local12) * arg1 >> 16) + (local12 * arg3 >> 16);
 	}
 

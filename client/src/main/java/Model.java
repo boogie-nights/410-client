@@ -19,7 +19,7 @@ public final class Model extends Entity {
 	public static int anInt1747 = 0;
 
 	@OriginalMember(owner = "client!ne", name = "Tb", descriptor = "[I")
-	public static int[] anIntArray386 = Draw3D.anIntArray59;
+	public static int[] anIntArray386 = Draw3D.sin;
 
 	@OriginalMember(owner = "client!ne", name = "cc", descriptor = "[I")
 	public static int[] anIntArray393 = new int[10];
@@ -28,7 +28,7 @@ public final class Model extends Entity {
 	public static int[] anIntArray390 = new int[4096];
 
 	@OriginalMember(owner = "client!ne", name = "fc", descriptor = "[I")
-	public static int[] anIntArray395 = Draw3D.anIntArray61;
+	public static int[] anIntArray395 = Draw3D.reciprocal16;
 
 	@OriginalMember(owner = "client!ne", name = "ac", descriptor = "[I")
 	public static int[] anIntArray391 = new int[1500];
@@ -76,7 +76,7 @@ public final class Model extends Entity {
 	public static int[] anIntArray389 = new int[4096];
 
 	@OriginalMember(owner = "client!ne", name = "pc", descriptor = "[I")
-	public static int[] anIntArray402 = Draw3D.anIntArray58;
+	public static int[] anIntArray402 = Draw3D.cos;
 
 	@OriginalMember(owner = "client!ne", name = "Ub", descriptor = "I")
 	public static int anInt1748 = 0;

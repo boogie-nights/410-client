@@ -171,7 +171,7 @@ public final class Static98 {
 									}
 								}
 							}
-							if (JagString.aClass40_451.method1184(JagString.aClass40_62) && Static1.anInt2132 == 2) {
+							if (JagString.aClass40_451.method1184(JagString.aClass40_62) && client.modeWhere == 2) {
 								throw new RuntimeException();
 							}
 							if (JagString.aClass40_451.method1184(JagString.aClass40_360)) {

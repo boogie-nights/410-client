@@ -51,22 +51,22 @@ public final class Static3 {
 		@Pc(35) int local35;
 		@Pc(39) int local39;
 		@Pc(43) int local43;
-		if (Static1.packetType == 35) {
-			local12 = Static1.in.g1();
+		if (client.packetType == 35) {
+			local12 = client.in.g1();
 			local19 = Static83.baseZ + (local12 & 0x7);
 			local27 = Static87.baseX + (local12 >> 4 & 0x7);
-			local31 = Static1.in.g1();
+			local31 = client.in.g1();
 			local35 = local31 >> 2;
 			local39 = local31 & 0x3;
 			local43 = Static1.anIntArray416[local35];
 			if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
 				Static21.method1727(0, Static1.currentLevel, local43, local39, local35, -1, local19, -1, local27);
 			}
-		} else if (Static1.packetType == 46) {
-			local12 = Static1.in.g2_alt2();
-			local27 = Static1.in.g2_alt1();
-			local19 = Static1.in.g2_alt3();
-			local31 = Static1.in.g1_alt2();
+		} else if (client.packetType == 46) {
+			local12 = client.in.g2_alt2();
+			local27 = client.in.g2_alt1();
+			local19 = client.in.g2_alt3();
+			local31 = client.in.g1_alt2();
 			local39 = Static83.baseZ + (local31 & 0x7);
 			local35 = (local31 >> 4 & 0x7) + Static87.baseX;
 			if (local35 >= 0 && local39 >= 0 && local35 < 104 && local39 < 104 && local27 != Static1.anInt1955) {
@@ -79,13 +79,13 @@ public final class Static3 {
 				Static1.levelObjStacks[Static1.currentLevel][local35][local39].addTail(local131);
 				Static75.sortObjStacks(local39, local35);
 			}
-		} else if (Static1.packetType == 63) {
-			local12 = Static1.in.g1();
+		} else if (client.packetType == 63) {
+			local12 = client.in.g1();
 			local27 = (local12 >> 4 & 0x7) + Static87.baseX;
 			local19 = Static83.baseZ + (local12 & 0x7);
-			local31 = Static1.in.g2();
-			local35 = Static1.in.g2();
-			local39 = Static1.in.g2();
+			local31 = client.in.g2();
+			local35 = client.in.g2();
+			local39 = client.in.g2();
 			if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
 				@Pc(230) LinkList local230 = Static1.levelObjStacks[Static1.currentLevel][local27][local19];
 				if (local230 != null) {
@@ -99,12 +99,12 @@ public final class Static3 {
 				}
 			}
 		} else {
-			if (Static1.packetType == 118) {
-				local12 = Static1.in.g1();
+			if (client.packetType == 118) {
+				local12 = client.in.g1();
 				local27 = (local12 >> 4 & 0x7) + Static87.baseX;
 				local19 = Static83.baseZ + (local12 & 0x7);
-				local31 = Static1.in.g2();
-				local35 = Static1.in.g1();
+				local31 = client.in.g2();
+				local35 = client.in.g1();
 				local39 = local35 >> 4 & 0xF;
 				local43 = local35 & 0x7;
 				if (local27 - local39 <= Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0] && Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0] <= local39 + local27 && Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0] >= local19 - local39 && Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0] <= local19 + local39 && Static1.anInt2372 != 0 && local43 > 0 && Static1.anInt131 < 50) {
@@ -116,12 +116,12 @@ public final class Static3 {
 				}
 			}
 			@Pc(425) int local425;
-			if (Static1.packetType == 244) {
-				local12 = Static1.in.g2_alt3();
-				local27 = Static1.in.g1_alt3();
+			if (client.packetType == 244) {
+				local12 = client.in.g2_alt3();
+				local27 = client.in.g1_alt3();
 				local31 = Static83.baseZ + (local27 & 0x7);
 				local19 = (local27 >> 4 & 0x7) + Static87.baseX;
-				local35 = Static1.in.g1_alt2();
+				local35 = client.in.g1_alt2();
 				local43 = local35 & 0x3;
 				local39 = local35 >> 2;
 				local425 = Static1.anIntArray416[local39];
@@ -131,22 +131,22 @@ public final class Static3 {
 			} else {
 				@Pc(503) int local503;
 				@Pc(523) int local523;
-				if (Static1.packetType == 21) {
-					local12 = Static1.in.g2_alt1();
-					local27 = Static1.in.g1_alt1();
+				if (client.packetType == 21) {
+					local12 = client.in.g2_alt1();
+					local27 = client.in.g1_alt1();
 					local19 = (local27 >> 4 & 0x7) + Static87.baseX;
 					local31 = Static83.baseZ + (local27 & 0x7);
-					local35 = Static1.in.g2_alt2();
-					local39 = Static1.in.g1_alt1();
+					local35 = client.in.g2_alt2();
+					local39 = client.in.g1_alt1();
 					local43 = local39 >> 2;
 					local425 = local39 & 0x3;
 					local503 = Static1.anIntArray416[local43];
-					@Pc(507) byte local507 = Static1.in.g1b_alt3();
-					@Pc(511) byte local511 = Static1.in.g1b_alt2();
-					@Pc(515) byte local515 = Static1.in.g1b();
-					@Pc(519) byte local519 = Static1.in.g1b_alt2();
-					local523 = Static1.in.g2_alt1();
-					@Pc(527) int local527 = Static1.in.g2_alt3();
+					@Pc(507) byte local507 = client.in.g1b_alt3();
+					@Pc(511) byte local511 = client.in.g1b_alt2();
+					@Pc(515) byte local515 = client.in.g1b();
+					@Pc(519) byte local519 = client.in.g1b_alt2();
+					local523 = client.in.g2_alt1();
+					@Pc(527) int local527 = client.in.g2_alt3();
 					@Pc(536) PlayerEntity local536;
 					if (Static1.anInt1955 == local12) {
 						local536 = Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1;
@@ -193,12 +193,12 @@ public final class Static3 {
 					}
 				}
 				@Pc(771) ObjStackEntity local771;
-				if (Static1.packetType == 56) {
-					local12 = Static1.in.g2_alt1();
-					local27 = Static1.in.g1_alt2();
+				if (client.packetType == 56) {
+					local12 = client.in.g2_alt1();
+					local27 = client.in.g1_alt2();
 					local19 = Static87.baseX + (local27 >> 4 & 0x7);
 					local31 = Static83.baseZ + (local27 & 0x7);
-					local35 = Static1.in.g2_alt3();
+					local35 = client.in.g2_alt3();
 					if (local19 >= 0 && local31 >= 0 && local19 < 104 && local31 < 104) {
 						local771 = new ObjStackEntity();
 						local771.anInt1495 = local35;
@@ -209,30 +209,30 @@ public final class Static3 {
 						Static1.levelObjStacks[Static1.currentLevel][local19][local31].addTail(local771);
 						Static75.sortObjStacks(local31, local19);
 					}
-				} else if (Static1.packetType == 135) {
-					local12 = Static1.in.g1();
+				} else if (client.packetType == 135) {
+					local12 = client.in.g1();
 					local27 = Static87.baseX + (local12 >> 4 & 0x7);
 					local19 = (local12 & 0x7) + Static83.baseZ;
-					local31 = Static1.in.g2();
-					local35 = Static1.in.g1();
-					local39 = Static1.in.g2();
+					local31 = client.in.g2();
+					local35 = client.in.g1();
+					local39 = client.in.g2();
 					if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
 						local19 = local19 * 128 + 64;
 						local27 = local27 * 128 + 64;
 						@Pc(893) SpotAnimEntity local893 = new SpotAnimEntity(local31, Static1.currentLevel, local27, local19, Static78.method1383(Static1.currentLevel, local27, local19) - local35, local39, Static1.anInt2511);
 						Static1.aClass44_8.addTail(local893);
 					}
-				} else if (Static1.packetType == 221) {
-					local12 = Static1.in.g1_alt1();
+				} else if (client.packetType == 221) {
+					local12 = client.in.g1_alt1();
 					local27 = (local12 >> 4 & 0x7) + Static87.baseX;
 					local19 = (local12 & 0x7) + Static83.baseZ;
-					local31 = Static1.in.g2();
+					local31 = client.in.g2();
 					if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
 						@Pc(950) LinkList local950 = Static1.levelObjStacks[Static1.currentLevel][local27][local19];
 						if (local950 != null) {
 							for (local771 = (ObjStackEntity) local950.head(); local771 != null; local771 = (ObjStackEntity) local950.next()) {
 								if (local771.anInt1490 == (local31 & 0x7FFF)) {
-									local771.method1677();
+									local771.unlink();
 									break;
 								}
 							}
@@ -246,20 +246,20 @@ public final class Static3 {
 					@Pc(1060) int local1060;
 					@Pc(1064) int local1064;
 					@Pc(1068) int local1068;
-					if (Static1.packetType == 69) {
-						local12 = Static1.in.g1();
+					if (client.packetType == 69) {
+						local12 = client.in.g1();
 						local27 = Static87.baseX + (local12 >> 4 & 0x7);
 						local19 = (local12 & 0x7) + Static83.baseZ;
-						local31 = local27 + Static1.in.g1b();
-						local35 = local19 + Static1.in.g1b();
-						local39 = Static1.in.g2s();
-						local43 = Static1.in.g2();
-						local425 = Static1.in.g1() * 4;
-						local503 = Static1.in.g1() * 4;
-						local1060 = Static1.in.g2();
-						local1064 = Static1.in.g2();
-						local1068 = Static1.in.g1();
-						@Pc(1072) int local1072 = Static1.in.g1();
+						local31 = local27 + client.in.g1b();
+						local35 = local19 + client.in.g1b();
+						local39 = client.in.g2s();
+						local43 = client.in.g2();
+						local425 = client.in.g1() * 4;
+						local503 = client.in.g1() * 4;
+						local1060 = client.in.g2();
+						local1064 = client.in.g2();
+						local1068 = client.in.g1();
+						@Pc(1072) int local1072 = client.in.g1();
 						if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104 && local31 >= 0 && local35 >= 0 && local31 < 104 && local35 < 104 && local43 != 65535) {
 							local35 = local35 * 128 + 64;
 							local27 = local27 * 128 + 64;
@@ -269,13 +269,13 @@ public final class Static3 {
 							local1164.method939(local31, Static78.method1383(Static1.currentLevel, local31, local35) - local503, Static1.anInt2511 + local1060, local35);
 							Static1.aClass44_4.addTail(local1164);
 						}
-					} else if (Static1.packetType == 129) {
-						local12 = Static1.in.g2_alt3();
-						local27 = Static1.in.g1_alt3();
+					} else if (client.packetType == 129) {
+						local12 = client.in.g2_alt3();
+						local27 = client.in.g1_alt3();
 						local19 = local27 >> 2;
 						local31 = local27 & 0x3;
 						local35 = Static1.anIntArray416[local19];
-						local39 = Static1.in.g1_alt1();
+						local39 = client.in.g1_alt1();
 						local425 = Static83.baseZ + (local39 & 0x7);
 						local43 = Static87.baseX + (local39 >> 4 & 0x7);
 						if (local43 >= 0 && local425 >= 0 && local43 < 103 && local425 < 103) {

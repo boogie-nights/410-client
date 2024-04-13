@@ -28,17 +28,17 @@ public final class Static80 {
 	public static void method1406() {
 		Static1.anInt2328 = 0;
 		Static1.anInt986 = 0;
-		Static1.anInt788 = -1;
-		Static1.anInt2352 = -1;
+		client.lastPacketType0 = -1;
+		client.lastPacketType1 = -1;
 		Static1.aClass2_Sub3_Sub1_4.pos = 0;
-		Static1.anInt231 = 0;
-		Static1.packetType = -1;
+		client.idleNetCycles = 0;
+		client.packetType = -1;
 		Static1.anInt1973 = 0;
 		Static1.anInt797 = 0;
-		Static1.anInt785 = 0;
-		Static1.anInt1986 = -1;
+		client.packetSize = 0;
+		client.lastPacketType2 = -1;
 		Static1.aBoolean175 = false;
-		Static1.in.pos = 0;
+		client.in.pos = 0;
 		Static7.method187(30);
 	}
 

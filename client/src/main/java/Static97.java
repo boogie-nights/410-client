@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static97 {
 
 	@OriginalMember(owner = "client!wb", name = "c", descriptor = "Lclient!d;")
-	public static BufferedFile aClass14_5;
+	public static BufferedFile cacheMasterIndex;
 
 	@OriginalMember(owner = "client!wb", name = "m", descriptor = "I")
 	public static int anInt2526;
@@ -14,7 +14,7 @@ public final class Static97 {
 	public static byte[][] aByteArrayArray12;
 
 	@OriginalMember(owner = "client!wb", name = "q", descriptor = "Lclient!k;")
-	public static ViewBox aCanvas_Sub1_1;
+	public static ViewBox frame;
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(ZZI)I", line = 5)
 	public static int method1668() {
@@ -50,7 +50,7 @@ public final class Static97 {
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(I)V", line = 64)
 	public static void method1670() {
-		aCanvas_Sub1_1 = null;
+		frame = null;
 		JagString.aClass40_726 = null;
 		Static1.aClass6_7 = null;
 		JagString.aClass40_728 = null;
@@ -58,7 +58,7 @@ public final class Static97 {
 		JagString.aClass40_727 = null;
 		JagString.aClass40_729 = null;
 		aByteArrayArray12 = null;
-		aClass14_5 = null;
+		cacheMasterIndex = null;
 	}
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(B)V", line = 82)
@@ -69,17 +69,17 @@ public final class Static97 {
 		Static89.aBoolean174 = true;
 		Static41.aClass52_1.samples = 0;
 		Static92.method1584();
-		Static1.anInt231 = 0;
-		Static1.anInt1986 = -1;
+		client.idleNetCycles = 0;
+		client.lastPacketType2 = -1;
 		Static1.aClass2_Sub3_Sub1_4.pos = 0;
-		Static1.packetType = -1;
-		Static1.in.pos = 0;
+		client.packetType = -1;
+		client.in.pos = 0;
 		Static1.aBoolean175 = false;
-		Static1.anInt2352 = -1;
+		client.lastPacketType1 = -1;
 		Static1.anInt1973 = 0;
 		Static1.anInt1672 = 0;
 		Static1.anInt797 = 0;
-		Static1.anInt788 = -1;
+		client.lastPacketType0 = -1;
 		Static1.anInt2139 = 0;
 		Static35.method722(0);
 		for (@Pc(1645) int local1645 = 0; local1645 < 100; local1645++) {

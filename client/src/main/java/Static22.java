@@ -29,8 +29,8 @@ public final class Static22 {
 
 	@OriginalMember(owner = "client!ec", name = "e", descriptor = "(B)V", line = 104)
 	public static void method477() {
-		Static1.in.bits();
-		@Pc(13) int local13 = Static1.in.gBit(8);
+		client.in.bits();
+		@Pc(13) int local13 = client.in.gBit(8);
 		if (Static1.anInt1800 > local13) {
 			for (@Pc(18) int local18 = local13; local18 < Static1.anInt1800; local18++) {
 				Static1.anIntArray258[Static1.anInt304++] = Static1.anIntArray326[local18];
@@ -43,12 +43,12 @@ public final class Static22 {
 		for (@Pc(62) int local62 = 0; local62 < local13; local62++) {
 			@Pc(68) int local68 = Static1.anIntArray326[local62];
 			@Pc(72) NpcEntity local72 = Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local68];
-			@Pc(77) int local77 = Static1.in.gBit(1);
+			@Pc(77) int local77 = client.in.gBit(1);
 			if (local77 == 0) {
 				Static1.anIntArray326[Static1.anInt1800++] = local68;
 				local72.anInt2274 = Static1.anInt2511;
 			} else {
-				@Pc(97) int local97 = Static1.in.gBit(2);
+				@Pc(97) int local97 = client.in.gBit(2);
 				if (local97 == 0) {
 					Static1.anIntArray326[Static1.anInt1800++] = local68;
 					local72.anInt2274 = Static1.anInt2511;
@@ -59,20 +59,20 @@ public final class Static22 {
 					if (local97 == 1) {
 						Static1.anIntArray326[Static1.anInt1800++] = local68;
 						local72.anInt2274 = Static1.anInt2511;
-						local139 = Static1.in.gBit(3);
+						local139 = client.in.gBit(3);
 						local72.method1547(local139, false);
-						local149 = Static1.in.gBit(1);
+						local149 = client.in.gBit(1);
 						if (local149 == 1) {
 							Static1.anIntArray504[Static1.anInt1190++] = local68;
 						}
 					} else if (local97 == 2) {
 						Static1.anIntArray326[Static1.anInt1800++] = local68;
 						local72.anInt2274 = Static1.anInt2511;
-						local139 = Static1.in.gBit(3);
+						local139 = client.in.gBit(3);
 						local72.method1547(local139, true);
-						local149 = Static1.in.gBit(3);
+						local149 = client.in.gBit(3);
 						local72.method1547(local149, true);
-						@Pc(203) int local203 = Static1.in.gBit(1);
+						@Pc(203) int local203 = client.in.gBit(1);
 						if (local203 == 1) {
 							Static1.anIntArray504[Static1.anInt1190++] = local68;
 						}

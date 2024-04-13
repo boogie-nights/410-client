@@ -62,7 +62,7 @@ public final class Static43 {
 
 	@OriginalMember(owner = "client!ja", name = "d", descriptor = "(I)V", line = 120)
 	public static void method1636() {
-		@Pc(10) int local10 = Static1.in.gBit(8);
+		@Pc(10) int local10 = client.in.gBit(8);
 		@Pc(20) int local20;
 		if (Static1.anInt2067 > local10) {
 			for (local20 = local10; local20 < Static1.anInt2067; local20++) {
@@ -76,12 +76,12 @@ public final class Static43 {
 		for (local20 = 0; local20 < local10; local20++) {
 			@Pc(62) int local62 = Static1.anIntArray408[local20];
 			@Pc(66) PlayerEntity local66 = Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local62];
-			@Pc(71) int local71 = Static1.in.gBit(1);
+			@Pc(71) int local71 = client.in.gBit(1);
 			if (local71 == 0) {
 				Static1.anIntArray408[Static1.anInt2067++] = local62;
 				local66.anInt2274 = Static1.anInt2511;
 			} else {
-				@Pc(91) int local91 = Static1.in.gBit(2);
+				@Pc(91) int local91 = client.in.gBit(2);
 				if (local91 == 0) {
 					Static1.anIntArray408[Static1.anInt2067++] = local62;
 					local66.anInt2274 = Static1.anInt2511;
@@ -92,20 +92,20 @@ public final class Static43 {
 					if (local91 == 1) {
 						Static1.anIntArray408[Static1.anInt2067++] = local62;
 						local66.anInt2274 = Static1.anInt2511;
-						local138 = Static1.in.gBit(3);
+						local138 = client.in.gBit(3);
 						local66.method1547(local138, false);
-						local148 = Static1.in.gBit(1);
+						local148 = client.in.gBit(1);
 						if (local148 == 1) {
 							Static1.anIntArray504[Static1.anInt1190++] = local62;
 						}
 					} else if (local91 == 2) {
 						Static1.anIntArray408[Static1.anInt2067++] = local62;
 						local66.anInt2274 = Static1.anInt2511;
-						local138 = Static1.in.gBit(3);
+						local138 = client.in.gBit(3);
 						local66.method1547(local138, true);
-						local148 = Static1.in.gBit(3);
+						local148 = client.in.gBit(3);
 						local66.method1547(local148, true);
-						@Pc(206) int local206 = Static1.in.gBit(1);
+						@Pc(206) int local206 = client.in.gBit(1);
 						if (local206 == 1) {
 							Static1.anIntArray504[Static1.anInt1190++] = local62;
 						}

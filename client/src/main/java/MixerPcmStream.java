@@ -141,7 +141,7 @@ public final class MixerPcmStream extends PcmStream {
 					this.method1295(local50);
 				} else {
 					local50.remaining = local58;
-					this.method1292(local50.aClass2_94, local50);
+					this.method1292(local50.next, local50);
 				}
 			}
 		} while (arg0 != 0);
@@ -150,10 +150,10 @@ public final class MixerPcmStream extends PcmStream {
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!g;Lclient!aa;)V", line = 215)
 	private void method1292(@OriginalArg(0) Linkable arg0, @OriginalArg(1) MixerListener arg1) {
 		while (arg0 != this.aClass44_5.aClass2_71 && ((MixerListener) arg0).remaining <= arg1.remaining) {
-			arg0 = arg0.aClass2_94;
+			arg0 = arg0.next;
 		}
 		this.aClass44_5.method1223(arg0, arg1);
-		this.anInt1884 = ((MixerListener) this.aClass44_5.aClass2_71.aClass2_94).remaining;
+		this.anInt1884 = ((MixerListener) this.aClass44_5.aClass2_71.next).remaining;
 	}
 
 	@OriginalMember(owner = "client!qa", name = "d", descriptor = "(I)V", line = 225)
@@ -196,7 +196,7 @@ public final class MixerPcmStream extends PcmStream {
 					this.method1295(local61);
 				} else {
 					local61.remaining = local69;
-					this.method1292(local61.aClass2_94, local61);
+					this.method1292(local61.next, local61);
 				}
 			}
 		} while (arg2 != 0);
@@ -205,9 +205,9 @@ public final class MixerPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!aa;)V", line = 298)
 	private void method1295(@OriginalArg(0) MixerListener arg0) {
-		arg0.method1677();
+		arg0.unlink();
 		arg0.onUnlink();
-		@Pc(9) Linkable local9 = this.aClass44_5.aClass2_71.aClass2_94;
+		@Pc(9) Linkable local9 = this.aClass44_5.aClass2_71.next;
 		if (local9 == this.aClass44_5.aClass2_71) {
 			this.anInt1884 = -1;
 		} else {

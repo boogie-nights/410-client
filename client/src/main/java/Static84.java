@@ -33,13 +33,13 @@ public final class Static84 {
 			Static32.method626();
 			return;
 		}
-		for (@Pc(27) int local27 = 0; local27 < 100 && Static2.method22(); local27++) {
+		for (@Pc(27) int local27 = 0; local27 < 100 && client.method22(); local27++) {
 		}
-		if (Static1.anInt1075 != 30 && Static1.anInt1075 != 35) {
+		if (client.state != 30 && client.state != 35) {
 			return;
 		}
 		@Pc(66) int local66;
-		if (Static1.aBoolean147 && Static1.anInt1075 == 30) {
+		if (Static1.aBoolean147 && client.state == 30) {
 			Static1.anInt2030 = 0;
 			Static1.anInt2170 = 0;
 			while (Static89.method1561()) {
@@ -167,13 +167,13 @@ public final class Static84 {
 			Static1.aClass2_Sub3_Sub1_4.p1(0);
 		}
 		Static71.method1277();
-		if (Static1.anInt1075 != 30 && Static1.anInt1075 != 35) {
+		if (client.state != 30 && client.state != 35) {
 			return;
 		}
 		Static68.method1209();
 		Static34.method637();
-		Static1.anInt231++;
-		if (Static1.anInt231 > 750) {
+		client.idleNetCycles++;
+		if (client.idleNetCycles > 750) {
 			Static32.method626();
 			return;
 		}
@@ -378,20 +378,14 @@ public final class Static84 {
 			Static1.aClass2_Sub3_Sub1_4.pIsaac1(217);
 		}
 		try {
-			if (Static64.aClass25_36 != null && Static1.aClass2_Sub3_Sub1_4.pos > 0) {
-				Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
+			if (client.stream != null && Static1.aClass2_Sub3_Sub1_4.pos > 0) {
+				client.stream.write(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
 				Static1.aClass2_Sub3_Sub1_4.pos = 0;
 				Static1.anInt2146 = 0;
 			}
 		} catch (@Pc(1235) IOException local1235) {
 			Static32.method626();
 		}
-	}
-
-	@OriginalMember(owner = "client!tb", name = "c", descriptor = "(I)V", line = 645)
-	public static void method1480() {
-		System.out.println("Usage: worldid, [live/office/local], [live/rc/wip], [lowmem/highmem], [free/members],");
-		System.exit(1);
 	}
 
 	@OriginalMember(owner = "client!tb", name = "c", descriptor = "(B)V", line = 761)

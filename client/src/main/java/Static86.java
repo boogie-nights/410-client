@@ -196,8 +196,8 @@ public final class Static86 {
 				Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28] = null;
 			}
 		}
-		if (Static1.in.pos != Static1.anInt785) {
-			throw new RuntimeException("gnp1 pos:" + Static1.in.pos + " psize:" + Static1.anInt785);
+		if (client.in.pos != client.packetSize) {
+			throw new RuntimeException("gnp1 pos:" + client.in.pos + " psize:" + client.packetSize);
 		}
 		for (local28 = 0; local28 < Static1.anInt1800; local28++) {
 			if (Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static1.anIntArray326[local28]] == null) {

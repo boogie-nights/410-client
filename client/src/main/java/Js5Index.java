@@ -16,7 +16,7 @@ public abstract class Js5Index {
 	private int[][] anIntArrayArray3;
 
 	@OriginalMember(owner = "client!ud", name = "n", descriptor = "Lclient!ma;")
-	private IntTreeMap aClass34_2;
+	private IntHashTable aClass34_2;
 
 	@OriginalMember(owner = "client!ud", name = "o", descriptor = "[I")
 	private int[] anIntArray12;
@@ -34,7 +34,7 @@ public abstract class Js5Index {
 	private byte[][][] aByteArrayArrayArray2;
 
 	@OriginalMember(owner = "client!ud", name = "K", descriptor = "[Lclient!ma;")
-	private IntTreeMap[] aClass34Array2;
+	private IntHashTable[] aClass34Array2;
 
 	@OriginalMember(owner = "client!ud", name = "L", descriptor = "[I")
 	protected int[] anIntArray15;
@@ -112,7 +112,7 @@ public abstract class Js5Index {
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(ZLclient!o;)V", line = 389)
 	public final void method63(@OriginalArg(1) JagString arg0) {
 		@Pc(7) JagString local7 = arg0.method1196();
-		@Pc(15) int local15 = this.aClass34_2.method1038(local7.method1190());
+		@Pc(15) int local15 = this.aClass34_2.get(local7.method1190());
 		if (local15 >= 0) {
 			this.method56(local15);
 		}
@@ -174,7 +174,7 @@ public abstract class Js5Index {
 			for (local124 = 0; local124 < this.anInt97; local124++) {
 				this.anIntArray12[this.anIntArray14[local124]] = local19.g4s();
 			}
-			this.aClass34_2 = new IntTreeMap(this.anIntArray12);
+			this.aClass34_2 = new IntHashTable(this.anIntArray12);
 		}
 		for (local124 = 0; local124 < this.anInt97; local124++) {
 			this.anIntArray16[this.anIntArray14[local124]] = local19.g4s();
@@ -207,7 +207,7 @@ public abstract class Js5Index {
 			return;
 		}
 		this.anIntArrayArray4 = new int[local31 + 1][];
-		this.aClass34Array2 = new IntTreeMap[local31 + 1];
+		this.aClass34Array2 = new IntHashTable[local31 + 1];
 		for (local220 = 0; local220 < this.anInt97; local220++) {
 			local227 = this.anIntArray14[local220];
 			local222 = this.anIntArray15[local227];
@@ -215,7 +215,7 @@ public abstract class Js5Index {
 			for (local235 = 0; local235 < local222; local235++) {
 				this.anIntArrayArray4[local227][this.anIntArrayArray3[local227][local235]] = local19.g4s();
 			}
-			this.aClass34Array2[local227] = new IntTreeMap(this.anIntArrayArray4[local227]);
+			this.aClass34Array2[local227] = new IntHashTable(this.anIntArrayArray4[local227]);
 		}
 	}
 
@@ -235,8 +235,8 @@ public abstract class Js5Index {
 	public final byte[] method69(@OriginalArg(0) JagString arg0, @OriginalArg(2) JagString arg1) {
 		@Pc(7) JagString local7 = arg0.method1196();
 		@Pc(11) JagString local11 = arg1.method1196();
-		@Pc(27) int local27 = this.aClass34_2.method1038(local7.method1190());
-		@Pc(37) int local37 = this.aClass34Array2[local27].method1038(local11.method1190());
+		@Pc(27) int local27 = this.aClass34_2.get(local7.method1190());
+		@Pc(37) int local37 = this.aClass34Array2[local27].get(local11.method1190());
 		return this.fetchFile(local37, local27);
 	}
 
@@ -248,15 +248,15 @@ public abstract class Js5Index {
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(ZLclient!o;I)I", line = 683)
 	public final int method72(@OriginalArg(1) JagString arg0, @OriginalArg(2) int arg1) {
 		@Pc(12) JagString local12 = arg0.method1196();
-		return this.aClass34Array2[arg1].method1038(local12.method1190());
+		return this.aClass34Array2[arg1].get(local12.method1190());
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(Lclient!o;ILclient!o;)Z", line = 699)
 	public final boolean method73(@OriginalArg(0) JagString arg0, @OriginalArg(2) JagString arg1) {
 		@Pc(7) JagString local7 = arg1.method1196();
 		@Pc(13) JagString local13 = arg0.method1196();
-		@Pc(25) int local25 = this.aClass34_2.method1038(local7.method1190());
-		@Pc(35) int local35 = this.aClass34Array2[local25].method1038(local13.method1190());
+		@Pc(25) int local25 = this.aClass34_2.get(local7.method1190());
+		@Pc(35) int local35 = this.aClass34Array2[local25].get(local13.method1190());
 		return this.method64(local35, local25);
 	}
 
@@ -359,7 +359,7 @@ public abstract class Js5Index {
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(BLclient!o;)I", line = 954)
 	public final int method80(@OriginalArg(1) JagString arg0) {
 		@Pc(14) JagString local14 = arg0.method1196();
-		return this.aClass34_2.method1038(local14.method1190());
+		return this.aClass34_2.get(local14.method1190());
 	}
 
 	@OriginalMember(owner = "client!ud", name = "b", descriptor = "(BI)[I", line = 972)

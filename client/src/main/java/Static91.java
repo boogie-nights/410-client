@@ -10,9 +10,6 @@ public final class Static91 {
 	@OriginalMember(owner = "client!ud", name = "bb", descriptor = "[Lclient!vb;")
 	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array2;
 
-	@OriginalMember(owner = "client!ud", name = "cb", descriptor = "Lclient!bb;")
-	public static SignLink aClass7_2;
-
 	@OriginalMember(owner = "client!ud", name = "db", descriptor = "I")
 	public static int anInt120;
 
@@ -30,18 +27,18 @@ public final class Static91 {
 		@Pc(140) int local140;
 		@Pc(148) int local148;
 		if (!Static1.aBoolean87) {
-			local19 = Static1.in.g2_alt1();
-			local26 = (Static1.anInt785 - Static1.in.pos) / 16;
+			local19 = client.in.g2_alt1();
+			local26 = (client.packetSize - client.in.pos) / 16;
 			Static78.anIntArrayArray20 = new int[local26][4];
 			for (local32 = 0; local32 < local26; local32++) {
 				for (local36 = 0; local36 < 4; local36++) {
-					Static78.anIntArrayArray20[local32][local36] = Static1.in.g4s();
+					Static78.anIntArrayArray20[local32][local36] = client.in.g4s();
 				}
 			}
-			local36 = Static1.in.g2_alt1();
-			local62 = Static1.in.g2_alt1();
-			local66 = Static1.in.g1_alt3();
-			local72 = Static1.in.g2();
+			local36 = client.in.g2_alt1();
+			local62 = client.in.g2_alt1();
+			local66 = client.in.g1_alt3();
+			local72 = client.in.g2();
 			Static97.aByteArrayArray12 = new byte[local26][];
 			Static53.anIntArray311 = new int[local26];
 			@Pc(80) boolean local80 = false;
@@ -69,32 +66,32 @@ public final class Static91 {
 			Static74.method1343(local72, local66, local19, local62, local36);
 			return;
 		}
-		local19 = Static1.in.g2_alt2();
-		Static1.in.bits();
+		local19 = client.in.g2_alt2();
+		client.in.bits();
 		for (local26 = 0; local26 < 4; local26++) {
 			for (local32 = 0; local32 < 13; local32++) {
 				for (local36 = 0; local36 < 13; local36++) {
-					local62 = Static1.in.gBit(1);
+					local62 = client.in.gBit(1);
 					if (local62 == 1) {
-						Static1.anIntArrayArrayArray2[local26][local32][local36] = Static1.in.gBit(26);
+						Static1.anIntArrayArrayArray2[local26][local32][local36] = client.in.gBit(26);
 					} else {
 						Static1.anIntArrayArrayArray2[local26][local32][local36] = -1;
 					}
 				}
 			}
 		}
-		Static1.in.bytes();
-		local32 = (Static1.anInt785 - Static1.in.pos) / 16;
+		client.in.bytes();
+		local32 = (client.packetSize - client.in.pos) / 16;
 		Static78.anIntArrayArray20 = new int[local32][4];
 		for (local36 = 0; local36 < local32; local36++) {
 			for (local62 = 0; local62 < 4; local62++) {
-				Static78.anIntArrayArray20[local36][local62] = Static1.in.g4s_alt2();
+				Static78.anIntArrayArray20[local36][local62] = client.in.g4s_alt2();
 			}
 		}
-		local62 = Static1.in.g1_alt3();
-		local66 = Static1.in.g2_alt3();
-		local72 = Static1.in.g2_alt2();
-		@Pc(394) int local394 = Static1.in.g2_alt3();
+		local62 = client.in.g1_alt3();
+		local66 = client.in.g2_alt3();
+		local72 = client.in.g2_alt2();
+		@Pc(394) int local394 = client.in.g2_alt3();
 		Static50.anIntArray299 = new int[local32];
 		Static46.anIntArray256 = new int[local32];
 		Static97.aByteArrayArray12 = new byte[local32][];
@@ -138,7 +135,7 @@ public final class Static91 {
 		Static1.anObject2 = null;
 		Static1.anIntArray13 = null;
 		JagString.aClass40_24 = null;
-		aClass7_2 = null;
+		GameShell.signlink = null;
 		Static1.anIntArrayArrayArray2 = null;
 		JagString.aClass40_28 = null;
 		aClass2_Sub2_Sub2_Sub4Array2 = null;

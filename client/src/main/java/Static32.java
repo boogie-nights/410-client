@@ -26,7 +26,7 @@ public final class Static32 {
 	@OriginalMember(owner = "client!gd", name = "c", descriptor = "(B)V", line = 56)
 	public static void method622() {
 		aClass5_11 = null;
-		Static1.aClass14Array2 = null;
+		Static1.legacyCacheIndex = null;
 		JagString.aClass40_246 = null;
 	}
 
@@ -64,28 +64,28 @@ public final class Static32 {
 				@Pc(58) Js5NetRequest local58;
 				@Pc(63) Packet local63;
 				while (Static1.anInt2333 < 20 && Static1.anInt34 > 0) {
-					local58 = (Js5NetRequest) Static1.aClass6_6.method184();
+					local58 = (Js5NetRequest) Static1.aClass6_6.head();
 					local63 = new Packet(4);
 					local63.p1(1);
-					local63.p3((int) local58.aLong152);
-					Static29.aClass25_48.method731(local63.data, 4);
-					Static1.aClass6_5.method195(local58, local58.aLong152);
+					local63.p3((int) local58.key);
+					Static29.aClass25_48.write(local63.data, 4);
+					Static1.aClass6_5.put(local58, local58.key);
 					Static1.anInt34--;
 					Static1.anInt2333++;
 				}
 				while (Static1.anInt2182 < 20 && Static1.anInt1077 > 0) {
-					local58 = (Js5NetRequest) Static1.aClass41_1.method1203();
+					local58 = (Js5NetRequest) Static1.aClass41_1.next();
 					local63 = new Packet(4);
 					local63.p1(0);
-					local63.p3((int) local58.aLong152);
-					Static29.aClass25_48.method731(local63.data, 4);
-					local58.method1637();
-					Static1.aClass6_2.method195(local58, local58.aLong152);
+					local63.p3((int) local58.key);
+					Static29.aClass25_48.write(local63.data, 4);
+					local58.uncache();
+					Static1.aClass6_2.put(local58, local58.key);
 					Static1.anInt1077--;
 					Static1.anInt2182++;
 				}
 				for (@Pc(159) int local159 = 0; local159 < 100; local159++) {
-					@Pc(165) int local165 = Static29.aClass25_48.method728();
+					@Pc(165) int local165 = Static29.aClass25_48.available();
 					if (local165 < 0) {
 						throw new IOException();
 					}
@@ -108,7 +108,7 @@ public final class Static32 {
 						if (local165 < local201) {
 							local201 = local165;
 						}
-						Static29.aClass25_48.method725(Static1.aClass2_Sub3_5.pos, local201, Static1.aClass2_Sub3_5.data);
+						Static29.aClass25_48.read(Static1.aClass2_Sub3_5.pos, local201, Static1.aClass2_Sub3_5.data);
 						if (Static1.aByte1 != 0) {
 							for (local218 = 0; local218 < local201; local218++) {
 								Static1.aClass2_Sub3_5.data[local218 + Static1.aClass2_Sub3_5.pos] ^= Static1.aByte1;
@@ -125,10 +125,10 @@ public final class Static32 {
 							@Pc(276) int local276 = Static1.aClass2_Sub3_5.g1();
 							local280 = Static1.aClass2_Sub3_5.g4s();
 							@Pc(287) long local287 = (long) ((local218 << 16) + local272);
-							@Pc(293) Js5NetRequest local293 = (Js5NetRequest) Static1.aClass6_5.method190(local287);
+							@Pc(293) Js5NetRequest local293 = (Js5NetRequest) Static1.aClass6_5.get(local287);
 							Static85.aBoolean166 = true;
 							if (local293 == null) {
-								local293 = (Js5NetRequest) Static1.aClass6_2.method190(local287);
+								local293 = (Js5NetRequest) Static1.aClass6_2.get(local287);
 								Static85.aBoolean166 = false;
 							}
 							if (local293 == null) {
@@ -158,7 +158,7 @@ public final class Static32 {
 						if (local165 < local218) {
 							local218 = local165;
 						}
-						Static29.aClass25_48.method725(Static27.aClass2_Sub3_2.pos, local218, Static27.aClass2_Sub3_2.data);
+						Static29.aClass25_48.read(Static27.aClass2_Sub3_2.pos, local218, Static27.aClass2_Sub3_2.data);
 						if (Static1.aByte1 != 0) {
 							for (local272 = 0; local272 < local218; local272++) {
 								Static27.aClass2_Sub3_2.data[local272 + Static27.aClass2_Sub3_2.pos] ^= Static1.aByte1;
@@ -167,7 +167,7 @@ public final class Static32 {
 						Static27.aClass2_Sub3_2.pos += local218;
 						Static1.anInt274 += local218;
 						if (local201 == Static27.aClass2_Sub3_2.pos) {
-							if (Static82.aClass2_Sub2_Sub9_1.aLong152 == 16711935L) {
+							if (Static82.aClass2_Sub2_Sub9_1.key == 16711935L) {
 								Static39.aClass2_Sub3_3 = Static27.aClass2_Sub3_2;
 								for (local272 = 0; local272 < 256; local272++) {
 									@Pc(482) Js5 local482 = Static1.aClass5_Sub1Array1[local272];
@@ -193,9 +193,9 @@ public final class Static32 {
 								}
 								Static1.anInt1792 = 0;
 								Static1.anInt2401 = 0;
-								Static82.aClass2_Sub2_Sub9_1.js5.method91(Static27.aClass2_Sub3_2.data, Static85.aBoolean166, (Static82.aClass2_Sub2_Sub9_1.aLong152 & 0xFF0000L) == 16711680L, (int) (Static82.aClass2_Sub2_Sub9_1.aLong152 & 0xFFFFL));
+								Static82.aClass2_Sub2_Sub9_1.js5.method91(Static27.aClass2_Sub3_2.data, Static85.aBoolean166, (Static82.aClass2_Sub2_Sub9_1.key & 0xFF0000L) == 16711680L, (int) (Static82.aClass2_Sub2_Sub9_1.key & 0xFFFFL));
 							}
-							Static82.aClass2_Sub2_Sub9_1.method1677();
+							Static82.aClass2_Sub2_Sub9_1.unlink();
 							Static27.aClass2_Sub3_2 = null;
 							Static1.anInt274 = 0;
 							Static82.aClass2_Sub2_Sub9_1 = null;
@@ -231,7 +231,7 @@ public final class Static32 {
 			Static56.method1039();
 		} else {
 			Static7.method187(40);
-			Static34.aClass25_20 = Static64.aClass25_36;
+			Static34.aClass25_20 = client.stream;
 		}
 	}
 }

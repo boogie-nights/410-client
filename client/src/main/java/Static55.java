@@ -44,7 +44,7 @@ public final class Static55 {
 		if (arg0 == 0) {
 			local14 = (Pix24) Static1.aClass47_7.method1325((long) arg2);
 			if (local14 != null && local14.anInt2443 != arg1 && local14.anInt2443 != -1) {
-				local14.method1677();
+				local14.unlink();
 				local14 = null;
 			}
 			if (local14 != null) {
@@ -97,8 +97,8 @@ public final class Static55 {
 		if (arg0 > 0) {
 			local164 = (int) ((double) local164 * 1.04D);
 		}
-		@Pc(193) int local193 = Draw3D.anIntArray58[local40.anInt952] * local164 >> 16;
-		@Pc(202) int local202 = local164 * Draw3D.anIntArray59[local40.anInt952] >> 16;
+		@Pc(193) int local193 = Draw3D.cos[local40.anInt952] * local164 >> 16;
+		@Pc(202) int local202 = local164 * Draw3D.sin[local40.anInt952] >> 16;
 		local101.method1135();
 		local101.method1151(local40.anInt918, local40.anInt937, local40.anInt952, local40.anInt946, local202 + local101.anInt2265 / 2 + local40.anInt960, local193 + local40.anInt960);
 		for (@Pc(230) int local230 = 31; local230 >= 0; local230--) {

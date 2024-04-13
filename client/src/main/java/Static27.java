@@ -13,7 +13,7 @@ public final class Static27 {
 	public static PixMap aClass45_14;
 
 	@OriginalMember(owner = "client!fd", name = "i", descriptor = "Lclient!hc;")
-	public static ClientStream aClass25_15;
+	public static ClientStream js5Stream;
 
 	@OriginalMember(owner = "client!fd", name = "l", descriptor = "[Lclient!vb;")
 	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array4;
@@ -25,7 +25,7 @@ public final class Static27 {
 		aClass45_14 = null;
 		aClass2_Sub3_2 = null;
 		JagString.aClass40_218 = null;
-		aClass25_15 = null;
+		js5Stream = null;
 		JagString.aClass40_219 = null;
 	}
 

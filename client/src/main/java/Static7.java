@@ -18,10 +18,10 @@ public final class Static7 {
 
 	@OriginalMember(owner = "client!ba", name = "b", descriptor = "(I)Ljava/awt/Component;", line = 71)
 	public static Component method185() {
-		if (Static97.aCanvas_Sub1_1 == null) {
-			return Static91.aClass7_2 == null ? null : Static91.aClass7_2.anApplet1;
+		if (Static97.frame == null) {
+			return GameShell.signlink == null ? null : GameShell.signlink.anApplet1;
 		} else {
-			return Static97.aCanvas_Sub1_1;
+			return Static97.frame;
 		}
 	}
 
@@ -93,10 +93,10 @@ public final class Static7 {
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(IZ)V", line = 233)
 	public static void method187(@OriginalArg(0) int arg0) {
-		if (arg0 == Static1.anInt1075) {
+		if (arg0 == client.state) {
 			return;
 		}
-		if (Static1.anInt1075 == 0) {
+		if (client.state == 0) {
 			Static42.method801();
 		}
 		if (arg0 == 20 || arg0 == 40) {
@@ -107,11 +107,11 @@ public final class Static7 {
 		if (arg0 != 20 && arg0 != 40 && Static34.aClass25_20 != null) {
 			Static34.aClass25_20.method730();
 		}
-		if (Static1.anInt1075 == 25 || Static1.anInt1075 == 40) {
+		if (client.state == 25 || client.state == 40) {
 			Static69.method1230();
 			Static25.method1610();
 		}
-		if (Static1.anInt1075 == 25) {
+		if (client.state == 25) {
 			Static1.anInt805 = 1;
 			Static1.anInt1667 = 0;
 			Static1.anInt375 = 0;
@@ -135,14 +135,8 @@ public final class Static7 {
 			Static11.method252();
 			Static54.method997(Static74.spritesJs5, method185());
 		}
-		Static1.anInt1075 = arg0;
+		client.state = arg0;
 		Static1.aBoolean1 = true;
-	}
-
-	@OriginalMember(owner = "client!ba", name = "c", descriptor = "(B)V", line = 313)
-	public static void method188() {
-		World3D.aBoolean163 = false;
-		Static1.lowDetail = false;
 	}
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(ZIII)I", line = 334)

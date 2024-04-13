@@ -18,10 +18,10 @@ public final class Static56 {
 
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(I)V", line = 62)
 	public static void method1039() {
-		if (Static64.aClass25_36 != null) {
-			Static64.aClass25_36.method730();
+		if (client.stream != null) {
+			client.stream.method730();
 		}
-		Static64.aClass25_36 = null;
+		client.stream = null;
 		Static44.method820();
 		Static85.scene.method1414();
 		for (@Pc(22) int local22 = 0; local22 < 4; local22++) {
