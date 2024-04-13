@@ -18,7 +18,7 @@ public final class Static42 {
 		JagString.aClass40_338 = null;
 		JagString.aClass40_342 = null;
 		JagString.aClass40_339 = null;
-		Static1.aClass47_12 = null;
+		VarpType.aClass47_12 = null;
 		JagString.aClass40_341 = null;
 		JagString.aClass40_340 = null;
 		anIntArray225 = null;

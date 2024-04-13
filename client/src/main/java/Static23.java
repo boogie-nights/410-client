@@ -1,4 +1,3 @@
-import java.awt.Graphics;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -7,9 +6,6 @@ public final class Static23 {
 
 	@OriginalMember(owner = "client!ee", name = "cb", descriptor = "[[B")
 	public static byte[][] aByteArrayArray6;
-
-	@OriginalMember(owner = "client!ee", name = "gb", descriptor = "Ljava/awt/Graphics;")
-	public static Graphics aGraphics1;
 
 	@OriginalMember(owner = "client!ee", name = "nb", descriptor = "[B")
 	public static byte[] aByteArray9;
@@ -57,7 +53,7 @@ public final class Static23 {
 	@OriginalMember(owner = "client!ee", name = "c", descriptor = "(B)V", line = 1015)
 	public static void method506() {
 		JagString.aClass40_180 = null;
-		aGraphics1 = null;
+		client.graphics = null;
 		JagString.aClass40_179 = null;
 		JagString.aClass40_183 = null;
 		aByteArrayArray6 = null;

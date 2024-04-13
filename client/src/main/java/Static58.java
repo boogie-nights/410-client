@@ -37,8 +37,8 @@ public final class Static58 {
 	@OriginalMember(owner = "client!mc", name = "f", descriptor = "(I)V", line = 522)
 	public static void method1058() {
 		JagString.aClass40_463 = null;
-		Static1.aClass40Array30 = null;
-		Static1.anIntArray326 = null;
+		client.aClass40Array30 = null;
+		client.npcIds = null;
 		JagString.aClass40_469 = null;
 		JagString.aClass40_462 = null;
 		JagString.aClass40_470 = null;
@@ -91,48 +91,48 @@ public final class Static58 {
 
 	@OriginalMember(owner = "client!mc", name = "g", descriptor = "(I)V", line = 626)
 	public static void method1060() {
-		if (Static1.anInt2077 != 0) {
+		if (client.objDragArea != 0) {
 			return;
 		}
-		@Pc(15) int local15 = Static1.anInt2030;
-		if (Static1.anInt641 == 1 && Static1.anInt2500 >= 516 && Static1.anInt2133 >= 160 && Static1.anInt2500 <= 765 && Static1.anInt2133 <= 205) {
+		@Pc(15) int local15 = client.mouseClickButton;
+		if (client.spellSelected == 1 && Static1.anInt2500 >= 516 && Static1.anInt2133 >= 160 && Static1.anInt2500 <= 765 && Static1.anInt2133 <= 205) {
 			local15 = 0;
 		}
 		@Pc(54) int local54;
 		@Pc(108) int local108;
 		@Pc(114) int local114;
 		if (!Static1.aBoolean175) {
-			if (local15 == 1 && Static1.anInt797 > 0) {
-				local54 = Static1.anIntArray287[Static1.anInt797 - 1];
+			if (local15 == 1 && client.menuSize > 0) {
+				local54 = client.menuAction[client.menuSize - 1];
 				if (local54 == 52 || local54 == 55 || local54 == 47 || local54 == 39 || local54 == 26 || local54 == 4 || local54 == 27 || local54 == 46 || local54 == 53 || local54 == 23 || local54 == 1 || local54 == 1002) {
-					local108 = Static1.anIntArray161[Static1.anInt797 - 1];
-					local114 = Static1.anIntArray165[Static1.anInt797 - 1];
-					@Pc(118) ComType local118 = Static73.method1340(local114);
-					if (local118.aBoolean129 || local118.aBoolean126) {
-						Static1.anInt309 = Static1.anInt2500;
-						Static1.anInt14 = 0;
-						Static1.anInt2077 = 2;
+					local108 = Static1.anIntArray161[client.menuSize - 1];
+					local114 = Static1.anIntArray165[client.menuSize - 1];
+					@Pc(118) ComType local118 = ComType.get(local114);
+					if (local118.draggable || local118.aBoolean126) {
+						client.objGrabX = Static1.anInt2500;
+						client.objDragCycles = 0;
+						client.objDragArea = 2;
 						if (Static1.anInt2585 == local114 >> 16) {
-							Static1.anInt2077 = 1;
+							client.objDragArea = 1;
 						}
-						if (Static1.anInt1994 == local114 >> 16) {
-							Static1.anInt2077 = 3;
+						if (client.chatInterfaceId == local114 >> 16) {
+							client.objDragArea = 3;
 						}
-						Static1.anInt1571 = Static1.anInt2133;
+						client.objGrabY = Static1.anInt2133;
 						Static1.anInt2239 = local108;
-						Static1.anInt1911 = local114;
-						Static1.aBoolean142 = false;
+						client.objDragInterfaceId = local114;
+						client.objGrabThreshold = false;
 						return;
 					}
 				}
 			}
-			if (local15 == 1 && (Static1.anInt263 == 1 || Static33.method634(Static1.anInt797 - 1)) && Static1.anInt797 > 2) {
+			if (local15 == 1 && (Static1.anInt263 == 1 || Static33.method634(client.menuSize - 1)) && client.menuSize > 2) {
 				local15 = 2;
 			}
-			if (local15 == 1 && Static1.anInt797 > 0) {
-				Static88.method1549(Static1.anInt797 - 1);
+			if (local15 == 1 && client.menuSize > 0) {
+				Static88.method1549(client.menuSize - 1);
 			}
-			if (local15 == 2 && Static1.anInt797 > 0) {
+			if (local15 == 2 && client.menuSize > 0) {
 				Static27.method583();
 			}
 			return;
@@ -154,11 +154,11 @@ public final class Static58 {
 			}
 			if (local54 < Static44.anInt1110 - 10 || local54 > Static44.anInt1110 + Static14.anInt1856 + 10 || Static99.anInt2497 - 10 > local108 || local108 > Static99.anInt2497 + Static91.anInt120 + 10) {
 				if (Static1.anInt16 == 1) {
-					Static1.aBoolean59 = true;
+					client.redrawSidebar = true;
 				}
 				Static1.aBoolean175 = false;
 				if (Static1.anInt16 == 2) {
-					Static1.aBoolean144 = true;
+					client.redrawChatback = true;
 				}
 			}
 		}
@@ -183,8 +183,8 @@ public final class Static58 {
 			local298 -= 357;
 			local300 -= 17;
 		}
-		for (@Pc(325) int local325 = 0; local325 < Static1.anInt797; local325++) {
-			@Pc(340) int local340 = local108 + (-local325 + -1 + Static1.anInt797) * 15 + 31;
+		for (@Pc(325) int local325 = 0; local325 < client.menuSize; local325++) {
+			@Pc(340) int local340 = local108 + (-local325 + -1 + client.menuSize) * 15 + 31;
 			if (local300 > local54 && local114 + local54 > local300 && local298 > local340 - 13 && local298 < local340 + 3) {
 				local309 = local325;
 			}
@@ -193,47 +193,13 @@ public final class Static58 {
 			Static88.method1549(local309);
 		}
 		if (Static1.anInt16 == 2) {
-			Static1.aBoolean144 = true;
+			client.redrawChatback = true;
 		}
 		Static1.aBoolean175 = false;
 		if (Static1.anInt16 == 1) {
-			Static1.aBoolean59 = true;
+			client.redrawSidebar = true;
 			return;
 		}
 	}
 
-	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(JI)V", line = 846)
-	public static void method1062(@OriginalArg(0) long arg0) {
-		if (arg0 == 0L) {
-			return;
-		}
-		if (Static1.anInt2594 >= 100 && Static1.anInt927 != 1) {
-			Static53.method989(0, JagString.aClass40_445, JagString.aClass40_739);
-		} else if (Static1.anInt2594 >= 200) {
-			Static53.method989(0, JagString.aClass40_445, JagString.aClass40_739);
-		} else {
-			@Pc(41) JagString local41 = Static44.fromBase37(arg0).method1167();
-			for (@Pc(43) int local43 = 0; local43 < Static1.anInt2594; local43++) {
-				if (arg0 == Static1.aLongArray2[local43]) {
-					Static53.method989(0, JagString.aClass40_445, Static72.method1334(new JagString[] { local41, JagString.aClass40_677 }));
-					return;
-				}
-			}
-			for (@Pc(74) int local74 = 0; local74 < Static1.anInt121; local74++) {
-				if (Static1.aLongArray4[local74] == arg0) {
-					Static53.method989(0, JagString.aClass40_445, Static72.method1334(new JagString[] { JagString.aClass40_357, local41, JagString.aClass40_137 }));
-					return;
-				}
-			}
-			if (!local41.method1184(Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395)) {
-				Static1.aClass40Array23[Static1.anInt2594] = local41;
-				Static1.aLongArray2[Static1.anInt2594] = arg0;
-				Static1.anIntArray316[Static1.anInt2594] = 0;
-				Static1.aBoolean59 = true;
-				Static1.anInt2594++;
-				Static1.aClass2_Sub3_Sub1_4.pIsaac1(98);
-				Static1.aClass2_Sub3_Sub1_4.p8(arg0);
-			}
-		}
-	}
 }

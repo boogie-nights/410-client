@@ -162,7 +162,7 @@ public final class PixFont extends Draw2D {
 		}
 		arg1 -= this.method568(arg0) / 2;
 		@Pc(15) int local15 = arg2 - this.anInt715;
-		for (@Pc(17) int local17 = 0; local17 < arg0.method1169(); local17++) {
+		for (@Pc(17) int local17 = 0; local17 < arg0.length(); local17++) {
 			@Pc(25) int local25 = arg0.chars[local17] & 0xFF;
 			if (local25 != 32) {
 				this.method569(this.aByteArrayArray7[local25], arg1 + (int) (Math.sin((double) local17 / 5.0D + (double) arg4 / 5.0D) * 5.0D), local15 + this.anIntArray139[local25] + (int) (Math.sin((double) local17 / 3.0D + (double) arg4 / 5.0D) * 5.0D), this.anIntArray141[local25], this.anIntArray140[local25], arg3);
@@ -287,7 +287,7 @@ public final class PixFont extends Draw2D {
 		}
 		arg1 -= this.method568(arg0) / 2;
 		@Pc(28) int local28 = arg2 - this.anInt715;
-		for (@Pc(30) int local30 = 0; local30 < arg0.method1169(); local30++) {
+		for (@Pc(30) int local30 = 0; local30 < arg0.length(); local30++) {
 			@Pc(38) int local38 = arg0.chars[local30] & 0xFF;
 			if (local38 != 32) {
 				this.method569(this.aByteArrayArray7[local38], arg1, local28 + this.anIntArray139[local38] + (int) (Math.sin((double) local30 / 1.5D + (double) arg4) * local9), this.anIntArray141[local38], this.anIntArray140[local38], arg3);
@@ -303,42 +303,42 @@ public final class PixFont extends Draw2D {
 
 	@OriginalMember(owner = "client!fc", name = "c", descriptor = "(Lclient!o;)I", line = 435)
 	private int method579(@OriginalArg(0) JagString arg0) {
-		if (arg0.method1184(JagString.aClass40_208)) {
+		if (arg0.compare(JagString.aClass40_208)) {
 			return 16711680;
-		} else if (arg0.method1184(JagString.aClass40_201)) {
+		} else if (arg0.compare(JagString.aClass40_201)) {
 			return 65280;
-		} else if (arg0.method1184(JagString.aClass40_211)) {
+		} else if (arg0.compare(JagString.aClass40_211)) {
 			return 255;
-		} else if (arg0.method1184(JagString.aClass40_202)) {
+		} else if (arg0.compare(JagString.aClass40_202)) {
 			return 16776960;
-		} else if (arg0.method1184(JagString.aClass40_207)) {
+		} else if (arg0.compare(JagString.aClass40_207)) {
 			return 65535;
-		} else if (arg0.method1184(JagString.aClass40_209)) {
+		} else if (arg0.compare(JagString.aClass40_209)) {
 			return 16711935;
-		} else if (arg0.method1184(JagString.aClass40_217)) {
+		} else if (arg0.compare(JagString.aClass40_217)) {
 			return 16777215;
-		} else if (arg0.method1184(JagString.aClass40_214)) {
+		} else if (arg0.compare(JagString.aClass40_214)) {
 			return 0;
-		} else if (arg0.method1184(JagString.aClass40_212)) {
+		} else if (arg0.compare(JagString.aClass40_212)) {
 			return 16748608;
-		} else if (arg0.method1184(JagString.aClass40_203)) {
+		} else if (arg0.compare(JagString.aClass40_203)) {
 			return 8388608;
-		} else if (arg0.method1184(JagString.aClass40_215)) {
+		} else if (arg0.compare(JagString.aClass40_215)) {
 			return 128;
-		} else if (arg0.method1184(JagString.aClass40_213)) {
+		} else if (arg0.compare(JagString.aClass40_213)) {
 			return 16756736;
-		} else if (arg0.method1184(JagString.aClass40_205)) {
+		} else if (arg0.compare(JagString.aClass40_205)) {
 			return 16740352;
-		} else if (arg0.method1184(JagString.aClass40_206)) {
+		} else if (arg0.compare(JagString.aClass40_206)) {
 			return 16723968;
-		} else if (arg0.method1184(JagString.aClass40_216)) {
+		} else if (arg0.compare(JagString.aClass40_216)) {
 			return 12648192;
-		} else if (arg0.method1184(JagString.aClass40_204)) {
+		} else if (arg0.compare(JagString.aClass40_204)) {
 			return 8453888;
-		} else if (arg0.method1184(JagString.aClass40_210)) {
+		} else if (arg0.compare(JagString.aClass40_210)) {
 			return 4259584;
 		} else {
-			if (arg0.method1184(JagString.aClass40_200)) {
+			if (arg0.compare(JagString.aClass40_200)) {
 				this.aBoolean53 = true;
 			}
 			return -1;

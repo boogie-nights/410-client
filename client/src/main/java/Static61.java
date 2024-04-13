@@ -4,12 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static61 {
 
-	@OriginalMember(owner = "client!n", name = "i", descriptor = "Lclient!ud;")
-	public static Js5Index aClass5_21;
-
-	@OriginalMember(owner = "client!n", name = "l", descriptor = "I")
-	public static int anInt1653;
-
 	@OriginalMember(owner = "client!n", name = "v", descriptor = "Lclient!d;")
 	public static BufferedFile cacheDat;
 
@@ -21,7 +15,7 @@ public final class Static61 {
 
 	@OriginalMember(owner = "client!n", name = "a", descriptor = "(I)V", line = 23)
 	public static void method1093() {
-		aClass5_21 = null;
+		VarBitType.aClass5_21 = null;
 		JagString.aClass40_481 = null;
 		JagString.aClass40_480 = null;
 		cacheDat = null;
@@ -39,12 +33,12 @@ public final class Static61 {
 		@Pc(6) int local6 = local5 - 3;
 		if (Static1.aBoolean1) {
 			Static1.aBoolean1 = false;
-			Static39.method768(Static23.aGraphics1);
-			Static4.method83(Static23.aGraphics1);
-			Static67.method1207(Static23.aGraphics1);
-			Static30.method594(Static23.aGraphics1);
-			Static99.method1664(Static1.anInt2515, Static23.aGraphics1, Static95.aClass2_Sub2_Sub2_Sub2_5, Static1.anInt2491, Static1.anInt583);
-			Static85.method1487(Static1.anInt1551, Static1.anIntArray2, -1, Static1.anInt1654 == -1, Static23.aGraphics1);
+			Static39.method768(client.graphics);
+			Static4.method83(client.graphics);
+			Static67.method1207(client.graphics);
+			Static30.method594(client.graphics);
+			Static99.method1664(Static1.anInt2515, client.graphics, Static95.aClass2_Sub2_Sub2_Sub2_5, Static1.anInt2491, Static1.anInt583);
+			Static85.method1487(Static1.anInt1551, Static1.anIntArray2, -1, Static1.anInt1654 == -1, client.graphics);
 			Static1.aBoolean23 = true;
 			Static1.aBoolean165 = true;
 			Static1.aBoolean13 = true;
@@ -61,6 +55,6 @@ public final class Static61 {
 			Static95.aClass2_Sub2_Sub2_Sub2_5.method566(arg1, 257, 163, 0);
 			Static95.aClass2_Sub2_Sub2_Sub2_5.method566(arg1, 256, 162, 16777215);
 		}
-		Static72.method1333(Static23.aGraphics1);
+		client.drawViewport(client.graphics);
 	}
 }

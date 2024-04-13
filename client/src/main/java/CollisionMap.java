@@ -19,10 +19,10 @@ public final class CollisionMap {
 	private final int anInt682;
 
 	@OriginalMember(owner = "client!fb", name = "o", descriptor = "[[I")
-	public final int[][] anIntArrayArray9;
+	public final int[][] flags;
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IIIIIII)Z", line = 5)
-	public boolean method527(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	public boolean reachedWall(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		if (arg3 == arg4 && arg2 == arg1) {
 			return true;
 		}
@@ -35,40 +35,40 @@ public final class CollisionMap {
 				if (local29 == local34 - 1 && local44 == local39) {
 					return true;
 				}
-				if (local34 == local29 && local39 + 1 == local44 && (this.anIntArrayArray9[local29][local44] & 0x1280120) == 0) {
+				if (local34 == local29 && local39 + 1 == local44 && (this.flags[local29][local44] & 0x1280120) == 0) {
 					return true;
 				}
-				if (local29 == local34 && local44 == local39 - 1 && (this.anIntArrayArray9[local29][local44] & 0x1280102) == 0) {
+				if (local29 == local34 && local44 == local39 - 1 && (this.flags[local29][local44] & 0x1280102) == 0) {
 					return true;
 				}
 			} else if (arg0 == 1) {
 				if (local29 == local34 && local44 == local39 + 1) {
 					return true;
 				}
-				if (local29 == local34 - 1 && local44 == local39 && (this.anIntArrayArray9[local29][local44] & 0x1280108) == 0) {
+				if (local29 == local34 - 1 && local44 == local39 && (this.flags[local29][local44] & 0x1280108) == 0) {
 					return true;
 				}
-				if (local34 + 1 == local29 && local44 == local39 && (this.anIntArrayArray9[local29][local44] & 0x1280180) == 0) {
+				if (local34 + 1 == local29 && local44 == local39 && (this.flags[local29][local44] & 0x1280180) == 0) {
 					return true;
 				}
 			} else if (arg0 == 2) {
 				if (local29 == local34 + 1 && local39 == local44) {
 					return true;
 				}
-				if (local34 == local29 && local44 == local39 + 1 && (this.anIntArrayArray9[local29][local44] & 0x1280120) == 0) {
+				if (local34 == local29 && local44 == local39 + 1 && (this.flags[local29][local44] & 0x1280120) == 0) {
 					return true;
 				}
-				if (local29 == local34 && local39 - 1 == local44 && (this.anIntArrayArray9[local29][local44] & 0x1280102) == 0) {
+				if (local29 == local34 && local39 - 1 == local44 && (this.flags[local29][local44] & 0x1280102) == 0) {
 					return true;
 				}
 			} else if (arg0 == 3) {
 				if (local34 == local29 && local39 - 1 == local44) {
 					return true;
 				}
-				if (local29 == local34 - 1 && local44 == local39 && (this.anIntArrayArray9[local29][local44] & 0x1280108) == 0) {
+				if (local29 == local34 - 1 && local44 == local39 && (this.flags[local29][local44] & 0x1280108) == 0) {
 					return true;
 				}
-				if (local34 + 1 == local29 && local39 == local44 && (this.anIntArrayArray9[local29][local44] & 0x1280180) == 0) {
+				if (local34 + 1 == local29 && local39 == local44 && (this.flags[local29][local44] & 0x1280180) == 0) {
 					return true;
 				}
 			}
@@ -81,14 +81,14 @@ public final class CollisionMap {
 				if (local34 == local29 && local44 == local39 + 1) {
 					return true;
 				}
-				if (local34 + 1 == local29 && local39 == local44 && (this.anIntArrayArray9[local29][local44] & 0x1280180) == 0) {
+				if (local34 + 1 == local29 && local39 == local44 && (this.flags[local29][local44] & 0x1280180) == 0) {
 					return true;
 				}
-				if (local29 == local34 && local39 - 1 == local44 && (this.anIntArrayArray9[local29][local44] & 0x1280102) == 0) {
+				if (local29 == local34 && local39 - 1 == local44 && (this.flags[local29][local44] & 0x1280102) == 0) {
 					return true;
 				}
 			} else if (arg0 == 1) {
-				if (local29 == local34 - 1 && local44 == local39 && (this.anIntArrayArray9[local29][local44] & 0x1280108) == 0) {
+				if (local29 == local34 - 1 && local44 == local39 && (this.flags[local29][local44] & 0x1280108) == 0) {
 					return true;
 				}
 				if (local34 == local29 && local44 == local39 + 1) {
@@ -97,14 +97,14 @@ public final class CollisionMap {
 				if (local29 == local34 + 1 && local44 == local39) {
 					return true;
 				}
-				if (local29 == local34 && local44 == local39 - 1 && (this.anIntArrayArray9[local29][local44] & 0x1280102) == 0) {
+				if (local29 == local34 && local44 == local39 - 1 && (this.flags[local29][local44] & 0x1280102) == 0) {
 					return true;
 				}
 			} else if (arg0 == 2) {
-				if (local34 - 1 == local29 && local39 == local44 && (this.anIntArrayArray9[local29][local44] & 0x1280108) == 0) {
+				if (local34 - 1 == local29 && local39 == local44 && (this.flags[local29][local44] & 0x1280108) == 0) {
 					return true;
 				}
-				if (local29 == local34 && local44 == local39 + 1 && (this.anIntArrayArray9[local29][local44] & 0x1280120) == 0) {
+				if (local29 == local34 && local44 == local39 + 1 && (this.flags[local29][local44] & 0x1280120) == 0) {
 					return true;
 				}
 				if (local29 == local34 + 1 && local44 == local39) {
@@ -117,10 +117,10 @@ public final class CollisionMap {
 				if (local29 == local34 - 1 && local39 == local44) {
 					return true;
 				}
-				if (local34 == local29 && local39 + 1 == local44 && (this.anIntArrayArray9[local29][local44] & 0x1280120) == 0) {
+				if (local34 == local29 && local39 + 1 == local44 && (this.flags[local29][local44] & 0x1280120) == 0) {
 					return true;
 				}
-				if (local34 + 1 == local29 && local39 == local44 && (this.anIntArrayArray9[local29][local44] & 0x1280180) == 0) {
+				if (local34 + 1 == local29 && local39 == local44 && (this.flags[local29][local44] & 0x1280180) == 0) {
 					return true;
 				}
 				if (local29 == local34 && local39 - 1 == local44) {
@@ -129,16 +129,16 @@ public final class CollisionMap {
 			}
 		}
 		if (arg5 == 9) {
-			if (local29 == local34 && local39 + 1 == local44 && (this.anIntArrayArray9[local29][local44] & 0x20) == 0) {
+			if (local29 == local34 && local39 + 1 == local44 && (this.flags[local29][local44] & 0x20) == 0) {
 				return true;
 			}
-			if (local29 == local34 && local44 == local39 - 1 && (this.anIntArrayArray9[local29][local44] & 0x2) == 0) {
+			if (local29 == local34 && local44 == local39 - 1 && (this.flags[local29][local44] & 0x2) == 0) {
 				return true;
 			}
-			if (local34 - 1 == local29 && local44 == local39 && (this.anIntArrayArray9[local29][local44] & 0x8) == 0) {
+			if (local34 - 1 == local29 && local44 == local39 && (this.flags[local29][local44] & 0x8) == 0) {
 				return true;
 			}
-			if (local29 == local34 + 1 && local39 == local44 && (this.anIntArrayArray9[local29][local44] & 0x80) == 0) {
+			if (local29 == local34 + 1 && local39 == local44 && (this.flags[local29][local44] & 0x80) == 0) {
 				return true;
 			}
 		}
@@ -299,7 +299,7 @@ public final class CollisionMap {
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IIII)V", line = 470)
 	private void method530(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		this.anIntArrayArray9[arg2][arg1] &= 16777215 - arg0;
+		this.flags[arg2][arg1] &= 16777215 - arg0;
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IZIIIII)V", line = 482)
@@ -455,20 +455,20 @@ public final class CollisionMap {
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(Z)V", line = 823)
-	public void method534() {
+	public void reset() {
 		for (@Pc(3) int local3 = 0; local3 < this.anInt679; local3++) {
 			for (@Pc(7) int local7 = 0; local7 < this.anInt681; local7++) {
 				if (local3 == 0 || local7 == 0 || local3 == this.anInt679 - 1 || this.anInt681 - 1 == local7) {
-					this.anIntArrayArray9[local3][local7] = 16777215;
+					this.flags[local3][local7] = 16777215;
 				} else {
-					this.anIntArrayArray9[local3][local7] = 16777216;
+					this.flags[local3][local7] = 16777216;
 				}
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IIIIIBI)Z", line = 855)
-	public boolean method535(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5) {
+	public boolean reachedWallDecoration(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5) {
 		if (arg5 == arg3 && arg0 == arg4) {
 			return true;
 		}
@@ -481,46 +481,46 @@ public final class CollisionMap {
 				arg1 = arg1 + 2 & 0x3;
 			}
 			if (arg1 == 0) {
-				if (local28 + 1 == local43 && local33 == local38 && (this.anIntArrayArray9[local43][local33] & 0x80) == 0) {
+				if (local28 + 1 == local43 && local33 == local38 && (this.flags[local43][local33] & 0x80) == 0) {
 					return true;
 				}
-				if (local28 == local43 && local33 == local38 - 1 && (this.anIntArrayArray9[local43][local33] & 0x2) == 0) {
+				if (local28 == local43 && local33 == local38 - 1 && (this.flags[local43][local33] & 0x2) == 0) {
 					return true;
 				}
 			} else if (arg1 == 1) {
-				if (local28 - 1 == local43 && local38 == local33 && (this.anIntArrayArray9[local43][local33] & 0x8) == 0) {
+				if (local28 - 1 == local43 && local38 == local33 && (this.flags[local43][local33] & 0x8) == 0) {
 					return true;
 				}
-				if (local28 == local43 && local38 - 1 == local33 && (this.anIntArrayArray9[local43][local33] & 0x2) == 0) {
+				if (local28 == local43 && local38 - 1 == local33 && (this.flags[local43][local33] & 0x2) == 0) {
 					return true;
 				}
 			} else if (arg1 == 2) {
-				if (local28 - 1 == local43 && local38 == local33 && (this.anIntArrayArray9[local43][local33] & 0x8) == 0) {
+				if (local28 - 1 == local43 && local38 == local33 && (this.flags[local43][local33] & 0x8) == 0) {
 					return true;
 				}
-				if (local43 == local28 && local33 == local38 + 1 && (this.anIntArrayArray9[local43][local33] & 0x20) == 0) {
+				if (local43 == local28 && local33 == local38 + 1 && (this.flags[local43][local33] & 0x20) == 0) {
 					return true;
 				}
 			} else if (arg1 == 3) {
-				if (local43 == local28 + 1 && local38 == local33 && (this.anIntArrayArray9[local43][local33] & 0x80) == 0) {
+				if (local43 == local28 + 1 && local38 == local33 && (this.flags[local43][local33] & 0x80) == 0) {
 					return true;
 				}
-				if (local43 == local28 && local33 == local38 + 1 && (this.anIntArrayArray9[local43][local33] & 0x20) == 0) {
+				if (local43 == local28 && local33 == local38 + 1 && (this.flags[local43][local33] & 0x20) == 0) {
 					return true;
 				}
 			}
 		}
 		if (arg2 == 8) {
-			if (local43 == local28 && local38 + 1 == local33 && (this.anIntArrayArray9[local43][local33] & 0x20) == 0) {
+			if (local43 == local28 && local38 + 1 == local33 && (this.flags[local43][local33] & 0x20) == 0) {
 				return true;
 			}
-			if (local43 == local28 && local38 - 1 == local33 && (this.anIntArrayArray9[local43][local33] & 0x2) == 0) {
+			if (local43 == local28 && local38 - 1 == local33 && (this.flags[local43][local33] & 0x2) == 0) {
 				return true;
 			}
-			if (local43 == local28 - 1 && local38 == local33 && (this.anIntArrayArray9[local43][local33] & 0x8) == 0) {
+			if (local43 == local28 - 1 && local38 == local33 && (this.flags[local43][local33] & 0x8) == 0) {
 				return true;
 			}
-			if (local43 == local28 + 1 && local33 == local38 && (this.anIntArrayArray9[local43][local33] & 0x80) == 0) {
+			if (local43 == local28 + 1 && local33 == local38 && (this.flags[local43][local33] & 0x80) == 0) {
 				return true;
 			}
 		}
@@ -531,7 +531,7 @@ public final class CollisionMap {
 	public void method536(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(4) int local4 = arg0 - this.anInt682;
 		@Pc(13) int local13 = arg1 - this.anInt674;
-		this.anIntArrayArray9[local13][local4] |= 0x200000;
+		this.flags[local13][local4] |= 0x200000;
 	}
 
 	@OriginalMember(owner = "client!fb", name = "<init>", descriptor = "(II)V", line = 962)
@@ -540,36 +540,36 @@ public final class CollisionMap {
 		this.anInt679 = arg0;
 		this.anInt674 = 0;
 		this.anInt682 = 0;
-		this.anIntArrayArray9 = new int[this.anInt679][this.anInt681];
-		this.method534();
+		this.flags = new int[this.anInt679][this.anInt681];
+		this.reset();
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IIB)V", line = 980)
 	public void method537(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) int local4 = arg1 - this.anInt674;
 		@Pc(13) int local13 = arg0 - this.anInt682;
-		this.anIntArrayArray9[local4][local13] &= 0xDFFFFF;
+		this.flags[local4][local13] &= 0xDFFFFF;
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IIIIIIIZ)Z", line = 996)
-	public boolean method538(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	public boolean reachedLoc(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		@Pc(9) int local9 = arg3 + arg6 - 1;
 		@Pc(22) int local22 = arg2 + arg4 - 1;
 		if (arg2 <= arg5 && arg5 <= local22 && arg1 >= arg3 && arg1 <= local9) {
 			return true;
-		} else if (arg5 == arg2 - 1 && arg3 <= arg1 && local9 >= arg1 && (this.anIntArrayArray9[arg5 - this.anInt674][arg1 - this.anInt682] & 0x8) == 0 && (arg0 & 0x8) == 0) {
+		} else if (arg5 == arg2 - 1 && arg3 <= arg1 && local9 >= arg1 && (this.flags[arg5 - this.anInt674][arg1 - this.anInt682] & 0x8) == 0 && (arg0 & 0x8) == 0) {
 			return true;
-		} else if (local22 + 1 == arg5 && arg3 <= arg1 && local9 >= arg1 && (this.anIntArrayArray9[arg5 - this.anInt674][arg1 - this.anInt682] & 0x80) == 0 && (arg0 & 0x2) == 0) {
+		} else if (local22 + 1 == arg5 && arg3 <= arg1 && local9 >= arg1 && (this.flags[arg5 - this.anInt674][arg1 - this.anInt682] & 0x80) == 0 && (arg0 & 0x2) == 0) {
 			return true;
-		} else if (arg1 == arg3 - 1 && arg2 <= arg5 && local22 >= arg5 && (this.anIntArrayArray9[arg5 - this.anInt674][arg1 - this.anInt682] & 0x2) == 0 && (arg0 & 0x4) == 0) {
+		} else if (arg1 == arg3 - 1 && arg2 <= arg5 && local22 >= arg5 && (this.flags[arg5 - this.anInt674][arg1 - this.anInt682] & 0x2) == 0 && (arg0 & 0x4) == 0) {
 			return true;
 		} else {
-			return arg1 == local9 + 1 && arg5 >= arg2 && local22 >= arg5 && (this.anIntArrayArray9[arg5 - this.anInt674][arg1 - this.anInt682] & 0x20) == 0 && (arg0 & 0x1) == 0;
+			return arg1 == local9 + 1 && arg5 >= arg2 && local22 >= arg5 && (this.flags[arg5 - this.anInt674][arg1 - this.anInt682] & 0x20) == 0 && (arg0 & 0x1) == 0;
 		}
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IIIZ)V", line = 1027)
 	private void method539(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		this.anIntArrayArray9[arg1][arg2] |= arg0;
+		this.flags[arg1][arg2] |= arg0;
 	}
 }

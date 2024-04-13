@@ -24,9 +24,14 @@ public final class MixerPcmStream extends PcmStream {
 	@OriginalMember(owner = "client!qa", name = "x", descriptor = "I")
 	private int anInt1885 = 0;
 
-	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!pc;)V", line = 13)
+    @OriginalMember(owner = "client!qa", name = "b", descriptor = "(Lclient!pc;)I", line = 222)
+    public static int method1293(@OriginalArg(0) PcmStream arg0) {
+        return arg0.method1288() >> 5;
+    }
+
+    @OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!pc;)V", line = 13)
 	public synchronized void method1289(@OriginalArg(0) PcmStream arg0) {
-		@Pc(5) LinkList local5 = this.aClass44Array1[Static112.method1293(arg0)];
+		@Pc(5) LinkList local5 = this.aClass44Array1[method1293(arg0)];
 		local5.method1229(arg0);
 	}
 
@@ -42,7 +47,7 @@ public final class MixerPcmStream extends PcmStream {
 			for (local18 = 0; local18 < 8; local18++) {
 				local24 = this.aClass44Array1[local18];
 				for (local29 = (PcmStream) local24.head(); local29 != null; local29 = (PcmStream) local24.next()) {
-					local33 = Static112.method1293(local29);
+					local33 = method1293(local29);
 					if (local33 != local18) {
 						this.aClass44Array1[local33].method1229(local29);
 					}

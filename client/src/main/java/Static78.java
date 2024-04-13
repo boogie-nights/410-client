@@ -29,24 +29,6 @@ public final class Static78 {
 		JagString.aClass40_585 = null;
 	}
 
-	@OriginalMember(owner = "client!sa", name = "b", descriptor = "(IIII)I", line = 107)
-	public static int method1383(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(7) int local7 = arg2 >> 7;
-		@Pc(11) int local11 = arg1 >> 7;
-		if (local11 < 0 || local7 < 0 || local11 > 103 || local7 > 103) {
-			return 0;
-		}
-		@Pc(29) int local29 = arg0;
-		if (arg0 < 3 && (World.levelTileFlags[1][local11][local7] & 0x2) == 2) {
-			local29 = arg0 + 1;
-		}
-		@Pc(50) int local50 = arg1 & 0x7F;
-		@Pc(54) int local54 = arg2 & 0x7F;
-		@Pc(81) int local81 = (128 - local50) * World.levelHeightmap[local29][local11][local7] + World.levelHeightmap[local29][local11 + 1][local7] * local50 >> 7;
-		@Pc(113) int local113 = World.levelHeightmap[local29][local11][local7 + 1] * (128 - local50) + local50 * World.levelHeightmap[local29][local11 + 1][local7 + 1] >> 7;
-		return local54 * local113 + local81 * (128 - local54) >> 7;
-	}
-
 	@OriginalMember(owner = "client!sa", name = "a", descriptor = "(I[B)V", line = 144)
 	public static void method1384(@OriginalArg(1) byte[] arg0) {
 		@Pc(10) Packet local10 = new Packet(arg0);
@@ -110,13 +92,13 @@ public final class Static78 {
 			return;
 		}
 		@Pc(15) int local15 = 0;
-		if (Static1.anInt1973 != 0) {
+		if (client.systemUpdateTimer != 0) {
 			local15 = 1;
 		}
 		for (@Pc(21) int local21 = 0; local21 < 100; local21++) {
-			if (Static1.aClass40Array30[local21] != null) {
-				@Pc(31) int local31 = Static1.anIntArray469[local21];
-				@Pc(35) JagString local35 = Static1.aClass40Array40[local21];
+			if (client.aClass40Array30[local21] != null) {
+				@Pc(31) int local31 = client.messageType[local21];
+				@Pc(35) JagString local35 = client.aClass40Array40[local21];
 				if (local35 != null && local35.method1168(JagString.aClass40_323)) {
 					local35 = local35.method1185(5);
 				}
@@ -126,16 +108,16 @@ public final class Static78 {
 				if ((local31 == 3 || local31 == 7) && (local31 == 7 || Static1.anInt2515 == 0 || Static1.anInt2515 == 1 && Static36.method729(local35))) {
 					@Pc(85) int local85 = 329 - local15 * 13;
 					if (Mouse.x > 4 && local85 - 10 < Mouse.y + -4 && local85 + 3 >= Mouse.y + -4) {
-						@Pc(129) int local129 = Static95.aClass2_Sub2_Sub2_Sub2_5.method568(Static72.method1334(new JagString[] { JagString.aClass40_18, local35, Static1.aClass40Array30[local21] })) + 25;
+						@Pc(129) int local129 = Static95.aClass2_Sub2_Sub2_Sub2_5.method568(JagString.concatenate(new JagString[] { JagString.aClass40_18, local35, client.aClass40Array30[local21] })) + 25;
 						if (local129 > 450) {
 							local129 = 450;
 						}
 						if (local129 + 4 > Mouse.x) {
 							if (Static1.anInt1550 >= 1) {
-								Static20.method402(Static72.method1334(new JagString[] { JagString.aClass40_111, local35 }), 2042, 0, 0, 0);
+								Static20.method402(JagString.concatenate(new JagString[] { JagString.aClass40_111, local35 }), 2042, 0, 0, 0);
 							}
-							Static20.method402(Static72.method1334(new JagString[] { JagString.aClass40_604, local35 }), 2012, 0, 0, 0);
-							Static20.method402(Static72.method1334(new JagString[] { JagString.aClass40_535, local35 }), 2051, 0, 0, 0);
+							Static20.method402(JagString.concatenate(new JagString[] { JagString.aClass40_604, local35 }), 2012, 0, 0, 0);
+							Static20.method402(JagString.concatenate(new JagString[] { JagString.aClass40_535, local35 }), 2051, 0, 0, 0);
 						}
 					}
 					local15++;
@@ -155,7 +137,7 @@ public final class Static78 {
 
 	@OriginalMember(owner = "client!sa", name = "d", descriptor = "(B)V", line = 400)
 	public static void method1386() {
-		if (Static1.anInt2328 != 0 || Static1.anInt2030 != 1) {
+		if (Static1.anInt2328 != 0 || client.mouseClickButton != 1) {
 			return;
 		}
 		@Pc(17) int local17 = Static1.anInt2133 - 9;
@@ -165,30 +147,30 @@ public final class Static78 {
 		}
 		local23 -= 73;
 		local17 -= 75;
-		@Pc(45) int local45 = Static1.anInt1669 + Static1.anInt1978 & 0x7FF;
+		@Pc(45) int local45 = client.orbitCameraYaw + Static1.anInt1978 & 0x7FF;
 		@Pc(49) int local49 = Draw3D.sin[local45];
 		@Pc(57) int local57 = (Static1.anInt1857 + 256) * local49 >> 8;
 		@Pc(61) int local61 = Draw3D.cos[local45];
 		@Pc(69) int local69 = local61 * (Static1.anInt1857 + 256) >> 8;
 		@Pc(79) int local79 = local23 * local69 + local17 * local57 >> 11;
 		@Pc(90) int local90 = local69 * local17 - local57 * local23 >> 11;
-		@Pc(98) int local98 = Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 - local90 >> 7;
-		@Pc(106) int local106 = Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 + local79 >> 7;
-		@Pc(126) boolean local126 = Static75.method1349(local98, 0, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 0, 0, 1, true, 0, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 0, local106);
+		@Pc(98) int local98 = client.localPlayer.z - local90 >> 7;
+		@Pc(106) int local106 = client.localPlayer.x + local79 >> 7;
+		@Pc(126) boolean local126 = client.tryMove(local98, 0, client.localPlayer.pathTileX[0], 0, 0, 1, true, 0, client.localPlayer.pathTileZ[0], 0, local106);
 		if (!local126) {
 			return;
 		}
-		Static1.aClass2_Sub3_Sub1_4.p1(local23);
-		Static1.aClass2_Sub3_Sub1_4.p1(local17);
-		Static1.aClass2_Sub3_Sub1_4.p2(Static1.anInt1669);
-		Static1.aClass2_Sub3_Sub1_4.p1(57);
-		Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt1978);
-		Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt1857);
-		Static1.aClass2_Sub3_Sub1_4.p1(89);
-		Static1.aClass2_Sub3_Sub1_4.p2(Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275);
-		Static1.aClass2_Sub3_Sub1_4.p2(Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284);
-		Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2400);
-		Static1.aClass2_Sub3_Sub1_4.p1(63);
+		client.out.p1(local23);
+		client.out.p1(local17);
+		client.out.p2(client.orbitCameraYaw);
+		client.out.p1(57);
+		client.out.p1(Static1.anInt1978);
+		client.out.p1(Static1.anInt1857);
+		client.out.p1(89);
+		client.out.p2(client.localPlayer.x);
+		client.out.p2(client.localPlayer.z);
+		client.out.p1(client.tryMoveNearest);
+		client.out.p1(63);
 		return;
 	}
 }

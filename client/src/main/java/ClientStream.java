@@ -64,7 +64,7 @@ public final class ClientStream implements Runnable {
 	@OriginalMember(owner = "client!hc", name = "finalize", descriptor = "()V", line = 44)
 	@Override
 	public void finalize() {
-		this.method730();
+		this.close();
 	}
 
 	@OriginalMember(owner = "client!hc", name = "b", descriptor = "(I)I", line = 105)
@@ -73,7 +73,7 @@ public final class ClientStream implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "c", descriptor = "(I)V", line = 187)
-	public void method730() {
+	public void close() {
 		if (this.aBoolean68) {
 			return;
 		}

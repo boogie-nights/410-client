@@ -17,7 +17,7 @@ public final class Static82 {
 			for (@Pc(7) int local7 = 0; local7 < 64; local7++) {
 				for (local11 = 0; local11 < 64; local11++) {
 					if (arg4 + local7 > 0 && local7 + arg4 < 103 && arg0 + local11 > 0 && local11 + arg0 < 103) {
-						arg2[local3].anIntArrayArray9[local7 + arg4][local11 + arg0] &= 0xFEFFFFFF;
+						arg2[local3].flags[local7 + arg4][local11 + arg0] &= 0xFEFFFFFF;
 					}
 				}
 			}
@@ -37,14 +37,14 @@ public final class Static82 {
 		if (arg1 == null) {
 			return;
 		}
-		@Pc(12) int local12 = Static1.anInt1978 + Static1.anInt1669 & 0x7FF;
+		@Pc(12) int local12 = Static1.anInt1978 + client.orbitCameraYaw & 0x7FF;
 		@Pc(20) int local20 = arg2 * arg2 + arg0 * arg0;
 		if (local20 > 6400) {
 			return;
 		}
-		@Pc(35) int local35 = Model.anIntArray402[local12];
+		@Pc(35) int local35 = Model.cos[local12];
 		@Pc(43) int local43 = local35 * 256 / (Static1.anInt1857 + 256);
-		@Pc(47) int local47 = Model.anIntArray386[local12];
+		@Pc(47) int local47 = Model.sin[local12];
 		@Pc(55) int local55 = local47 * 256 / (Static1.anInt1857 + 256);
 		@Pc(66) int local66 = arg2 * local43 - arg0 * local55 >> 16;
 		@Pc(76) int local76 = arg2 * local55 + arg0 * local43 >> 16;
@@ -57,14 +57,14 @@ public final class Static82 {
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(I)V", line = 166)
 	public static void method1464() {
-		Static1.aClass47_18 = null;
+		ObjType.aClass47_18 = null;
 		JagString.aClass40_609 = null;
 		JagString.aClass40_611 = null;
 		JagString.aClass40_610 = null;
-		Static1.aClass47_20 = null;
-		Static1.aClass47_17 = null;
+		ComType.aClass47_20 = null;
+		PlayerAppearance.aClass47_17 = null;
 		aClass2_Sub2_Sub9_1 = null;
 		JagString.aClass40_608 = null;
-		Static1.aClass47_19 = null;
+		NpcType.aClass47_19 = null;
 	}
 }

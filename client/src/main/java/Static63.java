@@ -13,9 +13,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static63 {
 
-	@OriginalMember(owner = "client!nb", name = "y", descriptor = "Lclient!ud;")
-	public static Js5Index aClass5_5;
-
 	@OriginalMember(owner = "client!nb", name = "z", descriptor = "Lclient!ud;")
 	public static Js5Index aClass5_6;
 
@@ -30,7 +27,7 @@ public final class Static63 {
 		aClass45_8 = null;
 		JagString.aClass40_103 = null;
 		JagString.aClass40_101 = null;
-		aClass5_5 = null;
+		IdkType.aClass5_5 = null;
 		JagString.aClass40_107 = null;
 		JagString.aClass40_105 = null;
 		JagString.aClass40_104 = null;

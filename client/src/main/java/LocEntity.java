@@ -40,7 +40,7 @@ public final class LocEntity extends Entity {
 	@Override
 	protected Model method1533() {
 		if (this.seq != null) {
-			@Pc(13) int local13 = Static1.anInt2511 - this.seqCycle;
+			@Pc(13) int local13 = client.loopCycle - this.seqCycle;
 			if (local13 > 100 && this.seq.anInt669 > 0) {
 				local13 = 100;
 			}
@@ -57,7 +57,7 @@ public final class LocEntity extends Entity {
 				} while (this.seqFrame >= 0 && this.seq.anIntArray124.length > this.seqFrame);
 				this.seq = null;
 			}
-			this.seqCycle = Static1.anInt2511 - local13;
+			this.seqCycle = client.loopCycle - local13;
 		}
 		@Pc(104) LocType local104 = LocType.get(this.anInt2034);
 		if (local104.anIntArray210 != null) {
@@ -76,9 +76,9 @@ public final class LocEntity extends Entity {
 		this.anInt2024 = arg4;
 		this.anInt2034 = arg0;
 		if (arg7 != -1) {
-			this.seq = Static57.method1042(arg7);
+			this.seq = SeqType.method1042(arg7);
 			this.seqFrame = 0;
-			this.seqCycle = Static1.anInt2511 - 1;
+			this.seqCycle = client.loopCycle - 1;
 			if (arg8 && this.seq.anInt669 != -1) {
 				this.seqFrame = (int) ((double) this.seq.anIntArray124.length * Math.random());
 				this.seqCycle -= (int) ((double) this.seq.delay[this.seqFrame] * Math.random());

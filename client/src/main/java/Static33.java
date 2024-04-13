@@ -10,9 +10,6 @@ public final class Static33 {
 	@OriginalMember(owner = "client!ge", name = "A", descriptor = "Lclient!ad;")
 	public static Js5 synthSoundsJs5;
 
-	@OriginalMember(owner = "client!ge", name = "F", descriptor = "I")
-	public static int anInt824;
-
 	@OriginalMember(owner = "client!ge", name = "I", descriptor = "Lclient!p;")
 	public static PixMap aClass45_16;
 
@@ -38,7 +35,7 @@ public final class Static33 {
 		if (arg0 < 0) {
 			return false;
 		}
-		@Pc(11) int local11 = Static1.anIntArray287[arg0];
+		@Pc(11) int local11 = client.menuAction[arg0];
 		if (local11 >= 2000) {
 			local11 -= 2000;
 		}
@@ -52,7 +49,7 @@ public final class Static33 {
 		JagString.aClass40_255 = null;
 		Static1.anIntArray161 = null;
 		synthSoundsJs5 = null;
-		Static1.anIntArray159 = null;
+		client.cameraModifierWobbleSpeed = null;
 		Static1.anIntArray160 = null;
 		JagString.aClass40_254 = null;
 		Static1.aLongArray3 = null;

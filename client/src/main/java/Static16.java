@@ -10,7 +10,7 @@ public final class Static16 {
 	public static void method345() {
 		Static1.SERVER_PROT_LENGTHS = null;
 		JagString.aClass40_113 = null;
-		JagString.aClass40_112 = null;
+		client.modalMessage = null;
 		JagString.aClass40_115 = null;
 		JagString.aClass40_116 = null;
 		JagString.aClass40_114 = null;

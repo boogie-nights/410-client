@@ -31,27 +31,27 @@ public final class Static27 {
 
 	@OriginalMember(owner = "client!fd", name = "b", descriptor = "(I)V", line = 20)
 	public static void method582() {
-		Static1.aClass47_8.clear();
-		Static1.aClass47_20.clear();
+		ComType.aClass47_8.clear();
+		ComType.aClass47_20.clear();
 	}
 
 	@OriginalMember(owner = "client!fd", name = "a", descriptor = "(Z)V", line = 63)
 	public static void method583() {
 		@Pc(9) int local9 = Static13.aClass2_Sub2_Sub2_Sub2_1.method568(JagString.aClass40_524);
 		@Pc(24) int local24;
-		for (@Pc(16) int local16 = 0; local16 < Static1.anInt797; local16++) {
-			local24 = Static13.aClass2_Sub2_Sub2_Sub2_1.method576(Static1.aClass40Array8[local16]);
+		for (@Pc(16) int local16 = 0; local16 < client.menuSize; local16++) {
+			local24 = Static13.aClass2_Sub2_Sub2_Sub2_1.method576(client.menuOption[local16]);
 			if (local24 > local9) {
 				local9 = local24;
 			}
 		}
 		local9 += 8;
-		local24 = Static1.anInt797 * 15 + 21;
+		local24 = client.menuSize * 15 + 21;
 		@Pc(87) int local87;
 		@Pc(110) int local110;
 		if (Static1.anInt2500 > 4 && Static1.anInt2133 > 4 && Static1.anInt2500 < 516 && Static1.anInt2133 < 338) {
 			Static1.anInt16 = 0;
-			Static91.anInt120 = Static1.anInt797 * 15 + 22;
+			Static91.anInt120 = client.menuSize * 15 + 22;
 			Static14.anInt1856 = local9;
 			local87 = Static1.anInt2500 - local9 / 2 - 4;
 			Static1.aBoolean175 = true;
@@ -74,7 +74,7 @@ public final class Static27 {
 		if (Static1.anInt2500 > 553 && Static1.anInt2133 > 205 && Static1.anInt2500 < 743 && Static1.anInt2133 < 466) {
 			Static1.aBoolean175 = true;
 			Static14.anInt1856 = local9;
-			Static91.anInt120 = Static1.anInt797 * 15 + 22;
+			Static91.anInt120 = client.menuSize * 15 + 22;
 			local110 = Static1.anInt2133 - 205;
 			if (local110 < 0) {
 				local110 = 0;
@@ -94,7 +94,7 @@ public final class Static27 {
 		if (Static1.anInt2500 <= 17 || Static1.anInt2133 <= 357 || Static1.anInt2500 >= 496 || Static1.anInt2133 >= 453) {
 			return;
 		}
-		Static91.anInt120 = Static1.anInt797 * 15 + 22;
+		Static91.anInt120 = client.menuSize * 15 + 22;
 		Static14.anInt1856 = local9;
 		local87 = Static1.anInt2500 - local9 / 2 - 17;
 		Static1.aBoolean175 = true;

@@ -16,10 +16,10 @@ public final class Model extends Entity {
 	public static Model aClass2_Sub2_Sub12_Sub4_3 = new Model();
 
 	@OriginalMember(owner = "client!ne", name = "Sb", descriptor = "I")
-	public static int anInt1747 = 0;
+	public static int pickedCount = 0;
 
 	@OriginalMember(owner = "client!ne", name = "Tb", descriptor = "[I")
-	public static int[] anIntArray386 = Draw3D.sin;
+	public static int[] sin = Draw3D.sin;
 
 	@OriginalMember(owner = "client!ne", name = "cc", descriptor = "[I")
 	public static int[] anIntArray393 = new int[10];
@@ -52,7 +52,7 @@ public final class Model extends Entity {
 	public static int[] anIntArray398 = new int[12];
 
 	@OriginalMember(owner = "client!ne", name = "jc", descriptor = "Z")
-	public static boolean aBoolean140 = false;
+	public static boolean checkHover = false;
 
 	@OriginalMember(owner = "client!ne", name = "Xb", descriptor = "[I")
 	public static int[] anIntArray388 = new int[4096];
@@ -76,10 +76,10 @@ public final class Model extends Entity {
 	public static int[] anIntArray389 = new int[4096];
 
 	@OriginalMember(owner = "client!ne", name = "pc", descriptor = "[I")
-	public static int[] anIntArray402 = Draw3D.cos;
+	public static int[] cos = Draw3D.cos;
 
 	@OriginalMember(owner = "client!ne", name = "Ub", descriptor = "I")
-	public static int anInt1748 = 0;
+	public static int mouseY = 0;
 
 	@OriginalMember(owner = "client!ne", name = "oc", descriptor = "[[I")
 	public static int[][] anIntArrayArray19 = new int[1500][512];
@@ -88,7 +88,7 @@ public final class Model extends Entity {
 	public static int[][] anIntArrayArray18 = new int[12][2000];
 
 	@OriginalMember(owner = "client!ne", name = "rc", descriptor = "I")
-	public static int anInt1750 = 0;
+	public static int mouseX = 0;
 
 	@OriginalMember(owner = "client!ne", name = "gc", descriptor = "[I")
 	public static int[] anIntArray396 = new int[4096];
@@ -493,8 +493,8 @@ public final class Model extends Entity {
 						anIntArrayArray19[local183][anIntArray391[local183]++] = local18;
 					}
 				} else {
-					if (arg1 && this.method1157(anInt1750, anInt1748, anIntArray388[local33], anIntArray388[local38], anIntArray388[local43], local47, local51, local55)) {
-						anIntArray387[anInt1747++] = arg2;
+					if (arg1 && this.method1157(mouseX, mouseY, anIntArray388[local33], anIntArray388[local38], anIntArray388[local43], local47, local51, local55)) {
+						anIntArray387[pickedCount++] = arg2;
 						arg1 = false;
 					}
 					if ((local47 - local51) * (anIntArray388[local43] - anIntArray388[local38]) - (anIntArray388[local33] - anIntArray388[local38]) * (local55 - local51) > 0) {
@@ -683,7 +683,7 @@ public final class Model extends Entity {
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(IIIIIIIII)V", line = 759)
 	@Override
-	public void method1536(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8) {
+	public void draw(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8) {
 		if (this.anInt1740 != 1) {
 			this.method1135();
 		}
@@ -725,7 +725,7 @@ public final class Model extends Entity {
 		@Pc(168) int local168;
 		@Pc(215) int local215;
 		@Pc(219) int local219;
-		if (arg8 > 0 && aBoolean140) {
+		if (arg8 > 0 && checkHover) {
 			local168 = local25 - local32;
 			if (local168 <= 50) {
 				local168 = 50;
@@ -744,11 +744,11 @@ public final class Model extends Entity {
 				local102 /= local36;
 				local123 /= local168;
 			}
-			local215 = anInt1750 - Static6.anInt225;
-			local219 = anInt1748 - Static6.anInt224;
+			local215 = mouseX - Static6.anInt225;
+			local219 = mouseY - Static6.anInt224;
 			if (local215 > local60 && local215 < local73 && local219 > local123 && local219 < local102) {
 				if (this.aBoolean139) {
-					anIntArray387[anInt1747++] = arg8;
+					anIntArray387[pickedCount++] = arg8;
 				} else {
 					local160 = true;
 				}
@@ -759,8 +759,8 @@ public final class Model extends Entity {
 		local219 = 0;
 		@Pc(253) int local253 = 0;
 		if (arg0 != 0) {
-			local219 = anIntArray386[arg0];
-			local253 = anIntArray402[arg0];
+			local219 = sin[arg0];
+			local253 = cos[arg0];
 		}
 		for (@Pc(265) int local265 = 0; local265 < this.anInt1742; local265++) {
 			@Pc(271) int local271 = this.anIntArray370[local265];
@@ -804,8 +804,8 @@ public final class Model extends Entity {
 	public void method1144(@OriginalArg(0) int arg0) {
 		this.aClass9Array1 = null;
 		this.anInt1740 = 0;
-		@Pc(9) int local9 = anIntArray386[arg0];
-		@Pc(13) int local13 = anIntArray402[arg0];
+		@Pc(9) int local9 = sin[arg0];
+		@Pc(13) int local13 = cos[arg0];
 		for (@Pc(15) int local15 = 0; local15 < this.anInt1742; local15++) {
 			@Pc(32) int local32 = this.anIntArray373[local15] * local13 - this.anIntArray381[local15] * local9 >> 16;
 			this.anIntArray381[local15] = this.anIntArray373[local15] * local9 + this.anIntArray381[local15] * local13 >> 16;
@@ -884,14 +884,14 @@ public final class Model extends Entity {
 		}
 		@Pc(11) int local11 = Static6.anInt225;
 		@Pc(13) int local13 = Static6.anInt224;
-		@Pc(17) int local17 = anIntArray386[0];
-		@Pc(21) int local21 = anIntArray402[0];
-		@Pc(25) int local25 = anIntArray386[arg0];
-		@Pc(29) int local29 = anIntArray402[arg0];
-		@Pc(33) int local33 = anIntArray386[arg1];
-		@Pc(37) int local37 = anIntArray402[arg1];
-		@Pc(41) int local41 = anIntArray386[arg2];
-		@Pc(45) int local45 = anIntArray402[arg2];
+		@Pc(17) int local17 = sin[0];
+		@Pc(21) int local21 = cos[0];
+		@Pc(25) int local25 = sin[arg0];
+		@Pc(29) int local29 = cos[arg0];
+		@Pc(33) int local33 = sin[arg1];
+		@Pc(37) int local37 = cos[arg1];
+		@Pc(41) int local41 = sin[arg2];
+		@Pc(45) int local45 = cos[arg2];
 		@Pc(55) int local55 = arg4 * local41 + arg5 * local45 >> 16;
 		for (@Pc(57) int local57 = 0; local57 < this.anInt1742; local57++) {
 			@Pc(63) int local63 = this.anIntArray370[local57];
@@ -996,22 +996,22 @@ public final class Model extends Entity {
 						@Pc(235) int local235;
 						@Pc(251) int local251;
 						if (local225 != 0) {
-							local231 = anIntArray386[local225];
-							local235 = anIntArray402[local225];
+							local231 = sin[local225];
+							local235 = cos[local225];
 							local251 = this.anIntArray373[local31] * local231 + this.anIntArray370[local31] * local235 >> 16;
 							this.anIntArray373[local31] = this.anIntArray373[local31] * local235 - this.anIntArray370[local31] * local231 >> 16;
 							this.anIntArray370[local31] = local251;
 						}
 						if (local36 != 0) {
-							local231 = anIntArray386[local36];
-							local235 = anIntArray402[local36];
+							local231 = sin[local36];
+							local235 = cos[local36];
 							local251 = this.anIntArray373[local31] * local235 - this.anIntArray381[local31] * local231 >> 16;
 							this.anIntArray381[local31] = this.anIntArray373[local31] * local231 + this.anIntArray381[local31] * local235 >> 16;
 							this.anIntArray373[local31] = local251;
 						}
 						if (local219 != 0) {
-							local231 = anIntArray386[local219];
-							local235 = anIntArray402[local219];
+							local231 = sin[local219];
+							local235 = cos[local219];
 							local251 = this.anIntArray381[local31] * local231 + this.anIntArray370[local31] * local235 >> 16;
 							this.anIntArray381[local31] = this.anIntArray381[local31] * local235 - this.anIntArray370[local31] * local231 >> 16;
 							this.anIntArray370[local31] = local251;

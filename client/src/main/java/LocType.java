@@ -6,6 +6,20 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!ia")
 public final class LocType extends Hashable {
 
+	@OriginalMember(owner = "client!i", name = "O", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_10 = new LruCache(10);
+	@OriginalMember(owner = "client!i", name = "Y", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_11 = new LruCache(64);
+	@OriginalMember(owner = "client!ab", name = "o", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_1 = new LruCache(30);
+	@OriginalMember(owner = "client!tb", name = "x", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_21 = new LruCache(500);
+    @OriginalMember(owner = "client!oa", name = "s", descriptor = "Lclient!ud;")
+    public static Js5Index aClass5_23;
+	@OriginalMember(owner = "client!ec", name = "nb", descriptor = "Lclient!ud;")
+	public static Js5Index aClass5_8;
+	@OriginalMember(owner = "client!hb", name = "W", descriptor = "Z")
+	public static boolean aBoolean65 = false;
 	@OriginalMember(owner = "client!ia", name = "S", descriptor = "[I")
 	private int[] anIntArray209;
 
@@ -119,11 +133,11 @@ public final class LocType extends Hashable {
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(BI)Lclient!ia;", line = 208)
 	public static LocType get(@OriginalArg(1) int arg0) {
-		@Pc(10) LocType local10 = (LocType) Static1.aClass47_11.get((long) arg0);
+		@Pc(10) LocType local10 = (LocType) aClass47_11.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(25) byte[] local25 = Static67.aClass5_23.fetchFile(arg0, 6);
+		@Pc(25) byte[] local25 = aClass5_23.fetchFile(arg0, 6);
 		local10 = new LocType();
 		local10.anInt1033 = arg0;
 		if (local25 != null) {
@@ -134,8 +148,15 @@ public final class LocType extends Hashable {
 			local10.blockwalk = false;
 			local10.blockrange = false;
 		}
-		Static1.aClass47_11.put((long) arg0, local10);
+		aClass47_11.put((long) arg0, local10);
 		return local10;
+	}
+
+	@OriginalMember(owner = "client!u", name = "a", descriptor = "(ZZLclient!ud;Lclient!ud;)V", line = 14)
+	public static void method1518(@OriginalArg(1) boolean arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(3) Js5Index arg2) {
+		aClass5_8 = arg1;
+		aClass5_23 = arg2;
+		aBoolean65 = arg0;
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIIIIII)Lclient!ne;", line = 15)
@@ -146,13 +167,13 @@ public final class LocType extends Hashable {
 		} else {
 			local17 = (this.anInt1033 << 10) + (arg4 << 3) + arg0;
 		}
-		@Pc(38) Model local38 = (Model) Static1.aClass47_10.get(local17);
+		@Pc(38) Model local38 = (Model) aClass47_10.get(local17);
 		if (local38 == null) {
 			local38 = this.method771(!this.aBoolean80, arg4, false, arg0);
 			if (local38 == null) {
 				return null;
 			}
-			Static1.aClass47_10.put(local17, local38);
+			aClass47_10.put(local17, local38);
 		}
 		if (this.aBoolean84 || this.aBoolean80) {
 			local38 = new Model(local38, this.aBoolean84, this.aBoolean80);
@@ -198,7 +219,7 @@ public final class LocType extends Hashable {
 		if (this.anIntArray211 != null) {
 			for (@Pc(52) int local52 = 0; local52 < this.anIntArray211.length; local52++) {
 				if (arg0 == this.anIntArray211[local52]) {
-					return Static22.aClass5_8.method64(0, this.anIntArray213[local52] & 0xFFFF);
+					return aClass5_8.method64(0, this.anIntArray213[local52] & 0xFFFF);
 				}
 			}
 			return true;
@@ -207,7 +228,7 @@ public final class LocType extends Hashable {
 		} else if (arg0 == 10) {
 			@Pc(25) boolean local25 = true;
 			for (@Pc(27) int local27 = 0; local27 < this.anIntArray213.length; local27++) {
-				local25 &= Static22.aClass5_8.method64(0, this.anIntArray213[local27] & 0xFFFF);
+				local25 &= aClass5_8.method64(0, this.anIntArray213[local27] & 0xFFFF);
 			}
 			return local25;
 		} else {
@@ -236,16 +257,16 @@ public final class LocType extends Hashable {
 				if (local124) {
 					local136 += 65536;
 				}
-				local9 = (Model) Static1.aClass47_21.get((long) local136);
+				local9 = (Model) aClass47_21.get((long) local136);
 				if (local9 == null) {
-					local9 = Static65.method1163(Static22.aClass5_8, local136 & 0xFFFF);
+					local9 = Static65.method1163(aClass5_8, local136 & 0xFFFF);
 					if (local9 == null) {
 						return null;
 					}
 					if (local124) {
 						local9.method1136();
 					}
-					Static1.aClass47_21.put((long) local136, local9);
+					aClass47_21.put((long) local136, local9);
 				}
 				if (local20 > 1) {
 					Static1.aClass2_Sub2_Sub12_Sub4Array1[local53] = local9;
@@ -270,16 +291,16 @@ public final class LocType extends Hashable {
 			if (local65) {
 				local53 += 65536;
 			}
-			local9 = (Model) Static1.aClass47_21.get((long) local53);
+			local9 = (Model) aClass47_21.get((long) local53);
 			if (local9 == null) {
-				local9 = Static65.method1163(Static22.aClass5_8, local53 & 0xFFFF);
+				local9 = Static65.method1163(aClass5_8, local53 & 0xFFFF);
 				if (local9 == null) {
 					return null;
 				}
 				if (local65) {
 					local9.method1136();
 				}
-				Static1.aClass47_21.put((long) local53, local9);
+				aClass47_21.put((long) local53, local9);
 			}
 		}
 		if (this.anInt1042 == 128 && this.anInt1058 == 128 && this.anInt1051 == 128) {
@@ -345,7 +366,7 @@ public final class LocType extends Hashable {
 		}
 		@Pc(17) boolean local17 = true;
 		for (@Pc(19) int local19 = 0; local19 < this.anIntArray213.length; local19++) {
-			local17 &= Static22.aClass5_8.method64(0, this.anIntArray213[local19] & 0xFFFF);
+			local17 &= aClass5_8.method64(0, this.anIntArray213[local19] & 0xFFFF);
 		}
 		return local17;
 	}
@@ -357,7 +378,7 @@ public final class LocType extends Hashable {
 		if (arg0 == 1) {
 			local20 = arg1.g1();
 			if (local20 > 0) {
-				if (this.anIntArray213 != null && !Static1.aBoolean65) {
+				if (this.anIntArray213 != null && !aBoolean65) {
 					arg1.pos += local20 * 3;
 					return;
 				}
@@ -378,7 +399,7 @@ public final class LocType extends Hashable {
 			if (arg0 == 5) {
 				local20 = arg1.g1();
 				if (local20 > 0) {
-					if (this.anIntArray213 != null && !Static1.aBoolean65) {
+					if (this.anIntArray213 != null && !aBoolean65) {
 						arg1.pos += local20 * 2;
 						return;
 					}
@@ -521,13 +542,13 @@ public final class LocType extends Hashable {
 		} else {
 			local21 = (this.anInt1033 << 10) + (arg4 << 3) + arg0;
 		}
-		@Pc(43) Model local43 = (Model) Static1.aClass47_1.get(local21);
+		@Pc(43) Model local43 = (Model) aClass47_1.get(local21);
 		if (local43 == null) {
 			local43 = this.method771(true, arg4, true, arg0);
 			if (local43 == null) {
 				return null;
 			}
-			Static1.aClass47_1.put(local21, local43);
+			aClass47_1.put(local21, local43);
 		}
 		if (arg3 == null && !this.aBoolean84) {
 			return local43;

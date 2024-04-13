@@ -6,6 +6,10 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!nc")
 public final class TileOverlay {
 
+    @OriginalMember(owner = "client!nc", name = "s", descriptor = "[[I")
+    public static int[][] anIntArrayArray14 = new int[][] { { 1, 3, 5, 7 }, { 1, 3, 5, 7 }, { 1, 3, 5, 7 }, { 1, 3, 5, 7, 6 }, { 1, 3, 5, 7, 6 }, { 1, 3, 5, 7, 6 }, { 1, 3, 5, 7, 6 }, { 1, 3, 5, 7, 2, 6 }, { 1, 3, 5, 7, 2, 8 }, { 1, 3, 5, 7, 2, 8 }, { 1, 3, 5, 7, 11, 12 }, { 1, 3, 5, 7, 11, 12 }, { 1, 3, 5, 7, 13, 14 } };
+	@OriginalMember(owner = "client!nc", name = "n", descriptor = "[[I")
+	public static int[][] anIntArrayArray13 = new int[][] { { 0, 1, 2, 3, 0, 0, 1, 3 }, { 1, 1, 2, 3, 1, 0, 1, 3 }, { 0, 1, 2, 3, 1, 0, 1, 3 }, { 0, 0, 1, 2, 0, 0, 2, 4, 1, 0, 4, 3 }, { 0, 0, 1, 4, 0, 0, 4, 3, 1, 1, 2, 4 }, { 0, 0, 4, 3, 1, 0, 1, 2, 1, 0, 2, 4 }, { 0, 1, 2, 4, 1, 0, 1, 4, 1, 0, 4, 3 }, { 0, 4, 1, 2, 0, 4, 2, 5, 1, 0, 4, 5, 1, 0, 5, 3 }, { 0, 4, 1, 2, 0, 4, 2, 3, 0, 4, 3, 5, 1, 0, 4, 5 }, { 0, 0, 4, 5, 1, 4, 1, 2, 1, 4, 2, 3, 1, 4, 3, 5 }, { 0, 0, 1, 5, 0, 1, 4, 5, 0, 1, 2, 4, 1, 0, 5, 3, 1, 5, 4, 3, 1, 4, 2, 3 }, { 1, 0, 1, 5, 1, 1, 4, 5, 1, 1, 2, 4, 0, 0, 5, 3, 0, 5, 4, 3, 0, 4, 2, 3 }, { 1, 0, 5, 4, 1, 0, 1, 5, 0, 0, 4, 3, 0, 4, 5, 3, 0, 5, 2, 3, 0, 1, 2, 5 } };
 	@OriginalMember(owner = "client!nc", name = "i", descriptor = "Z")
 	public boolean aBoolean133 = true;
 
@@ -64,7 +68,7 @@ public final class TileOverlay {
 		@Pc(34) int local34 = local30 / 2;
 		@Pc(38) int local38 = local30 / 4;
 		@Pc(44) int local44 = local30 * 3 / 4;
-		@Pc(48) int[] local48 = Static1.anIntArrayArray14[arg0];
+		@Pc(48) int[] local48 = anIntArrayArray14[arg0];
 		@Pc(51) int local51 = local48.length;
 		this.anIntArray342 = new int[local51];
 		this.anIntArray352 = new int[local51];
@@ -192,7 +196,7 @@ public final class TileOverlay {
 			local66[local79] = local146;
 			local69[local79] = local148;
 		}
-		@Pc(534) int[] local534 = Static1.anIntArrayArray13[arg0];
+		@Pc(534) int[] local534 = anIntArrayArray13[arg0];
 		local140 = local534.length / 4;
 		this.anIntArray343 = new int[local140];
 		this.anIntArray344 = new int[local140];

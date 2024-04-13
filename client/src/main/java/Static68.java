@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static68 {
 
-	@OriginalMember(owner = "client!ob", name = "c", descriptor = "Lclient!ud;")
-	public static Js5Index aClass5_24;
-
 	@OriginalMember(owner = "client!ob", name = "e", descriptor = "Z")
 	public static boolean aBoolean145;
 
@@ -43,8 +40,8 @@ public final class Static68 {
 
 	@OriginalMember(owner = "client!ob", name = "b", descriptor = "(Z)V", line = 66)
 	public static void method1210() {
-		Static1.aClass47_14.clear();
-		Static1.aClass47_19.clear();
+		NpcType.aClass47_14.clear();
+		NpcType.aClass47_19.clear();
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(I)V", line = 79)
@@ -54,11 +51,11 @@ public final class Static68 {
 		Static1.aClass41_1 = null;
 		JagString.aClass40_523 = null;
 		masterCache = null;
-		Static1.aClass47_15 = null;
+		SpotAnimType.aClass47_15 = null;
 		JagString.aClass40_524 = null;
 		JagString.aClass40_522 = null;
 		JagString.aClass40_525 = null;
-		aClass5_24 = null;
+		SeqType.aClass5_24 = null;
 		World.levelTileOverlayRotation = null;
 	}
 }

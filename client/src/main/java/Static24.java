@@ -19,34 +19,34 @@ public final class Static24 {
 			if (client.in.bitsAvailable(client.packetSize) >= 26) {
 				@Pc(17) int local17 = client.in.gBit(14);
 				if (local17 != 16383) {
-					if (Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local17] == null) {
-						Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local17] = new NpcEntity();
+					if (client.npcs[local17] == null) {
+						client.npcs[local17] = new NpcEntity();
 					}
-					@Pc(34) NpcEntity local34 = Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local17];
-					Static1.anIntArray326[Static1.anInt1800++] = local17;
-					local34.anInt2274 = Static1.anInt2511;
+					@Pc(34) NpcEntity local34 = client.npcs[local17];
+					client.npcIds[client.npcCount++] = local17;
+					local34.anInt2274 = client.loopCycle;
 					@Pc(50) int local50 = client.in.gBit(5);
 					if (local50 > 15) {
 						local50 -= 32;
 					}
 					@Pc(61) int local61 = client.in.gBit(1);
-					local34.aClass2_Sub2_Sub7_1 = Static34.method640(client.in.gBit(13));
+					local34.type = NpcType.method640(client.in.gBit(13));
 					@Pc(78) int local78 = client.in.gBit(5);
 					@Pc(85) int local85 = client.in.gBit(1);
 					if (local85 == 1) {
 						Static1.anIntArray504[Static1.anInt1190++] = local17;
 					}
-					local34.anInt2290 = local34.aClass2_Sub2_Sub7_1.anInt767;
-					local34.anInt2303 = local34.aClass2_Sub2_Sub7_1.anInt764;
-					local34.anInt2322 = local34.aClass2_Sub2_Sub7_1.anInt761;
-					local34.anInt2304 = local34.aClass2_Sub2_Sub7_1.anInt771;
-					local34.anInt2285 = local34.aClass2_Sub2_Sub7_1.anInt769;
-					local34.anInt2278 = local34.aClass2_Sub2_Sub7_1.anInt758;
+					local34.anInt2290 = local34.type.anInt767;
+					local34.anInt2303 = local34.type.anInt764;
+					local34.anInt2322 = local34.type.anInt761;
+					local34.anInt2304 = local34.type.anInt771;
+					local34.anInt2285 = local34.type.anInt769;
+					local34.size = local34.type.size;
 					if (local78 > 15) {
 						local78 -= 32;
 					}
-					local34.anInt2269 = local34.aClass2_Sub2_Sub7_1.anInt777;
-					local34.method1545(local61 == 1, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0] + local78, local50 + Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0]);
+					local34.anInt2269 = local34.type.anInt777;
+					local34.method1545(local61 == 1, client.localPlayer.pathTileZ[0] + local78, local50 + client.localPlayer.pathTileX[0]);
 					continue;
 				}
 			}
@@ -71,7 +71,7 @@ public final class Static24 {
 	public static void method525() {
 		aClass45_12 = null;
 		JagString.aClass40_192 = null;
-		Static1.aClass47_7 = null;
+		ObjType.aClass47_7 = null;
 		aFontMetrics1 = null;
 		modelsJs5 = null;
 		JagString.aClass40_191 = null;

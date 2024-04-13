@@ -12,12 +12,12 @@ public final class Static36 {
 		if (arg0 == null) {
 			return false;
 		}
-		for (@Pc(18) int local18 = 0; local18 < Static1.anInt2594; local18++) {
-			if (arg0.method1199(Static1.aClass40Array23[local18])) {
+		for (@Pc(18) int local18 = 0; local18 < client.friendCount; local18++) {
+			if (arg0.method1199(client.friendName[local18])) {
 				return true;
 			}
 		}
-		return arg0.method1199(Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395);
+		return arg0.method1199(client.localPlayer.name);
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(BLclient!ud;II)Lclient!vb;", line = 364)

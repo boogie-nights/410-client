@@ -83,7 +83,7 @@ public final class Js5TextureProvider implements TextureProvider {
 	}
 
 	@OriginalMember(owner = "client!ea", name = "c", descriptor = "(IB)V", line = 827)
-	public void method405(@OriginalArg(0) int arg0) {
+	public void updateTextures(@OriginalArg(0) int arg0) {
 		for (@Pc(3) int local3 = 0; local3 < this.aClass2_Sub8Array1.length; local3++) {
 			@Pc(10) Texture local10 = this.aClass2_Sub8Array1[local3];
 			if (local10 != null && local10.anInt994 != 0 && local10.aBoolean71) {

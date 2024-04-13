@@ -6,6 +6,8 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!le")
 public final class PlayerAppearance {
 
+	@OriginalMember(owner = "client!t", name = "j", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_17 = new LruCache(260);
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "J")
 	private long aLong100;
 
@@ -24,10 +26,15 @@ public final class PlayerAppearance {
 	@OriginalMember(owner = "client!le", name = "z", descriptor = "Z")
 	public boolean aBoolean117;
 
+	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(B)V", line = 87)
+	public static void method850() {
+		aClass47_17.clear();
+	}
+
 	@OriginalMember(owner = "client!le", name = "b", descriptor = "(I)Lclient!ne;", line = 59)
 	public Model method999() {
 		if (this.anInt1520 != -1) {
-			return Static34.method640(this.anInt1520).method615();
+			return NpcType.method640(this.anInt1520).method615();
 		}
 		@Pc(18) boolean local18 = false;
 		for (@Pc(20) int local20 = 0; local20 < 12; local20++) {
@@ -35,7 +42,7 @@ public final class PlayerAppearance {
 			if (local27 >= 256 && local27 < 512 && !IdkType.get(local27 - 256).method1585()) {
 				local18 = true;
 			}
-			if (local27 >= 512 && !Static97.method1669(local27 - 512).method710(this.aBoolean117)) {
+			if (local27 >= 512 && !ObjType.method1669(local27 - 512).method710(this.aBoolean117)) {
 				local18 = true;
 			}
 		}
@@ -54,7 +61,7 @@ public final class PlayerAppearance {
 				}
 			}
 			if (local86 >= 512) {
-				local106 = Static97.method1669(local86 - 512).method714(this.aBoolean117);
+				local106 = ObjType.method1669(local86 - 512).method714(this.aBoolean117);
 				if (local106 != null) {
 					local77[local74++] = local106;
 				}
@@ -63,9 +70,9 @@ public final class PlayerAppearance {
 		@Pc(147) Model local147 = new Model(local77, local74);
 		for (@Pc(149) int local149 = 0; local149 < 5; local149++) {
 			if (this.anIntArray313[local149] != 0) {
-				local147.method1140(Static1.anIntArrayArray6[local149][0], Static1.anIntArrayArray6[local149][this.anIntArray313[local149]]);
+				local147.method1140(PlayerEntity.anIntArrayArray6[local149][0], PlayerEntity.anIntArrayArray6[local149][this.anIntArray313[local149]]);
 				if (local149 == 1) {
-					local147.method1140(Static1.anIntArray501[0], Static1.anIntArray501[this.anIntArray313[local149]]);
+					local147.method1140(PlayerEntity.anIntArray501[0], PlayerEntity.anIntArray501[this.anIntArray313[local149]]);
 				}
 			}
 		}
@@ -132,7 +139,7 @@ public final class PlayerAppearance {
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(IIBLclient!f;Lclient!f;)Lclient!ne;", line = 528)
 	public Model method1005(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) SeqType arg2, @OriginalArg(4) SeqType arg3) {
 		if (this.anInt1520 != -1) {
-			return Static34.method640(this.anInt1520).method605(arg2, arg3, arg0, arg1);
+			return NpcType.method640(this.anInt1520).method605(arg2, arg3, arg0, arg1);
 		}
 		@Pc(27) int[] local27 = this.identikit;
 		@Pc(35) long local35 = this.aLong101;
@@ -150,7 +157,7 @@ public final class PlayerAppearance {
 				local27[3] = arg2.anInt664;
 			}
 		}
-		@Pc(125) Model local125 = (Model) Static1.aClass47_17.get(local35);
+		@Pc(125) Model local125 = (Model) aClass47_17.get(local35);
 		if (local125 == null) {
 			@Pc(129) boolean local129 = false;
 			for (@Pc(131) int local131 = 0; local131 < 12; local131++) {
@@ -158,13 +165,13 @@ public final class PlayerAppearance {
 				if (local137 >= 256 && local137 < 512 && !IdkType.get(local137 - 256).method1582()) {
 					local129 = true;
 				}
-				if (local137 >= 512 && !Static97.method1669(local137 - 512).method709(this.aBoolean117)) {
+				if (local137 >= 512 && !ObjType.method1669(local137 - 512).method709(this.aBoolean117)) {
 					local129 = true;
 				}
 			}
 			if (local129) {
 				if (this.aLong100 != -1L) {
-					local125 = (Model) Static1.aClass47_17.get(this.aLong100);
+					local125 = (Model) aClass47_17.get(this.aLong100);
 				}
 				if (local125 == null) {
 					return null;
@@ -184,7 +191,7 @@ public final class PlayerAppearance {
 						}
 					}
 					if (local207 >= 512) {
-						local225 = Static97.method1669(local207 - 512).method718(this.aBoolean117);
+						local225 = ObjType.method1669(local207 - 512).method718(this.aBoolean117);
 						if (local225 != null) {
 							local197[local199++] = local225;
 						}
@@ -193,15 +200,15 @@ public final class PlayerAppearance {
 				local125 = new Model(local197, local199);
 				for (local207 = 0; local207 < 5; local207++) {
 					if (this.anIntArray313[local207] != 0) {
-						local125.method1140(Static1.anIntArrayArray6[local207][0], Static1.anIntArrayArray6[local207][this.anIntArray313[local207]]);
+						local125.method1140(PlayerEntity.anIntArrayArray6[local207][0], PlayerEntity.anIntArrayArray6[local207][this.anIntArray313[local207]]);
 						if (local207 == 1) {
-							local125.method1140(Static1.anIntArray501[0], Static1.anIntArray501[this.anIntArray313[local207]]);
+							local125.method1140(PlayerEntity.anIntArray501[0], PlayerEntity.anIntArray501[this.anIntArray313[local207]]);
 						}
 					}
 				}
 				local125.method1160();
 				local125.method1153(64, 850, -30, -50, -30, true);
-				Static1.aClass47_17.put(local35, local125);
+				aClass47_17.put(local35, local125);
 				this.aLong100 = local35;
 			}
 		}
@@ -221,7 +228,7 @@ public final class PlayerAppearance {
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(B)I", line = 706)
 	public int method1006() {
-		return this.anInt1520 == -1 ? (this.identikit[11] << 5) + (this.identikit[8] << 10) + (this.anIntArray313[4] << 20) + (this.anIntArray313[0] << 25) + (this.identikit[0] << 15) + this.identikit[1] : 305419896 - -Static34.method640(this.anInt1520).anInt762;
+		return this.anInt1520 == -1 ? (this.identikit[11] << 5) + (this.identikit[8] << 10) + (this.anIntArray313[4] << 20) + (this.anIntArray313[0] << 25) + (this.identikit[0] << 15) + this.identikit[1] : 305419896 - -NpcType.method640(this.anInt1520).anInt762;
 	}
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(Lclient!eb;I)V", line = 732)
@@ -270,7 +277,7 @@ public final class PlayerAppearance {
 		this.identikit[5] = local13;
 		this.identikit[9] = local18;
 		if (local8 != 0L && local8 != this.aLong101) {
-			Static1.aClass47_17.method1327(local8);
+			aClass47_17.method1327(local8);
 		}
 	}
 
@@ -279,13 +286,13 @@ public final class PlayerAppearance {
 		@Pc(11) int local11 = this.anIntArray313[arg0];
 		if (arg1) {
 			local11++;
-			if (local11 >= Static1.anIntArrayArray6[arg0].length) {
+			if (local11 >= PlayerEntity.anIntArrayArray6[arg0].length) {
 				local11 = 0;
 			}
 		} else {
 			local11--;
 			if (local11 < 0) {
-				local11 = Static1.anIntArrayArray6[arg0].length - 1;
+				local11 = PlayerEntity.anIntArrayArray6[arg0].length - 1;
 			}
 		}
 		this.anIntArray313[arg0] = local11;

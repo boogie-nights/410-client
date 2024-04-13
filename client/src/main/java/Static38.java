@@ -7,42 +7,8 @@ public final class Static38 {
 	@OriginalMember(owner = "client!i", name = "X", descriptor = "Lclient!p;")
 	public static PixMap aClass45_20;
 
-	@OriginalMember(owner = "client!i", name = "Z", descriptor = "Lclient!ud;")
-	public static Js5Index aClass5_13;
-
 	@OriginalMember(owner = "client!i", name = "cb", descriptor = "Lclient!bb;")
 	public static SignLink aClass7_4;
-
-	@OriginalMember(owner = "client!i", name = "a", descriptor = "(IIZIIII)V", line = 4)
-	public static void method752(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
-		@Pc(10) int local10 = 2048 - arg1 & 0x7FF;
-		@Pc(12) int local12 = 0;
-		@Pc(19) int local19 = 2048 - arg3 & 0x7FF;
-		@Pc(21) int local21 = 0;
-		@Pc(28) int local28 = arg5;
-		@Pc(34) int local34;
-		@Pc(38) int local38;
-		@Pc(49) int local49;
-		if (local19 != 0) {
-			local34 = Model.anIntArray386[local19];
-			local38 = Model.anIntArray402[local19];
-			local49 = local38 * 0 - arg5 * local34 >> 16;
-			local28 = local38 * arg5 + local34 * 0 >> 16;
-			local21 = local49;
-		}
-		if (local10 != 0) {
-			local34 = Model.anIntArray386[local10];
-			local38 = Model.anIntArray402[local10];
-			local49 = local38 * 0 + local28 * local34 >> 16;
-			local28 = local28 * local38 - local34 * 0 >> 16;
-			local12 = local49;
-		}
-		Static33.anInt824 = arg3;
-		Static73.anInt1935 = arg4 - local21;
-		Static14.anInt1863 = arg0 - local28;
-		Static44.anInt1114 = arg2 - local12;
-		Static26.anInt686 = arg1;
-	}
 
 	@OriginalMember(owner = "client!i", name = "f", descriptor = "(I)V", line = 64)
 	public static void method753() {
@@ -50,21 +16,21 @@ public final class Static38 {
 		JagString.aClass40_306 = null;
 		aClass7_4 = null;
 		aClass45_20 = null;
-		aClass5_13 = null;
-		Static1.aClass47_10 = null;
-		Static1.aClass47_11 = null;
+		ObjType.aClass5_13 = null;
+		LocType.aClass47_10 = null;
+		LocType.aClass47_11 = null;
 		JagString.aClass40_305 = null;
 	}
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(II)Lclient!sb;", line = 81)
 	public static SeqFrameset getSeqFrameset(@OriginalArg(1) int arg0) {
-		@Pc(14) SeqFrameset local14 = (SeqFrameset) Static1.aClass47_2.get((long) arg0);
+		@Pc(14) SeqFrameset local14 = (SeqFrameset) SeqType.aClass47_2.get((long) arg0);
 		if (local14 != null) {
 			return local14;
 		}
 		local14 = Static98.method1744(Static35.aClass5_12, Static77.aClass5_27, arg0);
 		if (local14 != null) {
-			Static1.aClass47_2.put((long) arg0, local14);
+			SeqType.aClass47_2.put((long) arg0, local14);
 		}
 		return local14;
 	}
@@ -113,7 +79,7 @@ public final class Static38 {
 		for (local57 = 0; local57 < 255; local57++) {
 			Static1.anIntArray152[local57] = Static1.anIntArray152[local57 + 1];
 		}
-		Static1.anIntArray152[255] = (int) (Math.sin((double) Static1.anInt2511 / 14.0D) * 16.0D + Math.sin((double) Static1.anInt2511 / 15.0D) * 14.0D + Math.sin((double) Static1.anInt2511 / 16.0D) * 12.0D);
+		Static1.anIntArray152[255] = (int) (Math.sin((double) client.loopCycle / 14.0D) * 16.0D + Math.sin((double) client.loopCycle / 15.0D) * 14.0D + Math.sin((double) client.loopCycle / 16.0D) * 12.0D);
 		if (Static1.anInt2061 > 0) {
 			Static1.anInt2061 -= 4;
 		}

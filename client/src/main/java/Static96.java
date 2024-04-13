@@ -30,14 +30,14 @@ public final class Static96 {
 			Static1.anInt477 = -1;
 			return;
 		}
-		@Pc(34) int local34 = Static78.method1383(Static1.currentLevel, arg1, arg2) - arg0;
-		@Pc(38) int local38 = arg1 - Static44.anInt1114;
-		@Pc(42) int local42 = arg2 - Static14.anInt1863;
-		@Pc(46) int local46 = Model.anIntArray386[Static33.anInt824];
-		@Pc(50) int local50 = Model.anIntArray402[Static33.anInt824];
-		@Pc(54) int local54 = local34 - Static73.anInt1935;
-		@Pc(58) int local58 = Model.anIntArray386[Static26.anInt686];
-		@Pc(62) int local62 = Model.anIntArray402[Static26.anInt686];
+		@Pc(34) int local34 = client.getHeightmapY(client.currentLevel, arg1, arg2) - arg0;
+		@Pc(38) int local38 = arg1 - client.cameraX;
+		@Pc(42) int local42 = arg2 - client.cameraZ;
+		@Pc(46) int local46 = Model.sin[client.cameraPitch];
+		@Pc(50) int local50 = Model.cos[client.cameraPitch];
+		@Pc(54) int local54 = local34 - client.cameraY;
+		@Pc(58) int local58 = Model.sin[client.cameraYaw];
+		@Pc(62) int local62 = Model.cos[client.cameraYaw];
 		@Pc(73) int local73 = local58 * local42 + local38 * local62 >> 16;
 		@Pc(84) int local84 = local62 * local42 - local58 * local38 >> 16;
 		@Pc(86) int local86 = local73;

@@ -10,17 +10,14 @@ public final class Static49 {
 	@OriginalMember(owner = "client!kc", name = "cd", descriptor = "[Lclient!vb;")
 	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array7;
 
-	@OriginalMember(owner = "client!kc", name = "md", descriptor = "Lclient!ud;")
-	public static Js5Index aClass5_18;
-
 	@OriginalMember(owner = "client!kc", name = "n", descriptor = "(I)V", line = 4)
 	public static void method916() {
 		@Pc(5) Mouse local5 = Static1.aClass62_1;
 		synchronized (Static1.aClass62_1) {
-			Static1.anInt2170 = Static1.anInt969;
+			client.mouseButton = Static1.anInt969;
 			Mouse.x = Static1.anInt112;
 			Mouse.y = Static1.anInt1663;
-			Static1.anInt2030 = Static1.anInt2520;
+			client.mouseClickButton = Static1.anInt2520;
 			Static1.anInt2500 = Static1.anInt1166;
 			Static1.anInt2133 = Static1.anInt2494;
 			Static1.aLong1 = Static1.aLong149;
@@ -28,43 +25,13 @@ public final class Static49 {
 		}
 	}
 
-	@OriginalMember(owner = "client!kc", name = "c", descriptor = "(Z)V", line = 28)
-	public static void method917() {
-		for (@Pc(10) ProjectileEntity local10 = (ProjectileEntity) Static1.aClass44_4.head(); local10 != null; local10 = (ProjectileEntity) Static1.aClass44_4.next()) {
-			if (local10.anInt1417 != Static1.currentLevel || local10.anInt1427 < Static1.anInt2511) {
-				local10.unlink();
-			} else if (Static1.anInt2511 >= local10.anInt1419) {
-				if (local10.anInt1434 > 0) {
-					@Pc(47) NpcEntity local47 = Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local10.anInt1434 - 1];
-					if (local47 != null && local47.anInt2275 >= 0 && local47.anInt2275 < 13312 && local47.anInt2284 >= 0 && local47.anInt2284 < 13312) {
-						local10.method939(local47.anInt2275, Static78.method1383(local10.anInt1417, local47.anInt2275, local47.anInt2284) - local10.anInt1416, Static1.anInt2511, local47.anInt2284);
-					}
-				}
-				if (local10.anInt1434 < 0) {
-					@Pc(97) int local97 = -local10.anInt1434 - 1;
-					@Pc(104) PlayerEntity local104;
-					if (local97 == Static1.anInt1955) {
-						local104 = Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1;
-					} else {
-						local104 = Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local97];
-					}
-					if (local104 != null && local104.anInt2275 >= 0 && local104.anInt2275 < 13312 && local104.anInt2284 >= 0 && local104.anInt2284 < 13312) {
-						local10.method939(local104.anInt2275, Static78.method1383(local10.anInt1417, local104.anInt2275, local104.anInt2284) - local10.anInt1416, Static1.anInt2511, local104.anInt2284);
-					}
-				}
-				local10.method942(Static1.anInt1095);
-				Static85.scene.method1425(Static1.currentLevel, (int) local10.aDouble7, (int) local10.aDouble5, (int) local10.aDouble2, 60, local10, local10.anInt1436, -1, false);
-			}
-		}
-	}
-
 	@OriginalMember(owner = "client!kc", name = "o", descriptor = "(I)V", line = 220)
 	public static void method919() {
 		JagString.aClass40_396 = null;
-		Static1.anIntArray287 = null;
+		client.menuAction = null;
 		aClass2_Sub2_Sub2_Sub4Array7 = null;
 		Static1.anIntArray288 = null;
-		aClass5_18 = null;
+		SpotAnimType.aClass5_18 = null;
 		aClass5_17 = null;
 	}
 
@@ -77,27 +44,27 @@ public final class Static49 {
 		}
 		Static1.aBoolean182 = false;
 		if (arg6 >= arg1 && arg6 < arg1 + 16 && arg7 <= arg5 && arg7 + 16 > arg5) {
-			arg0.anInt1587 -= Static1.anInt2326 * 4;
+			arg0.anInt1587 -= client.dragCycles * 4;
 			if (arg4 == 1) {
-				Static1.aBoolean59 = true;
+				client.redrawSidebar = true;
 			}
 			if (arg4 == 2 || arg4 == 3) {
-				Static1.aBoolean144 = true;
+				client.redrawChatback = true;
 			}
 		} else if (arg1 <= arg6 && arg1 + 16 > arg6 && arg3 + arg7 - 16 <= arg5 && arg3 + arg7 > arg5) {
 			if (arg4 == 2 || arg4 == 3) {
-				Static1.aBoolean144 = true;
+				client.redrawChatback = true;
 			}
 			if (arg4 == 1) {
-				Static1.aBoolean59 = true;
+				client.redrawSidebar = true;
 			}
-			arg0.anInt1587 += Static1.anInt2326 * 4;
-		} else if (arg1 - Static1.anInt180 <= arg6 && arg6 < arg1 + Static1.anInt180 + 16 && arg7 + 16 <= arg5 && arg5 < arg3 + arg7 - 16 && Static1.anInt2326 > 0) {
+			arg0.anInt1587 += client.dragCycles * 4;
+		} else if (arg1 - Static1.anInt180 <= arg6 && arg6 < arg1 + Static1.anInt180 + 16 && arg7 + 16 <= arg5 && arg5 < arg3 + arg7 - 16 && client.dragCycles > 0) {
 			if (arg4 == 1) {
-				Static1.aBoolean59 = true;
+				client.redrawSidebar = true;
 			}
 			if (arg4 == 2 || arg4 == 3) {
-				Static1.aBoolean144 = true;
+				client.redrawChatback = true;
 			}
 			Static1.aBoolean182 = true;
 			@Pc(147) int local147 = arg3 * (arg3 - 32) / arg2;
@@ -115,7 +82,7 @@ public final class Static49 {
 		for (@Pc(7) int local7 = 0; local7 < 8; local7++) {
 			for (@Pc(11) int local11 = 0; local11 < 8; local11++) {
 				if (local7 + arg4 > 0 && arg4 + local7 < 103 && arg1 + local11 > 0 && local11 + arg1 < 103) {
-					arg7[arg8].anIntArrayArray9[local7 + arg4][local11 + arg1] &= 0xFEFFFFFF;
+					arg7[arg8].flags[local7 + arg4][local11 + arg1] &= 0xFEFFFFFF;
 				}
 			}
 		}

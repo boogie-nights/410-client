@@ -13,9 +13,6 @@ public final class Static26 {
 	@OriginalMember(owner = "client!fb", name = "n", descriptor = "I")
 	public static int anInt685;
 
-	@OriginalMember(owner = "client!fb", name = "p", descriptor = "I")
-	public static int anInt686;
-
 	@OriginalMember(owner = "client!fb", name = "x", descriptor = "Lclient!ud;")
 	public static Js5Index aClass5_9;
 
@@ -28,18 +25,18 @@ public final class Static26 {
 		@Pc(17) ComType[] local17 = Static46.aClass2_Sub2_Sub13ArrayArray1[arg0];
 		for (@Pc(24) int local24 = 0; local24 < local17.length; local24++) {
 			@Pc(30) ComType local30 = local17[local24];
-			if (local30 != null && local30.anInt1613 == 6) {
+			if (local30 != null && local30.type == 6) {
 				@Pc(56) int local56;
-				if (local30.anInt1574 != -1 || local30.anInt1592 != -1) {
+				if (local30.anim != -1 || local30.activeAnim != -1) {
 					@Pc(51) boolean local51 = Static75.method1354(local30);
 					if (local51) {
-						local56 = local30.anInt1592;
+						local56 = local30.activeAnim;
 					} else {
-						local56 = local30.anInt1574;
+						local56 = local30.anim;
 					}
 					if (local56 != -1) {
-						@Pc(71) SeqType local71 = Static57.method1042(local56);
-						local30.anInt1593 += Static1.anInt1095;
+						@Pc(71) SeqType local71 = SeqType.method1042(local56);
+						local30.anInt1593 += client.sceneDelta;
 						label50: while (true) {
 							do {
 								do {
@@ -59,11 +56,11 @@ public final class Static26 {
 				if (local30.anInt1617 != 0) {
 					@Pc(152) int local152 = local30.anInt1617 >> 16;
 					local13 = true;
-					@Pc(158) int local158 = local152 * Static1.anInt1095;
-					local30.anInt1579 = local30.anInt1579 + local158 & 0x7FF;
+					@Pc(158) int local158 = local152 * client.sceneDelta;
+					local30.xan = local30.xan + local158 & 0x7FF;
 					local56 = local30.anInt1617 << 16 >> 16;
-					local56 *= Static1.anInt1095;
-					local30.anInt1614 = local30.anInt1614 + local56 & 0x7FF;
+					local56 *= client.sceneDelta;
+					local30.yan = local30.yan + local56 & 0x7FF;
 				}
 			}
 		}
@@ -84,7 +81,7 @@ public final class Static26 {
 			@Pc(46) int local46 = local39.read(local26, 0, local26.length);
 			if (local46 == -1) {
 				@Pc(61) byte[] local61 = new byte[local10.length + 9];
-				Static107.method993(local10, 0, local61, 9, local10.length);
+				Static107.copy(local10, 0, local61, 9, local10.length);
 				@Pc(75) Packet local75 = new Packet(local61);
 				local75.p1(2);
 				local75.p4(local31);

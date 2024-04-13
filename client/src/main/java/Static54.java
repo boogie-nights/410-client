@@ -22,92 +22,9 @@ public final class Static54 {
 		JagString.aClass40_430 = null;
 	}
 
-	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(Z)I", line = 18)
-	public static int method995() {
-		@Pc(12) int local12 = 3;
-		if (Static33.anInt824 < 310) {
-			@Pc(21) int local21 = Static44.anInt1114 >> 7;
-			@Pc(25) int local25 = Static14.anInt1863 >> 7;
-			@Pc(30) int local30 = Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7;
-			if ((World.levelTileFlags[Static1.currentLevel][local21][local25] & 0x4) != 0) {
-				local12 = Static1.currentLevel;
-			}
-			@Pc(50) int local50 = Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7;
-			@Pc(62) int local62;
-			if (local30 > local21) {
-				local62 = local30 - local21;
-			} else {
-				local62 = local21 - local30;
-			}
-			@Pc(77) int local77;
-			if (local50 > local25) {
-				local77 = local50 - local25;
-			} else {
-				local77 = local25 - local50;
-			}
-			@Pc(92) int local92;
-			@Pc(94) int local94;
-			if (local62 <= local77) {
-				local92 = local62 * 65536 / local77;
-				local94 = 32768;
-				while (local50 != local25) {
-					if (local25 < local50) {
-						local25++;
-					} else if (local50 < local25) {
-						local25--;
-					}
-					if ((World.levelTileFlags[Static1.currentLevel][local21][local25] & 0x4) != 0) {
-						local12 = Static1.currentLevel;
-					}
-					local94 += local92;
-					if (local94 >= 65536) {
-						local94 -= 65536;
-						if (local21 < local30) {
-							local21++;
-						} else if (local21 > local30) {
-							local21--;
-						}
-						if ((World.levelTileFlags[Static1.currentLevel][local21][local25] & 0x4) != 0) {
-							local12 = Static1.currentLevel;
-						}
-					}
-				}
-			} else {
-				local94 = 32768;
-				local92 = local77 * 65536 / local62;
-				while (local21 != local30) {
-					local94 += local92;
-					if (local21 < local30) {
-						local21++;
-					} else if (local30 < local21) {
-						local21--;
-					}
-					if ((World.levelTileFlags[Static1.currentLevel][local21][local25] & 0x4) != 0) {
-						local12 = Static1.currentLevel;
-					}
-					if (local94 >= 65536) {
-						if (local50 > local25) {
-							local25++;
-						} else if (local25 > local50) {
-							local25--;
-						}
-						if ((World.levelTileFlags[Static1.currentLevel][local21][local25] & 0x4) != 0) {
-							local12 = Static1.currentLevel;
-						}
-						local94 -= 65536;
-					}
-				}
-			}
-		}
-		if ((World.levelTileFlags[Static1.currentLevel][Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7][Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7] & 0x4) != 0) {
-			local12 = Static1.currentLevel;
-		}
-		return local12;
-	}
-
 	@OriginalMember(owner = "client!lc", name = "b", descriptor = "(B)V", line = 156)
 	public static void method996() {
-		Static1.aClass47_22.clear();
+		IdkType.aClass47_22.clear();
 	}
 
 	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(Lclient!ud;ILjava/awt/Component;)V", line = 180)
@@ -116,7 +33,7 @@ public final class Static54 {
 			return;
 		}
 		Static14.aClass2_Sub2_Sub2_Sub3_19 = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_223);
-		Static48.aClass2_Sub2_Sub2_Sub3_13 = Static91.method77(arg0, JagString.aClass40_110, Static1.aClass40_544);
+		Static48.aClass2_Sub2_Sub2_Sub3_13 = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_544);
 		Static16.aClass2_Sub2_Sub2_Sub3_6 = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_191);
 		Static46.aClass2_Sub2_Sub2_Sub3_11 = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_734);
 		Static14.aClass2_Sub2_Sub2_Sub3_18 = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_64);
@@ -128,7 +45,7 @@ public final class Static54 {
 		Static16.aClass2_Sub2_Sub2_Sub3_6.method1320(0, 0);
 		Static7.aClass45_5 = Static75.method1351(190, arg1, 261);
 		Static14.aClass2_Sub2_Sub2_Sub3_19.method1320(0, 0);
-		Static2.aClass45_2 = Static75.method1351(512, arg1, 334);
+		Static2.areaViewport = Static75.method1351(512, arg1, 334);
 		Static25.method1610();
 		Static4.aClass45_4 = Static75.method1351(496, arg1, 50);
 		Static63.aClass45_8 = Static75.method1351(269, arg1, 37);

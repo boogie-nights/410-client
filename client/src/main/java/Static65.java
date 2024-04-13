@@ -57,8 +57,8 @@ public final class Static65 {
 		Model.anIntArray400 = null;
 		Model.anIntArray404 = null;
 		Model.anIntArray387 = null;
-		Model.anIntArray386 = null;
-		Model.anIntArray402 = null;
+		Model.sin = null;
+		Model.cos = null;
 		Model.anIntArray392 = null;
 		Model.anIntArray395 = null;
 		Model.anIntArray405 = null;

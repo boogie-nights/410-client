@@ -8,9 +8,9 @@ public final class Static92 {
 		JagString.aClass40_688 = null;
 		JagString.aClass40_690 = null;
 		JagString.aClass40_689 = null;
-		Static1.aBooleanArray37 = null;
+		client.actionKey = null;
 		JagString.aClass40_691 = null;
-		Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1 = null;
+		client.players = null;
 	}
 
 	@OriginalMember(owner = "client!v", name = "a", descriptor = "(IZ)Lclient!o;", line = 71)

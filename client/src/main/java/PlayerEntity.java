@@ -6,6 +6,10 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!kc")
 public final class PlayerEntity extends PathingEntity {
 
+	@OriginalMember(owner = "client!bd", name = "o", descriptor = "[[I")
+	public static int[][] anIntArrayArray6 = new int[][] { { 6798, 107, 10283, 16, 4797, 7744, 5799, 4634, 33697, 22433, 2983, 54193 }, { 8741, 12, 64030, 43162, 7735, 8404, 1701, 38430, 24094, 10153, 56621, 4783, 1341, 16578, 35003, 25239 }, { 25238, 8742, 12, 64030, 43162, 7735, 8404, 1701, 38430, 24094, 10153, 56621, 4783, 1341, 16578, 35003 }, { 4626, 11146, 6439, 12, 4758, 10270 }, { 4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574 } };
+	@OriginalMember(owner = "client!ub", name = "K", descriptor = "[I")
+	public static int[] anIntArray501 = new int[] { 9104, 10275, 7595, 3610, 7975, 8526, 918, 38802, 24466, 10145, 58654, 5027, 1457, 16565, 34991, 25486 };
 	@OriginalMember(owner = "client!kc", name = "Gc", descriptor = "I")
 	public int anInt1368;
 
@@ -22,10 +26,10 @@ public final class PlayerEntity extends PathingEntity {
 	public int anInt1376;
 
 	@OriginalMember(owner = "client!kc", name = "Tc", descriptor = "I")
-	public int anInt1379;
+	public int y;
 
 	@OriginalMember(owner = "client!kc", name = "Yc", descriptor = "Lclient!o;")
-	public JagString aClass40_395;
+	public JagString name;
 
 	@OriginalMember(owner = "client!kc", name = "ad", descriptor = "I")
 	public int anInt1384;
@@ -61,7 +65,7 @@ public final class PlayerEntity extends PathingEntity {
 	public int anInt1378 = 0;
 
 	@OriginalMember(owner = "client!kc", name = "nd", descriptor = "Z")
-	public boolean aBoolean104 = false;
+	public boolean lowMemory = false;
 
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(Lclient!eb;I)V", line = 88)
 	public void method918(@OriginalArg(0) Packet buf) {
@@ -86,7 +90,7 @@ public final class PlayerEntity extends PathingEntity {
 					break;
 				}
 				if (local33[local38] >= 512) {
-					local96 = Static97.method1669(local33[local38] - 512).anInt951;
+					local96 = ObjType.method1669(local33[local38] - 512).anInt951;
 					if (local96 != 0) {
 						this.anInt1382 = local96;
 					}
@@ -96,7 +100,7 @@ public final class PlayerEntity extends PathingEntity {
 		@Pc(111) int[] local111 = new int[5];
 		for (local59 = 0; local59 < 5; local59++) {
 			local96 = buf.g1();
-			if (local96 < 0 || local96 >= Static1.anIntArrayArray6[local59].length) {
+			if (local96 < 0 || local96 >= anIntArrayArray6[local59].length) {
 				local96 = 0;
 			}
 			local111[local59] = local96;
@@ -129,7 +133,7 @@ public final class PlayerEntity extends PathingEntity {
 		if (super.anInt2273 == 65535) {
 			super.anInt2273 = -1;
 		}
-		this.aClass40_395 = Static44.fromBase37(buf.g8()).method1167();
+		this.name = Static44.fromBase37(buf.g8()).formatName();
 		this.anInt1378 = buf.g1();
 		this.anInt1373 = buf.g2();
 		if (this.aClass33_2 == null) {
@@ -140,7 +144,7 @@ public final class PlayerEntity extends PathingEntity {
 
 	@OriginalMember(owner = "client!kc", name = "l", descriptor = "(I)Z", line = 422)
 	@Override
-	public boolean method1544() {
+	public boolean isVisible() {
 		return this.aClass33_2 != null;
 	}
 
@@ -150,8 +154,8 @@ public final class PlayerEntity extends PathingEntity {
 		if (this.aClass33_2 == null) {
 			return null;
 		}
-		@Pc(28) SeqType local28 = super.anInt2307 != -1 && super.anInt2313 == 0 ? Static57.method1042(super.anInt2307) : null;
-		@Pc(49) SeqType local49 = super.anInt2318 == -1 || this.aBoolean104 || super.anInt2290 == super.anInt2318 && local28 != null ? null : Static57.method1042(super.anInt2318);
+		@Pc(28) SeqType local28 = super.anInt2307 != -1 && super.anInt2313 == 0 ? SeqType.method1042(super.anInt2307) : null;
+		@Pc(49) SeqType local49 = super.anInt2318 == -1 || this.lowMemory || super.anInt2290 == super.anInt2318 && local28 != null ? null : SeqType.method1042(super.anInt2318);
 		@Pc(60) Model local60 = this.aClass33_2.method1005(super.anInt2316, super.anInt2295, local28, local49);
 		if (local60 == null) {
 			return null;
@@ -160,22 +164,22 @@ public final class PlayerEntity extends PathingEntity {
 		super.anInt2310 = local60.anInt2265;
 		@Pc(91) Model local91;
 		@Pc(111) Model[] local111;
-		if (!this.aBoolean104 && super.anInt2302 != -1 && super.anInt2291 != -1) {
-			local91 = Static5.method116(super.anInt2302).method501(super.anInt2291);
+		if (!this.lowMemory && super.anInt2302 != -1 && super.anInt2291 != -1) {
+			local91 = SpotAnimType.method116(super.anInt2302).method501(super.anInt2291);
 			if (local91 != null) {
 				local91.method1137(0, -super.anInt2289, 0);
 				local111 = new Model[] { local60, local91 };
 				local60 = new Model(local111, 2, true);
 			}
 		}
-		if (!this.aBoolean104 && this.aClass2_Sub2_Sub12_Sub4_1 != null) {
-			if (this.anInt1381 <= Static1.anInt2511) {
+		if (!this.lowMemory && this.aClass2_Sub2_Sub12_Sub4_1 != null) {
+			if (this.anInt1381 <= client.loopCycle) {
 				this.aClass2_Sub2_Sub12_Sub4_1 = null;
 			}
-			if (Static1.anInt2511 >= this.anInt1377 && Static1.anInt2511 < this.anInt1381) {
+			if (client.loopCycle >= this.anInt1377 && client.loopCycle < this.anInt1381) {
 				local91 = this.aClass2_Sub2_Sub12_Sub4_1;
 				local111 = new Model[] { local60, local91 };
-				local91.method1137(this.anInt1387 - super.anInt2275, -this.anInt1379 + this.anInt1384, this.anInt1375 - super.anInt2284);
+				local91.method1137(this.anInt1387 - super.x, -this.y + this.anInt1384, this.anInt1375 - super.z);
 				if (super.anInt2283 == 512) {
 					local91.method1148();
 					local91.method1148();
@@ -197,7 +201,7 @@ public final class PlayerEntity extends PathingEntity {
 					local91.method1148();
 					local91.method1148();
 				}
-				local91.method1137(super.anInt2275 - this.anInt1387, this.anInt1379 + -this.anInt1384, super.anInt2284 - this.anInt1375);
+				local91.method1137(super.x - this.anInt1387, this.y + -this.anInt1384, super.z - this.anInt1375);
 			}
 		}
 		local60.aBoolean139 = true;

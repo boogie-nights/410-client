@@ -61,34 +61,34 @@ public final class Static43 {
 	public static void method1636() {
 		@Pc(10) int local10 = client.in.gBit(8);
 		@Pc(20) int local20;
-		if (Static1.anInt2067 > local10) {
-			for (local20 = local10; local20 < Static1.anInt2067; local20++) {
-				Static1.anIntArray258[Static1.anInt304++] = Static1.anIntArray408[local20];
+		if (client.playerCount > local10) {
+			for (local20 = local10; local20 < client.playerCount; local20++) {
+				Static1.anIntArray258[Static1.anInt304++] = client.playerIds[local20];
 			}
 		}
-		if (local10 > Static1.anInt2067) {
+		if (local10 > client.playerCount) {
 			throw new RuntimeException("gppov1");
 		}
-		Static1.anInt2067 = 0;
+		client.playerCount = 0;
 		for (local20 = 0; local20 < local10; local20++) {
-			@Pc(62) int local62 = Static1.anIntArray408[local20];
-			@Pc(66) PlayerEntity local66 = Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local62];
+			@Pc(62) int local62 = client.playerIds[local20];
+			@Pc(66) PlayerEntity local66 = client.players[local62];
 			@Pc(71) int local71 = client.in.gBit(1);
 			if (local71 == 0) {
-				Static1.anIntArray408[Static1.anInt2067++] = local62;
-				local66.anInt2274 = Static1.anInt2511;
+				client.playerIds[client.playerCount++] = local62;
+				local66.anInt2274 = client.loopCycle;
 			} else {
 				@Pc(91) int local91 = client.in.gBit(2);
 				if (local91 == 0) {
-					Static1.anIntArray408[Static1.anInt2067++] = local62;
-					local66.anInt2274 = Static1.anInt2511;
+					client.playerIds[client.playerCount++] = local62;
+					local66.anInt2274 = client.loopCycle;
 					Static1.anIntArray504[Static1.anInt1190++] = local62;
 				} else {
 					@Pc(138) int local138;
 					@Pc(148) int local148;
 					if (local91 == 1) {
-						Static1.anIntArray408[Static1.anInt2067++] = local62;
-						local66.anInt2274 = Static1.anInt2511;
+						client.playerIds[client.playerCount++] = local62;
+						local66.anInt2274 = client.loopCycle;
 						local138 = client.in.gBit(3);
 						local66.method1547(local138, false);
 						local148 = client.in.gBit(1);
@@ -96,8 +96,8 @@ public final class Static43 {
 							Static1.anIntArray504[Static1.anInt1190++] = local62;
 						}
 					} else if (local91 == 2) {
-						Static1.anIntArray408[Static1.anInt2067++] = local62;
-						local66.anInt2274 = Static1.anInt2511;
+						client.playerIds[client.playerCount++] = local62;
+						local66.anInt2274 = client.loopCycle;
 						local138 = client.in.gBit(3);
 						local66.method1547(local138, true);
 						local148 = client.in.gBit(3);

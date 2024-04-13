@@ -22,7 +22,7 @@ public final class Static21 {
 
 	@OriginalMember(owner = "client!eb", name = "b", descriptor = "(IB)V", line = 399)
 	public static void method1700(@OriginalArg(0) int arg0) {
-		@Pc(15) int local15 = Static90.method1568(arg0).anInt1076;
+		@Pc(15) int local15 = VarpType.method1568(arg0).anInt1076;
 		if (local15 == 0) {
 			return;
 		}
@@ -85,7 +85,7 @@ public final class Static21 {
 		}
 		if (local15 == 8) {
 			Static1.anInt2473 = local25;
-			Static1.aBoolean144 = true;
+			client.redrawChatback = true;
 		}
 		if (local15 == 4) {
 			if (local25 == 0) {
@@ -107,92 +107,6 @@ public final class Static21 {
 		if (local15 == 5) {
 			Static1.anInt263 = local25;
 		}
-	}
-
-	@OriginalMember(owner = "client!eb", name = "e", descriptor = "(B)V", line = 706)
-	public static void method1713() {
-		Static1.anInt2587++;
-		Static70.method1475(true);
-		Static34.method636(true);
-		Static70.method1475(false);
-		Static34.method636(false);
-		Static49.method917();
-		Static1.method3();
-		@Pc(36) int local36;
-		@Pc(34) int local34;
-		if (!Static1.aBoolean22) {
-			local34 = Static1.anInt1669 + Static1.anInt262 & 0x7FF;
-			local36 = Static1.anInt2177;
-			if (local36 < Static1.anInt308 / 256) {
-				local36 = Static1.anInt308 / 256;
-			}
-			if (Static1.aBooleanArray35[4] && Static1.anIntArray164[4] + 128 > local36) {
-				local36 = Static1.anIntArray164[4] + 128;
-			}
-			Static38.method752(Static22.anInt577, local34, Static61.anInt1653, local36, Static78.method1383(Static1.currentLevel, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284) - 50, local36 * 3 + 600);
-		}
-		if (Static1.aBoolean22) {
-			local36 = Static17.method361();
-		} else {
-			local36 = Static54.method995();
-		}
-		local34 = Static44.anInt1114;
-		@Pc(96) int local96 = Static14.anInt1863;
-		@Pc(98) int local98 = Static73.anInt1935;
-		@Pc(100) int local100 = Static33.anInt824;
-		@Pc(102) int local102 = Static26.anInt686;
-		for (@Pc(104) int local104 = 0; local104 < 5; local104++) {
-			if (Static1.aBooleanArray35[local104]) {
-				@Pc(146) int local146 = (int) ((double) -Static1.anIntArray93[local104] + (double) (Static1.anIntArray93[local104] * 2 + 1) * Math.random() + Math.sin((double) Static1.anIntArray415[local104] * ((double) Static1.anIntArray159[local104] / 100.0D)) * (double) Static1.anIntArray164[local104]);
-				if (local104 == 3) {
-					Static26.anInt686 = Static26.anInt686 + local146 & 0x7FF;
-				}
-				if (local104 == 2) {
-					Static14.anInt1863 += local146;
-				}
-				if (local104 == 4) {
-					Static33.anInt824 += local146;
-					if (Static33.anInt824 < 128) {
-						Static33.anInt824 = 128;
-					}
-					if (Static33.anInt824 > 383) {
-						Static33.anInt824 = 383;
-					}
-				}
-				if (local104 == 1) {
-					Static73.anInt1935 += local146;
-				}
-				if (local104 == 0) {
-					Static44.anInt1114 += local146;
-				}
-			}
-		}
-		Static69.method1230();
-		Model.aBoolean140 = true;
-		Model.anInt1748 = Mouse.y - 4;
-		Model.anInt1747 = 0;
-		Model.anInt1750 = Mouse.x - 4;
-		Static25.method1610();
-		Static85.scene.method1430(Static44.anInt1114, Static73.anInt1935, Static14.anInt1863, Static33.anInt824, Static26.anInt686, local36);
-		Static85.scene.method1454();
-		Static11.method253();
-		Static62.method1099();
-		((Js5TextureProvider) Draw3D.getProvider).method405(Static1.anInt1095);
-		Static17.method359();
-		if (Static1.aBoolean147 && Static97.method1668() == 0) {
-			Static1.aBoolean147 = false;
-		}
-		if (Static1.aBoolean147) {
-			Static69.method1230();
-			Static25.method1610();
-			Static61.method1095(false, null, JagString.aClass40_674);
-		}
-		Static72.method1333(Static23.aGraphics1);
-		Static73.anInt1935 = local98;
-		Static33.anInt824 = local100;
-		Static14.anInt1863 = local96;
-		Static44.anInt1114 = local34;
-		Static26.anInt686 = local102;
 	}
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(I[BZ)I", line = 1054)

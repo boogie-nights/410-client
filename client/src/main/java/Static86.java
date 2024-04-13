@@ -4,117 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static86 {
 
-	@OriginalMember(owner = "client!td", name = "a", descriptor = "(I)V", line = 4)
-	public static void method1489() {
-		if (Static1.aBoolean1) {
-			Static1.aBoolean1 = false;
-			Static39.method768(Static23.aGraphics1);
-			Static1.aBoolean95 = true;
-			Static1.aBoolean184 = true;
-			Static1.aBoolean144 = true;
-			Static1.aBoolean59 = true;
-		}
-		Static21.method1713();
-		if (Static1.aBoolean175 && Static1.anInt16 == 1) {
-			Static1.aBoolean59 = true;
-		}
-		@Pc(32) boolean local32;
-		if (Static1.anInt1654 != -1) {
-			local32 = Static26.method533(Static1.anInt1654);
-			if (local32) {
-				Static1.aBoolean59 = true;
-			}
-		}
-		if (Static1.anInt481 == 2) {
-			Static1.aBoolean59 = true;
-		}
-		if (Static1.anInt2077 == 2) {
-			Static1.aBoolean59 = true;
-		}
-		if (Static1.aBoolean59) {
-			Static1.aBoolean59 = false;
-			Static79.method1401();
-		}
-		@Pc(101) int local101;
-		if (Static1.anInt1994 == -1) {
-			Static1.aClass2_Sub2_Sub13_1.anInt1587 = Static1.anInt1506 - Static1.anInt799 - 77;
-			if (Mouse.x > 448 && Mouse.x < 560 && Mouse.y > 332) {
-				Static49.method920(Static1.aClass2_Sub2_Sub13_1, 463, Static1.anInt1506, 77, -1, Mouse.y - 357, Mouse.x + -17, 0);
-			}
-			local101 = Static1.anInt1506 - Static1.aClass2_Sub2_Sub13_1.anInt1587 - 77;
-			if (local101 < 0) {
-				local101 = 0;
-			}
-			if (local101 > Static1.anInt1506 - 77) {
-				local101 = Static1.anInt1506 - 77;
-			}
-			if (Static1.anInt799 != local101) {
-				Static1.aBoolean144 = true;
-				Static1.anInt799 = local101;
-			}
-		}
-		if (Static1.anInt1994 == -1 && Static1.anInt2399 == 3) {
-			Static1.aClass2_Sub2_Sub13_1.anInt1587 = Static1.anInt53;
-			local101 = Static1.anInt2066 * 14 + 7;
-			if (Mouse.x > 448 && Mouse.x < 560 && Mouse.y > 332) {
-				Static49.method920(Static1.aClass2_Sub2_Sub13_1, 463, local101, 77, -1, Mouse.y - 357, Mouse.x + -17, 0);
-			}
-			@Pc(168) int local168 = Static1.aClass2_Sub2_Sub13_1.anInt1587;
-			if (local168 < 0) {
-				local168 = 0;
-			}
-			if (local168 > local101 - 77) {
-				local168 = local101 - 77;
-			}
-			if (local168 != Static1.anInt53) {
-				Static1.anInt53 = local168;
-				Static1.aBoolean144 = true;
-			}
-		}
-		if (Static1.anInt1994 != -1) {
-			local32 = Static26.method533(Static1.anInt1994);
-			if (local32) {
-				Static1.aBoolean144 = true;
-			}
-		}
-		if (Static1.anInt481 == 3) {
-			Static1.aBoolean144 = true;
-		}
-		if (Static1.anInt2077 == 3) {
-			Static1.aBoolean144 = true;
-		}
-		if (JagString.aClass40_112 != null) {
-			Static1.aBoolean144 = true;
-		}
-		if (Static1.aBoolean175 && Static1.anInt16 == 2) {
-			Static1.aBoolean144 = true;
-		}
-		if (Static1.aBoolean144) {
-			Static1.aBoolean144 = false;
-			Static2.method23();
-		}
-		Static18.method370();
-		if (Static1.anInt2492 != -1) {
-			Static1.aBoolean184 = true;
-		}
-		if (Static1.aBoolean184) {
-			if (Static1.anInt2492 != -1 && Static1.anInt1551 == Static1.anInt2492) {
-				Static1.anInt2492 = -1;
-				Static1.aClass2_Sub3_Sub1_4.pIsaac1(145);
-				Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt1551);
-			}
-			Static1.aBoolean165 = true;
-			Static1.aBoolean184 = false;
-			Static85.method1487(Static1.anInt1551, Static1.anIntArray2, Static1.anInt2511 % 20 < 10 ? -1 : Static1.anInt2492, Static1.anInt1654 == -1, Static23.aGraphics1);
-		}
-		if (Static1.aBoolean95) {
-			Static1.aBoolean165 = true;
-			Static1.aBoolean95 = false;
-			Static99.method1664(Static1.anInt2515, Static23.aGraphics1, Static95.aClass2_Sub2_Sub2_Sub2_5, Static1.anInt2491, Static1.anInt583);
-		}
-		Static1.anInt1095 = 0;
-	}
-
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(II)V", line = 164)
 	public static synchronized void method1490() {
 		if (Static64.method1110()) {
@@ -146,7 +35,7 @@ public final class Static86 {
 		if (Static1.anInt2175 != -1) {
 			Static26.method533(Static1.anInt2175);
 		}
-		Static1.anInt1095 = 0;
+		client.sceneDelta = 0;
 		Static27.aClass45_14.bind();
 		Static34.anIntArray162 = Static6.method175(Static34.anIntArray162);
 		Static25.method1610();
@@ -157,10 +46,10 @@ public final class Static86 {
 		if (Static1.aBoolean175) {
 			Static22.method480();
 		} else {
-			Static19.method389();
+			client.handleInput();
 			Static5.method115();
 		}
-		Static27.aClass45_14.draw(Static23.aGraphics1, 0, 0);
+		Static27.aClass45_14.draw(client.graphics, 0, 0);
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(B)V", line = 256)
@@ -191,17 +80,17 @@ public final class Static86 {
 		@Pc(28) int local28;
 		for (@Pc(22) int local22 = 0; local22 < Static1.anInt304; local22++) {
 			local28 = Static1.anIntArray258[local22];
-			if (Static1.anInt2511 != Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28].anInt2274) {
-				Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28].aClass2_Sub2_Sub7_1 = null;
-				Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28] = null;
+			if (client.loopCycle != client.npcs[local28].anInt2274) {
+				client.npcs[local28].type = null;
+				client.npcs[local28] = null;
 			}
 		}
 		if (client.in.pos != client.packetSize) {
 			throw new RuntimeException("gnp1 pos:" + client.in.pos + " psize:" + client.packetSize);
 		}
-		for (local28 = 0; local28 < Static1.anInt1800; local28++) {
-			if (Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static1.anIntArray326[local28]] == null) {
-				throw new RuntimeException("gnp2 pos:" + local28 + " size:" + Static1.anInt1800);
+		for (local28 = 0; local28 < client.npcCount; local28++) {
+			if (client.npcs[client.npcIds[local28]] == null) {
+				throw new RuntimeException("gnp2 pos:" + local28 + " size:" + client.npcCount);
 			}
 		}
 	}

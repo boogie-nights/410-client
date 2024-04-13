@@ -9,7 +9,7 @@ public final class Static50 {
 
 	@OriginalMember(owner = "client!kd", name = "h", descriptor = "(I)V", line = 54)
 	public static void method940() {
-		Static1.aClass47_13 = null;
+		SeqType.aClass47_13 = null;
 		JagString.aClass40_407 = null;
 		JagString.aClass40_408 = null;
 		World.WALL_DECORATION_ROTATION_FORWARD_Z = null;

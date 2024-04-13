@@ -22,8 +22,8 @@ public final class Static40 {
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(B)V", line = 3)
 	public static void method1239() {
 		Static1.anInt440 = 0;
-		@Pc(17) int local17 = (Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7) + Static79.anInt2058;
-		@Pc(24) int local24 = Static28.anInt725 + (Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7);
+		@Pc(17) int local17 = (client.localPlayer.x >> 7) + Static79.anInt2058;
+		@Pc(24) int local24 = Static28.anInt725 + (client.localPlayer.z >> 7);
 		if (local17 >= 3053 && local17 <= 3156 && local24 >= 3056 && local24 <= 3136) {
 			Static1.anInt440 = 1;
 		}
@@ -43,7 +43,7 @@ public final class Static40 {
 			return;
 		}
 		if (arg0.anInt2307 != -1 && arg0.anInt2313 == 0) {
-			@Pc(29) SeqType local29 = Static57.method1042(arg0.anInt2307);
+			@Pc(29) SeqType local29 = SeqType.method1042(arg0.anInt2307);
 			if (arg0.anInt2281 > 0 && local29.anInt663 == 0) {
 				arg0.anInt2282++;
 				return;
@@ -53,13 +53,13 @@ public final class Static40 {
 				return;
 			}
 		}
-		@Pc(68) int local68 = arg0.anInt2284;
-		@Pc(71) int local71 = arg0.anInt2275;
-		@Pc(87) int local87 = arg0.anIntArray492[arg0.anInt2309 - 1] * 128 + arg0.anInt2278 * 64;
-		@Pc(102) int local102 = arg0.anInt2278 * 64 + arg0.anIntArray496[arg0.anInt2309 - 1] * 128;
+		@Pc(68) int local68 = arg0.z;
+		@Pc(71) int local71 = arg0.x;
+		@Pc(87) int local87 = arg0.pathTileX[arg0.anInt2309 - 1] * 128 + arg0.size * 64;
+		@Pc(102) int local102 = arg0.size * 64 + arg0.pathTileZ[arg0.anInt2309 - 1] * 128;
 		if (local87 - local71 > 256 || local87 - local71 < -256 || local102 - local68 > 256 || local102 - local68 < -256) {
-			arg0.anInt2275 = local87;
-			arg0.anInt2284 = local102;
+			arg0.x = local87;
+			arg0.z = local102;
 			return;
 		}
 		if (local71 < local87) {
@@ -117,28 +117,28 @@ public final class Static40 {
 			local227 <<= 0x1;
 		}
 		if (local71 < local87) {
-			arg0.anInt2275 += local227;
-			if (local87 < arg0.anInt2275) {
-				arg0.anInt2275 = local87;
+			arg0.x += local227;
+			if (local87 < arg0.x) {
+				arg0.x = local87;
 			}
 		} else if (local71 > local87) {
-			arg0.anInt2275 -= local227;
-			if (local87 > arg0.anInt2275) {
-				arg0.anInt2275 = local87;
+			arg0.x -= local227;
+			if (local87 > arg0.x) {
+				arg0.x = local87;
 			}
 		}
 		if (local102 > local68) {
-			arg0.anInt2284 += local227;
-			if (arg0.anInt2284 > local102) {
-				arg0.anInt2284 = local102;
+			arg0.z += local227;
+			if (arg0.z > local102) {
+				arg0.z = local102;
 			}
 		} else if (local68 > local102) {
-			arg0.anInt2284 -= local227;
-			if (local102 > arg0.anInt2284) {
-				arg0.anInt2284 = local102;
+			arg0.z -= local227;
+			if (local102 > arg0.z) {
+				arg0.z = local102;
 			}
 		}
-		if (arg0.anInt2275 == local87 && arg0.anInt2284 == local102) {
+		if (arg0.x == local87 && arg0.z == local102) {
 			if (arg0.anInt2281 > 0) {
 				arg0.anInt2281--;
 			}
@@ -147,11 +147,6 @@ public final class Static40 {
 		if (local227 >= 8 && arg0.anInt2318 == arg0.anInt2269 && arg0.anInt2273 != -1) {
 			arg0.anInt2318 = arg0.anInt2273;
 		}
-	}
-
-	@OriginalMember(owner = "client!ib", name = "c", descriptor = "(B)V", line = 222)
-	public static void method1242() {
-		Static1.aClass47_12.clear();
 	}
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(Ljava/awt/event/KeyEvent;I)I", line = 234)
@@ -194,12 +189,12 @@ public final class Static40 {
 				}
 			}
 			if (Static1.anInt693 == 2) {
-				@Pc(71) long local71 = Static94.aLong150 = JagString.aClass40_591.method1179();
-				Static1.aClass2_Sub3_Sub1_4.pos = 0;
+				@Pc(71) long local71 = Static94.aLong150 = JagString.aClass40_591.toBase37();
+				client.out.pos = 0;
 				@Pc(81) int local81 = (int) (local71 >> 16 & 0x1FL);
-				Static1.aClass2_Sub3_Sub1_4.p1(14);
-				Static1.aClass2_Sub3_Sub1_4.p1(local81);
-				client.stream.write(Static1.aClass2_Sub3_Sub1_4.data, 2);
+				client.out.p1(14);
+				client.out.p1(local81);
+				client.stream.write(client.out.data, 2);
 				Static1.anInt693 = 3;
 				client.in.pos = 0;
 			}
@@ -232,25 +227,25 @@ public final class Static40 {
 			}
 			if (Static1.anInt693 == 5) {
 				@Pc(185) int[] local185 = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (Static1.aLong139 >> 32), (int) Static1.aLong139 };
-				Static1.aClass2_Sub3_Sub1_4.pos = 0;
-				Static1.aClass2_Sub3_Sub1_4.p1(10);
-				Static1.aClass2_Sub3_Sub1_4.p4(local185[0]);
-				Static1.aClass2_Sub3_Sub1_4.p4(local185[1]);
-				Static1.aClass2_Sub3_Sub1_4.p4(local185[2]);
-				Static1.aClass2_Sub3_Sub1_4.p4(local185[3]);
-				Static1.aClass2_Sub3_Sub1_4.p4(GameShell.signlink.anInt249);
-				Static1.aClass2_Sub3_Sub1_4.p8(JagString.aClass40_591.method1179());
-				Static1.aClass2_Sub3_Sub1_4.pjstr(JagString.aClass40_587);
-				Static1.aClass2_Sub3_Sub1_4.rsaenc(Static1.aBigInteger2, Static1.aBigInteger1);
+				client.out.pos = 0;
+				client.out.p1(10);
+				client.out.p4(local185[0]);
+				client.out.p4(local185[1]);
+				client.out.p4(local185[2]);
+				client.out.p4(local185[3]);
+				client.out.p4(GameShell.signlink.anInt249);
+				client.out.p8(JagString.aClass40_591.toBase37());
+				client.out.pjstr(JagString.aClass40_587);
+				client.out.rsaenc(Static1.aBigInteger2, Static1.aBigInteger1);
 				Static1.aClass2_Sub3_Sub1_3.pos = 0;
 				if (client.state == 40) {
 					Static1.aClass2_Sub3_Sub1_3.p1(18);
 				} else {
 					Static1.aClass2_Sub3_Sub1_3.p1(16);
 				}
-				Static1.aClass2_Sub3_Sub1_3.p1(Static1.aClass2_Sub3_Sub1_4.pos + 53);
+				Static1.aClass2_Sub3_Sub1_3.p1(client.out.pos + 53);
 				Static1.aClass2_Sub3_Sub1_3.p4(410);
-				Static1.aClass2_Sub3_Sub1_3.p1(Static1.lowDetail ? 1 : 0);
+				Static1.aClass2_Sub3_Sub1_3.p1(client.lowMemory ? 1 : 0);
 				Static1.aClass2_Sub3_Sub1_3.p4(animsJs5.crc);
 				Static1.aClass2_Sub3_Sub1_3.p4(Static79.basesJs5.crc);
 				Static1.aClass2_Sub3_Sub1_3.p4(Static5.configJs5.crc);
@@ -263,9 +258,9 @@ public final class Static40 {
 				Static1.aClass2_Sub3_Sub1_3.p4(Static33.texturesJs5.crc);
 				Static1.aClass2_Sub3_Sub1_3.p4(Static73.binaryJs5.crc);
 				Static1.aClass2_Sub3_Sub1_3.p4(Static68.midiJinglesJs5.crc);
-				Static1.aClass2_Sub3_Sub1_3.pdata(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
+				Static1.aClass2_Sub3_Sub1_3.pdata(client.out.data, client.out.pos);
 				client.stream.write(Static1.aClass2_Sub3_Sub1_3.data, Static1.aClass2_Sub3_Sub1_3.pos);
-				Static1.aClass2_Sub3_Sub1_4.setSeed(local185);
+				client.out.setSeed(local185);
 				for (@Pc(379) int local379 = 0; local379 < 4; local379++) {
 					local185[local379] += 50;
 				}
@@ -295,7 +290,7 @@ public final class Static40 {
 			}
 			if (Static1.anInt693 == 8) {
 				Static1.anInt2039 = 0;
-				Static45.method1537(JagString.aClass40_314, Static72.method1334(new JagString[] { JagString.aClass40_623, Static48.method859(Static1.anInt261 / 60) }));
+				Static45.method1537(JagString.aClass40_314, JagString.concatenate(new JagString[] { JagString.aClass40_623, Static48.method859(Static1.anInt261 / 60) }));
 				if (--Static1.anInt261 <= 0) {
 					Static1.anInt693 = 0;
 				}
@@ -306,7 +301,7 @@ public final class Static40 {
 					Static1.anInt1955 = client.stream.method726();
 					Static1.anInt1955 <<= 0x8;
 					Static1.anInt1955 += client.stream.method726();
-					Static1.anInt927 = client.stream.method726();
+					client.anInt927 = client.stream.method726();
 					client.stream.read(0, 1, client.in.data);
 					client.in.pos = 0;
 					client.packetType = client.in.gIsaac1();

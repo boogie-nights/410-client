@@ -6,19 +6,19 @@ public final class Static55 {
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(I)V", line = 5)
 	public static void method998() {
-		Static1.aClass2_Sub3_Sub1_4.pIsaac1(255);
+		client.out.pIsaac1(255);
 		if (Static1.anInt1654 != -1) {
 			Static75.method1350(Static1.anInt1654);
-			Static1.aBoolean59 = true;
+			client.redrawSidebar = true;
 			Static1.aBoolean40 = false;
 			Static1.aBoolean184 = true;
 			Static1.anInt1654 = -1;
 		}
-		if (Static1.anInt1994 != -1) {
-			Static75.method1350(Static1.anInt1994);
+		if (client.chatInterfaceId != -1) {
+			Static75.method1350(client.chatInterfaceId);
 			Static1.aBoolean40 = false;
-			Static1.anInt1994 = -1;
-			Static1.aBoolean144 = true;
+			client.chatInterfaceId = -1;
+			client.redrawChatback = true;
 		}
 		if (Static1.anInt1971 != -1) {
 			Static75.method1350(Static1.anInt1971);
@@ -39,7 +39,7 @@ public final class Static55 {
 	public static Pix24 method1000(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(14) Pix24 local14;
 		if (arg0 == 0) {
-			local14 = (Pix24) Static1.aClass47_7.get((long) arg2);
+			local14 = (Pix24) ObjType.aClass47_7.get((long) arg2);
 			if (local14 != null && local14.anInt2443 != arg1 && local14.anInt2443 != -1) {
 				local14.unlink();
 				local14 = null;
@@ -48,7 +48,7 @@ public final class Static55 {
 				return local14;
 			}
 		}
-		@Pc(40) ObjType local40 = Static97.method1669(arg2);
+		@Pc(40) ObjType local40 = ObjType.method1669(arg2);
 		if (local40.anIntArray183 == null) {
 			arg1 = -1;
 		}
@@ -60,7 +60,7 @@ public final class Static55 {
 				}
 			}
 			if (local57 != -1) {
-				local40 = Static97.method1669(local57);
+				local40 = ObjType.method1669(local57);
 			}
 		}
 		@Pc(101) Model local101 = local40.method713(1, true);
@@ -149,7 +149,7 @@ public final class Static55 {
 			local107.anInt2445 = local379;
 		}
 		if (arg0 == 0) {
-			Static1.aClass47_7.put((long) arg2, local14);
+			ObjType.aClass47_7.put((long) arg2, local14);
 		}
 		Static25.method1604(local129, local127, local131);
 		Static25.method1613(local133, local135, local137, local139);

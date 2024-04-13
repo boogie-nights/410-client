@@ -29,7 +29,7 @@ public final class Static41 {
 			Static29.aClass25_48.write(local11.data, 4);
 		} catch (@Pc(32) IOException local32) {
 			try {
-				Static29.aClass25_48.method730();
+				Static29.aClass25_48.close();
 			} catch (@Pc(37) Exception local37) {
 			}
 			Static29.aClass25_48 = null;

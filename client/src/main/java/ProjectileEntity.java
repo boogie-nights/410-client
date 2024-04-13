@@ -127,7 +127,7 @@ public final class ProjectileEntity extends Entity {
 	@OriginalMember(owner = "client!kd", name = "c", descriptor = "(B)Lclient!ne;", line = 195)
 	@Override
 	protected Model method1533() {
-		@Pc(8) SpotAnimType local8 = Static5.method116(this.anInt1422);
+		@Pc(8) SpotAnimType local8 = SpotAnimType.method116(this.anInt1422);
 		@Pc(21) Model local21 = local8.method501(this.anInt1426);
 		if (local21 == null) {
 			return null;
@@ -151,11 +151,11 @@ public final class ProjectileEntity extends Entity {
 		this.anInt1417 = arg1;
 		this.anInt1432 = arg4;
 		this.anInt1423 = arg3;
-		@Pc(52) int local52 = Static5.method116(this.anInt1422).anInt640;
+		@Pc(52) int local52 = SpotAnimType.method116(this.anInt1422).anInt640;
 		if (local52 == -1) {
 			this.aClass2_Sub2_Sub6_1 = null;
 		} else {
-			this.aClass2_Sub2_Sub6_1 = Static57.method1042(local52);
+			this.aClass2_Sub2_Sub6_1 = SeqType.method1042(local52);
 		}
 	}
 }

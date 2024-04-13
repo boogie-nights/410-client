@@ -283,7 +283,7 @@ public abstract class Js5Index {
 			local87 = this.aByteArrayArray2[arg0];
 		} else {
 			local87 = new byte[this.aByteArrayArray2[arg0].length];
-			Static107.method993(this.aByteArrayArray2[arg0], 0, local87, 0, local87.length);
+			Static107.copy(this.aByteArrayArray2[arg0], 0, local87, 0, local87.length);
 			@Pc(102) Packet local102 = new Packet(local87);
 			local102.tinydec(local102.data.length, arg1);
 		}
@@ -327,7 +327,7 @@ public abstract class Js5Index {
 				@Pc(303) int local303 = 0;
 				for (@Pc(305) int local305 = 0; local305 < local34; local305++) {
 					local303 += local220.g4s();
-					Static107.method993(local121, local234, local29[local24[local305]], local226[local305], local303);
+					Static107.copy(local121, local234, local29[local24[local305]], local226[local305], local303);
 					local226[local305] += local303;
 					local234 += local303;
 				}

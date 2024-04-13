@@ -5,27 +5,9 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static32 {
 
-	@OriginalMember(owner = "client!gd", name = "z", descriptor = "Lclient!ud;")
-	public static Js5Index aClass5_11;
-
-	@OriginalMember(owner = "client!gd", name = "a", descriptor = "(BI)Lclient!ae;", line = 29)
-	public static VarBitType method621(@OriginalArg(1) int arg0) {
-		@Pc(10) VarBitType local10 = (VarBitType) Static1.aClass47_5.get((long) arg0);
-		if (local10 != null) {
-			return local10;
-		}
-		@Pc(20) byte[] local20 = Static61.aClass5_21.fetchFile(arg0, 14);
-		local10 = new VarBitType();
-		if (local20 != null) {
-			local10.method121(new Packet(local20));
-		}
-		Static1.aClass47_5.put((long) arg0, local10);
-		return local10;
-	}
-
 	@OriginalMember(owner = "client!gd", name = "c", descriptor = "(B)V", line = 56)
 	public static void method622() {
-		aClass5_11 = null;
+		NpcType.aClass5_11 = null;
 		Static1.legacyCacheIndex = null;
 		JagString.aClass40_246 = null;
 	}
@@ -183,7 +165,7 @@ public final class Static32 {
 								local272 = (int) Static1.aCRC32_2.getValue();
 								if (local272 != Static82.aClass2_Sub2_Sub9_1.blockPosition) {
 									try {
-										Static29.aClass25_48.method730();
+										Static29.aClass25_48.close();
 									} catch (@Pc(530) Exception local530) {
 									}
 									Static1.aByte1 = (byte) (Math.random() * 255.0D + 1.0D);
@@ -215,7 +197,7 @@ public final class Static32 {
 				return true;
 			} catch (@Pc(602) IOException local602) {
 				try {
-					Static29.aClass25_48.method730();
+					Static29.aClass25_48.close();
 				} catch (@Pc(607) Exception local607) {
 				}
 				Static1.anInt2401++;
@@ -225,13 +207,4 @@ public final class Static32 {
 		}
 	}
 
-	@OriginalMember(owner = "client!gd", name = "d", descriptor = "(I)V", line = 402)
-	public static void method626() {
-		if (Static1.anInt1672 > 0) {
-			Static56.method1039();
-		} else {
-			Static7.method187(40);
-			Static34.aClass25_20 = client.stream;
-		}
-	}
 }

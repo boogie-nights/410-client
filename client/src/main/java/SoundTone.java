@@ -82,6 +82,18 @@ public final class SoundTone {
 	@OriginalMember(owner = "client!je", name = "y", descriptor = "[I")
 	private final int[] anIntArray255 = new int[5];
 
+	@OriginalMember(owner = "client!je", name = "a", descriptor = "()V", line = 35)
+	public static void method842() {
+		anIntArray248 = null;
+		anIntArray247 = null;
+		anIntArray246 = null;
+		anIntArray252 = null;
+		anIntArray253 = null;
+		anIntArray250 = null;
+		anIntArray251 = null;
+		anIntArray254 = null;
+	}
+
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "(III)I", line = 7)
 	private int method841(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 1) {
@@ -274,7 +286,7 @@ public final class SoundTone {
 				@Pc(526) int local526;
 				@Pc(556) int local556;
 				while (local207 < local354) {
-					local359 = (int) ((long) anIntArray248[local207 + local194] * (long) Static59.anInt1619 >> 16);
+					local359 = (int) ((long) anIntArray248[local207 + local194] * (long) SoundFilter.anInt1619 >> 16);
 					for (local526 = 0; local526 < local194; local526++) {
 						local359 += (int) ((long) anIntArray248[local207 + local194 - local526 - 1] * (long) SoundFilter.anIntArrayArray12[0][local526] >> 16);
 					}
@@ -291,7 +303,7 @@ public final class SoundTone {
 						local354 = arg0 - local194;
 					}
 					while (local207 < local354) {
-						local359 = (int) ((long) anIntArray248[local207 + local194] * (long) Static59.anInt1619 >> 16);
+						local359 = (int) ((long) anIntArray248[local207 + local194] * (long) SoundFilter.anInt1619 >> 16);
 						for (local526 = 0; local526 < local194; local526++) {
 							local359 += (int) ((long) anIntArray248[local207 + local194 - local526 - 1] * (long) SoundFilter.anIntArrayArray12[0][local526] >> 16);
 						}

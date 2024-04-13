@@ -38,7 +38,7 @@ public final class Loc {
 	public int anInt1666;
 
 	@OriginalMember(owner = "client!n", name = "C", descriptor = "Lclient!jd;")
-	public Entity aClass2_Sub2_Sub12_3;
+	public Entity entity;
 
 	@OriginalMember(owner = "client!n", name = "a", descriptor = "I")
 	public int anInt1644 = 0;

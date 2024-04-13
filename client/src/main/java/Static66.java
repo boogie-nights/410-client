@@ -27,9 +27,9 @@ public final class Static66 {
 		if (arg0 < 100000) {
 			return Static48.method859(arg0);
 		} else if (arg0 < 10000000) {
-			return Static72.method1334(new JagString[] { Static48.method859(arg0 / 1000), JagString.aClass40_669 });
+			return JagString.concatenate(new JagString[] { Static48.method859(arg0 / 1000), JagString.aClass40_669 });
 		} else {
-			return Static72.method1334(new JagString[] { Static48.method859(arg0 / 1000000), JagString.aClass40_160 });
+			return JagString.concatenate(new JagString[] { Static48.method859(arg0 / 1000000), JagString.aClass40_160 });
 		}
 	}
 
@@ -66,14 +66,14 @@ public final class Static66 {
 
 	@OriginalMember(owner = "client!o", name = "e", descriptor = "(B)V", line = 1192)
 	public static void method1197() {
-		for (@Pc(7) int local7 = -1; local7 < Static1.anInt2067; local7++) {
+		for (@Pc(7) int local7 = -1; local7 < client.playerCount; local7++) {
 			@Pc(17) int local17;
 			if (local7 == -1) {
 				local17 = 2047;
 			} else {
-				local17 = Static1.anIntArray408[local7];
+				local17 = client.playerIds[local7];
 			}
-			@Pc(25) PlayerEntity local25 = Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local17];
+			@Pc(25) PlayerEntity local25 = client.players[local17];
 			if (local25 != null) {
 				Static83.method1468(local25, 1);
 			}

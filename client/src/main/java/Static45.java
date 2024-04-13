@@ -11,7 +11,7 @@ public final class Static45 {
 	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array14;
 
 	@OriginalMember(owner = "client!jd", name = "X", descriptor = "I")
-	public static int anInt2259;
+	public static int cutsceneSrcHeight;
 
 	@OriginalMember(owner = "client!jd", name = "bb", descriptor = "I")
 	public static int anInt2262;
@@ -80,7 +80,7 @@ public final class Static45 {
 						} while (local66 >= 103);
 					} while (local77 >= 103);
 					local96 = LocType.get(local13);
-				} while (local72 == 22 && Static1.lowDetail && local96.active == 0 && !local96.aBoolean76);
+				} while (local72 == 22 && client.lowMemory && local96.active == 0 && !local96.aBoolean76);
 				if (!local96.method773()) {
 					Static1.anInt1667++;
 					local11 = false;

@@ -6,9 +6,6 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!ta")
 public final class World {
 
-    @OriginalMember(owner = "client!ta", name = "c", descriptor = "[[[I")
-    public static int[][][] levelHeightmap = new int[4][105][105];
-
     @OriginalMember(owner = "client!ob", name = "n", descriptor = "[[[B")
     public static byte[][][] levelTileOverlayRotation;
 
@@ -57,9 +54,6 @@ public final class World {
     @OriginalMember(owner = "client!ra", name = "i", descriptor = "I")
     public static int randomHueOffset = (int) (Math.random() * 17.0D) - 8;
 
-    @OriginalMember(owner = "client!ma", name = "v", descriptor = "[[[B")
-    public static byte[][][] levelTileFlags = new byte[4][104][104];
-
     @OriginalMember(owner = "client!rb", name = "f", descriptor = "[I")
     public static int[] WALL_DECORATION_ROTATION_FORWARD_X = new int[] { 1, 0, -1, 0 };
 
@@ -68,6 +62,8 @@ public final class World {
 
     @OriginalMember(owner = "client!ud", name = "q", descriptor = "[I")
     public static int[] ROTATION_WALL_CORNER_TYPE = new int[] { 16, 32, 64, 128 };
+    @OriginalMember(owner = "client!ta", name = "c", descriptor = "[[[I")
+    public static int[][][] levelHeightmap = new int[4][105][105];
 
     @OriginalMember(owner = "client!k", name = "a", descriptor = "(IIILclient!fb;ILclient!sd;BIII)V", line = 6)
     public static void addLoc(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) CollisionMap arg3, @OriginalArg(4) int arg4, @OriginalArg(5) World3D arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
@@ -277,8 +273,8 @@ public final class World {
 
     @OriginalMember(owner = "client!rb", name = "a", descriptor = "(IIIBLclient!fb;IILclient!sd;I)V", line = 621)
     public static void method1353(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) CollisionMap collision, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) World3D arg6, @OriginalArg(8) int arg7) {
-        if (Static1.lowDetail && (levelTileFlags[0][arg2][arg7] & 0x2) == 0) {
-            if ((levelTileFlags[arg0][arg2][arg7] & 0x10) != 0) {
+        if (client.lowMemory && (client.levelTileFlags[0][arg2][arg7] & 0x2) == 0) {
+            if ((client.levelTileFlags[arg0][arg2][arg7] & 0x10) != 0) {
                 return;
             }
             if (Static44.getDrawLevel(arg7, arg2, arg0) != Static1.anInt786) {
@@ -561,7 +557,7 @@ public final class World {
                     }
                 }
             }
-        } else if (!Static1.lowDetail || loc.active != 0 || loc.aBoolean76) {
+        } else if (!client.lowMemory || loc.active != 0 || loc.aBoolean76) {
             if (loc.anInt1048 == -1 && loc.anIntArray210 == null) {
                 local167 = loc.method765(arg4, local57, local87, local65, 22, local77);
             } else {
@@ -582,9 +578,9 @@ public final class World {
         for (@Pc(11) int local11 = 0; local11 < 4; local11++) {
             for (local15 = 0; local15 < 104; local15++) {
                 for (local19 = 0; local19 < 104; local19++) {
-                    if ((levelTileFlags[local11][local15][local19] & 0x1) == 1) {
+                    if ((client.levelTileFlags[local11][local15][local19] & 0x1) == 1) {
                         local36 = local11;
-                        if ((levelTileFlags[1][local15][local19] & 0x2) == 2) {
+                        if ((client.levelTileFlags[1][local15][local19] & 0x2) == 2) {
                             local36 = local11 - 1;
                         }
                         if (local36 >= 0) {
@@ -699,7 +695,7 @@ public final class World {
                             local210 -= blendSaturation[local551];
                             local200 -= blendChroma[local551];
                         }
-                        if (local283 >= 1 && local283 < 103 && (!Static1.lowDetail || (levelTileFlags[0][local166][local283] & 0x2) != 0 || (levelTileFlags[local15][local166][local283] & 0x10) == 0 && Static44.getDrawLevel(local283, local166, local15) == Static1.anInt786)) {
+                        if (local283 >= 1 && local283 < 103 && (!client.lowMemory || (client.levelTileFlags[0][local166][local283] & 0x2) != 0 || (client.levelTileFlags[local15][local166][local283] & 0x10) == 0 && Static44.getDrawLevel(local283, local166, local15) == Static1.anInt786)) {
                             if (anInt807 > local15) {
                                 anInt807 = local15;
                             }
@@ -746,10 +742,10 @@ public final class World {
                                 }
                                 local758 = 0;
                                 if (local729 != -1) {
-                                    local758 = Draw3D.palette[Static47.mulHSL(96, local729)];
+                                    local758 = Draw3D.palette[mulHSL(96, local729)];
                                 }
                                 if (local654 == 0) {
-                                    arg1.setTile(local15, local166, local283, 0, 0, -1, local689, local681, local701, local725, Static47.mulHSL(local707, local727), Static47.mulHSL(local715, local727), Static47.mulHSL(local747, local727), Static47.mulHSL(local737, local727), 0, 0, 0, 0, local758, 0);
+                                    arg1.setTile(local15, local166, local283, 0, 0, -1, local689, local681, local701, local725, mulHSL(local707, local727), mulHSL(local715, local727), mulHSL(local747, local727), mulHSL(local737, local727), 0, 0, 0, 0, local758, 0);
                                 } else {
                                     local762 = levelTileOverlayShape[local15][local166][local283] + 1;
                                     @Pc(898) byte local898 = levelTileOverlayRotation[local15][local166][local283];
@@ -792,7 +788,7 @@ public final class World {
                                         local916 = Static11.hsl24to16(local1001, local904.averageSaturation, local943);
                                         local938 = Draw3D.palette[Static66.method1193(local916, 96)];
                                     }
-                                    arg1.setTile(local15, local166, local283, local762, local898, local907, local689, local681, local701, local725, Static47.mulHSL(local707, local727), Static47.mulHSL(local715, local727), Static47.mulHSL(local747, local727), Static47.mulHSL(local737, local727), Static66.method1193(local911, local707), Static66.method1193(local911, local715), Static66.method1193(local911, local747), Static66.method1193(local911, local737), local758, local938);
+                                    arg1.setTile(local15, local166, local283, local762, local898, local907, local689, local681, local701, local725, mulHSL(local707, local727), mulHSL(local715, local727), mulHSL(local747, local727), mulHSL(local737, local727), Static66.method1193(local911, local707), Static66.method1193(local911, local715), Static66.method1193(local911, local747), Static66.method1193(local911, local737), local758, local938);
                                 }
                             }
                         }
@@ -813,7 +809,7 @@ public final class World {
         arg1.method1434();
         for (local19 = 0; local19 < 104; local19++) {
             for (local36 = 0; local36 < 104; local36++) {
-                if ((levelTileFlags[1][local19][local36] & 0x2) == 2) {
+                if ((client.levelTileFlags[1][local19][local36] & 0x2) == 2) {
                     arg1.method1453(local19, local36);
                 }
             }
@@ -859,7 +855,7 @@ public final class World {
                             if (local283 >= 8) {
                                 local551 = levelHeightmap[local233][local200][local210] - 240;
                                 local664 = levelHeightmap[local216][local200][local210];
-                                Static81.method1433(local144, 1, local200 * 128, local200 * 128, local210 * 128, local204 * 128 + 128, local551, local664);
+                                World3D.method1433(local144, 1, local200 * 128, local200 * 128, local210 * 128, local204 * 128 + 128, local551, local664);
                                 for (local654 = local216; local654 <= local233; local654++) {
                                     for (local689 = local210; local689 <= local204; local689++) {
                                         levelOccludemap[local654][local200][local689] &= ~local36;
@@ -896,7 +892,7 @@ public final class World {
                             if (local283 >= 8) {
                                 local664 = levelHeightmap[local216][local210][local187];
                                 local551 = levelHeightmap[local233][local210][local187] - 240;
-                                Static81.method1433(local144, 2, local210 * 128, local204 * 128 + 128, local187 * 128, local187 * 128, local551, local664);
+                                World3D.method1433(local144, 2, local210 * 128, local204 * 128 + 128, local187 * 128, local187 * 128, local551, local664);
                                 for (local654 = local216; local654 <= local233; local654++) {
                                     for (local689 = local210; local689 <= local204; local689++) {
                                         levelOccludemap[local654][local689][local187] &= ~local138;
@@ -931,7 +927,7 @@ public final class World {
                             }
                             if ((local233 + 1 - local216) * (-local210 + (local204 - -1)) >= 4) {
                                 local283 = levelHeightmap[local166][local210][local216];
-                                Static81.method1433(local144, 4, local210 * 128, local204 * 128 + 128, local216 * 128, local233 * 128 + 128, local283, local283);
+                                World3D.method1433(local144, 4, local210 * 128, local204 * 128 + 128, local216 * 128, local233 * 128 + 128, local283, local283);
                                 for (local510 = local210; local510 <= local204; local510++) {
                                     for (local551 = local216; local551 <= local233; local551++) {
                                         levelOccludemap[local166][local510][local551] &= ~local140;
@@ -943,5 +939,151 @@ public final class World {
                 }
             }
         }
+    }
+
+    @OriginalMember(owner = "client!ka", name = "a", descriptor = "(III)I", line = 61)
+    public static int mulHSL(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
+        if (arg1 == -1) {
+            return 12345678;
+        }
+        arg0 = arg0 * (arg1 & 0x7F) / 128;
+        if (arg0 < 2) {
+            arg0 = 2;
+        } else if (arg0 > 126) {
+            arg0 = 126;
+        }
+        return arg0 + (arg1 & 0xFF80);
+    }
+
+    @OriginalMember(owner = "client!ad", name = "d", descriptor = "(III)I", line = 369)
+    public static int noise(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+        @Pc(10) int local10 = arg0 + arg1 * 57;
+        @Pc(16) int local16 = local10 ^ local10 << 13;
+        @Pc(30) int local30 = Integer.MAX_VALUE & (local16 * local16 * 15731 + 789221) * local16 + 1376312589;
+        return local30 >> 19 & 0xFF;
+    }
+
+    @OriginalMember(owner = "client!e", name = "a", descriptor = "(IIZ)I", line = 110)
+    public static int smoothNoise(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+        @Pc(41) int local41 = noise(arg0 - 1, arg1 - 1) + noise(arg0 + 1, arg1 + -1) + noise(arg0 - 1, arg1 - -1) + noise(arg0 + 1, arg1 - -1);
+        @Pc(74) int local74 = noise(arg0 - 1, arg1) + noise(arg0 + 1, arg1) + noise(arg0, arg1 + -1) + noise(arg0, arg1 + 1);
+        @Pc(79) int local79 = noise(arg0, arg1);
+        return local41 / 16 + local74 / 8 + local79 / 4;
+    }
+
+    @OriginalMember(owner = "client!qc", name = "a", descriptor = "(IIIII)I", line = 43)
+    public static int interpolate(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
+        @Pc(12) int local12 = 65536 - Draw3D.cos[arg0 * 1024 / arg2] >> 1;
+        return ((65536 - local12) * arg1 >> 16) + (local12 * arg3 >> 16);
+    }
+
+    @OriginalMember(owner = "client!wd", name = "a", descriptor = "(IIIZ)I", line = 38)
+    public static int perlin(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+        @Pc(7) int local7 = arg1 / arg0;
+        @Pc(13) int local13 = arg0 - 1 & arg1;
+        @Pc(17) int local17 = arg2 / arg0;
+        @Pc(23) int local23 = arg2 & arg0 - 1;
+        @Pc(33) int local33 = smoothNoise(local7, local17);
+        @Pc(40) int local40 = smoothNoise(local7 + 1, local17);
+        @Pc(51) int local51 = smoothNoise(local7, local17 + 1);
+        @Pc(60) int local60 = smoothNoise(local7 + 1, local17 + 1);
+        @Pc(67) int local67 = interpolate(local13, local33, arg0, local40);
+        @Pc(74) int local74 = interpolate(local13, local51, arg0, local60);
+        return interpolate(local23, local67, arg0, local74);
+    }
+
+    @OriginalMember(owner = "client!ad", name = "c", descriptor = "(III)I", line = 38)
+    public static int perlin(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
+        @Pc(40) int local40 = perlin(4, arg1 + 45365, arg0 + 91923) + (perlin(2, arg1 + 10294, arg0 + 37821) - 128 >> 1) + (perlin(1, arg1, arg0) + -128 >> 2) - 128;
+        local40 = (int) ((double) local40 * 0.3D) + 35;
+        if (local40 < 10) {
+            local40 = 10;
+        } else if (local40 > 60) {
+            local40 = 60;
+        }
+        return local40;
+    }
+
+    @OriginalMember(owner = "client!lc", name = "a", descriptor = "(Z)I", line = 18)
+    public static int getTopLevel() {
+        @Pc(12) int local12 = 3;
+        if (client.cameraPitch < 310) {
+            @Pc(21) int local21 = client.cameraX >> 7;
+            @Pc(25) int local25 = client.cameraZ >> 7;
+            @Pc(30) int local30 = client.localPlayer.x >> 7;
+            if ((client.levelTileFlags[client.currentLevel][local21][local25] & 0x4) != 0) {
+                local12 = client.currentLevel;
+            }
+            @Pc(50) int local50 = client.localPlayer.z >> 7;
+            @Pc(62) int local62;
+            if (local30 > local21) {
+                local62 = local30 - local21;
+            } else {
+                local62 = local21 - local30;
+            }
+            @Pc(77) int local77;
+            if (local50 > local25) {
+                local77 = local50 - local25;
+            } else {
+                local77 = local25 - local50;
+            }
+            @Pc(92) int local92;
+            @Pc(94) int local94;
+            if (local62 <= local77) {
+                local92 = local62 * 65536 / local77;
+                local94 = 32768;
+                while (local50 != local25) {
+                    if (local25 < local50) {
+                        local25++;
+                    } else if (local50 < local25) {
+                        local25--;
+                    }
+                    if ((client.levelTileFlags[client.currentLevel][local21][local25] & 0x4) != 0) {
+                        local12 = client.currentLevel;
+                    }
+                    local94 += local92;
+                    if (local94 >= 65536) {
+                        local94 -= 65536;
+                        if (local21 < local30) {
+                            local21++;
+                        } else if (local21 > local30) {
+                            local21--;
+                        }
+                        if ((client.levelTileFlags[client.currentLevel][local21][local25] & 0x4) != 0) {
+                            local12 = client.currentLevel;
+                        }
+                    }
+                }
+            } else {
+                local94 = 32768;
+                local92 = local77 * 65536 / local62;
+                while (local21 != local30) {
+                    local94 += local92;
+                    if (local21 < local30) {
+                        local21++;
+                    } else if (local30 < local21) {
+                        local21--;
+                    }
+                    if ((client.levelTileFlags[client.currentLevel][local21][local25] & 0x4) != 0) {
+                        local12 = client.currentLevel;
+                    }
+                    if (local94 >= 65536) {
+                        if (local50 > local25) {
+                            local25++;
+                        } else if (local25 > local50) {
+                            local25--;
+                        }
+                        if ((client.levelTileFlags[client.currentLevel][local21][local25] & 0x4) != 0) {
+                            local12 = client.currentLevel;
+                        }
+                        local94 -= 65536;
+                    }
+                }
+            }
+        }
+        if ((client.levelTileFlags[client.currentLevel][client.localPlayer.x >> 7][client.localPlayer.z >> 7] & 0x4) != 0) {
+            local12 = client.currentLevel;
+        }
+        return local12;
     }
 }

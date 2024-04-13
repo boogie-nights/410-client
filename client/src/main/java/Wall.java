@@ -8,7 +8,7 @@ public final class Wall {
 	public int anInt2360;
 
 	@OriginalMember(owner = "client!uc", name = "e", descriptor = "Lclient!jd;")
-	public Entity aClass2_Sub2_Sub12_7;
+	public Entity entityA;
 
 	@OriginalMember(owner = "client!uc", name = "g", descriptor = "I")
 	public int anInt2361;

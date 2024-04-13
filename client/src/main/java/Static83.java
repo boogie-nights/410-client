@@ -30,8 +30,8 @@ public final class Static83 {
 		}
 		if (Static1.aBoolean1) {
 			Static1.aBoolean1 = false;
-			Static23.aGraphics1.setColor(Color.black);
-			Static23.aGraphics1.fillRect(0, 0, Static77.anInt1991, Static70.anInt2154);
+			client.graphics.setColor(Color.black);
+			client.graphics.fillRect(0, 0, Static77.anInt1991, Static70.anInt2154);
 		}
 		if (arg0 == null) {
 			arg0 = new Color(140, 17, 17);
@@ -50,45 +50,45 @@ public final class Static83 {
 			local58.setFont(Static20.aFont1);
 			local58.setColor(Color.white);
 			arg1.method1194(22, local58, (304 - arg1.method1181(Static24.aFontMetrics1)) / 2);
-			Static23.aGraphics1.drawImage(Static71.anImage4, Static77.anInt1991 / 2 - 152, Static70.anInt2154 / 2 + -18, null);
+			client.graphics.drawImage(Static71.anImage4, Static77.anInt1991 / 2 - 152, Static70.anInt2154 / 2 + -18, null);
 		} catch (@Pc(135) Exception local135) {
 			@Pc(141) int local141 = Static77.anInt1991 / 2 - 152;
 			@Pc(147) int local147 = Static70.anInt2154 / 2 - 18;
-			Static23.aGraphics1.setColor(arg0);
-			Static23.aGraphics1.drawRect(local141, local147, 303, 33);
-			Static23.aGraphics1.fillRect(local141 + 2, local147 - -2, arg2 * 3, 30);
-			Static23.aGraphics1.setColor(Color.black);
-			Static23.aGraphics1.drawRect(local141 + 1, local147 - -1, 301, 31);
-			Static23.aGraphics1.fillRect(local141 + arg2 * 3 + 2, local147 + 2, 300 - arg2 * 3, 30);
-			Static23.aGraphics1.setFont(Static20.aFont1);
-			Static23.aGraphics1.setColor(Color.white);
-			arg1.method1194(local147 + 22, Static23.aGraphics1, (304 - arg1.method1181(Static24.aFontMetrics1)) / 2 + local141);
+			client.graphics.setColor(arg0);
+			client.graphics.drawRect(local141, local147, 303, 33);
+			client.graphics.fillRect(local141 + 2, local147 - -2, arg2 * 3, 30);
+			client.graphics.setColor(Color.black);
+			client.graphics.drawRect(local141 + 1, local147 - -1, 301, 31);
+			client.graphics.fillRect(local141 + arg2 * 3 + 2, local147 + 2, 300 - arg2 * 3, 30);
+			client.graphics.setFont(Static20.aFont1);
+			client.graphics.setColor(Color.white);
+			arg1.method1194(local147 + 22, client.graphics, (304 - arg1.method1181(Static24.aFontMetrics1)) / 2 + local141);
 		}
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!ke;II)V", line = 97)
 	public static void method1468(@OriginalArg(0) PathingEntity arg0, @OriginalArg(1) int arg1) {
-		if (arg0.anInt2275 < 128 || arg0.anInt2284 < 128 || arg0.anInt2275 >= 13184 || arg0.anInt2284 >= 13184) {
+		if (arg0.x < 128 || arg0.z < 128 || arg0.x >= 13184 || arg0.z >= 13184) {
 			arg0.anInt2297 = 0;
 			arg0.anInt2277 = 0;
 			arg0.anInt2302 = -1;
 			arg0.anInt2307 = -1;
-			arg0.anInt2275 = arg0.anInt2278 * 64 + arg0.anIntArray492[0] * 128;
-			arg0.anInt2284 = arg0.anInt2278 * 64 + arg0.anIntArray496[0] * 128;
+			arg0.x = arg0.size * 64 + arg0.pathTileX[0] * 128;
+			arg0.z = arg0.size * 64 + arg0.pathTileZ[0] * 128;
 			arg0.method1543();
 		}
-		if (Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1 == arg0 && (arg0.anInt2275 < 1536 || arg0.anInt2284 < 1536 || arg0.anInt2275 >= 11776 || arg0.anInt2284 >= 11776)) {
+		if (client.localPlayer == arg0 && (arg0.x < 1536 || arg0.z < 1536 || arg0.x >= 11776 || arg0.z >= 11776)) {
 			arg0.anInt2302 = -1;
 			arg0.anInt2277 = 0;
 			arg0.anInt2307 = -1;
 			arg0.anInt2297 = 0;
-			arg0.anInt2275 = arg0.anIntArray492[0] * 128 + arg0.anInt2278 * 64;
-			arg0.anInt2284 = arg0.anIntArray496[0] * 128 + arg0.anInt2278 * 64;
+			arg0.x = arg0.pathTileX[0] * 128 + arg0.size * 64;
+			arg0.z = arg0.pathTileZ[0] * 128 + arg0.size * 64;
 			arg0.method1543();
 		}
-		if (Static1.anInt2511 < arg0.anInt2277) {
+		if (client.loopCycle < arg0.anInt2277) {
 			Static3.method25(arg0);
-		} else if (arg0.anInt2297 >= Static1.anInt2511) {
+		} else if (arg0.anInt2297 >= client.loopCycle) {
 			Static1.method4(arg0);
 		} else {
 			Static40.method1240(arg0);

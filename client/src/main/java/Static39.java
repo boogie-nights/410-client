@@ -24,41 +24,6 @@ public final class Static39 {
 		Static18.aClass45_9.draw(arg0, 0, 338);
 	}
 
-	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIII)Z", line = 220)
-	public static boolean method770(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(16) int local16 = arg1 >> 14 & 0x7FFF;
-		@Pc(23) int local23 = Static85.scene.method1449(Static1.currentLevel, arg2, arg0, arg1);
-		if (local23 == -1) {
-			return false;
-		}
-		@Pc(34) int local34 = local23 >> 6 & 0x3;
-		@Pc(38) int local38 = local23 & 0x1F;
-		if (local38 == 10 || local38 == 11 || local38 == 22) {
-			@Pc(53) LocType local53 = LocType.get(local16);
-			@Pc(66) int local66;
-			@Pc(63) int local63;
-			if (local34 == 0 || local34 == 2) {
-				local66 = local53.anInt1036;
-				local63 = local53.anInt1040;
-			} else {
-				local63 = local53.anInt1036;
-				local66 = local53.anInt1040;
-			}
-			@Pc(77) int local77 = local53.anInt1057;
-			if (local34 != 0) {
-				local77 = (local77 << local34 & 0xF) + (local77 >> 4 - local34);
-			}
-			Static75.method1349(arg0, 0, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], local63, local77, 2, true, 0, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], local66, arg2);
-		} else {
-			Static75.method1349(arg0, local34, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 0, 0, 2, true, local38 + 1, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 0, arg2);
-		}
-		Static1.anInt1554 = Static1.anInt2500;
-		Static1.anInt1096 = 2;
-		Static1.anInt2465 = Static1.anInt2133;
-		Static1.anInt2410 = 0;
-		return true;
-	}
-
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(ZI)V", line = 528)
 	public static void method774(@OriginalArg(1) int arg0) {
 		if (arg0 == -1 || !Static84.aBooleanArray31[arg0]) {
@@ -71,7 +36,7 @@ public final class Static39 {
 		@Pc(26) boolean local26 = true;
 		for (@Pc(28) int local28 = 0; local28 < Static46.aClass2_Sub2_Sub13ArrayArray1[arg0].length; local28++) {
 			if (Static46.aClass2_Sub2_Sub13ArrayArray1[arg0][local28] != null) {
-				if (Static46.aClass2_Sub2_Sub13ArrayArray1[arg0][local28].anInt1613 == 2) {
+				if (Static46.aClass2_Sub2_Sub13ArrayArray1[arg0][local28].type == 2) {
 					local26 = false;
 				} else {
 					Static46.aClass2_Sub2_Sub13ArrayArray1[arg0][local28] = null;

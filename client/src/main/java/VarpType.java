@@ -6,8 +6,30 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!ic")
 public final class VarpType extends Hashable {
 
+	@OriginalMember(owner = "client!j", name = "e", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_12 = new LruCache(64);
 	@OriginalMember(owner = "client!ic", name = "Q", descriptor = "I")
 	public int anInt1076 = 0;
+
+    @OriginalMember(owner = "client!uc", name = "a", descriptor = "(BI)Lclient!ic;", line = 192)
+    public static VarpType method1568(@OriginalArg(1) int arg0) {
+        @Pc(10) VarpType local10 = (VarpType) aClass47_12.get((long) arg0);
+        if (local10 != null) {
+            return local10;
+        }
+        @Pc(20) byte[] local20 = Static26.aClass5_9.fetchFile(arg0, 16);
+        local10 = new VarpType();
+        if (local20 != null) {
+            local10.method788(new Packet(local20));
+        }
+        aClass47_12.put((long) arg0, local10);
+        return local10;
+    }
+
+	@OriginalMember(owner = "client!ib", name = "c", descriptor = "(B)V", line = 222)
+	public static void method1242() {
+		aClass47_12.clear();
+	}
 
 	@OriginalMember(owner = "client!ic", name = "a", descriptor = "(Lclient!eb;Z)V", line = 57)
 	public void method788(@OriginalArg(0) Packet arg0) {

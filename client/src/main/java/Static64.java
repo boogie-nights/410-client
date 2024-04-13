@@ -17,7 +17,7 @@ public final class Static64 {
 	public static void method1109() {
 		for (@Pc(16) int local16 = 0; local16 < Static1.anInt1190; local16++) {
 			@Pc(22) int local22 = Static1.anIntArray504[local16];
-			@Pc(26) NpcEntity local26 = Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local22];
+			@Pc(26) NpcEntity local26 = client.npcs[local22];
 			@Pc(30) int local30 = client.in.g1();
 			if ((local30 & 0x20) != 0) {
 				local26.anInt2324 = client.in.g2();
@@ -30,8 +30,8 @@ public final class Static64 {
 			if ((local30 & 0x40) != 0) {
 				local57 = client.in.g1_alt2();
 				local61 = client.in.g1_alt1();
-				local26.method1540(local57, Static1.anInt2511, local61);
-				local26.anInt2315 = Static1.anInt2511 + 300;
+				local26.method1540(local57, client.loopCycle, local61);
+				local26.anInt2315 = client.loopCycle + 300;
 				local26.anInt2298 = client.in.g1_alt3();
 				local26.anInt2279 = client.in.g1_alt2();
 			}
@@ -42,7 +42,7 @@ public final class Static64 {
 					local57 = -1;
 				}
 				if (local57 == local26.anInt2307 && local57 != -1) {
-					@Pc(115) int local115 = Static57.method1042(local57).anInt662;
+					@Pc(115) int local115 = SeqType.method1042(local57).anInt662;
 					if (local115 == 1) {
 						local26.anInt2316 = 0;
 						local26.anInt2267 = 0;
@@ -52,7 +52,7 @@ public final class Static64 {
 					if (local115 == 2) {
 						local26.anInt2300 = 0;
 					}
-				} else if (local57 == -1 || local26.anInt2307 == -1 || Static57.method1042(local57).anInt658 >= Static57.method1042(local26.anInt2307).anInt658) {
+				} else if (local57 == -1 || local26.anInt2307 == -1 || SeqType.method1042(local57).anInt658 >= SeqType.method1042(local26.anInt2307).anInt658) {
 					local26.anInt2316 = 0;
 					local26.anInt2300 = 0;
 					local26.anInt2267 = 0;
@@ -64,18 +64,18 @@ public final class Static64 {
 			if ((local30 & 0x1) != 0) {
 				local57 = client.in.g1_alt2();
 				local61 = client.in.g1_alt1();
-				local26.method1540(local57, Static1.anInt2511, local61);
-				local26.anInt2315 = Static1.anInt2511 + 300;
+				local26.method1540(local57, client.loopCycle, local61);
+				local26.anInt2315 = client.loopCycle + 300;
 				local26.anInt2298 = client.in.g1();
 				local26.anInt2279 = client.in.g1_alt2();
 			}
 			if ((local30 & 0x80) != 0) {
 				local26.anInt2302 = client.in.g2_alt3();
 				local57 = client.in.g4s_alt3();
-				local26.anInt2320 = Static1.anInt2511 + (local57 & 0xFFFF);
+				local26.anInt2320 = client.loopCycle + (local57 & 0xFFFF);
 				local26.anInt2289 = local57 >> 16;
 				local26.anInt2291 = 0;
-				if (local26.anInt2320 > Static1.anInt2511) {
+				if (local26.anInt2320 > client.loopCycle) {
 					local26.anInt2291 = -1;
 				}
 				if (local26.anInt2302 == 65535) {
@@ -88,14 +88,14 @@ public final class Static64 {
 				local26.anInt2294 = 100;
 			}
 			if ((local30 & 0x4) != 0) {
-				local26.aClass2_Sub2_Sub7_1 = Static34.method640(client.in.g2());
-				local26.anInt2290 = local26.aClass2_Sub2_Sub7_1.anInt767;
-				local26.anInt2269 = local26.aClass2_Sub2_Sub7_1.anInt777;
-				local26.anInt2304 = local26.aClass2_Sub2_Sub7_1.anInt771;
-				local26.anInt2285 = local26.aClass2_Sub2_Sub7_1.anInt769;
-				local26.anInt2278 = local26.aClass2_Sub2_Sub7_1.anInt758;
-				local26.anInt2322 = local26.aClass2_Sub2_Sub7_1.anInt761;
-				local26.anInt2303 = local26.aClass2_Sub2_Sub7_1.anInt764;
+				local26.type = NpcType.method640(client.in.g2());
+				local26.anInt2290 = local26.type.anInt767;
+				local26.anInt2269 = local26.type.anInt777;
+				local26.anInt2304 = local26.type.anInt771;
+				local26.anInt2285 = local26.type.anInt769;
+				local26.size = local26.type.size;
+				local26.anInt2322 = local26.type.anInt761;
+				local26.anInt2303 = local26.type.anInt764;
 			}
 			if ((local30 & 0x10) != 0) {
 				local26.anInt2280 = client.in.g2();
@@ -185,7 +185,7 @@ public final class Static64 {
 		client.stream = null;
 		aClass2_Sub2_Sub2_Sub3Array8 = null;
 		JagString.aClass40_496 = null;
-		Static1.anIntArrayArray15 = null;
+		client.bfsDirection = null;
 		JagString.aClass40_495 = null;
 		anIntArray355 = null;
 	}
@@ -206,28 +206,8 @@ public final class Static64 {
 		@Pc(7) JagString local7 = new JagString();
 		local7.length = arg0;
 		local7.chars = new byte[arg0];
-		Static107.method993(arg1, arg2, local7.chars, 0, arg0);
+		Static107.copy(arg1, arg2, local7.chars, 0, arg0);
 		return local7;
 	}
 
-	@OriginalMember(owner = "client!nd", name = "a", descriptor = "(IJ)V", line = 380)
-	public static void method1115(@OriginalArg(1) long arg0) {
-		if (arg0 == 0L) {
-			return;
-		}
-		for (@Pc(14) int local14 = 0; local14 < Static1.anInt2594; local14++) {
-			if (arg0 == Static1.aLongArray2[local14]) {
-				Static1.anInt2594--;
-				Static1.aBoolean59 = true;
-				for (@Pc(40) int local40 = local14; local40 < Static1.anInt2594; local40++) {
-					Static1.aClass40Array23[local40] = Static1.aClass40Array23[local40 + 1];
-					Static1.anIntArray316[local40] = Static1.anIntArray316[local40 + 1];
-					Static1.aLongArray2[local40] = Static1.aLongArray2[local40 + 1];
-				}
-				Static1.aClass2_Sub3_Sub1_4.pIsaac1(30);
-				Static1.aClass2_Sub3_Sub1_4.p8(arg0);
-				return;
-			}
-		}
-	}
 }

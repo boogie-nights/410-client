@@ -6,6 +6,14 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!gb")
 public final class NpcType extends Hashable {
 
+	@OriginalMember(owner = "client!ma", name = "p", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_14 = new LruCache(64);
+	@OriginalMember(owner = "client!t", name = "r", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_19 = new LruCache(50);
+	@OriginalMember(owner = "client!gd", name = "z", descriptor = "Lclient!ud;")
+	public static Js5Index aClass5_11;
+	@OriginalMember(owner = "client!vd", name = "s", descriptor = "Lclient!ud;")
+	public static Js5Index aClass5_30;
 	@OriginalMember(owner = "client!gb", name = "T", descriptor = "I")
 	public int anInt762;
 
@@ -61,7 +69,7 @@ public final class NpcType extends Hashable {
 	public boolean aBoolean56 = true;
 
 	@OriginalMember(owner = "client!gb", name = "O", descriptor = "I")
-	public int anInt758 = 1;
+	public int size = 1;
 
 	@OriginalMember(owner = "client!gb", name = "ob", descriptor = "I")
 	public int anInt777 = -1;
@@ -87,17 +95,40 @@ public final class NpcType extends Hashable {
 	@OriginalMember(owner = "client!gb", name = "zb", descriptor = "I")
 	private int anInt782 = 128;
 
+	@OriginalMember(owner = "client!h", name = "a", descriptor = "(II)Lclient!gb;", line = 295)
+	public static NpcType method640(@OriginalArg(1) int arg0) {
+		@Pc(18) NpcType local18 = (NpcType) aClass47_14.get((long) arg0);
+		if (local18 != null) {
+			return local18;
+		}
+		@Pc(28) byte[] local28 = aClass5_11.fetchFile(arg0, 9);
+		local18 = new NpcType();
+		local18.anInt762 = arg0;
+		if (local28 != null) {
+			local18.method608(new Packet(local28));
+		}
+		local18.method612();
+		aClass47_14.put((long) arg0, local18);
+		return local18;
+	}
+
+	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(Lclient!ud;BLclient!ud;)V", line = 808)
+	static void method1651(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) Js5Index arg1) {
+		aClass5_30 = arg1;
+		aClass5_11 = arg0;
+	}
+
 	@OriginalMember(owner = "client!gb", name = "a", descriptor = "(Lclient!f;Lclient!f;III)Lclient!ne;", line = 14)
 	public Model method605(@OriginalArg(0) SeqType arg0, @OriginalArg(1) SeqType arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		if (this.anIntArray154 != null) {
 			@Pc(12) NpcType local12 = this.method611();
 			return local12 == null ? null : local12.method605(arg0, arg1, arg2, arg3);
 		}
-		@Pc(37) Model local37 = (Model) Static1.aClass47_19.get((long) this.anInt762);
+		@Pc(37) Model local37 = (Model) aClass47_19.get((long) this.anInt762);
 		if (local37 == null) {
 			@Pc(41) boolean local41 = false;
 			for (@Pc(43) int local43 = 0; local43 < this.anIntArray155.length; local43++) {
-				if (!Static95.aClass5_30.method64(0, this.anIntArray155[local43])) {
+				if (!aClass5_30.method64(0, this.anIntArray155[local43])) {
 					local41 = true;
 				}
 			}
@@ -106,7 +137,7 @@ public final class NpcType extends Hashable {
 			}
 			@Pc(75) Model[] local75 = new Model[this.anIntArray155.length];
 			for (@Pc(77) int local77 = 0; local77 < this.anIntArray155.length; local77++) {
-				local75[local77] = Static65.method1163(Static95.aClass5_30, this.anIntArray155[local77]);
+				local75[local77] = Static65.method1163(aClass5_30, this.anIntArray155[local77]);
 			}
 			if (local75.length == 1) {
 				local37 = local75[0];
@@ -120,7 +151,7 @@ public final class NpcType extends Hashable {
 			}
 			local37.method1160();
 			local37.method1153(this.anInt779 + 64, this.anInt759 + 850, -30, -50, -30, true);
-			Static1.aClass47_19.put((long) this.anInt762, local37);
+			aClass47_19.put((long) this.anInt762, local37);
 		}
 		@Pc(179) Model local179;
 		if (arg0 != null && arg1 != null) {
@@ -178,7 +209,7 @@ public final class NpcType extends Hashable {
 		} else if (arg1 == 3) {
 			this.aClass40_237 = arg0.gjstr();
 		} else if (arg1 == 12) {
-			this.anInt758 = arg0.g1();
+			this.size = arg0.g1();
 		} else if (arg1 == 13) {
 			this.anInt767 = arg0.g2();
 		} else if (arg1 == 14) {
@@ -255,7 +286,7 @@ public final class NpcType extends Hashable {
 		} else if (this.anInt768 != -1) {
 			local13 = Static1.anIntArray339[this.anInt768];
 		}
-		return local13 < 0 || this.anIntArray154.length <= local13 || this.anIntArray154[local13] == -1 ? null : Static34.method640(this.anIntArray154[local13]);
+		return local13 < 0 || this.anIntArray154.length <= local13 || this.anIntArray154[local13] == -1 ? null : method640(this.anIntArray154[local13]);
 	}
 
 	@OriginalMember(owner = "client!gb", name = "e", descriptor = "(B)V", line = 505)
@@ -272,7 +303,7 @@ public final class NpcType extends Hashable {
 		} else {
 			@Pc(27) boolean local27 = false;
 			for (@Pc(29) int local29 = 0; local29 < this.anIntArray157.length; local29++) {
-				if (!Static95.aClass5_30.method64(0, this.anIntArray157[local29])) {
+				if (!aClass5_30.method64(0, this.anIntArray157[local29])) {
 					local27 = true;
 				}
 			}
@@ -281,7 +312,7 @@ public final class NpcType extends Hashable {
 			}
 			@Pc(57) Model[] local57 = new Model[this.anIntArray157.length];
 			for (@Pc(59) int local59 = 0; local59 < this.anIntArray157.length; local59++) {
-				local57[local59] = Static65.method1163(Static95.aClass5_30, this.anIntArray157[local59]);
+				local57[local59] = Static65.method1163(aClass5_30, this.anIntArray157[local59]);
 			}
 			@Pc(94) Model local94;
 			if (local57.length == 1) {

@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static80 {
 
-	@OriginalMember(owner = "client!sc", name = "p", descriptor = "Lclient!kc;")
-	public static PlayerEntity aClass2_Sub2_Sub12_Sub1_Sub1_1;
-
 	@OriginalMember(owner = "client!sc", name = "C", descriptor = "Lclient!qa;")
 	public static MixerPcmStream aClass2_Sub10_Sub2_1;
 
@@ -14,8 +11,8 @@ public final class Static80 {
 		Static1.aLongArray5 = null;
 		JagString.aClass40_602 = null;
 		Static1.anIntArray453 = null;
-		JagString.aClass40_606 = null;
-		aClass2_Sub2_Sub12_Sub1_Sub1_1 = null;
+		JagString.BUTTON_SELECT = null;
+		client.localPlayer = null;
 		aClass2_Sub10_Sub2_1 = null;
 		JagString.aClass40_603 = null;
 		JagString.aClass40_604 = null;
@@ -27,14 +24,14 @@ public final class Static80 {
 	@OriginalMember(owner = "client!sc", name = "a", descriptor = "(B)V", line = 55)
 	public static void method1406() {
 		Static1.anInt2328 = 0;
-		Static1.anInt986 = 0;
+		client.flagSceneTileX = 0;
 		client.lastPacketType0 = -1;
 		client.lastPacketType1 = -1;
-		Static1.aClass2_Sub3_Sub1_4.pos = 0;
+		client.out.pos = 0;
 		client.idleNetCycles = 0;
 		client.packetType = -1;
-		Static1.anInt1973 = 0;
-		Static1.anInt797 = 0;
+		client.systemUpdateTimer = 0;
+		client.menuSize = 0;
 		client.packetSize = 0;
 		client.lastPacketType2 = -1;
 		Static1.aBoolean175 = false;

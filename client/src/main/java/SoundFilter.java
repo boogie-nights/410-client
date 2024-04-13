@@ -11,8 +11,12 @@ public final class SoundFilter {
 
 	@OriginalMember(owner = "client!md", name = "f", descriptor = "[[I")
 	public static int[][] anIntArrayArray12 = new int[2][8];
+    @OriginalMember(owner = "client!md", name = "b", descriptor = "I")
+    public static int anInt1619;
+    @OriginalMember(owner = "client!md", name = "e", descriptor = "F")
+    public static float aFloat1;
 
-	@OriginalMember(owner = "client!md", name = "c", descriptor = "[[[I")
+    @OriginalMember(owner = "client!md", name = "c", descriptor = "[[[I")
 	private final int[][][] anIntArrayArrayArray4 = new int[2][2][4];
 
 	@OriginalMember(owner = "client!md", name = "d", descriptor = "[[[I")
@@ -24,11 +28,23 @@ public final class SoundFilter {
 	@OriginalMember(owner = "client!md", name = "g", descriptor = "[I")
 	private final int[] anIntArray334 = new int[2];
 
-	@OriginalMember(owner = "client!md", name = "a", descriptor = "(IIF)F", line = 8)
+    @OriginalMember(owner = "client!md", name = "a", descriptor = "()V", line = 3)
+    public static void method1064() {
+        aFloatArrayArray1 = null;
+        anIntArrayArray12 = null;
+    }
+
+    @OriginalMember(owner = "client!md", name = "a", descriptor = "(F)F", line = 93)
+    public static float method1067(@OriginalArg(0) float arg0) {
+        @Pc(7) float local7 = (float) Math.pow(2.0D, (double) arg0) * 32.703197F;
+        return local7 * 3.1415927F / 11025.0F;
+    }
+
+    @OriginalMember(owner = "client!md", name = "a", descriptor = "(IIF)F", line = 8)
 	private float method1065(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) float arg2) {
 		@Pc(30) float local30 = (float) this.anIntArrayArrayArray4[arg0][0][arg1] + arg2 * (float) (this.anIntArrayArrayArray4[arg0][1][arg1] - this.anIntArrayArrayArray4[arg0][0][arg1]);
 		@Pc(34) float local34 = local30 * 1.2207031E-4F;
-		return Static59.method1067(local34);
+		return method1067(local34);
 	}
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(Lclient!eb;Lclient!ie;)V", line = 27)
@@ -79,8 +95,8 @@ public final class SoundFilter {
 		if (arg0 == 0) {
 			local20 = (float) this.anIntArray334[0] + (float) (this.anIntArray334[1] - this.anIntArray334[0]) * arg1;
 			@Pc(24) float local24 = local20 * 0.0030517578F;
-			Static59.aFloat1 = (float) Math.pow(0.1D, (double) (local24 / 20.0F));
-			Static59.anInt1619 = (int) (Static59.aFloat1 * 65536.0F);
+			aFloat1 = (float) Math.pow(0.1D, (double) (local24 / 20.0F));
+			anInt1619 = (int) (aFloat1 * 65536.0F);
 		}
 		if (this.anIntArray335[arg0] == 0) {
 			return 0;
@@ -103,7 +119,7 @@ public final class SoundFilter {
 		@Pc(226) int local226;
 		if (arg0 == 0) {
 			for (local226 = 0; local226 < this.anIntArray335[0] * 2; local226++) {
-				aFloatArrayArray1[0][local226] *= Static59.aFloat1;
+				aFloatArrayArray1[0][local226] *= aFloat1;
 			}
 		}
 		for (local226 = 0; local226 < this.anIntArray335[arg0] * 2; local226++) {

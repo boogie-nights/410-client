@@ -122,8 +122,8 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 				}
 			}
 			while (true) {
-				Static23.aGraphics1 = Static7.method185().getGraphics();
-				if (Static23.aGraphics1 != null) {
+				client.graphics = Static7.method185().getGraphics();
+				if (client.graphics != null) {
 					Static27.aClass45_14 = Static75.method1351(Static77.anInt1991, Static7.method185(), Static70.anInt2154);
 					Static7.method185().addFocusListener(this);
 					Static7.method185().requestFocus();
@@ -210,7 +210,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		synchronized (this) {
 			Static89.aBoolean174 = Static1.aBoolean183;
 		}
-		this.method329();
+		this.update();
 	}
 
 	@OriginalMember(owner = "client!nb", name = "e", descriptor = "(I)Z", line = 379)
@@ -260,7 +260,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			Static1.anInt1695 = ((local33 >> 1) + 32000) / local33;
 		}
 		Static99.anInt2498 = Static99.anInt2498 + 1 & 0x1F;
-		this.method330();
+		this.draw();
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(ILjava/lang/String;ILjava/net/InetAddress;BIII)V", line = 741)
@@ -292,10 +292,10 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	protected abstract void method327();
 
 	@OriginalMember(owner = "client!nb", name = "b", descriptor = "(Z)V")
-	protected abstract void method329();
+	protected abstract void update();
 
 	@OriginalMember(owner = "client!nb", name = "d", descriptor = "(I)V")
-	protected abstract void method330();
+	protected abstract void draw();
 
 	@OriginalMember(owner = "client!nb", name = "init", descriptor = "()V")
 	public abstract void init();

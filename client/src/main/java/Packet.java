@@ -41,7 +41,7 @@ public class Packet extends Linkable {
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(Lclient!o;B)V", line = 52)
 	public final void pjstr(@OriginalArg(0) JagString arg0) {
-		this.pos += arg0.method1191(this.data, arg0.method1169(), this.pos);
+		this.pos += arg0.method1191(this.data, arg0.length(), this.pos);
 		this.data[this.pos++] = 0;
 	}
 

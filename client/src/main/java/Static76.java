@@ -16,7 +16,7 @@ public final class Static76 {
 		JagString.aClass40_569 = null;
 		JagString.aClass40_570 = null;
 		anIntArray431 = null;
-		Static1.aLongArray4 = null;
+		client.ignoreName37 = null;
 	}
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(B[B)[B", line = 23)

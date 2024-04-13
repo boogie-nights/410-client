@@ -6,6 +6,14 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!hb")
 public final class ObjType extends Hashable {
 
+	@OriginalMember(owner = "client!i", name = "Z", descriptor = "Lclient!ud;")
+	public static Js5Index aClass5_13;
+	@OriginalMember(owner = "client!r", name = "f", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_16 = new LruCache(64);
+	@OriginalMember(owner = "client!t", name = "l", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_18 = new LruCache(50);
+	@OriginalMember(owner = "client!f", name = "jb", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_7 = new LruCache(100);
 	@OriginalMember(owner = "client!hb", name = "P", descriptor = "I")
 	private int anInt919;
 
@@ -123,6 +131,40 @@ public final class ObjType extends Hashable {
 	@OriginalMember(owner = "client!hb", name = "Vb", descriptor = "I")
 	public int anInt960 = 0;
 
+    @OriginalMember(owner = "client!wb", name = "a", descriptor = "(II)Lclient!hb;", line = 22)
+    public static ObjType method1669(@OriginalArg(1) int arg0) {
+        @Pc(18) ObjType local18 = (ObjType) aClass47_16.get((long) arg0);
+        if (local18 != null) {
+            return local18;
+        }
+        @Pc(28) byte[] local28 = aClass5_13.fetchFile(arg0, 10);
+        local18 = new ObjType();
+        local18.anInt954 = arg0;
+        if (local28 != null) {
+            local18.method724(new Packet(local28));
+        }
+        local18.method716();
+        if (local18.anInt932 != -1) {
+            local18.method721(method1669(local18.anInt956), method1669(local18.anInt932));
+        }
+        if (!Static40.aBoolean150 && local18.aBoolean66) {
+            local18.aClass40Array16 = null;
+            local18.aClass40Array17 = null;
+            local18.aClass40_290 = JagString.aClass40_65;
+            local18.aClass40_289 = JagString.aClass40_181;
+            local18.anInt951 = 0;
+        }
+        aClass47_16.put((long) arg0, local18);
+        return local18;
+    }
+
+	@OriginalMember(owner = "client!g", name = "a", descriptor = "(B)V", line = 11)
+	public static void method1675() {
+		aClass47_16.clear();
+		aClass47_18.clear();
+		aClass47_7.clear();
+	}
+
 	@OriginalMember(owner = "client!hb", name = "a", descriptor = "(BZ)Z", line = 5)
 	public boolean method709(@OriginalArg(1) boolean arg0) {
 		@Pc(2) int local2 = this.anInt922;
@@ -181,12 +223,12 @@ public final class ObjType extends Hashable {
 				}
 			}
 			if (local13 != -1) {
-				return Static97.method1669(local13).method713(1, arg1);
+				return method1669(local13).method713(1, arg1);
 			}
 		}
 		@Pc(65) Model local65;
 		if (arg1) {
-			local65 = (Model) Static1.aClass47_18.get((long) this.anInt954);
+			local65 = (Model) aClass47_18.get((long) this.anInt954);
 			if (local65 != null) {
 				return local65;
 			}
@@ -206,7 +248,7 @@ public final class ObjType extends Hashable {
 		if (arg1) {
 			local65.method1153(this.anInt942 + 64, this.anInt940 + 768, -50, -10, -50, true);
 			local65.aBoolean139 = true;
-			Static1.aClass47_18.put((long) this.anInt954, local65);
+			aClass47_18.put((long) this.anInt954, local65);
 		}
 		return local65;
 	}

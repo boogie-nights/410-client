@@ -13,6 +13,6 @@ public final class ObjStackEntity extends Entity {
 	@OriginalMember(owner = "client!la", name = "c", descriptor = "(B)Lclient!ne;", line = 168)
 	@Override
 	protected Model method1533() {
-		return Static97.method1669(this.anInt1490).method713(this.anInt1495, true);
+		return ObjType.method1669(this.anInt1490).method713(this.anInt1495, true);
 	}
 }

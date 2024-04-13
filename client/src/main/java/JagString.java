@@ -110,7 +110,7 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!ua", name = "Xc", descriptor = "Lclient!o;")
 	public static JagString aClass40_662 = Static12.method257("as it was used to break our rules");
 	@OriginalMember(owner = "client!gb", name = "Eb", descriptor = "Lclient!o;")
-	public static JagString aClass40_239 = Static12.method257("Walk here");
+	public static JagString WALK_HERE = Static12.method257("Walk here");
 	@OriginalMember(owner = "client!gb", name = "Hb", descriptor = "Lclient!o;")
 	public static JagString aClass40_240 = Static12.method257("Remove @whi@");
 	@OriginalMember(owner = "client!gb", name = "Ib", descriptor = "Lclient!o;")
@@ -132,7 +132,7 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!sc", name = "G", descriptor = "Lclient!o;")
 	public static JagString aClass40_607 = Static12.method257("headicons_pk");
 	@OriginalMember(owner = "client!sc", name = "x", descriptor = "Lclient!o;")
-	public static JagString aClass40_606 = Static12.method257("Select");
+	public static JagString BUTTON_SELECT = Static12.method257("Select");
 	@OriginalMember(owner = "client!eb", name = "pb", descriptor = "Lclient!o;")
 	public static JagString aClass40_734 = Static12.method257("backbase1");
 	@OriginalMember(owner = "client!eb", name = "rb", descriptor = "Lclient!o;")
@@ -144,7 +144,7 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!eb", name = "vb", descriptor = "Lclient!o;")
 	public static JagString aClass40_737 = Static12.method257("Loaded input handler");
 	@OriginalMember(owner = "client!wc", name = "Kb", descriptor = "Lclient!o;")
-	public static JagString aClass40_739 = Static12.method257("Your friendlist is full)3 Max of 100 for free users)1 and 200 for members");
+	public static JagString FRIENDSLIST_FULL = Static12.method257("Your friendlist is full)3 Max of 100 for free users)1 and 200 for members");
 	@OriginalMember(owner = "client!wc", name = "Rb", descriptor = "Lclient!o;")
 	public static JagString aClass40_740 = Static12.method257("Importing models )2 ");
 	@OriginalMember(owner = "client!wc", name = "Yb", descriptor = "Lclient!o;")
@@ -196,7 +196,7 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!fc", name = "qb", descriptor = "Lclient!o;")
 	public static JagString aClass40_216 = Static12.method257("gr1");
 	@OriginalMember(owner = "client!tb", name = "z", descriptor = "Lclient!o;")
-	public static JagString aClass40_617 = Static12.method257("Ok");
+	public static JagString BUTTON_OK = Static12.method257("Ok");
 	@OriginalMember(owner = "client!tb", name = "E", descriptor = "Lclient!o;")
 	public static JagString aClass40_618 = Static12.method257("System update in: ");
 	@OriginalMember(owner = "client!tb", name = "N", descriptor = "Lclient!o;")
@@ -312,7 +312,7 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!k", name = "w", descriptor = "Lclient!o;")
 	public static JagString aClass40_356 = Static12.method257("l");
 	@OriginalMember(owner = "client!k", name = "z", descriptor = "Lclient!o;")
-	public static JagString aClass40_357 = Static12.method257("Please remove ");
+	public static JagString FRIENDSLIST_PLEASE_REMOVE = Static12.method257("Please remove ");
 	@OriginalMember(owner = "client!a", name = "l", descriptor = "Lclient!o;")
 	public static JagString aClass40_1 = Static12.method257(" has logged out)3");
 	@OriginalMember(owner = "client!a", name = "v", descriptor = "Lclient!o;")
@@ -455,8 +455,6 @@ public final class JagString implements BaseString {
 	public static JagString aClass40_118 = Static12.method257("Password: ");
 	@OriginalMember(owner = "client!d", name = "i", descriptor = "Lclient!o;")
 	public static JagString aClass40_114 = Static12.method257("Loaded gamescreen");
-	@OriginalMember(owner = "client!d", name = "a", descriptor = "Lclient!o;")
-	public static JagString aClass40_112 = null;
 	@OriginalMember(owner = "client!d", name = "H", descriptor = "Lclient!o;")
 	public static JagString aClass40_120 = Static12.method257("Connecting to server)3)3)3");
 	@OriginalMember(owner = "client!db", name = "e", descriptor = "Lclient!o;")
@@ -474,7 +472,7 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!e", name = "T", descriptor = "Lclient!o;")
 	public static JagString aClass40_135 = Static12.method257(":0");
 	@OriginalMember(owner = "client!ea", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_137 = Static12.method257(" from your ignore list first");
+	public static JagString FRIENDSLIST_PLEASE_REMOVE_2 = Static12.method257(" from your ignore list first");
 	@OriginalMember(owner = "client!ea", name = "g", descriptor = "Lclient!o;")
 	public static JagString aClass40_136 = Static12.method257("redstone3");
 	@OriginalMember(owner = "client!ea", name = "p", descriptor = "Lclient!o;")
@@ -534,7 +532,7 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!ka", name = "i", descriptor = "Lclient!o;")
 	public static JagString aClass40_359 = Static12.method257("null");
 	@OriginalMember(owner = "client!ka", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_358 = Static12.method257("Cancel");
+	public static JagString CANCEL = Static12.method257("Cancel");
 	@OriginalMember(owner = "client!ka", name = "q", descriptor = "Lclient!o;")
 	public static JagString aClass40_361 = Static12.method257("Please wait)3)3)3");
 	@OriginalMember(owner = "client!ka", name = "j", descriptor = "Lclient!o;")
@@ -552,19 +550,17 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!le", name = "h", descriptor = "Lclient!o;")
 	public static JagString aClass40_431 = Static12.method257("@bla@ from: @red@");
 	@OriginalMember(owner = "client!ma", name = "b", descriptor = "Lclient!o;")
-	public static JagString aClass40_445 = Static12.method257("");
-	@OriginalMember(owner = "client!ma", name = "d", descriptor = "Lclient!o;")
-	public static JagString aClass40_447 = aClass40_445;
+	public static JagString EMPTY_STRING = Static12.method257("");
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "Lclient!o;")
-	public static JagString aClass40_444 = aClass40_445;
+	public static JagString aClass40_444 = EMPTY_STRING;
 	@OriginalMember(owner = "client!ma", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_448 = aClass40_445;
+	public static JagString aClass40_448 = EMPTY_STRING;
 	@OriginalMember(owner = "client!ma", name = "s", descriptor = "Lclient!o;")
-	public static JagString aClass40_453 = aClass40_445;
+	public static JagString aClass40_453 = EMPTY_STRING;
 	@OriginalMember(owner = "client!ma", name = "q", descriptor = "Lclient!o;")
-	public static JagString aClass40_451 = aClass40_445;
+	public static JagString aClass40_451 = EMPTY_STRING;
 	@OriginalMember(owner = "client!ma", name = "r", descriptor = "Lclient!o;")
-	public static JagString aClass40_452 = aClass40_445;
+	public static JagString aClass40_452 = EMPTY_STRING;
 	@OriginalMember(owner = "client!ma", name = "m", descriptor = "Lclient!o;")
 	public static JagString aClass40_450 = Static12.method257("glow2:");
 	@OriginalMember(owner = "client!ma", name = "g", descriptor = "Lclient!o;")
@@ -584,7 +580,7 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!na", name = "k", descriptor = "Lclient!o;")
 	public static JagString aClass40_487 = Static12.method257("backvmid2");
 	@OriginalMember(owner = "client!na", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_484 = Static12.method257("Continue");
+	public static JagString BUTTON_CONTINUE = Static12.method257("Continue");
 	@OriginalMember(owner = "client!na", name = "t", descriptor = "Lclient!o;")
 	public static JagString aClass40_489 = Static12.method257("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789(Q(R\u001c1(T(U^(V(Z(X(Y)2_=)0[*U]*W;:(W@(S*X)1<)3>)4?*6*V ");
 	@OriginalMember(owner = "client!na", name = "i", descriptor = "Lclient!o;")
@@ -650,7 +646,7 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!uc", name = "h", descriptor = "Lclient!o;")
 	public static JagString aClass40_676 = Static12.method257("Fps:");
 	@OriginalMember(owner = "client!uc", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_677 = Static12.method257(" is already on your friend list");
+	public static JagString FRIENDSLIST_ALREADY_ADDED = Static12.method257(" is already on your friend list");
 	@OriginalMember(owner = "client!uc", name = "f", descriptor = "Lclient!o;")
 	public static JagString aClass40_675 = Static12.method257("Loading)3)3)3 ");
 	@OriginalMember(owner = "client!uc", name = "B", descriptor = "Lclient!o;")
@@ -803,6 +799,14 @@ public final class JagString implements BaseString {
 	public static JagString aClass40_556 = Static12.method257(" (Xskill)2");
 	@OriginalMember(owner = "client!qc", name = "y", descriptor = "Lclient!o;")
 	public static JagString aClass40_557 = Static12.method257(")3");
+	@OriginalMember(owner = "client!pd", name = "a", descriptor = "Lclient!o;")
+	public static JagString aClass40_542 = Static12.method257(":chalreq:");
+	@OriginalMember(owner = "client!pd", name = "q", descriptor = "Lclient!o;")
+	public static JagString aClass40_545 = Static12.method257("@yel@World");
+	@OriginalMember(owner = "client!pd", name = "m", descriptor = "Lclient!o;")
+	public static JagString aClass40_544 = Static12.method257("chatback");
+	@OriginalMember(owner = "client!pd", name = "g", descriptor = "Lclient!o;")
+	public static JagString aClass40_543 = Static12.method257("q8_full");
 
 	@OriginalMember(owner = "client!o", name = "f", descriptor = "[B")
 	public byte[] chars;
@@ -815,6 +819,37 @@ public final class JagString implements BaseString {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "Z")
 	private boolean aBoolean141 = true;
+
+	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(I[Lclient!o;)Lclient!o;", line = 277)
+	public static JagString concatenate(@OriginalArg(1) JagString[] arg0) {
+		if (arg0.length < 2) {
+			throw new IllegalArgumentException();
+		}
+		return concatenate(arg0, arg0.length);
+	}
+
+	@OriginalMember(owner = "client!ub", name = "a", descriptor = "([Lclient!o;III)Lclient!o;", line = 69)
+	public static JagString concatenate(@OriginalArg(0) JagString[] arg0, @OriginalArg(3) int arg1) {
+		@Pc(5) int local5 = 0;
+		for (@Pc(7) int local7 = 0; local7 < arg1; local7++) {
+			if (arg0[local7] == null) {
+				arg0[local7] = aClass40_462;
+			}
+			local5 += arg0[local7].length;
+		}
+		@Pc(46) byte[] local46 = new byte[local5];
+		@Pc(48) int local48 = 0;
+		@Pc(58) JagString local58;
+		for (@Pc(50) int local50 = 0; local50 < arg1; local50++) {
+			local58 = arg0[local50];
+			Static107.copy(local58.chars, 0, local46, local48, local58.length);
+			local48 += local58.length;
+		}
+		local58 = new JagString();
+		local58.chars = local46;
+		local58.length = local5;
+		return local58;
+	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(I)J", line = 10)
 	private long method1164() {
@@ -835,7 +870,7 @@ public final class JagString implements BaseString {
 				Static30.aClass6_1 = new HashTable(4096);
 			} else {
 				for (local41 = (StringLinkable) Static30.aClass6_1.get(local7); local41 != null; local41 = (StringLinkable) Static30.aClass6_1.nextWithKey()) {
-					if (this.method1184(local41.aClass40_247)) {
+					if (this.compare(local41.aClass40_247)) {
 						return local41.aClass40_247;
 					}
 				}
@@ -876,7 +911,7 @@ public final class JagString implements BaseString {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(Z)Lclient!o;", line = 126)
-	public JagString method1167() {
+	public JagString formatName() {
 		@Pc(9) JagString local9 = new JagString();
 		@Pc(11) boolean local11 = true;
 		local9.length = this.length;
@@ -911,7 +946,7 @@ public final class JagString implements BaseString {
 	}
 
 	@OriginalMember(owner = "client!o", name = "c", descriptor = "(I)I", line = 198)
-	public int method1169() {
+	public int length() {
 		return this.length;
 	}
 
@@ -1063,7 +1098,7 @@ public final class JagString implements BaseString {
 	}
 
 	@OriginalMember(owner = "client!o", name = "c", descriptor = "(B)J", line = 564)
-	public long method1179() {
+	public long toBase37() {
 		@Pc(8) long local8 = 0L;
 		for (@Pc(10) int local10 = 0; this.length > local10 && local10 < 12; local10++) {
 			@Pc(17) byte local17 = this.chars[local10];
@@ -1087,7 +1122,7 @@ public final class JagString implements BaseString {
 		@Pc(7) JagString local7 = new JagString();
 		local7.length = arg0 - arg1;
 		local7.chars = new byte[arg0 - arg1];
-		Static107.method993(this.chars, arg1, local7.chars, 0, local7.length);
+		Static107.copy(this.chars, arg1, local7.chars, 0, local7.length);
 		return local7;
 	}
 
@@ -1121,14 +1156,14 @@ public final class JagString implements BaseString {
 		this.anInt1780 = 0;
 		if (this.length != this.chars.length) {
 			@Pc(27) byte[] local27 = new byte[this.length];
-			Static107.method993(this.chars, 0, local27, 0, this.length);
+			Static107.copy(this.chars, 0, local27, 0, this.length);
 			this.chars = local27;
 		}
 		return this;
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(ILclient!o;)Z", line = 701)
-	public boolean method1184(@OriginalArg(1) JagString arg0) {
+	public boolean compare(@OriginalArg(1) JagString arg0) {
 		if (arg0 == null) {
 			return false;
 		} else if (arg0.length == this.length) {
@@ -1243,7 +1278,7 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!o", name = "b", descriptor = "(Z)[B", line = 964)
 	public byte[] method1189() {
 		@Pc(13) byte[] local13 = new byte[this.length];
-		Static107.method993(this.chars, 0, local13, 0, this.length);
+		Static107.copy(this.chars, 0, local13, 0, this.length);
 		return local13;
 	}
 
@@ -1258,7 +1293,7 @@ public final class JagString implements BaseString {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "([BIIII)I", line = 1007)
 	public int method1191(@OriginalArg(0) byte[] arg0, @OriginalArg(3) int arg1, @OriginalArg(4) int arg2) {
-		Static107.method993(this.chars, 0, arg0, arg2, arg1);
+		Static107.copy(this.chars, 0, arg0, arg2, arg1);
 		return arg1;
 	}
 
@@ -1267,7 +1302,7 @@ public final class JagString implements BaseString {
 		@Pc(14) JagString local14 = new JagString();
 		local14.chars = new byte[this.length + 1];
 		local14.length = this.length + 1;
-		Static107.method993(this.chars, 0, local14.chars, 0, this.length);
+		Static107.copy(this.chars, 0, local14.chars, 0, this.length);
 		local14.chars[this.length] = (byte) arg0;
 		return local14;
 	}

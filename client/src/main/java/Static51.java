@@ -77,15 +77,15 @@ public final class Static51 {
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(IB)Lclient!o;", line = 190)
 	public static JagString method1542(@OriginalArg(0) int arg0) {
 		@Pc(15) JagString local15 = Static48.method859(arg0);
-		for (@Pc(21) int local21 = local15.method1169() - 3; local21 > 0; local21 -= 3) {
-			local15 = Static72.method1334(new JagString[] { local15.method1180(local21, 0), JagString.aClass40_672, local15.method1185(local21) });
+		for (@Pc(21) int local21 = local15.length() - 3; local21 > 0; local21 -= 3) {
+			local15 = JagString.concatenate(new JagString[] { local15.method1180(local21, 0), JagString.aClass40_672, local15.method1185(local21) });
 		}
-		if (local15.method1169() > 8) {
-			local15 = Static72.method1334(new JagString[] { JagString.aClass40_689, local15.method1180(local15.method1169() - 8, 0), JagString.aClass40_405, local15, JagString.aClass40_609 });
-		} else if (local15.method1169() > 4) {
-			local15 = Static72.method1334(new JagString[] { JagString.aClass40_678, local15.method1180(local15.method1169() - 4, 0), JagString.aClass40_221, local15, JagString.aClass40_609 });
+		if (local15.length() > 8) {
+			local15 = JagString.concatenate(new JagString[] { JagString.aClass40_689, local15.method1180(local15.length() - 8, 0), JagString.aClass40_405, local15, JagString.aClass40_609 });
+		} else if (local15.length() > 4) {
+			local15 = JagString.concatenate(new JagString[] { JagString.aClass40_678, local15.method1180(local15.length() - 4, 0), JagString.aClass40_221, local15, JagString.aClass40_609 });
 		}
-		return Static72.method1334(new JagString[] { JagString.aClass40_716, local15 });
+		return JagString.concatenate(new JagString[] { JagString.aClass40_716, local15 });
 	}
 
 	@OriginalMember(owner = "client!ke", name = "b", descriptor = "(Z)V", line = 401)
@@ -106,7 +106,7 @@ public final class Static51 {
 			return;
 		}
 		@Pc(20) int local20 = Static1.anInt2133 - 171;
-		@Pc(22) int local22 = Static1.anInt2030;
+		@Pc(22) int local22 = client.mouseClickButton;
 		@Pc(26) int local26 = Static1.anInt2500 - 202;
 		if (Static1.anInt2143 == 0) {
 			if (local22 == 1 && local26 >= 25 && local26 <= 175 && local20 >= 100 && local20 <= 140) {
@@ -131,7 +131,7 @@ public final class Static51 {
 			}
 			local73 += 15;
 			if (local22 == 1 && local26 >= 25 && local26 <= 175 && local20 >= 130 && local20 <= 170) {
-				JagString.aClass40_591 = JagString.aClass40_591.method1175().method1167();
+				JagString.aClass40_591 = JagString.aClass40_591.method1175().formatName();
 				Static45.method1537(JagString.aClass40_593, JagString.aClass40_120);
 				Static7.method187(20);
 			} else {
@@ -145,7 +145,7 @@ public final class Static51 {
 					label145: do {
 						while (Static89.method1561()) {
 							local211 = false;
-							for (@Pc(213) int local213 = 0; JagString.aClass40_486.method1169() > local213; local213++) {
+							for (@Pc(213) int local213 = 0; JagString.aClass40_486.length() > local213; local213++) {
 								if (Static4.anInt135 == JagString.aClass40_486.method1174(local213)) {
 									local211 = true;
 									break;
@@ -154,25 +154,25 @@ public final class Static51 {
 							if (Static1.anInt91 != 0) {
 								continue label145;
 							}
-							if (Static35.anInt935 == 85 && JagString.aClass40_591.method1169() > 0) {
-								JagString.aClass40_591 = JagString.aClass40_591.method1180(JagString.aClass40_591.method1169() - 1, 0);
+							if (Static35.anInt935 == 85 && JagString.aClass40_591.length() > 0) {
+								JagString.aClass40_591 = JagString.aClass40_591.method1180(JagString.aClass40_591.length() - 1, 0);
 							}
 							if (Static35.anInt935 == 84 || Static35.anInt935 == 80) {
 								Static1.anInt91 = 1;
 							}
-							if (local211 && JagString.aClass40_591.method1169() < 12) {
+							if (local211 && JagString.aClass40_591.length() < 12) {
 								JagString.aClass40_591 = JagString.aClass40_591.method1192(Static4.anInt135);
 							}
 						}
 						return;
 					} while (Static1.anInt91 != 1);
-					if (Static35.anInt935 == 85 && JagString.aClass40_587.method1169() > 0) {
-						JagString.aClass40_587 = JagString.aClass40_587.method1180(JagString.aClass40_587.method1169() - 1, 0);
+					if (Static35.anInt935 == 85 && JagString.aClass40_587.length() > 0) {
+						JagString.aClass40_587 = JagString.aClass40_587.method1180(JagString.aClass40_587.length() - 1, 0);
 					}
 					if (Static35.anInt935 == 84 || Static35.anInt935 == 80) {
 						Static1.anInt91 = 0;
 					}
-					if (local211 && JagString.aClass40_587.method1169() < 20) {
+					if (local211 && JagString.aClass40_587.length() < 20) {
 						JagString.aClass40_587 = JagString.aClass40_587.method1192(Static4.anInt135);
 					}
 				}

@@ -21,33 +21,6 @@ public final class Static97 {
 		return Static1.anInt2333 + Static1.anInt34;
 	}
 
-	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(II)Lclient!hb;", line = 22)
-	public static ObjType method1669(@OriginalArg(1) int arg0) {
-		@Pc(18) ObjType local18 = (ObjType) Static1.aClass47_16.get((long) arg0);
-		if (local18 != null) {
-			return local18;
-		}
-		@Pc(28) byte[] local28 = Static38.aClass5_13.fetchFile(arg0, 10);
-		local18 = new ObjType();
-		local18.anInt954 = arg0;
-		if (local28 != null) {
-			local18.method724(new Packet(local28));
-		}
-		local18.method716();
-		if (local18.anInt932 != -1) {
-			local18.method721(method1669(local18.anInt956), method1669(local18.anInt932));
-		}
-		if (!Static40.aBoolean150 && local18.aBoolean66) {
-			local18.aClass40Array16 = null;
-			local18.aClass40Array17 = null;
-			local18.aClass40_290 = JagString.aClass40_65;
-			local18.aClass40_289 = JagString.aClass40_181;
-			local18.anInt951 = 0;
-		}
-		Static1.aClass47_16.put((long) arg0, local18);
-		return local18;
-	}
-
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(I)V", line = 64)
 	public static void method1670() {
 		frame = null;
@@ -71,43 +44,43 @@ public final class Static97 {
 		Static92.method1584();
 		client.idleNetCycles = 0;
 		client.lastPacketType2 = -1;
-		Static1.aClass2_Sub3_Sub1_4.pos = 0;
+		client.out.pos = 0;
 		client.packetType = -1;
 		client.in.pos = 0;
 		Static1.aBoolean175 = false;
 		client.lastPacketType1 = -1;
-		Static1.anInt1973 = 0;
-		Static1.anInt1672 = 0;
-		Static1.anInt797 = 0;
+		client.systemUpdateTimer = 0;
+		client.idleTimeout = 0;
+		client.menuSize = 0;
 		client.lastPacketType0 = -1;
 		Static1.anInt2139 = 0;
 		Static35.method722(0);
 		for (@Pc(1645) int local1645 = 0; local1645 < 100; local1645++) {
-			Static1.aClass40Array30[local1645] = null;
+			client.aClass40Array30[local1645] = null;
 		}
 		Static1.anInt2590 = -1;
-		Static1.anInt2518 = (int) (Math.random() * 100.0D) - 50;
-		Static1.anInt1800 = 0;
+		client.cameraAnticheatOffsetZ = (int) (Math.random() * 100.0D) - 50;
+		client.npcCount = 0;
 		Static1.anInt2328 = 0;
-		Static1.anInt986 = 0;
-		Static1.anInt1919 = 0;
-		Static1.anInt262 = (int) (Math.random() * 80.0D) - 40;
-		Static1.anInt1669 = (int) (Math.random() * 20.0D) - 10 & 0x7FF;
+		client.flagSceneTileX = 0;
+		client.flagSceneTileZ = 0;
+		client.cameraAnticheatAngle = (int) (Math.random() * 80.0D) - 40;
+		client.orbitCameraYaw = (int) (Math.random() * 20.0D) - 10 & 0x7FF;
 		Static1.anInt1857 = (int) (Math.random() * 30.0D) - 20;
-		Static1.anInt1874 = 0;
+		client.objSelected = 0;
 		Static1.anInt131 = 0;
-		Static1.anInt2067 = 0;
-		Static1.anInt641 = 0;
-		Static1.anInt2371 = (int) (Math.random() * 110.0D) - 55;
+		client.playerCount = 0;
+		client.spellSelected = 0;
+		client.cameraAnticheatOffsetX = (int) (Math.random() * 110.0D) - 55;
 		Static1.anInt1978 = (int) (Math.random() * 120.0D) - 60;
 		for (@Pc(1726) int local1726 = 0; local1726 < 2048; local1726++) {
-			Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local1726] = null;
+			client.players[local1726] = null;
 			Static1.aClass2_Sub3Array1[local1726] = null;
 		}
 		for (@Pc(1744) int local1744 = 0; local1744 < 16384; local1744++) {
-			Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local1744] = null;
+			client.npcs[local1744] = null;
 		}
-		Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1 = Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[2047] = new PlayerEntity();
+		client.localPlayer = client.players[2047] = new PlayerEntity();
 		Static1.aClass44_4.method1222();
 		Static1.aClass44_8.method1222();
 		@Pc(1776) int local1776;
@@ -119,12 +92,12 @@ public final class Static97 {
 			}
 		}
 		Static1.spawnedLocations = new LinkList();
-		Static1.anInt2594 = 0;
+		client.friendCount = 0;
 		Static1.anInt1038 = 0;
-		Static75.method1350(Static1.anInt980);
-		Static1.anInt980 = -1;
-		Static75.method1350(Static1.anInt1994);
-		Static1.anInt1994 = -1;
+		Static75.method1350(client.stickyChatInterfaceId);
+		client.stickyChatInterfaceId = -1;
+		Static75.method1350(client.chatInterfaceId);
+		client.chatInterfaceId = -1;
 		Static75.method1350(Static1.anInt2585);
 		Static1.anInt2585 = -1;
 		Static75.method1350(Static1.anInt1971);
@@ -139,8 +112,8 @@ public final class Static97 {
 		Static1.aBoolean40 = false;
 		Static1.anInt2492 = -1;
 		Static1.anInt2505 = 0;
-		Static1.aBoolean146 = false;
-		JagString.aClass40_112 = null;
+		client.showSocialInput = false;
+		client.modalMessage = null;
 		Static1.aBoolean175 = false;
 		Static1.anInt51 = -1;
 		Static1.aClass33_1.method1001(false, new int[5], -1, null);
@@ -248,7 +221,7 @@ public final class Static97 {
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(IIBIII)V", line = 1222)
 	public static void method1674(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(7) int local7 = Static85.scene.method1459(arg0, arg4, arg3);
+		@Pc(7) int local7 = client.scene.method1459(arg0, arg4, arg3);
 		@Pc(40) int local40;
 		@Pc(46) int local46;
 		@Pc(53) int local53;
@@ -261,7 +234,7 @@ public final class Static97 {
 				local11 = arg2;
 			}
 			local33 = (103 - arg3) * 4 * 512 + arg4 * 4 + 24624;
-			local40 = Static85.scene.method1449(arg0, arg4, arg3, local7);
+			local40 = client.scene.getInfo(arg0, arg4, arg3, local7);
 			local46 = local40 >> 6 & 0x3;
 			@Pc(49) int[] local49 = Static85.aClass2_Sub2_Sub2_Sub4_8.anIntArray534;
 			local53 = local40 & 0x1F;
@@ -334,9 +307,9 @@ public final class Static97 {
 				}
 			}
 		}
-		local7 = Static85.scene.method1429(arg0, arg4, arg3);
+		local7 = client.scene.method1429(arg0, arg4, arg3);
 		if (local7 != 0) {
-			local40 = Static85.scene.method1449(arg0, arg4, arg3, local7);
+			local40 = client.scene.getInfo(arg0, arg4, arg3, local7);
 			local53 = local40 & 0x1F;
 			local46 = local40 >> 6 & 0x3;
 			local11 = local7 >> 14 & 0x7FFF;
@@ -369,7 +342,7 @@ public final class Static97 {
 				}
 			}
 		}
-		local7 = Static85.scene.method1458(arg0, arg4, arg3);
+		local7 = client.scene.method1458(arg0, arg4, arg3);
 		if (local7 == 0) {
 			return;
 		}

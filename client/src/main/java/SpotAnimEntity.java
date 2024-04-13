@@ -39,7 +39,7 @@ public final class SpotAnimEntity extends Entity {
 	@OriginalMember(owner = "client!u", name = "c", descriptor = "(B)Lclient!ne;", line = 37)
 	@Override
 	protected Model method1533() {
-		@Pc(4) SpotAnimType local4 = Static5.method116(this.anInt2233);
+		@Pc(4) SpotAnimType local4 = SpotAnimType.method116(this.anInt2233);
 		@Pc(12) Model local12;
 		if (this.aBoolean169) {
 			local12 = local4.method501(-1);
@@ -73,12 +73,12 @@ public final class SpotAnimEntity extends Entity {
 		this.anInt2232 = arg2;
 		this.anInt2233 = arg0;
 		this.anInt2230 = arg3;
-		@Pc(36) int local36 = Static5.method116(this.anInt2233).anInt640;
+		@Pc(36) int local36 = SpotAnimType.method116(this.anInt2233).anInt640;
 		if (local36 == -1) {
 			this.aBoolean169 = true;
 		} else {
 			this.aBoolean169 = false;
-			this.aClass2_Sub2_Sub6_3 = Static57.method1042(local36);
+			this.aClass2_Sub2_Sub6_3 = SeqType.method1042(local36);
 		}
 	}
 }

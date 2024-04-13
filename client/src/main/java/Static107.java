@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static107 {
 
 	@OriginalMember(owner = "client!lb", name = "a", descriptor = "([BI[BII)V", line = 6)
-	public static void method993(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public static void copy(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		@Pc(15) int local15;
 		if (arg0 == arg2) {
 			if (arg1 == arg3) {

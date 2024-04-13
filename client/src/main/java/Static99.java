@@ -26,21 +26,6 @@ public final class Static99 {
 		JagString.aClass40_716 = null;
 	}
 
-	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(IIIZ)I", line = 38)
-	public static int method1655(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(7) int local7 = arg1 / arg0;
-		@Pc(13) int local13 = arg0 - 1 & arg1;
-		@Pc(17) int local17 = arg2 / arg0;
-		@Pc(23) int local23 = arg2 & arg0 - 1;
-		@Pc(33) int local33 = Static19.method387(local7, local17);
-		@Pc(40) int local40 = Static19.method387(local7 + 1, local17);
-		@Pc(51) int local51 = Static19.method387(local7, local17 + 1);
-		@Pc(60) int local60 = Static19.method387(local7 + 1, local17 + 1);
-		@Pc(67) int local67 = Static72.method1326(local13, local33, arg0, local40);
-		@Pc(74) int local74 = Static72.method1326(local13, local51, arg0, local60);
-		return Static72.method1326(local23, local67, arg0, local74);
-	}
-
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(BLclient!pc;)V", line = 77)
 	public static synchronized void method1657(@OriginalArg(1) PcmStream arg0) {
 		Static20.aClass2_Sub10_1 = arg0;
@@ -68,12 +53,12 @@ public final class Static99 {
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(IILclient!mc;)I", line = 145)
 	public static int method1660(@OriginalArg(0) int arg0, @OriginalArg(2) ComType arg1) {
-		if (arg1.anIntArrayArray11 == null || arg0 >= arg1.anIntArrayArray11.length) {
+		if (arg1.scripts == null || arg0 >= arg1.scripts.length) {
 			return -2;
 		}
 		try {
 			@Pc(17) int local17 = 0;
-			@Pc(22) int[] local22 = arg1.anIntArrayArray11[arg0];
+			@Pc(22) int[] local22 = arg1.scripts[arg0];
 			@Pc(24) int local24 = 0;
 			@Pc(26) byte local26 = 0;
 			while (true) {
@@ -108,12 +93,12 @@ public final class Static99 {
 				if (local31 == 4) {
 					local103 = local22[local17++] << 16;
 					@Pc(110) int local110 = local103 + local22[local17++];
-					local116 = Static73.method1340(local110);
+					local116 = ComType.get(local110);
 					local121 = local22[local17++];
-					if (local121 != -1 && (!Static97.method1669(local121).aBoolean66 || client.membersWorld)) {
-						for (local133 = 0; local133 < local116.anIntArray331.length; local133++) {
-							if (local121 + 1 == local116.anIntArray331[local133]) {
-								local33 += local116.anIntArray327[local133];
+					if (local121 != -1 && (!ObjType.method1669(local121).aBoolean66 || client.membersWorld)) {
+						for (local133 = 0; local133 < local116.invSlotObjCount.length; local133++) {
+							if (local121 + 1 == local116.invSlotObjCount[local133]) {
+								local33 += local116.invSlotObjId[local133];
 							}
 						}
 					}
@@ -128,7 +113,7 @@ public final class Static99 {
 					local33 = Static1.anIntArray339[local22[local17++]] * 100 / 46875;
 				}
 				if (local31 == 8) {
-					local33 = Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt1378;
+					local33 = client.localPlayer.anInt1378;
 				}
 				if (local31 == 9) {
 					for (local103 = 0; local103 < 25; local103++) {
@@ -140,11 +125,11 @@ public final class Static99 {
 				if (local31 == 10) {
 					local103 = local22[local17++] << 16;
 					local103 += local22[local17++];
-					local116 = Static73.method1340(local103);
+					local116 = ComType.get(local103);
 					local121 = local22[local17++];
-					if (local121 != -1 && (!Static97.method1669(local121).aBoolean66 || client.membersWorld)) {
-						for (local133 = 0; local133 < local116.anIntArray331.length; local133++) {
-							if (local121 + 1 == local116.anIntArray331[local133]) {
+					if (local121 != -1 && (!ObjType.method1669(local121).aBoolean66 || client.membersWorld)) {
+						for (local133 = 0; local133 < local116.invSlotObjCount.length; local133++) {
+							if (local121 + 1 == local116.invSlotObjCount[local133]) {
 								local33 = 999999999;
 								break;
 							}
@@ -167,10 +152,10 @@ public final class Static99 {
 					local33 = method1662(local103);
 				}
 				if (local31 == 18) {
-					local33 = (Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7) + Static79.anInt2058;
+					local33 = (client.localPlayer.x >> 7) + Static79.anInt2058;
 				}
 				if (local31 == 19) {
-					local33 = Static28.anInt725 + (Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7);
+					local33 = Static28.anInt725 + (client.localPlayer.z >> 7);
 				}
 				if (local31 == 20) {
 					local33 = local22[local17++];
@@ -209,7 +194,7 @@ public final class Static99 {
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(II)I", line = 394)
 	public static int method1662(@OriginalArg(1) int arg0) {
-		@Pc(7) VarBitType local7 = Static32.method621(arg0);
+		@Pc(7) VarBitType local7 = VarBitType.method621(arg0);
 		@Pc(10) int local10 = local7.anInt171;
 		@Pc(13) int local13 = local7.anInt174;
 		@Pc(16) int local16 = local7.anInt170;

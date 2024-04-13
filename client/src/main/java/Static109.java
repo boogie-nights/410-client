@@ -9,7 +9,7 @@ public final class Static109 {
 		Static1.anIntArray354 = null;
 		Static1.anIntArray351 = null;
 		Static1.anIntArray348 = null;
-		Static1.anIntArrayArray14 = null;
-		Static1.anIntArrayArray13 = null;
+		TileOverlay.anIntArrayArray14 = null;
+		TileOverlay.anIntArrayArray13 = null;
 	}
 }

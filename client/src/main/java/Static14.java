@@ -20,49 +20,33 @@ public final class Static14 {
 	@OriginalMember(owner = "client!cd", name = "E", descriptor = "Lclient!qb;")
 	public static Pix8 aClass2_Sub2_Sub2_Sub3_19;
 
-	@OriginalMember(owner = "client!cd", name = "G", descriptor = "I")
-	public static int anInt1863;
-
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(BJ)V", line = 49)
 	public static void method1254(@OriginalArg(1) long arg0) {
 		if (arg0 == 0L) {
 			return;
 		}
-		if (Static1.anInt121 >= 100) {
-			Static53.method989(0, JagString.aClass40_445, JagString.aClass40_432);
+		if (client.ignoreCount >= 100) {
+			client.addMessage(0, JagString.EMPTY_STRING, JagString.aClass40_432);
 			return;
 		}
-		@Pc(27) JagString local27 = Static44.fromBase37(arg0).method1167();
-		for (@Pc(29) int local29 = 0; local29 < Static1.anInt121; local29++) {
-			if (arg0 == Static1.aLongArray4[local29]) {
-				Static53.method989(0, JagString.aClass40_445, Static72.method1334(new JagString[] { local27, JagString.aClass40_506 }));
+		@Pc(27) JagString local27 = Static44.fromBase37(arg0).formatName();
+		for (@Pc(29) int local29 = 0; local29 < client.ignoreCount; local29++) {
+			if (arg0 == client.ignoreName37[local29]) {
+				client.addMessage(0, JagString.EMPTY_STRING, JagString.concatenate(new JagString[] { local27, JagString.aClass40_506 }));
 				return;
 			}
 		}
-		for (@Pc(60) int local60 = 0; local60 < Static1.anInt2594; local60++) {
-			if (arg0 == Static1.aLongArray2[local60]) {
-				Static53.method989(0, JagString.aClass40_445, Static72.method1334(new JagString[] { JagString.aClass40_357, local27, JagString.aClass40_426 }));
+		for (@Pc(60) int local60 = 0; local60 < client.friendCount; local60++) {
+			if (arg0 == client.friendName37[local60]) {
+				client.addMessage(0, JagString.EMPTY_STRING, JagString.concatenate(new JagString[] { JagString.FRIENDSLIST_PLEASE_REMOVE, local27, JagString.aClass40_426 }));
 				return;
 			}
 		}
-		if (!local27.method1184(Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass40_395)) {
-			Static1.aLongArray4[Static1.anInt121++] = arg0;
-			Static1.aBoolean59 = true;
-			Static1.aClass2_Sub3_Sub1_4.pIsaac1(186);
-			Static1.aClass2_Sub3_Sub1_4.p8(arg0);
-		}
-	}
-
-	@OriginalMember(owner = "client!cd", name = "f", descriptor = "(I)V", line = 107)
-	public static void method1255() {
-		for (@Pc(15) int local15 = 0; local15 < Static1.anInt1190; local15++) {
-			@Pc(21) int local21 = Static1.anIntArray504[local15];
-			@Pc(25) PlayerEntity local25 = Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local21];
-			@Pc(31) int local31 = client.in.g1();
-			if ((local31 & 0x4) != 0) {
-				local31 += client.in.g1() << 8;
-			}
-			client.method846(local21, local25, local31);
+		if (!local27.compare(client.localPlayer.name)) {
+			client.ignoreName37[client.ignoreCount++] = arg0;
+			client.redrawSidebar = true;
+			client.out.pIsaac1(186);
+			client.out.p8(arg0);
 		}
 	}
 
@@ -250,7 +234,7 @@ public final class Static14 {
 		Static1.anInt2143 = 0;
 		Static1.anIntArray1 = new int[32768];
 		Static95.anIntArray547 = new int[32768];
-		if (Static1.anInt239 == 0 || Static1.lowDetail) {
+		if (Static1.anInt239 == 0 || client.lowMemory) {
 			Static86.method1490();
 		} else {
 			Static86.method1496(JagString.aClass40_80, JagString.aClass40_593, Static77.midiSongsJs5, Static1.anInt239);

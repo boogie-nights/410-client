@@ -60,7 +60,7 @@ public final class BufferedFile {
 			if (this.aLong26 != -1L && this.virtualPosition + (long) arg1 > (long) this.aByteArray5.length + this.aLong26) {
 				@Pc(92) int local92 = (int) (this.aLong26 + (long) this.aByteArray5.length - this.virtualPosition);
 				arg1 -= local92;
-				Static107.method993(arg0, arg2, this.aByteArray5, (int) (this.virtualPosition - this.aLong26), local92);
+				Static107.copy(arg0, arg2, this.aByteArray5, (int) (this.virtualPosition - this.aLong26), local92);
 				arg2 += local92;
 				this.virtualPosition += local92;
 				this.anInt414 = this.aByteArray5.length;
@@ -90,14 +90,14 @@ public final class BufferedFile {
 				}
 				if (local164 > -1L && local164 < local155) {
 					@Pc(325) int local325 = (int) (local155 - local164);
-					Static107.method993(arg0, (int) (local164 + (long) arg2 - this.virtualPosition), this.aByteArray4, (int) (local164 - this.aLong27), local325);
+					Static107.copy(arg0, (int) (local164 + (long) arg2 - this.virtualPosition), this.aByteArray4, (int) (local164 - this.aLong27), local325);
 				}
 				this.virtualPosition += arg1;
 			} else if (arg1 > 0) {
 				if (this.aLong26 == -1L) {
 					this.aLong26 = this.virtualPosition;
 				}
-				Static107.method993(arg0, arg2, this.aByteArray5, (int) (this.virtualPosition - this.aLong26), arg1);
+				Static107.copy(arg0, arg2, this.aByteArray5, (int) (this.virtualPosition - this.aLong26), arg1);
 				this.virtualPosition += arg1;
 				if (this.virtualPosition - this.aLong26 > (long) this.anInt414) {
 					this.anInt414 = (int) (this.virtualPosition - this.aLong26);
@@ -134,7 +134,7 @@ public final class BufferedFile {
 				throw new ArrayIndexOutOfBoundsException(arg1 - arg2.length);
 			}
 			if (this.aLong26 != -1L && this.virtualPosition >= this.aLong26 && (long) arg1 + this.virtualPosition <= (long) this.anInt414 + this.aLong26) {
-				Static107.method993(this.aByteArray5, (int) (this.virtualPosition - this.aLong26), arg2, 0, arg1);
+				Static107.copy(this.aByteArray5, (int) (this.virtualPosition - this.aLong26), arg2, 0, arg1);
 				this.virtualPosition += arg1;
 				return;
 			}
@@ -147,7 +147,7 @@ public final class BufferedFile {
 					local124 = arg1;
 				}
 				arg1 -= local124;
-				Static107.method993(this.aByteArray4, (int) (this.virtualPosition - this.aLong27), arg2, 0, local124);
+				Static107.copy(this.aByteArray4, (int) (this.virtualPosition - this.aLong27), arg2, 0, local124);
 				this.virtualPosition += local124;
 				arg0 = local124;
 			}
@@ -171,7 +171,7 @@ public final class BufferedFile {
 					local124 = this.anInt417;
 				}
 				arg1 -= local124;
-				Static107.method993(this.aByteArray4, 0, arg2, arg0, local124);
+				Static107.copy(this.aByteArray4, 0, arg2, arg0, local124);
 				this.virtualPosition += local124;
 				arg0 += local124;
 			}
@@ -201,7 +201,7 @@ public final class BufferedFile {
 				}
 				if (local312 > -1L && local312 < local314) {
 					@Pc(435) int local435 = (int) (local314 - local312);
-					Static107.method993(this.aByteArray5, (int) (local312 - this.aLong26), arg2, (int) (local312 - local86), local435);
+					Static107.copy(this.aByteArray5, (int) (local312 - this.aLong26), arg2, (int) (local312 - local86), local435);
 					if (local314 > this.virtualPosition) {
 						arg1 = (int) ((long) arg1 + this.virtualPosition - local314);
 						this.virtualPosition = local314;
@@ -250,7 +250,7 @@ public final class BufferedFile {
 		}
 		if (local49 > -1L && local47 > local49) {
 			@Pc(195) int local195 = (int) (local47 - local49);
-			Static107.method993(this.aByteArray5, (int) (local49 - this.aLong26), this.aByteArray4, (int) (local49 - this.aLong27), local195);
+			Static107.copy(this.aByteArray5, (int) (local49 - this.aLong26), this.aByteArray4, (int) (local49 - this.aLong27), local195);
 		}
 		this.anInt414 = 0;
 		this.aLong26 = -1L;

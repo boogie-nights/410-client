@@ -25,12 +25,12 @@ public final class Static46 {
 		JagString.aClass40_356 = null;
 		aClass2_Sub2_Sub2_Sub3_10 = null;
 		aClass2_Sub2_Sub2_Sub3_11 = null;
-		Static1.aClass40Array23 = null;
+		client.friendName = null;
 		anIntArray256 = null;
 		Static1.aBigInteger2 = null;
 		aClass2_Sub2_Sub13ArrayArray1 = null;
 		JagString.aClass40_355 = null;
-		JagString.aClass40_357 = null;
+		JagString.FRIENDSLIST_PLEASE_REMOVE = null;
 	}
 
 }

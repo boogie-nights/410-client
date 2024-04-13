@@ -3,25 +3,19 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static22 {
 
-	@OriginalMember(owner = "client!ec", name = "P", descriptor = "I")
-	public static int anInt577;
-
 	@OriginalMember(owner = "client!ec", name = "fb", descriptor = "I")
 	public static int anInt587;
-
-	@OriginalMember(owner = "client!ec", name = "nb", descriptor = "Lclient!ud;")
-	public static Js5Index aClass5_8;
 
 	@OriginalMember(owner = "client!ec", name = "c", descriptor = "(B)V", line = 4)
 	public static void method474() {
 		JagString.aClass40_162 = null;
-		aClass5_8 = null;
+		LocType.aClass5_8 = null;
 		JagString.aClass40_161 = null;
 		JagString.aClass40_160 = null;
-		Static1.anIntArrayArray8 = null;
+		client.bfsCost = null;
 		JagString.aClass40_164 = null;
 		JagString.aClass40_157 = null;
-		Static1.anIntArray103 = null;
+		client.bfsStepZ = null;
 		JagString.aClass40_158 = null;
 		JagString.aClass40_163 = null;
 		JagString.aClass40_159 = null;
@@ -31,34 +25,34 @@ public final class Static22 {
 	public static void method477() {
 		client.in.bits();
 		@Pc(13) int local13 = client.in.gBit(8);
-		if (Static1.anInt1800 > local13) {
-			for (@Pc(18) int local18 = local13; local18 < Static1.anInt1800; local18++) {
-				Static1.anIntArray258[Static1.anInt304++] = Static1.anIntArray326[local18];
+		if (client.npcCount > local13) {
+			for (@Pc(18) int local18 = local13; local18 < client.npcCount; local18++) {
+				Static1.anIntArray258[Static1.anInt304++] = client.npcIds[local18];
 			}
 		}
-		if (Static1.anInt1800 < local13) {
+		if (client.npcCount < local13) {
 			throw new RuntimeException("gnpov1");
 		}
-		Static1.anInt1800 = 0;
+		client.npcCount = 0;
 		for (@Pc(62) int local62 = 0; local62 < local13; local62++) {
-			@Pc(68) int local68 = Static1.anIntArray326[local62];
-			@Pc(72) NpcEntity local72 = Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local68];
+			@Pc(68) int local68 = client.npcIds[local62];
+			@Pc(72) NpcEntity local72 = client.npcs[local68];
 			@Pc(77) int local77 = client.in.gBit(1);
 			if (local77 == 0) {
-				Static1.anIntArray326[Static1.anInt1800++] = local68;
-				local72.anInt2274 = Static1.anInt2511;
+				client.npcIds[client.npcCount++] = local68;
+				local72.anInt2274 = client.loopCycle;
 			} else {
 				@Pc(97) int local97 = client.in.gBit(2);
 				if (local97 == 0) {
-					Static1.anIntArray326[Static1.anInt1800++] = local68;
-					local72.anInt2274 = Static1.anInt2511;
+					client.npcIds[client.npcCount++] = local68;
+					local72.anInt2274 = client.loopCycle;
 					Static1.anIntArray504[Static1.anInt1190++] = local68;
 				} else {
 					@Pc(139) int local139;
 					@Pc(149) int local149;
 					if (local97 == 1) {
-						Static1.anIntArray326[Static1.anInt1800++] = local68;
-						local72.anInt2274 = Static1.anInt2511;
+						client.npcIds[client.npcCount++] = local68;
+						local72.anInt2274 = client.loopCycle;
 						local139 = client.in.gBit(3);
 						local72.method1547(local139, false);
 						local149 = client.in.gBit(1);
@@ -66,8 +60,8 @@ public final class Static22 {
 							Static1.anIntArray504[Static1.anInt1190++] = local68;
 						}
 					} else if (local97 == 2) {
-						Static1.anIntArray326[Static1.anInt1800++] = local68;
-						local72.anInt2274 = Static1.anInt2511;
+						client.npcIds[client.npcCount++] = local68;
+						local72.anInt2274 = client.loopCycle;
 						local139 = client.in.gBit(3);
 						local72.method1547(local139, true);
 						local149 = client.in.gBit(3);
@@ -108,13 +102,13 @@ public final class Static22 {
 			local66 -= 357;
 			local64 -= 17;
 		}
-		for (@Pc(84) int local84 = 0; local84 < Static1.anInt797; local84++) {
-			@Pc(99) int local99 = (Static1.anInt797 - local84 - 1) * 15 + local9 + 31;
+		for (@Pc(84) int local84 = 0; local84 < client.menuSize; local84++) {
+			@Pc(99) int local99 = (client.menuSize - local84 - 1) * 15 + local9 + 31;
 			@Pc(101) int local101 = 16777215;
 			if (local64 > local3 && local64 < local3 + local11 && local66 > local99 - 13 && local99 + 3 > local66) {
 				local101 = 16776960;
 			}
-			Static13.aClass2_Sub2_Sub2_Sub2_1.method574(Static1.aClass40Array8[local84], local3 + 3, local99, local101, true);
+			Static13.aClass2_Sub2_Sub2_Sub2_1.method574(client.menuOption[local84], local3 + 3, local99, local101, true);
 		}
 	}
 }

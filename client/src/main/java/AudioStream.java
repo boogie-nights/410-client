@@ -19,6 +19,13 @@ public final class AudioStream extends InputStream {
 	@OriginalMember(owner = "client!da", name = "d", descriptor = "[I")
 	private final int[] anIntArray84 = new int[256];
 
+	@OriginalMember(owner = "client!da", name = "a", descriptor = "([B[I[BIII)V", line = 11)
+	public static void method354(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+		for (@Pc(1) int local1 = 0; local1 < arg4; local1++) {
+			arg2[arg3++] = arg0[(arg1[local1] >> 8) + 32768];
+		}
+	}
+
 	@OriginalMember(owner = "client!da", name = "read", descriptor = "()I", line = 4)
 	@Override
 	public int read() {
@@ -60,7 +67,7 @@ public final class AudioStream extends InputStream {
 						this.anIntArray84[local31] = local37 >> 31 ^ 0x7FFFFF;
 					}
 				}
-				Static102.method354(this.aByteArray6, this.anIntArray84, arg0, arg1, arg2);
+				method354(this.aByteArray6, this.anIntArray84, arg0, arg1, arg2);
 				return arg2;
 			}
 		} catch (@Pc(68) Exception local68) {

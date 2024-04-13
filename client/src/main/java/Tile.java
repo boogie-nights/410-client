@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Tile extends Linkable {
 
 	@OriginalMember(owner = "client!nd", name = "H", descriptor = "I")
-	public int anInt1698;
+	public int checkLocSpans;
 
 	@OriginalMember(owner = "client!nd", name = "I", descriptor = "Lclient!nd;")
-	public Tile aClass2_Sub11_1;
+	public Tile bridge;
 
 	@OriginalMember(owner = "client!nd", name = "J", descriptor = "Lclient!nc;")
-	public TileOverlay aClass39_1;
+	public TileOverlay overlay;
 
 	@OriginalMember(owner = "client!nd", name = "L", descriptor = "Z")
 	public boolean aBoolean134;
@@ -21,31 +21,31 @@ public final class Tile extends Linkable {
 	public ObjStack aClass51_1;
 
 	@OriginalMember(owner = "client!nd", name = "O", descriptor = "Z")
-	public boolean aBoolean135;
+	public boolean visible;
 
 	@OriginalMember(owner = "client!nd", name = "P", descriptor = "Z")
-	public boolean aBoolean136;
+	public boolean update;
 
 	@OriginalMember(owner = "client!nd", name = "Q", descriptor = "I")
-	public int anInt1701;
+	public int inverseBlockLocSpans;
 
 	@OriginalMember(owner = "client!nd", name = "R", descriptor = "Lclient!a;")
-	public WallDecoration aClass1_1;
+	public WallDecoration wallDecoration;
 
 	@OriginalMember(owner = "client!nd", name = "S", descriptor = "I")
 	public int anInt1702;
 
 	@OriginalMember(owner = "client!nd", name = "V", descriptor = "I")
-	public int anInt1704;
+	public int blockLocSpans;
 
 	@OriginalMember(owner = "client!nd", name = "X", descriptor = "Lclient!ra;")
-	public TileUnderlay aClass50_1;
+	public TileUnderlay underlay;
 
 	@OriginalMember(owner = "client!nd", name = "Y", descriptor = "I")
-	public int anInt1706;
+	public int backWallTypes;
 
 	@OriginalMember(owner = "client!nd", name = "Z", descriptor = "Lclient!uc;")
-	public Wall aClass60_1;
+	public Wall wall;
 
 	@OriginalMember(owner = "client!nd", name = "bb", descriptor = "Lclient!ac;")
 	public GroundDecoration aClass4_1;
@@ -54,13 +54,13 @@ public final class Tile extends Linkable {
 	public int anInt1708;
 
 	@OriginalMember(owner = "client!nd", name = "K", descriptor = "I")
-	public int anInt1699 = 0;
+	public int locSpans = 0;
 
 	@OriginalMember(owner = "client!nd", name = "T", descriptor = "[I")
 	public final int[] anIntArray356 = new int[5];
 
 	@OriginalMember(owner = "client!nd", name = "ab", descriptor = "[Lclient!n;")
-	public final Loc[] aClass37Array1 = new Loc[5];
+	public final Loc[] locs = new Loc[5];
 
 	@OriginalMember(owner = "client!nd", name = "W", descriptor = "I")
 	public int anInt1705;

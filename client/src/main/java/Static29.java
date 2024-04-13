@@ -8,13 +8,6 @@ public final class Static29 {
 	@OriginalMember(owner = "client!g", name = "e", descriptor = "Lclient!hc;")
 	public static ClientStream aClass25_48;
 
-	@OriginalMember(owner = "client!g", name = "a", descriptor = "(B)V", line = 11)
-	public static void method1675() {
-		Static1.aClass47_16.clear();
-		Static1.aClass47_18.clear();
-		Static1.aClass47_7.clear();
-	}
-
 	@OriginalMember(owner = "client!g", name = "b", descriptor = "(I)V", line = 97)
 	public static void method1678() {
 		World.levelTileOverlayIds = null;

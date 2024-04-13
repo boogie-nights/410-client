@@ -6,7 +6,11 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!v")
 public final class IdkType extends Hashable {
 
-	@OriginalMember(owner = "client!v", name = "jb", descriptor = "[I")
+    @OriginalMember(owner = "client!vd", name = "l", descriptor = "Lclient!qc;")
+    public static LruCache aClass47_22 = new LruCache(64);
+    @OriginalMember(owner = "client!nb", name = "y", descriptor = "Lclient!ud;")
+    public static Js5Index aClass5_5;
+    @OriginalMember(owner = "client!v", name = "jb", descriptor = "[I")
 	private int[] anIntArray516;
 
 	@OriginalMember(owner = "client!v", name = "V", descriptor = "Z")
@@ -26,16 +30,16 @@ public final class IdkType extends Hashable {
 
     @OriginalMember(owner = "client!ta", name = "a", descriptor = "(ZI)Lclient!v;", line = 158)
     public static IdkType get(@OriginalArg(1) int arg0) {
-        @Pc(10) IdkType local10 = (IdkType) Static1.aClass47_22.get((long) arg0);
+        @Pc(10) IdkType local10 = (IdkType) aClass47_22.get((long) arg0);
         if (local10 != null) {
             return local10;
         }
-        @Pc(20) byte[] local20 = Static63.aClass5_5.fetchFile(arg0, 3);
+        @Pc(20) byte[] local20 = aClass5_5.fetchFile(arg0, 3);
         local10 = new IdkType();
         if (local20 != null) {
             local10.method1587(new Packet(local20));
         }
-        Static1.aClass47_22.put((long) arg0, local10);
+        aClass47_22.put((long) arg0, local10);
         return local10;
     }
 

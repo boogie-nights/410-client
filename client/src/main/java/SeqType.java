@@ -6,7 +6,13 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!f")
 public final class SeqType extends Hashable {
 
-	@OriginalMember(owner = "client!f", name = "Y", descriptor = "[I")
+	@OriginalMember(owner = "client!kd", name = "Ob", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_13 = new LruCache(64);
+	@OriginalMember(owner = "client!ac", name = "g", descriptor = "Lclient!qc;")
+	public static LruCache aClass47_2 = new LruCache(100);
+    @OriginalMember(owner = "client!ob", name = "c", descriptor = "Lclient!ud;")
+    public static Js5Index aClass5_24;
+    @OriginalMember(owner = "client!f", name = "Y", descriptor = "[I")
 	public int[] anIntArray124;
 
 	@OriginalMember(owner = "client!f", name = "db", descriptor = "[I")
@@ -44,6 +50,28 @@ public final class SeqType extends Hashable {
 
 	@OriginalMember(owner = "client!f", name = "fb", descriptor = "I")
 	public int anInt668 = -1;
+
+    @OriginalMember(owner = "client!mb", name = "a", descriptor = "(II)Lclient!f;", line = 65)
+    public static SeqType method1042(@OriginalArg(0) int arg0) {
+        @Pc(10) SeqType local10 = (SeqType) aClass47_13.get((long) arg0);
+        if (local10 != null) {
+            return local10;
+        }
+        @Pc(20) byte[] local20 = aClass5_24.fetchFile(arg0, 12);
+        local10 = new SeqType();
+        if (local20 != null) {
+            local10.method523(new Packet(local20));
+        }
+        local10.method522();
+        aClass47_13.put((long) arg0, local10);
+        return local10;
+    }
+
+	@OriginalMember(owner = "client!rb", name = "b", descriptor = "(B)V", line = 1282)
+	public static void method1357() {
+		aClass47_13.clear();
+		aClass47_2.clear();
+	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(IILclient!ne;)Lclient!ne;", line = 3)
 	public Model method516(@OriginalArg(0) int arg0, @OriginalArg(2) Model arg1) {

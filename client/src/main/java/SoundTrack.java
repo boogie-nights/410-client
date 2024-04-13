@@ -15,7 +15,13 @@ public final class SoundTrack {
 	@OriginalMember(owner = "client!oc", name = "b", descriptor = "I")
 	private int anInt1814;
 
-	@OriginalMember(owner = "client!oc", name = "a", descriptor = "()I", line = 12)
+    @OriginalMember(owner = "client!oc", name = "a", descriptor = "(Lclient!ud;II)Lclient!oc;", line = 4)
+    public static SoundTrack method1214(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) int arg1) {
+        @Pc(5) byte[] local5 = arg0.fetchFile(0, arg1);
+        return local5 == null ? null : new SoundTrack(new Packet(local5));
+    }
+
+    @OriginalMember(owner = "client!oc", name = "a", descriptor = "()I", line = 12)
 	public int method1215() {
 		@Pc(1) int local1 = 9999999;
 		for (@Pc(3) int local3 = 0; local3 < 10; local3++) {

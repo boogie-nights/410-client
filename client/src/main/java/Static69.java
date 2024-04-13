@@ -19,11 +19,11 @@ public final class Static69 {
 
 	@OriginalMember(owner = "client!od", name = "e", descriptor = "(I)V", line = 217)
 	public static void method1227() {
-		for (@Pc(3) int local3 = 0; local3 < Static1.anInt1800; local3++) {
-			@Pc(9) int local9 = Static1.anIntArray326[local3];
-			@Pc(13) NpcEntity local13 = Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local9];
+		for (@Pc(3) int local3 = 0; local3 < client.npcCount; local3++) {
+			@Pc(9) int local9 = client.npcIds[local3];
+			@Pc(13) NpcEntity local13 = client.npcs[local9];
 			if (local13 != null) {
-				Static83.method1468(local13, local13.aClass2_Sub2_Sub7_1.anInt758);
+				Static83.method1468(local13, local13.type.size);
 			}
 		}
 	}
@@ -41,7 +41,7 @@ public final class Static69 {
 
 	@OriginalMember(owner = "client!od", name = "f", descriptor = "(I)V", line = 330)
 	public static void method1230() {
-		Static2.aClass45_2.bind();
+		Static2.areaViewport.bind();
 		Static96.anIntArray548 = Static6.method175(Static96.anIntArray548);
 	}
 }

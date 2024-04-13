@@ -40,7 +40,7 @@ public final class MidiJsPcmStream extends SongPcmStream {
 			this.anInt1116 = local19;
 		} else if (this.aBoolean92) {
 			try {
-				Static101.method305("midibox.volume=" + local19 + ";", this.aClass7_5.anApplet1);
+				Static101.eval("midibox.volume=" + local19 + ";", this.aClass7_5.anApplet1);
 				return;
 			} catch (@Pc(44) Throwable local44) {
 				return;
@@ -65,7 +65,7 @@ public final class MidiJsPcmStream extends SongPcmStream {
 				local25.write(0, this.aByteArray12.length, this.aByteArray12);
 				local25.close();
 				try {
-					Static101.method305("midibox.loop=" + (this.aBoolean91 ? "\"infinite\"" : "0") + "; midibox.src=\"" + local25.getFile().getPath().replace('\\', '/') + "\"; midibox.volume=" + this.anInt1116 + ";", this.aClass7_5.anApplet1);
+					Static101.eval("midibox.loop=" + (this.aBoolean91 ? "\"infinite\"" : "0") + "; midibox.src=\"" + local25.getFile().getPath().replace('\\', '/') + "\"; midibox.volume=" + this.anInt1116 + ";", this.aClass7_5.anApplet1);
 					this.aBoolean92 = true;
 				} catch (@Pc(79) Throwable local79) {
 				}
@@ -84,7 +84,7 @@ public final class MidiJsPcmStream extends SongPcmStream {
 	public void method1241() {
 		if (this.aBoolean92) {
 			try {
-				Static101.method305("midibox.src=\"c:/silence.mid\";", this.aClass7_5.anApplet1);
+				Static101.eval("midibox.src=\"c:/silence.mid\";", this.aClass7_5.anApplet1);
 			} catch (@Pc(15) Throwable local15) {
 			}
 			this.aBoolean92 = false;
