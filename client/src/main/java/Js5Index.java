@@ -77,7 +77,7 @@ public abstract class Js5Index {
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(III)[B", line = 308)
-	public final byte[] method60(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public final byte[] fetchFileNoDiscard(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		if (arg0 < 0 || this.aByteArrayArrayArray2.length <= arg0 || this.aByteArrayArrayArray2[arg0] == null || arg1 < 0 || arg1 >= this.aByteArrayArrayArray2[arg0].length) {
 			return null;
 		}
@@ -97,9 +97,9 @@ public abstract class Js5Index {
 	@OriginalMember(owner = "client!ud", name = "c", descriptor = "(II)[B", line = 341)
 	public final byte[] method61(@OriginalArg(1) int arg0) {
 		if (this.aByteArrayArrayArray2.length == 1) {
-			return this.method60(0, arg0);
+			return this.fetchFileNoDiscard(0, arg0);
 		} else if (this.aByteArrayArrayArray2[arg0].length == 1) {
-			return this.method60(arg0, 0);
+			return this.fetchFileNoDiscard(arg0, 0);
 		} else {
 			throw new RuntimeException();
 		}
@@ -135,9 +135,9 @@ public abstract class Js5Index {
 	@OriginalMember(owner = "client!ud", name = "d", descriptor = "(II)[B", line = 436)
 	public final byte[] method65(@OriginalArg(1) int arg0) {
 		if (this.aByteArrayArrayArray2.length == 1) {
-			return this.method68(arg0, 0);
+			return this.fetchFile(arg0, 0);
 		} else if (this.aByteArrayArrayArray2[arg0].length == 1) {
-			return this.method68(0, arg0);
+			return this.fetchFile(0, arg0);
 		} else {
 			throw new RuntimeException();
 		}
@@ -227,7 +227,7 @@ public abstract class Js5Index {
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(BII)[B", line = 612)
-	public final byte[] method68(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
+	public final byte[] fetchFile(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		return this.method82(arg0, arg1, null);
 	}
 
@@ -237,7 +237,7 @@ public abstract class Js5Index {
 		@Pc(11) JagString local11 = arg1.method1196();
 		@Pc(27) int local27 = this.aClass34_2.method1038(local7.method1190());
 		@Pc(37) int local37 = this.aClass34Array2[local27].method1038(local11.method1190());
-		return this.method68(local37, local27);
+		return this.fetchFile(local37, local27);
 	}
 
 	@OriginalMember(owner = "client!ud", name = "b", descriptor = "(B)I", line = 672)
@@ -337,7 +337,7 @@ public abstract class Js5Index {
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(IB)I", line = 872)
-	public final int method76(@OriginalArg(0) int arg0) {
+	public final int getGroupCapacity(@OriginalArg(0) int arg0) {
 		return this.aByteArrayArrayArray2[arg0].length;
 	}
 
@@ -363,7 +363,7 @@ public abstract class Js5Index {
 	}
 
 	@OriginalMember(owner = "client!ud", name = "b", descriptor = "(BI)[I", line = 972)
-	public final int[] method81(@OriginalArg(1) int arg0) {
+	public final int[] getFileIds(@OriginalArg(1) int arg0) {
 		return this.anIntArrayArray3[arg0];
 	}
 

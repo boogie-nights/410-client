@@ -35,7 +35,7 @@ public final class Static5 {
 		if (local15 != null) {
 			return local15;
 		}
-		@Pc(25) byte[] local25 = Static49.aClass5_18.method68(arg0, 13);
+		@Pc(25) byte[] local25 = Static49.aClass5_18.fetchFile(arg0, 13);
 		local15 = new SpotAnimType();
 		local15.anInt634 = arg0;
 		if (local25 != null) {

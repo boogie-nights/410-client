@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!he")
-public abstract class Class24_Sub1 extends Class24 implements Runnable {
+public abstract class AudioChannel extends StubAudioChannel implements Runnable {
 
 	@OriginalMember(owner = "client!he", name = "z", descriptor = "I")
 	private int anInt1636;
@@ -46,7 +46,7 @@ public abstract class Class24_Sub1 extends Class24 implements Runnable {
 	private long aLong110 = 0L;
 
 	@OriginalMember(owner = "client!he", name = "<init>", descriptor = "(I)V", line = 4)
-	protected Class24_Sub1(@OriginalArg(0) int arg0) throws Exception {
+	protected AudioChannel(@OriginalArg(0) int arg0) throws Exception {
 		super(arg0);
 	}
 

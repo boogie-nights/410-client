@@ -106,11 +106,11 @@ public final class Js5TextureProvider implements TextureProvider {
 		this.aClass5_7 = arg1;
 		this.anInt490 = arg2;
 		this.anInt489 = this.anInt490;
-		@Pc(38) int[] local38 = arg0.method81(0);
+		@Pc(38) int[] local38 = arg0.getFileIds(0);
 		@Pc(41) int local41 = local38.length;
-		this.aClass2_Sub8Array1 = new Texture[arg0.method76(0)];
+		this.aClass2_Sub8Array1 = new Texture[arg0.getGroupCapacity(0)];
 		for (@Pc(50) int local50 = 0; local50 < local41; local50++) {
-			@Pc(63) Packet local63 = new Packet(arg0.method68(local38[local50], 0));
+			@Pc(63) Packet local63 = new Packet(arg0.fetchFile(local38[local50], 0));
 			this.aClass2_Sub8Array1[local38[local50]] = new Texture(local63);
 		}
 	}

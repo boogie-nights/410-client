@@ -62,12 +62,12 @@ public final class Static70 {
 							}
 							Static1.anIntArrayArray7[local72][local102] = Static1.anInt2587;
 						}
-						local47.anInt1379 = Static78.method1383(Static1.anInt8, local47.anInt2275, local47.anInt2284);
-						Static85.aClass55_1.method1425(Static1.anInt8, local47.anInt2275, local47.anInt2284, local47.anInt1379, 60, local47, local47.anInt2305, local45, local47.aBoolean172);
+						local47.anInt1379 = Static78.method1383(Static1.currentLevel, local47.anInt2275, local47.anInt2284);
+						Static85.scene.method1425(Static1.currentLevel, local47.anInt2275, local47.anInt2284, local47.anInt1379, 60, local47, local47.anInt2305, local45, local47.aBoolean172);
 					} else {
 						local47.aBoolean104 = false;
-						local47.anInt1379 = Static78.method1383(Static1.anInt8, local47.anInt2275, local47.anInt2284);
-						Static85.aClass55_1.method1457(Static1.anInt8, local47.anInt2275, local47.anInt2284, local47.anInt1379, local47, local47.anInt2305, local45, local47.anInt1368, local47.anInt1376, local47.anInt1369, local47.anInt1386);
+						local47.anInt1379 = Static78.method1383(Static1.currentLevel, local47.anInt2275, local47.anInt2284);
+						Static85.scene.method1457(Static1.currentLevel, local47.anInt2275, local47.anInt2284, local47.anInt1379, local47, local47.anInt2305, local45, local47.anInt1368, local47.anInt1376, local47.anInt1369, local47.anInt1386);
 					}
 				}
 			}

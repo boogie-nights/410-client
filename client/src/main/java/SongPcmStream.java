@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ib")
-public abstract class AudioBuss2 {
+public abstract class SongPcmStream {
 
 	@OriginalMember(owner = "client!ib", name = "b", descriptor = "(B)V")
 	public abstract void method1241();

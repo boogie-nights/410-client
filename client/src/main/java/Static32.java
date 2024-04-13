@@ -14,7 +14,7 @@ public final class Static32 {
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(20) byte[] local20 = Static61.aClass5_21.method68(arg0, 14);
+		@Pc(20) byte[] local20 = Static61.aClass5_21.fetchFile(arg0, 14);
 		local10 = new VarBitType();
 		if (local20 != null) {
 			local10.method121(new Packet(local20));
@@ -61,10 +61,10 @@ public final class Static32 {
 				if (Static1.anInt1510 > 30000) {
 					throw new IOException();
 				}
-				@Pc(58) Class2_Sub2_Sub9 local58;
+				@Pc(58) Js5NetRequest local58;
 				@Pc(63) Packet local63;
 				while (Static1.anInt2333 < 20 && Static1.anInt34 > 0) {
-					local58 = (Class2_Sub2_Sub9) Static1.aClass6_6.method184();
+					local58 = (Js5NetRequest) Static1.aClass6_6.method184();
 					local63 = new Packet(4);
 					local63.p1(1);
 					local63.p3((int) local58.aLong152);
@@ -74,7 +74,7 @@ public final class Static32 {
 					Static1.anInt2333++;
 				}
 				while (Static1.anInt2182 < 20 && Static1.anInt1077 > 0) {
-					local58 = (Class2_Sub2_Sub9) Static1.aClass41_1.method1203();
+					local58 = (Js5NetRequest) Static1.aClass41_1.method1203();
 					local63 = new Packet(4);
 					local63.p1(0);
 					local63.p3((int) local58.aLong152);
@@ -125,10 +125,10 @@ public final class Static32 {
 							@Pc(276) int local276 = Static1.aClass2_Sub3_5.g1();
 							local280 = Static1.aClass2_Sub3_5.g4s();
 							@Pc(287) long local287 = (long) ((local218 << 16) + local272);
-							@Pc(293) Class2_Sub2_Sub9 local293 = (Class2_Sub2_Sub9) Static1.aClass6_5.method190(local287);
+							@Pc(293) Js5NetRequest local293 = (Js5NetRequest) Static1.aClass6_5.method190(local287);
 							Static85.aBoolean166 = true;
 							if (local293 == null) {
-								local293 = (Class2_Sub2_Sub9) Static1.aClass6_2.method190(local287);
+								local293 = (Js5NetRequest) Static1.aClass6_2.method190(local287);
 								Static85.aBoolean166 = false;
 							}
 							if (local293 == null) {
@@ -136,7 +136,7 @@ public final class Static32 {
 							}
 							Static82.aClass2_Sub2_Sub9_1 = local293;
 							@Pc(322) int local322 = local276 == 0 ? 5 : 9;
-							Static27.aClass2_Sub3_2 = new Packet(Static82.aClass2_Sub2_Sub9_1.aByte2 + local322 + local280);
+							Static27.aClass2_Sub3_2 = new Packet(Static82.aClass2_Sub2_Sub9_1.trailerLen + local322 + local280);
 							Static27.aClass2_Sub3_2.p1(local276);
 							Static27.aClass2_Sub3_2.p4(local280);
 							Static1.aClass2_Sub3_5.pos = 0;
@@ -150,7 +150,7 @@ public final class Static32 {
 							}
 						}
 					} else {
-						local201 = Static27.aClass2_Sub3_2.data.length - Static82.aClass2_Sub2_Sub9_1.aByte2;
+						local201 = Static27.aClass2_Sub3_2.data.length - Static82.aClass2_Sub2_Sub9_1.trailerLen;
 						local218 = 512 - Static1.anInt274;
 						if (local218 > local201 - Static27.aClass2_Sub3_2.pos) {
 							local218 = local201 - Static27.aClass2_Sub3_2.pos;
@@ -181,7 +181,7 @@ public final class Static32 {
 								Static1.aCRC32_2.reset();
 								Static1.aCRC32_2.update(Static27.aClass2_Sub3_2.data, 0, local201);
 								local272 = (int) Static1.aCRC32_2.getValue();
-								if (local272 != Static82.aClass2_Sub2_Sub9_1.anInt1013) {
+								if (local272 != Static82.aClass2_Sub2_Sub9_1.blockPosition) {
 									try {
 										Static29.aClass25_48.method730();
 									} catch (@Pc(530) Exception local530) {
@@ -193,7 +193,7 @@ public final class Static32 {
 								}
 								Static1.anInt1792 = 0;
 								Static1.anInt2401 = 0;
-								Static82.aClass2_Sub2_Sub9_1.aClass5_Sub1_9.method91(Static27.aClass2_Sub3_2.data, Static85.aBoolean166, (Static82.aClass2_Sub2_Sub9_1.aLong152 & 0xFF0000L) == 16711680L, (int) (Static82.aClass2_Sub2_Sub9_1.aLong152 & 0xFFFFL));
+								Static82.aClass2_Sub2_Sub9_1.js5.method91(Static27.aClass2_Sub3_2.data, Static85.aBoolean166, (Static82.aClass2_Sub2_Sub9_1.aLong152 & 0xFF0000L) == 16711680L, (int) (Static82.aClass2_Sub2_Sub9_1.aLong152 & 0xFFFFL));
 							}
 							Static82.aClass2_Sub2_Sub9_1.method1677();
 							Static27.aClass2_Sub3_2 = null;

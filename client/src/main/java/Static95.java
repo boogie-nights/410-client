@@ -65,7 +65,7 @@ public final class Static95 {
 	public static void method1647() {
 		@Pc(17) int local17;
 		if (Static1.anInt1850 == 0) {
-			Static85.aClass55_1 = new World3D(4, 104, 104, Static1.anIntArrayArrayArray8);
+			Static85.scene = new World3D(4, 104, 104, Static1.anIntArrayArrayArray8);
 			for (local17 = 0; local17 < 4; local17++) {
 				Static1.aClass20Array3[local17] = new CollisionMap(104, 104);
 			}

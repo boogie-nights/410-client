@@ -99,26 +99,26 @@ public final class Static45 {
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "(IILclient!ad;IBZI)V", line = 165)
 	public static void method1535(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) byte arg3, @OriginalArg(5) boolean arg4, @OriginalArg(6) int arg5) {
 		@Pc(6) long local6 = (long) ((arg5 << 16) + arg0);
-		@Pc(16) Class2_Sub2_Sub9 local16 = (Class2_Sub2_Sub9) Static1.aClass6_6.method190(local6);
+		@Pc(16) Js5NetRequest local16 = (Js5NetRequest) Static1.aClass6_6.method190(local6);
 		if (local16 != null) {
 			return;
 		}
-		local16 = (Class2_Sub2_Sub9) Static1.aClass6_5.method190(local6);
+		local16 = (Js5NetRequest) Static1.aClass6_5.method190(local6);
 		if (local16 != null) {
 			return;
 		}
-		local16 = (Class2_Sub2_Sub9) Static1.aClass6_7.method190(local6);
+		local16 = (Js5NetRequest) Static1.aClass6_7.method190(local6);
 		if (local16 == null) {
 			if (!arg4) {
-				local16 = (Class2_Sub2_Sub9) Static1.aClass6_2.method190(local6);
+				local16 = (Js5NetRequest) Static1.aClass6_2.method190(local6);
 				if (local16 != null) {
 					return;
 				}
 			}
-			local16 = new Class2_Sub2_Sub9();
-			local16.aClass5_Sub1_9 = arg1;
-			local16.anInt1013 = arg2;
-			local16.aByte2 = arg3;
+			local16 = new Js5NetRequest();
+			local16.js5 = arg1;
+			local16.blockPosition = arg2;
+			local16.trailerLen = arg3;
 			if (arg4) {
 				Static1.aClass6_6.method195(local16, local6);
 				Static1.anInt34++;

@@ -35,7 +35,7 @@ public final class LinkList {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(BLclient!g;)V", line = 72)
-	public void method1221(@OriginalArg(1) Linkable arg0) {
+	public void addTail(@OriginalArg(1) Linkable arg0) {
 		if (arg0.aClass2_93 != null) {
 			arg0.method1677();
 		}
@@ -121,7 +121,7 @@ public final class LinkList {
 	}
 
 	@OriginalMember(owner = "client!od", name = "g", descriptor = "(I)Lclient!g;", line = 342)
-	public Linkable method1231() {
+	public Linkable next() {
 		@Pc(6) Linkable local6 = this.aClass2_72;
 		if (local6 == this.aClass2_71) {
 			this.aClass2_72 = null;

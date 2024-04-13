@@ -56,7 +56,7 @@ public final class Static76 {
 		if (local6 != null) {
 			return local6;
 		}
-		@Pc(25) byte[] local25 = Static40.aClass5_25.method68(arg0, 1);
+		@Pc(25) byte[] local25 = Static40.aClass5_25.fetchFile(arg0, 1);
 		local6 = new FloorUnderlayType();
 		if (local25 != null) {
 			local6.method1640(new Packet(local25), arg0);

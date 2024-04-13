@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ha")
-public final class Class24_Sub1_Sub1 extends Class24_Sub1 {
+public final class JavaAudioChannel extends AudioChannel {
 
 	@OriginalMember(owner = "client!ha", name = "O", descriptor = "Ljavax/sound/sampled/SourceDataLine;")
 	private SourceDataLine aSourceDataLine1;
@@ -64,7 +64,7 @@ public final class Class24_Sub1_Sub1 extends Class24_Sub1 {
 	}
 
 	@OriginalMember(owner = "client!ha", name = "<init>", descriptor = "()V", line = 67)
-	public Class24_Sub1_Sub1() throws Exception {
+	public JavaAudioChannel() throws Exception {
 		super(22050);
 	}
 }

@@ -51,7 +51,7 @@ public final class Static1 {
 	public static int[] anIntArray1;
 
 	@OriginalMember(owner = "client!a", name = "k", descriptor = "I")
-	public static int anInt8;
+	public static int currentLevel;
 
 	@OriginalMember(owner = "client!a", name = "x", descriptor = "I")
 	public static int anInt16;
@@ -415,7 +415,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!ta", name = "d", descriptor = "I")
 	public static int anInt2139 = 0;
 	@OriginalMember(owner = "client!ta", name = "e", descriptor = "[[[Lclient!od;")
-	public static LinkList[][][] aClass44ArrayArrayArray1 = new LinkList[4][104][104];
+	public static LinkList[][][] levelObjStacks = new LinkList[4][104][104];
 	@OriginalMember(owner = "client!ta", name = "i", descriptor = "I")
 	public static int anInt2143 = 0;
 	@OriginalMember(owner = "client!ta", name = "n", descriptor = "I")
@@ -667,7 +667,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!sc", name = "n", descriptor = "[I")
 	public static int[] anIntArray453 = new int[128];
 	@OriginalMember(owner = "client!sc", name = "w", descriptor = "I")
-	public static int anInt2083 = 0;
+	public static int packetType = 0;
 	@OriginalMember(owner = "client!sc", name = "A", descriptor = "[J")
 	public static long[] aLongArray5 = new long[32];
 	@OriginalMember(owner = "client!sc", name = "E", descriptor = "[I")
@@ -693,13 +693,13 @@ public final class Static1 {
 	@OriginalMember(owner = "client!ke", name = "Xb", descriptor = "I")
 	public static int anInt2299 = 1;
 	@OriginalMember(owner = "client!ke", name = "Pb", descriptor = "Lclient!wc;")
-	public static PacketBit aClass2_Sub3_Sub1_5 = new PacketBit(5000);
+	public static PacketBit in = new PacketBit(5000);
 	@OriginalMember(owner = "client!ke", name = "Cc", descriptor = "I")
 	public static int anInt2326 = 0;
 	@OriginalMember(owner = "client!tb", name = "x", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_21 = new LruCache(500);
 	@OriginalMember(owner = "client!tb", name = "K", descriptor = "Lclient!od;")
-	public static LinkList aClass44_7 = new LinkList();
+	public static LinkList spawnedLocations = new LinkList();
 	@OriginalMember(owner = "client!tb", name = "R", descriptor = "Z")
 	public static boolean aBoolean165 = false;
 	@OriginalMember(owner = "client!tb", name = "U", descriptor = "I")
@@ -874,15 +874,15 @@ public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(I)V", line = 99)
 	public static void method3() {
-		for (@Pc(10) SpotAnimEntity local10 = (SpotAnimEntity) aClass44_8.head(); local10 != null; local10 = (SpotAnimEntity) aClass44_8.method1231()) {
-			if (local10.anInt2235 != anInt8 || local10.aBoolean169) {
+		for (@Pc(10) SpotAnimEntity local10 = (SpotAnimEntity) aClass44_8.head(); local10 != null; local10 = (SpotAnimEntity) aClass44_8.next()) {
+			if (local10.anInt2235 != currentLevel || local10.aBoolean169) {
 				local10.method1677();
 			} else if (anInt2511 >= local10.anInt2231) {
 				local10.method1519(anInt1095);
 				if (local10.aBoolean169) {
 					local10.method1677();
 				} else {
-					Static85.aClass55_1.method1425(local10.anInt2235, local10.anInt2232, local10.anInt2230, local10.anInt2223, 60, local10, 0, -1, false);
+					Static85.scene.method1425(local10.anInt2235, local10.anInt2232, local10.anInt2230, local10.anInt2223, 60, local10, 0, -1, false);
 				}
 			}
 		}

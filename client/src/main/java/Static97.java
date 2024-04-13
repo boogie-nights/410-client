@@ -27,7 +27,7 @@ public final class Static97 {
 		if (local18 != null) {
 			return local18;
 		}
-		@Pc(28) byte[] local28 = Static38.aClass5_13.method68(arg0, 10);
+		@Pc(28) byte[] local28 = Static38.aClass5_13.fetchFile(arg0, 10);
 		local18 = new ObjType();
 		local18.anInt954 = arg0;
 		if (local28 != null) {
@@ -72,8 +72,8 @@ public final class Static97 {
 		Static1.anInt231 = 0;
 		Static1.anInt1986 = -1;
 		Static1.aClass2_Sub3_Sub1_4.pos = 0;
-		Static1.anInt2083 = -1;
-		Static1.aClass2_Sub3_Sub1_5.pos = 0;
+		Static1.packetType = -1;
+		Static1.in.pos = 0;
 		Static1.aBoolean175 = false;
 		Static1.anInt2352 = -1;
 		Static1.anInt1973 = 0;
@@ -114,11 +114,11 @@ public final class Static97 {
 		for (@Pc(1772) int local1772 = 0; local1772 < 4; local1772++) {
 			for (local1776 = 0; local1776 < 104; local1776++) {
 				for (@Pc(1780) int local1780 = 0; local1780 < 104; local1780++) {
-					Static1.aClass44ArrayArrayArray1[local1772][local1776][local1780] = null;
+					Static1.levelObjStacks[local1772][local1776][local1780] = null;
 				}
 			}
 		}
-		Static1.aClass44_7 = new LinkList();
+		Static1.spawnedLocations = new LinkList();
 		Static1.anInt2594 = 0;
 		Static1.anInt1038 = 0;
 		Static75.method1350(Static1.anInt980);
@@ -248,7 +248,7 @@ public final class Static97 {
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(IIBIII)V", line = 1222)
 	public static void method1674(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(7) int local7 = Static85.aClass55_1.method1459(arg0, arg4, arg3);
+		@Pc(7) int local7 = Static85.scene.method1459(arg0, arg4, arg3);
 		@Pc(40) int local40;
 		@Pc(46) int local46;
 		@Pc(53) int local53;
@@ -261,7 +261,7 @@ public final class Static97 {
 				local11 = arg2;
 			}
 			local33 = (103 - arg3) * 4 * 512 + arg4 * 4 + 24624;
-			local40 = Static85.aClass55_1.method1449(arg0, arg4, arg3, local7);
+			local40 = Static85.scene.method1449(arg0, arg4, arg3, local7);
 			local46 = local40 >> 6 & 0x3;
 			@Pc(49) int[] local49 = Static85.aClass2_Sub2_Sub2_Sub4_8.anIntArray534;
 			local53 = local40 & 0x1F;
@@ -334,9 +334,9 @@ public final class Static97 {
 				}
 			}
 		}
-		local7 = Static85.aClass55_1.method1429(arg0, arg4, arg3);
+		local7 = Static85.scene.method1429(arg0, arg4, arg3);
 		if (local7 != 0) {
-			local40 = Static85.aClass55_1.method1449(arg0, arg4, arg3, local7);
+			local40 = Static85.scene.method1449(arg0, arg4, arg3, local7);
 			local53 = local40 & 0x1F;
 			local46 = local40 >> 6 & 0x3;
 			local11 = local7 >> 14 & 0x7FFF;
@@ -369,7 +369,7 @@ public final class Static97 {
 				}
 			}
 		}
-		local7 = Static85.aClass55_1.method1458(arg0, arg4, arg3);
+		local7 = Static85.scene.method1458(arg0, arg4, arg3);
 		if (local7 == 0) {
 			return;
 		}

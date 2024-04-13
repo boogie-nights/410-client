@@ -12,7 +12,7 @@ public final class Static72 {
 	public static PixMap aClass45_27;
 
 	@OriginalMember(owner = "client!qc", name = "h", descriptor = "Lclient!wd;")
-	public static Class24 aClass24_1;
+	public static StubAudioChannel aClass24_1;
 
 	@OriginalMember(owner = "client!qc", name = "q", descriptor = "Lclient!p;")
 	public static PixMap aClass45_28;

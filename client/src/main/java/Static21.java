@@ -129,7 +129,7 @@ public final class Static21 {
 			if (Static1.aBooleanArray35[4] && Static1.anIntArray164[4] + 128 > local36) {
 				local36 = Static1.anIntArray164[4] + 128;
 			}
-			Static38.method752(Static22.anInt577, local34, Static61.anInt1653, local36, Static78.method1383(Static1.anInt8, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284) - 50, local36 * 3 + 600);
+			Static38.method752(Static22.anInt577, local34, Static61.anInt1653, local36, Static78.method1383(Static1.currentLevel, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284) - 50, local36 * 3 + 600);
 		}
 		if (Static1.aBoolean22) {
 			local36 = Static17.method361();
@@ -173,8 +173,8 @@ public final class Static21 {
 		Model.anInt1747 = 0;
 		Model.anInt1750 = Mouse.x - 4;
 		Static25.method1610();
-		Static85.aClass55_1.method1430(Static44.anInt1114, Static73.anInt1935, Static14.anInt1863, Static33.anInt824, Static26.anInt686, local36);
-		Static85.aClass55_1.method1454();
+		Static85.scene.method1430(Static44.anInt1114, Static73.anInt1935, Static14.anInt1863, Static33.anInt824, Static26.anInt686, local36);
+		Static85.scene.method1454();
 		Static11.method253();
 		Static62.method1099();
 		((Js5TextureProvider) Static6.anInterface4_1).method405(Static1.anInt1095);
@@ -202,21 +202,21 @@ public final class Static21 {
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(IIIIIIIIII)V", line = 1066)
 	public static void method1727(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
-		@Pc(7) Class2_Sub7 local7 = null;
-		for (@Pc(12) Class2_Sub7 local12 = (Class2_Sub7) Static1.aClass44_7.head(); local12 != null; local12 = (Class2_Sub7) Static1.aClass44_7.method1231()) {
-			if (local12.anInt817 == arg1 && local12.anInt818 == arg8 && local12.anInt821 == arg6 && local12.anInt823 == arg2) {
+		@Pc(7) LocTemporary local7 = null;
+		for (@Pc(12) LocTemporary local12 = (LocTemporary) Static1.spawnedLocations.head(); local12 != null; local12 = (LocTemporary) Static1.spawnedLocations.next()) {
+			if (local12.level == arg1 && local12.x == arg8 && local12.z == arg6 && local12.anInt823 == arg2) {
 				local7 = local12;
 				break;
 			}
 		}
 		if (local7 == null) {
-			local7 = new Class2_Sub7();
-			local7.anInt817 = arg1;
+			local7 = new LocTemporary();
+			local7.level = arg1;
 			local7.anInt823 = arg2;
-			local7.anInt818 = arg8;
-			local7.anInt821 = arg6;
+			local7.x = arg8;
+			local7.z = arg6;
 			Static4.method86(local7);
-			Static1.aClass44_7.method1221(local7);
+			Static1.spawnedLocations.addTail(local7);
 		}
 		local7.anInt829 = arg3;
 		local7.anInt828 = arg5;

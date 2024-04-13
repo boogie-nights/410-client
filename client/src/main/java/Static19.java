@@ -51,7 +51,7 @@ public final class Static19 {
 			if (local3 != local38) {
 				local3 = local38;
 				@Pc(119) int local119;
-				if (local60 == 2 && Static85.aClass55_1.method1449(Static1.anInt8, local42, local48, local38) >= 0) {
+				if (local60 == 2 && Static85.scene.method1449(Static1.currentLevel, local42, local48, local38) >= 0) {
 					@Pc(83) LocType local83 = Static83.method1470(local54);
 					if (local83.anIntArray210 != null) {
 						local83 = local83.method766();
@@ -134,9 +134,9 @@ public final class Static19 {
 					Static94.method1638(local48, local414, local42, local54);
 				}
 				if (local60 == 3) {
-					@Pc(542) LinkList local542 = Static1.aClass44ArrayArrayArray1[Static1.anInt8][local42][local48];
+					@Pc(542) LinkList local542 = Static1.levelObjStacks[Static1.currentLevel][local42][local48];
 					if (local542 != null) {
-						for (@Pc(549) Class2_Sub2_Sub12_Sub3 local549 = (Class2_Sub2_Sub12_Sub3) local542.method1226(); local549 != null; local549 = (Class2_Sub2_Sub12_Sub3) local542.method1225()) {
+						for (@Pc(549) ObjStackEntity local549 = (ObjStackEntity) local542.method1226(); local549 != null; local549 = (ObjStackEntity) local542.method1225()) {
 							@Pc(558) ObjType local558 = Static97.method1669(local549.anInt1490);
 							if (Static1.anInt1874 == 1) {
 								Static20.method402(Static72.method1334(new JagString[] { JagString.aClass40_193, JagString.aClass40_601, JagString.aClass40_590, local558.aClass40_290 }), 11, local48, local42, local549.anInt1490);

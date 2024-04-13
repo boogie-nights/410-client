@@ -54,12 +54,12 @@ public final class Static17 {
 		if (Static1.anInt2177 > 383) {
 			Static1.anInt2177 = 383;
 		}
-		@Pc(197) int local197 = Static78.method1383(Static1.anInt8, Static61.anInt1653, Static22.anInt577);
+		@Pc(197) int local197 = Static78.method1383(Static1.currentLevel, Static61.anInt1653, Static22.anInt577);
 		@Pc(213) int local213;
 		if (local67 > 3 && local119 > 3 && local67 < 100 && local119 < 100) {
 			for (local213 = local67 - 4; local213 <= local67 + 4; local213++) {
 				for (@Pc(219) int local219 = local119 - 4; local219 <= local119 + 4; local219++) {
-					@Pc(223) int local223 = Static1.anInt8;
+					@Pc(223) int local223 = Static1.currentLevel;
 					if (local223 < 3 && (Static1.aByteArrayArrayArray7[1][local213][local219] & 0x2) == 2) {
 						local223++;
 					}
@@ -245,7 +245,7 @@ public final class Static17 {
 
 	@OriginalMember(owner = "client!db", name = "a", descriptor = "(I)I", line = 383)
 	public static int method361() {
-		@Pc(5) int local5 = Static78.method1383(Static1.anInt8, Static44.anInt1114, Static14.anInt1863);
-		return local5 - Static73.anInt1935 >= 800 || (Static1.aByteArrayArrayArray7[Static1.anInt8][Static44.anInt1114 >> 7][Static14.anInt1863 >> 7] & 0x4) == 0 ? 3 : Static1.anInt8;
+		@Pc(5) int local5 = Static78.method1383(Static1.currentLevel, Static44.anInt1114, Static14.anInt1863);
+		return local5 - Static73.anInt1935 >= 800 || (Static1.aByteArrayArrayArray7[Static1.currentLevel][Static44.anInt1114 >> 7][Static14.anInt1863 >> 7] & 0x4) == 0 ? 3 : Static1.currentLevel;
 	}
 }

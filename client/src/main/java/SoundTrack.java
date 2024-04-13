@@ -42,9 +42,9 @@ public final class SoundTrack {
 	}
 
 	@OriginalMember(owner = "client!oc", name = "b", descriptor = "()Lclient!ed;", line = 55)
-	public Class2_Sub4_Sub1 method1216() {
+	public PcmSound method1216() {
 		@Pc(2) byte[] local2 = this.method1217();
-		return new Class2_Sub4_Sub1(22050, local2, this.anInt1815 * 22050 / 1000, this.anInt1814 * 22050 / 1000);
+		return new PcmSound(22050, local2, this.anInt1815 * 22050 / 1000, this.anInt1814 * 22050 / 1000);
 	}
 
 	@OriginalMember(owner = "client!oc", name = "c", descriptor = "()[B", line = 69)

@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static20 {
 
 	@OriginalMember(owner = "client!ea", name = "b", descriptor = "Lclient!pc;")
-	public static AudioBuss aClass2_Sub10_1;
+	public static PcmStream aClass2_Sub10_1;
 
 	@OriginalMember(owner = "client!ea", name = "l", descriptor = "Lclient!p;")
 	public static PixMap aClass45_11;
@@ -43,8 +43,8 @@ public final class Static20 {
 				Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local29] = null;
 			}
 		}
-		if (Static1.anInt785 != Static1.aClass2_Sub3_Sub1_5.pos) {
-			throw new RuntimeException("gpp1 pos:" + Static1.aClass2_Sub3_Sub1_5.pos + " psize:" + Static1.anInt785);
+		if (Static1.anInt785 != Static1.in.pos) {
+			throw new RuntimeException("gpp1 pos:" + Static1.in.pos + " psize:" + Static1.anInt785);
 		}
 		for (local29 = 0; local29 < Static1.anInt2067; local29++) {
 			if (Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[Static1.anIntArray408[local29]] == null) {

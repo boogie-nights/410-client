@@ -10,7 +10,7 @@ public final class Static57 {
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(20) byte[] local20 = Static68.aClass5_24.method68(arg0, 12);
+		@Pc(20) byte[] local20 = Static68.aClass5_24.fetchFile(arg0, 12);
 		local10 = new SeqType();
 		if (local20 != null) {
 			local10.method523(new Packet(local20));

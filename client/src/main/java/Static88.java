@@ -575,9 +575,9 @@ public final class Static88 {
 		}
 		if (local12 == 24) {
 			if (Static1.aBoolean175) {
-				Static85.aClass55_1.method1450(local26 - 4, local30 + -4);
+				Static85.scene.method1450(local26 - 4, local30 + -4);
 			} else {
-				Static85.aClass55_1.method1450(Static1.anInt2500 - 4, Static1.anInt2133 + -4);
+				Static85.scene.method1450(Static1.anInt2500 - 4, Static1.anInt2133 + -4);
 			}
 		}
 		if (local12 == 13) {

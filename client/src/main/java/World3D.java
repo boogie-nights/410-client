@@ -1295,7 +1295,7 @@ public final class World3D {
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(Lclient!nd;Z)V", line = 2079)
 	private void method1451(@OriginalArg(0) Tile arg0, @OriginalArg(1) boolean arg1) {
-		aClass44_6.method1221(arg0);
+		aClass44_6.addTail(arg0);
 		while (true) {
 			@Pc(8) Tile local8;
 			@Pc(17) int local17;
@@ -1505,25 +1505,25 @@ public final class World3D {
 												if (local17 < Static81.anInt2102 && (local578 & 0x4) != 0) {
 													var35 = local31[local17 + 1][local20];
 													if (var35 != null && var35.aBoolean136) {
-														aClass44_6.method1221(var35);
+														aClass44_6.addTail(var35);
 													}
 												}
 												if (local20 < Static81.anInt2093 && (local578 & 0x2) != 0) {
 													var35 = local31[local17][local20 + 1];
 													if (var35 != null && var35.aBoolean136) {
-														aClass44_6.method1221(var35);
+														aClass44_6.addTail(var35);
 													}
 												}
 												if (local17 > Static81.anInt2102 && (local578 & 0x1) != 0) {
 													var35 = local31[local17 - 1][local20];
 													if (var35 != null && var35.aBoolean136) {
-														aClass44_6.method1221(var35);
+														aClass44_6.addTail(var35);
 													}
 												}
 												if (local20 > Static81.anInt2093 && (local578 & 0x8) != 0) {
 													var35 = local31[local17][local20 - 1];
 													if (var35 != null && var35.aBoolean136) {
-														aClass44_6.method1221(var35);
+														aClass44_6.addTail(var35);
 													}
 												}
 											}
@@ -1631,9 +1631,9 @@ public final class World3D {
 													for (local591 = local1125.anInt1662; local591 <= local1125.anInt1665; local591++) {
 														@Pc(1250) Tile local1250 = local31[local588][local591];
 														if (local1250.anInt1698 != 0) {
-															aClass44_6.method1221(local1250);
+															aClass44_6.addTail(local1250);
 														} else if ((local588 != local17 || local591 != local20) && local1250.aBoolean136) {
-															aClass44_6.method1221(local1250);
+															aClass44_6.addTail(local1250);
 														}
 													}
 												}
@@ -1728,31 +1728,31 @@ public final class World3D {
 			if (local23 < this.anInt2106 - 1) {
 				local1745 = this.aClass2_Sub11ArrayArrayArray1[local23 + 1][local17][local20];
 				if (local1745 != null && local1745.aBoolean136) {
-					aClass44_6.method1221(local1745);
+					aClass44_6.addTail(local1745);
 				}
 			}
 			if (local17 < Static81.anInt2102) {
 				local1745 = local31[local17 + 1][local20];
 				if (local1745 != null && local1745.aBoolean136) {
-					aClass44_6.method1221(local1745);
+					aClass44_6.addTail(local1745);
 				}
 			}
 			if (local20 < Static81.anInt2093) {
 				local1745 = local31[local17][local20 + 1];
 				if (local1745 != null && local1745.aBoolean136) {
-					aClass44_6.method1221(local1745);
+					aClass44_6.addTail(local1745);
 				}
 			}
 			if (local17 > Static81.anInt2102) {
 				local1745 = local31[local17 - 1][local20];
 				if (local1745 != null && local1745.aBoolean136) {
-					aClass44_6.method1221(local1745);
+					aClass44_6.addTail(local1745);
 				}
 			}
 			if (local20 > Static81.anInt2093) {
 				local1745 = local31[local17][local20 - 1];
 				if (local1745 != null && local1745.aBoolean136) {
-					aClass44_6.method1221(local1745);
+					aClass44_6.addTail(local1745);
 				}
 			}
 		}

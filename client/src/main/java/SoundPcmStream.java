@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!m")
-public final class SoundAudioBuss extends AudioBuss {
+public final class SoundPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!m", name = "v", descriptor = "I")
 	private int anInt1539;
@@ -19,13 +19,13 @@ public final class SoundAudioBuss extends AudioBuss {
 	private boolean aBoolean120;
 
 	@OriginalMember(owner = "client!m", name = "A", descriptor = "I")
-	private int anInt1543;
+	private int loops;
 
 	@OriginalMember(owner = "client!m", name = "C", descriptor = "I")
 	private int anInt1545;
 
 	@OriginalMember(owner = "client!m", name = "s", descriptor = "I")
-	private final int anInt1536;
+	private final int start;
 
 	@OriginalMember(owner = "client!m", name = "w", descriptor = "I")
 	private final int anInt1540;
@@ -41,7 +41,7 @@ public final class SoundAudioBuss extends AudioBuss {
 
 	@OriginalMember(owner = "client!m", name = "d", descriptor = "(I)V", line = 33)
 	public synchronized void method1027(@OriginalArg(0) int arg0) {
-		this.anInt1543 = arg0;
+		this.loops = arg0;
 	}
 
 	@OriginalMember(owner = "client!m", name = "a", descriptor = "([IIIII)I", line = 70)
@@ -53,9 +53,9 @@ public final class SoundAudioBuss extends AudioBuss {
 			}
 			this.anInt1542 += arg1;
 			if (this.anInt1537 == 256 && (this.anInt1538 & 0xFF) == 0) {
-				arg1 = Static108.method1033(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this);
+				arg1 = Static108.method1033(((PcmSound) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this);
 			} else {
-				arg1 = Static108.method1035(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this, this.anInt1537, arg4);
+				arg1 = Static108.method1035(((PcmSound) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this, this.anInt1537, arg4);
 			}
 			this.anInt1542 -= arg1;
 			if (this.anInt1542 != 0) {
@@ -67,7 +67,7 @@ public final class SoundAudioBuss extends AudioBuss {
 			}
 			this.anInt1544 = this.anInt1545;
 		}
-		return this.anInt1537 == 256 && (this.anInt1538 & 0xFF) == 0 ? Static108.method1036(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this) : Static108.method1030(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this, this.anInt1537, arg4);
+		return this.anInt1537 == 256 && (this.anInt1538 & 0xFF) == 0 ? Static108.method1036(((PcmSound) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this) : Static108.method1030(((PcmSound) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this, this.anInt1537, arg4);
 	}
 
 	@OriginalMember(owner = "client!m", name = "b", descriptor = "([IIIII)I", line = 138)
@@ -79,9 +79,9 @@ public final class SoundAudioBuss extends AudioBuss {
 			}
 			this.anInt1542 += arg1;
 			if (this.anInt1537 == -256 && (this.anInt1538 & 0xFF) == 0) {
-				arg1 = Static108.method1028(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this);
+				arg1 = Static108.method1028(((PcmSound) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this);
 			} else {
-				arg1 = Static108.method1037(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this, this.anInt1537, arg4);
+				arg1 = Static108.method1037(((PcmSound) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this, this.anInt1537, arg4);
 			}
 			this.anInt1542 -= arg1;
 			if (this.anInt1542 != 0) {
@@ -93,7 +93,7 @@ public final class SoundAudioBuss extends AudioBuss {
 			}
 			this.anInt1544 = this.anInt1545;
 		}
-		return this.anInt1537 == -256 && (this.anInt1538 & 0xFF) == 0 ? Static108.method1026(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this) : Static108.method1034(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this, this.anInt1537, arg4);
+		return this.anInt1537 == -256 && (this.anInt1538 & 0xFF) == 0 ? Static108.method1026(((PcmSound) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this) : Static108.method1034(((PcmSound) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this, this.anInt1537, arg4);
 	}
 
 	@OriginalMember(owner = "client!m", name = "c", descriptor = "(I)V", line = 245)
@@ -114,16 +114,16 @@ public final class SoundAudioBuss extends AudioBuss {
 			}
 		}
 		this.anInt1538 += this.anInt1537 * arg0;
-		@Pc(53) Class2_Sub4_Sub1 local53 = (Class2_Sub4_Sub1) super.sound;
-		@Pc(58) int local58 = this.anInt1536 << 8;
+		@Pc(53) PcmSound local53 = (PcmSound) super.sound;
+		@Pc(58) int local58 = this.start << 8;
 		@Pc(63) int local63 = this.anInt1540 << 8;
 		@Pc(69) int local69 = local53.aByteArray8.length << 8;
 		@Pc(73) int local73 = local63 - local58;
 		if (local73 <= 0) {
-			this.anInt1543 = 0;
+			this.loops = 0;
 		}
-		if (this.anInt1543 >= 0) {
-			if (this.anInt1543 > 0) {
+		if (this.loops >= 0) {
+			if (this.loops > 0) {
 				if (this.aBoolean120) {
 					label113: {
 						if (this.anInt1537 < 0) {
@@ -132,7 +132,7 @@ public final class SoundAudioBuss extends AudioBuss {
 							}
 							this.anInt1538 = local58 + local58 - this.anInt1538 - 1;
 							this.anInt1537 = -this.anInt1537;
-							if (--this.anInt1543 == 0) {
+							if (--this.loops == 0) {
 								break label113;
 							}
 						}
@@ -142,7 +142,7 @@ public final class SoundAudioBuss extends AudioBuss {
 							}
 							this.anInt1538 = local63 + local63 - this.anInt1538 - 1;
 							this.anInt1537 = -this.anInt1537;
-							if (--this.anInt1543 == 0) {
+							if (--this.loops == 0) {
 								break;
 							}
 							if (this.anInt1538 >= local58) {
@@ -150,7 +150,7 @@ public final class SoundAudioBuss extends AudioBuss {
 							}
 							this.anInt1538 = local58 + local58 - this.anInt1538 - 1;
 							this.anInt1537 = -this.anInt1537;
-						} while (--this.anInt1543 != 0);
+						} while (--this.loops != 0);
 					}
 				} else {
 					@Pc(299) int local299;
@@ -159,22 +159,22 @@ public final class SoundAudioBuss extends AudioBuss {
 							return;
 						}
 						local299 = (local63 - this.anInt1538 - 1) / local73;
-						if (local299 < this.anInt1543) {
+						if (local299 < this.loops) {
 							this.anInt1538 += local73 * local299;
-							this.anInt1543 -= local299;
+							this.loops -= local299;
 							return;
 						}
-						this.anInt1538 += local73 * this.anInt1543;
-						this.anInt1543 = 0;
+						this.anInt1538 += local73 * this.loops;
+						this.loops = 0;
 					} else if (this.anInt1538 >= local63) {
 						local299 = (this.anInt1538 - local58) / local73;
-						if (local299 < this.anInt1543) {
+						if (local299 < this.loops) {
 							this.anInt1538 -= local73 * local299;
-							this.anInt1543 -= local299;
+							this.loops -= local299;
 							return;
 						}
-						this.anInt1538 -= local73 * this.anInt1543;
-						this.anInt1543 = 0;
+						this.anInt1538 -= local73 * this.loops;
+						this.loops = 0;
 					} else {
 						return;
 					}
@@ -223,28 +223,28 @@ public final class SoundAudioBuss extends AudioBuss {
 			this.method1287(arg2);
 			return 0;
 		}
-		@Pc(21) Class2_Sub4_Sub1 local21 = (Class2_Sub4_Sub1) super.sound;
-		@Pc(26) int local26 = this.anInt1536 << 8;
+		@Pc(21) PcmSound local21 = (PcmSound) super.sound;
+		@Pc(26) int local26 = this.start << 8;
 		@Pc(31) int local31 = this.anInt1540 << 8;
 		@Pc(37) int local37 = local21.aByteArray8.length << 8;
 		@Pc(41) int local41 = local31 - local26;
 		if (local41 <= 0) {
-			this.anInt1543 = 0;
+			this.loops = 0;
 		}
 		@Pc(48) int local48 = arg1;
 		@Pc(52) int local52 = arg2 + arg1;
-		if (this.anInt1543 >= 0) {
-			if (this.anInt1543 > 0) {
+		if (this.loops >= 0) {
+			if (this.loops > 0) {
 				if (this.aBoolean120) {
 					label118: {
 						if (this.anInt1537 < 0) {
-							local48 = this.method1031(arg0, arg1, local26, local52, local21.aByteArray8[this.anInt1536]);
+							local48 = this.method1031(arg0, arg1, local26, local52, local21.aByteArray8[this.start]);
 							if (this.anInt1538 >= local26) {
 								return 1;
 							}
 							this.anInt1538 = local26 + local26 - this.anInt1538 - 1;
 							this.anInt1537 = -this.anInt1537;
-							if (--this.anInt1543 == 0) {
+							if (--this.loops == 0) {
 								break label118;
 							}
 						}
@@ -255,16 +255,16 @@ public final class SoundAudioBuss extends AudioBuss {
 							}
 							this.anInt1538 = local31 + local31 - this.anInt1538 - 1;
 							this.anInt1537 = -this.anInt1537;
-							if (--this.anInt1543 == 0) {
+							if (--this.loops == 0) {
 								break;
 							}
-							local48 = this.method1031(arg0, local48, local26, local52, local21.aByteArray8[this.anInt1536]);
+							local48 = this.method1031(arg0, local48, local26, local52, local21.aByteArray8[this.start]);
 							if (this.anInt1538 >= local26) {
 								return 1;
 							}
 							this.anInt1538 = local26 + local26 - this.anInt1538 - 1;
 							this.anInt1537 = -this.anInt1537;
-						} while (--this.anInt1543 != 0);
+						} while (--this.loops != 0);
 					}
 				} else {
 					@Pc(398) int local398;
@@ -275,28 +275,28 @@ public final class SoundAudioBuss extends AudioBuss {
 								return 1;
 							}
 							local398 = (local31 - this.anInt1538 - 1) / local41;
-							if (local398 >= this.anInt1543) {
-								this.anInt1538 += local41 * this.anInt1543;
-								this.anInt1543 = 0;
+							if (local398 >= this.loops) {
+								this.anInt1538 += local41 * this.loops;
+								this.loops = 0;
 								break;
 							}
 							this.anInt1538 += local41 * local398;
-							this.anInt1543 -= local398;
+							this.loops -= local398;
 						}
 					} else {
 						while (true) {
-							local48 = this.method1029(arg0, local48, local31, local52, local21.aByteArray8[this.anInt1536]);
+							local48 = this.method1029(arg0, local48, local31, local52, local21.aByteArray8[this.start]);
 							if (this.anInt1538 < local31) {
 								return 1;
 							}
 							local398 = (this.anInt1538 - local26) / local41;
-							if (local398 >= this.anInt1543) {
-								this.anInt1538 -= local41 * this.anInt1543;
-								this.anInt1543 = 0;
+							if (local398 >= this.loops) {
+								this.anInt1538 -= local41 * this.loops;
+								this.loops = 0;
 								break;
 							}
 							this.anInt1538 -= local41 * local398;
-							this.anInt1543 -= local398;
+							this.loops -= local398;
 						}
 					}
 				}
@@ -317,7 +317,7 @@ public final class SoundAudioBuss extends AudioBuss {
 			return 1;
 		} else if (this.aBoolean120) {
 			if (this.anInt1537 < 0) {
-				local48 = this.method1031(arg0, arg1, local26, local52, local21.aByteArray8[this.anInt1536]);
+				local48 = this.method1031(arg0, arg1, local26, local52, local21.aByteArray8[this.start]);
 				if (this.anInt1538 >= local26) {
 					return 1;
 				}
@@ -331,7 +331,7 @@ public final class SoundAudioBuss extends AudioBuss {
 				}
 				this.anInt1538 = local31 + local31 - this.anInt1538 - 1;
 				this.anInt1537 = -this.anInt1537;
-				local48 = this.method1031(arg0, local48, local26, local52, local21.aByteArray8[this.anInt1536]);
+				local48 = this.method1031(arg0, local48, local26, local52, local21.aByteArray8[this.start]);
 				if (this.anInt1538 >= local26) {
 					return 1;
 				}
@@ -348,7 +348,7 @@ public final class SoundAudioBuss extends AudioBuss {
 			}
 		} else {
 			while (true) {
-				local48 = this.method1029(arg0, local48, local31, local52, local21.aByteArray8[this.anInt1536]);
+				local48 = this.method1029(arg0, local48, local31, local52, local21.aByteArray8[this.start]);
 				if (this.anInt1538 < local31) {
 					return 1;
 				}
@@ -362,18 +362,18 @@ public final class SoundAudioBuss extends AudioBuss {
 	public int method1288() {
 		@Pc(4) int local4 = this.anInt1544 * 3;
 		local4 = (local4 ^ local4 >> 31) + (local4 >>> 31);
-		if (this.anInt1543 == 0) {
-			local4 -= local4 * this.anInt1538 / (((Class2_Sub4_Sub1) super.sound).aByteArray8.length << 8);
-		} else if (this.anInt1543 >= 0) {
-			local4 -= local4 * this.anInt1536 / ((Class2_Sub4_Sub1) super.sound).aByteArray8.length;
+		if (this.loops == 0) {
+			local4 -= local4 * this.anInt1538 / (((PcmSound) super.sound).aByteArray8.length << 8);
+		} else if (this.loops >= 0) {
+			local4 -= local4 * this.start / ((PcmSound) super.sound).aByteArray8.length;
 		}
 		return local4 > 255 ? 255 : local4;
 	}
 
 	@OriginalMember(owner = "client!m", name = "<init>", descriptor = "(Lclient!ed;II)V", line = 746)
-	public SoundAudioBuss(@OriginalArg(0) Class2_Sub4_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public SoundPcmStream(@OriginalArg(0) PcmSound arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		super.sound = arg0;
-		this.anInt1536 = arg0.anInt613;
+		this.start = arg0.anInt613;
 		this.anInt1540 = arg0.anInt612;
 		this.anInt1537 = arg1;
 		this.anInt1544 = arg2;

@@ -38,7 +38,7 @@ public final class Js5CacheQueue implements Runnable {
 						local12.data = local12.cache.read((int) local12.aLong152);
 						local5 = Static1.aClass44_2;
 						synchronized (local5) {
-							Static1.aClass44_1.method1221(local12);
+							Static1.aClass44_1.addTail(local12);
 						}
 					}
 					local25 = Static1.anObject2;

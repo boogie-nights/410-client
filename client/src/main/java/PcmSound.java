@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ed")
-public final class Class2_Sub4_Sub1 extends SoundPacket {
+public final class PcmSound extends SoundPacket {
 
 	@OriginalMember(owner = "client!ed", name = "r", descriptor = "I")
 	public int anInt611;
@@ -18,7 +18,7 @@ public final class Class2_Sub4_Sub1 extends SoundPacket {
 	public int anInt612;
 
 	@OriginalMember(owner = "client!ed", name = "a", descriptor = "(Lclient!t;)Lclient!ed;", line = 4)
-	public Class2_Sub4_Sub1 method491(@OriginalArg(0) SampleRateConverter arg0) {
+	public PcmSound method491(@OriginalArg(0) SampleRateConverter arg0) {
 		this.aByteArray8 = arg0.method1465(this.aByteArray8);
 		this.anInt611 = arg0.method1463(this.anInt611);
 		if (this.anInt613 == this.anInt612) {
@@ -34,7 +34,7 @@ public final class Class2_Sub4_Sub1 extends SoundPacket {
 	}
 
 	@OriginalMember(owner = "client!ed", name = "<init>", descriptor = "(I[BII)V", line = 25)
-	public Class2_Sub4_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public PcmSound(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		this.anInt611 = arg0;
 		this.aByteArray8 = arg1;
 		this.anInt613 = arg2;

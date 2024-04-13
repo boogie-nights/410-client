@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static83 {
 
 	@OriginalMember(owner = "client!ta", name = "b", descriptor = "I")
-	public static int anInt2138;
+	public static int baseZ;
 
 	@OriginalMember(owner = "client!ta", name = "k", descriptor = "[[B")
 	public static byte[][] aByteArrayArray10;
@@ -19,7 +19,7 @@ public final class Static83 {
 		aByteArrayArray10 = null;
 		Static1.anIntArrayArrayArray8 = null;
 		JagString.aClass40_612 = null;
-		Static1.aClass44ArrayArrayArray1 = null;
+		Static1.levelObjStacks = null;
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Ljava/awt/Color;Lclient!o;II)V", line = 32)
@@ -103,7 +103,7 @@ public final class Static83 {
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(20) byte[] local20 = Static63.aClass5_5.method68(arg0, 3);
+		@Pc(20) byte[] local20 = Static63.aClass5_5.fetchFile(arg0, 3);
 		local10 = new IdkType();
 		if (local20 != null) {
 			local10.method1587(new Packet(local20));
@@ -118,7 +118,7 @@ public final class Static83 {
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(25) byte[] local25 = Static67.aClass5_23.method68(arg0, 6);
+		@Pc(25) byte[] local25 = Static67.aClass5_23.fetchFile(arg0, 6);
 		local10 = new LocType();
 		local10.anInt1033 = arg0;
 		if (local25 != null) {

@@ -94,7 +94,7 @@ public final class Static51 {
 		JagString.aClass40_656 = null;
 		aClass5_29 = null;
 		JagString.aClass40_657 = null;
-		Static1.aClass2_Sub3_Sub1_5 = null;
+		Static1.in = null;
 		aClass2_Sub2_Sub2_Sub3Array15 = null;
 		JagString.aClass40_659 = null;
 	}

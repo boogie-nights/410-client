@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!qa")
-public final class Class2_Sub10_Sub2 extends AudioBuss {
+public final class MixerPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!qa", name = "t", descriptor = "I")
 	private final int anInt1882 = 16;
@@ -25,7 +25,7 @@ public final class Class2_Sub10_Sub2 extends AudioBuss {
 	private int anInt1885 = 0;
 
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!pc;)V", line = 13)
-	public synchronized void method1289(@OriginalArg(0) AudioBuss arg0) {
+	public synchronized void method1289(@OriginalArg(0) PcmStream arg0) {
 		@Pc(5) LinkList local5 = this.aClass44Array1[Static112.method1293(arg0)];
 		local5.method1229(arg0);
 	}
@@ -35,13 +35,13 @@ public final class Class2_Sub10_Sub2 extends AudioBuss {
 		this.anInt1883 -= arg2;
 		@Pc(18) int local18;
 		@Pc(24) LinkList local24;
-		@Pc(29) AudioBuss local29;
+		@Pc(29) PcmStream local29;
 		@Pc(33) int local33;
 		if (this.anInt1883 <= 0) {
 			this.anInt1883 += Static11.anInt291 >> 4;
 			for (local18 = 0; local18 < 8; local18++) {
 				local24 = this.aClass44Array1[local18];
-				for (local29 = (AudioBuss) local24.head(); local29 != null; local29 = (AudioBuss) local24.method1231()) {
+				for (local29 = (PcmStream) local24.head(); local29 != null; local29 = (PcmStream) local24.next()) {
 					local33 = Static112.method1293(local29);
 					if (local33 != local18) {
 						this.aClass44Array1[local33].method1229(local29);
@@ -51,7 +51,7 @@ public final class Class2_Sub10_Sub2 extends AudioBuss {
 		}
 		for (local18 = 0; local18 < 8; local18++) {
 			local24 = this.aClass44Array1[local18];
-			for (local29 = (AudioBuss) local24.head(); local29 != null; local29 = (AudioBuss) local24.method1231()) {
+			for (local29 = (PcmStream) local24.head(); local29 != null; local29 = (PcmStream) local24.next()) {
 				local29.active = false;
 				if (local29.sound != null) {
 					local29.sound.pos = 0;
@@ -75,7 +75,7 @@ public final class Class2_Sub10_Sub2 extends AudioBuss {
 				if ((local118 & 0x1) != 0) {
 					local93 &= ~(0x1 << local102);
 					@Pc(137) LinkList local137 = this.aClass44Array1[local102];
-					for (@Pc(142) AudioBuss local142 = (AudioBuss) local137.head(); local142 != null; local142 = (AudioBuss) local137.method1231()) {
+					for (@Pc(142) PcmStream local142 = (PcmStream) local137.head(); local142 != null; local142 = (PcmStream) local137.next()) {
 						if (!local142.active) {
 							@Pc(149) SoundPacket local149 = local142.sound;
 							if (local149 == null || local149.pos <= local107) {
@@ -108,8 +108,8 @@ public final class Class2_Sub10_Sub2 extends AudioBuss {
 		if (this.anInt1885 <= 0) {
 			return;
 		}
-		for (@Pc(8) Class2_Sub1 local8 = (Class2_Sub1) this.aClass44_5.head(); local8 != null; local8 = (Class2_Sub1) this.aClass44_5.method1231()) {
-			local8.anInt32 -= this.anInt1885;
+		for (@Pc(8) MixerListener local8 = (MixerListener) this.aClass44_5.head(); local8 != null; local8 = (MixerListener) this.aClass44_5.next()) {
+			local8.remaining -= this.anInt1885;
 		}
 		this.anInt1884 -= this.anInt1885;
 		this.anInt1885 = 0;
@@ -133,14 +133,14 @@ public final class Class2_Sub10_Sub2 extends AudioBuss {
 			arg0 -= local29;
 			this.anInt1885 += local29;
 			this.method1291();
-			@Pc(50) Class2_Sub1 local50 = (Class2_Sub1) this.aClass44_5.head();
+			@Pc(50) MixerListener local50 = (MixerListener) this.aClass44_5.head();
 			synchronized (local50) {
-				@Pc(58) int local58 = local50.method17(this);
+				@Pc(58) int local58 = local50.execute(this);
 				if (local58 < 0) {
-					local50.anInt32 = 0;
+					local50.remaining = 0;
 					this.method1295(local50);
 				} else {
-					local50.anInt32 = local58;
+					local50.remaining = local58;
 					this.method1292(local50.aClass2_94, local50);
 				}
 			}
@@ -148,12 +148,12 @@ public final class Class2_Sub10_Sub2 extends AudioBuss {
 	}
 
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!g;Lclient!aa;)V", line = 215)
-	private void method1292(@OriginalArg(0) Linkable arg0, @OriginalArg(1) Class2_Sub1 arg1) {
-		while (arg0 != this.aClass44_5.aClass2_71 && ((Class2_Sub1) arg0).anInt32 <= arg1.anInt32) {
+	private void method1292(@OriginalArg(0) Linkable arg0, @OriginalArg(1) MixerListener arg1) {
+		while (arg0 != this.aClass44_5.aClass2_71 && ((MixerListener) arg0).remaining <= arg1.remaining) {
 			arg0 = arg0.aClass2_94;
 		}
 		this.aClass44_5.method1223(arg0, arg1);
-		this.anInt1884 = ((Class2_Sub1) this.aClass44_5.aClass2_71.aClass2_94).anInt32;
+		this.anInt1884 = ((MixerListener) this.aClass44_5.aClass2_71.aClass2_94).remaining;
 	}
 
 	@OriginalMember(owner = "client!qa", name = "d", descriptor = "(I)V", line = 225)
@@ -164,7 +164,7 @@ public final class Class2_Sub10_Sub2 extends AudioBuss {
 		}
 		for (@Pc(13) int local13 = 0; local13 < 8; local13++) {
 			@Pc(19) LinkList local19 = this.aClass44Array1[local13];
-			for (@Pc(24) AudioBuss local24 = (AudioBuss) local19.head(); local24 != null; local24 = (AudioBuss) local19.method1231()) {
+			for (@Pc(24) PcmStream local24 = (PcmStream) local19.head(); local24 != null; local24 = (PcmStream) local19.next()) {
 				local24.method1287(arg0);
 			}
 		}
@@ -188,14 +188,14 @@ public final class Class2_Sub10_Sub2 extends AudioBuss {
 			arg2 -= local33;
 			this.anInt1885 += local33;
 			this.method1291();
-			@Pc(61) Class2_Sub1 local61 = (Class2_Sub1) this.aClass44_5.head();
+			@Pc(61) MixerListener local61 = (MixerListener) this.aClass44_5.head();
 			synchronized (local61) {
-				@Pc(69) int local69 = local61.method17(this);
+				@Pc(69) int local69 = local61.execute(this);
 				if (local69 < 0) {
-					local61.anInt32 = 0;
+					local61.remaining = 0;
 					this.method1295(local61);
 				} else {
-					local61.anInt32 = local69;
+					local61.remaining = local69;
 					this.method1292(local61.aClass2_94, local61);
 				}
 			}
@@ -204,19 +204,19 @@ public final class Class2_Sub10_Sub2 extends AudioBuss {
 	}
 
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!aa;)V", line = 298)
-	private void method1295(@OriginalArg(0) Class2_Sub1 arg0) {
+	private void method1295(@OriginalArg(0) MixerListener arg0) {
 		arg0.method1677();
-		arg0.method16();
+		arg0.onUnlink();
 		@Pc(9) Linkable local9 = this.aClass44_5.aClass2_71.aClass2_94;
 		if (local9 == this.aClass44_5.aClass2_71) {
 			this.anInt1884 = -1;
 		} else {
-			this.anInt1884 = ((Class2_Sub1) local9).anInt32;
+			this.anInt1884 = ((MixerListener) local9).remaining;
 		}
 	}
 
 	@OriginalMember(owner = "client!qa", name = "<init>", descriptor = "()V", line = 329)
-	public Class2_Sub10_Sub2() {
+	public MixerPcmStream() {
 		for (@Pc(24) int local24 = 0; local24 < 8; local24++) {
 			this.aClass44Array1[local24] = new LinkList();
 		}

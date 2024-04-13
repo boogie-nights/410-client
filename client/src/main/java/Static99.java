@@ -42,7 +42,7 @@ public final class Static99 {
 	}
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(BLclient!pc;)V", line = 77)
-	public static synchronized void method1657(@OriginalArg(1) AudioBuss arg0) {
+	public static synchronized void method1657(@OriginalArg(1) PcmStream arg0) {
 		Static20.aClass2_Sub10_1 = arg0;
 	}
 
@@ -201,7 +201,7 @@ public final class Static99 {
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(III)V", line = 353)
 	public static void method1661(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(11) long local11 = (long) ((arg0 << 1171938384) + arg1);
-		@Pc(17) Class2_Sub2_Sub9 local17 = (Class2_Sub2_Sub9) Static1.aClass6_7.method190(local11);
+		@Pc(17) Js5NetRequest local17 = (Js5NetRequest) Static1.aClass6_7.method190(local11);
 		if (local17 != null) {
 			Static1.aClass41_1.method1204(local17);
 		}
@@ -287,7 +287,7 @@ public final class Static99 {
 		if (Static84.aBooleanArray31[arg0]) {
 			return true;
 		} else if (Static49.aClass5_17.method59(arg0)) {
-			@Pc(25) int local25 = Static49.aClass5_17.method76(arg0);
+			@Pc(25) int local25 = Static49.aClass5_17.getGroupCapacity(arg0);
 			if (local25 == 0) {
 				Static84.aBooleanArray31[arg0] = true;
 				return true;
@@ -297,7 +297,7 @@ public final class Static99 {
 			}
 			for (@Pc(47) int local47 = 0; local47 < local25; local47++) {
 				if (Static46.aClass2_Sub2_Sub13ArrayArray1[arg0][local47] == null) {
-					@Pc(61) byte[] local61 = Static49.aClass5_17.method68(local47, arg0);
+					@Pc(61) byte[] local61 = Static49.aClass5_17.fetchFile(local47, arg0);
 					if (local61 != null) {
 						Static46.aClass2_Sub2_Sub13ArrayArray1[arg0][local47] = new ComType();
 						Static46.aClass2_Sub2_Sub13ArrayArray1[arg0][local47].method1053(new Packet(local61));

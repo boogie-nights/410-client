@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jc")
-public final class LegacyMidiAudioBuss extends AudioBuss2 {
+public final class MidiJsPcmStream extends SongPcmStream {
 
 	@OriginalMember(owner = "client!jc", name = "q", descriptor = "Z")
 	private boolean aBoolean91;
@@ -108,7 +108,7 @@ public final class LegacyMidiAudioBuss extends AudioBuss2 {
 	}
 
 	@OriginalMember(owner = "client!jc", name = "<init>", descriptor = "(Lclient!bb;)V", line = 431)
-	public LegacyMidiAudioBuss(@OriginalArg(0) SignLink arg0) {
+	public MidiJsPcmStream(@OriginalArg(0) SignLink arg0) {
 		this.aClass7_5 = arg0;
 	}
 }

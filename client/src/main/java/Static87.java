@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static87 {
 
 	@OriginalMember(owner = "client!u", name = "Bb", descriptor = "I")
-	public static int anInt2237;
+	public static int baseX;
 
 	@OriginalMember(owner = "client!u", name = "a", descriptor = "(ZZLclient!ud;Lclient!ud;)V", line = 14)
 	public static void method1518(@OriginalArg(1) boolean arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(3) Js5Index arg2) {

@@ -41,7 +41,7 @@ public final class Static28 {
 	public static boolean method585(@OriginalArg(0) SignLink arg0, @OriginalArg(1) boolean arg1) {
 		Static1.anInt432 = 20;
 		try {
-			Static98.aClass12_1 = (AudioBuss2) Class.forName("JavaMidiAudioBuss").getDeclaredConstructor().newInstance();
+			Static98.aClass12_1 = (SongPcmStream) Class.forName("JavaMidiAudioBuss").getDeclaredConstructor().newInstance();
 			return true;
 		} catch (@Pc(13) Throwable local13) {
 			@Pc(17) Interface3 local17 = arg0.method205();
@@ -49,7 +49,7 @@ public final class Static28 {
 				Static98.aClass12_1 = new NewMidiAudioBuss(arg0, local17);
 				return true;
 			} else if (arg1) {
-				Static98.aClass12_1 = new LegacyMidiAudioBuss(arg0);
+				Static98.aClass12_1 = new MidiJsPcmStream(arg0);
 				return true;
 			} else {
 				return false;

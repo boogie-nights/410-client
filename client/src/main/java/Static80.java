@@ -7,7 +7,7 @@ public final class Static80 {
 	public static PlayerEntity aClass2_Sub2_Sub12_Sub1_Sub1_1;
 
 	@OriginalMember(owner = "client!sc", name = "C", descriptor = "Lclient!qa;")
-	public static Class2_Sub10_Sub2 aClass2_Sub10_Sub2_1;
+	public static MixerPcmStream aClass2_Sub10_Sub2_1;
 
 	@OriginalMember(owner = "client!sc", name = "a", descriptor = "(I)V", line = 13)
 	public static void method1405() {
@@ -32,13 +32,13 @@ public final class Static80 {
 		Static1.anInt2352 = -1;
 		Static1.aClass2_Sub3_Sub1_4.pos = 0;
 		Static1.anInt231 = 0;
-		Static1.anInt2083 = -1;
+		Static1.packetType = -1;
 		Static1.anInt1973 = 0;
 		Static1.anInt797 = 0;
 		Static1.anInt785 = 0;
 		Static1.anInt1986 = -1;
 		Static1.aBoolean175 = false;
-		Static1.aClass2_Sub3_Sub1_5.pos = 0;
+		Static1.in.pos = 0;
 		Static7.method187(30);
 	}
 

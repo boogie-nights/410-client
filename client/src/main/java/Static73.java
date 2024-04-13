@@ -42,10 +42,10 @@ public final class Static73 {
 		Static1.aClass2_Sub3_5.pos = 0;
 		Static27.aClass2_Sub3_2 = null;
 		while (true) {
-			@Pc(40) Class2_Sub2_Sub9 local40 = (Class2_Sub2_Sub9) Static1.aClass6_5.method184();
+			@Pc(40) Js5NetRequest local40 = (Js5NetRequest) Static1.aClass6_5.method184();
 			if (local40 == null) {
 				while (true) {
-					local40 = (Class2_Sub2_Sub9) Static1.aClass6_2.method184();
+					local40 = (Js5NetRequest) Static1.aClass6_2.method184();
 					if (local40 == null) {
 						if (Static1.aByte1 != 0) {
 							try {
@@ -162,7 +162,7 @@ public final class Static73 {
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(28) byte[] local28 = Static28.aClass5_10.method68(arg0, 4);
+		@Pc(28) byte[] local28 = Static28.aClass5_10.fetchFile(arg0, 4);
 		local10 = new FloorOverlayType();
 		if (local28 != null) {
 			local10.method478(new Packet(local28), arg0);

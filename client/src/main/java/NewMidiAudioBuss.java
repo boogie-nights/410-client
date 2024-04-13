@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!l")
-public final class NewMidiAudioBuss extends MidiAudioBuss implements Runnable {
+public final class NewMidiAudioBuss extends MidiPcmStream implements Runnable {
 
 	@OriginalMember(owner = "client!l", name = "T", descriptor = "Lclient!bc;")
 	private final MidiDecoder aClass8_1 = new MidiDecoder();

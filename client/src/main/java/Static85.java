@@ -8,7 +8,7 @@ public final class Static85 {
 	public static boolean aBoolean166;
 
 	@OriginalMember(owner = "client!tc", name = "h", descriptor = "Lclient!sd;")
-	public static World3D aClass55_1;
+	public static World3D scene;
 
 	@OriginalMember(owner = "client!tc", name = "m", descriptor = "Lclient!vb;")
 	public static Pix24 aClass2_Sub2_Sub2_Sub4_8;
@@ -140,7 +140,7 @@ public final class Static85 {
 		JagString.aClass40_623 = null;
 		aClass2_Sub2_Sub2_Sub3Array12 = null;
 		aClass2_Sub2_Sub2_Sub4_8 = null;
-		aClass55_1 = null;
+		scene = null;
 		JagString.aClass40_624 = null;
 		Static1.aClass6_6 = null;
 	}

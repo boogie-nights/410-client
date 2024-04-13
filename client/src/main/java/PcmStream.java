@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!pc")
-public abstract class AudioBuss extends Linkable {
+public abstract class PcmStream extends Linkable {
 
 	@OriginalMember(owner = "client!pc", name = "q", descriptor = "Lclient!rc;")
 	protected SoundPacket sound;

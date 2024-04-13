@@ -24,7 +24,7 @@ public final class Static12 {
 
 	@OriginalMember(owner = "client!cb", name = "b", descriptor = "(I)V", line = 48)
 	public static void method255() {
-		for (@Pc(18) Class2_Sub7 local18 = (Class2_Sub7) Static1.aClass44_7.head(); local18 != null; local18 = (Class2_Sub7) Static1.aClass44_7.method1231()) {
+		for (@Pc(18) LocTemporary local18 = (LocTemporary) Static1.spawnedLocations.head(); local18 != null; local18 = (LocTemporary) Static1.spawnedLocations.next()) {
 			if (local18.anInt826 == -1) {
 				local18.anInt827 = 0;
 				Static4.method86(local18);
@@ -37,21 +37,21 @@ public final class Static12 {
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(ILjava/awt/Component;Lclient!bb;)V", line = 72)
 	public static void method256(@OriginalArg(1) Component arg0, @OriginalArg(2) SignLink arg1) {
 		try {
-			@Pc(8) Class24_Sub1 local8 = (Class24_Sub1) Class.forName("Class24_Sub1_Sub1").getDeclaredConstructor().newInstance();
+			@Pc(8) AudioChannel local8 = (AudioChannel) Class.forName("JavaAudioChannel").getDeclaredConstructor().newInstance();
 			local8.method1088(arg1, 2048);
 			Static72.aClass24_1 = local8;
 		} catch (@Pc(21) Throwable local21) {
 			try {
-				Static72.aClass24_1 = new Class24_Sub1_Sub2(arg1, arg0);
+				Static72.aClass24_1 = new SignLinkAudioChannel(arg1, arg0);
 			} catch (@Pc(29) Throwable local29) {
 				if (Static8.aString4.toLowerCase().indexOf("microsoft") >= 0) {
 					try {
-						Static72.aClass24_1 = new Class24_Sub2();
+						Static72.aClass24_1 = new MicrosoftAudioChannel();
 						return;
 					} catch (@Pc(43) Throwable local43) {
 					}
 				}
-				Static72.aClass24_1 = new Class24(8000);
+				Static72.aClass24_1 = new StubAudioChannel(8000);
 			}
 		}
 	}

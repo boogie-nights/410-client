@@ -2,13 +2,13 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ge")
-public final class Class2_Sub7 extends Linkable {
+public final class LocTemporary extends Linkable {
 
 	@OriginalMember(owner = "client!ge", name = "r", descriptor = "I")
-	public int anInt817;
+	public int level;
 
 	@OriginalMember(owner = "client!ge", name = "s", descriptor = "I")
-	public int anInt818;
+	public int x;
 
 	@OriginalMember(owner = "client!ge", name = "u", descriptor = "I")
 	public int anInt819;
@@ -17,7 +17,7 @@ public final class Class2_Sub7 extends Linkable {
 	public int anInt820;
 
 	@OriginalMember(owner = "client!ge", name = "w", descriptor = "I")
-	public int anInt821;
+	public int z;
 
 	@OriginalMember(owner = "client!ge", name = "D", descriptor = "I")
 	public int anInt823;

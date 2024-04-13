@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 
 // todo: use javax.audio.sampled instead of sun.audio.AudioPlayer
 @OriginalClass("client!w")
-public final class Class24_Sub2 extends Class24 {
+public final class MicrosoftAudioChannel extends StubAudioChannel {
 
 	@OriginalMember(owner = "client!w", name = "y", descriptor = "Lclient!da;")
 	private final AudioStream anInputStream_Sub1_1 = new AudioStream();
@@ -21,7 +21,7 @@ public final class Class24_Sub2 extends Class24 {
 	}
 
 	@OriginalMember(owner = "client!w", name = "<init>", descriptor = "()V", line = 15)
-	public Class24_Sub2() {
+	public MicrosoftAudioChannel() {
 		super(8000);
 		//AudioPlayer.player.start(this.anInputStream_Sub1_1);
 	}

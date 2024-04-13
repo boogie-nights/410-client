@@ -57,7 +57,7 @@ public final class Static74 {
 			}
 		}
 		@Pc(187) byte local187 = 0;
-		Static1.anInt8 = arg1;
+		Static1.currentLevel = arg1;
 		Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.method1545(false, arg2, arg3);
 		@Pc(197) byte local197 = 104;
 		@Pc(199) byte local199 = 1;
@@ -80,17 +80,17 @@ public final class Static74 {
 				@Pc(240) int local240 = local54 + local230;
 				for (@Pc(242) int local242 = 0; local242 < 4; local242++) {
 					if (local236 >= 0 && local240 >= 0 && local236 < 104 && local240 < 104) {
-						Static1.aClass44ArrayArrayArray1[local242][local226][local230] = Static1.aClass44ArrayArrayArray1[local242][local236][local240];
+						Static1.levelObjStacks[local242][local226][local230] = Static1.levelObjStacks[local242][local236][local240];
 					} else {
-						Static1.aClass44ArrayArrayArray1[local242][local226][local230] = null;
+						Static1.levelObjStacks[local242][local226][local230] = null;
 					}
 				}
 			}
 		}
-		for (@Pc(307) Class2_Sub7 local307 = (Class2_Sub7) Static1.aClass44_7.head(); local307 != null; local307 = (Class2_Sub7) Static1.aClass44_7.method1231()) {
-			local307.anInt821 -= local54;
-			local307.anInt818 -= local69;
-			if (local307.anInt818 < 0 || local307.anInt821 < 0 || local307.anInt818 >= 104 || local307.anInt821 >= 104) {
+		for (@Pc(307) LocTemporary local307 = (LocTemporary) Static1.spawnedLocations.head(); local307 != null; local307 = (LocTemporary) Static1.spawnedLocations.next()) {
+			local307.z -= local54;
+			local307.x -= local69;
+			if (local307.x < 0 || local307.z < 0 || local307.x >= 104 || local307.z >= 104) {
 				local307.method1677();
 			}
 		}

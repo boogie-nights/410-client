@@ -34,7 +34,7 @@ public final class Static34 {
 					if (!local20.aClass2_Sub2_Sub7_1.aBoolean58) {
 						local29 += Integer.MIN_VALUE;
 					}
-					Static85.aClass55_1.method1425(Static1.anInt8, local20.anInt2275, local20.anInt2284, Static78.method1383(Static1.anInt8, local20.anInt2275, local20.anInt2284), local20.anInt2278 * 64 + 60 - 64, local20, local20.anInt2305, local29, local20.aBoolean172);
+					Static85.scene.method1425(Static1.currentLevel, local20.anInt2275, local20.anInt2284, Static78.method1383(Static1.currentLevel, local20.anInt2275, local20.anInt2284), local20.anInt2278 * 64 + 60 - 64, local20, local20.anInt2305, local29, local20.aBoolean172);
 				}
 			}
 		}
@@ -55,8 +55,8 @@ public final class Static34 {
 					Static1.aClass43Array1[local7] = local72;
 				}
 				if (Static1.anIntArray36[local7] < 0) {
-					@Pc(109) Class2_Sub4_Sub1 local109 = local72.method1216().method491(Static10.aClass56_1);
-					@Pc(114) SoundAudioBuss local114 = Static108.method1032(local109, Static1.anInt2372);
+					@Pc(109) PcmSound local109 = local72.method1216().method491(Static10.aClass56_1);
+					@Pc(114) SoundPcmStream local114 = Static108.method1032(local109, Static1.anInt2372);
 					local114.method1027(Static1.anIntArray79[local7] - 1);
 					Static80.aClass2_Sub10_Sub2_1.method1289(local114);
 					Static1.anIntArray36[local7] = -100;
@@ -177,7 +177,7 @@ public final class Static34 {
 		if (local18 != null) {
 			return local18;
 		}
-		@Pc(28) byte[] local28 = Static32.aClass5_11.method68(arg0, 9);
+		@Pc(28) byte[] local28 = Static32.aClass5_11.fetchFile(arg0, 9);
 		local18 = new NpcType();
 		local18.anInt762 = arg0;
 		if (local28 != null) {

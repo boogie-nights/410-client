@@ -371,13 +371,13 @@ public final class Model extends Entity {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(Lclient!sb;I)V", line = 252)
-	public void method1134(@OriginalArg(0) Class2_Sub2_Sub14 arg0, @OriginalArg(1) int arg1) {
+	public void method1134(@OriginalArg(0) SeqFrameset arg0, @OriginalArg(1) int arg1) {
 		if (this.anIntArrayArray16 == null || arg1 == -1) {
 			return;
 		}
 		this.aClass9Array1 = null;
 		this.anInt1740 = 0;
-		@Pc(18) SeqFrame local18 = arg0.aClass28Array1[arg1];
+		@Pc(18) SeqFrame local18 = arg0.frames[arg1];
 		@Pc(21) SeqBase local21 = local18.aClass2_Sub5_1;
 		Static65.anInt1746 = 0;
 		Static65.anInt1749 = 0;
@@ -1254,7 +1254,7 @@ public final class Model extends Entity {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(Lclient!sb;ILclient!sb;I[I)V", line = 1697)
-	public void method1159(@OriginalArg(0) Class2_Sub2_Sub14 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub2_Sub14 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4) {
+	public void method1159(@OriginalArg(0) SeqFrameset arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SeqFrameset arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4) {
 		if (arg1 == -1) {
 			return;
 		}
@@ -1264,8 +1264,8 @@ public final class Model extends Entity {
 		}
 		this.aClass9Array1 = null;
 		this.anInt1740 = 0;
-		@Pc(24) SeqFrame local24 = arg0.aClass28Array1[arg1];
-		@Pc(29) SeqFrame local29 = arg2.aClass28Array1[arg3];
+		@Pc(24) SeqFrame local24 = arg0.frames[arg1];
+		@Pc(29) SeqFrame local29 = arg2.frames[arg3];
 		@Pc(32) SeqBase local32 = local24.aClass2_Sub5_1;
 		Static65.anInt1746 = 0;
 		Static65.anInt1749 = 0;

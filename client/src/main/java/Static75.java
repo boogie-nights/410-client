@@ -57,7 +57,7 @@ public final class Static75 {
 	public static void method1348() {
 		@Pc(16) int local16 = Static34.anInt840 * 128 + 64;
 		@Pc(22) int local22 = Static70.anInt2149 * 128 + 64;
-		@Pc(30) int local30 = Static78.method1383(Static1.anInt8, local22, local16) - Static45.anInt2259;
+		@Pc(30) int local30 = Static78.method1383(Static1.currentLevel, local22, local16) - Static45.anInt2259;
 		if (local16 > Static14.anInt1863) {
 			Static14.anInt1863 += Static18.anInt439 + (local16 - Static14.anInt1863) * Static51.anInt2325 / 1000;
 			if (local16 < Static14.anInt1863) {
@@ -96,7 +96,7 @@ public final class Static75 {
 			}
 		}
 		local22 = Static71.anInt1867 * 128 + 64;
-		local30 = Static78.method1383(Static1.anInt8, local22, local16) - anInt1963;
+		local30 = Static78.method1383(Static1.currentLevel, local22, local16) - anInt1963;
 		@Pc(214) int local214 = local22 - Static44.anInt1114;
 		@Pc(219) int local219 = local30 - Static73.anInt1935;
 		@Pc(224) int local224 = local16 - Static14.anInt1863;
@@ -168,7 +168,7 @@ public final class Static75 {
 		@Pc(70) int local70 = 0;
 		@Pc(72) boolean local72 = false;
 		@Pc(75) int local75 = Static1.anIntArray163.length;
-		@Pc(80) int[][] local80 = Static1.aClass20Array3[Static1.anInt8].anIntArrayArray9;
+		@Pc(80) int[][] local80 = Static1.aClass20Array3[Static1.currentLevel].anIntArrayArray9;
 		@Pc(184) int local184;
 		while (local70 != local66) {
 			local55 = Static1.anIntArray103[local70];
@@ -179,16 +179,16 @@ public final class Static75 {
 				break;
 			}
 			if (arg7 != 0) {
-				if ((arg7 < 5 || arg7 == 10) && Static1.aClass20Array3[Static1.anInt8].method527(arg1, local55, arg0, arg10, local19, arg7 - 1)) {
+				if ((arg7 < 5 || arg7 == 10) && Static1.aClass20Array3[Static1.currentLevel].method527(arg1, local55, arg0, arg10, local19, arg7 - 1)) {
 					local72 = true;
 					break;
 				}
-				if (arg7 < 10 && Static1.aClass20Array3[Static1.anInt8].method535(local55, arg1, arg7 - 1, arg10, arg0, local19)) {
+				if (arg7 < 10 && Static1.aClass20Array3[Static1.currentLevel].method535(local55, arg1, arg7 - 1, arg10, arg0, local19)) {
 					local72 = true;
 					break;
 				}
 			}
-			if (arg9 != 0 && arg3 != 0 && Static1.aClass20Array3[Static1.anInt8].method538(arg4, local55, arg10, arg0, arg9, local19, arg3)) {
+			if (arg9 != 0 && arg3 != 0 && Static1.aClass20Array3[Static1.currentLevel].method538(arg4, local55, arg10, arg0, arg9, local19, arg3)) {
 				local72 = true;
 				break;
 			}
@@ -711,20 +711,20 @@ public final class Static75 {
 		local7.data = arg0;
 		@Pc(27) LinkList local27 = Static1.aClass44_2;
 		synchronized (Static1.aClass44_2) {
-			Static1.aClass44_2.method1221(local7);
+			Static1.aClass44_2.addTail(local7);
 		}
 		Static53.method992();
 	}
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(III)V", line = 1217)
-	public static void method1356(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(11) LinkList local11 = Static1.aClass44ArrayArrayArray1[Static1.anInt8][arg1][arg0];
+	public static void sortObjStacks(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+		@Pc(11) LinkList local11 = Static1.levelObjStacks[Static1.currentLevel][arg1][arg0];
 		if (local11 == null) {
-			Static85.aClass55_1.method1437(Static1.anInt8, arg1, arg0);
+			Static85.scene.method1437(Static1.currentLevel, arg1, arg0);
 			return;
 		}
-		@Pc(21) Class2_Sub2_Sub12_Sub3 local21 = null;
-		@Pc(26) Class2_Sub2_Sub12_Sub3 local26 = (Class2_Sub2_Sub12_Sub3) local11.head();
+		@Pc(21) ObjStackEntity local21 = null;
+		@Pc(26) ObjStackEntity local26 = (ObjStackEntity) local11.head();
 		@Pc(28) int local28 = -99999999;
 		while (local26 != null) {
 			@Pc(34) ObjType local34 = Static97.method1669(local26.anInt1490);
@@ -736,12 +736,12 @@ public final class Static75 {
 				local28 = local37;
 				local21 = local26;
 			}
-			local26 = (Class2_Sub2_Sub12_Sub3) local11.method1231();
+			local26 = (ObjStackEntity) local11.next();
 		}
 		local11.method1229(local21);
-		@Pc(71) Class2_Sub2_Sub12_Sub3 local71 = null;
-		local26 = (Class2_Sub2_Sub12_Sub3) local11.head();
-		@Pc(78) Class2_Sub2_Sub12_Sub3 local78 = null;
+		@Pc(71) ObjStackEntity local71 = null;
+		local26 = (ObjStackEntity) local11.head();
+		@Pc(78) ObjStackEntity local78 = null;
 		while (local26 != null) {
 			if (local21.anInt1490 != local26.anInt1490 && local71 == null) {
 				local71 = local26;
@@ -749,10 +749,10 @@ public final class Static75 {
 			if (local26.anInt1490 != local21.anInt1490 && local71.anInt1490 != local26.anInt1490 && local78 == null) {
 				local78 = local26;
 			}
-			local26 = (Class2_Sub2_Sub12_Sub3) local11.method1231();
+			local26 = (ObjStackEntity) local11.next();
 		}
 		@Pc(126) int local126 = arg1 + (arg0 << 7) + 1610612736;
-		Static85.aClass55_1.method1427(Static1.anInt8, arg1, arg0, Static78.method1383(Static1.anInt8, arg1 * 128 + 64, arg0 * 128 + 64), local21, local126, local71, local78);
+		Static85.scene.method1427(Static1.currentLevel, arg1, arg0, Static78.method1383(Static1.currentLevel, arg1 * 128 + 64, arg0 * 128 + 64), local21, local126, local71, local78);
 	}
 
 	@OriginalMember(owner = "client!rb", name = "b", descriptor = "(B)V", line = 1282)

@@ -27,7 +27,7 @@ public final class Static39 {
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIII)Z", line = 220)
 	public static boolean method770(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(16) int local16 = arg1 >> 14 & 0x7FFF;
-		@Pc(23) int local23 = Static85.aClass55_1.method1449(Static1.anInt8, arg2, arg0, arg1);
+		@Pc(23) int local23 = Static85.scene.method1449(Static1.currentLevel, arg2, arg0, arg1);
 		if (local23 == -1) {
 			return false;
 		}

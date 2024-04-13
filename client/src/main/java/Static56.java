@@ -23,7 +23,7 @@ public final class Static56 {
 		}
 		Static64.aClass25_36 = null;
 		Static44.method820();
-		Static85.aClass55_1.method1414();
+		Static85.scene.method1414();
 		for (@Pc(22) int local22 = 0; local22 < 4; local22++) {
 			Static1.aClass20Array3[local22].method534();
 		}

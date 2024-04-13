@@ -48,16 +48,16 @@ public final class SeqType extends Hashable {
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(IILclient!ne;)Lclient!ne;", line = 3)
 	public Model method516(@OriginalArg(0) int arg0, @OriginalArg(2) Model arg1) {
 		@Pc(8) int local8 = this.anIntArray124[arg0];
-		@Pc(16) Class2_Sub2_Sub14 local16 = Static38.method754(local8 >> 16);
+		@Pc(16) SeqFrameset local16 = Static38.getSeqFrameset(local8 >> 16);
 		@Pc(20) int local20 = local8 & 0xFFFF;
 		if (local16 == null) {
 			return arg1.method1142(true);
 		}
-		@Pc(28) Class2_Sub2_Sub14 local28 = null;
+		@Pc(28) SeqFrameset local28 = null;
 		@Pc(30) int local30 = 0;
 		if (this.anIntArray127 != null && this.anIntArray127.length > arg0) {
 			local30 = this.anIntArray127[arg0];
-			local28 = Static38.method754(local30 >> 16);
+			local28 = Static38.getSeqFrameset(local30 >> 16);
 			local30 &= 0xFFFF;
 		}
 		@Pc(69) Model local69;
@@ -131,7 +131,7 @@ public final class SeqType extends Hashable {
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!ne;IB)Lclient!ne;", line = 170)
 	public Model method518(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1) {
 		@Pc(8) int local8 = this.anIntArray124[arg1];
-		@Pc(16) Class2_Sub2_Sub14 local16 = Static38.method754(local8 >> 16);
+		@Pc(16) SeqFrameset local16 = Static38.getSeqFrameset(local8 >> 16);
 		@Pc(20) int local20 = local8 & 0xFFFF;
 		if (local16 == null) {
 			return arg0.method1147(true);
@@ -145,13 +145,13 @@ public final class SeqType extends Hashable {
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!f;ILclient!ne;IZ)Lclient!ne;", line = 191)
 	public Model method519(@OriginalArg(0) SeqType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Model arg2, @OriginalArg(3) int arg3) {
 		@Pc(4) int local4 = this.anIntArray124[arg3];
-		@Pc(14) Class2_Sub2_Sub14 local14 = Static38.method754(local4 >> 16);
+		@Pc(14) SeqFrameset local14 = Static38.getSeqFrameset(local4 >> 16);
 		@Pc(18) int local18 = local4 & 0xFFFF;
 		if (local14 == null) {
 			return arg0.method526(arg2, arg1);
 		}
 		@Pc(31) int local31 = arg0.anIntArray124[arg1];
-		@Pc(37) Class2_Sub2_Sub14 local37 = Static38.method754(local31 >> 16);
+		@Pc(37) SeqFrameset local37 = Static38.getSeqFrameset(local31 >> 16);
 		@Pc(41) int local41 = local31 & 0xFFFF;
 		@Pc(54) Model local54;
 		if (local37 == null) {
@@ -168,7 +168,7 @@ public final class SeqType extends Hashable {
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!ne;IBI)Lclient!ne;", line = 287)
 	public Model method521(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(6) int local6 = this.anIntArray124[arg1];
-		@Pc(12) Class2_Sub2_Sub14 local12 = Static38.method754(local6 >> 16);
+		@Pc(12) SeqFrameset local12 = Static38.getSeqFrameset(local6 >> 16);
 		@Pc(16) int local16 = local6 & 0xFFFF;
 		if (local12 == null) {
 			return arg0.method1142(true);
@@ -226,7 +226,7 @@ public final class SeqType extends Hashable {
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(BLclient!ne;I)Lclient!ne;", line = 467)
 	public Model method526(@OriginalArg(1) Model arg0, @OriginalArg(2) int arg1) {
 		@Pc(16) int local16 = this.anIntArray124[arg1];
-		@Pc(22) Class2_Sub2_Sub14 local22 = Static38.method754(local16 >> 16);
+		@Pc(22) SeqFrameset local22 = Static38.getSeqFrameset(local16 >> 16);
 		@Pc(26) int local26 = local16 & 0xFFFF;
 		if (local22 == null) {
 			return arg0.method1142(true);

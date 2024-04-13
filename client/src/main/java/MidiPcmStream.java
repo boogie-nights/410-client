@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!cd")
-public abstract class MidiAudioBuss extends AudioBuss2 {
+public abstract class MidiPcmStream extends SongPcmStream {
 
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(IIIJ)Z", line = 8)
 	protected final boolean method1253(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) long arg3) {

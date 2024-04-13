@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!me")
-public final class Class24_Sub1_Sub2 extends Class24_Sub1 {
+public final class SignLinkAudioChannel extends AudioChannel {
 
 	@OriginalMember(owner = "client!me", name = "e", descriptor = "()I", line = 3)
 	@Override
@@ -25,7 +25,7 @@ public final class Class24_Sub1_Sub2 extends Class24_Sub1 {
 	}
 
 	@OriginalMember(owner = "client!me", name = "<init>", descriptor = "(Lclient!bb;Ljava/awt/Component;)V", line = 15)
-	public Class24_Sub1_Sub2(@OriginalArg(0) SignLink arg0, @OriginalArg(1) Component arg1) throws Exception {
+	public SignLinkAudioChannel(@OriginalArg(0) SignLink arg0, @OriginalArg(1) Component arg1) throws Exception {
 		super(22050);
 		Static60.anInterface1_2 = arg0.method198();
 		Static60.anInterface1_2.method238(arg1);

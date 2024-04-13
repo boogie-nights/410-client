@@ -8,7 +8,7 @@ public final class Static82 {
 	public static int anInt2135;
 
 	@OriginalMember(owner = "client!t", name = "u", descriptor = "Lclient!i;")
-	public static Class2_Sub2_Sub9 aClass2_Sub2_Sub9_1;
+	public static Js5NetRequest aClass2_Sub2_Sub9_1;
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(BII[Lclient!fb;[BII)V", line = 13)
 	public static void method1460(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) CollisionMap[] arg2, @OriginalArg(4) byte[] arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {

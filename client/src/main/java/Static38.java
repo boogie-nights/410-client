@@ -57,8 +57,8 @@ public final class Static38 {
 	}
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(II)Lclient!sb;", line = 81)
-	public static Class2_Sub2_Sub14 method754(@OriginalArg(1) int arg0) {
-		@Pc(14) Class2_Sub2_Sub14 local14 = (Class2_Sub2_Sub14) Static1.aClass47_2.method1325((long) arg0);
+	public static SeqFrameset getSeqFrameset(@OriginalArg(1) int arg0) {
+		@Pc(14) SeqFrameset local14 = (SeqFrameset) Static1.aClass47_2.method1325((long) arg0);
 		if (local14 != null) {
 			return local14;
 		}

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class SeqBase extends Linkable {
 
 	@OriginalMember(owner = "client!ga", name = "w", descriptor = "I")
-	public final int anInt738;
+	public final int id;
 
 	@OriginalMember(owner = "client!ga", name = "F", descriptor = "I")
 	private final int anInt743;
@@ -20,7 +20,7 @@ public final class SeqBase extends Linkable {
 
 	@OriginalMember(owner = "client!ga", name = "<init>", descriptor = "(I[B)V", line = 64)
 	public SeqBase(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1) {
-		this.anInt738 = arg0;
+		this.id = arg0;
 		@Pc(11) Packet local11 = new Packet(arg1);
 		this.anInt743 = local11.g1();
 		this.anIntArray142 = new int[this.anInt743];

@@ -3,14 +3,14 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!aa")
-public abstract class Class2_Sub1 extends Linkable {
+public abstract class MixerListener extends Linkable {
 
 	@OriginalMember(owner = "client!aa", name = "q", descriptor = "I")
-	public int anInt32;
+	public int remaining;
 
 	@OriginalMember(owner = "client!aa", name = "a", descriptor = "()V")
-	public abstract void method16();
+	public abstract void onUnlink();
 
 	@OriginalMember(owner = "client!aa", name = "a", descriptor = "(Lclient!qa;)I")
-	public abstract int method17(@OriginalArg(0) Class2_Sub10_Sub2 arg0);
+	public abstract int execute(@OriginalArg(0) MixerPcmStream stream);
 }
