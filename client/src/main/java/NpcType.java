@@ -113,12 +113,18 @@ public final class NpcType extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(Lclient!ud;BLclient!ud;)V", line = 808)
-	static void method1651(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) Js5Index arg1) {
+	static void load(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) Js5Index arg1) {
 		aClass5_30 = arg1;
 		aClass5_11 = arg0;
 	}
 
-	@OriginalMember(owner = "client!gb", name = "a", descriptor = "(Lclient!f;Lclient!f;III)Lclient!ne;", line = 14)
+    @OriginalMember(owner = "client!ob", name = "b", descriptor = "(Z)V", line = 66)
+    public static void clear() {
+        aClass47_14.clear();
+        aClass47_19.clear();
+    }
+
+    @OriginalMember(owner = "client!gb", name = "a", descriptor = "(Lclient!f;Lclient!f;III)Lclient!ne;", line = 14)
 	public Model method605(@OriginalArg(0) SeqType arg0, @OriginalArg(1) SeqType arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		if (this.anIntArray154 != null) {
 			@Pc(12) NpcType local12 = this.method611();
@@ -178,7 +184,7 @@ public final class NpcType extends Hashable {
 		if (this.anInt765 != -1) {
 			local10 = Static99.method1662(this.anInt765);
 		} else if (this.anInt768 != -1) {
-			local10 = Static1.anIntArray339[this.anInt768];
+			local10 = client.varps[this.anInt768];
 		}
 		return local10 >= 0 && this.anIntArray154.length > local10 && this.anIntArray154[local10] != -1;
 	}
@@ -284,7 +290,7 @@ public final class NpcType extends Hashable {
 		if (this.anInt765 != -1) {
 			local13 = Static99.method1662(this.anInt765);
 		} else if (this.anInt768 != -1) {
-			local13 = Static1.anIntArray339[this.anInt768];
+			local13 = client.varps[this.anInt768];
 		}
 		return local13 < 0 || this.anIntArray154.length <= local13 || this.anIntArray154[local13] == -1 ? null : method640(this.anIntArray154[local13]);
 	}

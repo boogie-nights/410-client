@@ -32,7 +32,7 @@ public final class Static70 {
 	}
 
 	@OriginalMember(owner = "client!p", name = "b", descriptor = "(B)V", line = 187)
-	public static void method1478() {
+	public static void clear() {
 		VarBitType.aClass47_5.clear();
 	}
 }

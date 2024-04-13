@@ -75,7 +75,7 @@ public final class Static66 {
 			}
 			@Pc(25) PlayerEntity local25 = client.players[local17];
 			if (local25 != null) {
-				Static83.method1468(local25, 1);
+				client.updateEntity(local25, 1);
 			}
 		}
 	}

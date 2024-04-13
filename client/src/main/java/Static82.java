@@ -32,29 +32,6 @@ public final class Static82 {
 		}
 	}
 
-	@OriginalMember(owner = "client!t", name = "a", descriptor = "(IILclient!vb;I)V", line = 82)
-	public static void method1461(@OriginalArg(0) int arg0, @OriginalArg(2) Pix24 arg1, @OriginalArg(3) int arg2) {
-		if (arg1 == null) {
-			return;
-		}
-		@Pc(12) int local12 = Static1.anInt1978 + client.orbitCameraYaw & 0x7FF;
-		@Pc(20) int local20 = arg2 * arg2 + arg0 * arg0;
-		if (local20 > 6400) {
-			return;
-		}
-		@Pc(35) int local35 = Model.cos[local12];
-		@Pc(43) int local43 = local35 * 256 / (Static1.anInt1857 + 256);
-		@Pc(47) int local47 = Model.sin[local12];
-		@Pc(55) int local55 = local47 * 256 / (Static1.anInt1857 + 256);
-		@Pc(66) int local66 = arg2 * local43 - arg0 * local55 >> 16;
-		@Pc(76) int local76 = arg2 * local55 + arg0 * local43 >> 16;
-		if (local20 <= 2500) {
-			arg1.draw(local76 + 94 + 4 - arg1.anInt2445 / 2, -local66 + -4 + (83 - arg1.anInt2443 / 2));
-		} else {
-			arg1.method1622(Static16.aClass2_Sub2_Sub2_Sub3_6, local76 + 4 + 94 - arg1.anInt2445 / 2, -(arg1.anInt2443 / 2) + -4 + 83 + -local66);
-		}
-	}
-
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(I)V", line = 166)
 	public static void method1464() {
 		ObjType.aClass47_18 = null;

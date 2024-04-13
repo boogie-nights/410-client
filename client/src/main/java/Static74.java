@@ -4,17 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static74 {
 
-	@OriginalMember(owner = "client!ra", name = "l", descriptor = "Lclient!ad;")
-	public static Js5 spritesJs5;
-
-	@OriginalMember(owner = "client!ra", name = "v", descriptor = "Lclient!ud;")
-	public static Js5Index aClass5_26;
-
-	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(B)V", line = 49)
-	public static void method1342() {
-		ObjType.aClass47_7.clear();
-	}
-
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(IIBIII)V", line = 60)
 	public static void method1343(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (!client.lowMemory) {
@@ -26,8 +15,8 @@ public final class Static74 {
 		Static1.anInt786 = arg1;
 		Static45.anInt2262 = arg4;
 		Static51.anInt2327 = arg0;
-		client.method187(25);
-		Static61.method1095(false, null, JagString.aClass40_674);
+		client.setState(25);
+		client.method1095(false, null, JagString.aClass40_674);
 		@Pc(43) int local43 = client.sceneBaseTileZ;
 		client.sceneBaseTileZ = (arg4 - 6) * 8;
 		@Pc(54) int local54 = client.sceneBaseTileZ - local43;
@@ -104,14 +93,6 @@ public final class Static74 {
 		Static1.aClass44_4.method1222();
 	}
 
-	@OriginalMember(owner = "client!ra", name = "b", descriptor = "(B)V", line = 246)
-	public static void method1344() {
-		LocType.aClass47_11.clear();
-		LocType.modelCacheStatic.clear();
-		LocType.aClass47_10.clear();
-		LocType.aClass47_1.clear();
-	}
-
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(BJ)V", line = 267)
 	public static void method1345(@OriginalArg(1) long arg0) {
 		if (arg0 == 0L) {
@@ -136,8 +117,8 @@ public final class Static74 {
 		JagString.aClass40_566 = null;
 		JagString.aClass40_563 = null;
 		JagString.aClass40_565 = null;
-		aClass5_26 = null;
-		spritesJs5 = null;
+		ComType.aClass5_26 = null;
+		client.spritesJs5 = null;
 		JagString.aClass40_564 = null;
 		JagString.aClass40_562 = null;
 	}

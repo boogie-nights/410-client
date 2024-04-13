@@ -30,7 +30,7 @@ public final class Static4 {
 	public static void method86(@OriginalArg(0) LocTemporary arg0) {
 		@Pc(6) int local6 = 0;
 		if (arg0.anInt823 == 0) {
-			local6 = client.scene.method1459(arg0.level, arg0.x, arg0.z);
+			local6 = client.scene.getWallBitset(arg0.level, arg0.x, arg0.z);
 		}
 		if (arg0.anInt823 == 1) {
 			local6 = client.scene.method1419(arg0.level, arg0.x, arg0.z);

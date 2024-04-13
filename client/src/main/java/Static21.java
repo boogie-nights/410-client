@@ -26,7 +26,7 @@ public final class Static21 {
 		if (local15 == 0) {
 			return;
 		}
-		@Pc(25) int local25 = Static1.anIntArray339[arg0];
+		@Pc(25) int local25 = client.varps[arg0];
 		if (local15 == 1) {
 			if (local25 == 1) {
 				Static6.method168(0.9D);
@@ -44,7 +44,7 @@ public final class Static21 {
 				Static6.method168(0.6D);
 				((Js5TextureProvider) Draw3D.getProvider).method404(0.6D);
 			}
-			Static74.method1342();
+			ObjType.method1342();
 			Static1.aBoolean1 = true;
 		}
 		if (local15 == 3) {
@@ -66,7 +66,7 @@ public final class Static21 {
 			}
 			if (Static1.anInt239 != local85) {
 				if (Static1.anInt239 == 0 && Static1.anInt1977 != -1) {
-					Static86.method1499(0, Static1.anInt1977, Static77.midiSongsJs5, local85);
+					Static86.method1499(0, Static1.anInt1977, client.midiSongsJs5, local85);
 					Static1.anInt470 = 0;
 				} else if (local85 == 0) {
 					Static86.method1497();

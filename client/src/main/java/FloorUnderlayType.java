@@ -44,8 +44,13 @@ public final class FloorUnderlayType extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(Lclient!ud;B)V", line = 63)
-	public static void method117(@OriginalArg(0) Js5Index arg0) {
+	public static void load(@OriginalArg(0) Js5Index arg0) {
 		config = arg0;
+	}
+
+	@OriginalMember(owner = "client!sb", name = "g", descriptor = "(I)V", line = 140)
+	public static void clear() {
+		cache.clear();
 	}
 
 	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(IIBLclient!eb;)V", line = 128)

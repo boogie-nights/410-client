@@ -4,12 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static33 {
 
-	@OriginalMember(owner = "client!ge", name = "x", descriptor = "Lclient!ad;")
-	public static Js5 texturesJs5;
-
-	@OriginalMember(owner = "client!ge", name = "A", descriptor = "Lclient!ad;")
-	public static Js5 synthSoundsJs5;
-
 	@OriginalMember(owner = "client!ge", name = "I", descriptor = "Lclient!p;")
 	public static PixMap aClass45_16;
 
@@ -44,11 +38,11 @@ public final class Static33 {
 
 	@OriginalMember(owner = "client!ge", name = "c", descriptor = "(B)V", line = 141)
 	public static void method635() {
-		texturesJs5 = null;
+		client.texturesJs5 = null;
 		JagString.aClass40_252 = null;
 		JagString.aClass40_255 = null;
 		Static1.anIntArray161 = null;
-		synthSoundsJs5 = null;
+		client.synthSoundsJs5 = null;
 		client.cameraModifierWobbleSpeed = null;
 		Static1.anIntArray160 = null;
 		JagString.aClass40_254 = null;

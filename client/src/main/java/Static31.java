@@ -42,7 +42,7 @@ public final class Static31 {
 		ComType.aClass47_8 = null;
 		JagString.aClass40_241 = null;
 		JagString.aClass40_240 = null;
-		Static1.anIntArray152 = null;
+		client.flameLineOffset = null;
 	}
 
 	@OriginalMember(owner = "client!gb", name = "a", descriptor = "(IIB)Z", line = 543)

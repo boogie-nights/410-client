@@ -107,4 +107,12 @@ public final class SeqFrame {
 			this.anIntArray229[local47] = anIntArray232[local47];
 		}
 	}
+
+    @OriginalMember(owner = "client!jb", name = "a", descriptor = "()V", line = 17)
+    public static void method804() {
+        anIntArray227 = null;
+        anIntArray228 = null;
+        anIntArray233 = null;
+        anIntArray232 = null;
+    }
 }

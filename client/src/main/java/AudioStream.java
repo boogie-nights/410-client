@@ -60,7 +60,7 @@ public final class AudioStream extends InputStream {
 				this.read(arg0, arg1 + 256, arg2 - 256);
 				return arg2;
 			} else {
-				Static99.method1663(this.anIntArray84, arg2);
+				AudioChannel.method1663(this.anIntArray84, arg2);
 				for (@Pc(31) int local31 = 0; local31 < arg2; local31++) {
 					@Pc(37) int local37 = this.anIntArray84[local31];
 					if ((local37 + 8388608 & 0xFF000000) != 0) {

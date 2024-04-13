@@ -61,13 +61,13 @@ public final class SpotAnimType extends Hashable {
     }
 
 	@OriginalMember(owner = "client!cc", name = "a", descriptor = "(I)V", line = 14)
-	public static void method262() {
+	public static void clear() {
 		aClass47_3.clear();
 		aClass47_15.clear();
 	}
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(Lclient!ud;Lclient!ud;I)V", line = 92)
-	public static void method1329(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) Js5Index arg1) {
+	public static void load(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) Js5Index arg1) {
 		aClass5_18 = arg0;
 		aClass5_28 = arg1;
 	}

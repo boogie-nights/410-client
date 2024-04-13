@@ -8,6 +8,8 @@ import java.awt.*;
 @OriginalClass("client!he")
 public abstract class AudioChannel extends StubAudioChannel implements Runnable {
 
+	@OriginalMember(owner = "client!he", name = "L", descriptor = "[I")
+	public static int[] anIntArray337 = new int[256];
 	@OriginalMember(owner = "client!he", name = "z", descriptor = "I")
 	private int anInt1636;
 
@@ -74,7 +76,44 @@ public abstract class AudioChannel extends StubAudioChannel implements Runnable 
         }
     }
 
-    @OriginalMember(owner = "client!he", name = "b", descriptor = "(J)V", line = 9)
+	@OriginalMember(owner = "client!he", name = "c", descriptor = "()V", line = 164)
+	public static void method1086() {
+		anIntArray337 = null;
+	}
+
+	@OriginalMember(owner = "client!wd", name = "a", descriptor = "([II)V", line = 419)
+	public static synchronized void method1663(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1) {
+		@Pc(1) int local1 = 0;
+		@Pc(2) int local2 = arg1 - 7;
+		while (local1 < local2) {
+			arg0[local1++] = 0;
+			arg0[local1++] = 0;
+			arg0[local1++] = 0;
+			arg0[local1++] = 0;
+			arg0[local1++] = 0;
+			arg0[local1++] = 0;
+			arg0[local1++] = 0;
+			arg0[local1++] = 0;
+		}
+		local2 += 7;
+		while (local1 < local2) {
+			arg0[local1++] = 0;
+		}
+		if (Static20.aClass2_Sub10_1 != null) {
+			Static20.aClass2_Sub10_1.method1286(arg0, 0, local2);
+		}
+		Static10.method230(local2);
+	}
+
+	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(IB)V", line = 88)
+	public static synchronized void method1658() {
+		if (Static20.aClass2_Sub10_1 != null) {
+			Static20.aClass2_Sub10_1.method1287(256);
+		}
+		Static10.method230(256);
+	}
+
+	@OriginalMember(owner = "client!he", name = "b", descriptor = "(J)V", line = 9)
 	private void method1084(@OriginalArg(0) long arg0) throws Exception {
 		this.method1089(this.anInt1640);
 		while (true) {
@@ -108,7 +147,7 @@ public abstract class AudioChannel extends StubAudioChannel implements Runnable 
 					this.aLong110 = 0L;
 					break;
 				}
-				Static99.method1658();
+				method1658();
 				this.aLong111 += 256000 / Static11.anInt291;
 			}
 		}
@@ -150,7 +189,7 @@ public abstract class AudioChannel extends StubAudioChannel implements Runnable 
 			if (local58 < this.anInt1641) {
 				break;
 			}
-			Static99.method1663(Static1.anIntArray337, 256);
+			method1663(anIntArray337, 256);
 			try {
 				this.method1083();
 			} catch (@Pc(165) Exception local165) {

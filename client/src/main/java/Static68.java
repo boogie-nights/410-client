@@ -9,9 +9,6 @@ public final class Static68 {
 	@OriginalMember(owner = "client!ob", name = "s", descriptor = "Lclient!cb;")
 	public static Cache masterCache;
 
-	@OriginalMember(owner = "client!ob", name = "t", descriptor = "Lclient!ad;")
-	public static Js5 midiJinglesJs5;
-
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Z)V", line = 9)
 	public static void method1209() {
 		for (@Pc(15) LocTemporary local15 = (LocTemporary) Static1.spawnedLocations.head(); local15 != null; local15 = (LocTemporary) Static1.spawnedLocations.next()) {
@@ -38,15 +35,9 @@ public final class Static68 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ob", name = "b", descriptor = "(Z)V", line = 66)
-	public static void method1210() {
-		NpcType.aClass47_14.clear();
-		NpcType.aClass47_19.clear();
-	}
-
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(I)V", line = 79)
 	public static void method1211() {
-		midiJinglesJs5 = null;
+		client.midiJinglesJs5 = null;
 		JagString.aClass40_526 = null;
 		Static1.aClass41_1 = null;
 		JagString.aClass40_523 = null;

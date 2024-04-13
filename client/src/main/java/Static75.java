@@ -73,33 +73,6 @@ public final class Static75 {
 		JagString.aClass40_568 = null;
 	}
 
-	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(Lclient!mc;B)Z", line = 1134)
-	public static boolean method1354(@OriginalArg(0) ComType arg0) {
-		if (arg0.scriptComparator == null) {
-			return false;
-		}
-		for (@Pc(17) int local17 = 0; local17 < arg0.scriptComparator.length; local17++) {
-			@Pc(24) int local24 = Static99.method1660(local17, arg0);
-			@Pc(29) int local29 = arg0.scriptOperand[local17];
-			if (arg0.scriptComparator[local17] == 2) {
-				if (local29 <= local24) {
-					return false;
-				}
-			} else if (arg0.scriptComparator[local17] == 3) {
-				if (local24 <= local29) {
-					return false;
-				}
-			} else if (arg0.scriptComparator[local17] == 4) {
-				if (local24 == local29) {
-					return false;
-				}
-			} else if (local29 != local24) {
-				return false;
-			}
-		}
-		return true;
-	}
-
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "([BIILclient!cb;)V", line = 1191)
 	public static void method1355(@OriginalArg(0) byte[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Cache arg2) {
 		@Pc(7) Js5CacheRequest local7 = new Js5CacheRequest();

@@ -18,6 +18,7 @@ public final class Static92 {
 		return arg0 < 999999999 ? Static48.method859(arg0) : JagString.aClass40_116;
 	}
 
+	// todo: ReflectionCheck
 	@OriginalMember(owner = "client!v", name = "a", descriptor = "(ILjava/lang/String;)Ljava/lang/Class;", line = 121)
 	public static Class method1583(@OriginalArg(1) String arg0) throws ClassNotFoundException {
 		if (arg0.equals("B")) {

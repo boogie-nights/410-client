@@ -8,9 +8,6 @@ public final class Static73 {
 	@OriginalMember(owner = "client!r", name = "k", descriptor = "[Lclient!qb;")
 	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array10;
 
-	@OriginalMember(owner = "client!r", name = "n", descriptor = "Lclient!ad;")
-	public static Js5 binaryJs5;
-
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(III)Z", line = 14)
 	public static boolean method1335(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 11) {
@@ -81,73 +78,73 @@ public final class Static73 {
 		if (client.mouseClickButton != 1) {
 			return;
 		}
-		if (Static1.anInt2500 >= 539 && Static1.anInt2500 <= 573 && Static1.anInt2133 >= 169 && Static1.anInt2133 < 205 && Static1.anIntArray2[0] != -1) {
-			Static1.anInt1551 = 0;
+		if (Static1.anInt2500 >= 539 && Static1.anInt2500 <= 573 && Static1.anInt2133 >= 169 && Static1.anInt2133 < 205 && client.tabInterfaceId[0] != -1) {
+			client.selectedTab = 0;
 			client.redrawSidebar = true;
 			Static1.aBoolean184 = true;
 		}
-		if (Static1.anInt2500 >= 569 && Static1.anInt2500 <= 599 && Static1.anInt2133 >= 168 && Static1.anInt2133 < 205 && Static1.anIntArray2[1] != -1) {
+		if (Static1.anInt2500 >= 569 && Static1.anInt2500 <= 599 && Static1.anInt2133 >= 168 && Static1.anInt2133 < 205 && client.tabInterfaceId[1] != -1) {
 			client.redrawSidebar = true;
 			Static1.aBoolean184 = true;
-			Static1.anInt1551 = 1;
+			client.selectedTab = 1;
 		}
-		if (Static1.anInt2500 >= 597 && Static1.anInt2500 <= 627 && Static1.anInt2133 >= 168 && Static1.anInt2133 < 205 && Static1.anIntArray2[2] != -1) {
+		if (Static1.anInt2500 >= 597 && Static1.anInt2500 <= 627 && Static1.anInt2133 >= 168 && Static1.anInt2133 < 205 && client.tabInterfaceId[2] != -1) {
 			client.redrawSidebar = true;
 			Static1.aBoolean184 = true;
-			Static1.anInt1551 = 2;
+			client.selectedTab = 2;
 		}
-		if (Static1.anInt2500 >= 625 && Static1.anInt2500 <= 669 && Static1.anInt2133 >= 168 && Static1.anInt2133 < 203 && Static1.anIntArray2[3] != -1) {
+		if (Static1.anInt2500 >= 625 && Static1.anInt2500 <= 669 && Static1.anInt2133 >= 168 && Static1.anInt2133 < 203 && client.tabInterfaceId[3] != -1) {
 			client.redrawSidebar = true;
 			Static1.aBoolean184 = true;
-			Static1.anInt1551 = 3;
+			client.selectedTab = 3;
 		}
-		if (Static1.anInt2500 >= 666 && Static1.anInt2500 <= 696 && Static1.anInt2133 >= 168 && Static1.anInt2133 < 205 && Static1.anIntArray2[4] != -1) {
+		if (Static1.anInt2500 >= 666 && Static1.anInt2500 <= 696 && Static1.anInt2133 >= 168 && Static1.anInt2133 < 205 && client.tabInterfaceId[4] != -1) {
 			client.redrawSidebar = true;
-			Static1.anInt1551 = 4;
+			client.selectedTab = 4;
 			Static1.aBoolean184 = true;
 		}
-		if (Static1.anInt2500 >= 694 && Static1.anInt2500 <= 724 && Static1.anInt2133 >= 168 && Static1.anInt2133 < 205 && Static1.anIntArray2[5] != -1) {
+		if (Static1.anInt2500 >= 694 && Static1.anInt2500 <= 724 && Static1.anInt2133 >= 168 && Static1.anInt2133 < 205 && client.tabInterfaceId[5] != -1) {
 			Static1.aBoolean184 = true;
-			Static1.anInt1551 = 5;
+			client.selectedTab = 5;
 			client.redrawSidebar = true;
 		}
-		if (Static1.anInt2500 >= 722 && Static1.anInt2500 <= 756 && Static1.anInt2133 >= 169 && Static1.anInt2133 < 205 && Static1.anIntArray2[6] != -1) {
+		if (Static1.anInt2500 >= 722 && Static1.anInt2500 <= 756 && Static1.anInt2133 >= 169 && Static1.anInt2133 < 205 && client.tabInterfaceId[6] != -1) {
 			client.redrawSidebar = true;
 			Static1.aBoolean184 = true;
-			Static1.anInt1551 = 6;
+			client.selectedTab = 6;
 		}
-		if (Static1.anInt2500 >= 540 && Static1.anInt2500 <= 574 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 502 && Static1.anIntArray2[7] != -1) {
+		if (Static1.anInt2500 >= 540 && Static1.anInt2500 <= 574 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 502 && client.tabInterfaceId[7] != -1) {
 			Static1.aBoolean184 = true;
-			Static1.anInt1551 = 7;
+			client.selectedTab = 7;
 			client.redrawSidebar = true;
 		}
-		if (Static1.anInt2500 >= 572 && Static1.anInt2500 <= 602 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 503 && Static1.anIntArray2[8] != -1) {
+		if (Static1.anInt2500 >= 572 && Static1.anInt2500 <= 602 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 503 && client.tabInterfaceId[8] != -1) {
 			Static1.aBoolean184 = true;
 			client.redrawSidebar = true;
-			Static1.anInt1551 = 8;
+			client.selectedTab = 8;
 		}
-		if (Static1.anInt2500 >= 599 && Static1.anInt2500 <= 629 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 503 && Static1.anIntArray2[9] != -1) {
-			Static1.anInt1551 = 9;
+		if (Static1.anInt2500 >= 599 && Static1.anInt2500 <= 629 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 503 && client.tabInterfaceId[9] != -1) {
+			client.selectedTab = 9;
 			client.redrawSidebar = true;
 			Static1.aBoolean184 = true;
 		}
-		if (Static1.anInt2500 >= 627 && Static1.anInt2500 <= 671 && Static1.anInt2133 >= 467 && Static1.anInt2133 < 502 && Static1.anIntArray2[10] != -1) {
+		if (Static1.anInt2500 >= 627 && Static1.anInt2500 <= 671 && Static1.anInt2133 >= 467 && Static1.anInt2133 < 502 && client.tabInterfaceId[10] != -1) {
 			client.redrawSidebar = true;
 			Static1.aBoolean184 = true;
-			Static1.anInt1551 = 10;
+			client.selectedTab = 10;
 		}
-		if (Static1.anInt2500 >= 669 && Static1.anInt2500 <= 699 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 503 && Static1.anIntArray2[11] != -1) {
+		if (Static1.anInt2500 >= 669 && Static1.anInt2500 <= 699 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 503 && client.tabInterfaceId[11] != -1) {
 			Static1.aBoolean184 = true;
 			client.redrawSidebar = true;
-			Static1.anInt1551 = 11;
+			client.selectedTab = 11;
 		}
-		if (Static1.anInt2500 >= 696 && Static1.anInt2500 <= 726 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 503 && Static1.anIntArray2[12] != -1) {
+		if (Static1.anInt2500 >= 696 && Static1.anInt2500 <= 726 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 503 && client.tabInterfaceId[12] != -1) {
 			client.redrawSidebar = true;
-			Static1.anInt1551 = 12;
+			client.selectedTab = 12;
 			Static1.aBoolean184 = true;
 		}
-		if (Static1.anInt2500 >= 724 && Static1.anInt2500 <= 758 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 502 && Static1.anIntArray2[13] != -1) {
-			Static1.anInt1551 = 13;
+		if (Static1.anInt2500 >= 724 && Static1.anInt2500 <= 758 && Static1.anInt2133 >= 466 && Static1.anInt2133 < 502 && client.tabInterfaceId[13] != -1) {
+			client.selectedTab = 13;
 			client.redrawSidebar = true;
 			Static1.aBoolean184 = true;
 		}
@@ -160,7 +157,7 @@ public final class Static73 {
 		Static1.aClass62_1 = null;
 		aClass2_Sub2_Sub2_Sub3Array10 = null;
 		ObjType.aClass47_16 = null;
-		binaryJs5 = null;
+		client.binaryJs5 = null;
 		Static1.aCRC32_1 = null;
 		JagString.aClass40_558 = null;
 		JagString.aClass40_559 = null;

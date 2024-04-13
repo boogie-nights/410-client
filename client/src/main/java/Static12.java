@@ -13,7 +13,7 @@ public final class Static12 {
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(I)V", line = 17)
 	public static void method254() {
 		JagString.aClass40_82 = null;
-		Static1.anIntArray80 = null;
+		client.levelExperience = null;
 		Static1.anIntArray79 = null;
 		Static1.aClass40Array6 = null;
 		aClass2_Sub2_Sub2_Sub4Array3 = null;

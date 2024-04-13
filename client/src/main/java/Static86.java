@@ -29,29 +29,6 @@ public final class Static86 {
 		Static13.anInt310 = 0;
 	}
 
-	@OriginalMember(owner = "client!td", name = "b", descriptor = "(I)V", line = 218)
-	public static void method1492() {
-		client.updateInterfaceAnimation(Static1.anInt1971);
-		if (Static1.anInt2175 != -1) {
-			client.updateInterfaceAnimation(Static1.anInt2175);
-		}
-		client.sceneDelta = 0;
-		Static27.aClass45_14.bind();
-		Static34.anIntArray162 = Static6.method175(Static34.anIntArray162);
-		Static25.method1610();
-		client.drawInterface(0, -1, Static1.anInt1971, 0, 0, 503, 0, 765);
-		if (Static1.anInt2175 != -1) {
-			client.drawInterface(0, -1, Static1.anInt2175, 0, 0, 503, 0, 765);
-		}
-		if (client.menuVisible) {
-			client.drawMenu();
-		} else {
-			client.handleInput();
-			client.drawTooltip();
-		}
-		Static27.aClass45_14.draw(client.graphics, 0, 0);
-	}
-
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(B)V", line = 256)
 	public static synchronized void method1493() {
 		Static10.method235();
@@ -63,10 +40,10 @@ public final class Static86 {
 			return;
 		}
 		if (arg0 % 10L == 0L) {
-			Static97.method1672(arg0 - 1L);
-			Static97.method1672(1L);
+			Static97.sleep(arg0 - 1L);
+			Static97.sleep(1L);
 		} else {
-			Static97.method1672(arg0);
+			Static97.sleep(arg0);
 		}
 	}
 
@@ -96,7 +73,7 @@ public final class Static86 {
 		JagString.aClass40_632 = null;
 		JagString.aClass40_629 = null;
 		JagString.aClass40_628 = null;
-		Static1.anIntArray473 = null;
+		client.skillLevel = null;
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(IIIILclient!ud;IZ)V", line = 421)

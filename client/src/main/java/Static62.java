@@ -14,7 +14,7 @@ public final class Static62 {
 		JagString.aClass40_486 = null;
 		JagString.aClass40_488 = null;
 		JagString.aClass40_482 = null;
-		Static1.anIntArray339 = null;
+		client.varps = null;
 		JagString.aClass40_487 = null;
 		JagString.BUTTON_CONTINUE = null;
 		aClass45_26 = null;

@@ -217,7 +217,7 @@ public final class World {
                     }
                     arg5.method1446(arg7, arg8, arg1, local55, local118, ROTATION_WALL_TYPE[arg6], arg6 * 512, 0, 0, local77, local65);
                 } else if (arg2 == 5) {
-                    local213 = arg5.method1459(arg7, arg8, arg1);
+                    local213 = arg5.getWallBitset(arg7, arg8, arg1);
                     local468 = 16;
                     if (local213 > 0) {
                         local468 = LocType.get(local213 >> 14 & 0x7FFF).wallwidth;
@@ -277,7 +277,7 @@ public final class World {
             if ((client.levelTileFlags[arg0][arg2][arg7] & 0x10) != 0) {
                 return;
             }
-            if (Static44.getDrawLevel(arg7, arg2, arg0) != Static1.anInt786) {
+            if (getDrawLevel(arg7, arg2, arg0) != Static1.anInt786) {
                 return;
             }
         }
@@ -523,7 +523,7 @@ public final class World {
                         arg6.method1446(arg0, arg2, arg7, local102, local167, ROTATION_WALL_TYPE[arg4], arg4 * 512, 0, 0, local121, local109);
                     } else if (arg5 == 5) {
                         local912 = 16;
-                        local267 = arg6.method1459(arg0, arg2, arg7);
+                        local267 = arg6.getWallBitset(arg0, arg2, arg7);
                         if (local267 > 0) {
                             local912 = LocType.get(local267 >> 14 & 0x7FFF).wallwidth;
                         }
@@ -695,7 +695,7 @@ public final class World {
                             local210 -= blendSaturation[local551];
                             local200 -= blendChroma[local551];
                         }
-                        if (local283 >= 1 && local283 < 103 && (!client.lowMemory || (client.levelTileFlags[0][local166][local283] & 0x2) != 0 || (client.levelTileFlags[local15][local166][local283] & 0x10) == 0 && Static44.getDrawLevel(local283, local166, local15) == Static1.anInt786)) {
+                        if (local283 >= 1 && local283 < 103 && (!client.lowMemory || (client.levelTileFlags[0][local166][local283] & 0x2) != 0 || (client.levelTileFlags[local15][local166][local283] & 0x10) == 0 && getDrawLevel(local283, local166, local15) == Static1.anInt786)) {
                             if (anInt807 > local15) {
                                 anInt807 = local15;
                             }
@@ -797,7 +797,7 @@ public final class World {
             }
             for (local187 = 1; local187 < 103; local187++) {
                 for (local200 = 1; local200 < 103; local200++) {
-                    arg1.method1418(local15, local200, local187, Static44.getDrawLevel(local187, local200, local15));
+                    arg1.method1418(local15, local200, local187, getDrawLevel(local187, local200, local15));
                 }
             }
             levelTileUnderlayIds[local15] = null;
@@ -1102,5 +1102,37 @@ public final class World {
             arg1 /= 2;
         }
         return arg0 / 2 + (arg1 / 32 << 7) + (arg2 / 4 << 10);
+    }
+
+    @OriginalMember(owner = "client!jc", name = "a", descriptor = "(IIIB)I", line = 193)
+    public static int getDrawLevel(@OriginalArg(0) int stz, @OriginalArg(1) int stx, @OriginalArg(2) int level) {
+        if ((client.levelTileFlags[level][stx][stz] & 0x8) == 0) {
+            return level <= 0 || (client.levelTileFlags[1][stx][stz] & 0x2) == 0 ? level : level - 1;
+        } else {
+            return 0;
+        }
+    }
+
+    @OriginalMember(owner = "client!ba", name = "a", descriptor = "(IIIII)V", line = 522)
+    public static void method196(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
+        for (@Pc(11) int local11 = arg2; local11 <= arg2 + arg0; local11++) {
+            for (@Pc(15) int local15 = arg3; local15 <= arg3 + arg1; local15++) {
+                if (local15 >= 0 && local15 < 104 && local11 >= 0 && local11 < 104) {
+                    levelShademap[0][local15][local11] = 127;
+                    if (arg3 == local15 && local15 > 0) {
+                        levelHeightmap[0][local15][local11] = levelHeightmap[0][local15 - 1][local11];
+                    }
+                    if (local15 == arg3 + arg1 && local15 < 103) {
+                        levelHeightmap[0][local15][local11] = levelHeightmap[0][local15 + 1][local11];
+                    }
+                    if (arg2 == local11 && local11 > 0) {
+                        levelHeightmap[0][local15][local11] = levelHeightmap[0][local15][local11 - 1];
+                    }
+                    if (local11 == arg0 + arg2 && local11 < 103) {
+                        levelHeightmap[0][local15][local11] = levelHeightmap[0][local15][local11 + 1];
+                    }
+                }
+            }
+        }
     }
 }

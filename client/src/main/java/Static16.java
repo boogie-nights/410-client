@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static16 {
 
-	@OriginalMember(owner = "client!d", name = "G", descriptor = "Lclient!qb;")
-	public static Pix8 aClass2_Sub2_Sub2_Sub3_6;
-
 	@OriginalMember(owner = "client!d", name = "a", descriptor = "(B)V", line = 4)
 	public static void method345() {
 		Static1.SERVER_PROT_LENGTHS = null;
@@ -18,7 +15,7 @@ public final class Static16 {
 		JagString.aClass40_120 = null;
 		JagString.aClass40_119 = null;
 		JagString.aClass40_118 = null;
-		aClass2_Sub2_Sub2_Sub3_6 = null;
+		client.imageMapback = null;
 		JagString.aClass40_117 = null;
 	}
 

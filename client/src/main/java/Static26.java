@@ -7,14 +7,8 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static26 {
 
-	@OriginalMember(owner = "client!fb", name = "b", descriptor = "Lclient!ad;")
-	public static Js5 interfacesJs5;
-
 	@OriginalMember(owner = "client!fb", name = "n", descriptor = "I")
 	public static int anInt685;
-
-	@OriginalMember(owner = "client!fb", name = "x", descriptor = "Lclient!ud;")
-	public static Js5Index aClass5_9;
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(Lclient!cb;Lclient!cb;BI)V", line = 1038)
 	public static void method540(@OriginalArg(0) Cache arg0, @OriginalArg(1) Cache arg1, @OriginalArg(3) int arg2) throws IOException {
@@ -48,8 +42,8 @@ public final class Static26 {
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(I)V", line = 1091)
 	public static void method541() {
-		interfacesJs5 = null;
+		client.interfacesJs5 = null;
 		JagString.aClass40_193 = null;
-		aClass5_9 = null;
+		VarpType.aClass5_9 = null;
 	}
 }

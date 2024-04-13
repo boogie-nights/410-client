@@ -23,7 +23,7 @@ public final class Static18 {
 
 	@OriginalMember(owner = "client!de", name = "a", descriptor = "(BI)V", line = 36)
 	public static void method369(@OriginalArg(1) int arg0) {
-		@Pc(8) int[] local8 = Static85.aClass2_Sub2_Sub2_Sub4_8.anIntArray534;
+		@Pc(8) int[] local8 = Static85.imageMinimap.pixels;
 		@Pc(11) int local11 = local8.length;
 		for (@Pc(13) int local13 = 0; local13 < local11; local13++) {
 			local8[local13] = 0;
@@ -42,17 +42,17 @@ public final class Static18 {
 				local38 += 4;
 			}
 		}
-		Static85.aClass2_Sub2_Sub2_Sub4_8.method1628();
+		Static85.imageMinimap.method1628();
 		local38 = ((int) (Math.random() * 20.0D) + 228 << 16) + ((int) (Math.random() * 20.0D) + 238 - 10 << 8) + (int) (Math.random() * 20.0D) + 238 - 10;
 		local40 = (int) (Math.random() * 20.0D) + 238 - 10 << 16;
 		@Pc(150) int local150;
 		for (@Pc(146) int local146 = 1; local146 < 103; local146++) {
 			for (local150 = 1; local150 < 103; local150++) {
 				if ((client.levelTileFlags[arg0][local150][local146] & 0x18) == 0) {
-					Static97.method1674(arg0, local38, local40, local146, local150);
+					client.drawMinimapLoc(arg0, local38, local40, local146, local150);
 				}
 				if (arg0 < 3 && (client.levelTileFlags[arg0 + 1][local150][local146] & 0x8) != 0) {
-					Static97.method1674(arg0 + 1, local38, local40, local146, local150);
+					client.drawMinimapLoc(arg0 + 1, local38, local40, local146, local150);
 				}
 			}
 		}
@@ -101,7 +101,7 @@ public final class Static18 {
 		@Pc(22) int local22;
 		if (Static1.anInt2328 == 2) {
 			@Pc(14) int[] local14 = Static25.anIntArray533;
-			@Pc(17) byte[] local17 = Static16.aClass2_Sub2_Sub2_Sub3_6.aByteArray16;
+			@Pc(17) byte[] local17 = client.imageMapback.aByteArray16;
 			local20 = local17.length;
 			for (local22 = 0; local22 < local20; local22++) {
 				if (local17[local22] == 0) {
@@ -112,15 +112,15 @@ public final class Static18 {
 			Static30.method594(client.graphics);
 			return;
 		}
-		@Pc(62) int local62 = Static1.anInt1978 + client.orbitCameraYaw & 0x7FF;
+		@Pc(62) int local62 = client.minimapAnticheatAngle + client.orbitCameraYaw & 0x7FF;
 		local20 = 464 - client.localPlayer.z / 32;
 		@Pc(77) int local77 = client.localPlayer.x / 32 + 48;
-		Static85.aClass2_Sub2_Sub2_Sub4_8.method1616(25, 5, 146, 151, local77, local20, local62, Static1.anInt1857 + 256, Static67.anIntArray407, Static2.anIntArray3);
+		Static85.imageMinimap.method1616(25, 5, 146, 151, local77, local20, local62, Static1.anInt1857 + 256, Static67.anIntArray407, Static2.anIntArray3);
 		Static12.aClass2_Sub2_Sub2_Sub4_2.method1616(0, 0, 33, 33, 25, 25, client.orbitCameraYaw, 256, Static94.anIntArray544, Static42.anIntArray225);
 		for (local22 = 0; local22 < Static1.anInt2136; local22++) {
 			local77 = Static1.anIntArray500[local22] * 4 + 2 - client.localPlayer.x / 32;
 			local20 = Static1.anIntArray546[local22] * 4 + 2 - client.localPlayer.z / 32;
-			Static82.method1461(local77, Static1.aClass2_Sub2_Sub2_Sub4Array9[local22], local20);
+			client.drawOnMinimap(local77, Static1.aClass2_Sub2_Sub2_Sub4Array9[local22], local20);
 		}
 		@Pc(155) int local155;
 		for (@Pc(151) int local151 = 0; local151 < 104; local151++) {
@@ -129,7 +129,7 @@ public final class Static18 {
 				if (local165 != null) {
 					local77 = local151 * 4 + 2 - client.localPlayer.x / 32;
 					local20 = local155 * 4 + 2 - client.localPlayer.z / 32;
-					Static82.method1461(local77, Static28.aClass2_Sub2_Sub2_Sub4Array5[0], local20);
+					client.drawOnMinimap(local77, Static28.aClass2_Sub2_Sub2_Sub4Array5[0], local20);
 				}
 			}
 		}
@@ -143,7 +143,7 @@ public final class Static18 {
 				if (local224 != null && local224.aBoolean56 && local224.aBoolean58) {
 					local20 = local215.z / 32 - client.localPlayer.z / 32;
 					local77 = local215.x / 32 - client.localPlayer.x / 32;
-					Static82.method1461(local77, Static28.aClass2_Sub2_Sub2_Sub4Array5[1], local20);
+					client.drawOnMinimap(local77, Static28.aClass2_Sub2_Sub2_Sub4Array5[1], local20);
 				}
 			}
 		}
@@ -166,11 +166,11 @@ public final class Static18 {
 					local351 = true;
 				}
 				if (local323) {
-					Static82.method1461(local77, Static28.aClass2_Sub2_Sub2_Sub4Array5[3], local20);
+					client.drawOnMinimap(local77, Static28.aClass2_Sub2_Sub2_Sub4Array5[3], local20);
 				} else if (local351) {
-					Static82.method1461(local77, Static28.aClass2_Sub2_Sub2_Sub4Array5[4], local20);
+					client.drawOnMinimap(local77, Static28.aClass2_Sub2_Sub2_Sub4Array5[4], local20);
 				} else {
-					Static82.method1461(local77, Static28.aClass2_Sub2_Sub2_Sub4Array5[2], local20);
+					client.drawOnMinimap(local77, Static28.aClass2_Sub2_Sub2_Sub4Array5[2], local20);
 				}
 			}
 		}
@@ -200,7 +200,7 @@ public final class Static18 {
 		if (client.flagSceneTileX != 0) {
 			local20 = client.flagSceneTileZ * 4 + 2 - client.localPlayer.z / 32;
 			local77 = client.flagSceneTileX * 4 + 2 - client.localPlayer.x / 32;
-			Static82.method1461(local77, Static12.aClass2_Sub2_Sub2_Sub4Array3[0], local20);
+			client.drawOnMinimap(local77, Static12.aClass2_Sub2_Sub2_Sub4Array3[0], local20);
 		}
 		Static25.method1612(97, 78, 3, 3, 16777215);
 		Static30.method594(client.graphics);

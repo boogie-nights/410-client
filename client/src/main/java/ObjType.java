@@ -159,10 +159,23 @@ public final class ObjType extends Hashable {
     }
 
 	@OriginalMember(owner = "client!g", name = "a", descriptor = "(B)V", line = 11)
-	public static void method1675() {
+	public static void clear() {
 		aClass47_16.clear();
 		aClass47_18.clear();
 		aClass47_7.clear();
+	}
+
+	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(B)V", line = 49)
+	public static void method1342() {
+		aClass47_7.clear();
+	}
+
+	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(Lclient!ud;Lclient!ud;BZ)V", line = 640)
+	public static void load(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) Js5Index arg1, @OriginalArg(3) boolean arg2) {
+		Static51.aClass5_29 = arg0;
+		Static40.aBoolean150 = arg2;
+		aClass5_13 = arg1;
+		Static36.anInt971 = aClass5_13.getGroupCapacity(10);
 	}
 
 	@OriginalMember(owner = "client!hb", name = "a", descriptor = "(BZ)Z", line = 5)

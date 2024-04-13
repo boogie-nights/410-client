@@ -32,7 +32,12 @@ public final class MidiDecoder {
 	@OriginalMember(owner = "client!bc", name = "b", descriptor = "Lclient!eb;")
 	private final Packet aClass2_Sub3_1 = new Packet(null);
 
-	@OriginalMember(owner = "client!bc", name = "a", descriptor = "(J)V", line = 3)
+    @OriginalMember(owner = "client!bc", name = "g", descriptor = "()V", line = 232)
+    public static void method224() {
+        aByteArray2 = null;
+    }
+
+    @OriginalMember(owner = "client!bc", name = "a", descriptor = "(J)V", line = 3)
 	public void method210(@OriginalArg(0) long arg0) {
 		this.aLong20 = arg0;
 		@Pc(6) int local6 = this.anIntArray64.length;

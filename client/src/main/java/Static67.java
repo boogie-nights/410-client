@@ -1,4 +1,3 @@
-import java.awt.Graphics;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 
@@ -15,7 +14,7 @@ public final class Static67 {
 		JagString.aClass40_515 = null;
 		JagString.aClass40_512 = null;
 		JagString.aClass40_517 = null;
-		Static1.aBooleanArray27 = null;
+		client.SKILL_ENABLED = null;
 		client.playerIds = null;
 		JagString.aClass40_521 = null;
 		Static1.aClass30_1 = null;
@@ -25,11 +24,6 @@ public final class Static67 {
 		JagString.aClass40_520 = null;
 		anIntArray407 = null;
 		JagString.aClass40_514 = null;
-	}
-
-	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(ILjava/awt/Graphics;)V", line = 630)
-	public static void method1207(@OriginalArg(1) Graphics arg0) {
-		Static7.aClass45_5.draw(arg0, 553, 205);
 	}
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(ZII[B)V", line = 655)

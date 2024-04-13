@@ -17,13 +17,6 @@ public final class Static30 {
 	@OriginalMember(owner = "client!ga", name = "I", descriptor = "Lclient!ba;")
 	public static HashTable aClass6_1;
 
-	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(Lclient!ud;ILclient!ud;)V", line = 4)
-	public static void method591(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) Js5Index arg1) {
-		Static66.aClass5_22 = arg0;
-		IdkType.aClass5_5 = arg1;
-		Static95.anInt2493 = IdkType.aClass5_5.getGroupCapacity(3);
-	}
-
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(III)I", line = 22)
 	public static int method592(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(10) long local10 = (long) ((arg0 << 16) + arg1);

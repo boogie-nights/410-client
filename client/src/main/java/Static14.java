@@ -11,9 +11,6 @@ public final class Static14 {
 	@OriginalMember(owner = "client!cd", name = "r", descriptor = "Lclient!qb;")
 	public static Pix8 aClass2_Sub2_Sub2_Sub3_18;
 
-	@OriginalMember(owner = "client!cd", name = "s", descriptor = "[I")
-	public static int[] anIntArray414;
-
 	@OriginalMember(owner = "client!cd", name = "u", descriptor = "I")
 	public static int anInt1856;
 
@@ -148,10 +145,10 @@ public final class Static14 {
 		@Pc(187) int local187;
 		for (@Pc(152) int local152 = 0; local152 < local83.anInt2442; local152++) {
 			for (local156 = 0; local156 < local83.anInt2446; local156++) {
-				local150[local156] = local83.anIntArray534[local152 * local83.anInt2446 + local83.anInt2446 - local156 - 1];
+				local150[local156] = local83.pixels[local152 * local83.anInt2446 + local83.anInt2446 - local156 - 1];
 			}
 			for (local187 = 0; local187 < local83.anInt2446; local187++) {
-				local83.anIntArray534[local152 * local83.anInt2446 + local187] = local150[local187];
+				local83.pixels[local152 * local83.anInt2446 + local187] = local150[local187];
 			}
 		}
 		Static56.aClass45_24.bind();
@@ -177,14 +174,14 @@ public final class Static14 {
 		local83.draw(382 - local83.anInt2446 / 2 - 128, 18);
 		Static89.aClass2_Sub2_Sub2_Sub3_21 = Static91.method77(arg0, JagString.aClass40_593, JagString.aClass40_16);
 		Static30.aClass2_Sub2_Sub2_Sub3_8 = Static91.method77(arg0, JagString.aClass40_593, JagString.aClass40_661);
-		Static45.aClass2_Sub2_Sub2_Sub3Array14 = Static4.method85(arg0, JagString.aClass40_563, JagString.aClass40_593);
+		client.imageRunes = Static4.method85(arg0, JagString.aClass40_563, JagString.aClass40_593);
 		Static10.aClass2_Sub2_Sub2_Sub4_1 = new Pix24(128, 265);
 		Static88.aClass2_Sub2_Sub2_Sub4_9 = new Pix24(128, 265);
 		for (local156 = 0; local156 < 33920; local156++) {
-			Static10.aClass2_Sub2_Sub2_Sub4_1.anIntArray534[local156] = Static56.aClass45_24.pixels[local156];
+			Static10.aClass2_Sub2_Sub2_Sub4_1.pixels[local156] = Static56.aClass45_24.pixels[local156];
 		}
 		for (local187 = 0; local187 < 33920; local187++) {
-			Static88.aClass2_Sub2_Sub2_Sub4_9.anIntArray534[local187] = Static90.aClass45_30.pixels[local187];
+			Static88.aClass2_Sub2_Sub2_Sub4_9.pixels[local187] = Static90.aClass45_30.pixels[local187];
 		}
 		Static35.anIntArray182 = new int[256];
 		for (@Pc(366) int local366 = 0; local366 < 64; local366++) {
@@ -225,19 +222,19 @@ public final class Static14 {
 		for (@Pc(570) int local570 = 0; local570 < 64; local570++) {
 			Static66.anIntArray406[local570 + 192] = 16777215;
 		}
-		anIntArray414 = new int[32768];
+		client.flameBuffer0 = new int[32768];
 		Static84.anIntArray472 = new int[256];
 		Static4.anIntArray17 = new int[32768];
-		Static23.method502(null);
+		client.updateFlameBuffer(null);
 		JagString.aClass40_591 = JagString.aClass40_593;
 		JagString.aClass40_587 = JagString.aClass40_593;
 		Static1.anInt2143 = 0;
-		Static1.anIntArray1 = new int[32768];
-		Static95.anIntArray547 = new int[32768];
+		client.flameBuffer2 = new int[32768];
+		client.flameBuffer3 = new int[32768];
 		if (Static1.anInt239 == 0 || client.lowMemory) {
 			Static86.method1490();
 		} else {
-			Static86.method1496(JagString.aClass40_80, JagString.aClass40_593, Static77.midiSongsJs5, Static1.anInt239);
+			Static86.method1496(JagString.aClass40_80, JagString.aClass40_593, client.midiSongsJs5, Static1.anInt239);
 		}
 		Static41.method787(false);
 		Static68.aBoolean145 = true;
@@ -254,7 +251,7 @@ public final class Static14 {
 		JagString.aClass40_541 = null;
 		JagString.aClass40_538 = null;
 		JagString.aClass40_537 = null;
-		anIntArray414 = null;
+		client.flameBuffer0 = null;
 		JagString.aClass40_539 = null;
 		aClass2_Sub2_Sub2_Sub3_19 = null;
 		JagString.aClass40_535 = null;

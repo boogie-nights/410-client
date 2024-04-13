@@ -43,7 +43,19 @@ public final class IdkType extends Hashable {
         return local10;
     }
 
-    @OriginalMember(owner = "client!v", name = "c", descriptor = "(B)Lclient!ne;", line = 6)
+    @OriginalMember(owner = "client!lc", name = "b", descriptor = "(B)V", line = 156)
+    public static void clear() {
+        aClass47_22.clear();
+    }
+
+	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(Lclient!ud;ILclient!ud;)V", line = 4)
+	public static void load(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) Js5Index arg1) {
+		Static66.aClass5_22 = arg0;
+		aClass5_5 = arg1;
+		Static95.anInt2493 = aClass5_5.getGroupCapacity(3);
+	}
+
+	@OriginalMember(owner = "client!v", name = "c", descriptor = "(B)Lclient!ne;", line = 6)
 	public Model method1579() {
 		if (this.anIntArray516 == null) {
 			return null;

@@ -43,6 +43,6 @@ public final class SignLinkAudioChannel extends AudioChannel {
 	@OriginalMember(owner = "client!me", name = "b", descriptor = "()V", line = 21)
 	@Override
 	protected void method1083() {
-		clock.method237(Static1.anIntArray337);
+		clock.method237(AudioChannel.anIntArray337);
 	}
 }

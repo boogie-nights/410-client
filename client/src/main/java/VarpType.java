@@ -8,6 +8,8 @@ public final class VarpType extends Hashable {
 
 	@OriginalMember(owner = "client!j", name = "e", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_12 = new LruCache(64);
+	@OriginalMember(owner = "client!fb", name = "x", descriptor = "Lclient!ud;")
+	public static Js5Index aClass5_9;
 	@OriginalMember(owner = "client!ic", name = "Q", descriptor = "I")
 	public int anInt1076 = 0;
 
@@ -17,7 +19,7 @@ public final class VarpType extends Hashable {
         if (local10 != null) {
             return local10;
         }
-        @Pc(20) byte[] local20 = Static26.aClass5_9.fetchFile(arg0, 16);
+        @Pc(20) byte[] local20 = aClass5_9.fetchFile(arg0, 16);
         local10 = new VarpType();
         if (local20 != null) {
             local10.method788(new Packet(local20));
@@ -27,8 +29,14 @@ public final class VarpType extends Hashable {
     }
 
 	@OriginalMember(owner = "client!ib", name = "c", descriptor = "(B)V", line = 222)
-	public static void method1242() {
+	public static void clear() {
 		aClass47_12.clear();
+	}
+
+	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(Lclient!ud;Z)V", line = 783)
+	public static void load(@OriginalArg(0) Js5Index arg0) {
+		aClass5_9 = arg0;
+		Static54.anInt1505 = aClass5_9.getGroupCapacity(16);
 	}
 
 	@OriginalMember(owner = "client!ic", name = "a", descriptor = "(Lclient!eb;Z)V", line = 57)

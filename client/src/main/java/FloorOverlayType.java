@@ -56,7 +56,17 @@ public final class FloorOverlayType extends Hashable {
         return local10;
     }
 
-    @OriginalMember(owner = "client!ec", name = "a", descriptor = "(BILclient!eb;I)V", line = 29)
+    @OriginalMember(owner = "client!s", name = "a", descriptor = "(I)V", line = 49)
+    public static void clear() {
+        cache.clear();
+    }
+
+	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(ILclient!ud;)V", line = 861)
+	public static void load(@OriginalArg(1) Js5Index arg0) {
+		config = arg0;
+	}
+
+	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(BILclient!eb;I)V", line = 29)
 	private void decode(@OriginalArg(1) int code, @OriginalArg(2) Packet buf, @OriginalArg(3) int id) {
 		if (code == 1) {
 			this.rgb = buf.g3();

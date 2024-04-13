@@ -38,7 +38,7 @@ public final class JavaAudioChannel extends AudioChannel {
 	@Override
 	protected void method1083() {
 		for (@Pc(1) int local1 = 0; local1 < 256; local1++) {
-			@Pc(8) int local8 = Static1.anIntArray337[local1];
+			@Pc(8) int local8 = AudioChannel.anIntArray337[local1];
 			if ((local8 + 8388608 & 0xFF000000) != 0) {
 				local8 = local8 >> 31 ^ 0x7FFFFF;
 			}

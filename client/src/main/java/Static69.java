@@ -23,7 +23,7 @@ public final class Static69 {
 			@Pc(9) int local9 = client.npcIds[local3];
 			@Pc(13) NpcEntity local13 = client.npcs[local9];
 			if (local13 != null) {
-				Static83.method1468(local13, local13.type.size);
+				client.updateEntity(local13, local13.type.size);
 			}
 		}
 	}

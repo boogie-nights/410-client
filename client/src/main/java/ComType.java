@@ -13,6 +13,8 @@ public final class ComType extends Hashable {
 	public static LruCache aClass47_20 = new LruCache(50);
 	@OriginalMember(owner = "client!k", name = "v", descriptor = "[[Lclient!mc;")
 	public static ComType[][] instances;
+	@OriginalMember(owner = "client!ra", name = "v", descriptor = "Lclient!ud;")
+	public static Js5Index aClass5_26;
 	@OriginalMember(owner = "client!mc", name = "O", descriptor = "I")
 	public int font;
 
@@ -192,7 +194,7 @@ public final class ComType extends Hashable {
         @Pc(3) int local3 = arg0 >> 16;
         @Pc(11) int local11 = arg0 & 0xFFFF;
         if (instances[local3] == null || instances[local3][local11] == null) {
-            @Pc(30) boolean local30 = Static99.method1665(local3);
+            @Pc(30) boolean local30 = method1665(local3);
             if (!local30) {
                 return null;
             }
@@ -200,7 +202,51 @@ public final class ComType extends Hashable {
         return instances[local3][local11];
     }
 
-    @OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!eb;I)V", line = 26)
+    @OriginalMember(owner = "client!fd", name = "b", descriptor = "(I)V", line = 20)
+    public static void clear() {
+        aClass47_8.clear();
+        aClass47_20.clear();
+    }
+
+	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!ud;Lclient!ud;BLclient!ud;)V", line = 248)
+	public static void load(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) Js5Index arg1, @OriginalArg(3) Js5Index arg2) {
+		aClass5_26 = arg2;
+		Static49.aClass5_17 = arg1;
+		Static54.aClass5_20 = arg0;
+		instances = new ComType[Static49.aClass5_17.method71()][];
+		Static84.aBooleanArray31 = new boolean[Static49.aClass5_17.method71()];
+	}
+
+	@OriginalMember(owner = "client!wd", name = "b", descriptor = "(II)Z", line = 503)
+	public static boolean method1665(@OriginalArg(0) int arg0) {
+		if (Static84.aBooleanArray31[arg0]) {
+			return true;
+		} else if (Static49.aClass5_17.method59(arg0)) {
+			@Pc(25) int local25 = Static49.aClass5_17.getGroupCapacity(arg0);
+			if (local25 == 0) {
+				Static84.aBooleanArray31[arg0] = true;
+				return true;
+			}
+			if (instances[arg0] == null) {
+				instances[arg0] = new ComType[local25];
+			}
+			for (@Pc(47) int local47 = 0; local47 < local25; local47++) {
+				if (instances[arg0][local47] == null) {
+					@Pc(61) byte[] local61 = Static49.aClass5_17.fetchFile(local47, arg0);
+					if (local61 != null) {
+						instances[arg0][local47] = new ComType();
+						instances[arg0][local47].method1053(new Packet(local61));
+					}
+				}
+			}
+			Static84.aBooleanArray31[arg0] = true;
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!eb;I)V", line = 26)
 	public void method1053(@OriginalArg(0) Packet buf) {
 		this.type = buf.g1();
 		this.buttonType = buf.g1();
@@ -404,7 +450,7 @@ public final class ComType extends Hashable {
 			@Pc(50) Model local50 = (Model) aClass47_20.get((long) ((local16 << 16) + local19));
 			if (local50 == null) {
 				if (local16 == 1) {
-					local50 = Model.method1163(Static74.aClass5_26, local19);
+					local50 = Model.method1163(aClass5_26, local19);
 					if (local50 == null) {
 						Static1.aBoolean102 = true;
 						return null;

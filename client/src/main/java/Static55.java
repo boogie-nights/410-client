@@ -4,37 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static55 {
 
-	@OriginalMember(owner = "client!le", name = "a", descriptor = "(I)V", line = 5)
-	public static void method998() {
-		client.out.pIsaac1(255);
-		if (Static1.anInt1654 != -1) {
-			Static75.method1350(Static1.anInt1654);
-			client.redrawSidebar = true;
-			Static1.aBoolean40 = false;
-			Static1.aBoolean184 = true;
-			Static1.anInt1654 = -1;
-		}
-		if (client.chatInterfaceId != -1) {
-			Static75.method1350(client.chatInterfaceId);
-			Static1.aBoolean40 = false;
-			client.chatInterfaceId = -1;
-			client.redrawChatback = true;
-		}
-		if (Static1.anInt1971 != -1) {
-			Static75.method1350(Static1.anInt1971);
-			Static1.anInt1971 = -1;
-			client.method187(30);
-		}
-		if (Static1.anInt2175 != -1) {
-			Static75.method1350(Static1.anInt2175);
-			Static1.anInt2175 = -1;
-		}
-		if (client.anInt2585 != -1) {
-			Static75.method1350(client.anInt2585);
-			client.anInt2585 = -1;
-		}
-	}
-
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(IIII)Lclient!vb;", line = 159)
 	public static Pix24 method1000(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(14) Pix24 local14;
@@ -83,7 +52,7 @@ public final class Static55 {
 		@Pc(137) int local137 = Draw2D.anInt2436;
 		@Pc(139) int local139 = Draw2D.anInt2438;
 		local14 = new Pix24(32, 32);
-		Static25.method1604(local14.anIntArray534, 32, 32);
+		Static25.method1604(local14.pixels, 32, 32);
 		Static43.anIntArray536 = Static6.method175(Static43.anIntArray536);
 		Static25.method1612(0, 0, 32, 32, 0);
 		Draw3D.aBoolean18 = false;
@@ -100,15 +69,15 @@ public final class Static55 {
 		local101.method1151(local40.anInt918, local40.anInt937, local40.anInt952, local40.anInt946, local202 + local101.anInt2265 / 2 + local40.anInt960, local193 + local40.anInt960);
 		for (@Pc(230) int local230 = 31; local230 >= 0; local230--) {
 			for (local193 = 31; local193 >= 0; local193--) {
-				if (local14.anIntArray534[local193 * 32 + local230] == 0) {
-					if (local230 > 0 && local14.anIntArray534[local193 * 32 + local230 - 1] > 1) {
-						local14.anIntArray534[local193 * 32 + local230] = 1;
-					} else if (local193 > 0 && local14.anIntArray534[local193 * 32 + local230 - 32] > 1) {
-						local14.anIntArray534[local193 * 32 + local230] = 1;
-					} else if (local230 < 31 && local14.anIntArray534[local230 + local193 * 32 + 1] > 1) {
-						local14.anIntArray534[local193 * 32 + local230] = 1;
-					} else if (local193 < 31 && local14.anIntArray534[local230 + local193 * 32 + 32] > 1) {
-						local14.anIntArray534[local193 * 32 + local230] = 1;
+				if (local14.pixels[local193 * 32 + local230] == 0) {
+					if (local230 > 0 && local14.pixels[local193 * 32 + local230 - 1] > 1) {
+						local14.pixels[local193 * 32 + local230] = 1;
+					} else if (local193 > 0 && local14.pixels[local193 * 32 + local230 - 32] > 1) {
+						local14.pixels[local193 * 32 + local230] = 1;
+					} else if (local230 < 31 && local14.pixels[local230 + local193 * 32 + 1] > 1) {
+						local14.pixels[local193 * 32 + local230] = 1;
+					} else if (local193 < 31 && local14.pixels[local230 + local193 * 32 + 32] > 1) {
+						local14.pixels[local193 * 32 + local230] = 1;
 					}
 				}
 			}
@@ -117,15 +86,15 @@ public final class Static55 {
 		if (arg0 > 0) {
 			for (local379 = 31; local379 >= 0; local379--) {
 				for (local193 = 31; local193 >= 0; local193--) {
-					if (local14.anIntArray534[local379 + local193 * 32] == 0) {
-						if (local379 > 0 && local14.anIntArray534[local193 * 32 + local379 - 1] == 1) {
-							local14.anIntArray534[local379 + local193 * 32] = arg0;
-						} else if (local193 > 0 && local14.anIntArray534[(local193 - 1) * 32 + local379] == 1) {
-							local14.anIntArray534[local193 * 32 + local379] = arg0;
-						} else if (local379 < 31 && local14.anIntArray534[local193 * 32 + local379 + 1] == 1) {
-							local14.anIntArray534[local193 * 32 + local379] = arg0;
-						} else if (local193 < 31 && local14.anIntArray534[local193 * 32 + local379 + 32] == 1) {
-							local14.anIntArray534[local193 * 32 + local379] = arg0;
+					if (local14.pixels[local379 + local193 * 32] == 0) {
+						if (local379 > 0 && local14.pixels[local193 * 32 + local379 - 1] == 1) {
+							local14.pixels[local379 + local193 * 32] = arg0;
+						} else if (local193 > 0 && local14.pixels[(local193 - 1) * 32 + local379] == 1) {
+							local14.pixels[local193 * 32 + local379] = arg0;
+						} else if (local379 < 31 && local14.pixels[local193 * 32 + local379 + 1] == 1) {
+							local14.pixels[local193 * 32 + local379] = arg0;
+						} else if (local193 < 31 && local14.pixels[local193 * 32 + local379 + 32] == 1) {
+							local14.pixels[local193 * 32 + local379] = arg0;
 						}
 					}
 				}
@@ -133,8 +102,8 @@ public final class Static55 {
 		} else if (arg0 == 0) {
 			for (local379 = 31; local379 >= 0; local379--) {
 				for (local193 = 31; local193 >= 0; local193--) {
-					if (local14.anIntArray534[local193 * 32 + local379] == 0 && local379 > 0 && local193 > 0 && local14.anIntArray534[local379 + local193 * 32 - 1 - 32] > 0) {
-						local14.anIntArray534[local379 + local193 * 32] = 3153952;
+					if (local14.pixels[local193 * 32 + local379] == 0 && local379 > 0 && local193 > 0 && local14.pixels[local379 + local193 * 32 - 1 - 32] > 0) {
+						local14.pixels[local379 + local193 * 32] = 3153952;
 					}
 				}
 			}

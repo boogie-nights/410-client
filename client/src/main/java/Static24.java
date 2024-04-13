@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static24 {
 
-	@OriginalMember(owner = "client!f", name = "O", descriptor = "Lclient!ad;")
-	public static Js5 modelsJs5;
-
 	@OriginalMember(owner = "client!f", name = "hb", descriptor = "Lclient!p;")
 	public static PixMap aClass45_12;
 
@@ -31,7 +28,7 @@ public final class Static24 {
 		JagString.aClass40_192 = null;
 		ObjType.aClass47_7 = null;
 		aFontMetrics1 = null;
-		modelsJs5 = null;
+		client.modelsJs5 = null;
 		JagString.aClass40_191 = null;
 		World.blendSaturation = null;
 	}

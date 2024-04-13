@@ -32,12 +32,6 @@ public final class Static84 {
 		LocType.modelCacheStatic = null;
 	}
 
-	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(Lclient!ud;Z)V", line = 783)
-	public static void method1483(@OriginalArg(0) Js5Index arg0) {
-		Static26.aClass5_9 = arg0;
-		Static54.anInt1505 = Static26.aClass5_9.getGroupCapacity(16);
-	}
-
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(IILclient!ud;I)Z", line = 795)
 	public static boolean method1484(@OriginalArg(0) int arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(3) int arg2) {
 		@Pc(9) byte[] local9 = arg1.fetchFile(arg0, arg2);

@@ -7,9 +7,6 @@ public final class Static45 {
 	@OriginalMember(owner = "client!jd", name = "S", descriptor = "[Lclient!fc;")
 	public static PixFont[] aClass2_Sub2_Sub2_Sub2Array9;
 
-	@OriginalMember(owner = "client!jd", name = "W", descriptor = "[Lclient!qb;")
-	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array14;
-
 	@OriginalMember(owner = "client!jd", name = "X", descriptor = "I")
 	public static int cutsceneSrcHeight;
 
@@ -31,7 +28,7 @@ public final class Static45 {
 		aClass2_Sub2_Sub2_Sub2Array9 = null;
 		JagString.aClass40_655 = null;
 		JagString.aClass40_654 = null;
-		aClass2_Sub2_Sub2_Sub3Array14 = null;
+		client.imageRunes = null;
 	}
 
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "([BIII)Z", line = 41)

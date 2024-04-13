@@ -139,7 +139,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 					method185().addFocusListener(this);
 					method185().requestFocus();
 					this.method327();
-					Static79.aClass18_1 = Static51.method1539();
+					Static79.aClass18_1 = Timer.method1539();
 					Static79.aClass18_1.method1280();
 					while (Static1.aLong132 == 0L || System.currentTimeMillis() < Static1.aLong132) {
 						Static22.anInt587 = Static79.aClass18_1.method1274(Static1.anInt1660, Static1.anInt1552);

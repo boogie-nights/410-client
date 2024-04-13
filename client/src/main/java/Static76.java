@@ -26,9 +26,9 @@ public final class Static76 {
 		local9.anInt2442 = Static18.anIntArray86[0];
 		@Pc(50) int local50 = local9.anInt2442 * local9.anInt2446;
 		@Pc(54) byte[] local54 = Static83.aByteArrayArray10[0];
-		local9.anIntArray534 = new int[local50];
+		local9.pixels = new int[local50];
 		for (@Pc(60) int local60 = 0; local60 < local50; local60++) {
-			local9.anIntArray534[local60] = Static19.anIntArray92[local54[local60] & 0xFF];
+			local9.pixels[local60] = Static19.anIntArray92[local54[local60] & 0xFF];
 		}
 		Static85.method1485();
 		return local9;

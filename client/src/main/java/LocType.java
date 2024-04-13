@@ -84,7 +84,7 @@ public final class LocType extends Hashable {
 	public int anInt1030 = -1;
 
 	@OriginalMember(owner = "client!ia", name = "jb", descriptor = "I")
-	public int anInt1039 = -1;
+	public int mapscene = -1;
 
 	@OriginalMember(owner = "client!ia", name = "rb", descriptor = "I")
 	private int anInt1043 = 0;
@@ -153,13 +153,21 @@ public final class LocType extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!u", name = "a", descriptor = "(ZZLclient!ud;Lclient!ud;)V", line = 14)
-	public static void method1518(@OriginalArg(1) boolean arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(3) Js5Index arg2) {
+	public static void load(@OriginalArg(1) boolean arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(3) Js5Index arg2) {
 		aClass5_8 = arg1;
 		aClass5_23 = arg2;
 		aBoolean65 = arg0;
 	}
 
-	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIIIIII)Lclient!ne;", line = 15)
+    @OriginalMember(owner = "client!ra", name = "b", descriptor = "(B)V", line = 246)
+    public static void clear() {
+        aClass47_11.clear();
+        modelCacheStatic.clear();
+        aClass47_10.clear();
+        aClass47_1.clear();
+    }
+
+    @OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIIIIII)Lclient!ne;", line = 15)
 	public Model method765(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5) {
 		@Pc(17) long local17;
 		if (this.anIntArray211 == null) {
@@ -198,7 +206,7 @@ public final class LocType extends Hashable {
 		if (this.anInt1032 != -1) {
 			local10 = Static99.method1662(this.anInt1032);
 		} else if (this.anInt1044 != -1) {
-			local10 = Static1.anIntArray339[this.anInt1044];
+			local10 = client.varps[this.anInt1044];
 		}
 		return local10 < 0 || local10 >= this.anIntArray210.length || this.anIntArray210[local10] == -1 ? null : get(this.anIntArray210[local10]);
 	}
@@ -482,7 +490,7 @@ public final class LocType extends Hashable {
 						this.anInt1051 = arg1.g2();
 						return;
 					} else if (arg0 == 68) {
-						this.anInt1039 = arg1.g2();
+						this.mapscene = arg1.g2();
 						return;
 					} else if (arg0 == 69) {
 						this.anInt1057 = arg1.g1();

@@ -35,7 +35,7 @@ public final class VarBitType extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "(Lclient!ud;I)V", line = 78)
-	public static void method340(@OriginalArg(0) Js5Index arg0) {
+	public static void load(@OriginalArg(0) Js5Index arg0) {
 		aClass5_21 = arg0;
 	}
 

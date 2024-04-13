@@ -20,7 +20,7 @@ public final class Static90 {
 		}
 		@Pc(29) int local29 = 0;
 		if (arg0 == 0) {
-			local29 = client.scene.method1459(arg4, arg1, arg2);
+			local29 = client.scene.getWallBitset(arg4, arg1, arg2);
 		}
 		if (arg0 == 1) {
 			local29 = client.scene.method1419(arg4, arg1, arg2);

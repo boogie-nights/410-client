@@ -60,7 +60,7 @@ public final class Js5TextureProvider implements TextureProvider {
 	}
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(Z)V", line = 216)
-	public void method401() {
+	public void clear() {
 		for (@Pc(3) int local3 = 0; local3 < this.aClass2_Sub8Array1.length; local3++) {
 			if (this.aClass2_Sub8Array1[local3] != null) {
 				this.aClass2_Sub8Array1[local3].method741();
@@ -79,7 +79,7 @@ public final class Js5TextureProvider implements TextureProvider {
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(DI)V", line = 815)
 	public void method404(@OriginalArg(0) double arg0) {
 		this.aDouble1 = arg0;
-		this.method401();
+		this.clear();
 	}
 
 	@OriginalMember(owner = "client!ea", name = "c", descriptor = "(IB)V", line = 827)

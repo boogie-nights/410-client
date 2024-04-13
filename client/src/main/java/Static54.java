@@ -18,13 +18,8 @@ public final class Static54 {
 	public static void method994() {
 		aClass5_20 = null;
 		Static1.aClass2_Sub3Array1 = null;
-		Static1.anIntArray312 = null;
+		client.skillBaseLevel = null;
 		JagString.aClass40_430 = null;
-	}
-
-	@OriginalMember(owner = "client!lc", name = "b", descriptor = "(B)V", line = 156)
-	public static void method996() {
-		IdkType.aClass47_22.clear();
 	}
 
 	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(Lclient!ud;ILjava/awt/Component;)V", line = 180)
@@ -34,7 +29,7 @@ public final class Static54 {
 		}
 		Static14.aClass2_Sub2_Sub2_Sub3_19 = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_223);
 		Static48.aClass2_Sub2_Sub2_Sub3_13 = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_544);
-		Static16.aClass2_Sub2_Sub2_Sub3_6 = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_191);
+		client.imageMapback = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_191);
 		Static46.aClass2_Sub2_Sub2_Sub3_11 = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_734);
 		Static14.aClass2_Sub2_Sub2_Sub3_18 = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_64);
 		Static94.aClass2_Sub2_Sub2_Sub3_23 = Static91.method77(arg0, JagString.aClass40_110, JagString.aClass40_220);
@@ -42,8 +37,8 @@ public final class Static54 {
 		Static48.aClass2_Sub2_Sub2_Sub3_13.method1320(0, 0);
 		Static11.aClass45_6 = Static75.method1351(172, arg1, 156);
 		Static25.method1610();
-		Static16.aClass2_Sub2_Sub2_Sub3_6.method1320(0, 0);
-		Static7.aClass45_5 = Static75.method1351(190, arg1, 261);
+		client.imageMapback.method1320(0, 0);
+		client.areaSidebar = Static75.method1351(190, arg1, 261);
 		Static14.aClass2_Sub2_Sub2_Sub3_19.method1320(0, 0);
 		Static2.areaViewport = Static75.method1351(512, arg1, 334);
 		Static25.method1610();
@@ -108,7 +103,7 @@ public final class Static54 {
 			local351 = 0;
 			local353 = 999;
 			for (local355 = 0; local355 < 34; local355++) {
-				if (Static16.aClass2_Sub2_Sub2_Sub3_6.aByteArray16[local347 * Static16.aClass2_Sub2_Sub2_Sub3_6.anInt1905 + local355] == 0) {
+				if (client.imageMapback.aByteArray16[local347 * client.imageMapback.anInt1905 + local355] == 0) {
 					if (local353 == 999) {
 						local353 = local355;
 					}
@@ -124,7 +119,7 @@ public final class Static54 {
 			local351 = 999;
 			local355 = 0;
 			for (@Pc(419) int local419 = 25; local419 < 172; local419++) {
-				if (Static16.aClass2_Sub2_Sub2_Sub3_6.aByteArray16[local353 * Static16.aClass2_Sub2_Sub2_Sub3_6.anInt1905 + local419] == 0 && (local419 > 34 || local353 > 34)) {
+				if (client.imageMapback.aByteArray16[local353 * client.imageMapback.anInt1905 + local419] == 0 && (local419 > 34 || local353 > 34)) {
 					if (local351 == 999) {
 						local351 = local419;
 					}

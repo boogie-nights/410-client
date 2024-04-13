@@ -147,7 +147,7 @@ public final class Static78 {
 		}
 		local23 -= 73;
 		local17 -= 75;
-		@Pc(45) int local45 = client.orbitCameraYaw + Static1.anInt1978 & 0x7FF;
+		@Pc(45) int local45 = client.orbitCameraYaw + client.minimapAnticheatAngle & 0x7FF;
 		@Pc(49) int local49 = Draw3D.sin[local45];
 		@Pc(57) int local57 = (Static1.anInt1857 + 256) * local49 >> 8;
 		@Pc(61) int local61 = Draw3D.cos[local45];
@@ -164,7 +164,7 @@ public final class Static78 {
 		client.out.p1(local17);
 		client.out.p2(client.orbitCameraYaw);
 		client.out.p1(57);
-		client.out.p1(Static1.anInt1978);
+		client.out.p1(client.minimapAnticheatAngle);
 		client.out.p1(Static1.anInt1857);
 		client.out.p1(89);
 		client.out.p2(client.localPlayer.x);

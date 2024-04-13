@@ -45,7 +45,7 @@ public final class Static2 {
 		Static46.aClass2_Sub2_Sub2_Sub3_10 = null;
 		Static73.aClass2_Sub2_Sub2_Sub3Array10 = null;
 		Static14.aClass2_Sub2_Sub2_Sub3_18 = null;
-		Static16.aClass2_Sub2_Sub2_Sub3_6 = null;
+		client.imageMapback = null;
 		Static63.aClass45_8 = null;
 		Static30.aClass2_Sub2_Sub2_Sub3_7 = null;
 		Static56.aClass45_23 = null;
@@ -55,7 +55,7 @@ public final class Static2 {
 		Static46.aClass2_Sub2_Sub2_Sub3_11 = null;
 		Static76.anIntArray431 = null;
 		Static75.aClass2_Sub2_Sub2_Sub3_20 = null;
-		Static7.aClass45_5 = null;
+		client.areaSidebar = null;
 		Static3.anIntArray4 = null;
 		Static18.aClass45_9 = null;
 		Static19.aClass45_10 = null;
@@ -103,7 +103,7 @@ public final class Static2 {
 		areaViewport = null;
 		JagString.aClass40_13 = null;
 		client.npcs = null;
-		Static1.anIntArray2 = null;
+		client.tabInterfaceId = null;
 		JagString.aClass40_15 = null;
 		anIntArray3 = null;
 	}

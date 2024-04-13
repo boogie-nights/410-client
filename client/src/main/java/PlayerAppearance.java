@@ -27,7 +27,7 @@ public final class PlayerAppearance {
 	public boolean aBoolean117;
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(B)V", line = 87)
-	public static void method850() {
+	public static void clear() {
 		aClass47_17.clear();
 	}
 

@@ -12,9 +12,6 @@ public final class Static27 {
 	@OriginalMember(owner = "client!fd", name = "f", descriptor = "Lclient!p;")
 	public static PixMap aClass45_14;
 
-	@OriginalMember(owner = "client!fd", name = "i", descriptor = "Lclient!hc;")
-	public static ClientStream js5Stream;
-
 	@OriginalMember(owner = "client!fd", name = "l", descriptor = "[Lclient!vb;")
 	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array4;
 
@@ -25,14 +22,8 @@ public final class Static27 {
 		aClass45_14 = null;
 		aClass2_Sub3_2 = null;
 		JagString.aClass40_218 = null;
-		js5Stream = null;
+		client.js5Stream = null;
 		JagString.aClass40_219 = null;
-	}
-
-	@OriginalMember(owner = "client!fd", name = "b", descriptor = "(I)V", line = 20)
-	public static void method582() {
-		ComType.aClass47_8.clear();
-		ComType.aClass47_20.clear();
 	}
 
 	@OriginalMember(owner = "client!fd", name = "a", descriptor = "(Z)V", line = 63)

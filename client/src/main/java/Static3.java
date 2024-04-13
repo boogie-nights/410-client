@@ -20,28 +20,6 @@ public final class Static3 {
 		anIntArray4 = null;
 	}
 
-	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(BLclient!ke;)V", line = 23)
-	public static void method25(@OriginalArg(1) PathingEntity arg0) {
-		if (arg0.anInt2314 == 0) {
-			arg0.dstYaw = 1024;
-		}
-		arg0.seqTrigger = 0;
-		if (arg0.anInt2314 == 1) {
-			arg0.dstYaw = 1536;
-		}
-		@Pc(24) int local24 = arg0.anInt2277 - client.loopCycle;
-		if (arg0.anInt2314 == 2) {
-			arg0.dstYaw = 0;
-		}
-		if (arg0.anInt2314 == 3) {
-			arg0.dstYaw = 512;
-		}
-		@Pc(54) int local54 = arg0.anInt2317 * 128 + arg0.size * 64;
-		arg0.x += (local54 - arg0.x) / local24;
-		@Pc(82) int local82 = arg0.anInt2321 * 128 + arg0.size * 64;
-		arg0.z += (local82 - arg0.z) / local24;
-	}
-
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(Z)V", line = 65)
 	public static void method26() {
 		@Pc(12) int local12;
@@ -53,7 +31,7 @@ public final class Static3 {
 		@Pc(43) int local43;
 		if (client.packetType == 35) {
 			local12 = client.in.g1();
-			local19 = Static83.baseZ + (local12 & 0x7);
+			local19 = client.baseZ + (local12 & 0x7);
 			local27 = client.baseX + (local12 >> 4 & 0x7);
 			local31 = client.in.g1();
 			local35 = local31 >> 2;
@@ -67,7 +45,7 @@ public final class Static3 {
 			local27 = client.in.g2_alt1();
 			local19 = client.in.g2_alt3();
 			local31 = client.in.g1_alt2();
-			local39 = Static83.baseZ + (local31 & 0x7);
+			local39 = client.baseZ + (local31 & 0x7);
 			local35 = (local31 >> 4 & 0x7) + client.baseX;
 			if (local35 >= 0 && local39 >= 0 && local35 < 104 && local39 < 104 && local27 != Static1.anInt1955) {
 				@Pc(131) ObjStackEntity local131 = new ObjStackEntity();
@@ -82,7 +60,7 @@ public final class Static3 {
 		} else if (client.packetType == 63) {
 			local12 = client.in.g1();
 			local27 = (local12 >> 4 & 0x7) + client.baseX;
-			local19 = Static83.baseZ + (local12 & 0x7);
+			local19 = client.baseZ + (local12 & 0x7);
 			local31 = client.in.g2();
 			local35 = client.in.g2();
 			local39 = client.in.g2();
@@ -102,7 +80,7 @@ public final class Static3 {
 			if (client.packetType == 118) {
 				local12 = client.in.g1();
 				local27 = (local12 >> 4 & 0x7) + client.baseX;
-				local19 = Static83.baseZ + (local12 & 0x7);
+				local19 = client.baseZ + (local12 & 0x7);
 				local31 = client.in.g2();
 				local35 = client.in.g1();
 				local39 = local35 >> 4 & 0xF;
@@ -119,7 +97,7 @@ public final class Static3 {
 			if (client.packetType == 244) {
 				local12 = client.in.g2_alt3();
 				local27 = client.in.g1_alt3();
-				local31 = Static83.baseZ + (local27 & 0x7);
+				local31 = client.baseZ + (local27 & 0x7);
 				local19 = (local27 >> 4 & 0x7) + client.baseX;
 				local35 = client.in.g1_alt2();
 				local43 = local35 & 0x3;
@@ -135,7 +113,7 @@ public final class Static3 {
 					local12 = client.in.g2_alt1();
 					local27 = client.in.g1_alt1();
 					local19 = (local27 >> 4 & 0x7) + client.baseX;
-					local31 = Static83.baseZ + (local27 & 0x7);
+					local31 = client.baseZ + (local27 & 0x7);
 					local35 = client.in.g2_alt2();
 					local39 = client.in.g1_alt1();
 					local43 = local39 >> 2;
@@ -197,7 +175,7 @@ public final class Static3 {
 					local12 = client.in.g2_alt1();
 					local27 = client.in.g1_alt2();
 					local19 = client.baseX + (local27 >> 4 & 0x7);
-					local31 = Static83.baseZ + (local27 & 0x7);
+					local31 = client.baseZ + (local27 & 0x7);
 					local35 = client.in.g2_alt3();
 					if (local19 >= 0 && local31 >= 0 && local19 < 104 && local31 < 104) {
 						local771 = new ObjStackEntity();
@@ -212,7 +190,7 @@ public final class Static3 {
 				} else if (client.packetType == 135) {
 					local12 = client.in.g1();
 					local27 = client.baseX + (local12 >> 4 & 0x7);
-					local19 = (local12 & 0x7) + Static83.baseZ;
+					local19 = (local12 & 0x7) + client.baseZ;
 					local31 = client.in.g2();
 					local35 = client.in.g1();
 					local39 = client.in.g2();
@@ -225,7 +203,7 @@ public final class Static3 {
 				} else if (client.packetType == 221) {
 					local12 = client.in.g1_alt1();
 					local27 = (local12 >> 4 & 0x7) + client.baseX;
-					local19 = (local12 & 0x7) + Static83.baseZ;
+					local19 = (local12 & 0x7) + client.baseZ;
 					local31 = client.in.g2();
 					if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
 						@Pc(950) LinkList local950 = client.levelObjStacks[client.currentLevel][local27][local19];
@@ -249,7 +227,7 @@ public final class Static3 {
 					if (client.packetType == 69) {
 						local12 = client.in.g1();
 						local27 = client.baseX + (local12 >> 4 & 0x7);
-						local19 = (local12 & 0x7) + Static83.baseZ;
+						local19 = (local12 & 0x7) + client.baseZ;
 						local31 = local27 + client.in.g1b();
 						local35 = local19 + client.in.g1b();
 						local39 = client.in.g2s();
@@ -276,7 +254,7 @@ public final class Static3 {
 						local31 = local27 & 0x3;
 						local35 = client.anIntArray416[local19];
 						local39 = client.in.g1_alt1();
-						local425 = Static83.baseZ + (local39 & 0x7);
+						local425 = client.baseZ + (local39 & 0x7);
 						local43 = client.baseX + (local39 >> 4 & 0x7);
 						if (local43 >= 0 && local425 >= 0 && local43 < 103 && local425 < 103) {
 							local503 = World.levelHeightmap[client.currentLevel][local43][local425];

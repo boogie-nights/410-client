@@ -2278,7 +2278,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "q", descriptor = "(III)I", line = 3335)
-	public int method1459(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public int getWallBitset(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(8) Tile local8 = this.levelTiles[arg0][arg1][arg2];
 		return local8 == null || local8.wall == null ? 0 : local8.wall.anInt2369;
 	}
