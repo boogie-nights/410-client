@@ -51,18 +51,18 @@ public final class Static44 {
 		Static40.method1242();
 		Static47.method850();
 		Static27.method582();
-		((Class19) Static6.anInterface4_1).method401();
-		Static40.aClass5_Sub1_14.method57();
-		Static79.aClass5_Sub1_18.method57();
-		Static26.aClass5_Sub1_5.method57();
-		Static33.aClass5_Sub1_7.method57();
-		Static34.aClass5_Sub1_8.method57();
-		Static77.aClass5_Sub1_17.method57();
-		Static24.aClass5_Sub1_4.method57();
-		Static74.aClass5_Sub1_16.method57();
-		Static33.aClass5_Sub1_6.method57();
-		Static73.aClass5_Sub1_15.method57();
-		Static68.aClass5_Sub1_13.method57();
+		((Js5TextureProvider) Static6.anInterface4_1).method401();
+		Static40.animsJs5.method57();
+		Static79.basesJs5.method57();
+		Static26.interfacesJs5.method57();
+		Static33.synthSoundsJs5.method57();
+		Static34.mapsJs5.method57();
+		Static77.midiSongsJs5.method57();
+		Static24.modelsJs5.method57();
+		Static74.spritesJs5.method57();
+		Static33.texturesJs5.method57();
+		Static73.binaryJs5.method57();
+		Static68.midiJinglesJs5.method57();
 	}
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(IIIB)I", line = 193)

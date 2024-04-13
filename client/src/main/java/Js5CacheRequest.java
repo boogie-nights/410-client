@@ -2,17 +2,17 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!kb")
-public final class Class2_Sub9 extends Linkable {
+public final class Js5CacheRequest extends Linkable {
 
 	@OriginalMember(owner = "client!kb", name = "w", descriptor = "[B")
-	public byte[] aByteArray13;
+	public byte[] data;
 
 	@OriginalMember(owner = "client!kb", name = "A", descriptor = "I")
-	public int anInt1189;
+	public int type;
 
 	@OriginalMember(owner = "client!kb", name = "C", descriptor = "Lclient!ad;")
-	public Js5 aClass5_Sub1_11;
+	public Js5 js5;
 
 	@OriginalMember(owner = "client!kb", name = "D", descriptor = "Lclient!cb;")
-	public DiskStore aClass11_3;
+	public Cache cache;
 }

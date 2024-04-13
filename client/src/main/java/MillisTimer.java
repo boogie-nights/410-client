@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!e")
-public final class Class18_Sub1 extends Class18 {
+public final class MillisTimer extends Timer {
 
 	@OriginalMember(owner = "client!e", name = "v", descriptor = "I")
 	private int anInt463;
@@ -92,7 +92,7 @@ public final class Class18_Sub1 extends Class18 {
 	}
 
 	@OriginalMember(owner = "client!e", name = "<init>", descriptor = "()V", line = 207)
-	public Class18_Sub1() {
+	public MillisTimer() {
 		this.method1280();
 	}
 }

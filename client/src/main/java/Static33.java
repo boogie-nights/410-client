@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static33 {
 
 	@OriginalMember(owner = "client!ge", name = "x", descriptor = "Lclient!ad;")
-	public static Js5 aClass5_Sub1_6;
+	public static Js5 texturesJs5;
 
 	@OriginalMember(owner = "client!ge", name = "A", descriptor = "Lclient!ad;")
-	public static Js5 aClass5_Sub1_7;
+	public static Js5 synthSoundsJs5;
 
 	@OriginalMember(owner = "client!ge", name = "F", descriptor = "I")
 	public static int anInt824;
 
 	@OriginalMember(owner = "client!ge", name = "I", descriptor = "Lclient!p;")
-	public static Class45 aClass45_16;
+	public static PixMap aClass45_16;
 
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(II)V", line = 3)
 	public static void method632(@OriginalArg(1) int arg0) {
@@ -64,11 +64,11 @@ public final class Static33 {
 
 	@OriginalMember(owner = "client!ge", name = "c", descriptor = "(B)V", line = 141)
 	public static void method635() {
-		aClass5_Sub1_6 = null;
+		texturesJs5 = null;
 		JagString.aClass40_252 = null;
 		JagString.aClass40_255 = null;
 		Static1.anIntArray161 = null;
-		aClass5_Sub1_7 = null;
+		synthSoundsJs5 = null;
 		Static1.anIntArray159 = null;
 		Static1.anIntArray160 = null;
 		JagString.aClass40_254 = null;

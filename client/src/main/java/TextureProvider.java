@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ld")
-public interface Interface4 {
+public interface TextureProvider {
 
 	@OriginalMember(owner = "client!ld", name = "a", descriptor = "(IB)Z")
 	boolean method394(@OriginalArg(0) int arg0);

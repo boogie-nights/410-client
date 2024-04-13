@@ -18,14 +18,14 @@ public final class Static67 {
 		Static1.anInt1080 = 0;
 		for (@Pc(14) int local14 = 0; local14 < Static97.aByteArrayArray12.length; local14++) {
 			if (Static50.anIntArray299[local14] != -1 && Static97.aByteArrayArray12[local14] == null) {
-				Static97.aByteArrayArray12[local14] = Static34.aClass5_Sub1_8.method68(0, Static50.anIntArray299[local14]);
+				Static97.aByteArrayArray12[local14] = Static34.mapsJs5.method68(0, Static50.anIntArray299[local14]);
 				if (Static97.aByteArrayArray12[local14] == null) {
 					local10 = false;
 					Static1.anInt1080++;
 				}
 			}
 			if (Static46.anIntArray256[local14] != -1 && Static23.aByteArrayArray6[local14] == null) {
-				Static23.aByteArrayArray6[local14] = Static34.aClass5_Sub1_8.method82(0, Static46.anIntArray256[local14], Static78.anIntArrayArray20[local14]);
+				Static23.aByteArrayArray6[local14] = Static34.mapsJs5.method82(0, Static46.anIntArray256[local14], Static78.anIntArrayArray20[local14]);
 				if (Static23.aByteArrayArray6[local14] == null) {
 					Static1.anInt1080++;
 					local10 = false;
@@ -180,7 +180,7 @@ public final class Static67 {
 		}
 		if (Static1.anInt8 - 1 > local199) {
 		}
-		if (Static1.aBoolean2) {
+		if (Static1.lowDetail) {
 			Static85.aClass55_1.method1421(Static1.anInt807);
 		} else {
 			Static85.aClass55_1.method1421(0);
@@ -204,8 +204,8 @@ public final class Static67 {
 			for (local451 = local261 - 1; local451 <= local321 + 1; local451++) {
 				for (local429 = local364 - 1; local429 <= local375 + 1; local429++) {
 					if (local261 > local451 || local451 > local321 || local429 < local364 || local375 < local429) {
-						Static34.aClass5_Sub1_8.method63(Static72.method1334(new JagString[] { JagString.aClass40_723, Static48.method859(local451), JagString.aClass40_612, Static48.method859(local429) }));
-						Static34.aClass5_Sub1_8.method63(Static72.method1334(new JagString[] { JagString.aClass40_356, Static48.method859(local451), JagString.aClass40_612, Static48.method859(local429) }));
+						Static34.mapsJs5.method63(Static72.method1334(new JagString[] { JagString.aClass40_723, Static48.method859(local451), JagString.aClass40_612, Static48.method859(local429) }));
+						Static34.mapsJs5.method63(Static72.method1334(new JagString[] { JagString.aClass40_356, Static48.method859(local451), JagString.aClass40_612, Static48.method859(local429) }));
 					}
 				}
 			}

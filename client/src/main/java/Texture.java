@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!hd")
-public final class Class2_Sub8 extends Linkable {
+public final class Texture extends Linkable {
 
 	@OriginalMember(owner = "client!hd", name = "x", descriptor = "Z")
 	public boolean aBoolean71 = false;
@@ -112,7 +112,7 @@ public final class Class2_Sub8 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!hd", name = "<init>", descriptor = "(Lclient!eb;)V", line = 121)
-	public Class2_Sub8(@OriginalArg(0) Packet arg0) {
+	public Texture(@OriginalArg(0) Packet arg0) {
 		this.anInt995 = arg0.g2();
 		this.aBoolean70 = arg0.g1() == 1;
 		@Pc(23) int local23 = arg0.g1();
@@ -164,7 +164,7 @@ public final class Class2_Sub8 extends Linkable {
 			@Pc(67) int local67;
 			@Pc(69) int local69;
 			@Pc(74) int local74;
-			if ((local52 & 0xFF000000) == 50331648) {
+			if ((local52 & 0xFF000000) == 0x3000000) {
 				local61 = local52 & 0xFF00FF;
 				local67 = local52 >> 8 & 0xFF;
 				for (local69 = 0; local69 < local47.length; local69++) {

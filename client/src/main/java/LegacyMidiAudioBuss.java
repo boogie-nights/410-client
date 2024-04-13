@@ -60,18 +60,18 @@ public final class LegacyMidiAudioBuss extends AudioBuss2 {
 			return;
 		}
 		if (this.aClass48_4.anInt1928 == 1) {
-			@Pc(25) Class16 local25 = (Class16) this.aClass48_4.value;
+			@Pc(25) FileOnDisk local25 = (FileOnDisk) this.aClass48_4.value;
 			try {
-				local25.method363(0, this.aByteArray12.length, this.aByteArray12);
-				local25.method362();
+				local25.write(0, this.aByteArray12.length, this.aByteArray12);
+				local25.close();
 				try {
-					Static101.method305("midibox.loop=" + (this.aBoolean91 ? "\"infinite\"" : "0") + "; midibox.src=\"" + local25.method366().getPath().replace('\\', '/') + "\"; midibox.volume=" + this.anInt1116 + ";", this.aClass7_5.anApplet1);
+					Static101.method305("midibox.loop=" + (this.aBoolean91 ? "\"infinite\"" : "0") + "; midibox.src=\"" + local25.getFile().getPath().replace('\\', '/') + "\"; midibox.volume=" + this.anInt1116 + ";", this.aClass7_5.anApplet1);
 					this.aBoolean92 = true;
 				} catch (@Pc(79) Throwable local79) {
 				}
 			} catch (@Pc(81) Exception local81) {
 				try {
-					local25.method362();
+					local25.close();
 				} catch (@Pc(86) Exception local86) {
 				}
 			}

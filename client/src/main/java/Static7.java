@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static7 {
 
 	@OriginalMember(owner = "client!ba", name = "d", descriptor = "Lclient!p;")
-	public static Class45 aClass45_5;
+	public static PixMap aClass45_5;
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(B)V", line = 42)
 	public static void method183() {
@@ -128,12 +128,12 @@ public final class Static7 {
 		if (arg0 == 5 || arg0 == 10 || arg0 == 20) {
 			Static27.aClass45_14 = null;
 			Static2.method18();
-			Static14.method1263(Static74.aClass5_Sub1_16, method185(), Static73.aClass5_Sub1_15);
+			Static14.method1263(Static74.spritesJs5, method185(), Static73.binaryJs5);
 		}
 		if (arg0 == 25 || arg0 == 30 || arg0 == 40) {
 			Static27.aClass45_14 = null;
 			Static11.method252();
-			Static54.method997(Static74.aClass5_Sub1_16, method185());
+			Static54.method997(Static74.spritesJs5, method185());
 		}
 		Static1.anInt1075 = arg0;
 		Static1.aBoolean1 = true;
@@ -142,7 +142,7 @@ public final class Static7 {
 	@OriginalMember(owner = "client!ba", name = "c", descriptor = "(B)V", line = 313)
 	public static void method188() {
 		World3D.aBoolean163 = false;
-		Static1.aBoolean2 = false;
+		Static1.lowDetail = false;
 	}
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(ZIII)I", line = 334)

@@ -13,10 +13,10 @@ public final class Static68 {
 	public static byte[][][] aByteArrayArrayArray8;
 
 	@OriginalMember(owner = "client!ob", name = "s", descriptor = "Lclient!cb;")
-	public static DiskStore aClass11_4;
+	public static Cache aClass11_4;
 
 	@OriginalMember(owner = "client!ob", name = "t", descriptor = "Lclient!ad;")
-	public static Js5 aClass5_Sub1_13;
+	public static Js5 midiJinglesJs5;
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Z)V", line = 9)
 	public static void method1209() {
@@ -52,7 +52,7 @@ public final class Static68 {
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(I)V", line = 79)
 	public static void method1211() {
-		aClass5_Sub1_13 = null;
+		midiJinglesJs5 = null;
 		JagString.aClass40_526 = null;
 		Static1.aClass41_1 = null;
 		JagString.aClass40_523 = null;

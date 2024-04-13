@@ -50,7 +50,7 @@ public final class Static70 {
 			if (local47 != null && local47.method1544()) {
 				@Pc(72) int local72 = local47.anInt2275 >> 7;
 				local47.aBoolean104 = false;
-				if ((Static1.aBoolean2 && Static1.anInt2067 > 50 || Static1.anInt2067 > 200) && !arg0 && local47.anInt2318 == local47.anInt2290) {
+				if ((Static1.lowDetail && Static1.anInt2067 > 50 || Static1.anInt2067 > 200) && !arg0 && local47.anInt2318 == local47.anInt2290) {
 					local47.aBoolean104 = true;
 				}
 				@Pc(102) int local102 = local47.anInt2284 >> 7;

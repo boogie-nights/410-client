@@ -115,8 +115,8 @@ public final class ProjectileEntity extends Entity {
 			return;
 		}
 		this.anInt1435 += arg0;
-		while (this.anInt1435 > this.aClass2_Sub2_Sub6_1.anIntArray128[this.anInt1426]) {
-			this.anInt1435 -= this.aClass2_Sub2_Sub6_1.anIntArray128[this.anInt1426];
+		while (this.anInt1435 > this.aClass2_Sub2_Sub6_1.delay[this.anInt1426]) {
+			this.anInt1435 -= this.aClass2_Sub2_Sub6_1.delay[this.anInt1426];
 			this.anInt1426++;
 			if (this.anInt1426 >= this.aClass2_Sub2_Sub6_1.anIntArray124.length) {
 				this.anInt1426 = 0;

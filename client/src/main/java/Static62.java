@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static62 {
 
 	@OriginalMember(owner = "client!na", name = "c", descriptor = "Lclient!p;")
-	public static Class45 aClass45_26;
+	public static PixMap aClass45_26;
 
 	@OriginalMember(owner = "client!na", name = "a", descriptor = "(I)V", line = 5)
 	public static void method1096() {
@@ -74,7 +74,7 @@ public final class Static62 {
 
 	@OriginalMember(owner = "client!na", name = "c", descriptor = "(I)V", line = 166)
 	public static void method1101() {
-		@Pc(7) Class30 local7 = Static1.aClass30_1;
+		@Pc(7) Keyboard local7 = Static1.aClass30_1;
 		synchronized (Static1.aClass30_1) {
 			Static1.anInt1094 = Static1.anInt437;
 			@Pc(20) int local20;

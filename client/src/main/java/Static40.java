@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static40 {
 
 	@OriginalMember(owner = "client!ib", name = "c", descriptor = "Lclient!ad;")
-	public static Js5 aClass5_Sub1_14;
+	public static Js5 animsJs5;
 
 	@OriginalMember(owner = "client!ib", name = "g", descriptor = "I")
 	public static int anInt1849;
@@ -170,7 +170,7 @@ public final class Static40 {
 	public static void method1245() {
 		aClass2_Sub2_Sub2_Sub4_7 = null;
 		aClass5_25 = null;
-		aClass5_Sub1_14 = null;
+		animsJs5 = null;
 	}
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(I)V", line = 271)
@@ -253,19 +253,19 @@ public final class Static40 {
 				}
 				Static1.aClass2_Sub3_Sub1_3.p1(Static1.aClass2_Sub3_Sub1_4.pos + 53);
 				Static1.aClass2_Sub3_Sub1_3.p4(410);
-				Static1.aClass2_Sub3_Sub1_3.p1(Static1.aBoolean2 ? 1 : 0);
-				Static1.aClass2_Sub3_Sub1_3.p4(aClass5_Sub1_14.crc);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static79.aClass5_Sub1_18.crc);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static5.aClass5_Sub1_1.crc);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static26.aClass5_Sub1_5.crc);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static33.aClass5_Sub1_7.crc);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static34.aClass5_Sub1_8.crc);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static77.aClass5_Sub1_17.crc);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static24.aClass5_Sub1_4.crc);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static74.aClass5_Sub1_16.crc);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static33.aClass5_Sub1_6.crc);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static73.aClass5_Sub1_15.crc);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static68.aClass5_Sub1_13.crc);
+				Static1.aClass2_Sub3_Sub1_3.p1(Static1.lowDetail ? 1 : 0);
+				Static1.aClass2_Sub3_Sub1_3.p4(animsJs5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static79.basesJs5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static5.configJs5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static26.interfacesJs5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static33.synthSoundsJs5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static34.mapsJs5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static77.midiSongsJs5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static24.modelsJs5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static74.spritesJs5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static33.texturesJs5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static73.binaryJs5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static68.midiJinglesJs5.crc);
 				Static1.aClass2_Sub3_Sub1_3.pdata(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
 				Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_3.data, Static1.aClass2_Sub3_Sub1_3.pos);
 				Static1.aClass2_Sub3_Sub1_4.setSeed(local185);

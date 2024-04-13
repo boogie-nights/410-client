@@ -20,7 +20,7 @@ public final class Static63 {
 	public static Js5Index aClass5_6;
 
 	@OriginalMember(owner = "client!nb", name = "A", descriptor = "Lclient!p;")
-	public static Class45 aClass45_8;
+	public static PixMap aClass45_8;
 
 	@OriginalMember(owner = "client!nb", name = "M", descriptor = "Z")
 	private static boolean aBoolean34;

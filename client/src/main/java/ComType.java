@@ -369,7 +369,7 @@ public final class ComType extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(ILclient!f;ZLclient!le;I)Lclient!ne;", line = 410)
-	public Model method1057(@OriginalArg(1) SeqType arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Class33 arg2, @OriginalArg(4) int arg3) {
+	public Model method1057(@OriginalArg(1) SeqType arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) PlayerAppearance arg2, @OriginalArg(4) int arg3) {
 		Static1.aBoolean102 = false;
 		@Pc(16) int local16;
 		@Pc(19) int local19;

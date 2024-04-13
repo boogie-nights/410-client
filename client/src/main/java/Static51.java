@@ -56,11 +56,11 @@ public final class Static51 {
 	}
 
 	@OriginalMember(owner = "client!ke", name = "i", descriptor = "(I)Lclient!pd;", line = 76)
-	public static Class18 method1539() {
+	public static Timer method1539() {
 		try {
-			return (Class18) Class.forName("Class18_Sub2").getDeclaredConstructor().newInstance();
+			return (Timer) Class.forName("NanoTimer").getDeclaredConstructor().newInstance();
 		} catch (@Pc(14) Throwable local14) {
-			return new Class18_Sub1();
+			return new MillisTimer();
 		}
 	}
 

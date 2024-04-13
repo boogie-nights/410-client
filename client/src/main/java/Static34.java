@@ -11,7 +11,7 @@ public final class Static34 {
 	public static ClientStream aClass25_20;
 
 	@OriginalMember(owner = "client!h", name = "s", descriptor = "Lclient!ad;")
-	public static Js5 aClass5_Sub1_8;
+	public static Js5 mapsJs5;
 
 	@OriginalMember(owner = "client!h", name = "t", descriptor = "I")
 	public static int anInt840;
@@ -47,7 +47,7 @@ public final class Static34 {
 			if (Static1.anIntArray36[local7] >= -10) {
 				@Pc(72) SoundTrack local72 = Static1.aClass43Array1[local7];
 				if (local72 == null) {
-					local72 = Static110.method1214(Static33.aClass5_Sub1_7, Static1.anIntArray497[local7]);
+					local72 = Static110.method1214(Static33.synthSoundsJs5, Static1.anIntArray497[local7]);
 					if (local72 == null) {
 						continue;
 					}
@@ -80,7 +80,7 @@ public final class Static34 {
 			Static1.anInt470 = 0;
 		}
 		if (Static1.anInt470 == 0 && Static1.anInt239 != 0 && Static1.anInt1977 != -1) {
-			Static86.method1499(0, Static1.anInt1977, Static77.aClass5_Sub1_17, Static1.anInt239);
+			Static86.method1499(0, Static1.anInt1977, Static77.midiSongsJs5, Static1.anInt239);
 			return;
 		}
 	}
@@ -204,7 +204,7 @@ public final class Static34 {
 	public static void method642() {
 		aClass25_20 = null;
 		JagString.aClass40_258 = null;
-		aClass5_Sub1_8 = null;
+		mapsJs5 = null;
 		JagString.aClass40_256 = null;
 		anIntArray162 = null;
 		Static1.anIntArray164 = null;

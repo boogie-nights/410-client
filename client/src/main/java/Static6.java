@@ -14,7 +14,7 @@ public final class Static6 {
 	public static int anInt223;
 
 	@OriginalMember(owner = "client!b", name = "bb", descriptor = "Lclient!ld;")
-	public static Interface4 anInterface4_1;
+	public static TextureProvider anInterface4_1;
 
 	@OriginalMember(owner = "client!b", name = "db", descriptor = "I")
 	public static int anInt224;
@@ -1040,7 +1040,7 @@ public final class Static6 {
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(Lclient!ld;)V", line = 1203)
-	public static void method173(@OriginalArg(0) Interface4 arg0) {
+	public static void method173(@OriginalArg(0) TextureProvider arg0) {
 		anInterface4_1 = arg0;
 	}
 

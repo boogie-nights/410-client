@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static30 {
 
 	@OriginalMember(owner = "client!ga", name = "s", descriptor = "[Lclient!cb;")
-	public static DiskStore[] aClass11Array2;
+	public static Cache[] aClass11Array2;
 
 	@OriginalMember(owner = "client!ga", name = "v", descriptor = "Lclient!qb;")
 	public static Pix8 aClass2_Sub2_Sub2_Sub3_7;

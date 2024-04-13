@@ -8,14 +8,14 @@ public final class Static90 {
 	public static int anInt2370;
 
 	@OriginalMember(owner = "client!uc", name = "x", descriptor = "Lclient!p;")
-	public static Class45 aClass45_30;
+	public static PixMap aClass45_30;
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(IIZIIIII)V", line = 11)
 	public static void method1566(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		if (arg1 < 1 || arg2 < 1 || arg1 > 102 || arg2 > 102) {
 			return;
 		}
-		if (Static1.aBoolean2 && Static1.anInt8 != arg4) {
+		if (Static1.lowDetail && Static1.anInt8 != arg4) {
 			return;
 		}
 		@Pc(29) int local29 = 0;

@@ -60,8 +60,8 @@ public final class Static91 {
 					local148 = local140 + (local132 << 8);
 					if (!local80 || local140 != 49 && local140 != 149 && local140 != 147 && local132 != 50 && (local132 != 49 || local140 != 47)) {
 						Static53.anIntArray311[local26] = local148;
-						Static50.anIntArray299[local26] = Static34.aClass5_Sub1_8.method80(Static72.method1334(new JagString[] { JagString.aClass40_723, Static48.method859(local132), JagString.aClass40_612, Static48.method859(local140) }));
-						Static46.anIntArray256[local26] = Static34.aClass5_Sub1_8.method80(Static72.method1334(new JagString[] { JagString.aClass40_356, Static48.method859(local132), JagString.aClass40_612, Static48.method859(local140) }));
+						Static50.anIntArray299[local26] = Static34.mapsJs5.method80(Static72.method1334(new JagString[] { JagString.aClass40_723, Static48.method859(local132), JagString.aClass40_612, Static48.method859(local140) }));
+						Static46.anIntArray256[local26] = Static34.mapsJs5.method80(Static72.method1334(new JagString[] { JagString.aClass40_356, Static48.method859(local132), JagString.aClass40_612, Static48.method859(local140) }));
 						local26++;
 					}
 				}
@@ -119,8 +119,8 @@ public final class Static91 {
 							Static53.anIntArray311[local32] = local456;
 							@Pc(490) int local490 = local456 >> 8 & 0xFF;
 							@Pc(494) int local494 = local456 & 0xFF;
-							Static50.anIntArray299[local32] = Static34.aClass5_Sub1_8.method80(Static72.method1334(new JagString[] { JagString.aClass40_723, Static48.method859(local490), JagString.aClass40_612, Static48.method859(local494) }));
-							Static46.anIntArray256[local32] = Static34.aClass5_Sub1_8.method80(Static72.method1334(new JagString[] { JagString.aClass40_356, Static48.method859(local490), JagString.aClass40_612, Static48.method859(local494) }));
+							Static50.anIntArray299[local32] = Static34.mapsJs5.method80(Static72.method1334(new JagString[] { JagString.aClass40_723, Static48.method859(local490), JagString.aClass40_612, Static48.method859(local494) }));
+							Static46.anIntArray256[local32] = Static34.mapsJs5.method80(Static72.method1334(new JagString[] { JagString.aClass40_356, Static48.method859(local490), JagString.aClass40_612, Static48.method859(local494) }));
 							local32++;
 						}
 					}

@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static26 {
 
 	@OriginalMember(owner = "client!fb", name = "b", descriptor = "Lclient!ad;")
-	public static Js5 aClass5_Sub1_5;
+	public static Js5 interfacesJs5;
 
 	@OriginalMember(owner = "client!fb", name = "n", descriptor = "I")
 	public static int anInt685;
@@ -43,11 +43,11 @@ public final class Static26 {
 						label50: while (true) {
 							do {
 								do {
-									if (local71.anIntArray128[local30.anInt1569] >= local30.anInt1593) {
+									if (local71.delay[local30.anInt1569] >= local30.anInt1593) {
 										break label50;
 									}
 									local13 = true;
-									local30.anInt1593 -= local71.anIntArray128[local30.anInt1569];
+									local30.anInt1593 -= local71.delay[local30.anInt1569];
 									local30.anInt1569++;
 								} while (local30.anInt1569 < local71.anIntArray124.length);
 								local30.anInt1569 -= local71.anInt669;
@@ -71,8 +71,8 @@ public final class Static26 {
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(Lclient!cb;Lclient!cb;BI)V", line = 1038)
-	public static void method540(@OriginalArg(0) DiskStore arg0, @OriginalArg(1) DiskStore arg1, @OriginalArg(3) int arg2) throws IOException {
-		@Pc(10) byte[] local10 = arg0.method261(arg2);
+	public static void method540(@OriginalArg(0) Cache arg0, @OriginalArg(1) Cache arg1, @OriginalArg(3) int arg2) throws IOException {
+		@Pc(10) byte[] local10 = arg0.read(arg2);
 		if (local10 == null) {
 			return;
 		}
@@ -93,7 +93,7 @@ public final class Static26 {
 				@Pc(97) int local97 = local75.g2();
 				local75.pos = local61.length - 2;
 				local75.p2(local97 - 1);
-				arg1.method259(local61.length, arg2, local61);
+				arg1.write(local61.length, arg2, local61);
 				return;
 			}
 			local23 += local46;
@@ -102,7 +102,7 @@ public final class Static26 {
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(I)V", line = 1091)
 	public static void method541() {
-		aClass5_Sub1_5 = null;
+		interfacesJs5 = null;
 		JagString.aClass40_193 = null;
 		aClass5_9 = null;
 	}

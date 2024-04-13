@@ -91,20 +91,20 @@ public final class client extends GameShell {
 		try {
 			@Pc(55) int local55;
 			if (Static91.aClass7_2.aClass16_1 != null) {
-				Static61.aClass14_4 = new Class14(Static91.aClass7_2.aClass16_1, 5200, 0);
+				Static61.aClass14_4 = new BufferedFile(Static91.aClass7_2.aClass16_1, 5200, 0);
 				for (local55 = 0; local55 < 12; local55++) {
-					Static1.aClass14Array1[local55] = new Class14(Static91.aClass7_2.aClass16Array2[local55], 6000, 0);
+					Static1.aClass14Array1[local55] = new BufferedFile(Static91.aClass7_2.aClass16Array2[local55], 6000, 0);
 				}
-				Static97.aClass14_5 = new Class14(Static91.aClass7_2.aClass16_3, 6000, 0);
-				Static68.aClass11_4 = new DiskStore(255, Static61.aClass14_4, Static97.aClass14_5, 500000);
+				Static97.aClass14_5 = new BufferedFile(Static91.aClass7_2.aClass16_3, 6000, 0);
+				Static68.aClass11_4 = new Cache(255, Static61.aClass14_4, Static97.aClass14_5, 500000);
 				Static91.aClass7_2.aClass16_3 = null;
 				Static91.aClass7_2.aClass16_1 = null;
 				Static91.aClass7_2.aClass16Array2 = null;
 			}
 			if (Static91.aClass7_2.aClass16_2 != null) {
-				Static9.aClass14_1 = new Class14(Static91.aClass7_2.aClass16_2, 5200, 0);
+				Static9.aClass14_1 = new BufferedFile(Static91.aClass7_2.aClass16_2, 5200, 0);
 				for (local55 = 0; local55 < 5; local55++) {
-					Static1.aClass14Array2[local55] = new Class14(Static91.aClass7_2.aClass16Array1[local55], 6000, 0);
+					Static1.aClass14Array2[local55] = new BufferedFile(Static91.aClass7_2.aClass16Array1[local55], 6000, 0);
 				}
 				Static91.aClass7_2.aClass16_2 = null;
 				Static91.aClass7_2.aClass16Array1 = null;

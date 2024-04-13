@@ -16,7 +16,7 @@ public final class SeqType extends Hashable {
 	private int[] anIntArray127;
 
 	@OriginalMember(owner = "client!f", name = "ob", descriptor = "[I")
-	public int[] anIntArray128;
+	public int[] delay;
 
 	@OriginalMember(owner = "client!f", name = "Z", descriptor = "I")
 	public int anInt664 = -1;
@@ -80,9 +80,9 @@ public final class SeqType extends Hashable {
 		@Pc(50) int local50;
 		if (arg0 == 1) {
 			local19 = arg1.g1();
-			this.anIntArray128 = new int[local19];
+			this.delay = new int[local19];
 			for (local25 = 0; local25 < local19; local25++) {
-				this.anIntArray128[local25] = arg1.g2();
+				this.delay[local25] = arg1.g2();
 			}
 			this.anIntArray124 = new int[local19];
 			for (local50 = 0; local50 < local19; local50++) {

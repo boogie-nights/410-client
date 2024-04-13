@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static2 {
 
 	@OriginalMember(owner = "client!ab", name = "j", descriptor = "Lclient!p;")
-	public static Class45 aClass45_2;
+	public static PixMap aClass45_2;
 
 	@OriginalMember(owner = "client!ab", name = "k", descriptor = "Lclient!qb;")
 	public static Pix8 aClass2_Sub2_Sub2_Sub3_1;
 
 	@OriginalMember(owner = "client!ab", name = "n", descriptor = "Lclient!p;")
-	public static Class45 aClass45_3;
+	public static PixMap aClass45_3;
 
 	@OriginalMember(owner = "client!ab", name = "r", descriptor = "[I")
 	public static int[] anIntArray3;
@@ -466,7 +466,7 @@ public final class Static2 {
 				if (local125 == -1 && Static1.anInt470 == 0) {
 					Static86.method1497();
 				} else if (local125 != -1 && local125 != Static1.anInt1977 && Static1.anInt239 != 0 && Static1.anInt470 == 0) {
-					Static86.method1491(local125, Static1.anInt239, 0, Static77.aClass5_Sub1_17);
+					Static86.method1491(local125, Static1.anInt239, 0, Static77.midiSongsJs5);
 				}
 				Static1.anInt1977 = local125;
 				Static1.anInt2083 = -1;
@@ -479,7 +479,7 @@ public final class Static2 {
 					local226 = -1;
 				}
 				if (Static1.anInt239 != 0 && local226 != -1) {
-					Static86.method1499(1, local226, Static68.aClass5_Sub1_13, Static1.anInt239);
+					Static86.method1499(1, local226, Static68.midiJinglesJs5, Static1.anInt239);
 					Static1.anInt470 = local125;
 				}
 				Static1.anInt2083 = -1;

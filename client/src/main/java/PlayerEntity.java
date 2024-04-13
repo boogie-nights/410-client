@@ -37,7 +37,7 @@ public final class PlayerEntity extends PathingEntity {
 	public int anInt1387;
 
 	@OriginalMember(owner = "client!kc", name = "id", descriptor = "Lclient!le;")
-	public Class33 aClass33_2;
+	public PlayerAppearance aClass33_2;
 
 	@OriginalMember(owner = "client!kc", name = "Ic", descriptor = "I")
 	public int anInt1370 = -1;
@@ -133,7 +133,7 @@ public final class PlayerEntity extends PathingEntity {
 		this.anInt1378 = arg0.g1();
 		this.anInt1373 = arg0.g2();
 		if (this.aClass33_2 == null) {
-			this.aClass33_2 = new Class33();
+			this.aClass33_2 = new PlayerAppearance();
 		}
 		this.aClass33_2.method1001(local14 == 1, local111, local23, local33);
 	}

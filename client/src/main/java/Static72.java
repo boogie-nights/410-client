@@ -9,13 +9,13 @@ public final class Static72 {
 	public static int anInt1914;
 
 	@OriginalMember(owner = "client!qc", name = "e", descriptor = "Lclient!p;")
-	public static Class45 aClass45_27;
+	public static PixMap aClass45_27;
 
 	@OriginalMember(owner = "client!qc", name = "h", descriptor = "Lclient!wd;")
 	public static Class24 aClass24_1;
 
 	@OriginalMember(owner = "client!qc", name = "q", descriptor = "Lclient!p;")
-	public static Class45 aClass45_28;
+	public static PixMap aClass45_28;
 
 	@OriginalMember(owner = "client!qc", name = "x", descriptor = "Lclient!qd;")
 	public static ObjectRequest aClass48_7;

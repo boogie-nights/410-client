@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static56 {
 
 	@OriginalMember(owner = "client!ma", name = "e", descriptor = "Lclient!p;")
-	public static Class45 aClass45_22;
+	public static PixMap aClass45_22;
 
 	@OriginalMember(owner = "client!ma", name = "l", descriptor = "Lclient!qd;")
 	public static ObjectRequest aClass48_6;
 
 	@OriginalMember(owner = "client!ma", name = "n", descriptor = "Lclient!p;")
-	public static Class45 aClass45_23;
+	public static PixMap aClass45_23;
 
 	@OriginalMember(owner = "client!ma", name = "w", descriptor = "Lclient!p;")
-	public static Class45 aClass45_24;
+	public static PixMap aClass45_24;
 
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(I)V", line = 62)
 	public static void method1039() {

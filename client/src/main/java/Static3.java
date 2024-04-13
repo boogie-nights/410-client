@@ -288,17 +288,17 @@ public final class Static3 {
 								if (local1292 != null) {
 									local523 = local1292.anInt2369 >> 14 & 0x7FFF;
 									if (local19 == 2) {
-										local1292.aClass2_Sub2_Sub12_7 = new Class2_Sub2_Sub12_Sub5(local523, 2, local31 + 4, local503, local1060, local1064, local1068, local12, false);
-										local1292.aClass2_Sub2_Sub12_8 = new Class2_Sub2_Sub12_Sub5(local523, 2, local31 + 1 & 0x3, local503, local1060, local1064, local1068, local12, false);
+										local1292.aClass2_Sub2_Sub12_7 = new LocEntity(local523, 2, local31 + 4, local503, local1060, local1064, local1068, local12, false);
+										local1292.aClass2_Sub2_Sub12_8 = new LocEntity(local523, 2, local31 + 1 & 0x3, local503, local1060, local1064, local1068, local12, false);
 									} else {
-										local1292.aClass2_Sub2_Sub12_7 = new Class2_Sub2_Sub12_Sub5(local523, local19, local31, local503, local1060, local1064, local1068, local12, false);
+										local1292.aClass2_Sub2_Sub12_7 = new LocEntity(local523, local19, local31, local503, local1060, local1064, local1068, local12, false);
 									}
 								}
 							}
 							if (local35 == 1) {
 								@Pc(1365) WallDecoration local1365 = Static85.aClass55_1.method1428(Static1.anInt8, local43, local425);
 								if (local1365 != null) {
-									local1365.aClass2_Sub2_Sub12_1 = new Class2_Sub2_Sub12_Sub5(local1365.anInt17 >> 14 & 0x7FFF, 4, 0, local503, local1060, local1064, local1068, local12, false);
+									local1365.aClass2_Sub2_Sub12_1 = new LocEntity(local1365.anInt17 >> 14 & 0x7FFF, 4, 0, local503, local1060, local1064, local1068, local12, false);
 								}
 							}
 							if (local35 == 2) {
@@ -307,13 +307,13 @@ public final class Static3 {
 									local19 = 10;
 								}
 								if (local1397 != null) {
-									local1397.aClass2_Sub2_Sub12_3 = new Class2_Sub2_Sub12_Sub5(local1397.anInt1644 >> 14 & 0x7FFF, local19, local31, local503, local1060, local1064, local1068, local12, false);
+									local1397.aClass2_Sub2_Sub12_3 = new LocEntity(local1397.anInt1644 >> 14 & 0x7FFF, local19, local31, local503, local1060, local1064, local1068, local12, false);
 								}
 							}
 							if (local35 == 3) {
 								@Pc(1432) GroundDecoration local1432 = Static85.aClass55_1.method1441(Static1.anInt8, local43, local425);
 								if (local1432 != null) {
-									local1432.aClass2_Sub2_Sub12_2 = new Class2_Sub2_Sub12_Sub5(local1432.anInt48 >> 14 & 0x7FFF, 22, local31, local503, local1060, local1064, local1068, local12, false);
+									local1432.aClass2_Sub2_Sub12_2 = new LocEntity(local1432.anInt48 >> 14 & 0x7FFF, 22, local31, local503, local1060, local1064, local1068, local12, false);
 								}
 							}
 						}

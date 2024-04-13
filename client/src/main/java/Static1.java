@@ -57,7 +57,7 @@ public final class Static1 {
 	public static int anInt16;
 
 	@OriginalMember(owner = "client!a", name = "A", descriptor = "Lclient!p;")
-	public static Class45 aClass45_1;
+	public static PixMap aClass45_1;
 	@OriginalMember(owner = "client!a", name = "e", descriptor = "Z")
 	public static volatile boolean aBoolean1 = true;
 	@OriginalMember(owner = "client!a", name = "s", descriptor = "J")
@@ -67,7 +67,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!a", name = "n", descriptor = "I")
 	public static int anInt10 = 0;
 	@OriginalMember(owner = "client!a", name = "w", descriptor = "Z")
-	public static boolean aBoolean2 = false;
+	public static boolean lowDetail = false;
 	@OriginalMember(owner = "client!ae", name = "Q", descriptor = "J")
 	public static long aLong12 = 0L;
 	@OriginalMember(owner = "client!ae", name = "cb", descriptor = "I")
@@ -135,7 +135,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!gd", name = "s", descriptor = "I")
 	public static int anInt798 = 1;
 	@OriginalMember(owner = "client!gd", name = "D", descriptor = "[Lclient!d;")
-	public static Class14[] aClass14Array2 = new Class14[5];
+	public static BufferedFile[] aClass14Array2 = new BufferedFile[5];
 	@OriginalMember(owner = "client!gd", name = "A", descriptor = "I")
 	public static int anInt804 = 2;
 	@OriginalMember(owner = "client!gd", name = "E", descriptor = "I")
@@ -181,7 +181,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!ab", name = "d", descriptor = "[I")
 	public static int[] anIntArray2 = new int[] { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
 	@OriginalMember(owner = "client!ab", name = "l", descriptor = "[Lclient!d;")
-	public static Class14[] aClass14Array1 = new Class14[12];
+	public static BufferedFile[] aClass14Array1 = new BufferedFile[12];
 	@OriginalMember(owner = "client!ab", name = "e", descriptor = "I")
 	public static int anInt34 = 0;
 	@OriginalMember(owner = "client!ab", name = "b", descriptor = "[Lclient!ua;")
@@ -487,7 +487,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!hc", name = "w", descriptor = "I")
 	public static int anInt980 = -1;
 	@OriginalMember(owner = "client!hc", name = "h", descriptor = "Lclient!le;")
-	public static Class33 aClass33_1 = new Class33();
+	public static PlayerAppearance aClass33_1 = new PlayerAppearance();
 	@OriginalMember(owner = "client!hc", name = "E", descriptor = "I")
 	public static int anInt986 = 0;
 	@OriginalMember(owner = "client!fb", name = "w", descriptor = "I")
@@ -755,7 +755,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!oa", name = "k", descriptor = "I")
 	public static int anInt1800 = 0;
 	@OriginalMember(owner = "client!oa", name = "g", descriptor = "Lclient!ka;")
-	public static Class30 aClass30_1 = new Class30();
+	public static Keyboard aClass30_1 = new Keyboard();
 	@OriginalMember(owner = "client!oa", name = "A", descriptor = "[I")
 	public static int[] anIntArray408 = new int[2048];
 	@OriginalMember(owner = "client!nd", name = "t", descriptor = "[[I")
@@ -890,7 +890,7 @@ public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ke;Z)V", line = 140)
 	public static void method4(@OriginalArg(0) PathingEntity arg0) {
-		if (arg0.anInt2297 == anInt2511 || arg0.anInt2307 == -1 || arg0.anInt2313 != 0 || arg0.anInt2267 + 1 > Static57.method1042(arg0.anInt2307).anIntArray128[arg0.anInt2316]) {
+		if (arg0.anInt2297 == anInt2511 || arg0.anInt2307 == -1 || arg0.anInt2313 != 0 || arg0.anInt2267 + 1 > Static57.method1042(arg0.anInt2307).delay[arg0.anInt2316]) {
 			@Pc(38) int local38 = arg0.anInt2297 - arg0.anInt2277;
 			@Pc(44) int local44 = anInt2511 - arg0.anInt2277;
 			@Pc(54) int local54 = arg0.anInt2278 * 64 + arg0.anInt2321 * 128;

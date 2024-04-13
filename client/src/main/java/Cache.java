@@ -6,16 +6,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!cb")
-public final class DiskStore {
+public final class Cache {
 
 	@OriginalMember(owner = "client!cb", name = "l", descriptor = "I")
 	private int anInt301 = 65000;
 
 	@OriginalMember(owner = "client!cb", name = "e", descriptor = "Lclient!d;")
-	private Class14 aClass14_2 = null;
+	private BufferedFile aClass14_2 = null;
 
 	@OriginalMember(owner = "client!cb", name = "g", descriptor = "Lclient!d;")
-	private Class14 aClass14_3 = null;
+	private BufferedFile aClass14_3 = null;
 
 	@OriginalMember(owner = "client!cb", name = "h", descriptor = "I")
 	private final int anInt297;
@@ -28,7 +28,7 @@ public final class DiskStore {
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(IZ[BII)Z", line = 166)
 	private boolean method258(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(4) int arg3) {
-		@Pc(8) Class14 local8 = this.aClass14_3;
+		@Pc(8) BufferedFile local8 = this.aClass14_3;
 		synchronized (this.aClass14_3) {
 			try {
 				@Pc(27) int local27;
@@ -119,8 +119,8 @@ public final class DiskStore {
 	}
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(II[BZ)Z", line = 285)
-	public boolean method259(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2) {
-		@Pc(6) Class14 local6 = this.aClass14_3;
+	public boolean write(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2) {
+		@Pc(6) BufferedFile local6 = this.aClass14_3;
 		synchronized (this.aClass14_3) {
 			if (arg0 < 0 || this.anInt301 < arg0) {
 				throw new IllegalArgumentException();
@@ -134,7 +134,7 @@ public final class DiskStore {
 	}
 
 	@OriginalMember(owner = "client!cb", name = "<init>", descriptor = "(ILclient!d;Lclient!d;I)V", line = 356)
-	public DiskStore(@OriginalArg(0) int arg0, @OriginalArg(1) Class14 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) int arg3) {
+	public Cache(@OriginalArg(0) int arg0, @OriginalArg(1) BufferedFile arg1, @OriginalArg(2) BufferedFile arg2, @OriginalArg(3) int arg3) {
 		this.anInt301 = arg3;
 		this.aClass14_2 = arg2;
 		this.anInt297 = arg0;
@@ -142,8 +142,8 @@ public final class DiskStore {
 	}
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(II)[B", line = 394)
-	public byte[] method261(@OriginalArg(0) int arg0) {
-		@Pc(8) Class14 local8 = this.aClass14_3;
+	public byte[] read(@OriginalArg(0) int arg0) {
+		@Pc(8) BufferedFile local8 = this.aClass14_3;
 		synchronized (this.aClass14_3) {
 			try {
 				if ((long) (arg0 * 6 + 6) > this.aClass14_2.method351()) {

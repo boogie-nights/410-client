@@ -11,7 +11,7 @@ public final class Static11 {
 	public static long aLong24;
 
 	@OriginalMember(owner = "client!ca", name = "cb", descriptor = "Lclient!p;")
-	public static Class45 aClass45_6;
+	public static PixMap aClass45_6;
 
 	@OriginalMember(owner = "client!ca", name = "c", descriptor = "(B)V", line = 16)
 	public static void method250() {

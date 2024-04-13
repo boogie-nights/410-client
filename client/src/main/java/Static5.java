@@ -8,7 +8,7 @@ public final class Static5 {
 	public static int anInt173;
 
 	@OriginalMember(owner = "client!ae", name = "ab", descriptor = "Lclient!ad;")
-	public static Js5 aClass5_Sub1_1;
+	public static Js5 configJs5;
 
 	@OriginalMember(owner = "client!ae", name = "f", descriptor = "(I)V", line = 11)
 	public static void method115() {
@@ -57,7 +57,7 @@ public final class Static5 {
 		JagString.aClass40_43 = null;
 		Static1.aClass44_1 = null;
 		Static1.aClass47_3 = null;
-		aClass5_Sub1_1 = null;
+		configJs5 = null;
 		Static1.anIntArray37 = null;
 		JagString.aClass40_46 = null;
 		JagString.aClass40_44 = null;

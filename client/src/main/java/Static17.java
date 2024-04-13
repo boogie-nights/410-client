@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static17 {
 
 	@OriginalMember(owner = "client!db", name = "k", descriptor = "[Lclient!cb;")
-	public static DiskStore[] aClass11Array1;
+	public static Cache[] aClass11Array1;
 
 	@OriginalMember(owner = "client!db", name = "a", descriptor = "(B)V", line = 3)
 	public static void method356() {
@@ -179,10 +179,10 @@ public final class Static17 {
 		if (Static1.aBoolean173) {
 			@Pc(118) byte local118 = 20;
 			@Pc(120) int local120 = 16776960;
-			if (Static1.anInt1695 < 30 && Static1.aBoolean2) {
+			if (Static1.anInt1695 < 30 && Static1.lowDetail) {
 				local120 = 16711680;
 			}
-			if (Static1.anInt1695 < 20 && !Static1.aBoolean2) {
+			if (Static1.anInt1695 < 20 && !Static1.lowDetail) {
 				local120 = 16711680;
 			}
 			Static95.aClass2_Sub2_Sub2_Sub2_5.method572(Static72.method1334(new JagString[] { JagString.aClass40_676, Static48.method859(Static1.anInt1695) }), 20, local120);
@@ -190,10 +190,10 @@ public final class Static17 {
 			local158 = local118 + 15;
 			@Pc(160) Runtime local160 = Runtime.getRuntime();
 			@Pc(170) int local170 = (int) ((local160.totalMemory() - local160.freeMemory()) / 1024L);
-			if (local170 > 32768 && Static1.aBoolean2) {
+			if (local170 > 32768 && Static1.lowDetail) {
 				local120 = 16711680;
 			}
-			if (local170 > 65536 && !Static1.aBoolean2) {
+			if (local170 > 65536 && !Static1.lowDetail) {
 				local120 = 16711680;
 			}
 			Static95.aClass2_Sub2_Sub2_Sub2_5.method572(Static72.method1334(new JagString[] { JagString.aClass40_44, Static48.method859(local170), JagString.aClass40_668 }), 35, local120);

@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static41 {
 
 	@OriginalMember(owner = "client!ic", name = "U", descriptor = "Lclient!p;")
-	public static Class45 aClass45_21;
+	public static PixMap aClass45_21;
 
 	@OriginalMember(owner = "client!ic", name = "V", descriptor = "Lclient!rd;")
 	public static MouseRecorder aClass52_1;

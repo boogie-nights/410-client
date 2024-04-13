@@ -876,7 +876,7 @@ public final class Static88 {
 		if (arg0.anInt2318 != -1) {
 			local15 = Static57.method1042(arg0.anInt2318);
 			arg0.anInt2296++;
-			if (arg0.anInt2295 < local15.anIntArray124.length && arg0.anInt2296 > local15.anIntArray128[arg0.anInt2295]) {
+			if (arg0.anInt2295 < local15.anIntArray124.length && arg0.anInt2296 > local15.delay[arg0.anInt2295]) {
 				arg0.anInt2295++;
 				arg0.anInt2296 = 1;
 			}
@@ -895,7 +895,7 @@ public final class Static88 {
 			} else {
 				@Pc(89) SeqType local89 = Static57.method1042(local81);
 				arg0.anInt2268++;
-				if (arg0.anInt2291 < local89.anIntArray124.length && arg0.anInt2268 > local89.anIntArray128[arg0.anInt2291]) {
+				if (arg0.anInt2291 < local89.anIntArray124.length && arg0.anInt2268 > local89.delay[arg0.anInt2291]) {
 					arg0.anInt2268 = 1;
 					arg0.anInt2291++;
 				}
@@ -914,7 +914,7 @@ public final class Static88 {
 		if (arg0.anInt2307 != -1 && arg0.anInt2313 == 0) {
 			local15 = Static57.method1042(arg0.anInt2307);
 			arg0.anInt2267++;
-			if (local15.anIntArray124.length > arg0.anInt2316 && arg0.anInt2267 > local15.anIntArray128[arg0.anInt2316]) {
+			if (local15.anIntArray124.length > arg0.anInt2316 && arg0.anInt2267 > local15.delay[arg0.anInt2316]) {
 				arg0.anInt2316++;
 				arg0.anInt2267 = 1;
 			}

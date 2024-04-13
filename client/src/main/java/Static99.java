@@ -12,7 +12,7 @@ public final class Static99 {
 	public static int anInt2498;
 
 	@OriginalMember(owner = "client!wd", name = "v", descriptor = "Lclient!p;")
-	public static Class45 aClass45_31;
+	public static PixMap aClass45_31;
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(I)V", line = 14)
 	public static void method1653() {

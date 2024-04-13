@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static24 {
 
 	@OriginalMember(owner = "client!f", name = "O", descriptor = "Lclient!ad;")
-	public static Js5 aClass5_Sub1_4;
+	public static Js5 modelsJs5;
 
 	@OriginalMember(owner = "client!f", name = "hb", descriptor = "Lclient!p;")
-	public static Class45 aClass45_12;
+	public static PixMap aClass45_12;
 
 	@OriginalMember(owner = "client!f", name = "kb", descriptor = "[I")
 	public static int[] anIntArray126;
@@ -76,7 +76,7 @@ public final class Static24 {
 		JagString.aClass40_192 = null;
 		Static1.aClass47_7 = null;
 		aFontMetrics1 = null;
-		aClass5_Sub1_4 = null;
+		modelsJs5 = null;
 		JagString.aClass40_191 = null;
 		anIntArray126 = null;
 	}

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!le")
-public final class Class33 {
+public final class PlayerAppearance {
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "J")
 	private long aLong100;
@@ -16,7 +16,7 @@ public final class Class33 {
 	private int[] anIntArray313;
 
 	@OriginalMember(owner = "client!le", name = "o", descriptor = "[I")
-	private int[] anIntArray314;
+	private int[] identikit;
 
 	@OriginalMember(owner = "client!le", name = "t", descriptor = "I")
 	private int anInt1520;
@@ -31,7 +31,7 @@ public final class Class33 {
 		}
 		@Pc(18) boolean local18 = false;
 		for (@Pc(20) int local20 = 0; local20 < 12; local20++) {
-			@Pc(27) int local27 = this.anIntArray314[local20];
+			@Pc(27) int local27 = this.identikit[local20];
 			if (local27 >= 256 && local27 < 512 && !Static83.method1469(local27 - 256).method1585()) {
 				local18 = true;
 			}
@@ -45,7 +45,7 @@ public final class Class33 {
 		@Pc(74) int local74 = 0;
 		@Pc(77) Model[] local77 = new Model[12];
 		for (@Pc(79) int local79 = 0; local79 < 12; local79++) {
-			@Pc(86) int local86 = this.anIntArray314[local79];
+			@Pc(86) int local86 = this.identikit[local79];
 			@Pc(106) Model local106;
 			if (local86 >= 256 && local86 < 512) {
 				local106 = Static83.method1469(local86 - 256).method1586();
@@ -89,7 +89,7 @@ public final class Class33 {
 		this.aBoolean117 = arg0;
 		this.anIntArray313 = arg1;
 		this.anInt1520 = arg2;
-		this.anIntArray314 = arg3;
+		this.identikit = arg3;
 		this.method1008();
 	}
 
@@ -105,7 +105,7 @@ public final class Class33 {
 		if (arg1 == 1 && this.aBoolean117) {
 			return;
 		}
-		@Pc(19) int local19 = this.anIntArray314[Static1.anIntArray160[arg1]];
+		@Pc(19) int local19 = this.identikit[Static1.anIntArray160[arg1]];
 		if (local19 == 0) {
 			return;
 		}
@@ -125,7 +125,7 @@ public final class Class33 {
 			}
 			local47 = Static83.method1469(local19);
 		} while (local47 == null || local47.aBoolean178 || (this.aBoolean117 ? 7 : 0) + arg1 != local47.anInt2386);
-		this.anIntArray314[Static1.anIntArray160[arg1]] = local19 + 256;
+		this.identikit[Static1.anIntArray160[arg1]] = local19 + 256;
 		this.method1008();
 	}
 
@@ -134,19 +134,19 @@ public final class Class33 {
 		if (this.anInt1520 != -1) {
 			return Static34.method640(this.anInt1520).method605(arg2, arg3, arg0, arg1);
 		}
-		@Pc(27) int[] local27 = this.anIntArray314;
+		@Pc(27) int[] local27 = this.identikit;
 		@Pc(35) long local35 = this.aLong101;
 		if (arg2 != null && (arg2.anInt668 >= 0 || arg2.anInt664 >= 0)) {
 			local27 = new int[12];
 			for (@Pc(54) int local54 = 0; local54 < 12; local54++) {
-				local27[local54] = this.anIntArray314[local54];
+				local27[local54] = this.identikit[local54];
 			}
 			if (arg2.anInt668 >= 0) {
-				local35 += arg2.anInt668 - this.anIntArray314[5] << 8;
+				local35 += arg2.anInt668 - this.identikit[5] << 8;
 				local27[5] = arg2.anInt668;
 			}
 			if (arg2.anInt664 >= 0) {
-				local35 += arg2.anInt664 - this.anIntArray314[3] << 16;
+				local35 += arg2.anInt664 - this.identikit[3] << 16;
 				local27[3] = arg2.anInt664;
 			}
 		}
@@ -221,7 +221,7 @@ public final class Class33 {
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(B)I", line = 706)
 	public int method1006() {
-		return this.anInt1520 == -1 ? (this.anIntArray314[11] << 5) + (this.anIntArray314[8] << 10) + (this.anIntArray313[4] << 20) + (this.anIntArray313[0] << 25) + (this.anIntArray314[0] << 15) + this.anIntArray314[1] : 305419896 - -Static34.method640(this.anInt1520).anInt762;
+		return this.anInt1520 == -1 ? (this.identikit[11] << 5) + (this.identikit[8] << 10) + (this.anIntArray313[4] << 20) + (this.anIntArray313[0] << 25) + (this.identikit[0] << 15) + this.identikit[1] : 305419896 - -Static34.method640(this.anInt1520).anInt762;
 	}
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(Lclient!eb;I)V", line = 732)
@@ -229,7 +229,7 @@ public final class Class33 {
 		arg0.p1(this.aBoolean117 ? 1 : 0);
 		@Pc(31) int local31;
 		for (@Pc(22) int local22 = 0; local22 < 7; local22++) {
-			local31 = this.anIntArray314[Static1.anIntArray160[local22]];
+			local31 = this.identikit[Static1.anIntArray160[local22]];
 			if (local31 == 0) {
 				arg0.p1(-1);
 			} else {
@@ -244,22 +244,22 @@ public final class Class33 {
 	@OriginalMember(owner = "client!le", name = "d", descriptor = "(I)V", line = 797)
 	private void method1008() {
 		@Pc(8) long local8 = this.aLong101;
-		@Pc(13) int local13 = this.anIntArray314[5];
-		@Pc(18) int local18 = this.anIntArray314[9];
-		this.anIntArray314[5] = local18;
-		this.anIntArray314[9] = local13;
+		@Pc(13) int local13 = this.identikit[5];
+		@Pc(18) int local18 = this.identikit[9];
+		this.identikit[5] = local18;
+		this.identikit[9] = local13;
 		this.aLong101 = 0L;
 		for (@Pc(33) int local33 = 0; local33 < 12; local33++) {
 			this.aLong101 <<= 0x4;
-			if (this.anIntArray314[local33] >= 256) {
-				this.aLong101 += this.anIntArray314[local33] - 256;
+			if (this.identikit[local33] >= 256) {
+				this.aLong101 += this.identikit[local33] - 256;
 			}
 		}
-		if (this.anIntArray314[0] >= 256) {
-			this.aLong101 += this.anIntArray314[0] - 256 >> 4;
+		if (this.identikit[0] >= 256) {
+			this.aLong101 += this.identikit[0] - 256 >> 4;
 		}
-		if (this.anIntArray314[1] >= 256) {
-			this.aLong101 += this.anIntArray314[1] - 256 >> 8;
+		if (this.identikit[1] >= 256) {
+			this.aLong101 += this.identikit[1] - 256 >> 8;
 		}
 		for (@Pc(109) int local109 = 0; local109 < 5; local109++) {
 			this.aLong101 <<= 0x3;
@@ -267,8 +267,8 @@ public final class Class33 {
 		}
 		this.aLong101 <<= 0x1;
 		this.aLong101 += this.aBoolean117 ? 1 : 0;
-		this.anIntArray314[5] = local13;
-		this.anIntArray314[9] = local18;
+		this.identikit[5] = local13;
+		this.identikit[9] = local18;
 		if (local8 != 0L && local8 != this.aLong101) {
 			Static1.aClass47_17.method1327(local8);
 		}

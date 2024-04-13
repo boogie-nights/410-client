@@ -25,13 +25,13 @@ public final class Js5 extends Js5Index {
 	private final int anInt123;
 
 	@OriginalMember(owner = "client!ad", name = "Eb", descriptor = "Lclient!cb;")
-	private final DiskStore aClass11_2;
+	private final Cache aClass11_2;
 
 	@OriginalMember(owner = "client!ad", name = "kb", descriptor = "Lclient!cb;")
-	private final DiskStore aClass11_1;
+	private final Cache aClass11_1;
 
 	@OriginalMember(owner = "client!ad", name = "<init>", descriptor = "(Lclient!cb;Lclient!cb;IZZZ)V", line = 16)
-	public Js5(@OriginalArg(0) DiskStore arg0, @OriginalArg(1) DiskStore arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) boolean arg5) {
+	public Js5(@OriginalArg(0) Cache arg0, @OriginalArg(1) Cache arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) boolean arg5) {
 		super(arg3, arg4);
 		this.aBoolean7 = arg5;
 		this.anInt123 = arg2;
@@ -154,7 +154,7 @@ public final class Js5 extends Js5Index {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(Lclient!cb;I[BBZ)V", line = 468)
-	public void method95(@OriginalArg(0) DiskStore arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(4) boolean arg3) {
+	public void method95(@OriginalArg(0) Cache arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(4) boolean arg3) {
 		@Pc(67) int local67;
 		if (arg0 == this.aClass11_1) {
 			if (this.aBoolean8) {

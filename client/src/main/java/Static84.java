@@ -18,7 +18,7 @@ public final class Static84 {
 	public static boolean[] aBooleanArray31;
 
 	@OriginalMember(owner = "client!tb", name = "Z", descriptor = "Lclient!p;")
-	public static Class45 aClass45_29;
+	public static PixMap aClass45_29;
 
 	@OriginalMember(owner = "client!tb", name = "b", descriptor = "(I)V", line = 9)
 	public static void method1479() {

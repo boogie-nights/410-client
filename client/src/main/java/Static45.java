@@ -19,7 +19,7 @@ public final class Static45 {
 	@OriginalMember(owner = "client!jd", name = "f", descriptor = "(I)V", line = 3)
 	public static void method1530() {
 		if (Static1.aClass30_1 != null) {
-			@Pc(12) Class30 local12 = Static1.aClass30_1;
+			@Pc(12) Keyboard local12 = Static1.aClass30_1;
 			synchronized (Static1.aClass30_1) {
 				Static1.aClass30_1 = null;
 			}
@@ -80,7 +80,7 @@ public final class Static45 {
 						} while (local66 >= 103);
 					} while (local77 >= 103);
 					local96 = Static83.method1470(local13);
-				} while (local72 == 22 && Static1.aBoolean2 && local96.anInt1054 == 0 && !local96.aBoolean76);
+				} while (local72 == 22 && Static1.lowDetail && local96.anInt1054 == 0 && !local96.aBoolean76);
 				if (!local96.method773()) {
 					Static1.anInt1667++;
 					local11 = false;

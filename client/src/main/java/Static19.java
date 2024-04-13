@@ -11,7 +11,7 @@ public final class Static19 {
 	public static int[] anIntArray92;
 
 	@OriginalMember(owner = "client!e", name = "U", descriptor = "Lclient!p;")
-	public static Class45 aClass45_10;
+	public static PixMap aClass45_10;
 
 	@OriginalMember(owner = "client!e", name = "a", descriptor = "(B)V", line = 80)
 	public static void method386() {

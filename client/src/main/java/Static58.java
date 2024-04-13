@@ -15,19 +15,19 @@ public final class Static58 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!ad;Lclient!cb;ZI)V", line = 351)
-	public static void method1056(@OriginalArg(0) Js5 arg0, @OriginalArg(1) DiskStore arg1, @OriginalArg(3) int arg2) {
+	public static void method1056(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Cache arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) byte[] local7 = null;
 		@Pc(9) LinkList local9 = Static1.aClass44_2;
 		synchronized (Static1.aClass44_2) {
-			for (@Pc(16) Class2_Sub9 local16 = (Class2_Sub9) Static1.aClass44_2.head(); local16 != null; local16 = (Class2_Sub9) Static1.aClass44_2.method1231()) {
-				if ((long) arg2 == local16.aLong152 && arg1 == local16.aClass11_3 && local16.anInt1189 == 0) {
-					local7 = local16.aByteArray13;
+			for (@Pc(16) Js5CacheRequest local16 = (Js5CacheRequest) Static1.aClass44_2.head(); local16 != null; local16 = (Js5CacheRequest) Static1.aClass44_2.method1231()) {
+				if ((long) arg2 == local16.aLong152 && arg1 == local16.cache && local16.type == 0) {
+					local7 = local16.data;
 					break;
 				}
 			}
 		}
 		if (local7 == null) {
-			@Pc(75) byte[] local75 = arg1.method261(arg2);
+			@Pc(75) byte[] local75 = arg1.read(arg2);
 			arg0.method95(arg1, arg2, local75, true);
 		} else {
 			arg0.method95(arg1, arg2, local7, true);

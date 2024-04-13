@@ -8,7 +8,7 @@ public final class Static18 {
 	public static int[] anIntArray86;
 
 	@OriginalMember(owner = "client!de", name = "e", descriptor = "Lclient!p;")
-	public static Class45 aClass45_9;
+	public static PixMap aClass45_9;
 
 	@OriginalMember(owner = "client!de", name = "i", descriptor = "I")
 	public static int anInt439;

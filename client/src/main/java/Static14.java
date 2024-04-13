@@ -253,10 +253,10 @@ public final class Static14 {
 		Static1.anInt2143 = 0;
 		Static1.anIntArray1 = new int[32768];
 		Static95.anIntArray547 = new int[32768];
-		if (Static1.anInt239 == 0 || Static1.aBoolean2) {
+		if (Static1.anInt239 == 0 || Static1.lowDetail) {
 			Static86.method1490();
 		} else {
-			Static86.method1496(JagString.aClass40_80, JagString.aClass40_593, Static77.aClass5_Sub1_17, Static1.anInt239);
+			Static86.method1496(JagString.aClass40_80, JagString.aClass40_593, Static77.midiSongsJs5, Static1.anInt239);
 		}
 		Static41.method787(false);
 		Static68.aBoolean145 = true;

@@ -11,7 +11,7 @@ public final class Static61 {
 	public static int anInt1653;
 
 	@OriginalMember(owner = "client!n", name = "v", descriptor = "Lclient!d;")
-	public static Class14 aClass14_4;
+	public static BufferedFile aClass14_4;
 
 	@OriginalMember(owner = "client!n", name = "x", descriptor = "[I")
 	public static int[] anIntArray338;

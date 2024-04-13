@@ -47,13 +47,13 @@ public final class SignLink implements Runnable {
 	private String aString3 = null;
 
 	@OriginalMember(owner = "client!bb", name = "r", descriptor = "Lclient!dc;")
-	public Class16 aClass16_2 = null;
+	public FileOnDisk aClass16_2 = null;
 
 	@OriginalMember(owner = "client!bb", name = "t", descriptor = "Lclient!dc;")
-	public Class16 aClass16_3 = null;
+	public FileOnDisk aClass16_3 = null;
 
 	@OriginalMember(owner = "client!bb", name = "q", descriptor = "Lclient!dc;")
-	public Class16 aClass16_1 = null;
+	public FileOnDisk aClass16_1 = null;
 
 	@OriginalMember(owner = "client!bb", name = "u", descriptor = "Ljava/lang/String;")
 	private String aString6 = null;
@@ -62,10 +62,10 @@ public final class SignLink implements Runnable {
 	private final InetAddress anInetAddress1;
 
 	@OriginalMember(owner = "client!bb", name = "d", descriptor = "[Lclient!dc;")
-	public Class16[] aClass16Array1;
+	public FileOnDisk[] aClass16Array1;
 
 	@OriginalMember(owner = "client!bb", name = "i", descriptor = "[Lclient!dc;")
-	public Class16[] aClass16Array2;
+	public FileOnDisk[] aClass16Array2;
 
 	@OriginalMember(owner = "client!bb", name = "p", descriptor = "Ljava/lang/Thread;")
 	private final Thread aThread1;
@@ -128,13 +128,13 @@ public final class SignLink implements Runnable {
 		}
 		if (this.aClass16_1 != null) {
 			try {
-				this.aClass16_1.method362();
+				this.aClass16_1.close();
 			} catch (@Pc(40) IOException local40) {
 			}
 		}
 		if (this.aClass16_3 != null) {
 			try {
-				this.aClass16_3.method362();
+				this.aClass16_3.close();
 			} catch (@Pc(50) IOException local50) {
 			}
 		}
@@ -143,7 +143,7 @@ public final class SignLink implements Runnable {
 			for (local56 = 0; local56 < this.aClass16Array2.length; local56++) {
 				if (this.aClass16Array2[local56] != null) {
 					try {
-						this.aClass16Array2[local56].method362();
+						this.aClass16Array2[local56].close();
 					} catch (@Pc(70) IOException local70) {
 					}
 				}
@@ -151,7 +151,7 @@ public final class SignLink implements Runnable {
 		}
 		if (this.aClass16_2 != null) {
 			try {
-				this.aClass16_2.method362();
+				this.aClass16_2.close();
 			} catch (@Pc(90) IOException local90) {
 			}
 		}
@@ -161,7 +161,7 @@ public final class SignLink implements Runnable {
 		for (local56 = 0; local56 < this.aClass16Array1.length; local56++) {
 			if (this.aClass16Array1[local56] != null) {
 				try {
-					this.aClass16Array1[local56].method362();
+					this.aClass16Array1[local56].close();
 				} catch (@Pc(112) IOException local112) {
 				}
 			}
@@ -320,21 +320,21 @@ public final class SignLink implements Runnable {
 			this.method206(arg3, arg4);
 			@Pc(102) File local102 = new File(this.aString5 + "main_file_cache.dat");
 			if (local102.exists()) {
-				this.aClass16_2 = new Class16(local102, "rw", 52428800L);
+				this.aClass16_2 = new FileOnDisk(local102, "rw", 52428800L);
 			}
-			this.aClass16Array1 = new Class16[5];
+			this.aClass16Array1 = new FileOnDisk[5];
 			for (@Pc(119) int local119 = 0; local119 < 5; local119++) {
 				@Pc(135) File local135 = new File(this.aString5 + "main_file_cache.idx" + local119);
 				if (local135.exists()) {
-					this.aClass16Array1[local119] = new Class16(local135, "rw", 1048576L);
+					this.aClass16Array1[local119] = new FileOnDisk(local135, "rw", 1048576L);
 				}
 			}
-			this.aClass16_1 = new Class16(new File(this.aString3 + "main_file_cache.dat2"), "rw", 52428800L);
-			this.aClass16Array2 = new Class16[arg5];
+			this.aClass16_1 = new FileOnDisk(new File(this.aString3 + "main_file_cache.dat2"), "rw", 52428800L);
+			this.aClass16Array2 = new FileOnDisk[arg5];
 			for (@Pc(177) int local177 = 0; local177 < arg5; local177++) {
-				this.aClass16Array2[local177] = new Class16(new File(this.aString3 + "main_file_cache.idx" + local177), "rw", 1048576L);
+				this.aClass16Array2[local177] = new FileOnDisk(new File(this.aString3 + "main_file_cache.idx" + local177), "rw", 1048576L);
 			}
-			this.aClass16_3 = new Class16(new File(this.aString3 + "main_file_cache.idx255"), "rw", 1048576L);
+			this.aClass16_3 = new FileOnDisk(new File(this.aString3 + "main_file_cache.idx255"), "rw", 1048576L);
 			this.method208();
 		}
 		this.aBoolean24 = false;

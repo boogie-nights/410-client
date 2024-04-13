@@ -179,7 +179,7 @@ public final class Static23 {
 							local210 -= Static24.anIntArray126[local551];
 							local200 -= Static77.anIntArray434[local551];
 						}
-						if (local283 >= 1 && local283 < 103 && (!Static1.aBoolean2 || (Static1.aByteArrayArrayArray7[0][local166][local283] & 0x2) != 0 || (Static1.aByteArrayArrayArray7[local15][local166][local283] & 0x10) == 0 && Static44.method821(local283, local166, local15) == Static1.anInt786)) {
+						if (local283 >= 1 && local283 < 103 && (!Static1.lowDetail || (Static1.aByteArrayArrayArray7[0][local166][local283] & 0x2) != 0 || (Static1.aByteArrayArrayArray7[local15][local166][local283] & 0x10) == 0 && Static44.method821(local283, local166, local15) == Static1.anInt786)) {
 							if (Static1.anInt807 > local15) {
 								Static1.anInt807 = local15;
 							}

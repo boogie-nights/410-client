@@ -8,10 +8,10 @@ public final class Static79 {
 	public static int anInt2058;
 
 	@OriginalMember(owner = "client!sb", name = "V", descriptor = "Lclient!ad;")
-	public static Js5 aClass5_Sub1_18;
+	public static Js5 basesJs5;
 
 	@OriginalMember(owner = "client!sb", name = "X", descriptor = "Lclient!pd;")
-	public static Class18 aClass18_1;
+	public static Timer aClass18_1;
 
 	@OriginalMember(owner = "client!sb", name = "c", descriptor = "(B)V", line = 9)
 	private static void method1396() {
@@ -27,7 +27,7 @@ public final class Static79 {
 
 	@OriginalMember(owner = "client!sb", name = "d", descriptor = "(B)V", line = 34)
 	public static void method1398() {
-		aClass5_Sub1_18 = null;
+		basesJs5 = null;
 		JagString.aClass40_601 = null;
 		JagString.aClass40_600 = null;
 		aClass18_1 = null;

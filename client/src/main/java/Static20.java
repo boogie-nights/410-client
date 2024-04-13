@@ -9,7 +9,7 @@ public final class Static20 {
 	public static AudioBuss aClass2_Sub10_1;
 
 	@OriginalMember(owner = "client!ea", name = "l", descriptor = "Lclient!p;")
-	public static Class45 aClass45_11;
+	public static PixMap aClass45_11;
 
 	@OriginalMember(owner = "client!ea", name = "x", descriptor = "Ljava/awt/Font;")
 	public static Font aFont1;

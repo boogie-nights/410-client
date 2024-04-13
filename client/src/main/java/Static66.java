@@ -35,9 +35,9 @@ public final class Static66 {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(ZIBZZ)Lclient!ad;", line = 945)
 	public static Js5 method1188(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
-		@Pc(10) DiskStore local10 = null;
+		@Pc(10) Cache local10 = null;
 		if (Static61.aClass14_4 != null) {
-			local10 = new DiskStore(arg1, Static61.aClass14_4, Static1.aClass14Array1[arg1], 1000000);
+			local10 = new Cache(arg1, Static61.aClass14_4, Static1.aClass14Array1[arg1], 1000000);
 		}
 		return new Js5(local10, Static68.aClass11_4, arg1, arg0, arg3, arg2);
 	}

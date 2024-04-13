@@ -12,7 +12,7 @@ public final class Static73 {
 	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array10;
 
 	@OriginalMember(owner = "client!r", name = "n", descriptor = "Lclient!ad;")
-	public static Js5 aClass5_Sub1_15;
+	public static Js5 binaryJs5;
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(III)Z", line = 14)
 	public static boolean method1335(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
@@ -179,7 +179,7 @@ public final class Static73 {
 		Static1.aClass62_1 = null;
 		aClass2_Sub2_Sub2_Sub3Array10 = null;
 		Static1.aClass47_16 = null;
-		aClass5_Sub1_15 = null;
+		binaryJs5 = null;
 		Static1.aCRC32_1 = null;
 		JagString.aClass40_558 = null;
 		JagString.aClass40_559 = null;
@@ -202,14 +202,14 @@ public final class Static73 {
 	public static void method1341() {
 		while (true) {
 			@Pc(13) LinkList local13 = Static1.aClass44_2;
-			@Pc(20) Class2_Sub9 local20;
+			@Pc(20) Js5CacheRequest local20;
 			synchronized (Static1.aClass44_2) {
-				local20 = (Class2_Sub9) Static1.aClass44_1.method1220();
+				local20 = (Js5CacheRequest) Static1.aClass44_1.method1220();
 			}
 			if (local20 == null) {
 				return;
 			}
-			local20.aClass5_Sub1_11.method95(local20.aClass11_3, (int) local20.aLong152, local20.aByteArray13, false);
+			local20.js5.method95(local20.cache, (int) local20.aLong152, local20.data, false);
 		}
 	}
 }

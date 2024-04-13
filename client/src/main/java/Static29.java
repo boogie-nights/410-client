@@ -17,7 +17,7 @@ public final class Static29 {
 
 	@OriginalMember(owner = "client!g", name = "a", descriptor = "(Z)V", line = 39)
 	public static void method1676() {
-		Static1.aBoolean2 = true;
+		Static1.lowDetail = true;
 		World3D.aBoolean163 = true;
 	}
 

@@ -9,7 +9,7 @@ public final class Static9 {
 	public static int[][] anIntArrayArray5;
 
 	@OriginalMember(owner = "client!bd", name = "q", descriptor = "Lclient!d;")
-	public static Class14 aClass14_1;
+	public static BufferedFile aClass14_1;
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(ZLclient!mc;)V", line = 3)
 	public static void method227(@OriginalArg(1) ComType arg0) {

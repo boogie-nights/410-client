@@ -9,7 +9,7 @@ public final class Static77 {
 	public static int anInt1991;
 
 	@OriginalMember(owner = "client!s", name = "m", descriptor = "Lclient!ad;")
-	public static Js5 aClass5_Sub1_17;
+	public static Js5 midiSongsJs5;
 
 	@OriginalMember(owner = "client!s", name = "n", descriptor = "I")
 	public static int anInt1992;
@@ -26,7 +26,7 @@ public final class Static77 {
 		JagString.aClass40_572 = null;
 		JagString.aClass40_574 = null;
 		JagString.aClass40_571 = null;
-		aClass5_Sub1_17 = null;
+		midiSongsJs5 = null;
 	}
 
 	@OriginalMember(owner = "client!s", name = "a", descriptor = "(I)V", line = 49)

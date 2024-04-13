@@ -176,7 +176,7 @@ public final class Static71 {
 
 	@OriginalMember(owner = "client!pd", name = "b", descriptor = "(Z)V", line = 377)
 	public static void method1277() {
-		if (Static1.aBoolean2 && Static1.anInt8 != Static1.anInt786) {
+		if (Static1.lowDetail && Static1.anInt8 != Static1.anInt786) {
 			Static74.method1343(Static51.anInt2327, Static1.anInt8, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], Static45.anInt2262);
 		} else if (Static1.anInt2590 != Static1.anInt8) {
 			Static1.anInt2590 = Static1.anInt8;
