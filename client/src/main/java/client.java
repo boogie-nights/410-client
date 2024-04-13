@@ -190,9 +190,9 @@ public final class client extends GameShell {
 			if (Static1.anInt1675 == 2) {
 				Static27.aClass25_15 = new ClientStream((Socket) Static72.aClass48_7.anObject4, Static91.aClass7_2);
 				@Pc(103) Packet local103 = new Packet(5);
-				local103.method1703(15);
-				local103.method1725(410);
-				Static27.aClass25_15.method731(local103.aByteArray24, 5);
+				local103.p1(15);
+				local103.p4(410);
+				Static27.aClass25_15.method731(local103.data, 5);
 				Static1.anInt1675++;
 				Static11.aLong24 = System.currentTimeMillis();
 			}

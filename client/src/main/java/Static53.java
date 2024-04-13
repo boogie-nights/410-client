@@ -40,23 +40,23 @@ public final class Static53 {
 		@Pc(30) int local30;
 		if (arg6 < 0 || arg6 >= 104 || arg0 < 0 || arg0 >= 104) {
 			while (true) {
-				local30 = arg4.method1708();
+				local30 = arg4.g1();
 				if (local30 == 0) {
 					return;
 				}
 				if (local30 == 1) {
-					arg4.method1708();
+					arg4.g1();
 					return;
 				}
 				if (local30 <= 49) {
-					arg4.method1708();
+					arg4.g1();
 				}
 			}
 		}
 
 		Static1.aByteArrayArrayArray7[arg1][arg6][arg0] = 0;
 		while (true) {
-			local30 = arg4.method1708();
+			local30 = arg4.g1();
 			if (local30 == 0) {
 				if (arg1 == 0) {
 					Static1.anIntArrayArrayArray8[0][arg6][arg0] = -Static4.method84(arg0 + arg3 + 556238, arg5 + 932731 + arg6) * 8;
@@ -67,7 +67,7 @@ public final class Static53 {
 				}
 			}
 			if (local30 == 1) {
-				@Pc(129) int local129 = arg4.method1708();
+				@Pc(129) int local129 = arg4.g1();
 				if (local129 == 1) {
 					local129 = 0;
 				}
@@ -79,7 +79,7 @@ public final class Static53 {
 				return;
 			}
 			if (local30 <= 49) {
-				Static69.aByteArrayArrayArray9[arg1][arg6][arg0] = arg4.method1696();
+				Static69.aByteArrayArrayArray9[arg1][arg6][arg0] = arg4.g1b();
 				Static14.aByteArrayArrayArray10[arg1][arg6][arg0] = (byte) ((local30 - 2) / 4);
 				Static68.aByteArrayArrayArray8[arg1][arg6][arg0] = (byte) (arg2 + local30 - 2 & 0x3);
 			} else if (local30 <= 81) {

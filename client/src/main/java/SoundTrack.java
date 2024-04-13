@@ -80,14 +80,14 @@ public final class SoundTrack {
 	@OriginalMember(owner = "client!oc", name = "<init>", descriptor = "(Lclient!eb;)V", line = 127)
 	public SoundTrack(@OriginalArg(0) Packet arg0) {
 		for (@Pc(7) int local7 = 0; local7 < 10; local7++) {
-			@Pc(12) int local12 = arg0.method1708();
+			@Pc(12) int local12 = arg0.g1();
 			if (local12 != 0) {
-				arg0.anInt2546--;
+				arg0.pos--;
 				this.aClass29Array1[local7] = new SoundTone();
 				this.aClass29Array1[local7].method843(arg0);
 			}
 		}
-		this.anInt1815 = arg0.method1704();
-		this.anInt1814 = arg0.method1704();
+		this.anInt1815 = arg0.g2();
+		this.anInt1814 = arg0.g2();
 	}
 }

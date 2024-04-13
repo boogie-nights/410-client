@@ -11,7 +11,7 @@ public final class Static34 {
 	public static ClientStream aClass25_20;
 
 	@OriginalMember(owner = "client!h", name = "s", descriptor = "Lclient!ad;")
-	public static Class5_Sub1 aClass5_Sub1_8;
+	public static Js5ResourceProvider aClass5_Sub1_8;
 
 	@OriginalMember(owner = "client!h", name = "t", descriptor = "I")
 	public static int anInt840;
@@ -163,9 +163,9 @@ public final class Static34 {
 			Static55.method998();
 			if (JagString.aClass40_448.method1169() > 0) {
 				Static1.aClass2_Sub3_Sub1_4.method1736(72);
-				Static1.aClass2_Sub3_Sub1_4.method1680(JagString.aClass40_448.method1179());
-				Static1.aClass2_Sub3_Sub1_4.method1703(local6 - 601);
-				Static1.aClass2_Sub3_Sub1_4.method1703(Static1.aBoolean103 ? 1 : 0);
+				Static1.aClass2_Sub3_Sub1_4.p8(JagString.aClass40_448.method1179());
+				Static1.aClass2_Sub3_Sub1_4.p1(local6 - 601);
+				Static1.aClass2_Sub3_Sub1_4.p1(Static1.aBoolean103 ? 1 : 0);
 			}
 		}
 		return false;

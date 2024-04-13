@@ -1484,19 +1484,19 @@ public final class Model extends Entity {
 		@Pc(31) Packet local31 = new Packet(arg0);
 		@Pc(36) Packet local36 = new Packet(arg0);
 		@Pc(41) Packet local41 = new Packet(arg0);
-		local21.anInt2546 = arg0.length - 18;
-		@Pc(51) int local51 = local21.method1704();
-		@Pc(55) int local55 = local21.method1704();
-		@Pc(59) int local59 = local21.method1708();
-		@Pc(63) int local63 = local21.method1708();
-		@Pc(67) int local67 = local21.method1708();
-		@Pc(71) int local71 = local21.method1708();
-		@Pc(75) int local75 = local21.method1708();
-		@Pc(79) int local79 = local21.method1708();
-		@Pc(83) int local83 = local21.method1704();
-		@Pc(87) int local87 = local21.method1704();
-		@Pc(91) int local91 = local21.method1704();
-		@Pc(95) int local95 = local21.method1704();
+		local21.pos = arg0.length - 18;
+		@Pc(51) int local51 = local21.g2();
+		@Pc(55) int local55 = local21.g2();
+		@Pc(59) int local59 = local21.g1();
+		@Pc(63) int local63 = local21.g1();
+		@Pc(67) int local67 = local21.g1();
+		@Pc(71) int local71 = local21.g1();
+		@Pc(75) int local75 = local21.g1();
+		@Pc(79) int local79 = local21.g1();
+		@Pc(83) int local83 = local21.g2();
+		@Pc(87) int local87 = local21.g2();
+		@Pc(91) int local91 = local21.g2();
+		@Pc(95) int local95 = local21.g2();
 		@Pc(97) byte local97 = 0;
 		@Pc(103) int local103 = local97 + local51;
 		@Pc(105) int local105 = local103;
@@ -1571,11 +1571,11 @@ public final class Model extends Entity {
 			this.anIntArray382 = new int[local55];
 		}
 		this.anIntArray374 = new int[local55];
-		local21.anInt2546 = local97;
-		local26.anInt2546 = local196;
-		local31.anInt2546 = local202;
-		local36.anInt2546 = local103;
-		local41.anInt2546 = local150;
+		local21.pos = local97;
+		local26.pos = local196;
+		local31.pos = local202;
+		local36.pos = local103;
+		local41.pos = local150;
 		@Pc(315) int local315 = 0;
 		@Pc(317) int local317 = 0;
 		@Pc(319) int local319 = 0;
@@ -1584,18 +1584,18 @@ public final class Model extends Entity {
 		@Pc(338) int local338;
 		@Pc(348) int local348;
 		for (@Pc(321) int local321 = 0; local321 < local51; local321++) {
-			local326 = local21.method1708();
+			local326 = local21.g1();
 			local328 = 0;
 			if ((local326 & 0x1) != 0) {
-				local328 = local26.method1699();
+				local328 = local26.gSmart1or2s();
 			}
 			local338 = 0;
 			if ((local326 & 0x2) != 0) {
-				local338 = local31.method1699();
+				local338 = local31.gSmart1or2s();
 			}
 			local348 = 0;
 			if ((local326 & 0x4) != 0) {
-				local348 = local36.method1699();
+				local348 = local36.gSmart1or2s();
 			}
 			this.anIntArray370[local321] = local315 + local328;
 			this.anIntArray373[local321] = local317 + local338;
@@ -1604,42 +1604,42 @@ public final class Model extends Entity {
 			local317 = this.anIntArray373[local321];
 			local319 = this.anIntArray381[local321];
 			if (this.anIntArray372 != null) {
-				this.anIntArray372[local321] = local41.method1708();
+				this.anIntArray372[local321] = local41.g1();
 			}
 		}
-		local21.anInt2546 = local180;
-		local26.anInt2546 = local138;
-		local31.anInt2546 = local111;
-		local36.anInt2546 = local162;
-		local41.anInt2546 = local126;
+		local21.pos = local180;
+		local26.pos = local138;
+		local31.pos = local111;
+		local36.pos = local162;
+		local41.pos = local126;
 		for (local326 = 0; local326 < local55; local326++) {
-			this.anIntArray374[local326] = local21.method1704();
+			this.anIntArray374[local326] = local21.g2();
 			if (this.anIntArray379 != null) {
-				this.anIntArray379[local326] = local26.method1708();
+				this.anIntArray379[local326] = local26.g1();
 			}
 			if (this.anIntArray377 != null) {
-				this.anIntArray377[local326] = local31.method1708();
+				this.anIntArray377[local326] = local31.g1();
 			}
 			if (this.anIntArray371 != null) {
-				this.anIntArray371[local326] = local36.method1708();
+				this.anIntArray371[local326] = local36.g1();
 			}
 			if (this.anIntArray382 != null) {
-				this.anIntArray382[local326] = local41.method1708();
+				this.anIntArray382[local326] = local41.g1();
 			}
 		}
-		local21.anInt2546 = local174;
-		local26.anInt2546 = local105;
+		local21.pos = local174;
+		local26.pos = local105;
 		local328 = 0;
 		local338 = 0;
 		local348 = 0;
 		@Pc(489) int local489 = 0;
 		@Pc(496) int local496;
 		for (@Pc(491) int local491 = 0; local491 < local55; local491++) {
-			local496 = local26.method1708();
+			local496 = local26.g1();
 			if (local496 == 1) {
-				local328 = local21.method1699() + local489;
-				local338 = local21.method1699() + local328;
-				local348 = local21.method1699() + local338;
+				local328 = local21.gSmart1or2s() + local489;
+				local338 = local21.gSmart1or2s() + local328;
+				local348 = local21.gSmart1or2s() + local338;
 				local489 = local348;
 				this.anIntArray376[local491] = local328;
 				this.anIntArray375[local491] = local338;
@@ -1647,7 +1647,7 @@ public final class Model extends Entity {
 			}
 			if (local496 == 2) {
 				local338 = local348;
-				local348 = local21.method1699() + local489;
+				local348 = local21.gSmart1or2s() + local489;
 				local489 = local348;
 				this.anIntArray376[local491] = local328;
 				this.anIntArray375[local491] = local338;
@@ -1655,7 +1655,7 @@ public final class Model extends Entity {
 			}
 			if (local496 == 3) {
 				local328 = local348;
-				local348 = local21.method1699() + local489;
+				local348 = local21.gSmart1or2s() + local489;
 				local489 = local348;
 				this.anIntArray376[local491] = local328;
 				this.anIntArray375[local491] = local338;
@@ -1665,18 +1665,18 @@ public final class Model extends Entity {
 				@Pc(599) int local599 = local328;
 				local328 = local338;
 				local338 = local599;
-				local348 = local21.method1699() + local489;
+				local348 = local21.gSmart1or2s() + local489;
 				local489 = local348;
 				this.anIntArray376[local491] = local328;
 				this.anIntArray375[local491] = local599;
 				this.anIntArray368[local491] = local348;
 			}
 		}
-		local21.anInt2546 = local188;
+		local21.pos = local188;
 		for (local496 = 0; local496 < local59; local496++) {
-			this.anIntArray380[local496] = local21.method1704();
-			this.anIntArray378[local496] = local21.method1704();
-			this.anIntArray366[local496] = local21.method1704();
+			this.anIntArray380[local496] = local21.g2();
+			this.anIntArray378[local496] = local21.g2();
+			this.anIntArray366[local496] = local21.g2();
 		}
 	}
 

@@ -30,18 +30,18 @@ public final class Static91 {
 		@Pc(140) int local140;
 		@Pc(148) int local148;
 		if (!Static1.aBoolean87) {
-			local19 = Static1.aClass2_Sub3_Sub1_5.method1705();
-			local26 = (Static1.anInt785 - Static1.aClass2_Sub3_Sub1_5.anInt2546) / 16;
+			local19 = Static1.aClass2_Sub3_Sub1_5.g2_alt1();
+			local26 = (Static1.anInt785 - Static1.aClass2_Sub3_Sub1_5.pos) / 16;
 			Static78.anIntArrayArray20 = new int[local26][4];
 			for (local32 = 0; local32 < local26; local32++) {
 				for (local36 = 0; local36 < 4; local36++) {
-					Static78.anIntArrayArray20[local32][local36] = Static1.aClass2_Sub3_Sub1_5.method1728();
+					Static78.anIntArrayArray20[local32][local36] = Static1.aClass2_Sub3_Sub1_5.g4s();
 				}
 			}
-			local36 = Static1.aClass2_Sub3_Sub1_5.method1705();
-			local62 = Static1.aClass2_Sub3_Sub1_5.method1705();
-			local66 = Static1.aClass2_Sub3_Sub1_5.method1715();
-			local72 = Static1.aClass2_Sub3_Sub1_5.method1704();
+			local36 = Static1.aClass2_Sub3_Sub1_5.g2_alt1();
+			local62 = Static1.aClass2_Sub3_Sub1_5.g2_alt1();
+			local66 = Static1.aClass2_Sub3_Sub1_5.g1_alt3();
+			local72 = Static1.aClass2_Sub3_Sub1_5.g2();
 			Static97.aByteArrayArray12 = new byte[local26][];
 			Static53.anIntArray311 = new int[local26];
 			@Pc(80) boolean local80 = false;
@@ -69,7 +69,7 @@ public final class Static91 {
 			Static74.method1343(local72, local66, local19, local62, local36);
 			return;
 		}
-		local19 = Static1.aClass2_Sub3_Sub1_5.method1681();
+		local19 = Static1.aClass2_Sub3_Sub1_5.g2_alt2();
 		Static1.aClass2_Sub3_Sub1_5.method1737();
 		for (local26 = 0; local26 < 4; local26++) {
 			for (local32 = 0; local32 < 13; local32++) {
@@ -84,17 +84,17 @@ public final class Static91 {
 			}
 		}
 		Static1.aClass2_Sub3_Sub1_5.method1739();
-		local32 = (Static1.anInt785 - Static1.aClass2_Sub3_Sub1_5.anInt2546) / 16;
+		local32 = (Static1.anInt785 - Static1.aClass2_Sub3_Sub1_5.pos) / 16;
 		Static78.anIntArrayArray20 = new int[local32][4];
 		for (local36 = 0; local36 < local32; local36++) {
 			for (local62 = 0; local62 < 4; local62++) {
-				Static78.anIntArrayArray20[local36][local62] = Static1.aClass2_Sub3_Sub1_5.method1732();
+				Static78.anIntArrayArray20[local36][local62] = Static1.aClass2_Sub3_Sub1_5.g4s_alt2();
 			}
 		}
-		local62 = Static1.aClass2_Sub3_Sub1_5.method1715();
-		local66 = Static1.aClass2_Sub3_Sub1_5.method1714();
-		local72 = Static1.aClass2_Sub3_Sub1_5.method1681();
-		@Pc(394) int local394 = Static1.aClass2_Sub3_Sub1_5.method1714();
+		local62 = Static1.aClass2_Sub3_Sub1_5.g1_alt3();
+		local66 = Static1.aClass2_Sub3_Sub1_5.g2_alt3();
+		local72 = Static1.aClass2_Sub3_Sub1_5.g2_alt2();
+		@Pc(394) int local394 = Static1.aClass2_Sub3_Sub1_5.g2_alt3();
 		Static50.anIntArray299 = new int[local32];
 		Static46.anIntArray256 = new int[local32];
 		Static97.aByteArrayArray12 = new byte[local32][];

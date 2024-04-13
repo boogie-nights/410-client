@@ -231,12 +231,12 @@ public final class Static17 {
 	public static JagString method360(@OriginalArg(1) Packet arg0) {
 		try {
 			@Pc(12) JagString local12 = new JagString();
-			local12.anInt1783 = arg0.method1698();
+			local12.anInt1783 = arg0.gSmart1or2();
 			if (local12.anInt1783 > 32767) {
 				local12.anInt1783 = 32767;
 			}
 			local12.aByteArray14 = new byte[local12.anInt1783];
-			arg0.anInt2546 += Static89.aClass42_1.method1212(0, local12.anInt1783, arg0.anInt2546, arg0.aByteArray24, local12.aByteArray14);
+			arg0.pos += Static89.aClass42_1.method1212(0, local12.anInt1783, arg0.pos, arg0.data, local12.aByteArray14);
 			return local12;
 		} catch (@Pc(53) Exception local53) {
 			return JagString.aClass40_574;

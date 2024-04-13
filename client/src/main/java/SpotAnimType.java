@@ -79,51 +79,51 @@ public final class SpotAnimType extends Hashable {
 		@Pc(25) int local25;
 		@Pc(50) int local50;
 		if (arg0 == 1) {
-			local19 = arg1.method1708();
+			local19 = arg1.g1();
 			this.anIntArray128 = new int[local19];
 			for (local25 = 0; local25 < local19; local25++) {
-				this.anIntArray128[local25] = arg1.method1704();
+				this.anIntArray128[local25] = arg1.g2();
 			}
 			this.anIntArray124 = new int[local19];
 			for (local50 = 0; local50 < local19; local50++) {
-				this.anIntArray124[local50] = arg1.method1704();
+				this.anIntArray124[local50] = arg1.g2();
 			}
 			for (@Pc(69) int local69 = 0; local69 < local19; local69++) {
-				this.anIntArray124[local69] = (arg1.method1704() << 16) + this.anIntArray124[local69];
+				this.anIntArray124[local69] = (arg1.g2() << 16) + this.anIntArray124[local69];
 			}
 		} else if (arg0 == 2) {
-			this.anInt669 = arg1.method1704();
+			this.anInt669 = arg1.g2();
 		} else if (arg0 == 3) {
-			local19 = arg1.method1708();
+			local19 = arg1.g1();
 			this.anIntArray125 = new int[local19 + 1];
 			for (local25 = 0; local25 < local19; local25++) {
-				this.anIntArray125[local25] = arg1.method1708();
+				this.anIntArray125[local25] = arg1.g1();
 			}
 			this.anIntArray125[local19] = 9999999;
 		} else if (arg0 == 4) {
 			this.aBoolean50 = true;
 		} else if (arg0 == 5) {
-			this.anInt658 = arg1.method1708();
+			this.anInt658 = arg1.g1();
 		} else if (arg0 == 6) {
-			this.anInt668 = arg1.method1704();
+			this.anInt668 = arg1.g2();
 		} else if (arg0 == 7) {
-			this.anInt664 = arg1.method1704();
+			this.anInt664 = arg1.g2();
 		} else if (arg0 == 8) {
-			this.anInt660 = arg1.method1708();
+			this.anInt660 = arg1.g1();
 		} else if (arg0 == 9) {
-			this.anInt663 = arg1.method1708();
+			this.anInt663 = arg1.g1();
 		} else if (arg0 == 10) {
-			this.anInt666 = arg1.method1708();
+			this.anInt666 = arg1.g1();
 		} else if (arg0 == 11) {
-			this.anInt662 = arg1.method1708();
+			this.anInt662 = arg1.g1();
 		} else if (arg0 == 12) {
-			local19 = arg1.method1708();
+			local19 = arg1.g1();
 			this.anIntArray127 = new int[local19];
 			for (local25 = 0; local25 < local19; local25++) {
-				this.anIntArray127[local25] = arg1.method1704();
+				this.anIntArray127[local25] = arg1.g2();
 			}
 			for (local50 = 0; local50 < local19; local50++) {
-				this.anIntArray127[local50] = (arg1.method1704() << 16) + this.anIntArray127[local50];
+				this.anIntArray127[local50] = (arg1.g2() << 16) + this.anIntArray127[local50];
 			}
 		}
 	}
@@ -215,7 +215,7 @@ public final class SpotAnimType extends Hashable {
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(ILclient!eb;)V", line = 373)
 	public void method523(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method1708();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}

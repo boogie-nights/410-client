@@ -120,43 +120,43 @@ public final class SoundTone {
 		this.aClass26_5.method799(arg0);
 		this.aClass26_2 = new SoundEnvelope();
 		this.aClass26_2.method799(arg0);
-		@Pc(21) int local21 = arg0.method1708();
+		@Pc(21) int local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt2546--;
+			arg0.pos--;
 			this.aClass26_9 = new SoundEnvelope();
 			this.aClass26_9.method799(arg0);
 			this.aClass26_3 = new SoundEnvelope();
 			this.aClass26_3.method799(arg0);
 		}
-		local21 = arg0.method1708();
+		local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt2546--;
+			arg0.pos--;
 			this.aClass26_1 = new SoundEnvelope();
 			this.aClass26_1.method799(arg0);
 			this.aClass26_4 = new SoundEnvelope();
 			this.aClass26_4.method799(arg0);
 		}
-		local21 = arg0.method1708();
+		local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt2546--;
+			arg0.pos--;
 			this.aClass26_7 = new SoundEnvelope();
 			this.aClass26_7.method799(arg0);
 			this.aClass26_8 = new SoundEnvelope();
 			this.aClass26_8.method799(arg0);
 		}
 		for (@Pc(109) int local109 = 0; local109 < 10; local109++) {
-			@Pc(114) int local114 = arg0.method1698();
+			@Pc(114) int local114 = arg0.gSmart1or2();
 			if (local114 == 0) {
 				break;
 			}
 			this.anIntArray249[local109] = local114;
-			this.anIntArray255[local109] = arg0.method1699();
-			this.anIntArray245[local109] = arg0.method1698();
+			this.anIntArray255[local109] = arg0.gSmart1or2s();
+			this.anIntArray245[local109] = arg0.gSmart1or2();
 		}
-		this.anInt1150 = arg0.method1698();
-		this.anInt1148 = arg0.method1698();
-		this.anInt1149 = arg0.method1704();
-		this.anInt1147 = arg0.method1704();
+		this.anInt1150 = arg0.gSmart1or2();
+		this.anInt1148 = arg0.gSmart1or2();
+		this.anInt1149 = arg0.g2();
+		this.anInt1147 = arg0.g2();
 		this.aClass36_1 = new SoundFilter();
 		this.aClass26_6 = new SoundEnvelope();
 		this.aClass36_1.method1066(arg0, this.aClass26_6);

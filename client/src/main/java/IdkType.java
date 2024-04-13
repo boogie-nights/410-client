@@ -89,7 +89,7 @@ public final class IdkType extends Hashable {
 	@OriginalMember(owner = "client!v", name = "a", descriptor = "(Lclient!eb;I)V", line = 284)
 	public void method1587(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(13) int local13 = arg0.method1708();
+			@Pc(13) int local13 = arg0.g1();
 			if (local13 == 0) {
 				return;
 			}
@@ -100,21 +100,21 @@ public final class IdkType extends Hashable {
 	@OriginalMember(owner = "client!v", name = "a", descriptor = "(Lclient!eb;II)V", line = 305)
 	private void method1588(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
-			this.anInt2386 = arg0.method1708();
+			this.anInt2386 = arg0.g1();
 		} else if (arg1 == 2) {
-			@Pc(17) int local17 = arg0.method1708();
+			@Pc(17) int local17 = arg0.g1();
 			this.anIntArray516 = new int[local17];
 			for (@Pc(23) int local23 = 0; local23 < local17; local23++) {
-				this.anIntArray516[local23] = arg0.method1704();
+				this.anIntArray516[local23] = arg0.g2();
 			}
 		} else if (arg1 == 3) {
 			this.aBoolean178 = true;
 		} else if (arg1 >= 40 && arg1 < 50) {
-			this.anIntArray514[arg1 - 40] = arg0.method1704();
+			this.anIntArray514[arg1 - 40] = arg0.g2();
 		} else if (arg1 >= 50 && arg1 < 60) {
-			this.anIntArray517[arg1 - 50] = arg0.method1704();
+			this.anIntArray517[arg1 - 50] = arg0.g2();
 		} else if (arg1 >= 60 && arg1 < 70) {
-			this.anIntArray515[arg1 - 60] = arg0.method1704();
+			this.anIntArray515[arg1 - 60] = arg0.g2();
 		}
 	}
 }

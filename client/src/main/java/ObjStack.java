@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!rb")
-public final class Class51 {
+public final class ObjStack {
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "Lclient!jd;")
 	public Entity aClass2_Sub2_Sub12_4;

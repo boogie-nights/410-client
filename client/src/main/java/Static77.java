@@ -9,7 +9,7 @@ public final class Static77 {
 	public static int anInt1991;
 
 	@OriginalMember(owner = "client!s", name = "m", descriptor = "Lclient!ad;")
-	public static Class5_Sub1 aClass5_Sub1_17;
+	public static Js5ResourceProvider aClass5_Sub1_17;
 
 	@OriginalMember(owner = "client!s", name = "n", descriptor = "I")
 	public static int anInt1992;

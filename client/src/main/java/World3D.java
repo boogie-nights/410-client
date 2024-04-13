@@ -216,7 +216,7 @@ public final class World3D {
 		if (local8 == null) {
 			return;
 		}
-		@Pc(14) Class1 local14 = local8.aClass1_1;
+		@Pc(14) WallDecoration local14 = local8.aClass1_1;
 		if (local14 != null) {
 			@Pc(23) int local23 = arg1 * 128 + 64;
 			@Pc(29) int local29 = arg2 * 128 + 64;
@@ -226,7 +226,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(III)Lclient!uc;", line = 156)
-	public Class60 method1412(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public Wall method1412(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(8) Tile local8 = this.aClass2_Sub11ArrayArrayArray1[arg0][arg1][arg2];
 		return local8 == null ? null : local8.aClass60_1;
 	}
@@ -423,7 +423,7 @@ public final class World3D {
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(IIIILclient!jd;ILclient!jd;Lclient!jd;)V", line = 628)
 	public void method1427(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Entity arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Entity arg6, @OriginalArg(7) Entity arg7) {
-		@Pc(3) Class51 local3 = new Class51();
+		@Pc(3) ObjStack local3 = new ObjStack();
 		local3.aClass2_Sub2_Sub12_6 = arg4;
 		local3.anInt1969 = arg1 * 128 + 64;
 		local3.anInt1954 = arg2 * 128 + 64;
@@ -452,7 +452,7 @@ public final class World3D {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "h", descriptor = "(III)Lclient!a;", line = 671)
-	public Class1 method1428(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public WallDecoration method1428(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(8) Tile local8 = this.aClass2_Sub11ArrayArrayArray1[arg0][arg1][arg2];
 		return local8 == null ? null : local8.aClass1_1;
 	}
@@ -707,7 +707,7 @@ public final class World3D {
 				for (@Pc(7) int local7 = 0; local7 < this.anInt2098; local7++) {
 					@Pc(17) Tile local17 = this.aClass2_Sub11ArrayArrayArray1[local1][local4][local7];
 					if (local17 != null) {
-						@Pc(22) Class60 local22 = local17.aClass60_1;
+						@Pc(22) Wall local22 = local17.aClass60_1;
 						if (local22 != null && local22.aClass2_Sub2_Sub12_7 instanceof Model) {
 							@Pc(32) Model local32 = (Model) local22.aClass2_Sub2_Sub12_7;
 							if (local32.aClass9Array1 != null) {
@@ -884,7 +884,7 @@ public final class World3D {
 		if (arg4 == null && arg5 == null) {
 			return;
 		}
-		@Pc(8) Class60 local8 = new Class60();
+		@Pc(8) Wall local8 = new Wall();
 		local8.anInt2369 = arg8;
 		local8.anInt2365 = arg9;
 		local8.anInt2362 = arg1 * 128 + 64;
@@ -924,7 +924,7 @@ public final class World3D {
 								@Pc(66) Tile local66 = this.aClass2_Sub11ArrayArrayArray1[local17][local24][local34];
 								if (local66 != null) {
 									@Pc(160) int local160 = (this.anIntArrayArrayArray6[local17][local24][local34] + this.anIntArrayArrayArray6[local17][local24 + 1][local34] + this.anIntArrayArrayArray6[local17][local24][local34 + 1] + this.anIntArrayArrayArray6[local17][local24 + 1][local34 + 1]) / 4 - (this.anIntArrayArrayArray6[arg1][arg2][arg3] + this.anIntArrayArrayArray6[arg1][arg2 + 1][arg3] + this.anIntArrayArrayArray6[arg1][arg2][arg3 + 1] + this.anIntArrayArrayArray6[arg1][arg2 + 1][arg3 + 1]) / 4;
-									@Pc(163) Class60 local163 = local66.aClass60_1;
+									@Pc(163) Wall local163 = local66.aClass60_1;
 									if (local163 != null) {
 										@Pc(173) Model local173;
 										if (local163.aClass2_Sub2_Sub12_7 instanceof Model) {
@@ -1172,7 +1172,7 @@ public final class World3D {
 		if (arg4 == null) {
 			return;
 		}
-		@Pc(6) Class1 local6 = new Class1();
+		@Pc(6) WallDecoration local6 = new WallDecoration();
 		local6.anInt17 = arg9;
 		local6.anInt2 = arg10;
 		local6.anInt6 = arg1 * 128 + arg7 + 64;
@@ -1310,7 +1310,7 @@ public final class World3D {
 			@Pc(588) int local588;
 			@Pc(591) int local591;
 			@Pc(600) int local600;
-			@Pc(942) Class60 local942;
+			@Pc(942) Wall local942;
 			@Pc(1116) int local1116;
 			@Pc(1001) int local1001;
 			do {
@@ -1384,7 +1384,7 @@ public final class World3D {
 												} else if (!this.method1426(0, local17, local20)) {
 													this.method1452(local49.aClass50_1, 0, Static81.anInt2114, Static81.anInt2104, Static81.anInt2099, Static81.anInt2101, local17, local20);
 												}
-												@Pc(225) Class60 local225 = local49.aClass60_1;
+												@Pc(225) Wall local225 = local49.aClass60_1;
 												if (local225 != null) {
 													local225.aClass2_Sub2_Sub12_7.method1536(0, Static81.anInt2114, Static81.anInt2104, Static81.anInt2099, Static81.anInt2101, local225.anInt2362 - Static81.anInt2091, local225.anInt2361 - Static81.anInt2113, local225.anInt2363 - Static81.anInt2110, local225.anInt2369);
 												}
@@ -1407,8 +1407,8 @@ public final class World3D {
 											}
 											var23 = 0;
 											local251 = 0;
-											@Pc(340) Class60 local340 = local8.aClass60_1;
-											@Pc(343) Class1 local343 = local8.aClass1_1;
+											@Pc(340) Wall local340 = local8.aClass60_1;
+											@Pc(343) WallDecoration local343 = local8.aClass1_1;
 											if (local340 != null || local343 != null) {
 												if (Static81.anInt2102 == local17) {
 													var23++;
@@ -1487,7 +1487,7 @@ public final class World3D {
 												if (local696 != null) {
 													local696.aClass2_Sub2_Sub12_2.method1536(0, Static81.anInt2114, Static81.anInt2104, Static81.anInt2099, Static81.anInt2101, local696.anInt47 - Static81.anInt2091, local696.anInt40 - Static81.anInt2113, local696.anInt44 - Static81.anInt2110, local696.anInt48);
 												}
-												@Pc(723) Class51 local723 = local8.aClass51_1;
+												@Pc(723) ObjStack local723 = local8.aClass51_1;
 												if (local723 != null && local723.anInt1959 == 0) {
 													if (local723.aClass2_Sub2_Sub12_4 != null) {
 														local723.aClass2_Sub2_Sub12_4.method1536(0, Static81.anInt2114, Static81.anInt2104, Static81.anInt2099, Static81.anInt2101, local723.anInt1969 - Static81.anInt2091, local723.anInt1951 - Static81.anInt2113, local723.anInt1954 - Static81.anInt2110, local723.anInt1964);
@@ -1670,7 +1670,7 @@ public final class World3D {
 			} while (local49 != null && local49.aBoolean136);
 			local8.aBoolean136 = false;
 			anInt2097--;
-			@Pc(1392) Class51 local1392 = local8.aClass51_1;
+			@Pc(1392) ObjStack local1392 = local8.aClass51_1;
 			if (local1392 != null && local1392.anInt1959 != 0) {
 				if (local1392.aClass2_Sub2_Sub12_4 != null) {
 					local1392.aClass2_Sub2_Sub12_4.method1536(0, Static81.anInt2114, Static81.anInt2104, Static81.anInt2099, Static81.anInt2101, local1392.anInt1969 - Static81.anInt2091, local1392.anInt1951 - Static81.anInt2113 - local1392.anInt1959, local1392.anInt1954 - Static81.anInt2110, local1392.anInt1964);
@@ -1683,7 +1683,7 @@ public final class World3D {
 				}
 			}
 			if (local8.anInt1706 != 0) {
-				@Pc(1487) Class1 local1487 = local8.aClass1_1;
+				@Pc(1487) WallDecoration local1487 = local8.aClass1_1;
 				if (local1487 != null && !this.method1447(local26, local17, local20, local1487.aClass2_Sub2_Sub12_1.anInt2265)) {
 					if ((local1487.anInt4 & local8.anInt1706) != 0) {
 						local1487.aClass2_Sub2_Sub12_1.method1536(local1487.anInt1, Static81.anInt2114, Static81.anInt2104, Static81.anInt2099, Static81.anInt2101, local1487.anInt6 - Static81.anInt2091, local1487.anInt3 - Static81.anInt2113, local1487.anInt9 - Static81.anInt2110, local1487.anInt17);

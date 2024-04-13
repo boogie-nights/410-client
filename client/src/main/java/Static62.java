@@ -41,8 +41,8 @@ public final class Static62 {
 		}
 		Static1.aClass2_Sub3_Sub1_4.method1736(217);
 		try {
-			Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_4.aByteArray24, Static1.aClass2_Sub3_Sub1_4.anInt2546);
-			Static1.aClass2_Sub3_Sub1_4.anInt2546 = 0;
+			Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
+			Static1.aClass2_Sub3_Sub1_4.pos = 0;
 		} catch (@Pc(40) IOException local40) {
 			Static1.aBoolean164 = true;
 		}

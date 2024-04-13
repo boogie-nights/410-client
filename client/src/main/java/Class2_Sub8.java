@@ -113,35 +113,35 @@ public final class Class2_Sub8 extends Linkable {
 
 	@OriginalMember(owner = "client!hd", name = "<init>", descriptor = "(Lclient!eb;)V", line = 121)
 	public Class2_Sub8(@OriginalArg(0) Packet arg0) {
-		this.anInt995 = arg0.method1704();
-		this.aBoolean70 = arg0.method1708() == 1;
-		@Pc(23) int local23 = arg0.method1708();
+		this.anInt995 = arg0.g2();
+		this.aBoolean70 = arg0.g1() == 1;
+		@Pc(23) int local23 = arg0.g1();
 		if (local23 < 1 || local23 > 4) {
 			throw new RuntimeException();
 		}
 		this.anIntArray189 = new int[local23];
 		for (@Pc(39) int local39 = 0; local39 < local23; local39++) {
-			this.anIntArray189[local39] = arg0.method1704();
+			this.anIntArray189[local39] = arg0.g2();
 		}
 		@Pc(62) int local62;
 		if (local23 > 1) {
 			this.anIntArray190 = new int[local23 - 1];
 			for (local62 = 0; local62 < local23 - 1; local62++) {
-				this.anIntArray190[local62] = arg0.method1708();
+				this.anIntArray190[local62] = arg0.g1();
 			}
 		}
 		if (local23 > 1) {
 			this.anIntArray188 = new int[local23 - 1];
 			for (local62 = 0; local62 < local23 - 1; local62++) {
-				this.anIntArray188[local62] = arg0.method1708();
+				this.anIntArray188[local62] = arg0.g1();
 			}
 		}
 		this.anIntArray187 = new int[local23];
 		for (local62 = 0; local62 < local23; local62++) {
-			this.anIntArray187[local62] = arg0.method1728();
+			this.anIntArray187[local62] = arg0.g4s();
 		}
-		this.anInt994 = arg0.method1708();
-		this.anInt996 = arg0.method1708();
+		this.anInt994 = arg0.g1();
+		this.anInt996 = arg0.g1();
 		this.anIntArray185 = null;
 	}
 

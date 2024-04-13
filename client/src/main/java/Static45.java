@@ -40,7 +40,7 @@ public final class Static45 {
 		@Pc(13) int local13 = -1;
 		@Pc(18) Packet local18 = new Packet(arg0);
 		label67: while (true) {
-			@Pc(22) int local22 = local18.method1698();
+			@Pc(22) int local22 = local18.gSmart1or2();
 			if (local22 == 0) {
 				return local11;
 			}
@@ -59,13 +59,13 @@ public final class Static45 {
 								do {
 									@Pc(41) int local41;
 									while (local35) {
-										local41 = local18.method1698();
+										local41 = local18.gSmart1or2();
 										if (local41 == 0) {
 											continue label67;
 										}
-										local18.method1708();
+										local18.g1();
 									}
-									local41 = local18.method1698();
+									local41 = local18.gSmart1or2();
 									if (local41 == 0) {
 										continue label67;
 									}
@@ -73,7 +73,7 @@ public final class Static45 {
 									@Pc(56) int local56 = local29 & 0x3F;
 									@Pc(62) int local62 = local29 >> 6 & 0x3F;
 									local66 = local62 + arg1;
-									local72 = local18.method1708() >> 2;
+									local72 = local18.g1() >> 2;
 									local77 = local56 + arg2;
 								} while (local66 <= 0);
 							} while (local77 <= 0);
@@ -97,7 +97,7 @@ public final class Static45 {
 	}
 
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "(IILclient!ad;IBZI)V", line = 165)
-	public static void method1535(@OriginalArg(0) int arg0, @OriginalArg(2) Class5_Sub1 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) byte arg3, @OriginalArg(5) boolean arg4, @OriginalArg(6) int arg5) {
+	public static void method1535(@OriginalArg(0) int arg0, @OriginalArg(2) Js5ResourceProvider arg1, @OriginalArg(3) int arg2, @OriginalArg(4) byte arg3, @OriginalArg(5) boolean arg4, @OriginalArg(6) int arg5) {
 		@Pc(6) long local6 = (long) ((arg5 << 16) + arg0);
 		@Pc(16) Class2_Sub2_Sub9 local16 = (Class2_Sub2_Sub9) Static1.aClass6_6.method190(local6);
 		if (local16 != null) {

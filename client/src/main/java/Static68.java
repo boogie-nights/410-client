@@ -16,7 +16,7 @@ public final class Static68 {
 	public static DiskStore aClass11_4;
 
 	@OriginalMember(owner = "client!ob", name = "t", descriptor = "Lclient!ad;")
-	public static Class5_Sub1 aClass5_Sub1_13;
+	public static Js5ResourceProvider aClass5_Sub1_13;
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Z)V", line = 9)
 	public static void method1209() {

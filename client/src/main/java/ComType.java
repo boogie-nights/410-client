@@ -183,42 +183,42 @@ public final class ComType extends Hashable {
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!eb;I)V", line = 26)
 	public void method1053(@OriginalArg(0) Packet arg0) {
-		this.anInt1613 = arg0.method1708();
-		this.anInt1577 = arg0.method1708();
-		this.anInt1610 = arg0.method1704();
-		this.anInt1573 = this.anInt1582 = arg0.method1701();
-		this.anInt1616 = this.anInt1588 = arg0.method1701();
-		this.anInt1605 = arg0.method1704();
-		this.anInt1609 = arg0.method1704();
-		this.anInt1604 = arg0.method1708();
-		this.anInt1611 = arg0.method1704();
+		this.anInt1613 = arg0.g1();
+		this.anInt1577 = arg0.g1();
+		this.anInt1610 = arg0.g2();
+		this.anInt1573 = this.anInt1582 = arg0.g2s();
+		this.anInt1616 = this.anInt1588 = arg0.g2s();
+		this.anInt1605 = arg0.g2();
+		this.anInt1609 = arg0.g2();
+		this.anInt1604 = arg0.g1();
+		this.anInt1611 = arg0.g2();
 		if (this.anInt1611 == 65535) {
 			this.anInt1611 = -1;
 		}
-		this.anInt1594 = arg0.method1704();
+		this.anInt1594 = arg0.g2();
 		if (this.anInt1594 == 65535) {
 			this.anInt1594 = -1;
 		}
-		@Pc(85) int local85 = arg0.method1708();
+		@Pc(85) int local85 = arg0.g1();
 		@Pc(97) int local97;
 		if (local85 > 0) {
 			this.anIntArray332 = new int[local85];
 			this.anIntArray333 = new int[local85];
 			for (local97 = 0; local97 < local85; local97++) {
-				this.anIntArray332[local97] = arg0.method1708();
-				this.anIntArray333[local97] = arg0.method1704();
+				this.anIntArray332[local97] = arg0.g1();
+				this.anIntArray333[local97] = arg0.g2();
 			}
 		}
-		local97 = arg0.method1708();
+		local97 = arg0.g1();
 		@Pc(138) int local138;
 		@Pc(146) int local146;
 		if (local97 > 0) {
 			this.anIntArrayArray11 = new int[local97][];
 			for (local138 = 0; local138 < local97; local138++) {
-				local146 = arg0.method1704();
+				local146 = arg0.g2();
 				this.anIntArrayArray11[local138] = new int[local146];
 				for (@Pc(154) int local154 = 0; local154 < local146; local154++) {
-					this.anIntArrayArray11[local138][local154] = arg0.method1704();
+					this.anIntArrayArray11[local138][local154] = arg0.g2();
 					if (this.anIntArrayArray11[local138][local154] == 65535) {
 						this.anIntArrayArray11[local138][local154] = -1;
 					}
@@ -226,120 +226,120 @@ public final class ComType extends Hashable {
 			}
 		}
 		if (this.anInt1613 == 0) {
-			this.anInt1601 = arg0.method1704();
-			this.aBoolean125 = arg0.method1708() == 1;
+			this.anInt1601 = arg0.g2();
+			this.aBoolean125 = arg0.g1() == 1;
 		}
 		if (this.anInt1613 == 1) {
-			arg0.method1704();
-			arg0.method1708();
+			arg0.g2();
+			arg0.g1();
 		}
 		if (this.anInt1613 == 2) {
 			this.anIntArray327 = new int[this.anInt1609 * this.anInt1605];
 			this.anIntArray331 = new int[this.anInt1605 * this.anInt1609];
-			this.aBoolean129 = arg0.method1708() == 1;
-			this.aBoolean128 = arg0.method1708() == 1;
-			this.aBoolean130 = arg0.method1708() == 1;
-			this.aBoolean126 = arg0.method1708() == 1;
-			this.anInt1572 = arg0.method1708();
-			this.anInt1580 = arg0.method1708();
+			this.aBoolean129 = arg0.g1() == 1;
+			this.aBoolean128 = arg0.g1() == 1;
+			this.aBoolean130 = arg0.g1() == 1;
+			this.aBoolean126 = arg0.g1() == 1;
+			this.anInt1572 = arg0.g1();
+			this.anInt1580 = arg0.g1();
 			this.anIntArray328 = new int[20];
 			this.anIntArray329 = new int[20];
 			this.anIntArray330 = new int[20];
 			for (local138 = 0; local138 < 20; local138++) {
-				local146 = arg0.method1708();
+				local146 = arg0.g1();
 				if (local146 == 1) {
-					this.anIntArray328[local138] = arg0.method1701();
-					this.anIntArray330[local138] = arg0.method1701();
-					this.anIntArray329[local138] = arg0.method1728();
+					this.anIntArray328[local138] = arg0.g2s();
+					this.anIntArray330[local138] = arg0.g2s();
+					this.anIntArray329[local138] = arg0.g4s();
 				} else {
 					this.anIntArray329[local138] = -1;
 				}
 			}
 			this.aClass40Array29 = new JagString[5];
 			for (local146 = 0; local146 < 5; local146++) {
-				this.aClass40Array29[local146] = arg0.method1721();
+				this.aClass40Array29[local146] = arg0.gjstr();
 				if (this.aClass40Array29[local146].method1169() == 0) {
 					this.aClass40Array29[local146] = null;
 				}
 			}
 		}
 		if (this.anInt1613 == 3) {
-			this.aBoolean131 = arg0.method1708() == 1;
+			this.aBoolean131 = arg0.g1() == 1;
 		}
 		if (this.anInt1613 == 4 || this.anInt1613 == 1) {
-			this.aBoolean124 = arg0.method1708() == 1;
-			this.anInt1568 = arg0.method1708();
-			this.aBoolean127 = arg0.method1708() == 1;
+			this.aBoolean124 = arg0.g1() == 1;
+			this.anInt1568 = arg0.g1();
+			this.aBoolean127 = arg0.g1() == 1;
 		}
 		if (this.anInt1613 == 4) {
-			this.aClass40_466 = arg0.method1721();
-			this.aClass40_468 = arg0.method1721();
+			this.aClass40_466 = arg0.gjstr();
+			this.aClass40_468 = arg0.gjstr();
 		}
 		if (this.anInt1613 == 1 || this.anInt1613 == 3 || this.anInt1613 == 4) {
-			this.anInt1584 = arg0.method1728();
+			this.anInt1584 = arg0.g4s();
 		}
 		if (this.anInt1613 == 3 || this.anInt1613 == 4) {
-			this.anInt1589 = arg0.method1728();
-			this.anInt1615 = arg0.method1728();
-			this.anInt1583 = arg0.method1728();
+			this.anInt1589 = arg0.g4s();
+			this.anInt1615 = arg0.g4s();
+			this.anInt1583 = arg0.g4s();
 		}
 		if (this.anInt1613 == 5) {
-			this.anInt1585 = arg0.method1728();
-			this.anInt1598 = arg0.method1728();
+			this.anInt1585 = arg0.g4s();
+			this.anInt1598 = arg0.g4s();
 		}
 		if (this.anInt1613 == 6) {
 			this.anInt1607 = 1;
-			this.anInt1602 = arg0.method1704();
+			this.anInt1602 = arg0.g2();
 			this.anInt1590 = 1;
 			if (this.anInt1602 == 65535) {
 				this.anInt1602 = -1;
 			}
-			this.anInt1578 = arg0.method1704();
+			this.anInt1578 = arg0.g2();
 			if (this.anInt1578 == 65535) {
 				this.anInt1578 = -1;
 			}
-			this.anInt1574 = arg0.method1704();
+			this.anInt1574 = arg0.g2();
 			if (this.anInt1574 == 65535) {
 				this.anInt1574 = -1;
 			}
-			this.anInt1592 = arg0.method1704();
+			this.anInt1592 = arg0.g2();
 			if (this.anInt1592 == 65535) {
 				this.anInt1592 = -1;
 			}
-			this.anInt1586 = arg0.method1704();
-			this.anInt1579 = arg0.method1704();
-			this.anInt1614 = arg0.method1704();
+			this.anInt1586 = arg0.g2();
+			this.anInt1579 = arg0.g2();
+			this.anInt1614 = arg0.g2();
 		}
 		if (this.anInt1613 == 7) {
 			this.anIntArray327 = new int[this.anInt1609 * this.anInt1605];
 			this.anIntArray331 = new int[this.anInt1605 * this.anInt1609];
-			this.aBoolean124 = arg0.method1708() == 1;
-			this.anInt1568 = arg0.method1708();
-			this.aBoolean127 = arg0.method1708() == 1;
-			this.anInt1584 = arg0.method1728();
-			this.anInt1572 = arg0.method1701();
-			this.anInt1580 = arg0.method1701();
-			this.aBoolean128 = arg0.method1708() == 1;
+			this.aBoolean124 = arg0.g1() == 1;
+			this.anInt1568 = arg0.g1();
+			this.aBoolean127 = arg0.g1() == 1;
+			this.anInt1584 = arg0.g4s();
+			this.anInt1572 = arg0.g2s();
+			this.anInt1580 = arg0.g2s();
+			this.aBoolean128 = arg0.g1() == 1;
 			this.aClass40Array29 = new JagString[5];
 			for (local138 = 0; local138 < 5; local138++) {
-				this.aClass40Array29[local138] = arg0.method1721();
+				this.aClass40Array29[local138] = arg0.gjstr();
 				if (this.aClass40Array29[local138].method1169() == 0) {
 					this.aClass40Array29[local138] = null;
 				}
 			}
 		}
 		if (this.anInt1613 == 8) {
-			this.aClass40_466 = arg0.method1721();
+			this.aClass40_466 = arg0.gjstr();
 		}
 		if (this.anInt1577 == 2 || this.anInt1613 == 2) {
-			this.aClass40_471 = arg0.method1721();
-			this.aClass40_464 = arg0.method1721();
-			this.anInt1599 = arg0.method1704();
+			this.aClass40_471 = arg0.gjstr();
+			this.aClass40_464 = arg0.gjstr();
+			this.anInt1599 = arg0.g2();
 		}
 		if (this.anInt1577 != 1 && this.anInt1577 != 4 && this.anInt1577 != 5 && this.anInt1577 != 6) {
 			return;
 		}
-		this.aClass40_467 = arg0.method1721();
+		this.aClass40_467 = arg0.gjstr();
 		if (this.aClass40_467.method1169() != 0) {
 			return;
 		}

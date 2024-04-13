@@ -43,8 +43,8 @@ public final class Static20 {
 				Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[local29] = null;
 			}
 		}
-		if (Static1.anInt785 != Static1.aClass2_Sub3_Sub1_5.anInt2546) {
-			throw new RuntimeException("gpp1 pos:" + Static1.aClass2_Sub3_Sub1_5.anInt2546 + " psize:" + Static1.anInt785);
+		if (Static1.anInt785 != Static1.aClass2_Sub3_Sub1_5.pos) {
+			throw new RuntimeException("gpp1 pos:" + Static1.aClass2_Sub3_Sub1_5.pos + " psize:" + Static1.anInt785);
 		}
 		for (local29 = 0; local29 < Static1.anInt2067; local29++) {
 			if (Static1.aClass2_Sub2_Sub12_Sub1_Sub1Array1[Static1.anIntArray408[local29]] == null) {
@@ -58,14 +58,14 @@ public final class Static20 {
 		@Pc(10) Packet local10 = new Packet(arg9);
 		@Pc(17) int local17 = -1;
 		while (true) {
-			@Pc(21) int local21 = local10.method1698();
+			@Pc(21) int local21 = local10.gSmart1or2();
 			if (local21 == 0) {
 				return;
 			}
 			local17 += local21;
 			@Pc(29) int local29 = 0;
 			while (true) {
-				@Pc(33) int local33 = local10.method1698();
+				@Pc(33) int local33 = local10.gSmart1or2();
 				if (local33 == 0) {
 					break;
 				}
@@ -73,7 +73,7 @@ public final class Static20 {
 				@Pc(45) int local45 = local29 & 0x3F;
 				@Pc(51) int local51 = local29 >> 6 & 0x3F;
 				@Pc(55) int local55 = local29 >> 12;
-				@Pc(59) int local59 = local10.method1708();
+				@Pc(59) int local59 = local10.g1();
 				@Pc(63) int local63 = local59 >> 2;
 				@Pc(67) int local67 = local59 & 0x3;
 				if (local55 == arg1 && local51 >= arg2 && local51 < arg2 + 8 && arg6 <= local45 && arg6 + 8 > local45) {

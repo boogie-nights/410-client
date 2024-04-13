@@ -82,7 +82,7 @@ public final class Class2_Sub2_Sub5 extends Hashable {
 	@OriginalMember(owner = "client!ee", name = "a", descriptor = "(ILclient!eb;)V", line = 937)
 	public void method504(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method1708();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}
@@ -93,23 +93,23 @@ public final class Class2_Sub2_Sub5 extends Hashable {
 	@OriginalMember(owner = "client!ee", name = "a", descriptor = "(IILclient!eb;)V", line = 967)
 	private void method505(@OriginalArg(0) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 1) {
-			this.anInt639 = arg1.method1704();
+			this.anInt639 = arg1.g2();
 		} else if (arg0 == 2) {
-			this.anInt640 = arg1.method1704();
+			this.anInt640 = arg1.g2();
 		} else if (arg0 == 4) {
-			this.anInt627 = arg1.method1704();
+			this.anInt627 = arg1.g2();
 		} else if (arg0 == 5) {
-			this.anInt633 = arg1.method1704();
+			this.anInt633 = arg1.g2();
 		} else if (arg0 == 6) {
-			this.anInt628 = arg1.method1704();
+			this.anInt628 = arg1.g2();
 		} else if (arg0 == 7) {
-			this.anInt636 = arg1.method1708();
+			this.anInt636 = arg1.g1();
 		} else if (arg0 == 8) {
-			this.anInt630 = arg1.method1708();
+			this.anInt630 = arg1.g1();
 		} else if (arg0 >= 40 && arg0 < 50) {
-			this.anIntArray113[arg0 - 40] = arg1.method1704();
+			this.anIntArray113[arg0 - 40] = arg1.g2();
 		} else if (arg0 >= 50 && arg0 < 60) {
-			this.anIntArray114[arg0 - 50] = arg1.method1704();
+			this.anIntArray114[arg0 - 50] = arg1.g2();
 		}
 	}
 }

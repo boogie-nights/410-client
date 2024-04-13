@@ -18,7 +18,7 @@ public final class Tile extends Linkable {
 	public boolean aBoolean134;
 
 	@OriginalMember(owner = "client!nd", name = "M", descriptor = "Lclient!rb;")
-	public Class51 aClass51_1;
+	public ObjStack aClass51_1;
 
 	@OriginalMember(owner = "client!nd", name = "O", descriptor = "Z")
 	public boolean aBoolean135;
@@ -30,7 +30,7 @@ public final class Tile extends Linkable {
 	public int anInt1701;
 
 	@OriginalMember(owner = "client!nd", name = "R", descriptor = "Lclient!a;")
-	public Class1 aClass1_1;
+	public WallDecoration aClass1_1;
 
 	@OriginalMember(owner = "client!nd", name = "S", descriptor = "I")
 	public int anInt1702;
@@ -45,7 +45,7 @@ public final class Tile extends Linkable {
 	public int anInt1706;
 
 	@OriginalMember(owner = "client!nd", name = "Z", descriptor = "Lclient!uc;")
-	public Class60 aClass60_1;
+	public Wall aClass60_1;
 
 	@OriginalMember(owner = "client!nd", name = "bb", descriptor = "Lclient!ac;")
 	public GroundDecoration aClass4_1;

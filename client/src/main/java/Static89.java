@@ -91,21 +91,21 @@ public final class Static89 {
 		@Pc(10) Packet local10 = new Packet(arg3);
 		@Pc(12) int local12 = -1;
 		while (true) {
-			@Pc(16) int local16 = local10.method1698();
+			@Pc(16) int local16 = local10.gSmart1or2();
 			if (local16 == 0) {
 				return;
 			}
 			local12 += local16;
 			@Pc(24) int local24 = 0;
 			while (true) {
-				@Pc(28) int local28 = local10.method1698();
+				@Pc(28) int local28 = local10.gSmart1or2();
 				if (local28 == 0) {
 					break;
 				}
 				local24 += local28 - 1;
 				@Pc(40) int local40 = local24 & 0x3F;
 				@Pc(44) int local44 = local24 >> 12;
-				@Pc(48) int local48 = local10.method1708();
+				@Pc(48) int local48 = local10.g1();
 				@Pc(52) int local52 = local48 >> 2;
 				@Pc(56) int local56 = local48 & 0x3;
 				@Pc(62) int local62 = local24 >> 6 & 0x3F;

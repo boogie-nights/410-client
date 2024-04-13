@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ad")
-public final class Class5_Sub1 extends Js5 {
+public final class Js5ResourceProvider extends Js5 {
 
 	@OriginalMember(owner = "client!ad", name = "ub", descriptor = "I")
 	private int anInt134;
@@ -31,7 +31,7 @@ public final class Class5_Sub1 extends Js5 {
 	private final DiskStore aClass11_1;
 
 	@OriginalMember(owner = "client!ad", name = "<init>", descriptor = "(Lclient!cb;Lclient!cb;IZZZ)V", line = 16)
-	public Class5_Sub1(@OriginalArg(0) DiskStore arg0, @OriginalArg(1) DiskStore arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) boolean arg5) {
+	public Js5ResourceProvider(@OriginalArg(0) DiskStore arg0, @OriginalArg(1) DiskStore arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) boolean arg5) {
 		super(arg3, arg4);
 		this.aBoolean7 = arg5;
 		this.anInt123 = arg2;

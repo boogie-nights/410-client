@@ -22,18 +22,18 @@ public final class Class2_Sub5 extends Linkable {
 	public Class2_Sub5(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1) {
 		this.anInt738 = arg0;
 		@Pc(11) Packet local11 = new Packet(arg1);
-		this.anInt743 = local11.method1708();
+		this.anInt743 = local11.g1();
 		this.anIntArray142 = new int[this.anInt743];
 		this.anIntArrayArray10 = new int[this.anInt743][];
 		for (@Pc(28) int local28 = 0; local28 < this.anInt743; local28++) {
-			this.anIntArray142[local28] = local11.method1708();
+			this.anIntArray142[local28] = local11.g1();
 		}
 		for (@Pc(44) int local44 = 0; local44 < this.anInt743; local44++) {
-			this.anIntArrayArray10[local44] = new int[local11.method1708()];
+			this.anIntArrayArray10[local44] = new int[local11.g1()];
 		}
 		for (@Pc(65) int local65 = 0; local65 < this.anInt743; local65++) {
 			for (@Pc(69) int local69 = 0; local69 < this.anIntArrayArray10[local65].length; local69++) {
-				this.anIntArrayArray10[local65][local69] = local11.method1708();
+				this.anIntArrayArray10[local65][local69] = local11.g1();
 			}
 		}
 	}

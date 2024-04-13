@@ -50,12 +50,12 @@ public final class SoundEnvelope {
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(Lclient!eb;)V", line = 13)
 	public void method798(@OriginalArg(0) Packet arg0) {
-		this.anInt1083 = arg0.method1708();
+		this.anInt1083 = arg0.g1();
 		this.anIntArray223 = new int[this.anInt1083];
 		this.anIntArray224 = new int[this.anInt1083];
 		for (@Pc(16) int local16 = 0; local16 < this.anInt1083; local16++) {
-			this.anIntArray223[local16] = arg0.method1704();
-			this.anIntArray224[local16] = arg0.method1704();
+			this.anIntArray223[local16] = arg0.g2();
+			this.anIntArray224[local16] = arg0.g2();
 		}
 	}
 
@@ -69,9 +69,9 @@ public final class SoundEnvelope {
 
 	@OriginalMember(owner = "client!ie", name = "b", descriptor = "(Lclient!eb;)V", line = 44)
 	public void method799(@OriginalArg(0) Packet arg0) {
-		this.anInt1085 = arg0.method1708();
-		this.anInt1086 = arg0.method1728();
-		this.anInt1084 = arg0.method1728();
+		this.anInt1085 = arg0.g1();
+		this.anInt1086 = arg0.g4s();
+		this.anInt1084 = arg0.g4s();
 		this.method798(arg0);
 	}
 

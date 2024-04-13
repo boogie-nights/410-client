@@ -147,17 +147,17 @@ public abstract class Js5 {
 	protected final void method66(@OriginalArg(0) byte[] arg0) {
 		this.anInt95 = Static21.method1726(arg0.length, arg0);
 		@Pc(19) Packet local19 = new Packet(Static76.method1359(arg0));
-		@Pc(23) int local23 = local19.method1708();
+		@Pc(23) int local23 = local19.g1();
 		if (local23 != 5) {
 			return;
 		}
 		@Pc(31) int local31 = -1;
 		@Pc(33) int local33 = 0;
-		@Pc(37) int local37 = local19.method1708();
-		this.anInt97 = local19.method1704();
+		@Pc(37) int local37 = local19.g1();
+		this.anInt97 = local19.g2();
 		this.anIntArray14 = new int[this.anInt97];
 		for (@Pc(49) int local49 = 0; local49 < this.anInt97; local49++) {
-			this.anIntArray14[local49] = local33 += local19.method1704();
+			this.anIntArray14[local49] = local33 += local19.g2();
 			if (local31 < this.anIntArray14[local49]) {
 				local31 = this.anIntArray14[local49];
 			}
@@ -172,18 +172,18 @@ public abstract class Js5 {
 		if (local37 != 0) {
 			this.anIntArray12 = new int[local31 + 1];
 			for (local124 = 0; local124 < this.anInt97; local124++) {
-				this.anIntArray12[this.anIntArray14[local124]] = local19.method1728();
+				this.anIntArray12[this.anIntArray14[local124]] = local19.g4s();
 			}
 			this.aClass34_2 = new Class34(this.anIntArray12);
 		}
 		for (local124 = 0; local124 < this.anInt97; local124++) {
-			this.anIntArray16[this.anIntArray14[local124]] = local19.method1728();
+			this.anIntArray16[this.anIntArray14[local124]] = local19.g4s();
 		}
 		for (@Pc(169) int local169 = 0; local169 < this.anInt97; local169++) {
-			this.anIntArray11[this.anIntArray14[local169]] = local19.method1728();
+			this.anIntArray11[this.anIntArray14[local169]] = local19.g4s();
 		}
 		for (@Pc(192) int local192 = 0; local192 < this.anInt97; local192++) {
-			this.anIntArray15[this.anIntArray14[local192]] = local19.method1704();
+			this.anIntArray15[this.anIntArray14[local192]] = local19.g2();
 		}
 		@Pc(220) int local220;
 		@Pc(227) int local227;
@@ -196,7 +196,7 @@ public abstract class Js5 {
 			local227 = this.anIntArray15[local220];
 			this.anIntArrayArray3[local220] = new int[local227];
 			for (local235 = 0; local235 < local227; local235++) {
-				@Pc(254) int local254 = this.anIntArrayArray3[local220][local235] = local33 += local19.method1704();
+				@Pc(254) int local254 = this.anIntArrayArray3[local220][local235] = local33 += local19.g2();
 				if (local254 > local222) {
 					local222 = local254;
 				}
@@ -213,7 +213,7 @@ public abstract class Js5 {
 			local222 = this.anIntArray15[local227];
 			this.anIntArrayArray4[local227] = new int[this.aByteArrayArrayArray2[local227].length];
 			for (local235 = 0; local235 < local222; local235++) {
-				this.anIntArrayArray4[local227][this.anIntArrayArray3[local227][local235]] = local19.method1728();
+				this.anIntArrayArray4[local227][this.anIntArrayArray3[local227][local235]] = local19.g4s();
 			}
 			this.aClass34Array2[local227] = new Class34(this.anIntArrayArray4[local227]);
 		}
@@ -285,7 +285,7 @@ public abstract class Js5 {
 			local87 = new byte[this.aByteArrayArray2[arg0].length];
 			Static107.method993(this.aByteArrayArray2[arg0], 0, local87, 0, local87.length);
 			@Pc(102) Packet local102 = new Packet(local87);
-			local102.method1684(local102.aByteArray24.length, arg1);
+			local102.tinydec(local102.data.length, arg1);
 		}
 		@Pc(121) byte[] local121;
 		try {
@@ -304,14 +304,14 @@ public abstract class Js5 {
 			@Pc(207) int local207 = local121[local203] & 0xFF;
 			@Pc(215) int local215 = local203 - local207 * 4 * local34;
 			@Pc(220) Packet local220 = new Packet(local121);
-			local220.anInt2546 = local215;
+			local220.pos = local215;
 			@Pc(226) int[] local226 = new int[local34];
 			@Pc(232) int local232;
 			@Pc(234) int local234;
 			for (@Pc(228) int local228 = 0; local228 < local207; local228++) {
 				local232 = 0;
 				for (local234 = 0; local234 < local34; local234++) {
-					local232 += local220.method1728();
+					local232 += local220.g4s();
 					local226[local234] += local232;
 				}
 			}
@@ -321,12 +321,12 @@ public abstract class Js5 {
 				}
 				local226[local232] = 0;
 			}
-			local220.anInt2546 = local215;
+			local220.pos = local215;
 			local234 = 0;
 			for (@Pc(299) int local299 = 0; local299 < local207; local299++) {
 				@Pc(303) int local303 = 0;
 				for (@Pc(305) int local305 = 0; local305 < local34; local305++) {
-					local303 += local220.method1728();
+					local303 += local220.g4s();
 					Static107.method993(local121, local234, local29[local24[local305]], local226[local305], local303);
 					local226[local305] += local303;
 					local234 += local303;

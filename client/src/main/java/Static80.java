@@ -30,7 +30,7 @@ public final class Static80 {
 		Static1.anInt986 = 0;
 		Static1.anInt788 = -1;
 		Static1.anInt2352 = -1;
-		Static1.aClass2_Sub3_Sub1_4.anInt2546 = 0;
+		Static1.aClass2_Sub3_Sub1_4.pos = 0;
 		Static1.anInt231 = 0;
 		Static1.anInt2083 = -1;
 		Static1.anInt1973 = 0;
@@ -38,7 +38,7 @@ public final class Static80 {
 		Static1.anInt785 = 0;
 		Static1.anInt1986 = -1;
 		Static1.aBoolean175 = false;
-		Static1.aClass2_Sub3_Sub1_5.anInt2546 = 0;
+		Static1.aClass2_Sub3_Sub1_5.pos = 0;
 		Static7.method187(30);
 	}
 

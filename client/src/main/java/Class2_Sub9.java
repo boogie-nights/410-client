@@ -11,7 +11,7 @@ public final class Class2_Sub9 extends Linkable {
 	public int anInt1189;
 
 	@OriginalMember(owner = "client!kb", name = "C", descriptor = "Lclient!ad;")
-	public Class5_Sub1 aClass5_Sub1_11;
+	public Js5ResourceProvider aClass5_Sub1_11;
 
 	@OriginalMember(owner = "client!kb", name = "D", descriptor = "Lclient!cb;")
 	public DiskStore aClass11_3;

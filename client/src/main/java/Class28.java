@@ -44,14 +44,14 @@ public final class Class28 {
 		this.aClass2_Sub5_1 = arg1;
 		@Pc(18) Packet local18 = new Packet(arg0);
 		@Pc(23) Packet local23 = new Packet(arg0);
-		local18.anInt2546 = 2;
-		@Pc(30) int local30 = local18.method1708();
+		local18.pos = 2;
+		@Pc(30) int local30 = local18.g1();
 		@Pc(32) int local32 = -1;
 		@Pc(34) int local34 = 0;
-		local23.anInt2546 = local18.anInt2546 + local30;
+		local23.pos = local18.pos + local30;
 		@Pc(47) int local47;
 		for (@Pc(42) int local42 = 0; local42 < local30; local42++) {
-			local47 = local18.method1708();
+			local47 = local18.g1();
 			if (local47 > 0) {
 				if (this.aClass2_Sub5_1.anIntArray142[local42] != 0) {
 					for (@Pc(59) int local59 = local42 - 1; local59 > local32; local59--) {
@@ -73,17 +73,17 @@ public final class Class28 {
 				if ((local47 & 0x1) == 0) {
 					anIntArray228[local34] = local94;
 				} else {
-					anIntArray228[local34] = local23.method1699();
+					anIntArray228[local34] = local23.gSmart1or2s();
 				}
 				if ((local47 & 0x2) == 0) {
 					anIntArray233[local34] = local94;
 				} else {
-					anIntArray233[local34] = local23.method1699();
+					anIntArray233[local34] = local23.gSmart1or2s();
 				}
 				if ((local47 & 0x4) == 0) {
 					anIntArray232[local34] = local94;
 				} else {
-					anIntArray232[local34] = local23.method1699();
+					anIntArray232[local34] = local23.gSmart1or2s();
 				}
 				local32 = local42;
 				local34++;
@@ -92,7 +92,7 @@ public final class Class28 {
 				}
 			}
 		}
-		if (local23.anInt2546 != arg0.length) {
+		if (local23.pos != arg0.length) {
 			throw new RuntimeException();
 		}
 		this.anInt1098 = local34;

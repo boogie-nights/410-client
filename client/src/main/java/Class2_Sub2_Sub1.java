@@ -18,16 +18,16 @@ public final class Class2_Sub2_Sub1 extends Hashable {
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(ILclient!eb;I)V", line = 121)
 	private void method119(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.anInt174 = arg0.method1704();
-			this.anInt171 = arg0.method1708();
-			this.anInt170 = arg0.method1708();
+			this.anInt174 = arg0.g2();
+			this.anInt171 = arg0.g1();
+			this.anInt170 = arg0.g1();
 		}
 	}
 
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(Lclient!eb;B)V", line = 159)
 	public void method121(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(9) int local9 = arg0.method1708();
+			@Pc(9) int local9 = arg0.g1();
 			if (local9 == 0) {
 				return;
 			}

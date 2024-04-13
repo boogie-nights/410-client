@@ -226,18 +226,18 @@ public final class Class33 {
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(Lclient!eb;I)V", line = 732)
 	public void method1007(@OriginalArg(0) Packet arg0) {
-		arg0.method1703(this.aBoolean117 ? 1 : 0);
+		arg0.p1(this.aBoolean117 ? 1 : 0);
 		@Pc(31) int local31;
 		for (@Pc(22) int local22 = 0; local22 < 7; local22++) {
 			local31 = this.anIntArray314[Static1.anIntArray160[local22]];
 			if (local31 == 0) {
-				arg0.method1703(-1);
+				arg0.p1(-1);
 			} else {
-				arg0.method1703(local31 - 256);
+				arg0.p1(local31 - 256);
 			}
 		}
 		for (local31 = 0; local31 < 5; local31++) {
-			arg0.method1703(this.anIntArray313[local31]);
+			arg0.p1(this.anIntArray313[local31]);
 		}
 	}
 

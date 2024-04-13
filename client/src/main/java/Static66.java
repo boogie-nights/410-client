@@ -34,12 +34,12 @@ public final class Static66 {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(ZIBZZ)Lclient!ad;", line = 945)
-	public static Class5_Sub1 method1188(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
+	public static Js5ResourceProvider method1188(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
 		@Pc(10) DiskStore local10 = null;
 		if (Static61.aClass14_4 != null) {
 			local10 = new DiskStore(arg1, Static61.aClass14_4, Static1.aClass14Array1[arg1], 1000000);
 		}
-		return new Class5_Sub1(local10, Static68.aClass11_4, arg1, arg0, arg3, arg2);
+		return new Js5ResourceProvider(local10, Static68.aClass11_4, arg1, arg0, arg3, arg2);
 	}
 
 	@OriginalMember(owner = "client!o", name = "c", descriptor = "(III)I", line = 1044)

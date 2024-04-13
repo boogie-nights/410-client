@@ -101,7 +101,7 @@ public final class Static86 {
 			if (Static1.anInt2492 != -1 && Static1.anInt1551 == Static1.anInt2492) {
 				Static1.anInt2492 = -1;
 				Static1.aClass2_Sub3_Sub1_4.method1736(145);
-				Static1.aClass2_Sub3_Sub1_4.method1703(Static1.anInt1551);
+				Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt1551);
 			}
 			Static1.aBoolean165 = true;
 			Static1.aBoolean184 = false;
@@ -196,8 +196,8 @@ public final class Static86 {
 				Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[local28] = null;
 			}
 		}
-		if (Static1.aClass2_Sub3_Sub1_5.anInt2546 != Static1.anInt785) {
-			throw new RuntimeException("gnp1 pos:" + Static1.aClass2_Sub3_Sub1_5.anInt2546 + " psize:" + Static1.anInt785);
+		if (Static1.aClass2_Sub3_Sub1_5.pos != Static1.anInt785) {
+			throw new RuntimeException("gnp1 pos:" + Static1.aClass2_Sub3_Sub1_5.pos + " psize:" + Static1.anInt785);
 		}
 		for (local28 = 0; local28 < Static1.anInt1800; local28++) {
 			if (Static1.aClass2_Sub2_Sub12_Sub1_Sub2Array1[Static1.anIntArray326[local28]] == null) {

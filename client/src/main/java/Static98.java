@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static98 {
 
 	@OriginalMember(owner = "client!wc", name = "Zb", descriptor = "Lclient!ib;")
-	public static Class12 aClass12_1;
+	public static AudioBuss aClass12_1;
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(IIILclient!ud;I)[B", line = 27)
 	public static byte[] method1735(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Js5 arg2, @OriginalArg(4) int arg3) {
@@ -72,18 +72,18 @@ public final class Static98 {
 						}
 						if (Static1.anInt2180 == 3 && JagString.aClass40_447.method1169() > 0) {
 							Static1.aClass2_Sub3_Sub1_4.method1736(22);
-							Static1.aClass2_Sub3_Sub1_4.method1703(0);
-							local162 = Static1.aClass2_Sub3_Sub1_4.anInt2546;
-							Static1.aClass2_Sub3_Sub1_4.method1680(Static1.aLong136);
+							Static1.aClass2_Sub3_Sub1_4.p1(0);
+							local162 = Static1.aClass2_Sub3_Sub1_4.pos;
+							Static1.aClass2_Sub3_Sub1_4.p8(Static1.aLong136);
 							Static32.method624(JagString.aClass40_447, Static1.aClass2_Sub3_Sub1_4);
-							Static1.aClass2_Sub3_Sub1_4.method1731(Static1.aClass2_Sub3_Sub1_4.anInt2546 - local162);
+							Static1.aClass2_Sub3_Sub1_4.psize1(Static1.aClass2_Sub3_Sub1_4.pos - local162);
 							if (Static1.anInt2515 == 2) {
 								Static1.anInt2515 = 1;
 								Static1.aBoolean95 = true;
 								Static1.aClass2_Sub3_Sub1_4.method1736(132);
-								Static1.aClass2_Sub3_Sub1_4.method1703(Static1.anInt583);
-								Static1.aClass2_Sub3_Sub1_4.method1703(Static1.anInt2515);
-								Static1.aClass2_Sub3_Sub1_4.method1703(Static1.anInt2491);
+								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt583);
+								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2515);
+								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2491);
 							}
 						}
 						if (Static1.anInt2180 == 4 && Static1.anInt121 < 100) {
@@ -111,7 +111,7 @@ public final class Static98 {
 								local162 = JagString.aClass40_444.method1198();
 							}
 							Static1.aClass2_Sub3_Sub1_4.method1736(122);
-							Static1.aClass2_Sub3_Sub1_4.method1725(local162);
+							Static1.aClass2_Sub3_Sub1_4.p4(local162);
 						}
 						Static1.aBoolean144 = true;
 						Static1.anInt2399 = 0;
@@ -128,7 +128,7 @@ public final class Static98 {
 					if (Static35.anInt935 == 84) {
 						if (JagString.aClass40_444.method1169() > 0) {
 							Static1.aClass2_Sub3_Sub1_4.method1736(51);
-							Static1.aClass2_Sub3_Sub1_4.method1680(JagString.aClass40_444.method1179());
+							Static1.aClass2_Sub3_Sub1_4.p8(JagString.aClass40_444.method1179());
 						}
 						Static1.aBoolean144 = true;
 						Static1.anInt2399 = 0;
@@ -180,8 +180,8 @@ public final class Static98 {
 						}
 						if (JagString.aClass40_451.method1168(JagString.aClass40_164)) {
 							Static1.aClass2_Sub3_Sub1_4.method1736(92);
-							Static1.aClass2_Sub3_Sub1_4.method1703(JagString.aClass40_451.method1169() - 1);
-							Static1.aClass2_Sub3_Sub1_4.method1683(JagString.aClass40_451.method1185(2));
+							Static1.aClass2_Sub3_Sub1_4.p1(JagString.aClass40_451.method1169() - 1);
+							Static1.aClass2_Sub3_Sub1_4.pjstr(JagString.aClass40_451.method1185(2));
 						} else {
 							@Pc(525) JagString local525 = JagString.aClass40_451.method1196();
 							@Pc(527) byte local527 = 0;
@@ -241,19 +241,19 @@ public final class Static98 {
 								local529 = 5;
 							}
 							Static1.aClass2_Sub3_Sub1_4.method1736(40);
-							Static1.aClass2_Sub3_Sub1_4.method1703(0);
-							@Pc(794) int local794 = Static1.aClass2_Sub3_Sub1_4.anInt2546;
-							Static1.aClass2_Sub3_Sub1_4.method1703(local527);
-							Static1.aClass2_Sub3_Sub1_4.method1703(local529);
+							Static1.aClass2_Sub3_Sub1_4.p1(0);
+							@Pc(794) int local794 = Static1.aClass2_Sub3_Sub1_4.pos;
+							Static1.aClass2_Sub3_Sub1_4.p1(local527);
+							Static1.aClass2_Sub3_Sub1_4.p1(local529);
 							Static32.method624(JagString.aClass40_451, Static1.aClass2_Sub3_Sub1_4);
-							Static1.aClass2_Sub3_Sub1_4.method1731(Static1.aClass2_Sub3_Sub1_4.anInt2546 - local794);
+							Static1.aClass2_Sub3_Sub1_4.psize1(Static1.aClass2_Sub3_Sub1_4.pos - local794);
 							if (Static1.anInt583 == 2) {
 								Static1.anInt583 = 3;
 								Static1.aBoolean95 = true;
 								Static1.aClass2_Sub3_Sub1_4.method1736(132);
-								Static1.aClass2_Sub3_Sub1_4.method1703(Static1.anInt583);
-								Static1.aClass2_Sub3_Sub1_4.method1703(Static1.anInt2515);
-								Static1.aClass2_Sub3_Sub1_4.method1703(Static1.anInt2491);
+								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt583);
+								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2515);
+								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2491);
 							}
 						}
 						JagString.aClass40_451 = JagString.aClass40_445;

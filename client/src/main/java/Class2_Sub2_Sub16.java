@@ -24,14 +24,14 @@ public final class Class2_Sub2_Sub16 extends Hashable {
 	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(IIBLclient!eb;)V", line = 128)
 	private void method1639(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Packet arg2) {
 		if (arg1 == 1) {
-			this.anInt2467 = arg2.method1718();
+			this.anInt2467 = arg2.g3();
 		}
 	}
 
 	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(Lclient!eb;II)V", line = 145)
 	public void method1640(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		while (true) {
-			@Pc(9) int local9 = arg0.method1708();
+			@Pc(9) int local9 = arg0.g1();
 			if (local9 == 0) {
 				return;
 			}

@@ -164,7 +164,7 @@ public final class LocType extends Hashable {
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(BLclient!eb;)V", line = 110)
 	public void method767(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(17) int local17 = arg0.method1708();
+			@Pc(17) int local17 = arg0.g1();
 			if (local17 == 0) {
 				return;
 			}
@@ -334,44 +334,44 @@ public final class LocType extends Hashable {
 		@Pc(20) int local20;
 		@Pc(40) int local40;
 		if (arg0 == 1) {
-			local20 = arg1.method1708();
+			local20 = arg1.g1();
 			if (local20 > 0) {
 				if (this.anIntArray213 != null && !Static1.aBoolean65) {
-					arg1.anInt2546 += local20 * 3;
+					arg1.pos += local20 * 3;
 					return;
 				}
 				this.anIntArray213 = new int[local20];
 				this.anIntArray211 = new int[local20];
 				for (local40 = 0; local40 < local20; local40++) {
-					this.anIntArray213[local40] = arg1.method1704();
-					this.anIntArray211[local40] = arg1.method1708();
+					this.anIntArray213[local40] = arg1.g2();
+					this.anIntArray211[local40] = arg1.g1();
 				}
 				return;
 			}
 		} else if (arg0 == 2) {
-			this.aClass40_315 = arg1.method1721();
+			this.aClass40_315 = arg1.gjstr();
 		} else if (arg0 == 3) {
-			this.aClass40_316 = arg1.method1721();
+			this.aClass40_316 = arg1.gjstr();
 			return;
 		} else {
 			if (arg0 == 5) {
-				local20 = arg1.method1708();
+				local20 = arg1.g1();
 				if (local20 > 0) {
 					if (this.anIntArray213 != null && !Static1.aBoolean65) {
-						arg1.anInt2546 += local20 * 2;
+						arg1.pos += local20 * 2;
 						return;
 					}
 					this.anIntArray213 = new int[local20];
 					this.anIntArray211 = null;
 					for (local40 = 0; local40 < local20; local40++) {
-						this.anIntArray213[local40] = arg1.method1704();
+						this.anIntArray213[local40] = arg1.g2();
 					}
 					return;
 				}
 			} else if (arg0 == 14) {
-				this.anInt1036 = arg1.method1708();
+				this.anInt1036 = arg1.g1();
 			} else if (arg0 == 15) {
-				this.anInt1040 = arg1.method1708();
+				this.anInt1040 = arg1.g1();
 				return;
 			} else if (arg0 == 17) {
 				this.aBoolean77 = false;
@@ -380,7 +380,7 @@ public final class LocType extends Hashable {
 				this.aBoolean79 = false;
 				return;
 			} else if (arg0 == 19) {
-				this.anInt1054 = arg1.method1708();
+				this.anInt1054 = arg1.g1();
 				return;
 			} else if (arg0 == 21) {
 				this.aBoolean84 = true;
@@ -392,38 +392,38 @@ public final class LocType extends Hashable {
 					this.aBoolean81 = true;
 					return;
 				} else if (arg0 == 24) {
-					this.anInt1048 = arg1.method1704();
+					this.anInt1048 = arg1.g2();
 					if (this.anInt1048 == 65535) {
 						this.anInt1048 = -1;
 						return;
 					}
 				} else if (arg0 == 28) {
-					this.anInt1050 = arg1.method1708();
+					this.anInt1050 = arg1.g1();
 					return;
 				} else if (arg0 == 29) {
-					this.anInt1061 = arg1.method1696();
+					this.anInt1061 = arg1.g1b();
 					return;
 				} else if (arg0 == 39) {
-					this.anInt1052 = arg1.method1696() * 5;
+					this.anInt1052 = arg1.g1b() * 5;
 					return;
 				} else {
 					if (arg0 >= 30 && arg0 < 35) {
-						this.aClass40Array20[arg0 - 30] = arg1.method1721();
+						this.aClass40Array20[arg0 - 30] = arg1.gjstr();
 						if (this.aClass40Array20[arg0 - 30].method1199(JagString.aClass40_346)) {
 							this.aClass40Array20[arg0 - 30] = null;
 							return;
 						}
 					} else if (arg0 == 40) {
-						local20 = arg1.method1708();
+						local20 = arg1.g1();
 						this.anIntArray209 = new int[local20];
 						this.anIntArray212 = new int[local20];
 						for (local40 = 0; local40 < local20; local40++) {
-							this.anIntArray212[local40] = arg1.method1704();
-							this.anIntArray209[local40] = arg1.method1704();
+							this.anIntArray212[local40] = arg1.g2();
+							this.anIntArray209[local40] = arg1.g2();
 						}
 						return;
 					} else if (arg0 == 60) {
-						this.anInt1034 = arg1.method1704();
+						this.anInt1034 = arg1.g2();
 						return;
 					} else if (arg0 == 62) {
 						this.aBoolean78 = true;
@@ -431,28 +431,28 @@ public final class LocType extends Hashable {
 					} else if (arg0 == 64) {
 						this.aBoolean82 = false;
 					} else if (arg0 == 65) {
-						this.anInt1042 = arg1.method1704();
+						this.anInt1042 = arg1.g2();
 						return;
 					} else if (arg0 == 66) {
-						this.anInt1058 = arg1.method1704();
+						this.anInt1058 = arg1.g2();
 						return;
 					} else if (arg0 == 67) {
-						this.anInt1051 = arg1.method1704();
+						this.anInt1051 = arg1.g2();
 						return;
 					} else if (arg0 == 68) {
-						this.anInt1039 = arg1.method1704();
+						this.anInt1039 = arg1.g2();
 						return;
 					} else if (arg0 == 69) {
-						this.anInt1057 = arg1.method1708();
+						this.anInt1057 = arg1.g1();
 						return;
 					} else if (arg0 == 70) {
-						this.anInt1043 = arg1.method1701();
+						this.anInt1043 = arg1.g2s();
 						return;
 					} else if (arg0 == 71) {
-						this.anInt1056 = arg1.method1701();
+						this.anInt1056 = arg1.g2s();
 						return;
 					} else if (arg0 == 72) {
-						this.anInt1060 = arg1.method1701();
+						this.anInt1060 = arg1.g2s();
 						return;
 					} else if (arg0 == 73) {
 						this.aBoolean76 = true;
@@ -462,20 +462,20 @@ public final class LocType extends Hashable {
 						return;
 					} else {
 						if (arg0 == 75) {
-							this.anInt1030 = arg1.method1708();
+							this.anInt1030 = arg1.g1();
 						} else if (arg0 == 77) {
-							this.anInt1032 = arg1.method1704();
+							this.anInt1032 = arg1.g2();
 							if (this.anInt1032 == 65535) {
 								this.anInt1032 = -1;
 							}
-							this.anInt1044 = arg1.method1704();
+							this.anInt1044 = arg1.g2();
 							if (this.anInt1044 == 65535) {
 								this.anInt1044 = -1;
 							}
-							local20 = arg1.method1708();
+							local20 = arg1.g1();
 							this.anIntArray210 = new int[local20 + 1];
 							for (local40 = 0; local40 <= local20; local40++) {
-								this.anIntArray210[local40] = arg1.method1704();
+								this.anIntArray210[local40] = arg1.g2();
 								if (this.anIntArray210[local40] == 65535) {
 									this.anIntArray210[local40] = -1;
 								}

@@ -15,7 +15,7 @@ public final class Static58 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!ad;Lclient!cb;ZI)V", line = 351)
-	public static void method1056(@OriginalArg(0) Class5_Sub1 arg0, @OriginalArg(1) DiskStore arg1, @OriginalArg(3) int arg2) {
+	public static void method1056(@OriginalArg(0) Js5ResourceProvider arg0, @OriginalArg(1) DiskStore arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) byte[] local7 = null;
 		@Pc(9) LinkList local9 = Static1.aClass44_2;
 		synchronized (Static1.aClass44_2) {
@@ -232,7 +232,7 @@ public final class Static58 {
 				Static1.aBoolean59 = true;
 				Static1.anInt2594++;
 				Static1.aClass2_Sub3_Sub1_4.method1736(98);
-				Static1.aClass2_Sub3_Sub1_4.method1680(arg0);
+				Static1.aClass2_Sub3_Sub1_4.p8(arg0);
 			}
 		}
 	}

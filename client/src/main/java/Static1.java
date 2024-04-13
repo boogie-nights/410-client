@@ -377,7 +377,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!p", name = "p", descriptor = "Lclient!ba;")
 	public static HashTable aClass6_5 = new HashTable(32);
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "Lclient!va;")
-	public static Class61 aClass61_1 = new Class61();
+	public static BZip2State aClass61_1 = new BZip2State();
 	@OriginalMember(owner = "client!r", name = "f", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_16 = new LruCache(64);
 	@OriginalMember(owner = "client!r", name = "h", descriptor = "Ljava/util/zip/CRC32;")
@@ -393,7 +393,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!rb", name = "c", descriptor = "I")
 	public static int anInt1952 = 0;
 	@OriginalMember(owner = "client!rb", name = "C", descriptor = "[Lclient!ad;")
-	public static Class5_Sub1[] aClass5_Sub1Array1 = new Class5_Sub1[256];
+	public static Js5ResourceProvider[] aClass5_Sub1Array1 = new Js5ResourceProvider[256];
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "I")
 	public static int anInt1971 = -1;
 	@OriginalMember(owner = "client!rd", name = "e", descriptor = "I")

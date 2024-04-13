@@ -33,21 +33,21 @@ public final class SoundFilter {
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(Lclient!eb;Lclient!ie;)V", line = 27)
 	public void method1066(@OriginalArg(0) Packet arg0, @OriginalArg(1) SoundEnvelope arg1) {
-		@Pc(3) int local3 = arg0.method1708();
+		@Pc(3) int local3 = arg0.g1();
 		this.anIntArray335[0] = local3 >> 4;
 		this.anIntArray335[1] = local3 & 0xF;
 		if (local3 == 0) {
 			this.anIntArray334[0] = this.anIntArray334[1] = 0;
 			return;
 		}
-		this.anIntArray334[0] = arg0.method1704();
-		this.anIntArray334[1] = arg0.method1704();
-		@Pc(37) int local37 = arg0.method1708();
+		this.anIntArray334[0] = arg0.g2();
+		this.anIntArray334[1] = arg0.g2();
+		@Pc(37) int local37 = arg0.g1();
 		@Pc(42) int local42;
 		for (@Pc(39) int local39 = 0; local39 < 2; local39++) {
 			for (local42 = 0; local42 < this.anIntArray335[local39]; local42++) {
-				this.anIntArrayArrayArray4[local39][0][local42] = arg0.method1704();
-				this.anIntArrayArrayArray5[local39][0][local42] = arg0.method1704();
+				this.anIntArrayArrayArray4[local39][0][local42] = arg0.g2();
+				this.anIntArrayArrayArray5[local39][0][local42] = arg0.g2();
 			}
 		}
 		for (local42 = 0; local42 < 2; local42++) {
@@ -56,8 +56,8 @@ public final class SoundFilter {
 					this.anIntArrayArrayArray4[local42][1][local81] = this.anIntArrayArrayArray4[local42][0][local81];
 					this.anIntArrayArrayArray5[local42][1][local81] = this.anIntArrayArrayArray5[local42][0][local81];
 				} else {
-					this.anIntArrayArrayArray4[local42][1][local81] = arg0.method1704();
-					this.anIntArrayArrayArray5[local42][1][local81] = arg0.method1704();
+					this.anIntArrayArrayArray4[local42][1][local81] = arg0.g2();
+					this.anIntArrayArrayArray5[local42][1][local81] = arg0.g2();
 				}
 			}
 		}

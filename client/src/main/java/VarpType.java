@@ -12,7 +12,7 @@ public final class VarpType extends Hashable {
 	@OriginalMember(owner = "client!ic", name = "a", descriptor = "(Lclient!eb;Z)V", line = 57)
 	public void method788(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method1708();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}
@@ -23,7 +23,7 @@ public final class VarpType extends Hashable {
 	@OriginalMember(owner = "client!ic", name = "a", descriptor = "(Lclient!eb;II)V", line = 96)
 	private void method789(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 5) {
-			this.anInt1076 = arg0.method1704();
+			this.anInt1076 = arg0.g2();
 		}
 	}
 }

@@ -6,7 +6,7 @@ public final class Static111 {
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "([BI[BII)I", line = 6)
 	public static int method1265(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3) {
-		@Pc(1) Class61 local1 = Static1.aClass61_1;
+		@Pc(1) BZip2State local1 = Static1.aClass61_1;
 		synchronized (Static1.aClass61_1) {
 			Static1.aClass61_1.aByteArray23 = arg2;
 			Static1.aClass61_1.anInt2420 = 9;
@@ -26,7 +26,7 @@ public final class Static111 {
 	}
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "(Lclient!va;)V", line = 33)
-	private static void method1266(@OriginalArg(0) Class61 arg0) {
+	private static void method1266(@OriginalArg(0) BZip2State arg0) {
 		arg0.anInt2412 = 0;
 		for (@Pc(4) int local4 = 0; local4 < 256; local4++) {
 			if (arg0.aBooleanArray39[local4]) {
@@ -37,7 +37,7 @@ public final class Static111 {
 	}
 
 	@OriginalMember(owner = "client!pb", name = "b", descriptor = "(Lclient!va;)V", line = 53)
-	private static void method1267(@OriginalArg(0) Class61 arg0) {
+	private static void method1267(@OriginalArg(0) BZip2State arg0) {
 		@Pc(2) byte local2 = arg0.aByte3;
 		@Pc(5) int local5 = arg0.anInt2418;
 		@Pc(8) int local8 = arg0.anInt2414;
@@ -186,17 +186,17 @@ public final class Static111 {
 	}
 
 	@OriginalMember(owner = "client!pb", name = "c", descriptor = "(Lclient!va;)B", line = 285)
-	private static byte method1269(@OriginalArg(0) Class61 arg0) {
+	private static byte method1269(@OriginalArg(0) BZip2State arg0) {
 		return (byte) method1271(1, arg0);
 	}
 
 	@OriginalMember(owner = "client!pb", name = "d", descriptor = "(Lclient!va;)B", line = 297)
-	private static byte method1270(@OriginalArg(0) Class61 arg0) {
+	private static byte method1270(@OriginalArg(0) BZip2State arg0) {
 		return (byte) method1271(8, arg0);
 	}
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "(ILclient!va;)I", line = 312)
-	private static int method1271(@OriginalArg(0) int arg0, @OriginalArg(1) Class61 arg1) {
+	private static int method1271(@OriginalArg(0) int arg0, @OriginalArg(1) BZip2State arg1) {
 		while (arg1.anInt2416 < arg0) {
 			arg1.anInt2403 = arg1.anInt2403 << 8 | arg1.aByteArray23[arg1.anInt2420] & 0xFF;
 			arg1.anInt2416 += 8;
@@ -214,7 +214,7 @@ public final class Static111 {
 	}
 
 	@OriginalMember(owner = "client!pb", name = "e", descriptor = "(Lclient!va;)V", line = 343)
-	private static void method1273(@OriginalArg(0) Class61 arg0) {
+	private static void method1273(@OriginalArg(0) BZip2State arg0) {
 		arg0.anInt2413 = 1;
 		if (Static31.anIntArray158 == null) {
 			Static31.anIntArray158 = new int[arg0.anInt2413 * 100000];

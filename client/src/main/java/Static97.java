@@ -71,9 +71,9 @@ public final class Static97 {
 		Static92.method1584();
 		Static1.anInt231 = 0;
 		Static1.anInt1986 = -1;
-		Static1.aClass2_Sub3_Sub1_4.anInt2546 = 0;
+		Static1.aClass2_Sub3_Sub1_4.pos = 0;
 		Static1.anInt2083 = -1;
-		Static1.aClass2_Sub3_Sub1_5.anInt2546 = 0;
+		Static1.aClass2_Sub3_Sub1_5.pos = 0;
 		Static1.aBoolean175 = false;
 		Static1.anInt2352 = -1;
 		Static1.anInt1973 = 0;

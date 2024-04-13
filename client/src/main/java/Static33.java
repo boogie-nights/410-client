@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static33 {
 
 	@OriginalMember(owner = "client!ge", name = "x", descriptor = "Lclient!ad;")
-	public static Class5_Sub1 aClass5_Sub1_6;
+	public static Js5ResourceProvider aClass5_Sub1_6;
 
 	@OriginalMember(owner = "client!ge", name = "A", descriptor = "Lclient!ad;")
-	public static Class5_Sub1 aClass5_Sub1_7;
+	public static Js5ResourceProvider aClass5_Sub1_7;
 
 	@OriginalMember(owner = "client!ge", name = "F", descriptor = "I")
 	public static int anInt824;

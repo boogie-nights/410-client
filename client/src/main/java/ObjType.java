@@ -300,104 +300,104 @@ public final class ObjType extends Hashable {
 	@OriginalMember(owner = "client!hb", name = "a", descriptor = "(ILclient!eb;Z)V", line = 630)
 	private void method723(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 1) {
-			this.anInt919 = arg1.method1704();
+			this.anInt919 = arg1.g2();
 		} else if (arg0 == 2) {
-			this.aClass40_290 = arg1.method1721();
+			this.aClass40_290 = arg1.gjstr();
 		} else if (arg0 == 3) {
-			this.aClass40_289 = arg1.method1721();
+			this.aClass40_289 = arg1.gjstr();
 		} else if (arg0 == 4) {
-			this.anInt926 = arg1.method1704();
+			this.anInt926 = arg1.g2();
 		} else if (arg0 == 5) {
-			this.anInt952 = arg1.method1704();
+			this.anInt952 = arg1.g2();
 		} else if (arg0 == 6) {
-			this.anInt918 = arg1.method1704();
+			this.anInt918 = arg1.g2();
 		} else if (arg0 == 7) {
-			this.anInt946 = arg1.method1704();
+			this.anInt946 = arg1.g2();
 			if (this.anInt946 > 32767) {
 				this.anInt946 -= 65536;
 			}
 		} else if (arg0 == 8) {
-			this.anInt960 = arg1.method1704();
+			this.anInt960 = arg1.g2();
 			if (this.anInt960 > 32767) {
 				this.anInt960 -= 65536;
 			}
 		} else if (arg0 == 10) {
-			arg1.method1704();
+			arg1.g2();
 		} else if (arg0 == 11) {
 			this.aBoolean67 = true;
 		} else if (arg0 == 12) {
-			this.anInt938 = arg1.method1728();
+			this.anInt938 = arg1.g4s();
 		} else if (arg0 == 16) {
 			this.aBoolean66 = true;
 		} else if (arg0 == 23) {
-			this.anInt922 = arg1.method1704();
-			this.anInt962 = arg1.method1708();
+			this.anInt922 = arg1.g2();
+			this.anInt962 = arg1.g1();
 		} else if (arg0 == 24) {
-			this.anInt933 = arg1.method1704();
+			this.anInt933 = arg1.g2();
 		} else if (arg0 == 25) {
-			this.anInt923 = arg1.method1704();
-			this.anInt961 = arg1.method1708();
+			this.anInt923 = arg1.g2();
+			this.anInt961 = arg1.g1();
 		} else if (arg0 == 26) {
-			this.anInt963 = arg1.method1704();
+			this.anInt963 = arg1.g2();
 		} else if (arg0 >= 30 && arg0 < 35) {
-			this.aClass40Array17[arg0 - 30] = arg1.method1721();
+			this.aClass40Array17[arg0 - 30] = arg1.gjstr();
 			if (this.aClass40Array17[arg0 - 30].method1199(JagString.aClass40_346)) {
 				this.aClass40Array17[arg0 - 30] = null;
 			}
 		} else if (arg0 >= 35 && arg0 < 40) {
-			this.aClass40Array16[arg0 - 35] = arg1.method1721();
+			this.aClass40Array16[arg0 - 35] = arg1.gjstr();
 		} else if (arg0 == 40) {
-			@Pc(366) int local366 = arg1.method1708();
+			@Pc(366) int local366 = arg1.g1();
 			this.anIntArray181 = new int[local366];
 			this.anIntArray184 = new int[local366];
 			for (@Pc(376) int local376 = 0; local376 < local366; local376++) {
-				this.anIntArray181[local376] = arg1.method1704();
-				this.anIntArray184[local376] = arg1.method1704();
+				this.anIntArray181[local376] = arg1.g2();
+				this.anIntArray184[local376] = arg1.g2();
 			}
 		} else if (arg0 == 78) {
-			this.anInt928 = arg1.method1704();
+			this.anInt928 = arg1.g2();
 		} else if (arg0 == 79) {
-			this.anInt925 = arg1.method1704();
+			this.anInt925 = arg1.g2();
 		} else if (arg0 == 90) {
-			this.anInt944 = arg1.method1704();
+			this.anInt944 = arg1.g2();
 		} else if (arg0 == 91) {
-			this.anInt964 = arg1.method1704();
+			this.anInt964 = arg1.g2();
 		} else if (arg0 == 92) {
-			this.anInt939 = arg1.method1704();
+			this.anInt939 = arg1.g2();
 		} else if (arg0 == 93) {
-			this.anInt947 = arg1.method1704();
+			this.anInt947 = arg1.g2();
 		} else if (arg0 == 95) {
-			this.anInt937 = arg1.method1704();
+			this.anInt937 = arg1.g2();
 		} else if (arg0 == 97) {
-			this.anInt956 = arg1.method1704();
+			this.anInt956 = arg1.g2();
 		} else if (arg0 == 98) {
-			this.anInt932 = arg1.method1704();
+			this.anInt932 = arg1.g2();
 		} else if (arg0 >= 100 && arg0 < 110) {
 			if (this.anIntArray183 == null) {
 				this.anIntArray183 = new int[10];
 				this.anIntArray180 = new int[10];
 			}
-			this.anIntArray183[arg0 - 100] = arg1.method1704();
-			this.anIntArray180[arg0 - 100] = arg1.method1704();
+			this.anIntArray183[arg0 - 100] = arg1.g2();
+			this.anIntArray180[arg0 - 100] = arg1.g2();
 		} else if (arg0 == 110) {
-			this.anInt957 = arg1.method1704();
+			this.anInt957 = arg1.g2();
 		} else if (arg0 == 111) {
-			this.anInt959 = arg1.method1704();
+			this.anInt959 = arg1.g2();
 		} else if (arg0 == 112) {
-			this.anInt920 = arg1.method1704();
+			this.anInt920 = arg1.g2();
 		} else if (arg0 == 113) {
-			this.anInt942 = arg1.method1696();
+			this.anInt942 = arg1.g1b();
 		} else if (arg0 == 114) {
-			this.anInt940 = arg1.method1696() * 5;
+			this.anInt940 = arg1.g1b() * 5;
 		} else if (arg0 == 115) {
-			this.anInt951 = arg1.method1708();
+			this.anInt951 = arg1.g1();
 		}
 	}
 
 	@OriginalMember(owner = "client!hb", name = "a", descriptor = "(ILclient!eb;)V", line = 845)
 	public void method724(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method1708();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}

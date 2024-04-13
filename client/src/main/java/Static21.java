@@ -197,7 +197,7 @@ public final class Static21 {
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(I[BZ)I", line = 1054)
 	public static int method1726(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1) {
-		return Static18.method371(0, arg1, arg0);
+		return Static18.getcrc(0, arg1, arg0);
 	}
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(IIIIIIIIII)V", line = 1066)

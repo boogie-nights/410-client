@@ -39,13 +39,13 @@ public final class FloorUnderlayType extends Hashable {
 	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(BILclient!eb;I)V", line = 29)
 	private void method475(@OriginalArg(1) int arg0, @OriginalArg(2) Packet arg1, @OriginalArg(3) int arg2) {
 		if (arg0 == 1) {
-			this.anInt581 = arg1.method1718();
+			this.anInt581 = arg1.g3();
 		} else if (arg0 == 2) {
-			this.anInt582 = arg1.method1708();
+			this.anInt582 = arg1.g1();
 		} else if (arg0 == 5) {
 			this.aBoolean45 = false;
 		} else if (arg0 == 7) {
-			this.anInt593 = arg1.method1718();
+			this.anInt593 = arg1.g3();
 		}
 	}
 
@@ -63,7 +63,7 @@ public final class FloorUnderlayType extends Hashable {
 	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(Lclient!eb;BI)V", line = 212)
 	public void method478(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		while (true) {
-			@Pc(14) int local14 = arg0.method1708();
+			@Pc(14) int local14 = arg0.g1();
 			if (local14 == 0) {
 				return;
 			}

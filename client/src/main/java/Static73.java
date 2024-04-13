@@ -12,7 +12,7 @@ public final class Static73 {
 	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array10;
 
 	@OriginalMember(owner = "client!r", name = "n", descriptor = "Lclient!ad;")
-	public static Class5_Sub1 aClass5_Sub1_15;
+	public static Js5ResourceProvider aClass5_Sub1_15;
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(III)Z", line = 14)
 	public static boolean method1335(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
@@ -39,7 +39,7 @@ public final class Static73 {
 		Static41.method787(arg1);
 		Static82.aClass2_Sub2_Sub9_1 = null;
 		Static1.anInt274 = 0;
-		Static1.aClass2_Sub3_5.anInt2546 = 0;
+		Static1.aClass2_Sub3_5.pos = 0;
 		Static27.aClass2_Sub3_2 = null;
 		while (true) {
 			@Pc(40) Class2_Sub2_Sub9 local40 = (Class2_Sub2_Sub9) Static1.aClass6_5.method184();
@@ -50,10 +50,10 @@ public final class Static73 {
 						if (Static1.aByte1 != 0) {
 							try {
 								@Pc(92) Packet local92 = new Packet(4);
-								local92.method1703(4);
-								local92.method1703(Static1.aByte1);
-								local92.method1694(0);
-								Static29.aClass25_48.method731(local92.aByteArray24, 4);
+								local92.p1(4);
+								local92.p1(Static1.aByte1);
+								local92.p2(0);
+								Static29.aClass25_48.method731(local92.data, 4);
 							} catch (@Pc(115) IOException local115) {
 								try {
 									Static29.aClass25_48.method730();

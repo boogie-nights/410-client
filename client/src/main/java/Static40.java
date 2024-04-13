@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static40 {
 
 	@OriginalMember(owner = "client!ib", name = "c", descriptor = "Lclient!ad;")
-	public static Class5_Sub1 aClass5_Sub1_14;
+	public static Js5ResourceProvider aClass5_Sub1_14;
 
 	@OriginalMember(owner = "client!ib", name = "g", descriptor = "I")
 	public static int anInt1849;
@@ -198,13 +198,13 @@ public final class Static40 {
 			}
 			if (Static1.anInt693 == 2) {
 				@Pc(71) long local71 = Static94.aLong150 = JagString.aClass40_591.method1179();
-				Static1.aClass2_Sub3_Sub1_4.anInt2546 = 0;
+				Static1.aClass2_Sub3_Sub1_4.pos = 0;
 				@Pc(81) int local81 = (int) (local71 >> 16 & 0x1FL);
-				Static1.aClass2_Sub3_Sub1_4.method1703(14);
-				Static1.aClass2_Sub3_Sub1_4.method1703(local81);
-				Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_4.aByteArray24, 2);
+				Static1.aClass2_Sub3_Sub1_4.p1(14);
+				Static1.aClass2_Sub3_Sub1_4.p1(local81);
+				Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_4.data, 2);
 				Static1.anInt693 = 3;
-				Static1.aClass2_Sub3_Sub1_5.anInt2546 = 0;
+				Static1.aClass2_Sub3_Sub1_5.pos = 0;
 			}
 			@Pc(108) int local108;
 			if (Static1.anInt693 == 3) {
@@ -214,60 +214,60 @@ public final class Static40 {
 					return;
 				}
 				Static1.anInt693 = 4;
-				Static1.aClass2_Sub3_Sub1_5.anInt2546 = 0;
+				Static1.aClass2_Sub3_Sub1_5.pos = 0;
 			}
 			if (Static1.anInt693 == 4) {
-				if (Static1.aClass2_Sub3_Sub1_5.anInt2546 < 8) {
+				if (Static1.aClass2_Sub3_Sub1_5.pos < 8) {
 					local108 = Static64.aClass25_36.method728();
-					if (local108 > 8 - Static1.aClass2_Sub3_Sub1_5.anInt2546) {
-						local108 = 8 - Static1.aClass2_Sub3_Sub1_5.anInt2546;
+					if (local108 > 8 - Static1.aClass2_Sub3_Sub1_5.pos) {
+						local108 = 8 - Static1.aClass2_Sub3_Sub1_5.pos;
 					}
 					if (local108 > 0) {
-						Static64.aClass25_36.method725(Static1.aClass2_Sub3_Sub1_5.anInt2546, local108, Static1.aClass2_Sub3_Sub1_5.aByteArray24);
-						Static1.aClass2_Sub3_Sub1_5.anInt2546 += local108;
+						Static64.aClass25_36.method725(Static1.aClass2_Sub3_Sub1_5.pos, local108, Static1.aClass2_Sub3_Sub1_5.data);
+						Static1.aClass2_Sub3_Sub1_5.pos += local108;
 					}
 				}
-				if (Static1.aClass2_Sub3_Sub1_5.anInt2546 == 8) {
-					Static1.aClass2_Sub3_Sub1_5.anInt2546 = 0;
-					Static1.aLong139 = Static1.aClass2_Sub3_Sub1_5.method1717();
+				if (Static1.aClass2_Sub3_Sub1_5.pos == 8) {
+					Static1.aClass2_Sub3_Sub1_5.pos = 0;
+					Static1.aLong139 = Static1.aClass2_Sub3_Sub1_5.g8();
 					Static1.anInt693 = 5;
 				}
 			}
 			if (Static1.anInt693 == 5) {
 				@Pc(185) int[] local185 = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (Static1.aLong139 >> 32), (int) Static1.aLong139 };
-				Static1.aClass2_Sub3_Sub1_4.anInt2546 = 0;
-				Static1.aClass2_Sub3_Sub1_4.method1703(10);
-				Static1.aClass2_Sub3_Sub1_4.method1725(local185[0]);
-				Static1.aClass2_Sub3_Sub1_4.method1725(local185[1]);
-				Static1.aClass2_Sub3_Sub1_4.method1725(local185[2]);
-				Static1.aClass2_Sub3_Sub1_4.method1725(local185[3]);
-				Static1.aClass2_Sub3_Sub1_4.method1725(Static91.aClass7_2.anInt249);
-				Static1.aClass2_Sub3_Sub1_4.method1680(JagString.aClass40_591.method1179());
-				Static1.aClass2_Sub3_Sub1_4.method1683(JagString.aClass40_587);
-				Static1.aClass2_Sub3_Sub1_4.method1685(Static1.aBigInteger2, Static1.aBigInteger1);
-				Static1.aClass2_Sub3_Sub1_3.anInt2546 = 0;
+				Static1.aClass2_Sub3_Sub1_4.pos = 0;
+				Static1.aClass2_Sub3_Sub1_4.p1(10);
+				Static1.aClass2_Sub3_Sub1_4.p4(local185[0]);
+				Static1.aClass2_Sub3_Sub1_4.p4(local185[1]);
+				Static1.aClass2_Sub3_Sub1_4.p4(local185[2]);
+				Static1.aClass2_Sub3_Sub1_4.p4(local185[3]);
+				Static1.aClass2_Sub3_Sub1_4.p4(Static91.aClass7_2.anInt249);
+				Static1.aClass2_Sub3_Sub1_4.p8(JagString.aClass40_591.method1179());
+				Static1.aClass2_Sub3_Sub1_4.pjstr(JagString.aClass40_587);
+				Static1.aClass2_Sub3_Sub1_4.rsaenc(Static1.aBigInteger2, Static1.aBigInteger1);
+				Static1.aClass2_Sub3_Sub1_3.pos = 0;
 				if (Static1.anInt1075 == 40) {
-					Static1.aClass2_Sub3_Sub1_3.method1703(18);
+					Static1.aClass2_Sub3_Sub1_3.p1(18);
 				} else {
-					Static1.aClass2_Sub3_Sub1_3.method1703(16);
+					Static1.aClass2_Sub3_Sub1_3.p1(16);
 				}
-				Static1.aClass2_Sub3_Sub1_3.method1703(Static1.aClass2_Sub3_Sub1_4.anInt2546 + 53);
-				Static1.aClass2_Sub3_Sub1_3.method1725(410);
-				Static1.aClass2_Sub3_Sub1_3.method1703(Static1.aBoolean2 ? 1 : 0);
-				Static1.aClass2_Sub3_Sub1_3.method1725(aClass5_Sub1_14.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1725(Static79.aClass5_Sub1_18.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1725(Static5.aClass5_Sub1_1.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1725(Static26.aClass5_Sub1_5.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1725(Static33.aClass5_Sub1_7.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1725(Static34.aClass5_Sub1_8.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1725(Static77.aClass5_Sub1_17.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1725(Static24.aClass5_Sub1_4.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1725(Static74.aClass5_Sub1_16.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1725(Static33.aClass5_Sub1_6.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1725(Static73.aClass5_Sub1_15.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1725(Static68.aClass5_Sub1_13.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.method1682(Static1.aClass2_Sub3_Sub1_4.aByteArray24, Static1.aClass2_Sub3_Sub1_4.anInt2546);
-				Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_3.aByteArray24, Static1.aClass2_Sub3_Sub1_3.anInt2546);
+				Static1.aClass2_Sub3_Sub1_3.p1(Static1.aClass2_Sub3_Sub1_4.pos + 53);
+				Static1.aClass2_Sub3_Sub1_3.p4(410);
+				Static1.aClass2_Sub3_Sub1_3.p1(Static1.aBoolean2 ? 1 : 0);
+				Static1.aClass2_Sub3_Sub1_3.p4(aClass5_Sub1_14.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static79.aClass5_Sub1_18.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static5.aClass5_Sub1_1.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static26.aClass5_Sub1_5.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static33.aClass5_Sub1_7.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static34.aClass5_Sub1_8.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static77.aClass5_Sub1_17.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static24.aClass5_Sub1_4.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static74.aClass5_Sub1_16.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static33.aClass5_Sub1_6.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static73.aClass5_Sub1_15.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static68.aClass5_Sub1_13.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.pdata(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
+				Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_3.data, Static1.aClass2_Sub3_Sub1_3.pos);
 				Static1.aClass2_Sub3_Sub1_4.method1734(local185);
 				for (@Pc(379) int local379 = 0; local379 < 4; local379++) {
 					local185[local379] += 50;
@@ -310,12 +310,12 @@ public final class Static40 {
 					Static1.anInt1955 <<= 0x8;
 					Static1.anInt1955 += Static64.aClass25_36.method726();
 					Static1.anInt927 = Static64.aClass25_36.method726();
-					Static64.aClass25_36.method725(0, 1, Static1.aClass2_Sub3_Sub1_5.aByteArray24);
-					Static1.aClass2_Sub3_Sub1_5.anInt2546 = 0;
+					Static64.aClass25_36.method725(0, 1, Static1.aClass2_Sub3_Sub1_5.data);
+					Static1.aClass2_Sub3_Sub1_5.pos = 0;
 					Static1.anInt2083 = Static1.aClass2_Sub3_Sub1_5.method1733();
-					Static64.aClass25_36.method725(0, 2, Static1.aClass2_Sub3_Sub1_5.aByteArray24);
-					Static1.aClass2_Sub3_Sub1_5.anInt2546 = 0;
-					Static1.anInt785 = Static1.aClass2_Sub3_Sub1_5.method1704();
+					Static64.aClass25_36.method725(0, 2, Static1.aClass2_Sub3_Sub1_5.data);
+					Static1.aClass2_Sub3_Sub1_5.pos = 0;
+					Static1.anInt785 = Static1.aClass2_Sub3_Sub1_5.g2();
 					Static1.anInt693 = 10;
 				}
 				if (Static1.anInt693 != 10) {
@@ -334,8 +334,8 @@ public final class Static40 {
 						}
 					}
 				} else if (Static64.aClass25_36.method728() >= Static1.anInt785) {
-					Static1.aClass2_Sub3_Sub1_5.anInt2546 = 0;
-					Static64.aClass25_36.method725(0, Static1.anInt785, Static1.aClass2_Sub3_Sub1_5.aByteArray24);
+					Static1.aClass2_Sub3_Sub1_5.pos = 0;
+					Static64.aClass25_36.method725(0, Static1.anInt785, Static1.aClass2_Sub3_Sub1_5.data);
 					Static97.method1671();
 					Static51.anInt2327 = -1;
 					Static91.method58(false);

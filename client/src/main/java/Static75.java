@@ -325,25 +325,25 @@ public final class Static75 {
 			local805 = Static1.anIntArray103[local70];
 			if (arg5 == 0) {
 				Static1.aClass2_Sub3_Sub1_4.method1736(130);
-				Static1.aClass2_Sub3_Sub1_4.method1703(local75 + local75 + 3);
+				Static1.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3);
 			}
 			if (arg5 == 1) {
 				Static1.aClass2_Sub3_Sub1_4.method1736(136);
-				Static1.aClass2_Sub3_Sub1_4.method1703(local75 + local75 + 3 + 14);
+				Static1.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3 + 14);
 			}
 			if (arg5 == 2) {
 				Static1.aClass2_Sub3_Sub1_4.method1736(89);
-				Static1.aClass2_Sub3_Sub1_4.method1703(local75 + local75 + 3);
+				Static1.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3);
 			}
-			Static1.aClass2_Sub3_Sub1_4.method1712(Static1.aBooleanArray37[82] ? 1 : 0);
-			Static1.aClass2_Sub3_Sub1_4.method1711(local1072 + Static79.anInt2058);
-			Static1.aClass2_Sub3_Sub1_4.method1720(local805 + Static28.anInt725);
+			Static1.aClass2_Sub3_Sub1_4.p1_alt1(Static1.aBooleanArray37[82] ? 1 : 0);
+			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local1072 + Static79.anInt2058);
+			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local805 + Static28.anInt725);
 			Static1.anInt986 = Static1.anIntArray163[0];
 			Static1.anInt1919 = Static1.anIntArray103[0];
 			for (local812 = 1; local812 < local75; local812++) {
 				local70--;
-				Static1.aClass2_Sub3_Sub1_4.method1712(Static1.anIntArray163[local70] - local1072);
-				Static1.aClass2_Sub3_Sub1_4.method1702(Static1.anIntArray103[local70] - local805);
+				Static1.aClass2_Sub3_Sub1_4.p1_alt1(Static1.anIntArray163[local70] - local1072);
+				Static1.aClass2_Sub3_Sub1_4.p1_alt2(Static1.anIntArray103[local70] - local805);
 			}
 			return true;
 		} else if (arg5 == 1) {

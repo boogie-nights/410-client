@@ -8,7 +8,7 @@ public final class Class2_Sub2_Sub9 extends Hashable {
 	public byte aByte2;
 
 	@OriginalMember(owner = "client!i", name = "U", descriptor = "Lclient!ad;")
-	public Class5_Sub1 aClass5_Sub1_9;
+	public Js5ResourceProvider aClass5_Sub1_9;
 
 	@OriginalMember(owner = "client!i", name = "V", descriptor = "I")
 	public int anInt1013;

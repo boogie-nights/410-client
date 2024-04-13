@@ -194,7 +194,7 @@ public final class Static67 {
 		Static1.aClass47_21.method1330();
 		if (Static97.aCanvas_Sub1_1 != null) {
 			Static1.aClass2_Sub3_Sub1_4.method1736(153);
-			Static1.aClass2_Sub3_Sub1_4.method1725(1057001181);
+			Static1.aClass2_Sub3_Sub1_4.p4(1057001181);
 		}
 		if (!Static1.aBoolean87) {
 			local261 = (Static51.anInt2327 - 6) / 8;

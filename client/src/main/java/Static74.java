@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static74 {
 
 	@OriginalMember(owner = "client!ra", name = "l", descriptor = "Lclient!ad;")
-	public static Class5_Sub1 aClass5_Sub1_16;
+	public static Js5ResourceProvider aClass5_Sub1_16;
 
 	@OriginalMember(owner = "client!ra", name = "v", descriptor = "Lclient!ud;")
 	public static Js5 aClass5_26;
@@ -125,7 +125,7 @@ public final class Static74 {
 					Static1.aLongArray4[local37] = Static1.aLongArray4[local37 + 1];
 				}
 				Static1.aClass2_Sub3_Sub1_4.method1736(168);
-				Static1.aClass2_Sub3_Sub1_4.method1680(arg0);
+				Static1.aClass2_Sub3_Sub1_4.p8(arg0);
 				return;
 			}
 		}

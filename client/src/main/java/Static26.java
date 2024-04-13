@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static26 {
 
 	@OriginalMember(owner = "client!fb", name = "b", descriptor = "Lclient!ad;")
-	public static Class5_Sub1 aClass5_Sub1_5;
+	public static Js5ResourceProvider aClass5_Sub1_5;
 
 	@OriginalMember(owner = "client!fb", name = "n", descriptor = "I")
 	public static int anInt685;
@@ -86,13 +86,13 @@ public final class Static26 {
 				@Pc(61) byte[] local61 = new byte[local10.length + 9];
 				Static107.method993(local10, 0, local61, 9, local10.length);
 				@Pc(75) Packet local75 = new Packet(local61);
-				local75.method1703(2);
-				local75.method1725(local31);
-				local75.method1725(local23);
-				local75.anInt2546 = local61.length - 2;
-				@Pc(97) int local97 = local75.method1704();
-				local75.anInt2546 = local61.length - 2;
-				local75.method1694(local97 - 1);
+				local75.p1(2);
+				local75.p4(local31);
+				local75.p4(local23);
+				local75.pos = local61.length - 2;
+				@Pc(97) int local97 = local75.g2();
+				local75.pos = local61.length - 2;
+				local75.p2(local97 - 1);
 				arg1.method259(local61.length, arg2, local61);
 				return;
 			}

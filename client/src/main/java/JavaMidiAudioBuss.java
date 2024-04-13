@@ -12,7 +12,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!pa")
-public final class Class12_Sub1_Sub2 extends Class12_Sub1 implements Receiver {
+public final class JavaMidiAudioBuss extends MidiAudioBuss implements Receiver {
 
 	@OriginalMember(owner = "client!pa", name = "N", descriptor = "Ljavax/sound/midi/Receiver;")
 	private static Receiver aReceiver1 = null;
@@ -105,7 +105,7 @@ public final class Class12_Sub1_Sub2 extends Class12_Sub1 implements Receiver {
 	}
 
 	@OriginalMember(owner = "client!pa", name = "<init>", descriptor = "()V", line = 127)
-	public Class12_Sub1_Sub2() {
+	public JavaMidiAudioBuss() {
 		try {
 			aReceiver1 = MidiSystem.getReceiver();
 			aSequencer1 = MidiSystem.getSequencer(false);
