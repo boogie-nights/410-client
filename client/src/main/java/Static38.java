@@ -58,13 +58,13 @@ public final class Static38 {
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(II)Lclient!sb;", line = 81)
 	public static SeqFrameset getSeqFrameset(@OriginalArg(1) int arg0) {
-		@Pc(14) SeqFrameset local14 = (SeqFrameset) Static1.aClass47_2.method1325((long) arg0);
+		@Pc(14) SeqFrameset local14 = (SeqFrameset) Static1.aClass47_2.get((long) arg0);
 		if (local14 != null) {
 			return local14;
 		}
 		local14 = Static98.method1744(Static35.aClass5_12, Static77.aClass5_27, arg0);
 		if (local14 != null) {
-			Static1.aClass47_2.method1332((long) arg0, local14);
+			Static1.aClass47_2.put((long) arg0, local14);
 		}
 		return local14;
 	}

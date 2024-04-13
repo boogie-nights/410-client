@@ -173,7 +173,7 @@ public final class Static34 {
 
 	@OriginalMember(owner = "client!h", name = "a", descriptor = "(II)Lclient!gb;", line = 295)
 	public static NpcType method640(@OriginalArg(1) int arg0) {
-		@Pc(18) NpcType local18 = (NpcType) Static1.aClass47_14.method1325((long) arg0);
+		@Pc(18) NpcType local18 = (NpcType) Static1.aClass47_14.get((long) arg0);
 		if (local18 != null) {
 			return local18;
 		}
@@ -184,7 +184,7 @@ public final class Static34 {
 			local18.method608(new Packet(local28));
 		}
 		local18.method612();
-		Static1.aClass47_14.method1332((long) arg0, local18);
+		Static1.aClass47_14.put((long) arg0, local18);
 		return local18;
 	}
 

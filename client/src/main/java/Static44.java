@@ -11,31 +11,35 @@ public final class Static44 {
 	public static int anInt1114;
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(JB)Lclient!o;", line = 17)
-	public static JagString method819(@OriginalArg(0) long arg0) {
+	public static JagString fromBase37(@OriginalArg(0) long arg0) {
 		if (arg0 <= 0L || arg0 >= 6582952005840035281L) {
 			return null;
-		} else if (arg0 % 37L == 0L) {
-			return null;
-		} else {
-			@Pc(37) int local37 = 0;
-			@Pc(39) long local39 = arg0;
-			while (local39 != 0L) {
-				local39 /= 37L;
-				local37++;
-			}
-			@Pc(53) byte[] local53 = new byte[local37];
-			while (arg0 != 0L) {
-				@Pc(57) long local57 = arg0;
-				arg0 /= 37L;
-				local37--;
-				local53[local37] = Static1.aByteArray1[(int) (local57 - arg0 * 37L)];
-			}
-			@Pc(82) JagString local82 = new JagString();
-			local82.aByteArray14 = local53;
-			local82.anInt1783 = local53.length;
-			return local82;
 		}
-	}
+
+		if (arg0 % 37L == 0L) {
+			return null;
+		}
+
+        @Pc(37) int local37 = 0;
+        @Pc(39) long local39 = arg0;
+        while (local39 != 0L) {
+            local39 /= 37L;
+            local37++;
+        }
+
+        @Pc(53) byte[] local53 = new byte[local37];
+        while (arg0 != 0L) {
+            @Pc(57) long local57 = arg0;
+            arg0 /= 37L;
+            local37--;
+            local53[local37] = Static1.BASE37_LOOKUP[(int) (local57 - arg0 * 37L)];
+        }
+
+        @Pc(82) JagString str = new JagString();
+        str.chars = local53;
+        str.length = local53.length;
+        return str;
+    }
 
 	@OriginalMember(owner = "client!jc", name = "f", descriptor = "(I)V", line = 97)
 	public static void method820() {
@@ -51,7 +55,7 @@ public final class Static44 {
 		Static40.method1242();
 		Static47.method850();
 		Static27.method582();
-		((Js5TextureProvider) Draw3D.anInterface4_1).method401();
+		((Js5TextureProvider) Draw3D.getProvider).method401();
 		Static40.animsJs5.method57();
 		Static79.basesJs5.method57();
 		Static26.interfacesJs5.method57();
@@ -66,9 +70,9 @@ public final class Static44 {
 	}
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(IIIB)I", line = 193)
-	public static int method821(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		if ((Static1.aByteArrayArrayArray7[arg2][arg1][arg0] & 0x8) == 0) {
-			return arg2 <= 0 || (Static1.aByteArrayArrayArray7[1][arg1][arg0] & 0x2) == 0 ? arg2 : arg2 - 1;
+	public static int getDrawLevel(@OriginalArg(0) int stz, @OriginalArg(1) int stx, @OriginalArg(2) int level) {
+		if ((World.levelTileFlags[level][stx][stz] & 0x8) == 0) {
+			return level <= 0 || (World.levelTileFlags[1][stx][stz] & 0x2) == 0 ? level : level - 1;
 		} else {
 			return 0;
 		}

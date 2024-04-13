@@ -107,16 +107,16 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	@Override
 	public final void run() {
 		try {
-			if (Static8.aString4 != null) {
-				@Pc(10) String local10 = Static8.aString4.toLowerCase();
+			if (SignLink.aString4 != null) {
+				@Pc(10) String local10 = SignLink.aString4.toLowerCase();
 				if (local10.indexOf("sun") != -1 || local10.indexOf("apple") != -1) {
-					@Pc(22) String local22 = Static8.aString1;
+					@Pc(22) String local22 = SignLink.aString1;
 					if (local22.equals("1.1") || local22.startsWith("1.1.") || local22.equals("1.2") || local22.startsWith("1.2.")) {
 						this.error("wrongjava");
 						return;
 					}
 					Static1.anInt1552 = 5;
-				} else if (local10.indexOf("ibm") != -1 && (Static8.aString1 == null || Static8.aString1.equals("1.4.2"))) {
+				} else if (local10.indexOf("ibm") != -1 && (SignLink.aString1 == null || SignLink.aString1.equals("1.4.2"))) {
 					this.error("wrongjava");
 					return;
 				}

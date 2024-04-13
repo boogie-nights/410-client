@@ -15,7 +15,7 @@ public final class Static79 {
 
 	@OriginalMember(owner = "client!sb", name = "c", descriptor = "(B)V", line = 9)
 	private static void method1396() {
-		Static7.aClass45_5.method1476();
+		Static7.aClass45_5.bind();
 		Static14.aClass2_Sub2_Sub2_Sub3_19.method1320(0, 0);
 		Static3.anIntArray4 = Static6.method175(Static3.anIntArray4);
 	}
@@ -62,7 +62,7 @@ public final class Static79 {
 
 	@OriginalMember(owner = "client!sb", name = "g", descriptor = "(I)V", line = 140)
 	public static void method1402() {
-		Static1.aClass47_4.method1330();
+		FloorUnderlayType.cache.clear();
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(B[Lclient!o;)[Lclient!o;", line = 171)

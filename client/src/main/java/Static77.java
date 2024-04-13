@@ -2,9 +2,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static77 {
 
-	@OriginalMember(owner = "client!s", name = "a", descriptor = "[I")
-	public static int[] anIntArray434;
-
 	@OriginalMember(owner = "client!s", name = "k", descriptor = "I")
 	public static int anInt1991;
 
@@ -22,7 +19,7 @@ public final class Static77 {
 		JagString.aClass40_573 = null;
 		aClass5_27 = null;
 		JagString.aClass40_575 = null;
-		anIntArray434 = null;
+		World.blendChroma = null;
 		JagString.aClass40_572 = null;
 		JagString.aClass40_574 = null;
 		JagString.aClass40_571 = null;
@@ -31,6 +28,6 @@ public final class Static77 {
 
 	@OriginalMember(owner = "client!s", name = "a", descriptor = "(I)V", line = 49)
 	public static void method1364() {
-		Static1.aClass47_23.method1330();
+		FloorOverlayType.cache.clear();
 	}
 }

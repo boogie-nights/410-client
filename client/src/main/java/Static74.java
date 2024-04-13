@@ -12,7 +12,7 @@ public final class Static74 {
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(B)V", line = 49)
 	public static void method1342() {
-		Static1.aClass47_7.method1330();
+		Static1.aClass47_7.clear();
 	}
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(IIBIII)V", line = 60)
@@ -106,10 +106,10 @@ public final class Static74 {
 
 	@OriginalMember(owner = "client!ra", name = "b", descriptor = "(B)V", line = 246)
 	public static void method1344() {
-		Static1.aClass47_11.method1330();
-		Static1.aClass47_21.method1330();
-		Static1.aClass47_10.method1330();
-		Static1.aClass47_1.method1330();
+		Static1.aClass47_11.clear();
+		Static1.aClass47_21.clear();
+		Static1.aClass47_10.clear();
+		Static1.aClass47_1.clear();
 	}
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(BJ)V", line = 267)

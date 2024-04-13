@@ -44,7 +44,7 @@ public final class Static12 {
 			try {
 				Static72.aClass24_1 = new SignLinkAudioChannel(arg1, arg0);
 			} catch (@Pc(29) Throwable local29) {
-				if (Static8.aString4.toLowerCase().indexOf("microsoft") >= 0) {
+				if (SignLink.aString4.toLowerCase().indexOf("microsoft") >= 0) {
 					try {
 						Static72.aClass24_1 = new MicrosoftAudioChannel();
 						return;
@@ -61,7 +61,7 @@ public final class Static12 {
 		@Pc(2) byte[] local2 = arg0.getBytes();
 		@Pc(9) int local9 = local2.length;
 		@Pc(13) JagString local13 = new JagString();
-		local13.aByteArray14 = new byte[local9];
+		local13.chars = new byte[local9];
 		@Pc(19) int local19 = 0;
 		while (local19 < local9) {
 			@Pc(27) int local27 = local2[local19++] & 0xFF;
@@ -70,9 +70,9 @@ public final class Static12 {
 					break;
 				}
 				@Pc(58) int local58 = local2[local19++] & 0xFF;
-				local13.aByteArray14[local13.anInt1783++] = (byte) ((local27 - 40) * 43 + local58 - 48);
+				local13.chars[local13.length++] = (byte) ((local27 - 40) * 43 + local58 - 48);
 			} else {
-				local13.aByteArray14[local13.anInt1783++] = (byte) local27;
+				local13.chars[local13.length++] = (byte) local27;
 			}
 		}
 		local13.method1183();

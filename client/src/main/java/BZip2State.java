@@ -4,7 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!va")
 public final class BZip2State {
 
-	@OriginalMember(owner = "client!va", name = "a", descriptor = "I")
+    @OriginalMember(owner = "client!gb", name = "Db", descriptor = "[I")
+    public static int[] tt;
+
+    @OriginalMember(owner = "client!va", name = "a", descriptor = "I")
 	public int anInt2398;
 
 	@OriginalMember(owner = "client!va", name = "h", descriptor = "I")

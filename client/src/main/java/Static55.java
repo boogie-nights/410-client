@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static55 {
 
-	@OriginalMember(owner = "client!le", name = "j", descriptor = "[[[B")
-	public static byte[][][] aByteArrayArrayArray6;
-
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(I)V", line = 5)
 	public static void method998() {
 		Static1.aClass2_Sub3_Sub1_4.pIsaac1(255);
@@ -42,7 +39,7 @@ public final class Static55 {
 	public static Pix24 method1000(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(14) Pix24 local14;
 		if (arg0 == 0) {
-			local14 = (Pix24) Static1.aClass47_7.method1325((long) arg2);
+			local14 = (Pix24) Static1.aClass47_7.get((long) arg2);
 			if (local14 != null && local14.anInt2443 != arg1 && local14.anInt2443 != -1) {
 				local14.unlink();
 				local14 = null;
@@ -152,7 +149,7 @@ public final class Static55 {
 			local107.anInt2445 = local379;
 		}
 		if (arg0 == 0) {
-			Static1.aClass47_7.method1332((long) arg2, local14);
+			Static1.aClass47_7.put((long) arg2, local14);
 		}
 		Static25.method1604(local129, local127, local131);
 		Static25.method1613(local133, local135, local137, local139);
@@ -170,7 +167,7 @@ public final class Static55 {
 	@OriginalMember(owner = "client!le", name = "c", descriptor = "(I)V", line = 461)
 	public static void method1003() {
 		JagString.aClass40_431 = null;
-		aByteArrayArrayArray6 = null;
+		World.levelShademap = null;
 		JagString.aClass40_434 = null;
 		JagString.aClass40_435 = null;
 		JagString.aClass40_432 = null;

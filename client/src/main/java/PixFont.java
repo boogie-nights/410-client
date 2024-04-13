@@ -35,8 +35,8 @@ public final class PixFont extends Draw2D {
 		}
 		arg1 -= this.method568(arg0) / 2;
 		@Pc(15) int local15 = arg2 - this.anInt715;
-		for (@Pc(17) int local17 = 0; local17 < arg0.anInt1783; local17++) {
-			@Pc(25) int local25 = arg0.aByteArray14[local17] & 0xFF;
+		for (@Pc(17) int local17 = 0; local17 < arg0.length; local17++) {
+			@Pc(25) int local25 = arg0.chars[local17] & 0xFF;
 			if (local25 != 32) {
 				this.method569(this.aByteArrayArray7[local25], arg1, local15 + this.anIntArray139[local25] + (int) (Math.sin((double) local17 / 2.0D + (double) arg4 / 5.0D) * 5.0D), this.anIntArray141[local25], this.anIntArray140[local25], arg3);
 			}
@@ -112,8 +112,8 @@ public final class PixFont extends Draw2D {
 			return 0;
 		}
 		@Pc(5) int local5 = 0;
-		for (@Pc(7) int local7 = 0; local7 < arg0.anInt1783; local7++) {
-			local5 += this.anIntArray141[arg0.aByteArray14[local7] & 0xFF];
+		for (@Pc(7) int local7 = 0; local7 < arg0.length; local7++) {
+			local5 += this.anIntArray141[arg0.chars[local7] & 0xFF];
 		}
 		return local5;
 	}
@@ -163,7 +163,7 @@ public final class PixFont extends Draw2D {
 		arg1 -= this.method568(arg0) / 2;
 		@Pc(15) int local15 = arg2 - this.anInt715;
 		for (@Pc(17) int local17 = 0; local17 < arg0.method1169(); local17++) {
-			@Pc(25) int local25 = arg0.aByteArray14[local17] & 0xFF;
+			@Pc(25) int local25 = arg0.chars[local17] & 0xFF;
 			if (local25 != 32) {
 				this.method569(this.aByteArrayArray7[local25], arg1 + (int) (Math.sin((double) local17 / 5.0D + (double) arg4 / 5.0D) * 5.0D), local15 + this.anIntArray139[local25] + (int) (Math.sin((double) local17 / 3.0D + (double) arg4 / 5.0D) * 5.0D), this.anIntArray141[local25], this.anIntArray140[local25], arg3);
 			}
@@ -221,16 +221,16 @@ public final class PixFont extends Draw2D {
 			return;
 		}
 		@Pc(12) int local12 = arg2 - this.anInt715;
-		for (@Pc(14) int local14 = 0; local14 < arg0.anInt1783; local14++) {
+		for (@Pc(14) int local14 = 0; local14 < arg0.length; local14++) {
 			@Pc(47) int local47;
-			if (arg0.aByteArray14[local14] == 64 && local14 + 4 < arg0.anInt1783 && arg0.aByteArray14[local14 + 4] == 64) {
+			if (arg0.chars[local14] == 64 && local14 + 4 < arg0.length && arg0.chars[local14 + 4] == 64) {
 				local47 = this.method579(arg0.method1180(local14 + 4, local14 + 1));
 				if (local47 != -1) {
 					arg3 = local47;
 				}
 				local14 += 4;
 			} else {
-				local47 = arg0.aByteArray14[local14] & 0xFF;
+				local47 = arg0.chars[local14] & 0xFF;
 				if (local47 != 32) {
 					if (arg4) {
 						this.method569(this.aByteArrayArray7[local47], arg1 + 1, local12 + this.anIntArray139[local47] + 1, this.anIntArray141[local47], this.anIntArray140[local47], 0);
@@ -251,8 +251,8 @@ public final class PixFont extends Draw2D {
 			return;
 		}
 		@Pc(7) int local7 = arg2 - this.anInt715;
-		for (@Pc(9) int local9 = 0; local9 < arg0.anInt1783; local9++) {
-			@Pc(17) int local17 = arg0.aByteArray14[local9] & 0xFF;
+		for (@Pc(9) int local9 = 0; local9 < arg0.length; local9++) {
+			@Pc(17) int local17 = arg0.chars[local9] & 0xFF;
 			if (local17 != 32) {
 				this.method569(this.aByteArrayArray7[local17], arg1, local7 + this.anIntArray139[local17], this.anIntArray141[local17], this.anIntArray140[local17], arg3);
 			}
@@ -266,11 +266,11 @@ public final class PixFont extends Draw2D {
 			return 0;
 		}
 		@Pc(5) int local5 = 0;
-		for (@Pc(7) int local7 = 0; local7 < arg0.anInt1783; local7++) {
-			if (arg0.aByteArray14[local7] == 64 && local7 + 4 < arg0.anInt1783 && arg0.aByteArray14[local7 + 4] == 64) {
+		for (@Pc(7) int local7 = 0; local7 < arg0.length; local7++) {
+			if (arg0.chars[local7] == 64 && local7 + 4 < arg0.length && arg0.chars[local7 + 4] == 64) {
 				local7 += 4;
 			} else {
-				local5 += this.anIntArray141[arg0.aByteArray14[local7] & 0xFF];
+				local5 += this.anIntArray141[arg0.chars[local7] & 0xFF];
 			}
 		}
 		return local5;
@@ -288,7 +288,7 @@ public final class PixFont extends Draw2D {
 		arg1 -= this.method568(arg0) / 2;
 		@Pc(28) int local28 = arg2 - this.anInt715;
 		for (@Pc(30) int local30 = 0; local30 < arg0.method1169(); local30++) {
-			@Pc(38) int local38 = arg0.aByteArray14[local30] & 0xFF;
+			@Pc(38) int local38 = arg0.chars[local30] & 0xFF;
 			if (local38 != 32) {
 				this.method569(this.aByteArrayArray7[local38], arg1, local28 + this.anIntArray139[local38] + (int) (Math.sin((double) local30 / 1.5D + (double) arg4) * local9), this.anIntArray141[local38], this.anIntArray140[local38], arg3);
 			}
@@ -353,16 +353,16 @@ public final class PixFont extends Draw2D {
 		this.aRandom1.setSeed((long) arg3);
 		@Pc(15) int local15 = (this.aRandom1.nextInt() & 0x1F) + 192;
 		@Pc(20) int local20 = 15 - this.anInt715;
-		for (@Pc(22) int local22 = 0; local22 < arg0.anInt1783; local22++) {
+		for (@Pc(22) int local22 = 0; local22 < arg0.length; local22++) {
 			@Pc(55) int local55;
-			if (arg0.aByteArray14[local22] == 64 && local22 + 4 < arg0.anInt1783 && arg0.aByteArray14[local22 + 4] == 64) {
+			if (arg0.chars[local22] == 64 && local22 + 4 < arg0.length && arg0.chars[local22 + 4] == 64) {
 				local55 = this.method579(arg0.method1180(local22 + 4, local22 + 1));
 				if (local55 != -1) {
 					arg2 = local55;
 				}
 				local22 += 4;
 			} else {
-				local55 = arg0.aByteArray14[local22] & 0xFF;
+				local55 = arg0.chars[local22] & 0xFF;
 				if (local55 != 32) {
 					this.method573(this.aByteArrayArray7[local55], arg1 + 1, local20 + this.anIntArray139[local55] + 1, this.anIntArray141[local55], this.anIntArray140[local55], 0, 192);
 					this.method573(this.aByteArrayArray7[local55], arg1, local20 + this.anIntArray139[local55], this.anIntArray141[local55], this.anIntArray140[local55], arg2, local15);

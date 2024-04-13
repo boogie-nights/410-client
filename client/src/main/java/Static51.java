@@ -21,7 +21,7 @@ public final class Static51 {
 
 	@OriginalMember(owner = "client!ke", name = "h", descriptor = "(I)V", line = 12)
 	public static void method1538() {
-		if (Static8.aString4.toLowerCase().indexOf("microsoft") != -1) {
+		if (SignLink.aString4.toLowerCase().indexOf("microsoft") != -1) {
 			Static1.anIntArray549[186] = 57;
 			Static1.anIntArray549[187] = 27;
 			Static1.anIntArray549[188] = 71;
@@ -45,7 +45,7 @@ public final class Static51 {
 		Static1.anIntArray549[91] = 42;
 		Static1.anIntArray549[92] = 74;
 		Static1.anIntArray549[93] = 43;
-		if (Static8.aMethod1 == null) {
+		if (SignLink.aMethod1 == null) {
 			Static1.anIntArray549[192] = 58;
 			Static1.anIntArray549[222] = 59;
 		} else {

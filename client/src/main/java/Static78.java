@@ -37,13 +37,13 @@ public final class Static78 {
 			return 0;
 		}
 		@Pc(29) int local29 = arg0;
-		if (arg0 < 3 && (Static1.aByteArrayArrayArray7[1][local11][local7] & 0x2) == 2) {
+		if (arg0 < 3 && (World.levelTileFlags[1][local11][local7] & 0x2) == 2) {
 			local29 = arg0 + 1;
 		}
 		@Pc(50) int local50 = arg1 & 0x7F;
 		@Pc(54) int local54 = arg2 & 0x7F;
-		@Pc(81) int local81 = (128 - local50) * Static1.anIntArrayArrayArray8[local29][local11][local7] + Static1.anIntArrayArrayArray8[local29][local11 + 1][local7] * local50 >> 7;
-		@Pc(113) int local113 = Static1.anIntArrayArrayArray8[local29][local11][local7 + 1] * (128 - local50) + local50 * Static1.anIntArrayArrayArray8[local29][local11 + 1][local7 + 1] >> 7;
+		@Pc(81) int local81 = (128 - local50) * World.levelHeightmap[local29][local11][local7] + World.levelHeightmap[local29][local11 + 1][local7] * local50 >> 7;
+		@Pc(113) int local113 = World.levelHeightmap[local29][local11][local7 + 1] * (128 - local50) + local50 * World.levelHeightmap[local29][local11 + 1][local7 + 1] >> 7;
 		return local54 * local113 + local81 * (128 - local54) >> 7;
 	}
 

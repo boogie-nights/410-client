@@ -12,7 +12,7 @@ public final class Static21 {
 
 	@OriginalMember(owner = "client!eb", name = "d", descriptor = "(I)V", line = 197)
 	public static void method1689() {
-		Static1.aClass47_23 = null;
+		FloorOverlayType.cache = null;
 		JagString.aClass40_734 = null;
 		JagString.aClass40_735 = null;
 		JagString.aClass40_736 = null;
@@ -30,19 +30,19 @@ public final class Static21 {
 		if (local15 == 1) {
 			if (local25 == 1) {
 				Static6.method168(0.9D);
-				((Js5TextureProvider) Draw3D.anInterface4_1).method404(0.9D);
+				((Js5TextureProvider) Draw3D.getProvider).method404(0.9D);
 			}
 			if (local25 == 2) {
 				Static6.method168(0.8D);
-				((Js5TextureProvider) Draw3D.anInterface4_1).method404(0.8D);
+				((Js5TextureProvider) Draw3D.getProvider).method404(0.8D);
 			}
 			if (local25 == 3) {
 				Static6.method168(0.7D);
-				((Js5TextureProvider) Draw3D.anInterface4_1).method404(0.7D);
+				((Js5TextureProvider) Draw3D.getProvider).method404(0.7D);
 			}
 			if (local25 == 4) {
 				Static6.method168(0.6D);
-				((Js5TextureProvider) Draw3D.anInterface4_1).method404(0.6D);
+				((Js5TextureProvider) Draw3D.getProvider).method404(0.6D);
 			}
 			Static74.method1342();
 			Static1.aBoolean1 = true;
@@ -177,7 +177,7 @@ public final class Static21 {
 		Static85.scene.method1454();
 		Static11.method253();
 		Static62.method1099();
-		((Js5TextureProvider) Draw3D.anInterface4_1).method405(Static1.anInt1095);
+		((Js5TextureProvider) Draw3D.getProvider).method405(Static1.anInt1095);
 		Static17.method359();
 		if (Static1.aBoolean147 && Static97.method1668() == 0) {
 			Static1.aBoolean147 = false;

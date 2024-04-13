@@ -243,7 +243,7 @@ public final class Static99 {
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(ILjava/awt/Graphics;Lclient!fc;III)V", line = 450)
 	public static void method1664(@OriginalArg(0) int arg0, @OriginalArg(1) Graphics arg1, @OriginalArg(2) PixFont arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
-		Static4.aClass45_4.method1476();
+		Static4.aClass45_4.bind();
 		Static46.aClass2_Sub2_Sub2_Sub3_11.method1320(0, 0);
 		arg2.method578(JagString.aClass40_219, 55, 28, 16777215, true);
 		if (arg4 == 0) {
@@ -279,7 +279,7 @@ public final class Static99 {
 			arg2.method578(JagString.aClass40_629, 324, 41, 16711680, true);
 		}
 		arg2.method578(JagString.aClass40_522, 458, 33, 16777215, true);
-		Static4.aClass45_4.method1474(arg1, 0, 453);
+		Static4.aClass45_4.draw(arg1, 0, 453);
 	}
 
 	@OriginalMember(owner = "client!wd", name = "b", descriptor = "(II)Z", line = 503)

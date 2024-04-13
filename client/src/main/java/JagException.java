@@ -39,7 +39,7 @@ public final class JagException extends RuntimeException {
             local8 = local8.replace('@', '_');
             local8 = local8.replace('&', '_');
             local8 = local8.replace('#', '_');
-            @Pc(98) PrivilegedRequest local98 = Static38.aClass7_4.method209(new URL(Static38.aClass7_4.anApplet1.getCodeBase(), "clienterror.ws?c=" + Static40.anInt1849 + "&u=" + Static94.aLong150 + "&v1=" + Static8.aString4 + "&v2=" + Static8.aString1 + "&e=" + local8));
+            @Pc(98) PrivilegedRequest local98 = Static38.aClass7_4.method209(new URL(Static38.aClass7_4.anApplet1.getCodeBase(), "clienterror.ws?c=" + Static40.anInt1849 + "&u=" + Static94.aLong150 + "&v1=" + SignLink.aString4 + "&v2=" + SignLink.aString1 + "&e=" + local8));
             while (local98.status == 0) {
                 Static86.sleep(1L);
             }

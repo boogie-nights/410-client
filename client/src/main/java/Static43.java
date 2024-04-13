@@ -10,9 +10,6 @@ public final class Static43 {
 	@OriginalMember(owner = "client!ja", name = "E", descriptor = "I")
 	public static int anInt2458;
 
-	@OriginalMember(owner = "client!ja", name = "M", descriptor = "[I")
-	public static int[] anIntArray543;
-
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(Z[BBII)V", line = 18)
 	public static void method1634(@OriginalArg(0) boolean arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		if (Static98.aClass12_1 == null) {
@@ -50,7 +47,7 @@ public final class Static43 {
 		Static1.aClass40Array39 = null;
 		Static1.anIntArray537 = null;
 		Static1.anIntArray535 = null;
-		anIntArray543 = null;
+		World.blendLightness = null;
 		JagString.aClass40_707 = null;
 		Static1.anIntArray539 = null;
 		anIntArray536 = null;

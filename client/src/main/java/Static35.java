@@ -9,9 +9,6 @@ public final class Static35 {
 	@OriginalMember(owner = "client!hb", name = "S", descriptor = "Lclient!ud;")
 	public static Js5Index aClass5_12;
 
-	@OriginalMember(owner = "client!hb", name = "U", descriptor = "[[[B")
-	public static byte[][][] aByteArrayArrayArray4;
-
 	@OriginalMember(owner = "client!hb", name = "ob", descriptor = "I")
 	public static int anInt935;
 
@@ -48,7 +45,7 @@ public final class Static35 {
 	@OriginalMember(owner = "client!hb", name = "a", descriptor = "(Ljava/awt/Component;B)V", line = 155)
 	public static void method712(@OriginalArg(0) Component arg0) {
 		try {
-			@Pc(1) Method local1 = Static8.aMethod1;
+			@Pc(1) Method local1 = SignLink.aMethod1;
 			if (local1 != null) {
 				local1.invoke(arg0, Boolean.FALSE);
 			}
@@ -124,7 +121,7 @@ public final class Static35 {
 		anIntArray182 = null;
 		aClass47_9 = null;
 		JagString.aClass40_288 = null;
-		aByteArrayArrayArray4 = null;
+		World.levelTileUnderlayIds = null;
 		aClass5_12 = null;
 		JagString.aClass40_287 = null;
 		JagString.aClass40_286 = null;

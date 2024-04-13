@@ -80,8 +80,6 @@ public final class Static1 {
 	public static boolean aBoolean13 = false;
 	@OriginalMember(owner = "client!ae", name = "kb", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_3 = new LruCache(64);
-	@OriginalMember(owner = "client!ae", name = "lb", descriptor = "[I")
-	public static int[] anIntArray37 = new int[] { 1, 2, 4, 8 };
 	@OriginalMember(owner = "client!ae", name = "mb", descriptor = "I")
 	public static int anInt182 = 0;
 	@OriginalMember(owner = "client!ca", name = "R", descriptor = "Z")
@@ -126,8 +124,6 @@ public final class Static1 {
 	public static int[] anIntArray545 = new int[128];
 	@OriginalMember(owner = "client!vc", name = "ib", descriptor = "I")
 	public static int anInt2473 = 0;
-	@OriginalMember(owner = "client!ga", name = "t", descriptor = "I")
-	public static int anInt737 = 0;
 	@OriginalMember(owner = "client!gd", name = "r", descriptor = "I")
 	public static int anInt797 = 0;
 	@OriginalMember(owner = "client!gd", name = "s", descriptor = "I")
@@ -136,8 +132,6 @@ public final class Static1 {
 	public static BufferedFile[] legacyCacheIndex = new BufferedFile[5];
 	@OriginalMember(owner = "client!gd", name = "A", descriptor = "I")
 	public static int anInt804 = 2;
-	@OriginalMember(owner = "client!gd", name = "E", descriptor = "I")
-	public static int anInt807 = 99;
 	@OriginalMember(owner = "client!gd", name = "B", descriptor = "I")
 	public static int anInt805 = 1;
 	@OriginalMember(owner = "client!gd", name = "u", descriptor = "I")
@@ -216,8 +210,6 @@ public final class Static1 {
 	public static int anInt434;
 	@OriginalMember(owner = "client!de", name = "f", descriptor = "I")
 	public static int anInt437 = 0;
-	@OriginalMember(owner = "client!de", name = "h", descriptor = "Lclient!qc;")
-	public static LruCache aClass47_4 = new LruCache(64);
 	@OriginalMember(owner = "client!de", name = "k", descriptor = "I")
 	public static int anInt441 = 0;
 	@OriginalMember(owner = "client!de", name = "l", descriptor = "I")
@@ -232,8 +224,6 @@ public final class Static1 {
 	public static boolean aBoolean152 = false;
 	@OriginalMember(owner = "client!pd", name = "a", descriptor = "Lclient!o;")
 	public static JagString aClass40_542 = Static12.method257(":chalreq:");
-	@OriginalMember(owner = "client!pd", name = "o", descriptor = "[[B")
-	public static byte[][] aByteArrayArray9 = new byte[50][];
 	@OriginalMember(owner = "client!pd", name = "q", descriptor = "Lclient!o;")
 	public static JagString aClass40_545 = Static12.method257("@yel@World");
 	@OriginalMember(owner = "client!pd", name = "m", descriptor = "Lclient!o;")
@@ -270,8 +260,6 @@ public final class Static1 {
 	public static int anInt719 = 0;
 	@OriginalMember(owner = "client!fe", name = "d", descriptor = "I")
 	public static int anInt721 = -1;
-	@OriginalMember(owner = "client!fe", name = "o", descriptor = "[[B")
-	public static byte[][] aByteArrayArray8 = new byte[250][];
 	@OriginalMember(owner = "client!h", name = "l", descriptor = "[I")
 	public static int[] anIntArray163 = new int[4000];
 	@OriginalMember(owner = "client!h", name = "d", descriptor = "Lclient!ba;")
@@ -330,8 +318,6 @@ public final class Static1 {
 	public static int anInt1550 = 0;
 	@OriginalMember(owner = "client!ma", name = "u", descriptor = "Z")
 	public static boolean aBoolean121 = false;
-	@OriginalMember(owner = "client!ma", name = "v", descriptor = "[[[B")
-	public static byte[][][] aByteArrayArrayArray7 = new byte[4][104][104];
 	@OriginalMember(owner = "client!mb", name = "c", descriptor = "I")
 	public static int anInt1552 = 1;
 	@OriginalMember(owner = "client!mb", name = "b", descriptor = "[I")
@@ -360,16 +346,12 @@ public final class Static1 {
 	public static int[] anIntArray470 = new int[128];
 	@OriginalMember(owner = "client!p", name = "p", descriptor = "Lclient!ba;")
 	public static HashTable aClass6_5 = new HashTable(32);
-	@OriginalMember(owner = "client!pb", name = "a", descriptor = "Lclient!va;")
-	public static BZip2State aClass61_1 = new BZip2State();
 	@OriginalMember(owner = "client!r", name = "f", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_16 = new LruCache(64);
 	@OriginalMember(owner = "client!r", name = "h", descriptor = "Ljava/util/zip/CRC32;")
 	public static CRC32 aCRC32_1 = new CRC32();
 	@OriginalMember(owner = "client!r", name = "j", descriptor = "Lclient!vd;")
 	public static Mouse aClass62_1 = new Mouse();
-	@OriginalMember(owner = "client!rb", name = "f", descriptor = "[I")
-	public static int[] anIntArray429 = new int[] { 1, 0, -1, 0 };
 	@OriginalMember(owner = "client!rb", name = "x", descriptor = "I")
 	public static int anInt1966 = 0;
 	@OriginalMember(owner = "client!rb", name = "i", descriptor = "I")
@@ -396,8 +378,6 @@ public final class Static1 {
 	public static int anInt1989 = 0;
 	@OriginalMember(owner = "client!s", name = "r", descriptor = "I")
 	public static int anInt1994 = -1;
-	@OriginalMember(owner = "client!ta", name = "c", descriptor = "[[[I")
-	public static int[][][] anIntArrayArrayArray8 = new int[4][105][105];
 	@OriginalMember(owner = "client!ta", name = "d", descriptor = "I")
 	public static int anInt2139 = 0;
 	@OriginalMember(owner = "client!ta", name = "e", descriptor = "[[[Lclient!od;")
@@ -462,8 +442,6 @@ public final class Static1 {
 	public static volatile int anInt2520 = 0;
 	@OriginalMember(owner = "client!wb", name = "e", descriptor = "Lclient!ba;")
 	public static HashTable aClass6_7 = new HashTable(4096);
-	@OriginalMember(owner = "client!client", name = "Q", descriptor = "[[B")
-	public static byte[][] aByteArrayArray3 = new byte[1000][];
 	@OriginalMember(owner = "client!client", name = "cb", descriptor = "I")
 	public static int anInt410 = 0;
 	@OriginalMember(owner = "client!hc", name = "c", descriptor = "I")
@@ -535,7 +513,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!ba", name = "o", descriptor = "B")
 	public static byte aByte1 = 0;
 	@OriginalMember(owner = "client!ba", name = "A", descriptor = "[B")
-	public static byte[] aByteArray1 = new byte[] { 95, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57 };
+	public static byte[] BASE37_LOOKUP = new byte[] { 95, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57 };
 	@OriginalMember(owner = "client!ba", name = "p", descriptor = "Z")
 	public static boolean aBoolean22 = false;
 	@OriginalMember(owner = "client!ob", name = "k", descriptor = "Z")
@@ -564,8 +542,6 @@ public final class Static1 {
 	public static boolean aBoolean143 = false;
 	@OriginalMember(owner = "client!o", name = "ab", descriptor = "I")
 	public static int anInt1792 = 0;
-	@OriginalMember(owner = "client!ud", name = "q", descriptor = "[I")
-	public static int[] anIntArray13 = new int[] { 16, 32, 64, 128 };
 	@OriginalMember(owner = "client!ud", name = "e", descriptor = "I")
 	public static int anInt91 = 0;
 	@OriginalMember(owner = "client!ud", name = "f", descriptor = "[[[I")
@@ -636,8 +612,6 @@ public final class Static1 {
 	public static int anInt927 = 0;
 	@OriginalMember(owner = "client!hb", name = "W", descriptor = "Z")
 	public static boolean aBoolean65 = false;
-	@OriginalMember(owner = "client!hb", name = "bc", descriptor = "I")
-	public static int anInt965 = 0;
 	@OriginalMember(owner = "client!hb", name = "Eb", descriptor = "I")
 	public static int anInt949 = 0;
 	@OriginalMember(owner = "client!sc", name = "b", descriptor = "I")
@@ -650,8 +624,6 @@ public final class Static1 {
 	public static int[] anIntArray454 = new int[500];
 	@OriginalMember(owner = "client!sc", name = "m", descriptor = "I")
 	public static int anInt2077 = 0;
-	@OriginalMember(owner = "client!eb", name = "P", descriptor = "Lclient!qc;")
-	public static LruCache aClass47_23 = new LruCache(64);
 	@OriginalMember(owner = "client!eb", name = "qb", descriptor = "Z")
 	public static boolean aBoolean184 = false;
 	@OriginalMember(owner = "client!eb", name = "yb", descriptor = "I")
@@ -686,10 +658,6 @@ public final class Static1 {
 	public static boolean aBoolean103 = false;
 	@OriginalMember(owner = "client!kc", name = "kd", descriptor = "[I")
 	public static int[] anIntArray288 = new int[2000];
-	@OriginalMember(owner = "client!kd", name = "jb", descriptor = "[I")
-	public static int[] anIntArray298 = new int[] { 0, -1, 0, 1 };
-	@OriginalMember(owner = "client!kd", name = "Db", descriptor = "I")
-	public static int anInt1430 = (int) (Math.random() * 33.0D) - 16;
 	@OriginalMember(owner = "client!kd", name = "Ob", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_13 = new LruCache(64);
 	@OriginalMember(owner = "client!t", name = "j", descriptor = "Lclient!qc;")
@@ -748,8 +716,6 @@ public final class Static1 {
 	public static int[] anIntArray354 = new int[6];
 	@OriginalMember(owner = "client!nc", name = "n", descriptor = "[[I")
 	public static int[][] anIntArrayArray13 = new int[][] { { 0, 1, 2, 3, 0, 0, 1, 3 }, { 1, 1, 2, 3, 1, 0, 1, 3 }, { 0, 1, 2, 3, 1, 0, 1, 3 }, { 0, 0, 1, 2, 0, 0, 2, 4, 1, 0, 4, 3 }, { 0, 0, 1, 4, 0, 0, 4, 3, 1, 1, 2, 4 }, { 0, 0, 4, 3, 1, 0, 1, 2, 1, 0, 2, 4 }, { 0, 1, 2, 4, 1, 0, 1, 4, 1, 0, 4, 3 }, { 0, 4, 1, 2, 0, 4, 2, 5, 1, 0, 4, 5, 1, 0, 5, 3 }, { 0, 4, 1, 2, 0, 4, 2, 3, 0, 4, 3, 5, 1, 0, 4, 5 }, { 0, 0, 4, 5, 1, 4, 1, 2, 1, 4, 2, 3, 1, 4, 3, 5 }, { 0, 0, 1, 5, 0, 1, 4, 5, 0, 1, 2, 4, 1, 0, 5, 3, 1, 5, 4, 3, 1, 4, 2, 3 }, { 1, 0, 1, 5, 1, 1, 4, 5, 1, 1, 2, 4, 0, 0, 5, 3, 0, 5, 4, 3, 0, 4, 2, 3 }, { 1, 0, 5, 4, 1, 0, 1, 5, 0, 0, 4, 3, 0, 4, 5, 3, 0, 5, 2, 3, 0, 1, 2, 5 } };
-	@OriginalMember(owner = "client!ra", name = "i", descriptor = "I")
-	public static int anInt1942 = (int) (Math.random() * 17.0D) - 8;
 	@OriginalMember(owner = "client!ra", name = "q", descriptor = "I")
 	public static int anInt1947 = 0;
 	@OriginalMember(owner = "client!ic", name = "Z", descriptor = "I")
@@ -766,8 +732,6 @@ public final class Static1 {
 	public static int anInt263 = 0;
 	@OriginalMember(owner = "client!bd", name = "m", descriptor = "I")
 	public static int anInt261 = 0;
-	@OriginalMember(owner = "client!bd", name = "w", descriptor = "I")
-	public static int anInt264 = 0;
 	@OriginalMember(owner = "client!k", name = "k", descriptor = "Ljava/math/BigInteger;")
 	public static BigInteger aBigInteger2 = new BigInteger("58778699976184461502525193738213253649000149147835990136706041084440742975821");
 	@OriginalMember(owner = "client!k", name = "x", descriptor = "[Lclient!o;")

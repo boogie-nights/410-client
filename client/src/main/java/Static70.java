@@ -81,6 +81,6 @@ public final class Static70 {
 
 	@OriginalMember(owner = "client!p", name = "b", descriptor = "(B)V", line = 187)
 	public static void method1478() {
-		Static1.aClass47_5.method1330();
+		Static1.aClass47_5.clear();
 	}
 }

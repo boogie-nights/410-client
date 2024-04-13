@@ -16,7 +16,7 @@ public final class Static4 {
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(ILjava/awt/Graphics;)V", line = 5)
 	public static void method83(@OriginalArg(1) Graphics arg0) {
-		Static56.aClass45_23.method1474(arg0, 17, 357);
+		Static56.aClass45_23.draw(arg0, 17, 357);
 	}
 
 	@OriginalMember(owner = "client!ad", name = "c", descriptor = "(III)I", line = 38)

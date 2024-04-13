@@ -38,7 +38,7 @@ public final class SpotAnimType extends Hashable {
 
 	@OriginalMember(owner = "client!ee", name = "a", descriptor = "(BI)Lclient!ne;", line = 6)
 	public Model method501(@OriginalArg(1) int arg0) {
-		@Pc(13) Model local13 = (Model) Static1.aClass47_15.method1325((long) this.anInt634);
+		@Pc(13) Model local13 = (Model) Static1.aClass47_15.get((long) this.anInt634);
 		if (local13 == null) {
 			local13 = Static65.method1163(Static84.aClass5_28, this.anInt639);
 			if (local13 == null) {
@@ -51,7 +51,7 @@ public final class SpotAnimType extends Hashable {
 			}
 			local13.method1160();
 			local13.method1153(this.anInt636 + 64, this.anInt630 + 850, -30, -50, -30, true);
-			Static1.aClass47_15.method1332((long) this.anInt634, local13);
+			Static1.aClass47_15.put((long) this.anInt634, local13);
 		}
 		@Pc(92) Model local92;
 		if (this.anInt640 == -1 || arg0 == -1) {

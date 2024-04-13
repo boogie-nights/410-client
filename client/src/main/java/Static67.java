@@ -69,11 +69,11 @@ public final class Static67 {
 		for (local127 = 0; local127 < 4; local127++) {
 			for (local117 = 0; local117 < 104; local117++) {
 				for (local199 = 0; local199 < 104; local199++) {
-					Static1.aByteArrayArrayArray7[local127][local117][local199] = 0;
+					World.levelTileFlags[local127][local117][local199] = 0;
 				}
 			}
 		}
-		Static33.method633();
+		World.create();
 		local117 = Static97.aByteArrayArray12.length;
 		Static62.method1098(true);
 		@Pc(250) int local250;
@@ -172,16 +172,16 @@ public final class Static67 {
 		}
 		Static62.method1098(true);
 		Static44.method820();
-		Static23.method503(Static1.aClass20Array3, Static85.scene);
+		World.method503(Static1.aClass20Array3, Static85.scene);
 		Static62.method1098(true);
-		local199 = Static1.anInt807;
+		local199 = World.anInt807;
 		if (local199 > Static1.currentLevel) {
 			local199 = Static1.currentLevel;
 		}
 		if (Static1.currentLevel - 1 > local199) {
 		}
 		if (Static1.lowDetail) {
-			Static85.scene.method1421(Static1.anInt807);
+			Static85.scene.method1421(World.anInt807);
 		} else {
 			Static85.scene.method1421(0);
 		}
@@ -191,7 +191,7 @@ public final class Static67 {
 			}
 		}
 		Static12.method255();
-		Static1.aClass47_21.method1330();
+		Static1.aClass47_21.clear();
 		if (Static97.frame != null) {
 			Static1.aClass2_Sub3_Sub1_4.pIsaac1(153);
 			Static1.aClass2_Sub3_Sub1_4.p4(1057001181);
@@ -242,7 +242,7 @@ public final class Static67 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(ILjava/awt/Graphics;)V", line = 630)
 	public static void method1207(@OriginalArg(1) Graphics arg0) {
-		Static7.aClass45_5.method1474(arg0, 553, 205);
+		Static7.aClass45_5.draw(arg0, 553, 205);
 	}
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(ZII[B)V", line = 655)

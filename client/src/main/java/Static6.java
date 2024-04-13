@@ -108,7 +108,7 @@ public final class Static6 {
 				if (local265 == 0) {
 					local265 = 1;
 				}
-				Draw3D.anIntArray63[local9++] = local265;
+				Draw3D.palette[local9++] = local265;
 			}
 		}
 	}
@@ -1035,7 +1035,7 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(Lclient!ld;)V", line = 1203)
 	public static void method173(@OriginalArg(0) TextureProvider arg0) {
-		Draw3D.anInterface4_1 = arg0;
+		Draw3D.getProvider = arg0;
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IIIIIII)V", line = 1215)
@@ -1444,15 +1444,15 @@ public final class Static6 {
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IIIIIIIIIIIIIIIIIII)V", line = 1672)
 	public static void method176(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14, @OriginalArg(15) int arg15, @OriginalArg(16) int arg16, @OriginalArg(17) int arg17, @OriginalArg(18) int arg18) {
-		@Pc(4) int[] local4 = Draw3D.anInterface4_1.method397(arg18);
+		@Pc(4) int[] local4 = Draw3D.getProvider.method397(arg18);
 		@Pc(11) int local11;
 		if (local4 == null) {
-			local11 = Draw3D.anInterface4_1.method396(arg18);
+			local11 = Draw3D.getProvider.getAverageTextureRGB(arg18);
 			method172(arg0, arg1, arg2, arg3, arg4, arg5, method166(local11, arg6), method166(local11, arg7), method166(local11, arg8));
 			return;
 		}
-		Draw3D.aBoolean20 = Draw3D.anInterface4_1.method394(arg18);
-		Draw3D.aBoolean21 = Draw3D.anInterface4_1.method395(arg18);
+		Draw3D.aBoolean20 = Draw3D.getProvider.method394(arg18);
+		Draw3D.aBoolean21 = Draw3D.getProvider.method395(arg18);
 		@Pc(42) int local42 = arg9 - arg10;
 		@Pc(46) int local46 = arg12 - arg13;
 		@Pc(50) int local50 = arg15 - arg16;
@@ -2114,7 +2114,7 @@ public final class Static6 {
 					if (local48 < 0) {
 						local48 = arg3 - arg2 & 0x3;
 						if (local48 > 0) {
-							local91 = Draw3D.anIntArray63[arg4 >> 8];
+							local91 = Draw3D.palette[arg4 >> 8];
 							do {
 								arg0[arg1++] = local91;
 								local48--;
@@ -2123,7 +2123,7 @@ public final class Static6 {
 						}
 						break;
 					}
-					local91 = Draw3D.anIntArray63[arg4 >> 8];
+					local91 = Draw3D.palette[arg4 >> 8];
 					arg4 += local16;
 					local98 = arg1 + 1;
 					arg0[arg1] = local91;
@@ -2142,7 +2142,7 @@ public final class Static6 {
 					if (local48 < 0) {
 						local48 = arg3 - arg2 & 0x3;
 						if (local48 > 0) {
-							local91 = Draw3D.anIntArray63[arg4 >> 8];
+							local91 = Draw3D.palette[arg4 >> 8];
 							local91 = ((local91 & 0xFF00FF) * local147 >> 8 & 0xFF00FF) + ((local91 & 0xFF00) * local147 >> 8 & 0xFF00);
 							do {
 								arg0[arg1++] = local91 + ((arg0[arg1] & 0xFF00FF) * local143 >> 8 & 0xFF00FF) + ((arg0[arg1] & 0xFF00) * local143 >> 8 & 0xFF00);
@@ -2151,7 +2151,7 @@ public final class Static6 {
 						}
 						break;
 					}
-					local91 = Draw3D.anIntArray63[arg4 >> 8];
+					local91 = Draw3D.palette[arg4 >> 8];
 					arg4 += local16;
 					local91 = ((local91 & 0xFF00FF) * local147 >> 8 & 0xFF00FF) + ((local91 & 0xFF00) * local147 >> 8 & 0xFF00);
 					local98 = arg1 + 1;
@@ -2180,7 +2180,7 @@ public final class Static6 {
 			local48 = arg3 - arg2;
 			if (Draw3D.anInt228 == 0) {
 				do {
-					arg0[local401++] = Draw3D.anIntArray63[arg4 >> 8];
+					arg0[local401++] = Draw3D.palette[arg4 >> 8];
 					arg4 += local16;
 					local48--;
 				} while (local48 > 0);
@@ -2188,7 +2188,7 @@ public final class Static6 {
 				local143 = Draw3D.anInt228;
 				local147 = 256 - Draw3D.anInt228;
 				do {
-					local91 = Draw3D.anIntArray63[arg4 >> 8];
+					local91 = Draw3D.palette[arg4 >> 8];
 					arg4 += local16;
 					@Pc(460) int local460 = ((local91 & 0xFF00FF) * local147 >> 8 & 0xFF00FF) + ((local91 & 0xFF00) * local147 >> 8 & 0xFF00);
 					arg0[local401++] = local460 + ((arg0[local401] & 0xFF00FF) * local143 >> 8 & 0xFF00FF) + ((arg0[local401] & 0xFF00) * local143 >> 8 & 0xFF00);

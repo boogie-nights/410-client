@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static31 {
 
-	@OriginalMember(owner = "client!gb", name = "Db", descriptor = "[I")
-	public static int[] anIntArray158;
-
 	@OriginalMember(owner = "client!gb", name = "Fb", descriptor = "Lclient!qb;")
 	public static Pix8 aClass2_Sub2_Sub2_Sub3_9;
 
@@ -39,31 +36,31 @@ public final class Static31 {
 		@Pc(7) int local7;
 		for (@Pc(3) int local3 = 0; local3 < 8; local3++) {
 			for (local7 = 0; local7 < 8; local7++) {
-				Static1.anIntArrayArrayArray8[arg1][arg0 + local3][arg2 + local7] = 0;
+				World.levelHeightmap[arg1][arg0 + local3][arg2 + local7] = 0;
 			}
 		}
 		if (arg0 > 0) {
 			for (local7 = 1; local7 < 8; local7++) {
-				Static1.anIntArrayArrayArray8[arg1][arg0][local7 + arg2] = Static1.anIntArrayArrayArray8[arg1][arg0 - 1][arg2 + local7];
+				World.levelHeightmap[arg1][arg0][local7 + arg2] = World.levelHeightmap[arg1][arg0 - 1][arg2 + local7];
 			}
 		}
 		if (arg2 > 0) {
 			for (local7 = 1; local7 < 8; local7++) {
-				Static1.anIntArrayArrayArray8[arg1][local7 + arg0][arg2] = Static1.anIntArrayArrayArray8[arg1][arg0 + local7][arg2 - 1];
+				World.levelHeightmap[arg1][local7 + arg0][arg2] = World.levelHeightmap[arg1][arg0 + local7][arg2 - 1];
 			}
 		}
-		if (arg0 > 0 && Static1.anIntArrayArrayArray8[arg1][arg0 - 1][arg2] != 0) {
-			Static1.anIntArrayArrayArray8[arg1][arg0][arg2] = Static1.anIntArrayArrayArray8[arg1][arg0 - 1][arg2];
-		} else if (arg2 > 0 && Static1.anIntArrayArrayArray8[arg1][arg0][arg2 - 1] != 0) {
-			Static1.anIntArrayArrayArray8[arg1][arg0][arg2] = Static1.anIntArrayArrayArray8[arg1][arg0][arg2 - 1];
-		} else if (arg0 > 0 && arg2 > 0 && Static1.anIntArrayArrayArray8[arg1][arg0 - 1][arg2 - 1] != 0) {
-			Static1.anIntArrayArrayArray8[arg1][arg0][arg2] = Static1.anIntArrayArrayArray8[arg1][arg0 - 1][arg2 - 1];
+		if (arg0 > 0 && World.levelHeightmap[arg1][arg0 - 1][arg2] != 0) {
+			World.levelHeightmap[arg1][arg0][arg2] = World.levelHeightmap[arg1][arg0 - 1][arg2];
+		} else if (arg2 > 0 && World.levelHeightmap[arg1][arg0][arg2 - 1] != 0) {
+			World.levelHeightmap[arg1][arg0][arg2] = World.levelHeightmap[arg1][arg0][arg2 - 1];
+		} else if (arg0 > 0 && arg2 > 0 && World.levelHeightmap[arg1][arg0 - 1][arg2 - 1] != 0) {
+			World.levelHeightmap[arg1][arg0][arg2] = World.levelHeightmap[arg1][arg0 - 1][arg2 - 1];
 		}
 	}
 
 	@OriginalMember(owner = "client!gb", name = "b", descriptor = "(Z)V", line = 517)
 	public static void method613() {
-		anIntArray158 = null;
+		BZip2State.tt = null;
 		JagString.aClass40_239 = null;
 		aClass2_Sub2_Sub2_Sub3_9 = null;
 		Static1.aClass47_8 = null;

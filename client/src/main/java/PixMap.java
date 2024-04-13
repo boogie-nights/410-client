@@ -9,25 +9,25 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class PixMap {
 
 	@OriginalMember(owner = "client!p", name = "b", descriptor = "Ljava/awt/Image;")
-	protected Image anImage5;
+	protected Image image;
 
 	@OriginalMember(owner = "client!p", name = "e", descriptor = "I")
-	protected int anInt2148;
+	protected int width;
 
 	@OriginalMember(owner = "client!p", name = "k", descriptor = "I")
-	protected int anInt2152;
+	protected int height;
 
 	@OriginalMember(owner = "client!p", name = "l", descriptor = "[I")
-	public int[] anIntArray471;
+	public int[] pixels;
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(I)V", line = 136)
-	public final void method1476() {
-		Static25.method1604(this.anIntArray471, this.anInt2148, this.anInt2152);
+	public final void bind() {
+		Static25.method1604(this.pixels, this.width, this.height);
 	}
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(IILjava/awt/Component;I)V")
-	public abstract void method1473(@OriginalArg(0) int arg0, @OriginalArg(2) Component arg1, @OriginalArg(3) int arg2);
+	public abstract void create(@OriginalArg(0) int arg0, @OriginalArg(2) Component arg1, @OriginalArg(3) int arg2);
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(ILjava/awt/Graphics;II)V")
-	public abstract void method1474(@OriginalArg(1) Graphics arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2);
+	public abstract void draw(@OriginalArg(1) Graphics arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2);
 }

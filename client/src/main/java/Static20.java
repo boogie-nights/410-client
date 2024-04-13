@@ -77,19 +77,19 @@ public final class Static20 {
 				@Pc(63) int local63 = local59 >> 2;
 				@Pc(67) int local67 = local59 & 0x3;
 				if (local55 == arg1 && local51 >= arg2 && local51 < arg2 + 8 && arg6 <= local45 && arg6 + 8 > local45) {
-					@Pc(94) LocType local94 = Static83.method1470(local17);
+					@Pc(94) LocType local94 = LocType.get(local17);
 					@Pc(111) int local111 = Static95.method1650(local51 & 0x7, local94.anInt1040, local45 & 0x7, arg0, local94.anInt1036, local67) + arg3;
 					@Pc(128) int local128 = Static14.method1261(local51 & 0x7, local94.anInt1036, local67, arg0, local94.anInt1040, local45 & 0x7) + arg5;
 					if (local111 > 0 && local128 > 0 && local111 < 103 && local128 < 103) {
 						@Pc(144) CollisionMap local144 = null;
 						@Pc(146) int local146 = arg8;
-						if ((Static1.aByteArrayArrayArray7[1][local111][local128] & 0x2) == 2) {
+						if ((World.levelTileFlags[1][local111][local128] & 0x2) == 2) {
 							local146 = arg8 - 1;
 						}
 						if (local146 >= 0) {
 							local144 = arg4[local146];
 						}
-						Static75.method1353(arg8, local17, local111, local144, arg0 + local67 & 0x3, local63, arg7, local128);
+						World.method1353(arg8, local17, local111, local144, arg0 + local67 & 0x3, local63, arg7, local128);
 					}
 				}
 			}

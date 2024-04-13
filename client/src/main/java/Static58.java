@@ -212,7 +212,7 @@ public final class Static58 {
 		} else if (Static1.anInt2594 >= 200) {
 			Static53.method989(0, JagString.aClass40_445, JagString.aClass40_739);
 		} else {
-			@Pc(41) JagString local41 = Static44.method819(arg0).method1167();
+			@Pc(41) JagString local41 = Static44.fromBase37(arg0).method1167();
 			for (@Pc(43) int local43 = 0; local43 < Static1.anInt2594; local43++) {
 				if (arg0 == Static1.aLongArray2[local43]) {
 					Static53.method989(0, JagString.aClass40_445, Static72.method1334(new JagString[] { local41, JagString.aClass40_677 }));

@@ -7,9 +7,6 @@ public final class Static28 {
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "Lclient!p;")
 	public static PixMap aClass45_15;
 
-	@OriginalMember(owner = "client!fe", name = "b", descriptor = "Lclient!ud;")
-	public static Js5Index aClass5_10;
-
 	@OriginalMember(owner = "client!fe", name = "g", descriptor = "[Lclient!vb;")
 	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array5;
 
@@ -29,8 +26,8 @@ public final class Static28 {
 	public static void method584() {
 		aClass45_15 = null;
 		aClass2_Sub2_Sub2_Sub4Array5 = null;
-		aClass5_10 = null;
-		Static1.aByteArrayArray8 = null;
+		FloorOverlayType.config = null;
+		ByteArrayPool.midPool = null;
 		JagString.aClass40_220 = null;
 		JagString.aClass40_223 = null;
 		JagString.aClass40_221 = null;

@@ -32,7 +32,7 @@ public final class PlayerAppearance {
 		@Pc(18) boolean local18 = false;
 		for (@Pc(20) int local20 = 0; local20 < 12; local20++) {
 			@Pc(27) int local27 = this.identikit[local20];
-			if (local27 >= 256 && local27 < 512 && !Static83.method1469(local27 - 256).method1585()) {
+			if (local27 >= 256 && local27 < 512 && !IdkType.get(local27 - 256).method1585()) {
 				local18 = true;
 			}
 			if (local27 >= 512 && !Static97.method1669(local27 - 512).method710(this.aBoolean117)) {
@@ -48,7 +48,7 @@ public final class PlayerAppearance {
 			@Pc(86) int local86 = this.identikit[local79];
 			@Pc(106) Model local106;
 			if (local86 >= 256 && local86 < 512) {
-				local106 = Static83.method1469(local86 - 256).method1586();
+				local106 = IdkType.get(local86 - 256).method1586();
 				if (local106 != null) {
 					local77[local74++] = local106;
 				}
@@ -78,7 +78,7 @@ public final class PlayerAppearance {
 			arg3 = new int[12];
 			for (@Pc(12) int local12 = 0; local12 < 7; local12++) {
 				for (@Pc(16) int local16 = 0; local16 < Static95.anInt2493; local16++) {
-					@Pc(22) IdkType local22 = Static83.method1469(local16);
+					@Pc(22) IdkType local22 = IdkType.get(local16);
 					if (local22 != null && !local22.aBoolean178 && local22.anInt2386 == local12 + (arg0 ? 7 : 0)) {
 						arg3[Static1.anIntArray160[local12]] = local16 + 256;
 						break;
@@ -123,7 +123,7 @@ public final class PlayerAppearance {
 					local19 = Static95.anInt2493 - 1;
 				}
 			}
-			local47 = Static83.method1469(local19);
+			local47 = IdkType.get(local19);
 		} while (local47 == null || local47.aBoolean178 || (this.aBoolean117 ? 7 : 0) + arg1 != local47.anInt2386);
 		this.identikit[Static1.anIntArray160[arg1]] = local19 + 256;
 		this.method1008();
@@ -150,12 +150,12 @@ public final class PlayerAppearance {
 				local27[3] = arg2.anInt664;
 			}
 		}
-		@Pc(125) Model local125 = (Model) Static1.aClass47_17.method1325(local35);
+		@Pc(125) Model local125 = (Model) Static1.aClass47_17.get(local35);
 		if (local125 == null) {
 			@Pc(129) boolean local129 = false;
 			for (@Pc(131) int local131 = 0; local131 < 12; local131++) {
 				@Pc(137) int local137 = local27[local131];
-				if (local137 >= 256 && local137 < 512 && !Static83.method1469(local137 - 256).method1582()) {
+				if (local137 >= 256 && local137 < 512 && !IdkType.get(local137 - 256).method1582()) {
 					local129 = true;
 				}
 				if (local137 >= 512 && !Static97.method1669(local137 - 512).method709(this.aBoolean117)) {
@@ -164,7 +164,7 @@ public final class PlayerAppearance {
 			}
 			if (local129) {
 				if (this.aLong100 != -1L) {
-					local125 = (Model) Static1.aClass47_17.method1325(this.aLong100);
+					local125 = (Model) Static1.aClass47_17.get(this.aLong100);
 				}
 				if (local125 == null) {
 					return null;
@@ -178,7 +178,7 @@ public final class PlayerAppearance {
 					local207 = local27[local201];
 					@Pc(225) Model local225;
 					if (local207 >= 256 && local207 < 512) {
-						local225 = Static83.method1469(local207 - 256).method1579();
+						local225 = IdkType.get(local207 - 256).method1579();
 						if (local225 != null) {
 							local197[local199++] = local225;
 						}
@@ -201,7 +201,7 @@ public final class PlayerAppearance {
 				}
 				local125.method1160();
 				local125.method1153(64, 850, -30, -50, -30, true);
-				Static1.aClass47_17.method1332(local35, local125);
+				Static1.aClass47_17.put(local35, local125);
 				this.aLong100 = local35;
 			}
 		}

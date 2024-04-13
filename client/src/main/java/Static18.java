@@ -15,7 +15,7 @@ public final class Static18 {
 
 	@OriginalMember(owner = "client!de", name = "a", descriptor = "(I)V", line = 22)
 	public static void method368() {
-		Static1.aClass47_4 = null;
+		FloorUnderlayType.cache = null;
 		aClass45_9 = null;
 		JagString.aClass40_122 = null;
 		anIntArray86 = null;
@@ -33,10 +33,10 @@ public final class Static18 {
 		for (@Pc(25) int local25 = 1; local25 < 103; local25++) {
 			local38 = 4 * 512 * (103 - local25) + 24628;
 			for (local40 = 1; local40 < 103; local40++) {
-				if ((Static1.aByteArrayArrayArray7[arg0][local40][local25] & 0x18) == 0) {
+				if ((World.levelTileFlags[arg0][local40][local25] & 0x18) == 0) {
 					Static85.scene.method1432(local8, local38, arg0, local40, local25);
 				}
-				if (arg0 < 3 && (Static1.aByteArrayArrayArray7[arg0 + 1][local40][local25] & 0x8) != 0) {
+				if (arg0 < 3 && (World.levelTileFlags[arg0 + 1][local40][local25] & 0x8) != 0) {
 					Static85.scene.method1432(local8, local38, arg0 + 1, local40, local25);
 				}
 				local38 += 4;
@@ -48,10 +48,10 @@ public final class Static18 {
 		@Pc(150) int local150;
 		for (@Pc(146) int local146 = 1; local146 < 103; local146++) {
 			for (local150 = 1; local150 < 103; local150++) {
-				if ((Static1.aByteArrayArrayArray7[arg0][local150][local146] & 0x18) == 0) {
+				if ((World.levelTileFlags[arg0][local150][local146] & 0x18) == 0) {
 					Static97.method1674(arg0, local38, local40, local146, local150);
 				}
-				if (arg0 < 3 && (Static1.aByteArrayArrayArray7[arg0 + 1][local150][local146] & 0x8) != 0) {
+				if (arg0 < 3 && (World.levelTileFlags[arg0 + 1][local150][local146] & 0x8) != 0) {
 					Static97.method1674(arg0 + 1, local38, local40, local146, local150);
 				}
 			}
@@ -62,7 +62,7 @@ public final class Static18 {
 				@Pc(229) int local229 = Static85.scene.method1458(Static1.currentLevel, local150, local221);
 				if (local229 != 0) {
 					local229 = local229 >> 14 & 0x7FFF;
-					@Pc(242) int local242 = Static83.method1470(local229).anInt1034;
+					@Pc(242) int local242 = LocType.get(local229).anInt1034;
 					if (local242 >= 0) {
 						@Pc(249) int local249 = local150;
 						@Pc(251) int local251 = local221;

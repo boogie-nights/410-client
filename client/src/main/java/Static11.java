@@ -23,7 +23,7 @@ public final class Static11 {
 	}
 
 	@OriginalMember(owner = "client!ca", name = "a", descriptor = "(IIII)I", line = 30)
-	public static int method251(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+	public static int hsl24to16(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (arg0 > 179) {
 			arg1 /= 2;
 		}

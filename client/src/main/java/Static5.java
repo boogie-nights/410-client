@@ -31,7 +31,7 @@ public final class Static5 {
 
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(BI)Lclient!ee;", line = 38)
 	public static SpotAnimType method116(@OriginalArg(1) int arg0) {
-		@Pc(15) SpotAnimType local15 = (SpotAnimType) Static1.aClass47_3.method1325((long) arg0);
+		@Pc(15) SpotAnimType local15 = (SpotAnimType) Static1.aClass47_3.get((long) arg0);
 		if (local15 != null) {
 			return local15;
 		}
@@ -41,13 +41,8 @@ public final class Static5 {
 		if (local25 != null) {
 			local15.method504(new Packet(local25));
 		}
-		Static1.aClass47_3.method1332((long) arg0, local15);
+		Static1.aClass47_3.put((long) arg0, local15);
 		return local15;
-	}
-
-	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(Lclient!ud;B)V", line = 63)
-	public static void method117(@OriginalArg(0) Js5Index arg0) {
-		Static40.aClass5_25 = arg0;
 	}
 
 	@OriginalMember(owner = "client!ae", name = "g", descriptor = "(I)V", line = 85)
@@ -58,7 +53,7 @@ public final class Static5 {
 		Static1.aClass44_1 = null;
 		Static1.aClass47_3 = null;
 		configJs5 = null;
-		Static1.anIntArray37 = null;
+		World.ROTATION_WALL_TYPE = null;
 		JagString.aClass40_46 = null;
 		JagString.aClass40_44 = null;
 		JagString.aClass40_45 = null;

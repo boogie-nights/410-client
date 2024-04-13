@@ -23,7 +23,7 @@ public final class Static97 {
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(II)Lclient!hb;", line = 22)
 	public static ObjType method1669(@OriginalArg(1) int arg0) {
-		@Pc(18) ObjType local18 = (ObjType) Static1.aClass47_16.method1325((long) arg0);
+		@Pc(18) ObjType local18 = (ObjType) Static1.aClass47_16.get((long) arg0);
 		if (local18 != null) {
 			return local18;
 		}
@@ -44,7 +44,7 @@ public final class Static97 {
 			local18.aClass40_289 = JagString.aClass40_181;
 			local18.anInt951 = 0;
 		}
-		Static1.aClass47_16.method1332((long) arg0, local18);
+		Static1.aClass47_16.put((long) arg0, local18);
 		return local18;
 	}
 
@@ -188,7 +188,7 @@ public final class Static97 {
 			}
 		}
 		for (local9 = 0; local9 < 33920; local9++) {
-			Static56.aClass45_24.anIntArray471[local9] = Static10.aClass2_Sub2_Sub2_Sub4_1.anIntArray534[local9];
+			Static56.aClass45_24.pixels[local9] = Static10.aClass2_Sub2_Sub2_Sub4_1.anIntArray534[local9];
 		}
 		@Pc(164) int local164 = 0;
 		@Pc(166) int local166 = 1152;
@@ -214,15 +214,15 @@ public final class Static97 {
 					local215 = local205;
 					local219 = 256 - local205;
 					local205 = Static84.anIntArray472[local205];
-					local228 = Static56.aClass45_24.anIntArray471[local166];
-					Static56.aClass45_24.anIntArray471[local166++] = (local215 * (local205 & 0xFF00FF) + (local228 & 0xFF00FF) * local219 & 0xFF00FF00) + ((local228 & 0xFF00) * local219 + local215 * (local205 & 0xFF00) & 0xFF0000) >> 8;
+					local228 = Static56.aClass45_24.pixels[local166];
+					Static56.aClass45_24.pixels[local166++] = (local215 * (local205 & 0xFF00FF) + (local228 & 0xFF00FF) * local219 & 0xFF00FF00) + ((local228 & 0xFF00) * local219 + local215 * (local205 & 0xFF00) & 0xFF0000) >> 8;
 				}
 			}
 			local166 += local185;
 		}
 		local166 = 1176;
 		for (local181 = 0; local181 < 33920; local181++) {
-			Static90.aClass45_30.anIntArray471[local181] = Static88.aClass2_Sub2_Sub2_Sub4_9.anIntArray534[local181];
+			Static90.aClass45_30.pixels[local181] = Static88.aClass2_Sub2_Sub2_Sub4_9.anIntArray534[local181];
 		}
 		local164 = 0;
 		for (local185 = 1; local185 < 255; local185++) {
@@ -237,8 +237,8 @@ public final class Static97 {
 					local228 = local219;
 					@Pc(357) int local357 = 256 - local219;
 					local219 = Static84.anIntArray472[local219];
-					@Pc(366) int local366 = Static90.aClass45_30.anIntArray471[local166];
-					Static90.aClass45_30.anIntArray471[local166++] = (local228 * (local219 & 0xFF00) + local357 * (local366 & 0xFF00) & 0xFF0000) + (local228 * (local219 & 0xFF00FF) + ((local366 & 0xFF00FF) * local357) & 0xFF00FF00) >> 8;
+					@Pc(366) int local366 = Static90.aClass45_30.pixels[local166];
+					Static90.aClass45_30.pixels[local166++] = (local228 * (local219 & 0xFF00) + local357 * (local366 & 0xFF00) & 0xFF0000) + (local228 * (local219 & 0xFF00FF) + ((local366 & 0xFF00FF) * local357) & 0xFF00FF00) >> 8;
 				}
 			}
 			local164 += 128 - local205;
@@ -266,7 +266,7 @@ public final class Static97 {
 			@Pc(49) int[] local49 = Static85.aClass2_Sub2_Sub2_Sub4_8.anIntArray534;
 			local53 = local40 & 0x1F;
 			local59 = local7 >> 14 & 0x7FFF;
-			@Pc(63) LocType local63 = Static83.method1470(local59);
+			@Pc(63) LocType local63 = LocType.get(local59);
 			if (local63.anInt1039 == -1) {
 				if (local53 == 0 || local53 == 2) {
 					if (local46 == 0) {
@@ -340,7 +340,7 @@ public final class Static97 {
 			local53 = local40 & 0x1F;
 			local46 = local40 >> 6 & 0x3;
 			local11 = local7 >> 14 & 0x7FFF;
-			@Pc(457) LocType local457 = Static83.method1470(local11);
+			@Pc(457) LocType local457 = LocType.get(local11);
 			@Pc(492) int local492;
 			if (local457.anInt1039 != -1) {
 				@Pc(565) Pix8 local565 = Static51.aClass2_Sub2_Sub2_Sub3Array15[local457.anInt1039];
@@ -374,7 +374,7 @@ public final class Static97 {
 			return;
 		}
 		local40 = local7 >> 14 & 0x7FFF;
-		@Pc(633) LocType local633 = Static83.method1470(local40);
+		@Pc(633) LocType local633 = LocType.get(local40);
 		if (local633.anInt1039 == -1) {
 			return;
 		}

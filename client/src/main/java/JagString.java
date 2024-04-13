@@ -805,13 +805,13 @@ public final class JagString implements BaseString {
 	public static JagString aClass40_557 = Static12.method257(")3");
 
 	@OriginalMember(owner = "client!o", name = "f", descriptor = "[B")
-	public byte[] aByteArray14;
+	public byte[] chars;
 
 	@OriginalMember(owner = "client!o", name = "M", descriptor = "I")
 	private int anInt1780;
 
 	@OriginalMember(owner = "client!o", name = "Q", descriptor = "I")
-	public int anInt1783;
+	public int length;
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "Z")
 	private boolean aBoolean141 = true;
@@ -819,8 +819,8 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(I)J", line = 10)
 	private long method1164() {
 		@Pc(5) long local5 = 0L;
-		for (@Pc(12) int local12 = 0; local12 < this.anInt1783; local12++) {
-			local5 = (local5 << 5) + (long) (this.aByteArray14[local12] & 0xFF) - local5;
+		for (@Pc(12) int local12 = 0; local12 < this.length; local12++) {
+			local5 = (local5 << 5) + (long) (this.chars[local12] & 0xFF) - local5;
 		}
 		return local5;
 	}
@@ -852,10 +852,10 @@ public final class JagString implements BaseString {
 	public JagString method1166() {
 		@Pc(14) JagString local14 = new JagString();
 		@Pc(16) boolean local16 = true;
-		local14.anInt1783 = this.anInt1783;
-		local14.aByteArray14 = new byte[this.anInt1783];
-		for (@Pc(27) int local27 = 0; local27 < this.anInt1783; local27++) {
-			@Pc(34) byte local34 = this.aByteArray14[local27];
+		local14.length = this.length;
+		local14.chars = new byte[this.length];
+		for (@Pc(27) int local27 = 0; local27 < this.length; local27++) {
+			@Pc(34) byte local34 = this.chars[local27];
 			if (local34 >= 97 && local34 <= 122 || !(local34 < -32 || local34 > -2 || local34 == -9)) {
 				if (local16) {
 					local34 = (byte) (local34 - 32);
@@ -870,7 +870,7 @@ public final class JagString implements BaseString {
 			if (local34 == 46 || local34 == 33 || local34 == 63) {
 				local16 = true;
 			}
-			local14.aByteArray14[local27] = local34;
+			local14.chars[local27] = local34;
 		}
 		return local14;
 	}
@@ -879,19 +879,19 @@ public final class JagString implements BaseString {
 	public JagString method1167() {
 		@Pc(9) JagString local9 = new JagString();
 		@Pc(11) boolean local11 = true;
-		local9.anInt1783 = this.anInt1783;
-		local9.aByteArray14 = new byte[this.anInt1783];
-		for (@Pc(22) int local22 = 0; local22 < this.anInt1783; local22++) {
-			@Pc(29) byte local29 = this.aByteArray14[local22];
+		local9.length = this.length;
+		local9.chars = new byte[this.length];
+		for (@Pc(22) int local22 = 0; local22 < this.length; local22++) {
+			@Pc(29) byte local29 = this.chars[local22];
 			if (local29 == 95) {
 				local11 = true;
-				local9.aByteArray14[local22] = 32;
+				local9.chars[local22] = 32;
 			} else if (local29 >= 97 && local29 <= 122 && local11) {
 				local11 = false;
-				local9.aByteArray14[local22] = (byte) (local29 - 32);
+				local9.chars[local22] = (byte) (local29 - 32);
 			} else {
 				local11 = false;
-				local9.aByteArray14[local22] = local29;
+				local9.chars[local22] = local29;
 			}
 		}
 		return local9;
@@ -899,11 +899,11 @@ public final class JagString implements BaseString {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(Lclient!o;I)Z", line = 173)
 	public boolean method1168(@OriginalArg(0) JagString arg0) {
-		if (this.anInt1783 < arg0.anInt1783) {
+		if (this.length < arg0.length) {
 			return false;
 		}
-		for (@Pc(23) int local23 = 0; local23 < arg0.anInt1783; local23++) {
-			if (this.aByteArray14[local23] != arg0.aByteArray14[local23]) {
+		for (@Pc(23) int local23 = 0; local23 < arg0.length; local23++) {
+			if (this.chars[local23] != arg0.chars[local23]) {
 				return false;
 			}
 		}
@@ -912,7 +912,7 @@ public final class JagString implements BaseString {
 
 	@OriginalMember(owner = "client!o", name = "c", descriptor = "(I)I", line = 198)
 	public int method1169() {
-		return this.anInt1783;
+		return this.length;
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(IB)Z", line = 229)
@@ -920,8 +920,8 @@ public final class JagString implements BaseString {
 		@Pc(17) boolean local17 = false;
 		@Pc(24) boolean local24 = false;
 		@Pc(26) int local26 = 0;
-		for (@Pc(28) int local28 = 0; local28 < this.anInt1783; local28++) {
-			@Pc(37) int local37 = this.aByteArray14[local28] & 0xFF;
+		for (@Pc(28) int local28 = 0; local28 < this.length; local28++) {
+			@Pc(37) int local37 = this.chars[local28] & 0xFF;
 			if (local28 == 0) {
 				if (local37 == 45) {
 					local17 = true;
@@ -961,8 +961,8 @@ public final class JagString implements BaseString {
 		@Pc(17) boolean local17 = false;
 		@Pc(19) int local19 = 0;
 		@Pc(28) boolean local28 = false;
-		for (@Pc(30) int local30 = 0; local30 < this.anInt1783; local30++) {
-			@Pc(39) int local39 = this.aByteArray14[local30] & 0xFF;
+		for (@Pc(30) int local30 = 0; local30 < this.length; local30++) {
+			@Pc(39) int local39 = this.chars[local30] & 0xFF;
 			if (local30 == 0) {
 				if (local39 == 45) {
 					local17 = true;
@@ -1002,24 +1002,24 @@ public final class JagString implements BaseString {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(ZI)I", line = 414)
 	public int method1174(@OriginalArg(1) int arg0) {
-		return this.aByteArray14[arg0] & 0xFF;
+		return this.chars[arg0] & 0xFF;
 	}
 
 	@OriginalMember(owner = "client!o", name = "e", descriptor = "(I)Lclient!o;", line = 430)
 	public JagString method1175() {
 		@Pc(9) JagString local9 = new JagString();
 		@Pc(11) int local11 = 0;
-		local9.anInt1783 = 0;
-		local9.aByteArray14 = new byte[12];
-		for (@Pc(26) int local26 = 0; local26 < this.anInt1783; local26++) {
-			if (this.aByteArray14[local26] >= 65 && this.aByteArray14[local26] <= 90) {
-				local9.aByteArray14[local11++] = (byte) (this.aByteArray14[local26] + 97 - 65);
-				local9.anInt1783 = local11;
-			} else if (this.aByteArray14[local26] >= 97 && this.aByteArray14[local26] <= 122 || this.aByteArray14[local26] >= 48 && this.aByteArray14[local26] <= 57) {
-				local9.aByteArray14[local11++] = this.aByteArray14[local26];
-				local9.anInt1783 = local11;
+		local9.length = 0;
+		local9.chars = new byte[12];
+		for (@Pc(26) int local26 = 0; local26 < this.length; local26++) {
+			if (this.chars[local26] >= 65 && this.chars[local26] <= 90) {
+				local9.chars[local11++] = (byte) (this.chars[local26] + 97 - 65);
+				local9.length = local11;
+			} else if (this.chars[local26] >= 97 && this.chars[local26] <= 122 || this.chars[local26] >= 48 && this.chars[local26] <= 57) {
+				local9.chars[local11++] = this.chars[local26];
+				local9.length = local11;
 			} else if (local11 > 0) {
-				local9.aByteArray14[local11++] = 95;
+				local9.chars[local11++] = 95;
 			}
 			if (local11 == 12) {
 				break;
@@ -1036,28 +1036,28 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!o", name = "g", descriptor = "(I)Lclient!o;", line = 494)
 	public JagString method1177() {
 		@Pc(17) JagString local17 = new JagString();
-		local17.anInt1783 = this.anInt1783;
-		local17.aByteArray14 = new byte[this.anInt1783];
-		for (@Pc(28) int local28 = 0; local28 < this.anInt1783; local28++) {
-			local17.aByteArray14[local28] = 42;
+		local17.length = this.length;
+		local17.chars = new byte[this.length];
+		for (@Pc(28) int local28 = 0; local28 < this.length; local28++) {
+			local17.chars[local28] = 42;
 		}
 		return local17;
 	}
 
 	@OriginalMember(owner = "client!o", name = "b", descriptor = "(B)Lclient!o;", line = 529)
 	public JagString method1178() {
-		@Pc(15) int local15 = this.anInt1783;
+		@Pc(15) int local15 = this.length;
 		@Pc(17) int local17;
-		for (local17 = 0; local17 < this.anInt1783 && this.aByteArray14[local17] >= 0 && this.aByteArray14[local17] <= 32; local17++) {
+		for (local17 = 0; local17 < this.length && this.chars[local17] >= 0 && this.chars[local17] <= 32; local17++) {
 		}
-		while (local15 > local17 && this.aByteArray14[local15 - 1] >= 0 && this.aByteArray14[local15 - 1] <= 32) {
+		while (local15 > local17 && this.chars[local15 - 1] >= 0 && this.chars[local15 - 1] <= 32) {
 			local15--;
 		}
 		@Pc(70) JagString local70 = new JagString();
-		local70.anInt1783 = local15 - local17;
-		local70.aByteArray14 = new byte[local70.anInt1783];
-		for (@Pc(83) int local83 = 0; local83 < local70.anInt1783; local83++) {
-			local70.aByteArray14[local83] = this.aByteArray14[local17 + local83];
+		local70.length = local15 - local17;
+		local70.chars = new byte[local70.length];
+		for (@Pc(83) int local83 = 0; local83 < local70.length; local83++) {
+			local70.chars[local83] = this.chars[local17 + local83];
 		}
 		return local70;
 	}
@@ -1065,8 +1065,8 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!o", name = "c", descriptor = "(B)J", line = 564)
 	public long method1179() {
 		@Pc(8) long local8 = 0L;
-		for (@Pc(10) int local10 = 0; this.anInt1783 > local10 && local10 < 12; local10++) {
-			@Pc(17) byte local17 = this.aByteArray14[local10];
+		for (@Pc(10) int local10 = 0; this.length > local10 && local10 < 12; local10++) {
+			@Pc(17) byte local17 = this.chars[local10];
 			local8 *= 37L;
 			if (local17 >= 65 && local17 <= 90) {
 				local8 += local17 + 1 - 65;
@@ -1085,9 +1085,9 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(III)Lclient!o;", line = 607)
 	public JagString method1180(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(7) JagString local7 = new JagString();
-		local7.anInt1783 = arg0 - arg1;
-		local7.aByteArray14 = new byte[arg0 - arg1];
-		Static107.method993(this.aByteArray14, arg1, local7.aByteArray14, 0, local7.anInt1783);
+		local7.length = arg0 - arg1;
+		local7.chars = new byte[arg0 - arg1];
+		Static107.method993(this.chars, arg1, local7.chars, 0, local7.length);
 		return local7;
 	}
 
@@ -1101,9 +1101,9 @@ public final class JagString implements BaseString {
 	public int method1181(@OriginalArg(1) FontMetrics arg0) {
 		@Pc(18) String local18;
 		try {
-			local18 = new String(this.aByteArray14, 0, this.anInt1783, "ISO-8859-1");
+			local18 = new String(this.chars, 0, this.length, "ISO-8859-1");
 		} catch (@Pc(20) UnsupportedEncodingException local20) {
-			local18 = new String(this.aByteArray14, 0, this.anInt1783);
+			local18 = new String(this.chars, 0, this.length);
 		}
 		return arg0.stringWidth(local18);
 	}
@@ -1119,10 +1119,10 @@ public final class JagString implements BaseString {
 			throw new IllegalArgumentException();
 		}
 		this.anInt1780 = 0;
-		if (this.anInt1783 != this.aByteArray14.length) {
-			@Pc(27) byte[] local27 = new byte[this.anInt1783];
-			Static107.method993(this.aByteArray14, 0, local27, 0, this.anInt1783);
-			this.aByteArray14 = local27;
+		if (this.length != this.chars.length) {
+			@Pc(27) byte[] local27 = new byte[this.length];
+			Static107.method993(this.chars, 0, local27, 0, this.length);
+			this.chars = local27;
 		}
 		return this;
 	}
@@ -1131,7 +1131,7 @@ public final class JagString implements BaseString {
 	public boolean method1184(@OriginalArg(1) JagString arg0) {
 		if (arg0 == null) {
 			return false;
-		} else if (arg0.anInt1783 == this.anInt1783) {
+		} else if (arg0.length == this.length) {
 			if (!this.aBoolean141 || !arg0.aBoolean141) {
 				if (this.anInt1780 == 0) {
 					this.anInt1780 = this.method1190();
@@ -1149,8 +1149,8 @@ public final class JagString implements BaseString {
 					return false;
 				}
 			}
-			for (@Pc(57) int local57 = 0; local57 < this.anInt1783; local57++) {
-				if (arg0.aByteArray14[local57] != this.aByteArray14[local57]) {
+			for (@Pc(57) int local57 = 0; local57 < this.length; local57++) {
+				if (arg0.chars[local57] != this.chars[local57]) {
 					return false;
 				}
 			}
@@ -1162,7 +1162,7 @@ public final class JagString implements BaseString {
 
 	@OriginalMember(owner = "client!o", name = "c", descriptor = "(II)Lclient!o;", line = 777)
 	public JagString method1185(@OriginalArg(1) int arg0) {
-		return this.method1180(this.anInt1783, arg0);
+		return this.method1180(this.length, arg0);
 	}
 
 	@OriginalMember(owner = "client!o", name = "equals", descriptor = "(Ljava/lang/Object;)Z", line = 788)
@@ -1173,23 +1173,23 @@ public final class JagString implements BaseString {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(IILclient!o;)I", line = 802)
 	private int method1186(@OriginalArg(2) JagString arg0) {
-		@Pc(5) int[] local5 = new int[arg0.anInt1783];
+		@Pc(5) int[] local5 = new int[arg0.length];
 		@Pc(8) int[] local8 = new int[256];
-		@Pc(16) int[] local16 = new int[arg0.anInt1783];
+		@Pc(16) int[] local16 = new int[arg0.length];
 		for (@Pc(18) int local18 = 0; local18 < local8.length; local18++) {
-			local8[local18] = arg0.anInt1783;
+			local8[local18] = arg0.length;
 		}
-		for (@Pc(36) int local36 = 1; local36 <= arg0.anInt1783; local36++) {
-			local5[local36 - 1] = (arg0.anInt1783 << 1) - local36;
-			local8[arg0.aByteArray14[local36 - 1] & 0xFF] = arg0.anInt1783 - local36;
+		for (@Pc(36) int local36 = 1; local36 <= arg0.length; local36++) {
+			local5[local36 - 1] = (arg0.length << 1) - local36;
+			local8[arg0.chars[local36 - 1] & 0xFF] = arg0.length - local36;
 		}
-		@Pc(83) int local83 = arg0.anInt1783 + 1;
-		@Pc(86) int local86 = arg0.anInt1783;
+		@Pc(83) int local83 = arg0.length + 1;
+		@Pc(86) int local86 = arg0.length;
 		while (local86 > 0) {
 			local16[local86 - 1] = local83;
-			while (local83 <= arg0.anInt1783 && arg0.aByteArray14[local83 - 1] != arg0.aByteArray14[local86 - 1]) {
-				if (arg0.anInt1783 - local86 <= local5[local83 + -1]) {
-					local5[local83 - 1] = arg0.anInt1783 - local86;
+			while (local83 <= arg0.length && arg0.chars[local83 - 1] != arg0.chars[local86 - 1]) {
+				if (arg0.length - local86 <= local5[local83 + -1]) {
+					local5[local83 - 1] = arg0.length - local86;
 				}
 				local83 = local16[local83 - 1];
 			}
@@ -1199,19 +1199,19 @@ public final class JagString implements BaseString {
 		@Pc(149) int local149 = 1;
 		@Pc(151) int local151 = 0;
 		@Pc(153) int local153 = local83;
-		local83 = arg0.anInt1783 + 1 - local83;
+		local83 = arg0.length + 1 - local83;
 		for (@Pc(163) int local163 = 1; local163 <= local83; local163++) {
 			local16[local163 - 1] = local151;
-			while (local151 >= 1 && arg0.aByteArray14[local163 - 1] != arg0.aByteArray14[local151 - 1]) {
+			while (local151 >= 1 && arg0.chars[local163 - 1] != arg0.chars[local151 - 1]) {
 				local151 = local16[local151 - 1];
 			}
 			local151++;
 		}
 		@Pc(208) int local208;
-		while (local153 < arg0.anInt1783) {
+		while (local153 < arg0.length) {
 			for (local208 = local149; local208 <= local153; local208++) {
-				if (local153 + arg0.anInt1783 - local208 <= local5[local208 + -1]) {
-					local5[local208 - 1] = local153 + arg0.anInt1783 - local208;
+				if (local153 + arg0.length - local208 <= local5[local208 + -1]) {
+					local5[local208 - 1] = local153 + arg0.length - local208;
 				}
 			}
 			local149 = local153 + 1;
@@ -1219,8 +1219,8 @@ public final class JagString implements BaseString {
 			local83 = local16[local83 - 1];
 		}
 		@Pc(281) int local281;
-		for (local208 = arg0.anInt1783 - 1; local208 < this.anInt1783; local208 += Math.max(local8[this.aByteArray14[local208] & 0xFF], local5[local281])) {
-			for (local281 = arg0.anInt1783 - 1; local281 >= 0 && arg0.aByteArray14[local281] == this.aByteArray14[local208]; local281--) {
+		for (local208 = arg0.length - 1; local208 < this.length; local208 += Math.max(local8[this.chars[local208] & 0xFF], local5[local281])) {
+			for (local281 = arg0.length - 1; local281 >= 0 && arg0.chars[local281] == this.chars[local208]; local281--) {
 				local208--;
 			}
 			if (local281 == -1) {
@@ -1232,8 +1232,8 @@ public final class JagString implements BaseString {
 
 	@OriginalMember(owner = "client!o", name = "b", descriptor = "(III)I", line = 921)
 	private int method1187() {
-		for (@Pc(21) int local21 = 0; local21 < this.anInt1783; local21++) {
-			if (this.aByteArray14[local21] == 32) {
+		for (@Pc(21) int local21 = 0; local21 < this.length; local21++) {
+			if (this.chars[local21] == 32) {
 				return local21;
 			}
 		}
@@ -1242,33 +1242,33 @@ public final class JagString implements BaseString {
 
 	@OriginalMember(owner = "client!o", name = "b", descriptor = "(Z)[B", line = 964)
 	public byte[] method1189() {
-		@Pc(13) byte[] local13 = new byte[this.anInt1783];
-		Static107.method993(this.aByteArray14, 0, local13, 0, this.anInt1783);
+		@Pc(13) byte[] local13 = new byte[this.length];
+		Static107.method993(this.chars, 0, local13, 0, this.length);
 		return local13;
 	}
 
 	@OriginalMember(owner = "client!o", name = "h", descriptor = "(I)I", line = 984)
 	public int method1190() {
 		@Pc(13) int local13 = 0;
-		for (@Pc(15) int local15 = 0; local15 < this.anInt1783; local15++) {
-			local13 = (local13 << 5) + (this.aByteArray14[local15] & 0xFF) - local13;
+		for (@Pc(15) int local15 = 0; local15 < this.length; local15++) {
+			local13 = (local13 << 5) + (this.chars[local15] & 0xFF) - local13;
 		}
 		return local13;
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "([BIIII)I", line = 1007)
 	public int method1191(@OriginalArg(0) byte[] arg0, @OriginalArg(3) int arg1, @OriginalArg(4) int arg2) {
-		Static107.method993(this.aByteArray14, 0, arg0, arg2, arg1);
+		Static107.method993(this.chars, 0, arg0, arg2, arg1);
 		return arg1;
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(BI)Lclient!o;", line = 1023)
 	public JagString method1192(@OriginalArg(1) int arg0) {
 		@Pc(14) JagString local14 = new JagString();
-		local14.aByteArray14 = new byte[this.anInt1783 + 1];
-		local14.anInt1783 = this.anInt1783 + 1;
-		Static107.method993(this.aByteArray14, 0, local14.aByteArray14, 0, this.anInt1783);
-		local14.aByteArray14[this.anInt1783] = (byte) arg0;
+		local14.chars = new byte[this.length + 1];
+		local14.length = this.length + 1;
+		Static107.method993(this.chars, 0, local14.chars, 0, this.length);
+		local14.chars[this.length] = (byte) arg0;
 		return local14;
 	}
 
@@ -1276,21 +1276,21 @@ public final class JagString implements BaseString {
 	public void method1194(@OriginalArg(1) int arg0, @OriginalArg(2) Graphics arg1, @OriginalArg(3) int arg2) {
 		@Pc(9) String local9;
 		try {
-			local9 = new String(this.aByteArray14, 0, this.anInt1783, "ISO-8859-1");
+			local9 = new String(this.chars, 0, this.length, "ISO-8859-1");
 		} catch (@Pc(11) UnsupportedEncodingException local11) {
-			local9 = new String(this.aByteArray14, 0, this.anInt1783);
+			local9 = new String(this.chars, 0, this.length);
 		}
 		arg1.drawString(local9, arg2, arg0);
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(Lclient!o;Z)Z", line = 1112)
 	public boolean method1195(@OriginalArg(0) JagString arg0) {
-		if (this.anInt1783 < arg0.anInt1783) {
+		if (this.length < arg0.length) {
 			return false;
 		}
-		@Pc(19) int local19 = this.anInt1783 - arg0.anInt1783;
-		for (@Pc(21) int local21 = 0; local21 < arg0.anInt1783; local21++) {
-			if (this.aByteArray14[local19 + local21] != arg0.aByteArray14[local21]) {
+		@Pc(19) int local19 = this.length - arg0.length;
+		for (@Pc(21) int local21 = 0; local21 < arg0.length; local21++) {
+			if (this.chars[local19 + local21] != arg0.chars[local21]) {
 				return false;
 			}
 		}
@@ -1300,14 +1300,14 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!o", name = "i", descriptor = "(I)Lclient!o;", line = 1148)
 	public JagString method1196() {
 		@Pc(9) JagString local9 = new JagString();
-		local9.anInt1783 = this.anInt1783;
-		local9.aByteArray14 = new byte[this.anInt1783];
-		for (@Pc(26) int local26 = 0; local26 < this.anInt1783; local26++) {
-			@Pc(33) byte local33 = this.aByteArray14[local26];
+		local9.length = this.length;
+		local9.chars = new byte[this.length];
+		for (@Pc(26) int local26 = 0; local26 < this.length; local26++) {
+			@Pc(33) byte local33 = this.chars[local26];
 			if (local33 >= 65 && local33 <= 90 || local33 >= -64 && local33 <= -34 && local33 != -41) {
 				local33 = (byte) (local33 + 32);
 			}
-			local9.aByteArray14[local26] = local33;
+			local9.chars[local26] = local33;
 		}
 		return local9;
 	}
@@ -1327,13 +1327,13 @@ public final class JagString implements BaseString {
 	public boolean method1199(@OriginalArg(0) JagString arg0) {
 		if (arg0 == null) {
 			return false;
-		} else if (arg0.anInt1783 == this.anInt1783) {
-			for (@Pc(26) int local26 = 0; local26 < this.anInt1783; local26++) {
-				@Pc(33) byte local33 = this.aByteArray14[local26];
+		} else if (arg0.length == this.length) {
+			for (@Pc(26) int local26 = 0; local26 < this.length; local26++) {
+				@Pc(33) byte local33 = this.chars[local26];
 				if (local33 >= 65 && local33 <= 90 || local33 >= -64 && local33 <= -34 && local33 != -41) {
 					local33 = (byte) (local33 + 32);
 				}
-				@Pc(64) byte local64 = arg0.aByteArray14[local26];
+				@Pc(64) byte local64 = arg0.chars[local26];
 				if (local64 >= 65 && local64 <= 90 || local64 >= -64 && local64 <= -34 && local64 != -41) {
 					local64 = (byte) (local64 + 32);
 				}

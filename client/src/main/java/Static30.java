@@ -11,9 +11,6 @@ public final class Static30 {
 	@OriginalMember(owner = "client!ga", name = "v", descriptor = "Lclient!qb;")
 	public static Pix8 aClass2_Sub2_Sub2_Sub3_7;
 
-	@OriginalMember(owner = "client!ga", name = "B", descriptor = "[[[I")
-	public static int[][][] anIntArrayArrayArray3;
-
 	@OriginalMember(owner = "client!ga", name = "H", descriptor = "Lclient!qb;")
 	public static Pix8 aClass2_Sub2_Sub2_Sub3_8;
 
@@ -29,7 +26,7 @@ public final class Static30 {
 
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(III)I", line = 22)
 	public static int method592(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(10) long local10 = (long) ((arg0 << 1365004144) + arg1);
+		@Pc(10) long local10 = (long) ((arg0 << 16) + arg1);
 		return Static82.aClass2_Sub2_Sub9_1 != null && Static82.aClass2_Sub2_Sub9_1.key == local10 ? Static27.aClass2_Sub3_2.pos * 99 / (Static27.aClass2_Sub3_2.data.length - Static82.aClass2_Sub2_Sub9_1.trailerLen) + 1 : 0;
 	}
 
@@ -39,7 +36,7 @@ public final class Static30 {
 		aClass2_Sub2_Sub2_Sub3_7 = null;
 		aClass6_1 = null;
 		JagString.aClass40_229 = null;
-		anIntArrayArrayArray3 = null;
+		World.levelOccludemap = null;
 		JagString.aClass40_230 = null;
 		aClass2_Sub2_Sub2_Sub3_8 = null;
 		JagString.aClass40_228 = null;
@@ -47,7 +44,7 @@ public final class Static30 {
 
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(ILjava/awt/Graphics;)V", line = 131)
 	public static void method594(@OriginalArg(1) Graphics arg0) {
-		Static11.aClass45_6.method1474(arg0, 550, 4);
+		Static11.aClass45_6.draw(arg0, 550, 4);
 	}
 
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(II)V", line = 152)

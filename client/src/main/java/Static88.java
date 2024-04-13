@@ -59,7 +59,7 @@ public final class Static88 {
 		}
 		if (local12 == 1005) {
 			@Pc(161) int local161 = local22 >> 14 & 0x7FFF;
-			@Pc(165) LocType local165 = Static83.method1470(local161);
+			@Pc(165) LocType local165 = LocType.get(local161);
 			if (local165.aClass40_316 == null) {
 				local70 = Static72.method1334(new JagString[] { JagString.aClass40_318, local165.aClass40_315, JagString.aClass40_306 });
 			} else {

@@ -33,23 +33,6 @@ public final class Static33 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ge", name = "c", descriptor = "(I)V", line = 65)
-	public static void method633() {
-		Static68.aByteArrayArrayArray8 = new byte[4][104][104];
-		Static69.aByteArrayArrayArray9 = new byte[4][104][104];
-		Static19.anIntArray91 = new int[104];
-		Static77.anIntArray434 = new int[104];
-		Static14.aByteArrayArrayArray10 = new byte[4][104][104];
-		Static35.aByteArrayArrayArray4 = new byte[4][104][104];
-		Static43.anIntArray543 = new int[104];
-		Static55.aByteArrayArrayArray6 = new byte[4][105][105];
-		Static24.anIntArray126 = new int[104];
-		Static30.anIntArrayArrayArray3 = new int[4][105][105];
-		Static9.anIntArrayArray5 = new int[105][105];
-		Static1.anInt807 = 99;
-		Static75.anIntArray428 = new int[104];
-	}
-
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(IB)Z", line = 117)
 	public static boolean method634(@OriginalArg(0) int arg0) {
 		if (arg0 < 0) {

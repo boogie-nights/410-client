@@ -33,10 +33,10 @@ public final class Draw3D extends Draw2D {
 	public static int[] reciprocal16 = new int[2048];
 
 	@OriginalMember(owner = "client!b", name = "ob", descriptor = "[I")
-	public static int[] anIntArray63 = new int[65536];
+	public static int[] palette = new int[65536];
 
 	@OriginalMember(owner = "client!b", name = "bb", descriptor = "Lclient!ld;")
-	public static TextureProvider anInterface4_1;
+	public static TextureProvider getProvider;
 
 	@OriginalMember(owner = "client!b", name = "nb", descriptor = "[I")
 	static int[] anIntArray62;
@@ -59,8 +59,8 @@ public final class Draw3D extends Draw2D {
 	@OriginalMember(owner = "client!b", name = "f", descriptor = "()V", line = 2553)
 	public static void unload() {
 		anIntArray62 = null;
-		anIntArray63 = null;
-		anInterface4_1 = null;
+		palette = null;
+		getProvider = null;
 		reciprocal15 = null;
 		reciprocal16 = null;
 		sin = null;

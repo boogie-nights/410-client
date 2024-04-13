@@ -12,7 +12,7 @@ public final class Static50 {
 		Static1.aClass47_13 = null;
 		JagString.aClass40_407 = null;
 		JagString.aClass40_408 = null;
-		Static1.anIntArray298 = null;
+		World.WALL_DECORATION_ROTATION_FORWARD_Z = null;
 		anIntArray299 = null;
 		JagString.aClass40_410 = null;
 		JagString.aClass40_409 = null;

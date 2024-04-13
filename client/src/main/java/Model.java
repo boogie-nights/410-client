@@ -40,7 +40,7 @@ public final class Model extends Entity {
 	public static int[] anIntArray387 = new int[1000];
 
 	@OriginalMember(owner = "client!ne", name = "bc", descriptor = "[I")
-	public static int[] anIntArray392 = Draw3D.anIntArray63;
+	public static int[] anIntArray392 = Draw3D.palette;
 
 	@OriginalMember(owner = "client!ne", name = "Wb", descriptor = "[Z")
 	public static boolean[] aBooleanArray25 = new boolean[4096];

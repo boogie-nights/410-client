@@ -59,19 +59,19 @@ public final class Static89 {
 			if (arg0[local7] == null) {
 				arg0[local7] = JagString.aClass40_462;
 			}
-			local5 += arg0[local7].anInt1783;
+			local5 += arg0[local7].length;
 		}
 		@Pc(46) byte[] local46 = new byte[local5];
 		@Pc(48) int local48 = 0;
 		@Pc(58) JagString local58;
 		for (@Pc(50) int local50 = 0; local50 < arg1; local50++) {
 			local58 = arg0[local50];
-			Static107.method993(local58.aByteArray14, 0, local46, local48, local58.anInt1783);
-			local48 += local58.anInt1783;
+			Static107.method993(local58.chars, 0, local46, local48, local58.length);
+			local48 += local58.length;
 		}
 		local58 = new JagString();
-		local58.aByteArray14 = local46;
-		local58.anInt1783 = local5;
+		local58.chars = local46;
+		local58.length = local5;
 		return local58;
 	}
 
@@ -113,14 +113,14 @@ public final class Static89 {
 				@Pc(70) int local70 = arg0 + local40;
 				if (local66 > 0 && local70 > 0 && local66 < 103 && local70 < 103) {
 					@Pc(87) int local87 = local44;
-					if ((Static1.aByteArrayArrayArray7[1][local66][local70] & 0x2) == 2) {
+					if ((World.levelTileFlags[1][local66][local70] & 0x2) == 2) {
 						local87 = local44 - 1;
 					}
 					@Pc(101) CollisionMap local101 = null;
 					if (local87 >= 0) {
 						local101 = arg4[local87];
 					}
-					Static75.method1353(local44, local12, local66, local101, local56, local52, arg2, local70);
+					World.method1353(local44, local12, local66, local101, local56, local52, arg2, local70);
 				}
 			}
 		}

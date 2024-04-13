@@ -10,25 +10,25 @@ public final class Static29 {
 
 	@OriginalMember(owner = "client!g", name = "a", descriptor = "(B)V", line = 11)
 	public static void method1675() {
-		Static1.aClass47_16.method1330();
-		Static1.aClass47_18.method1330();
-		Static1.aClass47_7.method1330();
+		Static1.aClass47_16.clear();
+		Static1.aClass47_18.clear();
+		Static1.aClass47_7.clear();
 	}
 
 	@OriginalMember(owner = "client!g", name = "b", descriptor = "(I)V", line = 97)
 	public static void method1678() {
-		Static69.aByteArrayArrayArray9 = null;
-		Static9.anIntArrayArray5 = null;
-		Static19.anIntArray91 = null;
-		Static14.aByteArrayArrayArray10 = null;
-		Static30.anIntArrayArrayArray3 = null;
-		Static68.aByteArrayArrayArray8 = null;
-		Static24.anIntArray126 = null;
-		Static35.aByteArrayArrayArray4 = null;
-		Static77.anIntArray434 = null;
-		Static55.aByteArrayArrayArray6 = null;
-		Static43.anIntArray543 = null;
-		Static75.anIntArray428 = null;
+		World.levelTileOverlayIds = null;
+		World.levelLightmap = null;
+		World.blendMagnitude = null;
+		World.levelTileOverlayShape = null;
+		World.levelOccludemap = null;
+		World.levelTileOverlayRotation = null;
+		World.blendSaturation = null;
+		World.levelTileUnderlayIds = null;
+		World.blendChroma = null;
+		World.levelShademap = null;
+		World.blendLightness = null;
+		World.blendLuminance = null;
 	}
 
 	@OriginalMember(owner = "client!g", name = "b", descriptor = "(B)V", line = 130)

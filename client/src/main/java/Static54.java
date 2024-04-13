@@ -29,7 +29,7 @@ public final class Static54 {
 			@Pc(21) int local21 = Static44.anInt1114 >> 7;
 			@Pc(25) int local25 = Static14.anInt1863 >> 7;
 			@Pc(30) int local30 = Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7;
-			if ((Static1.aByteArrayArrayArray7[Static1.currentLevel][local21][local25] & 0x4) != 0) {
+			if ((World.levelTileFlags[Static1.currentLevel][local21][local25] & 0x4) != 0) {
 				local12 = Static1.currentLevel;
 			}
 			@Pc(50) int local50 = Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7;
@@ -56,7 +56,7 @@ public final class Static54 {
 					} else if (local50 < local25) {
 						local25--;
 					}
-					if ((Static1.aByteArrayArrayArray7[Static1.currentLevel][local21][local25] & 0x4) != 0) {
+					if ((World.levelTileFlags[Static1.currentLevel][local21][local25] & 0x4) != 0) {
 						local12 = Static1.currentLevel;
 					}
 					local94 += local92;
@@ -67,7 +67,7 @@ public final class Static54 {
 						} else if (local21 > local30) {
 							local21--;
 						}
-						if ((Static1.aByteArrayArrayArray7[Static1.currentLevel][local21][local25] & 0x4) != 0) {
+						if ((World.levelTileFlags[Static1.currentLevel][local21][local25] & 0x4) != 0) {
 							local12 = Static1.currentLevel;
 						}
 					}
@@ -82,7 +82,7 @@ public final class Static54 {
 					} else if (local30 < local21) {
 						local21--;
 					}
-					if ((Static1.aByteArrayArrayArray7[Static1.currentLevel][local21][local25] & 0x4) != 0) {
+					if ((World.levelTileFlags[Static1.currentLevel][local21][local25] & 0x4) != 0) {
 						local12 = Static1.currentLevel;
 					}
 					if (local94 >= 65536) {
@@ -91,7 +91,7 @@ public final class Static54 {
 						} else if (local25 > local50) {
 							local25--;
 						}
-						if ((Static1.aByteArrayArrayArray7[Static1.currentLevel][local21][local25] & 0x4) != 0) {
+						if ((World.levelTileFlags[Static1.currentLevel][local21][local25] & 0x4) != 0) {
 							local12 = Static1.currentLevel;
 						}
 						local94 -= 65536;
@@ -99,7 +99,7 @@ public final class Static54 {
 				}
 			}
 		}
-		if ((Static1.aByteArrayArrayArray7[Static1.currentLevel][Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7][Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7] & 0x4) != 0) {
+		if ((World.levelTileFlags[Static1.currentLevel][Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2275 >> 7][Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anInt2284 >> 7] & 0x4) != 0) {
 			local12 = Static1.currentLevel;
 		}
 		return local12;
@@ -107,7 +107,7 @@ public final class Static54 {
 
 	@OriginalMember(owner = "client!lc", name = "b", descriptor = "(B)V", line = 156)
 	public static void method996() {
-		Static1.aClass47_22.method1330();
+		Static1.aClass47_22.clear();
 	}
 
 	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(Lclient!ud;ILjava/awt/Component;)V", line = 180)

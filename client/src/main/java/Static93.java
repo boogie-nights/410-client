@@ -16,7 +16,7 @@ public final class Static93 {
 
 	@OriginalMember(owner = "client!va", name = "a", descriptor = "(Lclient!fc;Ljava/awt/Graphics;ILclient!fc;)V", line = 32)
 	public static void method1589(@OriginalArg(0) PixFont arg0, @OriginalArg(1) Graphics arg1, @OriginalArg(3) PixFont arg2) {
-		Static99.aClass45_31.method1476();
+		Static99.aClass45_31.bind();
 		if (client.state == 0 || client.state == 5) {
 			arg2.method566(JagString.aClass40_724, 180, 54, 16777215);
 			Static25.method1607(28, 62, 304, 34, 9179409);
@@ -24,7 +24,7 @@ public final class Static93 {
 			Static25.method1612(30, 64, Static1.anInt2194 * 3, 30, 9179409);
 			Static25.method1612(Static1.anInt2194 * 3 + 30, 64, 300 - Static1.anInt2194 * 3, 30, 0);
 			arg2.method566(JagString.aClass40_680, 180, 85, 16777215);
-			Static99.aClass45_31.method1474(arg1, 202, 171);
+			Static99.aClass45_31.draw(arg1, 202, 171);
 		}
 		@Pc(106) byte local106;
 		@Pc(130) int local130;
@@ -87,20 +87,20 @@ public final class Static93 {
 				arg2.method578(JagString.aClass40_27, 180, 155, 16777215, true);
 			}
 		}
-		Static99.aClass45_31.method1474(arg1, 202, 171);
+		Static99.aClass45_31.draw(arg1, 202, 171);
 		Static97.method1673();
-		Static56.aClass45_24.method1474(arg1, 0, 0);
-		Static90.aClass45_30.method1474(arg1, 637, 0);
+		Static56.aClass45_24.draw(arg1, 0, 0);
+		Static90.aClass45_30.draw(arg1, 637, 0);
 		if (!Static1.aBoolean1) {
 			return;
 		}
 		Static1.aBoolean1 = false;
-		Static56.aClass45_22.method1474(arg1, 128, 0);
-		Static33.aClass45_16.method1474(arg1, 202, 371);
-		Static20.aClass45_11.method1474(arg1, 0, 265);
-		Static72.aClass45_27.method1474(arg1, 562, 265);
-		Static62.aClass45_26.method1474(arg1, 128, 171);
-		Static2.aClass45_3.method1474(arg1, 562, 171);
+		Static56.aClass45_22.draw(arg1, 128, 0);
+		Static33.aClass45_16.draw(arg1, 202, 371);
+		Static20.aClass45_11.draw(arg1, 0, 265);
+		Static72.aClass45_27.draw(arg1, 562, 265);
+		Static62.aClass45_26.draw(arg1, 128, 171);
+		Static2.aClass45_3.draw(arg1, 562, 171);
 	}
 
 	@OriginalMember(owner = "client!va", name = "a", descriptor = "(III)V", line = 175)

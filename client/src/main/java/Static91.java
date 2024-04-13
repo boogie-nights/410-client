@@ -133,7 +133,7 @@ public final class Static91 {
 		JagString.aClass40_25 = null;
 		JagString.aClass40_26 = null;
 		Static1.anObject2 = null;
-		Static1.anIntArray13 = null;
+		World.ROTATION_WALL_CORNER_TYPE = null;
 		JagString.aClass40_24 = null;
 		GameShell.signlink = null;
 		Static1.anIntArrayArrayArray2 = null;
@@ -143,7 +143,7 @@ public final class Static91 {
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(ILclient!ud;)V", line = 861)
 	public static void method75(@OriginalArg(1) Js5Index arg0) {
-		Static28.aClass5_10 = arg0;
+		FloorOverlayType.config = arg0;
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(Lclient!ud;ZLclient!o;Lclient!o;)Lclient!qb;", line = 890)

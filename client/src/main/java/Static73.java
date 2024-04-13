@@ -22,7 +22,7 @@ public final class Static73 {
 		if (arg1 >= 5 && arg1 <= 8) {
 			arg1 = 4;
 		}
-		@Pc(20) LocType local20 = Static83.method1470(arg0);
+		@Pc(20) LocType local20 = LocType.get(arg0);
 		return local20.method769(arg1);
 	}
 
@@ -154,22 +154,6 @@ public final class Static73 {
 			Static1.aBoolean59 = true;
 			Static1.aBoolean184 = true;
 		}
-	}
-
-	@OriginalMember(owner = "client!r", name = "a", descriptor = "(II)Lclient!ec;", line = 234)
-	public static FloorOverlayType method1338(@OriginalArg(0) int arg0) {
-		@Pc(10) FloorOverlayType local10 = (FloorOverlayType) Static1.aClass47_23.method1325((long) arg0);
-		if (local10 != null) {
-			return local10;
-		}
-		@Pc(28) byte[] local28 = Static28.aClass5_10.fetchFile(arg0, 4);
-		local10 = new FloorOverlayType();
-		if (local28 != null) {
-			local10.method478(new Packet(local28), arg0);
-		}
-		local10.method476();
-		Static1.aClass47_23.method1332((long) arg0, local10);
-		return local10;
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(I)V", line = 258)

@@ -95,7 +95,7 @@ public final class Js5TextureProvider implements TextureProvider {
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(ZI)I", line = 879)
 	@Override
-	public int method396(@OriginalArg(1) int arg0) {
+	public int getAverageTextureRGB(@OriginalArg(1) int arg0) {
 		return this.aClass2_Sub8Array1[arg0] == null ? 0 : this.aClass2_Sub8Array1[arg0].anInt995;
 	}
 

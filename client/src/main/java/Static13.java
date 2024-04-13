@@ -12,8 +12,8 @@ public final class Static13 {
 
 	@OriginalMember(owner = "client!cc", name = "a", descriptor = "(I)V", line = 14)
 	public static void method262() {
-		Static1.aClass47_3.method1330();
-		Static1.aClass47_15.method1330();
+		Static1.aClass47_3.clear();
+		Static1.aClass47_15.clear();
 	}
 
 	@OriginalMember(owner = "client!cc", name = "b", descriptor = "(I)V", line = 30)

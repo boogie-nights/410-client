@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.URL;
@@ -16,7 +17,13 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!bb")
 public final class SignLink implements Runnable {
 
-	@OriginalMember(owner = "client!bb", name = "h", descriptor = "Lclient!id;")
+    @OriginalMember(owner = "client!bb", name = "c", descriptor = "Ljava/lang/String;")
+    public static String aString1;
+    @OriginalMember(owner = "client!bb", name = "k", descriptor = "Ljava/lang/String;")
+    public static String aString4;
+    @OriginalMember(owner = "client!bb", name = "v", descriptor = "Ljava/lang/reflect/Method;")
+    public static Method aMethod1;
+    @OriginalMember(owner = "client!bb", name = "h", descriptor = "Lclient!id;")
 	private AudioSource anInterface3_1;
 
 	@OriginalMember(owner = "client!bb", name = "l", descriptor = "Lclient!c;")
@@ -300,19 +307,19 @@ public final class SignLink implements Runnable {
 	@OriginalMember(owner = "client!bb", name = "<init>", descriptor = "(ZLjava/applet/Applet;Ljava/net/InetAddress;ILjava/lang/String;I)V", line = 476)
 	public SignLink(@OriginalArg(0) boolean arg0, @OriginalArg(1) Applet arg1, @OriginalArg(2) InetAddress arg2, @OriginalArg(3) int arg3, @OriginalArg(4) String arg4, @OriginalArg(5) int arg5) throws IOException {
 		this.anInetAddress1 = arg2;
-		Static8.aString4 = "Unknown";
+		aString4 = "Unknown";
 		this.anApplet1 = arg1;
-		Static8.aString1 = "1.1";
+		aString1 = "1.1";
 		try {
-			Static8.aString4 = System.getProperty("java.vendor");
-			Static8.aString1 = System.getProperty("java.version");
+			aString4 = System.getProperty("java.vendor");
+			aString1 = System.getProperty("java.version");
 		} catch (@Pc(55) Exception local55) {
 		}
 		try {
 			if (arg1 == null) {
-				Static8.aMethod1 = Class.forName("java.awt.Component").getDeclaredMethod("setFocusTraversalKeysEnabled", Boolean.TYPE);
+				aMethod1 = Class.forName("java.awt.Component").getDeclaredMethod("setFocusTraversalKeysEnabled", Boolean.TYPE);
 			} else {
-				Static8.aMethod1 = arg1.getClass().getMethod("setFocusTraversalKeysEnabled", Boolean.TYPE);
+				aMethod1 = arg1.getClass().getMethod("setFocusTraversalKeysEnabled", Boolean.TYPE);
 			}
 		} catch (@Pc(82) Exception local82) {
 		}

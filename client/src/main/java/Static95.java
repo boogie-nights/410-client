@@ -65,7 +65,7 @@ public final class Static95 {
 	public static void method1647() {
 		@Pc(17) int local17;
 		if (Static1.anInt1850 == 0) {
-			Static85.scene = new World3D(4, 104, 104, Static1.anIntArrayArrayArray8);
+			Static85.scene = new World3D(4, 104, 104, World.levelHeightmap);
 			for (local17 = 0; local17 < 4; local17++) {
 				Static1.aClass20Array3[local17] = new CollisionMap(104, 104);
 			}
@@ -256,7 +256,7 @@ public final class Static95 {
 		} else if (Static1.anInt1850 == 70) {
 			if (Static5.configJs5.method78()) {
 				Static91.method75(Static5.configJs5);
-				Static5.method117(Static5.configJs5);
+				FloorUnderlayType.method117(Static5.configJs5);
 				Static30.method591(Static24.modelsJs5, Static5.configJs5);
 				Static87.method1518(Static1.lowDetail, Static24.modelsJs5, Static5.configJs5);
 				method1651(Static5.configJs5, Static24.modelsJs5);

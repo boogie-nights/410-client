@@ -31,8 +31,8 @@ public final class Static27 {
 
 	@OriginalMember(owner = "client!fd", name = "b", descriptor = "(I)V", line = 20)
 	public static void method582() {
-		Static1.aClass47_8.method1330();
-		Static1.aClass47_20.method1330();
+		Static1.aClass47_8.clear();
+		Static1.aClass47_20.clear();
 	}
 
 	@OriginalMember(owner = "client!fd", name = "a", descriptor = "(Z)V", line = 63)

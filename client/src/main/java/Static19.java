@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static19 {
 
-	@OriginalMember(owner = "client!e", name = "K", descriptor = "[I")
-	public static int[] anIntArray91;
-
 	@OriginalMember(owner = "client!e", name = "Q", descriptor = "[I")
 	public static int[] anIntArray92;
 
@@ -23,7 +20,7 @@ public final class Static19 {
 		Static1.anIntArray93 = null;
 		JagString.aClass40_134 = null;
 		anIntArray92 = null;
-		anIntArray91 = null;
+		World.blendMagnitude = null;
 		aClass45_10 = null;
 		JagString.aClass40_132 = null;
 	}
@@ -52,7 +49,7 @@ public final class Static19 {
 				local3 = local38;
 				@Pc(119) int local119;
 				if (local60 == 2 && Static85.scene.method1449(Static1.currentLevel, local42, local48, local38) >= 0) {
-					@Pc(83) LocType local83 = Static83.method1470(local54);
+					@Pc(83) LocType local83 = LocType.get(local54);
 					if (local83.anIntArray210 != null) {
 						local83 = local83.method766();
 					}

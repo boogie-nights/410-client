@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static9 {
 
-	@OriginalMember(owner = "client!bd", name = "n", descriptor = "[[I")
-	public static int[][] anIntArrayArray5;
-
 	@OriginalMember(owner = "client!bd", name = "q", descriptor = "Lclient!d;")
 	public static BufferedFile legacyCacheDat;
 
@@ -98,7 +95,7 @@ public final class Static9 {
 					arg0.anInt1577 = 0;
 					arg0.aClass40_466 = JagString.aClass40_445;
 				} else {
-					arg0.aClass40_466 = Static44.method819(Static1.aLongArray4[local8]).method1167();
+					arg0.aClass40_466 = Static44.fromBase37(Static1.aLongArray4[local8]).method1167();
 					arg0.anInt1577 = 1;
 				}
 			}
@@ -257,7 +254,7 @@ public final class Static9 {
 
 	@OriginalMember(owner = "client!bd", name = "b", descriptor = "(B)V", line = 423)
 	public static void method229() {
-		anIntArrayArray5 = null;
+		World.levelLightmap = null;
 		Static1.anIntArrayArray6 = null;
 		JagString.aClass40_64 = null;
 		JagString.aClass40_66 = null;

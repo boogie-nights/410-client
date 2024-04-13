@@ -37,7 +37,7 @@ public final class Static76 {
 			}
 			@Pc(69) byte[] local69 = new byte[local52];
 			if (local12 == 1) {
-				Static111.method1265(local69, local52, arg0, local16);
+				BZip2.method1265(local69, local52, arg0, local16);
 			} else {
 				try {
 					@Pc(85) DataInputStream local85 = new DataInputStream(new GZIPInputStream(new ByteArrayInputStream(arg0, 9, local16)));
@@ -48,22 +48,6 @@ public final class Static76 {
 			}
 			return local69;
 		}
-	}
-
-	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(II)Lclient!vc;", line = 107)
-	public static FloorUnderlayType method1360(@OriginalArg(1) int arg0) {
-		@Pc(6) FloorUnderlayType local6 = (FloorUnderlayType) Static1.aClass47_4.method1325((long) arg0);
-		if (local6 != null) {
-			return local6;
-		}
-		@Pc(25) byte[] local25 = Static40.aClass5_25.fetchFile(arg0, 1);
-		local6 = new FloorUnderlayType();
-		if (local25 != null) {
-			local6.method1640(new Packet(local25), arg0);
-		}
-		local6.method1641();
-		Static1.aClass47_4.method1332((long) arg0, local6);
-		return local6;
 	}
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(B)Lclient!vb;", line = 144)

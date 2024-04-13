@@ -7,7 +7,7 @@ public final class Static47 {
 	public static int anInt1173;
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(III)I", line = 61)
-	public static int method849(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
+	public static int mulHSL(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == -1) {
 			return 12345678;
 		}
@@ -22,7 +22,7 @@ public final class Static47 {
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(B)V", line = 87)
 	public static void method850() {
-		Static1.aClass47_17.method1330();
+		Static1.aClass47_17.clear();
 	}
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(I)V", line = 222)

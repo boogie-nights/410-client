@@ -17,7 +17,7 @@ public final class Static83 {
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(I)V", line = 4)
 	public static void method1466() {
 		aByteArrayArray10 = null;
-		Static1.anIntArrayArrayArray8 = null;
+		World.levelHeightmap = null;
 		JagString.aClass40_612 = null;
 		Static1.levelObjStacks = null;
 	}
@@ -95,42 +95,6 @@ public final class Static83 {
 		}
 		Static56.method1040(arg0);
 		Static88.method1553(arg0);
-	}
-
-	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(ZI)Lclient!v;", line = 158)
-	public static IdkType method1469(@OriginalArg(1) int arg0) {
-		@Pc(10) IdkType local10 = (IdkType) Static1.aClass47_22.method1325((long) arg0);
-		if (local10 != null) {
-			return local10;
-		}
-		@Pc(20) byte[] local20 = Static63.aClass5_5.fetchFile(arg0, 3);
-		local10 = new IdkType();
-		if (local20 != null) {
-			local10.method1587(new Packet(local20));
-		}
-		Static1.aClass47_22.method1332((long) arg0, local10);
-		return local10;
-	}
-
-	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(BI)Lclient!ia;", line = 208)
-	public static LocType method1470(@OriginalArg(1) int arg0) {
-		@Pc(10) LocType local10 = (LocType) Static1.aClass47_11.method1325((long) arg0);
-		if (local10 != null) {
-			return local10;
-		}
-		@Pc(25) byte[] local25 = Static67.aClass5_23.fetchFile(arg0, 6);
-		local10 = new LocType();
-		local10.anInt1033 = arg0;
-		if (local25 != null) {
-			local10.method767(new Packet(local25));
-		}
-		local10.method772();
-		if (local10.aBoolean83) {
-			local10.aBoolean77 = false;
-			local10.aBoolean79 = false;
-		}
-		Static1.aClass47_11.method1332((long) arg0, local10);
-		return local10;
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!ud;Lclient!ud;BLclient!ud;)V", line = 248)

@@ -12,7 +12,7 @@ public final class Static15 {
 	public static void method344() {
 		JagString.aClass40_109 = null;
 		JagString.aClass40_111 = null;
-		Static1.aByteArrayArray3 = null;
+		ByteArrayPool.minPool = null;
 		JagString.aClass40_110 = null;
 	}
 }

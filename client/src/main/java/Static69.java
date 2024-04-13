@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static69 {
 
-	@OriginalMember(owner = "client!od", name = "c", descriptor = "[[[B")
-	public static byte[][][] aByteArrayArrayArray9;
-
 	@OriginalMember(owner = "client!od", name = "z", descriptor = "I")
 	public static int anInt1832;
 
@@ -15,7 +12,7 @@ public final class Static69 {
 		JagString.aClass40_527 = null;
 		JagString.aClass40_528 = null;
 		JagString.aClass40_529 = null;
-		aByteArrayArrayArray9 = null;
+		World.levelTileOverlayIds = null;
 		Static1.aClass43Array1 = null;
 		JagString.aClass40_530 = null;
 	}
@@ -44,7 +41,7 @@ public final class Static69 {
 
 	@OriginalMember(owner = "client!od", name = "f", descriptor = "(I)V", line = 330)
 	public static void method1230() {
-		Static2.aClass45_2.method1476();
+		Static2.aClass45_2.bind();
 		Static96.anIntArray548 = Static6.method175(Static96.anIntArray548);
 	}
 }

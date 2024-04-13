@@ -188,7 +188,7 @@ public final class Static71 {
 	public static void method1278() {
 		anImage4 = null;
 		Static1.aClass40_544 = null;
-		Static1.aByteArrayArray9 = null;
+		ByteArrayPool.maxPool = null;
 		Static1.aClass20Array3 = null;
 		Static1.aClass40_545 = null;
 		Static1.aClass40_543 = null;

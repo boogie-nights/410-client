@@ -385,7 +385,7 @@ public final class ComType extends Hashable {
 		} else if (local16 == 1 && local19 == -1) {
 			return null;
 		} else {
-			@Pc(50) Model local50 = (Model) Static1.aClass47_20.method1325((long) ((local16 << 16) + local19));
+			@Pc(50) Model local50 = (Model) Static1.aClass47_20.get((long) ((local16 << 16) + local19));
 			if (local50 == null) {
 				if (local16 == 1) {
 					local50 = Static65.method1163(Static74.aClass5_26, local19);
@@ -427,7 +427,7 @@ public final class ComType extends Hashable {
 					local50.method1160();
 					local50.method1153(local137.anInt942 + 64, 768 - -local137.anInt940, -50, -10, -50, true);
 				}
-				Static1.aClass47_20.method1332((long) ((local16 << 16) + local19), local50);
+				Static1.aClass47_20.put((long) ((local16 << 16) + local19), local50);
 			}
 			if (arg0 != null) {
 				local50 = arg0.method516(arg3, local50);
@@ -448,7 +448,7 @@ public final class ComType extends Hashable {
 		if (local10 == -1) {
 			return null;
 		}
-		@Pc(29) Pix24 local29 = (Pix24) Static1.aClass47_8.method1325((long) local10);
+		@Pc(29) Pix24 local29 = (Pix24) Static1.aClass47_8.get((long) local10);
 		if (local29 != null) {
 			return local29;
 		}
@@ -456,7 +456,7 @@ public final class ComType extends Hashable {
 		if (local29 == null) {
 			Static1.aBoolean102 = true;
 		} else {
-			Static1.aClass47_8.method1332((long) local10, local29);
+			Static1.aClass47_8.put((long) local10, local29);
 		}
 		return local29;
 	}
@@ -471,7 +471,7 @@ public final class ComType extends Hashable {
 		if (local26 == -1) {
 			return null;
 		}
-		@Pc(38) Pix24 local38 = (Pix24) Static1.aClass47_8.method1325((long) local26);
+		@Pc(38) Pix24 local38 = (Pix24) Static1.aClass47_8.get((long) local26);
 		if (local38 != null) {
 			return local38;
 		}
@@ -479,7 +479,7 @@ public final class ComType extends Hashable {
 		if (local38 == null) {
 			Static1.aBoolean102 = true;
 		} else {
-			Static1.aClass47_8.method1332((long) local26, local38);
+			Static1.aClass47_8.put((long) local26, local38);
 		}
 		return local38;
 	}

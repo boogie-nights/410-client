@@ -19,9 +19,6 @@ public final class Static40 {
 	@OriginalMember(owner = "client!ib", name = "m", descriptor = "Z")
 	public static boolean aBoolean150;
 
-	@OriginalMember(owner = "client!ib", name = "n", descriptor = "Lclient!ud;")
-	public static Js5Index aClass5_25;
-
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(B)V", line = 3)
 	public static void method1239() {
 		Static1.anInt440 = 0;
@@ -154,7 +151,7 @@ public final class Static40 {
 
 	@OriginalMember(owner = "client!ib", name = "c", descriptor = "(B)V", line = 222)
 	public static void method1242() {
-		Static1.aClass47_12.method1330();
+		Static1.aClass47_12.clear();
 	}
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(Ljava/awt/event/KeyEvent;I)I", line = 234)
@@ -169,7 +166,7 @@ public final class Static40 {
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(Z)V", line = 254)
 	public static void method1245() {
 		aClass2_Sub2_Sub2_Sub4_7 = null;
-		aClass5_25 = null;
+		FloorUnderlayType.config = null;
 		animsJs5 = null;
 	}
 
@@ -359,7 +356,7 @@ public final class Static40 {
 
 	@OriginalMember(owner = "client!ib", name = "b", descriptor = "(I)V", line = 590)
 	public static void method1247() {
-		Static11.aClass45_6.method1476();
+		Static11.aClass45_6.bind();
 	}
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(IB)I", line = 602)

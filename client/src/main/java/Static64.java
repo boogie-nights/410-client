@@ -204,9 +204,9 @@ public final class Static64 {
 	@OriginalMember(owner = "client!nd", name = "a", descriptor = "(I[BII)Lclient!o;", line = 354)
 	public static JagString method1114(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) JagString local7 = new JagString();
-		local7.anInt1783 = arg0;
-		local7.aByteArray14 = new byte[arg0];
-		Static107.method993(arg1, arg2, local7.aByteArray14, 0, arg0);
+		local7.length = arg0;
+		local7.chars = new byte[arg0];
+		Static107.method993(arg1, arg2, local7.chars, 0, arg0);
 		return local7;
 	}
 

@@ -40,9 +40,9 @@ public final class Static90 {
 			@Pc(116) LocType local116;
 			if (arg0 == 0) {
 				Static85.scene.method1439(arg4, arg1, arg2);
-				local116 = Static83.method1470(local85);
-				if (local116.aBoolean77) {
-					Static1.aClass20Array3[arg4].method532(local102, local116.aBoolean79, arg2, local98, arg1);
+				local116 = LocType.get(local85);
+				if (local116.blockwalk) {
+					Static1.aClass20Array3[arg4].method532(local102, local116.blockrange, arg2, local98, arg1);
 				}
 			}
 			if (arg0 == 1) {
@@ -50,18 +50,18 @@ public final class Static90 {
 			}
 			if (arg0 == 2) {
 				Static85.scene.method1423(arg4, arg1, arg2);
-				local116 = Static83.method1470(local85);
+				local116 = LocType.get(local85);
 				if (arg1 + local116.anInt1036 > 103 || arg2 + local116.anInt1036 > 103 || arg1 + local116.anInt1040 > 103 || local116.anInt1040 + arg2 > 103) {
 					return;
 				}
-				if (local116.aBoolean77) {
-					Static1.aClass20Array3[arg4].method529(local116.anInt1036, local116.anInt1040, local98, local116.aBoolean79, arg1, arg2);
+				if (local116.blockwalk) {
+					Static1.aClass20Array3[arg4].method529(local116.anInt1036, local116.anInt1040, local98, local116.blockrange, arg1, arg2);
 				}
 			}
 			if (arg0 == 3) {
 				Static85.scene.method1413(arg4, arg1, arg2);
-				local116 = Static83.method1470(local85);
-				if (local116.aBoolean77 && local116.anInt1054 == 1) {
+				local116 = LocType.get(local85);
+				if (local116.blockwalk && local116.active == 1) {
 					Static1.aClass20Array3[arg4].method537(arg2, arg1);
 				}
 			}
@@ -70,10 +70,10 @@ public final class Static90 {
 			return;
 		}
 		local92 = arg4;
-		if (arg4 < 3 && (Static1.aByteArrayArrayArray7[1][arg1][arg2] & 0x2) == 2) {
+		if (arg4 < 3 && (World.levelTileFlags[1][arg1][arg2] & 0x2) == 2) {
 			local92 = arg4 + 1;
 		}
-		Static46.method845(local92, arg2, arg3, Static1.aClass20Array3[arg4], arg5, Static85.scene, arg6, arg4, arg1);
+		World.addLoc(local92, arg2, arg3, Static1.aClass20Array3[arg4], arg5, Static85.scene, arg6, arg4, arg1);
 	}
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(B)V", line = 117)
@@ -115,7 +115,7 @@ public final class Static90 {
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(BI)Lclient!ic;", line = 192)
 	public static VarpType method1568(@OriginalArg(1) int arg0) {
-		@Pc(10) VarpType local10 = (VarpType) Static1.aClass47_12.method1325((long) arg0);
+		@Pc(10) VarpType local10 = (VarpType) Static1.aClass47_12.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -124,7 +124,7 @@ public final class Static90 {
 		if (local20 != null) {
 			local10.method788(new Packet(local20));
 		}
-		Static1.aClass47_12.method1332((long) arg0, local10);
+		Static1.aClass47_12.put((long) arg0, local10);
 		return local10;
 	}
 

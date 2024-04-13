@@ -10,9 +10,6 @@ public final class Static24 {
 	@OriginalMember(owner = "client!f", name = "hb", descriptor = "Lclient!p;")
 	public static PixMap aClass45_12;
 
-	@OriginalMember(owner = "client!f", name = "kb", descriptor = "[I")
-	public static int[] anIntArray126;
-
 	@OriginalMember(owner = "client!f", name = "mb", descriptor = "Ljava/awt/FontMetrics;")
 	public static FontMetrics aFontMetrics1;
 
@@ -78,6 +75,6 @@ public final class Static24 {
 		aFontMetrics1 = null;
 		modelsJs5 = null;
 		JagString.aClass40_191 = null;
-		anIntArray126 = null;
+		World.blendSaturation = null;
 	}
 }

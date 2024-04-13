@@ -252,8 +252,8 @@ public class Packet extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!eb", name = "<init>", descriptor = "(I)V", line = 831)
-	public Packet(@OriginalArg(0) int arg0) {
-		this.data = Static42.method803(arg0);
+	public Packet(@OriginalArg(0) int size) {
+		this.data = ByteArrayPool.alloc(size);
 		this.pos = 0;
 	}
 

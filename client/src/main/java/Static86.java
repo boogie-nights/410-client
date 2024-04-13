@@ -147,7 +147,7 @@ public final class Static86 {
 			Static26.method533(Static1.anInt2175);
 		}
 		Static1.anInt1095 = 0;
-		Static27.aClass45_14.method1476();
+		Static27.aClass45_14.bind();
 		Static34.anIntArray162 = Static6.method175(Static34.anIntArray162);
 		Static25.method1610();
 		Static20.method403(0, -1, Static1.anInt1971, 0, 0, 503, 0, 765);
@@ -160,7 +160,7 @@ public final class Static86 {
 			Static19.method389();
 			Static5.method115();
 		}
-		Static27.aClass45_14.method1474(Static23.aGraphics1, 0, 0);
+		Static27.aClass45_14.draw(Static23.aGraphics1, 0, 0);
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(B)V", line = 256)

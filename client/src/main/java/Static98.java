@@ -11,7 +11,7 @@ public final class Static98 {
 	public static byte[] method1735(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Js5Index arg2, @OriginalArg(4) int arg3) {
 		@Pc(23) long local23 = (long) (arg3 << 16) + ((long) arg0 << 32) + (long) (arg1 + arg3 * 37 & 0xFFFF);
 		if (Static35.aClass47_9 != null) {
-			@Pc(31) MidiSongRequest local31 = (MidiSongRequest) Static35.aClass47_9.method1325(local23);
+			@Pc(31) MidiSongRequest local31 = (MidiSongRequest) Static35.aClass47_9.get(local23);
 			if (local31 != null) {
 				return local31.aByteArray3;
 			}
@@ -21,7 +21,7 @@ public final class Static98 {
 			return null;
 		} else {
 			if (Static35.aClass47_9 != null) {
-				Static35.aClass47_9.method1332(local23, new MidiSongRequest(local42));
+				Static35.aClass47_9.put(local23, new MidiSongRequest(local42));
 			}
 			return local42;
 		}

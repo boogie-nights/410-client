@@ -54,15 +54,15 @@ public final class Static53 {
 			}
 		}
 
-		Static1.aByteArrayArrayArray7[arg1][arg6][arg0] = 0;
+		World.levelTileFlags[arg1][arg6][arg0] = 0;
 		while (true) {
 			local30 = arg4.g1();
 			if (local30 == 0) {
 				if (arg1 == 0) {
-					Static1.anIntArrayArrayArray8[0][arg6][arg0] = -Static4.method84(arg0 + arg3 + 556238, arg5 + 932731 + arg6) * 8;
+					World.levelHeightmap[0][arg6][arg0] = -Static4.method84(arg0 + arg3 + 556238, arg5 + 932731 + arg6) * 8;
 					return;
 				} else {
-					Static1.anIntArrayArrayArray8[arg1][arg6][arg0] = Static1.anIntArrayArrayArray8[arg1 - 1][arg6][arg0] - 240;
+					World.levelHeightmap[arg1][arg6][arg0] = World.levelHeightmap[arg1 - 1][arg6][arg0] - 240;
 					return;
 				}
 			}
@@ -72,20 +72,20 @@ public final class Static53 {
 					local129 = 0;
 				}
 				if (arg1 == 0) {
-					Static1.anIntArrayArrayArray8[0][arg6][arg0] = -local129 * 8;
+					World.levelHeightmap[0][arg6][arg0] = -local129 * 8;
 					return;
 				}
-				Static1.anIntArrayArrayArray8[arg1][arg6][arg0] = Static1.anIntArrayArrayArray8[arg1 - 1][arg6][arg0] - local129 * 8;
+				World.levelHeightmap[arg1][arg6][arg0] = World.levelHeightmap[arg1 - 1][arg6][arg0] - local129 * 8;
 				return;
 			}
 			if (local30 <= 49) {
-				Static69.aByteArrayArrayArray9[arg1][arg6][arg0] = arg4.g1b();
-				Static14.aByteArrayArrayArray10[arg1][arg6][arg0] = (byte) ((local30 - 2) / 4);
-				Static68.aByteArrayArrayArray8[arg1][arg6][arg0] = (byte) (arg2 + local30 - 2 & 0x3);
+				World.levelTileOverlayIds[arg1][arg6][arg0] = arg4.g1b();
+				World.levelTileOverlayShape[arg1][arg6][arg0] = (byte) ((local30 - 2) / 4);
+				World.levelTileOverlayRotation[arg1][arg6][arg0] = (byte) (arg2 + local30 - 2 & 0x3);
 			} else if (local30 <= 81) {
-				Static1.aByteArrayArrayArray7[arg1][arg6][arg0] = (byte) (local30 - 49);
+				World.levelTileFlags[arg1][arg6][arg0] = (byte) (local30 - 49);
 			} else {
-				Static35.aByteArrayArrayArray4[arg1][arg6][arg0] = (byte) (local30 - 81);
+				World.levelTileUnderlayIds[arg1][arg6][arg0] = (byte) (local30 - 81);
 			}
 		}
 	}

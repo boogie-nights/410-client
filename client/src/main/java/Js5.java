@@ -110,7 +110,7 @@ public final class Js5 extends Js5Index {
 		this.anInt129 = -1;
 		for (@Pc(38) int local38 = 0; local38 < this.aBooleanArray1.length; local38++) {
 			if (super.anIntArray15[local38] > 0) {
-				Static46.method848(local38, this, this.aClass11_2);
+				Js5CacheQueue.method848(local38, this, this.aClass11_2);
 				this.anInt129 = local38;
 			}
 		}

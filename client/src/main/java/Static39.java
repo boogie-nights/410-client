@@ -13,15 +13,15 @@ public final class Static39 {
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(ILjava/awt/Graphics;)V", line = 135)
 	public static void method768(@OriginalArg(1) Graphics arg0) {
-		Static38.aClass45_20.method1474(arg0, 0, 4);
-		Static28.aClass45_15.method1474(arg0, 0, 357);
-		Static72.aClass45_28.method1474(arg0, 722, 4);
-		Static27.aClass45_13.method1474(arg0, 743, 205);
-		Static84.aClass45_29.method1474(arg0, 0, 0);
-		Static19.aClass45_10.method1474(arg0, 516, 4);
-		Static1.aClass45_1.method1474(arg0, 516, 205);
-		Static41.aClass45_21.method1474(arg0, 496, 357);
-		Static18.aClass45_9.method1474(arg0, 0, 338);
+		Static38.aClass45_20.draw(arg0, 0, 4);
+		Static28.aClass45_15.draw(arg0, 0, 357);
+		Static72.aClass45_28.draw(arg0, 722, 4);
+		Static27.aClass45_13.draw(arg0, 743, 205);
+		Static84.aClass45_29.draw(arg0, 0, 0);
+		Static19.aClass45_10.draw(arg0, 516, 4);
+		Static1.aClass45_1.draw(arg0, 516, 205);
+		Static41.aClass45_21.draw(arg0, 496, 357);
+		Static18.aClass45_9.draw(arg0, 0, 338);
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIII)Z", line = 220)
@@ -34,7 +34,7 @@ public final class Static39 {
 		@Pc(34) int local34 = local23 >> 6 & 0x3;
 		@Pc(38) int local38 = local23 & 0x1F;
 		if (local38 == 10 || local38 == 11 || local38 == 22) {
-			@Pc(53) LocType local53 = Static83.method1470(local16);
+			@Pc(53) LocType local53 = LocType.get(local16);
 			@Pc(66) int local66;
 			@Pc(63) int local63;
 			if (local34 == 0 || local34 == 2) {

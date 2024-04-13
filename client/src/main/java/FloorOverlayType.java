@@ -6,122 +6,149 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!ec")
 public final class FloorOverlayType extends Hashable {
 
+	@OriginalMember(owner = "client!eb", name = "P", descriptor = "Lclient!qc;")
+	public static LruCache cache = new LruCache(64);
+	@OriginalMember(owner = "client!fe", name = "b", descriptor = "Lclient!ud;")
+	public static Js5Index config;
 	@OriginalMember(owner = "client!ec", name = "S", descriptor = "I")
-	public int anInt578;
+	public int averageLightness;
 
 	@OriginalMember(owner = "client!ec", name = "cb", descriptor = "I")
-	public int anInt585;
+	public int saturation;
 
 	@OriginalMember(owner = "client!ec", name = "eb", descriptor = "I")
-	public int anInt586;
+	public int averageHue;
 
 	@OriginalMember(owner = "client!ec", name = "gb", descriptor = "I")
-	public int anInt588;
+	public int hue;
 
 	@OriginalMember(owner = "client!ec", name = "ob", descriptor = "I")
-	public int anInt591;
+	public int averageSaturation;
 
 	@OriginalMember(owner = "client!ec", name = "tb", descriptor = "I")
-	public int anInt594;
+	public int lightness;
 
 	@OriginalMember(owner = "client!ec", name = "Y", descriptor = "I")
-	public int anInt582 = -1;
+	public int texture = -1;
 
 	@OriginalMember(owner = "client!ec", name = "W", descriptor = "I")
-	public int anInt581 = 0;
+	public int rgb = 0;
 
 	@OriginalMember(owner = "client!ec", name = "sb", descriptor = "I")
-	public int anInt593 = -1;
+	public int averageColour = -1;
 
 	@OriginalMember(owner = "client!ec", name = "rb", descriptor = "Z")
-	public boolean aBoolean45 = true;
+	public boolean occlude = true;
 
-	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(BILclient!eb;I)V", line = 29)
-	private void method475(@OriginalArg(1) int arg0, @OriginalArg(2) Packet arg1, @OriginalArg(3) int arg2) {
-		if (arg0 == 1) {
-			this.anInt581 = arg1.g3();
-		} else if (arg0 == 2) {
-			this.anInt582 = arg1.g1();
-		} else if (arg0 == 5) {
-			this.aBoolean45 = false;
-		} else if (arg0 == 7) {
-			this.anInt593 = arg1.g3();
+    @OriginalMember(owner = "client!r", name = "a", descriptor = "(II)Lclient!ec;", line = 234)
+    public static FloorOverlayType get(@OriginalArg(0) int id) {
+        @Pc(10) FloorOverlayType local10 = (FloorOverlayType) cache.get((long) id);
+        if (local10 != null) {
+            return local10;
+        }
+        @Pc(28) byte[] buf = config.fetchFile(id, 4);
+        local10 = new FloorOverlayType();
+        if (buf != null) {
+            local10.decode(new Packet(buf), id);
+        }
+        local10.postDecode();
+        cache.put((long) id, local10);
+        return local10;
+    }
+
+    @OriginalMember(owner = "client!ec", name = "a", descriptor = "(BILclient!eb;I)V", line = 29)
+	private void decode(@OriginalArg(1) int code, @OriginalArg(2) Packet buf, @OriginalArg(3) int id) {
+		if (code == 1) {
+			this.rgb = buf.g3();
+		} else if (code == 2) {
+			this.texture = buf.g1();
+		} else if (code == 5) {
+			this.occlude = false;
+		} else if (code == 7) {
+			this.averageColour = buf.g3();
 		}
 	}
 
 	@OriginalMember(owner = "client!ec", name = "d", descriptor = "(B)V", line = 66)
-	public void method476() {
-		if (this.anInt593 != -1) {
-			this.method479(this.anInt593);
-			this.anInt591 = this.anInt585;
-			this.anInt578 = this.anInt594;
-			this.anInt586 = this.anInt588;
+	public void postDecode() {
+		if (this.averageColour != -1) {
+			this.setColor(this.averageColour);
+			this.averageSaturation = this.saturation;
+			this.averageLightness = this.lightness;
+			this.averageHue = this.hue;
 		}
-		this.method479(this.anInt581);
+		this.setColor(this.rgb);
 	}
 
 	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(Lclient!eb;BI)V", line = 212)
-	public void method478(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
+	public void decode(@OriginalArg(0) Packet buf, @OriginalArg(2) int id) {
 		while (true) {
-			@Pc(14) int local14 = arg0.g1();
-			if (local14 == 0) {
+			@Pc(14) int code = buf.g1();
+			if (code == 0) {
 				return;
 			}
-			this.method475(local14, arg0, arg1);
+			this.decode(code, buf, id);
 		}
 	}
 
 	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(BI)V", line = 234)
-	private void method479(@OriginalArg(1) int arg0) {
-		@Pc(10) double local10 = (double) (arg0 >> 8 & 0xFF) / 256.0D;
-		@Pc(31) double local31 = (double) (arg0 >> 16 & 0xFF) / 256.0D;
-		@Pc(38) double local38 = (double) (arg0 & 0xFF) / 256.0D;
-		@Pc(40) double local40 = local31;
-		if (local10 < local31) {
-			local40 = local10;
+	private void setColor(@OriginalArg(1) int rgb) {
+		@Pc(31) double red = (double) (rgb >> 16 & 0xFF) / 256.0D;
+		@Pc(10) double green = (double) (rgb >> 8 & 0xFF) / 256.0D;
+		@Pc(38) double blue = (double) (rgb & 0xFF) / 256.0D;
+
+		@Pc(40) double min = red;
+		if (green < red) {
+			min = green;
 		}
-		if (local40 > local38) {
-			local40 = local38;
+		if (min > blue) {
+			min = blue;
 		}
-		@Pc(54) double local54 = 0.0D;
-		@Pc(56) double local56 = local31;
-		if (local31 < local10) {
-			local56 = local10;
+
+		@Pc(56) double max = red;
+		if (red < green) {
+			max = green;
 		}
-		if (local56 < local38) {
-			local56 = local38;
+		if (max < blue) {
+			max = blue;
 		}
-		@Pc(70) double local70 = 0.0D;
-		@Pc(76) double local76 = (local56 + local40) / 2.0D;
-		this.anInt594 = (int) (local76 * 256.0D);
-		if (this.anInt594 < 0) {
-			this.anInt594 = 0;
-		} else if (this.anInt594 > 255) {
-			this.anInt594 = 255;
-		}
-		if (local40 != local56) {
-			if (local76 < 0.5D) {
-				local70 = (local56 - local40) / (local56 + local40);
+
+		@Pc(54) double h = 0.0D;
+		@Pc(70) double s = 0.0D;
+		@Pc(76) double l = (max + min) / 2.0D;
+		if (min != max) {
+			if (l < 0.5D) {
+				s = (max - min) / (max + min);
 			}
-			if (local76 >= 0.5D) {
-				local70 = (local56 - local40) / (2.0D - local56 - local40);
+			if (l >= 0.5D) {
+				s = (max - min) / (2.0D - max - min);
 			}
-			if (local31 == local56) {
-				local54 = (local10 - local38) / (local56 - local40);
-			} else if (local56 == local10) {
-				local54 = (local38 - local31) / (local56 - local40) + 2.0D;
-			} else if (local56 == local38) {
-				local54 = (local31 - local10) / (local56 - local40) + 4.0D;
+
+			if (red == max) {
+				h = (green - blue) / (max - min);
+			} else if (max == green) {
+				h = (blue - red) / (max - min) + 2.0D;
+			} else if (max == blue) {
+				h = (red - green) / (max - min) + 4.0D;
 			}
 		}
-		local54 /= 6.0D;
-		this.anInt585 = (int) (local70 * 256.0D);
-		this.anInt588 = (int) (local54 * 256.0D);
-		if (this.anInt585 < 0) {
-			this.anInt585 = 0;
-		} else if (this.anInt585 > 255) {
-			this.anInt585 = 255;
-			return;
+
+		h /= 6.0D;
+
+		this.hue = (int) (h * 256.0D);
+		this.saturation = (int) (s * 256.0D);
+		this.lightness = (int) (l * 256.0D);
+
+		if (this.saturation < 0) {
+			this.saturation = 0;
+		} else if (this.saturation > 255) {
+			this.saturation = 255;
+		}
+
+		if (this.lightness < 0) {
+			this.lightness = 0;
+		} else if (this.lightness > 255) {
+			this.lightness = 255;
 		}
 	}
 }

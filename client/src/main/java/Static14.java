@@ -23,9 +23,6 @@ public final class Static14 {
 	@OriginalMember(owner = "client!cd", name = "G", descriptor = "I")
 	public static int anInt1863;
 
-	@OriginalMember(owner = "client!cd", name = "M", descriptor = "[[[B")
-	public static byte[][][] aByteArrayArrayArray10;
-
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(BJ)V", line = 49)
 	public static void method1254(@OriginalArg(1) long arg0) {
 		if (arg0 == 0L) {
@@ -35,7 +32,7 @@ public final class Static14 {
 			Static53.method989(0, JagString.aClass40_445, JagString.aClass40_432);
 			return;
 		}
-		@Pc(27) JagString local27 = Static44.method819(arg0).method1167();
+		@Pc(27) JagString local27 = Static44.fromBase37(arg0).method1167();
 		for (@Pc(29) int local29 = 0; local29 < Static1.anInt121; local29++) {
 			if (arg0 == Static1.aLongArray4[local29]) {
 				Static53.method989(0, JagString.aClass40_445, Static72.method1334(new JagString[] { local27, JagString.aClass40_506 }));
@@ -65,7 +62,7 @@ public final class Static14 {
 			if ((local31 & 0x4) != 0) {
 				local31 += client.in.g1() << 8;
 			}
-			Static46.method846(local21, local25, local31);
+			client.method846(local21, local25, local31);
 		}
 	}
 
@@ -144,23 +141,23 @@ public final class Static14 {
 		Static25.method1610();
 		@Pc(77) byte[] local77 = arg2.method69(JagString.aClass40_463, JagString.aClass40_593);
 		@Pc(83) Pix24 local83 = new Pix24(local77, arg1);
-		Static56.aClass45_24.method1476();
+		Static56.aClass45_24.bind();
 		local83.method1619(0, 0);
-		Static90.aClass45_30.method1476();
+		Static90.aClass45_30.bind();
 		local83.method1619(-637, 0);
-		Static56.aClass45_22.method1476();
+		Static56.aClass45_22.bind();
 		local83.method1619(-128, 0);
-		Static33.aClass45_16.method1476();
+		Static33.aClass45_16.bind();
 		local83.method1619(-202, -371);
-		Static99.aClass45_31.method1476();
+		Static99.aClass45_31.bind();
 		local83.method1619(-202, -171);
-		Static20.aClass45_11.method1476();
+		Static20.aClass45_11.bind();
 		local83.method1619(0, -265);
-		Static72.aClass45_27.method1476();
+		Static72.aClass45_27.bind();
 		local83.method1619(-562, -265);
-		Static62.aClass45_26.method1476();
+		Static62.aClass45_26.bind();
 		local83.method1619(-128, -171);
-		Static2.aClass45_3.method1476();
+		Static2.aClass45_3.bind();
 		local83.method1619(-562, -171);
 		@Pc(150) int[] local150 = new int[local83.anInt2446];
 		@Pc(156) int local156;
@@ -173,26 +170,26 @@ public final class Static14 {
 				local83.anIntArray534[local152 * local83.anInt2446 + local187] = local150[local187];
 			}
 		}
-		Static56.aClass45_24.method1476();
+		Static56.aClass45_24.bind();
 		local83.method1619(382, 0);
-		Static90.aClass45_30.method1476();
+		Static90.aClass45_30.bind();
 		local83.method1619(-255, 0);
-		Static56.aClass45_22.method1476();
+		Static56.aClass45_22.bind();
 		local83.method1619(254, 0);
-		Static33.aClass45_16.method1476();
+		Static33.aClass45_16.bind();
 		local83.method1619(180, -371);
-		Static99.aClass45_31.method1476();
+		Static99.aClass45_31.bind();
 		local83.method1619(180, -171);
-		Static20.aClass45_11.method1476();
+		Static20.aClass45_11.bind();
 		local83.method1619(382, -265);
-		Static72.aClass45_27.method1476();
+		Static72.aClass45_27.bind();
 		local83.method1619(-180, -265);
-		Static62.aClass45_26.method1476();
+		Static62.aClass45_26.bind();
 		local83.method1619(254, -171);
-		Static2.aClass45_3.method1476();
+		Static2.aClass45_3.bind();
 		local83.method1619(-180, -171);
 		local83 = Static95.method1644(JagString.aClass40_521, JagString.aClass40_593, arg0);
-		Static56.aClass45_22.method1476();
+		Static56.aClass45_22.bind();
 		local83.method1624(382 - local83.anInt2446 / 2 - 128, 18);
 		Static89.aClass2_Sub2_Sub2_Sub3_21 = Static91.method77(arg0, JagString.aClass40_593, JagString.aClass40_16);
 		Static30.aClass2_Sub2_Sub2_Sub3_8 = Static91.method77(arg0, JagString.aClass40_593, JagString.aClass40_661);
@@ -200,10 +197,10 @@ public final class Static14 {
 		Static10.aClass2_Sub2_Sub2_Sub4_1 = new Pix24(128, 265);
 		Static88.aClass2_Sub2_Sub2_Sub4_9 = new Pix24(128, 265);
 		for (local156 = 0; local156 < 33920; local156++) {
-			Static10.aClass2_Sub2_Sub2_Sub4_1.anIntArray534[local156] = Static56.aClass45_24.anIntArray471[local156];
+			Static10.aClass2_Sub2_Sub2_Sub4_1.anIntArray534[local156] = Static56.aClass45_24.pixels[local156];
 		}
 		for (local187 = 0; local187 < 33920; local187++) {
-			Static88.aClass2_Sub2_Sub2_Sub4_9.anIntArray534[local187] = Static90.aClass45_30.anIntArray471[local187];
+			Static88.aClass2_Sub2_Sub2_Sub4_9.anIntArray534[local187] = Static90.aClass45_30.pixels[local187];
 		}
 		Static35.anIntArray182 = new int[256];
 		for (@Pc(366) int local366 = 0; local366 < 64; local366++) {
@@ -266,7 +263,7 @@ public final class Static14 {
 	@OriginalMember(owner = "client!cd", name = "h", descriptor = "(I)V", line = 604)
 	public static void method1264() {
 		JagString.aClass40_536 = null;
-		aByteArrayArrayArray10 = null;
+		World.levelTileOverlayShape = null;
 		aClass2_Sub2_Sub2_Sub3_17 = null;
 		JagString.aClass40_540 = null;
 		aClass2_Sub2_Sub2_Sub3_18 = null;

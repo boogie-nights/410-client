@@ -146,7 +146,7 @@ public final class CollisionMap {
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(ZZIIII)V", line = 191)
-	public void method528(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+	public void addWall(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		@Pc(4) int local4 = arg2 - this.anInt682;
 		@Pc(13) int local13 = arg3 - this.anInt674;
 		if (arg4 == 0) {

@@ -1,3 +1,4 @@
+import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -5,7 +6,21 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!s")
 public final class Js5CacheQueue implements Runnable {
 
-	@OriginalMember(owner = "client!s", name = "run", descriptor = "()V", line = 60)
+    @OriginalMember(owner = "client!k", name = "a", descriptor = "(IBLclient!ad;Lclient!cb;)V", line = 621)
+    public static void method848(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) Cache arg2) {
+        @Pc(7) Js5CacheRequest local7 = new Js5CacheRequest();
+        local7.type = 1;
+        local7.js5 = arg1;
+        local7.cache = arg2;
+        local7.key = arg0;
+        @Pc(22) LinkList local22 = Static1.aClass44_2;
+        synchronized (Static1.aClass44_2) {
+            Static1.aClass44_2.addTail(local7);
+        }
+        Static53.method992();
+    }
+
+    @OriginalMember(owner = "client!s", name = "run", descriptor = "()V", line = 60)
 	@Override
 	public void run() {
 		try {

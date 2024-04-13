@@ -107,7 +107,7 @@ public final class Static56 {
 		JagString.aClass40_452 = null;
 		JagString.aClass40_451 = null;
 		JagString.aClass40_445 = null;
-		Static1.aByteArrayArrayArray7 = null;
+		World.levelTileFlags = null;
 		JagString.aClass40_447 = null;
 		JagString.aClass40_448 = null;
 		Static1.aClass47_14 = null;

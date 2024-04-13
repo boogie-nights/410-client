@@ -59,7 +59,7 @@ public final class LocEntity extends Entity {
 			}
 			this.seqCycle = Static1.anInt2511 - local13;
 		}
-		@Pc(104) LocType local104 = Static83.method1470(this.anInt2034);
+		@Pc(104) LocType local104 = LocType.get(this.anInt2034);
 		if (local104.anIntArray210 != null) {
 			local104 = local104.method766();
 		}

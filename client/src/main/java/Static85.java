@@ -28,14 +28,14 @@ public final class Static85 {
 
 	@OriginalMember(owner = "client!tc", name = "b", descriptor = "(I)V", line = 44)
 	public static void method1486() {
-		Static56.aClass45_23.method1476();
+		Static56.aClass45_23.bind();
 		Static48.aClass2_Sub2_Sub2_Sub3_13.method1320(0, 0);
 		Static76.anIntArray431 = Static6.method175(Static76.anIntArray431);
 	}
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(I[IIZILjava/awt/Graphics;)V", line = 76)
 	public static void method1487(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(5) Graphics arg4) {
-		Static24.aClass45_12.method1476();
+		Static24.aClass45_12.bind();
 		Static94.aClass2_Sub2_Sub2_Sub3_23.method1320(0, 0);
 		if (arg3) {
 			if (arg1[arg0] != -1) {
@@ -83,8 +83,8 @@ public final class Static85 {
 				Static73.aClass2_Sub2_Sub2_Sub3Array10[6].method1320(208, 13);
 			}
 		}
-		Static24.aClass45_12.method1474(arg4, 516, 160);
-		Static63.aClass45_8.method1476();
+		Static24.aClass45_12.draw(arg4, 516, 160);
+		Static63.aClass45_8.bind();
 		Static14.aClass2_Sub2_Sub2_Sub3_18.method1320(0, 0);
 		if (arg3) {
 			if (arg1[arg0] != -1) {
@@ -129,7 +129,7 @@ public final class Static85 {
 				Static73.aClass2_Sub2_Sub2_Sub3Array10[12].method1320(226, 2);
 			}
 		}
-		Static63.aClass45_8.method1474(arg4, 496, 466);
+		Static63.aClass45_8.draw(arg4, 496, 466);
 	}
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(Z)V", line = 202)

@@ -37,10 +37,10 @@ public final class LocType extends Hashable {
 	private boolean aBoolean80 = false;
 
 	@OriginalMember(owner = "client!ia", name = "fb", descriptor = "Z")
-	public boolean aBoolean79 = true;
+	public boolean blockrange = true;
 
 	@OriginalMember(owner = "client!ia", name = "W", descriptor = "Z")
-	public boolean aBoolean77 = true;
+	public boolean blockwalk = true;
 
 	@OriginalMember(owner = "client!ia", name = "nb", descriptor = "I")
 	private int anInt1042 = 128;
@@ -61,7 +61,7 @@ public final class LocType extends Hashable {
 	private int anInt1032 = -1;
 
 	@OriginalMember(owner = "client!ia", name = "Bb", descriptor = "Z")
-	public boolean aBoolean82 = true;
+	public boolean shadow = true;
 
 	@OriginalMember(owner = "client!ia", name = "tb", descriptor = "I")
 	private int anInt1044 = -1;
@@ -76,7 +76,7 @@ public final class LocType extends Hashable {
 	private int anInt1043 = 0;
 
 	@OriginalMember(owner = "client!ia", name = "Ib", descriptor = "I")
-	public int anInt1054 = -1;
+	public int active = -1;
 
 	@OriginalMember(owner = "client!ia", name = "kb", descriptor = "I")
 	public int anInt1040 = 1;
@@ -91,13 +91,13 @@ public final class LocType extends Hashable {
 	public int anInt1057 = 0;
 
 	@OriginalMember(owner = "client!ia", name = "Db", descriptor = "I")
-	public int anInt1050 = 16;
+	public int wallwidth = 16;
 
 	@OriginalMember(owner = "client!ia", name = "Kb", descriptor = "I")
 	private int anInt1056 = 0;
 
 	@OriginalMember(owner = "client!ia", name = "ob", descriptor = "Z")
-	public boolean aBoolean81 = false;
+	public boolean occlude = false;
 
 	@OriginalMember(owner = "client!ia", name = "Nb", descriptor = "I")
 	private int anInt1058 = 128;
@@ -117,6 +117,27 @@ public final class LocType extends Hashable {
 	@OriginalMember(owner = "client!ia", name = "Wb", descriptor = "I")
 	private int anInt1061 = 0;
 
+	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(BI)Lclient!ia;", line = 208)
+	public static LocType get(@OriginalArg(1) int arg0) {
+		@Pc(10) LocType local10 = (LocType) Static1.aClass47_11.get((long) arg0);
+		if (local10 != null) {
+			return local10;
+		}
+		@Pc(25) byte[] local25 = Static67.aClass5_23.fetchFile(arg0, 6);
+		local10 = new LocType();
+		local10.anInt1033 = arg0;
+		if (local25 != null) {
+			local10.method767(new Packet(local25));
+		}
+		local10.method772();
+		if (local10.aBoolean83) {
+			local10.blockwalk = false;
+			local10.blockrange = false;
+		}
+		Static1.aClass47_11.put((long) arg0, local10);
+		return local10;
+	}
+
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIIIIII)Lclient!ne;", line = 15)
 	public Model method765(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5) {
 		@Pc(17) long local17;
@@ -125,13 +146,13 @@ public final class LocType extends Hashable {
 		} else {
 			local17 = (this.anInt1033 << 10) + (arg4 << 3) + arg0;
 		}
-		@Pc(38) Model local38 = (Model) Static1.aClass47_10.method1325(local17);
+		@Pc(38) Model local38 = (Model) Static1.aClass47_10.get(local17);
 		if (local38 == null) {
 			local38 = this.method771(!this.aBoolean80, arg4, false, arg0);
 			if (local38 == null) {
 				return null;
 			}
-			Static1.aClass47_10.method1332(local17, local38);
+			Static1.aClass47_10.put(local17, local38);
 		}
 		if (this.aBoolean84 || this.aBoolean80) {
 			local38 = new Model(local38, this.aBoolean84, this.aBoolean80);
@@ -158,7 +179,7 @@ public final class LocType extends Hashable {
 		} else if (this.anInt1044 != -1) {
 			local10 = Static1.anIntArray339[this.anInt1044];
 		}
-		return local10 < 0 || local10 >= this.anIntArray210.length || this.anIntArray210[local10] == -1 ? null : Static83.method1470(this.anIntArray210[local10]);
+		return local10 < 0 || local10 >= this.anIntArray210.length || this.anIntArray210[local10] == -1 ? null : get(this.anIntArray210[local10]);
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(BLclient!eb;)V", line = 110)
@@ -215,7 +236,7 @@ public final class LocType extends Hashable {
 				if (local124) {
 					local136 += 65536;
 				}
-				local9 = (Model) Static1.aClass47_21.method1325((long) local136);
+				local9 = (Model) Static1.aClass47_21.get((long) local136);
 				if (local9 == null) {
 					local9 = Static65.method1163(Static22.aClass5_8, local136 & 0xFFFF);
 					if (local9 == null) {
@@ -224,7 +245,7 @@ public final class LocType extends Hashable {
 					if (local124) {
 						local9.method1136();
 					}
-					Static1.aClass47_21.method1332((long) local136, local9);
+					Static1.aClass47_21.put((long) local136, local9);
 				}
 				if (local20 > 1) {
 					Static1.aClass2_Sub2_Sub12_Sub4Array1[local53] = local9;
@@ -249,7 +270,7 @@ public final class LocType extends Hashable {
 			if (local65) {
 				local53 += 65536;
 			}
-			local9 = (Model) Static1.aClass47_21.method1325((long) local53);
+			local9 = (Model) Static1.aClass47_21.get((long) local53);
 			if (local9 == null) {
 				local9 = Static65.method1163(Static22.aClass5_8, local53 & 0xFFFF);
 				if (local9 == null) {
@@ -258,7 +279,7 @@ public final class LocType extends Hashable {
 				if (local65) {
 					local9.method1136();
 				}
-				Static1.aClass47_21.method1332((long) local53, local9);
+				Static1.aClass47_21.put((long) local53, local9);
 			}
 		}
 		if (this.anInt1042 == 128 && this.anInt1058 == 128 && this.anInt1051 == 128) {
@@ -301,19 +322,19 @@ public final class LocType extends Hashable {
 
 	@OriginalMember(owner = "client!ia", name = "f", descriptor = "(I)V", line = 460)
 	public void method772() {
-		if (this.anInt1054 == -1) {
-			this.anInt1054 = 0;
+		if (this.active == -1) {
+			this.active = 0;
 			if (this.anIntArray213 != null && (this.anIntArray211 == null || this.anIntArray211[0] == 10)) {
-				this.anInt1054 = 1;
+				this.active = 1;
 			}
 			for (@Pc(27) int local27 = 0; local27 < 5; local27++) {
 				if (this.aClass40Array20[local27] != null) {
-					this.anInt1054 = 1;
+					this.active = 1;
 				}
 			}
 		}
 		if (this.anInt1030 == -1) {
-			this.anInt1030 = this.aBoolean77 ? 1 : 0;
+			this.anInt1030 = this.blockwalk ? 1 : 0;
 		}
 	}
 
@@ -374,13 +395,13 @@ public final class LocType extends Hashable {
 				this.anInt1040 = arg1.g1();
 				return;
 			} else if (arg0 == 17) {
-				this.aBoolean77 = false;
+				this.blockwalk = false;
 				return;
 			} else if (arg0 == 18) {
-				this.aBoolean79 = false;
+				this.blockrange = false;
 				return;
 			} else if (arg0 == 19) {
-				this.anInt1054 = arg1.g1();
+				this.active = arg1.g1();
 				return;
 			} else if (arg0 == 21) {
 				this.aBoolean84 = true;
@@ -389,7 +410,7 @@ public final class LocType extends Hashable {
 				if (arg0 == 22) {
 					this.aBoolean80 = true;
 				} else if (arg0 == 23) {
-					this.aBoolean81 = true;
+					this.occlude = true;
 					return;
 				} else if (arg0 == 24) {
 					this.anInt1048 = arg1.g2();
@@ -398,7 +419,7 @@ public final class LocType extends Hashable {
 						return;
 					}
 				} else if (arg0 == 28) {
-					this.anInt1050 = arg1.g1();
+					this.wallwidth = arg1.g1();
 					return;
 				} else if (arg0 == 29) {
 					this.anInt1061 = arg1.g1b();
@@ -429,7 +450,7 @@ public final class LocType extends Hashable {
 						this.aBoolean78 = true;
 						return;
 					} else if (arg0 == 64) {
-						this.aBoolean82 = false;
+						this.shadow = false;
 					} else if (arg0 == 65) {
 						this.anInt1042 = arg1.g2();
 						return;
@@ -500,13 +521,13 @@ public final class LocType extends Hashable {
 		} else {
 			local21 = (this.anInt1033 << 10) + (arg4 << 3) + arg0;
 		}
-		@Pc(43) Model local43 = (Model) Static1.aClass47_1.method1325(local21);
+		@Pc(43) Model local43 = (Model) Static1.aClass47_1.get(local21);
 		if (local43 == null) {
 			local43 = this.method771(true, arg4, true, arg0);
 			if (local43 == null) {
 				return null;
 			}
-			Static1.aClass47_1.method1332(local21, local43);
+			Static1.aClass47_1.put(local21, local43);
 		}
 		if (arg3 == null && !this.aBoolean84) {
 			return local43;

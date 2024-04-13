@@ -129,7 +129,7 @@ public final class PlayerEntity extends PathingEntity {
 		if (super.anInt2273 == 65535) {
 			super.anInt2273 = -1;
 		}
-		this.aClass40_395 = Static44.method819(buf.g8()).method1167();
+		this.aClass40_395 = Static44.fromBase37(buf.g8()).method1167();
 		this.anInt1378 = buf.g1();
 		this.anInt1373 = buf.g2();
 		if (this.aClass33_2 == null) {

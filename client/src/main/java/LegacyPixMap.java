@@ -15,49 +15,49 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class LegacyPixMap extends PixMap implements ImageProducer, ImageObserver {
 
 	@OriginalMember(owner = "client!tb", name = "B", descriptor = "Ljava/awt/image/ColorModel;")
-	private ColorModel aColorModel1;
+	private ColorModel colorModel;
 
 	@OriginalMember(owner = "client!tb", name = "M", descriptor = "Ljava/awt/image/ImageConsumer;")
-	private ImageConsumer anImageConsumer1;
+	private ImageConsumer consumer;
 
 	@OriginalMember(owner = "client!tb", name = "isConsumer", descriptor = "(Ljava/awt/image/ImageConsumer;)Z", line = 589)
 	@Override
 	public synchronized boolean isConsumer(@OriginalArg(0) ImageConsumer arg0) {
-		return arg0 == this.anImageConsumer1;
+		return arg0 == this.consumer;
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(IILjava/awt/Component;I)V", line = 602)
 	@Override
-	public void method1473(@OriginalArg(0) int arg0, @OriginalArg(2) Component arg1, @OriginalArg(3) int arg2) {
-		super.anInt2152 = arg2;
-		super.anIntArray471 = new int[arg0 * arg2 + 1];
-		super.anInt2148 = arg0;
-		this.aColorModel1 = new DirectColorModel(32, 16711680, 65280, 255);
-		super.anImage5 = arg1.createImage(this);
-		this.method1481();
-		arg1.prepareImage(super.anImage5, this);
-		this.method1481();
-		arg1.prepareImage(super.anImage5, this);
-		this.method1481();
-		arg1.prepareImage(super.anImage5, this);
-		this.method1476();
+	public void create(@OriginalArg(0) int width, @OriginalArg(2) Component c, @OriginalArg(3) int height) {
+		super.height = height;
+		super.pixels = new int[width * height + 1];
+		super.width = width;
+		this.colorModel = new DirectColorModel(32, 16711680, 65280, 255);
+		super.image = c.createImage(this);
+		this.setPixels();
+		c.prepareImage(super.image, this);
+		this.setPixels();
+		c.prepareImage(super.image, this);
+		this.setPixels();
+		c.prepareImage(super.image, this);
+		this.bind();
 	}
 
 	@OriginalMember(owner = "client!tb", name = "addConsumer", descriptor = "(Ljava/awt/image/ImageConsumer;)V", line = 633)
 	@Override
 	public synchronized void addConsumer(@OriginalArg(0) ImageConsumer arg0) {
-		this.anImageConsumer1 = arg0;
-		arg0.setDimensions(super.anInt2148, super.anInt2152);
+		this.consumer = arg0;
+		arg0.setDimensions(super.width, super.height);
 		arg0.setProperties(null);
-		arg0.setColorModel(this.aColorModel1);
+		arg0.setColorModel(this.colorModel);
 		arg0.setHints(14);
 	}
 
 	@OriginalMember(owner = "client!tb", name = "d", descriptor = "(I)V", line = 659)
-	private synchronized void method1481() {
-		if (this.anImageConsumer1 != null) {
-			this.anImageConsumer1.setPixels(0, 0, super.anInt2148, super.anInt2152, this.aColorModel1, super.anIntArray471, 0, super.anInt2148);
-			this.anImageConsumer1.imageComplete(2);
+	private synchronized void setPixels() {
+		if (this.consumer != null) {
+			this.consumer.setPixels(0, 0, super.width, super.height, this.colorModel, super.pixels, 0, super.width);
+			this.consumer.imageComplete(2);
 		}
 	}
 
@@ -68,16 +68,16 @@ public final class LegacyPixMap extends PixMap implements ImageProducer, ImageOb
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(ILjava/awt/Graphics;II)V", line = 691)
 	@Override
-	public void method1474(@OriginalArg(1) Graphics arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		this.method1481();
-		arg0.drawImage(super.anImage5, arg1, arg2, this);
+	public void draw(@OriginalArg(1) Graphics g, @OriginalArg(2) int x, @OriginalArg(3) int y) {
+		this.setPixels();
+		g.drawImage(super.image, x, y, this);
 	}
 
 	@OriginalMember(owner = "client!tb", name = "removeConsumer", descriptor = "(Ljava/awt/image/ImageConsumer;)V", line = 711)
 	@Override
 	public synchronized void removeConsumer(@OriginalArg(0) ImageConsumer arg0) {
-		if (this.anImageConsumer1 == arg0) {
-			this.anImageConsumer1 = null;
+		if (this.consumer == arg0) {
+			this.consumer = null;
 		}
 	}
 

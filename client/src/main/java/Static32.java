@@ -10,7 +10,7 @@ public final class Static32 {
 
 	@OriginalMember(owner = "client!gd", name = "a", descriptor = "(BI)Lclient!ae;", line = 29)
 	public static VarBitType method621(@OriginalArg(1) int arg0) {
-		@Pc(10) VarBitType local10 = (VarBitType) Static1.aClass47_5.method1325((long) arg0);
+		@Pc(10) VarBitType local10 = (VarBitType) Static1.aClass47_5.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -19,7 +19,7 @@ public final class Static32 {
 		if (local20 != null) {
 			local10.method121(new Packet(local20));
 		}
-		Static1.aClass47_5.method1332((long) arg0, local10);
+		Static1.aClass47_5.put((long) arg0, local10);
 		return local10;
 	}
 
@@ -38,8 +38,8 @@ public final class Static32 {
 	@OriginalMember(owner = "client!gd", name = "a", descriptor = "(Lclient!o;ILclient!eb;)I", line = 80)
 	public static int method624(@OriginalArg(0) JagString arg0, @OriginalArg(2) Packet arg1) {
 		@Pc(11) int local11 = arg1.pos;
-		arg1.pSmart1or2(arg0.anInt1783);
-		arg1.pos += Static89.aClass42_1.method1213(arg0.aByteArray14, arg0.anInt1783, arg1.data, 0, arg1.pos);
+		arg1.pSmart1or2(arg0.length);
+		arg1.pos += Static89.aClass42_1.method1213(arg0.chars, arg0.length, arg1.data, 0, arg1.pos);
 		return arg1.pos - local11;
 	}
 

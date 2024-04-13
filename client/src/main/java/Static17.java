@@ -60,10 +60,10 @@ public final class Static17 {
 			for (local213 = local67 - 4; local213 <= local67 + 4; local213++) {
 				for (@Pc(219) int local219 = local119 - 4; local219 <= local119 + 4; local219++) {
 					@Pc(223) int local223 = Static1.currentLevel;
-					if (local223 < 3 && (Static1.aByteArrayArrayArray7[1][local213][local219] & 0x2) == 2) {
+					if (local223 < 3 && (World.levelTileFlags[1][local213][local219] & 0x2) == 2) {
 						local223++;
 					}
-					@Pc(249) int local249 = local197 - Static1.anIntArrayArrayArray8[local223][local213][local219];
+					@Pc(249) int local249 = local197 - World.levelHeightmap[local223][local213][local219];
 					if (local184 < local249) {
 						local184 = local249;
 					}
@@ -231,12 +231,12 @@ public final class Static17 {
 	public static JagString method360(@OriginalArg(1) Packet arg0) {
 		try {
 			@Pc(12) JagString local12 = new JagString();
-			local12.anInt1783 = arg0.gSmart1or2();
-			if (local12.anInt1783 > 32767) {
-				local12.anInt1783 = 32767;
+			local12.length = arg0.gSmart1or2();
+			if (local12.length > 32767) {
+				local12.length = 32767;
 			}
-			local12.aByteArray14 = new byte[local12.anInt1783];
-			arg0.pos += Static89.aClass42_1.method1212(0, local12.anInt1783, arg0.pos, arg0.data, local12.aByteArray14);
+			local12.chars = new byte[local12.length];
+			arg0.pos += Static89.aClass42_1.method1212(0, local12.length, arg0.pos, arg0.data, local12.chars);
 			return local12;
 		} catch (@Pc(53) Exception local53) {
 			return JagString.aClass40_574;
@@ -246,6 +246,6 @@ public final class Static17 {
 	@OriginalMember(owner = "client!db", name = "a", descriptor = "(I)I", line = 383)
 	public static int method361() {
 		@Pc(5) int local5 = Static78.method1383(Static1.currentLevel, Static44.anInt1114, Static14.anInt1863);
-		return local5 - Static73.anInt1935 >= 800 || (Static1.aByteArrayArrayArray7[Static1.currentLevel][Static44.anInt1114 >> 7][Static14.anInt1863 >> 7] & 0x4) == 0 ? 3 : Static1.currentLevel;
+		return local5 - Static73.anInt1935 >= 800 || (World.levelTileFlags[Static1.currentLevel][Static44.anInt1114 >> 7][Static14.anInt1863 >> 7] & 0x4) == 0 ? 3 : Static1.currentLevel;
 	}
 }

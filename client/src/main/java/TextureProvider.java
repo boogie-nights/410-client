@@ -12,7 +12,7 @@ public interface TextureProvider {
 	boolean method395(@OriginalArg(1) int arg0);
 
 	@OriginalMember(owner = "client!ld", name = "a", descriptor = "(ZI)I")
-	int method396(@OriginalArg(1) int arg0);
+	int getAverageTextureRGB(@OriginalArg(1) int arg0);
 
 	@OriginalMember(owner = "client!ld", name = "b", descriptor = "(IB)[I")
 	int[] method397(@OriginalArg(0) int arg0);

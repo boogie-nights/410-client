@@ -186,7 +186,7 @@ public final class ObjType extends Hashable {
 		}
 		@Pc(65) Model local65;
 		if (arg1) {
-			local65 = (Model) Static1.aClass47_18.method1325((long) this.anInt954);
+			local65 = (Model) Static1.aClass47_18.get((long) this.anInt954);
 			if (local65 != null) {
 				return local65;
 			}
@@ -206,7 +206,7 @@ public final class ObjType extends Hashable {
 		if (arg1) {
 			local65.method1153(this.anInt942 + 64, this.anInt940 + 768, -50, -10, -50, true);
 			local65.aBoolean139 = true;
-			Static1.aClass47_18.method1332((long) this.anInt954, local65);
+			Static1.aClass47_18.put((long) this.anInt954, local65);
 		}
 		return local65;
 	}

@@ -24,7 +24,22 @@ public final class IdkType extends Hashable {
 	@OriginalMember(owner = "client!v", name = "lb", descriptor = "[I")
 	private final int[] anIntArray517 = new int[6];
 
-	@OriginalMember(owner = "client!v", name = "c", descriptor = "(B)Lclient!ne;", line = 6)
+    @OriginalMember(owner = "client!ta", name = "a", descriptor = "(ZI)Lclient!v;", line = 158)
+    public static IdkType get(@OriginalArg(1) int arg0) {
+        @Pc(10) IdkType local10 = (IdkType) Static1.aClass47_22.get((long) arg0);
+        if (local10 != null) {
+            return local10;
+        }
+        @Pc(20) byte[] local20 = Static63.aClass5_5.fetchFile(arg0, 3);
+        local10 = new IdkType();
+        if (local20 != null) {
+            local10.method1587(new Packet(local20));
+        }
+        Static1.aClass47_22.put((long) arg0, local10);
+        return local10;
+    }
+
+    @OriginalMember(owner = "client!v", name = "c", descriptor = "(B)Lclient!ne;", line = 6)
 	public Model method1579() {
 		if (this.anIntArray516 == null) {
 			return null;

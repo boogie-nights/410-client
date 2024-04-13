@@ -9,9 +9,6 @@ public final class Static68 {
 	@OriginalMember(owner = "client!ob", name = "e", descriptor = "Z")
 	public static boolean aBoolean145;
 
-	@OriginalMember(owner = "client!ob", name = "n", descriptor = "[[[B")
-	public static byte[][][] aByteArrayArrayArray8;
-
 	@OriginalMember(owner = "client!ob", name = "s", descriptor = "Lclient!cb;")
 	public static Cache masterCache;
 
@@ -46,8 +43,8 @@ public final class Static68 {
 
 	@OriginalMember(owner = "client!ob", name = "b", descriptor = "(Z)V", line = 66)
 	public static void method1210() {
-		Static1.aClass47_14.method1330();
-		Static1.aClass47_19.method1330();
+		Static1.aClass47_14.clear();
+		Static1.aClass47_19.clear();
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(I)V", line = 79)
@@ -62,6 +59,6 @@ public final class Static68 {
 		JagString.aClass40_522 = null;
 		JagString.aClass40_525 = null;
 		aClass5_24 = null;
-		aByteArrayArrayArray8 = null;
+		World.levelTileOverlayRotation = null;
 	}
 }
