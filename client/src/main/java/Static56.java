@@ -8,7 +8,7 @@ public final class Static56 {
 	public static PixMap aClass45_22;
 
 	@OriginalMember(owner = "client!ma", name = "l", descriptor = "Lclient!qd;")
-	public static ObjectRequest aClass48_6;
+	public static PrivilegedRequest aClass48_6;
 
 	@OriginalMember(owner = "client!ma", name = "n", descriptor = "Lclient!p;")
 	public static PixMap aClass45_23;

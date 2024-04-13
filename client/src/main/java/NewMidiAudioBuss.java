@@ -156,7 +156,7 @@ public final class NewMidiAudioBuss extends MidiPcmStream implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!l", name = "<init>", descriptor = "(Lclient!bb;Lclient!id;)V", line = 275)
-	public NewMidiAudioBuss(@OriginalArg(0) SignLink arg0, @OriginalArg(1) Interface3 arg1) {
+	public NewMidiAudioBuss(@OriginalArg(0) SignLink arg0, @OriginalArg(1) AudioSource arg1) {
 		Static52.anInterface3_2 = arg1;
 		Static52.anInterface3_2.method794();
 		Static52.anInterface3_2.method791();

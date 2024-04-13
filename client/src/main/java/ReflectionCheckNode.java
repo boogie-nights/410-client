@@ -8,7 +8,7 @@ public final class ReflectionCheckNode extends Linkable {
 	public int size;
 
 	@OriginalMember(owner = "client!ub", name = "x", descriptor = "[Lclient!qd;")
-	public ObjectRequest[] methodRequests;
+	public PrivilegedRequest[] methodRequests;
 
 	@OriginalMember(owner = "client!ub", name = "A", descriptor = "I")
 	public int id;
@@ -26,5 +26,5 @@ public final class ReflectionCheckNode extends Linkable {
 	public int[] fieldValues;
 
 	@OriginalMember(owner = "client!ub", name = "P", descriptor = "[Lclient!qd;")
-	public ObjectRequest[] fieldRequests;
+	public PrivilegedRequest[] fieldRequests;
 }

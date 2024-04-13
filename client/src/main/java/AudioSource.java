@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!id")
-public interface Interface3 extends Runnable {
+public interface AudioSource extends Runnable {
 
 	@OriginalMember(owner = "client!id", name = "a", descriptor = "(B)V")
 	void method791();

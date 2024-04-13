@@ -10,7 +10,7 @@ public final class MidiJsPcmStream extends SongPcmStream {
 	private boolean aBoolean91;
 
 	@OriginalMember(owner = "client!jc", name = "u", descriptor = "Lclient!qd;")
-	private ObjectRequest aClass48_4;
+	private PrivilegedRequest aClass48_4;
 
 	@OriginalMember(owner = "client!jc", name = "z", descriptor = "I")
 	private int anInt1116;
@@ -56,11 +56,11 @@ public final class MidiJsPcmStream extends SongPcmStream {
 	@OriginalMember(owner = "client!jc", name = "e", descriptor = "(I)V", line = 157)
 	@Override
 	public void method1252() {
-		if (this.aClass48_4 == null || this.aClass48_4.anInt1928 == 0) {
+		if (this.aClass48_4 == null || this.aClass48_4.status == 0) {
 			return;
 		}
-		if (this.aClass48_4.anInt1928 == 1) {
-			@Pc(25) FileOnDisk local25 = (FileOnDisk) this.aClass48_4.value;
+		if (this.aClass48_4.status == 1) {
+			@Pc(25) FileOnDisk local25 = (FileOnDisk) this.aClass48_4.result;
 			try {
 				local25.write(0, this.aByteArray12.length, this.aByteArray12);
 				local25.close();

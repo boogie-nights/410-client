@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("loader!dc")
-public final class Class67 {
+public final class FileOnDisk {
 
 	@OriginalMember(owner = "loader!dc", name = "c", descriptor = "Ljava/io/RandomAccessFile;")
 	private final RandomAccessFile aRandomAccessFile2;
@@ -21,7 +21,7 @@ public final class Class67 {
 	private final long aLong153;
 
 	@OriginalMember(owner = "loader!dc", name = "<init>", descriptor = "(Ljava/io/File;Ljava/lang/String;J)V", line = 82)
-	public Class67(@OriginalArg(0) File arg0, @OriginalArg(1) String arg1, @OriginalArg(2) long arg2) throws IOException {
+	public FileOnDisk(@OriginalArg(0) File arg0, @OriginalArg(1) String arg1, @OriginalArg(2) long arg2) throws IOException {
 		if (arg2 == -1L) {
 			arg2 = Long.MAX_VALUE;
 		}

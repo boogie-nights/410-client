@@ -18,7 +18,7 @@ public final class Static72 {
 	public static PixMap aClass45_28;
 
 	@OriginalMember(owner = "client!qc", name = "x", descriptor = "Lclient!qd;")
-	public static ObjectRequest aClass48_7;
+	public static PrivilegedRequest aClass48_7;
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(IIIII)I", line = 43)
 	public static int method1326(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {

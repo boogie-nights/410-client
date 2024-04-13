@@ -44,7 +44,7 @@ public final class Static28 {
 			Static98.aClass12_1 = (SongPcmStream) Class.forName("JavaMidiAudioBuss").getDeclaredConstructor().newInstance();
 			return true;
 		} catch (@Pc(13) Throwable local13) {
-			@Pc(17) Interface3 local17 = arg0.method205();
+			@Pc(17) AudioSource local17 = arg0.method205();
 			if (local17 != null) {
 				Static98.aClass12_1 = new NewMidiAudioBuss(arg0, local17);
 				return true;

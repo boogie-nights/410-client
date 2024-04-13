@@ -118,11 +118,11 @@ public final class Static64 {
 		local12.size = arg2.g1();
 		local12.id = arg2.g4s();
 		local12.methodArguments = new byte[local12.size][][];
-		local12.fieldRequests = new ObjectRequest[local12.size];
+		local12.fieldRequests = new PrivilegedRequest[local12.size];
 		local12.fieldValues = new int[local12.size];
 		local12.types = new int[local12.size];
 		local12.errors = new int[local12.size];
-		local12.methodRequests = new ObjectRequest[local12.size];
+		local12.methodRequests = new PrivilegedRequest[local12.size];
 		for (@Pc(58) int local58 = 0; local58 < local12.size; local58++) {
 			try {
 				@Pc(64) int local64 = arg2.g1();

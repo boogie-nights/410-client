@@ -79,18 +79,18 @@ public final class Static63 {
 			@Pc(21) boolean local21 = false;
 			for (@Pc(23) int local23 = 0; local23 < local16.size; local23++) {
 				if (local16.fieldRequests[local23] != null) {
-					if (local16.fieldRequests[local23].anInt1928 == 2) {
+					if (local16.fieldRequests[local23].status == 2) {
 						local16.errors[local23] = -5;
 					}
-					if (local16.fieldRequests[local23].anInt1928 == 0) {
+					if (local16.fieldRequests[local23].status == 0) {
 						local21 = true;
 					}
 				}
 				if (local16.methodRequests[local23] != null) {
-					if (local16.methodRequests[local23].anInt1928 == 2) {
+					if (local16.methodRequests[local23].status == 2) {
 						local16.errors[local23] = -6;
 					}
-					if (local16.methodRequests[local23].anInt1928 == 0) {
+					if (local16.methodRequests[local23].status == 0) {
 						local21 = true;
 					}
 				}
@@ -109,23 +109,23 @@ public final class Static63 {
 						@Pc(139) Field local139;
 						@Pc(165) int local165;
 						if (local125 == 0) {
-							local139 = (Field) local16.fieldRequests[local104].value;
+							local139 = (Field) local16.fieldRequests[local104].result;
 							local165 = local139.getInt(null);
 							buf.p1(0);
 							buf.p4(local165);
 						} else if (local125 == 1) {
-							local139 = (Field) local16.fieldRequests[local104].value;
+							local139 = (Field) local16.fieldRequests[local104].result;
 							local139.setInt(null, local16.fieldValues[local104]);
 							buf.p1(0);
 						} else if (local125 == 2) {
-							local139 = (Field) local16.fieldRequests[local104].value;
+							local139 = (Field) local16.fieldRequests[local104].result;
 							local165 = local139.getModifiers();
 							buf.p1(0);
 							buf.p4(local165);
 						}
 						@Pc(209) Method local209;
 						if (local125 == 3) {
-							local209 = (Method) local16.methodRequests[local104].value;
+							local209 = (Method) local16.methodRequests[local104].result;
 							@Pc(234) byte[][] local234 = local16.methodArguments[local104];
 							@Pc(238) Object[] local238 = new Object[local234.length];
 							for (@Pc(240) int local240 = 0; local240 < local234.length; local240++) {
@@ -145,7 +145,7 @@ public final class Static63 {
 								buf.p1(4);
 							}
 						} else if (local125 == 4) {
-							local209 = (Method) local16.methodRequests[local104].value;
+							local209 = (Method) local16.methodRequests[local104].result;
 							local165 = local209.getModifiers();
 							buf.p1(0);
 							buf.p4(local165);

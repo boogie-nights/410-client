@@ -17,10 +17,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class SignLink implements Runnable {
 
 	@OriginalMember(owner = "client!bb", name = "h", descriptor = "Lclient!id;")
-	private Interface3 anInterface3_1;
+	private AudioSource anInterface3_1;
 
 	@OriginalMember(owner = "client!bb", name = "l", descriptor = "Lclient!c;")
-	private Interface1 anInterface1_1;
+	private MonotonicClock anInterface1_1;
 
 	@OriginalMember(owner = "client!bb", name = "m", descriptor = "Ljava/lang/String;")
 	private String aString5 = null;
@@ -32,7 +32,7 @@ public final class SignLink implements Runnable {
 	private boolean aBoolean24 = false;
 
 	@OriginalMember(owner = "client!bb", name = "b", descriptor = "Lclient!qd;")
-	private ObjectRequest aClass48_1 = null;
+	private PrivilegedRequest aClass48_1 = null;
 
 	@OriginalMember(owner = "client!bb", name = "o", descriptor = "Ljava/applet/Applet;")
 	public Applet anApplet1 = null;
@@ -41,7 +41,7 @@ public final class SignLink implements Runnable {
 	private String aString2 = null;
 
 	@OriginalMember(owner = "client!bb", name = "s", descriptor = "Lclient!qd;")
-	private ObjectRequest aClass48_2 = null;
+	private PrivilegedRequest aClass48_2 = null;
 
 	@OriginalMember(owner = "client!bb", name = "f", descriptor = "Ljava/lang/String;")
 	private String aString3 = null;
@@ -71,31 +71,31 @@ public final class SignLink implements Runnable {
 	private final Thread aThread1;
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(I)Lclient!qd;", line = 3)
-	public ObjectRequest method197() {
+	public PrivilegedRequest method197() {
 		return null;
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(B)Lclient!c;", line = 22)
-	public Interface1 method198() {
+	public MonotonicClock method198() {
 		return this.anInterface1_1;
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(ZI)Lclient!qd;", line = 31)
-	public ObjectRequest method199(@OriginalArg(1) int arg0) {
+	public PrivilegedRequest method199(@OriginalArg(1) int arg0) {
 		return this.method200(arg0, 3, null);
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(IBILjava/lang/Object;I)Lclient!qd;", line = 54)
-	private ObjectRequest method200(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Object arg2) {
-		@Pc(3) ObjectRequest local3 = new ObjectRequest();
-		local3.anInt1926 = arg0;
-		local3.anInt1927 = arg1;
+	private PrivilegedRequest method200(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Object arg2) {
+		@Pc(3) PrivilegedRequest local3 = new PrivilegedRequest();
+		local3.intArg1 = arg0;
+		local3.intArg2 = arg1;
 		local3.objArg = arg2;
 		synchronized (this) {
 			if (this.aClass48_2 == null) {
 				this.aClass48_2 = this.aClass48_1 = local3;
 			} else {
-				this.aClass48_2.request = local3;
+				this.aClass48_2.next = local3;
 				this.aClass48_2 = local3;
 			}
 			this.notify();
@@ -104,12 +104,12 @@ public final class SignLink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;I)Lclient!qd;", line = 93)
-	public ObjectRequest method201(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1, @OriginalArg(2) Class[] arg2) {
+	public PrivilegedRequest method201(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1, @OriginalArg(2) Class[] arg2) {
 		return this.method200(0, 9, new Object[] { arg0, arg1, arg2 });
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(BI)Lclient!qd;", line = 113)
-	public ObjectRequest method202(@OriginalArg(1) int arg0) {
+	public PrivilegedRequest method202(@OriginalArg(1) int arg0) {
 		return this.method200(arg0, 1, null);
 	}
 
@@ -169,12 +169,12 @@ public final class SignLink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(BLjava/lang/String;Ljava/lang/Class;)Lclient!qd;", line = 212)
-	public ObjectRequest method204(@OriginalArg(1) String arg0, @OriginalArg(2) Class arg1) {
+	public PrivilegedRequest method204(@OriginalArg(1) String arg0, @OriginalArg(2) Class arg1) {
 		return this.method200(0, 10, new Object[] { arg1, arg0 });
 	}
 
 	@OriginalMember(owner = "client!bb", name = "b", descriptor = "(B)Lclient!id;", line = 221)
-	public Interface3 method205() {
+	public AudioSource method205() {
 		return this.anInterface3_1;
 	}
 
@@ -217,7 +217,7 @@ public final class SignLink implements Runnable {
 	@Override
 	public void run() {
 		while (true) {
-			@Pc(15) ObjectRequest local15;
+			@Pc(15) PrivilegedRequest local15;
 			synchronized (this) {
 				while (true) {
 					if (this.aBoolean24) {
@@ -225,7 +225,7 @@ public final class SignLink implements Runnable {
 					}
 					if (this.aClass48_1 != null) {
 						local15 = this.aClass48_1;
-						this.aClass48_1 = this.aClass48_1.request;
+						this.aClass48_1 = this.aClass48_1.next;
 						if (this.aClass48_1 == null) {
 							this.aClass48_2 = null;
 						}
@@ -238,38 +238,38 @@ public final class SignLink implements Runnable {
 				}
 			}
 			try {
-				@Pc(41) int local41 = local15.anInt1927;
+				@Pc(41) int local41 = local15.intArg2;
 				if (local41 == 1) {
-					local15.value = new Socket(this.anInetAddress1, local15.anInt1926);
+					local15.result = new Socket(this.anInetAddress1, local15.intArg1);
 				} else if (local41 == 2) {
 					@Pc(56) Thread local56 = new Thread((Runnable) local15.objArg);
 					local56.setDaemon(true);
 					local56.start();
-					local56.setPriority(local15.anInt1926);
-					local15.value = local56;
+					local56.setPriority(local15.intArg1);
+					local15.result = local56;
 				} else if (local41 == 4) {
-					local15.value = new DataInputStream(((URL) local15.objArg).openStream());
+					local15.result = new DataInputStream(((URL) local15.objArg).openStream());
 				} else {
 					@Pc(100) Object[] local100;
 					if (local41 == 9) {
 						local100 = (Object[]) local15.objArg;
-						local15.value = ((Class) local100[0]).getDeclaredMethod((String) local100[1], (Class[]) local100[2]);
+						local15.result = ((Class) local100[0]).getDeclaredMethod((String) local100[1], (Class[]) local100[2]);
 					} else if (local41 == 10) {
 						local100 = (Object[]) local15.objArg;
-						local15.value = ((Class) local100[0]).getDeclaredField((String) local100[1]);
+						local15.result = ((Class) local100[0]).getDeclaredField((String) local100[1]);
 					} else {
 						throw new Exception();
 					}
 				}
-				local15.anInt1928 = 1;
+				local15.status = 1;
 			} catch (@Pc(146) Exception local146) {
-				local15.anInt1928 = 2;
+				local15.status = 2;
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(ILjava/lang/Runnable;B)Lclient!qd;", line = 396)
-	public ObjectRequest method207(@OriginalArg(0) int arg0, @OriginalArg(1) Runnable arg1) {
+	public PrivilegedRequest method207(@OriginalArg(0) int arg0, @OriginalArg(1) Runnable arg1) {
 		return this.method200(arg0, 2, arg1);
 	}
 
@@ -293,7 +293,7 @@ public final class SignLink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(BLjava/net/URL;)Lclient!qd;", line = 458)
-	public ObjectRequest method209(@OriginalArg(1) URL arg0) {
+	public PrivilegedRequest method209(@OriginalArg(1) URL arg0) {
 		return this.method200(0, 4, arg0);
 	}
 

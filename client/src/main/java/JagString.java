@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!o")
-public final class JagString implements Interface2 {
+public final class JagString implements BaseString {
 
 	@OriginalMember(owner = "client!o", name = "i", descriptor = "Lclient!o;")
 	public static JagString aClass40_506 = Static12.method257(" is already on your ignore list");

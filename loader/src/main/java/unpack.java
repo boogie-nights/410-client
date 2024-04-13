@@ -10,7 +10,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("loader!unpack")
-public class Class65 {
+public class unpack {
 
 	@OriginalMember(owner = "loader!unpack", name = "cache", descriptor = "Ljava/util/Hashtable;")
 	private final Hashtable aHashtable2 = new Hashtable();
@@ -21,11 +21,11 @@ public class Class65 {
 	}
 
 	@OriginalMember(owner = "loader!unpack", name = "<init>", descriptor = "()V", line = 15)
-	public Class65() {
+	public unpack() {
 	}
 
 	@OriginalMember(owner = "loader!unpack", name = "<init>", descriptor = "([B)V", line = 17)
-	public Class65(@OriginalArg(0) byte[] arg0) throws IOException {
+	public unpack(@OriginalArg(0) byte[] arg0) throws IOException {
 		@Pc(14) ZipInputStream local14 = new ZipInputStream(new ByteArrayInputStream(arg0));
 		@Pc(17) byte[] local17 = new byte[1000];
 		while (true) {

@@ -163,10 +163,10 @@ public final class Static9 {
 				}
 				@Pc(577) JagString local577 = JagString.aClass40_445;
 				if (Static56.aClass48_6 != null) {
-					local577 = Static2.method21(Static56.aClass48_6.anInt1926);
+					local577 = Static2.method21(Static56.aClass48_6.intArg1);
 					try {
-						if (Static56.aClass48_6.value != null) {
-							@Pc(593) byte[] local593 = ((String) Static56.aClass48_6.value).getBytes("ISO-8859-1");
+						if (Static56.aClass48_6.result != null) {
+							@Pc(593) byte[] local593 = ((String) Static56.aClass48_6.result).getBytes("ISO-8859-1");
 							local577 = Static64.method1114(local593.length, local593, 0);
 						}
 					} catch (@Pc(602) UnsupportedEncodingException local602) {

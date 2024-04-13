@@ -12,10 +12,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("loader!b")
-public final class RuntimeException_Sub2 extends RuntimeException {
+public final class JagException extends RuntimeException {
 
 	@OriginalMember(owner = "loader!b", name = "c", descriptor = "I")
-	public static int anInt2607;
+	public static int clientCrc;
 
 	@OriginalMember(owner = "loader!b", name = "b", descriptor = "Ljava/lang/String;")
 	private String aString8;
@@ -24,7 +24,7 @@ public final class RuntimeException_Sub2 extends RuntimeException {
 	private Throwable aThrowable2;
 
 	@OriginalMember(owner = "loader!b", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/applet/Applet;BLjava/lang/String;)V", line = 26)
-	public static void method1749(@OriginalArg(0) Throwable arg0, @OriginalArg(1) Applet arg1, @OriginalArg(3) String arg2) {
+	public static void report(@OriginalArg(0) Throwable arg0, @OriginalArg(1) Applet arg1, @OriginalArg(3) String arg2) {
 		try {
 			@Pc(1) String local1 = "";
 			if (arg0 != null) {
@@ -41,7 +41,7 @@ public final class RuntimeException_Sub2 extends RuntimeException {
 			local1 = local1.replace('@', '_');
 			local1 = local1.replace('&', '_');
 			local1 = local1.replace('#', '_');
-			@Pc(94) URL local94 = new URL(arg1.getCodeBase(), "loadererror.ws?c=" + anInt2607 + "&v1=" + Class66.aString10 + "&v2=" + Class66.aString12 + "&e=" + local1);
+			@Pc(94) URL local94 = new URL(arg1.getCodeBase(), "loadererror.ws?c=" + clientCrc + "&v1=" + SignLink.aString10 + "&v2=" + SignLink.aString12 + "&e=" + local1);
 			@Pc(100) DataInputStream local100 = new DataInputStream(local94.openStream());
 			local100.read();
 			local100.close();
@@ -52,8 +52,8 @@ public final class RuntimeException_Sub2 extends RuntimeException {
 	@OriginalMember(owner = "loader!b", name = "a", descriptor = "(Ljava/lang/Throwable;B)Ljava/lang/String;", line = 66)
 	private static String method1750(@OriginalArg(0) Throwable arg0) throws IOException {
 		@Pc(20) String local20;
-		if (arg0 instanceof RuntimeException_Sub2) {
-			@Pc(7) RuntimeException_Sub2 local7 = (RuntimeException_Sub2) arg0;
+		if (arg0 instanceof JagException) {
+			@Pc(7) JagException local7 = (JagException) arg0;
 			arg0 = local7.aThrowable2;
 			local20 = local7.aString8 + " | ";
 		} else {

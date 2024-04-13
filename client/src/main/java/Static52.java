@@ -10,7 +10,7 @@ public final class Static52 {
 	public static boolean aBoolean111;
 
 	@OriginalMember(owner = "client!l", name = "Q", descriptor = "Lclient!id;")
-	public static Interface3 anInterface3_2;
+	public static AudioSource anInterface3_2;
 
 	@OriginalMember(owner = "client!l", name = "R", descriptor = "I")
 	public static int anInt1460;

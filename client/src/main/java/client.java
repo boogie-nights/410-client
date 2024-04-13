@@ -1291,16 +1291,16 @@ public final class client extends GameShell {
 				js5ConnectState++;
 			}
 			if (js5ConnectState == 1) {
-				if (Static72.aClass48_7.anInt1928 == 2) {
+				if (Static72.aClass48_7.status == 2) {
 					this.setJs5ErrorState(-1);
 					return;
 				}
-				if (Static72.aClass48_7.anInt1928 == 1) {
+				if (Static72.aClass48_7.status == 1) {
 					js5ConnectState++;
 				}
 			}
 			if (js5ConnectState == 2) {
-				Static27.js5Stream = new ClientStream((Socket) Static72.aClass48_7.value, GameShell.signlink);
+				Static27.js5Stream = new ClientStream((Socket) Static72.aClass48_7.result, GameShell.signlink);
 				@Pc(103) Packet buf = new Packet(5);
 				buf.p1(15);
 				buf.p4(410);

@@ -5,18 +5,18 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("loader!d")
-public final class ClassLoader_Sub1 extends ClassLoader {
+public final class cloader extends ClassLoader {
 
 	@OriginalMember(owner = "loader!d", name = "b", descriptor = "Lloader!unpack;")
-	public Class65 aClass65_1;
+	public unpack aClass65_1;
 
 	@OriginalMember(owner = "loader!d", name = "a", descriptor = "Ljava/util/Hashtable;")
-	public final Hashtable aHashtable3 = new Hashtable();
+	public final Hashtable cache = new Hashtable();
 
 	@OriginalMember(owner = "loader!d", name = "loadClass", descriptor = "(Ljava/lang/String;Z)Ljava/lang/Class;", line = 6)
 	@Override
 	protected synchronized Class loadClass(@OriginalArg(0) String arg0, @OriginalArg(1) boolean arg1) throws ClassNotFoundException {
-		@Pc(7) Class local7 = (Class) this.aHashtable3.get(arg0);
+		@Pc(7) Class local7 = (Class) this.cache.get(arg0);
 		if (local7 != null) {
 			return local7;
 		}
@@ -29,7 +29,7 @@ public final class ClassLoader_Sub1 extends ClassLoader {
 				if (arg1) {
 					this.resolveClass(local7);
 				}
-				this.aHashtable3.put(arg0, local7);
+				this.cache.put(arg0, local7);
 				return local7;
 			} catch (@Pc(56) Throwable local56) {
 				throw new ClassNotFoundException(arg0);

@@ -187,11 +187,11 @@ public final class Static40 {
 				if (Static48.aClass48_5 == null) {
 					Static48.aClass48_5 = GameShell.signlink.method202(Static54.anInt1500);
 				}
-				if (Static48.aClass48_5.anInt1928 == 2) {
+				if (Static48.aClass48_5.status == 2) {
 					throw new IOException();
 				}
-				if (Static48.aClass48_5.anInt1928 == 1) {
-					client.stream = new ClientStream((Socket) Static48.aClass48_5.value, GameShell.signlink);
+				if (Static48.aClass48_5.status == 1) {
+					client.stream = new ClientStream((Socket) Static48.aClass48_5.result, GameShell.signlink);
 					Static48.aClass48_5 = null;
 					Static1.anInt693 = 2;
 				}

@@ -23,19 +23,19 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("loader!loader")
-public final class Applet_Sub2 extends Applet implements Runnable {
+public final class loader extends Applet implements Runnable {
 
 	@OriginalMember(owner = "loader!loader", name = "b", descriptor = "I")
 	private int anInt2611;
 
 	@OriginalMember(owner = "loader!loader", name = "c", descriptor = "Ljava/applet/Applet;")
-	private Applet anApplet4;
+	private Applet applet;
 
 	@OriginalMember(owner = "loader!loader", name = "d", descriptor = "I")
 	private int anInt2612;
 
 	@OriginalMember(owner = "loader!loader", name = "e", descriptor = "Lloader!bb;")
-	private Class66 aClass66_1;
+	private SignLink signlink;
 
 	@OriginalMember(owner = "loader!loader", name = "a", descriptor = "Z")
 	private boolean aBoolean189;
@@ -121,7 +121,7 @@ public final class Applet_Sub2 extends Applet implements Runnable {
 			}
 			return true;
 		} catch (@Pc(393) Exception local393) {
-			this.method1786("sha");
+			this.error("sha");
 			return false;
 		}
 	}
@@ -134,7 +134,7 @@ public final class Applet_Sub2 extends Applet implements Runnable {
 			local10.close();
 			return true;
 		} catch (@Pc(21) IOException local21) {
-			this.method1786("savefile");
+			this.error("savefile");
 			return false;
 		}
 	}
@@ -160,16 +160,16 @@ public final class Applet_Sub2 extends Applet implements Runnable {
 	@OriginalMember(owner = "loader!loader", name = "destroy", descriptor = "()V", line = 213)
 	@Override
 	public void destroy() {
-		if (this.anApplet4 != null) {
-			this.anApplet4.destroy();
+		if (this.applet != null) {
+			this.applet.destroy();
 		}
 	}
 
 	@OriginalMember(owner = "loader!loader", name = "start", descriptor = "()V", line = 223)
 	@Override
 	public void start() {
-		if (this.anApplet4 != null) {
-			this.anApplet4.start();
+		if (this.applet != null) {
+			this.applet.start();
 		}
 	}
 
@@ -182,7 +182,7 @@ public final class Applet_Sub2 extends Applet implements Runnable {
 				local4 = this.method1781(arg3, arg0, arg2, true);
 			}
 			if (local4 == null) {
-				this.method1786("download");
+				this.error("download");
 				return null;
 			}
 			if (!this.method1783(local4, arg1)) {
@@ -190,7 +190,7 @@ public final class Applet_Sub2 extends Applet implements Runnable {
 			}
 			local4 = this.method1784(arg1);
 			if (!this.method1782(local4, arg0)) {
-				this.method1786("mismatch");
+				this.error("mismatch");
 				return null;
 			}
 		}
@@ -200,13 +200,13 @@ public final class Applet_Sub2 extends Applet implements Runnable {
 	@OriginalMember(owner = "loader!loader", name = "paint", descriptor = "(Ljava/awt/Graphics;)V", line = 271)
 	@Override
 	public void paint(@OriginalArg(0) Graphics arg0) {
-		if (this.anApplet4 != null) {
-			this.anApplet4.paint(arg0);
+		if (this.applet != null) {
+			this.applet.paint(arg0);
 		}
 	}
 
 	@OriginalMember(owner = "loader!loader", name = "a", descriptor = "(Ljava/lang/String;B)V", line = 282)
-	private void method1786(@OriginalArg(0) String arg0) {
+	private void error(@OriginalArg(0) String arg0) {
 		if (this.aBoolean189) {
 			return;
 		}
@@ -220,8 +220,8 @@ public final class Applet_Sub2 extends Applet implements Runnable {
 	@OriginalMember(owner = "loader!loader", name = "update", descriptor = "(Ljava/awt/Graphics;)V", line = 303)
 	@Override
 	public void update(@OriginalArg(0) Graphics arg0) {
-		if (this.anApplet4 != null) {
-			this.anApplet4.update(arg0);
+		if (this.applet != null) {
+			this.applet.update(arg0);
 		}
 	}
 
@@ -235,8 +235,8 @@ public final class Applet_Sub2 extends Applet implements Runnable {
 	@OriginalMember(owner = "loader!loader", name = "stop", descriptor = "()V", line = 321)
 	@Override
 	public void stop() {
-		if (this.anApplet4 != null) {
-			this.anApplet4.stop();
+		if (this.applet != null) {
+			this.applet.stop();
 		}
 	}
 
@@ -246,73 +246,73 @@ public final class Applet_Sub2 extends Applet implements Runnable {
 		try {
 			this.anInt2611 = Integer.parseInt(this.getParameter("width"));
 			this.anInt2612 = Integer.parseInt(this.getParameter("height"));
-			@Pc(15) int local15 = 32;
+			@Pc(15) int cacheId = 32;
 			try {
 				@Pc(20) int local20 = Integer.parseInt(this.getParameter("modewhat"));
-				local15 += local20;
+				cacheId += local20;
 			} catch (@Pc(26) Exception local26) {
 			}
 			try {
-				this.aClass66_1 = new Class66(true, this, InetAddress.getByName(this.getCodeBase().getHost()), local15, "runescape", 12);
+				this.signlink = new SignLink(true, this, InetAddress.getByName(this.getCodeBase().getHost()), cacheId, "runescape", 12);
 			} catch (@Pc(42) Exception local42) {
-				this.method1786("nocache");
+				this.error("nocache");
 				return;
 			}
-			@Pc(53) ClassLoader_Sub1 local53 = new ClassLoader_Sub1();
+			@Pc(53) cloader local53 = new cloader();
 			@Pc(73) byte[] local73;
 			try {
 				Class.forName("java.util.jar.Pack200");
-				local73 = this.method1785("runescape.pack200?crc=779526686", this.aClass66_1.aString11 + "main_file_cache.dat0", "game code", 189484);
+				local73 = this.method1785("runescape.pack200?crc=779526686", this.signlink.aString11 + "main_file_cache.dat0", "game code", 189484);
 				if (local73 == null) {
 					return;
 				}
-				local53.aClass65_1 = new Class65_Sub1(local73);
+				local53.aClass65_1 = new Pack200Unpacker(local73);
 			} catch (@Pc(87) Throwable local87) {
 			}
 			@Pc(120) Class local120;
 			if (local53.aClass65_1 == null) {
-				local73 = this.method1785("unpackclass.jar?crc=1734823955", this.aClass66_1.aString13 + "shared_game_unpacker.dat", "unpacker", 17829);
+				local73 = this.method1785("unpackclass.jar?crc=1734823955", this.signlink.aString13 + "shared_game_unpacker.dat", "unpacker", 17829);
 				if (local73 == null) {
 					return;
 				}
-				local53.aClass65_1 = new Class65(local73);
-				local120 = Class.forName("Class65");
-				local53.aHashtable3.put(local120.getName(), local120);
+				local53.aClass65_1 = new unpack(local73);
+				local120 = Class.forName("unpack");
+				local53.cache.put(local120.getName(), local120);
 				@Pc(131) Class local131 = local53.loadClass("unpackclass");
-				local53 = new ClassLoader_Sub1();
-				local73 = this.method1785("runescape.js5?crc=713538378", this.aClass66_1.aString11 + "main_file_cache.dat1", "game code", 201203);
+				local53 = new cloader();
+				local73 = this.method1785("runescape.js5?crc=713538378", this.signlink.aString11 + "main_file_cache.dat1", "game code", 201203);
 				if (local73 == null) {
 					return;
 				}
-				local53.aClass65_1 = (Class65) local131.getConstructor(Class.forName("[B"), Boolean.TYPE).newInstance(local73, Boolean.TRUE);
+				local53.aClass65_1 = (unpack) local131.getConstructor(Class.forName("[B"), Boolean.TYPE).newInstance(local73, Boolean.TRUE);
 			}
-			local120 = Class.forName("Class67");
-			local53.aHashtable3.put(local120.getName(), local120);
-			@Pc(197) Class local197 = Class.forName("Class66");
-			local53.aHashtable3.put(local197.getName(), local197);
-			local120 = Class.forName("Class68");
-			local53.aHashtable3.put(local120.getName(), local120);
-			local120 = Class.forName("Interface5");
-			local53.aHashtable3.put(local120.getName(), local120);
-			local120 = Class.forName("Interface6");
-			local53.aHashtable3.put(local120.getName(), local120);
+			local120 = Class.forName("FileOnDisk");
+			local53.cache.put(local120.getName(), local120);
+			@Pc(197) Class local197 = Class.forName("SignLink");
+			local53.cache.put(local197.getName(), local197);
+			local120 = Class.forName("PrivilegedRequest");
+			local53.cache.put(local120.getName(), local120);
+			local120 = Class.forName("MonotonicClock");
+			local53.cache.put(local120.getName(), local120);
+			local120 = Class.forName("AudioSource");
+			local53.cache.put(local120.getName(), local120);
 			local120 = local53.loadClass("client");
-			this.anApplet4 = (Applet) local120.getDeclaredConstructor().newInstance();
-			local120.getMethod("providesignlink", local197).invoke(null, this.aClass66_1);
-			this.anApplet4.init();
-			this.anApplet4.start();
+			this.applet = (Applet) local120.getDeclaredConstructor().newInstance();
+			local120.getMethod("providesignlink", local197).invoke(null, this.signlink);
+			this.applet.init();
+			this.applet.start();
 		} catch (@Pc(270) Exception local270) {
-			RuntimeException_Sub2.anInt2607 = 713538378;
+			JagException.clientCrc = 713538378;
 			if (local270 instanceof InvocationTargetException) {
 				@Pc(279) Throwable local279 = ((InvocationTargetException) local270).getTargetException();
 				if (local279 instanceof ThreadDeath) {
 					return;
 				}
-				RuntimeException_Sub2.method1749(local279, this, local270.toString());
+				JagException.report(local279, this, local270.toString());
 			} else {
-				RuntimeException_Sub2.method1749(local270, this, null);
+				JagException.report(local270, this, null);
 			}
-			this.method1786("crash");
+			this.error("crash");
 		}
 	}
 }
