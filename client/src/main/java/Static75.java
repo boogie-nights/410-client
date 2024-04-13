@@ -324,15 +324,15 @@ public final class Static75 {
 			@Pc(1072) int local1072 = Static1.anIntArray163[local70];
 			local805 = Static1.anIntArray103[local70];
 			if (arg5 == 0) {
-				Static1.aClass2_Sub3_Sub1_4.method1736(130);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(130);
 				Static1.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3);
 			}
 			if (arg5 == 1) {
-				Static1.aClass2_Sub3_Sub1_4.method1736(136);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(136);
 				Static1.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3 + 14);
 			}
 			if (arg5 == 2) {
-				Static1.aClass2_Sub3_Sub1_4.method1736(89);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(89);
 				Static1.aClass2_Sub3_Sub1_4.p1(local75 + local75 + 3);
 			}
 			Static1.aClass2_Sub3_Sub1_4.p1_alt1(Static1.aBooleanArray37[82] ? 1 : 0);

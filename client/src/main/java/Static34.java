@@ -152,7 +152,7 @@ public final class Static34 {
 			Static1.aClass33_1.method1002(true);
 		}
 		if (local6 == 326) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(12);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(12);
 			Static1.aClass33_1.method1007(Static1.aClass2_Sub3_Sub1_4);
 			return true;
 		}
@@ -162,7 +162,7 @@ public final class Static34 {
 		if (local6 >= 601 && local6 <= 613) {
 			Static55.method998();
 			if (JagString.aClass40_448.method1169() > 0) {
-				Static1.aClass2_Sub3_Sub1_4.method1736(72);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(72);
 				Static1.aClass2_Sub3_Sub1_4.p8(JagString.aClass40_448.method1179());
 				Static1.aClass2_Sub3_Sub1_4.p1(local6 - 601);
 				Static1.aClass2_Sub3_Sub1_4.p1(Static1.aBoolean103 ? 1 : 0);

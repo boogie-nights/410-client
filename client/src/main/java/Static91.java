@@ -70,20 +70,20 @@ public final class Static91 {
 			return;
 		}
 		local19 = Static1.aClass2_Sub3_Sub1_5.g2_alt2();
-		Static1.aClass2_Sub3_Sub1_5.method1737();
+		Static1.aClass2_Sub3_Sub1_5.bits();
 		for (local26 = 0; local26 < 4; local26++) {
 			for (local32 = 0; local32 < 13; local32++) {
 				for (local36 = 0; local36 < 13; local36++) {
-					local62 = Static1.aClass2_Sub3_Sub1_5.method1743(1);
+					local62 = Static1.aClass2_Sub3_Sub1_5.gBit(1);
 					if (local62 == 1) {
-						Static1.anIntArrayArrayArray2[local26][local32][local36] = Static1.aClass2_Sub3_Sub1_5.method1743(26);
+						Static1.anIntArrayArrayArray2[local26][local32][local36] = Static1.aClass2_Sub3_Sub1_5.gBit(26);
 					} else {
 						Static1.anIntArrayArrayArray2[local26][local32][local36] = -1;
 					}
 				}
 			}
 		}
-		Static1.aClass2_Sub3_Sub1_5.method1739();
+		Static1.aClass2_Sub3_Sub1_5.bytes();
 		local32 = (Static1.anInt785 - Static1.aClass2_Sub3_Sub1_5.pos) / 16;
 		Static78.anIntArrayArray20 = new int[local32][4];
 		for (local36 = 0; local36 < local32; local36++) {

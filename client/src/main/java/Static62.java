@@ -39,7 +39,7 @@ public final class Static62 {
 		if (Static1.aBoolean164 || Static64.aClass25_36 == null) {
 			return;
 		}
-		Static1.aClass2_Sub3_Sub1_4.method1736(217);
+		Static1.aClass2_Sub3_Sub1_4.pIsaac1(217);
 		try {
 			Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
 			Static1.aClass2_Sub3_Sub1_4.pos = 0;

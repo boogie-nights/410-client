@@ -206,8 +206,6 @@ public final class Static1 {
 	public static int anInt1857 = 0;
 	@OriginalMember(owner = "client!cd", name = "C", descriptor = "Z")
 	public static boolean aBoolean151 = false;
-	@OriginalMember(owner = "client!jc", name = "E", descriptor = "[I")
-	public static int[] anIntArray235 = new int[] { 0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, 65535, 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 16777215, 33554431, 67108863, 134217727, 268435455, 536870911, 1073741823, Integer.MAX_VALUE, -1 };
 	@OriginalMember(owner = "client!jc", name = "B", descriptor = "[I")
 	public static int[] anIntArray234 = new int[25];
 	@OriginalMember(owner = "client!d", name = "B", descriptor = "[Lclient!o;")

@@ -71,7 +71,7 @@ public final class Static98 {
 							Static64.method1115(local117);
 						}
 						if (Static1.anInt2180 == 3 && JagString.aClass40_447.method1169() > 0) {
-							Static1.aClass2_Sub3_Sub1_4.method1736(22);
+							Static1.aClass2_Sub3_Sub1_4.pIsaac1(22);
 							Static1.aClass2_Sub3_Sub1_4.p1(0);
 							local162 = Static1.aClass2_Sub3_Sub1_4.pos;
 							Static1.aClass2_Sub3_Sub1_4.p8(Static1.aLong136);
@@ -80,7 +80,7 @@ public final class Static98 {
 							if (Static1.anInt2515 == 2) {
 								Static1.anInt2515 = 1;
 								Static1.aBoolean95 = true;
-								Static1.aClass2_Sub3_Sub1_4.method1736(132);
+								Static1.aClass2_Sub3_Sub1_4.pIsaac1(132);
 								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt583);
 								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2515);
 								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2491);
@@ -110,7 +110,7 @@ public final class Static98 {
 							if (JagString.aClass40_444.method1176()) {
 								local162 = JagString.aClass40_444.method1198();
 							}
-							Static1.aClass2_Sub3_Sub1_4.method1736(122);
+							Static1.aClass2_Sub3_Sub1_4.pIsaac1(122);
 							Static1.aClass2_Sub3_Sub1_4.p4(local162);
 						}
 						Static1.aBoolean144 = true;
@@ -127,7 +127,7 @@ public final class Static98 {
 					}
 					if (Static35.anInt935 == 84) {
 						if (JagString.aClass40_444.method1169() > 0) {
-							Static1.aClass2_Sub3_Sub1_4.method1736(51);
+							Static1.aClass2_Sub3_Sub1_4.pIsaac1(51);
 							Static1.aClass2_Sub3_Sub1_4.p8(JagString.aClass40_444.method1179());
 						}
 						Static1.aBoolean144 = true;
@@ -179,7 +179,7 @@ public final class Static98 {
 							}
 						}
 						if (JagString.aClass40_451.method1168(JagString.aClass40_164)) {
-							Static1.aClass2_Sub3_Sub1_4.method1736(92);
+							Static1.aClass2_Sub3_Sub1_4.pIsaac1(92);
 							Static1.aClass2_Sub3_Sub1_4.p1(JagString.aClass40_451.method1169() - 1);
 							Static1.aClass2_Sub3_Sub1_4.pjstr(JagString.aClass40_451.method1185(2));
 						} else {
@@ -240,7 +240,7 @@ public final class Static98 {
 								JagString.aClass40_451 = JagString.aClass40_451.method1185(6);
 								local529 = 5;
 							}
-							Static1.aClass2_Sub3_Sub1_4.method1736(40);
+							Static1.aClass2_Sub3_Sub1_4.pIsaac1(40);
 							Static1.aClass2_Sub3_Sub1_4.p1(0);
 							@Pc(794) int local794 = Static1.aClass2_Sub3_Sub1_4.pos;
 							Static1.aClass2_Sub3_Sub1_4.p1(local527);
@@ -250,7 +250,7 @@ public final class Static98 {
 							if (Static1.anInt583 == 2) {
 								Static1.anInt583 = 3;
 								Static1.aBoolean95 = true;
-								Static1.aClass2_Sub3_Sub1_4.method1736(132);
+								Static1.aClass2_Sub3_Sub1_4.pIsaac1(132);
 								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt583);
 								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2515);
 								Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2491);

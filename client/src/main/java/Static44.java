@@ -162,6 +162,6 @@ public final class Static44 {
 		JagString.aClass40_345 = null;
 		JagString.aClass40_344 = null;
 		Static1.anIntArray234 = null;
-		Static1.anIntArray235 = null;
+		PacketBit.anIntArray235 = null;
 	}
 }

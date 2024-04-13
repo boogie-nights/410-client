@@ -25,7 +25,7 @@ public final class Isaac {
 	private final int[] anIntArray68 = new int[256];
 
 	@OriginalMember(owner = "client!be", name = "a", descriptor = "(I)I", line = 42)
-	public int method231() {
+	public int nextInt() {
 		if (this.anInt265-- == 0) {
 			this.method232();
 			this.anInt265 = 255;

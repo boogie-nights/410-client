@@ -129,7 +129,7 @@ public final class Static2 {
 				local13--;
 				Static64.aClass25_36.method725(0, 1, Static1.aClass2_Sub3_Sub1_5.data);
 				Static1.aClass2_Sub3_Sub1_5.pos = 0;
-				Static1.anInt2083 = Static1.aClass2_Sub3_Sub1_5.method1733();
+				Static1.anInt2083 = Static1.aClass2_Sub3_Sub1_5.gIsaac1();
 				Static1.anInt785 = Static1.anIntArray82[Static1.anInt2083];
 			}
 			if (Static1.anInt785 == -1) {

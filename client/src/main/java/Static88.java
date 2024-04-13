@@ -53,7 +53,7 @@ public final class Static88 {
 				Static1.anInt2465 = Static1.anInt2133;
 				Static1.anInt1554 = Static1.anInt2500;
 				Static1.anInt2410 = 0;
-				Static1.aClass2_Sub3_Sub1_4.method1736(110);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(110);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22);
 			}
 		}
@@ -77,7 +77,7 @@ public final class Static88 {
 			Static1.anInt1096 = 2;
 			Static1.anInt2465 = Static1.anInt2133;
 			Static1.anInt1554 = Static1.anInt2500;
-			Static1.aClass2_Sub3_Sub1_4.method1736(211);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(211);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(Static28.anInt724);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(Static91.anInt96);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local26 + Static79.anInt2058);
@@ -93,12 +93,12 @@ public final class Static88 {
 				Static1.anInt2410 = 0;
 				Static1.anInt2465 = Static1.anInt2133;
 				Static1.anInt1096 = 2;
-				Static1.aClass2_Sub3_Sub1_4.method1736(212);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(212);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22);
 			}
 		}
 		if (local12 == 55) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(79);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(79);
 			Static1.aClass2_Sub3_Sub1_4.p4_alt2(local30);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local22);
 			Static1.aClass2_Sub3_Sub1_4.p2(local26);
@@ -144,13 +144,13 @@ public final class Static88 {
 				Static1.anInt2410 = 0;
 				Static1.anInt1096 = 2;
 				Static1.anInt1554 = Static1.anInt2500;
-				Static1.aClass2_Sub3_Sub1_4.method1736(7);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(7);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt3(local22);
 			}
 		}
 		@Pc(529) ComType local529;
 		if (local12 == 49) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(184);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(184);
 			Static1.aClass2_Sub3_Sub1_4.p4(local30);
 			local529 = Static73.method1340(local30);
 			if (local529.anIntArrayArray11 != null && local529.anIntArrayArray11[0][0] == 5) {
@@ -187,7 +187,7 @@ public final class Static88 {
 			}
 		}
 		if (local12 == 46) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(64);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(64);
 			Static1.aClass2_Sub3_Sub1_4.p4(local30);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local26);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local22);
@@ -226,12 +226,12 @@ public final class Static88 {
 				Static1.anInt1554 = Static1.anInt2500;
 				Static1.anInt1096 = 2;
 				Static1.anInt2410 = 0;
-				Static1.aClass2_Sub3_Sub1_4.method1736(133);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(133);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22);
 			}
 		}
 		if (local12 == 40) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(184);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(184);
 			Static1.aClass2_Sub3_Sub1_4.p4(local30);
 			local529 = Static73.method1340(local30);
 			if (local529.anIntArrayArray11 != null && local529.anIntArrayArray11[0][0] == 5) {
@@ -242,7 +242,7 @@ public final class Static88 {
 			}
 		}
 		if (local12 == 4) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(220);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(220);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local22);
 			Static1.aClass2_Sub3_Sub1_4.p2(local26);
 			Static1.aClass2_Sub3_Sub1_4.p4_alt2(local30);
@@ -265,7 +265,7 @@ public final class Static88 {
 				Static1.anInt2410 = 0;
 				Static1.anInt2465 = Static1.anInt2133;
 				Static1.anInt1554 = Static1.anInt2500;
-				Static1.aClass2_Sub3_Sub1_4.method1736(58);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(58);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22);
 			}
 		}
@@ -277,7 +277,7 @@ public final class Static88 {
 				Static1.anInt1554 = Static1.anInt2500;
 				Static1.anInt1096 = 2;
 				Static1.anInt2410 = 0;
-				Static1.aClass2_Sub3_Sub1_4.method1736(101);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(101);
 				Static1.aClass2_Sub3_Sub1_4.p4(Static77.anInt1992);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt3(local22);
 			}
@@ -291,7 +291,7 @@ public final class Static88 {
 			Static1.anInt1096 = 2;
 			Static1.anInt1554 = Static1.anInt2500;
 			Static1.anInt2410 = 0;
-			Static1.aClass2_Sub3_Sub1_4.method1736(131);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(131);
 			Static1.aClass2_Sub3_Sub1_4.p2(local30 + Static28.anInt725);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22);
 			Static1.aClass2_Sub3_Sub1_4.p2(local26 + Static79.anInt2058);
@@ -305,7 +305,7 @@ public final class Static88 {
 			Static1.anInt1554 = Static1.anInt2500;
 			Static1.anInt2465 = Static1.anInt2133;
 			Static1.anInt2410 = 0;
-			Static1.aClass2_Sub3_Sub1_4.method1736(200);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(200);
 			Static1.aClass2_Sub3_Sub1_4.p2(Static28.anInt725 + local30);
 			Static1.aClass2_Sub3_Sub1_4.p2(Static79.anInt2058 + local26);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local22);
@@ -318,7 +318,7 @@ public final class Static88 {
 				local1208 = Static34.method639(local529);
 			}
 			if (local1208) {
-				Static1.aClass2_Sub3_Sub1_4.method1736(184);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(184);
 				Static1.aClass2_Sub3_Sub1_4.p4(local30);
 			}
 		}
@@ -327,7 +327,7 @@ public final class Static88 {
 		}
 		if (local12 == 41) {
 			Static39.method770(local30, local22, local26);
-			Static1.aClass2_Sub3_Sub1_4.method1736(165);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(165);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local30 + Static28.anInt725);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(Static79.anInt2058 + local26);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local22 >> 14 & 0x7FFF);
@@ -341,7 +341,7 @@ public final class Static88 {
 				Static1.anInt1554 = Static1.anInt2500;
 				Static1.anInt1096 = 2;
 				Static1.anInt2410 = 0;
-				Static1.aClass2_Sub3_Sub1_4.method1736(185);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(185);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt3(local22);
 			}
 		}
@@ -359,7 +359,7 @@ public final class Static88 {
 			return;
 		}
 		if (local12 == 39) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(135);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(135);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local22);
 			Static1.aClass2_Sub3_Sub1_4.p4_alt2(local30);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local26);
@@ -382,7 +382,7 @@ public final class Static88 {
 				Static1.anInt2410 = 0;
 				Static1.anInt1096 = 2;
 				Static1.anInt2465 = Static1.anInt2133;
-				Static1.aClass2_Sub3_Sub1_4.method1736(164);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(164);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt1(local22);
 			}
 		}
@@ -395,7 +395,7 @@ public final class Static88 {
 			Static1.anInt2465 = Static1.anInt2133;
 			Static1.anInt1554 = Static1.anInt2500;
 			Static1.anInt2410 = 0;
-			Static1.aClass2_Sub3_Sub1_4.method1736(219);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(219);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(Static79.anInt2058 + local26);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local22);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local30 + Static28.anInt725);
@@ -411,7 +411,7 @@ public final class Static88 {
 			Static53.method989(0, JagString.aClass40_445, local70);
 		}
 		if (local12 == 28) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(66);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(66);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local26);
 			Static1.aClass2_Sub3_Sub1_4.p4_alt2(local30);
 			Static1.aClass2_Sub3_Sub1_4.p2(local22);
@@ -433,7 +433,7 @@ public final class Static88 {
 			Static1.aBoolean144 = true;
 		}
 		if (local12 == 52) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(199);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(199);
 			Static1.aClass2_Sub3_Sub1_4.p2(local26);
 			Static1.aClass2_Sub3_Sub1_4.p4(local30);
 			Static1.aClass2_Sub3_Sub1_4.p2(local22);
@@ -449,7 +449,7 @@ public final class Static88 {
 			Static1.anInt1947 = local26;
 		}
 		if (local12 == 53) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(193);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(193);
 			Static1.aClass2_Sub3_Sub1_4.p4_alt3(local30);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local26);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22);
@@ -466,13 +466,13 @@ public final class Static88 {
 		}
 		if (local12 == 34) {
 			Static39.method770(local30, local22, local26);
-			Static1.aClass2_Sub3_Sub1_4.method1736(222);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(222);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(Static28.anInt725 + local30);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local22 >> 14 & 0x7FFF);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(Static79.anInt2058 + local26);
 		}
 		if (local12 == 47) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(192);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(192);
 			Static1.aClass2_Sub3_Sub1_4.p4_alt1(local30);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local26);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local22);
@@ -488,7 +488,7 @@ public final class Static88 {
 			}
 		}
 		if (local12 == 26) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(194);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(194);
 			Static1.aClass2_Sub3_Sub1_4.p2(local22);
 			Static1.aClass2_Sub3_Sub1_4.p4_alt2(local30);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local26);
@@ -517,20 +517,20 @@ public final class Static88 {
 		}
 		if (local12 == 1004) {
 			Static39.method770(local30, local22, local26);
-			Static1.aClass2_Sub3_Sub1_4.method1736(33);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(33);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local30 + Static28.anInt725);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(Static79.anInt2058 + local26);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22 >> 14 & 0x7FFF);
 		}
 		if (local12 == 10) {
 			Static39.method770(local30, local22, local26);
-			Static1.aClass2_Sub3_Sub1_4.method1736(3);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(3);
 			Static1.aClass2_Sub3_Sub1_4.p2(Static79.anInt2058 + local26);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(Static28.anInt725 + local30);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local22 >> 14 & 0x7FFF);
 		}
 		if (local12 == 23) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(29);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(29);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local26);
 			Static1.aClass2_Sub3_Sub1_4.p2(local22);
 			Static1.aClass2_Sub3_Sub1_4.p4_alt1(local30);
@@ -546,7 +546,7 @@ public final class Static88 {
 			}
 		}
 		if (local12 == 18 && !Static1.aBoolean40) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(11);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(11);
 			Static1.aBoolean40 = true;
 		}
 		@Pc(2157) JagString local2157;
@@ -589,13 +589,13 @@ public final class Static88 {
 			Static1.anInt2465 = Static1.anInt2133;
 			Static1.anInt2410 = 0;
 			Static1.anInt1554 = Static1.anInt2500;
-			Static1.aClass2_Sub3_Sub1_4.method1736(156);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(156);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22);
 			Static1.aClass2_Sub3_Sub1_4.p2(Static79.anInt2058 + local26);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(Static28.anInt725 + local30);
 		}
 		if (local12 == 6 && Static39.method770(local30, local22, local26)) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(116);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(116);
 			Static1.aClass2_Sub3_Sub1_4.p2(Static28.anInt725 + local30);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local26 + Static79.anInt2058);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local22 >> 14 & 0x7FFF);
@@ -614,11 +614,11 @@ public final class Static88 {
 						local2394 = true;
 						Static75.method1349(local2404.anIntArray496[0], 0, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray492[0], 1, 0, 2, false, 0, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.anIntArray496[0], 1, local2404.anIntArray492[0]);
 						if (local12 == 29) {
-							Static1.aClass2_Sub3_Sub1_4.method1736(235);
+							Static1.aClass2_Sub3_Sub1_4.pIsaac1(235);
 							Static1.aClass2_Sub3_Sub1_4.p2_alt2(Static1.anIntArray408[local600]);
 						}
 						if (local12 == 37) {
-							Static1.aClass2_Sub3_Sub1_4.method1736(7);
+							Static1.aClass2_Sub3_Sub1_4.pIsaac1(7);
 							Static1.aClass2_Sub3_Sub1_4.p2_alt3(Static1.anIntArray408[local600]);
 						}
 						break;
@@ -638,12 +638,12 @@ public final class Static88 {
 				Static1.anInt2465 = Static1.anInt2133;
 				Static1.anInt1554 = Static1.anInt2500;
 				Static1.anInt2410 = 0;
-				Static1.aClass2_Sub3_Sub1_4.method1736(36);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(36);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt3(local22);
 			}
 		}
 		if (local12 == 9 && Static39.method770(local30, local22, local26)) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(44);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(44);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(Static91.anInt96);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local22 >> 14 & 0x7FFF);
 			Static1.aClass2_Sub3_Sub1_4.p2(Static28.anInt724);
@@ -652,7 +652,7 @@ public final class Static88 {
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local26 + Static79.anInt2058);
 		}
 		if (local12 == 27) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(228);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(228);
 			Static1.aClass2_Sub3_Sub1_4.p4_alt3(local30);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local26);
 			Static1.aClass2_Sub3_Sub1_4.p2(local22);
@@ -675,12 +675,12 @@ public final class Static88 {
 				Static1.anInt2410 = 0;
 				Static1.anInt1554 = Static1.anInt2500;
 				Static1.anInt2465 = Static1.anInt2133;
-				Static1.aClass2_Sub3_Sub1_4.method1736(235);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(235);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22);
 			}
 		}
 		if (local12 == 19) {
-			Static1.aClass2_Sub3_Sub1_4.method1736(142);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(142);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local26);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(Static91.anInt96);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22);
@@ -706,7 +706,7 @@ public final class Static88 {
 				Static1.anInt1096 = 2;
 				Static1.anInt2465 = Static1.anInt2133;
 				Static1.anInt1554 = Static1.anInt2500;
-				Static1.aClass2_Sub3_Sub1_4.method1736(147);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(147);
 				Static1.aClass2_Sub3_Sub1_4.p4_alt2(Static77.anInt1992);
 				Static1.aClass2_Sub3_Sub1_4.p2(local22);
 			}
@@ -720,7 +720,7 @@ public final class Static88 {
 			Static1.anInt1096 = 2;
 			Static1.anInt1554 = Static1.anInt2500;
 			Static1.anInt2410 = 0;
-			Static1.aClass2_Sub3_Sub1_4.method1736(108);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(108);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(Static79.anInt2058 + local26);
 			Static1.aClass2_Sub3_Sub1_4.p4_alt2(Static77.anInt1992);
 			Static1.aClass2_Sub3_Sub1_4.p2(local22);
@@ -735,7 +735,7 @@ public final class Static88 {
 			Static1.anInt2465 = Static1.anInt2133;
 			Static1.anInt1096 = 2;
 			Static1.anInt2410 = 0;
-			Static1.aClass2_Sub3_Sub1_4.method1736(202);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(202);
 			Static1.aClass2_Sub3_Sub1_4.p2(local30 + Static28.anInt725);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(Static79.anInt2058 + local26);
@@ -748,7 +748,7 @@ public final class Static88 {
 				Static1.anInt1096 = 2;
 				Static1.anInt2410 = 0;
 				Static1.anInt2465 = Static1.anInt2133;
-				Static1.aClass2_Sub3_Sub1_4.method1736(4);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(4);
 				Static1.aClass2_Sub3_Sub1_4.p2(local22);
 				Static1.aClass2_Sub3_Sub1_4.p2(Static28.anInt724);
 				Static1.aClass2_Sub3_Sub1_4.p4(Static97.anInt2526);
@@ -763,13 +763,13 @@ public final class Static88 {
 				Static1.anInt2465 = Static1.anInt2133;
 				Static1.anInt1554 = Static1.anInt2500;
 				Static1.anInt2410 = 0;
-				Static1.aClass2_Sub3_Sub1_4.method1736(190);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(190);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt3(local22);
 			}
 		}
 		if (local12 == 5) {
 			Static39.method770(local30, local22, local26);
-			Static1.aClass2_Sub3_Sub1_4.method1736(139);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(139);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt1(local30 + Static28.anInt725);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt3(local26 + Static79.anInt2058);
 			Static1.aClass2_Sub3_Sub1_4.p2_alt2(local22 >> 14 & 0x7FFF);
@@ -782,7 +782,7 @@ public final class Static88 {
 				Static1.anInt2410 = 0;
 				Static1.anInt2465 = Static1.anInt2133;
 				Static1.anInt1554 = Static1.anInt2500;
-				Static1.aClass2_Sub3_Sub1_4.method1736(214);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(214);
 				Static1.aClass2_Sub3_Sub1_4.p2_alt3(Static91.anInt96);
 				Static1.aClass2_Sub3_Sub1_4.p4_alt3(Static97.anInt2526);
 				Static1.aClass2_Sub3_Sub1_4.p2(Static28.anInt724);

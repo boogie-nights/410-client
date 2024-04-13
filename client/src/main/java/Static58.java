@@ -231,7 +231,7 @@ public final class Static58 {
 				Static1.anIntArray316[Static1.anInt2594] = 0;
 				Static1.aBoolean59 = true;
 				Static1.anInt2594++;
-				Static1.aClass2_Sub3_Sub1_4.method1736(98);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(98);
 				Static1.aClass2_Sub3_Sub1_4.p8(arg0);
 			}
 		}

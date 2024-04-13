@@ -227,7 +227,7 @@ public final class Static64 {
 					Static1.anIntArray316[local40] = Static1.anIntArray316[local40 + 1];
 					Static1.aLongArray2[local40] = Static1.aLongArray2[local40 + 1];
 				}
-				Static1.aClass2_Sub3_Sub1_4.method1736(30);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(30);
 				Static1.aClass2_Sub3_Sub1_4.p8(arg0);
 				return;
 			}

@@ -196,12 +196,12 @@ public final class Static93 {
 
 	@OriginalMember(owner = "client!va", name = "a", descriptor = "(I)V", line = 463)
 	public static void method1593() {
-		Static1.aClass2_Sub3_Sub1_5.method1737();
-		@Pc(11) int local11 = Static1.aClass2_Sub3_Sub1_5.method1743(1);
+		Static1.aClass2_Sub3_Sub1_5.bits();
+		@Pc(11) int local11 = Static1.aClass2_Sub3_Sub1_5.gBit(1);
 		if (local11 == 0) {
 			return;
 		}
-		@Pc(19) int local19 = Static1.aClass2_Sub3_Sub1_5.method1743(2);
+		@Pc(19) int local19 = Static1.aClass2_Sub3_Sub1_5.gBit(2);
 		if (local19 == 0) {
 			Static1.anIntArray504[Static1.anInt1190++] = 2047;
 			return;
@@ -209,9 +209,9 @@ public final class Static93 {
 		@Pc(41) int local41;
 		@Pc(51) int local51;
 		if (local19 == 1) {
-			local41 = Static1.aClass2_Sub3_Sub1_5.method1743(3);
+			local41 = Static1.aClass2_Sub3_Sub1_5.gBit(3);
 			Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.method1547(local41, false);
-			local51 = Static1.aClass2_Sub3_Sub1_5.method1743(1);
+			local51 = Static1.aClass2_Sub3_Sub1_5.gBit(1);
 			if (local51 == 1) {
 				Static1.anIntArray504[Static1.anInt1190++] = 2047;
 			}
@@ -219,23 +219,23 @@ public final class Static93 {
 		}
 		@Pc(93) int local93;
 		if (local19 == 2) {
-			local41 = Static1.aClass2_Sub3_Sub1_5.method1743(3);
+			local41 = Static1.aClass2_Sub3_Sub1_5.gBit(3);
 			Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.method1547(local41, true);
-			local51 = Static1.aClass2_Sub3_Sub1_5.method1743(3);
+			local51 = Static1.aClass2_Sub3_Sub1_5.gBit(3);
 			Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.method1547(local51, true);
-			local93 = Static1.aClass2_Sub3_Sub1_5.method1743(1);
+			local93 = Static1.aClass2_Sub3_Sub1_5.gBit(1);
 			if (local93 == 1) {
 				Static1.anIntArray504[Static1.anInt1190++] = 2047;
 			}
 		} else if (local19 == 3) {
-			local41 = Static1.aClass2_Sub3_Sub1_5.method1743(7);
-			Static1.anInt8 = Static1.aClass2_Sub3_Sub1_5.method1743(2);
-			local51 = Static1.aClass2_Sub3_Sub1_5.method1743(1);
+			local41 = Static1.aClass2_Sub3_Sub1_5.gBit(7);
+			Static1.anInt8 = Static1.aClass2_Sub3_Sub1_5.gBit(2);
+			local51 = Static1.aClass2_Sub3_Sub1_5.gBit(1);
 			if (local51 == 1) {
 				Static1.anIntArray504[Static1.anInt1190++] = 2047;
 			}
-			local93 = Static1.aClass2_Sub3_Sub1_5.method1743(1);
-			@Pc(149) int local149 = Static1.aClass2_Sub3_Sub1_5.method1743(7);
+			local93 = Static1.aClass2_Sub3_Sub1_5.gBit(1);
+			@Pc(149) int local149 = Static1.aClass2_Sub3_Sub1_5.gBit(7);
 			Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.method1545(local93 == 1, local41, local149);
 		}
 	}

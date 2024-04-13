@@ -9,7 +9,7 @@ public final class Static55 {
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(I)V", line = 5)
 	public static void method998() {
-		Static1.aClass2_Sub3_Sub1_4.method1736(255);
+		Static1.aClass2_Sub3_Sub1_4.pIsaac1(255);
 		if (Static1.anInt1654 != -1) {
 			Static75.method1350(Static1.anInt1654);
 			Static1.aBoolean59 = true;

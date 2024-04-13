@@ -52,7 +52,7 @@ public final class Static72 {
 			Static1.aBoolean95 = true;
 			Static1.anInt583 = (Static1.anInt583 + 1) % 4;
 			Static1.aBoolean144 = true;
-			Static1.aClass2_Sub3_Sub1_4.method1736(132);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(132);
 			Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt583);
 			Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2515);
 			Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2491);
@@ -61,7 +61,7 @@ public final class Static72 {
 			Static1.aBoolean144 = true;
 			Static1.aBoolean95 = true;
 			Static1.anInt2515 = (Static1.anInt2515 + 1) % 3;
-			Static1.aClass2_Sub3_Sub1_4.method1736(132);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(132);
 			Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt583);
 			Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2515);
 			Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2491);
@@ -70,7 +70,7 @@ public final class Static72 {
 			Static1.anInt2491 = (Static1.anInt2491 + 1) % 3;
 			Static1.aBoolean95 = true;
 			Static1.aBoolean144 = true;
-			Static1.aClass2_Sub3_Sub1_4.method1736(132);
+			Static1.aClass2_Sub3_Sub1_4.pIsaac1(132);
 			Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt583);
 			Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2515);
 			Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt2491);

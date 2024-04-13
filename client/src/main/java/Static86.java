@@ -100,7 +100,7 @@ public final class Static86 {
 		if (Static1.aBoolean184) {
 			if (Static1.anInt2492 != -1 && Static1.anInt1551 == Static1.anInt2492) {
 				Static1.anInt2492 = -1;
-				Static1.aClass2_Sub3_Sub1_4.method1736(145);
+				Static1.aClass2_Sub3_Sub1_4.pIsaac1(145);
 				Static1.aClass2_Sub3_Sub1_4.p1(Static1.anInt1551);
 			}
 			Static1.aBoolean165 = true;

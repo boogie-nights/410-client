@@ -268,11 +268,11 @@ public final class Static40 {
 				Static1.aClass2_Sub3_Sub1_3.p4(Static68.aClass5_Sub1_13.anInt95);
 				Static1.aClass2_Sub3_Sub1_3.pdata(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
 				Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_3.data, Static1.aClass2_Sub3_Sub1_3.pos);
-				Static1.aClass2_Sub3_Sub1_4.method1734(local185);
+				Static1.aClass2_Sub3_Sub1_4.setSeed(local185);
 				for (@Pc(379) int local379 = 0; local379 < 4; local379++) {
 					local185[local379] += 50;
 				}
-				Static1.aClass2_Sub3_Sub1_5.method1734(local185);
+				Static1.aClass2_Sub3_Sub1_5.setSeed(local185);
 				Static1.anInt693 = 6;
 			}
 			if (Static1.anInt693 == 6 && Static64.aClass25_36.method728() > 0) {
@@ -312,7 +312,7 @@ public final class Static40 {
 					Static1.anInt927 = Static64.aClass25_36.method726();
 					Static64.aClass25_36.method725(0, 1, Static1.aClass2_Sub3_Sub1_5.data);
 					Static1.aClass2_Sub3_Sub1_5.pos = 0;
-					Static1.anInt2083 = Static1.aClass2_Sub3_Sub1_5.method1733();
+					Static1.anInt2083 = Static1.aClass2_Sub3_Sub1_5.gIsaac1();
 					Static64.aClass25_36.method725(0, 2, Static1.aClass2_Sub3_Sub1_5.data);
 					Static1.aClass2_Sub3_Sub1_5.pos = 0;
 					Static1.anInt785 = Static1.aClass2_Sub3_Sub1_5.g2();
