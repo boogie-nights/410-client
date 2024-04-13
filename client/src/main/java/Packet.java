@@ -7,11 +7,37 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!eb")
 public class Packet extends Linkable {
 
-	@OriginalMember(owner = "client!eb", name = "W", descriptor = "[B")
+    @OriginalMember(owner = "client!db", name = "b", descriptor = "[I")
+    public static int[] crctable = new int[256];
+
+	static {
+		for (@Pc(8) int local8 = 0; local8 < 256; local8++) {
+			@Pc(11) int local11 = local8;
+			for (@Pc(13) int local13 = 0; local13 < 8; local13++) {
+				if ((local11 & 0x1) == 1) {
+					local11 = local11 >>> 1 ^ 0xEDB88320;
+				} else {
+					local11 >>>= 0x1;
+				}
+			}
+			Packet.crctable[local8] = local11;
+		}
+	}
+
+    @OriginalMember(owner = "client!eb", name = "W", descriptor = "[B")
 	public byte[] data;
 
 	@OriginalMember(owner = "client!eb", name = "C", descriptor = "I")
 	public int pos;
+
+	@OriginalMember(owner = "client!de", name = "a", descriptor = "(I[BIZ)I", line = 411)
+	public static int getcrc(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) int arg2) {
+		@Pc(7) int local7 = -1;
+		for (@Pc(9) int local9 = arg0; local9 < arg2; local9++) {
+			local7 = crctable[(local7 ^ arg1[local9]) & 0xFF] ^ local7 >>> 8;
+		}
+		return ~local7;
+	}
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(IJ)V", line = 5)
 	public final void p8(@OriginalArg(1) long arg0) {
@@ -91,7 +117,7 @@ public class Packet extends Linkable {
 
 	@OriginalMember(owner = "client!eb", name = "b", descriptor = "(II)I", line = 158)
 	public final int addcrc(@OriginalArg(1) int arg0) {
-		@Pc(16) int local16 = Static18.getcrc(arg0, this.data, this.pos);
+		@Pc(16) int local16 = getcrc(arg0, this.data, this.pos);
 		this.p4(local16);
 		return local16;
 	}

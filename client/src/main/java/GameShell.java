@@ -1,6 +1,6 @@
 import java.applet.Applet;
 import java.applet.AppletContext;
-import java.awt.Graphics;
+import java.awt.*;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.net.InetAddress;
@@ -17,11 +17,22 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	public static boolean shutdown = false;
 	@OriginalMember(owner = "client!ud", name = "cb", descriptor = "Lclient!bb;")
 	public static SignLink signlink;
+	@OriginalMember(owner = "client!wb", name = "q", descriptor = "Lclient!k;")
+	public static ViewBox frame;
+
+	@OriginalMember(owner = "client!ba", name = "b", descriptor = "(I)Ljava/awt/Component;", line = 71)
+	public static Component method185() {
+		if (frame == null) {
+			return signlink == null ? null : signlink.anApplet1;
+		} else {
+			return frame;
+		}
+	}
 
 	@OriginalMember(owner = "client!nb", name = "getAppletContext", descriptor = "()Ljava/applet/AppletContext;", line = 3)
 	@Override
 	public final AppletContext getAppletContext() {
-		if (Static97.frame == null) {
+		if (frame == null) {
 			return signlink == null || signlink.anApplet1 == this ? super.getAppletContext() : signlink.anApplet1.getAppletContext();
 		} else {
 			return null;
@@ -35,14 +46,14 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		}
 		shutdown = true;
 		try {
-			Static7.method185().removeFocusListener(this);
+			method185().removeFocusListener(this);
 		} catch (@Pc(19) Exception local19) {
 		}
 		try {
 			this.mainQuit();
 		} catch (@Pc(24) Exception local24) {
 		}
-		if (Static97.frame != null) {
+		if (frame != null) {
 			try {
 				System.exit(0);
 			} catch (@Pc(30) Throwable local30) {
@@ -60,7 +71,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	@OriginalMember(owner = "client!nb", name = "getParameter", descriptor = "(Ljava/lang/String;)Ljava/lang/String;", line = 106)
 	@Override
 	public final String getParameter(@OriginalArg(0) String arg0) {
-		if (Static97.frame == null) {
+		if (frame == null) {
 			return signlink == null || signlink.anApplet1 == this ? super.getParameter(arg0) : signlink.anApplet1.getParameter(arg0);
 		} else {
 			return null;
@@ -122,11 +133,11 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 				}
 			}
 			while (true) {
-				client.graphics = Static7.method185().getGraphics();
+				client.graphics = method185().getGraphics();
 				if (client.graphics != null) {
-					Static27.aClass45_14 = Static75.method1351(Static77.anInt1991, Static7.method185(), Static70.anInt2154);
-					Static7.method185().addFocusListener(this);
-					Static7.method185().requestFocus();
+					Static27.aClass45_14 = Static75.method1351(Static77.anInt1991, method185(), Static70.anInt2154);
+					method185().addFocusListener(this);
+					method185().requestFocus();
 					this.method327();
 					Static79.aClass18_1 = Static51.method1539();
 					Static79.aClass18_1.method1280();
@@ -140,7 +151,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 					break;
 				}
 				try {
-					Static7.method185().repaint();
+					method185().repaint();
 				} catch (@Pc(74) Exception local74) {
 				}
 				Static86.sleep(100L);
@@ -182,7 +193,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	@OriginalMember(owner = "client!nb", name = "getCodeBase", descriptor = "()Ljava/net/URL;", line = 307)
 	@Override
 	public final URL getCodeBase() {
-		if (Static97.frame == null) {
+		if (frame == null) {
 			return signlink == null || signlink.anApplet1 == this ? super.getCodeBase() : signlink.anApplet1.getCodeBase();
 		} else {
 			return null;
@@ -270,7 +281,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			Static40.anInt1849 = 410;
 			Static77.anInt1991 = 765;
 			Static1.anApplet_Sub1_1 = this;
-			Static97.frame = new ViewBox(this, Static77.anInt1991, Static70.anInt2154);
+			frame = new ViewBox(this, Static77.anInt1991, Static70.anInt2154);
 			Static38.aClass7_4 = signlink = new SignLink(true, null, arg2, arg1, arg0, 12);
 			signlink.method207(1, this);
 		} catch (@Pc(43) Exception local43) {
@@ -281,7 +292,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	@OriginalMember(owner = "client!nb", name = "getDocumentBase", descriptor = "()Ljava/net/URL;", line = 777)
 	@Override
 	public final URL getDocumentBase() {
-		if (Static97.frame == null) {
+		if (frame == null) {
 			return signlink == null || signlink.anApplet1 == this ? super.getDocumentBase() : signlink.anApplet1.getDocumentBase();
 		} else {
 			return null;

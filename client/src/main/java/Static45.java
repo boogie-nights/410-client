@@ -20,7 +20,7 @@ public final class Static45 {
 	public static void method1530() {
 		if (Static1.aClass30_1 != null) {
 			@Pc(12) Keyboard local12 = Static1.aClass30_1;
-			synchronized (Static1.aClass30_1) {
+			synchronized (local12) {
 				Static1.aClass30_1 = null;
 			}
 		}

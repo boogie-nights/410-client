@@ -125,7 +125,7 @@ public final class Static18 {
 		@Pc(155) int local155;
 		for (@Pc(151) int local151 = 0; local151 < 104; local151++) {
 			for (local155 = 0; local155 < 104; local155++) {
-				@Pc(165) LinkList local165 = Static1.levelObjStacks[client.currentLevel][local151][local155];
+				@Pc(165) LinkList local165 = client.levelObjStacks[client.currentLevel][local151][local155];
 				if (local165 != null) {
 					local77 = local151 * 4 + 2 - client.localPlayer.x / 32;
 					local20 = local155 * 4 + 2 - client.localPlayer.z / 32;
@@ -174,8 +174,8 @@ public final class Static18 {
 				}
 			}
 		}
-		if (Static1.anInt2139 != 0 && client.loopCycle % 20 < 10) {
-			if (Static1.anInt2139 == 1 && Static1.anInt1989 >= 0 && Static1.anInt1989 < client.npcs.length) {
+		if (client.hintType != 0 && client.loopCycle % 20 < 10) {
+			if (client.hintType == 1 && Static1.anInt1989 >= 0 && Static1.anInt1989 < client.npcs.length) {
 				@Pc(427) NpcEntity local427 = client.npcs[Static1.anInt1989];
 				if (local427 != null) {
 					local77 = local427.x / 32 - client.localPlayer.x / 32;
@@ -183,12 +183,12 @@ public final class Static18 {
 					Static95.method1646(Static12.aClass2_Sub2_Sub2_Sub4Array3[1], local20, local77);
 				}
 			}
-			if (Static1.anInt2139 == 2) {
-				local77 = (-Static79.anInt2058 + Static1.anInt410) * 4 + 2 - client.localPlayer.x / 32;
-				local20 = (Static1.anInt1952 - Static28.anInt725) * 4 + 2 - client.localPlayer.z / 32;
+			if (client.hintType == 2) {
+				local77 = (-client.sceneBaseTileX + client.hintTileX) * 4 + 2 - client.localPlayer.x / 32;
+				local20 = (client.hintTileZ - client.sceneBaseTileZ) * 4 + 2 - client.localPlayer.z / 32;
 				Static95.method1646(Static12.aClass2_Sub2_Sub2_Sub4Array3[1], local20, local77);
 			}
-			if (Static1.anInt2139 == 10 && Static1.anInt2353 >= 0 && client.players.length > Static1.anInt2353) {
+			if (client.hintType == 10 && Static1.anInt2353 >= 0 && client.players.length > Static1.anInt2353) {
 				local288 = client.players[Static1.anInt2353];
 				if (local288 != null) {
 					local20 = local288.z / 32 - client.localPlayer.z / 32;
@@ -206,12 +206,4 @@ public final class Static18 {
 		Static30.method594(client.graphics);
 	}
 
-	@OriginalMember(owner = "client!de", name = "a", descriptor = "(I[BIZ)I", line = 411)
-	public static int getcrc(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) int arg2) {
-		@Pc(7) int local7 = -1;
-		for (@Pc(9) int local9 = arg0; local9 < arg2; local9++) {
-			local7 = Static1.anIntArray85[(local7 ^ arg1[local9]) & 0xFF] ^ local7 >>> 8;
-		}
-		return ~local7;
-	}
 }

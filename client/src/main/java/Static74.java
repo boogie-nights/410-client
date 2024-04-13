@@ -26,14 +26,14 @@ public final class Static74 {
 		Static1.anInt786 = arg1;
 		Static45.anInt2262 = arg4;
 		Static51.anInt2327 = arg0;
-		Static7.method187(25);
+		client.method187(25);
 		Static61.method1095(false, null, JagString.aClass40_674);
-		@Pc(43) int local43 = Static28.anInt725;
-		Static28.anInt725 = (arg4 - 6) * 8;
-		@Pc(54) int local54 = Static28.anInt725 - local43;
-		@Pc(58) int local58 = Static79.anInt2058;
-		Static79.anInt2058 = arg0 * 8 - 48;
-		@Pc(69) int local69 = Static79.anInt2058 - local58;
+		@Pc(43) int local43 = client.sceneBaseTileZ;
+		client.sceneBaseTileZ = (arg4 - 6) * 8;
+		@Pc(54) int local54 = client.sceneBaseTileZ - local43;
+		@Pc(58) int local58 = client.sceneBaseTileX;
+		client.sceneBaseTileX = arg0 * 8 - 48;
+		@Pc(69) int local69 = client.sceneBaseTileX - local58;
 		for (@Pc(73) int local73 = 0; local73 < 16384; local73++) {
 			@Pc(79) NpcEntity local79 = client.npcs[local73];
 			if (local79 != null) {
@@ -80,9 +80,9 @@ public final class Static74 {
 				@Pc(240) int local240 = local54 + local230;
 				for (@Pc(242) int local242 = 0; local242 < 4; local242++) {
 					if (local236 >= 0 && local240 >= 0 && local236 < 104 && local240 < 104) {
-						Static1.levelObjStacks[local242][local226][local230] = Static1.levelObjStacks[local242][local236][local240];
+						client.levelObjStacks[local242][local226][local230] = client.levelObjStacks[local242][local236][local240];
 					} else {
-						Static1.levelObjStacks[local242][local226][local230] = null;
+						client.levelObjStacks[local242][local226][local230] = null;
 					}
 				}
 			}
@@ -107,7 +107,7 @@ public final class Static74 {
 	@OriginalMember(owner = "client!ra", name = "b", descriptor = "(B)V", line = 246)
 	public static void method1344() {
 		LocType.aClass47_11.clear();
-		LocType.aClass47_21.clear();
+		LocType.modelCacheStatic.clear();
 		LocType.aClass47_10.clear();
 		LocType.aClass47_1.clear();
 	}

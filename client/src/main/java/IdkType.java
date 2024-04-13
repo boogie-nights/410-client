@@ -50,7 +50,7 @@ public final class IdkType extends Hashable {
 		}
 		@Pc(15) Model[] local15 = new Model[this.anIntArray516.length];
 		for (@Pc(17) int local17 = 0; local17 < this.anIntArray516.length; local17++) {
-			local15[local17] = Static65.method1163(Static66.aClass5_22, this.anIntArray516[local17]);
+			local15[local17] = Model.method1163(Static66.aClass5_22, this.anIntArray516[local17]);
 		}
 		@Pc(45) Model local45;
 		if (local15.length == 1) {
@@ -95,7 +95,7 @@ public final class IdkType extends Hashable {
 		@Pc(6) int local6 = 0;
 		for (@Pc(12) int local12 = 0; local12 < 5; local12++) {
 			if (this.anIntArray515[local12] != -1) {
-				local4[local6++] = Static65.method1163(Static66.aClass5_22, this.anIntArray515[local12]);
+				local4[local6++] = Model.method1163(Static66.aClass5_22, this.anIntArray515[local12]);
 			}
 		}
 		@Pc(46) Model local46 = new Model(local4, local6);

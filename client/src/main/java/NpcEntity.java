@@ -14,8 +14,8 @@ public final class NpcEntity extends PathingEntity {
 		if (this.type == null) {
 			return null;
 		}
-		@Pc(28) SeqType local28 = super.anInt2307 != -1 && super.anInt2313 == 0 ? SeqType.method1042(super.anInt2307) : null;
-		@Pc(50) SeqType local50 = super.anInt2318 == -1 || super.anInt2318 == super.anInt2290 && local28 != null ? null : SeqType.method1042(super.anInt2318);
+		@Pc(28) SeqType local28 = super.primarySeqId != -1 && super.primarySeqDelay == 0 ? SeqType.method1042(super.primarySeqId) : null;
+		@Pc(50) SeqType local50 = super.secondarySeqId == -1 || super.secondarySeqId == super.seqStandId && local28 != null ? null : SeqType.method1042(super.secondarySeqId);
 		@Pc(61) Model local61 = this.type.method605(local28, local50, super.anInt2316, super.anInt2295);
 		if (local61 == null) {
 			return null;

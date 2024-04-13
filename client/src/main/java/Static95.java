@@ -13,9 +13,6 @@ public final class Static95 {
 	@OriginalMember(owner = "client!vd", name = "y", descriptor = "[I")
 	public static int[] anIntArray547;
 
-	@OriginalMember(owner = "client!vd", name = "z", descriptor = "Lclient!fc;")
-	public static PixFont aClass2_Sub2_Sub2_Sub2_5;
-
 	@OriginalMember(owner = "client!vd", name = "B", descriptor = "I")
 	public static int anInt2495;
 
@@ -164,7 +161,7 @@ public final class Static95 {
 		if (Static1.anInt1850 == 30) {
 			Static40.animsJs5 = Static66.method1188(false, 0, true, true);
 			Static79.basesJs5 = Static66.method1188(false, 1, true, true);
-			Static5.configJs5 = Static66.method1188(true, 2, true, false);
+			client.configJs5 = Static66.method1188(true, 2, true, false);
 			Static26.interfacesJs5 = Static66.method1188(false, 3, true, true);
 			Static33.synthSoundsJs5 = Static66.method1188(false, 4, true, true);
 			Static34.mapsJs5 = Static66.method1188(true, 5, true, true);
@@ -180,7 +177,7 @@ public final class Static95 {
 		} else if (Static1.anInt1850 == 40) {
 			local17 = Static40.animsJs5.method89() * 5 / 100;
 			local17 += Static79.basesJs5.method89() * 5 / 100;
-			local17 += Static5.configJs5.method89() * 5 / 100;
+			local17 += client.configJs5.method89() * 5 / 100;
 			local17 += Static26.interfacesJs5.method89() * 5 / 100;
 			local17 += Static33.synthSoundsJs5.method89() * 5 / 100;
 			local17 += Static34.mapsJs5.method89() * 5 / 100;
@@ -202,7 +199,7 @@ public final class Static95 {
 			}
 		} else if (Static1.anInt1850 == 45) {
 			Static79.method1400(GameShell.signlink, !client.lowMemory);
-			Static80.aClass2_Sub10_Sub2_1 = Static35.method717(GameShell.signlink, Static7.method185());
+			Static80.aClass2_Sub10_Sub2_1 = Static35.method717(GameShell.signlink, GameShell.method185());
 			Static10.aClass56_1 = new SampleRateConverter(22050, Static11.anInt291);
 			Static1.anInt2194 = 35;
 			Static1.anInt1850 = 50;
@@ -214,13 +211,13 @@ public final class Static95 {
 			} else {
 				local17++;
 			}
-			if (aClass2_Sub2_Sub2_Sub2_5 == null) {
-				aClass2_Sub2_Sub2_Sub2_5 = Static50.method941(Static74.spritesJs5, JagString.EMPTY_STRING, JagString.aClass40_726);
+			if (client.fontPlain12 == null) {
+				client.fontPlain12 = Static50.method941(Static74.spritesJs5, JagString.EMPTY_STRING, JagString.aClass40_726);
 			} else {
 				local17++;
 			}
-			if (Static13.aClass2_Sub2_Sub2_Sub2_1 == null) {
-				Static13.aClass2_Sub2_Sub2_Sub2_1 = Static50.method941(Static74.spritesJs5, JagString.EMPTY_STRING, JagString.aClass40_69);
+			if (client.fondBold12 == null) {
+				client.fondBold12 = Static50.method941(Static74.spritesJs5, JagString.EMPTY_STRING, JagString.aClass40_69);
 			} else {
 				local17++;
 			}
@@ -235,7 +232,7 @@ public final class Static95 {
 			} else {
 				Static1.anInt1850 = 60;
 				Static1.anInt2194 = 40;
-				Static45.aClass2_Sub2_Sub2_Sub2Array9 = new PixFont[] { Static70.aClass2_Sub2_Sub2_Sub2_4, aClass2_Sub2_Sub2_Sub2_5, Static13.aClass2_Sub2_Sub2_Sub2_1, Static39.aClass2_Sub2_Sub2_Sub2_2 };
+				Static45.aClass2_Sub2_Sub2_Sub2Array9 = new PixFont[] { Static70.aClass2_Sub2_Sub2_Sub2_4, client.fontPlain12, client.fondBold12, Static39.aClass2_Sub2_Sub2_Sub2_2 };
 				JagString.aClass40_680 = JagString.aClass40_711;
 			}
 		} else if (Static1.anInt1850 == 60) {
@@ -247,27 +244,27 @@ public final class Static95 {
 			} else {
 				JagString.aClass40_680 = JagString.aClass40_516;
 				Static1.anInt2194 = 50;
-				Static7.method187(5);
+				client.method187(5);
 				Static1.anInt1850 = 70;
 			}
 		} else if (Static1.anInt1850 == 70) {
-			if (Static5.configJs5.method78()) {
-				Static91.method75(Static5.configJs5);
-				FloorUnderlayType.method117(Static5.configJs5);
-				Static30.method591(Static24.modelsJs5, Static5.configJs5);
-				LocType.method1518(client.lowMemory, Static24.modelsJs5, Static5.configJs5);
-				NpcType.method1651(Static5.configJs5, Static24.modelsJs5);
-				Static98.method1741(Static24.modelsJs5, Static5.configJs5, client.membersWorld);
-				Static88.method1551(Static79.basesJs5, Static40.animsJs5, Static5.configJs5);
-				SpotAnimType.method1329(Static5.configJs5, Static24.modelsJs5);
-				VarBitType.method340(Static5.configJs5);
-				Static84.method1483(Static5.configJs5);
+			if (client.configJs5.method78()) {
+				Static91.method75(client.configJs5);
+				FloorUnderlayType.method117(client.configJs5);
+				Static30.method591(Static24.modelsJs5, client.configJs5);
+				LocType.method1518(client.lowMemory, Static24.modelsJs5, client.configJs5);
+				NpcType.method1651(client.configJs5, Static24.modelsJs5);
+				Static98.method1741(Static24.modelsJs5, client.configJs5, client.membersWorld);
+				Static88.method1551(Static79.basesJs5, Static40.animsJs5, client.configJs5);
+				SpotAnimType.method1329(client.configJs5, Static24.modelsJs5);
+				VarBitType.method340(client.configJs5);
+				Static84.method1483(client.configJs5);
 				Static83.method1471(Static74.spritesJs5, Static26.interfacesJs5, Static24.modelsJs5);
 				JagString.aClass40_680 = JagString.aClass40_469;
 				Static1.anInt1850 = 80;
 				Static1.anInt2194 = 60;
 			} else {
-				JagString.aClass40_680 = JagString.concatenate(new JagString[] { JagString.aClass40_616, Static48.method859(Static5.configJs5.method87()), JagString.aClass40_430 });
+				JagString.aClass40_680 = JagString.concatenate(new JagString[] { JagString.aClass40_616, Static48.method859(client.configJs5.method87()), JagString.aClass40_430 });
 				Static1.anInt2194 = 60;
 			}
 		} else if (Static1.anInt1850 == 80) {
@@ -307,13 +304,13 @@ public final class Static95 {
 			} else {
 				local17++;
 			}
-			if (Static93.aClass2_Sub2_Sub2_Sub4Array10 == null) {
-				Static93.aClass2_Sub2_Sub2_Sub4Array10 = Static34.method638(Static74.spritesJs5, JagString.aClass40_671, JagString.EMPTY_STRING);
+			if (client.aClass2_Sub2_Sub2_Sub4Array10 == null) {
+				client.aClass2_Sub2_Sub2_Sub4Array10 = Static34.method638(Static74.spritesJs5, JagString.aClass40_671, JagString.EMPTY_STRING);
 			} else {
 				local17++;
 			}
-			if (Static40.aClass2_Sub2_Sub2_Sub4_7 == null) {
-				Static40.aClass2_Sub2_Sub2_Sub4_7 = method1644(JagString.aClass40_25, JagString.EMPTY_STRING, Static74.spritesJs5);
+			if (client.aClass2_Sub2_Sub2_Sub4_7 == null) {
+				client.aClass2_Sub2_Sub2_Sub4_7 = method1644(JagString.aClass40_25, JagString.EMPTY_STRING, Static74.spritesJs5);
 			} else {
 				local17++;
 			}
@@ -322,8 +319,8 @@ public final class Static95 {
 			} else {
 				local17++;
 			}
-			if (Static49.aClass2_Sub2_Sub2_Sub4Array7 == null) {
-				Static49.aClass2_Sub2_Sub2_Sub4Array7 = Static34.method638(Static74.spritesJs5, JagString.aClass40_332, JagString.EMPTY_STRING);
+			if (client.imageCrosses == null) {
+				client.imageCrosses = Static34.method638(Static74.spritesJs5, JagString.aClass40_332, JagString.EMPTY_STRING);
 			} else {
 				local17++;
 			}
@@ -409,7 +406,7 @@ public final class Static95 {
 				Static1.anInt2194 = 100;
 			}
 		} else if (Static1.anInt1850 == 140) {
-			Static7.method187(10);
+			client.method187(10);
 		}
 	}
 
@@ -418,7 +415,7 @@ public final class Static95 {
 		if (!Static99.method1665(arg0)) {
 			return;
 		}
-		@Pc(26) ComType[] local26 = Static46.aClass2_Sub2_Sub13ArrayArray1[arg0];
+		@Pc(26) ComType[] local26 = ComType.instances[arg0];
 		for (@Pc(28) int local28 = 0; local28 < local26.length; local28++) {
 			@Pc(34) ComType local34 = local26[local28];
 			if (local34 != null) {
@@ -430,7 +427,7 @@ public final class Static95 {
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(IILclient!ke;)V", line = 734)
 	public static void method1649(@OriginalArg(0) int arg0, @OriginalArg(2) PathingEntity arg1) {
-		Static96.method1667(arg0, arg1.x, arg1.z);
+		client.projectFromGround(arg0, arg1.x, arg1.z);
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(IIIIIII)I", line = 776)
@@ -455,7 +452,7 @@ public final class Static95 {
 	@OriginalMember(owner = "client!vd", name = "b", descriptor = "(B)V", line = 832)
 	public static void method1652() {
 		IdkType.aClass47_22 = null;
-		aClass2_Sub2_Sub2_Sub2_5 = null;
+		client.fontPlain12 = null;
 		JagString.aClass40_714 = null;
 		JagString.aClass40_715 = null;
 		aClass2_Sub2_Sub2_Sub3_24 = null;

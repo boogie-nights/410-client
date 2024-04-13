@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
-import java.io.DataInputStream;
+import java.io.*;
 import java.net.URL;
 
 @OriginalClass("client!cc")
@@ -26,7 +26,7 @@ public final class JagException extends RuntimeException {
         try {
             @Pc(8) String local8 = "";
             if (arg1 != null) {
-                local8 = Static58.method1059(arg1);
+                local8 = method1059(arg1);
             }
             if (arg0 != null) {
                 if (arg1 != null) {
@@ -49,6 +49,49 @@ public final class JagException extends RuntimeException {
                 local117.close();
             }
         } catch (@Pc(124) Exception local124) {
+        }
+    }
+
+    @OriginalMember(owner = "client!mc", name = "a", descriptor = "(Ljava/lang/Throwable;B)Ljava/lang/String;", line = 543)
+    public static String method1059(@OriginalArg(0) Throwable arg0) throws IOException {
+        @Pc(20) String local20;
+        if (arg0 instanceof JagException) {
+            @Pc(7) JagException local7 = (JagException) arg0;
+            arg0 = local7.aThrowable1;
+            local20 = local7.aString7 + " | ";
+        } else {
+            local20 = "";
+        }
+        @Pc(28) StringWriter local28 = new StringWriter();
+        @Pc(33) PrintWriter local33 = new PrintWriter(local28);
+        arg0.printStackTrace(local33);
+        local33.close();
+        @Pc(50) String local50 = local28.toString();
+        @Pc(58) BufferedReader local58 = new BufferedReader(new StringReader(local50));
+        @Pc(61) String local61 = local58.readLine();
+        while (true) {
+            while (true) {
+                @Pc(64) String local64 = local58.readLine();
+                if (local64 == null) {
+                    return local20 + "| " + local61;
+                }
+                @Pc(70) int local70 = local64.indexOf(40);
+                @Pc(77) int local77 = local64.indexOf(41, local70 + 1);
+                if (local70 >= 0 && local77 >= 0) {
+                    @Pc(94) String local94 = local64.substring(local70 + 1, local77);
+                    @Pc(98) int local98 = local94.indexOf(".java:");
+                    if (local98 >= 0) {
+                        local94 = local94.substring(0, local98) + local94.substring(local98 + 5);
+                        local20 = local20 + local94 + ' ';
+                        continue;
+                    }
+                    local64 = local64.substring(0, local70);
+                }
+                local64 = local64.trim();
+                local64 = local64.substring(local64.lastIndexOf(32) + 1);
+                local64 = local64.substring(local64.lastIndexOf(9) + 1);
+                local20 = local20 + local64 + ' ';
+            }
         }
     }
 }

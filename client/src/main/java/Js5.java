@@ -40,13 +40,33 @@ public final class Js5 extends Js5Index {
 		Static3.method27(this, this.anInt123);
 	}
 
-	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(BI)V", line = 56)
+    @OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!ad;Lclient!cb;ZI)V", line = 351)
+    public static void method1056(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Cache arg1, @OriginalArg(3) int arg2) {
+        @Pc(7) byte[] local7 = null;
+        @Pc(9) LinkList local9 = Static1.aClass44_2;
+        synchronized (Static1.aClass44_2) {
+            for (@Pc(16) Js5CacheRequest local16 = (Js5CacheRequest) Static1.aClass44_2.head(); local16 != null; local16 = (Js5CacheRequest) Static1.aClass44_2.next()) {
+                if ((long) arg2 == local16.key && arg1 == local16.cache && local16.type == 0) {
+                    local7 = local16.data;
+                    break;
+                }
+            }
+        }
+        if (local7 == null) {
+            @Pc(75) byte[] local75 = arg1.read(arg2);
+            arg0.method95(arg1, arg2, local75, true);
+        } else {
+            arg0.method95(arg1, arg2, local7, true);
+        }
+    }
+
+    @OriginalMember(owner = "client!ad", name = "a", descriptor = "(BI)V", line = 56)
 	@Override
 	protected void method62(@OriginalArg(1) int arg0) {
 		if (this.aClass11_2 == null || this.aBooleanArray1 == null || !this.aBooleanArray1[arg0]) {
 			Static45.method1535(arg0, this, super.anIntArray16[arg0], (byte) 2, true, this.anInt123);
 		} else {
-			Static58.method1056(this, this.aClass11_2, arg0);
+			method1056(this, this.aClass11_2, arg0);
 		}
 	}
 
@@ -149,7 +169,7 @@ public final class Js5 extends Js5Index {
 		if (this.aClass11_1 == null) {
 			Static45.method1535(this.anInt123, this, this.anInt134, (byte) 0, true, 255);
 		} else {
-			Static58.method1056(this, this.aClass11_1, this.anInt123);
+			method1056(this, this.aClass11_1, this.anInt123);
 		}
 	}
 

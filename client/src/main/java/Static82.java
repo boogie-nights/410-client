@@ -49,7 +49,7 @@ public final class Static82 {
 		@Pc(66) int local66 = arg2 * local43 - arg0 * local55 >> 16;
 		@Pc(76) int local76 = arg2 * local55 + arg0 * local43 >> 16;
 		if (local20 <= 2500) {
-			arg1.method1624(local76 + 94 + 4 - arg1.anInt2445 / 2, -local66 + -4 + (83 - arg1.anInt2443 / 2));
+			arg1.draw(local76 + 94 + 4 - arg1.anInt2445 / 2, -local66 + -4 + (83 - arg1.anInt2443 / 2));
 		} else {
 			arg1.method1622(Static16.aClass2_Sub2_Sub2_Sub3_6, local76 + 4 + 94 - arg1.anInt2445 / 2, -(arg1.anInt2443 / 2) + -4 + 83 + -local66);
 		}

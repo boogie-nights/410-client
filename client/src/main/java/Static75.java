@@ -114,43 +114,4 @@ public final class Static75 {
 		Static53.method992();
 	}
 
-	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(III)V", line = 1217)
-	public static void sortObjStacks(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(11) LinkList local11 = Static1.levelObjStacks[client.currentLevel][arg1][arg0];
-		if (local11 == null) {
-			client.scene.method1437(client.currentLevel, arg1, arg0);
-			return;
-		}
-		@Pc(21) ObjStackEntity local21 = null;
-		@Pc(26) ObjStackEntity local26 = (ObjStackEntity) local11.head();
-		@Pc(28) int local28 = -99999999;
-		while (local26 != null) {
-			@Pc(34) ObjType local34 = ObjType.method1669(local26.anInt1490);
-			@Pc(37) int local37 = local34.anInt938;
-			if (local34.aBoolean67) {
-				local37 *= local26.anInt1495 + 1;
-			}
-			if (local37 > local28) {
-				local28 = local37;
-				local21 = local26;
-			}
-			local26 = (ObjStackEntity) local11.next();
-		}
-		local11.method1229(local21);
-		@Pc(71) ObjStackEntity local71 = null;
-		local26 = (ObjStackEntity) local11.head();
-		@Pc(78) ObjStackEntity local78 = null;
-		while (local26 != null) {
-			if (local21.anInt1490 != local26.anInt1490 && local71 == null) {
-				local71 = local26;
-			}
-			if (local26.anInt1490 != local21.anInt1490 && local71.anInt1490 != local26.anInt1490 && local78 == null) {
-				local78 = local26;
-			}
-			local26 = (ObjStackEntity) local11.next();
-		}
-		@Pc(126) int local126 = arg1 + (arg0 << 7) + 0x60000000;
-		client.scene.method1427(client.currentLevel, arg1, arg0, client.getHeightmapY(client.currentLevel, arg1 * 128 + 64, arg0 * 128 + 64), local21, local126, local71, local78);
-	}
-
 }

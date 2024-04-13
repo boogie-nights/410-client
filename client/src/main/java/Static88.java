@@ -50,8 +50,8 @@ public final class Static88 {
 			if (local50 != null) {
 				client.tryMove(local50.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local50.pathTileX[0]);
 				client.crossMode = 2;
-				Static1.anInt2465 = Static1.anInt2133;
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt2465 = Static1.anInt2133;
+				client.anInt1554 = Static1.anInt2500;
 				client.crossCycle = 0;
 				client.out.pIsaac1(110);
 				client.out.p2_alt2(local22);
@@ -75,13 +75,13 @@ public final class Static88 {
 			}
 			client.crossCycle = 0;
 			client.crossMode = 2;
-			Static1.anInt2465 = Static1.anInt2133;
-			Static1.anInt1554 = Static1.anInt2500;
+			client.anInt2465 = Static1.anInt2133;
+			client.anInt1554 = Static1.anInt2500;
 			client.out.pIsaac1(211);
 			client.out.p2_alt2(Static28.anInt724);
 			client.out.p2_alt1(Static91.anInt96);
-			client.out.p2_alt1(local26 + Static79.anInt2058);
-			client.out.p2(Static28.anInt725 + local30);
+			client.out.p2_alt1(local26 + client.sceneBaseTileX);
+			client.out.p2(client.sceneBaseTileZ + local30);
 			client.out.p4_alt1(Static97.anInt2526);
 			client.out.p2(local22);
 		}
@@ -89,9 +89,9 @@ public final class Static88 {
 			local50 = client.npcs[local22];
 			if (local50 != null) {
 				client.tryMove(local50.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local50.pathTileX[0]);
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt1554 = Static1.anInt2500;
 				client.crossCycle = 0;
-				Static1.anInt2465 = Static1.anInt2133;
+				client.anInt2465 = Static1.anInt2133;
 				client.crossMode = 2;
 				client.out.pIsaac1(212);
 				client.out.p2_alt2(local22);
@@ -105,7 +105,7 @@ public final class Static88 {
 			client.selectedArea = 2;
 			Static1.anInt1171 = local30;
 			Static1.anInt1947 = local26;
-			if (Static1.anInt2585 == local30 >> 16) {
+			if (client.anInt2585 == local30 >> 16) {
 				client.selectedArea = 1;
 			}
 			if (client.chatInterfaceId == local30 >> 16) {
@@ -140,10 +140,10 @@ public final class Static88 {
 			local462 = client.players[local22];
 			if (local462 != null) {
 				client.tryMove(local462.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local462.pathTileX[0]);
-				Static1.anInt2465 = Static1.anInt2133;
+				client.anInt2465 = Static1.anInt2133;
 				client.crossCycle = 0;
 				client.crossMode = 2;
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt1554 = Static1.anInt2500;
 				client.out.pIsaac1(7);
 				client.out.p2_alt3(local22);
 			}
@@ -195,7 +195,7 @@ public final class Static88 {
 			client.selectedArea = 2;
 			client.selectedCycle = 0;
 			Static1.anInt1947 = local26;
-			if (local30 >> 16 == Static1.anInt2585) {
+			if (local30 >> 16 == client.anInt2585) {
 				client.selectedArea = 1;
 			}
 			if (local30 >> 16 == client.chatInterfaceId) {
@@ -206,11 +206,11 @@ public final class Static88 {
 			local407 = client.menuOption[arg0];
 			local412 = local407.method1200(JagString.aClass40_229);
 			if (local412 != -1) {
-				if (Static1.anInt2585 == -1) {
+				if (client.anInt2585 == -1) {
 					Static55.method998();
 					if (Static1.anInt808 != -1) {
 						JagString.aClass40_448 = local407.method1185(local412 + 5).method1178();
-						Static1.anInt1826 = Static1.anInt2585 = Static1.anInt808;
+						Static1.anInt1826 = client.anInt2585 = Static1.anInt808;
 						Static1.aBoolean103 = false;
 					}
 				} else {
@@ -222,8 +222,8 @@ public final class Static88 {
 			local50 = client.npcs[local22];
 			if (local50 != null) {
 				client.tryMove(local50.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local50.pathTileX[0]);
-				Static1.anInt2465 = Static1.anInt2133;
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt2465 = Static1.anInt2133;
+				client.anInt1554 = Static1.anInt2500;
 				client.crossMode = 2;
 				client.crossCycle = 0;
 				client.out.pIsaac1(133);
@@ -250,7 +250,7 @@ public final class Static88 {
 			client.selectedCycle = 0;
 			Static1.anInt1947 = local26;
 			Static1.anInt1171 = local30;
-			if (Static1.anInt2585 == local30 >> 16) {
+			if (client.anInt2585 == local30 >> 16) {
 				client.selectedArea = 1;
 			}
 			if (client.chatInterfaceId == local30 >> 16) {
@@ -263,8 +263,8 @@ public final class Static88 {
 				client.tryMove(local462.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local462.pathTileX[0]);
 				client.crossMode = 2;
 				client.crossCycle = 0;
-				Static1.anInt2465 = Static1.anInt2133;
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt2465 = Static1.anInt2133;
+				client.anInt1554 = Static1.anInt2500;
 				client.out.pIsaac1(58);
 				client.out.p2_alt2(local22);
 			}
@@ -273,8 +273,8 @@ public final class Static88 {
 			local50 = client.npcs[local22];
 			if (local50 != null) {
 				client.tryMove(local50.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local50.pathTileX[0]);
-				Static1.anInt2465 = Static1.anInt2133;
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt2465 = Static1.anInt2133;
+				client.anInt1554 = Static1.anInt2500;
 				client.crossMode = 2;
 				client.crossCycle = 0;
 				client.out.pIsaac1(101);
@@ -287,14 +287,14 @@ public final class Static88 {
 			if (!local225) {
 				client.tryMove(local30, 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local26);
 			}
-			Static1.anInt2465 = Static1.anInt2133;
+			client.anInt2465 = Static1.anInt2133;
 			client.crossMode = 2;
-			Static1.anInt1554 = Static1.anInt2500;
+			client.anInt1554 = Static1.anInt2500;
 			client.crossCycle = 0;
 			client.out.pIsaac1(131);
-			client.out.p2(local30 + Static28.anInt725);
+			client.out.p2(local30 + client.sceneBaseTileZ);
 			client.out.p2_alt2(local22);
-			client.out.p2(local26 + Static79.anInt2058);
+			client.out.p2(local26 + client.sceneBaseTileX);
 		}
 		if (local12 == 16) {
 			local225 = client.tryMove(local30, 0, client.localPlayer.pathTileX[0], 0, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 0, local26);
@@ -302,12 +302,12 @@ public final class Static88 {
 				client.tryMove(local30, 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local26);
 			}
 			client.crossMode = 2;
-			Static1.anInt1554 = Static1.anInt2500;
-			Static1.anInt2465 = Static1.anInt2133;
+			client.anInt1554 = Static1.anInt2500;
+			client.anInt2465 = Static1.anInt2133;
 			client.crossCycle = 0;
 			client.out.pIsaac1(200);
-			client.out.p2(Static28.anInt725 + local30);
-			client.out.p2(Static79.anInt2058 + local26);
+			client.out.p2(client.sceneBaseTileZ + local30);
+			client.out.p2(client.sceneBaseTileX + local26);
 			client.out.p2_alt1(local22);
 		}
 		@Pc(1208) boolean local1208;
@@ -328,8 +328,8 @@ public final class Static88 {
 		if (local12 == 41) {
 			client.interactWithLoc(local30, local22, local26);
 			client.out.pIsaac1(165);
-			client.out.p2_alt3(local30 + Static28.anInt725);
-			client.out.p2_alt2(Static79.anInt2058 + local26);
+			client.out.p2_alt3(local30 + client.sceneBaseTileZ);
+			client.out.p2_alt2(client.sceneBaseTileX + local26);
 			client.out.p2_alt1(local22 >> 14 & 0x7FFF);
 		}
 		@Pc(1295) NpcEntity local1295;
@@ -337,8 +337,8 @@ public final class Static88 {
 			local1295 = client.npcs[local22];
 			if (local1295 != null) {
 				client.tryMove(local1295.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local1295.pathTileX[0]);
-				Static1.anInt2465 = Static1.anInt2133;
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt2465 = Static1.anInt2133;
+				client.anInt1554 = Static1.anInt2500;
 				client.crossMode = 2;
 				client.crossCycle = 0;
 				client.out.pIsaac1(185);
@@ -365,7 +365,7 @@ public final class Static88 {
 			client.out.p2_alt2(local26);
 			client.selectedArea = 2;
 			client.selectedCycle = 0;
-			if (local30 >> 16 == Static1.anInt2585) {
+			if (local30 >> 16 == client.anInt2585) {
 				client.selectedArea = 1;
 			}
 			Static1.anInt1171 = local30;
@@ -378,10 +378,10 @@ public final class Static88 {
 			local1295 = client.npcs[local22];
 			if (local1295 != null) {
 				client.tryMove(local1295.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local1295.pathTileX[0]);
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt1554 = Static1.anInt2500;
 				client.crossCycle = 0;
 				client.crossMode = 2;
-				Static1.anInt2465 = Static1.anInt2133;
+				client.anInt2465 = Static1.anInt2133;
 				client.out.pIsaac1(164);
 				client.out.p2_alt1(local22);
 			}
@@ -392,13 +392,13 @@ public final class Static88 {
 				client.tryMove(local30, 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local26);
 			}
 			client.crossMode = 2;
-			Static1.anInt2465 = Static1.anInt2133;
-			Static1.anInt1554 = Static1.anInt2500;
+			client.anInt2465 = Static1.anInt2133;
+			client.anInt1554 = Static1.anInt2500;
 			client.crossCycle = 0;
 			client.out.pIsaac1(219);
-			client.out.p2_alt1(Static79.anInt2058 + local26);
+			client.out.p2_alt1(client.sceneBaseTileX + local26);
 			client.out.p2_alt1(local22);
-			client.out.p2_alt1(local30 + Static28.anInt725);
+			client.out.p2_alt1(local30 + client.sceneBaseTileZ);
 		}
 		@Pc(1556) ObjType local1556;
 		if (local12 == 1001) {
@@ -418,7 +418,7 @@ public final class Static88 {
 			client.out.p4(Static77.anInt1992);
 			client.selectedArea = 2;
 			Static1.anInt1947 = local26;
-			if (local30 >> 16 == Static1.anInt2585) {
+			if (local30 >> 16 == client.anInt2585) {
 				client.selectedArea = 1;
 			}
 			client.selectedCycle = 0;
@@ -440,7 +440,7 @@ public final class Static88 {
 			client.selectedCycle = 0;
 			Static1.anInt1171 = local30;
 			client.selectedArea = 2;
-			if (Static1.anInt2585 == local30 >> 16) {
+			if (client.anInt2585 == local30 >> 16) {
 				client.selectedArea = 1;
 			}
 			if (local30 >> 16 == client.chatInterfaceId) {
@@ -455,7 +455,7 @@ public final class Static88 {
 			client.out.p2_alt2(local22);
 			Static1.anInt1947 = local26;
 			client.selectedArea = 2;
-			if (Static1.anInt2585 == local30 >> 16) {
+			if (client.anInt2585 == local30 >> 16) {
 				client.selectedArea = 1;
 			}
 			if (client.chatInterfaceId == local30 >> 16) {
@@ -467,9 +467,9 @@ public final class Static88 {
 		if (local12 == 34) {
 			client.interactWithLoc(local30, local22, local26);
 			client.out.pIsaac1(222);
-			client.out.p2_alt1(Static28.anInt725 + local30);
+			client.out.p2_alt1(client.sceneBaseTileZ + local30);
 			client.out.p2_alt3(local22 >> 14 & 0x7FFF);
-			client.out.p2_alt2(Static79.anInt2058 + local26);
+			client.out.p2_alt2(client.sceneBaseTileX + local26);
 		}
 		if (local12 == 47) {
 			client.out.pIsaac1(192);
@@ -480,7 +480,7 @@ public final class Static88 {
 			client.selectedCycle = 0;
 			client.selectedArea = 2;
 			Static1.anInt1947 = local26;
-			if (Static1.anInt2585 == local30 >> 16) {
+			if (client.anInt2585 == local30 >> 16) {
 				client.selectedArea = 1;
 			}
 			if (client.chatInterfaceId == local30 >> 16) {
@@ -496,7 +496,7 @@ public final class Static88 {
 			Static1.anInt1947 = local26;
 			Static1.anInt1171 = local30;
 			client.selectedArea = 2;
-			if (Static1.anInt2585 == local30 >> 16) {
+			if (client.anInt2585 == local30 >> 16) {
 				client.selectedArea = 1;
 			}
 			if (client.chatInterfaceId == local30 >> 16) {
@@ -518,15 +518,15 @@ public final class Static88 {
 		if (local12 == 1004) {
 			client.interactWithLoc(local30, local22, local26);
 			client.out.pIsaac1(33);
-			client.out.p2_alt3(local30 + Static28.anInt725);
-			client.out.p2_alt2(Static79.anInt2058 + local26);
+			client.out.p2_alt3(local30 + client.sceneBaseTileZ);
+			client.out.p2_alt2(client.sceneBaseTileX + local26);
 			client.out.p2_alt2(local22 >> 14 & 0x7FFF);
 		}
 		if (local12 == 10) {
 			client.interactWithLoc(local30, local22, local26);
 			client.out.pIsaac1(3);
-			client.out.p2(Static79.anInt2058 + local26);
-			client.out.p2_alt3(Static28.anInt725 + local30);
+			client.out.p2(client.sceneBaseTileX + local26);
+			client.out.p2_alt3(client.sceneBaseTileZ + local30);
 			client.out.p2_alt1(local22 >> 14 & 0x7FFF);
 		}
 		if (local12 == 23) {
@@ -537,7 +537,7 @@ public final class Static88 {
 			client.selectedArea = 2;
 			Static1.anInt1171 = local30;
 			Static1.anInt1947 = local26;
-			if (Static1.anInt2585 == local30 >> 16) {
+			if (client.anInt2585 == local30 >> 16) {
 				client.selectedArea = 1;
 			}
 			client.selectedCycle = 0;
@@ -574,7 +574,7 @@ public final class Static88 {
 			return;
 		}
 		if (local12 == 24) {
-			if (Static1.aBoolean175) {
+			if (client.menuVisible) {
 				client.scene.method1450(local26 - 4, local30 + -4);
 			} else {
 				client.scene.method1450(Static1.anInt2500 - 4, Static1.anInt2133 + -4);
@@ -586,18 +586,18 @@ public final class Static88 {
 				client.tryMove(local30, 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local26);
 			}
 			client.crossMode = 2;
-			Static1.anInt2465 = Static1.anInt2133;
+			client.anInt2465 = Static1.anInt2133;
 			client.crossCycle = 0;
-			Static1.anInt1554 = Static1.anInt2500;
+			client.anInt1554 = Static1.anInt2500;
 			client.out.pIsaac1(156);
 			client.out.p2_alt2(local22);
-			client.out.p2(Static79.anInt2058 + local26);
-			client.out.p2_alt2(Static28.anInt725 + local30);
+			client.out.p2(client.sceneBaseTileX + local26);
+			client.out.p2_alt2(client.sceneBaseTileZ + local30);
 		}
 		if (local12 == 6 && client.interactWithLoc(local30, local22, local26)) {
 			client.out.pIsaac1(116);
-			client.out.p2(Static28.anInt725 + local30);
-			client.out.p2_alt1(local26 + Static79.anInt2058);
+			client.out.p2(client.sceneBaseTileZ + local30);
+			client.out.p2_alt1(local26 + client.sceneBaseTileX);
 			client.out.p2_alt1(local22 >> 14 & 0x7FFF);
 			client.out.p4_alt2(Static77.anInt1992);
 		}
@@ -635,8 +635,8 @@ public final class Static88 {
 			if (local2510 != null) {
 				client.tryMove(local2510.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local2510.pathTileX[0]);
 				client.crossMode = 2;
-				Static1.anInt2465 = Static1.anInt2133;
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt2465 = Static1.anInt2133;
+				client.anInt1554 = Static1.anInt2500;
 				client.crossCycle = 0;
 				client.out.pIsaac1(36);
 				client.out.p2_alt3(local22);
@@ -647,9 +647,9 @@ public final class Static88 {
 			client.out.p2_alt3(Static91.anInt96);
 			client.out.p2_alt1(local22 >> 14 & 0x7FFF);
 			client.out.p2(Static28.anInt724);
-			client.out.p2(local30 + Static28.anInt725);
+			client.out.p2(local30 + client.sceneBaseTileZ);
 			client.out.p4_alt3(Static97.anInt2526);
-			client.out.p2_alt3(local26 + Static79.anInt2058);
+			client.out.p2_alt3(local26 + client.sceneBaseTileX);
 		}
 		if (local12 == 27) {
 			client.out.pIsaac1(228);
@@ -659,7 +659,7 @@ public final class Static88 {
 			Static1.anInt1171 = local30;
 			client.selectedArea = 2;
 			client.selectedCycle = 0;
-			if (local30 >> 16 == Static1.anInt2585) {
+			if (local30 >> 16 == client.anInt2585) {
 				client.selectedArea = 1;
 			}
 			Static1.anInt1947 = local26;
@@ -673,8 +673,8 @@ public final class Static88 {
 				client.tryMove(local2510.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local2510.pathTileX[0]);
 				client.crossMode = 2;
 				client.crossCycle = 0;
-				Static1.anInt1554 = Static1.anInt2500;
-				Static1.anInt2465 = Static1.anInt2133;
+				client.anInt1554 = Static1.anInt2500;
+				client.anInt2465 = Static1.anInt2133;
 				client.out.pIsaac1(235);
 				client.out.p2_alt2(local22);
 			}
@@ -689,7 +689,7 @@ public final class Static88 {
 			client.out.p4_alt3(Static97.anInt2526);
 			Static1.anInt1171 = local30;
 			client.selectedArea = 2;
-			if (local30 >> 16 == Static1.anInt2585) {
+			if (local30 >> 16 == client.anInt2585) {
 				client.selectedArea = 1;
 			}
 			Static1.anInt1947 = local26;
@@ -704,8 +704,8 @@ public final class Static88 {
 				client.tryMove(local2510.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local2510.pathTileX[0]);
 				client.crossCycle = 0;
 				client.crossMode = 2;
-				Static1.anInt2465 = Static1.anInt2133;
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt2465 = Static1.anInt2133;
+				client.anInt1554 = Static1.anInt2500;
 				client.out.pIsaac1(147);
 				client.out.p4_alt2(Static77.anInt1992);
 				client.out.p2(local22);
@@ -716,38 +716,38 @@ public final class Static88 {
 			if (!local1208) {
 				client.tryMove(local30, 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local26);
 			}
-			Static1.anInt2465 = Static1.anInt2133;
+			client.anInt2465 = Static1.anInt2133;
 			client.crossMode = 2;
-			Static1.anInt1554 = Static1.anInt2500;
+			client.anInt1554 = Static1.anInt2500;
 			client.crossCycle = 0;
 			client.out.pIsaac1(108);
-			client.out.p2_alt3(Static79.anInt2058 + local26);
+			client.out.p2_alt3(client.sceneBaseTileX + local26);
 			client.out.p4_alt2(Static77.anInt1992);
 			client.out.p2(local22);
-			client.out.p2_alt1(local30 + Static28.anInt725);
+			client.out.p2_alt1(local30 + client.sceneBaseTileZ);
 		}
 		if (local12 == 50) {
 			local1208 = client.tryMove(local30, 0, client.localPlayer.pathTileX[0], 0, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 0, local26);
 			if (!local1208) {
 				client.tryMove(local30, 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local26);
 			}
-			Static1.anInt1554 = Static1.anInt2500;
-			Static1.anInt2465 = Static1.anInt2133;
+			client.anInt1554 = Static1.anInt2500;
+			client.anInt2465 = Static1.anInt2133;
 			client.crossMode = 2;
 			client.crossCycle = 0;
 			client.out.pIsaac1(202);
-			client.out.p2(local30 + Static28.anInt725);
+			client.out.p2(local30 + client.sceneBaseTileZ);
 			client.out.p2_alt2(local22);
-			client.out.p2_alt3(Static79.anInt2058 + local26);
+			client.out.p2_alt3(client.sceneBaseTileX + local26);
 		}
 		if (local12 == 7) {
 			local1295 = client.npcs[local22];
 			if (local1295 != null) {
 				client.tryMove(local1295.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local1295.pathTileX[0]);
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt1554 = Static1.anInt2500;
 				client.crossMode = 2;
 				client.crossCycle = 0;
-				Static1.anInt2465 = Static1.anInt2133;
+				client.anInt2465 = Static1.anInt2133;
 				client.out.pIsaac1(4);
 				client.out.p2(local22);
 				client.out.p2(Static28.anInt724);
@@ -760,8 +760,8 @@ public final class Static88 {
 			if (local2510 != null) {
 				client.tryMove(local2510.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local2510.pathTileX[0]);
 				client.crossMode = 2;
-				Static1.anInt2465 = Static1.anInt2133;
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt2465 = Static1.anInt2133;
+				client.anInt1554 = Static1.anInt2500;
 				client.crossCycle = 0;
 				client.out.pIsaac1(190);
 				client.out.p2_alt3(local22);
@@ -770,8 +770,8 @@ public final class Static88 {
 		if (local12 == 5) {
 			client.interactWithLoc(local30, local22, local26);
 			client.out.pIsaac1(139);
-			client.out.p2_alt1(local30 + Static28.anInt725);
-			client.out.p2_alt3(local26 + Static79.anInt2058);
+			client.out.p2_alt1(local30 + client.sceneBaseTileZ);
+			client.out.p2_alt3(local26 + client.sceneBaseTileX);
 			client.out.p2_alt2(local22 >> 14 & 0x7FFF);
 		}
 		if (local12 == 25) {
@@ -780,8 +780,8 @@ public final class Static88 {
 				client.tryMove(local2510.pathTileZ[0], 0, client.localPlayer.pathTileX[0], 1, 0, 2, false, 0, client.localPlayer.pathTileZ[0], 1, local2510.pathTileX[0]);
 				client.crossMode = 2;
 				client.crossCycle = 0;
-				Static1.anInt2465 = Static1.anInt2133;
-				Static1.anInt1554 = Static1.anInt2500;
+				client.anInt2465 = Static1.anInt2133;
+				client.anInt1554 = Static1.anInt2500;
 				client.out.pIsaac1(214);
 				client.out.p2_alt3(Static91.anInt96);
 				client.out.p4_alt3(Static97.anInt2526);
@@ -866,15 +866,15 @@ public final class Static88 {
 		} else {
 			Static45.method1537(JagString.concatenate(new JagString[] { JagString.aClass40_585, Static48.method859(arg0) }), JagString.aClass40_586);
 		}
-		Static7.method187(10);
+		client.method187(10);
 	}
 
 	@OriginalMember(owner = "client!ua", name = "a", descriptor = "(BLclient!ke;)V", line = 1421)
 	public static void method1553(@OriginalArg(1) PathingEntity arg0) {
 		arg0.aBoolean172 = false;
 		@Pc(15) SeqType local15;
-		if (arg0.anInt2318 != -1) {
-			local15 = SeqType.method1042(arg0.anInt2318);
+		if (arg0.secondarySeqId != -1) {
+			local15 = SeqType.method1042(arg0.secondarySeqId);
 			arg0.anInt2296++;
 			if (arg0.anInt2295 < local15.anIntArray124.length && arg0.anInt2296 > local15.delay[arg0.anInt2295]) {
 				arg0.anInt2295++;
@@ -904,15 +904,15 @@ public final class Static88 {
 				}
 			}
 		}
-		if (arg0.anInt2307 != -1 && arg0.anInt2313 <= 1) {
-			local15 = SeqType.method1042(arg0.anInt2307);
+		if (arg0.primarySeqId != -1 && arg0.primarySeqDelay <= 1) {
+			local15 = SeqType.method1042(arg0.primarySeqId);
 			if (local15.anInt663 == 1 && arg0.anInt2281 > 0 && arg0.anInt2277 <= client.loopCycle && arg0.anInt2297 < client.loopCycle) {
-				arg0.anInt2313 = 1;
+				arg0.primarySeqDelay = 1;
 				return;
 			}
 		}
-		if (arg0.anInt2307 != -1 && arg0.anInt2313 == 0) {
-			local15 = SeqType.method1042(arg0.anInt2307);
+		if (arg0.primarySeqId != -1 && arg0.primarySeqDelay == 0) {
+			local15 = SeqType.method1042(arg0.primarySeqId);
 			arg0.anInt2267++;
 			if (local15.anIntArray124.length > arg0.anInt2316 && arg0.anInt2267 > local15.delay[arg0.anInt2316]) {
 				arg0.anInt2316++;
@@ -922,16 +922,16 @@ public final class Static88 {
 				arg0.anInt2316 -= local15.anInt669;
 				arg0.anInt2300++;
 				if (local15.anInt660 <= arg0.anInt2300) {
-					arg0.anInt2307 = -1;
+					arg0.primarySeqId = -1;
 				}
 				if (arg0.anInt2316 < 0 || arg0.anInt2316 >= local15.anIntArray124.length) {
-					arg0.anInt2307 = -1;
+					arg0.primarySeqId = -1;
 				}
 			}
 			arg0.aBoolean172 = local15.aBoolean50;
 		}
-		if (arg0.anInt2313 > 0) {
-			arg0.anInt2313--;
+		if (arg0.primarySeqDelay > 0) {
+			arg0.primarySeqDelay--;
 		}
 	}
 

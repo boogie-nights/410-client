@@ -7,13 +7,10 @@ public final class Static49 {
 	@OriginalMember(owner = "client!kc", name = "bd", descriptor = "Lclient!ud;")
 	public static Js5Index aClass5_17;
 
-	@OriginalMember(owner = "client!kc", name = "cd", descriptor = "[Lclient!vb;")
-	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array7;
-
 	@OriginalMember(owner = "client!kc", name = "n", descriptor = "(I)V", line = 4)
 	public static void method916() {
 		@Pc(5) Mouse local5 = Static1.aClass62_1;
-		synchronized (Static1.aClass62_1) {
+		synchronized (local5) {
 			client.mouseButton = Static1.anInt969;
 			Mouse.x = Static1.anInt112;
 			Mouse.y = Static1.anInt1663;
@@ -29,7 +26,7 @@ public final class Static49 {
 	public static void method919() {
 		JagString.aClass40_396 = null;
 		client.menuAction = null;
-		aClass2_Sub2_Sub2_Sub4Array7 = null;
+		client.imageCrosses = null;
 		Static1.anIntArray288 = null;
 		SpotAnimType.aClass5_18 = null;
 		aClass5_17 = null;

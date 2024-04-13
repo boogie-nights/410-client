@@ -31,23 +31,23 @@ public final class Static86 {
 
 	@OriginalMember(owner = "client!td", name = "b", descriptor = "(I)V", line = 218)
 	public static void method1492() {
-		Static26.method533(Static1.anInt1971);
+		client.updateInterfaceAnimation(Static1.anInt1971);
 		if (Static1.anInt2175 != -1) {
-			Static26.method533(Static1.anInt2175);
+			client.updateInterfaceAnimation(Static1.anInt2175);
 		}
 		client.sceneDelta = 0;
 		Static27.aClass45_14.bind();
 		Static34.anIntArray162 = Static6.method175(Static34.anIntArray162);
 		Static25.method1610();
-		Static20.method403(0, -1, Static1.anInt1971, 0, 0, 503, 0, 765);
+		client.drawInterface(0, -1, Static1.anInt1971, 0, 0, 503, 0, 765);
 		if (Static1.anInt2175 != -1) {
-			Static20.method403(0, -1, Static1.anInt2175, 0, 0, 503, 0, 765);
+			client.drawInterface(0, -1, Static1.anInt2175, 0, 0, 503, 0, 765);
 		}
-		if (Static1.aBoolean175) {
-			Static22.method480();
+		if (client.menuVisible) {
+			client.drawMenu();
 		} else {
 			client.handleInput();
-			Static5.method115();
+			client.drawTooltip();
 		}
 		Static27.aClass45_14.draw(client.graphics, 0, 0);
 	}
@@ -67,31 +67,6 @@ public final class Static86 {
 			Static97.method1672(1L);
 		} else {
 			Static97.method1672(arg0);
-		}
-	}
-
-	@OriginalMember(owner = "client!td", name = "b", descriptor = "(B)V", line = 289)
-	public static void method1495() {
-		Static1.anInt1190 = 0;
-		Static1.anInt304 = 0;
-		Static22.method477();
-		Static24.method520();
-		Static64.method1109();
-		@Pc(28) int local28;
-		for (@Pc(22) int local22 = 0; local22 < Static1.anInt304; local22++) {
-			local28 = Static1.anIntArray258[local22];
-			if (client.loopCycle != client.npcs[local28].anInt2274) {
-				client.npcs[local28].type = null;
-				client.npcs[local28] = null;
-			}
-		}
-		if (client.in.pos != client.packetSize) {
-			throw new RuntimeException("gnp1 pos:" + client.in.pos + " psize:" + client.packetSize);
-		}
-		for (local28 = 0; local28 < client.npcCount; local28++) {
-			if (client.npcs[client.npcIds[local28]] == null) {
-				throw new RuntimeException("gnp2 pos:" + local28 + " size:" + client.npcCount);
-			}
 		}
 	}
 

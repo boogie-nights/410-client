@@ -10,6 +10,15 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!ka")
 public final class Keyboard implements KeyListener, FocusListener {
 
+	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(Ljava/awt/event/KeyEvent;I)I", line = 234)
+	public static int method1243(@OriginalArg(0) KeyEvent arg0) {
+		@Pc(10) int local10 = arg0.getKeyChar();
+		if (local10 <= 0 || local10 >= 256) {
+			local10 = -1;
+		}
+		return local10;
+	}
+
 	@OriginalMember(owner = "client!ka", name = "keyTyped", descriptor = "(Ljava/awt/event/KeyEvent;)V", line = 48)
 	@Override
 	public void keyTyped(@OriginalArg(0) KeyEvent arg0) {
@@ -69,7 +78,7 @@ public final class Keyboard implements KeyListener, FocusListener {
 			if (local8 == 85 || local8 == 80 || local8 == 84 || local8 == 0 || local8 == 101) {
 				local49 = -1;
 			} else {
-				local49 = Static40.method1243(arg0);
+				local49 = method1243(arg0);
 			}
 			if (Static1.anInt949 >= 0 && local8 >= 0) {
 				Static1.anIntArray470[Static1.anInt949] = local8;

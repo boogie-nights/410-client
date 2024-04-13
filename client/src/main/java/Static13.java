@@ -7,15 +7,12 @@ public final class Static13 {
 	@OriginalMember(owner = "client!cc", name = "b", descriptor = "I")
 	public static int anInt310;
 
-	@OriginalMember(owner = "client!cc", name = "h", descriptor = "Lclient!fc;")
-	public static PixFont aClass2_Sub2_Sub2_Sub2_1;
-
 	@OriginalMember(owner = "client!cc", name = "b", descriptor = "(I)V", line = 30)
 	public static void method263() {
 		JagString.aClass40_85 = null;
 		JagString.aClass40_84 = null;
 		client.tileLastOccupiedCycle = null;
-		aClass2_Sub2_Sub2_Sub2_1 = null;
+		client.fondBold12 = null;
 	}
 
 	@OriginalMember(owner = "client!cc", name = "a", descriptor = "(Lclient!o;I)V", line = 57)

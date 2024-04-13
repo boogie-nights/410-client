@@ -718,7 +718,7 @@ public final class World {
                                     local758 = local200 * 256 / local216;
                                     local762 = local210 / local233;
                                     @Pc(766) int local766 = local204 / local233;
-                                    local727 = Static11.hsl24to16(local766, local762, local758);
+                                    local727 = hsl24to16(local766, local762, local758);
                                     local766 += randomLightnessOffset;
                                     @Pc(782) int local782 = randomHueOffset + local758 & 0xFF;
                                     if (local766 < 0) {
@@ -726,7 +726,7 @@ public final class World {
                                     } else if (local766 > 255) {
                                         local766 = 255;
                                     }
-                                    local729 = Static11.hsl24to16(local766, local762, local782);
+                                    local729 = hsl24to16(local766, local762, local782);
                                 }
                                 if (local15 > 0) {
                                     @Pc(806) boolean local806 = true;
@@ -763,7 +763,7 @@ public final class World {
                                         local907 = -1;
                                         local911 = -2;
                                     } else {
-                                        local911 = Static11.hsl24to16(local904.lightness, local904.saturation, local904.hue);
+                                        local911 = hsl24to16(local904.lightness, local904.saturation, local904.hue);
                                         local938 = randomHueOffset + local904.hue & 0xFF;
                                         local943 = local904.lightness + randomLightnessOffset;
                                         if (local943 < 0) {
@@ -771,7 +771,7 @@ public final class World {
                                         } else if (local943 > 255) {
                                             local943 = 255;
                                         }
-                                        local916 = Static11.hsl24to16(local943, local904.saturation, local938);
+                                        local916 = hsl24to16(local943, local904.saturation, local938);
                                     }
                                     local938 = 0;
                                     if (local916 != -2) {
@@ -785,7 +785,7 @@ public final class World {
                                         } else if (local1001 > 255) {
                                             local1001 = 255;
                                         }
-                                        local916 = Static11.hsl24to16(local1001, local904.averageSaturation, local943);
+                                        local916 = hsl24to16(local1001, local904.averageSaturation, local943);
                                         local938 = Draw3D.palette[Static66.method1193(local916, 96)];
                                     }
                                     arg1.setTile(local15, local166, local283, local762, local898, local907, local689, local681, local701, local725, mulHSL(local707, local727), mulHSL(local715, local727), mulHSL(local747, local727), mulHSL(local737, local727), Static66.method1193(local911, local707), Static66.method1193(local911, local715), Static66.method1193(local911, local747), Static66.method1193(local911, local737), local758, local938);
@@ -1085,5 +1085,22 @@ public final class World {
             local12 = client.currentLevel;
         }
         return local12;
+    }
+
+    @OriginalMember(owner = "client!ca", name = "a", descriptor = "(IIII)I", line = 30)
+    public static int hsl24to16(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+        if (arg0 > 179) {
+            arg1 /= 2;
+        }
+        if (arg0 > 192) {
+            arg1 /= 2;
+        }
+        if (arg0 > 217) {
+            arg1 /= 2;
+        }
+        if (arg0 > 243) {
+            arg1 /= 2;
+        }
+        return arg0 / 2 + (arg1 / 32 << 7) + (arg2 / 4 << 10);
     }
 }

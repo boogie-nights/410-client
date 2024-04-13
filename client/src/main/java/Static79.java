@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static79 {
 
-	@OriginalMember(owner = "client!sb", name = "T", descriptor = "I")
-	public static int anInt2058;
-
 	@OriginalMember(owner = "client!sb", name = "V", descriptor = "Lclient!ad;")
 	public static Js5 basesJs5;
 
@@ -44,18 +41,18 @@ public final class Static79 {
 		method1396();
 		@Pc(29) boolean local29;
 		if (Static1.anInt1654 != -1) {
-			local29 = Static20.method403(0, -1, Static1.anInt1654, 1, 0, 261, 0, 190);
+			local29 = client.drawInterface(0, -1, Static1.anInt1654, 1, 0, 261, 0, 190);
 			if (!local29) {
 				client.redrawSidebar = true;
 			}
 		} else if (Static1.anIntArray2[Static1.anInt1551] != -1) {
-			local29 = Static20.method403(0, -1, Static1.anIntArray2[Static1.anInt1551], 1, 0, 261, 0, 190);
+			local29 = client.drawInterface(0, -1, Static1.anIntArray2[Static1.anInt1551], 1, 0, 261, 0, 190);
 			if (!local29) {
 				client.redrawSidebar = true;
 			}
 		}
-		if (Static1.aBoolean175 && Static1.anInt16 == 1) {
-			Static22.method480();
+		if (client.menuVisible && client.menuArea == 1) {
+			client.drawMenu();
 		}
 		Static67.method1207(client.graphics);
 	}

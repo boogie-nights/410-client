@@ -152,10 +152,10 @@ public final class Static99 {
 					local33 = method1662(local103);
 				}
 				if (local31 == 18) {
-					local33 = (client.localPlayer.x >> 7) + Static79.anInt2058;
+					local33 = (client.localPlayer.x >> 7) + client.sceneBaseTileX;
 				}
 				if (local31 == 19) {
-					local33 = Static28.anInt725 + (client.localPlayer.z >> 7);
+					local33 = client.sceneBaseTileZ + (client.localPlayer.z >> 7);
 				}
 				if (local31 == 20) {
 					local33 = local22[local17++];
@@ -277,15 +277,15 @@ public final class Static99 {
 				Static84.aBooleanArray31[arg0] = true;
 				return true;
 			}
-			if (Static46.aClass2_Sub2_Sub13ArrayArray1[arg0] == null) {
-				Static46.aClass2_Sub2_Sub13ArrayArray1[arg0] = new ComType[local25];
+			if (ComType.instances[arg0] == null) {
+				ComType.instances[arg0] = new ComType[local25];
 			}
 			for (@Pc(47) int local47 = 0; local47 < local25; local47++) {
-				if (Static46.aClass2_Sub2_Sub13ArrayArray1[arg0][local47] == null) {
+				if (ComType.instances[arg0][local47] == null) {
 					@Pc(61) byte[] local61 = Static49.aClass5_17.fetchFile(local47, arg0);
 					if (local61 != null) {
-						Static46.aClass2_Sub2_Sub13ArrayArray1[arg0][local47] = new ComType();
-						Static46.aClass2_Sub2_Sub13ArrayArray1[arg0][local47].method1053(new Packet(local61));
+						ComType.instances[arg0][local47] = new ComType();
+						ComType.instances[arg0][local47].method1053(new Packet(local61));
 					}
 				}
 			}

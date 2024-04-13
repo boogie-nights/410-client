@@ -76,46 +76,9 @@ public final class Static90 {
 		World.addLoc(local92, arg2, arg3, client.levelCollisionMap[arg4], arg5, client.scene, arg6, arg4, arg1);
 	}
 
-	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(B)V", line = 117)
-	public static void method1567() {
-		while (true) {
-			if (client.in.bitsAvailable(client.packetSize) >= 11) {
-				@Pc(14) int local14 = client.in.gBit(11);
-				if (local14 != 2047) {
-					if (client.players[local14] == null) {
-						client.players[local14] = new PlayerEntity();
-						if (Static1.aClass2_Sub3Array1[local14] != null) {
-							client.players[local14].method918(Static1.aClass2_Sub3Array1[local14]);
-						}
-					}
-					client.playerIds[client.playerCount++] = local14;
-					@Pc(51) PlayerEntity local51 = client.players[local14];
-					local51.anInt2274 = client.loopCycle;
-					@Pc(59) int local59 = client.in.gBit(5);
-					if (local59 > 15) {
-						local59 -= 32;
-					}
-					@Pc(68) int local68 = client.in.gBit(5);
-					if (local68 > 15) {
-						local68 -= 32;
-					}
-					@Pc(79) int local79 = client.in.gBit(1);
-					if (local79 == 1) {
-						Static1.anIntArray504[Static1.anInt1190++] = local14;
-					}
-					@Pc(97) int local97 = client.in.gBit(1);
-					local51.method1545(local97 == 1, client.localPlayer.pathTileZ[0] + local59, local68 + client.localPlayer.pathTileX[0]);
-					continue;
-				}
-			}
-			client.in.bytes();
-			return;
-		}
-	}
-
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(I)V", line = 257)
 	public static void method1569() {
-		Static1.anIntArray504 = null;
+		client.entityUpdateIds = null;
 		JagString.aClass40_676 = null;
 		JagString.aClass40_679 = null;
 		JagString.aClass40_674 = null;

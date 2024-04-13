@@ -11,9 +11,6 @@ public final class Static46 {
 	@OriginalMember(owner = "client!k", name = "r", descriptor = "Lclient!qb;")
 	public static Pix8 aClass2_Sub2_Sub2_Sub3_11;
 
-	@OriginalMember(owner = "client!k", name = "v", descriptor = "[[Lclient!mc;")
-	public static ComType[][] aClass2_Sub2_Sub13ArrayArray1;
-
 	@OriginalMember(owner = "client!k", name = "y", descriptor = "[I")
 	public static int[] anIntArray256;
 
@@ -28,7 +25,7 @@ public final class Static46 {
 		client.friendName = null;
 		anIntArray256 = null;
 		Static1.aBigInteger2 = null;
-		aClass2_Sub2_Sub13ArrayArray1 = null;
+		ComType.instances = null;
 		JagString.aClass40_355 = null;
 		JagString.FRIENDSLIST_PLEASE_REMOVE = null;
 	}

@@ -174,7 +174,7 @@ public final class Static14 {
 		local83.method1619(-180, -171);
 		local83 = Static95.method1644(JagString.aClass40_521, JagString.aClass40_593, arg0);
 		Static56.aClass45_22.bind();
-		local83.method1624(382 - local83.anInt2446 / 2 - 128, 18);
+		local83.draw(382 - local83.anInt2446 / 2 - 128, 18);
 		Static89.aClass2_Sub2_Sub2_Sub3_21 = Static91.method77(arg0, JagString.aClass40_593, JagString.aClass40_16);
 		Static30.aClass2_Sub2_Sub2_Sub3_8 = Static91.method77(arg0, JagString.aClass40_593, JagString.aClass40_661);
 		Static45.aClass2_Sub2_Sub2_Sub3Array14 = Static4.method85(arg0, JagString.aClass40_563, JagString.aClass40_593);

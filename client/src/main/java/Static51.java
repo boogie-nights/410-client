@@ -133,7 +133,7 @@ public final class Static51 {
 			if (local22 == 1 && local26 >= 25 && local26 <= 175 && local20 >= 130 && local20 <= 170) {
 				JagString.aClass40_591 = JagString.aClass40_591.method1175().formatName();
 				Static45.method1537(JagString.aClass40_593, JagString.aClass40_120);
-				Static7.method187(20);
+				client.method187(20);
 			} else {
 				if (local22 == 1 && local26 >= 185 && local26 <= 335 && local20 >= 130 && local20 <= 170) {
 					Static1.anInt2143 = 0;

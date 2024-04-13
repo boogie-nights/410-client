@@ -10,347 +10,347 @@ import org.openrs2.deob.annotation.Pc;
 public final class JagString implements BaseString {
 
 	@OriginalMember(owner = "client!o", name = "i", descriptor = "Lclient!o;")
-	public static JagString aClass40_506 = Static12.method257(" is already on your ignore list");
+	public static JagString aClass40_506 = create(" is already on your ignore list");
 
 	@OriginalMember(owner = "client!o", name = "G", descriptor = "Lclient!o;")
-	public static JagString aClass40_508 = Static12.method257("New User");
+	public static JagString aClass40_508 = create("New User");
 
 	@OriginalMember(owner = "client!o", name = "O", descriptor = "Lclient!o;")
-	public static JagString aClass40_509 = Static12.method257("Close");
+	public static JagString aClass40_509 = create("Close");
 
 	@OriginalMember(owner = "client!o", name = "c", descriptor = "Lclient!o;")
-	public static JagString aClass40_505 = Static12.method257(" has logged in)3");
+	public static JagString aClass40_505 = create(" has logged in)3");
 
 	@OriginalMember(owner = "client!o", name = "Z", descriptor = "Lclient!o;")
-	public static JagString aClass40_510 = Static12.method257("Accept challenge @whi@");
+	public static JagString aClass40_510 = create("Accept challenge @whi@");
 
 	@OriginalMember(owner = "client!o", name = "p", descriptor = "Lclient!o;")
-	public static JagString aClass40_507 = Static12.method257("Imported music");
+	public static JagString aClass40_507 = create("Imported music");
 
 	@OriginalMember(owner = "client!ca", name = "Q", descriptor = "Lclient!o;")
-	public static JagString aClass40_78 = Static12.method257("sideicons");
+	public static JagString aClass40_78 = create("sideicons");
 	@OriginalMember(owner = "client!ca", name = "S", descriptor = "Lclient!o;")
-	public static JagString aClass40_79 = Static12.method257("Enter name of friend to add to list");
+	public static JagString aClass40_79 = create("Enter name of friend to add to list");
 	@OriginalMember(owner = "client!ca", name = "X", descriptor = "Lclient!o;")
-	public static JagString aClass40_80 = Static12.method257("scape main");
+	public static JagString aClass40_80 = create("scape main");
 	@OriginalMember(owner = "client!ca", name = "Y", descriptor = "Lclient!o;")
-	public static JagString aClass40_81 = Static12.method257("Examine @lre@");
+	public static JagString aClass40_81 = create("Examine @lre@");
 	@OriginalMember(owner = "client!ee", name = "Q", descriptor = "Lclient!o;")
-	public static JagString aClass40_179 = Static12.method257("*6n*6nRecovery Questions Last Set:*6n@gre@");
+	public static JagString aClass40_179 = create("*6n*6nRecovery Questions Last Set:*6n@gre@");
 	@OriginalMember(owner = "client!ee", name = "Y", descriptor = "Lclient!o;")
-	public static JagString aClass40_180 = Static12.method257("Loading wordpack )2 0(U");
+	public static JagString aClass40_180 = create("Loading wordpack )2 0(U");
 	@OriginalMember(owner = "client!ee", name = "mb", descriptor = "Lclient!o;")
-	public static JagString aClass40_184 = Static12.method257("Login to a members(W server to use this object)3");
+	public static JagString aClass40_184 = create("Login to a members(W server to use this object)3");
 	@OriginalMember(owner = "client!ee", name = "jb", descriptor = "Lclient!o;")
 	public static JagString aClass40_181 = aClass40_184;
 	@OriginalMember(owner = "client!ee", name = "lb", descriptor = "Lclient!o;")
-	public static JagString aClass40_183 = Static12.method257("You have @gre@");
+	public static JagString aClass40_183 = create("You have @gre@");
 	@OriginalMember(owner = "client!ee", name = "kb", descriptor = "Lclient!o;")
-	public static JagString aClass40_182 = Static12.method257("::fpsoff");
+	public static JagString aClass40_182 = create("::fpsoff");
 	@OriginalMember(owner = "client!i", name = "R", descriptor = "Lclient!o;")
-	public static JagString aClass40_305 = Static12.method257("Enter your username (V password)3");
+	public static JagString aClass40_305 = create("Enter your username (V password)3");
 	@OriginalMember(owner = "client!i", name = "ab", descriptor = "Lclient!o;")
-	public static JagString aClass40_306 = Static12.method257(")3");
+	public static JagString aClass40_306 = create(")3");
 	@OriginalMember(owner = "client!i", name = "bb", descriptor = "Lclient!o;")
-	public static JagString aClass40_307 = Static12.method257("compass");
+	public static JagString aClass40_307 = create("compass");
 	@OriginalMember(owner = "client!ud", name = "A", descriptor = "Lclient!o;")
-	public static JagString aClass40_25 = Static12.method257("overlay_multiway");
+	public static JagString aClass40_25 = create("overlay_multiway");
 	@OriginalMember(owner = "client!ud", name = "i", descriptor = "Lclient!o;")
-	public static JagString aClass40_24 = Static12.method257("Aug");
+	public static JagString aClass40_24 = create("Aug");
 	@OriginalMember(owner = "client!ud", name = "N", descriptor = "Lclient!o;")
-	public static JagString aClass40_27 = Static12.method257("Cancel");
+	public static JagString aClass40_27 = create("Cancel");
 	@OriginalMember(owner = "client!ud", name = "G", descriptor = "Lclient!o;")
-	public static JagString aClass40_26 = Static12.method257("hitmarks");
+	public static JagString aClass40_26 = create("hitmarks");
 	@OriginalMember(owner = "client!ud", name = "ab", descriptor = "Lclient!o;")
-	public static JagString aClass40_28 = Static12.method257("Accept trade @whi@");
+	public static JagString aClass40_28 = create("Accept trade @whi@");
 	@OriginalMember(owner = "client!g", name = "b", descriptor = "Lclient!o;")
-	public static JagString aClass40_730 = Static12.method257("@yel@");
+	public static JagString aClass40_730 = create("@yel@");
 	@OriginalMember(owner = "client!g", name = "j", descriptor = "Lclient!o;")
-	public static JagString aClass40_732 = Static12.method257("Your account is already logged in)3");
+	public static JagString aClass40_732 = create("Your account is already logged in)3");
 	@OriginalMember(owner = "client!g", name = "l", descriptor = "Lclient!o;")
-	public static JagString aClass40_733 = Static12.method257("Contact Details Last Set:*6n@gre@");
+	public static JagString aClass40_733 = create("Contact Details Last Set:*6n@gre@");
 	@OriginalMember(owner = "client!g", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_731 = Static12.method257(" (Xlevel)2");
+	public static JagString aClass40_731 = create(" (Xlevel)2");
 	@OriginalMember(owner = "client!od", name = "p", descriptor = "Lclient!o;")
-	public static JagString aClass40_529 = Static12.method257("Login server offline)3");
+	public static JagString aClass40_529 = create("Login server offline)3");
 	@OriginalMember(owner = "client!od", name = "l", descriptor = "Lclient!o;")
-	public static JagString aClass40_528 = Static12.method257("@or2@");
+	public static JagString aClass40_528 = create("@or2@");
 	@OriginalMember(owner = "client!od", name = "u", descriptor = "Lclient!o;")
-	public static JagString aClass40_530 = Static12.method257("Trade)4compete");
+	public static JagString aClass40_530 = create("Trade)4compete");
 	@OriginalMember(owner = "client!od", name = "g", descriptor = "Lclient!o;")
-	public static JagString aClass40_527 = Static12.method257("Loading textures )2 ");
+	public static JagString aClass40_527 = create("Loading textures )2 ");
 	@OriginalMember(owner = "client!n", name = "b", descriptor = "Lclient!o;")
-	public static JagString aClass40_480 = Static12.method257("::noclip");
+	public static JagString aClass40_480 = create("::noclip");
 	@OriginalMember(owner = "client!n", name = "o", descriptor = "Lclient!o;")
-	public static JagString aClass40_481 = Static12.method257("Chat panel redrawn");
+	public static JagString aClass40_481 = create("Chat panel redrawn");
 	@OriginalMember(owner = "client!ia", name = "T", descriptor = "Lclient!o;")
-	public static JagString aClass40_314 = Static12.method257("You have only just left another world");
+	public static JagString aClass40_314 = create("You have only just left another world");
 	@OriginalMember(owner = "client!ia", name = "mb", descriptor = "Lclient!o;")
-	public static JagString aClass40_317 = Static12.method257(" unread messages");
+	public static JagString aClass40_317 = create(" unread messages");
 	@OriginalMember(owner = "client!ia", name = "sb", descriptor = "Lclient!o;")
-	public static JagString aClass40_319 = Static12.method257("backtop1");
+	public static JagString aClass40_319 = create("backtop1");
 	@OriginalMember(owner = "client!ia", name = "yb", descriptor = "Lclient!o;")
-	public static JagString aClass40_320 = Static12.method257("Nov");
+	public static JagString aClass40_320 = create("Nov");
 	@OriginalMember(owner = "client!ia", name = "pb", descriptor = "Lclient!o;")
-	public static JagString aClass40_318 = Static12.method257("It(Ws a ");
+	public static JagString aClass40_318 = create("It(Ws a ");
 	@OriginalMember(owner = "client!ia", name = "Ab", descriptor = "Lclient!o;")
-	public static JagString aClass40_322 = Static12.method257("Examine @yel@");
+	public static JagString aClass40_322 = create("Examine @yel@");
 	@OriginalMember(owner = "client!ia", name = "Qb", descriptor = "Lclient!o;")
-	public static JagString aClass40_323 = Static12.method257("@cr1@");
+	public static JagString aClass40_323 = create("@cr1@");
 	@OriginalMember(owner = "client!ia", name = "zb", descriptor = "Lclient!o;")
-	public static JagString aClass40_321 = Static12.method257("yesterday");
+	public static JagString aClass40_321 = create("yesterday");
 	@OriginalMember(owner = "client!vd", name = "v", descriptor = "Lclient!o;")
-	public static JagString aClass40_715 = Static12.method257("On");
+	public static JagString aClass40_715 = create("On");
 	@OriginalMember(owner = "client!vd", name = "u", descriptor = "Lclient!o;")
-	public static JagString aClass40_714 = Static12.method257("Connection lost");
+	public static JagString aClass40_714 = create("Connection lost");
 	@OriginalMember(owner = "client!ua", name = "Uc", descriptor = "Lclient!o;")
-	public static JagString aClass40_661 = Static12.method257("titlebutton");
+	public static JagString aClass40_661 = create("titlebutton");
 	@OriginalMember(owner = "client!ua", name = "Yc", descriptor = "Lclient!o;")
-	public static JagString aClass40_663 = Static12.method257("mapfunction");
+	public static JagString aClass40_663 = create("mapfunction");
 	@OriginalMember(owner = "client!ua", name = "Xc", descriptor = "Lclient!o;")
-	public static JagString aClass40_662 = Static12.method257("as it was used to break our rules");
+	public static JagString aClass40_662 = create("as it was used to break our rules");
 	@OriginalMember(owner = "client!gb", name = "Eb", descriptor = "Lclient!o;")
-	public static JagString WALK_HERE = Static12.method257("Walk here");
+	public static JagString WALK_HERE = create("Walk here");
 	@OriginalMember(owner = "client!gb", name = "Hb", descriptor = "Lclient!o;")
-	public static JagString aClass40_240 = Static12.method257("Remove @whi@");
+	public static JagString aClass40_240 = create("Remove @whi@");
 	@OriginalMember(owner = "client!gb", name = "Ib", descriptor = "Lclient!o;")
-	public static JagString aClass40_241 = Static12.method257("Yesterday");
+	public static JagString aClass40_241 = create("Yesterday");
 	@OriginalMember(owner = "client!hb", name = "fb", descriptor = "Lclient!o;")
-	public static JagString aClass40_286 = Static12.method257("Examine @cya@");
+	public static JagString aClass40_286 = create("Examine @cya@");
 	@OriginalMember(owner = "client!hb", name = "jb", descriptor = "Lclient!o;")
-	public static JagString aClass40_287 = Static12.method257("Loading ignore list");
+	public static JagString aClass40_287 = create("Loading ignore list");
 	@OriginalMember(owner = "client!hb", name = "nb", descriptor = "Lclient!o;")
-	public static JagString aClass40_288 = Static12.method257("backvmid3");
+	public static JagString aClass40_288 = create("backvmid3");
 	@OriginalMember(owner = "client!sc", name = "a", descriptor = "Lclient!o;")
-	public static JagString aClass40_602 = Static12.method257(" @cya@");
+	public static JagString aClass40_602 = create(" @cya@");
 	@OriginalMember(owner = "client!sc", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_603 = Static12.method257("Press (Wrecover a locked account(W on front page)3");
+	public static JagString aClass40_603 = create("Press (Wrecover a locked account(W on front page)3");
 	@OriginalMember(owner = "client!sc", name = "t", descriptor = "Lclient!o;")
-	public static JagString aClass40_605 = Static12.method257("Importing music )2 ");
+	public static JagString aClass40_605 = create("Importing music )2 ");
 	@OriginalMember(owner = "client!sc", name = "r", descriptor = "Lclient!o;")
-	public static JagString aClass40_604 = Static12.method257("Add ignore @whi@");
+	public static JagString aClass40_604 = create("Add ignore @whi@");
 	@OriginalMember(owner = "client!sc", name = "G", descriptor = "Lclient!o;")
-	public static JagString aClass40_607 = Static12.method257("headicons_pk");
+	public static JagString aClass40_607 = create("headicons_pk");
 	@OriginalMember(owner = "client!sc", name = "x", descriptor = "Lclient!o;")
-	public static JagString BUTTON_SELECT = Static12.method257("Select");
+	public static JagString BUTTON_SELECT = create("Select");
 	@OriginalMember(owner = "client!eb", name = "pb", descriptor = "Lclient!o;")
-	public static JagString aClass40_734 = Static12.method257("backbase1");
+	public static JagString aClass40_734 = create("backbase1");
 	@OriginalMember(owner = "client!eb", name = "rb", descriptor = "Lclient!o;")
-	public static JagString aClass40_735 = Static12.method257("Side panel redrawn");
+	public static JagString aClass40_735 = create("Side panel redrawn");
 	@OriginalMember(owner = "client!eb", name = "Gb", descriptor = "Lclient!o;")
-	public static JagString aClass40_738 = Static12.method257("Jun");
+	public static JagString aClass40_738 = create("Jun");
 	@OriginalMember(owner = "client!eb", name = "ub", descriptor = "Lclient!o;")
-	public static JagString aClass40_736 = Static12.method257("Import ready");
+	public static JagString aClass40_736 = create("Import ready");
 	@OriginalMember(owner = "client!eb", name = "vb", descriptor = "Lclient!o;")
-	public static JagString aClass40_737 = Static12.method257("Loaded input handler");
+	public static JagString aClass40_737 = create("Loaded input handler");
 	@OriginalMember(owner = "client!wc", name = "Kb", descriptor = "Lclient!o;")
-	public static JagString FRIENDSLIST_FULL = Static12.method257("Your friendlist is full)3 Max of 100 for free users)1 and 200 for members");
+	public static JagString FRIENDSLIST_FULL = create("Your friendlist is full)3 Max of 100 for free users)1 and 200 for members");
 	@OriginalMember(owner = "client!wc", name = "Rb", descriptor = "Lclient!o;")
-	public static JagString aClass40_740 = Static12.method257("Importing models )2 ");
+	public static JagString aClass40_740 = create("Importing models )2 ");
 	@OriginalMember(owner = "client!wc", name = "Yb", descriptor = "Lclient!o;")
-	public static JagString aClass40_741 = Static12.method257("You need to set*6nnew contact details)3");
+	public static JagString aClass40_741 = create("You need to set*6nnew contact details)3");
 	@OriginalMember(owner = "client!wc", name = "ac", descriptor = "Lclient!o;")
-	public static JagString aClass40_742 = Static12.method257("The server is being updated)3");
+	public static JagString aClass40_742 = create("The server is being updated)3");
 	@OriginalMember(owner = "client!ke", name = "sb", descriptor = "Lclient!o;")
-	public static JagString aClass40_656 = Static12.method257("You need a members account to login to this world)3");
+	public static JagString aClass40_656 = create("You need a members account to login to this world)3");
 	@OriginalMember(owner = "client!ke", name = "Hb", descriptor = "Lclient!o;")
-	public static JagString aClass40_657 = Static12.method257(" with @whi@");
+	public static JagString aClass40_657 = create(" with @whi@");
 	@OriginalMember(owner = "client!ke", name = "Kb", descriptor = "Lclient!o;")
-	public static JagString aClass40_658 = Static12.method257("Unexpected loginserver response)3");
+	public static JagString aClass40_658 = create("Unexpected loginserver response)3");
 	@OriginalMember(owner = "client!ke", name = "Mb", descriptor = "Lclient!o;")
-	public static JagString aClass40_659 = Static12.method257(" with @cya@");
+	public static JagString aClass40_659 = create(" with @cya@");
 	@OriginalMember(owner = "client!fc", name = "ab", descriptor = "Lclient!o;")
-	public static JagString aClass40_204 = Static12.method257("gr2");
+	public static JagString aClass40_204 = create("gr2");
 	@OriginalMember(owner = "client!fc", name = "Z", descriptor = "Lclient!o;")
-	public static JagString aClass40_203 = Static12.method257("dre");
+	public static JagString aClass40_203 = create("dre");
 	@OriginalMember(owner = "client!fc", name = "W", descriptor = "Lclient!o;")
-	public static JagString aClass40_201 = Static12.method257("gre");
+	public static JagString aClass40_201 = create("gre");
 	@OriginalMember(owner = "client!fc", name = "X", descriptor = "Lclient!o;")
-	public static JagString aClass40_202 = Static12.method257("yel");
+	public static JagString aClass40_202 = create("yel");
 	@OriginalMember(owner = "client!fc", name = "V", descriptor = "Lclient!o;")
-	public static JagString aClass40_200 = Static12.method257("str");
+	public static JagString aClass40_200 = create("str");
 	@OriginalMember(owner = "client!fc", name = "gb", descriptor = "Lclient!o;")
-	public static JagString aClass40_209 = Static12.method257("mag");
+	public static JagString aClass40_209 = create("mag");
 	@OriginalMember(owner = "client!fc", name = "bb", descriptor = "Lclient!o;")
-	public static JagString aClass40_205 = Static12.method257("or2");
+	public static JagString aClass40_205 = create("or2");
 	@OriginalMember(owner = "client!fc", name = "lb", descriptor = "Lclient!o;")
-	public static JagString aClass40_213 = Static12.method257("or1");
+	public static JagString aClass40_213 = create("or1");
 	@OriginalMember(owner = "client!fc", name = "ob", descriptor = "Lclient!o;")
-	public static JagString aClass40_214 = Static12.method257("bla");
+	public static JagString aClass40_214 = create("bla");
 	@OriginalMember(owner = "client!fc", name = "cb", descriptor = "Lclient!o;")
-	public static JagString aClass40_206 = Static12.method257("or3");
+	public static JagString aClass40_206 = create("or3");
 	@OriginalMember(owner = "client!fc", name = "fb", descriptor = "Lclient!o;")
-	public static JagString aClass40_208 = Static12.method257("red");
+	public static JagString aClass40_208 = create("red");
 	@OriginalMember(owner = "client!fc", name = "db", descriptor = "Lclient!o;")
-	public static JagString aClass40_207 = Static12.method257("cya");
+	public static JagString aClass40_207 = create("cya");
 	@OriginalMember(owner = "client!fc", name = "kb", descriptor = "Lclient!o;")
-	public static JagString aClass40_212 = Static12.method257("lre");
+	public static JagString aClass40_212 = create("lre");
 	@OriginalMember(owner = "client!fc", name = "pb", descriptor = "Lclient!o;")
-	public static JagString aClass40_215 = Static12.method257("dbl");
+	public static JagString aClass40_215 = create("dbl");
 	@OriginalMember(owner = "client!fc", name = "rb", descriptor = "Lclient!o;")
-	public static JagString aClass40_217 = Static12.method257("whi");
+	public static JagString aClass40_217 = create("whi");
 	@OriginalMember(owner = "client!fc", name = "jb", descriptor = "Lclient!o;")
-	public static JagString aClass40_211 = Static12.method257("blu");
+	public static JagString aClass40_211 = create("blu");
 	@OriginalMember(owner = "client!fc", name = "hb", descriptor = "Lclient!o;")
-	public static JagString aClass40_210 = Static12.method257("gr3");
+	public static JagString aClass40_210 = create("gr3");
 	@OriginalMember(owner = "client!fc", name = "qb", descriptor = "Lclient!o;")
-	public static JagString aClass40_216 = Static12.method257("gr1");
+	public static JagString aClass40_216 = create("gr1");
 	@OriginalMember(owner = "client!tb", name = "z", descriptor = "Lclient!o;")
-	public static JagString BUTTON_OK = Static12.method257("Ok");
+	public static JagString BUTTON_OK = create("Ok");
 	@OriginalMember(owner = "client!tb", name = "E", descriptor = "Lclient!o;")
-	public static JagString aClass40_618 = Static12.method257("System update in: ");
+	public static JagString SYSTEM_UPDATE_IN = create("System update in: ");
 	@OriginalMember(owner = "client!tb", name = "N", descriptor = "Lclient!o;")
-	public static JagString aClass40_619 = Static12.method257("Loading interfaces )2 ");
+	public static JagString aClass40_619 = create("Loading interfaces )2 ");
 	@OriginalMember(owner = "client!tb", name = "P", descriptor = "Lclient!o;")
-	public static JagString aClass40_620 = Static12.method257("p11_full");
+	public static JagString aClass40_620 = create("p11_full");
 	@OriginalMember(owner = "client!tb", name = "Q", descriptor = "Lclient!o;")
-	public static JagString aClass40_621 = Static12.method257("To switch to a members)2only world:*6n1(Y Logout and return to the world selection page)3*6n2(Y Choose one of the members world with a gold star next to it(Ws name)3*6n*6nIf you prefer you can continue to use this world)1*6nbut members only features will be unavailable here)3");
+	public static JagString aClass40_621 = create("To switch to a members)2only world:*6n1(Y Logout and return to the world selection page)3*6n2(Y Choose one of the members world with a gold star next to it(Ws name)3*6n*6nIf you prefer you can continue to use this world)1*6nbut members only features will be unavailable here)3");
 	@OriginalMember(owner = "client!tb", name = "S", descriptor = "Lclient!o;")
-	public static JagString aClass40_622 = Static12.method257("@cr2@");
+	public static JagString aClass40_622 = create("@cr2@");
 	@OriginalMember(owner = "client!kc", name = "ed", descriptor = "Lclient!o;")
-	public static JagString aClass40_396 = Static12.method257("Mar");
+	public static JagString aClass40_396 = create("Mar");
 	@OriginalMember(owner = "client!kd", name = "Hb", descriptor = "Lclient!o;")
-	public static JagString aClass40_408 = Static12.method257("To start a subscripton:*6n1(Y Logout and return to the frontpage of this website)3*6n2(Y Choose (WStart a new subscription(W");
+	public static JagString aClass40_408 = create("To start a subscripton:*6n1(Y Logout and return to the frontpage of this website)3*6n2(Y Choose (WStart a new subscription(W");
 	@OriginalMember(owner = "client!kd", name = "qb", descriptor = "Lclient!o;")
-	public static JagString aClass40_405 = Static12.method257(" million @whi@(X");
+	public static JagString aClass40_405 = create(" million @whi@(X");
 	@OriginalMember(owner = "client!kd", name = "Lb", descriptor = "Lclient!o;")
-	public static JagString aClass40_409 = Static12.method257(")2");
+	public static JagString aClass40_409 = create(")2");
 	@OriginalMember(owner = "client!kd", name = "Bb", descriptor = "Lclient!o;")
-	public static JagString aClass40_407 = Static12.method257("@gr1@");
+	public static JagString aClass40_407 = create("@gr1@");
 	@OriginalMember(owner = "client!kd", name = "Qb", descriptor = "Lclient!o;")
-	public static JagString aClass40_410 = Static12.method257("Unable to connect)3");
+	public static JagString aClass40_410 = create("Unable to connect)3");
 	@OriginalMember(owner = "client!kd", name = "Ab", descriptor = "Lclient!o;")
-	public static JagString aClass40_406 = Static12.method257("Account locked as we suspect it has been stolen)3");
+	public static JagString aClass40_406 = create("Account locked as we suspect it has been stolen)3");
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "Lclient!o;")
-	public static JagString aClass40_608 = Static12.method257("Too many connections from your address)3");
+	public static JagString aClass40_608 = create("Too many connections from your address)3");
 	@OriginalMember(owner = "client!t", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_609 = Static12.method257("(Y");
+	public static JagString aClass40_609 = create("(Y");
 	@OriginalMember(owner = "client!t", name = "n", descriptor = "Lclient!o;")
-	public static JagString aClass40_610 = Static12.method257("glow1:");
+	public static JagString aClass40_610 = create("glow1:");
 	@OriginalMember(owner = "client!t", name = "s", descriptor = "Lclient!o;")
-	public static JagString aClass40_611 = Static12.method257("Please contact customer support)3");
+	public static JagString aClass40_611 = create("Please contact customer support)3");
 	@OriginalMember(owner = "client!u", name = "pb", descriptor = "Lclient!o;")
-	public static JagString aClass40_643 = Static12.method257("scrollbar");
+	public static JagString aClass40_643 = create("scrollbar");
 	@OriginalMember(owner = "client!u", name = "sb", descriptor = "Lclient!o;")
-	public static JagString aClass40_644 = Static12.method257("Drop");
+	public static JagString aClass40_644 = create("Drop");
 	@OriginalMember(owner = "client!u", name = "mb", descriptor = "Lclient!o;")
 	public static JagString aClass40_642 = aClass40_644;
 	@OriginalMember(owner = "client!u", name = "Db", descriptor = "Lclient!o;")
-	public static JagString aClass40_645 = Static12.method257("Login limit exceeded)3");
+	public static JagString aClass40_645 = create("Login limit exceeded)3");
 	@OriginalMember(owner = "client!u", name = "Eb", descriptor = "Lclient!o;")
-	public static JagString aClass40_646 = Static12.method257("Moderator option: Mute player for 48 hours: <OFF>");
+	public static JagString aClass40_646 = create("Moderator option: Mute player for 48 hours: <OFF>");
 	@OriginalMember(owner = "client!u", name = "Fb", descriptor = "Lclient!o;")
-	public static JagString aClass40_647 = Static12.method257("mapedge");
+	public static JagString aClass40_647 = create("mapedge");
 	@OriginalMember(owner = "client!f", name = "lb", descriptor = "Lclient!o;")
-	public static JagString aClass40_191 = Static12.method257("mapback");
+	public static JagString aClass40_191 = create("mapback");
 	@OriginalMember(owner = "client!f", name = "sb", descriptor = "Lclient!o;")
-	public static JagString aClass40_192 = Static12.method257("Please reload this page)3");
+	public static JagString aClass40_192 = create("Please reload this page)3");
 	@OriginalMember(owner = "client!oa", name = "b", descriptor = "Lclient!o;")
-	public static JagString aClass40_512 = Static12.method257("Earlier today");
+	public static JagString aClass40_512 = create("Earlier today");
 	@OriginalMember(owner = "client!oa", name = "l", descriptor = "Lclient!o;")
-	public static JagString aClass40_515 = Static12.method257("earlier today");
+	public static JagString aClass40_515 = create("earlier today");
 	@OriginalMember(owner = "client!oa", name = "d", descriptor = "Lclient!o;")
-	public static JagString aClass40_513 = Static12.method257("Loaded textures");
+	public static JagString aClass40_513 = create("Loaded textures");
 	@OriginalMember(owner = "client!oa", name = "p", descriptor = "Lclient!o;")
-	public static JagString aClass40_516 = Static12.method257("Loaded title screen");
+	public static JagString aClass40_516 = create("Loaded title screen");
 	@OriginalMember(owner = "client!oa", name = "u", descriptor = "Lclient!o;")
-	public static JagString aClass40_517 = Static12.method257("Loaded interfaces");
+	public static JagString aClass40_517 = create("Loaded interfaces");
 	@OriginalMember(owner = "client!oa", name = "h", descriptor = "Lclient!o;")
-	public static JagString aClass40_514 = Static12.method257("@yel@Classic");
+	public static JagString aClass40_514 = create("@yel@Classic");
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "Lclient!o;")
-	public static JagString aClass40_511 = Static12.method257("*6nin your message centre)3");
+	public static JagString aClass40_511 = create("*6nin your message centre)3");
 	@OriginalMember(owner = "client!oa", name = "v", descriptor = "Lclient!o;")
-	public static JagString aClass40_518 = Static12.method257("Please wait 1 minute and try again)3");
+	public static JagString aClass40_518 = create("Please wait 1 minute and try again)3");
 	@OriginalMember(owner = "client!oa", name = "y", descriptor = "Lclient!o;")
-	public static JagString aClass40_519 = Static12.method257("slide:");
+	public static JagString aClass40_519 = create("slide:");
 	@OriginalMember(owner = "client!oa", name = "z", descriptor = "Lclient!o;")
-	public static JagString aClass40_520 = Static12.method257("mapscene");
+	public static JagString aClass40_520 = create("mapscene");
 	@OriginalMember(owner = "client!oa", name = "B", descriptor = "Lclient!o;")
-	public static JagString aClass40_521 = Static12.method257("logo");
+	public static JagString aClass40_521 = create("logo");
 	@OriginalMember(owner = "client!nd", name = "q", descriptor = "Lclient!o;")
-	public static JagString aClass40_494 = Static12.method257("::clientdrop");
+	public static JagString aClass40_494 = create("::clientdrop");
 	@OriginalMember(owner = "client!nd", name = "y", descriptor = "Lclient!o;")
-	public static JagString aClass40_496 = Static12.method257(" x ");
+	public static JagString aClass40_496 = create(" x ");
 	@OriginalMember(owner = "client!nd", name = "w", descriptor = "Lclient!o;")
-	public static JagString aClass40_495 = Static12.method257("(U5");
+	public static JagString aClass40_495 = create("(U5");
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "Lclient!o;")
-	public static JagString aClass40_562 = Static12.method257("This is a non)2members*6nworld)3 To enjoy your*6nmembers benefits we*6nrecommend you play on a*6nmembers world instead)3");
+	public static JagString aClass40_562 = create("This is a non)2members*6nworld)3 To enjoy your*6nmembers benefits we*6nrecommend you play on a*6nmembers world instead)3");
 	@OriginalMember(owner = "client!ra", name = "r", descriptor = "Lclient!o;")
-	public static JagString aClass40_565 = Static12.method257("flash3:");
+	public static JagString aClass40_565 = create("flash3:");
 	@OriginalMember(owner = "client!ra", name = "g", descriptor = "Lclient!o;")
-	public static JagString aClass40_563 = Static12.method257("runes");
+	public static JagString aClass40_563 = create("runes");
 	@OriginalMember(owner = "client!ra", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_564 = Static12.method257("From ");
+	public static JagString aClass40_564 = create("From ");
 	@OriginalMember(owner = "client!ra", name = "u", descriptor = "Lclient!o;")
-	public static JagString aClass40_566 = Static12.method257("purple:");
+	public static JagString aClass40_566 = create("purple:");
 	@OriginalMember(owner = "client!ic", name = "P", descriptor = "Lclient!o;")
-	public static JagString aClass40_330 = Static12.method257("@gre@World");
+	public static JagString aClass40_330 = create("@gre@World");
 	@OriginalMember(owner = "client!ic", name = "T", descriptor = "Lclient!o;")
-	public static JagString aClass40_331 = Static12.method257("Welcome to RuneScape");
+	public static JagString aClass40_331 = create("Welcome to RuneScape");
 	@OriginalMember(owner = "client!ic", name = "W", descriptor = "Lclient!o;")
-	public static JagString aClass40_332 = Static12.method257("cross");
+	public static JagString aClass40_332 = create("cross");
 	@OriginalMember(owner = "client!ic", name = "bb", descriptor = "Lclient!o;")
-	public static JagString aClass40_334 = Static12.method257("shake:");
+	public static JagString aClass40_334 = create("shake:");
 	@OriginalMember(owner = "client!ic", name = "X", descriptor = "Lclient!o;")
-	public static JagString aClass40_333 = Static12.method257(" with)3)3)3");
+	public static JagString aClass40_333 = create(" with)3)3)3");
 	@OriginalMember(owner = "client!ic", name = "eb", descriptor = "Lclient!o;")
-	public static JagString aClass40_335 = Static12.method257("(U(Y");
+	public static JagString aClass40_335 = create("(U(Y");
 	@OriginalMember(owner = "client!bd", name = "h", descriptor = "Lclient!o;")
-	public static JagString aClass40_62 = Static12.method257("::errortest");
+	public static JagString aClass40_62 = create("::errortest");
 	@OriginalMember(owner = "client!bd", name = "i", descriptor = "Lclient!o;")
-	public static JagString aClass40_63 = Static12.method257("(X");
+	public static JagString aClass40_63 = create("(X");
 	@OriginalMember(owner = "client!bd", name = "t", descriptor = "Lclient!o;")
-	public static JagString aClass40_66 = Static12.method257("Members object");
+	public static JagString aClass40_66 = create("Members object");
 	@OriginalMember(owner = "client!bd", name = "s", descriptor = "Lclient!o;")
 	public static JagString aClass40_65 = aClass40_66;
 	@OriginalMember(owner = "client!bd", name = "v", descriptor = "Lclient!o;")
-	public static JagString aClass40_67 = Static12.method257("wave2:");
+	public static JagString aClass40_67 = create("wave2:");
 	@OriginalMember(owner = "client!bd", name = "r", descriptor = "Lclient!o;")
-	public static JagString aClass40_64 = Static12.method257("backbase2");
+	public static JagString aClass40_64 = create("backbase2");
 	@OriginalMember(owner = "client!k", name = "q", descriptor = "Lclient!o;")
-	public static JagString aClass40_355 = Static12.method257("flash2:");
+	public static JagString aClass40_355 = create("flash2:");
 	@OriginalMember(owner = "client!k", name = "w", descriptor = "Lclient!o;")
-	public static JagString aClass40_356 = Static12.method257("l");
+	public static JagString aClass40_356 = create("l");
 	@OriginalMember(owner = "client!k", name = "z", descriptor = "Lclient!o;")
-	public static JagString FRIENDSLIST_PLEASE_REMOVE = Static12.method257("Please remove ");
+	public static JagString FRIENDSLIST_PLEASE_REMOVE = create("Please remove ");
 	@OriginalMember(owner = "client!a", name = "l", descriptor = "Lclient!o;")
-	public static JagString aClass40_1 = Static12.method257(" has logged out)3");
+	public static JagString aClass40_1 = create(" has logged out)3");
 	@OriginalMember(owner = "client!a", name = "v", descriptor = "Lclient!o;")
-	public static JagString aClass40_3 = Static12.method257("redstone1");
+	public static JagString aClass40_3 = create("redstone1");
 	@OriginalMember(owner = "client!a", name = "o", descriptor = "Lclient!o;")
-	public static JagString aClass40_2 = Static12.method257("Enter message to send to ");
+	public static JagString aClass40_2 = create("Enter message to send to ");
 	@OriginalMember(owner = "client!a", name = "z", descriptor = "Lclient!o;")
-	public static JagString aClass40_4 = Static12.method257(": ");
+	public static JagString aClass40_4 = create(": ");
 	@OriginalMember(owner = "client!ae", name = "T", descriptor = "Lclient!o;")
-	public static JagString aClass40_43 = Static12.method257("@red@Offline");
+	public static JagString aClass40_43 = create("@red@Offline");
 	@OriginalMember(owner = "client!ae", name = "eb", descriptor = "Lclient!o;")
-	public static JagString aClass40_44 = Static12.method257("Mem:");
+	public static JagString aClass40_44 = create("Mem:");
 	@OriginalMember(owner = "client!ae", name = "gb", descriptor = "Lclient!o;")
-	public static JagString aClass40_45 = Static12.method257("@whi@ )4 ");
+	public static JagString aClass40_45 = create("@whi@ )4 ");
 	@OriginalMember(owner = "client!ae", name = "ib", descriptor = "Lclient!o;")
-	public static JagString aClass40_46 = Static12.method257("Hide");
+	public static JagString aClass40_46 = create("Hide");
 	@OriginalMember(owner = "client!ae", name = "jb", descriptor = "Lclient!o;")
-	public static JagString aClass40_47 = Static12.method257("Loading fonts )2 ");
+	public static JagString aClass40_47 = create("Loading fonts )2 ");
 	@OriginalMember(owner = "client!la", name = "ib", descriptor = "Lclient!o;")
-	public static JagString aClass40_427 = Static12.method257("Try again in 60 secs)3)3)3");
+	public static JagString aClass40_427 = create("Try again in 60 secs)3)3)3");
 	@OriginalMember(owner = "client!la", name = "hb", descriptor = "Lclient!o;")
-	public static JagString aClass40_426 = Static12.method257(" from your friend list first");
+	public static JagString aClass40_426 = create(" from your friend list first");
 	@OriginalMember(owner = "client!la", name = "pb", descriptor = "Lclient!o;")
-	public static JagString aClass40_429 = Static12.method257("@yel@ days of*6nmember credit remaining)3*6n*6n@lre@Credit low(Q Renew now*6n@lre@to avoid losing members)3");
+	public static JagString aClass40_429 = create("@yel@ days of*6nmember credit remaining)3*6n*6n@lre@Credit low(Q Renew now*6n@lre@to avoid losing members)3");
 	@OriginalMember(owner = "client!la", name = "ob", descriptor = "Lclient!o;")
-	public static JagString aClass40_428 = Static12.method257("null");
+	public static JagString aClass40_428 = create("null");
 	@OriginalMember(owner = "client!sa", name = "fb", descriptor = "Lclient!o;")
-	public static JagString aClass40_584 = Static12.method257("Loaded update list");
+	public static JagString aClass40_584 = create("Loaded update list");
 	@OriginalMember(owner = "client!sa", name = "jb", descriptor = "Lclient!o;")
-	public static JagString aClass40_586 = Static12.method257("Please try using a different world)3");
+	public static JagString aClass40_586 = create("Please try using a different world)3");
 	@OriginalMember(owner = "client!sa", name = "tb", descriptor = "Lclient!o;")
-	public static JagString aClass40_590 = Static12.method257(" with @lre@");
+	public static JagString aClass40_590 = create(" with @lre@");
 	@OriginalMember(owner = "client!sa", name = "ib", descriptor = "Lclient!o;")
-	public static JagString aClass40_585 = Static12.method257("Unexpected server response: ");
+	public static JagString aClass40_585 = create("Unexpected server response: ");
 	@OriginalMember(owner = "client!sa", name = "lb", descriptor = "Lclient!o;")
-	public static JagString aClass40_588 = Static12.method257("RuneScape has been updated(Q");
+	public static JagString aClass40_588 = create("RuneScape has been updated(Q");
 	@OriginalMember(owner = "client!sa", name = "Fb", descriptor = "Lclient!o;")
-	public static JagString aClass40_593 = Static12.method257("");
+	public static JagString aClass40_593 = create("");
 	@OriginalMember(owner = "client!sa", name = "kb", descriptor = "Lclient!o;")
 	public static JagString aClass40_587 = aClass40_593;
 	@OriginalMember(owner = "client!sa", name = "Ab", descriptor = "Lclient!o;")
@@ -360,197 +360,197 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!sa", name = "yb", descriptor = "Lclient!o;")
 	public static JagString aClass40_591 = aClass40_593;
 	@OriginalMember(owner = "client!sb", name = "cb", descriptor = "Lclient!o;")
-	public static JagString aClass40_600 = Static12.method257("Last password change:*6n@gre@Never changed");
+	public static JagString aClass40_600 = create("Last password change:*6n@gre@Never changed");
 	@OriginalMember(owner = "client!sb", name = "gb", descriptor = "Lclient!o;")
 	public static JagString aClass40_601 = null;
 	@OriginalMember(owner = "client!vc", name = "T", descriptor = "Lclient!o;")
-	public static JagString aClass40_708 = Static12.method257("wishes to duel with you)3");
+	public static JagString aClass40_708 = create("wishes to duel with you)3");
 	@OriginalMember(owner = "client!vc", name = "Z", descriptor = "Lclient!o;")
-	public static JagString aClass40_709 = Static12.method257("Connecting to friendserver");
+	public static JagString aClass40_709 = create("Connecting to friendserver");
 	@OriginalMember(owner = "client!vc", name = "hb", descriptor = "Lclient!o;")
-	public static JagString aClass40_711 = Static12.method257("Loaded fonts");
+	public static JagString aClass40_711 = create("Loaded fonts");
 	@OriginalMember(owner = "client!vc", name = "mb", descriptor = "Lclient!o;")
-	public static JagString aClass40_712 = Static12.method257("Sep");
+	public static JagString aClass40_712 = create("Sep");
 	@OriginalMember(owner = "client!vc", name = "fb", descriptor = "Lclient!o;")
-	public static JagString aClass40_710 = Static12.method257("*6n");
+	public static JagString aClass40_710 = create("*6n");
 	@OriginalMember(owner = "client!vc", name = "ob", descriptor = "Lclient!o;")
-	public static JagString aClass40_713 = Static12.method257("Bad session id)3");
+	public static JagString aClass40_713 = create("Bad session id)3");
 	@OriginalMember(owner = "client!ga", name = "A", descriptor = "Lclient!o;")
-	public static JagString aClass40_230 = Static12.method257("red:");
+	public static JagString aClass40_230 = create("red:");
 	@OriginalMember(owner = "client!ga", name = "x", descriptor = "Lclient!o;")
-	public static JagString aClass40_228 = Static12.method257("To change your recovery questions:*6n1(Y Logout and return to the frontpage of this website)3*6n2(Y Choose (WSet new recovery questions(W)3");
+	public static JagString aClass40_228 = create("To change your recovery questions:*6n1(Y Logout and return to the frontpage of this website)3*6n2(Y Choose (WSet new recovery questions(W)3");
 	@OriginalMember(owner = "client!ga", name = "z", descriptor = "Lclient!o;")
-	public static JagString aClass40_229 = Static12.method257("@whi@");
+	public static JagString aClass40_229 = create("@whi@");
 	@OriginalMember(owner = "client!gd", name = "t", descriptor = "Lclient!o;")
-	public static JagString aClass40_246 = Static12.method257("Unable to find ");
+	public static JagString aClass40_246 = create("Unable to find ");
 	@OriginalMember(owner = "client!ge", name = "z", descriptor = "Lclient!o;")
-	public static JagString aClass40_252 = Static12.method257("Click to continue");
+	public static JagString aClass40_252 = create("Click to continue");
 	@OriginalMember(owner = "client!ge", name = "H", descriptor = "Lclient!o;")
-	public static JagString aClass40_253 = Static12.method257("null");
+	public static JagString aClass40_253 = create("null");
 	@OriginalMember(owner = "client!ge", name = "P", descriptor = "Lclient!o;")
-	public static JagString aClass40_254 = Static12.method257("You last logged in @red@");
+	public static JagString aClass40_254 = create("You last logged in @red@");
 	@OriginalMember(owner = "client!ge", name = "R", descriptor = "Lclient!o;")
-	public static JagString aClass40_255 = Static12.method257("Dec");
+	public static JagString aClass40_255 = create("Dec");
 	@OriginalMember(owner = "client!kb", name = "q", descriptor = "Lclient!o;")
-	public static JagString aClass40_366 = Static12.method257("Please try again)3");
+	public static JagString aClass40_366 = create("Please try again)3");
 	@OriginalMember(owner = "client!kb", name = "t", descriptor = "Lclient!o;")
-	public static JagString aClass40_368 = Static12.method257("Private chat");
+	public static JagString aClass40_368 = create("Private chat");
 	@OriginalMember(owner = "client!kb", name = "s", descriptor = "Lclient!o;")
-	public static JagString aClass40_367 = Static12.method257("You have ");
+	public static JagString aClass40_367 = create("You have ");
 	@OriginalMember(owner = "client!ub", name = "t", descriptor = "Lclient!o;")
-	public static JagString aClass40_668 = Static12.method257("k");
+	public static JagString aClass40_668 = create("k");
 	@OriginalMember(owner = "client!ub", name = "I", descriptor = "Lclient!o;")
-	public static JagString aClass40_670 = Static12.method257("Feb");
+	public static JagString aClass40_670 = create("Feb");
 	@OriginalMember(owner = "client!ub", name = "C", descriptor = "Lclient!o;")
-	public static JagString aClass40_669 = Static12.method257("K");
+	public static JagString aClass40_669 = create("K");
 	@OriginalMember(owner = "client!ub", name = "L", descriptor = "Lclient!o;")
-	public static JagString aClass40_671 = Static12.method257("headicons_hint");
+	public static JagString aClass40_671 = create("headicons_hint");
 	@OriginalMember(owner = "client!ub", name = "T", descriptor = "Lclient!o;")
-	public static JagString aClass40_672 = Static12.method257(")1");
+	public static JagString aClass40_672 = create(")1");
 	@OriginalMember(owner = "client!ub", name = "V", descriptor = "Lclient!o;")
-	public static JagString aClass40_673 = Static12.method257(":");
+	public static JagString aClass40_673 = create(":");
 	@OriginalMember(owner = "client!ab", name = "c", descriptor = "Lclient!o;")
-	public static JagString aClass40_13 = Static12.method257("Please wait )2 attempting to reestablish");
+	public static JagString aClass40_13 = create("Please wait )2 attempting to reestablish");
 	@OriginalMember(owner = "client!ab", name = "g", descriptor = "Lclient!o;")
-	public static JagString aClass40_14 = Static12.method257("wishes to trade with you)3");
+	public static JagString aClass40_14 = create("wishes to trade with you)3");
 	@OriginalMember(owner = "client!ab", name = "q", descriptor = "Lclient!o;")
-	public static JagString aClass40_15 = Static12.method257("Your account has been disabled)3");
+	public static JagString aClass40_15 = create("Your account has been disabled)3");
 	@OriginalMember(owner = "client!ad", name = "xb", descriptor = "Lclient!o;")
-	public static JagString aClass40_29 = Static12.method257("backright2");
+	public static JagString aClass40_29 = create("backright2");
 	@OriginalMember(owner = "client!ad", name = "Fb", descriptor = "Lclient!o;")
-	public static JagString aClass40_30 = Static12.method257(" @whi@");
+	public static JagString aClass40_30 = create(" @whi@");
 	@OriginalMember(owner = "client!cd", name = "y", descriptor = "Lclient!o;")
-	public static JagString aClass40_536 = Static12.method257("Login");
+	public static JagString aClass40_536 = create("Login");
 	@OriginalMember(owner = "client!cd", name = "F", descriptor = "Lclient!o;")
-	public static JagString aClass40_538 = Static12.method257("white:");
+	public static JagString aClass40_538 = create("white:");
 	@OriginalMember(owner = "client!cd", name = "I", descriptor = "Lclient!o;")
-	public static JagString aClass40_539 = Static12.method257("button near the top of that page)3");
+	public static JagString aClass40_539 = create("button near the top of that page)3");
 	@OriginalMember(owner = "client!cd", name = "D", descriptor = "Lclient!o;")
-	public static JagString aClass40_537 = Static12.method257("Connection timed out");
+	public static JagString aClass40_537 = create("Connection timed out");
 	@OriginalMember(owner = "client!cd", name = "J", descriptor = "Lclient!o;")
-	public static JagString aClass40_540 = Static12.method257("Moderator option: Mute player for 48 hours: <ON>");
+	public static JagString aClass40_540 = create("Moderator option: Mute player for 48 hours: <ON>");
 	@OriginalMember(owner = "client!cd", name = "K", descriptor = "Lclient!o;")
-	public static JagString aClass40_541 = Static12.method257("Loading sprites )2 ");
+	public static JagString aClass40_541 = create("Loading sprites )2 ");
 	@OriginalMember(owner = "client!cd", name = "t", descriptor = "Lclient!o;")
-	public static JagString aClass40_535 = Static12.method257("Add friend @whi@");
+	public static JagString aClass40_535 = create("Add friend @whi@");
 	@OriginalMember(owner = "client!jc", name = "F", descriptor = "Lclient!o;")
-	public static JagString aClass40_345 = Static12.method257("Take @lre@");
+	public static JagString aClass40_345 = create("Take @lre@");
 	@OriginalMember(owner = "client!jc", name = "A", descriptor = "Lclient!o;")
-	public static JagString aClass40_343 = Static12.method257("Hidden");
+	public static JagString aClass40_343 = create("Hidden");
 	@OriginalMember(owner = "client!jc", name = "J", descriptor = "Lclient!o;")
 	public static JagString aClass40_346 = aClass40_343;
 	@OriginalMember(owner = "client!jc", name = "C", descriptor = "Lclient!o;")
-	public static JagString aClass40_344 = Static12.method257("(U2");
+	public static JagString aClass40_344 = create("(U2");
 	@OriginalMember(owner = "client!d", name = "k", descriptor = "Lclient!o;")
-	public static JagString aClass40_115 = Static12.method257("Unknown");
+	public static JagString aClass40_115 = create("Unknown");
 	@OriginalMember(owner = "client!d", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_113 = Static12.method257("Enter name of player to add to list");
+	public static JagString aClass40_113 = create("Enter name of player to add to list");
 	@OriginalMember(owner = "client!d", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_116 = Static12.method257("(Z");
+	public static JagString aClass40_116 = create("(Z");
 	@OriginalMember(owner = "client!d", name = "y", descriptor = "Lclient!o;")
-	public static JagString aClass40_119 = Static12.method257("@yel@ days of*6nmember credit remaining)3");
+	public static JagString aClass40_119 = create("@yel@ days of*6nmember credit remaining)3");
 	@OriginalMember(owner = "client!d", name = "n", descriptor = "Lclient!o;")
-	public static JagString aClass40_117 = Static12.method257("Invalid username or password)3");
+	public static JagString aClass40_117 = create("Invalid username or password)3");
 	@OriginalMember(owner = "client!d", name = "w", descriptor = "Lclient!o;")
-	public static JagString aClass40_118 = Static12.method257("Password: ");
+	public static JagString aClass40_118 = create("Password: ");
 	@OriginalMember(owner = "client!d", name = "i", descriptor = "Lclient!o;")
-	public static JagString aClass40_114 = Static12.method257("Loaded gamescreen");
+	public static JagString aClass40_114 = create("Loaded gamescreen");
 	@OriginalMember(owner = "client!d", name = "H", descriptor = "Lclient!o;")
-	public static JagString aClass40_120 = Static12.method257("Connecting to server)3)3)3");
+	public static JagString aClass40_120 = create("Connecting to server)3)3)3");
 	@OriginalMember(owner = "client!db", name = "e", descriptor = "Lclient!o;")
-	public static JagString aClass40_121 = Static12.method257("To cancel this request:*6n1(Y Logout and return to the frontpage of this website)3*6n2(Y Choose (WCancel recovery questions(W)3");
+	public static JagString aClass40_121 = create("To cancel this request:*6n1(Y Logout and return to the frontpage of this website)3*6n2(Y Choose (WCancel recovery questions(W)3");
 	@OriginalMember(owner = "client!de", name = "a", descriptor = "Lclient!o;")
-	public static JagString aClass40_122 = Static12.method257("Enter name of friend to delete from list");
+	public static JagString aClass40_122 = create("Enter name of friend to delete from list");
 	@OriginalMember(owner = "client!e", name = "B", descriptor = "Lclient!o;")
-	public static JagString aClass40_131 = Static12.method257("huffman");
+	public static JagString aClass40_131 = create("huffman");
 	@OriginalMember(owner = "client!e", name = "I", descriptor = "Lclient!o;")
-	public static JagString aClass40_132 = Static12.method257("flash1:");
+	public static JagString aClass40_132 = create("flash1:");
 	@OriginalMember(owner = "client!e", name = "M", descriptor = "Lclient!o;")
-	public static JagString aClass40_133 = Static12.method257("@or3@");
+	public static JagString aClass40_133 = create("@or3@");
 	@OriginalMember(owner = "client!e", name = "N", descriptor = "Lclient!o;")
-	public static JagString aClass40_134 = Static12.method257("@or1@");
+	public static JagString aClass40_134 = create("@or1@");
 	@OriginalMember(owner = "client!e", name = "T", descriptor = "Lclient!o;")
-	public static JagString aClass40_135 = Static12.method257(":0");
+	public static JagString aClass40_135 = create(":0");
 	@OriginalMember(owner = "client!ea", name = "m", descriptor = "Lclient!o;")
-	public static JagString FRIENDSLIST_PLEASE_REMOVE_2 = Static12.method257(" from your ignore list first");
+	public static JagString FRIENDSLIST_PLEASE_REMOVE_2 = create(" from your ignore list first");
 	@OriginalMember(owner = "client!ea", name = "g", descriptor = "Lclient!o;")
-	public static JagString aClass40_136 = Static12.method257("redstone3");
+	public static JagString aClass40_136 = create("redstone3");
 	@OriginalMember(owner = "client!ea", name = "p", descriptor = "Lclient!o;")
-	public static JagString aClass40_138 = Static12.method257("@gr2@");
+	public static JagString aClass40_138 = create("@gr2@");
 	@OriginalMember(owner = "client!ea", name = "r", descriptor = "Lclient!o;")
-	public static JagString aClass40_139 = Static12.method257("Imported models");
+	public static JagString aClass40_139 = create("Imported models");
 	@OriginalMember(owner = "client!ea", name = "u", descriptor = "Lclient!o;")
-	public static JagString aClass40_140 = Static12.method257("Import complete");
+	public static JagString aClass40_140 = create("Import complete");
 	@OriginalMember(owner = "client!ea", name = "y", descriptor = "Lclient!o;")
-	public static JagString aClass40_141 = Static12.method257("This world is full)3");
+	public static JagString aClass40_141 = create("This world is full)3");
 	@OriginalMember(owner = "client!fd", name = "e", descriptor = "Lclient!o;")
-	public static JagString aClass40_219 = Static12.method257("Public chat");
+	public static JagString aClass40_219 = create("Public chat");
 	@OriginalMember(owner = "client!fd", name = "b", descriptor = "Lclient!o;")
-	public static JagString aClass40_218 = Static12.method257("cyan:");
+	public static JagString aClass40_218 = create("cyan:");
 	@OriginalMember(owner = "client!fe", name = "c", descriptor = "Lclient!o;")
-	public static JagString aClass40_220 = Static12.method257("backhmid1");
+	public static JagString aClass40_220 = create("backhmid1");
 	@OriginalMember(owner = "client!fe", name = "e", descriptor = "Lclient!o;")
-	public static JagString aClass40_221 = Static12.method257("K @whi@(X");
+	public static JagString aClass40_221 = create("K @whi@(X");
 	@OriginalMember(owner = "client!fe", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_222 = Static12.method257("mod_icons");
+	public static JagString aClass40_222 = create("mod_icons");
 	@OriginalMember(owner = "client!fe", name = "k", descriptor = "Lclient!o;")
-	public static JagString aClass40_223 = Static12.method257("invback");
+	public static JagString aClass40_223 = create("invback");
 	@OriginalMember(owner = "client!h", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_257 = Static12.method257("Malformed login packet)3");
+	public static JagString aClass40_257 = create("Malformed login packet)3");
 	@OriginalMember(owner = "client!h", name = "g", descriptor = "Lclient!o;")
-	public static JagString aClass40_258 = Static12.method257("go back to the main RuneScape webpage");
+	public static JagString aClass40_258 = create("go back to the main RuneScape webpage");
 	@OriginalMember(owner = "client!h", name = "e", descriptor = "Lclient!o;")
-	public static JagString aClass40_256 = Static12.method257("backhmid2");
+	public static JagString aClass40_256 = create("backhmid2");
 	@OriginalMember(owner = "client!wd", name = "j", descriptor = "Lclient!o;")
-	public static JagString aClass40_718 = Static12.method257("backleft2");
+	public static JagString aClass40_718 = create("backleft2");
 	@OriginalMember(owner = "client!wd", name = "e", descriptor = "Lclient!o;")
-	public static JagString aClass40_716 = Static12.method257(" ");
+	public static JagString aClass40_716 = create(" ");
 	@OriginalMember(owner = "client!wd", name = "n", descriptor = "Lclient!o;")
-	public static JagString aClass40_721 = Static12.method257("Prepared visibility map");
+	public static JagString aClass40_721 = create("Prepared visibility map");
 	@OriginalMember(owner = "client!wd", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_720 = Static12.method257("redstone2");
+	public static JagString aClass40_720 = create("redstone2");
 	@OriginalMember(owner = "client!wd", name = "h", descriptor = "Lclient!o;")
-	public static JagString aClass40_717 = Static12.method257("@gre@1 unread message");
+	public static JagString aClass40_717 = create("@gre@1 unread message");
 	@OriginalMember(owner = "client!wd", name = "x", descriptor = "Lclient!o;")
-	public static JagString aClass40_722 = Static12.method257("Swap this note at any bank for the equivalent item");
+	public static JagString aClass40_722 = create("Swap this note at any bank for the equivalent item");
 	@OriginalMember(owner = "client!wd", name = "l", descriptor = "Lclient!o;")
 	public static JagString aClass40_719 = aClass40_722;
 	@OriginalMember(owner = "client!j", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_337 = Static12.method257("Last password change:*6n@gre@");
+	public static JagString aClass40_337 = create("Last password change:*6n@gre@");
 	@OriginalMember(owner = "client!j", name = "g", descriptor = "Lclient!o;")
-	public static JagString aClass40_338 = Static12.method257("To play on this world move to a free area first");
+	public static JagString aClass40_338 = create("To play on this world move to a free area first");
 	@OriginalMember(owner = "client!j", name = "d", descriptor = "Lclient!o;")
-	public static JagString aClass40_336 = Static12.method257("Press (Wchange your password(W on front page)3");
+	public static JagString aClass40_336 = create("Press (Wchange your password(W on front page)3");
 	@OriginalMember(owner = "client!j", name = "h", descriptor = "Lclient!o;")
-	public static JagString aClass40_339 = Static12.method257("@yel@*V");
+	public static JagString aClass40_339 = create("@yel@*V");
 	@OriginalMember(owner = "client!j", name = "l", descriptor = "Lclient!o;")
-	public static JagString aClass40_340 = Static12.method257("From");
+	public static JagString aClass40_340 = create("From");
 	@OriginalMember(owner = "client!j", name = "o", descriptor = "Lclient!o;")
-	public static JagString aClass40_341 = Static12.method257("We suspect someone knows your password)3");
+	public static JagString aClass40_341 = create("We suspect someone knows your password)3");
 	@OriginalMember(owner = "client!j", name = "p", descriptor = "Lclient!o;")
-	public static JagString aClass40_342 = Static12.method257("yellow:");
+	public static JagString aClass40_342 = create("yellow:");
 	@OriginalMember(owner = "client!ka", name = "i", descriptor = "Lclient!o;")
-	public static JagString aClass40_359 = Static12.method257("null");
+	public static JagString aClass40_359 = create("null");
 	@OriginalMember(owner = "client!ka", name = "f", descriptor = "Lclient!o;")
-	public static JagString CANCEL = Static12.method257("Cancel");
+	public static JagString CANCEL = create("Cancel");
 	@OriginalMember(owner = "client!ka", name = "q", descriptor = "Lclient!o;")
-	public static JagString aClass40_361 = Static12.method257("Please wait)3)3)3");
+	public static JagString aClass40_361 = create("Please wait)3)3)3");
 	@OriginalMember(owner = "client!ka", name = "j", descriptor = "Lclient!o;")
-	public static JagString aClass40_360 = Static12.method257("::hiddenbuttontest");
+	public static JagString aClass40_360 = create("::hiddenbuttontest");
 	@OriginalMember(owner = "client!lc", name = "l", descriptor = "Lclient!o;")
-	public static JagString aClass40_430 = Static12.method257("(U");
+	public static JagString aClass40_430 = create("(U");
 	@OriginalMember(owner = "client!le", name = "u", descriptor = "Lclient!o;")
-	public static JagString aClass40_432 = Static12.method257("Your ignore list is full)3 Max of 100 hit");
+	public static JagString aClass40_432 = create("Your ignore list is full)3 Max of 100 hit");
 	@OriginalMember(owner = "client!le", name = "w", descriptor = "Lclient!o;")
-	public static JagString aClass40_433 = Static12.method257("headicons_prayer");
+	public static JagString aClass40_433 = create("headicons_prayer");
 	@OriginalMember(owner = "client!le", name = "x", descriptor = "Lclient!o;")
-	public static JagString aClass40_434 = Static12.method257("Loading title screen )2 ");
+	public static JagString aClass40_434 = create("Loading title screen )2 ");
 	@OriginalMember(owner = "client!le", name = "y", descriptor = "Lclient!o;")
-	public static JagString aClass40_435 = Static12.method257("Icons redrawn");
+	public static JagString aClass40_435 = create("Icons redrawn");
 	@OriginalMember(owner = "client!le", name = "h", descriptor = "Lclient!o;")
-	public static JagString aClass40_431 = Static12.method257("@bla@ from: @red@");
+	public static JagString aClass40_431 = create("@bla@ from: @red@");
 	@OriginalMember(owner = "client!ma", name = "b", descriptor = "Lclient!o;")
-	public static JagString EMPTY_STRING = Static12.method257("");
+	public static JagString EMPTY_STRING = create("");
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "Lclient!o;")
 	public static JagString aClass40_444 = EMPTY_STRING;
 	@OriginalMember(owner = "client!ma", name = "f", descriptor = "Lclient!o;")
@@ -562,251 +562,251 @@ public final class JagString implements BaseString {
 	@OriginalMember(owner = "client!ma", name = "r", descriptor = "Lclient!o;")
 	public static JagString aClass40_452 = EMPTY_STRING;
 	@OriginalMember(owner = "client!ma", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_450 = Static12.method257("glow2:");
+	public static JagString aClass40_450 = create("glow2:");
 	@OriginalMember(owner = "client!ma", name = "g", descriptor = "Lclient!o;")
-	public static JagString aClass40_449 = Static12.method257("Use @lre@");
+	public static JagString aClass40_449 = create("Use @lre@");
 	@OriginalMember(owner = "client!mb", name = "e", descriptor = "Lclient!o;")
-	public static JagString aClass40_454 = Static12.method257(" x");
+	public static JagString aClass40_454 = create(" x");
 	@OriginalMember(owner = "client!mb", name = "i", descriptor = "Lclient!o;")
-	public static JagString aClass40_455 = Static12.method257(" more options");
+	public static JagString aClass40_455 = create(" more options");
 	@OriginalMember(owner = "client!na", name = "a", descriptor = "Lclient!o;")
-	public static JagString aClass40_482 = Static12.method257("Username: ");
+	public static JagString aClass40_482 = create("Username: ");
 	@OriginalMember(owner = "client!na", name = "d", descriptor = "Lclient!o;")
-	public static JagString aClass40_483 = Static12.method257("You have not yet set*6nany contact details)3");
+	public static JagString aClass40_483 = create("You have not yet set*6nany contact details)3");
 	@OriginalMember(owner = "client!na", name = "n", descriptor = "Lclient!o;")
-	public static JagString aClass40_488 = Static12.method257("Please check your message)2centre for details)3");
+	public static JagString aClass40_488 = create("Please check your message)2centre for details)3");
 	@OriginalMember(owner = "client!na", name = "h", descriptor = "Lclient!o;")
-	public static JagString aClass40_485 = Static12.method257("To extend or cancel a subscription:*6n1(Y Logout and return to the frontpage of this website)3*6n2(YChoose the relevant option from the (Wmembership(W section)3*6n*6nNote: If you are a credit card subscriber a top)2up payment will*6nautomatically be taken when 3 days credit remain)3*6n(Xunless you cancel your subscription)1 which can be done at any time)3(Y");
+	public static JagString aClass40_485 = create("To extend or cancel a subscription:*6n1(Y Logout and return to the frontpage of this website)3*6n2(YChoose the relevant option from the (Wmembership(W section)3*6n*6nNote: If you are a credit card subscriber a top)2up payment will*6nautomatically be taken when 3 days credit remain)3*6n(Xunless you cancel your subscription)1 which can be done at any time)3(Y");
 	@OriginalMember(owner = "client!na", name = "k", descriptor = "Lclient!o;")
-	public static JagString aClass40_487 = Static12.method257("backvmid2");
+	public static JagString aClass40_487 = create("backvmid2");
 	@OriginalMember(owner = "client!na", name = "f", descriptor = "Lclient!o;")
-	public static JagString BUTTON_CONTINUE = Static12.method257("Continue");
+	public static JagString BUTTON_CONTINUE = create("Continue");
 	@OriginalMember(owner = "client!na", name = "t", descriptor = "Lclient!o;")
-	public static JagString aClass40_489 = Static12.method257("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789(Q(R\u001c1(T(U^(V(Z(X(Y)2_=)0[*U]*W;:(W@(S*X)1<)3>)4?*6*V ");
+	public static JagString aClass40_489 = create("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789(Q(R\u001c1(T(U^(V(Z(X(Y)2_=)0[*U]*W;:(W@(S*X)1<)3>)4?*6*V ");
 	@OriginalMember(owner = "client!na", name = "i", descriptor = "Lclient!o;")
 	public static JagString aClass40_486 = aClass40_489;
 	@OriginalMember(owner = "client!p", name = "c", descriptor = "Lclient!o;")
-	public static JagString aClass40_613 = Static12.method257(" with @yel@");
+	public static JagString aClass40_613 = create(" with @yel@");
 	@OriginalMember(owner = "client!p", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_614 = Static12.method257("You are not a member)3*6n*6nChoose to subscribe and*6nyou(Wll get loads of extra*6nbenefits and features)3");
+	public static JagString aClass40_614 = create("You are not a member)3*6n*6nChoose to subscribe and*6nyou(Wll get loads of extra*6nbenefits and features)3");
 	@OriginalMember(owner = "client!p", name = "u", descriptor = "Lclient!o;")
-	public static JagString aClass40_616 = Static12.method257("Loading config )2 ");
+	public static JagString aClass40_616 = create("Loading config )2 ");
 	@OriginalMember(owner = "client!p", name = "t", descriptor = "Lclient!o;")
-	public static JagString aClass40_615 = Static12.method257("You are standing in a members)2only area)3");
+	public static JagString aClass40_615 = create("You are standing in a members)2only area)3");
 	@OriginalMember(owner = "client!r", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_559 = Static12.method257("Error loading your profile)3");
+	public static JagString aClass40_559 = create("Error loading your profile)3");
 	@OriginalMember(owner = "client!r", name = "l", descriptor = "Lclient!o;")
-	public static JagString aClass40_558 = Static12.method257("Checking for updates )2 ");
+	public static JagString aClass40_558 = create("Checking for updates )2 ");
 	@OriginalMember(owner = "client!r", name = "o", descriptor = "Lclient!o;")
-	public static JagString aClass40_560 = Static12.method257("::fpson");
+	public static JagString aClass40_560 = create("::fpson");
 	@OriginalMember(owner = "client!r", name = "p", descriptor = "Lclient!o;")
-	public static JagString aClass40_561 = Static12.method257("null");
+	public static JagString aClass40_561 = create("null");
 	@OriginalMember(owner = "client!rb", name = "B", descriptor = "Lclient!o;")
-	public static JagString aClass40_568 = Static12.method257("glow3:");
+	public static JagString aClass40_568 = create("glow3:");
 	@OriginalMember(owner = "client!rb", name = "h", descriptor = "Lclient!o;")
 	public static JagString aClass40_567 = null;
 	@OriginalMember(owner = "client!rd", name = "s", descriptor = "Lclient!o;")
-	public static JagString aClass40_570 = Static12.method257("Please use a different world)3");
+	public static JagString aClass40_570 = create("Please use a different world)3");
 	@OriginalMember(owner = "client!rd", name = "k", descriptor = "Lclient!o;")
-	public static JagString aClass40_569 = Static12.method257("No matching objects found)1 please shorten search");
+	public static JagString aClass40_569 = create("No matching objects found)1 please shorten search");
 	@OriginalMember(owner = "client!s", name = "e", descriptor = "Lclient!o;")
-	public static JagString aClass40_571 = Static12.method257("Importing maps )2 ");
+	public static JagString aClass40_571 = create("Importing maps )2 ");
 	@OriginalMember(owner = "client!s", name = "o", descriptor = "Lclient!o;")
-	public static JagString aClass40_573 = Static12.method257("Error connecting to server)3");
+	public static JagString aClass40_573 = create("Error connecting to server)3");
 	@OriginalMember(owner = "client!s", name = "l", descriptor = "Lclient!o;")
-	public static JagString aClass40_572 = Static12.method257(" @lre@");
+	public static JagString aClass40_572 = create(" @lre@");
 	@OriginalMember(owner = "client!s", name = "q", descriptor = "Lclient!o;")
-	public static JagString aClass40_574 = Static12.method257("Cabbage");
+	public static JagString aClass40_574 = create("Cabbage");
 	@OriginalMember(owner = "client!s", name = "t", descriptor = "Lclient!o;")
-	public static JagString aClass40_575 = Static12.method257("Login attempts exceeded)3");
+	public static JagString aClass40_575 = create("Login attempts exceeded)3");
 	@OriginalMember(owner = "client!ta", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_612 = Static12.method257("_");
+	public static JagString aClass40_612 = create("_");
 	@OriginalMember(owner = "client!tc", name = "l", descriptor = "Lclient!o;")
-	public static JagString aClass40_623 = Static12.method257("Your profile will be transferred in: ");
+	public static JagString aClass40_623 = create("Your profile will be transferred in: ");
 	@OriginalMember(owner = "client!tc", name = "n", descriptor = "Lclient!o;")
-	public static JagString aClass40_624 = Static12.method257(" you requested@lre@ new recovery*6n@lre@questions)3@yel@ The requested change will occur*6non: @lre@");
+	public static JagString aClass40_624 = create(" you requested@lre@ new recovery*6n@lre@questions)3@yel@ The requested change will occur*6non: @lre@");
 	@OriginalMember(owner = "client!tc", name = "s", descriptor = "Lclient!o;")
-	public static JagString aClass40_625 = Static12.method257("Prepared sound engine");
+	public static JagString aClass40_625 = create("Prepared sound engine");
 	@OriginalMember(owner = "client!tc", name = "t", descriptor = "Lclient!o;")
-	public static JagString aClass40_626 = Static12.method257("Loading friend list");
+	public static JagString aClass40_626 = create("Loading friend list");
 	@OriginalMember(owner = "client!tc", name = "u", descriptor = "Lclient!o;")
-	public static JagString aClass40_627 = Static12.method257("scroll:");
+	public static JagString aClass40_627 = create("scroll:");
 	@OriginalMember(owner = "client!td", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_629 = Static12.method257("Off");
+	public static JagString aClass40_629 = create("Off");
 	@OriginalMember(owner = "client!td", name = "k", descriptor = "Lclient!o;")
-	public static JagString aClass40_630 = Static12.method257("Oct");
+	public static JagString aClass40_630 = create("Oct");
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "Lclient!o;")
-	public static JagString aClass40_628 = Static12.method257("Please close the interface you have open before using (Wreport abuse(W");
+	public static JagString aClass40_628 = create("Please close the interface you have open before using (Wreport abuse(W");
 	@OriginalMember(owner = "client!td", name = "q", descriptor = "Lclient!o;")
-	public static JagString aClass40_633 = Static12.method257("Apr");
+	public static JagString aClass40_633 = create("Apr");
 	@OriginalMember(owner = "client!td", name = "o", descriptor = "Lclient!o;")
-	public static JagString aClass40_632 = Static12.method257("backvmid1");
+	public static JagString aClass40_632 = create("backvmid1");
 	@OriginalMember(owner = "client!td", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_631 = Static12.method257("Please subscribe)1 or use a different world)3");
+	public static JagString aClass40_631 = create("Please subscribe)1 or use a different world)3");
 	@OriginalMember(owner = "client!uc", name = "h", descriptor = "Lclient!o;")
-	public static JagString aClass40_676 = Static12.method257("Fps:");
+	public static JagString aClass40_676 = create("Fps:");
 	@OriginalMember(owner = "client!uc", name = "m", descriptor = "Lclient!o;")
-	public static JagString FRIENDSLIST_ALREADY_ADDED = Static12.method257(" is already on your friend list");
+	public static JagString FRIENDSLIST_ALREADY_ADDED = create(" is already on your friend list");
 	@OriginalMember(owner = "client!uc", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_675 = Static12.method257("Loading)3)3)3 ");
+	public static JagString aClass40_675 = create("Loading)3)3)3 ");
 	@OriginalMember(owner = "client!uc", name = "B", descriptor = "Lclient!o;")
 	public static JagString aClass40_680 = aClass40_675;
 	@OriginalMember(owner = "client!uc", name = "b", descriptor = "Lclient!o;")
-	public static JagString aClass40_674 = Static12.method257("Loading )2 please wait)3");
+	public static JagString aClass40_674 = create("Loading )2 please wait)3");
 	@OriginalMember(owner = "client!uc", name = "n", descriptor = "Lclient!o;")
-	public static JagString aClass40_678 = Static12.method257("@cya@");
+	public static JagString aClass40_678 = create("@cya@");
 	@OriginalMember(owner = "client!uc", name = "s", descriptor = "Lclient!o;")
-	public static JagString aClass40_679 = Static12.method257("Jan");
+	public static JagString aClass40_679 = create("Jan");
 	@OriginalMember(owner = "client!uc", name = "C", descriptor = "Lclient!o;")
-	public static JagString aClass40_681 = Static12.method257("(U4");
+	public static JagString aClass40_681 = create("(U4");
 	@OriginalMember(owner = "client!va", name = "p", descriptor = "Lclient!o;")
-	public static JagString aClass40_692 = Static12.method257("@gr3@");
+	public static JagString aClass40_692 = create("@gr3@");
 	@OriginalMember(owner = "client!va", name = "K", descriptor = "Lclient!o;")
-	public static JagString aClass40_693 = Static12.method257("*6n*6nIf you do not remember making this request*6ncancel it immediately)1 and change your password)3");
+	public static JagString aClass40_693 = create("*6n*6nIf you do not remember making this request*6ncancel it immediately)1 and change your password)3");
 	@OriginalMember(owner = "client!va", name = "W", descriptor = "Lclient!o;")
 	public static JagString aClass40_694;
 	@OriginalMember(owner = "client!va", name = "X", descriptor = "Lclient!o;")
 	public static JagString aClass40_695;
 	@OriginalMember(owner = "client!wa", name = "e", descriptor = "Lclient!o;")
-	public static JagString aClass40_723 = Static12.method257("m");
+	public static JagString aClass40_723 = create("m");
 	@OriginalMember(owner = "client!wa", name = "i", descriptor = "Lclient!o;")
-	public static JagString aClass40_724 = Static12.method257("RuneScape is loading )2 please wait)3)3)3");
+	public static JagString aClass40_724 = create("RuneScape is loading )2 please wait)3)3)3");
 	@OriginalMember(owner = "client!wb", name = "d", descriptor = "Lclient!o;")
-	public static JagString aClass40_726 = Static12.method257("p12_full");
+	public static JagString aClass40_726 = create("p12_full");
 	@OriginalMember(owner = "client!wb", name = "n", descriptor = "Lclient!o;")
-	public static JagString aClass40_728 = Static12.method257(":tradereq:");
+	public static JagString aClass40_728 = create(":tradereq:");
 	@OriginalMember(owner = "client!wb", name = "j", descriptor = "Lclient!o;")
-	public static JagString aClass40_727 = Static12.method257("mapdots");
+	public static JagString aClass40_727 = create("mapdots");
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "Lclient!o;")
-	public static JagString aClass40_725 = Static12.method257("backleft1");
+	public static JagString aClass40_725 = create("backleft1");
 	@OriginalMember(owner = "client!wb", name = "o", descriptor = "Lclient!o;")
-	public static JagString aClass40_729 = Static12.method257("attack");
+	public static JagString aClass40_729 = create("attack");
 	@OriginalMember(owner = "client!client", name = "O", descriptor = "Lclient!o;")
-	public static JagString aClass40_110 = Static12.method257("");
+	public static JagString aClass40_110 = create("");
 	@OriginalMember(owner = "client!client", name = "N", descriptor = "Lclient!o;")
-	public static JagString aClass40_109 = Static12.method257("green:");
+	public static JagString aClass40_109 = create("green:");
 	@OriginalMember(owner = "client!client", name = "P", descriptor = "Lclient!o;")
-	public static JagString aClass40_111 = Static12.method257("Report abuse @whi@");
+	public static JagString aClass40_111 = create("Report abuse @whi@");
 	@OriginalMember(owner = "client!hc", name = "k", descriptor = "Lclient!o;")
-	public static JagString aClass40_291 = Static12.method257("May");
+	public static JagString aClass40_291 = create("May");
 	@OriginalMember(owner = "client!hc", name = "D", descriptor = "Lclient!o;")
-	public static JagString aClass40_292 = Static12.method257(" @gre@");
+	public static JagString aClass40_292 = create(" @gre@");
 	@OriginalMember(owner = "client!hc", name = "H", descriptor = "Lclient!o;")
-	public static JagString aClass40_294 = Static12.method257("Create a free account");
+	public static JagString aClass40_294 = create("Create a free account");
 	@OriginalMember(owner = "client!hc", name = "F", descriptor = "Lclient!o;")
-	public static JagString aClass40_293 = Static12.method257("@red@");
+	public static JagString aClass40_293 = create("@red@");
 	@OriginalMember(owner = "client!fb", name = "d", descriptor = "Lclient!o;")
-	public static JagString aClass40_193 = Static12.method257("Use ");
+	public static JagString aClass40_193 = create("Use ");
 	@OriginalMember(owner = "client!mc", name = "Q", descriptor = "Lclient!o;")
-	public static JagString aClass40_462 = Static12.method257("null");
+	public static JagString aClass40_462 = create("null");
 	@OriginalMember(owner = "client!mc", name = "nb", descriptor = "Lclient!o;")
-	public static JagString aClass40_465 = Static12.method257("Loaded sprites");
+	public static JagString aClass40_465 = create("Loaded sprites");
 	@OriginalMember(owner = "client!mc", name = "Pb", descriptor = "Lclient!o;")
-	public static JagString aClass40_469 = Static12.method257("Loaded config");
+	public static JagString aClass40_469 = create("Loaded config");
 	@OriginalMember(owner = "client!mc", name = "kc", descriptor = "Lclient!o;")
-	public static JagString aClass40_472 = Static12.method257("wave:");
+	public static JagString aClass40_472 = create("wave:");
 	@OriginalMember(owner = "client!mc", name = "fb", descriptor = "Lclient!o;")
-	public static JagString aClass40_463 = Static12.method257("title)3jpg");
+	public static JagString aClass40_463 = create("title)3jpg");
 	@OriginalMember(owner = "client!mc", name = "ac", descriptor = "Lclient!o;")
-	public static JagString aClass40_470 = Static12.method257("Loaded wordpack");
+	public static JagString aClass40_470 = create("Loaded wordpack");
 	@OriginalMember(owner = "client!cb", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_82 = Static12.method257("Enter name of player to delete from list");
+	public static JagString aClass40_82 = create("Enter name of player to delete from list");
 	@OriginalMember(owner = "client!cb", name = "r", descriptor = "Lclient!o;")
-	public static JagString aClass40_83 = Static12.method257(" @yel@");
+	public static JagString aClass40_83 = create(" @yel@");
 	@OriginalMember(owner = "client!jd", name = "P", descriptor = "Lclient!o;")
-	public static JagString aClass40_654 = Static12.method257(":duelreq:");
+	public static JagString aClass40_654 = create(":duelreq:");
 	@OriginalMember(owner = "client!jd", name = "Z", descriptor = "Lclient!o;")
-	public static JagString aClass40_655 = Static12.method257("(X100(U(Y");
+	public static JagString aClass40_655 = create("(X100(U(Y");
 	@OriginalMember(owner = "client!ec", name = "R", descriptor = "Lclient!o;")
-	public static JagString aClass40_157 = Static12.method257("No response from server");
+	public static JagString aClass40_157 = create("No response from server");
 	@OriginalMember(owner = "client!ec", name = "ab", descriptor = "Lclient!o;")
-	public static JagString aClass40_160 = Static12.method257("M");
+	public static JagString aClass40_160 = create("M");
 	@OriginalMember(owner = "client!ec", name = "X", descriptor = "Lclient!o;")
-	public static JagString aClass40_159 = Static12.method257("Enter object name");
+	public static JagString aClass40_159 = create("Enter object name");
 	@OriginalMember(owner = "client!ec", name = "T", descriptor = "Lclient!o;")
-	public static JagString aClass40_158 = Static12.method257("Drop @lre@");
+	public static JagString aClass40_158 = create("Drop @lre@");
 	@OriginalMember(owner = "client!ec", name = "ib", descriptor = "Lclient!o;")
-	public static JagString aClass40_161 = Static12.method257("Take");
+	public static JagString aClass40_161 = create("Take");
 	@OriginalMember(owner = "client!ec", name = "lb", descriptor = "Lclient!o;")
 	public static JagString aClass40_163 = aClass40_161;
 	@OriginalMember(owner = "client!ec", name = "qb", descriptor = "Lclient!o;")
-	public static JagString aClass40_164 = Static12.method257("::");
+	public static JagString aClass40_164 = create("::");
 	@OriginalMember(owner = "client!ec", name = "kb", descriptor = "Lclient!o;")
-	public static JagString aClass40_162 = Static12.method257("No reply from loginserver)3");
+	public static JagString aClass40_162 = create("No reply from loginserver)3");
 	@OriginalMember(owner = "client!nb", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_102 = Static12.method257("(U3");
+	public static JagString aClass40_102 = create("(U3");
 	@OriginalMember(owner = "client!nb", name = "j", descriptor = "Lclient!o;")
-	public static JagString aClass40_103 = Static12.method257("Existing User");
+	public static JagString aClass40_103 = create("Existing User");
 	@OriginalMember(owner = "client!nb", name = "v", descriptor = "Lclient!o;")
-	public static JagString aClass40_106 = Static12.method257("Friends");
+	public static JagString aClass40_106 = create("Friends");
 	@OriginalMember(owner = "client!nb", name = "s", descriptor = "Lclient!o;")
-	public static JagString aClass40_104 = Static12.method257("This computers address has been blocked");
+	public static JagString aClass40_104 = create("This computers address has been blocked");
 	@OriginalMember(owner = "client!nb", name = "u", descriptor = "Lclient!o;")
-	public static JagString aClass40_105 = Static12.method257("Imported maps");
+	public static JagString aClass40_105 = create("Imported maps");
 	@OriginalMember(owner = "client!nb", name = "I", descriptor = "Lclient!o;")
-	public static JagString aClass40_107 = Static12.method257(" days ago");
+	public static JagString aClass40_107 = create(" days ago");
 	@OriginalMember(owner = "client!nb", name = "b", descriptor = "Lclient!o;")
-	public static JagString aClass40_101 = Static12.method257("mapmarker");
+	public static JagString aClass40_101 = create("mapmarker");
 	@OriginalMember(owner = "client!nb", name = "K", descriptor = "Lclient!o;")
-	public static JagString aClass40_108 = Static12.method257("Message @whi@");
+	public static JagString aClass40_108 = create("Message @whi@");
 	@OriginalMember(owner = "client!ac", name = "o", descriptor = "Lclient!o;")
-	public static JagString aClass40_16 = Static12.method257("titlebox");
+	public static JagString aClass40_16 = create("titlebox");
 	@OriginalMember(owner = "client!ac", name = "r", descriptor = "Lclient!o;")
-	public static JagString aClass40_18 = Static12.method257("From:  ");
+	public static JagString aClass40_18 = create("From:  ");
 	@OriginalMember(owner = "client!ac", name = "q", descriptor = "Lclient!o;")
-	public static JagString aClass40_17 = Static12.method257("@yel@0 unread messages");
+	public static JagString aClass40_17 = create("@yel@0 unread messages");
 	@OriginalMember(owner = "client!ja", name = "H", descriptor = "Lclient!o;")
-	public static JagString aClass40_706 = Static12.method257("and choose the (Wcreate account(W");
+	public static JagString aClass40_706 = create("and choose the (Wcreate account(W");
 	@OriginalMember(owner = "client!ja", name = "L", descriptor = "Lclient!o;")
-	public static JagString aClass40_707 = Static12.method257("backright1");
+	public static JagString aClass40_707 = create("backright1");
 	@OriginalMember(owner = "client!ba", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_60 = Static12.method257("Enter amount:");
+	public static JagString aClass40_60 = create("Enter amount:");
 	@OriginalMember(owner = "client!ba", name = "u", descriptor = "Lclient!o;")
-	public static JagString aClass40_61 = Static12.method257(")3)3)3");
+	public static JagString aClass40_61 = create(")3)3)3");
 	@OriginalMember(owner = "client!ob", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_522 = Static12.method257("Report abuse");
+	public static JagString aClass40_522 = create("Report abuse");
 	@OriginalMember(owner = "client!ob", name = "p", descriptor = "Lclient!o;")
-	public static JagString aClass40_523 = Static12.method257("*6nYou have not yet set any recovery questions)3*6nIt is @lre@strongly@yel@ recommended that you do so)3*6n*6nIf you don(Wt you will be @lre@unable to recover your*6n@lre@password@yel@ if you forget it)1 or it is stolen)3");
+	public static JagString aClass40_523 = create("*6nYou have not yet set any recovery questions)3*6nIt is @lre@strongly@yel@ recommended that you do so)3*6n*6nIf you don(Wt you will be @lre@unable to recover your*6n@lre@password@yel@ if you forget it)1 or it is stolen)3");
 	@OriginalMember(owner = "client!ob", name = "r", descriptor = "Lclient!o;")
-	public static JagString aClass40_525 = Static12.method257("(U1");
+	public static JagString aClass40_525 = create("(U1");
 	@OriginalMember(owner = "client!ob", name = "q", descriptor = "Lclient!o;")
-	public static JagString aClass40_524 = Static12.method257("Choose Option");
+	public static JagString aClass40_524 = create("Choose Option");
 	@OriginalMember(owner = "client!ob", name = "v", descriptor = "Lclient!o;")
-	public static JagString aClass40_526 = Static12.method257("Walk here @whi@");
+	public static JagString aClass40_526 = create("Walk here @whi@");
 	@OriginalMember(owner = "client!v", name = "O", descriptor = "Lclient!o;")
-	public static JagString aClass40_688 = Static12.method257("Invalid loginserver requested");
+	public static JagString aClass40_688 = create("Invalid loginserver requested");
 	@OriginalMember(owner = "client!v", name = "X", descriptor = "Lclient!o;")
-	public static JagString aClass40_689 = Static12.method257("@gre@");
+	public static JagString aClass40_689 = create("@gre@");
 	@OriginalMember(owner = "client!v", name = "ib", descriptor = "Lclient!o;")
-	public static JagString aClass40_690 = Static12.method257("To ");
+	public static JagString aClass40_690 = create("To ");
 	@OriginalMember(owner = "client!v", name = "kb", descriptor = "Lclient!o;")
-	public static JagString aClass40_691 = Static12.method257("Connecting to update server");
+	public static JagString aClass40_691 = create("Connecting to update server");
 	@OriginalMember(owner = "client!be", name = "b", descriptor = "Lclient!o;")
-	public static JagString aClass40_68 = Static12.method257("Loading game screen )2 ");
+	public static JagString aClass40_68 = create("Loading game screen )2 ");
 	@OriginalMember(owner = "client!be", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_69 = Static12.method257("b12_full");
+	public static JagString aClass40_69 = create("b12_full");
 	@OriginalMember(owner = "client!be", name = "o", descriptor = "Lclient!o;")
-	public static JagString aClass40_70 = Static12.method257("Jul");
+	public static JagString aClass40_70 = create("Jul");
 	@OriginalMember(owner = "client!be", name = "r", descriptor = "Lclient!o;")
-	public static JagString aClass40_71 = Static12.method257("To create a new account you need to");
+	public static JagString aClass40_71 = create("To create a new account you need to");
 	@OriginalMember(owner = "client!cc", name = "f", descriptor = "Lclient!o;")
-	public static JagString aClass40_84 = Static12.method257("Could not complete login)3");
+	public static JagString aClass40_84 = create("Could not complete login)3");
 	@OriginalMember(owner = "client!cc", name = "j", descriptor = "Lclient!o;")
-	public static JagString aClass40_85 = Static12.method257("@gre@Classic");
+	public static JagString aClass40_85 = create("@gre@Classic");
 	@OriginalMember(owner = "client!ma", name = "c", descriptor = "Lclient!o;")
-	public static JagString aClass40_446 = Static12.method257("Starting game engine)3)3)3");
+	public static JagString aClass40_446 = create("Starting game engine)3)3)3");
 	@OriginalMember(owner = "client!qc", name = "k", descriptor = "Lclient!o;")
-	public static JagString aClass40_556 = Static12.method257(" (Xskill)2");
+	public static JagString aClass40_556 = create(" (Xskill)2");
 	@OriginalMember(owner = "client!qc", name = "y", descriptor = "Lclient!o;")
-	public static JagString aClass40_557 = Static12.method257(")3");
+	public static JagString aClass40_557 = create(")3");
 	@OriginalMember(owner = "client!pd", name = "a", descriptor = "Lclient!o;")
-	public static JagString aClass40_542 = Static12.method257(":chalreq:");
+	public static JagString aClass40_542 = create(":chalreq:");
 	@OriginalMember(owner = "client!pd", name = "q", descriptor = "Lclient!o;")
-	public static JagString aClass40_545 = Static12.method257("@yel@World");
+	public static JagString aClass40_545 = create("@yel@World");
 	@OriginalMember(owner = "client!pd", name = "m", descriptor = "Lclient!o;")
-	public static JagString aClass40_544 = Static12.method257("chatback");
+	public static JagString aClass40_544 = create("chatback");
 	@OriginalMember(owner = "client!pd", name = "g", descriptor = "Lclient!o;")
-	public static JagString aClass40_543 = Static12.method257("q8_full");
+	public static JagString aClass40_543 = create("q8_full");
 
 	@OriginalMember(owner = "client!o", name = "f", descriptor = "[B")
 	public byte[] chars;
@@ -849,6 +849,29 @@ public final class JagString implements BaseString {
 		local58.chars = local46;
 		local58.length = local5;
 		return local58;
+	}
+
+	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(Ljava/lang/String;I)Lclient!o;", line = 118)
+	public static JagString create(@OriginalArg(0) String arg0) {
+		@Pc(2) byte[] local2 = arg0.getBytes();
+		@Pc(9) int local9 = local2.length;
+		@Pc(13) JagString local13 = new JagString();
+		local13.chars = new byte[local9];
+		@Pc(19) int local19 = 0;
+		while (local19 < local9) {
+			@Pc(27) int local27 = local2[local19++] & 0xFF;
+			if (local27 <= 45 && local27 >= 40) {
+				if (local9 <= local19) {
+					break;
+				}
+				@Pc(58) int local58 = local2[local19++] & 0xFF;
+				local13.chars[local13.length++] = (byte) ((local27 - 40) * 43 + local58 - 48);
+			} else {
+				local13.chars[local13.length++] = (byte) local27;
+			}
+		}
+		local13.method1183();
+		return local13.method1165();
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(I)J", line = 10)

@@ -3,6 +3,11 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.util.zip.GZIPInputStream;
+
 @OriginalClass("client!ud")
 public abstract class Js5Index {
 
@@ -51,7 +56,38 @@ public abstract class Js5Index {
 	@OriginalMember(owner = "client!ud", name = "v", descriptor = "Z")
 	private final boolean aBoolean5;
 
-	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(II)V", line = 3)
+    @OriginalMember(owner = "client!rd", name = "a", descriptor = "(B[B)[B", line = 23)
+    public static byte[] method1359(@OriginalArg(1) byte[] arg0) {
+        @Pc(8) Packet local8 = new Packet(arg0);
+        @Pc(12) int local12 = local8.g1();
+        @Pc(16) int local16 = local8.g4s();
+        if (local16 < 0 || Static1.anInt2528 != 0 && Static1.anInt2528 < local16) {
+            throw new RuntimeException();
+        } else if (local12 == 0) {
+            @Pc(40) byte[] local40 = new byte[local16];
+            local8.gdata(local16, local40);
+            return local40;
+        } else {
+            @Pc(52) int local52 = local8.g4s();
+            if (local52 < 0 || Static1.anInt2528 != 0 && local52 > Static1.anInt2528) {
+                throw new RuntimeException();
+            }
+            @Pc(69) byte[] local69 = new byte[local52];
+            if (local12 == 1) {
+                BZip2.method1265(local69, local52, arg0, local16);
+            } else {
+                try {
+                    @Pc(85) DataInputStream local85 = new DataInputStream(new GZIPInputStream(new ByteArrayInputStream(arg0, 9, local16)));
+                    local85.readFully(local69);
+                    local85.close();
+                } catch (@Pc(92) IOException local92) {
+                }
+            }
+            return local69;
+        }
+    }
+
+    @OriginalMember(owner = "client!ud", name = "a", descriptor = "(II)V", line = 3)
 	protected void method56(@OriginalArg(0) int arg0) {
 	}
 
@@ -146,7 +182,7 @@ public abstract class Js5Index {
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "([BI)V", line = 458)
 	protected final void method66(@OriginalArg(0) byte[] arg0) {
 		this.crc = Static21.method1726(arg0.length, arg0);
-		@Pc(19) Packet local19 = new Packet(Static76.method1359(arg0));
+		@Pc(19) Packet local19 = new Packet(method1359(arg0));
 		@Pc(23) int local23 = local19.g1();
 		if (local23 != 5) {
 			return;
@@ -289,7 +325,7 @@ public abstract class Js5Index {
 		}
 		@Pc(121) byte[] local121;
 		try {
-			local121 = Static76.method1359(local87);
+			local121 = method1359(local87);
 		} catch (@Pc(123) RuntimeException local123) {
 			throw Static95.method1645(local123, "T3 - " + (arg1 != null) + "," + arg0 + "," + local87.length + "," + Static21.method1726(local87.length, local87) + "," + Static21.method1726(local87.length - 2, local87) + "," + this.anIntArray16[arg0] + "," + this.crc);
 		}

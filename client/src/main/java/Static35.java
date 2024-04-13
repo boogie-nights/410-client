@@ -79,7 +79,7 @@ public final class Static35 {
 
 	@OriginalMember(owner = "client!hb", name = "a", descriptor = "(ZLclient!bb;Ljava/awt/Component;)Lclient!qa;", line = 383)
 	public static MixerPcmStream method717(@OriginalArg(1) SignLink arg0, @OriginalArg(2) Component arg1) {
-		Static12.method256(arg1, arg0);
+		AudioChannel.method256(arg1, arg0);
 		@Pc(12) MixerPcmStream local12 = new MixerPcmStream();
 		Static99.method1657(local12);
 		return local12;

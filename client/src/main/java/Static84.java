@@ -27,9 +27,9 @@ public final class Static84 {
 		aClass45_29 = null;
 		anIntArray472 = null;
 		aBooleanArray31 = null;
-		JagString.aClass40_618 = null;
+		JagString.SYSTEM_UPDATE_IN = null;
 		JagString.aClass40_621 = null;
-		LocType.aClass47_21 = null;
+		LocType.modelCacheStatic = null;
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(Lclient!ud;Z)V", line = 783)

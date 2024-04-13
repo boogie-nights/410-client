@@ -3,6 +3,8 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
+import java.awt.*;
+
 @OriginalClass("client!he")
 public abstract class AudioChannel extends StubAudioChannel implements Runnable {
 
@@ -50,7 +52,29 @@ public abstract class AudioChannel extends StubAudioChannel implements Runnable 
 		super(arg0);
 	}
 
-	@OriginalMember(owner = "client!he", name = "b", descriptor = "(J)V", line = 9)
+    @OriginalMember(owner = "client!cb", name = "a", descriptor = "(ILjava/awt/Component;Lclient!bb;)V", line = 72)
+    public static void method256(@OriginalArg(1) Component arg0, @OriginalArg(2) SignLink arg1) {
+        try {
+            @Pc(8) AudioChannel local8 = (AudioChannel) Class.forName("JavaAudioChannel").getDeclaredConstructor().newInstance();
+            local8.method1088(arg1, 2048);
+            Static72.aClass24_1 = local8;
+        } catch (@Pc(21) Throwable local21) {
+            try {
+                Static72.aClass24_1 = new SignLinkAudioChannel(arg1, arg0);
+            } catch (@Pc(29) Throwable local29) {
+                if (SignLink.aString4.toLowerCase().indexOf("microsoft") >= 0) {
+                    try {
+                        Static72.aClass24_1 = new MicrosoftAudioChannel();
+                        return;
+                    } catch (@Pc(43) Throwable local43) {
+                    }
+                }
+                Static72.aClass24_1 = new StubAudioChannel(8000);
+            }
+        }
+    }
+
+    @OriginalMember(owner = "client!he", name = "b", descriptor = "(J)V", line = 9)
 	private void method1084(@OriginalArg(0) long arg0) throws Exception {
 		this.method1089(this.anInt1640);
 		while (true) {

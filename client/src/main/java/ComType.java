@@ -11,6 +11,8 @@ public final class ComType extends Hashable {
 	public static LruCache aClass47_8 = new LruCache(200);
 	@OriginalMember(owner = "client!t", name = "v", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_20 = new LruCache(50);
+	@OriginalMember(owner = "client!k", name = "v", descriptor = "[[Lclient!mc;")
+	public static ComType[][] instances;
 	@OriginalMember(owner = "client!mc", name = "O", descriptor = "I")
 	public int font;
 
@@ -141,7 +143,7 @@ public final class ComType extends Hashable {
 	public JagString actionVerb;
 
 	@OriginalMember(owner = "client!mc", name = "ec", descriptor = "I")
-	public int anInt1609;
+	public int height;
 
 	@OriginalMember(owner = "client!mc", name = "fc", descriptor = "I")
 	public int clientCode;
@@ -189,13 +191,13 @@ public final class ComType extends Hashable {
     public static ComType get(@OriginalArg(0) int arg0) {
         @Pc(3) int local3 = arg0 >> 16;
         @Pc(11) int local11 = arg0 & 0xFFFF;
-        if (Static46.aClass2_Sub2_Sub13ArrayArray1[local3] == null || Static46.aClass2_Sub2_Sub13ArrayArray1[local3][local11] == null) {
+        if (instances[local3] == null || instances[local3][local11] == null) {
             @Pc(30) boolean local30 = Static99.method1665(local3);
             if (!local30) {
                 return null;
             }
         }
-        return Static46.aClass2_Sub2_Sub13ArrayArray1[local3][local11];
+        return instances[local3][local11];
     }
 
     @OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!eb;I)V", line = 26)
@@ -206,7 +208,7 @@ public final class ComType extends Hashable {
 		this.anInt1573 = this.anInt1582 = buf.g2s();
 		this.anInt1616 = this.anInt1588 = buf.g2s();
 		this.anInt1605 = buf.g2();
-		this.anInt1609 = buf.g2();
+		this.height = buf.g2();
 		this.anInt1604 = buf.g1();
 		this.anInt1611 = buf.g2();
 		if (this.anInt1611 == 65535) {
@@ -251,8 +253,8 @@ public final class ComType extends Hashable {
 			buf.g1();
 		}
 		if (this.type == 2) {
-			this.invSlotObjId = new int[this.anInt1609 * this.anInt1605];
-			this.invSlotObjCount = new int[this.anInt1605 * this.anInt1609];
+			this.invSlotObjId = new int[this.height * this.anInt1605];
+			this.invSlotObjCount = new int[this.anInt1605 * this.height];
 			this.draggable = buf.g1() == 1;
 			this.interactable = buf.g1() == 1;
 			this.usable = buf.g1() == 1;
@@ -328,8 +330,8 @@ public final class ComType extends Hashable {
 			this.yan = buf.g2();
 		}
 		if (this.type == 7) {
-			this.invSlotObjId = new int[this.anInt1609 * this.anInt1605];
-			this.invSlotObjCount = new int[this.anInt1605 * this.anInt1609];
+			this.invSlotObjId = new int[this.height * this.anInt1605];
+			this.invSlotObjCount = new int[this.anInt1605 * this.height];
 			this.center = buf.g1() == 1;
 			this.font = buf.g1();
 			this.shadowed = buf.g1() == 1;
@@ -402,7 +404,7 @@ public final class ComType extends Hashable {
 			@Pc(50) Model local50 = (Model) aClass47_20.get((long) ((local16 << 16) + local19));
 			if (local50 == null) {
 				if (local16 == 1) {
-					local50 = Static65.method1163(Static74.aClass5_26, local19);
+					local50 = Model.method1163(Static74.aClass5_26, local19);
 					if (local50 == null) {
 						Static1.aBoolean102 = true;
 						return null;

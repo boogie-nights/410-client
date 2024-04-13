@@ -19,14 +19,14 @@ public final class Static83 {
 		aByteArrayArray10 = null;
 		World.levelHeightmap = null;
 		JagString.aClass40_612 = null;
-		Static1.levelObjStacks = null;
+		client.levelObjStacks = null;
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Ljava/awt/Color;Lclient!o;II)V", line = 32)
 	public static void method1467(@OriginalArg(0) Color arg0, @OriginalArg(1) JagString arg1, @OriginalArg(2) int arg2) {
 		if (Static20.aFont1 == null) {
 			Static20.aFont1 = new Font("Helvetica", 1, 13);
-			Static24.aFontMetrics1 = Static7.method185().getFontMetrics(Static20.aFont1);
+			Static24.aFontMetrics1 = GameShell.method185().getFontMetrics(Static20.aFont1);
 		}
 		if (Static1.aBoolean1) {
 			Static1.aBoolean1 = false;
@@ -38,7 +38,7 @@ public final class Static83 {
 		}
 		try {
 			if (Static71.anImage4 == null) {
-				Static71.anImage4 = Static7.method185().createImage(304, 34);
+				Static71.anImage4 = GameShell.method185().createImage(304, 34);
 			}
 			@Pc(58) Graphics local58 = Static71.anImage4.getGraphics();
 			local58.setColor(arg0);
@@ -72,7 +72,7 @@ public final class Static83 {
 			arg0.anInt2297 = 0;
 			arg0.anInt2277 = 0;
 			arg0.anInt2302 = -1;
-			arg0.anInt2307 = -1;
+			arg0.primarySeqId = -1;
 			arg0.x = arg0.size * 64 + arg0.pathTileX[0] * 128;
 			arg0.z = arg0.size * 64 + arg0.pathTileZ[0] * 128;
 			arg0.method1543();
@@ -80,7 +80,7 @@ public final class Static83 {
 		if (client.localPlayer == arg0 && (arg0.x < 1536 || arg0.z < 1536 || arg0.x >= 11776 || arg0.z >= 11776)) {
 			arg0.anInt2302 = -1;
 			arg0.anInt2277 = 0;
-			arg0.anInt2307 = -1;
+			arg0.primarySeqId = -1;
 			arg0.anInt2297 = 0;
 			arg0.x = arg0.pathTileX[0] * 128 + arg0.size * 64;
 			arg0.z = arg0.pathTileZ[0] * 128 + arg0.size * 64;
@@ -89,9 +89,9 @@ public final class Static83 {
 		if (client.loopCycle < arg0.anInt2277) {
 			Static3.method25(arg0);
 		} else if (arg0.anInt2297 >= client.loopCycle) {
-			Static1.method4(arg0);
+			client.startForceMovement(arg0);
 		} else {
-			Static40.method1240(arg0);
+			client.updateMovement(arg0);
 		}
 		Static56.method1040(arg0);
 		Static88.method1553(arg0);
@@ -102,7 +102,7 @@ public final class Static83 {
 		Static74.aClass5_26 = arg2;
 		Static49.aClass5_17 = arg1;
 		Static54.aClass5_20 = arg0;
-		Static46.aClass2_Sub2_Sub13ArrayArray1 = new ComType[Static49.aClass5_17.method71()][];
+		ComType.instances = new ComType[Static49.aClass5_17.method71()][];
 		Static84.aBooleanArray31 = new boolean[Static49.aClass5_17.method71()];
 	}
 }

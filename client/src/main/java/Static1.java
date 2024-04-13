@@ -50,9 +50,6 @@ public final class Static1 {
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "[I")
 	public static int[] anIntArray1;
 
-	@OriginalMember(owner = "client!a", name = "x", descriptor = "I")
-	public static int anInt16;
-
 	@OriginalMember(owner = "client!a", name = "A", descriptor = "Lclient!p;")
 	public static PixMap aClass45_1;
 	@OriginalMember(owner = "client!a", name = "e", descriptor = "Z")
@@ -79,8 +76,6 @@ public final class Static1 {
 	public static LinkList aClass44_4 = new LinkList();
 	@OriginalMember(owner = "client!i", name = "T", descriptor = "I")
 	public static int anInt1012 = -1;
-	@OriginalMember(owner = "client!la", name = "rb", descriptor = "I")
-	public static int anInt1493 = 0;
 	@OriginalMember(owner = "client!la", name = "xb", descriptor = "I")
 	public static volatile int anInt1497 = 0;
 	@OriginalMember(owner = "client!la", name = "wb", descriptor = "I")
@@ -93,8 +88,6 @@ public final class Static1 {
 	public static int anInt2061 = 0;
 	@OriginalMember(owner = "client!sb", name = "fb", descriptor = "I")
 	public static int anInt2066 = 0;
-	@OriginalMember(owner = "client!vc", name = "V", descriptor = "I")
-	public static int anInt2465 = 0;
 	@OriginalMember(owner = "client!vc", name = "W", descriptor = "I")
 	public static int anInt2466 = -1;
 	@OriginalMember(owner = "client!vc", name = "P", descriptor = "Ljava/util/zip/CRC32;")
@@ -127,16 +120,12 @@ public final class Static1 {
 	public static int[] anIntArray161 = new int[500];
 	@OriginalMember(owner = "client!kb", name = "u", descriptor = "I")
 	public static int anInt1186 = 0;
-	@OriginalMember(owner = "client!kb", name = "B", descriptor = "I")
-	public static int anInt1190 = 0;
 	@OriginalMember(owner = "client!ub", name = "w", descriptor = "I")
 	public static int anInt2353 = 0;
 	@OriginalMember(owner = "client!ub", name = "D", descriptor = "I")
 	public static int anInt2356 = -1;
 	@OriginalMember(owner = "client!ub", name = "J", descriptor = "[I")
 	public static int[] anIntArray500 = new int[1000];
-	@OriginalMember(owner = "client!ub", name = "H", descriptor = "Z")
-	public static boolean aBoolean175 = false;
 	@OriginalMember(owner = "client!ub", name = "y", descriptor = "[J")
 	public static long[] aLongArray6 = new long[32];
 	@OriginalMember(owner = "client!ub", name = "Q", descriptor = "I")
@@ -169,22 +158,14 @@ public final class Static1 {
 	public static JagString[] aClass40Array7 = new JagString[100];
 	@OriginalMember(owner = "client!d", name = "v", descriptor = "[I")
 	public static int[] SERVER_PROT_LENGTHS = new int[] { 0, 0, 0, -1, 0, 0, 0, 8, 0, 0, 0, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 14, 0, 0, 8, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 6, 0, 2, 0, 0, 0, 0, 0, 0, -2, 7, 0, 0, 0, 0, 0, 0, -2, -2, 0, 5, 0, 10, 0, 0, 0, 5, 7, 0, 0, 1, 0, 0, 15, 2, -1, 0, 0, 1, 0, 0, 0, 0, 0, 6, 0, 0, 0, 4, -1, 0, 0, 0, 0, 6, 0, 0, 0, 2, 0, 0, 4, 0, 0, 0, 0, 2, -1, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 6, 0, 4, 0, 2, 0, -2, 0, 0, 0, -2, 0, -2, 4, 0, 0, 6, 6, 0, 6, 4, 0, 0, 0, 0, 0, -2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 23, 0, 10, 0, -2, 0, 0, 0, 0, 6, 4, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 2, 0, 0, 0, 0, 0, 0, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 6, 1, 0, 0, 0, 0, 3, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 6, 0, 0, 4, 0, 0, 0, 0, 2, 5, 0, 3, 0, 0, 4 };
-	@OriginalMember(owner = "client!d", name = "F", descriptor = "I")
-	public static int anInt426 = -1;
-	@OriginalMember(owner = "client!db", name = "b", descriptor = "[I")
-	public static int[] anIntArray85 = new int[256];
 	@OriginalMember(owner = "client!db", name = "i", descriptor = "I")
 	public static int anInt432;
 	@OriginalMember(owner = "client!db", name = "m", descriptor = "I")
 	public static int anInt434;
 	@OriginalMember(owner = "client!de", name = "f", descriptor = "I")
 	public static int anInt437 = 0;
-	@OriginalMember(owner = "client!de", name = "k", descriptor = "I")
-	public static int anInt441 = 0;
 	@OriginalMember(owner = "client!de", name = "l", descriptor = "I")
 	public static int anInt442 = 0;
-	@OriginalMember(owner = "client!de", name = "j", descriptor = "I")
-	public static int anInt440 = 0;
 	@OriginalMember(owner = "client!pd", name = "i", descriptor = "Z")
 	public static boolean aBoolean152 = false;
 	@OriginalMember(owner = "client!pd", name = "k", descriptor = "I")
@@ -193,8 +174,6 @@ public final class Static1 {
 	public static int anInt470 = 0;
 	@OriginalMember(owner = "client!e", name = "F", descriptor = "Lclient!od;")
 	public static LinkList aClass44_2 = new LinkList();
-	@OriginalMember(owner = "client!e", name = "V", descriptor = "I")
-	public static int anInt477 = -1;
 	@OriginalMember(owner = "client!e", name = "W", descriptor = "Z")
 	public static boolean aBoolean40 = false;
 	@OriginalMember(owner = "client!fd", name = "d", descriptor = "I")
@@ -210,7 +189,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!wd", name = "f", descriptor = "I")
 	public static int anInt2500 = 0;
 	@OriginalMember(owner = "client!wd", name = "p", descriptor = "I")
-	public static int anInt2505 = 0;
+	public static int inMultizone = 0;
 	@OriginalMember(owner = "client!he", name = "L", descriptor = "[I")
 	public static int[] anIntArray337 = new int[256];
 	@OriginalMember(owner = "client!j", name = "c", descriptor = "I")
@@ -224,7 +203,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "[I")
 	public static int[] anIntArray257 = new int[] { 12800, 12800, 12800, 12800, 12800, 12800, 12800, 12800, 12800, 12800, 12800, 12800, 12800, 12800, 12800, 12800 };
 	@OriginalMember(owner = "client!ka", name = "m", descriptor = "[I")
-	public static int[] anIntArray258 = new int[1000];
+	public static int[] entityRemovalIds = new int[1000];
 	@OriginalMember(owner = "client!ka", name = "n", descriptor = "I")
 	public static int anInt1175 = 0;
 	@OriginalMember(owner = "client!ka", name = "k", descriptor = "Z")
@@ -253,8 +232,6 @@ public final class Static1 {
 	public static ComType aClass2_Sub2_Sub13_1 = new ComType();
 	@OriginalMember(owner = "client!mb", name = "g", descriptor = "Lclient!wc;")
 	public static PacketBit aClass2_Sub3_Sub1_3 = new PacketBit(5000);
-	@OriginalMember(owner = "client!mb", name = "h", descriptor = "I")
-	public static int anInt1554 = 0;
 	@OriginalMember(owner = "client!na", name = "b", descriptor = "I")
 	public static int anInt1667 = 0;
 	@OriginalMember(owner = "client!na", name = "s", descriptor = "[I")
@@ -273,26 +250,18 @@ public final class Static1 {
 	public static int anInt1966 = 0;
 	@OriginalMember(owner = "client!rb", name = "i", descriptor = "I")
 	public static int anInt1955 = -1;
-	@OriginalMember(owner = "client!rb", name = "c", descriptor = "I")
-	public static int anInt1952 = 0;
 	@OriginalMember(owner = "client!rb", name = "C", descriptor = "[Lclient!ad;")
 	public static Js5[] aClass5_Sub1Array1 = new Js5[256];
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "I")
 	public static int anInt1971 = -1;
 	@OriginalMember(owner = "client!rd", name = "l", descriptor = "I")
 	public static int anInt1978 = 0;
-	@OriginalMember(owner = "client!rd", name = "g", descriptor = "I")
-	public static int anInt1974 = 0;
 	@OriginalMember(owner = "client!rd", name = "j", descriptor = "I")
 	public static int anInt1977 = -1;
 	@OriginalMember(owner = "client!rd", name = "m", descriptor = "I")
 	public static int anInt1979 = -1;
 	@OriginalMember(owner = "client!s", name = "i", descriptor = "I")
 	public static int anInt1989 = 0;
-	@OriginalMember(owner = "client!ta", name = "d", descriptor = "I")
-	public static int anInt2139 = 0;
-	@OriginalMember(owner = "client!ta", name = "e", descriptor = "[[[Lclient!od;")
-	public static LinkList[][][] levelObjStacks = new LinkList[4][104][104];
 	@OriginalMember(owner = "client!ta", name = "i", descriptor = "I")
 	public static int anInt2143 = 0;
 	@OriginalMember(owner = "client!tc", name = "o", descriptor = "I")
@@ -317,8 +286,6 @@ public final class Static1 {
 	public static Model[] aClass2_Sub2_Sub12_Sub4Array1 = new Model[4];
 	@OriginalMember(owner = "client!uc", name = "A", descriptor = "J")
 	public static long aLong139 = 0L;
-	@OriginalMember(owner = "client!uc", name = "i", descriptor = "[I")
-	public static int[] anIntArray504 = new int[2048];
 	@OriginalMember(owner = "client!uc", name = "z", descriptor = "I")
 	public static int anInt2372 = 127;
 	@OriginalMember(owner = "client!va", name = "j", descriptor = "[I")
@@ -339,8 +306,6 @@ public final class Static1 {
 	public static volatile int anInt2520 = 0;
 	@OriginalMember(owner = "client!wb", name = "e", descriptor = "Lclient!ba;")
 	public static HashTable aClass6_7 = new HashTable(4096);
-	@OriginalMember(owner = "client!client", name = "cb", descriptor = "I")
-	public static int anInt410 = 0;
 	@OriginalMember(owner = "client!hc", name = "c", descriptor = "I")
 	public static volatile int anInt969 = 0;
 	@OriginalMember(owner = "client!hc", name = "z", descriptor = "I")
@@ -355,8 +320,6 @@ public final class Static1 {
 	public static int[] anIntArray80 = new int[99];
 	@OriginalMember(owner = "client!cb", name = "b", descriptor = "[I")
 	public static int[] anIntArray79 = new int[50];
-	@OriginalMember(owner = "client!cb", name = "o", descriptor = "I")
-	public static int anInt304 = 0;
 	@OriginalMember(owner = "client!cb", name = "x", descriptor = "[Lclient!o;")
 	public static JagString[] aClass40Array6;
 	@OriginalMember(owner = "client!jd", name = "Q", descriptor = "I")
@@ -365,8 +328,6 @@ public final class Static1 {
 	public static int anInt583 = 0;
 	@OriginalMember(owner = "client!nb", name = "e", descriptor = "I")
 	public static int anInt375 = 0;
-	@OriginalMember(owner = "client!ac", name = "n", descriptor = "I")
-	public static int anInt51 = -1;
 	@OriginalMember(owner = "client!ac", name = "s", descriptor = "I")
 	public static int anInt53 = 0;
 	@OriginalMember(owner = "client!ac", name = "m", descriptor = "I")
@@ -425,8 +386,6 @@ public final class Static1 {
 	public static volatile int anInt1663 = -1;
 	@OriginalMember(owner = "client!ia", name = "ib", descriptor = "I")
 	public static int anInt1038 = 0;
-	@OriginalMember(owner = "client!qc", name = "j", descriptor = "I")
-	public static int anInt1917 = 0;
 	@OriginalMember(owner = "client!vd", name = "t", descriptor = "I")
 	public static int anInt2491 = 0;
 	@OriginalMember(owner = "client!vd", name = "w", descriptor = "I")
@@ -463,8 +422,6 @@ public final class Static1 {
 	public static boolean aBoolean184 = false;
 	@OriginalMember(owner = "client!eb", name = "Bb", descriptor = "I")
 	public static int anInt2590 = -1;
-	@OriginalMember(owner = "client!eb", name = "wb", descriptor = "I")
-	public static int anInt2585 = -1;
 	@OriginalMember(owner = "client!ke", name = "Nb", descriptor = "J")
 	public static long aLong136 = 0L;
 	@OriginalMember(owner = "client!tb", name = "K", descriptor = "Lclient!od;")
@@ -527,17 +484,6 @@ public final class Static1 {
 	public static volatile int anInt1166 = 0;
 
 	static {
-		for (@Pc(8) int local8 = 0; local8 < 256; local8++) {
-			@Pc(11) int local11 = local8;
-			for (@Pc(13) int local13 = 0; local13 < 8; local13++) {
-				if ((local11 & 0x1) == 1) {
-					local11 = local11 >>> 1 ^ 0xEDB88320;
-				} else {
-					local11 >>>= 0x1;
-				}
-			}
-			anIntArray85[local8] = local11;
-		}
 		client.menuOption = new JagString[500];
 		anInt432 = 0;
 		client.membersWorld = false;
@@ -550,8 +496,8 @@ public final class Static1 {
 			anIntArray518[local49] = local47 - 1;
 			local47 += local47;
 		}
-		JagString.aClass40_694 = Static12.method257("*6n*6nYou have @gre@");
-		JagString.aClass40_695 = Static12.method257("Enter name:");
+		JagString.aClass40_694 = JagString.create("*6n*6nYou have @gre@");
+		JagString.aClass40_695 = JagString.create("Enter name:");
 	}
 
 	static {
@@ -575,9 +521,9 @@ public final class Static1 {
 		@Pc(17) long local17 = ((long) arg0 + 11745L) * 86400000L;
 		@Pc(19) Calendar local19 = Calendar.getInstance();
 		local19.setTime(new Date(local17));
-		@Pc(29) int local29 = local19.get(5);
-		@Pc(38) int local38 = local19.get(2);
-		@Pc(42) int local42 = local19.get(1);
+		@Pc(29) int local29 = local19.get(Calendar.DATE);
+		@Pc(38) int local38 = local19.get(Calendar.MONTH);
+		@Pc(42) int local42 = local19.get(Calendar.YEAR);
 		@Pc(93) JagString[] local93 = new JagString[] { JagString.aClass40_679, JagString.aClass40_670, JagString.aClass40_396, JagString.aClass40_633, JagString.aClass40_291, JagString.aClass40_738, JagString.aClass40_70, JagString.aClass40_24, JagString.aClass40_712, JagString.aClass40_630, JagString.aClass40_320, JagString.aClass40_255 };
 		return JagString.concatenate(new JagString[] { Static48.method859(local29), JagString.aClass40_409, local93[local38], JagString.aClass40_409, Static48.method859(local42) });
 	}
@@ -591,34 +537,6 @@ public final class Static1 {
 		} else {
 			return arg0 >= 48 && arg0 <= 57;
 		}
-	}
-
-	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ke;Z)V", line = 140)
-	public static void method4(@OriginalArg(0) PathingEntity arg0) {
-		if (arg0.anInt2297 == client.loopCycle || arg0.anInt2307 == -1 || arg0.anInt2313 != 0 || arg0.anInt2267 + 1 > SeqType.method1042(arg0.anInt2307).delay[arg0.anInt2316]) {
-			@Pc(38) int local38 = arg0.anInt2297 - arg0.anInt2277;
-			@Pc(44) int local44 = client.loopCycle - arg0.anInt2277;
-			@Pc(54) int local54 = arg0.size * 64 + arg0.anInt2321 * 128;
-			@Pc(64) int local64 = arg0.size * 64 + arg0.anInt2311 * 128;
-			@Pc(74) int local74 = arg0.anInt2286 * 128 + arg0.size * 64;
-			@Pc(84) int local84 = arg0.size * 64 + arg0.anInt2317 * 128;
-			arg0.x = ((local38 - local44) * local84 + local64 * local44) / local38;
-			arg0.z = ((local38 - local44) * local54 + local74 * local44) / local38;
-		}
-		arg0.anInt2282 = 0;
-		if (arg0.anInt2314 == 0) {
-			arg0.anInt2283 = 1024;
-		}
-		if (arg0.anInt2314 == 1) {
-			arg0.anInt2283 = 1536;
-		}
-		if (arg0.anInt2314 == 2) {
-			arg0.anInt2283 = 0;
-		}
-		if (arg0.anInt2314 == 3) {
-			arg0.anInt2283 = 512;
-		}
-		arg0.anInt2305 = arg0.anInt2283;
 	}
 
 	@OriginalMember(owner = "client!a", name = "b", descriptor = "(I)V", line = 192)

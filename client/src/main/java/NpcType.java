@@ -137,7 +137,7 @@ public final class NpcType extends Hashable {
 			}
 			@Pc(75) Model[] local75 = new Model[this.anIntArray155.length];
 			for (@Pc(77) int local77 = 0; local77 < this.anIntArray155.length; local77++) {
-				local75[local77] = Static65.method1163(aClass5_30, this.anIntArray155[local77]);
+				local75[local77] = Model.method1163(aClass5_30, this.anIntArray155[local77]);
 			}
 			if (local75.length == 1) {
 				local37 = local75[0];
@@ -312,7 +312,7 @@ public final class NpcType extends Hashable {
 			}
 			@Pc(57) Model[] local57 = new Model[this.anIntArray157.length];
 			for (@Pc(59) int local59 = 0; local59 < this.anIntArray157.length; local59++) {
-				local57[local59] = Static65.method1163(aClass5_30, this.anIntArray157[local59]);
+				local57[local59] = Model.method1163(aClass5_30, this.anIntArray157[local59]);
 			}
 			@Pc(94) Model local94;
 			if (local57.length == 1) {

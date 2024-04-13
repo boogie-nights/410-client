@@ -16,7 +16,7 @@ public abstract class PathingEntity extends Entity {
 	public int anInt2279;
 
 	@OriginalMember(owner = "client!ke", name = "Ab", descriptor = "I")
-	public int anInt2283;
+	public int dstYaw;
 
 	@OriginalMember(owner = "client!ke", name = "Bb", descriptor = "I")
 	public int z;
@@ -64,7 +64,7 @@ public abstract class PathingEntity extends Entity {
 	public int anInt2280 = 0;
 
 	@OriginalMember(owner = "client!ke", name = "zb", descriptor = "I")
-	public int anInt2282 = 0;
+	public int seqTrigger = 0;
 
 	@OriginalMember(owner = "client!ke", name = "yb", descriptor = "I")
 	public int anInt2281 = 0;
@@ -130,7 +130,7 @@ public abstract class PathingEntity extends Entity {
 	public int anInt2302 = -1;
 
 	@OriginalMember(owner = "client!ke", name = "jc", descriptor = "I")
-	public int anInt2309 = 0;
+	public int pathLength = 0;
 
 	@OriginalMember(owner = "client!ke", name = "dc", descriptor = "I")
 	public int anInt2303 = -1;
@@ -139,7 +139,7 @@ public abstract class PathingEntity extends Entity {
 	public int anInt2315 = -1000;
 
 	@OriginalMember(owner = "client!ke", name = "sc", descriptor = "I")
-	public int anInt2318 = -1;
+	public int secondarySeqId = -1;
 
 	@OriginalMember(owner = "client!ke", name = "Zb", descriptor = "I")
 	public int anInt2301 = 0;
@@ -148,7 +148,7 @@ public abstract class PathingEntity extends Entity {
 	public final int[] pathTileZ = new int[10];
 
 	@OriginalMember(owner = "client!ke", name = "hc", descriptor = "I")
-	public int anInt2307 = -1;
+	public int primarySeqId = -1;
 
 	@OriginalMember(owner = "client!ke", name = "qc", descriptor = "I")
 	public int anInt2316 = 0;
@@ -157,7 +157,7 @@ public abstract class PathingEntity extends Entity {
 	public int anInt2291 = 0;
 
 	@OriginalMember(owner = "client!ke", name = "Jb", descriptor = "I")
-	public int anInt2290 = -1;
+	public int seqStandId = -1;
 
 	@OriginalMember(owner = "client!ke", name = "Ac", descriptor = "I")
 	public int anInt2324 = -1;
@@ -166,7 +166,7 @@ public abstract class PathingEntity extends Entity {
 	public boolean aBoolean172 = false;
 
 	@OriginalMember(owner = "client!ke", name = "nc", descriptor = "I")
-	public int anInt2313 = 0;
+	public int primarySeqDelay = 0;
 
 	@OriginalMember(owner = "client!ke", name = "yc", descriptor = "I")
 	public int anInt2322 = -1;
@@ -185,7 +185,7 @@ public abstract class PathingEntity extends Entity {
 
 	@OriginalMember(owner = "client!ke", name = "k", descriptor = "(I)V", line = 241)
 	public final void method1543() {
-		this.anInt2309 = 0;
+		this.pathLength = 0;
 		this.anInt2281 = 0;
 	}
 
@@ -196,17 +196,17 @@ public abstract class PathingEntity extends Entity {
 
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(ZIBI)V", line = 332)
 	public final void method1545(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		if (this.anInt2307 != -1 && SeqType.method1042(this.anInt2307).anInt666 == 1) {
-			this.anInt2307 = -1;
+		if (this.primarySeqId != -1 && SeqType.method1042(this.primarySeqId).anInt666 == 1) {
+			this.primarySeqId = -1;
 		}
 		if (!arg0) {
 			@Pc(31) int local31 = arg1 - this.pathTileZ[0];
 			@Pc(38) int local38 = arg2 - this.pathTileX[0];
 			if (local38 >= -8 && local38 <= 8 && local31 >= -8 && local31 <= 8) {
-				if (this.anInt2309 < 9) {
-					this.anInt2309++;
+				if (this.pathLength < 9) {
+					this.pathLength++;
 				}
-				for (@Pc(65) int local65 = this.anInt2309; local65 > 0; local65--) {
+				for (@Pc(65) int local65 = this.pathLength; local65 > 0; local65--) {
 					this.pathTileX[local65] = this.pathTileX[local65 - 1];
 					this.pathTileZ[local65] = this.pathTileZ[local65 - 1];
 					this.aBooleanArray34[local65] = this.aBooleanArray34[local65 - 1];
@@ -218,8 +218,8 @@ public abstract class PathingEntity extends Entity {
 			}
 		}
 		this.anInt2281 = 0;
-		this.anInt2309 = 0;
-		this.anInt2282 = 0;
+		this.pathLength = 0;
+		this.seqTrigger = 0;
 		this.pathTileX[0] = arg2;
 		this.pathTileZ[0] = arg1;
 		this.x = this.size * 64 + this.pathTileX[0] * 128;
@@ -230,8 +230,8 @@ public abstract class PathingEntity extends Entity {
 	public final void method1547(@OriginalArg(0) int arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(6) int local6 = this.pathTileX[0];
 		@Pc(15) int local15 = this.pathTileZ[0];
-		if (this.anInt2307 != -1 && SeqType.method1042(this.anInt2307).anInt666 == 1) {
-			this.anInt2307 = -1;
+		if (this.primarySeqId != -1 && SeqType.method1042(this.primarySeqId).anInt666 == 1) {
+			this.primarySeqId = -1;
 		}
 		if (arg0 == 0) {
 			local6--;
@@ -240,10 +240,10 @@ public abstract class PathingEntity extends Entity {
 		if (arg0 == 1) {
 			local15++;
 		}
-		if (this.anInt2309 < 9) {
-			this.anInt2309++;
+		if (this.pathLength < 9) {
+			this.pathLength++;
 		}
-		for (@Pc(64) int local64 = this.anInt2309; local64 > 0; local64--) {
+		for (@Pc(64) int local64 = this.pathLength; local64 > 0; local64--) {
 			this.pathTileX[local64] = this.pathTileX[local64 - 1];
 			this.pathTileZ[local64] = this.pathTileZ[local64 - 1];
 			this.aBooleanArray34[local64] = this.aBooleanArray34[local64 - 1];

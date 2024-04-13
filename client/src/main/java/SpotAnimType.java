@@ -76,7 +76,7 @@ public final class SpotAnimType extends Hashable {
 	public Model method501(@OriginalArg(1) int arg0) {
 		@Pc(13) Model local13 = (Model) aClass47_15.get((long) this.anInt634);
 		if (local13 == null) {
-			local13 = Static65.method1163(aClass5_28, this.anInt639);
+			local13 = Model.method1163(aClass5_28, this.anInt639);
 			if (local13 == null) {
 				return null;
 			}

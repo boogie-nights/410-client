@@ -85,7 +85,7 @@ public final class PixFont extends Draw2D {
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "(Lclient!o;III)V", line = 82)
 	public void method566(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		this.method575(arg0, arg1 - this.method568(arg0) / 2, arg2, arg3);
+		this.drawString(arg0, arg1 - this.method568(arg0) / 2, arg2, arg3);
 	}
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "([I[BIIIIIIII)V", line = 85)
@@ -173,7 +173,7 @@ public final class PixFont extends Draw2D {
 
 	@OriginalMember(owner = "client!fc", name = "b", descriptor = "(Lclient!o;III)V", line = 227)
 	public void method572(@OriginalArg(0) JagString arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		this.method575(arg0, 507 - this.method568(arg0), arg1, arg2);
+		this.drawString(arg0, 507 - this.method568(arg0), arg1, arg2);
 	}
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "([BIIIIII)V", line = 237)
@@ -246,7 +246,7 @@ public final class PixFont extends Draw2D {
 	}
 
 	@OriginalMember(owner = "client!fc", name = "c", descriptor = "(Lclient!o;III)V", line = 343)
-	public void method575(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public void drawString(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		if (arg0 == null) {
 			return;
 		}
@@ -346,7 +346,7 @@ public final class PixFont extends Draw2D {
 	}
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "(Lclient!o;IIIZI)V", line = 500)
-	public void method580(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(5) int arg3) {
+	public void drawStringTooltip(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(5) int arg3) {
 		if (arg0 == null) {
 			return;
 		}

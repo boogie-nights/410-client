@@ -23,15 +23,15 @@ public final class Static55 {
 		if (Static1.anInt1971 != -1) {
 			Static75.method1350(Static1.anInt1971);
 			Static1.anInt1971 = -1;
-			Static7.method187(30);
+			client.method187(30);
 		}
 		if (Static1.anInt2175 != -1) {
 			Static75.method1350(Static1.anInt2175);
 			Static1.anInt2175 = -1;
 		}
-		if (Static1.anInt2585 != -1) {
-			Static75.method1350(Static1.anInt2585);
-			Static1.anInt2585 = -1;
+		if (client.anInt2585 != -1) {
+			Static75.method1350(client.anInt2585);
+			client.anInt2585 = -1;
 		}
 	}
 
@@ -144,7 +144,7 @@ public final class Static55 {
 			@Pc(586) int local586 = local107.anInt2443;
 			local107.anInt2443 = 32;
 			local107.anInt2445 = 32;
-			local107.method1624(0, 0);
+			local107.draw(0, 0);
 			local107.anInt2443 = local586;
 			local107.anInt2445 = local379;
 		}

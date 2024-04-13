@@ -267,7 +267,7 @@ public final class Pix24 extends Draw2D {
 	}
 
 	@OriginalMember(owner = "client!vb", name = "b", descriptor = "(II)V", line = 422)
-	public void method1624(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public void draw(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		arg0 += this.anInt2444;
 		arg1 += this.anInt2441;
 		@Pc(15) int local15 = arg0 + arg1 * Static25.anInt2440;

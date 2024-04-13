@@ -16,9 +16,6 @@ public final class Static28 {
 	@OriginalMember(owner = "client!fe", name = "j", descriptor = "I")
 	public static int anInt724;
 
-	@OriginalMember(owner = "client!fe", name = "l", descriptor = "I")
-	public static int anInt725;
-
 	@OriginalMember(owner = "client!fe", name = "n", descriptor = "I")
 	public static int anInt727;
 

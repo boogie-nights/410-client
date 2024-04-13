@@ -37,10 +37,10 @@ public final class Static27 {
 
 	@OriginalMember(owner = "client!fd", name = "a", descriptor = "(Z)V", line = 63)
 	public static void method583() {
-		@Pc(9) int local9 = Static13.aClass2_Sub2_Sub2_Sub2_1.method568(JagString.aClass40_524);
+		@Pc(9) int local9 = client.fondBold12.method568(JagString.aClass40_524);
 		@Pc(24) int local24;
 		for (@Pc(16) int local16 = 0; local16 < client.menuSize; local16++) {
-			local24 = Static13.aClass2_Sub2_Sub2_Sub2_1.method576(client.menuOption[local16]);
+			local24 = client.fondBold12.method576(client.menuOption[local16]);
 			if (local24 > local9) {
 				local9 = local24;
 			}
@@ -50,11 +50,11 @@ public final class Static27 {
 		@Pc(87) int local87;
 		@Pc(110) int local110;
 		if (Static1.anInt2500 > 4 && Static1.anInt2133 > 4 && Static1.anInt2500 < 516 && Static1.anInt2133 < 338) {
-			Static1.anInt16 = 0;
+			client.menuArea = 0;
 			Static91.anInt120 = client.menuSize * 15 + 22;
 			Static14.anInt1856 = local9;
 			local87 = Static1.anInt2500 - local9 / 2 - 4;
-			Static1.aBoolean175 = true;
+			client.menuVisible = true;
 			if (local9 + local87 > 512) {
 				local87 = 512 - local9;
 			}
@@ -72,7 +72,7 @@ public final class Static27 {
 			Static44.anInt1110 = local87;
 		}
 		if (Static1.anInt2500 > 553 && Static1.anInt2133 > 205 && Static1.anInt2500 < 743 && Static1.anInt2133 < 466) {
-			Static1.aBoolean175 = true;
+			client.menuVisible = true;
 			Static14.anInt1856 = local9;
 			Static91.anInt120 = client.menuSize * 15 + 22;
 			local110 = Static1.anInt2133 - 205;
@@ -88,7 +88,7 @@ public final class Static27 {
 			} else if (local87 + local9 > 190) {
 				local87 = 190 - local9;
 			}
-			Static1.anInt16 = 1;
+			client.menuArea = 1;
 			Static44.anInt1110 = local87;
 		}
 		if (Static1.anInt2500 <= 17 || Static1.anInt2133 <= 357 || Static1.anInt2500 >= 496 || Static1.anInt2133 >= 453) {
@@ -97,8 +97,8 @@ public final class Static27 {
 		Static91.anInt120 = client.menuSize * 15 + 22;
 		Static14.anInt1856 = local9;
 		local87 = Static1.anInt2500 - local9 / 2 - 17;
-		Static1.aBoolean175 = true;
-		Static1.anInt16 = 2;
+		client.menuVisible = true;
+		client.menuArea = 2;
 		if (local87 < 0) {
 			local87 = 0;
 		} else if (local87 + local9 > 479) {

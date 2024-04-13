@@ -105,9 +105,9 @@ public final class PlayerEntity extends PathingEntity {
 			}
 			local111[local59] = local96;
 		}
-		super.anInt2290 = buf.g2();
-		if (super.anInt2290 == 65535) {
-			super.anInt2290 = -1;
+		super.seqStandId = buf.g2();
+		if (super.seqStandId == 65535) {
+			super.seqStandId = -1;
 		}
 		super.anInt2276 = buf.g2();
 		if (super.anInt2276 == 65535) {
@@ -154,8 +154,8 @@ public final class PlayerEntity extends PathingEntity {
 		if (this.aClass33_2 == null) {
 			return null;
 		}
-		@Pc(28) SeqType local28 = super.anInt2307 != -1 && super.anInt2313 == 0 ? SeqType.method1042(super.anInt2307) : null;
-		@Pc(49) SeqType local49 = super.anInt2318 == -1 || this.lowMemory || super.anInt2290 == super.anInt2318 && local28 != null ? null : SeqType.method1042(super.anInt2318);
+		@Pc(28) SeqType local28 = super.primarySeqId != -1 && super.primarySeqDelay == 0 ? SeqType.method1042(super.primarySeqId) : null;
+		@Pc(49) SeqType local49 = super.secondarySeqId == -1 || this.lowMemory || super.seqStandId == super.secondarySeqId && local28 != null ? null : SeqType.method1042(super.secondarySeqId);
 		@Pc(60) Model local60 = this.aClass33_2.method1005(super.anInt2316, super.anInt2295, local28, local49);
 		if (local60 == null) {
 			return null;
@@ -180,23 +180,23 @@ public final class PlayerEntity extends PathingEntity {
 				local91 = this.aClass2_Sub2_Sub12_Sub4_1;
 				local111 = new Model[] { local60, local91 };
 				local91.method1137(this.anInt1387 - super.x, -this.y + this.anInt1384, this.anInt1375 - super.z);
-				if (super.anInt2283 == 512) {
+				if (super.dstYaw == 512) {
 					local91.method1148();
 					local91.method1148();
 					local91.method1148();
-				} else if (super.anInt2283 == 1024) {
+				} else if (super.dstYaw == 1024) {
 					local91.method1148();
 					local91.method1148();
-				} else if (super.anInt2283 == 1536) {
+				} else if (super.dstYaw == 1536) {
 					local91.method1148();
 				}
 				local60 = new Model(local111, 2, true);
-				if (super.anInt2283 == 512) {
+				if (super.dstYaw == 512) {
 					local91.method1148();
-				} else if (super.anInt2283 == 1024) {
+				} else if (super.dstYaw == 1024) {
 					local91.method1148();
 					local91.method1148();
-				} else if (super.anInt2283 == 1536) {
+				} else if (super.dstYaw == 1536) {
 					local91.method1148();
 					local91.method1148();
 					local91.method1148();

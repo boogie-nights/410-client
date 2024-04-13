@@ -233,7 +233,7 @@ public final class ObjType extends Hashable {
 				return local65;
 			}
 		}
-		local65 = Static65.method1163(Static51.aClass5_29, this.anInt919);
+		local65 = Model.method1163(Static51.aClass5_29, this.anInt919);
 		if (local65 == null) {
 			return null;
 		}
@@ -264,9 +264,9 @@ public final class ObjType extends Hashable {
 		if (local16 == -1) {
 			return null;
 		}
-		@Pc(37) Model local37 = Static65.method1163(Static51.aClass5_29, local16);
+		@Pc(37) Model local37 = Model.method1163(Static51.aClass5_29, local16);
 		if (local19 != -1) {
-			@Pc(45) Model local45 = Static65.method1163(Static51.aClass5_29, local19);
+			@Pc(45) Model local45 = Model.method1163(Static51.aClass5_29, local19);
 			@Pc(56) Model[] local56 = new Model[] { local37, local45 };
 			local37 = new Model(local56, 2);
 		}
@@ -295,14 +295,14 @@ public final class ObjType extends Hashable {
 		if (local8 == -1) {
 			return null;
 		}
-		@Pc(36) Model local36 = Static65.method1163(Static51.aClass5_29, local8);
+		@Pc(36) Model local36 = Model.method1163(Static51.aClass5_29, local8);
 		if (local11 != -1) {
-			@Pc(45) Model local45 = Static65.method1163(Static51.aClass5_29, local11);
+			@Pc(45) Model local45 = Model.method1163(Static51.aClass5_29, local11);
 			if (local14 == -1) {
 				@Pc(59) Model[] local59 = new Model[] { local36, local45 };
 				local36 = new Model(local59, 2);
 			} else {
-				@Pc(72) Model local72 = Static65.method1163(Static51.aClass5_29, local14);
+				@Pc(72) Model local72 = Model.method1163(Static51.aClass5_29, local14);
 				@Pc(87) Model[] local87 = new Model[] { local36, local45, local72 };
 				local36 = new Model(local87, 3);
 			}

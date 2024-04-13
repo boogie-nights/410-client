@@ -23,18 +23,18 @@ public final class Static3 {
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(BLclient!ke;)V", line = 23)
 	public static void method25(@OriginalArg(1) PathingEntity arg0) {
 		if (arg0.anInt2314 == 0) {
-			arg0.anInt2283 = 1024;
+			arg0.dstYaw = 1024;
 		}
-		arg0.anInt2282 = 0;
+		arg0.seqTrigger = 0;
 		if (arg0.anInt2314 == 1) {
-			arg0.anInt2283 = 1536;
+			arg0.dstYaw = 1536;
 		}
 		@Pc(24) int local24 = arg0.anInt2277 - client.loopCycle;
 		if (arg0.anInt2314 == 2) {
-			arg0.anInt2283 = 0;
+			arg0.dstYaw = 0;
 		}
 		if (arg0.anInt2314 == 3) {
-			arg0.anInt2283 = 512;
+			arg0.dstYaw = 512;
 		}
 		@Pc(54) int local54 = arg0.anInt2317 * 128 + arg0.size * 64;
 		arg0.x += (local54 - arg0.x) / local24;
@@ -73,11 +73,11 @@ public final class Static3 {
 				@Pc(131) ObjStackEntity local131 = new ObjStackEntity();
 				local131.anInt1495 = local12;
 				local131.anInt1490 = local19;
-				if (Static1.levelObjStacks[client.currentLevel][local35][local39] == null) {
-					Static1.levelObjStacks[client.currentLevel][local35][local39] = new LinkList();
+				if (client.levelObjStacks[client.currentLevel][local35][local39] == null) {
+					client.levelObjStacks[client.currentLevel][local35][local39] = new LinkList();
 				}
-				Static1.levelObjStacks[client.currentLevel][local35][local39].addTail(local131);
-				Static75.sortObjStacks(local39, local35);
+				client.levelObjStacks[client.currentLevel][local35][local39].addTail(local131);
+				client.sortObjStacks(local39, local35);
 			}
 		} else if (client.packetType == 63) {
 			local12 = client.in.g1();
@@ -87,7 +87,7 @@ public final class Static3 {
 			local35 = client.in.g2();
 			local39 = client.in.g2();
 			if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
-				@Pc(230) LinkList local230 = Static1.levelObjStacks[client.currentLevel][local27][local19];
+				@Pc(230) LinkList local230 = client.levelObjStacks[client.currentLevel][local27][local19];
 				if (local230 != null) {
 					for (@Pc(237) ObjStackEntity local237 = (ObjStackEntity) local230.head(); local237 != null; local237 = (ObjStackEntity) local230.next()) {
 						if ((local31 & 0x7FFF) == local237.anInt1490 && local237.anInt1495 == local35) {
@@ -95,7 +95,7 @@ public final class Static3 {
 							break;
 						}
 					}
-					Static75.sortObjStacks(local19, local27);
+					client.sortObjStacks(local19, local27);
 				}
 			}
 		} else {
@@ -203,11 +203,11 @@ public final class Static3 {
 						local771 = new ObjStackEntity();
 						local771.anInt1495 = local35;
 						local771.anInt1490 = local12;
-						if (Static1.levelObjStacks[client.currentLevel][local19][local31] == null) {
-							Static1.levelObjStacks[client.currentLevel][local19][local31] = new LinkList();
+						if (client.levelObjStacks[client.currentLevel][local19][local31] == null) {
+							client.levelObjStacks[client.currentLevel][local19][local31] = new LinkList();
 						}
-						Static1.levelObjStacks[client.currentLevel][local19][local31].addTail(local771);
-						Static75.sortObjStacks(local31, local19);
+						client.levelObjStacks[client.currentLevel][local19][local31].addTail(local771);
+						client.sortObjStacks(local31, local19);
 					}
 				} else if (client.packetType == 135) {
 					local12 = client.in.g1();
@@ -228,7 +228,7 @@ public final class Static3 {
 					local19 = (local12 & 0x7) + Static83.baseZ;
 					local31 = client.in.g2();
 					if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
-						@Pc(950) LinkList local950 = Static1.levelObjStacks[client.currentLevel][local27][local19];
+						@Pc(950) LinkList local950 = client.levelObjStacks[client.currentLevel][local27][local19];
 						if (local950 != null) {
 							for (local771 = (ObjStackEntity) local950.head(); local771 != null; local771 = (ObjStackEntity) local950.next()) {
 								if (local771.anInt1490 == (local31 & 0x7FFF)) {
@@ -237,9 +237,9 @@ public final class Static3 {
 								}
 							}
 							if (local950.head() == null) {
-								Static1.levelObjStacks[client.currentLevel][local27][local19] = null;
+								client.levelObjStacks[client.currentLevel][local27][local19] = null;
 							}
-							Static75.sortObjStacks(local19, local27);
+							client.sortObjStacks(local19, local27);
 						}
 					}
 				} else {

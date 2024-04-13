@@ -13,9 +13,6 @@ public final class Static97 {
 	@OriginalMember(owner = "client!wb", name = "p", descriptor = "[[B")
 	public static byte[][] aByteArrayArray12;
 
-	@OriginalMember(owner = "client!wb", name = "q", descriptor = "Lclient!k;")
-	public static ViewBox frame;
-
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(ZZI)I", line = 5)
 	public static int method1668() {
 		return Static1.anInt2333 + Static1.anInt34;
@@ -23,7 +20,7 @@ public final class Static97 {
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(I)V", line = 64)
 	public static void method1670() {
-		frame = null;
+		GameShell.frame = null;
 		JagString.aClass40_726 = null;
 		Static1.aClass6_7 = null;
 		JagString.aClass40_728 = null;
@@ -47,13 +44,13 @@ public final class Static97 {
 		client.out.pos = 0;
 		client.packetType = -1;
 		client.in.pos = 0;
-		Static1.aBoolean175 = false;
+		client.menuVisible = false;
 		client.lastPacketType1 = -1;
 		client.systemUpdateTimer = 0;
 		client.idleTimeout = 0;
 		client.menuSize = 0;
 		client.lastPacketType0 = -1;
-		Static1.anInt2139 = 0;
+		client.hintType = 0;
 		Static35.method722(0);
 		for (@Pc(1645) int local1645 = 0; local1645 < 100; local1645++) {
 			client.aClass40Array30[local1645] = null;
@@ -87,7 +84,7 @@ public final class Static97 {
 		for (@Pc(1772) int local1772 = 0; local1772 < 4; local1772++) {
 			for (local1776 = 0; local1776 < 104; local1776++) {
 				for (@Pc(1780) int local1780 = 0; local1780 < 104; local1780++) {
-					Static1.levelObjStacks[local1772][local1776][local1780] = null;
+					client.levelObjStacks[local1772][local1776][local1780] = null;
 				}
 			}
 		}
@@ -98,24 +95,24 @@ public final class Static97 {
 		client.stickyChatInterfaceId = -1;
 		Static75.method1350(client.chatInterfaceId);
 		client.chatInterfaceId = -1;
-		Static75.method1350(Static1.anInt2585);
-		Static1.anInt2585 = -1;
+		Static75.method1350(client.anInt2585);
+		client.anInt2585 = -1;
 		Static75.method1350(Static1.anInt1971);
 		Static1.anInt1971 = -1;
 		Static75.method1350(Static1.anInt2175);
 		Static1.anInt2175 = -1;
 		Static75.method1350(Static1.anInt1654);
 		Static1.anInt1654 = -1;
-		Static75.method1350(Static1.anInt51);
+		Static75.method1350(client.viewportInterfaceId);
 		Static1.anInt1551 = 3;
 		Static1.anInt2399 = 0;
 		Static1.aBoolean40 = false;
 		Static1.anInt2492 = -1;
-		Static1.anInt2505 = 0;
+		Static1.inMultizone = 0;
 		client.showSocialInput = false;
 		client.modalMessage = null;
-		Static1.aBoolean175 = false;
-		Static1.anInt51 = -1;
+		client.menuVisible = false;
+		client.viewportInterfaceId = -1;
 		Static1.aClass33_1.method1001(false, new int[5], -1, null);
 		for (local1776 = 0; local1776 < 5; local1776++) {
 			Static1.aClass40Array6[local1776] = null;

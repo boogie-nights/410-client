@@ -13,7 +13,7 @@ public final class LocType extends Hashable {
 	@OriginalMember(owner = "client!ab", name = "o", descriptor = "Lclient!qc;")
 	public static LruCache aClass47_1 = new LruCache(30);
 	@OriginalMember(owner = "client!tb", name = "x", descriptor = "Lclient!qc;")
-	public static LruCache aClass47_21 = new LruCache(500);
+	public static LruCache modelCacheStatic = new LruCache(500);
     @OriginalMember(owner = "client!oa", name = "s", descriptor = "Lclient!ud;")
     public static Js5Index aClass5_23;
 	@OriginalMember(owner = "client!ec", name = "nb", descriptor = "Lclient!ud;")
@@ -257,16 +257,16 @@ public final class LocType extends Hashable {
 				if (local124) {
 					local136 += 65536;
 				}
-				local9 = (Model) aClass47_21.get((long) local136);
+				local9 = (Model) modelCacheStatic.get((long) local136);
 				if (local9 == null) {
-					local9 = Static65.method1163(aClass5_8, local136 & 0xFFFF);
+					local9 = Model.method1163(aClass5_8, local136 & 0xFFFF);
 					if (local9 == null) {
 						return null;
 					}
 					if (local124) {
 						local9.method1136();
 					}
-					aClass47_21.put((long) local136, local9);
+					modelCacheStatic.put((long) local136, local9);
 				}
 				if (local20 > 1) {
 					Static1.aClass2_Sub2_Sub12_Sub4Array1[local53] = local9;
@@ -291,16 +291,16 @@ public final class LocType extends Hashable {
 			if (local65) {
 				local53 += 65536;
 			}
-			local9 = (Model) aClass47_21.get((long) local53);
+			local9 = (Model) modelCacheStatic.get((long) local53);
 			if (local9 == null) {
-				local9 = Static65.method1163(aClass5_8, local53 & 0xFFFF);
+				local9 = Model.method1163(aClass5_8, local53 & 0xFFFF);
 				if (local9 == null) {
 					return null;
 				}
 				if (local65) {
 					local9.method1136();
 				}
-				aClass47_21.put((long) local53, local9);
+				modelCacheStatic.put((long) local53, local9);
 			}
 		}
 		if (this.anInt1042 == 128 && this.anInt1058 == 128 && this.anInt1051 == 128) {

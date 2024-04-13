@@ -101,6 +101,12 @@ public final class Model extends Entity {
 
 	@OriginalMember(owner = "client!ne", name = "vc", descriptor = "[I")
 	public static int[] anIntArray405 = new int[128];
+	@OriginalMember(owner = "client!ne", name = "Rb", descriptor = "I")
+	public static int anInt1746;
+	@OriginalMember(owner = "client!ne", name = "ec", descriptor = "I")
+	public static int anInt1749;
+	@OriginalMember(owner = "client!ne", name = "tc", descriptor = "I")
+	public static int anInt1751;
 
 	@OriginalMember(owner = "client!ne", name = "gb", descriptor = "I")
 	public int anInt1735;
@@ -203,6 +209,63 @@ public final class Model extends Entity {
 
 	@OriginalMember(owner = "client!ne", name = "ub", descriptor = "[I")
 	private int[] anIntArray374;
+
+	@OriginalMember(owner = "client!ne", name = "b", descriptor = "(III)I", line = 676)
+	public static int mulColorLightness(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		if ((arg2 & 0x2) == 2) {
+			if (arg1 < 0) {
+				arg1 = 0;
+			} else if (arg1 > 127) {
+				arg1 = 127;
+			}
+			return anIntArray405[arg1];
+		}
+		arg1 = arg1 * (arg0 & 0x7F) >> 7;
+		if (arg1 < 2) {
+			arg1 = 2;
+		} else if (arg1 > 126) {
+			arg1 = 126;
+		}
+		return (arg0 & 0xFF80) + arg1;
+	}
+
+	@OriginalMember(owner = "client!ne", name = "h", descriptor = "()V", line = 1056)
+	public static void method1150() {
+		aClass2_Sub2_Sub12_Sub4_2 = null;
+		anIntArray384 = null;
+		aClass2_Sub2_Sub12_Sub4_3 = null;
+		anIntArray399 = null;
+		aBooleanArray26 = null;
+		aBooleanArray25 = null;
+		anIntArray389 = null;
+		anIntArray388 = null;
+		anIntArray401 = null;
+		anIntArray396 = null;
+		anIntArray397 = null;
+		anIntArray390 = null;
+		anIntArray391 = null;
+		anIntArrayArray19 = null;
+		anIntArray385 = null;
+		anIntArrayArray18 = null;
+		anIntArray394 = null;
+		anIntArray403 = null;
+		anIntArray398 = null;
+		anIntArray393 = null;
+		anIntArray400 = null;
+		anIntArray404 = null;
+		anIntArray387 = null;
+		sin = null;
+		cos = null;
+		anIntArray392 = null;
+		anIntArray395 = null;
+		anIntArray405 = null;
+	}
+
+	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(Lclient!ud;II)Lclient!ne;", line = 1995)
+	public static Model method1163(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) int arg1) {
+		@Pc(5) byte[] local5 = arg0.fetchFile(0, arg1);
+		return local5 == null ? null : new Model(local5);
+	}
 
 	@OriginalMember(owner = "client!ne", name = "h", descriptor = "(I)V", line = 4)
 	private void method1133(@OriginalArg(0) int arg0) {
@@ -379,9 +442,9 @@ public final class Model extends Entity {
 		this.anInt1740 = 0;
 		@Pc(18) SeqFrame local18 = arg0.frames[arg1];
 		@Pc(21) SeqBase local21 = local18.aClass2_Sub5_1;
-		Static65.anInt1746 = 0;
-		Static65.anInt1749 = 0;
-		Static65.anInt1751 = 0;
+		anInt1746 = 0;
+		anInt1749 = 0;
+		anInt1751 = 0;
 		for (@Pc(29) int local29 = 0; local29 < local18.anInt1098; local29++) {
 			@Pc(35) int local35 = local18.anIntArray226[local29];
 			this.method1152(local21.anIntArray142[local35], local21.anIntArrayArray10[local35], local18.anIntArray231[local29], local18.anIntArray230[local29], local18.anIntArray229[local29]);
@@ -937,30 +1000,30 @@ public final class Model extends Entity {
 		@Pc(36) int local36;
 		if (arg0 == 0) {
 			local6 = 0;
-			Static65.anInt1746 = 0;
-			Static65.anInt1749 = 0;
-			Static65.anInt1751 = 0;
+			anInt1746 = 0;
+			anInt1749 = 0;
+			anInt1751 = 0;
 			for (local14 = 0; local14 < local2; local14++) {
 				@Pc(19) int local19 = arg1[local14];
 				if (local19 < this.anIntArrayArray16.length) {
 					@Pc(29) int[] local29 = this.anIntArrayArray16[local19];
 					for (local31 = 0; local31 < local29.length; local31++) {
 						local36 = local29[local31];
-						Static65.anInt1746 += this.anIntArray370[local36];
-						Static65.anInt1749 += this.anIntArray373[local36];
-						Static65.anInt1751 += this.anIntArray381[local36];
+						anInt1746 += this.anIntArray370[local36];
+						anInt1749 += this.anIntArray373[local36];
+						anInt1751 += this.anIntArray381[local36];
 						local6++;
 					}
 				}
 			}
 			if (local6 > 0) {
-				Static65.anInt1746 = Static65.anInt1746 / local6 + arg2;
-				Static65.anInt1749 = Static65.anInt1749 / local6 + arg3;
-				Static65.anInt1751 = Static65.anInt1751 / local6 + arg4;
+				anInt1746 = anInt1746 / local6 + arg2;
+				anInt1749 = anInt1749 / local6 + arg3;
+				anInt1751 = anInt1751 / local6 + arg4;
 			} else {
-				Static65.anInt1746 = arg2;
-				Static65.anInt1749 = arg3;
-				Static65.anInt1751 = arg4;
+				anInt1746 = arg2;
+				anInt1749 = arg3;
+				anInt1751 = arg4;
 			}
 			return;
 		}
@@ -986,9 +1049,9 @@ public final class Model extends Entity {
 					local115 = this.anIntArrayArray16[local14];
 					for (local117 = 0; local117 < local115.length; local117++) {
 						local31 = local115[local117];
-						this.anIntArray370[local31] -= Static65.anInt1746;
-						this.anIntArray373[local31] -= Static65.anInt1749;
-						this.anIntArray381[local31] -= Static65.anInt1751;
+						this.anIntArray370[local31] -= anInt1746;
+						this.anIntArray373[local31] -= anInt1749;
+						this.anIntArray381[local31] -= anInt1751;
 						local36 = (arg2 & 0xFF) * 8;
 						@Pc(219) int local219 = (arg3 & 0xFF) * 8;
 						@Pc(225) int local225 = (arg4 & 0xFF) * 8;
@@ -1016,9 +1079,9 @@ public final class Model extends Entity {
 							this.anIntArray381[local31] = this.anIntArray381[local31] * local235 - this.anIntArray370[local31] * local231 >> 16;
 							this.anIntArray370[local31] = local251;
 						}
-						this.anIntArray370[local31] += Static65.anInt1746;
-						this.anIntArray373[local31] += Static65.anInt1749;
-						this.anIntArray381[local31] += Static65.anInt1751;
+						this.anIntArray370[local31] += anInt1746;
+						this.anIntArray373[local31] += anInt1749;
+						this.anIntArray381[local31] += anInt1751;
 					}
 				}
 			}
@@ -1029,15 +1092,15 @@ public final class Model extends Entity {
 					local115 = this.anIntArrayArray16[local14];
 					for (local117 = 0; local117 < local115.length; local117++) {
 						local31 = local115[local117];
-						this.anIntArray370[local31] -= Static65.anInt1746;
-						this.anIntArray373[local31] -= Static65.anInt1749;
-						this.anIntArray381[local31] -= Static65.anInt1751;
+						this.anIntArray370[local31] -= anInt1746;
+						this.anIntArray373[local31] -= anInt1749;
+						this.anIntArray381[local31] -= anInt1751;
 						this.anIntArray370[local31] = this.anIntArray370[local31] * arg2 / 128;
 						this.anIntArray373[local31] = this.anIntArray373[local31] * arg3 / 128;
 						this.anIntArray381[local31] = this.anIntArray381[local31] * arg4 / 128;
-						this.anIntArray370[local31] += Static65.anInt1746;
-						this.anIntArray373[local31] += Static65.anInt1749;
-						this.anIntArray381[local31] += Static65.anInt1751;
+						this.anIntArray370[local31] += anInt1746;
+						this.anIntArray373[local31] += anInt1749;
+						this.anIntArray381[local31] += anInt1751;
 					}
 				}
 			}
@@ -1120,7 +1183,7 @@ public final class Model extends Entity {
 				local304.anInt254++;
 			} else {
 				@Pc(349) int local349 = arg0 + (arg2 * local147 + arg3 * local155 + arg4 * local163) / (local20 + local20 / 2);
-				this.anIntArray383[local48] = Static65.method1139(this.anIntArray374[local48], local349, this.anIntArray379[local48]);
+				this.anIntArray383[local48] = mulColorLightness(this.anIntArray374[local48], local349, this.anIntArray379[local48]);
 			}
 		}
 		if (arg5) {
@@ -1267,9 +1330,9 @@ public final class Model extends Entity {
 		@Pc(24) SeqFrame local24 = arg0.frames[arg1];
 		@Pc(29) SeqFrame local29 = arg2.frames[arg3];
 		@Pc(32) SeqBase local32 = local24.aClass2_Sub5_1;
-		Static65.anInt1746 = 0;
-		Static65.anInt1749 = 0;
-		Static65.anInt1751 = 0;
+		anInt1746 = 0;
+		anInt1749 = 0;
+		anInt1751 = 0;
 		@Pc(40) byte local40 = 0;
 		@Pc(43) int local43 = local40 + 1;
 		@Pc(45) int local45 = arg4[0];
@@ -1283,9 +1346,9 @@ public final class Model extends Entity {
 				this.method1152(local32.anIntArray142[local53], local32.anIntArrayArray10[local53], local24.anIntArray231[local47], local24.anIntArray230[local47], local24.anIntArray229[local47]);
 			}
 		}
-		Static65.anInt1746 = 0;
-		Static65.anInt1749 = 0;
-		Static65.anInt1751 = 0;
+		anInt1746 = 0;
+		anInt1749 = 0;
+		anInt1751 = 0;
 		local40 = 0;
 		local43 = local40 + 1;
 		local45 = arg4[0];
@@ -1370,25 +1433,25 @@ public final class Model extends Entity {
 				local25 = this.anIntArray374[local1];
 				local30 = this.aClass9Array1[local7];
 				local52 = arg0 + (arg2 * local30.anInt260 + arg3 * local30.anInt258 + arg4 * local30.anInt256) / (arg1 * local30.anInt254);
-				this.anIntArray383[local1] = Static65.method1139(local25, local52, 0);
+				this.anIntArray383[local1] = mulColorLightness(local25, local52, 0);
 				@Pc(65) VertexNormal local65 = this.aClass9Array1[local12];
 				@Pc(87) int local87 = arg0 + (arg2 * local65.anInt260 + arg3 * local65.anInt258 + arg4 * local65.anInt256) / (arg1 * local65.anInt254);
-				this.anIntArray369[local1] = Static65.method1139(local25, local87, 0);
+				this.anIntArray369[local1] = mulColorLightness(local25, local87, 0);
 				@Pc(100) VertexNormal local100 = this.aClass9Array1[local17];
 				@Pc(122) int local122 = arg0 + (arg2 * local100.anInt260 + arg3 * local100.anInt258 + arg4 * local100.anInt256) / (arg1 * local100.anInt254);
-				this.anIntArray367[local1] = Static65.method1139(local25, local122, 0);
+				this.anIntArray367[local1] = mulColorLightness(local25, local122, 0);
 			} else if ((this.anIntArray379[local1] & 0x1) == 0) {
 				local25 = this.anIntArray374[local1];
 				@Pc(148) int local148 = this.anIntArray379[local1];
 				local30 = this.aClass9Array1[local7];
 				local52 = arg0 + (arg2 * local30.anInt260 + arg3 * local30.anInt258 + arg4 * local30.anInt256) / (arg1 * local30.anInt254);
-				this.anIntArray383[local1] = Static65.method1139(local25, local52, local148);
+				this.anIntArray383[local1] = mulColorLightness(local25, local52, local148);
 				local30 = this.aClass9Array1[local12];
 				local52 = arg0 + (arg2 * local30.anInt260 + arg3 * local30.anInt258 + arg4 * local30.anInt256) / (arg1 * local30.anInt254);
-				this.anIntArray369[local1] = Static65.method1139(local25, local52, local148);
+				this.anIntArray369[local1] = mulColorLightness(local25, local52, local148);
 				local30 = this.aClass9Array1[local17];
 				local52 = arg0 + (arg2 * local30.anInt260 + arg3 * local30.anInt258 + arg4 * local30.anInt256) / (arg1 * local30.anInt254);
-				this.anIntArray367[local1] = Static65.method1139(local25, local52, local148);
+				this.anIntArray367[local1] = mulColorLightness(local25, local52, local148);
 			}
 		}
 		this.aClass9Array1 = null;

@@ -34,9 +34,9 @@ public final class Static80 {
 		client.menuSize = 0;
 		client.packetSize = 0;
 		client.lastPacketType2 = -1;
-		Static1.aBoolean175 = false;
+		client.menuVisible = false;
 		client.in.pos = 0;
-		Static7.method187(30);
+		client.method187(30);
 	}
 
 	@OriginalMember(owner = "client!sc", name = "a", descriptor = "(IILclient!ud;I)Lclient!qb;", line = 97)

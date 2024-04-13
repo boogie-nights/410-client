@@ -9,7 +9,7 @@ public final class Static47 {
 	public static void method852() {
 		JagString.CANCEL = null;
 		Static1.anIntArray257 = null;
-		Static1.anIntArray258 = null;
+		Static1.entityRemovalIds = null;
 		JagString.aClass40_359 = null;
 		JagString.aClass40_361 = null;
 		JagString.aClass40_360 = null;

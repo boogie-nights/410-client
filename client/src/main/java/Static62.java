@@ -48,16 +48,6 @@ public final class Static62 {
 		}
 	}
 
-	@OriginalMember(owner = "client!na", name = "b", descriptor = "(I)V", line = 79)
-	public static void drawTileHint() {
-		if (Static1.anInt2139 == 2) {
-			Static96.method1667(Static1.anInt1917 * 2, (Static1.anInt410 - Static79.anInt2058 << 7) + Static1.anInt441, Static1.anInt1493 + (-Static28.anInt725 + Static1.anInt1952 << 7));
-			if (Static1.anInt426 > -1 && client.loopCycle % 20 < 10) {
-				Static93.aClass2_Sub2_Sub2_Sub4Array10[0].method1624(Static1.anInt426 - 12, Static1.anInt477 + -28);
-			}
-		}
-	}
-
 	@OriginalMember(owner = "client!na", name = "a", descriptor = "(IBI)I", line = 137)
 	public static int method1100(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		if (arg0 > 22050) {
