@@ -67,7 +67,7 @@ public final class Static97 {
 		Static1.aLong12 = 0L;
 		Static1.anInt1612 = 0;
 		Static89.aBoolean174 = true;
-		Static41.aClass52_1.anInt1982 = 0;
+		Static41.aClass52_1.samples = 0;
 		Static92.method1584();
 		Static1.anInt231 = 0;
 		Static1.anInt1986 = -1;

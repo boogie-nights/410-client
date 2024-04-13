@@ -130,8 +130,6 @@ public final class Static1 {
 	public static int anInt2473 = 0;
 	@OriginalMember(owner = "client!ga", name = "t", descriptor = "I")
 	public static int anInt737 = 0;
-	@OriginalMember(owner = "client!ga", name = "E", descriptor = "I")
-	public static int anInt742 = 0;
 	@OriginalMember(owner = "client!gd", name = "r", descriptor = "I")
 	public static int anInt797 = 0;
 	@OriginalMember(owner = "client!gd", name = "s", descriptor = "I")
@@ -391,7 +389,7 @@ public final class Static1 {
 	@OriginalMember(owner = "client!rb", name = "c", descriptor = "I")
 	public static int anInt1952 = 0;
 	@OriginalMember(owner = "client!rb", name = "C", descriptor = "[Lclient!ad;")
-	public static Js5ResourceProvider[] aClass5_Sub1Array1 = new Js5ResourceProvider[256];
+	public static Js5[] aClass5_Sub1Array1 = new Js5[256];
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "I")
 	public static int anInt1971 = -1;
 	@OriginalMember(owner = "client!rd", name = "e", descriptor = "I")
@@ -572,8 +570,6 @@ public final class Static1 {
 	public static PlayerEntity[] aClass2_Sub2_Sub12_Sub1_Sub1Array1 = new PlayerEntity[2048];
 	@OriginalMember(owner = "client!v", name = "gb", descriptor = "I")
 	public static int anInt2396 = 0;
-	@OriginalMember(owner = "client!v", name = "db", descriptor = "I")
-	public static int anInt2394 = 0;
 	@OriginalMember(owner = "client!be", name = "p", descriptor = "I")
 	public static int anInt274 = 0;
 	@OriginalMember(owner = "client!cc", name = "g", descriptor = "[[I")
@@ -878,7 +874,7 @@ public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(I)V", line = 99)
 	public static void method3() {
-		for (@Pc(10) SpotAnimEntity local10 = (SpotAnimEntity) aClass44_8.method1224(); local10 != null; local10 = (SpotAnimEntity) aClass44_8.method1231()) {
+		for (@Pc(10) SpotAnimEntity local10 = (SpotAnimEntity) aClass44_8.head(); local10 != null; local10 = (SpotAnimEntity) aClass44_8.method1231()) {
 			if (local10.anInt2235 != anInt8 || local10.aBoolean169) {
 				local10.method1677();
 			} else if (anInt2511 >= local10.anInt2231) {

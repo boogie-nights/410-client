@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jb")
-public final class Class28 {
+public final class SeqFrame {
 
 	@OriginalMember(owner = "client!jb", name = "h", descriptor = "[I")
 	public static int[] anIntArray232 = new int[500];
@@ -19,7 +19,7 @@ public final class Class28 {
 	public static int[] anIntArray227 = new int[500];
 
 	@OriginalMember(owner = "client!jb", name = "g", descriptor = "Lclient!ga;")
-	public Class2_Sub5 aClass2_Sub5_1 = null;
+	public SeqBase aClass2_Sub5_1 = null;
 
 	@OriginalMember(owner = "client!jb", name = "i", descriptor = "Z")
 	public boolean aBoolean88 = false;
@@ -40,7 +40,7 @@ public final class Class28 {
 	public final int[] anIntArray229;
 
 	@OriginalMember(owner = "client!jb", name = "<init>", descriptor = "([BLclient!ga;)V", line = 42)
-	public Class28(@OriginalArg(0) byte[] arg0, @OriginalArg(1) Class2_Sub5 arg1) {
+	public SeqFrame(@OriginalArg(0) byte[] arg0, @OriginalArg(1) SeqBase arg1) {
 		this.aClass2_Sub5_1 = arg1;
 		@Pc(18) Packet local18 = new Packet(arg0);
 		@Pc(23) Packet local23 = new Packet(arg0);

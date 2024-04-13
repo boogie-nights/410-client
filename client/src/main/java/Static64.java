@@ -117,16 +117,16 @@ public final class Static64 {
 		if (Static1.aBoolean115) {
 			return;
 		}
-		@Pc(12) Class2_Sub12 local12 = new Class2_Sub12();
-		local12.anInt2350 = arg2.g1();
-		local12.anInt2355 = arg2.g4s();
-		local12.aByteArrayArrayArray11 = new byte[local12.anInt2350][][];
-		local12.aClass48Array2 = new Class48[local12.anInt2350];
-		local12.anIntArray502 = new int[local12.anInt2350];
-		local12.anIntArray499 = new int[local12.anInt2350];
-		local12.anIntArray498 = new int[local12.anInt2350];
-		local12.aClass48Array1 = new Class48[local12.anInt2350];
-		for (@Pc(58) int local58 = 0; local58 < local12.anInt2350; local58++) {
+		@Pc(12) ReflectionCheckNode local12 = new ReflectionCheckNode();
+		local12.size = arg2.g1();
+		local12.id = arg2.g4s();
+		local12.methodArguments = new byte[local12.size][][];
+		local12.fieldRequests = new ObjectRequest[local12.size];
+		local12.fieldValues = new int[local12.size];
+		local12.types = new int[local12.size];
+		local12.errors = new int[local12.size];
+		local12.methodRequests = new ObjectRequest[local12.size];
+		for (@Pc(58) int local58 = 0; local58 < local12.size; local58++) {
 			try {
 				@Pc(64) int local64 = arg2.g1();
 				@Pc(81) String local81;
@@ -139,9 +139,9 @@ public final class Static64 {
 					if (local64 == 1) {
 						local83 = arg2.g4s();
 					}
-					local12.anIntArray499[local58] = local64;
-					local12.anIntArray502[local58] = local83;
-					local12.aClass48Array2[local58] = arg0.method204(local92, Static92.method1583(local81));
+					local12.types[local58] = local64;
+					local12.fieldValues[local58] = local83;
+					local12.fieldRequests[local58] = arg0.method204(local92, Static92.method1583(local81));
 				} else if (local64 == 3 || local64 == 4) {
 					local81 = new String(arg2.gjstr().method1189());
 					local92 = new String(arg2.gjstr().method1189());
@@ -159,24 +159,24 @@ public final class Static64 {
 							arg2.gdata(local194, local181[local188]);
 						}
 					}
-					local12.anIntArray499[local58] = local64;
+					local12.types[local58] = local64;
 					@Pc(223) Class[] local223 = new Class[local83];
 					for (local194 = 0; local194 < local83; local194++) {
 						local223[local194] = Static92.method1583(local159[local194]);
 					}
-					local12.aClass48Array1[local58] = arg0.method201(Static92.method1583(local81), local92, local223);
-					local12.aByteArrayArrayArray11[local58] = local181;
+					local12.methodRequests[local58] = arg0.method201(Static92.method1583(local81), local92, local223);
+					local12.methodArguments[local58] = local181;
 				}
 			} catch (@Pc(258) ClassNotFoundException local258) {
-				local12.anIntArray498[local58] = -1;
+				local12.errors[local58] = -1;
 			} catch (@Pc(265) SecurityException local265) {
-				local12.anIntArray498[local58] = -2;
+				local12.errors[local58] = -2;
 			} catch (@Pc(272) NullPointerException local272) {
-				local12.anIntArray498[local58] = -3;
+				local12.errors[local58] = -3;
 			} catch (@Pc(279) Exception local279) {
-				local12.anIntArray498[local58] = -4;
+				local12.errors[local58] = -4;
 			} catch (@Pc(286) Throwable local286) {
-				local12.anIntArray498[local58] = -5;
+				local12.errors[local58] = -5;
 			}
 		}
 		Static1.aClass44_9.method1221(local12);
@@ -194,7 +194,7 @@ public final class Static64 {
 	}
 
 	@OriginalMember(owner = "client!nd", name = "a", descriptor = "(BLclient!ud;I)Z", line = 336)
-	public static boolean method1113(@OriginalArg(1) Js5 arg0, @OriginalArg(2) int arg1) {
+	public static boolean method1113(@OriginalArg(1) Js5Index arg0, @OriginalArg(2) int arg1) {
 		@Pc(8) byte[] local8 = arg0.method65(arg1);
 		if (local8 == null) {
 			return false;

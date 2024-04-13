@@ -8,7 +8,7 @@ public final class Static5 {
 	public static int anInt173;
 
 	@OriginalMember(owner = "client!ae", name = "ab", descriptor = "Lclient!ad;")
-	public static Js5ResourceProvider aClass5_Sub1_1;
+	public static Js5 aClass5_Sub1_1;
 
 	@OriginalMember(owner = "client!ae", name = "f", descriptor = "(I)V", line = 11)
 	public static void method115() {
@@ -30,13 +30,13 @@ public final class Static5 {
 	}
 
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(BI)Lclient!ee;", line = 38)
-	public static Class2_Sub2_Sub5 method116(@OriginalArg(1) int arg0) {
-		@Pc(15) Class2_Sub2_Sub5 local15 = (Class2_Sub2_Sub5) Static1.aClass47_3.method1325((long) arg0);
+	public static SpotAnimType method116(@OriginalArg(1) int arg0) {
+		@Pc(15) SpotAnimType local15 = (SpotAnimType) Static1.aClass47_3.method1325((long) arg0);
 		if (local15 != null) {
 			return local15;
 		}
 		@Pc(25) byte[] local25 = Static49.aClass5_18.method68(arg0, 13);
-		local15 = new Class2_Sub2_Sub5();
+		local15 = new SpotAnimType();
 		local15.anInt634 = arg0;
 		if (local25 != null) {
 			local15.method504(new Packet(local25));
@@ -46,7 +46,7 @@ public final class Static5 {
 	}
 
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(Lclient!ud;B)V", line = 63)
-	public static void method117(@OriginalArg(0) Js5 arg0) {
+	public static void method117(@OriginalArg(0) Js5Index arg0) {
 		Static40.aClass5_25 = arg0;
 	}
 

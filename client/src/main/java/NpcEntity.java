@@ -14,8 +14,8 @@ public final class NpcEntity extends PathingEntity {
 		if (this.aClass2_Sub2_Sub7_1 == null) {
 			return null;
 		}
-		@Pc(28) SpotAnimType local28 = super.anInt2307 != -1 && super.anInt2313 == 0 ? Static57.method1042(super.anInt2307) : null;
-		@Pc(50) SpotAnimType local50 = super.anInt2318 == -1 || super.anInt2318 == super.anInt2290 && local28 != null ? null : Static57.method1042(super.anInt2318);
+		@Pc(28) SeqType local28 = super.anInt2307 != -1 && super.anInt2313 == 0 ? Static57.method1042(super.anInt2307) : null;
+		@Pc(50) SeqType local50 = super.anInt2318 == -1 || super.anInt2318 == super.anInt2290 && local28 != null ? null : Static57.method1042(super.anInt2318);
 		@Pc(61) Model local61 = this.aClass2_Sub2_Sub7_1.method605(local28, local50, super.anInt2316, super.anInt2295);
 		if (local61 == null) {
 			return null;

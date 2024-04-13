@@ -1,38 +1,36 @@
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
-import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!rd")
-public final class Class52 implements Runnable {
+public final class MouseRecorder implements Runnable {
 
 	@OriginalMember(owner = "client!rd", name = "f", descriptor = "Z")
-	public boolean aBoolean157 = true;
+	public boolean running = true;
 
 	@OriginalMember(owner = "client!rd", name = "o", descriptor = "Ljava/lang/Object;")
-	public final Object anObject5 = new Object();
+	public final Object lock = new Object();
 
 	@OriginalMember(owner = "client!rd", name = "r", descriptor = "[I")
-	public final int[] anIntArray432 = new int[500];
+	public final int[] x = new int[500];
 
 	@OriginalMember(owner = "client!rd", name = "t", descriptor = "[I")
-	public final int[] anIntArray433 = new int[500];
+	public final int[] y = new int[500];
 
 	@OriginalMember(owner = "client!rd", name = "q", descriptor = "I")
-	public int anInt1982 = 0;
+	public int samples = 0;
 
 	@OriginalMember(owner = "client!rd", name = "run", descriptor = "()V", line = 183)
 	@Override
 	public void run() {
-		while (this.aBoolean157) {
-			@Pc(6) Object local6 = this.anObject5;
-			synchronized (this.anObject5) {
-				if (this.anInt1982 < 500) {
-					this.anIntArray432[this.anInt1982] = Static1.anInt742;
-					this.anIntArray433[this.anInt1982] = Static1.anInt2394;
-					this.anInt1982++;
+		while (this.running) {
+			synchronized (this.lock) {
+				if (this.samples < 500) {
+					this.x[this.samples] = Mouse.x;
+					this.y[this.samples] = Mouse.y;
+					this.samples++;
 				}
 			}
-			Static86.method1494(50L);
+			Static86.sleep(50L);
 		}
 	}
 }

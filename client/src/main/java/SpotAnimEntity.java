@@ -34,12 +34,12 @@ public final class SpotAnimEntity extends Entity {
 	public final int anInt2230;
 
 	@OriginalMember(owner = "client!u", name = "rb", descriptor = "Lclient!f;")
-	private SpotAnimType aClass2_Sub2_Sub6_3;
+	private SeqType aClass2_Sub2_Sub6_3;
 
 	@OriginalMember(owner = "client!u", name = "c", descriptor = "(B)Lclient!ne;", line = 37)
 	@Override
 	protected Model method1533() {
-		@Pc(4) Class2_Sub2_Sub5 local4 = Static5.method116(this.anInt2233);
+		@Pc(4) SpotAnimType local4 = Static5.method116(this.anInt2233);
 		@Pc(12) Model local12;
 		if (this.aBoolean169) {
 			local12 = local4.method501(-1);

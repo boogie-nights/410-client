@@ -61,7 +61,7 @@ public final class Class18_Sub1 extends Class18 {
 		if (arg1 > this.anInt467) {
 			this.anInt467 = arg1;
 		}
-		Static86.method1494((long) this.anInt467);
+		Static86.sleep((long) this.anInt467);
 		local136 = 0;
 		while (this.anInt463 < 256) {
 			this.anInt463 += this.anInt471;

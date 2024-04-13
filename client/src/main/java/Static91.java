@@ -145,19 +145,19 @@ public final class Static91 {
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(ILclient!ud;)V", line = 861)
-	public static void method75(@OriginalArg(1) Js5 arg0) {
+	public static void method75(@OriginalArg(1) Js5Index arg0) {
 		Static28.aClass5_10 = arg0;
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(Lclient!ud;ZLclient!o;Lclient!o;)Lclient!qb;", line = 890)
-	public static Pix8 method77(@OriginalArg(0) Js5 arg0, @OriginalArg(2) JagString arg1, @OriginalArg(3) JagString arg2) {
+	public static Pix8 method77(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) JagString arg1, @OriginalArg(3) JagString arg2) {
 		@Pc(13) int local13 = arg0.method80(arg2);
 		@Pc(19) int local19 = arg0.method72(arg1, local13);
 		return Static80.method1407(local13, arg0, local19);
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(Lclient!ud;III)[Lclient!vb;", line = 939)
-	public static Pix24[] method79(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public static Pix24[] method79(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		return Static84.method1484(arg1, arg0, arg2) ? Static35.method715() : null;
 	}
 }

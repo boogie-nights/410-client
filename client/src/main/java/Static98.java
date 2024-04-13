@@ -5,11 +5,11 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static98 {
 
 	@OriginalMember(owner = "client!wc", name = "Zb", descriptor = "Lclient!ib;")
-	public static AudioBuss aClass12_1;
+	public static AudioBuss2 aClass12_1;
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(IIILclient!ud;I)[B", line = 27)
-	public static byte[] method1735(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Js5 arg2, @OriginalArg(4) int arg3) {
-		@Pc(23) long local23 = (long) (arg3 << 16) + ((long) arg0 << 1442185824) + (long) (arg1 + arg3 * 37 & 0xFFFF);
+	public static byte[] method1735(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Js5Index arg2, @OriginalArg(4) int arg3) {
+		@Pc(23) long local23 = (long) (arg3 << 16) + ((long) arg0 << 32) + (long) (arg1 + arg3 * 37 & 0xFFFF);
 		if (Static35.aClass47_9 != null) {
 			@Pc(31) Class2_Sub2_Sub3 local31 = (Class2_Sub2_Sub3) Static35.aClass47_9.method1325(local23);
 			if (local31 != null) {
@@ -265,7 +265,7 @@ public final class Static98 {
 	}
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(Lclient!ud;Lclient!ud;BZ)V", line = 640)
-	public static void method1741(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(3) boolean arg2) {
+	public static void method1741(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) Js5Index arg1, @OriginalArg(3) boolean arg2) {
 		Static51.aClass5_29 = arg0;
 		Static40.aBoolean150 = arg2;
 		Static38.aClass5_13 = arg1;
@@ -273,7 +273,7 @@ public final class Static98 {
 	}
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(ZLclient!ud;ILclient!ud;I)Lclient!sb;", line = 702)
-	public static Class2_Sub2_Sub14 method1744(@OriginalArg(1) Js5 arg0, @OriginalArg(3) Js5 arg1, @OriginalArg(4) int arg2) {
+	public static Class2_Sub2_Sub14 method1744(@OriginalArg(1) Js5Index arg0, @OriginalArg(3) Js5Index arg1, @OriginalArg(4) int arg2) {
 		@Pc(7) boolean local7 = true;
 		@Pc(12) int[] local12 = arg0.method81(arg2);
 		for (@Pc(14) int local14 = 0; local14 < local12.length; local14++) {

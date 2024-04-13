@@ -724,7 +724,7 @@ public final class Static75 {
 			return;
 		}
 		@Pc(21) Class2_Sub2_Sub12_Sub3 local21 = null;
-		@Pc(26) Class2_Sub2_Sub12_Sub3 local26 = (Class2_Sub2_Sub12_Sub3) local11.method1224();
+		@Pc(26) Class2_Sub2_Sub12_Sub3 local26 = (Class2_Sub2_Sub12_Sub3) local11.head();
 		@Pc(28) int local28 = -99999999;
 		while (local26 != null) {
 			@Pc(34) ObjType local34 = Static97.method1669(local26.anInt1490);
@@ -740,7 +740,7 @@ public final class Static75 {
 		}
 		local11.method1229(local21);
 		@Pc(71) Class2_Sub2_Sub12_Sub3 local71 = null;
-		local26 = (Class2_Sub2_Sub12_Sub3) local11.method1224();
+		local26 = (Class2_Sub2_Sub12_Sub3) local11.head();
 		@Pc(78) Class2_Sub2_Sub12_Sub3 local78 = null;
 		while (local26 != null) {
 			if (local21.anInt1490 != local26.anInt1490 && local71 == null) {

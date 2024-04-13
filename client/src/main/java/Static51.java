@@ -8,7 +8,7 @@ public final class Static51 {
 	public static int anInt2272;
 
 	@OriginalMember(owner = "client!ke", name = "Fb", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_29;
+	public static Js5Index aClass5_29;
 
 	@OriginalMember(owner = "client!ke", name = "Bc", descriptor = "I")
 	public static int anInt2325;

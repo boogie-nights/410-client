@@ -21,7 +21,7 @@ public final class Static50 {
 	}
 
 	@OriginalMember(owner = "client!kd", name = "a", descriptor = "(Lclient!ud;Lclient!o;Lclient!o;Z)Lclient!fc;", line = 72)
-	public static PixFont method941(@OriginalArg(0) Js5 arg0, @OriginalArg(1) JagString arg1, @OriginalArg(2) JagString arg2) {
+	public static PixFont method941(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) JagString arg1, @OriginalArg(2) JagString arg2) {
 		@Pc(13) int local13 = arg0.method80(arg2);
 		@Pc(19) int local19 = arg0.method72(arg1, local13);
 		return Static12.method260(local13, arg0, local19);

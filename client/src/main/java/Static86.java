@@ -38,8 +38,8 @@ public final class Static86 {
 		@Pc(101) int local101;
 		if (Static1.anInt1994 == -1) {
 			Static1.aClass2_Sub2_Sub13_1.anInt1587 = Static1.anInt1506 - Static1.anInt799 - 77;
-			if (Static1.anInt742 > 448 && Static1.anInt742 < 560 && Static1.anInt2394 > 332) {
-				Static49.method920(Static1.aClass2_Sub2_Sub13_1, 463, Static1.anInt1506, 77, -1, Static1.anInt2394 - 357, Static1.anInt742 + -17, 0);
+			if (Mouse.x > 448 && Mouse.x < 560 && Mouse.y > 332) {
+				Static49.method920(Static1.aClass2_Sub2_Sub13_1, 463, Static1.anInt1506, 77, -1, Mouse.y - 357, Mouse.x + -17, 0);
 			}
 			local101 = Static1.anInt1506 - Static1.aClass2_Sub2_Sub13_1.anInt1587 - 77;
 			if (local101 < 0) {
@@ -56,8 +56,8 @@ public final class Static86 {
 		if (Static1.anInt1994 == -1 && Static1.anInt2399 == 3) {
 			Static1.aClass2_Sub2_Sub13_1.anInt1587 = Static1.anInt53;
 			local101 = Static1.anInt2066 * 14 + 7;
-			if (Static1.anInt742 > 448 && Static1.anInt742 < 560 && Static1.anInt2394 > 332) {
-				Static49.method920(Static1.aClass2_Sub2_Sub13_1, 463, local101, 77, -1, Static1.anInt2394 - 357, Static1.anInt742 + -17, 0);
+			if (Mouse.x > 448 && Mouse.x < 560 && Mouse.y > 332) {
+				Static49.method920(Static1.aClass2_Sub2_Sub13_1, 463, local101, 77, -1, Mouse.y - 357, Mouse.x + -17, 0);
 			}
 			@Pc(168) int local168 = Static1.aClass2_Sub2_Sub13_1.anInt1587;
 			if (local168 < 0) {
@@ -125,7 +125,7 @@ public final class Static86 {
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(IIIZIIILclient!ud;)V", line = 198)
-	public static synchronized void method1491(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(6) int arg2, @OriginalArg(7) Js5 arg3) {
+	public static synchronized void method1491(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(6) int arg2, @OriginalArg(7) Js5Index arg3) {
 		if (!Static64.method1110()) {
 			return;
 		}
@@ -169,7 +169,7 @@ public final class Static86 {
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(ZJ)V", line = 267)
-	public static void method1494(@OriginalArg(1) long arg0) {
+	public static void sleep(@OriginalArg(1) long arg0) {
 		if (arg0 <= 0L) {
 			return;
 		}
@@ -207,7 +207,7 @@ public final class Static86 {
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(Lclient!o;Lclient!o;Lclient!ud;IZIII)V", line = 350)
-	public static synchronized void method1496(@OriginalArg(0) JagString arg0, @OriginalArg(1) JagString arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(6) int arg3) {
+	public static synchronized void method1496(@OriginalArg(0) JagString arg0, @OriginalArg(1) JagString arg1, @OriginalArg(2) Js5Index arg2, @OriginalArg(6) int arg3) {
 		if (Static64.method1110()) {
 			@Pc(12) int local12 = arg2.method80(arg0);
 			@Pc(18) int local18 = arg2.method72(arg1, local12);
@@ -236,7 +236,7 @@ public final class Static86 {
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(IIIILclient!ud;IZ)V", line = 421)
-	public static synchronized void method1499(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(4) Js5 arg2, @OriginalArg(5) int arg3) {
+	public static synchronized void method1499(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(4) Js5Index arg2, @OriginalArg(5) int arg3) {
 		if (!Static64.method1110()) {
 			return;
 		}

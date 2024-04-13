@@ -9,7 +9,7 @@ public final class Static41 {
 	public static Class45 aClass45_21;
 
 	@OriginalMember(owner = "client!ic", name = "V", descriptor = "Lclient!rd;")
-	public static Class52 aClass52_1;
+	public static MouseRecorder aClass52_1;
 
 	@OriginalMember(owner = "client!ic", name = "Y", descriptor = "I")
 	public static int anInt1079;

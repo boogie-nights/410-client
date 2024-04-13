@@ -86,7 +86,7 @@ public final class Static17 {
 	}
 
 	@OriginalMember(owner = "client!db", name = "a", descriptor = "(Lclient!ud;B)I", line = 134)
-	public static int method358(@OriginalArg(0) Js5 arg0) {
+	public static int method358(@OriginalArg(0) Js5Index arg0) {
 		@Pc(5) int local5 = 0;
 		if (arg0.method73(JagString.aClass40_110, JagString.aClass40_223)) {
 			local5++;

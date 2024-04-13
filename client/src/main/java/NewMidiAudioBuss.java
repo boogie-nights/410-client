@@ -92,7 +92,7 @@ public final class NewMidiAudioBuss extends MidiAudioBuss implements Runnable {
 					}
 					this.method1252();
 				}
-				Static86.method1494(100L);
+				Static86.sleep(100L);
 			}
 		} catch (@Pc(24) Exception local24) {
 			Static36.method727(null, local24);
@@ -140,7 +140,7 @@ public final class NewMidiAudioBuss extends MidiAudioBuss implements Runnable {
 					break;
 				}
 			}
-			Static86.method1494(20L);
+			Static86.sleep(20L);
 		}
 		Static52.anInterface3_2.method793();
 	}

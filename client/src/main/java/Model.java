@@ -377,8 +377,8 @@ public final class Model extends Entity {
 		}
 		this.aClass9Array1 = null;
 		this.anInt1740 = 0;
-		@Pc(18) Class28 local18 = arg0.aClass28Array1[arg1];
-		@Pc(21) Class2_Sub5 local21 = local18.aClass2_Sub5_1;
+		@Pc(18) SeqFrame local18 = arg0.aClass28Array1[arg1];
+		@Pc(21) SeqBase local21 = local18.aClass2_Sub5_1;
 		Static65.anInt1746 = 0;
 		Static65.anInt1749 = 0;
 		Static65.anInt1751 = 0;
@@ -1264,9 +1264,9 @@ public final class Model extends Entity {
 		}
 		this.aClass9Array1 = null;
 		this.anInt1740 = 0;
-		@Pc(24) Class28 local24 = arg0.aClass28Array1[arg1];
-		@Pc(29) Class28 local29 = arg2.aClass28Array1[arg3];
-		@Pc(32) Class2_Sub5 local32 = local24.aClass2_Sub5_1;
+		@Pc(24) SeqFrame local24 = arg0.aClass28Array1[arg1];
+		@Pc(29) SeqFrame local29 = arg2.aClass28Array1[arg3];
+		@Pc(32) SeqBase local32 = local24.aClass2_Sub5_1;
 		Static65.anInt1746 = 0;
 		Static65.anInt1749 = 0;
 		Static65.anInt1751 = 0;

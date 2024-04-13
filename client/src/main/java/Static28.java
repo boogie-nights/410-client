@@ -8,7 +8,7 @@ public final class Static28 {
 	public static Class45 aClass45_15;
 
 	@OriginalMember(owner = "client!fe", name = "b", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_10;
+	public static Js5Index aClass5_10;
 
 	@OriginalMember(owner = "client!fe", name = "g", descriptor = "[Lclient!vb;")
 	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array5;
@@ -41,7 +41,7 @@ public final class Static28 {
 	public static boolean method585(@OriginalArg(0) SignLink arg0, @OriginalArg(1) boolean arg1) {
 		Static1.anInt432 = 20;
 		try {
-			Static98.aClass12_1 = (AudioBuss) Class.forName("JavaMidiAudioBuss").getDeclaredConstructor().newInstance();
+			Static98.aClass12_1 = (AudioBuss2) Class.forName("JavaMidiAudioBuss").getDeclaredConstructor().newInstance();
 			return true;
 		} catch (@Pc(13) Throwable local13) {
 			@Pc(17) Interface3 local17 = arg0.method205();

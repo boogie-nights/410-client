@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!m")
-public final class Class2_Sub10_Sub1 extends Class2_Sub10 {
+public final class SoundAudioBuss extends AudioBuss {
 
 	@OriginalMember(owner = "client!m", name = "v", descriptor = "I")
 	private int anInt1539;
@@ -53,9 +53,9 @@ public final class Class2_Sub10_Sub1 extends Class2_Sub10 {
 			}
 			this.anInt1542 += arg1;
 			if (this.anInt1537 == 256 && (this.anInt1538 & 0xFF) == 0) {
-				arg1 = Static108.method1033(((Class2_Sub4_Sub1) super.aClass2_Sub4_3).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this);
+				arg1 = Static108.method1033(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this);
 			} else {
-				arg1 = Static108.method1035(((Class2_Sub4_Sub1) super.aClass2_Sub4_3).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this, this.anInt1537, arg4);
+				arg1 = Static108.method1035(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this, this.anInt1537, arg4);
 			}
 			this.anInt1542 -= arg1;
 			if (this.anInt1542 != 0) {
@@ -67,7 +67,7 @@ public final class Class2_Sub10_Sub1 extends Class2_Sub10 {
 			}
 			this.anInt1544 = this.anInt1545;
 		}
-		return this.anInt1537 == 256 && (this.anInt1538 & 0xFF) == 0 ? Static108.method1036(((Class2_Sub4_Sub1) super.aClass2_Sub4_3).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this) : Static108.method1030(((Class2_Sub4_Sub1) super.aClass2_Sub4_3).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this, this.anInt1537, arg4);
+		return this.anInt1537 == 256 && (this.anInt1538 & 0xFF) == 0 ? Static108.method1036(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this) : Static108.method1030(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this, this.anInt1537, arg4);
 	}
 
 	@OriginalMember(owner = "client!m", name = "b", descriptor = "([IIIII)I", line = 138)
@@ -79,9 +79,9 @@ public final class Class2_Sub10_Sub1 extends Class2_Sub10 {
 			}
 			this.anInt1542 += arg1;
 			if (this.anInt1537 == -256 && (this.anInt1538 & 0xFF) == 0) {
-				arg1 = Static108.method1028(((Class2_Sub4_Sub1) super.aClass2_Sub4_3).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this);
+				arg1 = Static108.method1028(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this);
 			} else {
-				arg1 = Static108.method1037(((Class2_Sub4_Sub1) super.aClass2_Sub4_3).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this, this.anInt1537, arg4);
+				arg1 = Static108.method1037(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, this.anInt1541, this.anInt1539, local7, arg2, this, this.anInt1537, arg4);
 			}
 			this.anInt1542 -= arg1;
 			if (this.anInt1542 != 0) {
@@ -93,7 +93,7 @@ public final class Class2_Sub10_Sub1 extends Class2_Sub10 {
 			}
 			this.anInt1544 = this.anInt1545;
 		}
-		return this.anInt1537 == -256 && (this.anInt1538 & 0xFF) == 0 ? Static108.method1026(((Class2_Sub4_Sub1) super.aClass2_Sub4_3).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this) : Static108.method1034(((Class2_Sub4_Sub1) super.aClass2_Sub4_3).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this, this.anInt1537, arg4);
+		return this.anInt1537 == -256 && (this.anInt1538 & 0xFF) == 0 ? Static108.method1026(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this) : Static108.method1034(((Class2_Sub4_Sub1) super.sound).aByteArray8, arg0, this.anInt1538, arg1, this.anInt1544, arg3, arg2, this, this.anInt1537, arg4);
 	}
 
 	@OriginalMember(owner = "client!m", name = "c", descriptor = "(I)V", line = 245)
@@ -114,7 +114,7 @@ public final class Class2_Sub10_Sub1 extends Class2_Sub10 {
 			}
 		}
 		this.anInt1538 += this.anInt1537 * arg0;
-		@Pc(53) Class2_Sub4_Sub1 local53 = (Class2_Sub4_Sub1) super.aClass2_Sub4_3;
+		@Pc(53) Class2_Sub4_Sub1 local53 = (Class2_Sub4_Sub1) super.sound;
 		@Pc(58) int local58 = this.anInt1536 << 8;
 		@Pc(63) int local63 = this.anInt1540 << 8;
 		@Pc(69) int local69 = local53.aByteArray8.length << 8;
@@ -223,7 +223,7 @@ public final class Class2_Sub10_Sub1 extends Class2_Sub10 {
 			this.method1287(arg2);
 			return 0;
 		}
-		@Pc(21) Class2_Sub4_Sub1 local21 = (Class2_Sub4_Sub1) super.aClass2_Sub4_3;
+		@Pc(21) Class2_Sub4_Sub1 local21 = (Class2_Sub4_Sub1) super.sound;
 		@Pc(26) int local26 = this.anInt1536 << 8;
 		@Pc(31) int local31 = this.anInt1540 << 8;
 		@Pc(37) int local37 = local21.aByteArray8.length << 8;
@@ -363,16 +363,16 @@ public final class Class2_Sub10_Sub1 extends Class2_Sub10 {
 		@Pc(4) int local4 = this.anInt1544 * 3;
 		local4 = (local4 ^ local4 >> 31) + (local4 >>> 31);
 		if (this.anInt1543 == 0) {
-			local4 -= local4 * this.anInt1538 / (((Class2_Sub4_Sub1) super.aClass2_Sub4_3).aByteArray8.length << 8);
+			local4 -= local4 * this.anInt1538 / (((Class2_Sub4_Sub1) super.sound).aByteArray8.length << 8);
 		} else if (this.anInt1543 >= 0) {
-			local4 -= local4 * this.anInt1536 / ((Class2_Sub4_Sub1) super.aClass2_Sub4_3).aByteArray8.length;
+			local4 -= local4 * this.anInt1536 / ((Class2_Sub4_Sub1) super.sound).aByteArray8.length;
 		}
 		return local4 > 255 ? 255 : local4;
 	}
 
 	@OriginalMember(owner = "client!m", name = "<init>", descriptor = "(Lclient!ed;II)V", line = 746)
-	public Class2_Sub10_Sub1(@OriginalArg(0) Class2_Sub4_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		super.aClass2_Sub4_3 = arg0;
+	public SoundAudioBuss(@OriginalArg(0) Class2_Sub4_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		super.sound = arg0;
 		this.anInt1536 = arg0.anInt613;
 		this.anInt1540 = arg0.anInt612;
 		this.anInt1537 = arg1;

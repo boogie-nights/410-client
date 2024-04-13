@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!qa")
-public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
+public final class Class2_Sub10_Sub2 extends AudioBuss {
 
 	@OriginalMember(owner = "client!qa", name = "t", descriptor = "I")
 	private final int anInt1882 = 16;
@@ -25,7 +25,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 	private int anInt1885 = 0;
 
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!pc;)V", line = 13)
-	public synchronized void method1289(@OriginalArg(0) Class2_Sub10 arg0) {
+	public synchronized void method1289(@OriginalArg(0) AudioBuss arg0) {
 		@Pc(5) LinkList local5 = this.aClass44Array1[Static112.method1293(arg0)];
 		local5.method1229(arg0);
 	}
@@ -35,13 +35,13 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 		this.anInt1883 -= arg2;
 		@Pc(18) int local18;
 		@Pc(24) LinkList local24;
-		@Pc(29) Class2_Sub10 local29;
+		@Pc(29) AudioBuss local29;
 		@Pc(33) int local33;
 		if (this.anInt1883 <= 0) {
 			this.anInt1883 += Static11.anInt291 >> 4;
 			for (local18 = 0; local18 < 8; local18++) {
 				local24 = this.aClass44Array1[local18];
-				for (local29 = (Class2_Sub10) local24.method1224(); local29 != null; local29 = (Class2_Sub10) local24.method1231()) {
+				for (local29 = (AudioBuss) local24.head(); local29 != null; local29 = (AudioBuss) local24.method1231()) {
 					local33 = Static112.method1293(local29);
 					if (local33 != local18) {
 						this.aClass44Array1[local33].method1229(local29);
@@ -51,10 +51,10 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 		}
 		for (local18 = 0; local18 < 8; local18++) {
 			local24 = this.aClass44Array1[local18];
-			for (local29 = (Class2_Sub10) local24.method1224(); local29 != null; local29 = (Class2_Sub10) local24.method1231()) {
-				local29.aBoolean153 = false;
-				if (local29.aClass2_Sub4_3 != null) {
-					local29.aClass2_Sub4_3.anInt610 = 0;
+			for (local29 = (AudioBuss) local24.head(); local29 != null; local29 = (AudioBuss) local24.method1231()) {
+				local29.active = false;
+				if (local29.sound != null) {
+					local29.sound.pos = 0;
 				}
 			}
 		}
@@ -75,20 +75,20 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 				if ((local118 & 0x1) != 0) {
 					local93 &= ~(0x1 << local102);
 					@Pc(137) LinkList local137 = this.aClass44Array1[local102];
-					for (@Pc(142) Class2_Sub10 local142 = (Class2_Sub10) local137.method1224(); local142 != null; local142 = (Class2_Sub10) local137.method1231()) {
-						if (!local142.aBoolean153) {
-							@Pc(149) Class2_Sub4 local149 = local142.aClass2_Sub4_3;
-							if (local149 == null || local149.anInt610 <= local107) {
+					for (@Pc(142) AudioBuss local142 = (AudioBuss) local137.head(); local142 != null; local142 = (AudioBuss) local137.method1231()) {
+						if (!local142.active) {
+							@Pc(149) SoundPacket local149 = local142.sound;
+							if (local149 == null || local149.pos <= local107) {
 								if (local91 < this.anInt1882) {
 									@Pc(172) int local172 = local142.method1286(arg0, arg1, arg2);
 									local91 += local172;
 									if (local149 != null) {
-										local149.anInt610 += local172;
+										local149.pos += local172;
 									}
 								} else {
 									local142.method1287(arg2);
 								}
-								local142.aBoolean153 = true;
+								local142.active = true;
 							} else {
 								local93 |= 0x1 << local102;
 							}
@@ -108,7 +108,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 		if (this.anInt1885 <= 0) {
 			return;
 		}
-		for (@Pc(8) Class2_Sub1 local8 = (Class2_Sub1) this.aClass44_5.method1224(); local8 != null; local8 = (Class2_Sub1) this.aClass44_5.method1231()) {
+		for (@Pc(8) Class2_Sub1 local8 = (Class2_Sub1) this.aClass44_5.head(); local8 != null; local8 = (Class2_Sub1) this.aClass44_5.method1231()) {
 			local8.anInt32 -= this.anInt1885;
 		}
 		this.anInt1884 -= this.anInt1885;
@@ -133,7 +133,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 			arg0 -= local29;
 			this.anInt1885 += local29;
 			this.method1291();
-			@Pc(50) Class2_Sub1 local50 = (Class2_Sub1) this.aClass44_5.method1224();
+			@Pc(50) Class2_Sub1 local50 = (Class2_Sub1) this.aClass44_5.head();
 			synchronized (local50) {
 				@Pc(58) int local58 = local50.method17(this);
 				if (local58 < 0) {
@@ -164,7 +164,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 		}
 		for (@Pc(13) int local13 = 0; local13 < 8; local13++) {
 			@Pc(19) LinkList local19 = this.aClass44Array1[local13];
-			for (@Pc(24) Class2_Sub10 local24 = (Class2_Sub10) local19.method1224(); local24 != null; local24 = (Class2_Sub10) local19.method1231()) {
+			for (@Pc(24) AudioBuss local24 = (AudioBuss) local19.head(); local24 != null; local24 = (AudioBuss) local19.method1231()) {
 				local24.method1287(arg0);
 			}
 		}
@@ -188,7 +188,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 			arg2 -= local33;
 			this.anInt1885 += local33;
 			this.method1291();
-			@Pc(61) Class2_Sub1 local61 = (Class2_Sub1) this.aClass44_5.method1224();
+			@Pc(61) Class2_Sub1 local61 = (Class2_Sub1) this.aClass44_5.head();
 			synchronized (local61) {
 				@Pc(69) int local69 = local61.method17(this);
 				if (local69 < 0) {

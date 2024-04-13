@@ -3,237 +3,113 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
-@OriginalClass("client!f")
+@OriginalClass("client!ee")
 public final class SpotAnimType extends Hashable {
 
-	@OriginalMember(owner = "client!f", name = "Y", descriptor = "[I")
-	public int[] anIntArray124;
+	@OriginalMember(owner = "client!ee", name = "X", descriptor = "I")
+	public int anInt634;
 
-	@OriginalMember(owner = "client!f", name = "db", descriptor = "[I")
-	private int[] anIntArray125;
+	@OriginalMember(owner = "client!ee", name = "fb", descriptor = "I")
+	private int anInt639;
 
-	@OriginalMember(owner = "client!f", name = "nb", descriptor = "[I")
-	private int[] anIntArray127;
+	@OriginalMember(owner = "client!ee", name = "T", descriptor = "I")
+	private int anInt630 = 0;
 
-	@OriginalMember(owner = "client!f", name = "ob", descriptor = "[I")
-	public int[] anIntArray128;
+	@OriginalMember(owner = "client!ee", name = "W", descriptor = "I")
+	private int anInt633 = 128;
 
-	@OriginalMember(owner = "client!f", name = "Z", descriptor = "I")
-	public int anInt664 = -1;
+	@OriginalMember(owner = "client!ee", name = "O", descriptor = "I")
+	private int anInt627 = 128;
 
-	@OriginalMember(owner = "client!f", name = "bb", descriptor = "I")
-	public int anInt666 = -1;
+	@OriginalMember(owner = "client!ee", name = "S", descriptor = "[I")
+	private final int[] anIntArray113 = new int[6];
 
-	@OriginalMember(owner = "client!f", name = "gb", descriptor = "I")
-	public int anInt669 = -1;
+	@OriginalMember(owner = "client!ee", name = "hb", descriptor = "I")
+	public int anInt640 = -1;
 
-	@OriginalMember(owner = "client!f", name = "X", descriptor = "I")
-	public int anInt663 = -1;
+	@OriginalMember(owner = "client!ee", name = "bb", descriptor = "I")
+	private int anInt636 = 0;
 
-	@OriginalMember(owner = "client!f", name = "S", descriptor = "I")
-	public int anInt658 = 5;
+	@OriginalMember(owner = "client!ee", name = "ab", descriptor = "[I")
+	private final int[] anIntArray114 = new int[6];
 
-	@OriginalMember(owner = "client!f", name = "W", descriptor = "I")
-	public int anInt662 = 2;
+	@OriginalMember(owner = "client!ee", name = "P", descriptor = "I")
+	private int anInt628 = 0;
 
-	@OriginalMember(owner = "client!f", name = "U", descriptor = "I")
-	public int anInt660 = 99;
-
-	@OriginalMember(owner = "client!f", name = "cb", descriptor = "Z")
-	public boolean aBoolean50 = false;
-
-	@OriginalMember(owner = "client!f", name = "fb", descriptor = "I")
-	public int anInt668 = -1;
-
-	@OriginalMember(owner = "client!f", name = "a", descriptor = "(IILclient!ne;)Lclient!ne;", line = 3)
-	public Model method516(@OriginalArg(0) int arg0, @OriginalArg(2) Model arg1) {
-		@Pc(8) int local8 = this.anIntArray124[arg0];
-		@Pc(16) Class2_Sub2_Sub14 local16 = Static38.method754(local8 >> 16);
-		@Pc(20) int local20 = local8 & 0xFFFF;
-		if (local16 == null) {
-			return arg1.method1142(true);
+	@OriginalMember(owner = "client!ee", name = "a", descriptor = "(BI)Lclient!ne;", line = 6)
+	public Model method501(@OriginalArg(1) int arg0) {
+		@Pc(13) Model local13 = (Model) Static1.aClass47_15.method1325((long) this.anInt634);
+		if (local13 == null) {
+			local13 = Static65.method1163(Static84.aClass5_28, this.anInt639);
+			if (local13 == null) {
+				return null;
+			}
+			for (@Pc(27) int local27 = 0; local27 < 6; local27++) {
+				if (this.anIntArray113[0] != 0) {
+					local13.method1140(this.anIntArray113[local27], this.anIntArray114[local27]);
+				}
+			}
+			local13.method1160();
+			local13.method1153(this.anInt636 + 64, this.anInt630 + 850, -30, -50, -30, true);
+			Static1.aClass47_15.method1332((long) this.anInt634, local13);
 		}
-		@Pc(28) Class2_Sub2_Sub14 local28 = null;
-		@Pc(30) int local30 = 0;
-		if (this.anIntArray127 != null && this.anIntArray127.length > arg0) {
-			local30 = this.anIntArray127[arg0];
-			local28 = Static38.method754(local30 >> 16);
-			local30 &= 0xFFFF;
-		}
-		@Pc(69) Model local69;
-		if (local28 == null || local30 == 65535) {
-			local69 = arg1.method1142(!local16.method1403(local20));
-			local69.method1134(local16, local20);
-			return local69;
+		@Pc(92) Model local92;
+		if (this.anInt640 == -1 || arg0 == -1) {
+			local92 = local13.method1147(true);
 		} else {
-			local69 = arg1.method1142(!local16.method1403(local20) & !local28.method1403(local30));
-			local69.method1134(local16, local20);
-			local69.method1134(local28, local30);
-			return local69;
+			local92 = Static57.method1042(this.anInt640).method518(local13, arg0);
 		}
+		if (this.anInt627 != 128 || this.anInt633 != 128) {
+			local92.method1156(this.anInt627, this.anInt633, this.anInt627);
+		}
+		if (this.anInt628 != 0) {
+			if (this.anInt628 == 90) {
+				local92.method1148();
+			}
+			if (this.anInt628 == 180) {
+				local92.method1148();
+				local92.method1148();
+			}
+			if (this.anInt628 == 270) {
+				local92.method1148();
+				local92.method1148();
+				local92.method1148();
+			}
+		}
+		return local92;
 	}
 
-	@OriginalMember(owner = "client!f", name = "a", descriptor = "(BILclient!eb;)V", line = 54)
-	private void method517(@OriginalArg(1) int arg0, @OriginalArg(2) Packet arg1) {
-		@Pc(19) int local19;
-		@Pc(25) int local25;
-		@Pc(50) int local50;
-		if (arg0 == 1) {
-			local19 = arg1.g1();
-			this.anIntArray128 = new int[local19];
-			for (local25 = 0; local25 < local19; local25++) {
-				this.anIntArray128[local25] = arg1.g2();
-			}
-			this.anIntArray124 = new int[local19];
-			for (local50 = 0; local50 < local19; local50++) {
-				this.anIntArray124[local50] = arg1.g2();
-			}
-			for (@Pc(69) int local69 = 0; local69 < local19; local69++) {
-				this.anIntArray124[local69] = (arg1.g2() << 16) + this.anIntArray124[local69];
-			}
-		} else if (arg0 == 2) {
-			this.anInt669 = arg1.g2();
-		} else if (arg0 == 3) {
-			local19 = arg1.g1();
-			this.anIntArray125 = new int[local19 + 1];
-			for (local25 = 0; local25 < local19; local25++) {
-				this.anIntArray125[local25] = arg1.g1();
-			}
-			this.anIntArray125[local19] = 9999999;
-		} else if (arg0 == 4) {
-			this.aBoolean50 = true;
-		} else if (arg0 == 5) {
-			this.anInt658 = arg1.g1();
-		} else if (arg0 == 6) {
-			this.anInt668 = arg1.g2();
-		} else if (arg0 == 7) {
-			this.anInt664 = arg1.g2();
-		} else if (arg0 == 8) {
-			this.anInt660 = arg1.g1();
-		} else if (arg0 == 9) {
-			this.anInt663 = arg1.g1();
-		} else if (arg0 == 10) {
-			this.anInt666 = arg1.g1();
-		} else if (arg0 == 11) {
-			this.anInt662 = arg1.g1();
-		} else if (arg0 == 12) {
-			local19 = arg1.g1();
-			this.anIntArray127 = new int[local19];
-			for (local25 = 0; local25 < local19; local25++) {
-				this.anIntArray127[local25] = arg1.g2();
-			}
-			for (local50 = 0; local50 < local19; local50++) {
-				this.anIntArray127[local50] = (arg1.g2() << 16) + this.anIntArray127[local50];
-			}
-		}
-	}
-
-	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!ne;IB)Lclient!ne;", line = 170)
-	public Model method518(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1) {
-		@Pc(8) int local8 = this.anIntArray124[arg1];
-		@Pc(16) Class2_Sub2_Sub14 local16 = Static38.method754(local8 >> 16);
-		@Pc(20) int local20 = local8 & 0xFFFF;
-		if (local16 == null) {
-			return arg0.method1147(true);
-		} else {
-			@Pc(39) Model local39 = arg0.method1147(!local16.method1403(local20));
-			local39.method1134(local16, local20);
-			return local39;
-		}
-	}
-
-	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!f;ILclient!ne;IZ)Lclient!ne;", line = 191)
-	public Model method519(@OriginalArg(0) SpotAnimType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Model arg2, @OriginalArg(3) int arg3) {
-		@Pc(4) int local4 = this.anIntArray124[arg3];
-		@Pc(14) Class2_Sub2_Sub14 local14 = Static38.method754(local4 >> 16);
-		@Pc(18) int local18 = local4 & 0xFFFF;
-		if (local14 == null) {
-			return arg0.method526(arg2, arg1);
-		}
-		@Pc(31) int local31 = arg0.anIntArray124[arg1];
-		@Pc(37) Class2_Sub2_Sub14 local37 = Static38.method754(local31 >> 16);
-		@Pc(41) int local41 = local31 & 0xFFFF;
-		@Pc(54) Model local54;
-		if (local37 == null) {
-			local54 = arg2.method1142(!local14.method1403(local18));
-			local54.method1134(local14, local18);
-			return local54;
-		} else {
-			local54 = arg2.method1142(!local14.method1403(local18) & !local37.method1403(local41));
-			local54.method1159(local14, local18, local37, local41, this.anIntArray125);
-			return local54;
-		}
-	}
-
-	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!ne;IBI)Lclient!ne;", line = 287)
-	public Model method521(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(6) int local6 = this.anIntArray124[arg1];
-		@Pc(12) Class2_Sub2_Sub14 local12 = Static38.method754(local6 >> 16);
-		@Pc(16) int local16 = local6 & 0xFFFF;
-		if (local12 == null) {
-			return arg0.method1142(true);
-		}
-		@Pc(30) int local30 = arg2 & 0x3;
-		@Pc(43) Model local43 = arg0.method1142(!local12.method1403(local16));
-		if (local30 == 1) {
-			local43.method1146();
-		} else if (local30 == 2) {
-			local43.method1149();
-		} else if (local30 == 3) {
-			local43.method1148();
-		}
-		local43.method1134(local12, local16);
-		if (local30 == 1) {
-			local43.method1148();
-		} else if (local30 == 2) {
-			local43.method1149();
-		} else if (local30 == 3) {
-			local43.method1146();
-		}
-		return local43;
-	}
-
-	@OriginalMember(owner = "client!f", name = "b", descriptor = "(Z)V", line = 341)
-	public void method522() {
-		if (this.anInt663 == -1) {
-			if (this.anIntArray125 == null) {
-				this.anInt663 = 0;
-			} else {
-				this.anInt663 = 2;
-			}
-		}
-		if (this.anInt666 != -1) {
-			return;
-		}
-		if (this.anIntArray125 == null) {
-			this.anInt666 = 0;
-		} else {
-			this.anInt666 = 2;
-		}
-	}
-
-	@OriginalMember(owner = "client!f", name = "a", descriptor = "(ILclient!eb;)V", line = 373)
-	public void method523(@OriginalArg(1) Packet arg0) {
+	@OriginalMember(owner = "client!ee", name = "a", descriptor = "(ILclient!eb;)V", line = 937)
+	public void method504(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}
-			this.method517(local5, arg0);
+			this.method505(local5, arg0);
 		}
 	}
 
-	@OriginalMember(owner = "client!f", name = "a", descriptor = "(BLclient!ne;I)Lclient!ne;", line = 467)
-	public Model method526(@OriginalArg(1) Model arg0, @OriginalArg(2) int arg1) {
-		@Pc(16) int local16 = this.anIntArray124[arg1];
-		@Pc(22) Class2_Sub2_Sub14 local22 = Static38.method754(local16 >> 16);
-		@Pc(26) int local26 = local16 & 0xFFFF;
-		if (local22 == null) {
-			return arg0.method1142(true);
-		} else {
-			@Pc(43) Model local43 = arg0.method1142(!local22.method1403(local26));
-			local43.method1134(local22, local26);
-			return local43;
+	@OriginalMember(owner = "client!ee", name = "a", descriptor = "(IILclient!eb;)V", line = 967)
+	private void method505(@OriginalArg(0) int arg0, @OriginalArg(2) Packet arg1) {
+		if (arg0 == 1) {
+			this.anInt639 = arg1.g2();
+		} else if (arg0 == 2) {
+			this.anInt640 = arg1.g2();
+		} else if (arg0 == 4) {
+			this.anInt627 = arg1.g2();
+		} else if (arg0 == 5) {
+			this.anInt633 = arg1.g2();
+		} else if (arg0 == 6) {
+			this.anInt628 = arg1.g2();
+		} else if (arg0 == 7) {
+			this.anInt636 = arg1.g1();
+		} else if (arg0 == 8) {
+			this.anInt630 = arg1.g1();
+		} else if (arg0 >= 40 && arg0 < 50) {
+			this.anIntArray113[arg0 - 40] = arg1.g2();
+		} else if (arg0 >= 50 && arg0 < 60) {
+			this.anIntArray114[arg0 - 50] = arg1.g2();
 		}
 	}
 }

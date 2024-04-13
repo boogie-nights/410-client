@@ -364,7 +364,7 @@ public final class Static46 {
 	}
 
 	@OriginalMember(owner = "client!k", name = "a", descriptor = "(IBLclient!ad;Lclient!cb;)V", line = 621)
-	public static void method848(@OriginalArg(0) int arg0, @OriginalArg(2) Js5ResourceProvider arg1, @OriginalArg(3) DiskStore arg2) {
+	public static void method848(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) DiskStore arg2) {
 		@Pc(7) Class2_Sub9 local7 = new Class2_Sub9();
 		local7.anInt1189 = 1;
 		local7.aClass5_Sub1_11 = arg1;

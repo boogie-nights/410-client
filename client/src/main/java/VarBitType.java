@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ae")
-public final class Class2_Sub2_Sub1 extends Hashable {
+public final class VarBitType extends Hashable {
 
 	@OriginalMember(owner = "client!ae", name = "O", descriptor = "I")
 	public int anInt170;

@@ -24,7 +24,7 @@ public final class Class18_Sub2 extends Class18 {
 		if (local4 > local9) {
 			local9 = local4;
 		}
-		Static86.method1494(local9 / 1000000L);
+		Static86.sleep(local9 / 1000000L);
 		@Pc(24) long local24 = System.nanoTime();
 		while (local11 < 10 && (local11 < 1 || this.aLong117 < local24)) {
 			this.aLong117 += (long) arg0 * 1000000L;

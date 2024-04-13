@@ -32,7 +32,7 @@ public final class SignLink implements Runnable {
 	private boolean aBoolean24 = false;
 
 	@OriginalMember(owner = "client!bb", name = "b", descriptor = "Lclient!qd;")
-	private Class48 aClass48_1 = null;
+	private ObjectRequest aClass48_1 = null;
 
 	@OriginalMember(owner = "client!bb", name = "o", descriptor = "Ljava/applet/Applet;")
 	public Applet anApplet1 = null;
@@ -41,7 +41,7 @@ public final class SignLink implements Runnable {
 	private String aString2 = null;
 
 	@OriginalMember(owner = "client!bb", name = "s", descriptor = "Lclient!qd;")
-	private Class48 aClass48_2 = null;
+	private ObjectRequest aClass48_2 = null;
 
 	@OriginalMember(owner = "client!bb", name = "f", descriptor = "Ljava/lang/String;")
 	private String aString3 = null;
@@ -71,7 +71,7 @@ public final class SignLink implements Runnable {
 	private final Thread aThread1;
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(I)Lclient!qd;", line = 3)
-	public Class48 method197() {
+	public ObjectRequest method197() {
 		return null;
 	}
 
@@ -81,21 +81,21 @@ public final class SignLink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(ZI)Lclient!qd;", line = 31)
-	public Class48 method199(@OriginalArg(1) int arg0) {
+	public ObjectRequest method199(@OriginalArg(1) int arg0) {
 		return this.method200(arg0, 3, null);
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(IBILjava/lang/Object;I)Lclient!qd;", line = 54)
-	private Class48 method200(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Object arg2) {
-		@Pc(3) Class48 local3 = new Class48();
+	private ObjectRequest method200(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Object arg2) {
+		@Pc(3) ObjectRequest local3 = new ObjectRequest();
 		local3.anInt1926 = arg0;
 		local3.anInt1927 = arg1;
-		local3.anObject3 = arg2;
+		local3.objArg = arg2;
 		synchronized (this) {
 			if (this.aClass48_2 == null) {
 				this.aClass48_2 = this.aClass48_1 = local3;
 			} else {
-				this.aClass48_2.aClass48_8 = local3;
+				this.aClass48_2.request = local3;
 				this.aClass48_2 = local3;
 			}
 			this.notify();
@@ -104,12 +104,12 @@ public final class SignLink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;I)Lclient!qd;", line = 93)
-	public Class48 method201(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1, @OriginalArg(2) Class[] arg2) {
+	public ObjectRequest method201(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1, @OriginalArg(2) Class[] arg2) {
 		return this.method200(0, 9, new Object[] { arg0, arg1, arg2 });
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(BI)Lclient!qd;", line = 113)
-	public Class48 method202(@OriginalArg(1) int arg0) {
+	public ObjectRequest method202(@OriginalArg(1) int arg0) {
 		return this.method200(arg0, 1, null);
 	}
 
@@ -169,7 +169,7 @@ public final class SignLink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(BLjava/lang/String;Ljava/lang/Class;)Lclient!qd;", line = 212)
-	public Class48 method204(@OriginalArg(1) String arg0, @OriginalArg(2) Class arg1) {
+	public ObjectRequest method204(@OriginalArg(1) String arg0, @OriginalArg(2) Class arg1) {
 		return this.method200(0, 10, new Object[] { arg1, arg0 });
 	}
 
@@ -217,7 +217,7 @@ public final class SignLink implements Runnable {
 	@Override
 	public void run() {
 		while (true) {
-			@Pc(15) Class48 local15;
+			@Pc(15) ObjectRequest local15;
 			synchronized (this) {
 				while (true) {
 					if (this.aBoolean24) {
@@ -225,7 +225,7 @@ public final class SignLink implements Runnable {
 					}
 					if (this.aClass48_1 != null) {
 						local15 = this.aClass48_1;
-						this.aClass48_1 = this.aClass48_1.aClass48_8;
+						this.aClass48_1 = this.aClass48_1.request;
 						if (this.aClass48_1 == null) {
 							this.aClass48_2 = null;
 						}
@@ -240,23 +240,23 @@ public final class SignLink implements Runnable {
 			try {
 				@Pc(41) int local41 = local15.anInt1927;
 				if (local41 == 1) {
-					local15.anObject4 = new Socket(this.anInetAddress1, local15.anInt1926);
+					local15.value = new Socket(this.anInetAddress1, local15.anInt1926);
 				} else if (local41 == 2) {
-					@Pc(56) Thread local56 = new Thread((Runnable) local15.anObject3);
+					@Pc(56) Thread local56 = new Thread((Runnable) local15.objArg);
 					local56.setDaemon(true);
 					local56.start();
 					local56.setPriority(local15.anInt1926);
-					local15.anObject4 = local56;
+					local15.value = local56;
 				} else if (local41 == 4) {
-					local15.anObject4 = new DataInputStream(((URL) local15.anObject3).openStream());
+					local15.value = new DataInputStream(((URL) local15.objArg).openStream());
 				} else {
 					@Pc(100) Object[] local100;
 					if (local41 == 9) {
-						local100 = (Object[]) local15.anObject3;
-						local15.anObject4 = ((Class) local100[0]).getDeclaredMethod((String) local100[1], (Class[]) local100[2]);
+						local100 = (Object[]) local15.objArg;
+						local15.value = ((Class) local100[0]).getDeclaredMethod((String) local100[1], (Class[]) local100[2]);
 					} else if (local41 == 10) {
-						local100 = (Object[]) local15.anObject3;
-						local15.anObject4 = ((Class) local100[0]).getDeclaredField((String) local100[1]);
+						local100 = (Object[]) local15.objArg;
+						local15.value = ((Class) local100[0]).getDeclaredField((String) local100[1]);
 					} else {
 						throw new Exception();
 					}
@@ -269,7 +269,7 @@ public final class SignLink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(ILjava/lang/Runnable;B)Lclient!qd;", line = 396)
-	public Class48 method207(@OriginalArg(0) int arg0, @OriginalArg(1) Runnable arg1) {
+	public ObjectRequest method207(@OriginalArg(0) int arg0, @OriginalArg(1) Runnable arg1) {
 		return this.method200(arg0, 2, arg1);
 	}
 
@@ -293,7 +293,7 @@ public final class SignLink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(BLjava/net/URL;)Lclient!qd;", line = 458)
-	public Class48 method209(@OriginalArg(1) URL arg0) {
+	public ObjectRequest method209(@OriginalArg(1) URL arg0) {
 		return this.method200(0, 4, arg0);
 	}
 

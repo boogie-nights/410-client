@@ -12,7 +12,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class ClientStream implements Runnable {
 
 	@OriginalMember(owner = "client!hc", name = "n", descriptor = "Lclient!qd;")
-	private Class48 aClass48_3;
+	private ObjectRequest aClass48_3;
 
 	@OriginalMember(owner = "client!hc", name = "q", descriptor = "[B")
 	private byte[] aByteArray11;
@@ -83,11 +83,11 @@ public final class ClientStream implements Runnable {
 		}
 		if (this.aClass48_3 != null) {
 			while (this.aClass48_3.anInt1928 == 0) {
-				Static86.method1494(1L);
+				Static86.sleep(1L);
 			}
 			if (this.aClass48_3.anInt1928 == 1) {
 				try {
-					((Thread) this.aClass48_3.anObject4).join();
+					((Thread) this.aClass48_3.value).join();
 				} catch (@Pc(54) InterruptedException local54) {
 				}
 			}

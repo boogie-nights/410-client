@@ -165,8 +165,8 @@ public final class Static9 {
 				if (Static56.aClass48_6 != null) {
 					local577 = Static2.method21(Static56.aClass48_6.anInt1926);
 					try {
-						if (Static56.aClass48_6.anObject4 != null) {
-							@Pc(593) byte[] local593 = ((String) Static56.aClass48_6.anObject4).getBytes("ISO-8859-1");
+						if (Static56.aClass48_6.value != null) {
+							@Pc(593) byte[] local593 = ((String) Static56.aClass48_6.value).getBytes("ISO-8859-1");
 							local577 = Static64.method1114(local593.length, local593, 0);
 						}
 					} catch (@Pc(602) UnsupportedEncodingException local602) {

@@ -43,7 +43,7 @@ public final class Static80 {
 	}
 
 	@OriginalMember(owner = "client!sc", name = "a", descriptor = "(IILclient!ud;I)Lclient!qb;", line = 97)
-	public static Pix8 method1407(@OriginalArg(1) int arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) int arg2) {
+	public static Pix8 method1407(@OriginalArg(1) int arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(3) int arg2) {
 		return Static84.method1484(arg2, arg1, arg0) ? Static63.method338() : null;
 	}
 }

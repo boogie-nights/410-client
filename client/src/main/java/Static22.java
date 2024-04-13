@@ -10,7 +10,7 @@ public final class Static22 {
 	public static int anInt587;
 
 	@OriginalMember(owner = "client!ec", name = "nb", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_8;
+	public static Js5Index aClass5_8;
 
 	@OriginalMember(owner = "client!ec", name = "c", descriptor = "(B)V", line = 4)
 	public static void method474() {
@@ -94,8 +94,8 @@ public final class Static22 {
 		Static25.method1612(local3 + 1, local9 + 1, local11 - 2, 16, 0);
 		Static25.method1607(local3 + 1, local9 + 18, local11 - 2, local18 - 19, 0);
 		Static13.aClass2_Sub2_Sub2_Sub2_1.method575(JagString.aClass40_524, local3 + 3, local9 + 14, 6116423);
-		@Pc(64) int local64 = Static1.anInt742;
-		@Pc(66) int local66 = Static1.anInt2394;
+		@Pc(64) int local64 = Mouse.x;
+		@Pc(66) int local66 = Mouse.y;
 		if (Static1.anInt16 == 0) {
 			local66 -= 4;
 			local64 -= 4;

@@ -68,7 +68,7 @@ public final class LinkList {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(B)Lclient!g;", line = 140)
-	public Linkable method1224() {
+	public Linkable head() {
 		@Pc(7) Linkable local7 = this.aClass2_71.aClass2_94;
 		if (local7 == this.aClass2_71) {
 			this.aClass2_72 = null;

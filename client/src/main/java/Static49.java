@@ -5,21 +5,21 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static49 {
 
 	@OriginalMember(owner = "client!kc", name = "bd", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_17;
+	public static Js5Index aClass5_17;
 
 	@OriginalMember(owner = "client!kc", name = "cd", descriptor = "[Lclient!vb;")
 	public static Pix24[] aClass2_Sub2_Sub2_Sub4Array7;
 
 	@OriginalMember(owner = "client!kc", name = "md", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_18;
+	public static Js5Index aClass5_18;
 
 	@OriginalMember(owner = "client!kc", name = "n", descriptor = "(I)V", line = 4)
 	public static void method916() {
 		@Pc(5) Mouse local5 = Static1.aClass62_1;
 		synchronized (Static1.aClass62_1) {
 			Static1.anInt2170 = Static1.anInt969;
-			Static1.anInt742 = Static1.anInt112;
-			Static1.anInt2394 = Static1.anInt1663;
+			Mouse.x = Static1.anInt112;
+			Mouse.y = Static1.anInt1663;
 			Static1.anInt2030 = Static1.anInt2520;
 			Static1.anInt2500 = Static1.anInt1166;
 			Static1.anInt2133 = Static1.anInt2494;
@@ -30,7 +30,7 @@ public final class Static49 {
 
 	@OriginalMember(owner = "client!kc", name = "c", descriptor = "(Z)V", line = 28)
 	public static void method917() {
-		for (@Pc(10) ProjectileEntity local10 = (ProjectileEntity) Static1.aClass44_4.method1224(); local10 != null; local10 = (ProjectileEntity) Static1.aClass44_4.method1231()) {
+		for (@Pc(10) ProjectileEntity local10 = (ProjectileEntity) Static1.aClass44_4.head(); local10 != null; local10 = (ProjectileEntity) Static1.aClass44_4.method1231()) {
 			if (local10.anInt1417 != Static1.anInt8 || local10.anInt1427 < Static1.anInt2511) {
 				local10.method1677();
 			} else if (Static1.anInt2511 >= local10.anInt1419) {

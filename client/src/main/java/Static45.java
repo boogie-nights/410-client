@@ -97,7 +97,7 @@ public final class Static45 {
 	}
 
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "(IILclient!ad;IBZI)V", line = 165)
-	public static void method1535(@OriginalArg(0) int arg0, @OriginalArg(2) Js5ResourceProvider arg1, @OriginalArg(3) int arg2, @OriginalArg(4) byte arg3, @OriginalArg(5) boolean arg4, @OriginalArg(6) int arg5) {
+	public static void method1535(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) byte arg3, @OriginalArg(5) boolean arg4, @OriginalArg(6) int arg5) {
 		@Pc(6) long local6 = (long) ((arg5 << 16) + arg0);
 		@Pc(16) Class2_Sub2_Sub9 local16 = (Class2_Sub2_Sub9) Static1.aClass6_6.method190(local6);
 		if (local16 != null) {

@@ -138,7 +138,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 					Static7.method185().repaint();
 				} catch (@Pc(74) Exception local74) {
 				}
-				Static86.method1494(100L);
+				Static86.sleep(100L);
 			}
 		} catch (@Pc(136) Exception local136) {
 			Static36.method727(null, local136);
@@ -160,7 +160,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	public final void destroy() {
 		if (Static1.anApplet_Sub1_1 == this && !Static1.aBoolean116) {
 			Static1.aLong132 = System.currentTimeMillis();
-			Static86.method1494(5000L);
+			Static86.sleep(5000L);
 			Static38.aClass7_4 = null;
 			this.method323();
 		}

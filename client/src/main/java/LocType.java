@@ -493,7 +493,7 @@ public final class LocType extends Hashable {
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIILclient!f;IIIIB)Lclient!ne;", line = 873)
-	public Model method777(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) SpotAnimType arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
+	public Model method777(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) SeqType arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
 		@Pc(21) long local21;
 		if (this.anIntArray211 == null) {
 			local21 = arg0 + (this.anInt1033 << 10);

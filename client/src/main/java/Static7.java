@@ -173,7 +173,7 @@ public final class Static7 {
 	}
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(ILclient!ud;II)[Lclient!qb;", line = 454)
-	public static Pix8[] method194(@OriginalArg(0) int arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) int arg2) {
+	public static Pix8[] method194(@OriginalArg(0) int arg0, @OriginalArg(1) Js5Index arg1, @OriginalArg(2) int arg2) {
 		return Static84.method1484(arg0, arg1, arg2) ? Static88.method1555() : null;
 	}
 

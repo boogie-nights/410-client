@@ -27,12 +27,12 @@ public final class Static36 {
 			local8 = local8.replace('@', '_');
 			local8 = local8.replace('&', '_');
 			local8 = local8.replace('#', '_');
-			@Pc(98) Class48 local98 = Static38.aClass7_4.method209(new URL(Static38.aClass7_4.anApplet1.getCodeBase(), "clienterror.ws?c=" + Static40.anInt1849 + "&u=" + Static94.aLong150 + "&v1=" + Static8.aString4 + "&v2=" + Static8.aString1 + "&e=" + local8));
+			@Pc(98) ObjectRequest local98 = Static38.aClass7_4.method209(new URL(Static38.aClass7_4.anApplet1.getCodeBase(), "clienterror.ws?c=" + Static40.anInt1849 + "&u=" + Static94.aLong150 + "&v1=" + Static8.aString4 + "&v2=" + Static8.aString1 + "&e=" + local8));
 			while (local98.anInt1928 == 0) {
-				Static86.method1494(1L);
+				Static86.sleep(1L);
 			}
 			if (local98.anInt1928 == 1) {
-				@Pc(117) DataInputStream local117 = (DataInputStream) local98.anObject4;
+				@Pc(117) DataInputStream local117 = (DataInputStream) local98.value;
 				local117.read();
 				local117.close();
 			}
@@ -54,7 +54,7 @@ public final class Static36 {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(BLclient!ud;II)Lclient!vb;", line = 364)
-	public static Pix24 method732(@OriginalArg(1) Js5 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+	public static Pix24 method732(@OriginalArg(1) Js5Index arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		return Static84.method1484(arg2, arg0, arg1) ? Static76.method1361() : null;
 	}
 

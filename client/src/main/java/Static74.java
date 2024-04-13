@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static74 {
 
 	@OriginalMember(owner = "client!ra", name = "l", descriptor = "Lclient!ad;")
-	public static Js5ResourceProvider aClass5_Sub1_16;
+	public static Js5 aClass5_Sub1_16;
 
 	@OriginalMember(owner = "client!ra", name = "v", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_26;
+	public static Js5Index aClass5_26;
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(B)V", line = 49)
 	public static void method1342() {
@@ -87,7 +87,7 @@ public final class Static74 {
 				}
 			}
 		}
-		for (@Pc(307) Class2_Sub7 local307 = (Class2_Sub7) Static1.aClass44_7.method1224(); local307 != null; local307 = (Class2_Sub7) Static1.aClass44_7.method1231()) {
+		for (@Pc(307) Class2_Sub7 local307 = (Class2_Sub7) Static1.aClass44_7.head(); local307 != null; local307 = (Class2_Sub7) Static1.aClass44_7.method1231()) {
 			local307.anInt821 -= local54;
 			local307.anInt818 -= local69;
 			if (local307.anInt818 < 0 || local307.anInt821 < 0 || local307.anInt818 >= 104 || local307.anInt821 >= 104) {

@@ -79,7 +79,7 @@ public final class ProjectileEntity extends Entity {
 	private final int anInt1423;
 
 	@OriginalMember(owner = "client!kd", name = "nb", descriptor = "Lclient!f;")
-	private final SpotAnimType aClass2_Sub2_Sub6_1;
+	private final SeqType aClass2_Sub2_Sub6_1;
 
 	@OriginalMember(owner = "client!kd", name = "a", descriptor = "(IIIII)V", line = 14)
 	public void method939(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
@@ -127,7 +127,7 @@ public final class ProjectileEntity extends Entity {
 	@OriginalMember(owner = "client!kd", name = "c", descriptor = "(B)Lclient!ne;", line = 195)
 	@Override
 	protected Model method1533() {
-		@Pc(8) Class2_Sub2_Sub5 local8 = Static5.method116(this.anInt1422);
+		@Pc(8) SpotAnimType local8 = Static5.method116(this.anInt1422);
 		@Pc(21) Model local21 = local8.method501(this.anInt1426);
 		if (local21 == null) {
 			return null;

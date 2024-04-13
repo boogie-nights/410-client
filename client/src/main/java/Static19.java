@@ -40,7 +40,7 @@ public final class Static19 {
 	private static void method388() {
 		@Pc(3) int local3 = -1;
 		if (Static1.anInt1874 == 0 && Static1.anInt641 == 0) {
-			Static20.method402(JagString.aClass40_239, 24, Static1.anInt2394, Static1.anInt742, 0);
+			Static20.method402(JagString.aClass40_239, 24, Mouse.y, Mouse.x, 0);
 		}
 		for (@Pc(32) int local32 = 0; local32 < Model.anInt1747; local32++) {
 			@Pc(38) int local38 = Model.anIntArray387[local32];
@@ -190,7 +190,7 @@ public final class Static19 {
 		if (Static1.anInt1971 != -1) {
 			Static1.anInt1979 = -1;
 			Static1.anInt982 = -1;
-			Static71.method1276(Static1.anInt2394, 0, Static1.anInt1971, 765, 0, 0, Static1.anInt742, 503, -1, 0);
+			Static71.method1276(Mouse.y, 0, Static1.anInt1971, 765, 0, 0, Mouse.x, 503, -1, 0);
 			Static1.anInt1012 = Static1.anInt1979;
 			Static1.anInt721 = Static1.anInt982;
 			return;
@@ -198,22 +198,22 @@ public final class Static19 {
 		Static78.method1385();
 		Static1.anInt982 = -1;
 		Static1.anInt1979 = -1;
-		if (Static1.anInt742 > 4 && Static1.anInt2394 > 4 && Static1.anInt742 < 516 && Static1.anInt2394 < 338) {
+		if (Mouse.x > 4 && Mouse.y > 4 && Mouse.x < 516 && Mouse.y < 338) {
 			if (Static1.anInt2585 == -1) {
 				method388();
 			} else {
-				Static71.method1276(Static1.anInt2394, 4, Static1.anInt2585, 516, 0, 0, Static1.anInt742, 338, -1, 4);
+				Static71.method1276(Mouse.y, 4, Static1.anInt2585, 516, 0, 0, Mouse.x, 338, -1, 4);
 			}
 		}
 		Static1.anInt721 = Static1.anInt982;
 		Static1.anInt1012 = Static1.anInt1979;
 		Static1.anInt1979 = -1;
 		Static1.anInt982 = -1;
-		if (Static1.anInt742 > 553 && Static1.anInt2394 > 205 && Static1.anInt742 < 743 && Static1.anInt2394 < 466) {
+		if (Mouse.x > 553 && Mouse.y > 205 && Mouse.x < 743 && Mouse.y < 466) {
 			if (Static1.anInt1654 != -1) {
-				Static71.method1276(Static1.anInt2394, 553, Static1.anInt1654, 743, 0, 1, Static1.anInt742, 466, -1, 205);
+				Static71.method1276(Mouse.y, 553, Static1.anInt1654, 743, 0, 1, Mouse.x, 466, -1, 205);
 			} else if (Static1.anIntArray2[Static1.anInt1551] != -1) {
-				Static71.method1276(Static1.anInt2394, 553, Static1.anIntArray2[Static1.anInt1551], 743, 0, 1, Static1.anInt742, 466, -1, 205);
+				Static71.method1276(Mouse.y, 553, Static1.anIntArray2[Static1.anInt1551], 743, 0, 1, Mouse.x, 466, -1, 205);
 			}
 		}
 		if (Static1.anInt1496 != Static1.anInt982) {
@@ -227,13 +227,13 @@ public final class Static19 {
 		}
 		@Pc(175) boolean local175 = false;
 		Static1.anInt1979 = -1;
-		if (Static1.anInt742 > 17 && Static1.anInt2394 > 357 && Static1.anInt742 < 496 && Static1.anInt2394 < 453) {
+		if (Mouse.x > 17 && Mouse.y > 357 && Mouse.x < 496 && Mouse.y < 453) {
 			if (Static1.anInt1994 != -1) {
-				Static71.method1276(Static1.anInt2394, 17, Static1.anInt1994, 496, 0, 2, Static1.anInt742, 453, -1, 357);
+				Static71.method1276(Mouse.y, 17, Static1.anInt1994, 496, 0, 2, Mouse.x, 453, -1, 357);
 			} else if (Static1.anInt980 != -1) {
-				Static71.method1276(Static1.anInt2394, 17, Static1.anInt980, 496, 0, 3, Static1.anInt742, 453, -1, 357);
-			} else if (Static1.anInt2394 < 434 && Static1.anInt742 < 426) {
-				Static93.method1590(Static1.anInt2394 - 357, Static1.anInt742 - 17);
+				Static71.method1276(Mouse.y, 17, Static1.anInt980, 496, 0, 3, Mouse.x, 453, -1, 357);
+			} else if (Mouse.y < 434 && Mouse.x < 426) {
+				Static93.method1590(Mouse.y - 357, Mouse.x - 17);
 			}
 		}
 		if ((Static1.anInt1994 != -1 || Static1.anInt980 != -1) && Static1.anInt982 != Static1.anInt2466) {

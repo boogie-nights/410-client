@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ma")
-public final class Class34 {
+public final class IntTreeMap {
 
 	@OriginalMember(owner = "client!ma", name = "j", descriptor = "[I")
 	private final int[] anIntArray315;
@@ -26,7 +26,7 @@ public final class Class34 {
 	}
 
 	@OriginalMember(owner = "client!ma", name = "<init>", descriptor = "([I)V", line = 216)
-	public Class34(@OriginalArg(0) int[] arg0) {
+	public IntTreeMap(@OriginalArg(0) int[] arg0) {
 		@Pc(5) int local5;
 		for (local5 = 1; local5 <= arg0.length + (arg0.length >> 1); local5 <<= 0x1) {
 		}

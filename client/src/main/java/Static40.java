@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static40 {
 
 	@OriginalMember(owner = "client!ib", name = "c", descriptor = "Lclient!ad;")
-	public static Js5ResourceProvider aClass5_Sub1_14;
+	public static Js5 aClass5_Sub1_14;
 
 	@OriginalMember(owner = "client!ib", name = "g", descriptor = "I")
 	public static int anInt1849;
@@ -20,7 +20,7 @@ public final class Static40 {
 	public static boolean aBoolean150;
 
 	@OriginalMember(owner = "client!ib", name = "n", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_25;
+	public static Js5Index aClass5_25;
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(B)V", line = 3)
 	public static void method1239() {
@@ -46,7 +46,7 @@ public final class Static40 {
 			return;
 		}
 		if (arg0.anInt2307 != -1 && arg0.anInt2313 == 0) {
-			@Pc(29) SpotAnimType local29 = Static57.method1042(arg0.anInt2307);
+			@Pc(29) SeqType local29 = Static57.method1042(arg0.anInt2307);
 			if (arg0.anInt2281 > 0 && local29.anInt663 == 0) {
 				arg0.anInt2282++;
 				return;
@@ -191,7 +191,7 @@ public final class Static40 {
 					throw new IOException();
 				}
 				if (Static48.aClass48_5.anInt1928 == 1) {
-					Static64.aClass25_36 = new ClientStream((Socket) Static48.aClass48_5.anObject4, Static91.aClass7_2);
+					Static64.aClass25_36 = new ClientStream((Socket) Static48.aClass48_5.value, Static91.aClass7_2);
 					Static48.aClass48_5 = null;
 					Static1.anInt693 = 2;
 				}
@@ -254,18 +254,18 @@ public final class Static40 {
 				Static1.aClass2_Sub3_Sub1_3.p1(Static1.aClass2_Sub3_Sub1_4.pos + 53);
 				Static1.aClass2_Sub3_Sub1_3.p4(410);
 				Static1.aClass2_Sub3_Sub1_3.p1(Static1.aBoolean2 ? 1 : 0);
-				Static1.aClass2_Sub3_Sub1_3.p4(aClass5_Sub1_14.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static79.aClass5_Sub1_18.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static5.aClass5_Sub1_1.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static26.aClass5_Sub1_5.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static33.aClass5_Sub1_7.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static34.aClass5_Sub1_8.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static77.aClass5_Sub1_17.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static24.aClass5_Sub1_4.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static74.aClass5_Sub1_16.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static33.aClass5_Sub1_6.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static73.aClass5_Sub1_15.anInt95);
-				Static1.aClass2_Sub3_Sub1_3.p4(Static68.aClass5_Sub1_13.anInt95);
+				Static1.aClass2_Sub3_Sub1_3.p4(aClass5_Sub1_14.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static79.aClass5_Sub1_18.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static5.aClass5_Sub1_1.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static26.aClass5_Sub1_5.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static33.aClass5_Sub1_7.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static34.aClass5_Sub1_8.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static77.aClass5_Sub1_17.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static24.aClass5_Sub1_4.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static74.aClass5_Sub1_16.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static33.aClass5_Sub1_6.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static73.aClass5_Sub1_15.crc);
+				Static1.aClass2_Sub3_Sub1_3.p4(Static68.aClass5_Sub1_13.crc);
 				Static1.aClass2_Sub3_Sub1_3.pdata(Static1.aClass2_Sub3_Sub1_4.data, Static1.aClass2_Sub3_Sub1_4.pos);
 				Static64.aClass25_36.method731(Static1.aClass2_Sub3_Sub1_3.data, Static1.aClass2_Sub3_Sub1_3.pos);
 				Static1.aClass2_Sub3_Sub1_4.setSeed(local185);

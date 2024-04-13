@@ -11,7 +11,7 @@ public final class Static34 {
 	public static ClientStream aClass25_20;
 
 	@OriginalMember(owner = "client!h", name = "s", descriptor = "Lclient!ad;")
-	public static Js5ResourceProvider aClass5_Sub1_8;
+	public static Js5 aClass5_Sub1_8;
 
 	@OriginalMember(owner = "client!h", name = "t", descriptor = "I")
 	public static int anInt840;
@@ -56,7 +56,7 @@ public final class Static34 {
 				}
 				if (Static1.anIntArray36[local7] < 0) {
 					@Pc(109) Class2_Sub4_Sub1 local109 = local72.method1216().method491(Static10.aClass56_1);
-					@Pc(114) Class2_Sub10_Sub1 local114 = Static108.method1032(local109, Static1.anInt2372);
+					@Pc(114) SoundAudioBuss local114 = Static108.method1032(local109, Static1.anInt2372);
 					local114.method1027(Static1.anIntArray79[local7] - 1);
 					Static80.aClass2_Sub10_Sub2_1.method1289(local114);
 					Static1.anIntArray36[local7] = -100;
@@ -86,7 +86,7 @@ public final class Static34 {
 	}
 
 	@OriginalMember(owner = "client!h", name = "a", descriptor = "(ILclient!ud;Lclient!o;Lclient!o;)[Lclient!vb;", line = 155)
-	public static Pix24[] method638(@OriginalArg(1) Js5 arg0, @OriginalArg(2) JagString arg1, @OriginalArg(3) JagString arg2) {
+	public static Pix24[] method638(@OriginalArg(1) Js5Index arg0, @OriginalArg(2) JagString arg1, @OriginalArg(3) JagString arg2) {
 		@Pc(12) int local12 = arg0.method80(arg1);
 		@Pc(18) int local18 = arg0.method72(arg2, local12);
 		return Static91.method79(arg0, local18, local12);

@@ -160,7 +160,7 @@ public abstract class Class24_Sub1 extends Class24 implements Runnable {
 					return;
 				}
 			}
-			Static86.method1494(50L);
+			Static86.sleep(50L);
 		}
 	}
 
@@ -195,7 +195,7 @@ public abstract class Class24_Sub1 extends Class24 implements Runnable {
 					}
 					this.method1654(System.currentTimeMillis());
 				}
-				Static86.method1494(5L);
+				Static86.sleep(5L);
 			}
 		} catch (@Pc(33) Exception local33) {
 			Static36.method727(null, local33);

@@ -134,7 +134,7 @@ public final class Static83 {
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!ud;Lclient!ud;BLclient!ud;)V", line = 248)
-	public static void method1471(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(3) Js5 arg2) {
+	public static void method1471(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) Js5Index arg1, @OriginalArg(3) Js5Index arg2) {
 		Static74.aClass5_26 = arg2;
 		Static49.aClass5_17 = arg1;
 		Static54.aClass5_20 = arg0;

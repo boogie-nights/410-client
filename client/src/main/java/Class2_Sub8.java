@@ -146,7 +146,7 @@ public final class Class2_Sub8 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(DILclient!ud;)Z", line = 180)
-	public boolean method742(@OriginalArg(0) double arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
+	public boolean method742(@OriginalArg(0) double arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5Index arg2) {
 		for (@Pc(1) int local1 = 0; local1 < this.anIntArray189.length; local1++) {
 			if (arg2.method61(this.anIntArray189[local1]) == null) {
 				return false;

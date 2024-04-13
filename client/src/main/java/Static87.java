@@ -7,7 +7,7 @@ public final class Static87 {
 	public static int anInt2237;
 
 	@OriginalMember(owner = "client!u", name = "a", descriptor = "(ZZLclient!ud;Lclient!ud;)V", line = 14)
-	public static void method1518(@OriginalArg(1) boolean arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) Js5 arg2) {
+	public static void method1518(@OriginalArg(1) boolean arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(3) Js5Index arg2) {
 		Static22.aClass5_8 = arg1;
 		Static67.aClass5_23 = arg2;
 		Static1.aBoolean65 = arg0;

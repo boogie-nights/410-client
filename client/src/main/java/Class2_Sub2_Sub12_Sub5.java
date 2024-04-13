@@ -28,7 +28,7 @@ public final class Class2_Sub2_Sub12_Sub5 extends Entity {
 	private final int anInt2034;
 
 	@OriginalMember(owner = "client!sa", name = "nb", descriptor = "Lclient!f;")
-	private SpotAnimType aClass2_Sub2_Sub6_2;
+	private SeqType aClass2_Sub2_Sub6_2;
 
 	@OriginalMember(owner = "client!sa", name = "ob", descriptor = "I")
 	private int anInt2023;

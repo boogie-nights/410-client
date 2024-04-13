@@ -21,7 +21,7 @@ public final class Static30 {
 	public static HashTable aClass6_1;
 
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(Lclient!ud;ILclient!ud;)V", line = 4)
-	public static void method591(@OriginalArg(0) Js5 arg0, @OriginalArg(2) Js5 arg1) {
+	public static void method591(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) Js5Index arg1) {
 		Static66.aClass5_22 = arg0;
 		Static63.aClass5_5 = arg1;
 		Static95.anInt2493 = Static63.aClass5_5.method76(3);

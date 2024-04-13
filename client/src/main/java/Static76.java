@@ -51,13 +51,13 @@ public final class Static76 {
 	}
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(II)Lclient!vc;", line = 107)
-	public static Class2_Sub2_Sub16 method1360(@OriginalArg(1) int arg0) {
-		@Pc(6) Class2_Sub2_Sub16 local6 = (Class2_Sub2_Sub16) Static1.aClass47_4.method1325((long) arg0);
+	public static FloorUnderlayType method1360(@OriginalArg(1) int arg0) {
+		@Pc(6) FloorUnderlayType local6 = (FloorUnderlayType) Static1.aClass47_4.method1325((long) arg0);
 		if (local6 != null) {
 			return local6;
 		}
 		@Pc(25) byte[] local25 = Static40.aClass5_25.method68(arg0, 1);
-		local6 = new Class2_Sub2_Sub16();
+		local6 = new FloorUnderlayType();
 		if (local25 != null) {
 			local6.method1640(new Packet(local25), arg0);
 		}

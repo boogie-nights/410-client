@@ -42,7 +42,7 @@ public final class Static99 {
 	}
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(BLclient!pc;)V", line = 77)
-	public static synchronized void method1657(@OriginalArg(1) Class2_Sub10 arg0) {
+	public static synchronized void method1657(@OriginalArg(1) AudioBuss arg0) {
 		Static20.aClass2_Sub10_1 = arg0;
 	}
 
@@ -209,7 +209,7 @@ public final class Static99 {
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(II)I", line = 394)
 	public static int method1662(@OriginalArg(1) int arg0) {
-		@Pc(7) Class2_Sub2_Sub1 local7 = Static32.method621(arg0);
+		@Pc(7) VarBitType local7 = Static32.method621(arg0);
 		@Pc(10) int local10 = local7.anInt171;
 		@Pc(13) int local13 = local7.anInt174;
 		@Pc(16) int local16 = local7.anInt170;

@@ -120,7 +120,7 @@ public final class Static14 {
 	}
 
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(Lclient!ud;Ljava/awt/Component;Lclient!ud;B)V", line = 373)
-	public static void method1263(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Component arg1, @OriginalArg(2) Js5 arg2) {
+	public static void method1263(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) Component arg1, @OriginalArg(2) Js5Index arg2) {
 		if (Static68.aBoolean145) {
 			return;
 		}

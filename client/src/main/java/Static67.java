@@ -9,7 +9,7 @@ public final class Static67 {
 	public static int[] anIntArray407;
 
 	@OriginalMember(owner = "client!oa", name = "s", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_23;
+	public static Js5Index aClass5_23;
 
 	@OriginalMember(owner = "client!oa", name = "c", descriptor = "(I)V", line = 142)
 	public static void method1205() {

@@ -830,17 +830,17 @@ public final class JagString implements Interface2 {
 		@Pc(7) long local7 = this.method1164();
 		@Pc(16) Class local16 = JagString.class;
 		synchronized (local16) {
-			@Pc(41) Class2_Sub6 local41;
+			@Pc(41) StringLinkable local41;
 			if (Static30.aClass6_1 == null) {
 				Static30.aClass6_1 = new HashTable(4096);
 			} else {
-				for (local41 = (Class2_Sub6) Static30.aClass6_1.method190(local7); local41 != null; local41 = (Class2_Sub6) Static30.aClass6_1.method182()) {
+				for (local41 = (StringLinkable) Static30.aClass6_1.method190(local7); local41 != null; local41 = (StringLinkable) Static30.aClass6_1.method182()) {
 					if (this.method1184(local41.aClass40_247)) {
 						return local41.aClass40_247;
 					}
 				}
 			}
-			local41 = new Class2_Sub6();
+			local41 = new StringLinkable();
 			this.aBoolean141 = false;
 			local41.aClass40_247 = this;
 			Static30.aClass6_1.method195(local41, local7);

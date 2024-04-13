@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static68 {
 
 	@OriginalMember(owner = "client!ob", name = "c", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_24;
+	public static Js5Index aClass5_24;
 
 	@OriginalMember(owner = "client!ob", name = "e", descriptor = "Z")
 	public static boolean aBoolean145;
@@ -16,11 +16,11 @@ public final class Static68 {
 	public static DiskStore aClass11_4;
 
 	@OriginalMember(owner = "client!ob", name = "t", descriptor = "Lclient!ad;")
-	public static Js5ResourceProvider aClass5_Sub1_13;
+	public static Js5 aClass5_Sub1_13;
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Z)V", line = 9)
 	public static void method1209() {
-		for (@Pc(15) Class2_Sub7 local15 = (Class2_Sub7) Static1.aClass44_7.method1224(); local15 != null; local15 = (Class2_Sub7) Static1.aClass44_7.method1231()) {
+		for (@Pc(15) Class2_Sub7 local15 = (Class2_Sub7) Static1.aClass44_7.head(); local15 != null; local15 = (Class2_Sub7) Static1.aClass44_7.method1231()) {
 			if (local15.anInt826 > 0) {
 				local15.anInt826--;
 			}

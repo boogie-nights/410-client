@@ -8,7 +8,7 @@ public final class Static38 {
 	public static Class45 aClass45_20;
 
 	@OriginalMember(owner = "client!i", name = "Z", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_13;
+	public static Js5Index aClass5_13;
 
 	@OriginalMember(owner = "client!i", name = "cb", descriptor = "Lclient!bb;")
 	public static SignLink aClass7_4;

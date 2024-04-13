@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static26 {
 
 	@OriginalMember(owner = "client!fb", name = "b", descriptor = "Lclient!ad;")
-	public static Js5ResourceProvider aClass5_Sub1_5;
+	public static Js5 aClass5_Sub1_5;
 
 	@OriginalMember(owner = "client!fb", name = "n", descriptor = "I")
 	public static int anInt685;
@@ -17,7 +17,7 @@ public final class Static26 {
 	public static int anInt686;
 
 	@OriginalMember(owner = "client!fb", name = "x", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_9;
+	public static Js5Index aClass5_9;
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(II)Z", line = 736)
 	public static boolean method533(@OriginalArg(0) int arg0) {
@@ -38,7 +38,7 @@ public final class Static26 {
 						local56 = local30.anInt1574;
 					}
 					if (local56 != -1) {
-						@Pc(71) SpotAnimType local71 = Static57.method1042(local56);
+						@Pc(71) SeqType local71 = Static57.method1042(local56);
 						local30.anInt1593 += Static1.anInt1095;
 						label50: while (true) {
 							do {

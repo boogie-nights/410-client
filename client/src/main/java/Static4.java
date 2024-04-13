@@ -32,7 +32,7 @@ public final class Static4 {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(Lclient!ud;Lclient!o;BLclient!o;)[Lclient!qb;", line = 72)
-	public static Pix8[] method85(@OriginalArg(0) Js5 arg0, @OriginalArg(1) JagString arg1, @OriginalArg(3) JagString arg2) {
+	public static Pix8[] method85(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) JagString arg1, @OriginalArg(3) JagString arg2) {
 		@Pc(9) int local9 = arg0.method80(arg1);
 		@Pc(15) int local15 = arg0.method72(arg2, local9);
 		return Static7.method194(local15, arg0, local9);

@@ -15,11 +15,11 @@ public final class Static58 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!ad;Lclient!cb;ZI)V", line = 351)
-	public static void method1056(@OriginalArg(0) Js5ResourceProvider arg0, @OriginalArg(1) DiskStore arg1, @OriginalArg(3) int arg2) {
+	public static void method1056(@OriginalArg(0) Js5 arg0, @OriginalArg(1) DiskStore arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) byte[] local7 = null;
 		@Pc(9) LinkList local9 = Static1.aClass44_2;
 		synchronized (Static1.aClass44_2) {
-			for (@Pc(16) Class2_Sub9 local16 = (Class2_Sub9) Static1.aClass44_2.method1224(); local16 != null; local16 = (Class2_Sub9) Static1.aClass44_2.method1231()) {
+			for (@Pc(16) Class2_Sub9 local16 = (Class2_Sub9) Static1.aClass44_2.head(); local16 != null; local16 = (Class2_Sub9) Static1.aClass44_2.method1231()) {
 				if ((long) arg2 == local16.aLong152 && arg1 == local16.aClass11_3 && local16.anInt1189 == 0) {
 					local7 = local16.aByteArray13;
 					break;
@@ -138,8 +138,8 @@ public final class Static58 {
 			return;
 		}
 		if (local15 != 1) {
-			local54 = Static1.anInt742;
-			local108 = Static1.anInt2394;
+			local54 = Mouse.x;
+			local108 = Mouse.y;
 			if (Static1.anInt16 == 0) {
 				local54 -= 4;
 				local108 -= 4;

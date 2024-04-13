@@ -8,6 +8,11 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!vd")
 public final class Mouse implements MouseListener, MouseMotionListener {
 
+    @OriginalMember(owner = "client!ga", name = "E", descriptor = "I")
+    public static int x = 0;
+	@OriginalMember(owner = "client!v", name = "db", descriptor = "I")
+	public static int y = 0;
+
 	@OriginalMember(owner = "client!vd", name = "mouseMoved", descriptor = "(Ljava/awt/event/MouseEvent;)V", line = 6)
 	@Override
 	public synchronized void mouseMoved(@OriginalArg(0) MouseEvent arg0) {

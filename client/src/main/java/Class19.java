@@ -19,7 +19,7 @@ public final class Class19 implements Interface4 {
 	private double aDouble1 = 1.0D;
 
 	@OriginalMember(owner = "client!ea", name = "z", descriptor = "Lclient!ud;")
-	private final Js5 aClass5_7;
+	private final Js5Index aClass5_7;
 
 	@OriginalMember(owner = "client!ea", name = "w", descriptor = "I")
 	private final int anInt490;
@@ -100,7 +100,7 @@ public final class Class19 implements Interface4 {
 	}
 
 	@OriginalMember(owner = "client!ea", name = "<init>", descriptor = "(Lclient!ud;Lclient!ud;IDI)V", line = 935)
-	public Class19(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) double arg3, @OriginalArg(4) int arg4) {
+	public Class19(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) Js5Index arg1, @OriginalArg(2) int arg2, @OriginalArg(3) double arg3, @OriginalArg(4) int arg4) {
 		this.anInt488 = arg4;
 		this.aDouble1 = arg3;
 		this.aClass5_7 = arg1;

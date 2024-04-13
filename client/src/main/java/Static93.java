@@ -174,7 +174,7 @@ public final class Static93 {
 	}
 
 	@OriginalMember(owner = "client!va", name = "a", descriptor = "(ILclient!ud;Lclient!ud;)I", line = 430)
-	public static int method1592(@OriginalArg(1) Js5 arg0, @OriginalArg(2) Js5 arg1) {
+	public static int method1592(@OriginalArg(1) Js5Index arg0, @OriginalArg(2) Js5Index arg1) {
 		@Pc(5) int local5 = 0;
 		if (arg1.method73(JagString.aClass40_593, JagString.aClass40_463)) {
 			local5++;

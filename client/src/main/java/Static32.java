@@ -6,16 +6,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static32 {
 
 	@OriginalMember(owner = "client!gd", name = "z", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_11;
+	public static Js5Index aClass5_11;
 
 	@OriginalMember(owner = "client!gd", name = "a", descriptor = "(BI)Lclient!ae;", line = 29)
-	public static Class2_Sub2_Sub1 method621(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub1 local10 = (Class2_Sub2_Sub1) Static1.aClass47_5.method1325((long) arg0);
+	public static VarBitType method621(@OriginalArg(1) int arg0) {
+		@Pc(10) VarBitType local10 = (VarBitType) Static1.aClass47_5.method1325((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
 		@Pc(20) byte[] local20 = Static61.aClass5_21.method68(arg0, 14);
-		local10 = new Class2_Sub2_Sub1();
+		local10 = new VarBitType();
 		if (local20 != null) {
 			local10.method121(new Packet(local20));
 		}
@@ -170,7 +170,7 @@ public final class Static32 {
 							if (Static82.aClass2_Sub2_Sub9_1.aLong152 == 16711935L) {
 								Static39.aClass2_Sub3_3 = Static27.aClass2_Sub3_2;
 								for (local272 = 0; local272 < 256; local272++) {
-									@Pc(482) Js5ResourceProvider local482 = Static1.aClass5_Sub1Array1[local272];
+									@Pc(482) Js5 local482 = Static1.aClass5_Sub1Array1[local272];
 									if (local482 != null) {
 										Static39.aClass2_Sub3_3.pos = local272 * 4 + 5;
 										local280 = Static39.aClass2_Sub3_3.g4s();

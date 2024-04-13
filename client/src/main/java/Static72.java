@@ -18,7 +18,7 @@ public final class Static72 {
 	public static Class45 aClass45_28;
 
 	@OriginalMember(owner = "client!qc", name = "x", descriptor = "Lclient!qd;")
-	public static Class48 aClass48_7;
+	public static ObjectRequest aClass48_7;
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(IIIII)I", line = 43)
 	public static int method1326(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
@@ -38,7 +38,7 @@ public final class Static72 {
 	}
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(Lclient!ud;Lclient!ud;I)V", line = 92)
-	public static void method1329(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1) {
+	public static void method1329(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) Js5Index arg1) {
 		Static49.aClass5_18 = arg0;
 		Static84.aClass5_28 = arg1;
 	}

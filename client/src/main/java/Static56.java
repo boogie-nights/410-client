@@ -8,7 +8,7 @@ public final class Static56 {
 	public static Class45 aClass45_22;
 
 	@OriginalMember(owner = "client!ma", name = "l", descriptor = "Lclient!qd;")
-	public static Class48 aClass48_6;
+	public static ObjectRequest aClass48_6;
 
 	@OriginalMember(owner = "client!ma", name = "n", descriptor = "Lclient!p;")
 	public static Class45 aClass45_23;

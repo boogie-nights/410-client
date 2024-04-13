@@ -12,7 +12,7 @@ public final class Static73 {
 	public static Pix8[] aClass2_Sub2_Sub2_Sub3Array10;
 
 	@OriginalMember(owner = "client!r", name = "n", descriptor = "Lclient!ad;")
-	public static Js5ResourceProvider aClass5_Sub1_15;
+	public static Js5 aClass5_Sub1_15;
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(III)Z", line = 14)
 	public static boolean method1335(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
@@ -157,13 +157,13 @@ public final class Static73 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(II)Lclient!ec;", line = 234)
-	public static FloorUnderlayType method1338(@OriginalArg(0) int arg0) {
-		@Pc(10) FloorUnderlayType local10 = (FloorUnderlayType) Static1.aClass47_23.method1325((long) arg0);
+	public static FloorOverlayType method1338(@OriginalArg(0) int arg0) {
+		@Pc(10) FloorOverlayType local10 = (FloorOverlayType) Static1.aClass47_23.method1325((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
 		@Pc(28) byte[] local28 = Static28.aClass5_10.method68(arg0, 4);
-		local10 = new FloorUnderlayType();
+		local10 = new FloorOverlayType();
 		if (local28 != null) {
 			local10.method478(new Packet(local28), arg0);
 		}

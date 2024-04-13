@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static35 {
 
 	@OriginalMember(owner = "client!hb", name = "S", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_12;
+	public static Js5Index aClass5_12;
 
 	@OriginalMember(owner = "client!hb", name = "U", descriptor = "[[[B")
 	public static byte[][][] aByteArrayArrayArray4;

@@ -807,7 +807,7 @@ public final class Static88 {
 	}
 
 	@OriginalMember(owner = "client!ua", name = "a", descriptor = "(Lclient!ud;ILclient!ud;Lclient!ud;)V", line = 1244)
-	public static void method1551(@OriginalArg(0) Js5 arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) Js5 arg2) {
+	public static void method1551(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(3) Js5Index arg2) {
 		Static68.aClass5_24 = arg2;
 		Static35.aClass5_12 = arg1;
 		Static77.aClass5_27 = arg0;
@@ -872,7 +872,7 @@ public final class Static88 {
 	@OriginalMember(owner = "client!ua", name = "a", descriptor = "(BLclient!ke;)V", line = 1421)
 	public static void method1553(@OriginalArg(1) PathingEntity arg0) {
 		arg0.aBoolean172 = false;
-		@Pc(15) SpotAnimType local15;
+		@Pc(15) SeqType local15;
 		if (arg0.anInt2318 != -1) {
 			local15 = Static57.method1042(arg0.anInt2318);
 			arg0.anInt2296++;
@@ -893,7 +893,7 @@ public final class Static88 {
 			if (local81 == -1) {
 				arg0.anInt2302 = -1;
 			} else {
-				@Pc(89) SpotAnimType local89 = Static57.method1042(local81);
+				@Pc(89) SeqType local89 = Static57.method1042(local81);
 				arg0.anInt2268++;
 				if (arg0.anInt2291 < local89.anIntArray124.length && arg0.anInt2268 > local89.anIntArray128[arg0.anInt2291]) {
 					arg0.anInt2268 = 1;

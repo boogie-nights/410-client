@@ -9,13 +9,13 @@ public final class Static77 {
 	public static int anInt1991;
 
 	@OriginalMember(owner = "client!s", name = "m", descriptor = "Lclient!ad;")
-	public static Js5ResourceProvider aClass5_Sub1_17;
+	public static Js5 aClass5_Sub1_17;
 
 	@OriginalMember(owner = "client!s", name = "n", descriptor = "I")
 	public static int anInt1992;
 
 	@OriginalMember(owner = "client!s", name = "s", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_27;
+	public static Js5Index aClass5_27;
 
 	@OriginalMember(owner = "client!s", name = "a", descriptor = "(B)V", line = 4)
 	public static void method1363() {

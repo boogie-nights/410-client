@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static84 {
 
 	@OriginalMember(owner = "client!tb", name = "I", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_28;
+	public static Js5Index aClass5_28;
 
 	@OriginalMember(owner = "client!tb", name = "W", descriptor = "[I")
 	public static int[] anIntArray472;
@@ -48,37 +48,37 @@ public final class Static84 {
 				Static1.aBooleanArray37[local66] = false;
 			}
 		}
-		Static63.method337(Static1.aClass2_Sub3_Sub1_4);
-		@Pc(88) Object local88 = Static41.aClass52_1.anObject5;
+		Static63.performCheck(Static1.aClass2_Sub3_Sub1_4);
+		@Pc(88) Object local88 = Static41.aClass52_1.lock;
 		@Pc(115) int local115;
 		@Pc(112) int local112;
 		@Pc(117) int local117;
 		@Pc(132) int local132;
-		synchronized (Static41.aClass52_1.anObject5) {
+		synchronized (Static41.aClass52_1.lock) {
 			if (!Static1.aBoolean149) {
-				Static41.aClass52_1.anInt1982 = 0;
-			} else if (Static1.anInt2030 != 0 || Static41.aClass52_1.anInt1982 >= 40) {
+				Static41.aClass52_1.samples = 0;
+			} else if (Static1.anInt2030 != 0 || Static41.aClass52_1.samples >= 40) {
 				Static1.aClass2_Sub3_Sub1_4.pIsaac1(94);
 				Static1.aClass2_Sub3_Sub1_4.p1(0);
 				local112 = 0;
 				local115 = Static1.aClass2_Sub3_Sub1_4.pos;
 				@Pc(150) int local150;
-				for (local117 = 0; local117 < Static41.aClass52_1.anInt1982 && Static1.aClass2_Sub3_Sub1_4.pos - local115 < 240; local117++) {
+				for (local117 = 0; local117 < Static41.aClass52_1.samples && Static1.aClass2_Sub3_Sub1_4.pos - local115 < 240; local117++) {
 					local112++;
-					local132 = Static41.aClass52_1.anIntArray432[local117];
+					local132 = Static41.aClass52_1.x[local117];
 					if (local132 < 0) {
 						local132 = 0;
 					} else if (local132 > 764) {
 						local132 = 764;
 					}
-					local150 = Static41.aClass52_1.anIntArray433[local117];
+					local150 = Static41.aClass52_1.y[local117];
 					if (local150 < 0) {
 						local150 = 0;
 					} else if (local150 > 502) {
 						local150 = 502;
 					}
 					@Pc(172) int local172 = local150 * 765 + local132;
-					if (Static41.aClass52_1.anIntArray433[local117] == -1 && Static41.aClass52_1.anIntArray432[local117] == -1) {
+					if (Static41.aClass52_1.y[local117] == -1 && Static41.aClass52_1.x[local117] == -1) {
 						local132 = -1;
 						local150 = -1;
 						local172 = 524287;
@@ -105,14 +105,14 @@ public final class Static84 {
 					}
 				}
 				Static1.aClass2_Sub3_Sub1_4.psize1(Static1.aClass2_Sub3_Sub1_4.pos - local115);
-				if (local112 < Static41.aClass52_1.anInt1982) {
-					Static41.aClass52_1.anInt1982 -= local112;
-					for (local150 = 0; local150 < Static41.aClass52_1.anInt1982; local150++) {
-						Static41.aClass52_1.anIntArray432[local150] = Static41.aClass52_1.anIntArray432[local112 + local150];
-						Static41.aClass52_1.anIntArray433[local150] = Static41.aClass52_1.anIntArray433[local150 + local112];
+				if (local112 < Static41.aClass52_1.samples) {
+					Static41.aClass52_1.samples -= local112;
+					for (local150 = 0; local150 < Static41.aClass52_1.samples; local150++) {
+						Static41.aClass52_1.x[local150] = Static41.aClass52_1.x[local112 + local150];
+						Static41.aClass52_1.y[local150] = Static41.aClass52_1.y[local150 + local112];
 					}
 				} else {
-					Static41.aClass52_1.anInt1982 = 0;
+					Static41.aClass52_1.samples = 0;
 				}
 			}
 		}
@@ -201,7 +201,7 @@ public final class Static84 {
 		}
 		if (Static1.anInt2077 != 0) {
 			Static1.anInt14++;
-			if (Static1.anInt742 > Static1.anInt309 + 5 || Static1.anInt309 - 5 > Static1.anInt742 || Static1.anInt2394 > Static1.anInt1571 + 5 || Static1.anInt1571 - 5 > Static1.anInt2394) {
+			if (Mouse.x > Static1.anInt309 + 5 || Static1.anInt309 - 5 > Mouse.x || Mouse.y > Static1.anInt1571 + 5 || Static1.anInt1571 - 5 > Mouse.y) {
 				Static1.aBoolean142 = true;
 			}
 			if (Static1.anInt2170 == 0) {
@@ -411,13 +411,13 @@ public final class Static84 {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(Lclient!ud;Z)V", line = 783)
-	public static void method1483(@OriginalArg(0) Js5 arg0) {
+	public static void method1483(@OriginalArg(0) Js5Index arg0) {
 		Static26.aClass5_9 = arg0;
 		Static54.anInt1505 = Static26.aClass5_9.method76(16);
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(IILclient!ud;I)Z", line = 795)
-	public static boolean method1484(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) int arg2) {
+	public static boolean method1484(@OriginalArg(0) int arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(3) int arg2) {
 		@Pc(9) byte[] local9 = arg1.method68(arg0, arg2);
 		if (local9 == null) {
 			return false;

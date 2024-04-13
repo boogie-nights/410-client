@@ -188,7 +188,7 @@ public final class client extends GameShell {
 				}
 			}
 			if (Static1.anInt1675 == 2) {
-				Static27.aClass25_15 = new ClientStream((Socket) Static72.aClass48_7.anObject4, Static91.aClass7_2);
+				Static27.aClass25_15 = new ClientStream((Socket) Static72.aClass48_7.value, Static91.aClass7_2);
 				@Pc(103) Packet local103 = new Packet(5);
 				local103.p1(15);
 				local103.p4(410);
@@ -380,7 +380,7 @@ public final class client extends GameShell {
 	@Override
 	protected void method334() {
 		if (Static41.aClass52_1 != null) {
-			Static41.aClass52_1.aBoolean157 = false;
+			Static41.aClass52_1.running = false;
 		}
 		Static41.aClass52_1 = null;
 		if (Static64.aClass25_36 != null) {

@@ -65,7 +65,7 @@ public final class Static65 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(Lclient!ud;II)Lclient!ne;", line = 1995)
-	public static Model method1163(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
+	public static Model method1163(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) int arg1) {
 		@Pc(5) byte[] local5 = arg0.method68(0, arg1);
 		return local5 == null ? null : new Model(local5);
 	}

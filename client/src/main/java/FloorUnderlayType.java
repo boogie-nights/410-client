@@ -3,125 +3,105 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
-@OriginalClass("client!ec")
+@OriginalClass("client!vc")
 public final class FloorUnderlayType extends Hashable {
 
-	@OriginalMember(owner = "client!ec", name = "S", descriptor = "I")
-	public int anInt578;
+	@OriginalMember(owner = "client!vc", name = "O", descriptor = "I")
+	public int anInt2460;
 
-	@OriginalMember(owner = "client!ec", name = "cb", descriptor = "I")
-	public int anInt585;
+	@OriginalMember(owner = "client!vc", name = "Q", descriptor = "I")
+	public int anInt2461;
 
-	@OriginalMember(owner = "client!ec", name = "eb", descriptor = "I")
-	public int anInt586;
+	@OriginalMember(owner = "client!vc", name = "U", descriptor = "I")
+	public int anInt2464;
 
-	@OriginalMember(owner = "client!ec", name = "gb", descriptor = "I")
-	public int anInt588;
+	@OriginalMember(owner = "client!vc", name = "ab", descriptor = "I")
+	public int anInt2469;
 
-	@OriginalMember(owner = "client!ec", name = "ob", descriptor = "I")
-	public int anInt591;
+	@OriginalMember(owner = "client!vc", name = "X", descriptor = "I")
+	private int anInt2467 = 0;
 
-	@OriginalMember(owner = "client!ec", name = "tb", descriptor = "I")
-	public int anInt594;
-
-	@OriginalMember(owner = "client!ec", name = "Y", descriptor = "I")
-	public int anInt582 = -1;
-
-	@OriginalMember(owner = "client!ec", name = "W", descriptor = "I")
-	public int anInt581 = 0;
-
-	@OriginalMember(owner = "client!ec", name = "sb", descriptor = "I")
-	public int anInt593 = -1;
-
-	@OriginalMember(owner = "client!ec", name = "rb", descriptor = "Z")
-	public boolean aBoolean45 = true;
-
-	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(BILclient!eb;I)V", line = 29)
-	private void method475(@OriginalArg(1) int arg0, @OriginalArg(2) Packet arg1, @OriginalArg(3) int arg2) {
-		if (arg0 == 1) {
-			this.anInt581 = arg1.g3();
-		} else if (arg0 == 2) {
-			this.anInt582 = arg1.g1();
-		} else if (arg0 == 5) {
-			this.aBoolean45 = false;
-		} else if (arg0 == 7) {
-			this.anInt593 = arg1.g3();
+	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(IIBLclient!eb;)V", line = 128)
+	private void method1639(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Packet arg2) {
+		if (arg1 == 1) {
+			this.anInt2467 = arg2.g3();
 		}
 	}
 
-	@OriginalMember(owner = "client!ec", name = "d", descriptor = "(B)V", line = 66)
-	public void method476() {
-		if (this.anInt593 != -1) {
-			this.method479(this.anInt593);
-			this.anInt591 = this.anInt585;
-			this.anInt578 = this.anInt594;
-			this.anInt586 = this.anInt588;
-		}
-		this.method479(this.anInt581);
-	}
-
-	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(Lclient!eb;BI)V", line = 212)
-	public void method478(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
+	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(Lclient!eb;II)V", line = 145)
+	public void method1640(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		while (true) {
-			@Pc(14) int local14 = arg0.g1();
-			if (local14 == 0) {
+			@Pc(9) int local9 = arg0.g1();
+			if (local9 == 0) {
 				return;
 			}
-			this.method475(local14, arg0, arg1);
+			this.method1639(arg1, local9, arg0);
 		}
 	}
 
-	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(BI)V", line = 234)
-	private void method479(@OriginalArg(1) int arg0) {
-		@Pc(10) double local10 = (double) (arg0 >> 8 & 0xFF) / 256.0D;
-		@Pc(31) double local31 = (double) (arg0 >> 16 & 0xFF) / 256.0D;
-		@Pc(38) double local38 = (double) (arg0 & 0xFF) / 256.0D;
-		@Pc(40) double local40 = local31;
-		if (local10 < local31) {
-			local40 = local10;
+	@OriginalMember(owner = "client!vc", name = "c", descriptor = "(B)V", line = 176)
+	public void method1641() {
+		this.method1642(this.anInt2467);
+	}
+
+	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(II)V", line = 190)
+	private void method1642(@OriginalArg(1) int arg0) {
+		@Pc(12) double local12 = (double) (arg0 & 0xFF) / 256.0D;
+		@Pc(21) double local21 = (double) (arg0 >> 8 & 0xFF) / 256.0D;
+		@Pc(30) double local30 = (double) (arg0 >> 16 & 0xFF) / 256.0D;
+		@Pc(32) double local32 = local30;
+		if (local21 < local30) {
+			local32 = local21;
 		}
-		if (local40 > local38) {
-			local40 = local38;
+		if (local32 > local12) {
+			local32 = local12;
 		}
-		@Pc(54) double local54 = 0.0D;
-		@Pc(56) double local56 = local31;
-		if (local31 < local10) {
-			local56 = local10;
+		@Pc(46) double local46 = local30;
+		@Pc(48) double local48 = 0.0D;
+		if (local30 < local21) {
+			local46 = local21;
 		}
-		if (local56 < local38) {
-			local56 = local38;
+		if (local12 > local46) {
+			local46 = local12;
 		}
-		@Pc(70) double local70 = 0.0D;
-		@Pc(76) double local76 = (local56 + local40) / 2.0D;
-		this.anInt594 = (int) (local76 * 256.0D);
-		if (this.anInt594 < 0) {
-			this.anInt594 = 0;
-		} else if (this.anInt594 > 255) {
-			this.anInt594 = 255;
-		}
-		if (local40 != local56) {
-			if (local76 < 0.5D) {
-				local70 = (local56 - local40) / (local56 + local40);
+		@Pc(63) double local63 = (double) 0;
+		@Pc(69) double local69 = (local32 + local46) / 2.0D;
+		this.anInt2460 = (int) (local69 * 256.0D);
+		if (local32 != local46) {
+			if (local30 == local46) {
+				local48 = (local21 - local12) / (local46 - local32);
+			} else if (local46 == local21) {
+				local48 = (local12 - local30) / (local46 - local32) + 2.0D;
+			} else if (local12 == local46) {
+				local48 = (local30 - local21) / (-local32 + local46) + 4.0D;
 			}
-			if (local76 >= 0.5D) {
-				local70 = (local56 - local40) / (2.0D - local56 - local40);
+			if (local69 < 0.5D) {
+				local63 = (local46 - local32) / (local32 + local46);
 			}
-			if (local31 == local56) {
-				local54 = (local10 - local38) / (local56 - local40);
-			} else if (local56 == local10) {
-				local54 = (local38 - local31) / (local56 - local40) + 2.0D;
-			} else if (local56 == local38) {
-				local54 = (local31 - local10) / (local56 - local40) + 4.0D;
+			if (local69 >= 0.5D) {
+				local63 = (local46 - local32) / (2.0D - local46 - local32);
 			}
 		}
-		local54 /= 6.0D;
-		this.anInt585 = (int) (local70 * 256.0D);
-		this.anInt588 = (int) (local54 * 256.0D);
-		if (this.anInt585 < 0) {
-			this.anInt585 = 0;
-		} else if (this.anInt585 > 255) {
-			this.anInt585 = 255;
-			return;
+		this.anInt2461 = (int) (local63 * 256.0D);
+		if (this.anInt2461 < 0) {
+			this.anInt2461 = 0;
+		} else if (this.anInt2461 > 255) {
+			this.anInt2461 = 255;
 		}
+		if (local69 > 0.5D) {
+			this.anInt2464 = (int) (local63 * 512.0D * (1.0D - local69));
+		} else {
+			this.anInt2464 = (int) (local63 * 512.0D * local69);
+		}
+		if (this.anInt2464 < 1) {
+			this.anInt2464 = 1;
+		}
+		if (this.anInt2460 < 0) {
+			this.anInt2460 = 0;
+		} else if (this.anInt2460 > 255) {
+			this.anInt2460 = 255;
+		}
+		local48 /= 6.0D;
+		this.anInt2469 = (int) ((double) this.anInt2464 * local48);
 	}
 }

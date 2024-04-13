@@ -150,8 +150,8 @@ public final class PlayerEntity extends PathingEntity {
 		if (this.aClass33_2 == null) {
 			return null;
 		}
-		@Pc(28) SpotAnimType local28 = super.anInt2307 != -1 && super.anInt2313 == 0 ? Static57.method1042(super.anInt2307) : null;
-		@Pc(49) SpotAnimType local49 = super.anInt2318 == -1 || this.aBoolean104 || super.anInt2290 == super.anInt2318 && local28 != null ? null : Static57.method1042(super.anInt2318);
+		@Pc(28) SeqType local28 = super.anInt2307 != -1 && super.anInt2313 == 0 ? Static57.method1042(super.anInt2307) : null;
+		@Pc(49) SeqType local49 = super.anInt2318 == -1 || this.aBoolean104 || super.anInt2290 == super.anInt2318 && local28 != null ? null : Static57.method1042(super.anInt2318);
 		@Pc(60) Model local60 = this.aClass33_2.method1005(super.anInt2316, super.anInt2295, local28, local49);
 		if (local60 == null) {
 			return null;

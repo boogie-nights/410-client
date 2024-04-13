@@ -125,12 +125,12 @@ public final class Static78 {
 				}
 				if ((local31 == 3 || local31 == 7) && (local31 == 7 || Static1.anInt2515 == 0 || Static1.anInt2515 == 1 && Static36.method729(local35))) {
 					@Pc(85) int local85 = 329 - local15 * 13;
-					if (Static1.anInt742 > 4 && local85 - 10 < Static1.anInt2394 + -4 && local85 + 3 >= Static1.anInt2394 + -4) {
+					if (Mouse.x > 4 && local85 - 10 < Mouse.y + -4 && local85 + 3 >= Mouse.y + -4) {
 						@Pc(129) int local129 = Static95.aClass2_Sub2_Sub2_Sub2_5.method568(Static72.method1334(new JagString[] { JagString.aClass40_18, local35, Static1.aClass40Array30[local21] })) + 25;
 						if (local129 > 450) {
 							local129 = 450;
 						}
-						if (local129 + 4 > Static1.anInt742) {
+						if (local129 + 4 > Mouse.x) {
 							if (Static1.anInt1550 >= 1) {
 								Static20.method402(Static72.method1334(new JagString[] { JagString.aClass40_111, local35 }), 2042, 0, 0, 0);
 							}

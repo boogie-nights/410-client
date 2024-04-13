@@ -130,7 +130,7 @@ public final class Class33 {
 	}
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(IIBLclient!f;Lclient!f;)Lclient!ne;", line = 528)
-	public Model method1005(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) SpotAnimType arg2, @OriginalArg(4) SpotAnimType arg3) {
+	public Model method1005(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) SeqType arg2, @OriginalArg(4) SeqType arg3) {
 		if (this.anInt1520 != -1) {
 			return Static34.method640(this.anInt1520).method605(arg2, arg3, arg0, arg1);
 		}

@@ -9,7 +9,7 @@ public final class Static54 {
 	public static int anInt1500;
 
 	@OriginalMember(owner = "client!lc", name = "j", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_20;
+	public static Js5Index aClass5_20;
 
 	@OriginalMember(owner = "client!lc", name = "k", descriptor = "I")
 	public static int anInt1505;
@@ -111,7 +111,7 @@ public final class Static54 {
 	}
 
 	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(Lclient!ud;ILjava/awt/Component;)V", line = 180)
-	public static void method997(@OriginalArg(0) Js5 arg0, @OriginalArg(2) Component arg1) {
+	public static void method997(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) Component arg1) {
 		if (Static1.aBoolean152) {
 			return;
 		}

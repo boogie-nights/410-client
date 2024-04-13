@@ -8,7 +8,7 @@ public final class Static95 {
 	public static Pix8 aClass2_Sub2_Sub2_Sub3_24;
 
 	@OriginalMember(owner = "client!vd", name = "s", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_30;
+	public static Js5Index aClass5_30;
 
 	@OriginalMember(owner = "client!vd", name = "x", descriptor = "I")
 	public static int anInt2493;
@@ -23,7 +23,7 @@ public final class Static95 {
 	public static int anInt2495;
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(Lclient!o;Lclient!o;ILclient!ud;)Lclient!vb;", line = 36)
-	public static Pix24 method1644(@OriginalArg(0) JagString arg0, @OriginalArg(1) JagString arg1, @OriginalArg(3) Js5 arg2) {
+	public static Pix24 method1644(@OriginalArg(0) JagString arg0, @OriginalArg(1) JagString arg1, @OriginalArg(3) Js5Index arg2) {
 		@Pc(8) int local8 = arg2.method80(arg0);
 		@Pc(14) int local14 = arg2.method72(arg1, local8);
 		return Static36.method732(arg2, local8, local14);
@@ -386,7 +386,7 @@ public final class Static95 {
 				Static1.anInt2194 = 90;
 			}
 		} else if (Static1.anInt1850 == 110) {
-			Static41.aClass52_1 = new Class52();
+			Static41.aClass52_1 = new MouseRecorder();
 			Static91.aClass7_2.method207(10, Static41.aClass52_1);
 			Static1.anInt2194 = 94;
 			Static1.anInt1850 = 120;
@@ -456,7 +456,7 @@ public final class Static95 {
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(Lclient!ud;BLclient!ud;)V", line = 808)
-	private static void method1651(@OriginalArg(0) Js5 arg0, @OriginalArg(2) Js5 arg1) {
+	private static void method1651(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) Js5Index arg1) {
 		aClass5_30 = arg1;
 		Static32.aClass5_11 = arg0;
 	}

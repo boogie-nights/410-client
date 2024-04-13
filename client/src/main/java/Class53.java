@@ -13,11 +13,11 @@ public final class Class53 implements Runnable {
 				@Pc(5) LinkList local5 = Static1.aClass44_2;
 				@Pc(12) Class2_Sub9 local12;
 				synchronized (Static1.aClass44_2) {
-					local12 = (Class2_Sub9) Static1.aClass44_2.method1224();
+					local12 = (Class2_Sub9) Static1.aClass44_2.head();
 				}
 				@Pc(25) Object local25;
 				if (local12 == null) {
-					Static86.method1494(100L);
+					Static86.sleep(100L);
 					local25 = Static1.anObject2;
 					synchronized (Static1.anObject2) {
 						if (Static1.anInt1801 <= 1) {

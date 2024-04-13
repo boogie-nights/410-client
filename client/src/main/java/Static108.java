@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static108 {
 
 	@OriginalMember(owner = "client!m", name = "a", descriptor = "([B[IIIIIIILclient!m;)I", line = 6)
-	public static int method1026(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class2_Sub10_Sub1 arg7) {
+	public static int method1026(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) SoundAudioBuss arg7) {
 		arg2 >>= 0x8;
 		@Pc(7) int local7 = arg6 >> 8;
 		@Pc(11) int local11 = arg4 << 8;
@@ -43,7 +43,7 @@ public final class Static108 {
 	}
 
 	@OriginalMember(owner = "client!m", name = "a", descriptor = "([B[IIIIIIIIILclient!m;)I", line = 38)
-	public static int method1028(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class2_Sub10_Sub1 arg9) {
+	public static int method1028(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) SoundAudioBuss arg9) {
 		arg2 >>= 0x8;
 		@Pc(7) int local7 = arg8 >> 8;
 		arg4 <<= 0x8;
@@ -87,7 +87,7 @@ public final class Static108 {
 	}
 
 	@OriginalMember(owner = "client!m", name = "a", descriptor = "(II[B[IIIIIIILclient!m;II)I", line = 112)
-	public static int method1030(@OriginalArg(2) byte[] arg0, @OriginalArg(3) int[] arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3, @OriginalArg(6) int arg4, @OriginalArg(8) int arg5, @OriginalArg(9) int arg6, @OriginalArg(10) Class2_Sub10_Sub1 arg7, @OriginalArg(11) int arg8, @OriginalArg(12) int arg9) {
+	public static int method1030(@OriginalArg(2) byte[] arg0, @OriginalArg(3) int[] arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3, @OriginalArg(6) int arg4, @OriginalArg(8) int arg5, @OriginalArg(9) int arg6, @OriginalArg(10) SoundAudioBuss arg7, @OriginalArg(11) int arg8, @OriginalArg(12) int arg9) {
 		@Pc(14) int local14;
 		if (arg8 == 0 || (local14 = arg3 + (arg6 + arg8 - arg2 - 257) / arg8) > arg5) {
 			local14 = arg5;
@@ -115,12 +115,12 @@ public final class Static108 {
 	}
 
 	@OriginalMember(owner = "client!m", name = "a", descriptor = "(Lclient!ed;II)Lclient!m;", line = 180)
-	public static Class2_Sub10_Sub1 method1032(@OriginalArg(0) Class2_Sub4_Sub1 arg0, @OriginalArg(2) int arg1) {
-		return arg0.aByteArray8 == null || arg0.aByteArray8.length == 0 ? null : new Class2_Sub10_Sub1(arg0, (int) ((long) arg0.anInt611 * 256L * (long) 100 / (long) (Static11.anInt291 * 100)), arg1);
+	public static SoundAudioBuss method1032(@OriginalArg(0) Class2_Sub4_Sub1 arg0, @OriginalArg(2) int arg1) {
+		return arg0.aByteArray8 == null || arg0.aByteArray8.length == 0 ? null : new SoundAudioBuss(arg0, (int) ((long) arg0.anInt611 * 256L * (long) 100 / (long) (Static11.anInt291 * 100)), arg1);
 	}
 
 	@OriginalMember(owner = "client!m", name = "b", descriptor = "([B[IIIIIIIIILclient!m;)I", line = 188)
-	public static int method1033(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class2_Sub10_Sub1 arg9) {
+	public static int method1033(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) SoundAudioBuss arg9) {
 		arg2 >>= 0x8;
 		@Pc(7) int local7 = arg8 >> 8;
 		arg4 <<= 0x8;
@@ -164,7 +164,7 @@ public final class Static108 {
 	}
 
 	@OriginalMember(owner = "client!m", name = "b", descriptor = "(II[B[IIIIIIILclient!m;II)I", line = 219)
-	public static int method1034(@OriginalArg(2) byte[] arg0, @OriginalArg(3) int[] arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3, @OriginalArg(6) int arg4, @OriginalArg(8) int arg5, @OriginalArg(9) int arg6, @OriginalArg(10) Class2_Sub10_Sub1 arg7, @OriginalArg(11) int arg8, @OriginalArg(12) int arg9) {
+	public static int method1034(@OriginalArg(2) byte[] arg0, @OriginalArg(3) int[] arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3, @OriginalArg(6) int arg4, @OriginalArg(8) int arg5, @OriginalArg(9) int arg6, @OriginalArg(10) SoundAudioBuss arg7, @OriginalArg(11) int arg8, @OriginalArg(12) int arg9) {
 		@Pc(14) int local14;
 		if (arg8 == 0 || (local14 = arg3 + (arg6 + arg8 + 256 - arg2) / arg8) > arg5) {
 			local14 = arg5;
@@ -190,7 +190,7 @@ public final class Static108 {
 	}
 
 	@OriginalMember(owner = "client!m", name = "a", descriptor = "(II[B[IIIIIIIIILclient!m;II)I", line = 644)
-	public static int method1035(@OriginalArg(2) byte[] arg0, @OriginalArg(3) int[] arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) int arg6, @OriginalArg(10) int arg7, @OriginalArg(11) int arg8, @OriginalArg(12) Class2_Sub10_Sub1 arg9, @OriginalArg(13) int arg10, @OriginalArg(14) int arg11) {
+	public static int method1035(@OriginalArg(2) byte[] arg0, @OriginalArg(3) int[] arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) int arg6, @OriginalArg(10) int arg7, @OriginalArg(11) int arg8, @OriginalArg(12) SoundAudioBuss arg9, @OriginalArg(13) int arg10, @OriginalArg(14) int arg11) {
 		@Pc(14) int local14;
 		if (arg10 == 0 || (local14 = arg3 + (arg8 + arg10 - arg2 - 257) / arg10) > arg7) {
 			local14 = arg7;
@@ -221,7 +221,7 @@ public final class Static108 {
 	}
 
 	@OriginalMember(owner = "client!m", name = "b", descriptor = "([B[IIIIIIILclient!m;)I", line = 673)
-	public static int method1036(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class2_Sub10_Sub1 arg7) {
+	public static int method1036(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) SoundAudioBuss arg7) {
 		arg2 >>= 0x8;
 		@Pc(7) int local7 = arg6 >> 8;
 		@Pc(11) int local11 = arg4 << 8;
@@ -259,7 +259,7 @@ public final class Static108 {
 	}
 
 	@OriginalMember(owner = "client!m", name = "b", descriptor = "(II[B[IIIIIIIIILclient!m;II)I", line = 700)
-	public static int method1037(@OriginalArg(2) byte[] arg0, @OriginalArg(3) int[] arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) int arg6, @OriginalArg(10) int arg7, @OriginalArg(11) int arg8, @OriginalArg(12) Class2_Sub10_Sub1 arg9, @OriginalArg(13) int arg10, @OriginalArg(14) int arg11) {
+	public static int method1037(@OriginalArg(2) byte[] arg0, @OriginalArg(3) int[] arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) int arg6, @OriginalArg(10) int arg7, @OriginalArg(11) int arg8, @OriginalArg(12) SoundAudioBuss arg9, @OriginalArg(13) int arg10, @OriginalArg(14) int arg11) {
 		@Pc(14) int local14;
 		if (arg10 == 0 || (local14 = arg3 + (arg8 + arg10 + 256 - arg2) / arg10) > arg7) {
 			local14 = arg7;

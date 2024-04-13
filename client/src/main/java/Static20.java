@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static20 {
 
 	@OriginalMember(owner = "client!ea", name = "b", descriptor = "Lclient!pc;")
-	public static Class2_Sub10 aClass2_Sub10_1;
+	public static AudioBuss aClass2_Sub10_1;
 
 	@OriginalMember(owner = "client!ea", name = "l", descriptor = "Lclient!p;")
 	public static Class45 aClass45_11;
@@ -175,11 +175,11 @@ public final class Static20 {
 											local18 = false;
 										} else {
 											if (Static1.anInt2077 != 0 && Static1.anInt2239 == local160 && local29 + (arg2 << 16) == Static1.anInt1911) {
-												local213 = Static1.anInt2394 - Static1.anInt1571;
+												local213 = Mouse.y - Static1.anInt1571;
 												if (local213 < 5 && local213 > -5) {
 													local213 = 0;
 												}
-												local215 = Static1.anInt742 - Static1.anInt309;
+												local215 = Mouse.x - Static1.anInt309;
 												if (local215 < 5 && local215 > -5) {
 													local215 = 0;
 												}
@@ -336,7 +336,7 @@ public final class Static20 {
 									local18 = false;
 								}
 							} else {
-								@Pc(1002) SpotAnimType local1002 = Static57.method1042(local177);
+								@Pc(1002) SeqType local1002 = Static57.method1042(local177);
 								local992 = local35.method1057(local1002, local970, Static80.aClass2_Sub2_Sub12_Sub1_Sub1_1.aClass33_2, local35.anInt1569);
 								if (local992 == null && Static1.aBoolean102) {
 									local18 = false;

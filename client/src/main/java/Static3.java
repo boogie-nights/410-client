@@ -89,7 +89,7 @@ public final class Static3 {
 			if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
 				@Pc(230) LinkList local230 = Static1.aClass44ArrayArrayArray1[Static1.anInt8][local27][local19];
 				if (local230 != null) {
-					for (@Pc(237) Class2_Sub2_Sub12_Sub3 local237 = (Class2_Sub2_Sub12_Sub3) local230.method1224(); local237 != null; local237 = (Class2_Sub2_Sub12_Sub3) local230.method1231()) {
+					for (@Pc(237) Class2_Sub2_Sub12_Sub3 local237 = (Class2_Sub2_Sub12_Sub3) local230.head(); local237 != null; local237 = (Class2_Sub2_Sub12_Sub3) local230.method1231()) {
 						if ((local31 & 0x7FFF) == local237.anInt1490 && local237.anInt1495 == local35) {
 							local237.anInt1495 = local39;
 							break;
@@ -230,13 +230,13 @@ public final class Static3 {
 					if (local27 >= 0 && local19 >= 0 && local27 < 104 && local19 < 104) {
 						@Pc(950) LinkList local950 = Static1.aClass44ArrayArrayArray1[Static1.anInt8][local27][local19];
 						if (local950 != null) {
-							for (local771 = (Class2_Sub2_Sub12_Sub3) local950.method1224(); local771 != null; local771 = (Class2_Sub2_Sub12_Sub3) local950.method1231()) {
+							for (local771 = (Class2_Sub2_Sub12_Sub3) local950.head(); local771 != null; local771 = (Class2_Sub2_Sub12_Sub3) local950.method1231()) {
 								if (local771.anInt1490 == (local31 & 0x7FFF)) {
 									local771.method1677();
 									break;
 								}
 							}
-							if (local950.method1224() == null) {
+							if (local950.head() == null) {
 								Static1.aClass44ArrayArrayArray1[Static1.anInt8][local27][local19] = null;
 							}
 							Static75.method1356(local19, local27);
@@ -324,7 +324,7 @@ public final class Static3 {
 	}
 
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(ILclient!ad;I)V", line = 591)
-	public static void method27(@OriginalArg(1) Js5ResourceProvider arg0, @OriginalArg(2) int arg1) {
+	public static void method27(@OriginalArg(1) Js5 arg0, @OriginalArg(2) int arg1) {
 		if (Static39.aClass2_Sub3_3 != null) {
 			Static39.aClass2_Sub3_3.pos = arg1 * 4 + 5;
 			@Pc(16) int local16 = Static39.aClass2_Sub3_3.g4s();
@@ -335,7 +335,7 @@ public final class Static3 {
 	}
 
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(IILclient!ud;)Lclient!qb;", line = 654)
-	public static Pix8 method28(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1) {
+	public static Pix8 method28(@OriginalArg(0) int arg0, @OriginalArg(2) Js5Index arg1) {
 		return Static64.method1113(arg1, arg0) ? Static63.method338() : null;
 	}
 }

@@ -88,7 +88,7 @@ public final class NpcType extends Hashable {
 	private int anInt782 = 128;
 
 	@OriginalMember(owner = "client!gb", name = "a", descriptor = "(Lclient!f;Lclient!f;III)Lclient!ne;", line = 14)
-	public Model method605(@OriginalArg(0) SpotAnimType arg0, @OriginalArg(1) SpotAnimType arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
+	public Model method605(@OriginalArg(0) SeqType arg0, @OriginalArg(1) SeqType arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		if (this.anIntArray154 != null) {
 			@Pc(12) NpcType local12 = this.method611();
 			return local12 == null ? null : local12.method605(arg0, arg1, arg2, arg3);

@@ -8,7 +8,7 @@ public final class Static66 {
 	public static int[] anIntArray406;
 
 	@OriginalMember(owner = "client!o", name = "I", descriptor = "Lclient!ud;")
-	public static Js5 aClass5_22;
+	public static Js5Index aClass5_22;
 
 	@OriginalMember(owner = "client!o", name = "d", descriptor = "(I)V", line = 209)
 	public static void method1170() {
@@ -34,12 +34,12 @@ public final class Static66 {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(ZIBZZ)Lclient!ad;", line = 945)
-	public static Js5ResourceProvider method1188(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
+	public static Js5 method1188(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
 		@Pc(10) DiskStore local10 = null;
 		if (Static61.aClass14_4 != null) {
 			local10 = new DiskStore(arg1, Static61.aClass14_4, Static1.aClass14Array1[arg1], 1000000);
 		}
-		return new Js5ResourceProvider(local10, Static68.aClass11_4, arg1, arg0, arg3, arg2);
+		return new Js5(local10, Static68.aClass11_4, arg1, arg0, arg3, arg2);
 	}
 
 	@OriginalMember(owner = "client!o", name = "c", descriptor = "(III)I", line = 1044)

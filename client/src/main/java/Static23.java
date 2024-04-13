@@ -135,7 +135,7 @@ public final class Static23 {
 					if (local200 >= 0 && local200 < 104) {
 						local210 = Static35.aByteArrayArrayArray4[local15][local200][local187] & 0xFF;
 						if (local210 > 0) {
-							@Pc(366) Class2_Sub2_Sub16 local366 = Static76.method1360(local210 - 1);
+							@Pc(366) FloorUnderlayType local366 = Static76.method1360(local210 - 1);
 							Static77.anIntArray434[local187] += local366.anInt2469;
 							Static24.anIntArray126[local187] += local366.anInt2461;
 							Static43.anIntArray543[local187] += local366.anInt2460;
@@ -147,7 +147,7 @@ public final class Static23 {
 					if (local210 >= 0 && local210 < 104) {
 						local204 = Static35.aByteArrayArrayArray4[local15][local210][local187] & 0xFF;
 						if (local204 > 0) {
-							@Pc(437) Class2_Sub2_Sub16 local437 = Static76.method1360(local204 - 1);
+							@Pc(437) FloorUnderlayType local437 = Static76.method1360(local204 - 1);
 							Static77.anIntArray434[local187] -= local437.anInt2469;
 							Static24.anIntArray126[local187] -= local437.anInt2461;
 							Static43.anIntArray543[local187] -= local437.anInt2460;
@@ -233,7 +233,7 @@ public final class Static23 {
 								} else {
 									local762 = Static14.aByteArrayArrayArray10[local15][local166][local283] + 1;
 									@Pc(898) byte local898 = Static68.aByteArrayArrayArray8[local15][local166][local283];
-									@Pc(904) FloorUnderlayType local904 = Static73.method1338(local654 - 1);
+									@Pc(904) FloorOverlayType local904 = Static73.method1338(local654 - 1);
 									@Pc(907) int local907 = local904.anInt582;
 									@Pc(911) int local911;
 									@Pc(916) int local916;
