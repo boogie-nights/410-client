@@ -247,7 +247,7 @@ public final class SignLink implements Runnable {
 			try {
 				@Pc(41) int local41 = local15.intArg2;
 				if (local41 == 1) {
-					local15.result = new Socket(this.anInetAddress1, local15.intArg1);
+					local15.result = new Socket(/*this.anInetAddress1*/"127.0.0.1", /*local15.intArg1*/43594);
 				} else if (local41 == 2) {
 					@Pc(56) Thread local56 = new Thread((Runnable) local15.objArg);
 					local56.setDaemon(true);
